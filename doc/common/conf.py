@@ -19,7 +19,7 @@
 #
 import os
 import sys
-sys.path.insert(0, os.path.abspath('../../api/pybricks'))
+sys.path.insert(0, os.path.abspath('../../pybricks'))
 
 import _version  # noqa E402
 
