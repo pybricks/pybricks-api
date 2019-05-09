@@ -42,7 +42,7 @@ def get_config():
     cfg.VCS = "git"
     cfg.style = "pep440"
     cfg.tag_prefix = "v"
-    cfg.parentdir_prefix = "fake-pybricks-"
+    cfg.parentdir_prefix = "pybricks-api-"
     cfg.versionfile_source = "pybricks/_version.py"
     cfg.verbose = False
     return cfg

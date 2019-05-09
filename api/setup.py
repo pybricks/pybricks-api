@@ -17,14 +17,14 @@ with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
     long_description = f.read()
 
 setup(
-    name='fake-pybricks',
+    name='pybricks-api',
     version=versioneer.get_version(),
     cmdclass=versioneer.get_cmdclass(),
     description='Pybricks',
     long_description=long_description,
     url='https://github.com/pybricks',
     author='Laurens Valk and David Lechner',
-    author_email='laurensvalk@gmail.com',
+    author_email='laurens@pybricks.com',
     classifiers=[
         'Development Status :: 3 - Alpha',
         'License :: OSI Approved :: MIT License',
