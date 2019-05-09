@@ -50,11 +50,6 @@ user.props
 ######################
 genrst/
 
-# Pipenv & Pip files
-######################
-Pipfile
-Pipfile.lock
-
 # VS Code local settings
 ######################
 .vscode/*
