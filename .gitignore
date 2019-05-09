@@ -1,0 +1,64 @@
+# Compiled Sources
+###################
+*.o
+*.a
+*.elf
+*.bin
+*.map
+*.hex
+*.dis
+*.exe
+
+# Packages
+############
+
+# Logs and Databases
+######################
+*.log
+
+# VIM Swap Files
+######################
+*.swp
+
+# Build directory
+######################
+build/
+build-*/
+_build/
+
+# Test failure outputs
+######################
+tests/*.exp
+tests/*.out
+
+# Python cache files
+######################
+__pycache__/
+*.pyc
+
+# PyPi build files
+######################
+*.egg-info/
+dist/
+
+# Customized Makefile/project overrides
+######################
+GNUmakefile
+user.props
+
+# Generated rst files
+######################
+genrst/
+
+# Pipenv & Pip files
+######################
+Pipfile
+Pipfile.lock
+
+# VS Code local settings
+######################
+.vscode/*
+
+# Mac OS cache
+######################
+.DS_Store
