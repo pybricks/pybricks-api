@@ -50,10 +50,6 @@ user.props
 ######################
 genrst/
 
-# VS Code local settings
-######################
-.vscode/*
-
 # Mac OS cache
 ######################
 .DS_Store
