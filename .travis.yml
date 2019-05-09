@@ -1,0 +1,20 @@
+dist: xenial
+language: python
+python:
+- '3.5'
+
+addons:
+  apt:
+    packages:
+    - inkscape
+
+install:
+- pip install pipenv
+- pipenv sync --dev
+
+script:
+- pipenv run python setup.py build
+- make -C doc html SOURCEDIR=ev3dev
+- make -C doc html SOURCEDIR=lpf2
+- pipenv run flake8
+- pipenv run doc8
