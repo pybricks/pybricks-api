@@ -22,7 +22,7 @@ Intro
    :hidden:
 
    movehub
-   hub4
+   cityhub
    lpf2devices
    parameters
    tools
