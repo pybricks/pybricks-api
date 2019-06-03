@@ -25,17 +25,6 @@ class Motor():
                           The same holds for the documentation below: When it states "motor angle" or "motor speed", you can read this as "mechanism output angle" and "mechanism output speed", and so on, as the gear ratio is automatically accounted for.
 
                           The ``gears`` setting is only available for motors with rotation sensors.
-
-        Example::
-
-            # Initialize a motor (by default this means clockwise, without any gears).
-            example_motor = Motor(Port.A)
-
-            # Initialize a motor where positive speed values should go counterclockwise
-            right_motor = Motor(Port.B, Direction.COUNTERCLOCKWISE)
-
-            # Initialize a motor with a gear train
-            robot_arm = Motor(Port.C, Direction.CLOCKWISE, [12, 36])
         """
         pass
 
@@ -44,12 +33,6 @@ class Motor():
 
         Arguments:
             duty (:ref:`percentage`): The duty cycle (-100.0 to 100).
-
-        Example::
-
-            # Set the motor duty cycle to 75%.
-            example_motor.duty(75)
-
         """
         pass
 
@@ -185,26 +168,6 @@ class Motor():
         Arguments:
             target_angle (:ref:`angle`): Target angle that the motor should rotate to.
 
-        Example::
-
-            # Initialize motor and timer
-            from math import sin
-            motor = Motor(Port.A)
-            watch = StopWatch()
-            amplitude = 90
-
-            # In a fast loop, compute a reference angle
-            # and make the motor track it.
-            while True:
-                # Get the time in seconds
-                seconds = watch.time()/1000
-                # Compute a reference angle. This produces
-                # a sine wave that makes the motor move
-                # smoothly between -90 and +90 degrees.
-                angle_now = sin(seconds)*amplitude
-                # Make the motor track the given angle
-                motor.track_target(angle_now)
-
         """
         pass
 
@@ -226,15 +189,6 @@ class Motor():
             max_speed (:ref:`speed`): Maximum speed of the motor during a motor command.
             acceleration (:ref:`acceleration`): Acceleration towards the target speed and deceleration towards standstill. This should be a positive value. The motor will automatically change the sign to decelerate as needed.
 
-        Example::
-
-            # Set the maximum speed to 200 deg/s and acceleration to 400 deg/s/s.
-            example_motor.set_run_settings(200, 400)
-
-            # Make the motor run for 5 seconds. Even though the speed argument is 300
-            # deg/s in this example, the motor will move at only 200 deg/s because of
-            # the settings above.
-            example_motor.run_time(300, 5000)
         """
         pass
 
@@ -268,17 +222,6 @@ class Display():
             text (str): The text to display.
             coordinate (tuple): ``(x, y)`` coordinate tuple. It is the top-left corner of the first character. If no coordinate is specified, it is printed on the next line.
 
-        Example::
-
-            # Clear the display
-            brick.display.clear()
-
-            # Print ``Hello`` near the middle of the screen
-            brick.display.text("Hello", (60, 50))
-
-            # Print ``World`` directly underneath it
-            brick.display.text("World")
-
         """
         pass
 
@@ -295,17 +238,6 @@ class Display():
             coordinate (tuple): ``(x, y)`` coordinate tuple. It is the top-left corner of the image (*Default*: None).
             clear (bool): Whether to clear the screen before showing the image (*Default*: ``True``).
 
-        Example::
-
-            # Show a built-in image of two eyes looking upward
-            brick.display.image(ImageFile.UP)
-
-            # Display a custom image from your project folder
-            brick.display.image('pybricks.png')
-
-            # Display a custom image at the top right of the screen, without clearing
-            # the screen first
-            brick.display.image('arrow.png', Align.TOP_RIGHT, clear=False)
         """
         pass
 
@@ -320,14 +252,6 @@ class Speaker():
             frequency (:ref:`frequency`): Frequency of the beep (*Default*: 500).
             duration (:ref:`time`): Duration of the beep (*Default*: 100).
             volume (:ref:`percentage`): Volume of the beep (*Default*: 30).
-
-        Example::
-
-            # A simple beep
-            brick.sound.beep()
-
-            # A high pitch (1500 Hz) for one second (1000 ms) at 50% volume
-            brick.sound.beep(1500, 1000, 50)
         """
         pass
 
@@ -337,10 +261,6 @@ class Speaker():
         Arguments:
             number (int): Number of beeps.
 
-        Example::
-
-            # Make 5 simple beeps
-            brick.sound.beeps(5)
         """
         pass
 
@@ -350,14 +270,6 @@ class Speaker():
         Arguments:
             file_name (str): Path to the sound file, including extension.
             volume (:ref:`percentage`): Volume of the sound (*Default*: 100).
-
-        Example::
-
-            # Play one of the built-in sounds
-            brick.sound.file(SoundFile.HELLO)
-
-            # Play a sound file from your project folder
-            brick.sound.file('mysound.wav')
 
         """
 

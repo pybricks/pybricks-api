@@ -6,14 +6,6 @@ def print():
 
     Print values on the terminal or a stream.
 
-    Example::
-
-        # Print some text
-        print("Hello, world")
-
-        # Print some text and a number
-        print("Value:", 5)
-
     """
     pass
 
