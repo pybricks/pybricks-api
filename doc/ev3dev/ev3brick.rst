@@ -30,15 +30,23 @@ Buttons
 Light
 -----
 
-.. autofunction:: ev3brick.light
+.. automethod:: ev3brick.light.color
 
     Example::
 
         # Make the light red
-        brick.light(Color.RED)
+        brick.light.color(Color.RED)
+
+        # Wait
+        wait(1000)
 
         # Turn the light off
-        brick.light(None)
+        brick.light.off()
+
+
+.. automethod:: ev3brick.light.off
+
+.. automethod:: ev3brick.light.brightness
 
 Sound
 -----

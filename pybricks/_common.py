@@ -276,6 +276,51 @@ class Speaker():
         pass
 
 
+class Light():
+    """Control an LED."""
+
+    def on(self):
+        """Turn on the light at maximum brightness."""
+        pass
+
+    def off(self):
+        """Turn off the light."""
+        pass
+
+    def brightness(self, brightness):
+        """Set the perceived brightness of the light.
+
+        Arguments:
+            brightness (:ref:`percentage`): Perceived brightness of the light.
+        """
+        pass
+
+
+class ColorLight():
+    """Control an RGB LED."""
+
+    def color(color):
+        """Turn on the light at the specified color.
+
+        Arguments:
+            color (Color): Color of the light. The light turns off if you choose ``None`` or a color that is not available.
+        """
+        pass
+
+    def off(self):
+        """Turn off the light."""
+        pass
+
+    def brightness(self, red, green, blue):
+        """Set the perceived brightness of the red, green, and blue light.
+
+        Arguments:
+            red (:ref:`percentage`): Perceived brightness of the red light.
+            green (:ref:`percentage`): Perceived brightness of the green light.
+            blue (:ref:`percentage`): Perceived brightness of the blue light.
+        """
+        pass
+
 class Battery():
     """Get the status of a battery."""
 

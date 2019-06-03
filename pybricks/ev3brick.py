@@ -1,7 +1,7 @@
 """LEGO® MINDSTORMS® EV3 Brick."""
 
 from parameters import Color
-from _common import Speaker, Display, Battery
+from _common import Speaker, Display, Battery, ColorLight
 
 
 def buttons():
@@ -14,16 +14,9 @@ def buttons():
     pass
 
 
-def light(color):
-    """Set the color of the brick light.
-
-    Arguments:
-        color (Color): Color of the light. Choose ``Color.BLACK`` or ``None``
-                       to turn the light off.
-    """
-    pass
 
 
 sound = Speaker()
 display = Display()
 battery = Battery()
+light = ColorLight()
