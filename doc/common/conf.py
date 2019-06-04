@@ -61,7 +61,8 @@ copyright = '2018-2019 The Pybricks MicroPython Authors'
 author = ''
 
 _TITLE = 'Pybricks Modules and Examples'
-_DISCLAIMER = 'LEGO, the LEGO logo, MINDSTORMS and the MINDSTORMS EV3 logo are trademarks and/or copyrights of the LEGO Group.'
+_DISCLAIMER = 'LEGO, the LEGO logo, MINDSTORMS and the MINDSTORMS EV3 logo are\
+               trademarks and/or copyrights of the LEGO Group.'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -108,8 +109,8 @@ numfig_format = {
 
 autodoc_member_order = 'bysource'
 autodoc_default_flags = ['members', 'undoc-members']
-autoclass_content = 'both' # This ensures init arguments are not ignored but added to class docstring.
-add_module_names = False # Hide module name
+autoclass_content = 'both'  # This ensures init arguments are not ignored
+add_module_names = False  # Hide module name
 
 # -- Options for HTML output ----------------------------------------------
 
@@ -221,7 +222,8 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, ''.join([project, '-v', version, '.tex']), _TITLE, author, 'manual'),
+    (master_doc, ''.join([project, '-v', version, '.tex']), _TITLE,
+     author, 'manual'),
 ]
 
 latex_logo = '../common/images/pybricks-logo-large.png'

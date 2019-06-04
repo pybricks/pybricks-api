@@ -38,7 +38,8 @@ class TouchSensor():
         """Check if the sensor is pressed.
 
         Returns:
-            :obj:`bool`: ``True`` if the sensor is pressed, ``False`` if it is not pressed.
+            :obj:`bool`: ``True`` if the sensor is pressed, ``False`` if it is
+            not pressed.
 
         """
         pass
@@ -69,7 +70,9 @@ class ColorSensor():
         :returns:
             ``Color.BLACK``, ``Color.BLUE``, ``Color.GREEN``, ``Color.YELLOW``,
             ``Color.RED``, ``Color.WHITE``, ``Color.BROWN`` or ``None``.
-        :rtype: :class:`Color <parameters.Color>`, or ``None`` if no color is detected.
+        :rtype: :class:`Color <parameters.Color>`, or ``None`` if no color is
+                detected.
+
         """
         pass
 
@@ -77,7 +80,8 @@ class ColorSensor():
         """Measure the ambient light intensity.
 
         Returns:
-            :ref:`percentage`: Ambient light intensity, ranging from 0 (dark) to 100 (bright).
+            :ref:`percentage`: Ambient light intensity, ranging from 0 (dark)
+            to 100 (bright).
         """
         pass
 
@@ -85,17 +89,20 @@ class ColorSensor():
         """Measure the reflection of a surface using a red light.
 
         Returns:
-            :ref:`percentage`: Reflection, ranging from 0 (no reflection) to 100 (high reflection).
+            :ref:`percentage`: Reflection, ranging from 0 (no reflection) to
+            100 (high reflection).
 
         """
         pass
 
     def rgb(self):
-        """Measure the reflection of a surface using a red, green, and then a blue light.
+        """Measure the reflection of a surface using a red, green, and then a
+        blue light.
 
         Returns:
-            tuple of three :ref:`percentages <percentage>`: Reflection for red, green, and blue light, each ranging from 0.0 (no reflection) to 100.0 (high reflection).
-
+            tuple of three :ref:`percentages <percentage>`: Reflection for red,
+            green, and blue light, each ranging from 0.0 (no reflection) to
+            100.0 (high reflection).
         """
         pass
 
@@ -119,22 +126,27 @@ class InfraredSensor():
         pass
 
     def distance(self):
-        """Measure the relative distance between the sensor and an object using infrared light.
+        """Measure the relative distance between the sensor and an object using
+        infrared light.
 
         Returns:
-            :ref:`relativedistance`: Relative distance ranging from 0 (closest) to 100 (farthest).
+            :ref:`relativedistance`: Relative distance ranging from 0 (closest)
+            to 100 (farthest).
 
         """
         pass
 
     def beacon(self, channel):
-        """Measure the relative distance and angle between the remote and the infrared sensor.
+        """Measure the relative distance and angle between the remote and the
+        infrared sensor.
 
         Arguments:
             channel (int): Channel number of the remote.
 
-        :returns: Tuple of relative distance (0 to 100) and approximate angle (-75 to 75 degrees) between remote and infrared sensor.
-        :rtype: (:ref:`relativedistance`, :ref:`angle`) or (``None``, ``None``) if no remote is detected.
+        :returns: Tuple of relative distance (0 to 100) and approximate angle
+                  (-75 to 75 degrees) between remote and infrared sensor.
+        :rtype: (:ref:`relativedistance`, :ref:`angle`) or
+                (``None``, ``None``) if no remote is detected.
         """
         pass
 
@@ -144,7 +156,7 @@ class InfraredSensor():
         Arguments:
             channel (int): Channel number of the remote.
 
-        :returns: List of pressed buttons on the remote on the specified channel.
+        :returns: List of pressed buttons on the remote on selected channel.
         :rtype: List of :class:`Button <parameters.Button>`
 
         """
@@ -165,7 +177,9 @@ class GyroSensor():
 
         Arguments:
             port (Port): Port to which the sensor is connected.
-            direction (Direction): Positive rotation direction when looking at the red dot on top of the sensor (*Default*: Direction.CLOCKWISE).
+            direction (Direction): Positive rotation direction when looking at
+                                   the red dot on top of the sensor
+                                   (*Default*: Direction.CLOCKWISE).
 
         """
         pass
@@ -229,16 +243,18 @@ class UltrasonicSensor():
         pass
 
     def distance(self, silent=False):
-        """Measure the distance between the sensor and an object using ultrasonic sound waves.
+        """Measure the distance between the sensor and an object using
+        ultrasonic sound waves.
 
         Arguments:
-            silent (bool): Choose ``True`` to turn the sensor off after measuring the distance.
-
-                           Choose ``False`` to leave the sensor on (*Default*).
-
-                           When you choose ``silent=True``, the sensor does not emit sounds waves
-                           except when taking the measurement. This reduces interference with
-                           other ultrasonic sensors, but turning the sensor off takes approximately 300 ms each time.
+            silent (bool): Choose ``True`` to turn the sensor off after
+                           measuring the distance. Choose ``False`` to leave
+                           the sensor on (*Default*). When you choose
+                           ``silent=True``, the sensor does not
+                           emit sounds waves except when taking the
+                           measurement. This reduces interference with other
+                           ultrasonic sensors, but turning the sensor off takes
+                           approximately 300 ms each time.
 
         Returns:
             :ref:`distance`: Distance (millimeters).
@@ -247,11 +263,15 @@ class UltrasonicSensor():
         pass
 
     def presence(self):
-        """Check for the presence of other ultrasonic sensors by detecting ultrasonic sounds.
+        """Check for the presence of other ultrasonic sensors by detecting
+        ultrasonic sounds.
 
-        If the other ultrasonic sensor is operating in silent mode, you can only detect the presence of that sensor while it is taking a measurement.
+        If the other ultrasonic sensor is operating in silent mode, you can
+        only detect the presence of that sensor while it is taking a
+        measurement.
 
         Returns:
-            :obj:`bool`: ``True`` if ultrasonic sounds are detected, ``False`` if not.
+            :obj:`bool`: ``True`` if ultrasonic sounds are detected,
+            ``False`` if not.
         """
         pass

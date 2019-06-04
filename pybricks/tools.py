@@ -21,7 +21,8 @@ def wait(time):
 
 
 class StopWatch():
-    """A stopwatch to measure time intervals. Similar to the stopwatch feature on your phone."""
+    """A stopwatch to measure time intervals. Similar to the stopwatch
+    feature on your phone."""
 
     def __init__(self):
         pass

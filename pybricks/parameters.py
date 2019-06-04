@@ -72,9 +72,11 @@ class Stop(Enum):
 
     .. data:: HOLD
 
-        Keep controlling the motor to hold it at the commanded angle. This is only available on motors with encoders.
+        Keep controlling the motor to hold it at the commanded angle. This is
+        only available on motors with encoders.
 
-    The stop type defines the resistance to motion after coming to a standstill:
+    The stop type defines the resistance to motion after coming to a
+    standstill:
 
     +-----------+-------------+------------------------------------------+
     |Parameter  | Resistance  | Physical meaning                         |
@@ -94,7 +96,8 @@ class Stop(Enum):
 
 
 class Direction():
-    """Rotational direction for positive speed values: clockwise or counterclockwise.
+    """Rotational direction for positive speed values: clockwise or
+    counterclockwise.
 
     .. data:: CLOCKWISE
 
@@ -104,9 +107,11 @@ class Direction():
 
         A positive speed value should make the motor move counterclockwise.
 
-    For all motors, this is defined when looking at the shaft, just like looking at a clock.
+    For all motors, this is defined when looking at the shaft, just like
+    looking at a clock.
 
-    For NXT or EV3 motors, make sure to look at the motor with the red/orange shaft to the lower right.
+    For NXT or EV3 motors, make sure to look at the motor with the red/orange
+    shaft to the lower right.
 
     +----------------------------+-------------------+-----------------+
     | Parameter                  | Positive speed    | Negative speed  |
@@ -126,25 +131,25 @@ class Direction():
                ____                 _____
               /                          \\
              /       _____________        \\
-            /       /              \       \\
+            /       /              \\       \\
             |      |        _       |       |
             |      |     __| |__    |       |
             v      |    |__ o __|   |       v
                    |       |_|      |
                    |                |
-                    \______________/
+                    \\______________/
 
 
          Large EV3 Motor:
 
-              ________
-             /         \        ___    ___
-            _|          \      /          \\
+               ________
+              /         \\       ___    ___
+            _|           \\     /          \\
             |             ----/------      \\
-            counterclockwise  |    __\__    |  clockwise
-              \__________     v  /      \   v
-                          -------|  +   |
-                                 \_____/
+            counterclockwise  |    __\\__    |  clockwise
+             \\ __________     v   /     \\   v
+                          -------|   +   |
+                                  \\_____/
 
 
     """
