@@ -1,5 +1,5 @@
 :mod:`movehub` -- LEGO® Power Functions 2.0 Move Hub
-====================================================
+======================================================
 
 .. automodule:: movehub
     :no-members:

@@ -122,8 +122,8 @@ Display
         # Display a custom image from your project folder
         brick.display.image('pybricks.png')
 
-        # Display a custom image at the top right of the screen, without clearing
-        # the screen first
+        # Display a custom image at the top right of the screen,
+        # without clearing the screen first
         brick.display.image('arrow.png', Align.TOP_RIGHT, clear=False)
 
 Battery

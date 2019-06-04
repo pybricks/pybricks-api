@@ -1,9 +1,13 @@
 Robot Educator
 =====================
 
-This example makes the Robot Educator (:numref:`fig_robot_educator`)  drive until it sees an obstacle. It then backs up, turns around, and starts driving again.
+This example makes the Robot Educator (:numref:`fig_robot_educator`)  drive
+until it sees an obstacle. It then backs up, turns around, and starts driving
+again.
 
-You can find building instructions for the Robot Educator on the `LEGO Education website <https://education.lego.com/en-us/support/mindstorms-ev3/building-instructions#robot>`_.
+You can find building instructions for the Robot Educator on the `LEGO
+Education website
+<https://education.lego.com/en-us/support/mindstorms-ev3/building-instructions#robot>`_.
 
 .. _fig_robot_educator:
 

@@ -1,12 +1,13 @@
 Using MicroPython with LEGO\ :sup:`®` MINDSTORMS\ :sup:`®` EV3
-==============================================================
+==================================================================
 
 This guide shows you how to get started writing MicroPython programs for your
 LEGO® MINDSTORMS® EV3 robots. You'll learn to do so in two steps:
 
 - :doc:`Installation <startinstall>`: First you'll prepare your computer and
-  your EV3 Brick by collecting and installing the required tools. You'll also learn
-  how to turn the EV3 Brick on and off and to navigate the menu on the screen.
+  your EV3 Brick by collecting and installing the required tools. You'll also
+  learn how to turn the EV3 Brick on and off and to navigate the menu on the
+  screen.
 
 - :doc:`Creating and running programs <startrun>`: Next, you'll learn how to
   create a program and download it to the EV3 Brick. You'll also learn how to

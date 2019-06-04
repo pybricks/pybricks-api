@@ -12,10 +12,10 @@ Motors
 
     Example::
 
-        # Initialize a motor (by default this means clockwise, without any gears).
+        # Initialize a motor (by default this means is, without any gears).
         example_motor = Motor(Port.A)
 
-        # Initialize a motor where positive speed values should go counterclockwise
+        # Initialize a motor with positive speed as counterclockwise
         right_motor = Motor(Port.B, Direction.COUNTERCLOCKWISE)
 
         # Initialize a motor with a gear train
@@ -82,11 +82,13 @@ Motors
 
         Example::
 
-            # Set the maximum speed to 200 deg/s and acceleration to 400 deg/s/s.
+            # Set the maximum speed to 200 deg/s and
+            # acceleration to 400 deg/s/s.
             example_motor.set_run_settings(200, 400)
 
-            # Make the motor run for 5 seconds. Even though the speed argument is 300
-            # deg/s in this example, the motor will move at only 200 deg/s because of
+            # Make the motor run for 5 seconds. Even though the
+            # speed argument is 300 deg/s in this example, the
+            # motor will move at only 200 deg/s because of
             # the settings above.
             example_motor.run_time(300, 5000)
 
