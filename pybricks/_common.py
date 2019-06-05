@@ -432,10 +432,36 @@ class Light():
         pass
 
     def brightness(self, brightness):
-        """Set the perceived brightness of the light.
+        """Set the brightness of the light.
 
         Arguments:
-            brightness (:ref:`percentage`): Perceived brightness of the light.
+            brightness (:ref:`percentage`): Brightness of the light.
+        """
+        pass
+
+
+class LightArray():
+    """Control an array of single color LEDs."""
+
+    def __init__(self, number_of_lights):
+        self.number_of_lights = number_of_lights
+
+    def on(self):
+        """Turn on all the lights at maximum brightness."""
+        pass
+
+    def off(self):
+        """Turn off all the lights."""
+        pass
+
+    def brightness(self, *brightnesses):
+        """brightness(first_light, ..., last_light)
+
+        Set the brightness of each light.
+
+        Arguments:
+            brightnesses (:ref:`percentage`, ..., :ref:`percentage`):
+                Brightness of each light.
         """
         pass
 
@@ -457,12 +483,12 @@ class ColorLight():
         pass
 
     def brightness(self, red, green, blue):
-        """Set the perceived brightness of the red, green, and blue light.
+        """Set the brightness of the red, green, and blue light.
 
         Arguments:
-            red (:ref:`percentage`): Perceived brightness of the red light.
-            green (:ref:`percentage`): Perceived brightness of the green light.
-            blue (:ref:`percentage`): Perceived brightness of the blue light.
+            red (:ref:`percentage`): Brightness of the red light.
+            green (:ref:`percentage`): Brightness of the green light.
+            blue (:ref:`percentage`): Brightness of the blue light.
         """
         pass
 
