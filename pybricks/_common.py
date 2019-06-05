@@ -346,12 +346,10 @@ class Motor():
 class Display():
     """Show images or text on a display."""
 
-    @staticmethod
     def clear(self):
         """Clear everything on the display."""
         pass
 
-    @staticmethod
     def text(self, text, coordinate=None):
         """Display text.
 
@@ -364,7 +362,6 @@ class Display():
         """
         pass
 
-    @staticmethod
     def image(self, file_name,
               alignment=Align.CENTER, coordinate=None, clear=True):
         """image(file_name, alignment=Align.CENTER, coordinate=None, clear=True)
@@ -391,7 +388,6 @@ class Display():
 class Speaker():
     """Play beeps and sound files using a speaker."""
 
-    @staticmethod
     def beep(self, frequency=500, duration=100, volume=30):
         """Play a beep/tone.
 
@@ -403,7 +399,6 @@ class Speaker():
         """
         pass
 
-    @staticmethod
     def beeps(self, number):
         """Play a number of default beeps with a brief pause in between.
 
@@ -413,7 +408,6 @@ class Speaker():
         """
         pass
 
-    @staticmethod
     def file(self, file_name, volume=100):
         """Play a sound file.
 
@@ -429,17 +423,14 @@ class Speaker():
 class Light():
     """Control a single color LED."""
 
-    @staticmethod
     def on(self):
         """Turn on the light at maximum brightness."""
         pass
 
-    @staticmethod
     def off(self):
         """Turn off the light."""
         pass
 
-    @staticmethod
     def brightness(self, brightness):
         """Set the perceived brightness of the light.
 
@@ -452,7 +443,6 @@ class Light():
 class ColorLight():
     """Control an RGB LED."""
 
-    @staticmethod
     def color(self, color):
         """Turn on the light at the specified color.
 
@@ -462,12 +452,10 @@ class ColorLight():
         """
         pass
 
-    @staticmethod
     def off(self):
         """Turn off the light."""
         pass
 
-    @staticmethod
     def brightness(self, red, green, blue):
         """Set the perceived brightness of the red, green, and blue light.
 
@@ -482,7 +470,6 @@ class ColorLight():
 class Battery():
     """Get the status of a battery."""
 
-    @staticmethod
     def voltage(self):
         """Get the voltage of the battery.
 
@@ -491,7 +478,6 @@ class Battery():
         """
         pass
 
-    @staticmethod
     def current(self):
         """Get the current supplied by the battery.
 

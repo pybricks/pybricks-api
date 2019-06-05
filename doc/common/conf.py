@@ -19,7 +19,8 @@
 #
 import os
 import sys
-sys.path.insert(0, os.path.abspath('..'))
+from sphinx.domains.python import PyClassmember
+sys.path.insert(0, os.path.abspath('../..'))
 
 from pybricks import _version  # noqa E402
 
@@ -249,3 +250,10 @@ texinfo_documents = [
      author, 'Pybricks', 'One line description of project.',
      'Miscellaneous'),
 ]
+
+
+def get_signature_prefix_none(self, sig):
+    return ''
+
+
+PyClassmember.get_signature_prefix = get_signature_prefix_none
