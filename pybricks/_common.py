@@ -2,7 +2,7 @@
 speakers, and batteries."""
 
 from types import ModuleType
-from parameters import Align, Direction, Stop
+from .parameters import Align, Direction, Stop
 
 
 class Motor():
@@ -453,7 +453,7 @@ class ColorLight():
     """Control an RGB LED."""
 
     @staticmethod
-    def color(color):
+    def color(self, color):
         """Turn on the light at the specified color.
 
         Arguments:

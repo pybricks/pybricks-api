@@ -1,6 +1,6 @@
 """Robotics module for the Pybricks API."""
 
-from parameters import Stop
+from .parameters import Stop
 
 
 class DriveBase():

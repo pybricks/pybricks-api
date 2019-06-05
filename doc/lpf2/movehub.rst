@@ -1,13 +1,13 @@
 :mod:`movehub` -- LEGO® Power Functions 2.0 Move Hub
 ======================================================
 
-.. automodule:: movehub
+.. automodule:: pybricks.movehub
     :no-members:
 
 Light
 -----
 
-.. automethod:: movehub.light.color
+.. automethod:: pybricks.movehub.light.color
 
     Example::
 
@@ -21,13 +21,13 @@ Light
         movehub.light.off()
 
 
-.. automethod:: movehub.light.off
+.. automethod:: pybricks.movehub.light.off
 
-.. automethod:: movehub.light.brightness
+.. automethod:: pybricks.movehub.light.brightness
 
 Battery
 -------
 
-.. automethod:: movehub.battery.voltage
+.. automethod:: pybricks.movehub.battery.voltage
 
-.. automethod:: movehub.battery.current
+.. automethod:: pybricks.movehub.battery.current

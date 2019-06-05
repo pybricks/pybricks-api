@@ -1,7 +1,7 @@
 :mod:`tools` -- Timing and Datalogging
 ======================================
 
-.. automodule:: tools
+.. automodule:: pybricks.tools
     :no-members:
 
 .. autofunction:: print
@@ -16,13 +16,13 @@
 
 .. autofunction:: wait
 
-.. autoclass:: tools.StopWatch
+.. autoclass:: pybricks.tools.StopWatch
     :no-members:
 
-    .. automethod:: tools.StopWatch.time
+    .. automethod:: pybricks.tools.StopWatch.time
 
-    .. automethod:: tools.StopWatch.pause
+    .. automethod:: pybricks.tools.StopWatch.pause
 
-    .. automethod:: tools.StopWatch.resume
+    .. automethod:: pybricks.tools.StopWatch.resume
 
-    .. automethod:: tools.StopWatch.reset
+    .. automethod:: pybricks.tools.StopWatch.reset

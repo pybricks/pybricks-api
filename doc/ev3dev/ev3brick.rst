@@ -1,14 +1,14 @@
 :mod:`ev3brick` -- The EV3 Programmable Brick
 =============================================
 
-.. automodule:: ev3brick
+.. automodule:: pybricks.ev3brick
     :no-members:
 
 
 Buttons
 -------
 
-.. autofunction:: ev3brick.buttons
+.. autofunction:: pybricks.ev3brick.buttons
 
     Examples::
 
@@ -30,7 +30,7 @@ Buttons
 Light
 -----
 
-.. automethod:: ev3brick.light.color
+.. automethod:: pybricks.ev3brick.light.color
 
     Example::
 
@@ -44,14 +44,14 @@ Light
         brick.light.off()
 
 
-.. automethod:: ev3brick.light.off
+.. automethod:: pybricks.ev3brick.light.off
 
-.. automethod:: ev3brick.light.brightness
+.. automethod:: pybricks.ev3brick.light.brightness
 
 Sound
 -----
 
-.. automethod:: ev3brick.sound.beep
+.. automethod:: pybricks.ev3brick.sound.beep
 
     Example::
 
@@ -62,14 +62,14 @@ Sound
         brick.sound.beep(1500, 1000, 50)
 
 
-.. automethod:: ev3brick.sound.beeps
+.. automethod:: pybricks.ev3brick.sound.beeps
 
     Example::
 
         # Make 5 simple beeps
         brick.sound.beeps(5)
 
-.. automethod:: ev3brick.sound.file
+.. automethod:: pybricks.ev3brick.sound.file
 
     Example::
 
@@ -95,14 +95,14 @@ Display
                                 (177, 127)
 
 
-.. automethod:: ev3brick.display.clear
+.. automethod:: pybricks.ev3brick.display.clear
 
     Example::
 
         # Clear the display
         brick.display.clear()
 
-.. automethod:: ev3brick.display.text
+.. automethod:: pybricks.ev3brick.display.text
 
     Example::
 
@@ -112,7 +112,7 @@ Display
         # Print ``World`` directly underneath it
         brick.display.text("World")
 
-.. automethod:: ev3brick.display.image
+.. automethod:: pybricks.ev3brick.display.image
 
     Example::
 
@@ -129,6 +129,6 @@ Display
 Battery
 -------
 
-.. automethod:: ev3brick.battery.voltage
+.. automethod:: pybricks.ev3brick.battery.voltage
 
-.. automethod:: ev3brick.battery.current
+.. automethod:: pybricks.ev3brick.battery.current

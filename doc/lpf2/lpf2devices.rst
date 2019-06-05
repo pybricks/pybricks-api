@@ -1,13 +1,13 @@
 :mod:`lpf2devices` -- Power Function 2.0 Motors and Sensors
 ===========================================================
 
-.. automodule:: lpf2devices
+.. automodule:: pybricks.lpf2devices
     :no-members:
 
 Motors
 ------
 
-.. autoclass:: lpf2devices.Motor
+.. autoclass:: pybricks.lpf2devices.Motor
     :no-members:
 
     Example::
@@ -23,7 +23,7 @@ Motors
 
     .. rubric:: Methods for motors without rotation sensors
 
-    .. automethod:: lpf2devices.Motor.dc
+    .. automethod:: pybricks.lpf2devices.Motor.dc
 
         Example::
 
@@ -32,25 +32,25 @@ Motors
 
     .. rubric:: Methods for motors with rotation sensors
 
-    .. automethod:: lpf2devices.Motor.angle
+    .. automethod:: pybricks.lpf2devices.Motor.angle
 
-    .. automethod:: lpf2devices.Motor.reset_angle
+    .. automethod:: pybricks.lpf2devices.Motor.reset_angle
 
-    .. automethod:: lpf2devices.Motor.speed
+    .. automethod:: pybricks.lpf2devices.Motor.speed
 
-    .. automethod:: lpf2devices.Motor.stop
+    .. automethod:: pybricks.lpf2devices.Motor.stop
 
-    .. automethod:: lpf2devices.Motor.run
+    .. automethod:: pybricks.lpf2devices.Motor.run
 
-    .. automethod:: lpf2devices.Motor.run_time
+    .. automethod:: pybricks.lpf2devices.Motor.run_time
 
-    .. automethod:: lpf2devices.Motor.run_angle
+    .. automethod:: pybricks.lpf2devices.Motor.run_angle
 
-    .. automethod:: lpf2devices.Motor.run_target
+    .. automethod:: pybricks.lpf2devices.Motor.run_target
 
     .. rubric:: Advanced methods for motors with rotation sensors
 
-    .. automethod:: lpf2devices.Motor.track_target
+    .. automethod:: pybricks.lpf2devices.Motor.track_target
 
         Example::
 
@@ -72,13 +72,13 @@ Motors
                 # Make the motor track the given angle
                 motor.track_target(angle_now)
 
-    .. automethod:: lpf2devices.Motor.stalled
+    .. automethod:: pybricks.lpf2devices.Motor.stalled
 
-    .. automethod:: lpf2devices.Motor.run_until_stalled
+    .. automethod:: pybricks.lpf2devices.Motor.run_until_stalled
 
-    .. automethod:: lpf2devices.Motor.set_dc_settings
+    .. automethod:: pybricks.lpf2devices.Motor.set_dc_settings
 
-    .. automethod:: lpf2devices.Motor.set_run_settings
+    .. automethod:: pybricks.lpf2devices.Motor.set_run_settings
 
         Example::
 
@@ -92,7 +92,7 @@ Motors
             # the settings above.
             example_motor.run_time(300, 5000)
 
-    .. automethod:: lpf2devices.Motor.set_pid_settings
+    .. automethod:: pybricks.lpf2devices.Motor.set_pid_settings
 
 Sensors
 -------
@@ -100,19 +100,19 @@ Sensors
 Color and Distance Sensor
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. autoclass:: lpf2devices.ColorDistanceSensor
+.. autoclass:: pybricks.lpf2devices.ColorDistanceSensor
     :no-members:
 
-    .. automethod:: lpf2devices.ColorDistanceSensor.color
+    .. automethod:: pybricks.lpf2devices.ColorDistanceSensor.color
 
-    .. automethod:: lpf2devices.ColorDistanceSensor.ambient
+    .. automethod:: pybricks.lpf2devices.ColorDistanceSensor.ambient
 
-    .. automethod:: lpf2devices.ColorDistanceSensor.reflection
+    .. automethod:: pybricks.lpf2devices.ColorDistanceSensor.reflection
 
-    .. automethod:: lpf2devices.ColorDistanceSensor.rgb
+    .. automethod:: pybricks.lpf2devices.ColorDistanceSensor.rgb
 
-    .. automethod:: lpf2devices.ColorDistanceSensor.distance
+    .. automethod:: pybricks.lpf2devices.ColorDistanceSensor.distance
 
-    .. automethod:: _common.light.color
+    .. automethod:: pybricks._common.light.color
 
-    .. automethod:: _common.light.off
+    .. automethod:: pybricks._common.light.off

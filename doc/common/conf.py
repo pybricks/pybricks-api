@@ -19,9 +19,9 @@
 #
 import os
 import sys
-sys.path.insert(0, os.path.abspath('../../pybricks'))
+sys.path.insert(0, os.path.abspath('..'))
 
-import _version  # noqa E402
+from pybricks import _version  # noqa E402
 
 # ON_RTD is whether we are on readthedocs.org
 # this line of code grabbed from docs.readthedocs.org

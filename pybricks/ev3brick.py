@@ -1,6 +1,6 @@
 """LEGO® MINDSTORMS® EV3 Brick."""
 
-from _common import Speaker, Display, Battery, ColorLight
+from ._common import Speaker, Display, Battery, ColorLight
 
 
 def buttons():

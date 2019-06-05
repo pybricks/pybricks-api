@@ -1,34 +1,34 @@
 :mod:`cityhub` -- LEGO® Power Functions 2.0 City Hub
 =====================================================
 
-.. automodule:: cityhub
+.. automodule:: pybricks.cityhub
     :no-members:
 
 
 Light
 -----
 
-.. automethod:: cityhub.light.color
+.. automethod:: pybricks.cityhub.light.color
 
     Example::
 
         # Make the light red
-        cityhub.light.color(Color.RED)
+        pybricks.cityhub.light.color(Color.RED)
 
         # Wait
         wait(1000)
 
         # Turn the light off
-        cityhub.light.off()
+        pybricks.cityhub.light.off()
 
 
-.. automethod:: cityhub.light.off
+.. automethod:: pybricks.cityhub.light.off
 
-.. automethod:: cityhub.light.brightness
+.. automethod:: pybricks.cityhub.light.brightness
 
 Battery
 -------
 
-.. automethod:: cityhub.battery.voltage
+.. automethod:: pybricks.cityhub.battery.voltage
 
-.. automethod:: cityhub.battery.current
+.. automethod:: pybricks.cityhub.battery.current

@@ -1,6 +1,6 @@
 """LEGO® Power Functions 2.0 motor, sensors, and lights."""
 
-from _common import Motor as CommonMotor, ColorLight
+from ._common import Motor as CommonMotor, ColorLight
 
 
 class Motor(CommonMotor):

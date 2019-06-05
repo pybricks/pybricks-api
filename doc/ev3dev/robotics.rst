@@ -1,11 +1,11 @@
 :mod:`robotics` -- Robotics module
 ===========================================
 
-.. automodule:: robotics
+.. automodule:: pybricks.robotics
     :no-members:
 
 
-.. autoclass:: robotics.DriveBase
+.. autoclass:: pybricks.robotics.DriveBase
     :no-members:
 
     Example::
@@ -15,7 +15,7 @@
         right = Motor(Port.C)
         robot = DriveBase(left, right, 56, 114)
 
-    .. automethod:: robotics.DriveBase.drive
+    .. automethod:: pybricks.robotics.DriveBase.drive
 
         Example::
 
@@ -33,7 +33,7 @@
                 wait(10)
             robot.stop()
 
-    .. automethod:: robotics.DriveBase.drive_time
+    .. automethod:: pybricks.robotics.DriveBase.drive_time
 
         Example::
 
@@ -43,4 +43,4 @@
             # Turn at 45 deg/s for three seconds
             robot.drive_time(0, 45, 3000)
 
-    .. automethod:: robotics.DriveBase.stop
+    .. automethod:: pybricks.robotics.DriveBase.stop
