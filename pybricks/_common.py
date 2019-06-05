@@ -1,6 +1,7 @@
-"""Generic cross-platform module for typical hub devices like displays,
+"""Generic cross-platform module for typical devices like lights, displays,
 speakers, and batteries."""
 
+from types import ModuleType
 from parameters import Align, Direction, Stop
 
 
@@ -426,7 +427,7 @@ class Speaker():
 
 
 class Light():
-    """Control an LED."""
+    """Control a single color LED."""
 
     @staticmethod
     def on(self):
@@ -499,3 +500,12 @@ class Battery():
 
         """
         pass
+
+
+# Workaround for documenting instance attributes such as <self.light> of the
+# the ColorDistanceSensor. Autodoc does not pick those up, so instantiate them
+# here. Modules can just import them as needed.
+light = ModuleType('ColorLight')
+light.color = ColorLight.color
+light.off = ColorLight.off
+light.brightness = ColorLight.brightness

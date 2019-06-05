@@ -1,21 +1,18 @@
 """LEGO® Power Functions 2.0 motor, sensors, and lights."""
 
-from _common import Motor as CommonMotor
+from _common import Motor as CommonMotor, ColorLight
 
 
 class Motor(CommonMotor):
     """LEGO® Power Functions 2.0 motors:
 
-    * ?/6181852: LEGO® BOOST Interactive Motor
-    * TODO: Expand list with compatible devices
+        * ?/6181852: LEGO® BOOST Interactive Motor
+        * TODO: Expand list with compatible devices
     """
 
 
 class ColorDistanceSensor():
-    """LEGO® Power Functions 2.0 Color and Distance Sensor.
-    Element ?/6182145, contained in:
-    * 17101: LEGO® BOOST Creative Toolbox (2017)
-    * ?: Separate part (?)
+    """LEGO® Power Functions 2.0 Color and Distance Sensor (?/6182145)
     """
 
     def __init__(self, port):
@@ -23,6 +20,7 @@ class ColorDistanceSensor():
         Arguments:
             port (Port): Port to which the sensor is connected.
         """
+        self.light = ColorLight()
         pass
 
     def color(self):
@@ -41,7 +39,7 @@ class ColorDistanceSensor():
 
         Returns:
             :ref:`percentage`: Ambient light intensity, ranging from 0 (dark)
-                               to 100 (bright).
+            to 100 (bright).
         """
         pass
 
@@ -50,7 +48,7 @@ class ColorDistanceSensor():
 
         Returns:
             :ref:`percentage`: Reflection, ranging from 0.0 (no reflection) to
-                               100.0 (high reflection).
+            100.0 (high reflection).
         """
         pass
 
@@ -71,6 +69,6 @@ class ColorDistanceSensor():
 
         Returns:
             :ref:`relativedistance`: Relative distance ranging from 0 (closest)
-                                     to 100 (farthest).
+            to 100 (farthest).
         """
         pass

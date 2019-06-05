@@ -99,4 +99,20 @@ Sensors
 
 Color and Distance Sensor
 ^^^^^^^^^^^^^^^^^^^^^^^^^
+
 .. autoclass:: lpf2devices.ColorDistanceSensor
+    :no-members:
+
+    .. automethod:: lpf2devices.ColorDistanceSensor.color
+
+    .. automethod:: lpf2devices.ColorDistanceSensor.ambient
+
+    .. automethod:: lpf2devices.ColorDistanceSensor.reflection
+
+    .. automethod:: lpf2devices.ColorDistanceSensor.rgb
+
+    .. automethod:: lpf2devices.ColorDistanceSensor.distance
+
+    .. automethod:: _common.light.color
+
+    .. automethod:: _common.light.off
