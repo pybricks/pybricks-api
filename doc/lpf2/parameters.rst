@@ -7,6 +7,13 @@
 .. autoclass:: pybricks.parameters.Port
     :no-members:
 
+    .. data:: A
+    .. data:: B
+    .. data:: C
+    .. data:: D
+    .. data:: E
+    .. data:: F
+
 .. autoclass:: pybricks.parameters.Direction
     :no-members:
 

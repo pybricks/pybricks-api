@@ -29,28 +29,15 @@ class Color(Enum):
 
 
 class Port(Enum):
-    """Port on the EV3 Programmable Brick.
-
-    Motor ports:
-
-    .. data:: A
-    .. data:: B
-    .. data:: C
-    .. data:: D
-
-    Sensor ports:
-
-    .. data:: S1
-    .. data:: S2
-    .. data:: S3
-    .. data:: S4
-    """
+    """Port on the programmable brick or hub."""
 
     # Generic motor/sensor ports
     A = ord('A')
     B = ord('B')
     C = ord('C')
     D = ord('D')
+    E = ord('E')
+    F = ord('F')
 
     # NXT/EV3 sensor ports
     S1 = ord('1')
