@@ -8,7 +8,7 @@
     :no-members:
 
     Motor ports:
-    
+
         .. data:: A
         .. data:: B
         .. data:: C

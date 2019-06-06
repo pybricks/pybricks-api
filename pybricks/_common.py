@@ -521,3 +521,8 @@ light = ModuleType('ColorLight')
 light.color = ColorLight.color
 light.off = ColorLight.off
 light.brightness = ColorLight.brightness
+
+lights = ModuleType('LightArray')
+lights.on = LightArray.on
+lights.off = LightArray.off
+lights.brightness = LightArray.brightness
