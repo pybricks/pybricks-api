@@ -7,12 +7,12 @@
 Light
 -----
 
-.. automethod:: pybricks.movehub.light.color
+.. automethod:: pybricks.movehub.light.on
 
     Example::
 
         # Make the light red
-        movehub.light.color(Color.RED)
+        movehub.light.on(Color.RED)
 
         # Wait
         wait(1000)
@@ -23,7 +23,7 @@ Light
 
 .. automethod:: pybricks.movehub.light.off
 
-.. automethod:: pybricks.movehub.light.brightness
+.. automethod:: pybricks.movehub.light.rgb
 
 Battery
 -------

@@ -30,12 +30,12 @@ Buttons
 Light
 -----
 
-.. automethod:: pybricks.ev3brick.light.color
+.. automethod:: pybricks.ev3brick.light.on
 
     Example::
 
         # Make the light red
-        brick.light.color(Color.RED)
+        brick.light.on(Color.RED)
 
         # Wait
         wait(1000)
@@ -45,8 +45,6 @@ Light
 
 
 .. automethod:: pybricks.ev3brick.light.off
-
-.. automethod:: pybricks.ev3brick.light.brightness
 
 Sound
 -----

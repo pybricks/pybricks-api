@@ -113,6 +113,12 @@ Color and Distance Sensor
 
     .. automethod:: pybricks.lpf2devices.ColorDistanceSensor.distance
 
-    .. automethod:: pybricks._common.light.color
+    .. rubric:: Built-in light
+
+    This sensor has a built-in light. You can make it red, green, blue, or turn
+    it off. If you use the sensor to measure something afterwards, the light
+    automatically turns back on at the default color for that sensing method.
+
+    .. automethod:: pybricks._common.light.on
 
     .. automethod:: pybricks._common.light.off

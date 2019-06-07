@@ -8,12 +8,12 @@
 Light
 -----
 
-.. automethod:: pybricks.cityhub.light.color
+.. automethod:: pybricks.cityhub.light.on
 
     Example::
 
         # Make the light red
-        pybricks.cityhub.light.color(Color.RED)
+        pybricks.cityhub.light.on(Color.RED)
 
         # Wait
         wait(1000)
@@ -24,7 +24,7 @@ Light
 
 .. automethod:: pybricks.cityhub.light.off
 
-.. automethod:: pybricks.cityhub.light.brightness
+.. automethod:: pybricks.cityhub.light.rgb
 
 Battery
 -------

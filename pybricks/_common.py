@@ -421,60 +421,32 @@ class Speaker():
 
 
 class Light():
-    """Control a single color LED."""
+    """Control a single-color light."""
 
-    def on(self):
-        """Turn on the light at maximum brightness."""
-        pass
+    def on(self, brightness=100):
+        """Turn on the light at the specified brightness.
+
+        Arguments:
+            brightness (:ref:`percentage`):
+                Brightness of the light (*Default*: 100).
+        """
 
     def off(self):
         """Turn off the light."""
-        pass
-
-    def brightness(self, brightness):
-        """Set the brightness of the light.
-
-        Arguments:
-            brightness (:ref:`percentage`): Brightness of the light.
-        """
-        pass
-
-
-class LightArray():
-    """Control an array of single color LEDs."""
-
-    def __init__(self, number_of_lights):
-        self.number_of_lights = number_of_lights
-
-    def on(self):
-        """Turn on all the lights at maximum brightness."""
-        pass
-
-    def off(self):
-        """Turn off all the lights."""
-        pass
-
-    def brightness(self, *brightnesses):
-        """brightness(first_light, ..., last_light)
-
-        Set the brightness of each light.
-
-        Arguments:
-            brightnesses (:ref:`percentage`, ..., :ref:`percentage`):
-                Brightness of each light.
-        """
         pass
 
 
 class ColorLight():
-    """Control an RGB LED."""
+    """Control a multi-color light."""
 
-    def color(self, color):
-        """Turn on the light at the specified color.
+    def on(self, color, brightness=100):
+        """Turn on the light at the specified color and brightness.
 
         Arguments:
             color (Color): Color of the light. The light turns off if you
                            choose ``None`` or a color that is not available.
+            brightness (:ref:`percentage`): Brightness of the selected
+                                            color (*Default*: 100).
         """
         pass
 
@@ -482,7 +454,7 @@ class ColorLight():
         """Turn off the light."""
         pass
 
-    def brightness(self, red, green, blue):
+    def rgb(self, red, green, blue):
         """Set the brightness of the red, green, and blue light.
 
         Arguments:
@@ -490,6 +462,55 @@ class ColorLight():
             green (:ref:`percentage`): Brightness of the green light.
             blue (:ref:`percentage`): Brightness of the blue light.
         """
+        pass
+
+
+class LightArray():
+    """Control an array of single-color lights."""
+
+    def on(self, *brightnesses):
+        """on(first_light, ..., last_light)
+
+        Set the brightness of each light.
+
+        Arguments:
+            brightnesses (:ref:`percentage`, ..., :ref:`percentage`):
+                Brightness of each light. If you give just one value, all
+                lights turn on with that same brightness.
+        """
+        pass
+
+    def off(self):
+        """Turn off all the lights."""
+        pass
+
+
+class LightGrid():
+    """Control a rectangular grid of single-color lights."""
+
+    def image(self, matrix, clear=True):
+        """Show an image made up of pixels of a given brightness.
+
+        Arguments:
+            matrix (2D Array): Matrix of intensities (:ref:`percentage`).
+            clear (bool): Whether to turn off all the lights before showing
+                the new image (*Default*: ``True``). If you choose ``False``,
+                the given matrix is added to one already shown.
+        """
+        pass
+
+    def pixel(self, x, y, brightness):
+        """Turn on a pixel at the specified brightness.
+
+        Arguments:
+            x (int): horizontal index, starting at 0 from the left.
+            y (int): vertical index, starting at 0 from the top.
+            brightness (:ref:`percentage`): Brightness of the pixel.
+        """
+        pass
+
+    def off(self):
+        """Turn off all the pixels."""
         pass
 
 
@@ -518,11 +539,15 @@ class Battery():
 # the ColorDistanceSensor. Autodoc does not pick those up, so instantiate them
 # here. Modules can just import them as needed.
 light = ModuleType('ColorLight')
-light.color = ColorLight.color
+light.on = ColorLight.on
 light.off = ColorLight.off
-light.brightness = ColorLight.brightness
+light.rgb = ColorLight.rgb
 
 lights = ModuleType('LightArray')
 lights.on = LightArray.on
 lights.off = LightArray.off
-lights.brightness = LightArray.brightness
+
+grid = ModuleType('LightGrid')
+grid.image = LightGrid.image
+grid.pixel = LightGrid.pixel
+grid.off = LightGrid.off
