@@ -468,6 +468,14 @@ class ColorLight():
 class LightArray():
     """Control an array of single-color lights."""
 
+    def __init__(self, lights):
+        """Initialize the light grid.
+
+        Arguments:
+            lights (int): Number of lights
+        """
+        pass
+
     def on(self, *brightnesses):
         """on(first_light, ..., last_light)
 
@@ -487,6 +495,15 @@ class LightArray():
 
 class LightGrid():
     """Control a rectangular grid of single-color lights."""
+
+    def __init__(self, rows, columns):
+        """Initialize the light grid.
+
+        Arguments:
+            rows (int): Number of rows in the grid
+            columns (int): Number of columns in the grid
+        """
+        pass
 
     def image(self, matrix, clear=True):
         """Show an image made up of pixels of a given brightness.
@@ -546,8 +563,3 @@ light.rgb = ColorLight.rgb
 lights = ModuleType('LightArray')
 lights.on = LightArray.on
 lights.off = LightArray.off
-
-grid = ModuleType('LightGrid')
-grid.image = LightGrid.image
-grid.pixel = LightGrid.pixel
-grid.off = LightGrid.off
