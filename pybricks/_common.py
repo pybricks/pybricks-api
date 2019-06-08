@@ -482,7 +482,7 @@ class LightArray():
         Set the brightness of each light.
 
         Arguments:
-            brightnesses (:ref:`percentage`, ..., :ref:`percentage`):
+            brightnesses (:ref:`brightness`, ..., :ref:`brightness`):
                 Brightness of each light. If you give just one value, all
                 lights turn on with that same brightness.
         """
