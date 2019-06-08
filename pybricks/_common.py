@@ -427,7 +427,7 @@ class Light():
         """Turn on the light at the specified brightness.
 
         Arguments:
-            brightness (:ref:`percentage`):
+            brightness (:ref:`brightness`):
                 Brightness of the light (*Default*: 100).
         """
 
@@ -445,7 +445,7 @@ class ColorLight():
         Arguments:
             color (Color): Color of the light. The light turns off if you
                            choose ``None`` or a color that is not available.
-            brightness (:ref:`percentage`): Brightness of the selected
+            brightness (:ref:`brightness`): Brightness of the selected
                                             color (*Default*: 100).
         """
         pass
@@ -458,9 +458,9 @@ class ColorLight():
         """Set the brightness of the red, green, and blue light.
 
         Arguments:
-            red (:ref:`percentage`): Brightness of the red light.
-            green (:ref:`percentage`): Brightness of the green light.
-            blue (:ref:`percentage`): Brightness of the blue light.
+            red (:ref:`brightness`): Brightness of the red light.
+            green (:ref:`brightness`): Brightness of the green light.
+            blue (:ref:`brightness`): Brightness of the blue light.
         """
         pass
 
@@ -509,7 +509,7 @@ class LightGrid():
         """Show an image made up of pixels of a given brightness.
 
         Arguments:
-            matrix (2D Array): Matrix of intensities (:ref:`percentage`).
+            matrix (2D Array): Matrix of intensities (:ref:`brightness`).
             clear (bool): Whether to turn off all the lights before showing
                 the new image (*Default*: ``True``). If you choose ``False``,
                 the given matrix is added to one already shown.
@@ -522,7 +522,7 @@ class LightGrid():
         Arguments:
             x (int): horizontal index, starting at 0 from the left.
             y (int): vertical index, starting at 0 from the top.
-            brightness (:ref:`percentage`): Brightness of the pixel.
+            brightness (:ref:`brightness`): Brightness of the pixel.
         """
         pass
 

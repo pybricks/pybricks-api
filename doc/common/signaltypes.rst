@@ -107,27 +107,58 @@ For example, the speed of a robotic vehicle is expressed in mm/s.
 
 .. _acceleration:
 
-rotational acceleration: deg/s/s -------------------------------- Rotational
-acceleration, or *angular acceleration* describes how fast the rotational speed
-changes. This is expressed as the change of the number of degrees per second,
-during one second (deg/s/s). This is also commonly written as  :math:`deg/s^2`.
+rotational acceleration: deg/s/s
+--------------------------------
+
+Rotational acceleration, or *angular acceleration* describes how fast the
+rotational speed changes. This is expressed as the change of the number of
+degrees per second, during one second (deg/s/s). This is also commonly written
+as  :math:`deg/s^2`.
 
 For example, you can adjust the rotational acceleration setting of a
 :meth:`Motor <.ev3devices.Motor.set_run_settings>` to change how smoothly or
 how quickly it reaches the constant speed set point.
 
+.. _force:
+
+force: N
+------------
+Force values are expressed in newtons (N).
+
+While we recommend working with newtons in your programs, you can use the
+following table to convert to and from other units.
+
++---------+------+-------+-----------------------------+
+|         | mN   | N     | lbf                         |
++---------+------+-------+-----------------------------+
+| 1 mN =  | 1    | 0.001 | :math:`2.248 \cdot 10^{-4}` |
++---------+------+-------+-----------------------------+
+| 1 N =   | 1000 | 1     | 0.2248                      |
++---------+------+-------+-----------------------------+
+| 1 lbf = | 4448 | 4.448 | 1                           |
++---------+------+-------+-----------------------------+
 
 .. _percentage:
 
 percentage: %
 --------------
 
-Some signals do not have specific units but range from a minimum (0%) to a
-maximum (100%). A specific type of percentages are :ref:`relative distances
-<relativedistance>`.
+Some signals do not have specific units. They range from a minimum (0%) to a
+maximum (100%). Specifics type of percentages are :ref:`relative distances
+<relativedistance>` or  :ref:`brightnesses <brightness>`.
 
-For example, the sound :meth:`volume <.ev3brick.sound.beep>` ranges from 0% to
-100%.
+Another example is the sound :meth:`volume <.ev3brick.sound.beep>`, which
+ranges from 0% (silent) to 100% (loudest).
+
+.. _brightness:
+
+brightness: %
+--------------
+
+The perceived brightness of a light is expressed as a percentage. It is 0% when
+the light is off and 100% when the light is fully on. When you choose 50%, this
+means that the light is perceived as approximately half as bright to the human
+eye.
 
 .. _frequency:
 
