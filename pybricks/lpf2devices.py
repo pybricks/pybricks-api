@@ -4,11 +4,17 @@ from ._common import Motor as CommonMotor, ColorLight
 
 
 class Motor(CommonMotor):
-    """LEGO® Power Functions 2.0 motors:
+    """LEGO® Power Functions 2.0 motors"""
 
-        * ?/6181852: LEGO® BOOST Interactive Motor
-        * TODO: Expand list with compatible devices
-    """
+    def reset_angle(self, angle):
+        """Reset the accumulated rotation angle of the motor.
+
+        Arguments:
+            angle (:ref:`angle`): Value to which the angle should be reset. If
+                                  you don't specify an angle, the angle of the
+                                  marker on the shaft will be used, if present.
+        """
+        pass
 
 
 class ColorDistanceSensor():
