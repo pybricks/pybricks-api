@@ -48,6 +48,6 @@ class DriveBase():
 
         Arguments:
             stop_type (Stop): Whether to coast, brake, or hold (*Default*:
-                              :class:`Stop.COAST <parameters.Stop>`).
+                              :class:`Stop.COAST <.parameters.Stop>`).
         """
         pass

@@ -111,7 +111,7 @@ class Motor():
 
         Arguments:
             stop_type (Stop): Whether to coast, brake, or hold (*Default*:
-                              :class:`Stop.COAST <parameters.Stop>`).
+                              :class:`Stop.COAST <.parameters.Stop>`).
         """
         pass
 
@@ -144,7 +144,7 @@ class Motor():
             time (:ref:`time`): Duration of the maneuver.
             stop_type (Stop): Whether to coast, brake, or hold after coming to
                               a standstill (*Default*:
-                              :class:`Stop.COAST <parameters.Stop>`).
+                              :class:`Stop.COAST <.parameters.Stop>`).
             wait (bool): Wait for the maneuver to complete before continuing
                          with the rest of the program (*Default*: ``True``).
                          This means that your program waits for the
@@ -169,7 +169,7 @@ class Motor():
                                            rotate.
             stop_type (Stop): Whether to coast, brake, or hold after coming to
                               a standstill (*Default*:
-                              :class:`Stop.COAST <parameters.Stop>`).
+                              :class:`Stop.COAST <.parameters.Stop>`).
             wait (bool): Wait for the maneuver to complete before continuing
                          with the rest of the program (*Default*: ``True``).
                          This means that your program waits until the motor has
@@ -201,7 +201,7 @@ class Motor():
                                          angle.
             stop_type (Stop): Whether to coast, brake, or hold after coming to
                               a standstill (*Default*:
-                              :class:`Stop.COAST <parameters.Stop>`).
+                              :class:`Stop.COAST <.parameters.Stop>`).
             wait (bool): Wait for the maneuver to complete before continuing
                          with the rest of the program (*Default*: ``True``).
                          This means that your program waits until the motor
@@ -224,7 +224,7 @@ class Motor():
             speed (:ref:`speed`): Speed of the motor.
             stop_type (Stop): Whether to coast, brake, or hold after coming to
                               a standstill (*Default*:
-                              :class:`Stop.COAST <parameters.Stop>`).
+                              :class:`Stop.COAST <.parameters.Stop>`).
             duty_limit (:ref:`percentage`): Relative torque limit. This limit
                                             works just like
                                             :meth:`.set_dc_settings`, but in

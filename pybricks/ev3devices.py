@@ -70,7 +70,7 @@ class ColorSensor():
         :returns:
             ``Color.BLACK``, ``Color.BLUE``, ``Color.GREEN``, ``Color.YELLOW``,
             ``Color.RED``, ``Color.WHITE``, ``Color.BROWN`` or ``None``.
-        :rtype: :class:`Color <parameters.Color>`, or ``None`` if no color is
+        :rtype: :class:`Color <.parameters.Color>`, or ``None`` if no color is
                 detected.
 
         """
@@ -157,7 +157,7 @@ class InfraredSensor():
             channel (int): Channel number of the remote.
 
         :returns: List of pressed buttons on the remote on selected channel.
-        :rtype: List of :class:`Button <parameters.Button>`
+        :rtype: List of :class:`Button <.parameters.Button>`
 
         """
         pass
