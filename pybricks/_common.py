@@ -469,7 +469,7 @@ class LightArray():
     """Control an array of single-color lights."""
 
     def __init__(self, lights):
-        """Initialize the light grid.
+        """Initialize the light array.
 
         Arguments:
             lights (int): Number of lights
@@ -516,18 +516,48 @@ class LightGrid():
         """
         pass
 
-    def pixel(self, x, y, brightness):
+    def pixel(self, row, column, brightness):
         """Turn on a pixel at the specified brightness.
 
         Arguments:
-            x (int): horizontal index, starting at 0 from the left.
-            y (int): vertical index, starting at 0 from the top.
+            row (int): Vertical grid index, starting at 0 from the top.
+            column (int): Horizontal grid index, starting at 0 from the left.
             brightness (:ref:`brightness`): Brightness of the pixel.
         """
         pass
 
     def off(self):
         """Turn off all the pixels."""
+        pass
+
+    def number(self, number):
+        """Display a number on the light grid.
+
+        Arguments:
+            number (int): The number to be displayed.
+        """
+        pass
+
+    def char(self, character):
+        """Display a character or symbol on the light grid. This may
+        be any letter (``a``--``z``), capital letter (``A``--``Z``) or one of
+        the following symbols: ``!"#$%&'()*+,-./:;<=>?@[\\]^_`{|}``.
+
+        Arguments:
+            character (str): The character or symbol to be displayed.
+        """
+        pass
+
+    def text(self, text, pause=500):
+        """Display a text string, one charachter at a time, with a pause
+        between each character. After the last charachter is shown, the light
+        grid turns off.
+
+        Arguments:
+            character (str): The character or symbol to be displayed.
+            time (:ref:`time`): How long to show a character before showing
+                                the next one.
+        """
         pass
 
 
