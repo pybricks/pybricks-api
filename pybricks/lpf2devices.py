@@ -2,6 +2,9 @@
 
 from ._common import Motor as CommonMotor, ColorLight
 
+from ._common import KeyPad
+# The above abviously needs fixing (but not until after fixing merge conflict)
+
 
 class Motor(CommonMotor):
     """LEGO® Power Functions 2.0 motors"""
@@ -15,6 +18,24 @@ class Motor(CommonMotor):
                                   marker on the shaft will be used, if present.
         """
         pass
+
+
+class RemoteControl():
+    """LEGO® Power Functions 2.0 Bluetooth Remote Control/Handset (6214560)"""
+
+    def __init__(self, device=None, timeout=10000):
+        """Connect the handset to the hub.
+
+        Arguments:
+            device (str): Bluetooth address of the handset (? TODO ?).
+                 If you do not specify a device identifier, the hub will
+                 attempt to pair with any handset that is currently in
+                 advertising mode.
+            timeout (:ref:`time`): The amount of time before giving up
+                 searching.
+        """
+        self.buttons = KeyPad()
+        self.light = ColorLight()
 
 
 class ColorDistanceSensor():

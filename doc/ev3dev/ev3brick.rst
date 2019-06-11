@@ -8,22 +8,22 @@
 Buttons
 -------
 
-.. autofunction:: pybricks.ev3brick.buttons
+.. automethod:: pybricks.ev3brick.buttons.pressed
 
     Examples::
 
         # Do something if the left button is pressed
-        if Button.LEFT in brick.buttons():
+        if Button.LEFT in brick.buttons.pressed():
             print("The left button is pressed.")
 
     ::
 
         # Wait until any of the buttons are pressed
-        while not any(brick.buttons()):
+        while not any(brick.buttons.pressed()):
             wait(10)
 
         # Wait until all buttons are released
-        while any(brick.buttons()):
+        while any(brick.buttons.pressed()):
             wait(10)
 
 

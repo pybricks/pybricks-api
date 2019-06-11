@@ -557,6 +557,19 @@ class LightGrid():
         pass
 
 
+class KeyPad():
+    """Get status of buttons on a keypad layout."""
+
+    def pressed(self):
+        """Check which buttons are currently pressed.
+
+        :returns: List of pressed buttons.
+        :rtype: List of :class:`Button <.parameters.Button>`
+
+        """
+        pass
+
+
 class Battery():
     """Get the status of a battery."""
 
@@ -589,3 +602,6 @@ light.rgb = ColorLight.rgb
 lights = ModuleType('LightArray')
 lights.on = LightArray.on
 lights.off = LightArray.off
+
+buttons = ModuleType('KeyPad')
+buttons.pressed = KeyPad.pressed

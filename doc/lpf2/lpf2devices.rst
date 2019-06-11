@@ -122,3 +122,18 @@ Color and Distance Sensor
     .. automethod:: pybricks._common.light.on
 
     .. automethod:: pybricks._common.light.off
+
+Other Devices
+---------------
+
+Remote Control
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. autoclass:: pybricks.lpf2devices.RemoteControl
+    :no-members:
+
+    .. automethod:: pybricks._common.light.on
+
+    .. automethod:: pybricks._common.light.off
+
+    .. automethod:: pybricks._common.buttons.pressed
