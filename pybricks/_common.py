@@ -20,8 +20,7 @@ class Motor():
 
 
                 For example: ``[12, 36]`` represents a gear train with a
-                12-tooth and a 36-tooth gear. See :ref:`ratio` for illustrated
-                examples.
+                12-tooth and a 36-tooth gear.
 
                 Use a list of lists for multiple gear trains, such as
                 ``[[12, 36], [20, 16, 40]]``.
@@ -49,7 +48,7 @@ class Motor():
         pass
 
     def dc(self, duty):
-        """Set the :ref:`duty cycle <duty>` of the motor.
+        """Set the duty cycle of the motor.
 
         Arguments:
             duty (:ref:`percentage`): The duty cycle (-100.0 to 100).
@@ -289,7 +288,6 @@ class Motor():
 
         This applies to the ``run``, ``run_time``, ``run_angle``,
         ``run_target``, or ``run_until_stalled`` commands you give the motor.
-        See also the :ref:`default parameters <defaultpars>` for each motor.
 
         Arguments:
             max_speed (:ref:`speed`): Maximum speed of the motor during a motor
@@ -307,8 +305,6 @@ class Motor():
     def set_pid_settings(self, kp, ki, kd, tight_loop_limit, angle_tolerance,
                          speed_tolerance, stall_speed, stall_time):
         """Configure the settings of the position and speed controllers.
-        See also :ref:`pid` and the :ref:`default parameters <defaultpars>`
-        for each motor.
 
         Arguments:
             kp (int): Proportional position (and integral speed) control

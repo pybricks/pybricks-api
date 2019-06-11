@@ -48,8 +48,6 @@ programs and start inventing your own programs.
 
    signaltypes
 
-.. motorcontrol
-
 .. toctree::
    :maxdepth: 1
    :caption: Demo Programs
