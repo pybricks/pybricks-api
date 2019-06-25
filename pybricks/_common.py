@@ -472,20 +472,28 @@ class LightArray():
         """
         pass
 
-    def on(self, *brightnesses):
-        """on(first_light, ..., last_light)
-
-        Set the brightness of each light.
+    def on(self, brightness=100):
+        """Turn on all the lights at the specified brightness.
 
         Arguments:
-            brightnesses (:ref:`brightness`, ..., :ref:`brightness`):
-                Brightness of each light. If you give just one value, all
-                lights turn on with that same brightness.
+            brightness (:ref:`brightness`):
+                Brightness of the lights (*Default*: 100).
         """
         pass
 
     def off(self):
         """Turn off all the lights."""
+        pass
+
+    def array(self, *brightnesses):
+        """array(first_light, ..., last_light)
+
+        Set the brightness of each light individually.
+
+        Arguments:
+            brightnesses (:ref:`brightness`, ..., :ref:`brightness`):
+                Brightness of each light.
+        """
         pass
 
 
@@ -519,6 +527,15 @@ class LightGrid():
             row (int): Vertical grid index, starting at 0 from the top.
             column (int): Horizontal grid index, starting at 0 from the left.
             brightness (:ref:`brightness`): Brightness of the pixel.
+        """
+        pass
+
+    def on(self, brightness=100):
+        """Turn on all the pixels at the specified brightness.
+
+        Arguments:
+            brightness (:ref:`brightness`):
+                Brightness of the lights (*Default*: 100).
         """
         pass
 
@@ -601,6 +618,7 @@ light.rgb = ColorLight.rgb
 
 lights = ModuleType('LightArray')
 lights.on = LightArray.on
+lights.array = LightArray.array
 lights.off = LightArray.off
 
 buttons = ModuleType('KeyPad')
