@@ -2,7 +2,7 @@
 speakers, and batteries."""
 
 from types import ModuleType
-from .parameters import Align, Direction, Stop, Side, Axis
+from .parameters import Align, Direction, Stop, Axis
 
 
 class Motor():

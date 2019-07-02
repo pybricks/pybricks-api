@@ -198,26 +198,6 @@ class Axis():
     Z = (0, 0, 1)
 
 
-class Side():
-    """Sides or face of a device such as a hub or a sensor. Such devices are
-    usually shaped like a rectangular box with six of the following sides:
-
-    .. data:: TOP
-    .. data:: BOTTOM
-    .. data:: FRONT
-    .. data:: BACK
-    .. data:: LEFT
-    .. data:: RIGHT
-    """
-
-    RIGHT = Axis.X
-    FRONT = Axis.Y
-    TOP = Axis.Z
-    LEFT = tuple([-u for u in Axis.X])
-    BACK = tuple([-u for u in Axis.Y])
-    BOTTOM = tuple([-u for u in Axis.Z])
-
-
 class Align():
     """Alignment of an image on the display.
 

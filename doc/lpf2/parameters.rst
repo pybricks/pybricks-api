@@ -26,8 +26,5 @@
 .. autoclass:: pybricks.parameters.Button
     :no-members:
 
-.. autoclass:: pybricks.parameters.Side
-    :no-members:
-
 .. autoclass:: pybricks.parameters.Axis
     :no-members:

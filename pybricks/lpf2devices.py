@@ -3,7 +3,7 @@
 from ._common import Motor as CommonMotor, ColorLight
 
 from ._common import KeyPad, Accelerometer
-from .parameters import Side
+from .parameters import Axis
 # The above abviously needs fixing (but not until after fixing merge conflict)
 
 
@@ -42,20 +42,18 @@ class RemoteControl():
 class TiltSensor(Accelerometer):
     """LEGO® Power Functions 2.0 Tilt Sensor (45305/?)"""
 
-    def __init__(self, port, upward=Side.TOP, forward=Side.FRONT):
-        """TiltSensor(port, upward=Side.TOP, forward=Side.FRONT)
+    def __init__(self, port, top=Axis.Z, front=Axis.Y):
+        """TiltSensor(port, top=Axis.Z, front=Axis.Y)
 
         Arguments:
             port (Port): Port to which the sensor is connected.
-            upward (Side): Which side of the device points upward in
-                           your design. For example, you can choose
-                           ``upward=Side.BOTTOM`` if you
-                           mounted it upside down. (*Default*:
-                           :class:`Side.TOP <.parameters.Side>`).
-
-            forward (Side): Which side of the device points forward in
-                            your design. (*Default*:
-                            :class:`Side.FRONT <.parameters.Side>`).
+            top (Axis): Which direction the top of the device faces in the
+                        neutral orientation. For example, you can choose
+                        ``top=-Axis.Z`` if you mounted it such that the neutral
+                        orientation is upside down (*Default*: :class:`Axis.Z
+                        <.parameters.Axis>`).
+            front (Axis): Which direction the front of the device faces in the
+                        neutral orientation.
         """
         pass
 
