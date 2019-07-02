@@ -130,7 +130,11 @@ Tilt Sensor
 .. autoclass:: pybricks.lpf2devices.TiltSensor
     :no-members:
 
+    .. automethod:: neutral
+
     .. automethod:: acceleration
+
+    .. automethod:: tilt
 
 Other Devices
 ---------------

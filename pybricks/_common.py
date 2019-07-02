@@ -611,17 +611,35 @@ class Battery():
 class Accelerometer():
     """Get measurements from an accelerometer."""
 
-    def acceleration(self, axis=None):
-        """Measure the acceleration of the device along a given axis.
+    def neutral(self, top, front):
+        """Configure the neutral orientation of the device or hub. You do this
+        by specifying how it is mounted on your design, in terms of the
+        :ref:`robot reference frame <robotframe>`. In this given neutral
+        orientation, the tilt will be zero. Now, all imu accelerations and
+        angles will be given in the :ref:`robot reference frame <robotframe>`.
 
         Arguments:
-            axis (Axis): Body frame axis along which the acceleration is
+            top (Axis): Which direction the top of the device faces in the
+                        neutral orientation. For example, you can
+                        choose ``top=-Axis.Z`` if you mounted it such that the
+                        neutral orientation is upside down.
+            front (Axis): Which direction the front of the device faces in the
+                        neutral orientation.
+        """
+        pass
+
+    def acceleration(self, axis=None):
+        """Measure the acceleration of the device along a given axis in the
+        :ref:`robot reference frame <robotframe>`.
+
+        Arguments:
+            axis (Axis): Axis along which the acceleration is
                          measured. (*Default*: ``None``)
         Returns:
             :ref:`linacceleration`. Returns a :ref:`scalar` of the acceleration
             along the specified axis.
             If ``axis`` is ``None``, you get a :ref:`vector` with the
-            accelerations along all three body axes (x, y, z).
+            accelerations along all three axes (x, y, z).
 
         """
         pass
@@ -631,8 +649,8 @@ class Accelerometer():
         orientation.
 
         The order of rotation is pitch-then-roll. This is equivalent to a
-        positive rotation along the body x-axis and then a positive rotation
-        along the body y-axis.
+        positive rotation along the x-axis and then a positive rotation
+        along the y-axis.
 
         Returns:
             (:ref:`angle`, :ref:`angle`). Pitch and roll angles.
