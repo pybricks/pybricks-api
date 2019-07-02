@@ -628,17 +628,19 @@ class Accelerometer():
         """
         pass
 
-    def acceleration(self, axis=None):
-        """Measure the acceleration of the device along a given axis in the
+    def acceleration(self, axis=Axis.ALL):
+        """acceleration(axis=Axis.ALL)
+
+        Measure the acceleration of the device along a given axis in the
         :ref:`robot reference frame <robotframe>`.
 
         Arguments:
             axis (Axis): Axis along which the acceleration is
-                         measured. (*Default*: ``None``)
+                         measured. (*Default*: ``axis=Axis.ALL``)
         Returns:
             :ref:`linacceleration`. Returns a :ref:`scalar` of the acceleration
             along the specified axis.
-            If ``axis`` is ``None``, you get a :ref:`vector` with the
+            If you choose ``axis=Axis.ALL``, you get a :ref:`vector` with the
             accelerations along all three axes (x, y, z).
 
         """
