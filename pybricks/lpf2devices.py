@@ -2,7 +2,8 @@
 
 from ._common import Motor as CommonMotor, ColorLight
 
-from ._common import KeyPad
+from ._common import KeyPad, Accelerometer
+from .parameters import Side
 # The above abviously needs fixing (but not until after fixing merge conflict)
 
 
@@ -38,9 +39,29 @@ class RemoteControl():
         self.light = ColorLight()
 
 
+class TiltSensor(Accelerometer):
+    """LEGO® Power Functions 2.0 Tilt Sensor (45305/?)"""
+
+    def __init__(self, port, upward=Side.TOP, forward=Side.FRONT):
+        """TiltSensor(port, upward=Side.TOP, forward=Side.FRONT)
+
+        Arguments:
+            port (Port): Port to which the sensor is connected.
+            upward (Side): Which side of the device points upward in
+                           your design. For example, you can choose
+                           ``upward=Side.BOTTOM`` if you
+                           mounted it upside down. (*Default*:
+                           :class:`Side.TOP <.parameters.Side>`).
+
+            forward (Side): Which side of the device points forward in
+                            your design. (*Default*:
+                            :class:`Side.FRONT <.parameters.Side>`).
+        """
+        pass
+
+
 class ColorDistanceSensor():
-    """LEGO® Power Functions 2.0 Color and Distance Sensor (?/6182145)
-    """
+    """LEGO® Power Functions 2.0 Color and Distance Sensor (?/6182145)"""
 
     def __init__(self, port):
         """ColorDistanceSensor(port)

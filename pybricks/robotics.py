@@ -24,7 +24,7 @@ class DriveBase():
         the center point between the wheels of the robot.
 
         Arguments:
-            speed (:ref:`travelspeed`): Forward speed of the robot.
+            speed (:ref:`linspeed`): Forward speed of the robot.
             steering (:ref:`speed`): Turn rate of the robot.
         """
         pass
@@ -34,7 +34,7 @@ class DriveBase():
         time, and then stop.
 
         Arguments:
-            speed (:ref:`travelspeed`): Forward speed of the robot.
+            speed (:ref:`linspeed`): Forward speed of the robot.
             steering (:ref:`speed`): Turn rate of the robot.
             time (:ref:`time`): Duration of the maneuver.
 

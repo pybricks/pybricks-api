@@ -123,6 +123,15 @@ Color and Distance Sensor
 
     .. automethod:: pybricks._common.light.off
 
+
+Tilt Sensor
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. autoclass:: pybricks.lpf2devices.TiltSensor
+    :no-members:
+
+    .. automethod:: acceleration
+
 Other Devices
 ---------------
 

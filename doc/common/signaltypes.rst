@@ -1,6 +1,9 @@
 Signals and Units
 =================
 
+Units
+~~~~~~
+
 Many commands allow you to specify arguments in terms of well-known physical
 quantities. This page gives an overview of each quantity and its unit.
 
@@ -97,13 +100,20 @@ For example, the distance value of the :meth:`InfraredSensor
 
 
 
-.. _travelspeed:
+.. _linspeed:
 
 speed: mm/s
 ------------
 Linear speeds are expressed as millimeters per second (mm/s).
 
 For example, the speed of a robotic vehicle is expressed in mm/s.
+
+.. _linacceleration:
+
+linear acceleration: mm/s/s
+--------------------------------
+
+TODO
 
 .. _acceleration:
 
@@ -187,3 +197,20 @@ Electrical currents are expressed in milliampere (mA).
 
 For example, you can check the current supplied by the :meth:`battery
 <.ev3brick.battery.current>`.
+
+Scalars and Vectors
+~~~~~~~~~~~~~~~~~~~~~~~
+
+.. _scalar:
+
+scalar
+--------------
+
+TODO
+
+.. _vector:
+
+vector
+--------------
+
+TODO

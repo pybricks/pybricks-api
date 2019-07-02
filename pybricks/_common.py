@@ -2,7 +2,7 @@
 speakers, and batteries."""
 
 from types import ModuleType
-from .parameters import Align, Direction, Stop
+from .parameters import Align, Direction, Stop, Side, Axis
 
 
 class Motor():
@@ -603,6 +603,25 @@ class Battery():
 
         Returns:
             :ref:`current`: Battery current.
+
+        """
+        pass
+
+
+class Accelerometer():
+    """Get measurements from an accelerometer."""
+
+    def acceleration(self, axis=None):
+        """Measure the acceleration of the device along a given axis.
+
+        Arguments:
+            axis (Axis): Body frame axis along which the acceleration is
+                         measured. (*Default*: ``None``)
+        Returns:
+            :ref:`linacceleration`. Returns a :ref:`scalar` of the acceleration
+            along the specified axis.
+            If ``axis`` is ``None``, you get a :ref:`vector` with the
+            accelerations along all three body axes (x, y, z).
 
         """
         pass
