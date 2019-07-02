@@ -655,7 +655,7 @@ class Accelerometer():
         along the y-axis.
 
         Returns:
-            (:ref:`angle`, :ref:`angle`). Pitch and roll angles.
+            (:ref:`angle`, :ref:`angle`): Pitch and roll angles.
 
         """
         pass
@@ -682,6 +682,31 @@ class Accelerometer():
 
         """
         # def shaken(self, axis=Axis.ALL, bidirectional=True, tolerance=45):
+        pass
+
+
+class IMU(Accelerometer):
+
+    def heading(self):
+        """Get the heading angle relative to the starting orientation. It is a
+        a positive rotation around the :ref:`z-axis in the robot
+        frame <robotframe>`, prior to applying any tilt rotation.
+
+        For a vehicle viewed from the top, this means that
+        a positive heading value corresponds to a counterclockwise rotation.
+
+        Returns:
+            :ref:`angle`: Heading angle relative to starting orientation.
+
+        """
+        pass
+
+    def reset_heading(self, angle):
+        """Reset the accumulated heading angle of the robot.
+
+        Arguments:
+            angle (:ref:`angle`): Value to which the heading should be reset.
+        """
         pass
 
 
