@@ -48,10 +48,10 @@ class TiltSensor(Accelerometer):
         Arguments:
             port (Port): Port to which the sensor is connected.
             top (Axis): Which direction the top of the device faces in the
-                        neutral orientation. For example, you can choose
-                        ``top=-Axis.Z`` if you mounted it such that the neutral
-                        orientation is upside down (*Default*: :class:`Axis.Z
-                        <.parameters.Axis>`).
+                        neutral horizontal orientation. For example, you can
+                        choose ``top=-Axis.Z`` if you mounted it such that the
+                        neutral orientation is upside down
+                        (*Default*: :class:`Axis.Z <.parameters.Axis>`).
             front (Axis): Which direction the front of the device faces in the
                         neutral orientation.
         """

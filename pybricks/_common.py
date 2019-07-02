@@ -626,6 +626,20 @@ class Accelerometer():
         """
         pass
 
+    def tilt(self):
+        """Get the pitch and roll angles relative to the horizontal
+        orientation.
+
+        The order of rotation is pitch-then-roll. This is equivalent to a
+        positive rotation along the body x-axis and then a positive rotation
+        along the body y-axis.
+
+        Returns:
+            (:ref:`angle`, :ref:`angle`). Pitch and roll angles.
+
+        """
+        pass
+
 
 # Workaround for documenting instance attributes such as <self.light> of the
 # the ColorDistanceSensor. Autodoc does not pick those up, so instantiate them
