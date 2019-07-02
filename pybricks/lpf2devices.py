@@ -3,7 +3,6 @@
 from ._common import Motor as CommonMotor, ColorLight
 
 from ._common import KeyPad, Accelerometer
-from .parameters import Axis
 # The above abviously needs fixing (but not until after fixing merge conflict)
 
 

@@ -660,6 +660,30 @@ class Accelerometer():
         """
         pass
 
+    def tapped(self):
+        """Check if the device or hub was tapped.
+
+        Returns:
+            bool:
+                ``True`` if tapped since this method was last called. ``False``
+                otherwise.
+
+        """
+        # def tapped(self, axis=Axis.ALL, bidirectional=True, tolerance=45):
+        pass
+
+    def shaken(self):
+        """Check if the device or hub was shaken.
+
+        Returns:
+            bool:
+                ``True`` if shaken since this method was last called. ``False``
+                otherwise.
+
+        """
+        # def shaken(self, axis=Axis.ALL, bidirectional=True, tolerance=45):
+        pass
+
 
 # Workaround for documenting instance attributes such as <self.light> of the
 # the ColorDistanceSensor. Autodoc does not pick those up, so instantiate them
