@@ -614,9 +614,10 @@ class Accelerometer():
     def neutral(self, top, front):
         """Configure the neutral orientation of the device or hub. You do this
         by specifying how it is mounted on your design, in terms of the
-        :ref:`robot reference frame <robotframe>`. In this given neutral
-        orientation, the tilt will be zero. Now, all imu accelerations and
-        angles will be given in the :ref:`robot reference frame <robotframe>`.
+        :ref:`robot reference frame <robotframe>`.
+
+        In this given neutral orientation, the tilt and heading will then be
+        zero.
 
         Arguments:
             top (Axis): Which direction the top of the device faces in the
@@ -647,7 +648,7 @@ class Accelerometer():
         pass
 
     def tilt(self):
-        """Get the pitch and roll angles relative to the horizontal
+        """Get the pitch and roll angles relative to the neutral, horizontal
         orientation.
 
         The order of rotation is pitch-then-roll. This is equivalent to a
@@ -684,6 +685,17 @@ class Accelerometer():
         # def shaken(self, axis=Axis.ALL, bidirectional=True, tolerance=45):
         pass
 
+    def up(self):
+        """Check which side of the device or hub currently faces upward.
+
+        :returns:
+            ``Side.TOP``, ``Side.BOTTOM``, ``Side.LEFT``, ``Side.RIGHT``,
+            ``Side.FRONT`` or ``Side.BACK``.
+        :rtype: :class:`Side <.parameters.Side>`
+
+        """
+        pass
+
 
 class IMU(Accelerometer):
 
@@ -706,6 +718,24 @@ class IMU(Accelerometer):
 
         Arguments:
             angle (:ref:`angle`): Value to which the heading should be reset.
+        """
+        pass
+
+    def gyro(self, axis=Axis.ALL):
+        """gyro(axis=Axis.ALL)
+
+        Measure the angular velocity of the device along a given axis in the
+        :ref:`robot reference frame <robotframe>`.
+
+        Arguments:
+            axis (Axis): Axis along which the angular velocity is
+                         measured. (*Default*: ``axis=Axis.ALL``)
+        Returns:
+            :ref:`speed`. Returns a :ref:`scalar` of the angular velocity
+            along the specified axis.
+            If you choose ``axis=Axis.ALL``, you get a :ref:`vector` with the
+            angular velocities along all three axes (x, y, z).
+
         """
         pass
 

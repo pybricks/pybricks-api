@@ -136,6 +136,8 @@ Tilt Sensor
 
     .. automethod:: tilt
 
+    .. automethod:: up
+
 Other Devices
 ---------------
 

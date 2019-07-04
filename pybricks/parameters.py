@@ -203,6 +203,26 @@ class Axis():
     ALL = None
 
 
+class Side():
+    """Sides or face of a device such as a hub or a sensor. Such devices are
+    usually shaped like a rectangular box with six of the following sides:
+
+    .. data:: TOP
+    .. data:: BOTTOM
+    .. data:: FRONT
+    .. data:: BACK
+    .. data:: LEFT
+    .. data:: RIGHT
+    """
+
+    RIGHT = 6
+    FRONT = 0
+    TOP = 8
+    LEFT = 4
+    BACK = 5
+    BOTTOM = 2
+
+
 class Align():
     """Alignment of an image on the display.
 
