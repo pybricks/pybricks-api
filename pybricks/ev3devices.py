@@ -153,8 +153,25 @@ class InfraredSensor():
     def buttons(self, channel):
         """Check which buttons on the infrared remote are pressed.
 
+        This method can detect up to two buttons at once. If you press
+        more buttons, you may not get useful data.
+
         Arguments:
             channel (int): Channel number of the remote.
+
+        :returns: List of pressed buttons on the remote on selected channel.
+        :rtype: List of :class:`Button <.parameters.Button>`
+
+        """
+        pass
+
+    def keypad(self):
+        """Check which buttons on the infrared remote are pressed.
+
+        This method can independently detect all 4 up/down buttons, but
+        it cannot detect the beacon button.
+
+        This method only works with the remote in channel 1.
 
         :returns: List of pressed buttons on the remote on selected channel.
         :rtype: List of :class:`Button <.parameters.Button>`
