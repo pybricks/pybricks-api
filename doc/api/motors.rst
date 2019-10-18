@@ -1,7 +1,9 @@
-:mod:`devices` -- Motors
+:mod:`pup/nxt/ev3` -- Motors
 ===========================================
 
-Motors
+.. _motorclass:
+
+Motor
 ------
 
 .. autoclass:: pybricks.builtins.Motor

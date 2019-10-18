@@ -4,6 +4,13 @@
 .. automodule:: pybricks.ev3devices
     :no-members:
 
+Motor
+^^^^^^^^^^^^
+
+.. class:: Motor(port, direction, gears)
+
+    See :ref:`Motor <motorclass>`.
+
 Touch Sensor
 ^^^^^^^^^^^^
 .. autoclass:: pybricks.ev3devices.TouchSensor

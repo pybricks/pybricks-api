@@ -4,6 +4,12 @@
 .. automodule:: pybricks.pupdevices
     :no-members:
 
+Motor
+^^^^^^^^^^^^
+
+.. class:: Motor(port, direction, gears)
+
+    See :ref:`Motor <motorclass>`.
 
 Color and Distance Sensor
 ^^^^^^^^^^^^^^^^^^^^^^^^^

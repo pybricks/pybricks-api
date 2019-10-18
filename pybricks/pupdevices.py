@@ -1,23 +1,11 @@
 """LEGO® Powered Up motor, sensors, and lights."""
 
-from .builtins import Motor as CommonMotor, ColorLight
-
-from .builtins import KeyPad, Accelerometer
-# The above abviously needs fixing (but not until after fixing merge conflict)
+from .builtins import KeyPad, Accelerometer, ColorLight
+from .builtins import Motor as CommonMotor
 
 
 class Motor(CommonMotor):
-    """LEGO® Powered Up motors"""
-
-    def reset_angle(self, angle):
-        """Reset the accumulated rotation angle of the motor.
-
-        Arguments:
-            angle (:ref:`angle`): Value to which the angle should be reset. If
-                                  you don't specify an angle, the angle of the
-                                  marker on the shaft will be used, if present.
-        """
-        pass
+    """LEGO® Powered Up Motors"""
 
 
 class RemoteControl():

@@ -17,7 +17,7 @@ Intro
 
 .. toctree::
    :maxdepth: 1
-   :caption: EV3/NXT
+   :caption: Modules for EV3/NXT
    :hidden:
 
    hubs_ev3brick
@@ -25,7 +25,7 @@ Intro
 
 .. toctree::
    :maxdepth: 1
-   :caption: Powered Up
+   :caption: Modules for Powered Up
    :hidden:
 
    hubs_movehub
@@ -34,7 +34,7 @@ Intro
 
 .. toctree::
    :maxdepth: 1
-   :caption: Generic
+   :caption: General Modules
    :hidden:
 
    motors
