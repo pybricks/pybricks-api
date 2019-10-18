@@ -1,6 +1,6 @@
 """LEGO® Programmable Hubs."""
 from enum import Enum
-from ._common import Speaker, Display, Battery, ColorLight, KeyPad
+from .builtins import Speaker, Display, Battery, ColorLight, KeyPad
 
 class EV3Brick():
     """LEGO® MINDSTORMS® EV3 Brick.

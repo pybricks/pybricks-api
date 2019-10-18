@@ -1,7 +1,7 @@
 """LEGO® MINDSTORMS® EV3 motors and sensors."""
 
 from .parameters import Direction
-from ._common import Motor as CommonMotor
+from .builtins import Motor as CommonMotor
 
 
 class Motor(CommonMotor):

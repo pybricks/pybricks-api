@@ -1,8 +1,8 @@
 """LEGO® Power Functions 2.0 motor, sensors, and lights."""
 
-from ._common import Motor as CommonMotor, ColorLight
+from .builtins import Motor as CommonMotor, ColorLight
 
-from ._common import KeyPad, Accelerometer
+from .builtins import KeyPad, Accelerometer
 # The above abviously needs fixing (but not until after fixing merge conflict)
 
 

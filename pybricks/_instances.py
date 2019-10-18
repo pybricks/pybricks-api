@@ -1,6 +1,6 @@
 """Sphinx workaround to document instance attributes such as self.light"""
 
-from ._common import Speaker, Display, Battery, ColorLight, KeyPad, LightArray
+from .builtins import Speaker, Display, Battery, ColorLight, KeyPad, LightArray
 
 from types import ModuleType
 

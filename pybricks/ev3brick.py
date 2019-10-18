@@ -1,6 +1,6 @@
 """LEGO® MINDSTORMS® EV3 Brick."""
 
-from ._common import Speaker, Display, Battery, ColorLight, KeyPad
+from .builtins import Speaker, Display, Battery, ColorLight, KeyPad
 
 sound = Speaker()
 display = Display()
