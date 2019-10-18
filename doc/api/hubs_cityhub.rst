@@ -1,19 +1,13 @@
-:mod:`hubs` -- EV3 Brick
+:mod:`hubs` -- LEGO® Powered Up City Hub
 ==============================================
 
-.. automodule:: pybricks.hubs
-    :no-members:
-
-.. autoclass:: pybricks.hubs.EV3Brick
+.. autoclass:: pybricks.hubs.CityHub
     :no-members:
 
     .. rubric:: Motor and Sensor Ports
 
-    +-----------------+-----------------+-----------------+-----------------+
-    |.. data:: Port.A |.. data:: Port.B |.. data:: Port.C |.. data:: Port.D |
-    +-----------------+-----------------+-----------------+-----------------+
-    |.. data:: Port.S1|.. data:: Port.S2|.. data:: Port.S3|.. data:: Port.S4|
-    +-----------------+-----------------+-----------------+-----------------+
+    .. data:: Port.A
+    .. data:: Port.B
 
     .. rubric:: Overview of built-in devices
 

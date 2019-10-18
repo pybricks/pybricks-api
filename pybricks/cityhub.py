@@ -1,4 +1,4 @@
-"""LEGO® Power Functions 2.0 City Hub."""
+"""LEGO® Powered Up City Hub."""
 
 from .builtins import Battery, ColorLight
 

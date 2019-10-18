@@ -7,12 +7,19 @@
 .. autoclass:: pybricks.parameters.Port
     :no-members:
 
-    .. data:: A
-    .. data:: B
-    .. data:: C
-    .. data:: D
-    .. data:: E
-    .. data:: F
+    Motor ports:
+
+        .. data:: A
+        .. data:: B
+        .. data:: C
+        .. data:: D
+
+    Sensor ports:
+
+        .. data:: S1
+        .. data:: S2
+        .. data:: S3
+        .. data:: S4
 
 .. autoclass:: pybricks.parameters.Direction
     :no-members:
@@ -24,6 +31,15 @@
     :no-members:
 
 .. autoclass:: pybricks.parameters.Button
+    :no-members:
+
+.. autoclass:: pybricks.parameters.Align
+    :no-members:
+
+.. autoclass:: pybricks.parameters.ImageFile
+    :no-members:
+
+.. autoclass:: pybricks.parameters.SoundFile
     :no-members:
 
 .. autoclass:: pybricks.parameters.Axis

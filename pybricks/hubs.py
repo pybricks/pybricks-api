@@ -11,3 +11,17 @@ class EV3Brick():
     battery = Battery()
     light = ColorLight()
     buttons = KeyPad()
+
+
+class MoveHub():
+    """LEGO® Powered Up Move Hub."""
+    Port = Enum('Port', ['A', 'B', 'C', 'D'])
+    battery = Battery()
+    light = ColorLight()
+
+
+class CityHub():
+    """LEGO® Powered Up City Hub."""
+    Port = Enum('Port', ['A', 'B'])
+    battery = Battery()
+    light = ColorLight()

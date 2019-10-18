@@ -1,5 +1,5 @@
-Pybricks for Power Functions 2.0
-==============================================================
+Pybricks
+==================================================================
 
 Intro
 
@@ -14,16 +14,30 @@ Intro
     :hidden:
 
     startinstall
-    startrun
 
 .. toctree::
    :maxdepth: 1
-   :caption: Pybricks Modules
+   :caption: EV3/NXT
    :hidden:
 
-   movehub
-   cityhub
-   lpf2devices
+   hubs_ev3brick
+   ev3devices
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Powered Up
+   :hidden:
+
+   hubs_movehub
+   hubs_cityhub
+   pupdevices
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Generic
+   :hidden:
+
+   motors
    parameters
    tools
    robotics
@@ -40,5 +54,6 @@ Intro
    :caption: Demo Programs
    :hidden:
 
-   examples/line_follower
-
+   examples/robot_educator
+   examples/color_sorter
+   examples/robot_arm_h25

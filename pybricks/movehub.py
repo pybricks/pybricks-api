@@ -1,4 +1,4 @@
-"""LEGO® Power Functions 2.0 Move Hub."""
+"""LEGO® Powered Up Move Hub."""
 
 from .builtins import Battery, ColorLight
 

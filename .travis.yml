@@ -14,7 +14,6 @@ install:
 
 script:
 - pipenv run python setup.py build
-- make -C doc html SOURCEDIR=ev3dev
-- make -C doc html SOURCEDIR=lpf2
+- make -C doc html SOURCEDIR=api
 - pipenv run flake8
 - pipenv run doc8

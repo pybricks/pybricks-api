@@ -1,13 +1,10 @@
-:mod:`ev3devices` -- EV3 Motors and Sensors
+:mod:`devices` -- Motors
 ===========================================
-
-.. automodule:: pybricks.ev3devices
-    :no-members:
 
 Motors
 ------
 
-.. autoclass:: pybricks.ev3devices.Motor
+.. autoclass:: pybricks.builtins.Motor
     :no-members:
 
     Example::
@@ -23,7 +20,7 @@ Motors
 
     .. rubric:: Methods for motors without rotation sensors
 
-    .. automethod:: pybricks.ev3devices.Motor.dc
+    .. automethod:: pybricks.builtins.Motor.dc
 
         Example::
 
@@ -32,25 +29,25 @@ Motors
 
     .. rubric:: Methods for motors with rotation sensors
 
-    .. automethod:: pybricks.ev3devices.Motor.angle
+    .. automethod:: pybricks.builtins.Motor.angle
 
-    .. automethod:: pybricks.ev3devices.Motor.reset_angle
+    .. automethod:: pybricks.builtins.Motor.reset_angle
 
-    .. automethod:: pybricks.ev3devices.Motor.speed
+    .. automethod:: pybricks.builtins.Motor.speed
 
-    .. automethod:: pybricks.ev3devices.Motor.stop
+    .. automethod:: pybricks.builtins.Motor.stop
 
-    .. automethod:: pybricks.ev3devices.Motor.run
+    .. automethod:: pybricks.builtins.Motor.run
 
-    .. automethod:: pybricks.ev3devices.Motor.run_time
+    .. automethod:: pybricks.builtins.Motor.run_time
 
-    .. automethod:: pybricks.ev3devices.Motor.run_angle
+    .. automethod:: pybricks.builtins.Motor.run_angle
 
-    .. automethod:: pybricks.ev3devices.Motor.run_target
+    .. automethod:: pybricks.builtins.Motor.run_target
 
     .. rubric:: Advanced methods for motors with rotation sensors
 
-    .. automethod:: pybricks.ev3devices.Motor.track_target
+    .. automethod:: pybricks.builtins.Motor.track_target
 
         Example::
 
@@ -72,13 +69,13 @@ Motors
                 # Make the motor track the given angle
                 motor.track_target(angle_now)
 
-    .. automethod:: pybricks.ev3devices.Motor.stalled
+    .. automethod:: pybricks.builtins.Motor.stalled
 
-    .. automethod:: pybricks.ev3devices.Motor.run_until_stalled
+    .. automethod:: pybricks.builtins.Motor.run_until_stalled
 
-    .. automethod:: pybricks.ev3devices.Motor.set_dc_settings
+    .. automethod:: pybricks.builtins.Motor.set_dc_settings
 
-    .. automethod:: pybricks.ev3devices.Motor.set_run_settings
+    .. automethod:: pybricks.builtins.Motor.set_run_settings
 
         Example::
 
@@ -92,27 +89,5 @@ Motors
             # the settings above.
             example_motor.run_time(300, 5000)
 
-    .. automethod:: pybricks.ev3devices.Motor.set_pid_settings
+    .. automethod:: pybricks.builtins.Motor.set_pid_settings
 
-Sensors
--------
-
-Touch Sensor
-^^^^^^^^^^^^
-.. autoclass:: pybricks.ev3devices.TouchSensor
-
-Color Sensor
-^^^^^^^^^^^^
-.. autoclass:: pybricks.ev3devices.ColorSensor
-
-Infrared Sensor and Beacon
-^^^^^^^^^^^^^^^^^^^^^^^^^^
-.. autoclass:: pybricks.ev3devices.InfraredSensor
-
-Ultrasonic Sensor
-^^^^^^^^^^^^^^^^^
-.. autoclass:: pybricks.ev3devices.UltrasonicSensor
-
-Gyroscopic Sensor
-^^^^^^^^^^^^^^^^^
-.. autoclass:: pybricks.ev3devices.GyroSensor
