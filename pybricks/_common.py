@@ -1,7 +1,6 @@
 """Generic cross-platform module for typical devices like lights, displays,
 speakers, and batteries."""
 
-from types import ModuleType
 from .parameters import Align, Direction, Stop, Axis
 
 
@@ -738,34 +737,3 @@ class IMU(Accelerometer):
 
         """
         pass
-
-
-# Workaround for documenting instance attributes such as <self.light> of the
-# the ColorDistanceSensor. Autodoc does not pick those up, so instantiate them
-# here. Modules can just import them as needed.
-light = ModuleType('ColorLight')
-light.on = ColorLight.on
-light.off = ColorLight.off
-light.rgb = ColorLight.rgb
-
-lights = ModuleType('LightArray')
-lights.on = LightArray.on
-lights.array = LightArray.array
-lights.off = LightArray.off
-
-buttons = ModuleType('KeyPad')
-buttons.pressed = KeyPad.pressed
-
-battery = ModuleType('Battery')
-battery.voltage = Battery.voltage
-battery.current = Battery.current
-
-speaker = ModuleType('Speaker')
-speaker.beep = Speaker.beep
-speaker.beeps = Speaker.beeps
-speaker.file = Speaker.file
-
-display = ModuleType('Display')
-display.clear = Display.clear
-display.text = Display.text
-display.image = Display.image

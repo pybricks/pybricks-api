@@ -28,7 +28,7 @@
     
     .. rubric:: Using the buttons
 
-    .. automethod:: pybricks._common.buttons.pressed
+    .. automethod:: pybricks._instances.buttons.pressed
 
         Example::
 
@@ -50,7 +50,7 @@
 
     .. rubric:: Using the brick status light
 
-    .. automethod:: pybricks._common.light.on
+    .. automethod:: pybricks._instances.light.on
 
         Example::
 
@@ -66,11 +66,11 @@
             # Turn the light off
             brick.light.off()
 
-    .. automethod:: pybricks._common.light.off
+    .. automethod:: pybricks._instances.light.off
 
     .. rubric:: Using the speaker
 
-    .. automethod:: pybricks._common.speaker.beep
+    .. automethod:: pybricks._instances.speaker.beep
 
         Example::
 
@@ -84,7 +84,7 @@
             brick.speaker.beep(1500, 1000, 50)
 
 
-    .. automethod:: pybricks._common.speaker.beeps
+    .. automethod:: pybricks._instances.speaker.beeps
 
         Example::
 
@@ -94,7 +94,7 @@
             # Make 5 simple beeps
             brick.speaker.beeps(5)
 
-    .. automethod:: pybricks._common.speaker.file
+    .. automethod:: pybricks._instances.speaker.file
 
         Example::
 
@@ -122,9 +122,9 @@
                 |__________________|
                                     (177, 127)
 
-    .. automethod:: pybricks._common.display.clear
+    .. automethod:: pybricks._instances.display.clear
 
-    .. automethod:: pybricks._common.display.text
+    .. automethod:: pybricks._instances.display.text
 
         Example::
 
@@ -140,7 +140,7 @@
             # Print ``World`` directly underneath it
             brick.display.text("World")
 
-    .. automethod:: pybricks._common.display.image
+    .. automethod:: pybricks._instances.display.image
 
         Example::
 
@@ -159,6 +159,6 @@
 
     .. rubric:: Using the battery
 
-    .. automethod:: pybricks._common.battery.voltage
+    .. automethod:: pybricks._instances.battery.voltage
 
-    .. automethod:: pybricks._common.battery.current
+    .. automethod:: pybricks._instances.battery.current
