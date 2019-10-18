@@ -4,9 +4,9 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
-sphinx = "*"
+sphinx = "==1.7.9"
 flake8 = "*"
-sphinx-rtd-theme = "==0.4.2"
+sphinx-rtd-theme = "==0.4.3"
 doc8 = "*"
 
 [packages]

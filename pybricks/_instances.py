@@ -4,6 +4,7 @@ from .builtins import Speaker, Display, Battery, ColorLight, KeyPad, LightArray
 
 from types import ModuleType
 
+
 def make_instance(classdef):
     """Make a class instance to look like a module so Sphinx can parse it."""
     name = ''
@@ -12,6 +13,7 @@ def make_instance(classdef):
         if callable(m):
             setattr(mod, m.__name__, m)
     return mod
+
 
 light = make_instance(ColorLight)
 

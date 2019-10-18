@@ -2,6 +2,7 @@
 from enum import Enum
 from .builtins import Speaker, Display, Battery, ColorLight, KeyPad
 
+
 class EV3Brick():
     """LEGO® MINDSTORMS® EV3 Brick.
     """

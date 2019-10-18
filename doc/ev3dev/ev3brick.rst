@@ -9,23 +9,24 @@
 
     .. rubric:: Motor and Sensor Ports
 
-    +-------------------+-------------------+-------------------+-------------------+
-    | .. data:: Port.A  | .. data:: Port.B  | .. data:: Port.C  | .. data:: Port.D  |
-    +-------------------+-------------------+-------------------+-------------------+
-    | .. data:: Port.S1 | .. data:: Port.S2 | .. data:: Port.S3 | .. data:: Port.S4 |
-    +-------------------+-------------------+-------------------+-------------------+
+    +-----------------+-----------------+-----------------+-----------------+
+    |.. data:: Port.A |.. data:: Port.B |.. data:: Port.C |.. data:: Port.D |
+    +-----------------+-----------------+-----------------+-----------------+
+    |.. data:: Port.S1|.. data:: Port.S2|.. data:: Port.S3|.. data:: Port.S4|
+    +-----------------+-----------------+-----------------+-----------------+
 
     .. rubric:: Overview of built-in devices
 
     The following built-in devices are automatically initialized when you
     create an `EV3Brick` object. Usage is described in the sections below.
 
-    .. attribute:: buttons = KeyPad([KeyPad.UP, KeyPad.DOWN, KeyPad.LEFT, KeyPad.RIGHT])
+    .. attribute::
+        buttons = KeyPad([KeyPad.UP, KeyPad.DOWN, KeyPad.LEFT, KeyPad.RIGHT])
     .. attribute:: display = Display(width=178, height=128)
     .. attribute:: light = ColorLight([Color.RED, Color.GREEN])
     .. attribute:: speaker = Speaker()
     .. attribute:: battery = Battery()
-    
+
     .. rubric:: Using the buttons
 
     .. automethod:: pybricks._instances.buttons.pressed
