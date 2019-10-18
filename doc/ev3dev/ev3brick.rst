@@ -1,132 +1,164 @@
-:mod:`ev3brick` -- The EV3 Programmable Brick
+:mod:`hubs` -- LEGO® Programmable Hubs
 =============================================
 
-.. automodule:: pybricks.ev3brick
+.. automodule:: pybricks.hubs
     :no-members:
 
+.. autoclass:: pybricks.hubs.EV3Brick
+    :no-members:
 
-Buttons
--------
+    .. rubric:: Motor and Sensor Ports
 
-.. automethod:: pybricks.ev3brick.buttons.pressed
+    +-------------------+-------------------+-------------------+-------------------+
+    | .. data:: Port.A  | .. data:: Port.B  | .. data:: Port.C  | .. data:: Port.D  |
+    +-------------------+-------------------+-------------------+-------------------+
+    | .. data:: Port.S1 | .. data:: Port.S2 | .. data:: Port.S3 | .. data:: Port.S4 |
+    +-------------------+-------------------+-------------------+-------------------+
 
-    Examples::
+    .. rubric:: Overview of built-in devices
 
-        # Do something if the left button is pressed
-        if Button.LEFT in brick.buttons.pressed():
-            print("The left button is pressed.")
+    The following built-in devices are automatically initialized when you
+    create an `EV3Brick` object. Usage is described in the sections below.
+
+    .. attribute:: buttons = KeyPad([KeyPad.UP, KeyPad.DOWN, KeyPad.LEFT, KeyPad.RIGHT])
+    .. attribute:: display = Display(width=178, height=128)
+    .. attribute:: light = ColorLight([Color.RED, Color.GREEN])
+    .. attribute:: speaker = Speaker()
+    .. attribute:: battery = Battery()
+    
+    .. rubric:: Using the buttons
+
+    .. automethod:: pybricks._common.buttons.pressed
+
+        Example::
+
+            # Initialize EV3 at the top of your script
+            brick = EV3Brick()
+
+            # Wait until any of the buttons are pressed
+            while not any(brick.buttons.pressed()):
+                wait(10)
+
+            # Do something if the left button is pressed
+            if Button.LEFT in brick.buttons.pressed():
+                print("The left button is pressed.")
+
+            # Wait until all buttons are released
+            while any(brick.buttons.pressed()):
+                wait(10)
+
+
+    .. rubric:: Using the brick status light
+
+    .. automethod:: pybricks._common.light.on
+
+        Example::
+
+            # Initialize EV3 at the top of your script
+            brick = EV3Brick()
+
+            # Make the light red
+            brick.light.on(Color.RED)
+
+            # Wait
+            wait(1000)
+
+            # Turn the light off
+            brick.light.off()
+
+    .. automethod:: pybricks._common.light.off
+
+    .. rubric:: Using the speaker
+
+    .. automethod:: pybricks._common.speaker.beep
+
+        Example::
+
+            # Initialize EV3 at the top of your script
+            brick = EV3Brick()
+
+            # A simple beep
+            brick.speaker.beep()
+
+            # A high pitch (1500 Hz) for one second (1000 ms) at 50% volume
+            brick.speaker.beep(1500, 1000, 50)
+
+
+    .. automethod:: pybricks._common.speaker.beeps
+
+        Example::
+
+            # Initialize EV3 at the top of your script
+            brick = EV3Brick()
+
+            # Make 5 simple beeps
+            brick.speaker.beeps(5)
+
+    .. automethod:: pybricks._common.speaker.file
+
+        Example::
+
+            # Initialize EV3 at the top of your script
+            brick = EV3Brick()
+
+            # Play one of the built-in sounds
+            brick.speaker.file(SoundFile.HELLO)
+
+            # Play a sound file from your project folder
+            brick.speaker.file('mysound.wav')
+
+    .. rubric:: Using the display
 
     ::
 
-        # Wait until any of the buttons are pressed
-        while not any(brick.buttons.pressed()):
-            wait(10)
+                        x
+                -------------->
+        (0, 0)  __________________
+                |                  |
+            |   |                  |
+         y  |   |      Hello       |
+            |   |      World       |
+            v   |                  |
+                |__________________|
+                                    (177, 127)
 
-        # Wait until all buttons are released
-        while any(brick.buttons.pressed()):
-            wait(10)
+    .. automethod:: pybricks._common.display.clear
 
+    .. automethod:: pybricks._common.display.text
 
-Light
------
+        Example::
 
-.. automethod:: pybricks.ev3brick.light.on
+            # Initialize EV3 at the top of your script
+            brick = EV3Brick()
 
-    Example::
+            # Clear the display
+            brick.display.clear()
 
-        # Make the light red
-        brick.light.on(Color.RED)
+            # Print ``Hello`` near the middle of the screen
+            brick.display.text("Hello", (60, 50))
 
-        # Wait
-        wait(1000)
+            # Print ``World`` directly underneath it
+            brick.display.text("World")
 
-        # Turn the light off
-        brick.light.off()
+    .. automethod:: pybricks._common.display.image
 
+        Example::
 
-.. automethod:: pybricks.ev3brick.light.off
+            # Initialize EV3 at the top of your script
+            brick = EV3Brick()
 
-Sound
------
+            # Show a built-in image of two eyes looking upward
+            brick.display.image(ImageFile.UP)
 
-.. automethod:: pybricks.ev3brick.sound.beep
+            # Display a custom image from your project folder
+            brick.display.image('pybricks.png')
 
-    Example::
+            # Display a custom image at the top right of the screen,
+            # without clearing the screen first
+            brick.display.image('arrow.png', Align.TOP_RIGHT, clear=False)
 
-        # A simple beep
-        brick.sound.beep()
+    .. rubric:: Using the battery
 
-        # A high pitch (1500 Hz) for one second (1000 ms) at 50% volume
-        brick.sound.beep(1500, 1000, 50)
+    .. automethod:: pybricks._common.battery.voltage
 
-
-.. automethod:: pybricks.ev3brick.sound.beeps
-
-    Example::
-
-        # Make 5 simple beeps
-        brick.sound.beeps(5)
-
-.. automethod:: pybricks.ev3brick.sound.file
-
-    Example::
-
-        # Play one of the built-in sounds
-        brick.sound.file(SoundFile.HELLO)
-
-        # Play a sound file from your project folder
-        brick.sound.file('mysound.wav')
-
-Display
--------
-::
-
-                       x
-              -------------->
-     (0, 0)  __________________
-            |                  |
-        |   |                  |
-     y  |   |      Hello       |
-        |   |      World       |
-        v   |                  |
-            |__________________|
-                                (177, 127)
-
-
-.. automethod:: pybricks.ev3brick.display.clear
-
-    Example::
-
-        # Clear the display
-        brick.display.clear()
-
-.. automethod:: pybricks.ev3brick.display.text
-
-    Example::
-
-        # Print ``Hello`` near the middle of the screen
-        brick.display.text("Hello", (60, 50))
-
-        # Print ``World`` directly underneath it
-        brick.display.text("World")
-
-.. automethod:: pybricks.ev3brick.display.image
-
-    Example::
-
-        # Show a built-in image of two eyes looking upward
-        brick.display.image(ImageFile.UP)
-
-        # Display a custom image from your project folder
-        brick.display.image('pybricks.png')
-
-        # Display a custom image at the top right of the screen,
-        # without clearing the screen first
-        brick.display.image('arrow.png', Align.TOP_RIGHT, clear=False)
-
-Battery
--------
-
-.. automethod:: pybricks.ev3brick.battery.voltage
-
-.. automethod:: pybricks.ev3brick.battery.current
+    .. automethod:: pybricks._common.battery.current

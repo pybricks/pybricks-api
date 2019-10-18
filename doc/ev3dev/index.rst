@@ -30,12 +30,19 @@ programs and start inventing your own programs.
     startinstall
     startrun
 
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Pybricks Hubs
+   :hidden:
+
+   ev3brick
+
 .. toctree::
    :maxdepth: 1
    :caption: Pybricks Modules
    :hidden:
 
-   ev3brick
    ev3devices
    parameters
    tools

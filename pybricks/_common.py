@@ -755,3 +755,17 @@ lights.off = LightArray.off
 
 buttons = ModuleType('KeyPad')
 buttons.pressed = KeyPad.pressed
+
+battery = ModuleType('Battery')
+battery.voltage = Battery.voltage
+battery.current = Battery.current
+
+speaker = ModuleType('Speaker')
+speaker.beep = Speaker.beep
+speaker.beeps = Speaker.beeps
+speaker.file = Speaker.file
+
+display = ModuleType('Display')
+display.clear = Display.clear
+display.text = Display.text
+display.image = Display.image
