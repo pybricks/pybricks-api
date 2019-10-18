@@ -9,3 +9,19 @@ div.figure p.caption {
 span.caption-number:after {
     content: ": ";
  }
+
+/* 
+    Make the rubric look like the H3 header.
+    
+    This way, we can add headings to organize classes
+    with many methods, without affecting how the methods
+    and attributes look or how they are indented.
+
+*/
+.rst-content p.rubric {
+    font-size: 20px;
+    font-weight: 700;
+    color: #404040;
+    font-family: "Roboto Slab","ff-tisa-web-pro","Georgia",Arial,sans-serif;
+    margin-bottom: 24px !important;
+}

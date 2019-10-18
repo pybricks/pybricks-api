@@ -6,7 +6,7 @@ verify_ssl = true
 [dev-packages]
 sphinx = "*"
 flake8 = "*"
-sphinx-rtd-theme = "*"
+sphinx-rtd-theme = "~=0.4.0"
 doc8 = "*"
 
 [packages]
