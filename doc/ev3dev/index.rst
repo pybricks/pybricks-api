@@ -36,7 +36,7 @@ programs and start inventing your own programs.
    :caption: Pybricks Hubs
    :hidden:
 
-   ev3brick
+   hubs_ev3brick
 
 .. toctree::
    :maxdepth: 1

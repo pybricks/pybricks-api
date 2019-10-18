@@ -1,5 +1,5 @@
-:mod:`hubs` -- LEGO® Programmable Hubs
-=============================================
+:mod:`hubs` -- EV3 Brick
+==============================================
 
 .. automodule:: pybricks.hubs
     :no-members:
