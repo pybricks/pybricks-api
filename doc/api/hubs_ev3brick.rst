@@ -15,10 +15,9 @@
     |.. data:: Port.S1|.. data:: Port.S2|.. data:: Port.S3|.. data:: Port.S4|
     +-----------------+-----------------+-----------------+-----------------+
 
-    .. rubric:: Overview of built-in devices
+    .. rubric:: Built-in devices
 
-    The following built-in devices are automatically initialized when you
-    create an `EV3Brick` object. Usage is described in the sections below.
+    The EV3 Brick has several built-in devices, configured as follows:
 
     .. attribute::
         buttons = KeyPad([KeyPad.UP, KeyPad.DOWN, KeyPad.LEFT, KeyPad.RIGHT])
@@ -26,6 +25,8 @@
     .. attribute:: light = ColorLight([Color.RED, Color.GREEN])
     .. attribute:: speaker = Speaker()
     .. attribute:: battery = Battery()
+
+    Usage of each built-in device is described below.
 
     .. rubric:: Using the buttons
 
@@ -53,6 +54,8 @@
 
     .. automethod:: pybricks._instances.light.on
 
+    .. automethod:: pybricks._instances.light.off
+
         Example::
 
             # Initialize EV3 at the top of your script
@@ -66,8 +69,6 @@
 
             # Turn the light off
             brick.light.off()
-
-    .. automethod:: pybricks._instances.light.off
 
     .. rubric:: Using the speaker
 
