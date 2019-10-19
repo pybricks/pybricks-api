@@ -25,3 +25,56 @@ span.caption-number:after {
     font-family: "Roboto Slab","ff-tisa-web-pro","Georgia",Arial,sans-serif;
     margin-bottom: 24px !important;
 }
+
+/* The following CSS from https://github.com/ulrobix/sphinxcontrib-contentui
+   which is available under the MIT License.
+*/
+
+ul.contenttab-selector {
+    display:block;
+    list-style-type: none;
+    margin: 0 0 10px;
+    padding: 0;
+    line-height: normal;
+    overflow: auto;
+}
+ul.contenttab-selector li {
+    display: block;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 0 5px 0 0;
+    padding: 5px 10px;
+    float: left;
+    background-color: #999;
+    color: #fff;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -khtml-border-radius: 5px;
+}
+.rst-content .section ul.contenttab-selector,
+.rst-content .toctree-wrapper ul.contenttab-selector,
+article ul.contenttab-selector{
+    line-height: normal;
+    margin: 0 0 10px;
+}
+.rst-content .section ul.contenttab-selector li,
+.rst-content .toctree-wrapper ul.contenttab-selector li,
+article ul.contenttab-selector li{
+    margin-left: 0;
+}
+ul.contenttab-selector li:hover {
+    background-color: #777;
+}
+ul.contenttab-selector li.selected {
+    background-color: #2980b9;
+}
+ul.contenttab-selector li.selected:hover {
+    background-color: #333;
+}
+.content-tabs {
+    margin: 10px 0 20px 0;
+}
+.tab-content {
+    clear: both;
+}
