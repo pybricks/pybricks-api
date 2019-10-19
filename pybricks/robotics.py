@@ -11,9 +11,9 @@ class DriveBase():
         """DriveBase(left_motor, right_motor, wheel_diameter, axle_track)
 
         Arguments:
-            left_motor (:class:`Motor <.builtins.Motor>`):
+            left_motor (:class:`Motor <.pupdevices.Motor>`):
                 The motor that drives the left wheel.
-            right_motor (:class:`Motor <.builtins.Motor>`):
+            right_motor (:class:`Motor <.pupdevices.Motor>`):
                 The motor that drives the right wheel.
             wheel_diameter (:ref:`dimension`): Diameter of the wheels.
             axle_track (:ref:`dimension`): Distance between the midpoints of
