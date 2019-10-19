@@ -17,26 +17,12 @@ Intro
 
 .. toctree::
    :maxdepth: 1
-   :caption: Modules for EV3/NXT
+   :caption: Pybricks Modules
    :hidden:
 
-   hubs_ev3brick
-   ev3devices
-
-.. toctree::
-   :maxdepth: 1
-   :caption: Modules for Powered Up
-   :hidden:
-
-   hubs_movehub
-   hubs_cityhub
+   hubs
    pupdevices
-
-.. toctree::
-   :maxdepth: 1
-   :caption: General Modules
-   :hidden:
-
+   ev3devices
    motors
    parameters
    tools

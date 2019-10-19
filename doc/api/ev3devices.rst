@@ -1,4 +1,4 @@
-:mod:`ev3devices` -- EV3 Motors and Sensors
+:mod:`ev3devices` -- EV3 Devices
 ===========================================
 
 .. automodule:: pybricks.ev3devices

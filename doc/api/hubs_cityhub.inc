@@ -1,6 +1,3 @@
-:mod:`hubs` -- LEGO® Powered Up City Hub
-==============================================
-
 .. autoclass:: pybricks.hubs.CityHub
     :no-members:
 

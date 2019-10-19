@@ -42,6 +42,7 @@ extensions = [
     'sphinx.ext.napoleon',
     'sphinx.ext.todo',
     'sphinx.ext.mathjax',
+    'sphinxcontrib.contentui',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -112,6 +113,7 @@ if ON_RTD:
             'https://media.readthedocs.org/css/sphinx_rtd_theme.css',
             'https://media.readthedocs.org/css/readthedocs-doc-embed.css',
             '_static/css/theme_overrides.css',
+            '_static/contentui.css',
         ],
         'disclaimer': _DISCLAIMER,
     }
@@ -122,6 +124,7 @@ else:
     html_context = {
         'css_files': [
             '_static/css/theme_overrides.css',
+            '_static/contentui.css',
         ],
         'disclaimer': _DISCLAIMER,
     }

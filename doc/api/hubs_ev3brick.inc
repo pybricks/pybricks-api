@@ -1,9 +1,3 @@
-:mod:`hubs` -- LEGO® MINDSTORMS® EV3
-==============================================
-
-.. automodule:: pybricks.hubs
-    :no-members:
-
 .. autoclass:: pybricks.hubs.EV3Brick
     :no-members:
 

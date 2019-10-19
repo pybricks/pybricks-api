@@ -1,6 +1,3 @@
-:mod:`hubs` -- LEGO® Powered Up Move Hub
-==============================================
-
 .. autoclass:: pybricks.hubs.MoveHub
     :no-members:
 
