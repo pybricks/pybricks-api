@@ -292,3 +292,45 @@ class UltrasonicSensor():
             ``False`` if not.
         """
         pass
+
+
+class AnalogSensor():
+    """Generic or custom analog sensor."""
+
+    def __init__(self, port, check_type=True):
+        """AnalogSensor(port, check_type=True)
+
+        Arguments:
+            port (Port): Port to which the sensor is connected.
+            check_type(bool): Check if the sensor is detected as an analog
+                sensor (*Default*: ``True``).
+
+                If you choose ``check_type=False``, the EV3 will treat it as
+                an analog sensor even if no such sensor is detected. This is
+                useful if you have a (custom) analog sensor that is not
+                detected automatically.
+
+                **NOTE**: Setting ``check_type=False`` keeps the sensor port in
+                analog mode even after your program ends. To use a different
+                sensor on this port, you must first reboot the EV3.
+        """
+        pass
+
+    def voltage(self):
+        """Measured analog voltage.
+
+        Returns:
+            :ref:`voltage`: Analog voltage.
+        """
+        pass
+
+    def resistance(self):
+        """Measured resistance.
+
+        This value is only meaningful if the analog device is a passive load
+        such as a resistor or thermistor.
+
+        Returns:
+            :ref:`resistance: Ω <voltage>`: Resistance of the analog device.
+        """
+        pass
