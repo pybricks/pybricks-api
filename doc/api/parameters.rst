@@ -36,12 +36,6 @@
 .. autoclass:: pybricks.parameters.Align
     :no-members:
 
-.. autoclass:: pybricks.parameters.ImageFile
-    :no-members:
-
-.. autoclass:: pybricks.parameters.SoundFile
-    :no-members:
-
 .. autoclass:: pybricks.parameters.Axis
     :no-members:
 

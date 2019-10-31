@@ -26,6 +26,7 @@ Intro
    parameters
    tools
    robotics
+   media
 
 .. toctree::
    :maxdepth: 1
