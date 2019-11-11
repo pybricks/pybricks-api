@@ -9,7 +9,7 @@ The Motor Class
 
     Example::
 
-        # Initialize a motor with default settings.    
+        # Initialize a motor with default settings.
         example_motor = Motor(Port.A)
 
         # Initialize a motor with positive speed as counterclockwise.
@@ -130,7 +130,7 @@ go further. This way, you don't need a touch or light sensor to detect this.
 When is a motor stalled?
 ++++++++++++++++++++++++
 
-When the motor is stalled, the :meth:`.stalled` will return ``True``. 
+When the motor is stalled, the :meth:`.stalled` will return ``True``.
 Specifically, the motor is stalled when the duty cycle computed by the
 PID controllers has reached the maximum (so ``duty`` = ``duty_limit``)
 and still the motor cannot reach a minimal speed
@@ -181,4 +181,4 @@ example, you can print the angle of the dial as shown above. This will print
 Notice that there is no magic going on. It is just a convenient scaling
 function. This helps you organize your code. For example, if you change
 your mechanism to use different gears, you only have to change the first line
-of this example. 
+of this example.

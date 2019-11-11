@@ -43,6 +43,7 @@ class ColorDistanceSensor():
 
     def __init__(self, port):
         """ColorDistanceSensor(port)
+
         Arguments:
             port (Port): Port to which the sensor is connected.
         """
