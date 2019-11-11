@@ -1,22 +1,27 @@
 More about Motors
 ===========================================
 
-Motor
-^^^^^^^^^^^^
+The Motor Class
+^^^^^^^^^^^^^^^
 
 .. autoclass:: pybricks.builtins.Motor
     :no-members:
 
     Example::
 
-        # Initialize a motor (by default this means is, without any gears).
+        # Initialize a motor with default settings.    
         example_motor = Motor(Port.A)
 
-        # Initialize a motor with positive speed as counterclockwise
+        # Initialize a motor with positive speed as counterclockwise.
         right_motor = Motor(Port.B, Direction.COUNTERCLOCKWISE)
 
-        # Initialize a motor with a gear train
-        robot_arm = Motor(Port.C, Direction.CLOCKWISE, [12, 36])
+        # Initialize a motor with a gear train, consisting of a 12-tooth gear
+        # and a 36-tooth gear. This normally slows down your output axle by a
+        # factor 3. But when you specify gears like this, the motor will
+        # compensate for them. For example, `robot_arm.run_angle(200, 90)` will
+        # now make the motor move faster and farther so that your output axle
+        # will still turn at the desired 200 deg/s for 90 degrees.
+        robot_arm = Motor(Port.C, Direction.CLOCKWISE, gears=[12, 36])
 
     .. rubric:: Methods for motors without rotation sensors
 
@@ -90,3 +95,54 @@ Motor
             example_motor.run_time(300, 5000)
 
     .. automethod:: pybricks.builtins.Motor.set_pid_settings
+
+
+Motor Tips & Tricks
+^^^^^^^^^^^^^^^^^^^
+
+The difference between ``run_angle`` and ``run_target``
+-------------------------------------------------------
+
+*TODO*
+
+.. _gears:
+
+Using gears
+-----------------
+Many LEGO robots use mechanisms with gears to change the speed and torque
+output of a motor. Let's consider the following dial mechanism.
+
+*TODO: INSERT PICTURE OF MOTOR WITH 12z gear AND 36z gear.*
+
+This gear train slows down the dial on the output axle by a factor of 3.
+Therefore, if you want to rotate the dial by 90 degrees, the motor has to
+rotate by 270 degrees. To turn at 200 degrees per second, the motor has to
+turn at 600 degrees per second, and so on.
+
+To avoid using this factor 3 everywhere in your program, you can use the
+`gears` setting of the :class:`.Motor` object, as shown in this example::
+
+    # This example uses the EV3 brick, but the same
+    # technique applies to other programmable hubs.
+    ev3 = EV3Brick()
+
+    # Initialize the motor. See picture above.
+    dial = Motor(ev3.Port.C, Direction.COUNTERCLOCKWISE, gears=[12, 36])
+
+    # Turn the dial by 90-degrees
+    dial.run_angle(500, 90)
+
+    # Print the dial angle
+    print(dial.angle())
+
+    # Turn the dial back to the original position
+    dial.run_target(500, 0)
+
+When you use any of the other methods, the same scaling is applied. For
+example, you can print the angle of the dial as shown above. This will print
+90 (approximately), even though the motor has turned 270 degrees.
+
+Notice that there is no magic going on. It is just a convenient scaling
+function. This helps you organize your code. For example, if you change
+your mechanism to use different gears, you only have to change the first line
+of this example. 

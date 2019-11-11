@@ -5,7 +5,7 @@ from .parameters import Align, Direction, Stop, Axis
 
 
 class Motor():
-    """Generic class for a motor with rotational encoders."""
+    """Generic class to control motors of all shaped and sizes."""
 
     def __init__(self, port, direction=Direction.CLOCKWISE, gears=None):
         """Motor(port, direction=Direction.CLOCKWISE, gears=None)
@@ -17,32 +17,14 @@ class Motor():
             gears (list):
                 List of gears linked to the motor (*Default*:``None``).
 
-
                 For example: ``[12, 36]`` represents a gear train with a
-                12-tooth and a 36-tooth gear.
-
-                Use a list of lists for multiple gear trains, such as
-                ``[[12, 36], [20, 16, 40]]``.
+                12-tooth and a 36-tooth gear. Use a list of lists for multiple
+                gear trains, such as ``[[12, 36], [20, 16, 40]]``.
 
                 When you specify a gear train, all motor commands and settings
                 are automatically adjusted to account for the resulting gear
-                ratio. The motor direction remains unchanged, no matter how
-                many gears you choose.
-
-                For example, with ``gears=[12, 36]``, the gear ratio is 3,
-                which means that the output is mechanically slowed down by a
-                factor of 3. To compensate, the motor will automatically turn 3
-                times as fast and 3 times as far when you give a motor command.
-                So when you choose ``run_angle(200, 90)``, your mechanism
-                output simply turns at 200 deg/s for 90 degrees.
-
-                The same holds for the documentation below: When it states
-                "motor angle" or "motor speed", you can read this as "mechanism
-                output angle" and "mechanism output speed", and so on, as the
-                gear ratio is automatically accounted for.
-
-                The ``gears`` setting is only available for motors with
-                rotation sensors.
+                ratio.  The motor direction remains unchanged by this. See
+                :ref:`gears` for more information.
         """
         pass
 
