@@ -330,3 +330,25 @@ class AnalogSensor():
             :ref:`resistance: Ω <voltage>`: Resistance of the analog device.
         """
         pass
+
+    def active(self):
+        """Set sensor to active mode. This sets pin 5 of the sensor
+        port to `high`.
+
+        This is used in some analog
+        sensors to control a switch. For example, if you use the NXT Light
+        Sensor as a custom analog sensor, this method will turn the light on.
+        From then on, ``voltage()`` returns the raw reflected light value.
+        """
+        pass
+
+    def passive(self):
+        """Set sensor to passive mode. This sets pin 5 of the sensor
+        port to `low`.
+
+        This is used in some analog
+        sensors to control a switch. For example, if you use the NXT Light
+        Sensor as a custom analog sensor, this method will turn the light off.
+        From then on, ``voltage()`` returns the raw ambient light value.
+        """
+        pass
