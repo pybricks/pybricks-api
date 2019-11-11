@@ -30,10 +30,11 @@ Intro
 
 .. toctree::
    :maxdepth: 1
-   :caption: Engineering Essentials
+   :caption: Engineering Extras
    :hidden:
 
    signaltypes
+   motors
 
 .. toctree::
    :maxdepth: 1

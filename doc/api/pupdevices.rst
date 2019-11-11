@@ -7,7 +7,8 @@
 Motor
 ^^^^^^^^^^^^
 
-.. autoclass:: pybricks.pupdevices.Motor
+.. autoclass:: pybricks._instances.Motor
+    :noindex:
     :no-members:
 
     Example::
@@ -48,51 +49,6 @@ Motor
 
     .. automethod:: pybricks.pupdevices.Motor.run_target
 
-    .. rubric:: Advanced methods for motors with rotation sensors
-
-    .. automethod:: pybricks.pupdevices.Motor.track_target
-
-        Example::
-
-            # Initialize motor and timer
-            from math import sin
-            motor = Motor(Port.A)
-            watch = StopWatch()
-            amplitude = 90
-
-            # In a fast loop, compute a reference angle
-            # and make the motor track it.
-            while True:
-                # Get the time in seconds
-                seconds = watch.time()/1000
-                # Compute a reference angle. This produces
-                # a sine wave that makes the motor move
-                # smoothly between -90 and +90 degrees.
-                angle_now = sin(seconds)*amplitude
-                # Make the motor track the given angle
-                motor.track_target(angle_now)
-
-    .. automethod:: pybricks.pupdevices.Motor.stalled
-
-    .. automethod:: pybricks.pupdevices.Motor.run_until_stalled
-
-    .. automethod:: pybricks.pupdevices.Motor.set_dc_settings
-
-    .. automethod:: pybricks.pupdevices.Motor.set_run_settings
-
-        Example::
-
-            # Set the maximum speed to 200 deg/s and
-            # acceleration to 400 deg/s/s.
-            example_motor.set_run_settings(200, 400)
-
-            # Make the motor run for 5 seconds. Even though the
-            # speed argument is 300 deg/s in this example, the
-            # motor will move at only 200 deg/s because of
-            # the settings above.
-            example_motor.run_time(300, 5000)
-
-    .. automethod:: pybricks.pupdevices.Motor.set_pid_settings
 
 Color and Distance Sensor
 ^^^^^^^^^^^^^^^^^^^^^^^^^
