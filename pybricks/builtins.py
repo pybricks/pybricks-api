@@ -59,17 +59,8 @@ class Motor():
 
         A motor is stalled when it cannot move even with the maximum torque.
         For example, when something is blocking the motor or your mechanism
-        simply cannot turn any further.
-
-        Specifically, the motor is stalled when the duty cycle computed by the
-        PID controllers has reached the maximum (so ``duty`` = ``duty_limit``)
-        and still the motor cannot reach a minimal speed
-        (so ``speed`` < ``stall_speed``) for a period of at
-        least ``stall_time``.
-
-        You can change the ``duty_limit``, ``stall_speed``, and ``stall_time``
-        settings using :meth:`.set_dc_settings` and :meth:`.set_pid_settings`
-        in order to change the sensitivity to being stalled.
+        simply cannot turn any further. See :ref:`stalled` for more
+        information.
 
         Returns:
             bool: ``True`` if the motor is stalled, ``False`` if it is not.

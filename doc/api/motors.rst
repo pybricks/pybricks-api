@@ -23,22 +23,17 @@ The Motor Class
         # will still turn at the desired 200 deg/s for 90 degrees.
         robot_arm = Motor(Port.C, Direction.CLOCKWISE, gears=[12, 36])
 
-    .. rubric:: Methods for motors without rotation sensors
+    .. rubric:: Measuring
 
-    .. automethod:: pybricks.builtins.Motor.dc
-
-        Example::
-
-            # Set the motor duty cycle to 75%.
-            example_motor.duty(75)
-
-    .. rubric:: Methods for motors with rotation sensors
+    .. automethod:: pybricks.builtins.Motor.speed
 
     .. automethod:: pybricks.builtins.Motor.angle
 
     .. automethod:: pybricks.builtins.Motor.reset_angle
 
-    .. automethod:: pybricks.builtins.Motor.speed
+    .. automethod:: pybricks.builtins.Motor.stalled
+
+    .. rubric:: Moving the motor
 
     .. automethod:: pybricks.builtins.Motor.stop
 
@@ -50,7 +45,14 @@ The Motor Class
 
     .. automethod:: pybricks.builtins.Motor.run_target
 
-    .. rubric:: Advanced methods for motors with rotation sensors
+    .. automethod:: pybricks.builtins.Motor.dc
+
+        Example::
+
+            # Set the motor duty cycle to 75%.
+            example_motor.duty(75)
+
+    .. rubric:: Moving the motor (advanced)
 
     .. automethod:: pybricks.builtins.Motor.track_target
 
@@ -74,11 +76,9 @@ The Motor Class
                 # Make the motor track the given angle
                 motor.track_target(angle_now)
 
-    .. automethod:: pybricks.builtins.Motor.stalled
-
     .. automethod:: pybricks.builtins.Motor.run_until_stalled
 
-    .. automethod:: pybricks.builtins.Motor.set_dc_settings
+    .. rubric:: Changing motor settings
 
     .. automethod:: pybricks.builtins.Motor.set_run_settings
 
@@ -94,6 +94,8 @@ The Motor Class
             # the settings above.
             example_motor.run_time(300, 5000)
 
+    .. automethod:: pybricks.builtins.Motor.set_dc_settings
+
     .. automethod:: pybricks.builtins.Motor.set_pid_settings
 
 
@@ -104,6 +106,40 @@ The difference between ``run_angle`` and ``run_target``
 -------------------------------------------------------
 
 *TODO*
+
+.. _stalled:
+
+Using stall detection
+---------------------
+
+When a motor cannot move any further despite using the maximally allowed torque
+we say that the motor is stalled. Something could be blocking the motor, or the
+load is just too heavy. For example, if you manually hold the motor shaft still
+while the motor is busy executing a command, the motor will stall.
+
+What can I do with stall detection?
++++++++++++++++++++++++++++++++++++
+
+Stall detection is useful to detect that a motor can't move any further. This
+can be used to detect an endpoint of a mechanism. For example, you can detect
+whether a robotic hand is fully closed, because the gripper motor simply can't
+go further. This way, you don't need a touch or light sensor to detect this.
+
+*TODO: How, what, why. Also explain run_until_stalled. Rack & pinion example.*
+
+When is a motor stalled?
+++++++++++++++++++++++++
+
+When the motor is stalled, the :meth:`.stalled` will return ``True``. 
+Specifically, the motor is stalled when the duty cycle computed by the
+PID controllers has reached the maximum (so ``duty`` = ``duty_limit``)
+and still the motor cannot reach a minimal speed
+(so ``speed`` < ``stall_speed``) for a period of at
+least ``stall_time``.
+
+You can change the ``duty_limit``, ``stall_speed``, and ``stall_time``
+settings using  and :meth:`.set_pid_settings`
+in order to change the sensitivity to being stalled.
 
 .. _gears:
 
