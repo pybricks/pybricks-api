@@ -189,14 +189,14 @@ class GyroSensor():
     * 45505: Separate part (2013)
     """
 
-    def __init__(self, port, direction=Direction.CLOCKWISE):
-        """GyroSensor(port, direction=Direction.CLOCKWISE)
+    def __init__(self, port, positive_direction=Direction.CLOCKWISE):
+        """GyroSensor(port, positive_direction=Direction.CLOCKWISE)
 
         Arguments:
             port (Port): Port to which the sensor is connected.
-            direction (Direction): Positive rotation direction when looking at
-                                   the red dot on top of the sensor
-                                   (*Default*: Direction.CLOCKWISE).
+            positive_direction (Direction):
+                Positive rotation direction when looking at the red dot on top
+                of the sensor (*Default*: Direction.CLOCKWISE).
 
         """
         pass

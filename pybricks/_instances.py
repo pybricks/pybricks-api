@@ -31,14 +31,15 @@ display = make_instance(Display)
 
 class Motor(Motor):
 
-    def __init__(self, port, direction=Direction.CLOCKWISE):
-        """Motor(port, direction=Direction.CLOCKWISE)
+    def __init__(self, port, positive_direction=Direction.CLOCKWISE):
+        """Motor(port, positive_direction=Direction.CLOCKWISE)
 
         Create a motor instance.
 
         Arguments:
             port (Port): Port to which the motor is connected.
-            direction (Direction): Positive speed direction
-                                   (*Default*: `Direction.CLOCKWISE`).
+            positive_direction (Direction): Which direction the motor should
+                turn when you give a positive speed value or
+                angle (*Default*: ``Direction.CLOCKWISE``).
         """
         pass

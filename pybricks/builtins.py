@@ -7,13 +7,16 @@ from .parameters import Align, Direction, Stop, Axis
 class Motor():
     """Generic class to control motors of all shaped and sizes."""
 
-    def __init__(self, port, direction=Direction.CLOCKWISE, gears=None):
-        """Motor(port, direction=Direction.CLOCKWISE, gears=None)
+    def __init__(self, port,
+                 positive_direction=Direction.CLOCKWISE,
+                 gears=None):
+        """Motor(port, positive_direction=Direction.CLOCKWISE, gears=None)
 
         Arguments:
             port (Port): Port to which the motor is connected.
-            direction (Direction): Positive speed direction
-                                   (*Default*: `Direction.CLOCKWISE`).
+            positive_direction (Direction): Which direction the motor should
+                turn when you give a positive speed value or
+                angle (*Default*: ``Direction.CLOCKWISE``).
             gears (list):
                 List of gears linked to the motor (*Default*:``None``).
 
