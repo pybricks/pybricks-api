@@ -59,3 +59,41 @@ class AnalogSensor():
         From then on, ``voltage()`` returns the raw ambient light value.
         """
         pass
+
+
+class I2CDevice():
+    """Generic or custom I2C device."""
+
+    def __init__(self, port, check_type=True):
+        """I2CDevice(port, address)
+
+        Arguments:
+            port (Port): Port to which the device is connected.
+            address(int): I2C address of the client device. See
+                :ref:`I2C Addresses <i2caddress>`.
+        """
+        pass
+
+    def read(self, reg, length):
+        """Read bytes, starting at a given register.
+
+        Arguments:
+            reg (``int``): Register at which to begin
+                reading: 0--255 or 0x00--0xFF.
+            length (``int``): How many bytes to read.
+
+        Returns:
+            tuple of ``int``: Bytes returned from the device.
+        """
+        pass
+
+    def write(self, reg, data):
+        """Write bytes, starting at a given register.
+
+        Arguments:
+            reg (``int``): Register at which to begin
+                writing: 0--255 or 0x00--0xFF.
+            data (tuple of ``int``): Tuple of the bytes to be written. To write
+                just one byte, a single ``int`` is also allowed.
+        """
+        pass
