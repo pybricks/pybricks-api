@@ -55,7 +55,3 @@ Ultrasonic Sensor
 Gyroscopic Sensor
 ^^^^^^^^^^^^^^^^^
 .. autoclass:: pybricks.ev3devices.GyroSensor
-
-Analog Sensor
-^^^^^^^^^^^^^
-.. autoclass:: pybricks.ev3devices.AnalogSensor

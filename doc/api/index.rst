@@ -23,6 +23,7 @@ Intro
    hubs
    pupdevices
    ev3devices
+   customdevices
    parameters
    tools
    robotics
