@@ -72,3 +72,7 @@ More details about using I2C without MicroPython can be found on
 the `ev3dev I2C`_ page.
 
 .. _ev3dev I2C: http://docs.ev3dev.org/projects/lego-linux-drivers/en/ev3dev-stretch/i2c.html
+
+UART Device
+^^^^^^^^^^^^^
+.. autoclass:: pybricks.customdevices.UARTDevice

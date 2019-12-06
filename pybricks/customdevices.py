@@ -96,3 +96,62 @@ class I2CDevice():
             data (``bytes``): Bytes to be written.
         """
         pass
+
+
+class UARTDevice():
+    """Generic UART device."""
+
+    def __init__(self, port, baudrate, timeout=None):
+        """
+
+        Arguments:
+            port (Port): Port to which the device is connected.
+            baudrate (int): Baudrate of the UART device.
+            timeout (:ref:`time`): How long to wait
+                during :meth:`.read` before giving up. If you choose ``None``,
+                it will wait forever. (*Default*: ``None``)
+        """
+        pass
+
+    def read(self, length):
+        """Read a given number of bytes from the buffer.
+
+        Your program will wait until the requested number of bytes are
+        received. If this takes longer than ``timeout``, the ``ETIMEDOUT``
+        exception is raised.
+
+        Arguments:
+            length (``int``): How many bytes to read.
+
+        Returns:
+            ``bytes``: Bytes returned from the device.
+        """
+        pass
+
+    def read_all(self):
+        """Read all bytes from the buffer.
+
+        Returns:
+            ``bytes``: Bytes returned from the device.
+        """
+        pass
+
+    def write(self, data):
+        """Write bytes.
+
+        Arguments:
+            data (``bytes``): Bytes to be written.
+        """
+        pass
+
+    def waiting(self):
+        """How many bytes are still waiting to be read.
+
+        Returns:
+            ``int``: Number of bytes in the buffer.
+        """
+        pass
+
+    def clear(self):
+        """Empty the buffer."""
+        pass
