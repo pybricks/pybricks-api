@@ -25,11 +25,9 @@ For example, if the documented address is ``0xD2``, you must do::
     dev = I2CDevice(ev3.Port.S2, address=0xD2>>1)
 
 Advanced I2C Commands
-----------------------
-The ``I2CDevice`` class methods call functions from the Linux SMBus driver.
-The snippet below illustrates which functions get called exactly.
-Some rudimentary I2C devices do not require a register/command argument. You
-can get this behavior by setting ``reg=None``. This is shown below.
+---------------------
+Some rudimentary I2C devices do not require a register argument or even any
+data. You can achieve this behavior as shown in the examples below.
 
 **Initialize**
 
@@ -43,14 +41,13 @@ can get this behavior by setting ``reg=None``. This is shown below.
 
 ::
 
-    # Recommended for reading. This calls i2c_smbus_read_i2c_block_data.
+    # Recommended for reading:
     result, = dev.read(reg=0x0F, length=1)
 
-    # No register, read 1 byte. This calls i2c_smbus_read_byte.
+    # Read 1 byte from no particular register:
     dev.read(reg=None, length=1)
 
-    # No register, read, no data.
-    # This calls i2c_smbus_write_quick wth I2C_SMBUS_READ.
+    # Read 0 bytes from no particular register:
     dev.read(reg=None, length=0)
 
 
@@ -58,20 +55,26 @@ can get this behavior by setting ``reg=None``. This is shown below.
 
 ::
 
-    # Recommended for writing. This calls i2c_smbus_write_i2c_block_data.
-    dev.write(reg=0x22, data=(0x08,))
+    # Recommended for writing:
+    dev.write(reg=0x22, data=b'\x08')
 
-    # No register, write 1 byte. This calls i2c_smbus_write_byte.
-    dev.write(reg=None, data=(0x05,))
+    # Write 1 byte to no particular register:
+    dev.write(reg=None, data=b'\x08')
 
-    # No register, write, no data.
-    # This calls i2c_smbus_write_quick with I2C_SMBUS_WRITE.
+    # Write 0 bytes to no particular register:
     dev.write(reg=None, data=None)
 
+**Additional technical resources**
+
+The ``I2CDevice`` class methods call functions from the Linux SMBus driver.
+To find out which commands are called under the hood, check the
+`Pybricks source code`_.
 More details about using I2C without MicroPython can be found on
 the `ev3dev I2C`_ page.
 
 .. _ev3dev I2C: http://docs.ev3dev.org/projects/lego-linux-drivers/en/ev3dev-stretch/i2c.html
+.. _Pybricks source code: https://github.com/pybricks/pybricks-micropython
+
 
 UART Device
 ^^^^^^^^^^^^^
