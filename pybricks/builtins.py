@@ -5,12 +5,12 @@ from .parameters import Align, Direction, Stop, Axis
 
 
 class Motor():
-    """Generic class to control motors of all shapes and sizes."""
+    """Generic class to control motors with built-in encoders."""
 
     def __init__(self, port,
                  positive_direction=Direction.CLOCKWISE,
                  gears=None):
-        """Motor(port, positive_direction=Direction.CLOCKWISE, gears=None, encoders=True)
+        """Motor(port, positive_direction=Direction.CLOCKWISE, gears=None)
 
         Arguments:
             port (Port): Port to which the motor is connected.
@@ -28,13 +28,6 @@ class Motor():
                 are automatically adjusted to account for the resulting gear
                 ratio.  The motor direction remains unchanged by this. See
                 :ref:`gears` for more information.
-            encoders (bool): Whether to use built-in encoders (rotation
-                sensors), if present (*Default*: ``True``).
-
-                You can set this to ``False`` to
-                allow simple DC motors, even if they are not auto-detected.
-                For example, this lets you use RCX motors or Power Functions
-                motors on the EV3 using the official converter cables.
         """
         pass
 
