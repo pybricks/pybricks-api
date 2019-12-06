@@ -5,7 +5,7 @@ class AnalogSensor():
     """Generic or custom analog sensor."""
 
     def __init__(self, port, check_type=True):
-        """AnalogSensor(port, check_type=True)
+        """
 
         Arguments:
             port (Port): Port to which the sensor is connected.
@@ -64,8 +64,8 @@ class AnalogSensor():
 class I2CDevice():
     """Generic or custom I2C device."""
 
-    def __init__(self, port, check_type=True):
-        """I2CDevice(port, address)
+    def __init__(self, port, address):
+        """
 
         Arguments:
             port (Port): Port to which the device is connected.
