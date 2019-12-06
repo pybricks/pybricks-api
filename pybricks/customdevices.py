@@ -83,7 +83,7 @@ class I2CDevice():
             length (``int``): How many bytes to read.
 
         Returns:
-            tuple of ``int``: Bytes returned from the device.
+            ``bytes``: Bytes returned from the device.
         """
         pass
 
@@ -93,7 +93,6 @@ class I2CDevice():
         Arguments:
             reg (``int``): Register at which to begin
                 writing: 0--255 or 0x00--0xFF.
-            data (tuple of ``int``): Tuple of the bytes to be written. To write
-                just one byte, a single ``int`` is also allowed.
+            data (``bytes``): Bytes to be written.
         """
         pass
