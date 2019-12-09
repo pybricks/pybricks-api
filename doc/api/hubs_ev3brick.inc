@@ -17,6 +17,13 @@
 
     .. automethod:: pybricks._instances.light.on
 
+        .. toggle-header::
+            :header: **Show/hide example**
+
+            **Example: Turn the light on and change the color.**
+
+            .. literalinclude:: ../../pybricks-projects/snippets/ev3/light_color/main.py
+
     .. automethod:: pybricks._instances.light.off
 
     .. rubric:: Using the speaker
