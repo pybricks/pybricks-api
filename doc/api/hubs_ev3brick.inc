@@ -90,9 +90,11 @@
             # Play a sound file from your project folder
             brick.speaker.file('mysound.wav')
 
-    .. rubric:: Using the display
+.. rubric:: Using the screen
 
-    ::
+.. todo:: SCREEN IS NOT YET UPDATED / IMPLEMENTED
+
+..  ::
 
                         x
                 -------------->
@@ -105,9 +107,9 @@
                 |__________________|
                                     (177, 127)
 
-    .. automethod:: pybricks._instances.display.clear
+..    .. automethod:: pybricks._instances.display.clear
 
-    .. automethod:: pybricks._instances.display.text
+..    .. automethod:: pybricks._instances.display.text
 
         Example::
 
@@ -123,7 +125,7 @@
             # Print ``World`` directly underneath it
             brick.display.text("World")
 
-    .. automethod:: pybricks._instances.display.image
+..    .. automethod:: pybricks._instances.display.image
 
         Example::
 
