@@ -11,14 +11,6 @@ Motor
     :noindex:
     :no-members:
 
-    Example::
-
-        # Initialize a motor.
-        example_motor = Motor(Port.A)
-
-        # Initialize a motor with positive speed as counterclockwise
-        right_motor = Motor(Port.B, Direction.COUNTERCLOCKWISE)
-
     .. rubric:: Methods for motors with rotation sensors
 
     .. automethod:: pybricks._instances.Motor.angle

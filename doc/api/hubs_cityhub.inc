@@ -14,20 +14,6 @@
 
     .. automethod:: pybricks._instances.light.off
 
-        Example::
-
-            # Initialize CityHub at the top of your script
-            hub = CityHub()
-
-            # Make the light red
-            hub.light.on(Color.RED)
-
-            # Wait
-            wait(1000)
-
-            # Turn the light off
-            hub.light.off()
-
     .. rubric:: Using the battery
 
     .. automethod:: pybricks._instances.battery.voltage

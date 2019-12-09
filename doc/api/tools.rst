@@ -6,14 +6,6 @@
 
 .. autofunction:: print
 
-    Example::
-
-        # Print some text
-        print("Hello, world")
-
-        # Print some text and a number
-        print("Value:", 5)
-
 .. autofunction:: wait
 
 .. autoclass:: pybricks.tools.StopWatch
