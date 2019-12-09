@@ -123,6 +123,7 @@ else:
     html_context = {
         'css_files': [
             '_static/css/theme_overrides.css',
+            '_static/contentui.css',
         ],
         'disclaimer': _DISCLAIMER,
     }
