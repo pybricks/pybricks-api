@@ -4,23 +4,6 @@
 .. automodule:: pybricks.parameters
     :no-members:
 
-.. autoclass:: pybricks.parameters.Port
-    :no-members:
-
-    Motor ports:
-
-        .. data:: A
-        .. data:: B
-        .. data:: C
-        .. data:: D
-
-    Sensor ports:
-
-        .. data:: S1
-        .. data:: S2
-        .. data:: S3
-        .. data:: S4
-
 .. autoclass:: pybricks.parameters.Direction
     :no-members:
 
@@ -34,10 +17,4 @@
     :no-members:
 
 .. autoclass:: pybricks.parameters.Align
-    :no-members:
-
-.. autoclass:: pybricks.parameters.Axis
-    :no-members:
-
-.. autoclass:: pybricks.parameters.Side
     :no-members:
