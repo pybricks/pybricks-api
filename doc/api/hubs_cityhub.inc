@@ -6,13 +6,6 @@
     .. data:: Port.A
     .. data:: Port.B
 
-    .. rubric:: Built-in devices
-
-    The City Hub has several built-in devices, configured as follows:
-
-    .. attribute:: light = ColorLight()
-    .. attribute:: battery = Battery()
-
     Usage of each built-in device is described below.
 
     .. rubric:: Using the hub status light

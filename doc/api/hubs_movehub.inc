@@ -7,15 +7,6 @@
     |.. data:: Port.A |.. data:: Port.B |.. data:: Port.C |.. data:: Port.D |
     +-----------------+-----------------+-----------------+-----------------+
 
-    .. rubric:: Built-in devices
-
-    The Move Hub has several built-in devices, configured as follows:
-
-    .. attribute:: light = ColorLight()
-    .. attribute:: battery = Battery()
-
-    Usage of each built-in device is described below.
-
     .. rubric:: Using the hub status light
 
     .. automethod:: pybricks._instances.light.on

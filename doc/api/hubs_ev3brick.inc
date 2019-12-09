@@ -9,19 +9,6 @@
     |.. data:: Port.S1|.. data:: Port.S2|.. data:: Port.S3|.. data:: Port.S4|
     +-----------------+-----------------+-----------------+-----------------+
 
-    .. rubric:: Built-in devices
-
-    The EV3 Brick has several built-in devices, configured as follows:
-
-    .. attribute::
-        buttons = KeyPad([KeyPad.UP, KeyPad.DOWN, KeyPad.LEFT, KeyPad.RIGHT])
-    .. attribute:: display = Display(width=178, height=128)
-    .. attribute:: light = ColorLight([Color.RED, Color.GREEN])
-    .. attribute:: speaker = Speaker()
-    .. attribute:: battery = Battery()
-
-    Usage of each built-in device is described below.
-
     .. rubric:: Using the buttons
 
     .. automethod:: pybricks._instances.buttons.pressed
