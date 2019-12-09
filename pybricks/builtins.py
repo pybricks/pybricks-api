@@ -388,6 +388,30 @@ class Speaker():
 
         pass
 
+    def say(self, text):
+        """Say a given text string.
+
+        Arguments:
+            text (str): What to say.
+        """
+
+        pass
+
+    def set_voice_settings(self, language='en', speed=150, variant='m1'):
+        """Configure voice settings used by the ``say`` method.
+
+        Arguments:
+            language (str)::
+                - ``'en'`` (English)
+                - ``'nl'`` (Dutch)
+                - ``'de'`` (German)
+                - TODO: Add all available/supported languages
+            speed (int): Number of words per minute.
+            variant (str): Voice variant. You can choose female voices
+               (``'f1'`` to ``'f5'``) or male voices (``'m1'`` to ``'m7'``).
+        """
+        pass
+
 
 class Light():
     """Control a single-color light."""

@@ -82,9 +82,19 @@
             # Play a sound file from your project folder
             ev3.speaker.play('mysound.wav')
 
+    .. todo:: The following functionality is not yet implemented
+
+    .. automethod:: pybricks._instances.speaker.say
+
+    .. todo:: The following functionality is not yet implemented
+
+    .. automethod:: pybricks._instances.speaker.set_voice_settings
+
+.. todo:: This functionality is not yet implemented
+
 .. rubric:: Using the screen
 
-.. todo:: SCREEN IS NOT YET UPDATED / IMPLEMENTED
+.. todo:: This functionality is not yet implemented
 
 ..  ::
 
