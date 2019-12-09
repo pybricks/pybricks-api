@@ -21,32 +21,29 @@ Motor
 
     .. rubric:: Methods for motors with rotation sensors
 
-    .. automethod:: pybricks.pupdevices.Motor.angle
+    .. automethod:: pybricks._instances.Motor.angle
+        :noindex:
 
-    .. automethod:: pybricks.pupdevices.Motor.reset_angle
+    .. automethod:: pybricks._instances.Motor.reset_angle
+        :noindex:
 
-    .. automethod:: pybricks.pupdevices.Motor.speed
+    .. automethod:: pybricks._instances.Motor.speed
+        :noindex:
 
-    .. automethod:: pybricks.pupdevices.Motor.stop
+    .. automethod:: pybricks._instances.Motor.stop
+        :noindex:
 
-    .. automethod:: pybricks.pupdevices.Motor.run
+    .. automethod:: pybricks._instances.Motor.run
+        :noindex:
 
-    .. automethod:: pybricks.pupdevices.Motor.run_time
+    .. automethod:: pybricks._instances.Motor.run_time
+        :noindex:
 
-    .. automethod:: pybricks.pupdevices.Motor.run_angle
+    .. automethod:: pybricks._instances.Motor.run_angle
+        :noindex:
 
-    .. automethod:: pybricks.pupdevices.Motor.run_target
-
-    .. rubric:: Methods for all motors
-
-    .. automethod:: pybricks.pupdevices.Motor.dc
-
-        Example::
-
-            # Set the motor duty cycle to 75%.
-            example_motor.duty(75)
-
-    .. automethod:: pybricks.pupdevices.Motor.stop
+    .. automethod:: pybricks._instances.Motor.run_target
+        :noindex:
 
 
 Color and Distance Sensor

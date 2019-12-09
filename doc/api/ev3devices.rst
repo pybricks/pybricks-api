@@ -19,21 +19,29 @@ Motor
         # Initialize a motor with positive speed as counterclockwise
         right_motor = Motor(Port.B, Direction.COUNTERCLOCKWISE)
 
-    .. automethod:: pybricks.ev3devices.Motor.angle
+    .. automethod:: pybricks._instances.Motor.angle
+        :noindex:
 
-    .. automethod:: pybricks.ev3devices.Motor.reset_angle
+    .. automethod:: pybricks._instances.Motor.reset_angle
+        :noindex:
 
-    .. automethod:: pybricks.ev3devices.Motor.speed
+    .. automethod:: pybricks._instances.Motor.speed
+        :noindex:
 
-    .. automethod:: pybricks.ev3devices.Motor.stop
+    .. automethod:: pybricks._instances.Motor.stop
+        :noindex:
 
-    .. automethod:: pybricks.ev3devices.Motor.run
+    .. automethod:: pybricks._instances.Motor.run
+        :noindex:
 
-    .. automethod:: pybricks.ev3devices.Motor.run_time
+    .. automethod:: pybricks._instances.Motor.run_time
+        :noindex:
 
-    .. automethod:: pybricks.ev3devices.Motor.run_angle
+    .. automethod:: pybricks._instances.Motor.run_angle
+        :noindex:
 
-    .. automethod:: pybricks.ev3devices.Motor.run_target
+    .. automethod:: pybricks._instances.Motor.run_target
+        :noindex:
 
 
 Touch Sensor
