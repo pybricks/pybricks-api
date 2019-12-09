@@ -35,6 +35,7 @@ Intro
    :hidden:
 
    signaltypes
+   frames
    motors
 
 .. toctree::

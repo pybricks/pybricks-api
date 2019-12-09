@@ -197,33 +197,3 @@ Electrical currents are expressed in milliampere (mA).
 
 For example, you can check the current supplied by the :meth:`battery
 <.ev3brick.battery.current>`.
-
-Scalars and Vectors
-~~~~~~~~~~~~~~~~~~~~~~~
-
-.. _scalar:
-
-scalar
---------------
-
-TODO
-
-.. _vector:
-
-vector
---------------
-
-TODO
-
-Robot reference frame
-~~~~~~~~~~~~~~~~~~~~~~~
-
-.. _robotframe:
-
-Robot reference frame
-----------------------
-
-TODO (explanation, diagram, etc)::
-    * X: To the right
-    * Y: forward
-    * Z: upward
