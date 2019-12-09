@@ -359,35 +359,31 @@ class Display():
 
 
 class Speaker():
-    """Play beeps and sound files using a speaker."""
+    """Play beeps and sounds using a speaker."""
 
-    def beep(self, frequency=500, duration=100, volume=30):
+    def volume(self, volume):
+        """Set the speaker volume.
+
+        Arguments:
+            volume (:ref:`percentage`): Volume of the speaker.
+        """
+        pass
+
+    def beep(self, frequency=500, duration=100):
         """Play a beep/tone.
 
         Arguments:
             frequency (:ref:`frequency`): Frequency of the beep
                                           (*Default*: 500).
             duration (:ref:`time`): Duration of the beep (*Default*: 100).
-            volume (:ref:`percentage`): Volume of the beep (*Default*: 30).
         """
         pass
 
-    def beeps(self, number):
-        """Play a number of default beeps with a brief pause in between.
-
-        Arguments:
-            number (int): Number of beeps.
-
-        """
-        pass
-
-    def file(self, file_name, volume=100):
+    def play(self, file_name):
         """Play a sound file.
 
         Arguments:
             file_name (str): Path to the sound file, including extension.
-            volume (:ref:`percentage`): Volume of the sound (*Default*: 100).
-
         """
 
         pass

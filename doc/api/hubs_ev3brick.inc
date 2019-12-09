@@ -53,42 +53,34 @@
 
     .. rubric:: Using the speaker
 
+    .. automethod:: pybricks._instances.speaker.volume
+
     .. automethod:: pybricks._instances.speaker.beep
 
         Example::
 
             # Initialize EV3 at the top of your script
-            brick = EV3Brick()
+            ev3 = EV3Brick()
 
             # A simple beep
-            brick.speaker.beep()
+            ev3.speaker.beep()
 
-            # A high pitch (1500 Hz) for one second (1000 ms) at 50% volume
-            brick.speaker.beep(1500, 1000, 50)
+            # A high pitch (1500 Hz) for one second (1000 ms)
+            ev3.speaker.beep(1500, 1000)
 
 
-    .. automethod:: pybricks._instances.speaker.beeps
-
-        Example::
-
-            # Initialize EV3 at the top of your script
-            brick = EV3Brick()
-
-            # Make 5 simple beeps
-            brick.speaker.beeps(5)
-
-    .. automethod:: pybricks._instances.speaker.file
+    .. automethod:: pybricks._instances.speaker.play
 
         Example::
 
             # Initialize EV3 at the top of your script
-            brick = EV3Brick()
+            ev3 = EV3Brick()
 
             # Play one of the built-in sounds
-            brick.speaker.file(SoundFile.HELLO)
+            ev3.speaker.play(SoundFile.HELLO)
 
             # Play a sound file from your project folder
-            brick.speaker.file('mysound.wav')
+            ev3.speaker.play('mysound.wav')
 
 .. rubric:: Using the screen
 
