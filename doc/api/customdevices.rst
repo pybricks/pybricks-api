@@ -79,3 +79,10 @@ the `ev3dev I2C`_ page.
 UART Device
 ^^^^^^^^^^^^^
 .. autoclass:: pybricks.customdevices.UARTDevice
+
+.. toggle-header::
+    :header: **Show/hide example**
+
+    **Example: Read and write to a UART device.**
+
+    .. literalinclude:: ../../pybricks-projects/snippets/ev3/uart_basics/main.py
