@@ -109,11 +109,11 @@ class UARTDevice():
             baudrate (int): Baudrate of the UART device.
             timeout (:ref:`time`): How long to wait
                 during :meth:`.read` before giving up. If you choose ``None``,
-                it will wait forever. (*Default*: ``None``)
+                it will wait forever (*Default*: ``None``).
         """
         pass
 
-    def read(self, length):
+    def read(self, length=1):
         """Read a given number of bytes from the buffer.
 
         Your program will wait until the requested number of bytes are
@@ -121,7 +121,7 @@ class UARTDevice():
         exception is raised.
 
         Arguments:
-            length (``int``): How many bytes to read.
+            length (``int``): How many bytes to read (*Default*: 1).
 
         Returns:
             ``bytes``: Bytes returned from the device.
