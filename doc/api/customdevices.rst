@@ -12,6 +12,13 @@ I2C Device
 ^^^^^^^^^^^^^
 .. autoclass:: pybricks.customdevices.I2CDevice
 
+.. toggle-header::
+    :header: **Show/hide example**
+
+    **Example: Read and write to an I2C device.**
+
+    .. literalinclude:: ../../pybricks-projects/snippets/ev3/i2c_basics/main.py
+
 .. _i2caddress:
 
 I2C Addresses
@@ -19,50 +26,20 @@ I2C Addresses
 I2C addresses are 7-bit values. However, most vendors who make LEGO compatible
 sensors provide an 8-bit address in their documentation.
 To use those addresses, you must shift them by 1 bit.
-For example, if the documented address is ``0xD2``, you must do::
-
-    ev3 = EV3Brick()
-    dev = I2CDevice(ev3.Port.S2, address=0xD2>>1)
+For example, if the documented address is ``0xD2``, you can do
+``address = 0xD2 >> 1``.
 
 Advanced I2C Commands
 ---------------------
 Some rudimentary I2C devices do not require a register argument or even any
 data. You can achieve this behavior as shown in the examples below.
 
-**Initialize**
+.. toggle-header::
+    :header: **Show/hide example**
 
-::
+    **Example: Advanced I2C read and write techniques.**
 
-    # Initialize
-    ev3 = EV3Brick()
-    dev = I2CDevice(ev3.Port.S2, address=0x69)
-
-**Advanced read methods**
-
-::
-
-    # Recommended for reading:
-    result, = dev.read(reg=0x0F, length=1)
-
-    # Read 1 byte from no particular register:
-    dev.read(reg=None, length=1)
-
-    # Read 0 bytes from no particular register:
-    dev.read(reg=None, length=0)
-
-
-**Advanced write methods**
-
-::
-
-    # Recommended for writing:
-    dev.write(reg=0x22, data=b'\x08')
-
-    # Write 1 byte to no particular register:
-    dev.write(reg=None, data=b'\x08')
-
-    # Write 0 bytes to no particular register:
-    dev.write(reg=None, data=None)
+    .. literalinclude:: ../../pybricks-projects/snippets/ev3/i2c_extra/main.py
 
 **Additional technical resources**
 
@@ -85,4 +62,5 @@ UART Device
 
     **Example: Read and write to a UART device.**
 
-    .. literalinclude:: ../../pybricks-projects/snippets/ev3/uart_basics/main.py
+    .. literalinclude::
+        ../../pybricks-projects/snippets/ev3/uart_basics/main.py
