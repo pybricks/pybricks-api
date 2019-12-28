@@ -76,8 +76,8 @@ class Motor():
 
         Arguments:
             angle (:ref:`angle`): Value to which the angle should be reset. If
-                                  you don't specify an angle, the angle of the
-                                  marker on the shaft will be used, if present.
+                                  you don't specify an angle, the absolute
+                                  value will be used if the motor supports it.
         """
         pass
 
