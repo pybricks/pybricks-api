@@ -17,7 +17,7 @@ The Motor Class
 
     .. automethod:: pybricks.builtins.Motor.stalled
 
-    .. rubric:: Moving the motor
+    .. rubric:: Motion
 
     .. automethod:: pybricks.builtins.Motor.stop
 
@@ -29,13 +29,16 @@ The Motor Class
 
     .. automethod:: pybricks.builtins.Motor.run_target
 
+    .. automethod:: pybricks.builtins.Motor.run_until_stalled
+
+    .. rubric:: Manual motion control
+
+    The following methods are useful if you want full manual control of
+    the motor.
+
     .. automethod:: pybricks.builtins.Motor.dc
 
-    .. rubric:: Moving the motor (advanced)
-
     .. automethod:: pybricks.builtins.Motor.track_target
-
-    .. automethod:: pybricks.builtins.Motor.run_until_stalled
 
     .. rubric:: Changing motor settings
 

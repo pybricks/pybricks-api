@@ -30,11 +30,10 @@ display = make_instance(Display)
 
 
 class Motor(Motor):
+    """Generic class to control motors with built-in rotation sensors."""
 
     def __init__(self, port, positive_direction=Direction.CLOCKWISE):
         """Motor(port, positive_direction=Direction.CLOCKWISE)
-
-        Create a motor instance.
 
         Arguments:
             port (Port): Port to which the motor is connected.

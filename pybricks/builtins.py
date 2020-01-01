@@ -4,8 +4,62 @@ speakers, and batteries."""
 from .parameters import Align, Direction, Stop, Axis
 
 
-class Motor():
-    """Generic class to control motors with built-in encoders."""
+class DCMotor():
+    """Generic class to control simple motors without rotation sensors, such
+    as train motors."""
+
+    def __init__(self, port,
+                 positive_direction=Direction.CLOCKWISE):
+        """DCMotor(port, positive_direction=Direction.CLOCKWISE)
+
+        Arguments:
+            port (Port): Port to which the motor is connected.
+            positive_direction (Direction): Which direction the motor should
+                turn when you give a positive duty cycle value.
+        """
+        pass
+
+    def dc(self, duty):
+        """Rotate the motor at a given duty cycle (also known as "power").
+
+        Arguments:
+            duty (:ref:`percentage`): The duty cycle (-100.0 to 100).
+        """
+        pass
+
+    def set_dc_settings(self, duty_limit, duty_offset):
+        """Configure the settings to adjust the behavior of the :meth:`.dc`
+        command. This also affects all of the ``run`` commands, which use
+        the :meth:`.dc` method in the background.
+
+        Arguments:
+            duty_limit (:ref:`percentage`): Relative torque limit during
+                                            subsequent motor commands. This
+                                            sets the maximum duty cycle that is
+                                            applied during any subsequent motor
+                                            command. This reduces the maximum
+                                            torque output to a percentage of
+                                            the absolute maximum stall torque.
+                                            This is useful to avoid applying
+                                            the full motor torque to a geared
+                                            or lever mechanism, or to prevent
+                                            your LEGO® train from
+                                            unintentionally going at full
+                                            speed. (*Default*: 100).
+            duty_offset (:ref:`percentage`): Minimum duty cycle given when you
+                                             use :meth:`.dc`. This adds a small
+                                             feed forward torque so that your
+                                             motor will move even for very low
+                                             duty cycle values, which can be
+                                             useful when you create your own
+                                             feedback controllers
+                                             (*Default*: 0).
+        """
+        pass
+
+
+class Motor(DCMotor):
+    """Generic class to control motors with built-in rotation sensors."""
 
     def __init__(self, port,
                  positive_direction=Direction.CLOCKWISE,
@@ -28,14 +82,6 @@ class Motor():
                 are automatically adjusted to account for the resulting gear
                 ratio.  The motor direction remains unchanged by this. See
                 :ref:`gears` for more information.
-        """
-        pass
-
-    def dc(self, duty):
-        """Set the duty cycle of the motor.
-
-        Arguments:
-            duty (:ref:`percentage`): The duty cycle (-100.0 to 100).
         """
         pass
 
@@ -226,36 +272,6 @@ class Motor():
             target_angle (:ref:`angle`): Target angle that the motor should
                                          rotate to.
 
-        """
-        pass
-
-    def set_dc_settings(self, duty_limit, duty_offset):
-        """Configure the settings to adjust the behavior of the :meth:`.dc`
-        command. This also affects all of the ``run`` commands, which use
-        the :meth:`.dc` method in the background.
-
-        Arguments:
-            duty_limit (:ref:`percentage`): Relative torque limit during
-                                            subsequent motor commands. This
-                                            sets the maximum duty cycle that is
-                                            applied during any subsequent motor
-                                            command. This reduces the maximum
-                                            torque output to a percentage of
-                                            the absolute maximum stall torque.
-                                            This is useful to avoid applying
-                                            the full motor torque to a geared
-                                            or lever mechanism, or to prevent
-                                            your LEGO® train from
-                                            unintentionally going at full
-                                            speed. (*Default*: 100).
-            duty_offset (:ref:`percentage`): Minimum duty cycle given when you
-                                             use :meth:`.dc`. This adds a small
-                                             feed forward torque so that your
-                                             motor will move even for very low
-                                             duty cycle values, which can be
-                                             useful when you create your own
-                                             feedback controllers
-                                             (*Default*: 0).
         """
         pass
 

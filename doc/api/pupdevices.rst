@@ -4,14 +4,22 @@
 .. automodule:: pybricks.pupdevices
     :no-members:
 
+DCMotor
+^^^^^^^^^^^^
+
+.. autoclass:: pybricks.builtins.DCMotor
+    :noindex:
+    :no-members:
+
+    .. automethod:: pybricks.builtins.DCMotor.dc
+        :noindex:
+
 Motor
 ^^^^^^^^^^^^
 
 .. autoclass:: pybricks._instances.Motor
     :noindex:
     :no-members:
-
-    .. rubric:: Methods for motors with rotation sensors
 
     .. automethod:: pybricks._instances.Motor.angle
         :noindex:
@@ -37,6 +45,10 @@ Motor
     .. automethod:: pybricks._instances.Motor.run_target
         :noindex:
 
+    .. automethod:: pybricks.builtins.Motor.dc
+        :noindex:
+
+        This method lets you use a motor as if it is a simple DC motor.
 
 Color and Distance Sensor
 ^^^^^^^^^^^^^^^^^^^^^^^^^
