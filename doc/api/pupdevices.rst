@@ -4,8 +4,8 @@
 .. automodule:: pybricks.pupdevices
     :no-members:
 
-DCMotor
-^^^^^^^^^^^^
+Motors without Rotation Sensors
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. autoclass:: pybricks.builtins.DCMotor
     :noindex:
@@ -14,8 +14,8 @@ DCMotor
     .. automethod:: pybricks.builtins.DCMotor.dc
         :noindex:
 
-Motor
-^^^^^^^^^^^^
+Motors with Rotation Sensors
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. autoclass:: pybricks._instances.Motor
     :noindex:

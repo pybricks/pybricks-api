@@ -64,3 +64,16 @@ UART Device
 
     .. literalinclude::
         ../../pybricks-projects/snippets/ev3/uart_basics/main.py
+
+DC Motor
+^^^^^^^^^^^^
+
+.. autoclass:: pybricks.builtins.DCMotor
+    :noindex:
+    :no-members:
+
+    .. automethod:: pybricks.builtins.DCMotor.dc
+        :noindex:
+
+    .. automethod:: pybricks.builtins.DCMotor.set_dc_settings
+        :noindex:
