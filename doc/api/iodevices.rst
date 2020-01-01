@@ -1,16 +1,16 @@
-:mod:`customdevices` -- Custom Devices
+:mod:`iodevices` -- Generic I/O Devices
 ===========================================
 
-.. automodule:: pybricks.customdevices
+.. automodule:: pybricks.iodevices
     :no-members:
 
 Analog Sensor
 ^^^^^^^^^^^^^
-.. autoclass:: pybricks.customdevices.AnalogSensor
+.. autoclass:: pybricks.iodevices.AnalogSensor
 
 I2C Device
 ^^^^^^^^^^^^^
-.. autoclass:: pybricks.customdevices.I2CDevice
+.. autoclass:: pybricks.iodevices.I2CDevice
 
 .. toggle-header::
     :header: **Show/hide example**
@@ -55,7 +55,7 @@ the `ev3dev I2C`_ page.
 
 UART Device
 ^^^^^^^^^^^^^
-.. autoclass:: pybricks.customdevices.UARTDevice
+.. autoclass:: pybricks.iodevices.UARTDevice
 
 .. toggle-header::
     :header: **Show/hide example**
