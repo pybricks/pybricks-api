@@ -21,25 +21,13 @@ class DriveBase():
 
         """
 
-    def drive(self, speed, steering):
+    def start(self, drive_speed, turn_rate):
         """Start driving at the specified speed and turnrate, both measured at
         the center point between the wheels of the robot.
 
         Arguments:
-            speed (:ref:`linspeed`): Forward speed of the robot.
-            steering (:ref:`speed`): Turn rate of the robot.
-        """
-        pass
-
-    def drive_time(self, speed, steering, time):
-        """Drive at the specified speed and turnrate for a given amount of
-        time, and then stop.
-
-        Arguments:
-            speed (:ref:`linspeed`): Forward speed of the robot.
-            steering (:ref:`speed`): Turn rate of the robot.
-            time (:ref:`time`): Duration of the maneuver.
-
+            drive_speed (:ref:`linspeed`): Forward speed of the robot.
+            turn_rate (:ref:`speed`): Turn rate of the robot.
         """
         pass
 
@@ -51,5 +39,52 @@ class DriveBase():
         Arguments:
             stop_type (Stop): Whether to coast, brake, or hold (*Default*:
                               :class:`Stop.COAST <.parameters.Stop>`).
+        """
+        pass
+
+    def set_drive_settings(self, drive_speed, drive_acceleration, turn_rate,
+                           turn_acceleration, stop_type):
+        """Configure the behavior of the :meth:`.straight`, :meth:`.turn`,
+        and :meth:`.arc` methods.
+
+        Arguments:
+            drive_speed (:ref:`linspeed`): Forward speed of the robot.
+            drive_acceleration (:ref:`linacceleration`): Forward acceleration
+                of the robot.
+            turn_rate (:ref:`speed`): Turn rate of the robot. Applies
+                to :meth:`.turn` method only.
+            turn_acceleration (:ref:`acceleration`): Angular acceleration of
+                the robot. Applies to :meth:`.turn` method only.
+            stop_type (Stop): Whether to coast, brake, or hold after
+                a given command is complete.
+        """
+        pass
+
+    def straight(self, distance):
+        """Drive straight for a given distance.
+
+        Arguments:
+            distance (:ref:`distance`): Distance to travel.
+        """
+        pass
+
+    def turn(self, angle):
+        """Turn in place by a given angle.
+
+        Arguments:
+            angle (:ref:`angle`): Angle of the turn.
+        """
+        pass
+
+    def arc(self, radius, angle):
+        """Drive along an arc with a given radius by a given angle. An arc is
+        a segment of a circle.
+
+        A positive radius value makes your robot go right. A negative radius
+        makes it go left.
+
+        Arguments:
+            radius (:ref:`dimension`): Radius of the circle.
+            angle (:ref:`angle`): Angle traversed along the circle.
         """
         pass
