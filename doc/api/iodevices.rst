@@ -4,16 +4,22 @@
 .. automodule:: pybricks.iodevices
     :no-members:
 
-LUMPDevice
+LUMP Device
 ^^^^^^^^^^^^^
 .. autoclass:: pybricks.iodevices.LUMPDevice
 
 Analog Sensor
 ^^^^^^^^^^^^^
+
+This class is available on EV3 only.
+
 .. autoclass:: pybricks.iodevices.AnalogSensor
 
 I2C Device
 ^^^^^^^^^^^^^
+
+This class is available on EV3 only.
+
 .. autoclass:: pybricks.iodevices.I2CDevice
 
 .. toggle-header::
@@ -59,6 +65,9 @@ the `ev3dev I2C`_ page.
 
 UART Device
 ^^^^^^^^^^^^^
+
+This class is available on EV3 only.
+
 .. autoclass:: pybricks.iodevices.UARTDevice
 
 .. toggle-header::

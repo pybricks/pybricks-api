@@ -1,4 +1,4 @@
-"""Custom motors and sensors."""
+"""Generic input/output devices."""
 
 
 class LUMPDevice():
