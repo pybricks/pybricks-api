@@ -4,6 +4,10 @@
 .. automodule:: pybricks.iodevices
     :no-members:
 
+LUMPDevice
+^^^^^^^^^^^^^
+.. autoclass:: pybricks.iodevices.LUMPDevice
+
 Analog Sensor
 ^^^^^^^^^^^^^
 .. autoclass:: pybricks.iodevices.AnalogSensor

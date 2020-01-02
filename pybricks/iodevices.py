@@ -1,6 +1,76 @@
 """Custom motors and sensors."""
 
 
+class LUMPDevice():
+    """Devices using the LEGO UART Messaging Protocol."""
+
+    def __init__(self, port):
+        """
+
+        Arguments:
+            port (Port): Port to which the device is connected.
+        """
+        pass
+
+    def read(self):
+        """Read latest values from the sensor.
+
+        Returns:
+            ``tuple``: Values read from the sensor.
+        """
+        pass
+
+    def write(self, values):
+        """Write values to the sensor.
+
+        Arguments:
+            data (``tuple``): Values to be written.
+        """
+        pass
+
+    def get_mode(self):
+        """Get the currently active mode or combi-mode.
+
+        Returns:
+            ``tuple``: Values read from the sensor.
+        """
+        pass
+
+    def set_mode(self, mode):
+        """Set the sensor to a given mode.
+
+        Arguments:
+            mode (``int``): Mode index.
+        """
+        pass
+
+    def set_combi_mode(self, todo1, todo2):
+        """Set the sensor to a given combi-mode.
+
+        TODO: Need to figure out how this works.
+
+        Arguments:
+            TODO (``tuple``): TODO.
+        """
+        pass
+
+    def format(self):
+        """Get the data type for the currently active mode.
+
+        Returns:
+            ``str``: Struct format specifier.
+        """
+        pass
+
+    def id(self):
+        """Get the unique type ID for this device.
+
+        Returns:
+            ``int``: Device ID.
+        """
+        pass
+
+
 class AnalogSensor():
     """Generic or custom analog sensor."""
 
