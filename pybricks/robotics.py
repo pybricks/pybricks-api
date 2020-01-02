@@ -42,6 +42,26 @@ class DriveBase():
         """
         pass
 
+    def distance(self):
+        """Get the estimated accumulated driven distance.
+
+        Returns:
+            :ref:`distance`: Driven distance since last reset.
+        """
+        pass
+
+    def angle(self):
+        """Get the estimated accumulated rotation angle of the drivebase.
+
+        Returns:
+            :ref:`angle`: Accumulated angle since last reset.
+        """
+        pass
+
+    def reset(self):
+        """Reset the accumulated driven distance and angle to 0."""
+        pass
+
     def set_drive_settings(self, drive_speed, drive_acceleration, turn_rate,
                            turn_acceleration, stop_type):
         """Configure the behavior of the :meth:`.straight`, :meth:`.turn`,
