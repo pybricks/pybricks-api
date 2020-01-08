@@ -13,7 +13,7 @@ For docs:
 
 ### Setup
 
-    git clone https://github.com/pybricks/pybricks-api
+    git clone --recursive https://github.com/pybricks/pybricks-api
     cd pybricks-api
     pipenv sync --dev
 
