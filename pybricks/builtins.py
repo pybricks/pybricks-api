@@ -1,7 +1,7 @@
 """Generic cross-platform module for typical devices like lights, displays,
 speakers, and batteries."""
 
-from .parameters import Align, Direction, Stop, Axis
+from .parameters import Direction, Stop, Axis
 
 
 class DCMotor():
@@ -319,48 +319,6 @@ class Motor(DCMotor):
                                             complete.
             stall_speed (:ref:`speed`): See :meth:`.stalled`.
             stall_time (:ref:`time`): See :meth:`.stalled`.
-        """
-        pass
-
-
-class Display():
-    """Show images or text on a display."""
-
-    def clear(self):
-        """Clear everything on the display."""
-        pass
-
-    def text(self, text, coordinate=None):
-        """Display text.
-
-        Parameters:
-            text (str): The text to display.
-            coordinate (tuple): ``(x, y)`` coordinate tuple. It is the top-left
-                                corner of the first character. If no coordinate
-                                is specified, it is printed on the next line.
-
-        """
-        pass
-
-    def image(self, file_name,
-              alignment=Align.CENTER, coordinate=None, clear=True):
-        """image(file_name, alignment=Align.CENTER, coordinate=None, clear=True)
-
-        Show an image file.
-
-        You can specify its placement either using ``alignment`` or by
-        specifying a ``coordinate``, but not both.
-
-        Arguments:
-            file_name (str): Path to the image file. Paths may be absolute or
-                             relative from the project folder.
-            alignment (Align): Where to place the image
-                               (*Default*: Align.CENTER).
-            coordinate (tuple): ``(x, y)`` coordinate tuple. It is the top-left
-                                corner of the image (*Default*: None).
-            clear (bool): Whether to clear the screen before showing the image
-                          (*Default*: ``True``).
-
         """
         pass
 

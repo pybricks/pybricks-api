@@ -1,6 +1,6 @@
 """LEGO® Programmable Hubs."""
 from enum import Enum
-from .builtins import Speaker, Display, Battery, ColorLight, KeyPad
+from .builtins import Speaker, Battery, ColorLight, KeyPad
 from .resources import Image
 
 
@@ -9,7 +9,6 @@ class EV3Brick:
     Port = Enum('Port', ['A', 'B', 'C', 'D', 'S1', 'S2', 'S3', 'S4'])
     screen = Image('_screen_')
     speaker = Speaker()
-    display = Display()
     battery = Battery()
     light = ColorLight()
     buttons = KeyPad()
