@@ -2,5 +2,6 @@
     "python.pythonPath": "${workspaceFolder}/.venv",
     "python.linting.pycodestyleEnabled": false,
     "python.linting.flake8Enabled": true,
-    "python.linting.enabled": true
+    "python.linting.enabled": true,
+    "restructuredtext.confPath": "${workspaceFolder}/doc/api"
 }
