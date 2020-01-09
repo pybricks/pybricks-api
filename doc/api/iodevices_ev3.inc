@@ -74,3 +74,35 @@ DC Motor
 
     .. automethod:: pybricks.builtins.DCMotor.set_dc_settings
         :noindex:
+
+Other ev3dev sensors
+^^^^^^^^^^^^^^^^^^^^^
+
+EV3 MicroPython is built on top of ev3dev, which means that a particular sensor
+may be supported even if it is not listed in this documentation. To test whether
+your sensor is supported:
+
+    * Plug the sensor into your EV3 Brick.
+    * Go to the main menu of the EV3 Brick.
+    * Select `Device Browser` and then `Sensors`.
+    * If your sensor shows up, it is supported.
+
+You will be able to use this sensor using the ``Ev3devSensor`` class below.
+This lets you read the sensor values for a given mode number. To see which modes
+are available for your sensor:
+
+    * Follow the steps above and select your sensor.
+    * Select `set mode`. This shows all available modes for this sensor.
+    * You don't need to set a mode now, so press the back button to cancel.
+
+To read values in your program, enter the mode number as the ``mode`` setting
+in the class shown below. The first mode is mode 0, the second mode is mode 1,
+and so on. To learn more about compatible devices and their modes, visit the
+`ev3dev sensors`_ page.
+
+.. _ev3dev sensors: http://docs.ev3dev.org/projects/lego-linux-drivers/en/ev3dev-stretch/sensors.html
+
+.. autoclass:: pybricks.iodevices.Ev3devSensor
+    :no-members:
+
+    .. automethod:: pybricks.iodevices.Ev3devSensor.read

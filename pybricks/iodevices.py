@@ -33,6 +33,10 @@ class LUMPDevice():
         pass
 
 
+class Ev3devSensor(LUMPDevice):
+    pass
+
+
 class AnalogSensor():
     """Generic or custom analog sensor."""
 
