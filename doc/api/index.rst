@@ -37,4 +37,5 @@ Intro
    signaltypes
    frames
    motors
-
+   sound
+   battery

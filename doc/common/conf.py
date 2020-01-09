@@ -97,6 +97,23 @@ numfig_format = {
     'section': 'Section %s'
 }
 
+# Find cross-reference errors
+nitpicky = True
+
+# https://stackoverflow.com/a/30624034/1976323
+nitpick_ignore = [
+    ('py:class', 'bool'),
+    ('py:class', 'bytearray'),
+    ('py:class', 'bytes'),
+    ('py:class', 'dict'),
+    ('py:class', 'float'),
+    ('py:class', 'int'),
+    ('py:class', 'list'),
+    ('py:class', 'object'),
+    ('py:class', 'str'),
+    ('py:class', 'tuple'),
+]
+
 # -- Autodoc options ------------------------------------------------------
 
 autodoc_member_order = 'bysource'

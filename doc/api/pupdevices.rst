@@ -1,5 +1,5 @@
-:mod:`pupdevices` -- Powered Up Devices
-===========================================================
+:mod:`pupdevices <pybricks.pupdevices>` -- Powered Up Devices
+=============================================================
 
 .. automodule:: pybricks.pupdevices
     :no-members:

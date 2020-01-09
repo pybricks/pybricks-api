@@ -1,5 +1,5 @@
-:mod:`ev3devices` -- EV3 Devices
-===========================================
+:mod:`ev3devices <pybricks.ev3devices>` -- EV3 Devices
+======================================================
 
 .. automodule:: pybricks.ev3devices
     :no-members:

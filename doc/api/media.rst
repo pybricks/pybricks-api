@@ -1,5 +1,8 @@
-:mod:`media` -- Sounds and Images
-=============================================
+:mod:`media <pybricks.media>` -- Sounds and Images
+==================================================
+
+.. automodule:: pybricks.media
+    :no-members:
 
 You can use your own sound and image files by placing them in your project
 folder. You can also use any of the images and sounds built into Pybricks.

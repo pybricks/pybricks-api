@@ -1,5 +1,5 @@
-:mod:`robotics` -- Robotics module
-===========================================
+:mod:`robotics <pybricks.robotics>` -- Robotics module
+======================================================
 
 .. automodule:: pybricks.robotics
     :no-members:

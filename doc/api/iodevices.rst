@@ -1,5 +1,5 @@
-:mod:`iodevices` -- Generic I/O Devices
-===========================================
+:mod:`iodevices <pybricks.iodevices>` -- Generic I/O Devices
+============================================================
 
 .. automodule:: pybricks.iodevices
     :no-members:

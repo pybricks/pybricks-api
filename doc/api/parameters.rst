@@ -1,5 +1,5 @@
-:mod:`parameters` -- Parameters and Constants
-=============================================
+:mod:`parameters <pybricks.parameters>` -- Parameters and Constants
+===================================================================
 
 .. automodule:: pybricks.parameters
     :no-members:
@@ -57,4 +57,10 @@
     :no-members:
 
 .. autoclass:: pybricks.parameters.Align
+    :no-members:
+
+.. autoclass:: pybricks.parameters.Axis
+    :no-members:
+
+.. autoclass:: pybricks.parameters.Side
     :no-members:

@@ -38,7 +38,7 @@ class TouchSensor():
         """Check if the sensor is pressed.
 
         Returns:
-            :obj:`bool`: ``True`` if the sensor is pressed, ``False`` if it is
+            bool: ``True`` if the sensor is pressed, ``False`` if it is
             not pressed.
 
         """
@@ -288,7 +288,7 @@ class UltrasonicSensor():
         measurement.
 
         Returns:
-            :obj:`bool`: ``True`` if ultrasonic sounds are detected,
+            bool: ``True`` if ultrasonic sounds are detected,
             ``False`` if not.
         """
         pass

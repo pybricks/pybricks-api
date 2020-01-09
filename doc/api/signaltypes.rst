@@ -14,7 +14,7 @@ time: ms
 All time and duration values are measured in milliseconds (ms).
 
 For example, the duration of motion with :meth:`run_time
-<.ev3devices.Motor.run_time>`, the duration of :func:`wait <.tools.wait>`, or
+<.builtins.Motor.run_time>`, the duration of :func:`wait <.tools.wait>`, or
 the time values returned by the :class:`StopWatch <.tools.StopWatch>` are
 specified in milliseconds.
 
@@ -26,7 +26,7 @@ angle: deg
 All angles are measured in degrees (deg). One full rotation corresponds to 360
 degrees.
 
-For example, the angle values of a :meth:`Motor <.ev3devices.Motor.angle>` or
+For example, the angle values of a :meth:`Motor <.builtins.Motor.angle>` or
 the :meth:`GyroSensor <.ev3devices.GyroSensor.angle>` are expressed in degrees.
 
 .. _speed:
@@ -38,7 +38,7 @@ Rotational speed, or *angular velocity* describes how fast something rotates,
 expressed as the number of degrees per second (deg/s).
 
 For example, the rotational speed values of a :meth:`Motor
-<.ev3devices.Motor.speed>` or the :meth:`GyroSensor
+<.builtins.Motor.speed>` or the :meth:`GyroSensor
 <.ev3devices.GyroSensor.speed>` are expressed in degrees per second.
 
 While we recommend working with degrees per second in your programs, you can
@@ -126,7 +126,7 @@ degrees per second, during one second (deg/s/s). This is also commonly written
 as  :math:`deg/s^2`.
 
 For example, you can adjust the rotational acceleration setting of a
-:meth:`Motor <.ev3devices.Motor.set_run_settings>` to change how smoothly or
+:meth:`Motor <.builtins.Motor.set_run_settings>` to change how smoothly or
 how quickly it reaches the constant speed set point.
 
 .. _force:
@@ -157,7 +157,7 @@ Some signals do not have specific units. They range from a minimum (0%) to a
 maximum (100%). Specifics type of percentages are :ref:`relative distances
 <relativedistance>` or  :ref:`brightnesses <brightness>`.
 
-Another example is the sound :meth:`volume <.ev3brick.sound.beep>`, which
+Another example is the sound :meth:`volume <.builtins.Speaker.volume>`, which
 ranges from 0% (silent) to 100% (loudest).
 
 .. _brightness:
@@ -177,7 +177,7 @@ frequency: Hz
 Sound frequencies are expressed in Hertz (Hz).
 
 For example, you can choose the frequency of a :meth:`beep
-<.ev3brick.sound.beep>` to change the pitch.
+<.builtins.Speaker.beep>` to change the pitch.
 
 .. _voltage:
 
@@ -186,7 +186,7 @@ voltage: mV
 Voltages are expressed in millivolt (mV).
 
 For example, you can check the voltage of the :meth:`battery
-<.ev3brick.battery.voltage>`.
+<.builtins.Battery.voltage>`.
 
 .. _current:
 
@@ -196,4 +196,4 @@ current: mA
 Electrical currents are expressed in milliampere (mA).
 
 For example, you can check the current supplied by the :meth:`battery
-<.ev3brick.battery.current>`.
+<.builtins.Battery.current>`.

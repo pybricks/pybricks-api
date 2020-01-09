@@ -1,5 +1,8 @@
-:mod:`hubs` -- Programmable Hubs
-==============================================
+:mod:`hubs <pybricks.hubs>` -- Programmable Hubs
+================================================
+
+.. automodule:: pybricks.hubs
+    :no-members:
 
 Select your platform hub using the buttons below.
 

@@ -36,7 +36,8 @@ class Motor(Motor):
         """Motor(port, positive_direction=Direction.CLOCKWISE)
 
         Arguments:
-            port (Port): Port to which the motor is connected.
+            port (Port):
+                Port to which the motor is connected.
             positive_direction (Direction): Which direction the motor should
                 turn when you give a positive speed value or
                 angle (*Default*: ``Direction.CLOCKWISE``).
