@@ -71,7 +71,7 @@ class Image:
         """
         pass
 
-    def draw_box(self, x1, y1, x2, y2, r=0, filled=False, color=Color.BLACK):
+    def draw_box(self, x1, y1, x2, y2, r=0, fill=False, color=Color.BLACK):
         """Draws a box on the image.
 
         Arguments:
@@ -80,20 +80,20 @@ class Image:
             x2 (int): The x coordinate of the right side of the box.
             y2 (int): The y coordinate of the bottom of the box.
             r (int): The radius of the corners of the box.
-            filled (bool): If ``True``, the box will be filled with ``color``,
+            fill (bool): If ``True``, the box will be filled with ``color``,
                 otherwise only the outline of the box will be drawn.
             color (Color): The color of the box.
         """
         pass
 
-    def draw_circle(self, x, y, r=0, filled=False, color=Color.BLACK):
+    def draw_circle(self, x, y, r=0, fill=False, color=Color.BLACK):
         """Draws a circle on the image.
 
         Arguments:
             x (int): The x coordinate of the center of the circle.
             y (int): The y coordinate of the center of the circle.
             r (int): The radius of the circle.
-            filled (bool): If ``True``, the circle will be filled with
+            fill (bool): If ``True``, the circle will be filled with
                 ``color``, otherwise only the circumference will be drawn.
             color (Color): The color of the circle.
         """

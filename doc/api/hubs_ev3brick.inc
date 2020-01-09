@@ -34,11 +34,31 @@
 
     .. automethod:: pybricks._instances.speaker.set_voice_settings
 
-.. todo:: This functionality is not yet implemented
 
-.. rubric:: Using the screen
+    .. rubric:: Using the screen
 
-.. todo:: This functionality is not yet implemented
+    .. automethod:: pybricks.hubs::EV3Brick.screen.clear
+
+    .. automethod:: pybricks.hubs::EV3Brick.screen.draw_text
+
+    .. automethod:: pybricks.hubs::EV3Brick.screen.print
+
+    .. automethod:: pybricks.hubs::EV3Brick.screen.set_font
+
+    .. automethod:: pybricks.hubs::EV3Brick.screen.draw_image
+
+    .. automethod:: pybricks.hubs::EV3Brick.screen.draw_pixel
+
+    .. automethod:: pybricks.hubs::EV3Brick.screen.draw_line
+
+    .. automethod:: pybricks.hubs::EV3Brick.screen.draw_box
+
+    .. automethod:: pybricks.hubs::EV3Brick.screen.draw_circle
+
+    .. autoattribute:: pybricks.hubs::EV3Brick.screen.width
+
+    .. autoattribute:: pybricks.hubs::EV3Brick.screen.height
+
 
 ..  ::
 
