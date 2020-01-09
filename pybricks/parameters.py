@@ -3,7 +3,28 @@
 from enum import Enum
 
 
-class Color(Enum):
+class _PybricksEnumMeta(type(Enum)):
+    def __dir__(cls):
+        yield '__class__'
+        yield '__name__'
+        for member in cls:
+            yield member.name
+
+
+class _PybricksEnum(Enum, metaclass=_PybricksEnumMeta):
+    def __dir__(self):
+        yield '__class__'
+        for member in type(self):
+            yield member.name
+
+    def __str__(self):
+        return '{}.{}'.format(type(self).__name__, self.name)
+
+    def __repr__(self):
+        return str(self)
+
+
+class Color(_PybricksEnum):
     """Light or surface color.
 
     .. data:: BLACK
@@ -28,7 +49,7 @@ class Color(Enum):
     PURPLE = 9
 
 
-class Port(Enum):
+class Port(_PybricksEnum):
     """Port on the programmable brick or hub."""
 
     # Generic motor/sensor ports
@@ -46,7 +67,7 @@ class Port(Enum):
     S4 = ord('4')
 
 
-class Stop(Enum):
+class Stop(_PybricksEnum):
     """Action after the motor stops: coast, brake, or hold.
 
     .. data:: COAST
@@ -82,7 +103,7 @@ class Stop(Enum):
     HOLD = 2
 
 
-class Direction():
+class Direction(_PybricksEnum):
     """Rotational direction for positive speed values: clockwise or
     counterclockwise.
 
@@ -145,7 +166,7 @@ class Direction():
     COUNTERCLOCKWISE = 1
 
 
-class Button(Enum):
+class Button(_PybricksEnum):
     """Buttons on a brick or remote:
 
     .. data:: LEFT_DOWN
@@ -186,7 +207,7 @@ class Button(Enum):
     RIGHT_UP = 9
 
 
-class Axis():
+class Axis(_PybricksEnum):
     """Unit axes of a coordinate system.
 
     .. data:: X
@@ -203,7 +224,7 @@ class Axis():
     ALL = None
 
 
-class Side():
+class Side(_PybricksEnum):
     """Sides or face of a device such as a hub or a sensor. Such devices are
     usually shaped like a rectangular box with six of the following sides:
 
@@ -223,7 +244,7 @@ class Side():
     BOTTOM = 2
 
 
-class Align():
+class Align(_PybricksEnum):
     """Alignment of an image on the display.
 
     .. data:: BOTTOM_LEFT
