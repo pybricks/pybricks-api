@@ -1,12 +1,6 @@
 .. autoclass:: pybricks.hubs.MoveHub
     :no-members:
 
-    .. rubric:: Motor and Sensor Ports
-
-    +-----------------+-----------------+-----------------+-----------------+
-    |.. data:: Port.A |.. data:: Port.B |.. data:: Port.C |.. data:: Port.D |
-    +-----------------+-----------------+-----------------+-----------------+
-
     .. rubric:: Using the hub status light
 
     .. automethod:: pybricks._instances.light.on

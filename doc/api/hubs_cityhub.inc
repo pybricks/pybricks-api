@@ -1,11 +1,6 @@
 .. autoclass:: pybricks.hubs.CityHub
     :no-members:
 
-    .. rubric:: Motor and Sensor Ports
-
-    .. data:: Port.A
-    .. data:: Port.B
-
     Usage of each built-in device is described below.
 
     .. rubric:: Using the hub status light

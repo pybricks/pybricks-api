@@ -113,7 +113,7 @@ To avoid using this factor 3 everywhere in your program, you can use the
     ev3 = EV3Brick()
 
     # Initialize the motor. See picture above.
-    dial = Motor(ev3.Port.C, Direction.COUNTERCLOCKWISE, gears=[12, 36])
+    dial = Motor(Port.C, Direction.COUNTERCLOCKWISE, gears=[12, 36])
 
     # Turn the dial by 90-degrees
     dial.run_angle(500, 90)

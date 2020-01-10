@@ -1,14 +1,6 @@
 .. autoclass:: pybricks.hubs.EV3Brick
     :no-members:
 
-    .. rubric:: Motor and Sensor Ports
-
-    +-----------------+-----------------+-----------------+-----------------+
-    |.. data:: Port.A |.. data:: Port.B |.. data:: Port.C |.. data:: Port.D |
-    +-----------------+-----------------+-----------------+-----------------+
-    |.. data:: Port.S1|.. data:: Port.S2|.. data:: Port.S3|.. data:: Port.S4|
-    +-----------------+-----------------+-----------------+-----------------+
-
     .. rubric:: Using the buttons
 
     .. automethod:: pybricks._instances.buttons.pressed
