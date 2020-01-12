@@ -25,6 +25,7 @@ sys.path.insert(0, os.path.abspath('../..'))
 from pybricks import _version  # noqa E402
 from pybricks.hubs import EV3Brick  # noqa E402
 from pybricks.resources import Image  # noqa E402
+from pybricks.builtins import Speaker  # noqa E402
 
 # ON_RTD is whether we are on readthedocs.org
 # this line of code grabbed from docs.readthedocs.org
@@ -110,6 +111,7 @@ nitpick_ignore = [
     ('py:class', 'dict'),
     ('py:class', 'float'),
     ('py:class', 'int'),
+    ('py:class', 'iter'),
     ('py:class', 'list'),
     ('py:class', 'object'),
     ('py:class', 'str'),
@@ -288,9 +290,12 @@ def find_obj(self, env, modname, classname, name, type, searchmode=0):
                 modname = 'pybricks.resources'
             else:
                 classname = 'EV3Brick.screen'
+        elif classname == 'speaker':
+            classname = 'EV3Brick.speaker'
     return base_find_obj(self, env, modname, classname, name, type, searchmode)
 
 
 PythonDomain.find_obj = find_obj
 
 EV3Brick.screen = Image
+EV3Brick.speaker = Speaker

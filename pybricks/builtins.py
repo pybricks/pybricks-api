@@ -338,23 +338,58 @@ class Speaker():
         """Play a beep/tone.
 
         Arguments:
-            frequency (:ref:`frequency`): Frequency of the beep
-                                          (*Default*: 500).
-            duration (:ref:`time`): Duration of the beep (*Default*: 100).
+            frequency (:ref:`frequency`):
+                Frequency of the beep (*Default*: 500). Frequencies below 100
+                are treated as 100.
+            duration (:ref:`time`):
+                Duration of the beep (*Default*: 100). If the duration is less
+                than 0, then the method returns immediately and the frequency
+                play continues to play indefinitely.
         """
         pass
 
-    def play(self, file_name):
+    def play_notes(self, notes, tempo=120):
+        """Play a sequence of notes.
+
+        Notes are strings with the following format:
+
+        - The first character is the name of the note, ``A`` to ``G`` or ``R``
+          for a rest.
+        - Note names can also include an accidental ``#`` (sharp) or ``b``
+          (flat). ``B#``/``Cb`` and ``E#``/``Fb`` are not allowed.
+        - The note name is followed by the octave number ``2`` to ``8``. For
+          example ``C4`` is middle C. The octave changes to the next number at
+          the note C, for example, ``B3`` is the note below middle C (``C4``).
+        - The octave is followed by ``/`` and a number that indicates the size
+          of the note. For example ``/4`` is a quarter note, ``/8`` is an
+          eight note and so on.
+        - This can optionally followed by a ``.`` to make a dotted note.
+          Dotted notes are 1-1/2 times as long as notes without a dot.
+        - The note can optionally end with a ``_`` which is a tie or a slur.
+          This causes there to be no pause between this note and the next note.
+
+        Arguments:
+            notes (iter):
+                A sequence of notes to be played (see format above).
+            tempo (int):
+                Beats per minute where a quarter note is one beat.
+        """
+        pass
+
+    def play_file(self, file_name):
         """Play a sound file.
 
         Arguments:
-            file_name (str): Path to the sound file, including extension.
+            file_name (str):
+                Path to the sound file, including the file extension.
         """
 
         pass
 
     def say(self, text):
         """Say a given text string.
+
+        The settings from :meth:`set_voice_settings` will affect the playback.
 
         Arguments:
             text (str): What to say.
@@ -366,7 +401,7 @@ class Speaker():
         """Configure voice settings used by the ``say`` method.
 
         Arguments:
-            language (str)::
+            language (str):
                 - ``'en'`` (English)
                 - ``'nl'`` (Dutch)
                 - ``'de'`` (German)

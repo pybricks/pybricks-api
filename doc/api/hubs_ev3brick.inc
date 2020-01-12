@@ -20,19 +20,21 @@
 
     .. rubric:: Using the speaker
 
-    .. automethod:: pybricks._instances.speaker.volume
+    .. todo:: The following method is not yet implemented
 
-    .. automethod:: pybricks._instances.speaker.beep
+    .. automethod:: pybricks.hubs::EV3Brick.speaker.volume
 
-    .. automethod:: pybricks._instances.speaker.play
+    .. automethod:: pybricks.hubs::EV3Brick.speaker.beep
 
-    .. todo:: The following functionality is not yet implemented
+    .. automethod:: pybricks.hubs::EV3Brick.speaker.play_notes
 
-    .. automethod:: pybricks._instances.speaker.say
+    .. automethod:: pybricks.hubs::EV3Brick.speaker.play_file
 
-    .. todo:: The following functionality is not yet implemented
+    .. automethod:: pybricks.hubs::EV3Brick.speaker.say
 
-    .. automethod:: pybricks._instances.speaker.set_voice_settings
+    .. todo:: The following method is not yet implemented
+
+    .. automethod:: pybricks.hubs::EV3Brick.speaker.set_voice_settings
 
 
     .. rubric:: Using the screen
