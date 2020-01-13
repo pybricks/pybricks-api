@@ -139,8 +139,8 @@ else:
     html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
     html_context = {
         'css_files': [
-            '_static/css/theme_overrides.css',
             '_static/contentui.css',
+            '_static/css/theme_overrides.css',
         ],
         'disclaimer': _DISCLAIMER,
     }

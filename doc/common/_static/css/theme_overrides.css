@@ -25,3 +25,14 @@ span.caption-number:after {
     font-family: "Roboto Slab","ff-tisa-web-pro","Georgia",Arial,sans-serif;
     margin-bottom: 24px !important;
 }
+
+/* 
+    sphinx-contrib contentui sets max-width to none,
+    giving a very wide page which makes text hard to
+    read. This sets it to a finite value.
+*/
+@media screen and (min-width: 1300px) {
+    .wy-nav-content {
+        max-width: 800px;
+    }
+}
