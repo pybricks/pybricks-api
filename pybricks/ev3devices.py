@@ -190,7 +190,7 @@ class GyroSensor():
     """
 
     def __init__(self, port, positive_direction=Direction.CLOCKWISE):
-        """GyroSensor(port, positive_direction=Direction.CLOCKWISE)
+        """
 
         Arguments:
             port (Port): Port to which the sensor is connected.
@@ -298,7 +298,7 @@ class AnalogSensor():
     """Generic or custom analog sensor."""
 
     def __init__(self, port, check_type=True):
-        """AnalogSensor(port, check_type=True)
+        """
 
         Arguments:
             port (Port): Port to which the sensor is connected.

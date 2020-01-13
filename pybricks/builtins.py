@@ -10,7 +10,7 @@ class DCMotor():
 
     def __init__(self, port,
                  positive_direction=Direction.CLOCKWISE):
-        """DCMotor(port, positive_direction=Direction.CLOCKWISE)
+        """
 
         Arguments:
             port (Port): Port to which the motor is connected.
@@ -64,7 +64,7 @@ class Motor(DCMotor):
     def __init__(self, port,
                  positive_direction=Direction.CLOCKWISE,
                  gears=None):
-        """Motor(port, positive_direction=Direction.CLOCKWISE, gears=None)
+        """
 
         Arguments:
             port (Port): Port to which the motor is connected.
@@ -128,9 +128,7 @@ class Motor(DCMotor):
         pass
 
     def stop(self, stop_type=Stop.COAST):
-        """stop(stop_type=Stop.COAST)
-
-        Stop the motor.
+        """Stop the motor.
 
         Arguments:
             stop_type (Stop): Whether to coast, brake, or hold (*Default*:
@@ -152,10 +150,8 @@ class Motor(DCMotor):
         pass
 
     def run_time(self, speed, time, stop_type=Stop.COAST, wait=True):
-        """run_time(speed, time, stop_type=Stop.COAST, wait=True)
-
-        Run the motor at a constant speed (angular velocity) for a given amount
-        of time.
+        """Run the motor at a constant speed (angular velocity) for a given
+        amount of time.
 
         The motor will accelerate towards the requested speed and the duty
         cycle is automatically adjusted to keep the speed constant, even under
@@ -177,9 +173,8 @@ class Motor(DCMotor):
 
     def run_angle(self, speed, rotation_angle,
                   stop_type=Stop.COAST, wait=True):
-        """run_angle(speed, rotation_angle, stop_type=Stop.COAST, wait=True)
-
-        Run the motor at a constant speed (angular velocity) by a given angle.
+        """Run the motor at a constant speed (angular velocity) by a given
+        angle.
 
         The motor will accelerate towards the requested speed and the duty
         cycle is automatically adjusted to keep the speed constant, even under
@@ -201,10 +196,8 @@ class Motor(DCMotor):
         pass
 
     def run_target(self, speed, target_angle, stop_type=Stop.COAST, wait=True):
-        """run_target(speed, target_angle, stop_type=Stop.COAST, wait=True)
-
-        Run the motor at a constant speed (angular velocity) towards a given
-        target angle.
+        """ Run the motor at a constant speed (angular velocity) towards a
+        given target angle.
 
         The motor will accelerate towards the requested speed and the duty
         cycle is automatically adjusted to keep the speed constant, even under
@@ -233,11 +226,9 @@ class Motor(DCMotor):
         pass
 
     def run_until_stalled(self, speed, stop_type=Stop.COAST, duty_limit=None):
-        """run_until_stalled(speed, stop_type=Stop.COAST, duty_limit=default)
-
-        Run the motor at a constant speed (angular velocity) until it stalls.
-        The motor is considered stalled when it cannot move even with the
-        maximum torque. See :meth:`.stalled` for a more precise definition.
+        """Run the motor at a constant speed (angular velocity) until it
+        stalls. The motor is considered stalled when it cannot move even with
+        the maximum torque. See :meth:`.stalled` for a more precise definition.
 
         The ``duty_limit`` argument lets you temporarily limit the motor torque
         during this maneuver. This is useful to avoid applying the full motor
