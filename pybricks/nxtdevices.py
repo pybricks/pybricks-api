@@ -134,11 +134,11 @@ class SoundSensor():
         """
         pass
 
-    def intensity(self, audible=True):
+    def intensity(self, audible_only=True):
         """Measure the ambient sound intensity (loudness).
 
         Arguments:
-            audible (bool): Detect only audible sounds. This tries to
+            audible_only (bool): Detect only audible sounds. This tries to
                 filter out frequencies that cannot be heard by the
                 human ear. (*Default*: True).
 
