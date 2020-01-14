@@ -157,8 +157,8 @@ Some signals do not have specific units. They range from a minimum (0%) to a
 maximum (100%). Specifics type of percentages are :ref:`relative distances
 <relativedistance>` or  :ref:`brightnesses <brightness>`.
 
-Another example is the sound :meth:`volume <.builtins.Speaker.volume>`, which
-ranges from 0% (silent) to 100% (loudest).
+Another example is the sound :meth:`set_volume <.builtins.Speaker.set_volume>`,
+which ranges from 0% (silent) to 100% (loudest).
 
 .. _brightness:
 

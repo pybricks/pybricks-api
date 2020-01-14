@@ -20,10 +20,6 @@
 
     .. rubric:: Using the speaker
 
-    .. todo:: The following method is not yet implemented
-
-    .. automethod:: pybricks.hubs::EV3Brick.speaker.volume
-
     .. automethod:: pybricks.hubs::EV3Brick.speaker.beep
 
     .. automethod:: pybricks.hubs::EV3Brick.speaker.play_notes
@@ -32,9 +28,9 @@
 
     .. automethod:: pybricks.hubs::EV3Brick.speaker.say
 
-    .. todo:: The following method is not yet implemented
+    .. automethod:: pybricks.hubs::EV3Brick.speaker.set_speech_options
 
-    .. automethod:: pybricks.hubs::EV3Brick.speaker.set_voice_settings
+    .. automethod:: pybricks.hubs::EV3Brick.speaker.set_volume
 
 
     .. rubric:: Using the screen
@@ -48,7 +44,7 @@
     .. automethod:: pybricks.hubs::EV3Brick.screen.set_font
 
     .. automethod:: pybricks.hubs::EV3Brick.screen.show_image
-    
+
     .. automethod:: pybricks.hubs::EV3Brick.screen.draw_image
 
     .. automethod:: pybricks.hubs::EV3Brick.screen.draw_pixel

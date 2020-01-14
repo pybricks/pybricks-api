@@ -326,14 +326,6 @@ class Motor(DCMotor):
 class Speaker():
     """Play beeps and sounds using a speaker."""
 
-    def volume(self, volume):
-        """Set the speaker volume.
-
-        Arguments:
-            volume (:ref:`percentage`): Volume of the speaker.
-        """
-        pass
-
     def beep(self, frequency=500, duration=100):
         """Play a beep/tone.
 
@@ -389,7 +381,7 @@ class Speaker():
     def say(self, text):
         """Say a given text string.
 
-        The settings from :meth:`set_voice_settings` will affect the playback.
+        The options set by :meth:`set_speech_options` can affect the playback.
 
         Arguments:
             text (str): What to say.
@@ -397,18 +389,126 @@ class Speaker():
 
         pass
 
-    def set_voice_settings(self, language='en', speed=150, variant='m1'):
-        """Configure voice settings used by the ``say`` method.
+    def set_speech_options(self, voice=None, speed=None, pitch=None):
+        """Configure speech settings used by the :meth:`say` method.
+
+        Any option that is set to ``None`` will not be changed. If an option
+        is set to an invalid value :meth:`say` will use the default value
+        instead.
 
         Arguments:
-            language (str):
-                - ``'en'`` (English)
-                - ``'nl'`` (Dutch)
-                - ``'de'`` (German)
-                - TODO: Add all available/supported languages
-            speed (int): Number of words per minute.
-            variant (str): Voice variant. You can choose female voices
-               (``'f1'`` to ``'f5'``) or male voices (``'m1'`` to ``'m7'``).
+            voice (str):
+                The voice to use. One of the following:
+
+                - ``af``: Afrikaans
+                - ``an``: Aragonese
+                - ``bg``: Bulgarian
+                - ``bs``: Bosnian
+                - ``ca``: Catalan
+                - ``cs``: Czech
+                - ``cy``: Welsh
+                - ``da``: Danish
+                - ``de``: German
+                - ``el``: Greek
+                - ``en``: English (default)
+                - ``en-gb``: English (United Kingdom)
+                - ``en-sc``: English (Scottland)
+                - ``en-uk-north``: English (United Kingdom, Northern)
+                - ``en-uk-rp``: English (United Kingdom, Received Pronunciation)
+                - ``en-uk-wmids``: English (United Kingdom, West Midlands)
+                - ``en-us``: English (United States)
+                - ``en-wi``: English (West Indies)
+                - ``eo``: Esperanto
+                - ``es``: Spanish
+                - ``es-la``: Spanish (Latin America)
+                - ``et``: Estonian
+                - ``fa``: Persian
+                - ``fa-pin``: Persian
+                - ``fi``: Finnish
+                - ``fr-be``: French (Belgium)
+                - ``fr-fr``: French (France)
+                - ``ga``: Irish
+                - ``grc``: Greek
+                - ``hi``: Hindi
+                - ``hr``: Croatian
+                - ``hu``: Hungarian
+                - ``hy``: Armenian
+                - ``hy-west``: Armenian (Western)
+                - ``id``: Indonesian
+                - ``is``: Icelandic
+                - ``it``: Italian
+                - ``jbo``: Lojban
+                - ``ka``: Georgian
+                - ``kn``: Kannada
+                - ``ku``: Kurdish
+                - ``la``: Latin
+                - ``lfn``: Lingua Franca Nova
+                - ``lt``: Lithuanian
+                - ``lv``: Latvian
+                - ``mk``: Macedonian
+                - ``ml``: Malayalam
+                - ``ms``: Malay
+                - ``ne``: Nepali
+                - ``nl``: Dutch
+                - ``no``: Norwegian
+                - ``pa``: Punjabi
+                - ``pl``: Polish
+                - ``pt-br``: Portuguese (Brazil)
+                - ``pt-pt``: Portuguese (Portugal)
+                - ``ro``: Romanian
+                - ``ru``: Russian
+                - ``sk``: Slovak
+                - ``sq``: Albanian
+                - ``sr``: Serbian
+                - ``sv``: Swedish
+                - ``sw``: Swahili
+                - ``ta``: Tamil
+                - ``tr``: Turkish
+                - ``vi``: Vietnamese
+                - ``vi-hue``: Vietnamese (Huế )
+                - ``vi-sgn``: Vietnamese (Saigon)
+                - ``zh``: Mandarin Chinese
+                - ``zh-yue``: Cantonese Chinese
+
+                The following modifiers can optionally be appended to then end
+                of the voice name:
+
+                - ``+f1``: female variant 1
+                - ``+f2``: female variant 2
+                - ``+f3``: female variant 3
+                - ``+f4``: female variant 4
+                - ``+f5``: female variant 5
+                - ``+m1``: male variant 1
+                - ``+m2``: male variant 2
+                - ``+m3``: male variant 3
+                - ``+m4``: male variant 4
+                - ``+m5``: male variant 5
+                - ``+m6``: male variant 6
+                - ``+m7``: male variant 7
+                - ``+croak``: croak
+                - ``+whisper``: whisper
+                - ``+whisperf``: female whisper
+
+            speed (int):
+                Number of words per minute.
+            pitch (int):
+                Pitch (0 to 99). Higher numbers make the voice higher pitched
+                and lower numbers make the voice lower pitched.
+        """
+        pass
+
+    def set_volume(self, volume, which='_all_'):
+        """Set the speaker volume.
+
+        Arguments:
+            volume (:ref:`percentage`):
+                Volume of the speaker.
+            which (str):
+                The specific volume to set. Can be ``Beep``, ``PCM`` or
+                ``_all_``. ``Beep`` controls the volume for :meth:`beep` and
+                :meth:`play_notes`. ``PCM`` controls the volume for
+                :meth:`play_file` and :meth:`say`. ``_all_`` sets both at the
+                same time.
         """
         pass
 
