@@ -1,11 +1,11 @@
 Signals and Units
 =================
 
-Units
-~~~~~~
-
 Many commands allow you to specify arguments in terms of well-known physical
 quantities. This page gives an overview of each quantity and its unit.
+
+Time
+~~~~~~
 
 .. _time:
 
@@ -17,6 +17,9 @@ For example, the duration of motion with :meth:`run_time
 <.builtins.Motor.run_time>`, the duration of :func:`wait <.tools.wait>`, or
 the time values returned by the :class:`StopWatch <.tools.StopWatch>` are
 specified in milliseconds.
+
+Angles and angular motion
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. _angle:
 
@@ -52,6 +55,22 @@ use the following table to convert between commonly used units.
 | 1 rpm =   | 6     | 1         |
 +-----------+-------+-----------+
 
+rotational acceleration: deg/s/s
+--------------------------------
+
+Rotational acceleration, or *angular acceleration* describes how fast the
+rotational speed changes. This is expressed as the change of the number of
+degrees per second, during one second (deg/s/s). This is also commonly written
+as  :math:`deg/s^2`.
+
+For example, you can adjust the rotational acceleration setting of a
+:meth:`Motor <.builtins.Motor.set_run_settings>` to change how smoothly or
+how quickly it reaches the constant speed set point.
+
+
+Distance and linear motion
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 .. _distance:
 
 distance: mm
@@ -79,23 +98,10 @@ following table to convert between commonly used units.
 dimension: mm
 -------------
 
-Dimensions are expressed in millimeters (mm) whenever possible, just like
+Dimensions are expressed in millimeters (mm), just like
 distances.
 
 For example, the diameter of a wheel is measured in millimeters.
-
-
-.. _relativedistance:
-
-relative distance: %
----------------------
-
-Some distance measurements do not provide an accurate value with a specific
-unit, but they range from very close (0%) to very far (100%). These are
-referred to as relative distances.
-
-For example, the distance value of the :meth:`InfraredSensor
-<.ev3devices.InfraredSensor.distance>` is a relative distance.
 
 .. _linspeed:
 
@@ -120,17 +126,46 @@ smoothly or how quickly it reaches the constant speed set point.
 
 .. _acceleration:
 
-rotational acceleration: deg/s/s
---------------------------------
+Approximate and relative units
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Rotational acceleration, or *angular acceleration* describes how fast the
-rotational speed changes. This is expressed as the change of the number of
-degrees per second, during one second (deg/s/s). This is also commonly written
-as  :math:`deg/s^2`.
+.. _percentage:
 
-For example, you can adjust the rotational acceleration setting of a
-:meth:`Motor <.builtins.Motor.set_run_settings>` to change how smoothly or
-how quickly it reaches the constant speed set point.
+percentage: %
+--------------
+
+Some signals do not have specific units. They range from a minimum (0%) to a
+maximum (100%). Specifics type of percentages are :ref:`relative distances
+<relativedistance>` or  :ref:`brightnesses <brightness>`.
+
+Another example is the sound :meth:`volume <.builtins.Speaker.set_volume>`,
+which ranges from 0% (silent) to 100% (loudest).
+
+.. _relativedistance:
+
+relative distance: %
+---------------------
+
+Some distance measurements do not provide an accurate value with a specific
+unit, but they range from very close (0%) to very far (100%). These are
+referred to as relative distances.
+
+For example, the distance value of the :meth:`InfraredSensor
+<.ev3devices.InfraredSensor.distance>` is a relative distance.
+
+
+.. _brightness:
+
+brightness: %
+--------------
+
+The perceived brightness of a light is expressed as a percentage. It is 0% when
+the light is off and 100% when the light is fully on. When you choose 50%, this
+means that the light is perceived as approximately half as bright to the human
+eye.
+
+Force
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. _force:
 
@@ -151,36 +186,8 @@ following table to convert to and from other units.
 | 1 lbf = | 4448 | 4.448 | 1                           |
 +---------+------+-------+-----------------------------+
 
-.. _percentage:
-
-percentage: %
---------------
-
-Some signals do not have specific units. They range from a minimum (0%) to a
-maximum (100%). Specifics type of percentages are :ref:`relative distances
-<relativedistance>` or  :ref:`brightnesses <brightness>`.
-
-Another example is the sound :meth:`set_volume <.builtins.Speaker.set_volume>`,
-which ranges from 0% (silent) to 100% (loudest).
-
-.. _brightness:
-
-brightness: %
---------------
-
-The perceived brightness of a light is expressed as a percentage. It is 0% when
-the light is off and 100% when the light is fully on. When you choose 50%, this
-means that the light is perceived as approximately half as bright to the human
-eye.
-
-.. _frequency:
-
-frequency: Hz
---------------
-Sound frequencies are expressed in Hertz (Hz).
-
-For example, you can choose the frequency of a :meth:`beep
-<.builtins.Speaker.beep>` to change the pitch.
+Electricity
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. _voltage:
 
@@ -214,6 +221,18 @@ power: mW
 Power is the rate at which energy is stored or consumed. It is expressed in
 milliwatt (mW).
 
+Ambient environment
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. _frequency:
+
+frequency: Hz
+--------------
+Sound frequencies are expressed in Hertz (Hz).
+
+For example, you can choose the frequency of a :meth:`beep
+<.builtins.Speaker.beep>` to change the pitch.
+
 .. _temperature:
 
 temperature: °C
@@ -223,8 +242,6 @@ Temperature is measured in degrees Celcius (°C). To convert to degrees
 Fahrenheit (°F) or Kelvin (K), you can use the following conversion formulas:
 
 .. math::
-   :nowrap:
-
    \begin{eqnarray}
       °\!F & = & °\!C \cdot \frac{9}{5} + 32\\
       K & = & °\!C + 273.15
