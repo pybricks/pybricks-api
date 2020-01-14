@@ -169,3 +169,55 @@ class TemperatureSensor():
 
         """
         pass
+
+
+class EnergyMeter():
+    """LEGO® MINDSTORMS® Education NXT Energy Meter."""
+
+    def __init__(self, port):
+        """
+
+        Arguments:
+            port (Port): Port to which the sensor is connected.
+
+        """
+        pass
+
+    def storage(self):
+        """Get the total available energy stored in the battery.
+
+        Returns:
+            :ref:`energy`: Remaining stored energy.
+
+        """
+        pass
+
+    def input(self):
+        """This measures the electrical signals at the input (bottom) side
+        of the energy meter. It measures the voltage applied to it and the
+        current passing through it. The product of these two values is power.
+        This power value is the rate at which the stored energy increases. This
+        power is supplied by an energy source such as the provided solar panel
+        or an externally driven motor.
+
+        Returns:
+            (:ref:`voltage`, :ref:`current`, :ref:`power`): Voltage, current,
+            and power measured at the input port.
+
+        """
+        pass
+
+    def output(self):
+        """This measures the electrical signals at the output (top) side
+        of the energy meter. It measures the voltage applied to the external
+        load and the current passing to it. The product of these two values
+        is power. This power value is the rate at which the stored energy
+        decreases. This power is consumed by the load, such as a light or a
+        motor.
+
+        Returns:
+            (:ref:`voltage`, :ref:`current`, :ref:`power`): Voltage, current,
+            and power measured at the output port.
+
+        """
+        pass

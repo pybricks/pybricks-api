@@ -50,3 +50,7 @@ NXT Sound Sensor
 NXT Temperature Sensor
 ^^^^^^^^^^^^^^^^^^^^^^
 .. autoclass:: pybricks.nxtdevices.TemperatureSensor
+
+NXT Energy Meter
+^^^^^^^^^^^^^^^^^
+.. autoclass:: pybricks.nxtdevices.EnergyMeter
