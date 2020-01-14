@@ -211,9 +211,9 @@ power: mW
 Power is the rate at which energy is stored or consumed. It is expressed in
 milliwatt (mW).
 
-.. _sounddb:
+.. _temperature:
 
-sound intensity: dB
----------------------
+temperature: °C
+---------------
 
-Sound intensity is expressed as decibel (dB). 
+Temperature is measured in degrees Celcius (°C).
