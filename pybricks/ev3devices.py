@@ -274,7 +274,7 @@ class UltrasonicSensor():
                            approximately 300 ms each time.
 
         Returns:
-            :ref:`distance`: Distance (millimeters).
+            :ref:`distance`: Distance.
 
         """
         pass
