@@ -34,3 +34,7 @@ NXT Touch Sensor
 NXT Light Sensor
 ^^^^^^^^^^^^^^^^
 .. autoclass:: pybricks.nxtdevices.LightSensor
+
+NXT Color Sensor
+^^^^^^^^^^^^^^^^
+.. autoclass:: pybricks.nxtdevices.ColorSensor

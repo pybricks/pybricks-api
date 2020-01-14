@@ -53,3 +53,47 @@ class LightSensor():
 
         """
         pass
+
+
+class ColorSensor():
+    """LEGO® MINDSTORMS® NXT Color Sensor."""
+
+    def __init__(self, port):
+        """
+
+        Arguments:
+            port (Port): Port to which the sensor is connected.
+
+        """
+        pass
+
+    def color(self):
+        """Measure the color of a surface.
+
+        :returns:
+            ``Color.BLACK``, ``Color.BLUE``, ``Color.GREEN``, ``Color.YELLOW``,
+            ``Color.RED``, ``Color.WHITE``, ``Color.BROWN`` or ``None``.
+        :rtype: :class:`Color <.parameters.Color>`, or ``None`` if no color is
+                detected.
+
+        """
+        pass
+
+    def ambient(self):
+        """Measure the ambient light intensity.
+
+        Returns:
+            :ref:`percentage`: Ambient light intensity, ranging from 0 (dark)
+            to 100 (bright).
+        """
+        pass
+
+    def reflection(self):
+        """Measure the reflection of a surface.
+
+        Returns:
+            :ref:`percentage`: Reflection, ranging from 0 (no reflection) to
+            100 (high reflection).
+
+        """
+        pass
