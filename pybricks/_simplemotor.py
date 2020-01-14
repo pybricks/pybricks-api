@@ -1,4 +1,4 @@
-"""Sphinx workaround to document instance attributes such as self.light"""
+"""Shortened and simplified motor docs, by hiding optional methods and args."""
 
 from .builtins import Motor
 from .parameters import Direction, Stop

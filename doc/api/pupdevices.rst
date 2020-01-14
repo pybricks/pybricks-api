@@ -17,32 +17,32 @@ Motors without Rotation Sensors
 Motors with Rotation Sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. autoclass:: pybricks._instances.Motor
+.. autoclass:: pybricks._simplemotor.Motor
     :noindex:
     :no-members:
 
-    .. automethod:: pybricks._instances.Motor.angle
+    .. automethod:: pybricks._simplemotor.Motor.angle
         :noindex:
 
-    .. automethod:: pybricks._instances.Motor.reset_angle
+    .. automethod:: pybricks._simplemotor.Motor.reset_angle
         :noindex:
 
-    .. automethod:: pybricks._instances.Motor.speed
+    .. automethod:: pybricks._simplemotor.Motor.speed
         :noindex:
 
-    .. automethod:: pybricks._instances.Motor.stop
+    .. automethod:: pybricks._simplemotor.Motor.stop
         :noindex:
 
-    .. automethod:: pybricks._instances.Motor.run
+    .. automethod:: pybricks._simplemotor.Motor.run
         :noindex:
 
-    .. automethod:: pybricks._instances.Motor.run_time
+    .. automethod:: pybricks._simplemotor.Motor.run_time
         :noindex:
 
-    .. automethod:: pybricks._instances.Motor.run_angle
+    .. automethod:: pybricks._simplemotor.Motor.run_angle
         :noindex:
 
-    .. automethod:: pybricks._instances.Motor.run_target
+    .. automethod:: pybricks._simplemotor.Motor.run_target
         :noindex:
 
     .. automethod:: pybricks.builtins.Motor.dc
