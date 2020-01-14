@@ -10,7 +10,89 @@ folder. You can also use any of the images and sounds built into Pybricks.
 ev3dev
 ------
 
-These images and sounds are only available for Pybricks on ev3dev.
+.. automodule:: pybricks.media.ev3dev
+    :no-members:
+
+
+Graphical Images
+^^^^^^^^^^^^^^^^
+
+.. autoclass:: pybricks.media.ev3dev.Image
+    :no-members:
+
+    .. rubric:: Drawing Text
+
+    There are two ways to draw text on images. :meth:`draw_text` lets text be
+    placed precisely on the image or :meth:`print` can be used to automatically
+    print text on a new line.
+
+    .. automethod:: pybricks.media.ev3dev.Image.draw_text
+
+    .. automethod:: pybricks.media.ev3dev.Image.print
+
+    .. automethod:: pybricks.media.ev3dev.Image.set_font
+
+
+    .. rubric:: Drawing Images
+
+    A copy of another image can be drawn on an image. Also consider using
+    sub-images to copy part of an image.
+
+    .. automethod:: pybricks.media.ev3dev.Image.draw_image
+
+
+    .. rubric:: Drawing Shapes
+
+    These are the methods to draw basic shapes, including points, lines,
+    rectangles and circles.
+
+    .. automethod:: pybricks.media.ev3dev.Image.draw_pixel
+
+    .. automethod:: pybricks.media.ev3dev.Image.draw_line
+
+    .. automethod:: pybricks.media.ev3dev.Image.draw_box
+
+    .. automethod:: pybricks.media.ev3dev.Image.draw_circle
+
+
+    .. rubric:: Image properties
+
+    .. autoattribute:: pybricks.media.ev3dev.Image.width
+
+    .. autoattribute:: pybricks.media.ev3dev.Image.height
+
+
+    .. rubric:: Replacing the Entire Image
+
+    .. automethod:: pybricks.media.ev3dev.Image.clear
+
+    .. automethod:: pybricks.media.ev3dev.Image.show_image
+
+
+Fonts
+^^^^^
+
+.. autoclass:: pybricks.media.ev3dev.Font
+    :no-members:
+
+    .. autoattribute:: pybricks.media.ev3dev.Font.DEFAULT
+        :annotation: = Font('Lucida', 12)
+
+    .. autoattribute:: pybricks.media.ev3dev.Font.family
+
+    .. autoattribute:: pybricks.media.ev3dev.Font.style
+
+    .. autoattribute:: pybricks.media.ev3dev.Font.width
+
+    .. autoattribute:: pybricks.media.ev3dev.Font.height
+
+    .. automethod:: pybricks.media.ev3dev.Font.text_width
+
+    .. automethod:: pybricks.media.ev3dev.Font.text_height
+
+
+Files
+^^^^^
 
 .. autoclass:: pybricks.media.ev3dev.ImageFile
     :no-members:

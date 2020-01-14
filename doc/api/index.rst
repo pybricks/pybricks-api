@@ -28,7 +28,6 @@ Intro
    parameters
    tools
    robotics
-   resources
    media
 
 .. toctree::

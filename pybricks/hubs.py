@@ -1,7 +1,7 @@
 """LEGO® Programmable Hubs."""
 from enum import Enum
 from .builtins import Speaker, Battery, ColorLight, KeyPad
-from .resources import Image
+from .media.ev3dev import Image
 
 
 class EV3Brick:

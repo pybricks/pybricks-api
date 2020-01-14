@@ -24,7 +24,7 @@ sys.path.insert(0, os.path.abspath('../..'))
 
 from pybricks import _version  # noqa E402
 from pybricks.hubs import EV3Brick  # noqa E402
-from pybricks.resources import Image  # noqa E402
+from pybricks.media.ev3dev import Image  # noqa E402
 from pybricks.builtins import Speaker  # noqa E402
 
 # ON_RTD is whether we are on readthedocs.org
@@ -287,9 +287,9 @@ def find_obj(self, env, modname, classname, name, type, searchmode=0):
     if modname == 'pybricks.hubs':
         if classname == 'screen':
             if name.startswith('Font.') or name == 'Font':
-                modname = 'pybricks.resources'
+                modname = 'pybricks.media.ev3dev'
             elif name.startswith('Image.') or name == 'Image':
-                modname = 'pybricks.resources'
+                modname = 'pybricks.media.ev3dev'
             else:
                 classname = 'EV3Brick.screen'
         elif classname == 'speaker':
