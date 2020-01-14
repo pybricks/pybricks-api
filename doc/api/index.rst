@@ -23,6 +23,7 @@ Intro
    hubs
    pupdevices
    ev3devices
+   nxtdevices
    iodevices
    parameters
    tools
