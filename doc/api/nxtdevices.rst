@@ -30,3 +30,7 @@ NXT Touch Sensor
             from pybricks.nxtdevices import TouchSensor
             from pybricks.parameters import Port
             my_sensor = TouchSensor(Port.S1, verify_type=False)
+
+NXT Light Sensor
+^^^^^^^^^^^^^^^^
+.. autoclass:: pybricks.nxtdevices.LightSensor
