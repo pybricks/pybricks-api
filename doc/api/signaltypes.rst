@@ -185,8 +185,7 @@ voltage: mV
 --------------
 Voltages are expressed in millivolt (mV).
 
-For example, you can check the voltage of the :meth:`battery
-<.builtins.Battery.voltage>`.
+For example, you can check the voltage of the battery.
 
 .. _current:
 
@@ -195,5 +194,4 @@ current: mA
 
 Electrical currents are expressed in milliampere (mA).
 
-For example, you can check the current supplied by the :meth:`battery
-<.builtins.Battery.current>`.
+For example, you can check the current supplied by the battery.

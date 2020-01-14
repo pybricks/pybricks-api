@@ -39,4 +39,3 @@ Intro
    frames
    motors
    sound
-   battery
