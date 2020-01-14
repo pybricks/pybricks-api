@@ -59,26 +59,6 @@
 
     .. autoattribute:: pybricks.hubs::EV3Brick.screen.height
 
-
-..  ::
-
-                        x
-                -------------->
-        (0, 0)  __________________
-                |                  |
-            |   |                  |
-         y  |   |      Hello       |
-            |   |      World       |
-            v   |                  |
-                |__________________|
-                                    (177, 127)
-
-..    .. automethod:: pybricks._instances.display.clear
-
-..    .. automethod:: pybricks._instances.display.text
-
-..    .. automethod:: pybricks._instances.display.image
-
     .. rubric:: Using the battery
 
     .. automethod:: pybricks._instances.battery.voltage
