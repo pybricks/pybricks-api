@@ -61,6 +61,6 @@
 
     .. rubric:: Using the battery
 
-    .. automethod:: pybricks._instances.battery.voltage
+    .. automethod:: pybricks.hubs::EV3Brick.battery.voltage
 
-    .. automethod:: pybricks._instances.battery.current
+    .. automethod:: pybricks.hubs::EV3Brick.battery.current

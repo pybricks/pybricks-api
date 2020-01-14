@@ -9,6 +9,6 @@
 
     .. rubric:: Using the battery
 
-    .. automethod:: pybricks._instances.battery.voltage
+    .. automethod:: pybricks.hubs::MoveHub.battery.voltage
 
-    .. automethod:: pybricks._instances.battery.current
+    .. automethod:: pybricks.hubs::MoveHub.battery.current

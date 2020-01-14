@@ -21,9 +21,6 @@ lights = make_instance(LightArray)
 
 buttons = make_instance(KeyPad)
 
-battery = make_instance(Battery)
-
-
 class Motor(Motor):
     """Generic class to control motors with built-in rotation sensors."""
 
