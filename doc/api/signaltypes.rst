@@ -97,9 +97,6 @@ referred to as relative distances.
 For example, the distance value of the :meth:`InfraredSensor
 <.ev3devices.InfraredSensor.distance>` is a relative distance.
 
-
-
-
 .. _linspeed:
 
 speed: mm/s
@@ -222,4 +219,13 @@ milliwatt (mW).
 temperature: °C
 ---------------
 
-Temperature is measured in degrees Celcius (°C).
+Temperature is measured in degrees Celcius (°C). To convert to degrees
+Fahrenheit (°F) or Kelvin (K), you can use the following conversion formulas:
+
+.. math::
+   :nowrap:
+
+   \begin{eqnarray}
+      °\!F & = & °\!C \cdot \frac{9}{5} + 32\\
+      K & = & °\!C + 273.15
+   \end{eqnarray}
