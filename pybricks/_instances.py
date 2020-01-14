@@ -1,6 +1,6 @@
 """Sphinx workaround to document instance attributes such as self.light"""
 
-from .builtins import Motor, Battery, ColorLight, KeyPad, LightArray
+from .builtins import Motor, KeyPad, LightArray
 from .parameters import Direction, Stop
 from types import ModuleType
 
@@ -15,11 +15,10 @@ def make_instance(classdef):
     return mod
 
 
-light = make_instance(ColorLight)
-
 lights = make_instance(LightArray)
 
 buttons = make_instance(KeyPad)
+
 
 class Motor(Motor):
     """Generic class to control motors with built-in rotation sensors."""

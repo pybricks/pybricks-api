@@ -7,7 +7,7 @@
 
     .. rubric:: Using the brick status light
 
-    .. automethod:: pybricks._instances.light.on
+    .. automethod:: pybricks.hubs::EV3Brick.light.on
 
         .. toggle-header::
             :header: **Show/hide example**
@@ -16,7 +16,7 @@
 
             .. literalinclude:: ../../pybricks-projects/snippets/ev3/light_color/main.py
 
-    .. automethod:: pybricks._instances.light.off
+    .. automethod:: pybricks.hubs::EV3Brick.light.off
 
     .. rubric:: Using the speaker
 

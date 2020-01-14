@@ -5,9 +5,9 @@
 
     .. rubric:: Using the hub status light
 
-    .. automethod:: pybricks._instances.light.on
+    .. automethod:: pybricks.hubs::CityHub.light.on
 
-    .. automethod:: pybricks._instances.light.off
+    .. automethod:: pybricks.hubs::CityHub.light.off
 
     .. rubric:: Using the battery
 

@@ -72,9 +72,9 @@ Color and Distance Sensor
     it off. If you use the sensor to measure something afterwards, the light
     automatically turns back on at the default color for that sensing method.
 
-    .. automethod:: pybricks._instances.light.on
+    .. automethod:: pybricks.pupdevices::ColorDistanceSensor.light.on
 
-    .. automethod:: pybricks._instances.light.off
+    .. automethod:: pybricks.pupdevices::ColorDistanceSensor.light.off
 
 
 Tilt Sensor
@@ -98,8 +98,8 @@ Remote Control
 .. autoclass:: pybricks.pupdevices.RemoteControl
     :no-members:
 
-    .. automethod:: pybricks._instances.light.on
+    .. automethod:: pybricks.pupdevices::RemoteControl.light.on
 
-    .. automethod:: pybricks._instances.light.off
+    .. automethod:: pybricks.pupdevices::RemoteControl.light.off
 
     .. automethod:: pybricks._instances.buttons.pressed

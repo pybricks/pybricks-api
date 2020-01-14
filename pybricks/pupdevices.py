@@ -11,6 +11,9 @@ class Motor(CommonMotor):
 class RemoteControl():
     """LEGO® Powered Up Bluetooth Remote Control/Handset (6214560)"""
 
+    light = ColorLight()
+    buttons = KeyPad()
+
     def __init__(self, device=None, timeout=10000):
         """Connect the handset to the hub.
 
@@ -22,8 +25,7 @@ class RemoteControl():
             timeout (:ref:`time`): The amount of time before giving up
                  searching.
         """
-        self.buttons = KeyPad()
-        self.light = ColorLight()
+        pass
 
 
 class TiltSensor(Accelerometer):
@@ -41,13 +43,14 @@ class TiltSensor(Accelerometer):
 class ColorDistanceSensor():
     """LEGO® Powered Up Color and Distance Sensor (?/6182145)"""
 
+    light = ColorLight()
+
     def __init__(self, port):
         """ColorDistanceSensor(port)
 
         Arguments:
             port (Port): Port to which the sensor is connected.
         """
-        self.light = ColorLight()
         pass
 
     def color(self):

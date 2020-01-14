@@ -3,9 +3,9 @@
 
     .. rubric:: Using the hub status light
 
-    .. automethod:: pybricks._instances.light.on
+    .. automethod:: pybricks.hubs::MoveHub.light.on
 
-    .. automethod:: pybricks._instances.light.off
+    .. automethod:: pybricks.hubs::MoveHub.light.off
 
     .. rubric:: Using the battery
 
