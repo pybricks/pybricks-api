@@ -288,6 +288,8 @@ def find_obj(self, env, modname, classname, name, type, searchmode=0):
         if classname == 'screen':
             if name.startswith('Font.') or name == 'Font':
                 modname = 'pybricks.resources'
+            elif name.startswith('Image.') or name == 'Image':
+                modname = 'pybricks.resources'
             else:
                 classname = 'EV3Brick.screen'
         elif classname == 'speaker':

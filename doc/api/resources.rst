@@ -10,9 +10,6 @@ Graphical Images
 .. autoclass:: pybricks.resources.Image
     :no-members:
 
-    .. automethod:: pybricks.resources.Image.clear
-
-
     .. rubric:: Drawing Text
 
     There are two ways to draw text on images. :meth:`draw_text` lets text be
@@ -53,6 +50,13 @@ Graphical Images
     .. autoattribute:: pybricks.resources.Image.width
 
     .. autoattribute:: pybricks.resources.Image.height
+
+
+    .. rubric:: Replacing the Entire Image
+
+    .. automethod:: pybricks.resources.Image.clear
+
+    .. automethod:: pybricks.resources.Image.show_image
 
 
 Fonts

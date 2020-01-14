@@ -114,6 +114,15 @@ class Image:
                 no transparency.
         """
 
+    def show_image(self, source):
+        """Clears this image, then draws ``source`` centered in this image.
+
+        Arguments:
+            source (Image or str):
+                The source :class:`Image`. If the argument is a string, then
+                the ``source`` image is loaded from file.
+        """
+
     def draw_text(self, x, y, text, color=Color.BLACK):
         """Draws text on the image.
 

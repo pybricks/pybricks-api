@@ -47,6 +47,8 @@
 
     .. automethod:: pybricks.hubs::EV3Brick.screen.set_font
 
+    .. automethod:: pybricks.hubs::EV3Brick.screen.show_image
+    
     .. automethod:: pybricks.hubs::EV3Brick.screen.draw_image
 
     .. automethod:: pybricks.hubs::EV3Brick.screen.draw_pixel
