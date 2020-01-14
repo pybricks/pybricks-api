@@ -46,3 +46,7 @@ NXT Ultrasonic Sensor
 NXT Sound Sensor
 ^^^^^^^^^^^^^^^^^^^^^
 .. autoclass:: pybricks.nxtdevices.SoundSensor
+
+NXT Temperature Sensor
+^^^^^^^^^^^^^^^^^^^^^^
+.. autoclass:: pybricks.nxtdevices.TemperatureSensor

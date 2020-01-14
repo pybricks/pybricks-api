@@ -147,3 +147,25 @@ class SoundSensor():
 
         """
         pass
+
+
+class TemperatureSensor():
+    """LEGO® MINDSTORMS® NXT Ultrasonic Sensor."""
+
+    def __init__(self, port):
+        """
+
+        Arguments:
+            port (Port): Port to which the sensor is connected.
+
+        """
+        pass
+
+    def temperature(self):
+        """Measure the temperature.
+
+        Returns:
+            :ref:`temperature`: Measured temperature.
+
+        """
+        pass
