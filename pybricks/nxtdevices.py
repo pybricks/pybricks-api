@@ -97,3 +97,26 @@ class ColorSensor():
 
         """
         pass
+
+
+class UltrasonicSensor():
+    """LEGO® MINDSTORMS® NXT Ultrasonic Sensor."""
+
+    def __init__(self, port):
+        """
+
+        Arguments:
+            port (Port): Port to which the sensor is connected.
+
+        """
+        pass
+
+    def distance(self):
+        """Measure the distance between the sensor and an object using
+        ultrasonic sound waves.
+
+        Returns:
+            :ref:`distance`: Distance.
+
+        """
+        pass

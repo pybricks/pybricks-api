@@ -38,3 +38,8 @@ NXT Light Sensor
 NXT Color Sensor
 ^^^^^^^^^^^^^^^^
 .. autoclass:: pybricks.nxtdevices.ColorSensor
+
+NXT Ultrasonic Sensor
+^^^^^^^^^^^^^^^^^^^^^
+.. autoclass:: pybricks.nxtdevices.UltrasonicSensor
+
