@@ -1,21 +1,7 @@
 """Sphinx workaround to document instance attributes such as self.light"""
 
-from .builtins import Motor, LightArray
+from .builtins import Motor
 from .parameters import Direction, Stop
-from types import ModuleType
-
-
-def make_instance(classdef):
-    """Make a class instance to look like a module so Sphinx can parse it."""
-    name = ''
-    mod = ModuleType(name)
-    for m in classdef.__dict__.values():
-        if callable(m):
-            setattr(mod, m.__name__, m)
-    return mod
-
-
-lights = make_instance(LightArray)
 
 
 class Motor(Motor):
