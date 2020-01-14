@@ -195,3 +195,18 @@ current: mA
 Electrical currents are expressed in milliampere (mA).
 
 For example, you can check the current supplied by the battery.
+
+.. _energy:
+
+energy: J
+--------------
+
+Stored energy or energy consumption can be expressed in Joules (J).
+
+.. _power:
+
+power: mW
+--------------
+
+Power is the rate at which energy is stored or consumed. It is expressed in
+milliwatt (mW).
