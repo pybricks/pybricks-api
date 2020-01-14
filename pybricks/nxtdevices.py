@@ -120,3 +120,30 @@ class UltrasonicSensor():
 
         """
         pass
+
+
+class SoundSensor():
+    """LEGO® MINDSTORMS® NXT Sound Sensor."""
+
+    def __init__(self, port):
+        """
+
+        Arguments:
+            port (Port): Port to which the sensor is connected.
+
+        """
+        pass
+
+    def intensity(self, audible=True):
+        """Measure the ambient sound intensity (loudness).
+
+        Arguments:
+            audible (bool): Detect only audible sounds. This tries to
+                filter out frequencies that cannot be heard by the
+                human ear. (*Default*: True).
+
+        Returns:
+            :ref:`percentage`: Sound intensity.
+
+        """
+        pass
