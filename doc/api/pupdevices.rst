@@ -102,4 +102,4 @@ Remote Control
 
     .. automethod:: pybricks.pupdevices::RemoteControl.light.off
 
-    .. automethod:: pybricks._instances.buttons.pressed
+    .. automethod:: pybricks.pupdevices::RemoteControl.buttons.pressed

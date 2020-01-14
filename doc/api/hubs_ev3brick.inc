@@ -3,7 +3,7 @@
 
     .. rubric:: Using the buttons
 
-    .. automethod:: pybricks._instances.buttons.pressed
+    .. automethod:: pybricks.hubs::EV3Brick.buttons.pressed
 
     .. rubric:: Using the brick status light
 
