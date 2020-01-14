@@ -210,3 +210,10 @@ power: mW
 
 Power is the rate at which energy is stored or consumed. It is expressed in
 milliwatt (mW).
+
+.. _sounddb:
+
+sound intensity: dB
+---------------------
+
+Sound intensity is expressed as decibel (dB). 
