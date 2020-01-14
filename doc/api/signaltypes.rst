@@ -113,7 +113,13 @@ For example, the speed of a robotic vehicle is expressed in mm/s.
 linear acceleration: mm/s/s
 --------------------------------
 
-TODO
+Linear acceleration describes how fast the speed changes. This is expressed as
+the change of the millimeters per second, during one second (deg/s/s).
+This is also commonly written as  :math:`mm/s^2`.
+
+For example, you can adjust the acceleration setting of a
+:meth:`DriveBase <.robotics.DriveBase.set_drive_settings>` to change how
+smoothly or how quickly it reaches the constant speed set point.
 
 .. _acceleration:
 
