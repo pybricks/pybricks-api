@@ -14,7 +14,7 @@
          "**/_version.py",
     ],
     "spellright.ignoreRegExps": [
-        "/.. math::[^]*?.. endmath/gm",
+        "/:math:`[^]*?`/gm",
         "/``[^]*?``/gm",
         "/'[^]*?'/gm",
         "/.. data:: [^]*?'*$/gm",

@@ -100,7 +100,7 @@
                 - ``'ta'``: Tamil
                 - ``'tr'``: Turkish
                 - ``'vi'``: Vietnamese
-                - ``'vi-hue'``: Vietnamese (Huế )
+                - ``'vi-hue'``: Vietnamese (Hue)
                 - ``'vi-sgn'``: Vietnamese (Saigon)
                 - ``'zh'``: Mandarin Chinese
                 - ``'zh-yue'``: Cantonese Chinese

@@ -241,10 +241,6 @@ temperature: °C
 Temperature is measured in degrees Celcius (°C). To convert to degrees
 Fahrenheit (°F) or Kelvin (K), you can use the following conversion formulas:
 
-.. math::
-   \begin{eqnarray}
-      °\!F & = & °\!C \cdot \frac{9}{5} + 32\\
-      K & = & °\!C + 273.15
-   \end{eqnarray}
+    :math:`°\!F = °\!C \cdot \frac{9}{5} + 32`.
 
-.. endmath
+    :math:`K = °\!C + 273.15`.
