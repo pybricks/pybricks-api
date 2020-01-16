@@ -246,3 +246,5 @@ Fahrenheit (°F) or Kelvin (K), you can use the following conversion formulas:
       °\!F & = & °\!C \cdot \frac{9}{5} + 32\\
       K & = & °\!C + 273.15
    \end{eqnarray}
+
+.. endmath
