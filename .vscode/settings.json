@@ -16,6 +16,8 @@
     "spellright.ignoreRegExps": [
         "/.. math::[^]*?.. endmath/gm",
         "/``[^]*?``/gm",
+        "/'[^]*?'/gm",
+        "/.. data:: [^]*?'*$/gm",
     ],
     "spellright.documentTypes": [
         "markdown",
