@@ -13,60 +13,17 @@ ev3dev
 .. automodule:: pybricks.media.ev3dev
     :no-members:
 
+Images
+^^^^^^
 
-Graphical Images
-^^^^^^^^^^^^^^^^
-
-.. autoclass:: pybricks.media.ev3dev.Image
+.. autoclass:: pybricks.media.ev3dev.ImageFile
     :no-members:
 
-    .. rubric:: Drawing Text
+Sounds
+^^^^^^
 
-    There are two ways to draw text on images. :meth:`draw_text` lets text be
-    placed precisely on the image or :meth:`print` can be used to automatically
-    print text on a new line.
-
-    .. automethod:: pybricks.media.ev3dev.Image.draw_text
-
-    .. automethod:: pybricks.media.ev3dev.Image.print
-
-    .. automethod:: pybricks.media.ev3dev.Image.set_font
-
-
-    .. rubric:: Drawing Images
-
-    A copy of another image can be drawn on an image. Also consider using
-    sub-images to copy part of an image.
-
-    .. automethod:: pybricks.media.ev3dev.Image.draw_image
-
-
-    .. rubric:: Drawing Shapes
-
-    These are the methods to draw basic shapes, including points, lines,
-    rectangles and circles.
-
-    .. automethod:: pybricks.media.ev3dev.Image.draw_pixel
-
-    .. automethod:: pybricks.media.ev3dev.Image.draw_line
-
-    .. automethod:: pybricks.media.ev3dev.Image.draw_box
-
-    .. automethod:: pybricks.media.ev3dev.Image.draw_circle
-
-
-    .. rubric:: Image properties
-
-    .. autoattribute:: pybricks.media.ev3dev.Image.width
-
-    .. autoattribute:: pybricks.media.ev3dev.Image.height
-
-
-    .. rubric:: Replacing the Entire Image
-
-    .. automethod:: pybricks.media.ev3dev.Image.clear
-
-    .. automethod:: pybricks.media.ev3dev.Image.show_image
+.. autoclass:: pybricks.media.ev3dev.SoundFile
+    :no-members:
 
 
 Fonts
@@ -90,12 +47,63 @@ Fonts
 
     .. automethod:: pybricks.media.ev3dev.Font.text_height
 
+Making Images
+^^^^^^^^^^^^^^^
 
-Files
-^^^^^
+.. todo::
+    Explain what this is for, possibly with a sample.
 
-.. autoclass:: pybricks.media.ev3dev.ImageFile
+.. autoclass:: pybricks.media.ev3dev.Image
     :no-members:
 
-.. autoclass:: pybricks.media.ev3dev.SoundFile
-    :no-members:
+    .. rubric:: Drawing text
+
+    There are two ways to draw text on images. :meth:`draw_text` lets text be
+    placed precisely on the image or :meth:`print` can be used to automatically
+    print text on a new line.
+
+    .. automethod:: pybricks.media.ev3dev.Image.draw_text
+
+    .. automethod:: pybricks.media.ev3dev.Image.print
+
+    .. automethod:: pybricks.media.ev3dev.Image.set_font
+
+
+    .. rubric:: Drawing images
+
+    A copy of another image can be drawn on an image. Also consider using
+    sub-images to copy part of an image.
+
+    .. automethod:: pybricks.media.ev3dev.Image.draw_image
+
+
+    .. rubric:: Drawing shapes
+
+    These are the methods to draw basic shapes, including points, lines,
+    rectangles and circles.
+
+    .. automethod:: pybricks.media.ev3dev.Image.draw_pixel
+
+    .. automethod:: pybricks.media.ev3dev.Image.draw_line
+
+    .. automethod:: pybricks.media.ev3dev.Image.draw_box
+
+    .. automethod:: pybricks.media.ev3dev.Image.draw_circle
+
+
+    .. rubric:: Image properties
+
+    .. autoattribute:: pybricks.media.ev3dev.Image.width
+
+    .. autoattribute:: pybricks.media.ev3dev.Image.height
+
+
+    .. rubric:: Replacing the entire image
+
+    .. automethod:: pybricks.media.ev3dev.Image.clear
+
+    .. automethod:: pybricks.media.ev3dev.Image.show_image
+
+
+
+
