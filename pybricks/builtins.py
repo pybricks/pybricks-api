@@ -575,8 +575,8 @@ class LightGrid():
         pass
 
     def text(self, text, pause=500):
-        """Display a text string, one charachter at a time, with a pause
-        between each character. After the last charachter is shown, the light
+        """Display a text string, one character at a time, with a pause
+        between each character. After the last character is shown, the light
         grid turns off.
 
         Arguments:

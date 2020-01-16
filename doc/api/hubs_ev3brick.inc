@@ -47,7 +47,7 @@
                 - ``'el'``: Greek
                 - ``'en'``: English (default)
                 - ``'en-gb'``: English (United Kingdom)
-                - ``'en-sc'``: English (Scottland)
+                - ``'en-sc'``: English (Scotland)
                 - ``'en-uk-north'``: English (United Kingdom, Northern)
                 - ``'en-uk-rp'``: English (United Kingdom, Received Pronunciation)
                 - ``'en-uk-wmids'``: English (United Kingdom, West Midlands)
