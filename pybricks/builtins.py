@@ -470,7 +470,7 @@ class Speaker():
                 - ``zh``: Mandarin Chinese
                 - ``zh-yue``: Cantonese Chinese
 
-                The following modifiers can optionally be appended to then end
+                The following modifiers can optionally be appended to the end
                 of the voice name:
 
                 - ``+f1``: female variant 1
