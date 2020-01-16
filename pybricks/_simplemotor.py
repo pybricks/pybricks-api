@@ -1,4 +1,5 @@
-"""Shortened and simplified motor docs, by hiding optional methods and args."""
+"""Shortened and simplified motor docs, by hiding optional
+methods and arguments."""
 
 from .builtins import Motor
 from .parameters import Direction, Stop

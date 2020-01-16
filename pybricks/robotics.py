@@ -22,7 +22,7 @@ class DriveBase():
         """
 
     def start(self, drive_speed, turn_rate):
-        """Start driving at the specified speed and turnrate, both measured at
+        """Start driving at the specified speed and turn rate, both measured at
         the center point between the wheels of the robot.
 
         Arguments:
@@ -51,7 +51,7 @@ class DriveBase():
         pass
 
     def angle(self):
-        """Get the estimated accumulated rotation angle of the drivebase.
+        """Get the estimated accumulated rotation angle of the drive base.
 
         Returns:
             :ref:`angle`: Accumulated angle since last reset.

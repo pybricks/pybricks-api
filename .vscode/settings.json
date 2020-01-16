@@ -7,9 +7,15 @@
     "spellright.language": [
         "en_US"
     ],
-    "spellright.ignoreFiles": [ "**/.gitignore", "**/.vscode" ],
+    "spellright.ignoreFiles": [
+         "**/.gitignore",
+         "**/.vscode",
+         "**/conf.py",
+         "**/_version.py",
+    ],
     "spellright.ignoreRegExps": [
         "/.. math::[^]*?.. endmath/gm",
+        "/``[^]*?``/gm",
     ],
     "spellright.documentTypes": [
         "markdown",

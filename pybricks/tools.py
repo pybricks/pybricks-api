@@ -1,4 +1,4 @@
-"""Common tools for timing and datalogging."""
+"""Common tools for timing and data logging."""
 
 
 def print():
