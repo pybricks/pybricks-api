@@ -33,7 +33,7 @@
         .. toggle-header::
             :header: **Show/hide available languages and voices**
 
-            You can choose the following  and voices:
+            You can choose the following languages:
 
                 - ``af``: Afrikaans
                 - ``an``: Aragonese
@@ -105,8 +105,7 @@
                 - ``zh``: Mandarin Chinese
                 - ``zh-yue``: Cantonese Chinese
 
-                The following modifiers can optionally be appended to the end
-                of the voice name:
+                You can choose the following voices:
 
                 - ``+f1``: female variant 1
                 - ``+f2``: female variant 2
@@ -123,8 +122,6 @@
                 - ``+croak``: croak
                 - ``+whisper``: whisper
                 - ``+whisperf``: female whisper
-
-
 
 
     .. automethod:: pybricks.hubs::EV3Brick.speaker.set_volume

@@ -397,8 +397,14 @@ class Speaker():
         instead.
 
         Arguments:
+            language (str):
+                Language of the text. For example, you can choose ``'en'``
+                (English) or ``'de'`` (German). A list of all available
+                languages is given below.
             voice (str):
-                The voice to use. One of the following:
+                The voice to use. For example, you can choose ``'f1'`` (female
+                voice variant 1) or ``'m3'`` (male voice variant 3). A list of
+                all available voices is given below.
             speed (int):
                 Number of words per minute.
             pitch (int):
@@ -498,7 +504,7 @@ class LightArray():
         Set the brightness of each light individually.
 
         Arguments:
-            brightnesses (:ref:`brightness`, ..., :ref:`brightness`):
+            brightness (:ref:`brightness`, ..., :ref:`brightness`):
                 Brightness of each light.
         """
         pass
