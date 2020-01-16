@@ -1,5 +1,5 @@
-:mod:`tools <pybricks.tools>` -- Timing and Datalogging
-=======================================================
+:mod:`tools <pybricks.tools>` -- Timing and Data logging
+========================================================
 
 .. automodule:: pybricks.tools
     :no-members:

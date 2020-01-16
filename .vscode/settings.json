@@ -7,6 +7,7 @@
     "spellright.language": [
         "en_US"
     ],
+    "spellright.ignoreFiles": [ "**/.gitignore", "**/.vscode" ],
     "spellright.ignoreRegExps": [
         "/.. math::[^]*?.. endmath/gm",
     ],
