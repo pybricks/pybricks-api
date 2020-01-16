@@ -381,7 +381,8 @@ class Speaker():
     def say(self, text):
         """Say a given text string.
 
-        The options set by :meth:`set_speech_options` can affect the playback.
+        You can configure the language and voice of the text using
+        :meth:`set_speech_options`.
 
         Arguments:
             text (str): What to say.

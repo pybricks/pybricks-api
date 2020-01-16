@@ -142,18 +142,15 @@ class Image:
         pass
 
     def print(self, *args, sep=' ', end='\n'):
-        """Prints a line of text on the image.
+        """Prints a line of text.
 
-        This method works like the built-in ``print()`` function except that
-        it writes the text on the image instead.
+        This method works like the built-in ``print()`` function, but
+        it writes on the screen/image instead.
 
-        The most recent font set using :meth:`set_font` will be used or
-        :data:`Font.DEFAULT` if no font has been set yet.
+        You can set the font using :meth:`set_font`. If no font has been
+        set, :data:`Font.DEFAULT` will be used.
 
-        Lines are not wrapped if they are too long to fit on the image
-        horizontally. On the other hand, If the text would be printed off of
-        the image vertically, the entire image is scrolled up so that the text
-        will be visible in the image.
+        If no new line is available, all text scrolls up automatically.
 
         Arguments:
             * (object):
