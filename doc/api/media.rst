@@ -5,7 +5,8 @@
     :no-members:
 
 You can use your own sound and image files by placing them in your project
-folder. You can also use any of the images and sounds built into Pybricks.
+folder. You can also use any of the images and sounds built into ev3dev, or
+draw your own.
 
 ev3dev
 ------
