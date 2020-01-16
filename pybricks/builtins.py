@@ -389,7 +389,7 @@ class Speaker():
 
         pass
 
-    def set_speech_options(self, voice=None, speed=None, pitch=None):
+    def set_speech_options(self, language=None, voice=None, speed=None, pitch=None):
         """Configure speech settings used by the :meth:`say` method.
 
         Any option that is set to ``None`` will not be changed. If an option
