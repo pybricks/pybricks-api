@@ -448,14 +448,12 @@ class Light():
 class ColorLight():
     """Control a multi-color light."""
 
-    def on(self, color, brightness=100):
+    def on(self, color):
         """Turn on the light at the specified color and brightness.
 
         Arguments:
             color (Color): Color of the light. The light turns off if you
                            choose ``None`` or a color that is not available.
-            brightness (:ref:`brightness`): Brightness of the selected
-                                            color (*Default*: 100).
         """
         pass
 
