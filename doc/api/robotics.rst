@@ -14,13 +14,11 @@
 
     .. automethod:: pybricks.robotics.DriveBase.turn
 
-    .. automethod:: pybricks.robotics.DriveBase.arc
-
-    .. automethod:: pybricks.robotics.DriveBase.set_drive_settings
-
     .. rubric:: Manual drive control
 
-    .. automethod:: pybricks.robotics.DriveBase.start
+    .. automethod:: pybricks.robotics.DriveBase.drive
+
+    .. automethod:: pybricks.robotics.DriveBase.arc
 
     .. automethod:: pybricks.robotics.DriveBase.stop
 
@@ -31,3 +29,7 @@
     .. automethod:: pybricks.robotics.DriveBase.angle
 
     .. automethod:: pybricks.robotics.DriveBase.reset
+
+    .. rubric:: Settings
+
+    .. automethod:: pybricks.robotics.DriveBase.set_drive_settings

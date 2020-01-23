@@ -21,13 +21,24 @@ class DriveBase():
 
         """
 
-    def start(self, drive_speed, turn_rate):
+    def drive(self, speed, steering):
         """Start driving at the specified speed and turn rate, both measured at
         the center point between the wheels of the robot.
 
         Arguments:
-            drive_speed (:ref:`linspeed`): Forward speed of the robot.
-            turn_rate (:ref:`speed`): Turn rate of the robot.
+            speed (:ref:`linspeed`): Forward speed of the robot.
+            steering (:ref:`speed`): Turn rate of the robot.
+        """
+        pass
+
+    def arc(self, speed, radius):
+        """Start driving along an arc/circle with a given radius.
+
+        Arguments:
+            drive_speed (:ref:`linspeed`): Speed of the robot along the arc.
+            radius (:ref:`dimension`): Radius of the arc. A positive radius
+                value makes your robot go right. A negative radius value makes
+                it go left.
         """
         pass
 
@@ -43,7 +54,7 @@ class DriveBase():
         pass
 
     def distance(self):
-        """Get the estimated accumulated driven distance.
+        """Get the estimated driven distance.
 
         Returns:
             :ref:`distance`: Driven distance since last reset.
@@ -51,7 +62,7 @@ class DriveBase():
         pass
 
     def angle(self):
-        """Get the estimated accumulated rotation angle of the drive base.
+        """Get the estimated rotation angle of the drive base.
 
         Returns:
             :ref:`angle`: Accumulated angle since last reset.
@@ -59,22 +70,20 @@ class DriveBase():
         pass
 
     def reset(self):
-        """Reset the accumulated driven distance and angle to 0."""
+        """Reset the estimated driven distance and angle to 0."""
         pass
 
     def set_drive_settings(self, drive_speed, drive_acceleration, turn_rate,
                            turn_acceleration, stop_type):
-        """Configure the behavior of the :meth:`.straight`, :meth:`.turn`,
-        and :meth:`.arc` methods.
+        """Configure the default speed and acceleration.
 
         Arguments:
-            drive_speed (:ref:`linspeed`): Forward speed of the robot.
-            drive_acceleration (:ref:`linacceleration`): Forward acceleration
+            drive_speed (:ref:`linspeed`): Drive speed of the robot.
+            drive_acceleration (:ref:`linacceleration`): Linear acceleration
                 of the robot.
-            turn_rate (:ref:`speed`): Turn rate of the robot. Applies
-                to :meth:`.turn` method only.
+            turn_rate (:ref:`speed`): Turn rate of the robot.
             turn_acceleration (:ref:`acceleration`): Angular acceleration of
-                the robot. Applies to :meth:`.turn` method only.
+                the robot.
             stop_type (Stop): Whether to coast, brake, or hold after
                 a given command is complete.
         """
@@ -93,18 +102,5 @@ class DriveBase():
 
         Arguments:
             angle (:ref:`angle`): Angle of the turn.
-        """
-        pass
-
-    def arc(self, radius, angle):
-        """Drive along an arc with a given radius by a given angle. An arc is
-        a segment of a circle.
-
-        A positive radius value makes your robot go right. A negative radius
-        makes it go left.
-
-        Arguments:
-            radius (:ref:`dimension`): Radius of the circle.
-            angle (:ref:`angle`): Angle traversed along the circle.
         """
         pass
