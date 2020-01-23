@@ -25,27 +25,49 @@ class DriveBase():
         """Start driving at the specified speed and turn rate, both measured at
         the center point between the wheels of the robot.
 
+        This method is useful in applications where you often change the speed
+        and steering. For example, when following a line using a light sensor.
+
         Arguments:
-            speed (:ref:`linspeed`): Forward speed of the robot.
-            steering (:ref:`speed`): Turn rate of the robot.
+            speed (:ref:`linspeed`): Speed of the robot. Positive is forward,
+                negative is backward.
+            steering (:ref:`speed`): Turn rate of the robot. Positive is to the
+                right, negative is to the left.
         """
         pass
 
     def arc(self, speed, radius):
         """Start driving along an arc/circle with a given radius.
 
+        This method is useful in applications where you want to drive smoothly
+        around a known obstacle. Instead of going straight, turning, and then
+        straight again. For example, you can make it drive in a semi-circle
+        with a given radius and stop when a sensor detects an obstacle.
+
         Arguments:
-            drive_speed (:ref:`linspeed`): Speed of the robot along the arc.
+            speed (:ref:`linspeed`): Speed of the robot along the arc.
+                Positive is forward, negative is backward.
             radius (:ref:`dimension`): Radius of the arc. A positive radius
                 value makes your robot go right. A negative radius value makes
                 it go left.
         """
         pass
 
-    def stop(self, stop_type=Stop.COAST):
-        """stop(stop_type=Stop.COAST)
+    def tank(self, left, right):
+        """Start driving with the given speed for each wheel.
 
-        Stop the robot.
+        This method is useful in applications where you just want to set the
+        speed of the wheels or tank tracks, rather than the speed of the
+        whole drive base.
+
+        Arguments:
+            left (:ref:`speed`): Speed of the left wheel.
+            right (:ref:`speed`): Speed of the right wheel.
+        """
+        pass
+
+    def stop(self, stop_type=Stop.COAST):
+        """Stop the robot.
 
         Arguments:
             stop_type (Stop): Whether to coast, brake, or hold (*Default*:
@@ -90,7 +112,7 @@ class DriveBase():
         pass
 
     def straight(self, distance):
-        """Drive straight for a given distance.
+        """Drive straight for a given distance and then stop.
 
         Arguments:
             distance (:ref:`distance`): Distance to travel.
@@ -98,7 +120,7 @@ class DriveBase():
         pass
 
     def turn(self, angle):
-        """Turn in place by a given angle.
+        """Turn in place by a given angle and then stop.
 
         Arguments:
             angle (:ref:`angle`): Angle of the turn.
