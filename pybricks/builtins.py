@@ -421,11 +421,10 @@ class Speaker():
             volume (:ref:`percentage`):
                 Volume of the speaker.
             which (str):
-                The specific volume to set. Can be ``Beep``, ``PCM`` or
-                ``_all_``. ``Beep`` controls the volume for :meth:`beep` and
-                :meth:`play_notes`. ``PCM`` controls the volume for
-                :meth:`play_file` and :meth:`say`. ``_all_`` sets both at the
-                same time.
+                Which volume to set. ``'Beep'`` sets the volume for
+                :meth:`beep` and :meth:`play_notes`. ``'PCM'`` sets the volume
+                for :meth:`play_file` and :meth:`say`. ``'_all_'`` sets both
+                at the same time (*Default*: ``'_all_'``).
         """
         pass
 
