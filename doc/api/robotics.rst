@@ -8,6 +8,11 @@
 .. autoclass:: pybricks.robotics.DriveBase
     :no-members:
 
+    .. automethod:: pybricks.robotics.DriveBase.drive
+
+.. .. autoclass:: pybricks.robotics.DriveBase
+    :no-members:
+
     .. rubric:: Automatic drive control
 
     .. automethod:: pybricks.robotics.DriveBase.straight
