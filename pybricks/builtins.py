@@ -43,7 +43,7 @@ class DCMotor():
                                             This is useful to avoid applying
                                             the full motor torque to a geared
                                             or lever mechanism, or to prevent
-                                            your LEGO® train from
+                                            your motor from
                                             unintentionally going at full
                                             speed. (*Default*: 100).
             duty_offset (:ref:`percentage`): Minimum duty cycle given when you

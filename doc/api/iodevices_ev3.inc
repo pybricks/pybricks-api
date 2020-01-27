@@ -72,9 +72,6 @@ DC Motor
     .. automethod:: pybricks.builtins.DCMotor.dc
         :noindex:
 
-    .. automethod:: pybricks.builtins.DCMotor.set_dc_settings
-        :noindex:
-
 Other ev3dev sensors
 ^^^^^^^^^^^^^^^^^^^^^
 
