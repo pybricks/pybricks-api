@@ -48,11 +48,10 @@ Fonts
 
     .. automethod:: pybricks.media.ev3dev.Font.text_height
 
-Making Images
-^^^^^^^^^^^^^^^
-
-.. todo::
-    Explain what this is for, possibly with a sample.
+Making Your Own Images
+^^^^^^^^^^^^^^^^^^^^^^
+Instead of drawing directly on the EV3 screen, you can make and interact
+with image files using the ``Image`` class given below.
 
 .. autoclass:: pybricks.media.ev3dev.Image
     :no-members:

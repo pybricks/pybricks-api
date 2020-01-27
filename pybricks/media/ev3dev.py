@@ -26,7 +26,7 @@ class Image:
                 sub-image of the ``source`` image (this only works if the type
                 of ``source`` is :class:`Image` and not when it is a ``str``).
 
-                Additional keyword arguments ``x1``, ``y1`, ``x2``, ``y2`` are
+                Additional keyword arguments ``x1``, ``y1``, ``x2``, ``y2`` are
                 needed when ``sub=True``. These specify the top-left and
                 bottom-right coordinates in the ``source`` image that will be
                 used as the bounds for the sub-image.
