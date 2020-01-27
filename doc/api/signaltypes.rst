@@ -138,7 +138,7 @@ Some signals do not have specific units. They range from a minimum (0%) to a
 maximum (100%). Specifics type of percentages are :ref:`relative distances
 <relativedistance>` or  :ref:`brightness <brightness>`.
 
-Another example is the sound :meth:`volume <.builtins.Speaker.set_volume>`,
+Another example is the sound volume,
 which ranges from 0% (silent) to 100% (loudest).
 
 .. _relativedistance:
@@ -230,8 +230,7 @@ frequency: Hz
 --------------
 Sound frequencies are expressed in Hertz (Hz).
 
-For example, you can choose the frequency of a :meth:`beep
-<.builtins.Speaker.beep>` to change the pitch.
+For example, you can choose the frequency of a beep to change the pitch.
 
 .. _temperature:
 

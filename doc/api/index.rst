@@ -38,4 +38,3 @@ Intro
    signaltypes
    frames
    motors
-   sound
