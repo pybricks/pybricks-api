@@ -341,28 +341,13 @@ class Speaker():
         pass
 
     def play_notes(self, notes, tempo=120):
-        """Play a sequence of notes.
+        """Play a sequence of musical notes.
 
-        Notes are strings with the following format:
-
-        - The first character is the name of the note, ``A`` to ``G`` or ``R``
-          for a rest.
-        - Note names can also include an accidental ``#`` (sharp) or ``b``
-          (flat). ``B#``/``Cb`` and ``E#``/``Fb`` are not allowed.
-        - The note name is followed by the octave number ``2`` to ``8``. For
-          example ``C4`` is middle C. The octave changes to the next number at
-          the note C, for example, ``B3`` is the note below middle C (``C4``).
-        - The octave is followed by ``/`` and a number that indicates the size
-          of the note. For example ``/4`` is a quarter note, ``/8`` is an
-          eight note and so on.
-        - This can optionally followed by a ``.`` to make a dotted note.
-          Dotted notes are 1-1/2 times as long as notes without a dot.
-        - The note can optionally end with a ``_`` which is a tie or a slur.
-          This causes there to be no pause between this note and the next note.
+        For example, you can play: ``['C4/4', 'C4/4', 'G4/4', 'G4/4']``.
 
         Arguments:
             notes (iter):
-                A sequence of notes to be played (see format above).
+                A sequence of notes to be played (see format below).
             tempo (int):
                 Beats per minute where a quarter note is one beat.
         """

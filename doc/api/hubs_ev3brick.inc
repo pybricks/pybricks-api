@@ -24,6 +24,27 @@
 
     .. automethod:: pybricks.hubs::EV3Brick.speaker.play_notes
 
+        .. toggle-header::
+            :header: **Show/hide musical note format**
+
+            Each note is a string with the following format:
+
+                - The first character is the name of the note, ``A`` to ``G`` or ``R``
+                  for a rest.
+                - Note names can also include an accidental ``#`` (sharp) or ``b``
+                  (flat). ``B#``/``Cb`` and ``E#``/``Fb`` are not allowed.
+                - The note name is followed by the octave number ``2`` to ``8``. For
+                  example ``C4`` is middle C. The octave changes to the next number at
+                  the note C, for example, ``B3`` is the note below middle C (``C4``).
+                - The octave is followed by ``/`` and a number that indicates the size
+                  of the note. For example ``/4`` is a quarter note, ``/8`` is an
+                  eight note and so on.
+                - This can optionally followed by a ``.`` to make a dotted note.
+                  Dotted notes are 1-1/2 times as long as notes without a dot.
+                - The note can optionally end with a ``_`` which is a tie or a slur.
+                  This causes there to be no pause between this note and the next note.
+
+
     .. automethod:: pybricks.hubs::EV3Brick.speaker.play_file
 
     .. automethod:: pybricks.hubs::EV3Brick.speaker.say
