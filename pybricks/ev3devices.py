@@ -1,7 +1,7 @@
 """LEGO® MINDSTORMS® EV3 motors and sensors."""
 
 from .parameters import Direction
-from .builtins import Motor
+from .builtins import Motor  # noqa E402
 
 
 class TouchSensor():

@@ -1,7 +1,7 @@
 """LEGO® Powered Up motor, sensors, and lights."""
 
 from .builtins import KeyPad, Accelerometer, ColorLight
-from .builtins import Motor
+from .builtins import Motor  # noqa E402
 
 
 class RemoteControl():
