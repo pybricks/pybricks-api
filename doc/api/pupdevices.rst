@@ -67,8 +67,6 @@ Color and Distance Sensor
 
     .. automethod:: pybricks.pupdevices.ColorDistanceSensor.reflection
 
-    .. automethod:: pybricks.pupdevices.ColorDistanceSensor.rgb
-
     .. automethod:: pybricks.pupdevices.ColorDistanceSensor.distance
 
     .. rubric:: Built-in light
@@ -82,10 +80,10 @@ Color and Distance Sensor
     .. automethod:: pybricks.pupdevices::ColorDistanceSensor.light.off
 
 
-Tilt Sensor
-^^^^^^^^^^^^^^^^^^^^^^^^^
+.. Tilt Sensor
+.. ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. autoclass:: pybricks.pupdevices.TiltSensor
+.. .. autoclass:: pybricks.pupdevices.TiltSensor
     :no-members:
 
     .. automethod:: neutral
@@ -97,10 +95,10 @@ Tilt Sensor
     .. automethod:: up
 
 
-Remote Control
-^^^^^^^^^^^^^^^^^^^^^^^^^
+.. Remote Control
+.. ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. autoclass:: pybricks.pupdevices.RemoteControl
+.. .. autoclass:: pybricks.pupdevices.RemoteControl
     :no-members:
 
     .. automethod:: pybricks.pupdevices::RemoteControl.light.on
