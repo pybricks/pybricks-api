@@ -1,81 +1,89 @@
 More about Motors
 ===========================================
 
-
 Motor Tips & Tricks
 ^^^^^^^^^^^^^^^^^^^
 
-The difference between ``run_angle`` and ``run_target``
--------------------------------------------------------
+.. The difference between ``run_angle`` and ``run_target``
+.. -------------------------------------------------------
 
-*TODO*
+.. *TODO*
 
 .. _stalled:
 
 Using stall detection
 ---------------------
 
-When a motor cannot move any further despite using the maximally allowed torque
-we say that the motor is stalled. Something could be blocking the motor, or the
-load is just too heavy. For example, if you manually hold the motor shaft still
-while the motor is busy executing a command, the motor will stall.
+.. todo::
 
-What can I do with stall detection?
-+++++++++++++++++++++++++++++++++++
+    This section will be included in a future release.
 
-Stall detection is useful to detect that a motor can't move any further. This
-can be used to detect an endpoint of a mechanism. For example, you can detect
-whether a robotic hand is fully closed, because the gripper motor simply can't
-go further. This way, you don't need a touch or light sensor to detect this.
+.. When a motor cannot move any further despite using the maximally allowed torque
+.. we say that the motor is stalled. Something could be blocking the motor, or the
+.. load is just too heavy. For example, if you manually hold the motor shaft still
+.. while the motor is busy executing a command, the motor will stall.
 
-*TODO: How, what, why. Also explain run_until_stalled. Rack & pinion example.*
+.. What can I do with stall detection?
+.. +++++++++++++++++++++++++++++++++++
 
-When is a motor stalled?
-++++++++++++++++++++++++
+.. Stall detection is useful to detect that a motor can't move any further. This
+.. can be used to detect an endpoint of a mechanism. For example, you can detect
+.. whether a robotic hand is fully closed, because the gripper motor simply can't
+.. go further. This way, you don't need a touch or light sensor to detect this.
 
-TODO
+.. *TODO: How, what, why. Also explain run_until_stalled. Rack & pinion example.*
+
+.. When is a motor stalled?
+.. ++++++++++++++++++++++++
+
+.. TODO
 
 .. _gears:
 
 Using gears
 -----------------
-Many LEGO robots use mechanisms with gears to change the speed and torque
-output of a motor. Let's consider the following dial mechanism.
 
-*TODO: INSERT PICTURE OF MOTOR WITH 12z gear AND 36z gear.*
+.. todo::
 
-This gear train slows down the dial on the output axle by a factor of 3.
-Therefore, if you want to rotate the dial by 90 degrees, the motor has to
-rotate by 270 degrees. To turn at 200 degrees per second, the motor has to
-turn at 600 degrees per second, and so on.
+    This section will be included in a future release.
 
-To avoid using this factor 3 everywhere in your program, you can use the
-`gears` setting of the ``Motor`` object, as shown in this example::
+.. Many LEGO robots use mechanisms with gears to change the speed and torque
+.. output of a motor. Let's consider the following dial mechanism.
 
-    # This example uses the EV3 brick, but the same
-    # technique applies to other programmable hubs.
-    ev3 = EV3Brick()
+.. *TODO: INSERT PICTURE OF MOTOR WITH 12z gear AND 36z gear.*
 
-    # Initialize the motor. See picture above.
-    dial = Motor(Port.C, Direction.COUNTERCLOCKWISE, gears=[12, 36])
+.. This gear train slows down the dial on the output axle by a factor of 3.
+.. Therefore, if you want to rotate the dial by 90 degrees, the motor has to
+.. rotate by 270 degrees. To turn at 200 degrees per second, the motor has to
+.. turn at 600 degrees per second, and so on.
 
-    # Turn the dial by 90-degrees
-    dial.run_angle(500, 90)
+.. To avoid using this factor 3 everywhere in your program, you can use the
+.. `gears` setting of the ``Motor`` object, as shown in this example::
 
-    # Print the dial angle
-    print(dial.angle())
+..     # This example uses the EV3 brick, but the same
+..     # technique applies to other programmable hubs.
+..     ev3 = EV3Brick()
 
-    # Turn the dial back to the original position
-    dial.run_target(500, 0)
+..     # Initialize the motor. See picture above.
+..     dial = Motor(Port.C, Direction.COUNTERCLOCKWISE, gears=[12, 36])
 
-When you use any of the other methods, the same scaling is applied. For
-example, you can print the angle of the dial as shown above. This will print
-90 (approximately), even though the motor has turned 270 degrees.
+..     # Turn the dial by 90-degrees
+..     dial.run_angle(500, 90)
 
-Notice that there is no magic going on. It is just a convenient scaling
-function. This helps you organize your code. For example, if you change
-your mechanism to use different gears, you only have to change the first line
-of this example.
+..     # Print the dial angle
+..     print(dial.angle())
+
+..     # Turn the dial back to the original position
+..     dial.run_target(500, 0)
+
+.. When you use any of the other methods, the same scaling is applied. For
+.. example, you can print the angle of the dial as shown above. This will print
+.. 90 (approximately), even though the motor has turned 270 degrees.
+
+.. Notice that there is no magic going on. It is just a convenient scaling
+.. function. This helps you organize your code. For example, if you change
+.. your mechanism to use different gears, you only have to change the first line
+.. of this example.
 
 .. _control:
 
