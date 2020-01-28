@@ -1,18 +1,7 @@
 """LEGO® MINDSTORMS® EV3 motors and sensors."""
 
 from .parameters import Direction
-from .builtins import Motor as CommonMotor
-
-
-class Motor(CommonMotor):
-    """LEGO® MINDSTORMS® EV3 Medium or Large Motor.
-
-    Element 99455/6148292 or 95658/6148278, contained in:
-
-    * 31313: LEGO® MINDSTORMS® EV3 (2013)
-    * 45544: LEGO® MINDSTORMS® Education EV3 Core Set (2013)
-    * 45503 or 45502: Separate part (2013)
-    """
+from .builtins import Motor
 
 
 class TouchSensor():
@@ -221,6 +210,9 @@ class GyroSensor():
 
     def reset_angle(self, angle):
         """Set the rotation angle of the sensor to a desired value.
+
+        If you don't specify an angle, the absolute value will be used if
+        available.
 
         Arguments:
             angle (:ref:`angle`): Value to which the angle should be reset.
