@@ -18,20 +18,22 @@ Using stall detection
 
     This section will be included in a future release.
 
-.. When a motor cannot move any further despite using the maximally allowed torque
-.. we say that the motor is stalled. Something could be blocking the motor, or the
-.. load is just too heavy. For example, if you manually hold the motor shaft still
-.. while the motor is busy executing a command, the motor will stall.
+.. When a motor cannot move any further despite using the maximally allowed
+.. torque we say that the motor is stalled. Something could be blocking the
+.. motor, or the load is just too heavy. For example, if you manually hold
+.. the motor shaft still while the motor is busy executing a command, the
+.. motor will stall.
 
 .. What can I do with stall detection?
 .. +++++++++++++++++++++++++++++++++++
 
-.. Stall detection is useful to detect that a motor can't move any further. This
-.. can be used to detect an endpoint of a mechanism. For example, you can detect
-.. whether a robotic hand is fully closed, because the gripper motor simply can't
-.. go further. This way, you don't need a touch or light sensor to detect this.
+.. Stall detection is useful to detect that a motor can't move any further.
+.. This can be used to detect an endpoint of a mechanism. For example, you
+.. can detect whether a robotic hand is fully closed, because the gripper
+.. motor simply can't go further. This way, you don't need a touch or light
+.. sensor to detect this.
 
-.. *TODO: How, what, why. Also explain run_until_stalled. Rack & pinion example.*
+.. *TODO: How, what, why. Explain run_until_stalled. Rack & pinion example.*
 
 .. When is a motor stalled?
 .. ++++++++++++++++++++++++
@@ -82,8 +84,8 @@ Using gears
 
 .. Notice that there is no magic going on. It is just a convenient scaling
 .. function. This helps you organize your code. For example, if you change
-.. your mechanism to use different gears, you only have to change the first line
-.. of this example.
+.. your mechanism to use different gears, you only have to change the first
+.. line of this example.
 
 .. _control:
 
