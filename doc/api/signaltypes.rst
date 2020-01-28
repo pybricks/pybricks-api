@@ -64,7 +64,7 @@ degrees per second, during one second (deg/s/s). This is also commonly written
 as  :math:`deg/s^2`.
 
 For example, you can adjust the rotational acceleration setting of a
-:meth:`Motor <.builtins.Motor.set_run_settings>` to change how smoothly or
+:class:`Motor <.builtins.Motor>` to change how smoothly or
 how quickly it reaches the constant speed set point.
 
 

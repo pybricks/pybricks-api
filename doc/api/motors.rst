@@ -40,13 +40,23 @@ The Motor Class
 
     .. automethod:: pybricks.builtins.Motor.track_target
 
-    .. rubric:: Changing motor settings
+    .. rubric:: Control settings and status
 
-    .. automethod:: pybricks.builtins.Motor.set_run_settings
+    The motors use PID control to accurately track the speed and
+    angle targets that you specify. Use the following methods to adjust the
+    behavior of this controller and get its current status.
 
-    .. automethod:: pybricks.builtins.Motor.set_dc_settings
+    .. automethod:: pybricks.builtins::Motor.control.limits
 
-    .. automethod:: pybricks.builtins.Motor.set_pid_settings
+    .. automethod:: pybricks.builtins::Motor.control.pid
+
+    .. automethod:: pybricks.builtins::Motor.control.target_tolerances
+
+    .. automethod:: pybricks.builtins::Motor.control.stall_tolerances
+
+    .. automethod:: pybricks.builtins::Motor.control.stalled
+
+    .. automethod:: pybricks.builtins::Motor.control.active
 
 
 Motor Tips & Tricks
@@ -80,16 +90,7 @@ go further. This way, you don't need a touch or light sensor to detect this.
 When is a motor stalled?
 ++++++++++++++++++++++++
 
-When the motor is stalled, the :meth:`.stalled` will return ``True``.
-Specifically, the motor is stalled when the duty cycle computed by the
-PID controllers has reached the maximum (so ``duty`` = ``duty_limit``)
-and still the motor cannot reach a minimal speed
-(so ``speed`` < ``stall_speed``) for a period of at
-least ``stall_time``.
-
-You can change the ``duty_limit``, ``stall_speed``, and ``stall_time``
-settings using  and :meth:`.set_pid_settings`
-in order to change the sensitivity to being stalled.
+TODO
 
 .. _gears:
 

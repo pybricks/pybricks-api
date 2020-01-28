@@ -58,8 +58,103 @@ class DCMotor():
         pass
 
 
+class Control():
+    """Class to interact with PID controller and settings."""
+
+    def __init__(self, scale=1):
+        """Initialize the PID controller.
+
+        Arguments:
+            scale (float):
+                Number of integer counts per unit of output. For example, two
+                counts per degree of the motor.
+        """
+        pass
+
+    def limits(self, speed, acceleration, actuation):
+        """Configure the maximum speed, acceleration, and actuation.
+
+        If no arguments are given, this will return the current values.
+
+        Arguments:
+            speed (:ref:`speed` or :ref:`linspeed`):
+                Maximum speed. All speed commands will be capped to this value.
+            acceleration (:ref:`acceleration` or :ref:`linacceleration`):
+                Maximum acceleration.
+            actuation (:ref:`percentage`):
+                Maximum actuation as percentage of absolute maximum.
+        """
+        pass
+
+    def pid(self, kp, ki, kd):
+        """Get or set the PID values for position and speed control.
+
+        If no arguments are given, this will return the current values.
+
+        Arguments:
+            kp (int): Proportional position (or integral speed) control
+                constant.
+            ki (int): Integral position control constant.
+            kd (int): Derivative position (or proportional speed) control
+                constant.
+        """
+        pass
+
+    def target_tolerances(self, speed, position):
+        """Get or set the tolerances that say when a maneuver is done.
+
+        If no arguments are given, this will return the current values.
+
+        Arguments:
+            position (:ref:`angle` or :ref:`distance`): Allowed
+                deviation from the target before motion is considered
+                complete.
+            speed (:ref:`speed` or :ref:`linspeed`): Allowed deviation
+                from zero speed before motion is considered complete.
+        """
+        pass
+
+    def stall_tolerances(self, speed, time):
+        """Get or set stalling tolerances.
+
+        If no arguments are given, this will return the current values.
+
+        Arguments:
+            speed (:ref:`speed` or :ref:`linspeed`): If the controller
+                cannot reach this speed during at least ``stall_time``,
+                it is stalled.
+            time (:ref:`time`): See ``speed``.
+        """
+        pass
+
+    def stalled(self):
+        """Check whether the controller is currently stalled.
+
+        A controller is stalled when it cannot move even with the maximum
+        actuation signal.
+
+        Returns:
+            bool: ``True`` if the controller is stalled,``False`` if not.
+
+        """
+        pass
+
+    def active(self):
+        """Check whether the controller is currently active.
+
+        When active, it continuously adjusts the actuation to reach the control
+        objective. When it is passive, the control signal is zero or constant.
+
+        Returns:
+            bool: ``True`` if the controller is active,``False`` if not.
+        """
+        pass
+
+
 class Motor(DCMotor):
     """Generic class to control motors with built-in rotation sensors."""
+
+    control = Control()
 
     def __init__(self, port,
                  positive_direction=Direction.CLOCKWISE,
@@ -239,12 +334,8 @@ class Motor(DCMotor):
             stop_type (Stop): Whether to coast, brake, or hold after coming to
                               a standstill (*Default*:
                               :class:`Stop.COAST <.parameters.Stop>`).
-            duty_limit (:ref:`percentage`): Relative torque limit. This limit
-                                            works just like
-                                            :meth:`.set_dc_settings`, but in
-                                            this case the limit is temporary:
-                                            it returns to its previous value
-                                            after completing this command.
+            duty_limit (:ref:`percentage`): Relative torque limit during this
+                command.
         """
         pass
 
