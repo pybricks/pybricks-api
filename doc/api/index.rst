@@ -36,5 +36,5 @@ Intro
    :hidden:
 
    signaltypes
-   frames
    motors
+..    frames
