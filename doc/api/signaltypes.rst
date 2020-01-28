@@ -39,8 +39,9 @@ rotational speed: deg/s
 Rotational speed, or *angular velocity* describes how fast something rotates,
 expressed as the number of degrees per second (deg/s).
 
-For example, the rotational speed values of a ``Motor`` or the :meth:`GyroSensor
-<.ev3devices.GyroSensor.speed>` are expressed in degrees per second.
+For example, the rotational speed values of a ``Motor`` or the
+:meth:`GyroSensor <.ev3devices.GyroSensor.speed>` are expressed in degrees
+per second.
 
 While we recommend working with degrees per second in your programs, you can
 use the following table to convert between commonly used units.

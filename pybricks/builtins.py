@@ -27,36 +27,6 @@ class DCMotor():
         """
         pass
 
-    def set_dc_settings(self, duty_limit, duty_offset):
-        """Configure the settings to adjust the behavior of the :meth:`.dc`
-        command. This also affects all of the ``run`` commands, which use
-        the :meth:`.dc` method in the background.
-
-        Arguments:
-            duty_limit (:ref:`percentage`): Relative torque limit during
-                                            subsequent motor commands. This
-                                            sets the maximum duty cycle that is
-                                            applied during any subsequent motor
-                                            command. This reduces the maximum
-                                            torque output to a percentage of
-                                            the absolute maximum stall torque.
-                                            This is useful to avoid applying
-                                            the full motor torque to a geared
-                                            or lever mechanism, or to prevent
-                                            your motor from
-                                            unintentionally going at full
-                                            speed. (*Default*: 100).
-            duty_offset (:ref:`percentage`): Minimum duty cycle given when you
-                                             use :meth:`.dc`. This adds a small
-                                             feed forward torque so that your
-                                             motor will move even for very low
-                                             duty cycle values, which can be
-                                             useful when you create your own
-                                             feedback controllers
-                                             (*Default*: 0).
-        """
-        pass
-
 
 class Control():
     """Class to interact with PID controller and settings."""
@@ -313,62 +283,6 @@ class Motor(DCMotor):
             target_angle (:ref:`angle`): Target angle that the motor should
                                          rotate to.
 
-        """
-        pass
-
-    def set_run_settings(self, max_speed, acceleration):
-        """Configure the maximum speed and acceleration/deceleration of the
-        motor for all run commands.
-
-        This applies to the ``run``, ``run_time``, ``run_angle``,
-        ``run_target``, or ``run_until_stalled`` commands you give the motor.
-
-        Arguments:
-            max_speed (:ref:`speed`): Maximum speed of the motor during a motor
-                                      command.
-            acceleration (:ref:`acceleration`): Acceleration towards the target
-                                                speed and deceleration towards
-                                                standstill. This should be a
-                                                positive value. The motor will
-                                                automatically change the sign
-                                                to decelerate as needed.
-
-        """
-        pass
-
-    def set_pid_settings(self, kp, ki, kd, tight_loop_limit, angle_tolerance,
-                         speed_tolerance, stall_speed, stall_time):
-        """Configure the settings of the position and speed controllers.
-
-        Arguments:
-            kp (int): Proportional position (and integral speed) control
-                      constant.
-            ki (int): Integral position control constant.
-            kd (int): Derivative position (and proportional speed) control\
-                      constant.
-            tight_loop_limit (:ref:`time`): If you execute any of the ``run``
-                                            commands within this interval after
-                                            starting the previous command, the
-                                            controllers assume that you want to
-                                            control the speed directly. This
-                                            means that it will ignore the
-                                            acceleration setting and
-                                            immediately begin tracking the
-                                            speed you give in the ``run``
-                                            command. This is useful in a fast
-                                            loop, where you usually want the
-                                            motors to respond quickly rather
-                                            than accelerate smoothly, for
-                                            example with a line-following
-                                            robot.
-            angle_tolerance (:ref:`angle`): Allowed deviation from the target
-                                            angle before motion is considered
-                                            complete.
-            speed_tolerance (:ref:`speed`): Allowed deviation from zero speed
-                                            before motion is considered
-                                            complete.
-            stall_speed (:ref:`speed`): See :meth:`.stalled`.
-            stall_time (:ref:`time`): See :meth:`.stalled`.
         """
         pass
 
