@@ -69,7 +69,6 @@ robotframe
 rtype
 sep
 signaltypes
-simplemotor
 startinstall
 str
 thermistor

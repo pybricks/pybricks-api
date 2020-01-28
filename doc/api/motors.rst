@@ -1,44 +1,6 @@
 More about Motors
 ===========================================
 
-The Motor Class
-^^^^^^^^^^^^^^^
-
-.. autoclass:: pybricks.builtins.Motor
-    :no-members:
-
-    .. rubric:: Measuring
-
-    .. automethod:: pybricks.builtins.Motor.speed
-
-    .. automethod:: pybricks.builtins.Motor.angle
-
-    .. automethod:: pybricks.builtins.Motor.reset_angle
-
-    .. automethod:: pybricks.builtins.Motor.stalled
-
-    .. rubric:: Action
-
-    .. automethod:: pybricks.builtins.Motor.stop
-
-    .. automethod:: pybricks.builtins.Motor.run
-
-    .. automethod:: pybricks.builtins.Motor.run_time
-
-    .. automethod:: pybricks.builtins.Motor.run_angle
-
-    .. automethod:: pybricks.builtins.Motor.run_target
-
-    .. automethod:: pybricks.builtins.Motor.run_until_stalled
-
-    .. automethod:: pybricks.builtins.Motor.dc
-
-    .. rubric:: Advanced motion control
-
-    .. automethod:: pybricks.builtins.Motor.track_target
-
-    .. autoattribute:: control
-        :annotation:
 
 Motor Tips & Tricks
 ^^^^^^^^^^^^^^^^^^^
@@ -88,7 +50,7 @@ rotate by 270 degrees. To turn at 200 degrees per second, the motor has to
 turn at 600 degrees per second, and so on.
 
 To avoid using this factor 3 everywhere in your program, you can use the
-`gears` setting of the :class:`.Motor` object, as shown in this example::
+`gears` setting of the ``Motor`` object, as shown in this example::
 
     # This example uses the EV3 brick, but the same
     # technique applies to other programmable hubs.

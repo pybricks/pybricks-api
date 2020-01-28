@@ -7,33 +7,41 @@
 Motor
 ^^^^^^^^^^^^
 
-.. autoclass:: pybricks._simplemotor.Motor
-    :noindex:
+.. autoclass:: pybricks.ev3devices.Motor
     :no-members:
 
-    .. automethod:: pybricks._simplemotor.Motor.angle
-        :noindex:
+    .. rubric:: Measuring
 
-    .. automethod:: pybricks._simplemotor.Motor.reset_angle
-        :noindex:
+    .. automethod:: pybricks.ev3devices.Motor.speed
 
-    .. automethod:: pybricks._simplemotor.Motor.speed
-        :noindex:
+    .. automethod:: pybricks.ev3devices.Motor.angle
 
-    .. automethod:: pybricks._simplemotor.Motor.stop
-        :noindex:
+    .. automethod:: pybricks.ev3devices.Motor.reset_angle
 
-    .. automethod:: pybricks._simplemotor.Motor.run
-        :noindex:
+    .. automethod:: pybricks.ev3devices.Motor.stalled
 
-    .. automethod:: pybricks._simplemotor.Motor.run_time
-        :noindex:
+    .. rubric:: Action
 
-    .. automethod:: pybricks._simplemotor.Motor.run_angle
-        :noindex:
+    .. automethod:: pybricks.ev3devices.Motor.stop
 
-    .. automethod:: pybricks._simplemotor.Motor.run_target
-        :noindex:
+    .. automethod:: pybricks.ev3devices.Motor.run
+
+    .. automethod:: pybricks.ev3devices.Motor.run_time
+
+    .. automethod:: pybricks.ev3devices.Motor.run_angle
+
+    .. automethod:: pybricks.ev3devices.Motor.run_target
+
+    .. automethod:: pybricks.ev3devices.Motor.run_until_stalled
+
+    .. automethod:: pybricks.ev3devices.Motor.dc
+
+    .. rubric:: Advanced motion control
+
+    .. automethod:: pybricks.ev3devices.Motor.track_target
+
+    .. autoattribute:: pybricks.ev3devices.Motor.control
+        :annotation:
 
 
 Touch Sensor

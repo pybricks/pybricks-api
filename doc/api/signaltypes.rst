@@ -13,9 +13,8 @@ time: ms
 ---------
 All time and duration values are measured in milliseconds (ms).
 
-For example, the duration of motion with :meth:`run_time
-<.builtins.Motor.run_time>`, the duration of :func:`wait <.tools.wait>`, or
-the time values returned by the :class:`StopWatch <.tools.StopWatch>` are
+For example, the duration of motion with ``run_time``, and the duration
+of :func:`wait <.tools.wait>` are
 specified in milliseconds.
 
 Angles and angular motion
@@ -29,7 +28,7 @@ angle: deg
 All angles are measured in degrees (deg). One full rotation corresponds to 360
 degrees.
 
-For example, the angle values of a :meth:`Motor <.builtins.Motor.angle>` or
+For example, the angle values of a ``Motor`` or
 the :meth:`GyroSensor <.ev3devices.GyroSensor.angle>` are expressed in degrees.
 
 .. _speed:
@@ -40,8 +39,7 @@ rotational speed: deg/s
 Rotational speed, or *angular velocity* describes how fast something rotates,
 expressed as the number of degrees per second (deg/s).
 
-For example, the rotational speed values of a :meth:`Motor
-<.builtins.Motor.speed>` or the :meth:`GyroSensor
+For example, the rotational speed values of a ``Motor`` or the :meth:`GyroSensor
 <.ev3devices.GyroSensor.speed>` are expressed in degrees per second.
 
 While we recommend working with degrees per second in your programs, you can
@@ -63,8 +61,8 @@ rotational speed changes. This is expressed as the change of the number of
 degrees per second, during one second (deg/s/s). This is also commonly written
 as  :math:`deg/s^2`.
 
-For example, you can adjust the rotational acceleration setting of a
-:class:`Motor <.builtins.Motor>` to change how smoothly or
+For example, you can adjust the rotational acceleration setting of a ``Motor``
+to change how smoothly or
 how quickly it reaches the constant speed set point.
 
 

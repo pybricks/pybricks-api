@@ -17,38 +17,43 @@ Motors without Rotation Sensors
 Motors with Rotation Sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. autoclass:: pybricks._simplemotor.Motor
+.. autoclass:: pybricks.pupdevices.Motor
     :noindex:
     :no-members:
 
-    .. automethod:: pybricks._simplemotor.Motor.angle
-        :noindex:
+    .. rubric:: Measuring
 
-    .. automethod:: pybricks._simplemotor.Motor.reset_angle
-        :noindex:
+    .. automethod:: pybricks.pupdevices.Motor.speed
 
-    .. automethod:: pybricks._simplemotor.Motor.speed
-        :noindex:
+    .. automethod:: pybricks.pupdevices.Motor.angle
 
-    .. automethod:: pybricks._simplemotor.Motor.stop
-        :noindex:
+    .. automethod:: pybricks.pupdevices.Motor.reset_angle
 
-    .. automethod:: pybricks._simplemotor.Motor.run
-        :noindex:
+    .. automethod:: pybricks.pupdevices.Motor.stalled
 
-    .. automethod:: pybricks._simplemotor.Motor.run_time
-        :noindex:
+    .. rubric:: Action
 
-    .. automethod:: pybricks._simplemotor.Motor.run_angle
-        :noindex:
+    .. automethod:: pybricks.pupdevices.Motor.stop
 
-    .. automethod:: pybricks._simplemotor.Motor.run_target
-        :noindex:
+    .. automethod:: pybricks.pupdevices.Motor.run
 
-    .. automethod:: pybricks.builtins.Motor.dc
-        :noindex:
+    .. automethod:: pybricks.pupdevices.Motor.run_time
 
-        This method lets you use a motor as if it is a simple DC motor.
+    .. automethod:: pybricks.pupdevices.Motor.run_angle
+
+    .. automethod:: pybricks.pupdevices.Motor.run_target
+
+    .. automethod:: pybricks.pupdevices.Motor.run_until_stalled
+
+    .. automethod:: pybricks.pupdevices.Motor.dc
+
+    .. rubric:: Advanced motion control
+
+    .. automethod:: pybricks.pupdevices.Motor.track_target
+
+    .. autoattribute:: pybricks.pupdevices.Motor.control
+        :annotation:
+
 
 Color and Distance Sensor
 ^^^^^^^^^^^^^^^^^^^^^^^^^
