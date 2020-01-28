@@ -5,15 +5,7 @@ from .builtins import Motor
 
 
 class TouchSensor():
-    """LEGO® MINDSTORMS® EV3 Touch Sensor.
-
-    Element 95648/6138404, contained in:
-
-    * 31313: LEGO® MINDSTORMS® EV3 (2013)
-    * 45544: LEGO® MINDSTORMS® Education EV3 Core Set (2013)
-    * 45507: Separate part (2013)
-
-    """
+    """LEGO® MINDSTORMS® EV3 Touch Sensor."""
 
     def __init__(self, port):
         """TouchSensor(port)
@@ -35,14 +27,7 @@ class TouchSensor():
 
 
 class ColorSensor():
-    """LEGO® MINDSTORMS® EV3 Color Sensor.
-
-    Element 95650/6128869, contained in:
-
-    * 31313: LEGO® MINDSTORMS® EV3 (2013)
-    * 45544: LEGO® MINDSTORMS® Education EV3 Core Set (2013)
-    * 45506: Separate part (2013)
-    """
+    """LEGO® MINDSTORMS® EV3 Color Sensor."""
 
     def __init__(self, port):
         """ColorSensor(port)
@@ -97,13 +82,7 @@ class ColorSensor():
 
 
 class InfraredSensor():
-    """LEGO® MINDSTORMS® EV3 Infrared Sensor and Beacon.
-
-    Element 95654/6132629 and 72156/6127283, contained in:
-
-    * 31313: LEGO® MINDSTORMS® EV3 (2013)
-    * 45509 and 45508: Separate parts (2013)
-    """
+    """LEGO® MINDSTORMS® EV3 Infrared Sensor and Beacon."""
 
     def __init__(self, port):
         """InfraredSensor(port)
@@ -170,13 +149,7 @@ class InfraredSensor():
 
 
 class GyroSensor():
-    """LEGO® MINDSTORMS® EV3 Gyro Sensor.
-
-    Element 99380/6138411, contained in:
-
-    * 45544: LEGO® MINDSTORMS® Education EV3 Core Set (2013)
-    * 45505: Separate part (2013)
-    """
+    """LEGO® MINDSTORMS® EV3 Gyro Sensor."""
 
     def __init__(self, port, positive_direction=Direction.CLOCKWISE):
         """
@@ -233,14 +206,7 @@ class GyroSensor():
 
 
 class UltrasonicSensor():
-    """LEGO® MINDSTORMS® EV3 Ultrasonic Sensor.
-
-    Element 95652/6138403, contained in:
-
-    * 45544: LEGO® MINDSTORMS® Education EV3 Core Set (2013)
-    * 45504: Separate part (2013)
-
-    """
+    """LEGO® MINDSTORMS® EV3 Ultrasonic Sensor."""
 
     def __init__(self, port):
         """UltrasonicSensor(port)

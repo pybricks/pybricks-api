@@ -5,7 +5,7 @@ from .builtins import Motor
 
 
 class RemoteControl():
-    """LEGO® Powered Up Bluetooth Remote Control/Handset (6214560)"""
+    """LEGO® Powered Up Bluetooth Remote Control/Handset."""
 
     light = ColorLight()
     buttons = KeyPad()
@@ -25,7 +25,7 @@ class RemoteControl():
 
 
 class TiltSensor(Accelerometer):
-    """LEGO® Powered Up Tilt Sensor (45305/?)"""
+    """LEGO® Powered Up Tilt Sensor."""
 
     def __init__(self, port):
         """TiltSensor(port)
@@ -37,7 +37,7 @@ class TiltSensor(Accelerometer):
 
 
 class ColorDistanceSensor():
-    """LEGO® Powered Up Color and Distance Sensor (?/6182145)"""
+    """LEGO® Powered Up Color and Distance Sensor."""
 
     light = ColorLight()
 
