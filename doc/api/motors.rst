@@ -40,24 +40,12 @@ The Motor Class
 
     .. automethod:: pybricks.builtins.Motor.track_target
 
-    .. rubric:: Control settings and status
+    .. attribute:: control
 
-    The motors use PID control to accurately track the speed and
-    angle targets that you specify. Use the following methods to adjust the
-    behavior of this controller and get its current status.
-
-    .. automethod:: pybricks.builtins::Motor.control.limits
-
-    .. automethod:: pybricks.builtins::Motor.control.pid
-
-    .. automethod:: pybricks.builtins::Motor.control.target_tolerances
-
-    .. automethod:: pybricks.builtins::Motor.control.stall_tolerances
-
-    .. automethod:: pybricks.builtins::Motor.control.stalled
-
-    .. automethod:: pybricks.builtins::Motor.control.active
-
+        The motors use PID control to accurately track the speed and
+        angle targets that you specify. You can change its behavior through the
+        ``control`` attribute of the motor. See :ref:`control` for an overview
+        of available methods.
 
 Motor Tips & Tricks
 ^^^^^^^^^^^^^^^^^^^
@@ -133,3 +121,39 @@ Notice that there is no magic going on. It is just a convenient scaling
 function. This helps you organize your code. For example, if you change
 your mechanism to use different gears, you only have to change the first line
 of this example.
+
+.. _control:
+
+The Control Class
+^^^^^^^^^^^^^^^^^
+
+The ``Motor`` class uses PID control to accurately track your commanded target
+angles. Similarly, the ``DriveBase`` class uses two of such controllers:
+one to control the heading and one to control the traveled distance.
+
+You can change the control settings through the following attributes:
+
+    - ``Motor.control``
+    - ``DriveBase.heading_control``
+    - ``DriveBase.distance_control``
+
+These are all instances of the ``Control`` class given below.
+
+.. autoclass:: pybricks.builtins.Control
+    :no-members:
+
+    .. rubric:: Control status
+
+    .. automethod:: pybricks.builtins.Control.stalled
+
+    .. automethod:: pybricks.builtins.Control.active
+
+    .. rubric:: Control settings
+
+    .. automethod:: pybricks.builtins.Control.limits
+
+    .. automethod:: pybricks.builtins.Control.pid
+
+    .. automethod:: pybricks.builtins.Control.target_tolerances
+
+    .. automethod:: pybricks.builtins.Control.stall_tolerances
