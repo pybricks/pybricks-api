@@ -17,7 +17,7 @@ The Motor Class
 
     .. automethod:: pybricks.builtins.Motor.stalled
 
-    .. rubric:: Motion
+    .. rubric:: Action
 
     .. automethod:: pybricks.builtins.Motor.stop
 
@@ -31,21 +31,14 @@ The Motor Class
 
     .. automethod:: pybricks.builtins.Motor.run_until_stalled
 
-    .. rubric:: Manual motion control
-
-    The following methods are useful if you want full manual control of
-    the motor.
-
     .. automethod:: pybricks.builtins.Motor.dc
+
+    .. rubric:: Advanced motion control
 
     .. automethod:: pybricks.builtins.Motor.track_target
 
-    .. attribute:: control
-
-        The motors use PID control to accurately track the speed and
-        angle targets that you specify. You can change its behavior through the
-        ``control`` attribute of the motor. See :ref:`control` for an overview
-        of available methods.
+    .. autoattribute:: control
+        :annotation:
 
 Motor Tips & Tricks
 ^^^^^^^^^^^^^^^^^^^

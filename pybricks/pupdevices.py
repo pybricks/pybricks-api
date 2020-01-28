@@ -7,6 +7,16 @@ from .builtins import Motor as CommonMotor
 class Motor(CommonMotor):
     """LEGO® Powered Up Motors"""
 
+    def reset_angle(self, angle):
+        """Reset the accumulated rotation angle of the motor.
+
+        Arguments:
+            angle (:ref:`angle`): Value to which the angle should be reset. If
+                                  you don't specify an angle, the absolute
+                                  value will be used if the motor supports it.
+        """
+        pass
+
 
 class RemoteControl():
     """LEGO® Powered Up Bluetooth Remote Control/Handset (6214560)"""

@@ -155,6 +155,10 @@ class Motor(DCMotor):
     """Generic class to control motors with built-in rotation sensors."""
 
     control = Control()
+    """The motors use PID control to accurately track the speed and
+    angle targets that you specify. You can change its behavior through the
+    ``control`` attribute of the motor. See :ref:`control` for an overview
+    of available methods."""
 
     def __init__(self, port,
                  positive_direction=Direction.CLOCKWISE,
@@ -190,7 +194,7 @@ class Motor(DCMotor):
         pass
 
     def speed(self):
-        """Get the speed (angular velocity) of the motor.
+        """Get the speed of the motor.
 
         Returns:
             :ref:`speed`: Motor speed.
@@ -199,12 +203,7 @@ class Motor(DCMotor):
         pass
 
     def stalled(self):
-        """Check whether the motor is currently stalled.
-
-        A motor is stalled when it cannot move even with the maximum torque.
-        For example, when something is blocking the motor or your mechanism
-        simply cannot turn any further. See :ref:`stalled` for more
-        information.
+        """Check whether the motor is currently :ref:`stalled <stalled>`.
 
         Returns:
             bool: ``True`` if the motor is stalled, ``False`` if it is not.
@@ -216,9 +215,7 @@ class Motor(DCMotor):
         """Reset the accumulated rotation angle of the motor.
 
         Arguments:
-            angle (:ref:`angle`): Value to which the angle should be reset. If
-                                  you don't specify an angle, the absolute
-                                  value will be used if the motor supports it.
+            angle (:ref:`angle`): Value to which the angle should be reset.
         """
         pass
 
@@ -232,12 +229,9 @@ class Motor(DCMotor):
         pass
 
     def run(self, speed):
-        """Keep the motor running at a constant speed (angular velocity).
+        """Keep the motor running at a constant speed.
 
-        The motor will accelerate towards the requested speed and the duty
-        cycle is automatically adjusted to keep the speed constant, even under
-        some load. This continues in the background until you give the motor a
-        new command or the program stops.
+        The motor keeps running until you give a new command.
 
         Arguments:
             speed (:ref:`speed`): Speed of the motor.
@@ -245,13 +239,7 @@ class Motor(DCMotor):
         pass
 
     def run_time(self, speed, time, stop_type=Stop.COAST, wait=True):
-        """Run the motor at a constant speed (angular velocity) for a given
-        amount of time.
-
-        The motor will accelerate towards the requested speed and the duty
-        cycle is automatically adjusted to keep the speed constant, even under
-        some load. It begins to decelerate just in time to reach standstill
-        after the specified duration.
+        """Run the motor at a constant speed for a given amount of time.
 
         Arguments:
             speed (:ref:`speed`): Speed of the motor.
@@ -261,20 +249,12 @@ class Motor(DCMotor):
                               :class:`Stop.COAST <.parameters.Stop>`).
             wait (bool): Wait for the maneuver to complete before continuing
                          with the rest of the program (*Default*: ``True``).
-                         This means that your program waits for the
-                         specified ``time``.
         """
         pass
 
     def run_angle(self, speed, rotation_angle,
                   stop_type=Stop.COAST, wait=True):
-        """Run the motor at a constant speed (angular velocity) by a given
-        angle.
-
-        The motor will accelerate towards the requested speed and the duty
-        cycle is automatically adjusted to keep the speed constant, even under
-        some load. It begins to decelerate just in time so that it comes to a
-        standstill after traversing the given angle.
+        """Run the motor at a constant speed by a given angle.
 
         Arguments:
             speed (:ref:`speed`): Speed of the motor.
@@ -285,70 +265,49 @@ class Motor(DCMotor):
                               :class:`Stop.COAST <.parameters.Stop>`).
             wait (bool): Wait for the maneuver to complete before continuing
                          with the rest of the program (*Default*: ``True``).
-                         This means that your program waits until the motor has
-                         traveled precisely the requested angle.
         """
         pass
 
     def run_target(self, speed, target_angle, stop_type=Stop.COAST, wait=True):
-        """ Run the motor at a constant speed (angular velocity) towards a
+        """ Run the motor at a constant speed towards a
         given target angle.
 
-        The motor will accelerate towards the requested speed and the duty
-        cycle is automatically adjusted to keep the speed constant, even under
-        some load. It begins to decelerate just in time so that it comes to a
-        standstill at the given target angle.
-
         The direction of rotation is automatically selected based on the target
-        angle.
+        angle. It does matter if ``speed`` is positive or negative.
 
         Arguments:
-            speed (:ref:`speed`): Absolute speed of the motor. The direction
-                                  will be automatically selected based on the
-                                  target angle: it makes no difference if you
-                                  specify a positive or negative speed.
-            target_angle (:ref:`angle`): Target angle that the motor should
-                                         rotate to, regardless of its current
-                                         angle.
+            speed (:ref:`speed`): Speed of the motor.
+            target_angle (:ref:`angle`): Angle that the motor should
+                                         rotate to.
             stop_type (Stop): Whether to coast, brake, or hold after coming to
                               a standstill (*Default*:
                               :class:`Stop.COAST <.parameters.Stop>`).
-            wait (bool): Wait for the maneuver to complete before continuing
-                         with the rest of the program (*Default*: ``True``).
-                         This means that your program waits until the motor
-                         has reached the target angle.
+            wait (bool): Wait for the motor to reach the target
+                         before continuing with the rest of the
+                         program (*Default*: ``True``).
         """
         pass
 
     def run_until_stalled(self, speed, stop_type=Stop.COAST, duty_limit=None):
-        """Run the motor at a constant speed (angular velocity) until it
-        stalls. The motor is considered stalled when it cannot move even with
-        the maximum torque. See :meth:`.stalled` for a more precise definition.
-
-        The ``duty_limit`` argument lets you temporarily limit the motor torque
-        during this maneuver. This is useful to avoid applying the full motor
-        torque to a geared or lever mechanism.
+        """Run the motor at a constant speed until it
+        :ref:`stalls <stalled>`
 
         Arguments:
             speed (:ref:`speed`): Speed of the motor.
             stop_type (Stop): Whether to coast, brake, or hold after coming to
                               a standstill (*Default*:
                               :class:`Stop.COAST <.parameters.Stop>`).
-            duty_limit (:ref:`percentage`): Relative torque limit during this
-                command.
+            duty_limit (:ref:`percentage`): Torque limit during this
+                command. This is useful to avoid applying the full motor
+                torque to a geared or lever mechanism.
         """
         pass
 
     def track_target(self, target_angle):
-        """Track a target angle that varies in time.
-
-        This function is quite similar to :meth:`.run_target`, but speed and
-        acceleration settings are ignored: it will move to the target angle as
-        fast as possible. Instead, you adjust speed and acceleration by
-        choosing how fast or slow you vary the ``target_angle``.
-
-        This method is useful in fast loops where the motor target changes
-        continuously.
+        """Track a target angle. This is similar to :meth:`.run_target`, but
+        the usual smooth acceleration is skipped: it will move to the target
+        angle as fast as possible. This method is useful if you want to
+        continuously change the target angle.
 
         Arguments:
             target_angle (:ref:`angle`): Target angle that the motor should
@@ -412,6 +371,15 @@ class Motor(DCMotor):
             stall_time (:ref:`time`): See :meth:`.stalled`.
         """
         pass
+
+    def dc(self, duty):
+        """Rotate the motor at a given duty cycle (also known as "power").
+
+        This method lets you use a motor just like a simple DC motor.
+
+        Arguments:
+            duty (:ref:`percentage`): The duty cycle (-100.0 to 100).
+        """
 
 
 class Speaker():
