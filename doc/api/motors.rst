@@ -107,14 +107,6 @@ These are all instances of the ``Control`` class given below.
 .. autoclass:: pybricks.builtins.Control
     :no-members:
 
-    .. rubric:: Control status
-
-    .. automethod:: pybricks.builtins.Control.stalled
-
-    .. automethod:: pybricks.builtins.Control.active
-
-    .. rubric:: Control settings
-
     .. automethod:: pybricks.builtins.Control.limits
 
     .. automethod:: pybricks.builtins.Control.pid
