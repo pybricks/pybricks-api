@@ -110,26 +110,26 @@ class I2CDevice():
         """
         pass
 
-    def read(self, reg, length):
+    def read(self, reg, length=1):
         """Read bytes, starting at a given register.
 
         Arguments:
             reg (``int``): Register at which to begin
                 reading: 0--255 or 0x00--0xFF.
-            length (``int``): How many bytes to read.
+            length (``int``): How many bytes to read (*Default*: ``1``).
 
         Returns:
             ``bytes``: Bytes returned from the device.
         """
         pass
 
-    def write(self, reg, data):
+    def write(self, reg, data=None):
         """Write bytes, starting at a given register.
 
         Arguments:
             reg (``int``): Register at which to begin
                 writing: 0--255 or 0x00--0xFF.
-            data (``bytes``): Bytes to be written.
+            data (``bytes``): Bytes to be written (*Default*: ``None``).
         """
         pass
 
@@ -157,7 +157,7 @@ class UARTDevice():
         exception is raised.
 
         Arguments:
-            length (``int``): How many bytes to read (*Default*: 1).
+            length (``int``): How many bytes to read (*Default*: ``1``).
 
         Returns:
             ``bytes``: Bytes returned from the device.
