@@ -4,16 +4,14 @@
 .. automodule:: pybricks.iodevices
     :no-members:
 
-EV3
-##################
+LUMP Device
+^^^^^^^^^^^^^
+.. autoclass:: pybricks.iodevices.LUMPDevice
 
-The following classes are only available on the EV3.
+.. raw:: html
+
+   <h1>EV3 Only</h1>
+
+The classes listed below are **only available on the EV3**.
 
 .. include:: iodevices_ev3.inc
-
-Powered Up
-########################
-
-The following class is available on Powered Up hubs only.
-
-.. include:: iodevices_pup.inc

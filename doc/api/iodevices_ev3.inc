@@ -65,6 +65,8 @@ UART Device
 DC Motor
 ^^^^^^^^^^^^
 
+This class can be used to control classic LEGO motors using converter cables.
+
 .. autoclass:: pybricks.builtins.DCMotor
     :noindex:
     :no-members:
@@ -72,7 +74,7 @@ DC Motor
     .. automethod:: pybricks.builtins.DCMotor.dc
         :noindex:
 
-Other ev3dev sensors
+Ev3dev sensors
 ^^^^^^^^^^^^^^^^^^^^^
 
 EV3 MicroPython is built on top of ev3dev, which means that a particular sensor

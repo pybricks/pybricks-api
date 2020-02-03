@@ -24,7 +24,8 @@ class LUMPDevice():
         pass
 
     def write(self, mode, values):
-        """Write values to the sensor.
+        """Write values to the sensor. Only selected sensors and modes support
+        this.
 
         Arguments:
             mode (``int``): Device mode.
