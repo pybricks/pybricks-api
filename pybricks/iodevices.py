@@ -34,8 +34,27 @@ class LUMPDevice():
         pass
 
 
-class Ev3devSensor(LUMPDevice):
-    pass
+class Ev3devSensor():
+    """Read values with an ev3dev-compatible sensor."""
+
+    def __init__(self, port):
+        """
+
+        Arguments:
+            port (Port): Port to which the device is connected.
+        """
+        pass
+
+    def read(self, mode):
+        """Read values at a given mode.
+
+        Arguments:
+            mode (``str``): Mode name.
+
+        Returns:
+            ``tuple``: Values read from the sensor.
+        """
+        pass
 
 
 class AnalogSensor():
