@@ -1,11 +1,23 @@
 """Robotics module for the Pybricks API."""
 
 from .parameters import Stop
+from .builtins import Control
 
 
 class DriveBase():
-    """Class representing a robotic vehicle with two powered wheels and
-    optional wheel caster(s)."""
+    """A robotic vehicle with two powered wheels and an optional support
+    wheel or caster."""
+
+    distance_control = Control()
+    """PID control is used to track the desired speed and travel the control
+    required distance You can change the behavior through this attribute.
+    See :ref:`control` for an overview of available methods."""
+
+    heading_control = Control()
+    """PID control is used to synchronize the wheel speed,
+    track the turn rate, and reach the turn angle. You can change the control
+    behavior through this attribute. See :ref:`control` for an overview of
+    available methods."""
 
     def __init__(self, left_motor, right_motor, wheel_diameter, axle_track):
         """DriveBase(left_motor, right_motor, wheel_diameter, axle_track)
@@ -18,51 +30,17 @@ class DriveBase():
             wheel_diameter (:ref:`dimension`): Diameter of the wheels.
             axle_track (:ref:`dimension`): Distance between the midpoints of
                                            the two wheels.
-
         """
 
-    def drive(self, speed, steering):
-        """Start driving at the specified speed and turn rate, both measured at
-        the center point between the wheels of the robot.
-
-        This method is useful in applications where you often change the speed
-        and steering. For example, when following a line using a light sensor.
+    def drive(self, drive_speed, turn_rate):
+        """Start driving at the specified speed and turn rate. Both values are
+        measured at the center point between the wheels of the robot.
 
         Arguments:
-            speed (:ref:`linspeed`): Speed of the robot. Positive is forward,
+            drive_speed (:ref:`linspeed`): Speed of the robot. Positive is forward,
                 negative is backward.
-            steering (:ref:`speed`): Turn rate of the robot. Positive is to the
+            turn_rate (:ref:`speed`): Turn rate of the robot. Positive is to the
                 right, negative is to the left.
-        """
-        pass
-
-    def arc(self, speed, radius):
-        """Start driving along an arc/circle with a given radius.
-
-        This method is useful in applications where you want to drive smoothly
-        around a known obstacle. Instead of going straight, turning, and then
-        straight again. For example, you can make it drive in a semi-circle
-        with a given radius and stop when a sensor detects an obstacle.
-
-        Arguments:
-            speed (:ref:`linspeed`): Speed of the robot along the arc.
-                Positive is forward, negative is backward.
-            radius (:ref:`dimension`): Radius of the arc. A positive radius
-                value makes your robot go right. A negative radius value makes
-                it go left.
-        """
-        pass
-
-    def tank(self, left, right):
-        """Start driving with the given speed for each wheel.
-
-        This method is useful in applications where you just want to set the
-        speed of the wheels or tank tracks, rather than the speed of the
-        whole drive base.
-
-        Arguments:
-            left (:ref:`speed`): Speed of the left wheel.
-            right (:ref:`speed`): Speed of the right wheel.
         """
         pass
 
@@ -95,9 +73,12 @@ class DriveBase():
         """Reset the estimated driven distance and angle to 0."""
         pass
 
-    def set_drive_settings(self, drive_speed, drive_acceleration, turn_rate,
-                           turn_acceleration, stop_type):
-        """Configure the default speed and acceleration.
+    def settings(self, drive_speed, drive_acceleration, turn_rate,
+                 turn_acceleration, stop_type):
+        """Configure the acceleration and maximum speed used 
+        by :meth:`.straight`, :meth:`.turn`, and :meth:`.drive`.
+
+        If you give no arguments, this returns the current values as a tuple.
 
         Arguments:
             drive_speed (:ref:`linspeed`): Drive speed of the robot.
