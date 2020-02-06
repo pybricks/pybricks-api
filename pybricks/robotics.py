@@ -69,13 +69,24 @@ class DriveBase():
         """
         pass
 
+    def state(self):
+        """Get the instantaneous physical state.
+
+        This returns the current :meth:`.distance`, the drive speed, the
+        :meth:`.angle`, and the turn rate.
+
+        :returns: Distance, drive speed, angle, turn rate
+        :rtype: (:ref:`distance`, :ref:`linspeed`, :ref:`angle`, :ref:`speed`)
+        """
+        pass
+
     def reset(self):
         """Reset the estimated driven distance and angle to 0."""
         pass
 
     def settings(self, drive_speed, drive_acceleration, turn_rate,
                  turn_acceleration, stop_type):
-        """Configure the acceleration and maximum speed used 
+        """Configure the acceleration and maximum speed used
         by :meth:`.straight`, :meth:`.turn`, and :meth:`.drive`.
 
         If you give no arguments, this returns the current values as a tuple.

@@ -11,7 +11,7 @@
     .. rubric:: Driving for a given distance or by an angle
 
     Use these commands to drive a given distance, or turn by a given angle.
-    
+
     This is measured using the internal rotation sensors. Because wheels may
     slip while moving, the traveled distance and angle are only estimates.
 
@@ -23,7 +23,7 @@
     .. rubric:: Drive forever
 
     Use :meth:`.drive` to begin driving at a desired speed and steering.
-    
+
     It keeps going until you use :meth:`.stop` or change course by
     using :meth:`.drive` again. For example, you can drive until a
     sensor is triggered and then stop or turn around.
@@ -37,6 +37,8 @@
     .. automethod:: pybricks.robotics.DriveBase.distance
 
     .. automethod:: pybricks.robotics.DriveBase.angle
+
+    .. automethod:: pybricks.robotics.DriveBase.state
 
     .. automethod:: pybricks.robotics.DriveBase.reset
 
