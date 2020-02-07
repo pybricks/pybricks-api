@@ -54,6 +54,8 @@ use the following table to convert between commonly used units.
 | 1 rpm =   | 6     | 1         |
 +-----------+-------+-----------+
 
+.. _acceleration:
+
 rotational acceleration: deg/s/s
 --------------------------------
 
@@ -122,8 +124,6 @@ This is also commonly written as  :math:`mm/s^2`.
 For example, you can adjust the acceleration setting of a
 :class:`DriveBase <.robotics.DriveBase>` to change how
 smoothly or how quickly it reaches the constant speed set point.
-
-.. _acceleration:
 
 Approximate and relative units
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
