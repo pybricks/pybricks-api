@@ -76,11 +76,11 @@ class Control():
         If no arguments are given, this will return the current values.
 
         Arguments:
+            speed (:ref:`speed` or :ref:`linspeed`): Allowed deviation
+                from zero speed before motion is considered complete.
             position (:ref:`angle` or :ref:`distance`): Allowed
                 deviation from the target before motion is considered
                 complete.
-            speed (:ref:`speed` or :ref:`linspeed`): Allowed deviation
-                from zero speed before motion is considered complete.
         """
         pass
 
