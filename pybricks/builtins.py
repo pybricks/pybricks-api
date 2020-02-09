@@ -56,7 +56,7 @@ class Control():
         """
         pass
 
-    def pid(self, kp, ki, kd):
+    def pid(self, kp, ki, kd, integral_range):
         """Get or set the PID values for position and speed control.
 
         If no arguments are given, this will return the current values.
@@ -67,6 +67,11 @@ class Control():
             ki (int): Integral position control constant.
             kd (int): Derivative position (or proportional speed) control
                 constant.
+            kd (int): Derivative position (or proportional speed) control
+                constant.
+            integral_range (:ref:`angle` or :ref:`distance`): Region around
+                the target angle or distance, in which integral control errors
+                are accumulated.
         """
         pass
 
