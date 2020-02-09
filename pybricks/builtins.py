@@ -67,8 +67,6 @@ class Control():
             ki (int): Integral position control constant.
             kd (int): Derivative position (or proportional speed) control
                 constant.
-            kd (int): Derivative position (or proportional speed) control
-                constant.
             integral_range (:ref:`angle` or :ref:`distance`): Region around
                 the target angle or distance, in which integral control errors
                 are accumulated.

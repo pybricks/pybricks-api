@@ -96,13 +96,17 @@ The ``Motor`` class uses PID control to accurately track your commanded target
 angles. Similarly, the ``DriveBase`` class uses two of such controllers:
 one to control the heading and one to control the traveled distance.
 
-You can change the control settings through the following attributes:
+You can change the control settings through the following attributes, which are
+instances of the ``Control`` class given below.:
 
     - ``Motor.control``
     - ``DriveBase.heading_control``
     - ``DriveBase.distance_control``
 
-These are all instances of the ``Control`` class given below.
+You can only change the settings while the controller is stopped. For example,
+you can set the settings at the beginning of your program. Alternatively, first
+call ``stop()`` to make your ``Motor`` or ``DriveBase`` stop, and then change
+the settings.
 
 .. autoclass:: pybricks.builtins.Control
     :no-members:
