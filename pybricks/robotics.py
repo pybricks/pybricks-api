@@ -85,7 +85,7 @@ class DriveBase():
         pass
 
     def settings(self, drive_speed, drive_acceleration, turn_rate,
-                 turn_acceleration, stop_type):
+                 turn_acceleration):
         """Configure the acceleration and maximum speed used
         by :meth:`.straight`, :meth:`.turn`, and :meth:`.drive`.
 
@@ -98,8 +98,6 @@ class DriveBase():
             turn_rate (:ref:`speed`): Turn rate of the robot.
             turn_acceleration (:ref:`acceleration`): Angular acceleration of
                 the robot.
-            stop_type (Stop): Whether to coast, brake, or hold after
-                a given command is complete.
         """
         pass
 
