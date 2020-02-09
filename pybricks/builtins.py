@@ -114,14 +114,11 @@ class Control():
         """
         pass
 
-    def active(self):
-        """Check whether the controller is currently active.
-
-        When active, it continuously adjusts the actuation to reach the control
-        objective. When it is passive, the control signal is zero or constant.
+    def done(self):
+        """Check whether an ongoing command or maneuver is done.
 
         Returns:
-            bool: ``True`` if the controller is active,``False`` if not.
+            bool: ``True`` if the maneuver is done,``False`` if not.
         """
         pass
 
