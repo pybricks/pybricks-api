@@ -29,7 +29,7 @@ Intro
    tools
    robotics
    media
-   bluetooth
+   ev3messaging
 
 .. toctree::
    :maxdepth: 1

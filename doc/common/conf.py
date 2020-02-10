@@ -112,6 +112,7 @@ nitpick_ignore = [
     ('py:class', 'bool'),
     ('py:class', 'bytearray'),
     ('py:class', 'bytes'),
+    ('py:class', 'callable'),
     ('py:class', 'dict'),
     ('py:class', 'float'),
     ('py:class', 'int'),

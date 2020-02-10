@@ -48,36 +48,9 @@ program is that client program has connect block. Server is always running.
 
 TODO: show equivalent blocks
 
-- :meth:`pybricks.bluetooth.EV3MailboxMixIn.get_logic`
-- :meth:`pybricks.bluetooth.EV3MailboxMixIn.get_numeric`
-- :meth:`pybricks.bluetooth.EV3MailboxMixIn.get_text`
-- :meth:`pybricks.bluetooth.EV3MailboxMixIn.send_logic`
-- :meth:`pybricks.bluetooth.EV3MailboxMixIn.send_numeric`
-- :meth:`pybricks.bluetooth.EV3MailboxMixIn.send_text`
-
-
-.. rubric:: Sending objects as text
-
-Simple Python objects, like dictionaries, can be encoded as text using the
-builtin ``repr`` function and turned in to objects again using the builtin
-``eval`` function.
-
-Example::
-
-    # Server program
-    my_obj = { 'a': 1, 'b': 2 }
-    server.send_text(ALL_BRICKS, 'my_obj', repr(my_obj))
-
-::
-
-    # Client program
-    client.wait_for_update('my_obj')
-    my_obj = eval(client.get_text('my_obj'))
-
-
-.. warning:: In general, ``eval`` is considered a security risk because it
-    can execute arbitrary code! Never use ``eval`` with untrusted data, like
-    like data received from the Internet.
+- :class:`pybricks.ev3messaging.LogicMailbox`
+- :class:`pybricks.ev3messaging.NumericMailbox`
+- :class:`pybricks.ev3messaging.TextMailbox`
 
 
 .. rubric:: More than two bricks
