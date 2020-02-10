@@ -116,7 +116,7 @@ class Control():
         """Check whether an ongoing command or maneuver is done.
 
         Returns:
-            bool: ``True`` if the maneuver is done,``False`` if not.
+            bool: ``True`` if the command is done, ``False`` if not.
         """
         pass
 
