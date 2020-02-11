@@ -14,6 +14,6 @@ install:
 
 script:
 - pipenv run python setup.py build
-- make -C doc html SOURCEDIR=api
+- pipenv run make -C doc html SOURCEDIR=api
 - pipenv run flake8
 - pipenv run doc8

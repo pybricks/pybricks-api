@@ -29,6 +29,7 @@ Intro
    tools
    robotics
    media
+   bluetooth
 
 .. toctree::
    :maxdepth: 1
@@ -37,4 +38,5 @@ Intro
 
    signaltypes
    motors
+   ev3_mailboxes
 ..    frames

@@ -19,6 +19,10 @@
 #
 import os
 import sys
+from docutils import nodes
+from docutils.parsers.rst.directives import flag
+from docutils.parsers.rst import Directive
+from sphinx.application import Sphinx
 from sphinx.domains.python import PyClassmember, PythonDomain
 sys.path.insert(0, os.path.abspath('../..'))
 
@@ -116,6 +120,7 @@ nitpick_ignore = [
     ('py:class', 'object'),
     ('py:class', 'str'),
     ('py:class', 'tuple'),
+    ('py:exc', 'OSError'),
     ('py:exc', 'RuntimeError'),
     ('py:exc', 'TypeError'),
     ('py:exc', 'ValueError'),
@@ -266,6 +271,29 @@ texinfo_documents = [
      author, 'Pybricks', 'One line description of project.',
      'Miscellaneous'),
 ]
+
+
+# -- .. availability:: directive
+
+class AvailabilityDirective(Directive):
+    has_content = True
+    option_spec = {
+        'movehub': flag,
+        'cityhub': flag,
+        'cplushub': flag,
+        'ev3dev-stretch': flag,
+    }
+
+    def run(self):
+        if not self.options:
+            raise self.error('Must specify at least one platform.')
+        # TODO: make links to platform pages
+        return [nodes.emphasis(text='Availability: '),
+                nodes.Text(', '.join(self.options))]
+
+
+def setup(app: Sphinx):
+    app.add_directive('availability', AvailabilityDirective)
 
 
 # -- Python domain hacks ---------------------------------------------------
