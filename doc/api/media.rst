@@ -14,8 +14,8 @@ ev3dev
 .. automodule:: pybricks.media.ev3dev
     :no-members:
 
-Images
-^^^^^^
+Image Files
+^^^^^^^^^^^
 
 .. autoclass:: pybricks.media.ev3dev.ImageFile
     :no-members:
@@ -74,8 +74,8 @@ Images
         .. data:: TIRED_LEFT
         .. data:: ANGRY
 
-Sounds
-^^^^^^
+Sound Files
+^^^^^^^^^^^
 
 .. autoclass:: pybricks.media.ev3dev.SoundFile
     :no-members:
@@ -243,13 +243,17 @@ Fonts
 
     .. automethod:: pybricks.media.ev3dev.Font.text_height
 
-Making Your Own Images
-^^^^^^^^^^^^^^^^^^^^^^
+
+Image Manipulation
+^^^^^^^^^^^^^^^^^^
+
 Instead of drawing directly on the EV3 screen, you can make and interact
 with image files using the ``Image`` class given below.
 
 .. autoclass:: pybricks.media.ev3dev.Image
     :no-members:
+
+    .. automethod:: pybricks.media.ev3dev.Image.empty
 
     .. rubric:: Drawing text
 
@@ -297,7 +301,7 @@ with image files using the ``Image`` class given below.
 
     .. automethod:: pybricks.media.ev3dev.Image.clear
 
-    .. automethod:: pybricks.media.ev3dev.Image.show_image
+    .. automethod:: pybricks.media.ev3dev.Image.load_image
 
 
 

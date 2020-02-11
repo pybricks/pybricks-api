@@ -116,6 +116,9 @@ nitpick_ignore = [
     ('py:class', 'object'),
     ('py:class', 'str'),
     ('py:class', 'tuple'),
+    ('py:exc', 'RuntimeError'),
+    ('py:exc', 'TypeError'),
+    ('py:exc', 'ValueError'),
 ]
 
 # -- Autodoc options ------------------------------------------------------
@@ -267,11 +270,17 @@ texinfo_documents = [
 
 # -- Python domain hacks ---------------------------------------------------
 
-def get_signature_prefix_none(self, sig):
-    return ''
+real_get_signature_prefix = PyClassmember.get_signature_prefix
 
 
-PyClassmember.get_signature_prefix = get_signature_prefix_none
+def get_signature_prefix(self, sig):
+    # hacks for battery and light
+    if sig.count('.') >= 2:
+        return ''
+    return real_get_signature_prefix(self, sig)
+
+
+PyClassmember.get_signature_prefix = get_signature_prefix
 
 
 # HACK: For certain hub attributes, we list the class members of the attributes
