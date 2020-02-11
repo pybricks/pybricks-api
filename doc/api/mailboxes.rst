@@ -1,5 +1,5 @@
-EV3 Mailboxes
-=============
+Mailboxes
+=========
 
 TODO: introduction... messages are sent immediately, received messages are held
 in mailbox for getting later.
@@ -48,9 +48,9 @@ program is that client program has connect block. Server is always running.
 
 TODO: show equivalent blocks
 
-- :class:`pybricks.ev3messaging.LogicMailbox`
-- :class:`pybricks.ev3messaging.NumericMailbox`
-- :class:`pybricks.ev3messaging.TextMailbox`
+- :class:`pybricks.messaging.LogicMailbox`
+- :class:`pybricks.messaging.NumericMailbox`
+- :class:`pybricks.messaging.TextMailbox`
 
 
 .. rubric:: More than two bricks

@@ -1,18 +1,18 @@
-:mod:`ev3messaging <pybricks.ev3messaging>` -- EV3 Messaging
-============================================================
+:mod:`messaging <pybricks.messaging>` -- Messaging
+==================================================
 
-.. automodule:: pybricks.ev3messaging
+.. automodule:: pybricks.messaging
     :no-members:
 
-.. currentmodule:: pybricks.ev3messaging
+.. currentmodule:: pybricks.messaging
 
-Introductory text. An example network is shown in :numref:`fig_ev3messaging`.
+Introductory text. An example network is shown in :numref:`fig_messaging`.
 
-.. _fig_ev3messaging:
+.. _fig_messaging:
 
-.. figure:: images/ev3messaging_label.png
+.. figure:: images/messaging_label.png
    :width: 90 %
-   :alt: ev3messaging
+   :alt: messaging
    :align: center
 
    An example network with one server and two clients.
@@ -24,6 +24,7 @@ Connections
 .. autoclass:: BluetoothMailboxServer
 
 .. autoclass:: BluetoothMailboxClient
+
 
 Mailboxes
 ---------
