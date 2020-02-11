@@ -2,7 +2,7 @@
 # Copyright (C) 2020 David Lechner
 
 """
-This module contains everything to do with EV3 bytecode messages.
+Classes to exchange messages between EV3 bricks.
 
 .. availability::
     :ev3dev-stretch:
@@ -13,14 +13,15 @@ This module contains everything to do with EV3 bytecode messages.
 
 class Mailbox:
     def __init__(self, name, connection, encode=None, decode=None):
-        """Object that represents a mailbox that contains encoded data.
+        """Object that represents a mailbox containing data.
 
-        See :class:`LogicMailbox`, :class:`NumericMailbox` and
-        :class:`TextMailbox` for mailboxes that are compatible with the
-        standard EV3 firmware and desktop programming software.
+        You can read data that is delivered by other EV3 bricks, or send data
+        to other bricks that have the same mailbox.
 
-        ``encode`` is used in :meth:`send` and ``decode`` is used in
-        :meth:`read`.
+        By default, the mailbox reads and send only bytes. To send other
+        data, you can provide an ``encode`` function that encodes your Python
+        object into bytes, and a ``decode`` function to convert bytes back to
+        a Python object.
 
         Arguments:
             name (str):
@@ -75,9 +76,10 @@ class Mailbox:
 
 class LogicMailbox(Mailbox):
     def __init__(self, name, connection):
-        """
-        Object that represents a mailbox that contains a logic (true/false)
-        value.
+        """Object that represents a mailbox containing boolean data.
+
+        This works just like a regular :class:`Mailbox`, but values
+        must be ``True`` or ``False``.
 
         This is compatible with the "logic" mailbox type in EV3-G.
 
@@ -88,38 +90,13 @@ class LogicMailbox(Mailbox):
                 A connection object such as :class:`BluetoothMailboxClient`.
         """
 
-    def read(self):
-        """Gets the current value of the mailbox as a boolean value.
-
-        Returns:
-            bool:
-                The current value or ``None`` if the mailbox is empty.
-        """
-        return ''
-
-    def send(self, value, brick=None):
-        """Sends a boolean value to this mailbox on connected devices.
-
-        .. todo:: Currently the Bluetooth address must be used instead of the
-                  the brick name.
-
-        Arguments:
-            value (bool):
-                The value that will be delivered to the mailbox.
-            brick (str):
-                The name or Bluetooth address of the brick or ``None`` to
-                to broadcast to all connected devices.
-
-        Raises:
-            OSError:
-                There is a problem with the connection.
-        """
-
 
 class NumericMailbox(Mailbox):
     def __init__(self, name, connection):
-        """
-        Object that represents a mailbox that contains a number.
+        """Object that represents a mailbox containing numeric data.
+
+        This works just like a regular :class:`Mailbox`, but values must be a
+        number, such as ``15`` or ``12.345``
 
         This is compatible with the "numeric" mailbox type in EV3-G.
 
@@ -130,40 +107,13 @@ class NumericMailbox(Mailbox):
                 A connection object such as :class:`BluetoothMailboxClient`.
         """
 
-    def read(self):
-        """Gets the current value of the mailbox as a numeric value.
-
-        Returns:
-            float:
-                The current value or ``None`` if the mailbox is empty.
-        """
-        return ''
-
-    def send(self, value, brick=None):
-        """Sends a numeric value to this mailbox on connected devices.
-
-        .. todo:: Currently the Bluetooth address must be used instead of the
-                  the brick name.
-
-        Arguments:
-            value (float):
-                The value that will be delivered to the mailbox.
-            brick (str):
-                The name or Bluetooth address of the brick or ``None`` to
-                to broadcast to all connected devices.
-
-        Raises:
-            TypeError:
-                ``value`` connot be converted to a floating point.
-            OSError:
-                There is a problem with the connection.
-        """
-
 
 class TextMailbox(Mailbox):
     def __init__(self, name, connection):
-        """
-        Object that represents a mailbox that contains text.
+        """Object that represents a mailbox containing text data.
+
+        This works just like a regular :class:`Mailbox`, but data must be a
+        string, such as ``'hello!'`` or ``'My name is EV3'``.
 
         This is compatible with the "text" mailbox type in EV3-G.
 
@@ -174,40 +124,13 @@ class TextMailbox(Mailbox):
                 A connection object such as :class:`BluetoothMailboxClient`.
         """
 
-    def read(self):
-        """Gets the current value of the mailbox as a string value.
-
-        Returns:
-            str:
-                The current value or ``None`` if the mailbox is empty.
-        """
-        return ""
-
-    def send(self, value, brick=None):
-        """Sends a string value to this mailbox on connected devices.
-
-        .. todo:: Currently the Bluetooth address must be used instead of the
-                  the brick name.
-
-        Arguments:
-            value (str):
-                The value that will be delivered to the mailbox.
-            brick (str):
-                The name or Bluetooth address of the brick or ``None`` to
-                to broadcast to all connected devices.
-
-        Raises:
-            OSError:
-                There is a problem with the connection.
-        """
-
 
 class BluetoothMailboxServer:
     """Object that represents an incoming Bluetooth connection from another
     EV3.
 
     The remote EV3 can either be running MicroPython or the standard EV3
-    firmare.
+    firmware.
     """
 
     def __enter__(self):
@@ -238,7 +161,7 @@ class BluetoothMailboxClient:
     EV3.
 
     The remote EV3 can either be running MicroPython or the standard EV3
-    firmare.
+    firmware.
     """
 
     def __enter__(self):

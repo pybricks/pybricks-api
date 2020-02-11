@@ -6,38 +6,26 @@
 
 .. currentmodule:: pybricks.ev3messaging
 
+Connections
+------------
+
+.. autoclass:: BluetoothMailboxServer
+
+.. autoclass:: BluetoothMailboxClient
 
 Mailboxes
 ---------
 
 Mailboxes are used to send data to and from other EV3s.
 
+.. autoclass:: Mailbox
+
 .. autoclass:: LogicMailbox
     :no-members:
-
-    .. automethod:: read
-    .. automethod:: send
-    .. automethod:: wait
-    .. automethod:: wait_new
 
 .. autoclass:: NumericMailbox
     :no-members:
 
-    .. automethod:: read
-    .. automethod:: send
-    .. automethod:: wait
-    .. automethod:: wait_new
-
 .. autoclass:: TextMailbox
     :no-members:
 
-    .. automethod:: read
-    .. automethod:: send
-    .. automethod:: wait
-    .. automethod:: wait_new
-
-.. autoclass:: Mailbox
-
-.. autoclass:: BluetoothMailboxServer
-
-.. autoclass:: BluetoothMailboxClient
