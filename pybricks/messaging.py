@@ -126,11 +126,13 @@ class TextMailbox(Mailbox):
 
 
 class BluetoothMailboxServer:
-    """Object that represents an incoming Bluetooth connection from another
-    EV3.
+    """Object that represents a Bluetooth connection from one or more remote
+    EV3s.
 
-    The remote EV3 can either be running MicroPython or the standard EV3
+    The remote EV3s can either be running MicroPython or the standard EV3
     firmware.
+
+    A "server" waits for a "client" to connect to it.
     """
 
     def __enter__(self):
@@ -157,11 +159,12 @@ class BluetoothMailboxServer:
 
 
 class BluetoothMailboxClient:
-    """Object that represents an outgoing Bluetooth connection to another
-    EV3.
+    """Object that represents a Bluetooth connection to one or more remote EV3s.
 
-    The remote EV3 can either be running MicroPython or the standard EV3
+    The remote EV3s can either be running MicroPython or the standard EV3
     firmware.
+
+    A "client" initiates a connection to a waiting "server".
     """
 
     def __enter__(self):
