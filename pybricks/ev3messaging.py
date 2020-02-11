@@ -12,7 +12,7 @@ This module contains everything to do with EV3 bytecode messages.
 
 
 class Mailbox:
-    def __init__(self, name, connection, encode=repr, decode=eval):
+    def __init__(self, name, connection, encode=None, decode=None):
         """Object that represents a mailbox that contains encoded data.
 
         See :class:`LogicMailbox`, :class:`NumericMailbox` and
@@ -20,13 +20,7 @@ class Mailbox:
         standard EV3 firmware and desktop programming software.
 
         ``encode`` is used in :meth:`send` and ``decode`` is used in
-        :meth:`read`. The defaults of ``repr`` and ``eval`` work with most
-        builtin types (like dict and list) but don't work for other objects
-        (like motors and sensors).
-
-        .. warning:: In general, ``eval`` is considered a security risk because
-            it can execute arbitrary code! Never use ``eval`` with untrusted
-            data, like like data received from the Internet.
+        :meth:`read`.
 
         Arguments:
             name (str):
