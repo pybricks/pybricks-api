@@ -250,6 +250,8 @@ Image Manipulation
 Instead of drawing directly on the EV3 screen, you can make and interact
 with image files using the ``Image`` class given below.
 
+.. |this image| replace:: this image
+
 .. autoclass:: pybricks.media.ev3dev.Image
     :no-members:
 

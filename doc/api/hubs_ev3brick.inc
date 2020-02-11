@@ -150,6 +150,8 @@
 
     .. rubric:: Using the screen
 
+    .. |this image| replace:: the screen
+
     .. automethod:: pybricks.hubs::EV3Brick.screen.clear
 
     .. automethod:: pybricks.hubs::EV3Brick.screen.draw_text

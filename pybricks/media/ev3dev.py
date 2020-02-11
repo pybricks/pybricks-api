@@ -7,6 +7,11 @@ class Image:
     """Object representing a graphics image. This can either be an in-memory
     copy of an image or the image displayed on a screen."""
 
+    # Documentation note: This class is also treated as the `screen` object
+    # on EV3 so we use |this image| when it would make sense to say "the screen"
+    # in that context and it is automatically replaced when the documentation
+    # is generated.
+
     def __init__(self, source, sub=False):
         """
         Arguments:
@@ -35,22 +40,22 @@ class Image:
 
     @property
     def width(self):
-        """Gets the width of the image in pixels."""
+        """Gets the width of |this image| in pixels."""
         return 0
 
     @property
     def height(self):
-        """Gets the height of the image in pixels."""
+        """Gets the height of |this image| in pixels."""
         return 0
 
     def clear(self):
-        """Clears the image. All pixels in the image will be set to
+        """Clears |this image|. All pixels on |this image| will be set to
         :attr:`Color.WHITE <pybricks.parameters.Color.WHITE>`.
         """
         pass
 
     def draw_pixel(self, x, y, color=Color.BLACK):
-        """Draws a single pixel on the image.
+        """Draws a single pixel on |this image|.
 
         Arguments:
             x (int): The x coordinate of the pixel.
@@ -60,7 +65,7 @@ class Image:
         pass
 
     def draw_line(self, x1, y1, x2, y2, width=1, color=Color.BLACK):
-        """Draws a line on the image.
+        """Draws a line on |this image|.
 
         Arguments:
             x1 (int): The x coordinate of the starting point of the line.
@@ -73,7 +78,7 @@ class Image:
         pass
 
     def draw_box(self, x1, y1, x2, y2, r=0, fill=False, color=Color.BLACK):
-        """Draws a box on the image.
+        """Draws a box on |this image|.
 
         Arguments:
             x1 (int): The x coordinate of the left side of the box.
@@ -88,7 +93,7 @@ class Image:
         pass
 
     def draw_circle(self, x, y, r=0, fill=False, color=Color.BLACK):
-        """Draws a circle on the image.
+        """Draws a circle on |this image|.
 
         Arguments:
             x (int): The x coordinate of the center of the circle.
@@ -101,7 +106,7 @@ class Image:
         pass
 
     def draw_image(self, x, y, source, transparent=None):
-        """Draws the ``source`` image on this image.
+        """Draws the ``source`` image on |this image|.
 
         Arguments:
             x (int):
@@ -118,7 +123,7 @@ class Image:
 
     def load_image(self, source):
         """Clears this image, then draws the ``source`` image centered in
-        this image.
+        |this image|.
 
         Arguments:
             source (Image or str):
@@ -127,7 +132,7 @@ class Image:
         """
 
     def draw_text(self, x, y, text, text_color=Color.BLACK, background_color=None):
-        """Draws text on the image.
+        """Draws text on |this image|.
 
         The most recent font set using :meth:`set_font` will be used or
         :data:`Font.DEFAULT` if no font has been set yet.
@@ -148,19 +153,19 @@ class Image:
         pass
 
     def print(self, *args, sep=' ', end='\n'):
-        """Prints a line of text.
+        """Prints a line of text on |this image|.
 
         This method works like the builtin ``print()`` function, but it writes
-        on the image instead.
+        on |this image| instead.
 
         You can set the font using :meth:`set_font`. If no font has been set,
         :data:`Font.DEFAULT` will be used. The text is always printed used
         black text with a white background.
 
         Unlike the builtin ``print()``, the text does not wrap if it is too
-        wide to fit on the image. It just gets cut off. But if the text would
-        go off of the bottom of the image, the entire image is scrolled up and
-        the text is printed in the new blank area at the bottom of the image.
+        wide to fit on |this image|. It just gets cut off. But if the text would
+        go off of the bottom of |this image|, the entire image is scrolled up and
+        the text is printed in the new blank area at the bottom of |this image|.
 
         Arguments:
             * (object):
@@ -174,7 +179,7 @@ class Image:
         pass
 
     def set_font(self, font):
-        """Sets the font used for writing on this image.
+        """Sets the font used for writing on |this image|.
 
         The font is used for both :meth:`draw_text` and :meth:`print`.
 
