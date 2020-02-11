@@ -6,6 +6,18 @@
 
 .. currentmodule:: pybricks.ev3messaging
 
+Introductory text. An example network is shown in :numref:`fig_ev3messaging`.
+
+.. _fig_ev3messaging:
+
+.. figure:: images/ev3messaging_label.png
+   :width: 90 %
+   :alt: ev3messaging
+   :align: center
+
+   An example network with one server and two clients.
+
+
 Connections
 ------------
 
