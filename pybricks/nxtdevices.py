@@ -1,6 +1,9 @@
 """Use LEGO® MINDSTORMS® NXT motors and sensors with the EV3 brick."""
 
 
+from pybricks.iodevices import AnalogSensor
+
+
 class TouchSensor():
     """LEGO® MINDSTORMS® NXT Touch Sensor."""
 
@@ -219,5 +222,54 @@ class EnergyMeter():
             (:ref:`voltage`, :ref:`current`, :ref:`power`): Voltage, current,
             and power measured at the output port.
 
+        """
+        pass
+
+
+class VernierAdapter(AnalogSensor):
+    """LEGO® MINDSTORMS® Education NXT/EV3 Adapter for Vernier Sensors."""
+
+    def __init__(self, port, conversion=None):
+        """
+
+        Arguments:
+            port (Port): Port to which the sensor is connected.
+            conversion (callable): Function of the format :meth:`.conversion`.
+                This function is used to convert the raw analog voltage to the
+                sensor-specific output value. Each Vernier Sensor has its
+                own conversion function. The example given below demonstrates
+                the conversion for the Surface Temperature Sensor.
+        """
+        pass
+
+    def voltage(self):
+        """Measure the raw analog sensor voltage.
+
+        Returns:
+            :ref:`voltage`: Analog voltage.
+        """
+        pass
+
+    def conversion(self, voltage):
+        """User-supplied function that converts the raw voltage (mV) to a
+        sensor value.
+
+        If you did not provide a ``conversion`` function earlier, no conversion
+        will be applied.
+
+        Arguments:
+            voltage (:ref:`voltage`): Analog sensor voltage
+
+        :returns: Converted sensor value.
+        :rtype: float
+        """
+        pass
+
+    def value(self):
+        """This method measures the sensor :meth:`.voltage` and then
+        applies your :meth:`.conversion` to give you the sensor value.
+
+        :returns: Converted sensor value.
+        :rtype: float
         """
         pass

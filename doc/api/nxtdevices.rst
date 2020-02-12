@@ -54,3 +54,14 @@ NXT Temperature Sensor
 NXT Energy Meter
 ^^^^^^^^^^^^^^^^^
 .. autoclass:: pybricks.nxtdevices.EnergyMeter
+
+Vernier Adapter
+^^^^^^^^^^^^^^^^^
+.. autoclass:: pybricks.nxtdevices.VernierAdapter
+
+.. toggle-header::
+    :header: **Show/hide example**
+
+    **Example: Using the Surface Temperature Sensor.**
+
+    .. literalinclude:: ../../pybricks-projects/snippets/ev3/vernier_surface_temperature/main.py
