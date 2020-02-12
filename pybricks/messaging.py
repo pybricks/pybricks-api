@@ -3,11 +3,6 @@
 
 """
 Classes to exchange messages between EV3 bricks.
-
-.. availability::
-    :ev3dev-stretch:
-
-.. versionadded:: 2.0.0
 """
 
 
