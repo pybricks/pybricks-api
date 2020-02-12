@@ -40,9 +40,6 @@ class Mailbox:
     def send(self, value, brick=None):
         """Sends a value to this mailbox on connected devices.
 
-        .. todo:: Currently the Bluetooth address must be used instead of the
-                  the brick name.
-
         Arguments:
             value:
                 The value that will be delivered to the mailbox.
@@ -173,9 +170,6 @@ class BluetoothMailboxClient:
 
         The remote device must be paired and waiting for a connection. See
         :meth:`BluetoothMailboxServer.wait_for_connection`.
-
-        .. todo:: Currently the Bluetooth address must be used instead of the
-                  the brick name.
 
         Arguments:
             brick (str):
