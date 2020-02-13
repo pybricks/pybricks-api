@@ -4,8 +4,6 @@
 .. automodule:: pybricks.tools
     :no-members:
 
-.. autofunction:: print
-
 .. autofunction:: wait
 
 .. autoclass:: pybricks.tools.StopWatch

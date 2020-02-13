@@ -1,15 +1,6 @@
 """Common tools for timing and data logging."""
 
 
-def print():
-    """print(value, ..., sep, end, file, flush)
-
-    Print values on the terminal or a stream.
-
-    """
-    pass
-
-
 def wait(time):
     """Pause the user program for a specified amount of time.
 
