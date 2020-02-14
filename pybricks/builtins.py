@@ -407,7 +407,7 @@ class ColorLight():
     """Control a multi-color light."""
 
     def on(self, color):
-        """Turn on the light at the specified color and brightness.
+        """Turn on the light at the specified color.
 
         Arguments:
             color (Color): Color of the light. The light turns off if you
