@@ -38,6 +38,24 @@ NXT Light Sensor
 NXT Color Sensor
 ^^^^^^^^^^^^^^^^
 .. autoclass:: pybricks.nxtdevices.ColorSensor
+    :no-members:
+
+    .. automethod:: pybricks.nxtdevices.ColorSensor.color
+
+    .. automethod:: pybricks.nxtdevices.ColorSensor.ambient
+
+    .. automethod:: pybricks.nxtdevices.ColorSensor.reflection
+
+    .. automethod:: pybricks.nxtdevices.ColorSensor.rgb
+
+    .. rubric:: Built-in light
+
+    This sensor has a built-in light. You can make it red, green, blue, or turn
+    it off.
+
+    .. automethod:: pybricks.nxtdevices::ColorSensor.light.on
+
+    .. automethod:: pybricks.nxtdevices::ColorSensor.light.off
 
 NXT Ultrasonic Sensor
 ^^^^^^^^^^^^^^^^^^^^^

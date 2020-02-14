@@ -2,6 +2,7 @@
 
 
 from pybricks.iodevices import AnalogSensor
+from pybricks.builtins import ColorLight
 
 
 class TouchSensor():
@@ -61,6 +62,8 @@ class LightSensor():
 class ColorSensor():
     """LEGO® MINDSTORMS® NXT Color Sensor."""
 
+    light = ColorLight()
+
     def __init__(self, port):
         """
 
@@ -75,7 +78,7 @@ class ColorSensor():
 
         :returns:
             ``Color.BLACK``, ``Color.BLUE``, ``Color.GREEN``, ``Color.YELLOW``,
-            ``Color.RED``, ``Color.WHITE``, ``Color.BROWN`` or ``None``.
+            ``Color.RED``, ``Color.WHITE`` or ``None``.
         :rtype: :class:`Color <.parameters.Color>`, or ``None`` if no color is
                 detected.
 
@@ -98,6 +101,17 @@ class ColorSensor():
             :ref:`percentage`: Reflection, ranging from 0 (no reflection) to
             100 (high reflection).
 
+        """
+        pass
+
+    def rgb(self):
+        """Measure the reflection of a surface using a red, green, and then a
+        blue light.
+
+        Returns:
+            tuple of three :ref:`percentages <percentage>`: Reflection for red,
+            green, and blue light, each ranging from 0.0 (no reflection) to
+            100.0 (high reflection).
         """
         pass
 
