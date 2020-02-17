@@ -18,8 +18,6 @@ Motor
 
     .. automethod:: pybricks.ev3devices.Motor.reset_angle
 
-    .. automethod:: pybricks.ev3devices.Motor.stalled
-
     .. rubric:: Action
 
     .. automethod:: pybricks.ev3devices.Motor.stop

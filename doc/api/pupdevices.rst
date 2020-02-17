@@ -29,8 +29,6 @@ Motors with Rotation Sensors
 
     .. automethod:: pybricks.pupdevices.Motor.reset_angle
 
-    .. automethod:: pybricks.pupdevices.Motor.stalled
-
     .. rubric:: Action
 
     .. automethod:: pybricks.pupdevices.Motor.stop

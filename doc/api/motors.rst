@@ -111,6 +111,12 @@ the settings.
 .. autoclass:: pybricks.builtins.Control
     :no-members:
 
+    .. rubric:: Status
+
+    .. automethod:: pybricks.builtins.Control.done
+
+    .. automethod:: pybricks.builtins.Control.stalled
+
     .. rubric:: Settings
 
     .. automethod:: pybricks.builtins.Control.limits
@@ -120,7 +126,3 @@ the settings.
     .. automethod:: pybricks.builtins.Control.target_tolerances
 
     .. automethod:: pybricks.builtins.Control.stall_tolerances
-
-    .. rubric:: Status
-
-    .. automethod:: pybricks.builtins.Control.done

@@ -46,7 +46,7 @@
     .. rubric:: Advanced Settings
 
     The :meth:`.settings` method is used to adjust commonly used settings like
-    the default speed and acceleration for straight maneuvers and turns. 
+    the default speed and acceleration for straight maneuvers and turns.
     Use the following attributes to adjust more advanced control setttings.
 
     .. autoattribute:: pybricks.robotics.DriveBase.distance_control

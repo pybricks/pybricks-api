@@ -94,21 +94,21 @@ class Control():
 
         Arguments:
             speed (:ref:`speed` or :ref:`linspeed`): If the controller
-                cannot reach this speed during at least ``stall_time``,
-                it is stalled.
-            time (:ref:`time`): See ``speed``.
+                cannot reach this speed for some ``time`` even with maximum
+                actuation, it is stalled.
+            time (:ref:`time`): How long the controller has to be below this
+                minimum ``speed`` before we say it is stalled.
         """
         pass
 
     def stalled(self):
         """Check whether the controller is currently stalled.
 
-        A controller is stalled when it cannot move even with the maximum
-        actuation signal.
+        A controller is stalled when it cannot reach the target speed or
+        position, even with the maximum actuation signal.
 
         Returns:
-            bool: ``True`` if the controller is stalled,``False`` if not.
-
+            bool: ``True`` if the controller is stalled, ``False`` if not.
         """
         pass
 
@@ -168,15 +168,6 @@ class Motor(DCMotor):
 
         Returns:
             :ref:`speed`: Motor speed.
-
-        """
-        pass
-
-    def stalled(self):
-        """Check whether the motor is currently :ref:`stalled <stalled>`.
-
-        Returns:
-            bool: ``True`` if the motor is stalled, ``False`` if it is not.
 
         """
         pass
