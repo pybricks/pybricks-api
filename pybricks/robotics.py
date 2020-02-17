@@ -9,15 +9,14 @@ class DriveBase():
     wheel or caster."""
 
     distance_control = Control()
-    """PID control is used to track the desired speed and travel the control
-    required distance You can change the behavior through this attribute.
+    """The traveled distance and drive speed are controlled by a PID
+    controller. You can use this attribute to change its settings.
     See :ref:`control` for an overview of available methods."""
 
     heading_control = Control()
-    """PID control is used to synchronize the wheel speed,
-    track the turn rate, and reach the turn angle. You can change the control
-    behavior through this attribute. See :ref:`control` for an overview of
-    available methods."""
+    """The robot turn angle and turn rate are controlled by a PID
+    controller. You can use this attribute to change its settings.
+    See :ref:`control` for an overview of available methods."""
 
     def __init__(self, left_motor, right_motor, wheel_diameter, axle_track):
         """DriveBase(left_motor, right_motor, wheel_diameter, axle_track)
@@ -70,7 +69,7 @@ class DriveBase():
         pass
 
     def state(self):
-        """Get the instantaneous physical state.
+        """Get the state of the robot.
 
         This returns the current :meth:`.distance`, the drive speed, the
         :meth:`.angle`, and the turn rate.
@@ -84,20 +83,24 @@ class DriveBase():
         """Reset the estimated driven distance and angle to 0."""
         pass
 
-    def settings(self, drive_speed, drive_acceleration, turn_rate,
+    def settings(self, straight_speed, straight_acceleration, turn_rate,
                  turn_acceleration):
-        """Configure the acceleration and maximum speed used
-        by :meth:`.straight`, :meth:`.turn`, and :meth:`.drive`.
+        """Configure the speed and acceleration used
+        by :meth:`.straight` and :meth:`.turn`.
 
         If you give no arguments, this returns the current values as a tuple.
 
         Arguments:
-            drive_speed (:ref:`linspeed`): Drive speed of the robot.
-            drive_acceleration (:ref:`linacceleration`): Linear acceleration
-                of the robot.
-            turn_rate (:ref:`speed`): Turn rate of the robot.
-            turn_acceleration (:ref:`acceleration`): Angular acceleration of
-                the robot.
+            straight_speed (:ref:`linspeed`): Speed of the robot during
+                :meth:`.straight`.
+            straight_acceleration (:ref:`linacceleration`): Acceleration and
+                deceleration of the robot at the start and end
+                of :meth:`.straight`.
+            turn_rate (:ref:`speed`): Turn rate of the robot
+                during :meth:`.turn`.
+            turn_acceleration (:ref:`acceleration`): Angular acceleration and
+                deceleration of the robot at the start and end
+                of :meth:`.turn`.
         """
         pass
 

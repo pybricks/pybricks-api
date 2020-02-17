@@ -19,6 +19,7 @@
 
     .. automethod:: pybricks.robotics.DriveBase.turn
 
+    .. automethod:: pybricks.robotics.DriveBase.settings
 
     .. rubric:: Drive forever
 
@@ -42,16 +43,11 @@
 
     .. automethod:: pybricks.robotics.DriveBase.reset
 
-    .. rubric:: Settings
-
-    .. automethod:: pybricks.robotics.DriveBase.settings
-
     .. rubric:: Advanced Settings
 
-    The :meth:`.settings` method can be used to adjust the most commonly used
-    settings. It interacts with both of the attributes below to set the
-    desired speed and acceleration values. You can also adjust the control
-    settings manually using these attributes.
+    The :meth:`.settings` method is used to adjust commonly used settings like
+    the default speed and acceleration for straight maneuvers and turns. 
+    Use the following attributes to adjust more advanced control setttings.
 
     .. autoattribute:: pybricks.robotics.DriveBase.distance_control
         :annotation:
