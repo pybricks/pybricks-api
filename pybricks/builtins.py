@@ -56,7 +56,7 @@ class Control():
         """
         pass
 
-    def pid(self, kp, ki, kd, integral_range):
+    def pid(self, kp, ki, kd, integral_range, integral_rate):
         """Get or set the PID values for position and speed control.
 
         If no arguments are given, this will return the current values.
@@ -70,6 +70,8 @@ class Control():
             integral_range (:ref:`angle` or :ref:`distance`): Region around
                 the target angle or distance, in which integral control errors
                 are accumulated.
+            integral_rate (:ref:`speed` or :ref:`linspeed`): Maximum rate at
+                which the error integral is allowed to grow.
         """
         pass
 
