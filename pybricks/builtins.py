@@ -29,17 +29,14 @@ class DCMotor():
 
 
 class Control():
-    """Class to interact with PID controller and settings."""
+    """Class to interact with PID controller and settings.
 
-    def __init__(self, scale=1):
-        """Initialize the PID controller.
+        .. data:: scale
 
-        Arguments:
-            scale (float):
-                Number of integer counts per unit of output. For example, two
-                counts per degree of the motor.
-        """
-        pass
+            Scaling factor between the controlled integer variable
+            and the physical output. For example, for a single
+            motor this is the number of encoder pulses per degree of rotation.
+    """
 
     def limits(self, speed, acceleration, actuation):
         """Configure the maximum speed, acceleration, and actuation.
