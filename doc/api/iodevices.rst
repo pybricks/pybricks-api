@@ -4,6 +4,12 @@
 .. automodule:: pybricks.iodevices
     :no-members:
 
+.. note::
+
+    This module provides classes to interact with unofficial motors, sensors,
+    and other custom electronics. You should only connect custom electronics
+    or unofficial devices if you know what you are doing. Proceed with caution.
+
 LUMP Device
 ^^^^^^^^^^^^^
 .. autoclass:: pybricks.iodevices.LUMPDevice
