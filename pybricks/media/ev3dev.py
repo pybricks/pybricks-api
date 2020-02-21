@@ -190,8 +190,10 @@ class Image:
         pass
 
     @staticmethod
-    def empty(width, height):
-        """Creates a new empty :class:`Image` object.
+    def empty(width=178, height=128):
+        """empty(width=<screen width>, height=<screen height>)
+
+        Creates a new empty :class:`Image` object.
 
         Arguments:
             width (int):
