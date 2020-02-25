@@ -35,7 +35,13 @@ class LUMPDevice():
 
 
 class Ev3devSensor():
-    """Read values with an ev3dev-compatible sensor."""
+    """Read values of an ev3dev-compatible sensor."""
+
+    sensor_index = 0
+    """Index of the ev3dev sysfs `lego-sensor`_ class."""
+
+    port_index = 0
+    """Index of the ev3dev sysfs `lego-port`_ class."""
 
     def __init__(self, port):
         """
@@ -49,7 +55,7 @@ class Ev3devSensor():
         """Read values at a given mode.
 
         Arguments:
-            mode (``str``): Mode name.
+            mode (``str``): `Mode name`_.
 
         Returns:
             ``tuple``: Values read from the sensor.
