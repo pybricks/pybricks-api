@@ -96,6 +96,38 @@ setting below.
 To learn more about compatible devices and what each mode does,
 visit the `ev3dev sensors`_ page.
 
-.. _ev3dev sensors: http://docs.ev3dev.org/projects/lego-linux-drivers/en/ev3dev-stretch/sensors.html
-
 .. autoclass:: pybricks.iodevices.Ev3devSensor
+    :no-members:
+
+    .. autoattribute:: pybricks.iodevices.Ev3devSensor.sensor_index
+        :annotation:
+
+    .. autoattribute:: pybricks.iodevices.Ev3devSensor.port_index
+        :annotation:
+
+    .. automethod:: pybricks.iodevices.Ev3devSensor.read
+
+.. toggle-header::
+    :header: **Show/hide example: Reading values with the Ev3devSensor class**
+
+    **Example**
+
+    In this example we use the LEGO MINDSTORMS EV3 Color Sensor with the raw
+    RGB mode. This gives uncalibrated red, green, and blue reflection values.
+    
+    .. literalinclude:: ../../pybricks-projects/snippets/ev3/ev3devsensor/main.py
+
+.. toggle-header::
+    :header: **Show/hide example: Extending the Ev3devSensor class**
+
+    **Example**
+
+    This example shows how to extend the ``Ev3devSensor`` class by accessing
+    additional features found in the Linux system folder for this device.
+
+    .. literalinclude:: ../../pybricks-projects/snippets/ev3/ev3devsensor/class_example.py
+
+.. _ev3dev sensors: http://docs.ev3dev.org/projects/lego-linux-drivers/en/ev3dev-stretch/sensors.html
+.. _Mode name: http://docs.ev3dev.org/projects/lego-linux-drivers/en/ev3dev-stretch/sensor_data.html
+.. _lego-sensor: http://docs.ev3dev.org/projects/lego-linux-drivers/en/ev3dev-stretch/sensors.html#the-lego-sensor-subsytem
+.. _lego-port: http://docs.ev3dev.org/projects/lego-linux-drivers/en/ev3dev-stretch/ports.html#the-lego-port-subsystem
