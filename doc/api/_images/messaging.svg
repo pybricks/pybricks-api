@@ -508,7 +508,7 @@
        y="769.47217"
        x="556.414"
        id="tspan7997"
-       sodipodi:role="line">client = BluetoothMailboxServer()</tspan><tspan
+       sodipodi:role="line">client = BluetoothMailboxClient()</tspan><tspan
        id="tspan7999"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab';fill:#404140;fill-opacity:1;stroke-width:0.60486054"
        y="789.2168"
@@ -612,7 +612,7 @@
        id="tspan11695"
        x="36.414001"
        y="769.47217"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab';fill:#404140;fill-opacity:1;stroke-width:0.60486054">client = BluetoothMailboxServer()</tspan><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab';fill:#404140;fill-opacity:1;stroke-width:0.60486054">client = BluetoothMailboxClient()</tspan><tspan
        sodipodi:role="line"
        x="36.414001"
        y="789.2168"
