@@ -242,27 +242,3 @@ class Side(_PybricksEnum):
     LEFT = 4
     BACK = 5
     BOTTOM = 2
-
-
-class Align(_PybricksEnum):
-    """Alignment of an image on the display.
-
-    .. data:: BOTTOM_LEFT
-    .. data:: BOTTOM
-    .. data:: BOTTOM_RIGHT
-    .. data:: LEFT
-    .. data:: CENTER
-    .. data:: RIGHT
-    .. data:: TOP_LEFT
-    .. data:: TOP
-    .. data:: TOP_RIGHT
-    """
-    BOTTOM_LEFT = 1
-    BOTTOM = 2
-    BOTTOM_RIGHT = 3
-    LEFT = 4
-    CENTER = 5
-    RIGHT = 6
-    TOP_LEFT = 7
-    TOP = 8
-    TOP_RIGHT = 9
