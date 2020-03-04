@@ -253,7 +253,7 @@
      inkscape:snap-bbox-edge-midpoints="true"
      inkscape:snap-bbox-midpoints="true" />
   <image
-     sodipodi:absref="/home/laurens/pybricks/git/pybricks-api/doc/api/_images/ev3brick.png"
+     sodipodi:absref="/home/laurens/pybricks/git/pybricks-api/doc/api/diagram_source/ev3brick.png"
      xlink:href="ev3brick.png"
      y="123.66872"
      x="253.44368"
@@ -265,7 +265,7 @@
      clip-path="url(#clipPath867)"
      transform="matrix(1.2043172,0,0,1.2043172,62.964311,-34.636939)" />
   <image
-     sodipodi:absref="/home/laurens/pybricks/git/pybricks-api/doc/api/_images/ev3brick.png"
+     sodipodi:absref="/home/laurens/pybricks/git/pybricks-api/doc/api/diagram_source/ev3brick.png"
      xlink:href="ev3brick.png"
      transform="matrix(1.2043172,0,0,1.2043172,-234.03569,303.20368)"
      clip-path="url(#clipPath867)"
@@ -547,7 +547,7 @@
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab';fill:#404140;fill-opacity:1;stroke-width:0.60486054"
        id="tspan8007">'1:2:3:4:5'</tspan></text>
   <image
-     sodipodi:absref="/home/laurens/pybricks/git/pybricks-api/doc/api/_images/ev3brick.png"
+     sodipodi:absref="/home/laurens/pybricks/git/pybricks-api/doc/api/diagram_source/ev3brick.png"
      xlink:href="ev3brick.png"
      y="123.66872"
      x="253.44368"
