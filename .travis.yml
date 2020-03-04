@@ -4,11 +4,11 @@ python:
 - '3.5'
 
 install:
-- pip install pipenv
-- pipenv sync --dev
+- pip install poetry
+- poetry install
 
 script:
-- pipenv run python setup.py build
-- pipenv run make -C doc html SOURCEDIR=api
-- pipenv run flake8
-- pipenv run doc8
+- poetry run python setup.py build
+- poetry run make -C doc html SOURCEDIR=api
+- poetry run flake8
+- poetry run doc8
