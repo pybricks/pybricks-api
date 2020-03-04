@@ -3,11 +3,6 @@ language: python
 python:
 - '3.5'
 
-addons:
-  apt:
-    packages:
-    - inkscape
-
 install:
 - pip install pipenv
 - pipenv sync --dev
