@@ -14,8 +14,11 @@ help:
 
 .PHONY: help Makefile
 
+diagrams:
+	@$(MAKE) -C "$(SOURCEDIR)"/diagram_source clean
+	@$(MAKE) -C "$(SOURCEDIR)"/diagram_source
+
 # Catch-all target: route all unknown targets to Sphinx using the new
 # "make mode" option.  $(O) is meant as a shortcut for $(SPHINXOPTS).
 %: Makefile
-	@$(MAKE) -C "$(SOURCEDIR)"/diagram_source `[ "$@" = "clean" ] && echo clean || echo all`
 	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
