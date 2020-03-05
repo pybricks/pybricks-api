@@ -10,7 +10,7 @@ Introductory text. An example network is shown in :numref:`fig_messaging`.
 
 .. _fig_messaging:
 
-.. figure:: images/messaging_label.png
+.. figure:: ../api/images/messaging_label.png
    :width: 90 %
    :alt: messaging
    :align: center
