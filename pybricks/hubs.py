@@ -1,3 +1,6 @@
+# SPDX-License-Identifier: MIT
+# Copyright (c) 2018-2020 The Pybricks Authors
+
 """LEGO® Programmable Hubs."""
 from enum import Enum
 from .builtins import Speaker, Battery, ColorLight, KeyPad

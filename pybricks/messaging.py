@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: MIT
-# Copyright (C) 2020 David Lechner
+# Copyright (c) 2018-2020 The Pybricks Authors
 
 """
 Classes to exchange messages between EV3 bricks.

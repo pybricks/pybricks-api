@@ -1,3 +1,6 @@
+# SPDX-License-Identifier: MIT
+# Copyright (c) 2018-2020 The Pybricks Authors
+
 """Common tools for timing and data logging."""
 
 

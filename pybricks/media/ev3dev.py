@@ -1,3 +1,6 @@
+# SPDX-License-Identifier: MIT
+# Copyright (c) 2018-2020 The Pybricks Authors
+
 """Images and Sounds for Pybricks on ev3dev."""
 
 from ..parameters import Color

@@ -1,3 +1,6 @@
+# SPDX-License-Identifier: MIT
+# Copyright (c) 2018-2020 The Pybricks Authors
+
 """Generic cross-platform module for typical devices like lights, displays,
 speakers, and batteries."""
 

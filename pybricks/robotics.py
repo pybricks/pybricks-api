@@ -1,3 +1,6 @@
+# SPDX-License-Identifier: MIT
+# Copyright (c) 2018-2020 The Pybricks Authors
+
 """Robotics module for the Pybricks API."""
 
 from .parameters import Stop

@@ -1,3 +1,6 @@
+# SPDX-License-Identifier: MIT
+# Copyright (c) 2018-2020 The Pybricks Authors
+
 """LEGO® Powered Up motor, sensors, and lights."""
 
 from .builtins import KeyPad, Accelerometer, ColorLight
