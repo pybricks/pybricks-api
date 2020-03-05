@@ -6,7 +6,7 @@ authors = ["Laurens Valk <laurens@pybricks.com>", "David Lechner <david@pybricks
 license = "MIT"
 
 [tool.poetry.dependencies]
-python = "^3.6.8"
+python = "^3.5"
 sphinx = "==1.7.9"
 flake8 = "*"
 sphinx-rtd-theme = "==0.4.3"
