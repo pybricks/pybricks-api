@@ -17,6 +17,8 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
+# flake8: noqa
+
 import os
 import sys
 from docutils import nodes
@@ -63,15 +65,6 @@ source_suffix = '.rst'
 
 # The master toctree document.
 master_doc = 'index'
-
-# General information about the project.
-project = 'pybricks-micropython'
-copyright = '2018-2019 The Pybricks MicroPython Authors'
-author = ''
-
-_TITLE = 'Pybricks Modules and Examples'
-_DISCLAIMER = 'LEGO, the LEGO logo, MINDSTORMS and the MINDSTORMS EV3 logo are\
-               trademarks and/or copyrights of the LEGO Group.'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -157,8 +150,6 @@ else:
         ],
         'disclaimer': _DISCLAIMER,
     }
-
-html_logo = '../common/images/pybricks-logo-small.png'
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
@@ -248,9 +239,6 @@ latex_documents = [
     (master_doc, ''.join([project, '-v', version, '.tex']), _TITLE,
      author, 'manual'),
 ]
-
-latex_logo = '../common/images/pybricks-logo-large.png'
-
 
 # -- Options for manual page output ---------------------------------------
 
