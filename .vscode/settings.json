@@ -3,6 +3,7 @@
     "python.linting.pycodestyleEnabled": false,
     "python.linting.flake8Enabled": true,
     "python.linting.enabled": true,
+    "files.associations": {"*.inc": "restructuredtext"},
     "restructuredtext.confPath": "${workspaceFolder}/doc/api",
     "spellright.language": [
         "en_US"
