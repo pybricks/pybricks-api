@@ -53,3 +53,7 @@ genrst/
 # Mac OS cache
 ######################
 .DS_Store
+
+# Virtual environment
+######################
+.venv/
