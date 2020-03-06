@@ -218,6 +218,20 @@ class Image:
                 There was a problem allocating a new image.
         """
 
+    def save(self, filename):
+        """Saves |this image| as a ``.png`` file.
+
+        Arguments:
+            filename (str):
+                The path to the file to be saved.
+
+        Raises:
+            TypeError:
+                ``filename`` is not a string.
+            OSError:
+                There was a problem saving the file.
+        """
+
 
 class Font:
     """Object that represents a font for writing text."""

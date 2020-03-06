@@ -176,6 +176,9 @@
 
     .. autoattribute:: pybricks.hubs::EV3Brick.screen.height
 
+    .. automethod:: pybricks.hubs::EV3Brick.screen.save
+
+
     .. rubric:: Using the battery
 
     .. automethod:: pybricks.hubs::EV3Brick.battery.voltage

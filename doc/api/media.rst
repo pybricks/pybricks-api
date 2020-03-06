@@ -306,5 +306,6 @@ with image files using the ``Image`` class given below.
     .. automethod:: pybricks.media.ev3dev.Image.load_image
 
 
+    .. rubric:: Saving the image
 
-
+    .. automethod:: pybricks.media.ev3dev.Image.save
