@@ -186,12 +186,12 @@ class Motor(DCMotor):
         """
         pass
 
-    def stop(self, stop_type=Stop.COAST):
+    def stop(self, stop_type=Stop.HOLD):
         """Stop the motor.
 
         Arguments:
             stop_type (Stop): Whether to coast, brake, or hold (*Default*:
-                              :class:`Stop.COAST <.parameters.Stop>`).
+                              :class:`Stop.HOLD <.parameters.Stop>`).
         """
         pass
 
@@ -205,7 +205,7 @@ class Motor(DCMotor):
         """
         pass
 
-    def run_time(self, speed, time, stop_type=Stop.COAST, wait=True):
+    def run_time(self, speed, time, stop_type=Stop.HOLD, wait=True):
         """Run the motor at a constant speed for a given amount of time.
 
         Arguments:
@@ -213,14 +213,14 @@ class Motor(DCMotor):
             time (:ref:`time`): Duration of the maneuver.
             stop_type (Stop): Whether to coast, brake, or hold after coming to
                               a standstill (*Default*:
-                              :class:`Stop.COAST <.parameters.Stop>`).
+                              :class:`Stop.HOLD <.parameters.Stop>`).
             wait (bool): Wait for the maneuver to complete before continuing
                          with the rest of the program (*Default*: ``True``).
         """
         pass
 
     def run_angle(self, speed, rotation_angle,
-                  stop_type=Stop.COAST, wait=True):
+                  stop_type=Stop.HOLD, wait=True):
         """Run the motor at a constant speed by a given angle.
 
         Arguments:
@@ -229,13 +229,13 @@ class Motor(DCMotor):
                                            rotate.
             stop_type (Stop): Whether to coast, brake, or hold after coming to
                               a standstill (*Default*:
-                              :class:`Stop.COAST <.parameters.Stop>`).
+                              :class:`Stop.HOLD <.parameters.Stop>`).
             wait (bool): Wait for the maneuver to complete before continuing
                          with the rest of the program (*Default*: ``True``).
         """
         pass
 
-    def run_target(self, speed, target_angle, stop_type=Stop.COAST, wait=True):
+    def run_target(self, speed, target_angle, stop_type=Stop.HOLD, wait=True):
         """ Run the motor at a constant speed towards a
         given target angle.
 
@@ -248,7 +248,7 @@ class Motor(DCMotor):
                                          rotate to.
             stop_type (Stop): Whether to coast, brake, or hold after coming to
                               a standstill (*Default*:
-                              :class:`Stop.COAST <.parameters.Stop>`).
+                              :class:`Stop.HOLD <.parameters.Stop>`).
             wait (bool): Wait for the motor to reach the target
                          before continuing with the rest of the
                          program (*Default*: ``True``).
