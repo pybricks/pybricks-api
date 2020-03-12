@@ -4,7 +4,7 @@
 """Generic input/output devices."""
 
 
-class LUMPDevice():
+class LUMPDevice:
     """Devices using the LEGO UART Messaging Protocol."""
 
     def __init__(self, port):
@@ -37,7 +37,7 @@ class LUMPDevice():
         pass
 
 
-class Ev3devSensor():
+class Ev3devSensor:
     """Read values of an ev3dev-compatible sensor."""
 
     sensor_index = 0
@@ -66,7 +66,7 @@ class Ev3devSensor():
         pass
 
 
-class AnalogSensor():
+class AnalogSensor:
     """Generic or custom analog sensor."""
 
     def __init__(self, port):
@@ -119,7 +119,7 @@ class AnalogSensor():
         pass
 
 
-class I2CDevice():
+class I2CDevice:
     """Generic or custom I2C device."""
 
     def __init__(self, port, address):
@@ -156,7 +156,7 @@ class I2CDevice():
         pass
 
 
-class UARTDevice():
+class UARTDevice:
     """Generic UART device."""
 
     def __init__(self, port, baudrate, timeout=None):

@@ -7,7 +7,7 @@ speakers, and batteries."""
 from .parameters import Direction, Stop, Axis
 
 
-class DCMotor():
+class DCMotor:
     """Generic class to control simple motors without rotation sensors, such
     as train motors."""
 
@@ -31,7 +31,7 @@ class DCMotor():
         pass
 
 
-class Control():
+class Control:
     """Class to interact with PID controller and settings.
 
         .. data:: scale
@@ -293,7 +293,7 @@ class Motor(DCMotor):
         """
 
 
-class Speaker():
+class Speaker:
     """Play beeps and sounds using a speaker."""
 
     def beep(self, frequency=500, duration=100):
@@ -384,7 +384,7 @@ class Speaker():
         pass
 
 
-class Light():
+class Light:
     """Control a single-color light."""
 
     def on(self, brightness=100):
@@ -400,7 +400,7 @@ class Light():
         pass
 
 
-class ColorLight():
+class ColorLight:
     """Control a multi-color light."""
 
     def on(self, color):
@@ -427,7 +427,7 @@ class ColorLight():
         pass
 
 
-class LightArray():
+class LightArray:
     """Control an array of single-color lights."""
 
     def __init__(self, lights):
@@ -463,7 +463,7 @@ class LightArray():
         pass
 
 
-class LightGrid():
+class LightGrid:
     """Control a rectangular grid of single-color lights."""
 
     def __init__(self, rows, columns):
@@ -540,7 +540,7 @@ class LightGrid():
         pass
 
 
-class KeyPad():
+class KeyPad:
     """Get status of buttons on a keypad layout."""
 
     def pressed(self):
@@ -553,7 +553,7 @@ class KeyPad():
         pass
 
 
-class Battery():
+class Battery:
     """Get the status of a battery."""
 
     def voltage(self):
@@ -574,7 +574,7 @@ class Battery():
         pass
 
 
-class Accelerometer():
+class Accelerometer:
     """Get measurements from an accelerometer."""
 
     def neutral(self, top, front):

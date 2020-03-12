@@ -8,7 +8,7 @@ from pybricks.iodevices import AnalogSensor
 from pybricks.builtins import ColorLight
 
 
-class TouchSensor():
+class TouchSensor:
     """LEGO® MINDSTORMS® NXT Touch Sensor."""
 
     def __init__(self, port):
@@ -30,7 +30,7 @@ class TouchSensor():
         pass
 
 
-class LightSensor():
+class LightSensor:
     """LEGO® MINDSTORMS® NXT Color Sensor."""
 
     def __init__(self, port):
@@ -62,7 +62,7 @@ class LightSensor():
         pass
 
 
-class ColorSensor():
+class ColorSensor:
     """LEGO® MINDSTORMS® NXT Color Sensor."""
 
     light = ColorLight()
@@ -119,7 +119,7 @@ class ColorSensor():
         pass
 
 
-class UltrasonicSensor():
+class UltrasonicSensor:
     """LEGO® MINDSTORMS® NXT Ultrasonic Sensor."""
 
     def __init__(self, port):
@@ -142,7 +142,7 @@ class UltrasonicSensor():
         pass
 
 
-class SoundSensor():
+class SoundSensor:
     """LEGO® MINDSTORMS® NXT Sound Sensor."""
 
     def __init__(self, port):
@@ -169,7 +169,7 @@ class SoundSensor():
         pass
 
 
-class TemperatureSensor():
+class TemperatureSensor:
     """LEGO® MINDSTORMS® NXT Ultrasonic Sensor."""
 
     def __init__(self, port):
@@ -191,7 +191,7 @@ class TemperatureSensor():
         pass
 
 
-class EnergyMeter():
+class EnergyMeter:
     """LEGO® MINDSTORMS® Education NXT Energy Meter."""
 
     def __init__(self, port):

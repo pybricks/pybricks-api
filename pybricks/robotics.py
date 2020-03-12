@@ -7,7 +7,7 @@ from .parameters import Stop
 from .builtins import Control
 
 
-class DriveBase():
+class DriveBase:
     """A robotic vehicle with two powered wheels and an optional support
     wheel or caster."""
 

@@ -7,7 +7,7 @@ from .parameters import Direction
 from .builtins import Motor  # noqa E402
 
 
-class TouchSensor():
+class TouchSensor:
     """LEGO® MINDSTORMS® EV3 Touch Sensor."""
 
     def __init__(self, port):
@@ -29,7 +29,7 @@ class TouchSensor():
         pass
 
 
-class ColorSensor():
+class ColorSensor:
     """LEGO® MINDSTORMS® EV3 Color Sensor."""
 
     def __init__(self, port):
@@ -84,7 +84,7 @@ class ColorSensor():
         pass
 
 
-class InfraredSensor():
+class InfraredSensor:
     """LEGO® MINDSTORMS® EV3 Infrared Sensor and Beacon."""
 
     def __init__(self, port):
@@ -151,7 +151,7 @@ class InfraredSensor():
         pass
 
 
-class GyroSensor():
+class GyroSensor:
     """LEGO® MINDSTORMS® EV3 Gyro Sensor."""
 
     def __init__(self, port, positive_direction=Direction.CLOCKWISE):
@@ -208,7 +208,7 @@ class GyroSensor():
         pass
 
 
-class UltrasonicSensor():
+class UltrasonicSensor:
     """LEGO® MINDSTORMS® EV3 Ultrasonic Sensor."""
 
     def __init__(self, port):

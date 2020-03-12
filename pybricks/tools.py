@@ -14,7 +14,7 @@ def wait(time):
     pass
 
 
-class StopWatch():
+class StopWatch:
     """A stopwatch to measure time intervals. Similar to the stopwatch
     feature on your phone."""
 
@@ -48,7 +48,7 @@ class StopWatch():
         pass
 
 
-class DataLog():
+class DataLog:
     """Create a file and log data."""
 
     def __init__(self, *headers, name='log', timestamp=True, extension='csv'):

@@ -7,7 +7,7 @@ from .builtins import KeyPad, Accelerometer, ColorLight
 from .builtins import Motor  # noqa E402
 
 
-class RemoteControl():
+class RemoteControl:
     """LEGO® Powered Up Bluetooth Remote Control/Handset."""
 
     light = ColorLight()
@@ -39,7 +39,7 @@ class TiltSensor(Accelerometer):
         pass
 
 
-class ColorDistanceSensor():
+class ColorDistanceSensor:
     """LEGO® Powered Up Color and Distance Sensor."""
 
     light = ColorLight()
