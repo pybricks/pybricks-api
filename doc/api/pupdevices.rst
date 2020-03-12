@@ -14,6 +14,9 @@ Motors without Rotation Sensors
     .. automethod:: pybricks.builtins.DCMotor.dc
         :noindex:
 
+    .. automethod:: pybricks.builtins.DCMotor.stop
+        :noindex:
+
 Motors with Rotation Sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 

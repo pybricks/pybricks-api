@@ -30,6 +30,15 @@ class DCMotor:
         """
         pass
 
+    def stop(self, stop_type=Stop.COAST):
+        """Stop the motor.
+
+        Arguments:
+            stop_type (Stop): Whether to coast, brake, or hold (*Default*:
+                              :class:`Stop.COAST <.parameters.Stop>`).
+        """
+        pass
+
 
 class Control:
     """Class to interact with PID controller and settings.
