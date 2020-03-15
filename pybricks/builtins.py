@@ -212,35 +212,32 @@ class Motor(DCMotor):
         """
         pass
 
-    def run_time(self, speed, time, stop_type=Stop.HOLD, wait=True):
+    def run_time(self, speed, time, then=Stop.HOLD, wait=True):
         """Run the motor at a constant speed for a given amount of time.
 
         Arguments:
             speed (:ref:`speed`): Speed of the motor.
             time (:ref:`time`): Duration of the maneuver.
-            stop_type (Stop): Whether to coast, brake, or hold after coming to
-                              a standstill.
+            then (Stop): What to do after coming to a standstill.
             wait (bool): Wait for the maneuver to complete before continuing
                          with the rest of the program.
         """
         pass
 
-    def run_angle(self, speed, rotation_angle,
-                  stop_type=Stop.HOLD, wait=True):
+    def run_angle(self, speed, rotation_angle, then=Stop.HOLD, wait=True):
         """Run the motor at a constant speed by a given angle.
 
         Arguments:
             speed (:ref:`speed`): Speed of the motor.
             rotation_angle (:ref:`angle`): Angle by which the motor should
                                            rotate.
-            stop_type (Stop): Whether to coast, brake, or hold after coming to
-                              a standstill.
+            then (Stop): What to do after coming to a standstill.
             wait (bool): Wait for the maneuver to complete before continuing
                          with the rest of the program.
         """
         pass
 
-    def run_target(self, speed, target_angle, stop_type=Stop.HOLD, wait=True):
+    def run_target(self, speed, target_angle, then=Stop.HOLD, wait=True):
         """ Run the motor at a constant speed towards a
         given target angle.
 
@@ -251,22 +248,20 @@ class Motor(DCMotor):
             speed (:ref:`speed`): Speed of the motor.
             target_angle (:ref:`angle`): Angle that the motor should
                                          rotate to.
-            stop_type (Stop): Whether to coast, brake, or hold after coming to
-                              a standstill.
+            then (Stop): What to do after coming to a standstill.
             wait (bool): Wait for the motor to reach the target
                          before continuing with the rest of the
                          program.
         """
         pass
 
-    def run_until_stalled(self, speed, stop_type=Stop.COAST, duty_limit=None):
+    def run_until_stalled(self, speed, then=Stop.COAST, duty_limit=None):
         """Run the motor at a constant speed until it
         :ref:`stalls <stalled>`
 
         Arguments:
             speed (:ref:`speed`): Speed of the motor.
-            stop_type (Stop): Whether to coast, brake, or hold after coming to
-                              a standstill.
+            then (Stop): What to do after coming to a standstill.
             duty_limit (:ref:`percentage`): Torque limit during this
                 command. This is useful to avoid applying the full motor
                 torque to a geared or lever mechanism.
