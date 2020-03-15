@@ -34,7 +34,7 @@ class DCMotor:
         """Stop the motor.
 
         Arguments:
-            stop_type (Stop): Whether to coast, brake, or hold.
+            stop_type (Stop): Whether to coast or brake the motor.
         """
         pass
 
