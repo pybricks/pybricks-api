@@ -46,7 +46,7 @@ class DriveBase:
         """
         pass
 
-    def stop(self, stop_type=Stop.HOLD):
+    def stop(self, stop_type=Stop.COAST):
         """Stop the robot.
 
         Arguments:

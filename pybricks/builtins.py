@@ -194,7 +194,7 @@ class Motor(DCMotor):
         """
         pass
 
-    def stop(self, stop_type=Stop.HOLD):
+    def stop(self, stop_type=Stop.COAST):
         """Stop the motor.
 
         Arguments:
