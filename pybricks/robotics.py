@@ -50,8 +50,7 @@ class DriveBase:
         """Stop the robot.
 
         Arguments:
-            stop_type (Stop): Whether to coast, brake, or hold (*Default*:
-                              :class:`Stop.HOLD <.parameters.Stop>`).
+            stop_type (Stop): Whether to coast, brake, or hold.
         """
         pass
 

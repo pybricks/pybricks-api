@@ -138,7 +138,7 @@ class I2CDevice:
         Arguments:
             reg (``int``): Register at which to begin
                 reading: 0--255 or 0x00--0xFF.
-            length (``int``): How many bytes to read (*Default*: ``1``).
+            length (``int``): How many bytes to read.
 
         Returns:
             ``bytes``: Bytes returned from the device.
@@ -151,7 +151,7 @@ class I2CDevice:
         Arguments:
             reg (``int``): Register at which to begin
                 writing: 0--255 or 0x00--0xFF.
-            data (``bytes``): Bytes to be written (*Default*: ``None``).
+            data (``bytes``): Bytes to be written.
         """
         pass
 
@@ -167,7 +167,7 @@ class UARTDevice:
             baudrate (int): Baudrate of the UART device.
             timeout (:ref:`time`): How long to wait
                 during :meth:`.read` before giving up. If you choose ``None``,
-                it will wait forever (*Default*: ``None``).
+                it will wait forever.
         """
         pass
 
@@ -179,7 +179,7 @@ class UARTDevice:
         exception is raised.
 
         Arguments:
-            length (``int``): How many bytes to read (*Default*: ``1``).
+            length (``int``): How many bytes to read.
 
         Returns:
             ``bytes``: Bytes returned from the device.

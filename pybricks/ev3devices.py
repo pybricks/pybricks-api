@@ -161,7 +161,7 @@ class GyroSensor:
             port (Port): Port to which the sensor is connected.
             positive_direction (Direction):
                 Positive rotation direction when looking at the red dot on top
-                of the sensor (*Default*: Direction.CLOCKWISE).
+                of the sensor.
 
         """
         pass
@@ -227,7 +227,7 @@ class UltrasonicSensor:
         Arguments:
             silent (bool): Choose ``True`` to turn the sensor off after
                            measuring the distance. Choose ``False`` to leave
-                           the sensor on (*Default*). When you choose
+                           the sensor on. When you choose
                            ``silent=True``, the sensor does not
                            emit sounds waves except when taking the
                            measurement. This reduces interference with other

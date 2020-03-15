@@ -34,8 +34,7 @@ class DCMotor:
         """Stop the motor.
 
         Arguments:
-            stop_type (Stop): Whether to coast, brake, or hold (*Default*:
-                              :class:`Stop.COAST <.parameters.Stop>`).
+            stop_type (Stop): Whether to coast, brake, or hold.
         """
         pass
 
@@ -154,9 +153,9 @@ class Motor(DCMotor):
             port (Port): Port to which the motor is connected.
             positive_direction (Direction): Which direction the motor should
                 turn when you give a positive speed value or
-                angle (*Default*: ``Direction.CLOCKWISE``).
+                angle.
             gears (list):
-                List of gears linked to the motor (*Default*:``None``).
+                List of gears linked to the motor.
 
                 For example: ``[12, 36]`` represents a gear train with a
                 12-tooth and a 36-tooth gear. Use a list of lists for multiple
@@ -199,8 +198,7 @@ class Motor(DCMotor):
         """Stop the motor.
 
         Arguments:
-            stop_type (Stop): Whether to coast, brake, or hold (*Default*:
-                              :class:`Stop.HOLD <.parameters.Stop>`).
+            stop_type (Stop): Whether to coast, brake, or hold.
         """
         pass
 
@@ -221,10 +219,9 @@ class Motor(DCMotor):
             speed (:ref:`speed`): Speed of the motor.
             time (:ref:`time`): Duration of the maneuver.
             stop_type (Stop): Whether to coast, brake, or hold after coming to
-                              a standstill (*Default*:
-                              :class:`Stop.HOLD <.parameters.Stop>`).
+                              a standstill.
             wait (bool): Wait for the maneuver to complete before continuing
-                         with the rest of the program (*Default*: ``True``).
+                         with the rest of the program.
         """
         pass
 
@@ -237,10 +234,9 @@ class Motor(DCMotor):
             rotation_angle (:ref:`angle`): Angle by which the motor should
                                            rotate.
             stop_type (Stop): Whether to coast, brake, or hold after coming to
-                              a standstill (*Default*:
-                              :class:`Stop.HOLD <.parameters.Stop>`).
+                              a standstill.
             wait (bool): Wait for the maneuver to complete before continuing
-                         with the rest of the program (*Default*: ``True``).
+                         with the rest of the program.
         """
         pass
 
@@ -256,11 +252,10 @@ class Motor(DCMotor):
             target_angle (:ref:`angle`): Angle that the motor should
                                          rotate to.
             stop_type (Stop): Whether to coast, brake, or hold after coming to
-                              a standstill (*Default*:
-                              :class:`Stop.HOLD <.parameters.Stop>`).
+                              a standstill.
             wait (bool): Wait for the motor to reach the target
                          before continuing with the rest of the
-                         program (*Default*: ``True``).
+                         program.
         """
         pass
 
@@ -271,8 +266,7 @@ class Motor(DCMotor):
         Arguments:
             speed (:ref:`speed`): Speed of the motor.
             stop_type (Stop): Whether to coast, brake, or hold after coming to
-                              a standstill (*Default*:
-                              :class:`Stop.COAST <.parameters.Stop>`).
+                              a standstill.
             duty_limit (:ref:`percentage`): Torque limit during this
                 command. This is useful to avoid applying the full motor
                 torque to a geared or lever mechanism.
@@ -310,10 +304,10 @@ class Speaker:
 
         Arguments:
             frequency (:ref:`frequency`):
-                Frequency of the beep (*Default*: 500). Frequencies below 100
+                Frequency of the beep. Frequencies below 100
                 are treated as 100.
             duration (:ref:`time`):
-                Duration of the beep (*Default*: 100). If the duration is less
+                Duration of the beep. If the duration is less
                 than 0, then the method returns immediately and the frequency
                 play continues to play indefinitely.
         """
@@ -388,7 +382,7 @@ class Speaker:
                 Which volume to set. ``'Beep'`` sets the volume for
                 :meth:`beep` and :meth:`play_notes`. ``'PCM'`` sets the volume
                 for :meth:`play_file` and :meth:`say`. ``'_all_'`` sets both
-                at the same time (*Default*: ``'_all_'``).
+                at the same time.
         """
         pass
 
@@ -401,7 +395,7 @@ class Light:
 
         Arguments:
             brightness (:ref:`brightness`):
-                Brightness of the light (*Default*: 100).
+                Brightness of the light.
         """
 
     def off(self):
@@ -452,7 +446,7 @@ class LightArray:
 
         Arguments:
             brightness (:ref:`brightness`):
-                Brightness of the lights (*Default*: 100).
+                Brightness of the lights.
         """
         pass
 
@@ -490,7 +484,7 @@ class LightGrid:
         Arguments:
             matrix (2D Array): Matrix of intensities (:ref:`brightness`).
             clear (bool): Whether to turn off all the lights before showing
-                the new image (*Default*: ``True``). If you choose ``False``,
+                the new image. If you choose ``False``,
                 the given matrix is added to one already shown.
         """
         pass
@@ -510,7 +504,7 @@ class LightGrid:
 
         Arguments:
             brightness (:ref:`brightness`):
-                Brightness of the lights (*Default*: 100).
+                Brightness of the lights.
         """
         pass
 
@@ -612,7 +606,7 @@ class Accelerometer:
 
         Arguments:
             axis (Axis): Axis along which the acceleration is
-                         measured. (*Default*: ``axis=Axis.ALL``)
+                         measured.
         Returns:
             :ref:`linacceleration`. Returns a :ref:`scalar` of the acceleration
             along the specified axis.
@@ -704,7 +698,7 @@ class IMU(Accelerometer):
 
         Arguments:
             axis (Axis): Axis along which the angular velocity is
-                         measured. (*Default*: ``axis=Axis.ALL``)
+                         measured.
         Returns:
             :ref:`speed`. Returns a :ref:`scalar` of the angular velocity
             along the specified axis.

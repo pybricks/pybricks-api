@@ -160,7 +160,7 @@ class SoundSensor:
         Arguments:
             audible_only (bool): Detect only audible sounds. This tries to
                 filter out frequencies that cannot be heard by the
-                human ear. (*Default*: True).
+                human ear.
 
         Returns:
             :ref:`percentage`: Sound intensity.
