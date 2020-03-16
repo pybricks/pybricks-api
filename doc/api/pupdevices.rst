@@ -17,6 +17,9 @@ Motors without Rotation Sensors
     .. automethod:: pybricks.builtins.DCMotor.stop
         :noindex:
 
+    .. automethod:: pybricks.builtins.DCMotor.brake
+        :noindex:
+
 Motors with Rotation Sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -32,9 +35,15 @@ Motors with Rotation Sensors
 
     .. automethod:: pybricks.pupdevices.Motor.reset_angle
 
-    .. rubric:: Action
+    .. rubric:: Stopping
 
     .. automethod:: pybricks.pupdevices.Motor.stop
+
+    .. automethod:: pybricks.pupdevices.Motor.brake
+
+    .. automethod:: pybricks.pupdevices.Motor.hold
+
+    .. rubric:: Action
 
     .. automethod:: pybricks.pupdevices.Motor.run
 

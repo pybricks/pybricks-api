@@ -30,12 +30,17 @@ class DCMotor:
         """
         pass
 
-    def stop(self, stop_type=Stop.COAST):
-        """Stop the motor.
+    def stop(self):
+        """Stop the motor and let it spin freely.
 
-        Arguments:
-            stop_type (Stop): Whether to coast or brake the motor.
-        """
+        The motor gradually stops due to friction."""
+        pass
+
+    def brake(self):
+        """Passively brake the motor.
+
+        The motor stops due to friction, plus the voltage that
+        is generated while the motor is still moving."""
         pass
 
 
@@ -194,12 +199,8 @@ class Motor(DCMotor):
         """
         pass
 
-    def stop(self, stop_type=Stop.COAST):
-        """Stop the motor.
-
-        Arguments:
-            stop_type (Stop): Whether to coast, brake, or hold.
-        """
+    def hold(self):
+        """Stop the motor and actively hold it at its current angle."""
         pass
 
     def run(self, speed):

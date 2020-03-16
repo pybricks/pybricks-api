@@ -3,7 +3,6 @@
 
 """Robotics module for the Pybricks API."""
 
-from .parameters import Stop
 from .builtins import Control
 
 
@@ -46,12 +45,8 @@ class DriveBase:
         """
         pass
 
-    def stop(self, stop_type=Stop.COAST):
-        """Stop the robot.
-
-        Arguments:
-            stop_type (Stop): Whether to coast, brake, or hold.
-        """
+    def stop(self):
+        """Stop the robot by coasting the motors."""
         pass
 
     def distance(self):

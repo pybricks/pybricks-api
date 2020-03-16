@@ -18,9 +18,15 @@ Motor
 
     .. automethod:: pybricks.ev3devices.Motor.reset_angle
 
-    .. rubric:: Action
+    .. rubric:: Stopping
 
     .. automethod:: pybricks.ev3devices.Motor.stop
+
+    .. automethod:: pybricks.ev3devices.Motor.brake
+
+    .. automethod:: pybricks.ev3devices.Motor.hold
+
+    .. rubric:: Action
 
     .. automethod:: pybricks.ev3devices.Motor.run
 
