@@ -49,6 +49,9 @@
     the default speed and acceleration for straight maneuvers and turns.
     Use the following attributes to adjust more advanced control setttings.
 
+    You can only change the settings while the robot is stopped. This is
+    either before you begin driving or after you call :meth:`.stop`.
+
     .. autoattribute:: pybricks.robotics.DriveBase.distance_control
         :annotation:
 

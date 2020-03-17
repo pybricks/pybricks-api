@@ -46,7 +46,7 @@ class DriveBase:
         pass
 
     def stop(self):
-        """Stop the robot by coasting the motors."""
+        """Stop the robot by letting the motors spin freely."""
         pass
 
     def distance(self):
@@ -86,6 +86,9 @@ class DriveBase:
         by :meth:`.straight` and :meth:`.turn`.
 
         If you give no arguments, this returns the current values as a tuple.
+
+        You can only change the settings while the robot is stopped. This is
+        either before you begin driving or after you call :meth:`.stop`.
 
         Arguments:
             straight_speed (:ref:`linspeed`): Speed of the robot during
