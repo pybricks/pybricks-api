@@ -132,12 +132,6 @@ add_module_names = False  # Hide module name
 if ON_RTD:
     html_theme = 'default'
     html_context = {
-        'css_files': [
-            'https://media.readthedocs.org/css/sphinx_rtd_theme.css',
-            'https://media.readthedocs.org/css/readthedocs-doc-embed.css',
-            '_static/contentui.css',
-            '_static/css/theme_overrides.css',
-        ],
         'disclaimer': _DISCLAIMER,
     }
 else:
@@ -145,10 +139,6 @@ else:
     html_theme = 'sphinx_rtd_theme'
     html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
     html_context = {
-        'css_files': [
-            '_static/contentui.css',
-            '_static/css/theme_overrides.css',
-        ],
         'disclaimer': _DISCLAIMER,
     }
 
