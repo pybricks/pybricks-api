@@ -11,8 +11,7 @@
     "spellright.ignoreFiles": [
          "**/.gitignore",
          "**/.vscode",
-         "**/conf.py",
-         "**/_version.py",
+         "**/conf.py"
     ],
     "spellright.ignoreRegExps": [
         "/:math:`[^]*?`/gm",

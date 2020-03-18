@@ -23,6 +23,7 @@ flake8 = "*"
 sphinx = "==1.7.9"
 sphinx-rtd-theme = "==0.4.3"
 sphinxcontrib-contentui = "==0.2.2"
+toml = "^0.10.0"
 
 [build-system]
 requires = ["poetry>=0.12"]

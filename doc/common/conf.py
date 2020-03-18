@@ -21,14 +21,17 @@
 
 import os
 import sys
+
 from docutils import nodes
 from docutils.parsers.rst.directives import flag
 from docutils.parsers.rst import Directive
 from sphinx.application import Sphinx
 from sphinx.domains.python import PyClassmember, PythonDomain
-sys.path.insert(0, os.path.abspath('../..'))
+import toml
 
-from pybricks import _version  # noqa E402
+TOP_DIR = os.path.abspath(os.path.join('..', '..'))
+sys.path.insert(0, TOP_DIR)
+
 from pybricks.hubs import EV3Brick  # noqa E402
 from pybricks.media.ev3dev import Image  # noqa E402
 from pybricks.builtins import Speaker  # noqa E402
@@ -36,6 +39,8 @@ from pybricks.builtins import Speaker  # noqa E402
 # ON_RTD is whether we are on readthedocs.org
 # this line of code grabbed from docs.readthedocs.org
 ON_RTD = os.environ.get('READTHEDOCS', None) == 'True'
+
+_pyproject = toml.load(os.path.join(TOP_DIR, 'pyproject.toml'))
 
 # -- General configuration ------------------------------------------------
 
@@ -71,7 +76,7 @@ master_doc = 'index'
 # built documents.
 #
 # The short X.Y version.
-version = _version.get_versions()['version']
+version = _pyproject["tool"]["poetry"]["version"]
 # The full version, including alpha/beta/rc tags.
 release = version
 

@@ -5,5 +5,3 @@
 *.gif   binary
 *.jpg   binary
 *.png   binary
-
-pybricks/_version.py export-subst
