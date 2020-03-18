@@ -8,7 +8,7 @@ install:
 - poetry install
 
 script:
-- poetry run python setup.py build
+- poetry build
 - poetry run make -C doc html SOURCEDIR=api
 - poetry run flake8
 - poetry run doc8
