@@ -3,7 +3,7 @@
 
 """Images and Sounds for Pybricks on ev3dev."""
 
-from ..parameters import Color
+from ..parameters import Color as _Color
 
 
 class Image:
@@ -57,7 +57,7 @@ class Image:
         """
         pass
 
-    def draw_pixel(self, x, y, color=Color.BLACK):
+    def draw_pixel(self, x, y, color=_Color.BLACK):
         """Draws a single pixel on |this image|.
 
         Arguments:
@@ -67,7 +67,7 @@ class Image:
         """
         pass
 
-    def draw_line(self, x1, y1, x2, y2, width=1, color=Color.BLACK):
+    def draw_line(self, x1, y1, x2, y2, width=1, color=_Color.BLACK):
         """Draws a line on |this image|.
 
         Arguments:
@@ -80,7 +80,7 @@ class Image:
         """
         pass
 
-    def draw_box(self, x1, y1, x2, y2, r=0, fill=False, color=Color.BLACK):
+    def draw_box(self, x1, y1, x2, y2, r=0, fill=False, color=_Color.BLACK):
         """Draws a box on |this image|.
 
         Arguments:
@@ -95,7 +95,7 @@ class Image:
         """
         pass
 
-    def draw_circle(self, x, y, r=0, fill=False, color=Color.BLACK):
+    def draw_circle(self, x, y, r=0, fill=False, color=_Color.BLACK):
         """Draws a circle on |this image|.
 
         Arguments:
@@ -134,7 +134,7 @@ class Image:
                 the ``source`` image is loaded from file.
         """
 
-    def draw_text(self, x, y, text, text_color=Color.BLACK, background_color=None):
+    def draw_text(self, x, y, text, text_color=_Color.BLACK, background_color=None):
         """Draws text on |this image|.
 
         The most recent font set using :meth:`set_font` will be used or

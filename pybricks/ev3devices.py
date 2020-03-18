@@ -3,8 +3,8 @@
 
 """LEGO® MINDSTORMS® EV3 motors and sensors."""
 
-from .parameters import Direction
-from .builtins import Motor  # noqa E402
+from .parameters import Direction as _Direction
+from ._common import Motor  # noqa E402
 
 
 class TouchSensor:
@@ -153,7 +153,7 @@ class InfraredSensor:
 class GyroSensor:
     """LEGO® MINDSTORMS® EV3 Gyro Sensor."""
 
-    def __init__(self, port, positive_direction=Direction.CLOCKWISE):
+    def __init__(self, port, positive_direction=_Direction.CLOCKWISE):
         """
 
         Arguments:

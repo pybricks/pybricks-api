@@ -3,10 +3,11 @@
 
 """LEGO® Powered Up motor, sensors, and lights."""
 
-from .builtins import KeyPad, Accelerometer, ColorLight, Motor
+from ._common import (KeyPad as _KeyPad, Accelerometer as _Accelerometer,
+                      ColorLight as _ColorLight, Motor as _Motor)
 
 
-class Motor(Motor):
+class Motor(_Motor):
     """Generic class to control motors with built-in rotation sensors."""
 
     def reset_angle(self, angle=None):
@@ -24,8 +25,8 @@ class Motor(Motor):
 class RemoteControl:
     """LEGO® Powered Up Bluetooth Remote Control/Handset."""
 
-    light = ColorLight()
-    buttons = KeyPad()
+    light = _ColorLight()
+    buttons = _KeyPad()
 
     def __init__(self, device=None, timeout=10000):
         """Connect the handset to the hub.
@@ -41,7 +42,7 @@ class RemoteControl:
         pass
 
 
-class TiltSensor(Accelerometer):
+class TiltSensor(_Accelerometer):
     """LEGO® Powered Up Tilt Sensor."""
 
     def __init__(self, port):
@@ -56,7 +57,7 @@ class TiltSensor(Accelerometer):
 class ColorDistanceSensor:
     """LEGO® Powered Up Color and Distance Sensor."""
 
-    light = ColorLight()
+    light = _ColorLight()
 
     def __init__(self, port):
         """ColorDistanceSensor(port)

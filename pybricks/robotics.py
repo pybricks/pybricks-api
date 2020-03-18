@@ -3,19 +3,19 @@
 
 """Robotics module for the Pybricks API."""
 
-from .builtins import Control
+from ._common import Control as _Control
 
 
 class DriveBase:
     """A robotic vehicle with two powered wheels and an optional support
     wheel or caster."""
 
-    distance_control = Control()
+    distance_control = _Control()
     """The traveled distance and drive speed are controlled by a PID
     controller. You can use this attribute to change its settings.
     See :ref:`control` for an overview of available methods."""
 
-    heading_control = Control()
+    heading_control = _Control()
     """The robot turn angle and turn rate are controlled by a PID
     controller. You can use this attribute to change its settings.
     See :ref:`control` for an overview of available methods."""

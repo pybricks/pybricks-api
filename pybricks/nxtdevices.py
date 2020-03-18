@@ -4,8 +4,8 @@
 """Use LEGO® MINDSTORMS® NXT motors and sensors with the EV3 brick."""
 
 
-from pybricks.iodevices import AnalogSensor
-from pybricks.builtins import ColorLight
+from .iodevices import AnalogSensor as _AnalogSensor
+from ._common import ColorLight as _ColorLight
 
 
 class TouchSensor:
@@ -65,7 +65,7 @@ class LightSensor:
 class ColorSensor:
     """LEGO® MINDSTORMS® NXT Color Sensor."""
 
-    light = ColorLight()
+    light = _ColorLight()
 
     def __init__(self, port):
         """
@@ -242,7 +242,7 @@ class EnergyMeter:
         pass
 
 
-class VernierAdapter(AnalogSensor):
+class VernierAdapter(_AnalogSensor):
     """LEGO® MINDSTORMS® Education NXT/EV3 Adapter for Vernier Sensors."""
 
     def __init__(self, port, conversion=None):
