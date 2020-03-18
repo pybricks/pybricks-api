@@ -34,7 +34,7 @@ sys.path.insert(0, TOP_DIR)
 
 from pybricks.hubs import EV3Brick  # noqa E402
 from pybricks.media.ev3dev import Image  # noqa E402
-from pybricks.builtins import Speaker  # noqa E402
+from pybricks._common import Speaker  # noqa E402
 
 # ON_RTD is whether we are on readthedocs.org
 # this line of code grabbed from docs.readthedocs.org

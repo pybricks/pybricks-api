@@ -67,14 +67,14 @@ DC Motor
 
 This class can be used to control classic LEGO motors using converter cables.
 
-.. autoclass:: pybricks.builtins.DCMotor
+.. autoclass:: pybricks._common.DCMotor
     :noindex:
     :no-members:
 
-    .. automethod:: pybricks.builtins.DCMotor.dc
+    .. automethod:: pybricks._common.DCMotor.dc
         :noindex:
 
-    .. automethod:: pybricks.builtins.DCMotor.stop
+    .. automethod:: pybricks._common.DCMotor.stop
         :noindex:
 
 Ev3dev sensors

@@ -117,21 +117,21 @@ you can set the settings at the beginning of your program. Alternatively, first
 call ``stop()`` to make your ``Motor`` or ``DriveBase`` stop, and then change
 the settings.
 
-.. autoclass:: pybricks.builtins.Control
+.. autoclass:: pybricks._common.Control
     :no-members:
 
     .. rubric:: Status
 
-    .. automethod:: pybricks.builtins.Control.done
+    .. automethod:: pybricks._common.Control.done
 
-    .. automethod:: pybricks.builtins.Control.stalled
+    .. automethod:: pybricks._common.Control.stalled
 
     .. rubric:: Settings
 
-    .. automethod:: pybricks.builtins.Control.limits
+    .. automethod:: pybricks._common.Control.limits
 
-    .. automethod:: pybricks.builtins.Control.pid
+    .. automethod:: pybricks._common.Control.pid
 
-    .. automethod:: pybricks.builtins.Control.target_tolerances
+    .. automethod:: pybricks._common.Control.target_tolerances
 
-    .. automethod:: pybricks.builtins.Control.stall_tolerances
+    .. automethod:: pybricks._common.Control.stall_tolerances

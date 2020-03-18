@@ -3,10 +3,10 @@
 
 """Constant parameters/arguments for the Pybricks API."""
 
-from enum import Enum
+from enum import Enum as _Enum
 
 
-class _PybricksEnumMeta(type(Enum)):
+class _PybricksEnumMeta(type(_Enum)):
     def __dir__(cls):
         yield '__class__'
         yield '__name__'
@@ -14,7 +14,7 @@ class _PybricksEnumMeta(type(Enum)):
             yield member.name
 
 
-class _PybricksEnum(Enum, metaclass=_PybricksEnumMeta):
+class _PybricksEnum(_Enum, metaclass=_PybricksEnumMeta):
     def __dir__(self):
         yield '__class__'
         for member in type(self):
