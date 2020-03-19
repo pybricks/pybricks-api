@@ -19,7 +19,7 @@ class TouchSensor:
         pass
 
     def pressed(self):
-        """Check if the sensor is pressed.
+        """Checks if the sensor is pressed.
 
         Returns:
             bool: ``True`` if the sensor is pressed, ``False`` if it is
@@ -42,7 +42,7 @@ class ColorSensor:
         pass
 
     def color(self):
-        """Measure the color of a surface.
+        """Measures the color of a surface.
 
         :returns:
             ``Color.BLACK``, ``Color.BLUE``, ``Color.GREEN``, ``Color.YELLOW``,
@@ -54,7 +54,7 @@ class ColorSensor:
         pass
 
     def ambient(self):
-        """Measure the ambient light intensity.
+        """Measures the ambient light intensity.
 
         Returns:
             :ref:`percentage`: Ambient light intensity, ranging from 0 (dark)
@@ -63,7 +63,7 @@ class ColorSensor:
         pass
 
     def reflection(self):
-        """Measure the reflection of a surface using a red light.
+        """Measures the reflection of a surface using a red light.
 
         Returns:
             :ref:`percentage`: Reflection, ranging from 0 (no reflection) to
@@ -73,7 +73,7 @@ class ColorSensor:
         pass
 
     def rgb(self):
-        """Measure the reflection of a surface using a red, green, and then a
+        """Measures the reflection of a surface using a red, green, and then a
         blue light.
 
         :returns: Tuple of reflections for red, green, and blue light, each
@@ -96,7 +96,7 @@ class InfraredSensor:
         pass
 
     def distance(self):
-        """Measure the relative distance between the sensor and an object using
+        """Measures the relative distance between the sensor and an object using
         infrared light.
 
         Returns:
@@ -107,7 +107,7 @@ class InfraredSensor:
         pass
 
     def beacon(self, channel):
-        """Measure the relative distance and angle between the remote and the
+        """Measures the relative distance and angle between the remote and the
         infrared sensor.
 
         Arguments:
@@ -121,7 +121,7 @@ class InfraredSensor:
         pass
 
     def buttons(self, channel):
-        """Check which buttons on the infrared remote are pressed.
+        """Checks which buttons on the infrared remote are pressed.
 
         This method can detect up to two buttons at once. If you press
         more buttons, you may not get useful data.
@@ -136,7 +136,7 @@ class InfraredSensor:
         pass
 
     def keypad(self):
-        """Check which buttons on the infrared remote are pressed.
+        """Checks which buttons on the infrared remote are pressed.
 
         This method can independently detect all 4 up/down buttons, but
         it cannot detect the beacon button.
@@ -166,7 +166,7 @@ class GyroSensor:
         pass
 
     def speed(self):
-        """Get the speed (angular velocity) of the sensor.
+        """Gets the speed (angular velocity) of the sensor.
 
         Returns:
             :ref:`speed`: Sensor angular velocity.
@@ -175,7 +175,7 @@ class GyroSensor:
         pass
 
     def angle(self):
-        """Get the accumulated angle of the sensor.
+        """Gets the accumulated angle of the sensor.
 
         Returns:
             :ref:`angle`: Rotation angle.
@@ -184,7 +184,7 @@ class GyroSensor:
         pass
 
     def reset_angle(self, angle):
-        """Set the rotation angle of the sensor to a desired value.
+        """Sets the rotation angle of the sensor to a desired value.
 
         If you don't specify an angle, the absolute value will be used if
         available.
@@ -195,7 +195,7 @@ class GyroSensor:
         pass
 
     def _calibrate(self):
-        """Calibrate the sensor.
+        """Calibrates the sensor.
 
         This process sets the speed and angle to zero and ensures that the
         angle value does not drift.
@@ -220,7 +220,7 @@ class UltrasonicSensor:
         pass
 
     def distance(self, silent=False):
-        """Measure the distance between the sensor and an object using
+        """Measures the distance between the sensor and an object using
         ultrasonic sound waves.
 
         Arguments:
@@ -240,7 +240,7 @@ class UltrasonicSensor:
         pass
 
     def presence(self):
-        """Check for the presence of other ultrasonic sensors by detecting
+        """Checks for the presence of other ultrasonic sensors by detecting
         ultrasonic sounds.
 
         If the other ultrasonic sensor is operating in silent mode, you can

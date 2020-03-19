@@ -53,7 +53,7 @@ class ColorDistanceSensor:
         pass
 
     def color(self):
-        """Measure the color of a surface.
+        """Measures the color of a surface.
 
         :returns:
             ``Color.BLACK``, ``Color.BLUE``, ``Color.GREEN``, ``Color.YELLOW``,
@@ -64,7 +64,7 @@ class ColorDistanceSensor:
         pass
 
     def ambient(self):
-        """Measure the ambient light intensity.
+        """Measures the ambient light intensity.
 
         Returns:
             :ref:`percentage`: Ambient light intensity, ranging from 0 (dark)
@@ -73,7 +73,7 @@ class ColorDistanceSensor:
         pass
 
     def reflection(self):
-        """Measure the reflection of a surface using a red light.
+        """Measures the reflection of a surface using a red light.
 
         Returns:
             :ref:`percentage`: Reflection, ranging from 0.0 (no reflection) to
@@ -82,7 +82,7 @@ class ColorDistanceSensor:
         pass
 
     def rgb(self):
-        """Measure the reflection of a surface using a red, green, and then a
+        """Measures the reflection of a surface using a red, green, and then a
         blue light.
 
         :returns: Tuple of reflections for red, green, and blue light, each
@@ -92,7 +92,7 @@ class ColorDistanceSensor:
         pass
 
     def distance(self):
-        """Measure the relative distance between the sensor and an object using
+        """Measures the relative distance between the sensor and an object using
         infrared light.
 
         Returns:

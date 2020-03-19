@@ -23,7 +23,7 @@ class DCMotor:
         pass
 
     def dc(self, duty):
-        """Rotate the motor at a given duty cycle (also known as "power").
+        """Rotates the motor at a given duty cycle (also known as "power").
 
         Arguments:
             duty (:ref:`percentage`): The duty cycle (-100.0 to 100).
@@ -31,13 +31,13 @@ class DCMotor:
         pass
 
     def stop(self):
-        """Stop the motor and let it spin freely.
+        """Stops the motor and let it spin freely.
 
         The motor gradually stops due to friction."""
         pass
 
     def brake(self):
-        """Passively brake the motor.
+        """Passively brakes the motor.
 
         The motor stops due to friction, plus the voltage that
         is generated while the motor is still moving."""
@@ -55,7 +55,7 @@ class Control:
     """
 
     def limits(self, speed, acceleration, actuation):
-        """Configure the maximum speed, acceleration, and actuation.
+        """Configures the maximum speed, acceleration, and actuation.
 
         If no arguments are given, this will return the current values.
 
@@ -70,7 +70,7 @@ class Control:
         pass
 
     def pid(self, kp, ki, kd, integral_range, integral_rate, feed_forward):
-        """Get or set the PID values for position and speed control.
+        """Gets or sets the PID values for position and speed control.
 
         If no arguments are given, this will return the current values.
 
@@ -93,7 +93,7 @@ class Control:
         pass
 
     def target_tolerances(self, speed, position):
-        """Get or set the tolerances that say when a maneuver is done.
+        """Gets or sets the tolerances that say when a maneuver is done.
 
         If no arguments are given, this will return the current values.
 
@@ -107,7 +107,7 @@ class Control:
         pass
 
     def stall_tolerances(self, speed, time):
-        """Get or set stalling tolerances.
+        """Gets or sets stalling tolerances.
 
         If no arguments are given, this will return the current values.
 
@@ -121,7 +121,7 @@ class Control:
         pass
 
     def stalled(self):
-        """Check whether the controller is currently stalled.
+        """Checks if the controller is currently stalled.
 
         A controller is stalled when it cannot reach the target speed or
         position, even with the maximum actuation signal.
@@ -132,7 +132,7 @@ class Control:
         pass
 
     def done(self):
-        """Check whether an ongoing command or maneuver is done.
+        """Checks if an ongoing command or maneuver is done.
 
         Returns:
             bool: ``True`` if the command is done, ``False`` if not.
@@ -174,7 +174,7 @@ class Motor(DCMotor):
         pass
 
     def angle(self):
-        """Get the rotation angle of the motor.
+        """Gets the rotation angle of the motor.
 
         Returns:
             :ref:`angle`: Motor angle.
@@ -183,7 +183,7 @@ class Motor(DCMotor):
         pass
 
     def speed(self):
-        """Get the speed of the motor.
+        """Gets the speed of the motor.
 
         Returns:
             :ref:`speed`: Motor speed.
@@ -192,7 +192,7 @@ class Motor(DCMotor):
         pass
 
     def reset_angle(self, angle):
-        """Reset the accumulated rotation angle of the motor.
+        """Resets the accumulated rotation angle of the motor.
 
         Arguments:
             angle (:ref:`angle`): Value to which the angle should be reset.
@@ -200,11 +200,11 @@ class Motor(DCMotor):
         pass
 
     def hold(self):
-        """Stop the motor and actively hold it at its current angle."""
+        """Stops the motor and actively holds it at its current angle."""
         pass
 
     def run(self, speed):
-        """Keep the motor running at a constant speed.
+        """Keeps the motor running at a constant speed.
 
         The motor keeps running until you give a new command.
 
@@ -214,7 +214,7 @@ class Motor(DCMotor):
         pass
 
     def run_time(self, speed, time, then=Stop.HOLD, wait=True):
-        """Run the motor at a constant speed for a given amount of time.
+        """Runs the motor at a constant speed for a given amount of time.
 
         Arguments:
             speed (:ref:`speed`): Speed of the motor.
@@ -226,7 +226,7 @@ class Motor(DCMotor):
         pass
 
     def run_angle(self, speed, rotation_angle, then=Stop.HOLD, wait=True):
-        """Run the motor at a constant speed by a given angle.
+        """Runs the motor at a constant speed by a given angle.
 
         Arguments:
             speed (:ref:`speed`): Speed of the motor.
@@ -239,7 +239,7 @@ class Motor(DCMotor):
         pass
 
     def run_target(self, speed, target_angle, then=Stop.HOLD, wait=True):
-        """ Run the motor at a constant speed towards a
+        """Runs the motor at a constant speed towards a
         given target angle.
 
         The direction of rotation is automatically selected based on the target
@@ -257,7 +257,7 @@ class Motor(DCMotor):
         pass
 
     def run_until_stalled(self, speed, then=Stop.COAST, duty_limit=None):
-        """Run the motor at a constant speed until it
+        """Runs the motor at a constant speed until it
         :ref:`stalls <stalled>`
 
         Arguments:
@@ -270,7 +270,7 @@ class Motor(DCMotor):
         pass
 
     def track_target(self, target_angle):
-        """Track a target angle. This is similar to :meth:`.run_target`, but
+        """Tracks a target angle. This is similar to :meth:`.run_target`, but
         the usual smooth acceleration is skipped: it will move to the target
         angle as fast as possible. This method is useful if you want to
         continuously change the target angle.
@@ -283,7 +283,7 @@ class Motor(DCMotor):
         pass
 
     def dc(self, duty):
-        """Rotate the motor at a given duty cycle (also known as "power").
+        """Rotates the motor at a given duty cycle (also known as "power").
 
         This method lets you use a motor just like a simple DC motor.
 
@@ -293,7 +293,7 @@ class Motor(DCMotor):
 
 
 class Speaker:
-    """Play beeps and sounds using a speaker."""
+    """Plays beeps and sounds using a speaker."""
 
     def beep(self, frequency=500, duration=100):
         """Play a beep/tone.
@@ -310,7 +310,7 @@ class Speaker:
         pass
 
     def play_notes(self, notes, tempo=120):
-        """Play a sequence of musical notes.
+        """Plays a sequence of musical notes.
 
         For example, you can play: ``['C4/4', 'C4/4', 'G4/4', 'G4/4']``.
 
@@ -323,7 +323,7 @@ class Speaker:
         pass
 
     def play_file(self, file_name):
-        """Play a sound file.
+        """Plays a sound file.
 
         Arguments:
             file_name (str):
@@ -333,7 +333,7 @@ class Speaker:
         pass
 
     def say(self, text):
-        """Say a given text string.
+        """Says a given text string.
 
         You can configure the language and voice of the text using
         :meth:`set_speech_options`.
@@ -345,7 +345,7 @@ class Speaker:
         pass
 
     def set_speech_options(self, language=None, voice=None, speed=None, pitch=None):
-        """Configure speech settings used by the :meth:`say` method.
+        """Configures speech settings used by the :meth:`say` method.
 
         Any option that is set to ``None`` will not be changed. If an option
         is set to an invalid value :meth:`say` will use the default value
@@ -369,7 +369,7 @@ class Speaker:
         pass
 
     def set_volume(self, volume, which='_all_'):
-        """Set the speaker volume.
+        """Sets the speaker volume.
 
         Arguments:
             volume (:ref:`percentage`):
@@ -395,7 +395,7 @@ class Light:
         """
 
     def off(self):
-        """Turn off the light."""
+        """Turns off the light."""
         pass
 
 
@@ -403,7 +403,7 @@ class ColorLight:
     """Control a multi-color light."""
 
     def on(self, color):
-        """Turn on the light at the specified color.
+        """Turns on the light at the specified color.
 
         Arguments:
             color (Color): Color of the light. The light turns off if you
@@ -412,11 +412,11 @@ class ColorLight:
         pass
 
     def off(self):
-        """Turn off the light."""
+        """Turns off the light."""
         pass
 
     def rgb(self, red, green, blue):
-        """Set the brightness of the red, green, and blue light.
+        """Sets the brightness of the red, green, and blue light.
 
         Arguments:
             red (:ref:`brightness`): Brightness of the red light.
@@ -430,7 +430,7 @@ class LightArray:
     """Control an array of single-color lights."""
 
     def __init__(self, lights):
-        """Initialize the light array.
+        """Initializes the light array.
 
         Arguments:
             lights (int): Number of lights
@@ -438,7 +438,7 @@ class LightArray:
         pass
 
     def on(self, brightness=100):
-        """Turn on all the lights at the specified brightness.
+        """Turns on all the lights at the specified brightness.
 
         Arguments:
             brightness (:ref:`brightness`):
@@ -447,13 +447,13 @@ class LightArray:
         pass
 
     def off(self):
-        """Turn off all the lights."""
+        """Turns off all the lights."""
         pass
 
     def array(self, *brightnesses):
         """array(first_light, ..., last_light)
 
-        Set the brightness of each light individually.
+        Sets the brightness of each light individually.
 
         Arguments:
             brightness (:ref:`brightness`, ..., :ref:`brightness`):
@@ -466,7 +466,7 @@ class LightGrid:
     """Control a rectangular grid of single-color lights."""
 
     def __init__(self, rows, columns):
-        """Initialize the light grid.
+        """Initializes the light grid.
 
         Arguments:
             rows (int): Number of rows in the grid
@@ -475,7 +475,7 @@ class LightGrid:
         pass
 
     def image(self, matrix, clear=True):
-        """Show an image made up of pixels of a given brightness.
+        """Shows an image made up of pixels of a given brightness.
 
         Arguments:
             matrix (2D Array): Matrix of intensities (:ref:`brightness`).
@@ -486,7 +486,7 @@ class LightGrid:
         pass
 
     def pixel(self, row, column, brightness):
-        """Turn on a pixel at the specified brightness.
+        """Turns on a pixel at the specified brightness.
 
         Arguments:
             row (int): Vertical grid index, starting at 0 from the top.
@@ -496,7 +496,7 @@ class LightGrid:
         pass
 
     def on(self, brightness=100):
-        """Turn on all the pixels at the specified brightness.
+        """Turns on all the pixels at the specified brightness.
 
         Arguments:
             brightness (:ref:`brightness`):
@@ -505,11 +505,11 @@ class LightGrid:
         pass
 
     def off(self):
-        """Turn off all the pixels."""
+        """Turns off all the pixels."""
         pass
 
     def number(self, number):
-        """Display a number on the light grid.
+        """Displays a number on the light grid.
 
         Arguments:
             number (int): The number to be displayed.
@@ -517,7 +517,7 @@ class LightGrid:
         pass
 
     def char(self, character):
-        """Display a character or symbol on the light grid. This may
+        """Displays a character or symbol on the light grid. This may
         be any letter (``a``--``z``), capital letter (``A``--``Z``) or one of
         the following symbols: ``!"#$%&'()*+,-./:;<=>?@[\\]^_`{|}``.
 
@@ -527,7 +527,7 @@ class LightGrid:
         pass
 
     def text(self, text, pause=500):
-        """Display a text string, one character at a time, with a pause
+        """Displays a text string, one character at a time, with a pause
         between each character. After the last character is shown, the light
         grid turns off.
 
@@ -543,7 +543,7 @@ class KeyPad:
     """Get status of buttons on a keypad layout."""
 
     def pressed(self):
-        """Check which buttons are currently pressed.
+        """Checks which buttons are currently pressed.
 
         :returns: List of pressed buttons.
         :rtype: List of :class:`Button <.parameters.Button>`
@@ -556,7 +556,7 @@ class Battery:
     """Get the status of a battery."""
 
     def voltage(self):
-        """Get the voltage of the battery.
+        """Gets the voltage of the battery.
 
         Returns:
             :ref:`voltage`: Battery voltage.
@@ -564,7 +564,7 @@ class Battery:
         pass
 
     def current(self):
-        """Get the current supplied by the battery.
+        """Gets the current supplied by the battery.
 
         Returns:
             :ref:`current`: Battery current.
@@ -577,7 +577,7 @@ class Accelerometer:
     """Get measurements from an accelerometer."""
 
     def neutral(self, top, front):
-        """Configure the neutral orientation of the device or hub. You do this
+        """Configures the neutral orientation of the device or hub. You do this
         by specifying how it is mounted on your design, in terms of the
         :ref:`robot reference frame <robotframe>`.
 
@@ -597,7 +597,7 @@ class Accelerometer:
     def acceleration(self, axis=Axis.ALL):
         """acceleration(axis=Axis.ALL)
 
-        Measure the acceleration of the device along a given axis in the
+        Gets the acceleration of the device along a given axis in the
         :ref:`robot reference frame <robotframe>`.
 
         Arguments:
@@ -613,7 +613,7 @@ class Accelerometer:
         pass
 
     def tilt(self):
-        """Get the pitch and roll angles relative to the neutral, horizontal
+        """Gets the pitch and roll angles relative to the neutral, horizontal
         orientation.
 
         The order of rotation is pitch-then-roll. This is equivalent to a
@@ -627,7 +627,7 @@ class Accelerometer:
         pass
 
     def tapped(self):
-        """Check if the device or hub was tapped.
+        """Checks if the device or hub was tapped.
 
         Returns:
             bool:
@@ -639,7 +639,7 @@ class Accelerometer:
         pass
 
     def shaken(self):
-        """Check if the device or hub was shaken.
+        """Checks if the device or hub was shaken.
 
         Returns:
             bool:
@@ -651,7 +651,7 @@ class Accelerometer:
         pass
 
     def up(self):
-        """Check which side of the device or hub currently faces upward.
+        """Checks which side of the device or hub currently faces upward.
 
         :returns:
             ``Side.TOP``, ``Side.BOTTOM``, ``Side.LEFT``, ``Side.RIGHT``,
@@ -665,7 +665,7 @@ class Accelerometer:
 class IMU(Accelerometer):
 
     def heading(self):
-        """Get the heading angle relative to the starting orientation. It is a
+        """Gets the heading angle relative to the starting orientation. It is a
         a positive rotation around the :ref:`z-axis in the robot
         frame <robotframe>`, prior to applying any tilt rotation.
 
@@ -679,7 +679,7 @@ class IMU(Accelerometer):
         pass
 
     def reset_heading(self, angle):
-        """Reset the accumulated heading angle of the robot.
+        """Resets the accumulated heading angle of the robot.
 
         Arguments:
             angle (:ref:`angle`): Value to which the heading should be reset.
@@ -689,7 +689,7 @@ class IMU(Accelerometer):
     def gyro(self, axis=Axis.ALL):
         """gyro(axis=Axis.ALL)
 
-        Measure the angular velocity of the device along a given axis in the
+        Measures the angular velocity of the device along a given axis in the
         :ref:`robot reference frame <robotframe>`.
 
         Arguments:

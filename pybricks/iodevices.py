@@ -16,7 +16,7 @@ class LUMPDevice:
         pass
 
     def read(self, mode):
-        """Read values from a given mode.
+        """Reads values from a given mode.
 
         Arguments:
             mode (``int``): Device mode.
@@ -27,7 +27,7 @@ class LUMPDevice:
         pass
 
     def write(self, mode, values):
-        """Write values to the sensor. Only selected sensors and modes support
+        """Writes values to the sensor. Only selected sensors and modes support
         this.
 
         Arguments:
@@ -55,7 +55,7 @@ class Ev3devSensor:
         pass
 
     def read(self, mode):
-        """Read values at a given mode.
+        """Reads values at a given mode.
 
         Arguments:
             mode (``str``): `Mode name`_.
@@ -78,7 +78,7 @@ class AnalogSensor:
         pass
 
     def voltage(self):
-        """Measured analog voltage.
+        """Measures analog voltage.
 
         Returns:
             :ref:`voltage`: Analog voltage.
@@ -86,7 +86,7 @@ class AnalogSensor:
         pass
 
     def resistance(self):
-        """Measured resistance.
+        """Measures resistance.
 
         This value is only meaningful if the analog device is a passive load
         such as a resistor or thermistor.
@@ -97,7 +97,7 @@ class AnalogSensor:
         pass
 
     def active(self):
-        """Set sensor to active mode. This sets pin 5 of the sensor
+        """Sets sensor to active mode. This sets pin 5 of the sensor
         port to `high`.
 
         This is used in some analog
@@ -108,7 +108,7 @@ class AnalogSensor:
         pass
 
     def passive(self):
-        """Set sensor to passive mode. This sets pin 5 of the sensor
+        """Sets sensor to passive mode. This sets pin 5 of the sensor
         port to `low`.
 
         This is used in some analog
@@ -133,7 +133,7 @@ class I2CDevice:
         pass
 
     def read(self, reg, length=1):
-        """Read bytes, starting at a given register.
+        """Reads bytes, starting at a given register.
 
         Arguments:
             reg (``int``): Register at which to begin
@@ -146,7 +146,7 @@ class I2CDevice:
         pass
 
     def write(self, reg, data=None):
-        """Write bytes, starting at a given register.
+        """Writes bytes, starting at a given register.
 
         Arguments:
             reg (``int``): Register at which to begin
@@ -172,7 +172,7 @@ class UARTDevice:
         pass
 
     def read(self, length=1):
-        """Read a given number of bytes from the buffer.
+        """Reads a given number of bytes from the buffer.
 
         Your program will wait until the requested number of bytes are
         received. If this takes longer than ``timeout``, the ``ETIMEDOUT``
@@ -187,7 +187,7 @@ class UARTDevice:
         pass
 
     def read_all(self):
-        """Read all bytes from the buffer.
+        """Reads all bytes from the buffer.
 
         Returns:
             ``bytes``: Bytes returned from the device.
@@ -195,7 +195,7 @@ class UARTDevice:
         pass
 
     def write(self, data):
-        """Write bytes.
+        """Writes bytes.
 
         Arguments:
             data (``bytes``): Bytes to be written.
@@ -203,7 +203,7 @@ class UARTDevice:
         pass
 
     def waiting(self):
-        """How many bytes are still waiting to be read.
+        """Gets how many bytes are still waiting to be read.
 
         Returns:
             ``int``: Number of bytes in the buffer.
@@ -211,5 +211,5 @@ class UARTDevice:
         pass
 
     def clear(self):
-        """Empty the buffer."""
+        """Empties the buffer."""
         pass
