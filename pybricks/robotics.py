@@ -34,7 +34,7 @@ class DriveBase:
         """
 
     def drive(self, drive_speed, turn_rate):
-        """Start driving at the specified speed and turn rate. Both values are
+        """Starts driving at the specified speed and turn rate. Both values are
         measured at the center point between the wheels of the robot.
 
         Arguments:
@@ -46,11 +46,11 @@ class DriveBase:
         pass
 
     def stop(self):
-        """Stop the robot by letting the motors spin freely."""
+        """Stops the robot by letting the motors spin freely."""
         pass
 
     def distance(self):
-        """Get the estimated driven distance.
+        """Gets the estimated driven distance.
 
         Returns:
             :ref:`distance`: Driven distance since last reset.
@@ -58,7 +58,7 @@ class DriveBase:
         pass
 
     def angle(self):
-        """Get the estimated rotation angle of the drive base.
+        """Gets the estimated rotation angle of the drive base.
 
         Returns:
             :ref:`angle`: Accumulated angle since last reset.
@@ -66,7 +66,7 @@ class DriveBase:
         pass
 
     def state(self):
-        """Get the state of the robot.
+        """Gets the state of the robot.
 
         This returns the current :meth:`.distance`, the drive speed, the
         :meth:`.angle`, and the turn rate.
@@ -77,12 +77,12 @@ class DriveBase:
         pass
 
     def reset(self):
-        """Reset the estimated driven distance and angle to 0."""
+        """Resets the estimated driven distance and angle to 0."""
         pass
 
     def settings(self, straight_speed, straight_acceleration, turn_rate,
                  turn_acceleration):
-        """Configure the speed and acceleration used
+        """Configures the speed and acceleration used
         by :meth:`.straight` and :meth:`.turn`.
 
         If you give no arguments, this returns the current values as a tuple.
@@ -105,7 +105,7 @@ class DriveBase:
         pass
 
     def straight(self, distance):
-        """Drive straight for a given distance and then stop.
+        """Drives straight for a given distance and then stops.
 
         Arguments:
             distance (:ref:`distance`): Distance to travel.
@@ -113,7 +113,7 @@ class DriveBase:
         pass
 
     def turn(self, angle):
-        """Turn in place by a given angle and then stop.
+        """Turns in place by a given angle and then stops.
 
         Arguments:
             angle (:ref:`angle`): Angle of the turn.

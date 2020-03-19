@@ -5,7 +5,7 @@
 
 
 def wait(time):
-    """Pause the user program for a specified amount of time.
+    """Pauses the user program for a specified amount of time.
 
     Arguments:
         time (:ref:`time`): How long to wait.
@@ -22,7 +22,7 @@ class StopWatch:
         pass
 
     def time(self):
-        """Get the current time of the stopwatch.
+        """Gets the current time of the stopwatch.
 
         Returns:
             :ref:`time`: Elapsed time.
@@ -30,15 +30,15 @@ class StopWatch:
         pass
 
     def pause(self):
-        """Pause the stopwatch."""
+        """Pauses the stopwatch."""
         pass
 
     def resume(self):
-        """Resume the stopwatch."""
+        """Resumes the stopwatch."""
         pass
 
     def reset(self):
-        """Reset the stopwatch time to 0.
+        """Resets the stopwatch time to 0.
 
         The run state is unaffected:
 
@@ -67,7 +67,7 @@ class DataLog:
         pass
 
     def log(self, *values):
-        """Save one or more values on a new line in the file.
+        """Saves one or more values on a new line in the file.
 
         Arguments:
             values (object, object, `...`): One or more objects or values.

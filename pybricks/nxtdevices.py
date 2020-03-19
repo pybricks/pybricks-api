@@ -20,7 +20,7 @@ class TouchSensor:
         pass
 
     def pressed(self):
-        """Check if the sensor is pressed.
+        """Checks if the sensor is pressed.
 
         Returns:
             bool: ``True`` if the sensor is pressed, ``False`` if it is
@@ -43,7 +43,7 @@ class LightSensor:
         pass
 
     def ambient(self):
-        """Measure the ambient light intensity.
+        """Measures the ambient light intensity.
 
         Returns:
             :ref:`percentage`: Ambient light intensity, ranging from 0 (dark)
@@ -52,7 +52,7 @@ class LightSensor:
         pass
 
     def reflection(self):
-        """Measure the reflection of a surface using a red light.
+        """Measures the reflection of a surface using a red light.
 
         Returns:
             :ref:`percentage`: Reflection, ranging from 0 (no reflection) to
@@ -77,7 +77,7 @@ class ColorSensor:
         pass
 
     def color(self):
-        """Measure the color of a surface.
+        """Measures the color of a surface.
 
         :returns:
             ``Color.BLACK``, ``Color.BLUE``, ``Color.GREEN``, ``Color.YELLOW``,
@@ -89,7 +89,7 @@ class ColorSensor:
         pass
 
     def ambient(self):
-        """Measure the ambient light intensity.
+        """Measures the ambient light intensity.
 
         Returns:
             :ref:`percentage`: Ambient light intensity, ranging from 0 (dark)
@@ -98,7 +98,7 @@ class ColorSensor:
         pass
 
     def reflection(self):
-        """Measure the reflection of a surface.
+        """Measures the reflection of a surface.
 
         Returns:
             :ref:`percentage`: Reflection, ranging from 0 (no reflection) to
@@ -108,7 +108,7 @@ class ColorSensor:
         pass
 
     def rgb(self):
-        """Measure the reflection of a surface using a red, green, and then a
+        """Measures the reflection of a surface using a red, green, and then a
         blue light.
 
         Returns:
@@ -132,7 +132,7 @@ class UltrasonicSensor:
         pass
 
     def distance(self):
-        """Measure the distance between the sensor and an object using
+        """Measures the distance between the sensor and an object using
         ultrasonic sound waves.
 
         Returns:
@@ -155,7 +155,7 @@ class SoundSensor:
         pass
 
     def intensity(self, audible_only=True):
-        """Measure the ambient sound intensity (loudness).
+        """Measures the ambient sound intensity (loudness).
 
         Arguments:
             audible_only (bool): Detect only audible sounds. This tries to
@@ -182,7 +182,7 @@ class TemperatureSensor:
         pass
 
     def temperature(self):
-        """Measure the temperature.
+        """Measures the temperature.
 
         Returns:
             :ref:`temperature`: Measured temperature.
@@ -204,7 +204,7 @@ class EnergyMeter:
         pass
 
     def storage(self):
-        """Get the total available energy stored in the battery.
+        """Gets the total available energy stored in the battery.
 
         Returns:
             :ref:`energy`: Remaining stored energy.
@@ -213,7 +213,7 @@ class EnergyMeter:
         pass
 
     def input(self):
-        """This measures the electrical signals at the input (bottom) side
+        """Measures the electrical signals at the input (bottom) side
         of the energy meter. It measures the voltage applied to it and the
         current passing through it. The product of these two values is power.
         This power value is the rate at which the stored energy increases. This
@@ -228,7 +228,7 @@ class EnergyMeter:
         pass
 
     def output(self):
-        """This measures the electrical signals at the output (top) side
+        """Measures the electrical signals at the output (top) side
         of the energy meter. It measures the voltage applied to the external
         load and the current passing to it. The product of these two values
         is power. This power value is the rate at which the stored energy
@@ -260,7 +260,7 @@ class VernierAdapter(AnalogSensor):
         pass
 
     def voltage(self):
-        """Measure the raw analog sensor voltage.
+        """Measures the raw analog sensor voltage.
 
         Returns:
             :ref:`voltage`: Analog voltage.
@@ -268,8 +268,7 @@ class VernierAdapter(AnalogSensor):
         pass
 
     def conversion(self, voltage):
-        """User-supplied function that converts the raw voltage (mV) to a
-        sensor value.
+        """Converts the raw voltage (mV) to a sensor value.
 
         If you did not provide a ``conversion`` function earlier, no conversion
         will be applied.
@@ -283,7 +282,7 @@ class VernierAdapter(AnalogSensor):
         pass
 
     def value(self):
-        """This method measures the sensor :meth:`.voltage` and then
+        """Measures the sensor :meth:`.voltage` and then
         applies your :meth:`.conversion` to give you the sensor value.
 
         :returns: Converted sensor value.
