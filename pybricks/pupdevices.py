@@ -85,10 +85,9 @@ class ColorDistanceSensor:
         """Measure the reflection of a surface using a red, green, and then a
         blue light.
 
-        Returns:
-            tuple of three :ref:`percentages <percentage>`: Reflection for red,
-            green, and blue light, each ranging from 0.0 (no reflection) to
-            100.0 (high reflection).
+        :returns: Tuple of reflections for red, green, and blue light, each
+                  ranging from 0.0 (no reflection) to 100.0 (high reflection).
+        :rtype: (:ref:`percentage`, :ref:`percentage`, :ref:`percentage`)
         """
         pass
 
