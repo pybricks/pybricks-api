@@ -100,3 +100,23 @@ class ColorDistanceSensor:
             to 100 (farthest).
         """
         pass
+
+    def remote(self, channel, button_1=None, button_2=None):
+        """Make the sensor act like a Power Functions 1.0 IR remote.
+
+        Choose a channel and up to two buttons to "press". The infrared
+        receiver behaves just as if responding to the real remote.
+
+        The sensor keeps sending the signal (as if you keep pressing the
+        buttons). It keeps going until you call this method again with
+        different buttons or no buttons at all.
+
+        Arguments:
+            channel (int): Channel number of the remote.
+            button_1 (Button): Button of the Power Functions 1.0 IR remote.
+                               Choose ``None`` if you don't want to press
+                               any button.
+            button_2 (Button): Button of the Power Functions 1.0 IR remote.
+                               Choose ``None`` if you don't want to press
+                               any button.
+        """

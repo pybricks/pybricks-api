@@ -79,6 +79,8 @@ Color and Distance Sensor
 
     .. automethod:: pybricks.pupdevices.ColorDistanceSensor.distance
 
+    .. automethod:: pybricks.pupdevices.ColorDistanceSensor.remote
+
     .. rubric:: Built-in light
 
     This sensor has a built-in light. You can make it red, green, blue, or turn
