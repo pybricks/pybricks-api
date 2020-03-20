@@ -156,6 +156,7 @@ html_context = {
 #
 html_theme_options = {
    'style_external_links': True,
+   'logo_only': True,
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,

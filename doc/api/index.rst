@@ -10,10 +10,11 @@ Intro
 
 .. toctree::
     :maxdepth: 1
-    :caption: Getting Started
+    :caption: Pybricks
     :hidden:
 
-    startinstall
+    Home Page <https://pybricks.com>
+    Downloads <https://pybricks.com/downloads/>
 
 .. toctree::
    :maxdepth: 1
