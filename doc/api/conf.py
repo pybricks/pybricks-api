@@ -15,7 +15,7 @@ _DISCLAIMER = 'LEGO, the LEGO logo, MINDSTORMS and the MINDSTORMS EV3 logo are\
                trademarks and/or copyrights of the LEGO Group of companies \
                which does not sponsor, authorize or endorse this site.'
 
-html_logo = '../common/images/pybricks-logo-small.png'
+html_logo = '../common/images/pybricks-logo-rtd.png'
 latex_logo = '../common/images/pybricks-logo-large.png'
 
 exec(open(os.path.abspath("../common/conf.py")).read())
