@@ -7,6 +7,16 @@
 Motors without Rotation Sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+.. _fig_pupdcmotors:
+
+.. figure:: ../api/images/pupdcmotors_label.png
+   :width: 70 %
+   :alt: pupmotors
+   :align: center
+
+   Powered Up motors without rotation sensors. The arrows indicate the default
+   positive direction.
+
 .. autoclass:: pybricks._common.DCMotor
     :noindex:
     :no-members:
@@ -31,7 +41,7 @@ Motors with Rotation Sensors
    :align: center
 
    Powered Up motors with rotation sensors. The arrows indicate the default
-   clockwise direction.
+   positive direction.
 
 .. autoclass:: pybricks.pupdevices.Motor
     :noindex:
