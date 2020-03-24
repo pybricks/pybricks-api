@@ -92,8 +92,8 @@ class ColorDistanceSensor:
         pass
 
     def distance(self):
-        """Measures the relative distance between the sensor and an object using
-        infrared light.
+        """Measures the relative distance between the sensor and an object
+        using infrared light.
 
         Returns:
             :ref:`relativedistance`: Relative distance ranging from 0 (closest)
@@ -102,7 +102,7 @@ class ColorDistanceSensor:
         pass
 
     def remote(self, channel, button_1=None, button_2=None):
-        """Make the sensor act like a Power Functions 1.0 IR remote.
+        """Makes the sensor act like a Power Functions 1.0 IR remote.
 
         Choose a channel and up to two buttons to "press". The infrared
         receiver behaves just as if responding to the real remote.

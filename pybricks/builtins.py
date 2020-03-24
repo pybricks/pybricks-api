@@ -31,7 +31,7 @@ class DCMotor:
         pass
 
     def stop(self):
-        """Stops the motor and let it spin freely.
+        """Stops the motor and lets it spin freely.
 
         The motor gradually stops due to friction."""
         pass
@@ -204,9 +204,10 @@ class Motor(DCMotor):
         pass
 
     def run(self, speed):
-        """Keeps the motor running at a constant speed.
+        """Runs the motor at a constant speed.
 
-        The motor keeps running until you give a new command.
+        The motor accelerates to the given speed and keeps running at this
+        speed until you give a new command.
 
         Arguments:
             speed (:ref:`speed`): Speed of the motor.
@@ -215,6 +216,10 @@ class Motor(DCMotor):
 
     def run_time(self, speed, time, then=Stop.HOLD, wait=True):
         """Runs the motor at a constant speed for a given amount of time.
+
+        The motor accelerates to the given speed, keeps running at this speed,
+        and then decelerates. The total maneuver lasts for exactly the given
+        amount of ``time``.
 
         Arguments:
             speed (:ref:`speed`): Speed of the motor.
