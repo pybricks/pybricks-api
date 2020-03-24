@@ -192,7 +192,7 @@ class Motor(DCMotor):
         pass
 
     def reset_angle(self, angle):
-        """Resets the accumulated rotation angle of the motor.
+        """Sets the accumulated rotation angle of the motor to a desired value.
 
         Arguments:
             angle (:ref:`angle`): Value to which the angle should be reset.

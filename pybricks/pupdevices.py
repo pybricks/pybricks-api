@@ -3,8 +3,22 @@
 
 """LEGO® Powered Up motor, sensors, and lights."""
 
-from .builtins import KeyPad, Accelerometer, ColorLight
-from .builtins import Motor  # noqa E402
+from .builtins import KeyPad, Accelerometer, ColorLight, Motor
+
+
+class Motor(Motor):
+    """Generic class to control motors with built-in rotation sensors."""
+
+    def reset_angle(self, angle=None):
+        """Sets the accumulated rotation angle of the motor to a desired value.
+
+        If you don't specify an angle, the :ref:`absolute angle <absangles>`
+        will be used if your motor supports it.
+
+        Arguments:
+            angle (:ref:`angle`): Value to which the angle should be reset.
+        """
+        pass
 
 
 class RemoteControl:

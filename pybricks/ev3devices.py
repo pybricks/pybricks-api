@@ -186,9 +186,6 @@ class GyroSensor:
     def reset_angle(self, angle):
         """Sets the rotation angle of the sensor to a desired value.
 
-        If you don't specify an angle, the absolute value will be used if
-        available.
-
         Arguments:
             angle (:ref:`angle`): Value to which the angle should be reset.
         """

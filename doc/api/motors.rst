@@ -9,6 +9,15 @@ Motor Tips & Tricks
 
 .. *TODO*
 
+.. _absangles:
+
+Absolute angles
+----------------------------
+
+.. todo::
+
+    This section will be included in a future release.
+
 .. _stalled:
 
 Using stall detection
