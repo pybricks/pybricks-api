@@ -15,7 +15,7 @@ Introductory text. An example network is shown in :numref:`fig_messaging`.
    :alt: messaging
    :align: center
 
-   An example network with one server and two clients.
+   An example network with one server and one clients.
 
 
 Connections
@@ -42,3 +42,14 @@ Mailboxes are used to send data to and from other EV3s.
 .. autoclass:: TextMailbox
     :no-members:
 
+Bigger networks
+----------------
+
+.. _fig_messaging_network:
+
+.. figure:: ../api/images/messaging_network_label.png
+   :width: 90 %
+   :alt: messaging
+   :align: center
+
+   An example network with one server and two clients.

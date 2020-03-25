@@ -89,7 +89,7 @@
      id="layer1"
      transform="translate(0,-146.45207)">
     <image
-       sodipodi:absref="/home/laurens/pybricks/git/pybricks-api/doc/api/diagram_source/pupdcmotors.png"
+       sodipodi:absref="pupdcmotors.png"
        xlink:href="pupdcmotors.png"
        width="396.875"
        height="150.54791"
