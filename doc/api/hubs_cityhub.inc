@@ -1,8 +1,6 @@
 .. autoclass:: pybricks.hubs.CityHub
     :no-members:
 
-    Usage of each built-in device is described below.
-
     .. rubric:: Using the hub status light
 
     .. automethod:: pybricks.hubs::CityHub.light.on
