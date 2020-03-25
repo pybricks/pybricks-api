@@ -39,5 +39,4 @@ Intro
 
    signaltypes
    motors
-   mailboxes
 ..    frames
