@@ -1,18 +1,22 @@
 :mod:`media <pybricks.media>` -- Sounds and Images
 ==================================================
 
-.. automodule:: pybricks.media
-    :no-members:
+.. module:: pybricks.media
 
-You can use your own sound and image files by placing them in your project
-folder. You can also use any of the images and sounds built into ev3dev, or
-draw your own.
+This module describes media such as sound and images that you can use in your
+projects. Media are divided into submodules that indicate on which platform
+they are available.
 
-ev3dev
-------
+:mod:`media.ev3dev <pybricks.media.ev3dev>` -- Sounds and Images
+---------------------------------------------------------------------
 
-.. automodule:: pybricks.media.ev3dev
-    :no-members:
+.. module:: pybricks.media.ev3dev
+
+EV3 MicroPython is built on top of ev3dev, which comes with a variety of image
+and sound files. You can access them using the classes below.
+
+You can also use your own sound and image files by placing them in your project
+folder.
 
 Image Files
 ^^^^^^^^^^^
