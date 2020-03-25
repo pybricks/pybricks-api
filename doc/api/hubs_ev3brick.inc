@@ -158,9 +158,25 @@
 
     .. automethod:: pybricks.hubs::EV3Brick.screen.print
 
+        .. toggle-header::
+            :header: **Show/hide example**
+
+            **Example: Say hello... in several ways.**
+
+            .. literalinclude:: ../../pybricks-projects/snippets/ev3/screen_print/main.py
+
     .. automethod:: pybricks.hubs::EV3Brick.screen.set_font
 
+        **Example:** See example in :meth:`print`.
+
     .. automethod:: pybricks.hubs::EV3Brick.screen.load_image
+
+        .. toggle-header::
+            :header: **Show/hide example**
+
+            **Example: Show an image on the screen.**
+
+            .. literalinclude:: ../../pybricks-projects/snippets/ev3/screen_image/main.py
 
     .. automethod:: pybricks.hubs::EV3Brick.screen.draw_image
 
@@ -168,9 +184,20 @@
 
     .. automethod:: pybricks.hubs::EV3Brick.screen.draw_line
 
+        .. toggle-header::
+            :header: **Show/hide example**
+
+            **Example: Draw some shapes on the screen.**
+
+            .. literalinclude:: ../../pybricks-projects/snippets/ev3/screen_draw/main.py
+
     .. automethod:: pybricks.hubs::EV3Brick.screen.draw_box
 
+        **Example:** See example in :meth:`draw_line`.
+
     .. automethod:: pybricks.hubs::EV3Brick.screen.draw_circle
+
+        **Example:** See example in :meth:`draw_line`.
 
     .. autoattribute:: pybricks.hubs::EV3Brick.screen.width
 
