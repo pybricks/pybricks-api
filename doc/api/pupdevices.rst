@@ -88,6 +88,9 @@ Motors with Rotation Sensors
 Color and Distance Sensor
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
+.. figure:: ../api/images/sensor_colordistance.png
+   :width: 35 %
+
 .. autoclass:: pybricks.pupdevices.ColorDistanceSensor
     :no-members:
 
