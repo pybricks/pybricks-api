@@ -36,3 +36,13 @@ span.caption-number:after {
         max-width: 800px;
     }
 }
+
+/* decorate external links in navigation side bar */
+.wy-nav-side a.reference.external:after {
+    font-family: FontAwesome;
+    content: "";
+    color: #b3b3b3;
+    vertical-align: super;
+    font-size: 60%;
+    margin: 0 0.2em;
+}
