@@ -11,6 +11,10 @@ your programs using the :mod:`Motor <.ev3devices>` class.
 
 NXT Touch Sensor
 ^^^^^^^^^^^^^^^^
+
+.. figure:: ../api/images/sensor_nxt_touch.png
+   :width: 18 %
+
 .. autoclass:: pybricks.nxtdevices.TouchSensor
     :no-members:
 
@@ -18,10 +22,18 @@ NXT Touch Sensor
 
 NXT Light Sensor
 ^^^^^^^^^^^^^^^^
+
+.. figure:: ../api/images/sensor_nxt_light.png
+   :width: 18 %
+
 .. autoclass:: pybricks.nxtdevices.LightSensor
 
 NXT Color Sensor
 ^^^^^^^^^^^^^^^^
+
+.. figure:: ../api/images/sensor_nxt_color.png
+   :width: 18 %
+
 .. autoclass:: pybricks.nxtdevices.ColorSensor
     :no-members:
 
@@ -44,18 +56,34 @@ NXT Color Sensor
 
 NXT Ultrasonic Sensor
 ^^^^^^^^^^^^^^^^^^^^^
+
+.. figure:: ../api/images/sensor_nxt_ultrasonic.png
+   :width: 24 %
+
 .. autoclass:: pybricks.nxtdevices.UltrasonicSensor
 
 NXT Sound Sensor
 ^^^^^^^^^^^^^^^^^^^^^
+
+.. figure:: ../api/images/sensor_nxt_sound.png
+   :width: 18 %
+
 .. autoclass:: pybricks.nxtdevices.SoundSensor
 
 NXT Temperature Sensor
 ^^^^^^^^^^^^^^^^^^^^^^
+
+.. figure:: ../api/images/sensor_nxt_temp.png
+   :width: 32 %
+
 .. autoclass:: pybricks.nxtdevices.TemperatureSensor
 
 NXT Energy Meter
 ^^^^^^^^^^^^^^^^^
+
+.. figure:: ../api/images/energymeter.png
+   :width: 30 %
+
 .. autoclass:: pybricks.nxtdevices.EnergyMeter
 
 Vernier Adapter
