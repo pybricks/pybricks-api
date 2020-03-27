@@ -57,20 +57,40 @@ Motors
 
 Touch Sensor
 ^^^^^^^^^^^^
+
+.. figure:: ../api/images/sensor_ev3_touch.png
+   :width: 18 %
+
 .. autoclass:: pybricks.ev3devices.TouchSensor
 
 Color Sensor
 ^^^^^^^^^^^^
+
+.. figure:: ../api/images/sensor_ev3_color.png
+   :width: 18 %
+
 .. autoclass:: pybricks.ev3devices.ColorSensor
 
 Infrared Sensor and Beacon
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. figure:: ../api/images/sensor_ev3_ir.png
+   :width: 60 %
+
 .. autoclass:: pybricks.ev3devices.InfraredSensor
 
 Ultrasonic Sensor
 ^^^^^^^^^^^^^^^^^
+
+.. figure:: ../api/images/sensor_ev3_ultrasonic.png
+   :width: 22 %
+
 .. autoclass:: pybricks.ev3devices.UltrasonicSensor
 
 Gyroscopic Sensor
 ^^^^^^^^^^^^^^^^^
+
+.. figure:: ../api/images/sensor_ev3_gyro.png
+   :width: 18 %
+
 .. autoclass:: pybricks.ev3devices.GyroSensor
