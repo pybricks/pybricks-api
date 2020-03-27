@@ -4,8 +4,15 @@
 .. automodule:: pybricks.ev3devices
     :no-members:
 
-Motor
+Motors
 ^^^^^^^^^^^^
+
+.. _fig_ev3motors:
+
+.. figure:: ../api/images/ev3motors_label.png
+   :width: 100 %
+
+   EV3-compatible motors. The arrows indicate the default positive direction.
 
 .. autoclass:: pybricks.ev3devices.Motor
     :no-members:
