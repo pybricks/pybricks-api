@@ -12,6 +12,10 @@
 
 LUMP Device
 ^^^^^^^^^^^^^
+
+.. figure:: ../api/images/sensor_lump.png
+   :width: 70 %
+
 .. autoclass:: pybricks.iodevices.LUMPDevice
 
 .. raw:: html

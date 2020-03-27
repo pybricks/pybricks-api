@@ -1,10 +1,16 @@
 Analog Sensor
 ^^^^^^^^^^^^^
 
+.. figure:: ../api/images/sensor_rj12_brown.png
+   :width: 25 %
+
 .. autoclass:: pybricks.iodevices.AnalogSensor
 
 I2C Device
 ^^^^^^^^^^^^^
+
+.. figure:: ../api/images/sensor_rj12_bluegreen.png
+   :width: 25 %
 
 .. autoclass:: pybricks.iodevices.I2CDevice
 
@@ -52,6 +58,9 @@ the `ev3dev I2C`_ page.
 UART Device
 ^^^^^^^^^^^^^
 
+.. figure:: ../api/images/sensor_rj12_gray.png
+   :width: 25 %
+
 .. autoclass:: pybricks.iodevices.UARTDevice
 
 .. toggle-header::
@@ -65,7 +74,8 @@ UART Device
 DC Motor
 ^^^^^^^^^^^^
 
-This class can be used to control classic LEGO motors using converter cables.
+.. figure:: ../api/images/rcxmotor.png
+   :width: 40 %
 
 .. autoclass:: pybricks._common.DCMotor
     :noindex:
@@ -79,6 +89,9 @@ This class can be used to control classic LEGO motors using converter cables.
 
 Ev3dev sensors
 ^^^^^^^^^^^^^^^^^^^^^
+
+.. figure:: ../api/images/sensor_ev3dev.png
+   :width: 70 %
 
 EV3 MicroPython is built on top of ev3dev, which means that a sensor
 may be supported even if it is not listed in this documentation. If so, you can
