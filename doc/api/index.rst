@@ -15,6 +15,7 @@ Intro
 
     Home Page <https://pybricks.com>
     Downloads <https://pybricks.com/downloads/>
+    Example Projects <https://github.com/pybricks/pybricks-projects>
 
 .. toctree::
    :maxdepth: 1
