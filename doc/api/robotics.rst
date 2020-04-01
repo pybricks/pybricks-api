@@ -1,4 +1,4 @@
-:mod:`robotics <pybricks.robotics>` -- Robotics module
+:mod:`robotics <pybricks.robotics>` -- Robotics
 ======================================================
 
 .. automodule:: pybricks.robotics
