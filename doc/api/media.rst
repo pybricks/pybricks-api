@@ -242,142 +242,457 @@ Sound Files
         :header: **Expressions**
 
         .. data:: BOING
+
+            :download:`Preview <../../media/ev3dev-media/sounds/expressions/boing.wav>`
+
         .. data:: BOO
+
+            :download:`Preview <../../media/ev3dev-media/sounds/expressions/boo.wav>`
+
         .. data:: CHEERING
+
+            :download:`Preview <../../media/ev3dev-media/sounds/expressions/cheering.wav>`
+
         .. data:: CRUNCHING
+
+            :download:`Preview <../../media/ev3dev-media/sounds/expressions/crunching.wav>`
+
         .. data:: CRYING
+
+            :download:`Preview <../../media/ev3dev-media/sounds/expressions/crying.wav>`
+
         .. data:: FANFARE
+
+            :download:`Preview <../../media/ev3dev-media/sounds/expressions/fanfare.wav>`
+
         .. data:: KUNG_FU
+
+            :download:`Preview <../../media/ev3dev-media/sounds/expressions/kung_fu.wav>`
+
         .. data:: LAUGHING_1
+
+            :download:`Preview <../../media/ev3dev-media/sounds/expressions/laughing_1.wav>`
+
         .. data:: LAUGHING_2
+
+            :download:`Preview <../../media/ev3dev-media/sounds/expressions/laughing_2.wav>`
+
         .. data:: MAGIC_WAND
+
+            :download:`Preview <../../media/ev3dev-media/sounds/expressions/magic_wand.wav>`
+
         .. data:: OUCH
+
+            :download:`Preview <../../media/ev3dev-media/sounds/expressions/ouch.wav>`
+
         .. data:: SHOUTING
+
+            :download:`Preview <../../media/ev3dev-media/sounds/expressions/shouting.wav>`
+
         .. data:: SMACK
+
+            :download:`Preview <../../media/ev3dev-media/sounds/expressions/smack.wav>`
+
         .. data:: SNEEZING
+
+            :download:`Preview <../../media/ev3dev-media/sounds/expressions/sneezing.wav>`
+
         .. data:: SNORING
+
+            :download:`Preview <../../media/ev3dev-media/sounds/expressions/snoring.wav>`
+
         .. data:: UH_OH
+
+            :download:`Preview <../../media/ev3dev-media/sounds/expressions/uh-oh.wav>`
+
 
     .. toggle-header::
         :header: **Information**
 
         .. data:: ACTIVATE
+
+            :download:`Preview <../../media/ev3dev-media/sounds/information/activate.wav>`
+
         .. data:: ANALYZE
+
+            :download:`Preview <../../media/ev3dev-media/sounds/information/analyze.wav>`
+
         .. data:: BACKWARDS
+
+            :download:`Preview <../../media/ev3dev-media/sounds/information/backwards.wav>`
+
         .. data:: COLOR
+
+            :download:`Preview <../../media/ev3dev-media/sounds/information/color.wav>`
+
         .. data:: DETECTED
+
+            :download:`Preview <../../media/ev3dev-media/sounds/information/detected.wav>`
+
         .. data:: DOWN
+
+            :download:`Preview <../../media/ev3dev-media/sounds/information/down.wav>`
+
         .. data:: ERROR
+
+            :download:`Preview <../../media/ev3dev-media/sounds/information/error.wav>`
+
         .. data:: ERROR_ALARM
+
+            :download:`Preview <../../media/ev3dev-media/sounds/information/error_alarm.wav>`
+
+
         .. data:: FLASHING
+
+            :download:`Preview <../../media/ev3dev-media/sounds/information/flashing.wav>`
+
         .. data:: FORWARD
+
+            :download:`Preview <../../media/ev3dev-media/sounds/information/forward.wav>`
+
         .. data:: LEFT
+
+            :download:`Preview <../../media/ev3dev-media/sounds/information/left.wav>`
+
         .. data:: OBJECT
+
+            :download:`Preview <../../media/ev3dev-media/sounds/information/object.wav>`
+
         .. data:: RIGHT
+
+            :download:`Preview <../../media/ev3dev-media/sounds/information/right.wav>`
+
         .. data:: SEARCHING
+
+            :download:`Preview <../../media/ev3dev-media/sounds/information/searching.wav>`
+
         .. data:: START
+
+            :download:`Preview <../../media/ev3dev-media/sounds/information/start.wav>`
+
         .. data:: STOP
+
+            :download:`Preview <../../media/ev3dev-media/sounds/information/stop.wav>`
+
         .. data:: TOUCH
+
+            :download:`Preview <../../media/ev3dev-media/sounds/information/touch.wav>`
+
         .. data:: TURN
+
+            :download:`Preview <../../media/ev3dev-media/sounds/information/turn.wav>`
+
         .. data:: UP
+
+            :download:`Preview <../../media/ev3dev-media/sounds/information/up.wav>`
 
     .. toggle-header::
         :header: **Communication**
 
         .. data:: BRAVO
+
+            :download:`Preview <../../media/ev3dev-media/sounds/communication/bravo.wav>`
+
         .. data:: EV3
+
+            :download:`Preview <../../media/ev3dev-media/sounds/communication/ev3.wav>`
+
         .. data:: FANTASTIC
+
+            :download:`Preview <../../media/ev3dev-media/sounds/communication/fantastic.wav>`
+
         .. data:: GAME_OVER
+
+            :download:`Preview <../../media/ev3dev-media/sounds/communication/game_over.wav>`
+
         .. data:: GO
-        .. data:: GOOD
+
+            :download:`Preview <../../media/ev3dev-media/sounds/communication/go.wav>`
+
         .. data:: GOOD_JOB
+
+            :download:`Preview <../../media/ev3dev-media/sounds/communication/good_job.wav>`
+
+        .. data:: GOOD
+
+            :download:`Preview <../../media/ev3dev-media/sounds/communication/good.wav>`
+
         .. data:: GOODBYE
+
+            :download:`Preview <../../media/ev3dev-media/sounds/communication/goodbye.wav>`
+
         .. data:: HELLO
+
+            :download:`Preview <../../media/ev3dev-media/sounds/communication/hello.wav>`
+
         .. data:: HI
+
+            :download:`Preview <../../media/ev3dev-media/sounds/communication/hi.wav>`
+
         .. data:: LEGO
+
+            :download:`Preview <../../media/ev3dev-media/sounds/communication/lego.wav>`
+
         .. data:: MINDSTORMS
+
+            :download:`Preview <../../media/ev3dev-media/sounds/communication/mindstorms.wav>`
+
         .. data:: MORNING
+
+            :download:`Preview <../../media/ev3dev-media/sounds/communication/morning.wav>`
+
         .. data:: NO
+
+            :download:`Preview <../../media/ev3dev-media/sounds/communication/no.wav>`
+
         .. data:: OKAY
+
+            :download:`Preview <../../media/ev3dev-media/sounds/communication/okay.wav>`
+
         .. data:: OKEY_DOKEY
+
+            :download:`Preview <../../media/ev3dev-media/sounds/communication/okey-dokey.wav>`
+
         .. data:: SORRY
+
+            :download:`Preview <../../media/ev3dev-media/sounds/communication/sorry.wav>`
+
         .. data:: THANK_YOU
+
+            :download:`Preview <../../media/ev3dev-media/sounds/communication/thank_you.wav>`
+
         .. data:: YES
+
+            :download:`Preview <../../media/ev3dev-media/sounds/communication/yes.wav>`
+
 
     .. toggle-header::
         :header: **Movement sounds**
 
         .. data:: SPEED_DOWN
+
+            :download:`Preview <../../media/ev3dev-media/sounds/movements/speed_down.wav>`
+
         .. data:: SPEED_IDLE
+
+            :download:`Preview <../../media/ev3dev-media/sounds/movements/speed_idle.wav>`
+
         .. data:: SPEED_UP
+
+            :download:`Preview <../../media/ev3dev-media/sounds/movements/speed_up.wav>`
 
     .. toggle-header::
         :header: **Colors**
 
         .. data:: BLACK
+
+            :download:`Preview <../../media/ev3dev-media/sounds/colors/black.wav>`
+
         .. data:: BLUE
+
+            :download:`Preview <../../media/ev3dev-media/sounds/colors/blue.wav>`
+
         .. data:: BROWN
+
+            :download:`Preview <../../media/ev3dev-media/sounds/colors/brown.wav>`
+
         .. data:: GREEN
+
+            :download:`Preview <../../media/ev3dev-media/sounds/colors/green.wav>`
+
         .. data:: RED
+
+            :download:`Preview <../../media/ev3dev-media/sounds/colors/red.wav>`
+
         .. data:: WHITE
+
+            :download:`Preview <../../media/ev3dev-media/sounds/colors/white.wav>`
+
         .. data:: YELLOW
+
+            :download:`Preview <../../media/ev3dev-media/sounds/colors/yellow.wav>`
+
 
     .. toggle-header::
         :header: **Mechanical**
 
         .. data:: AIR_RELEASE
+
+            :download:`Preview <../../media/ev3dev-media/sounds/mechanical/air_release.wav>`
+
         .. data:: AIRBRAKE
+
+            :download:`Preview <../../media/ev3dev-media/sounds/mechanical/airbrake.wav>`
+
         .. data:: BACKING_ALERT
+
+            :download:`Preview <../../media/ev3dev-media/sounds/mechanical/backing_alert.wav>`
+
         .. data:: HORN_1
+
+            :download:`Preview <../../media/ev3dev-media/sounds/mechanical/horn_1.wav>`
+
         .. data:: HORN_2
+
+            :download:`Preview <../../media/ev3dev-media/sounds/mechanical/horn_2.wav>`
+
         .. data:: LASER
+
+            :download:`Preview <../../media/ev3dev-media/sounds/mechanical/laser.wav>`
+
         .. data:: MOTOR_IDLE
+
+            :download:`Preview <../../media/ev3dev-media/sounds/mechanical/motor_idle.wav>`
+
         .. data:: MOTOR_START
+
+            :download:`Preview <../../media/ev3dev-media/sounds/mechanical/motor_start.wav>`
+
         .. data:: MOTOR_STOP
+
+            :download:`Preview <../../media/ev3dev-media/sounds/mechanical/motor_stop.wav>`
+
         .. data:: RATCHET
+
+            :download:`Preview <../../media/ev3dev-media/sounds/mechanical/ratchet.wav>`
+
         .. data:: SONAR
+
+            :download:`Preview <../../media/ev3dev-media/sounds/mechanical/sonar.wav>`
+
         .. data:: TICK_TACK
+
+            :download:`Preview <../../media/ev3dev-media/sounds/mechanical/tick_tack.wav>`
+
 
     .. toggle-header::
         :header: **Animal sounds**
 
         .. data:: CAT_PURR
+
+            :download:`Preview <../../media/ev3dev-media/sounds/animals/cat_purr.wav>`
+
         .. data:: DOG_BARK_1
+
+            :download:`Preview <../../media/ev3dev-media/sounds/animals/dog_bark_1.wav>`
+
         .. data:: DOG_BARK_2
+
+            :download:`Preview <../../media/ev3dev-media/sounds/animals/dog_bark_2.wav>`
+
         .. data:: DOG_GROWL
+
+            :download:`Preview <../../media/ev3dev-media/sounds/animals/dog_growl.wav>`
+
         .. data:: DOG_SNIFF
+
+            :download:`Preview <../../media/ev3dev-media/sounds/animals/dog_sniff.wav>`
+
         .. data:: DOG_WHINE
+
+            :download:`Preview <../../media/ev3dev-media/sounds/animals/dog_whine.wav>`
+
         .. data:: ELEPHANT_CALL
+
+            :download:`Preview <../../media/ev3dev-media/sounds/animals/elephant_call.wav>`
+
         .. data:: INSECT_BUZZ_1
+
+            :download:`Preview <../../media/ev3dev-media/sounds/animals/insect_buzz_1.wav>`
+
         .. data:: INSECT_BUZZ_2
+
+            :download:`Preview <../../media/ev3dev-media/sounds/animals/insect_buzz_2.wav>`
+
         .. data:: INSECT_CHIRP
+
+            :download:`Preview <../../media/ev3dev-media/sounds/animals/insect_chirp.wav>`
+
         .. data:: SNAKE_HISS
+
+            :download:`Preview <../../media/ev3dev-media/sounds/animals/snake_hiss.wav>`
+
         .. data:: SNAKE_RATTLE
+
+            :download:`Preview <../../media/ev3dev-media/sounds/animals/snake_rattle.wav>`
+
         .. data:: T_REX_ROAR
+
+            :download:`Preview <../../media/ev3dev-media/sounds/animals/t-rex_roar.wav>`
+
+
 
     .. toggle-header::
         :header: **Numbers**
 
         .. data:: ZERO
+
+            :download:`Preview <../../media/ev3dev-media/sounds/numbers/zero.wav>`
+
         .. data:: ONE
+
+            :download:`Preview <../../media/ev3dev-media/sounds/numbers/one.wav>`
+
         .. data:: TWO
+
+            :download:`Preview <../../media/ev3dev-media/sounds/numbers/two.wav>`
+
         .. data:: THREE
+
+            :download:`Preview <../../media/ev3dev-media/sounds/numbers/three.wav>`
+
         .. data:: FOUR
+
+            :download:`Preview <../../media/ev3dev-media/sounds/numbers/four.wav>`
+
         .. data:: FIVE
+
+            :download:`Preview <../../media/ev3dev-media/sounds/numbers/five.wav>`
+
         .. data:: SIX
+
+            :download:`Preview <../../media/ev3dev-media/sounds/numbers/six.wav>`
+
         .. data:: SEVEN
+
+            :download:`Preview <../../media/ev3dev-media/sounds/numbers/seven.wav>`
+
         .. data:: EIGHT
+
+            :download:`Preview <../../media/ev3dev-media/sounds/numbers/eight.wav>`
+
         .. data:: NINE
+
+            :download:`Preview <../../media/ev3dev-media/sounds/numbers/nine.wav>`
+
         .. data:: TEN
+
+            :download:`Preview <../../media/ev3dev-media/sounds/numbers/ten.wav>`
+
 
     .. toggle-header::
         :header: **System sounds**
 
         .. data:: CLICK
+
+            :download:`Preview <../../media/ev3dev-media/sounds/system/click.wav>`
+
         .. data:: CONFIRM
+
+            :download:`Preview <../../media/ev3dev-media/sounds/system/confirm.wav>`
+
         .. data:: GENERAL_ALERT
+
+            :download:`Preview <../../media/ev3dev-media/sounds/system/general_alert.wav>`
+
         .. data:: OVERPOWER
+
+            :download:`Preview <../../media/ev3dev-media/sounds/system/overpower.wav>`
+
         .. data:: READY
+
+            :download:`Preview <../../media/ev3dev-media/sounds/system/ready.wav>`
+
 
 
 Fonts
