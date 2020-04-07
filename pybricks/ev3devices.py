@@ -222,13 +222,10 @@ class UltrasonicSensor:
 
         Arguments:
             silent (bool): Choose ``True`` to turn the sensor off after
-                           measuring the distance. Choose ``False`` to leave
-                           the sensor on. When you choose
-                           ``silent=True``, the sensor does not
-                           emit sounds waves except when taking the
-                           measurement. This reduces interference with other
-                           ultrasonic sensors, but turning the sensor off takes
-                           approximately 300 ms each time.
+                           measuring the distance. This reduces interference
+                           with other ultrasonic sensors. If you do
+                           this too frequently, the sensor can freeze.
+                           If this happens, unplug it and plug it back in.
 
         Returns:
             :ref:`distance`: Distance.
