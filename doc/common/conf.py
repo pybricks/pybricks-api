@@ -176,6 +176,8 @@ html_sidebars = {
     ]
 }
 
+# Don't hyperlink to larger images for scaled images.
+html_scaled_image_link = False
 
 # -- Options for HTMLHelp output ------------------------------------------
 
