@@ -18,7 +18,7 @@ Select your programmable hub using the buttons below.
     .. tab-container:: movehub
         :title: Move Hub
 
-        .. figure:: ../api/images/movehub.png
+        .. figure:: ../api/images/movehub_label.png
             :height: 15 em
 
         .. include:: hubs_movehub.inc
