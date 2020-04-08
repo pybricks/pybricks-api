@@ -248,6 +248,25 @@ Fonts
     .. automethod:: pybricks.media.ev3dev.Font.text_height
 
 
+.. tip:: Behind the scenes, Pybricks uses Fontconfig_ for fonts. The Fontconfig
+         command line tools can be used to explore available fonts in more
+         detail.
+
+         Example::
+
+             # List available font families.
+             fc-list :scalable=false:dpi=119 family
+             # Perform lookup similar to Font.DEFAULT
+             fc-match :scalable=false:dpi=119:family=Lucida:size=12
+             # Perform lookup similar to Font(size=24,lang=zh-cn)
+             fc-match :scalable=false:dpi=119:size=24:lang=zh-cn
+
+         Pybricks only allows the use of bitmap fonts (``scalable=false``)
+         and the screen on the EV3 has 119 pixels per inch (``dpi=119``).
+
+.. _FontConfig: https://www.freedesktop.org/wiki/Software/fontconfig/
+
+
 Image Manipulation
 ^^^^^^^^^^^^^^^^^^
 
