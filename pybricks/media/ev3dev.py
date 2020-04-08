@@ -240,7 +240,7 @@ class Font:
     """The default font."""
 
     def __init__(self, family=None, size=12, bold=False, monospace=False,
-                 lang=None, scrip=None):
+                 lang=None, script=None):
         """The font object will be a font that is the "best" match based on the
         parameters given and available fonts installed.
 
