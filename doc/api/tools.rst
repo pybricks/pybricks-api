@@ -18,9 +18,30 @@
     .. automethod:: pybricks.tools.StopWatch.reset
 
 .. autoclass:: pybricks.tools.DataLog
+    :no-members:
+
+    .. automethod:: pybricks.tools.DataLog.log
+
+    By default, this class creates a ``csv`` file on the EV3 brick with the
+    name ``log`` and the current date and time. For example, if you
+    use this class on 13 February 2020 on 10:07 and 44.431260
+    seconds, the file is called ``log_2020_02_13_10_07_44_431260.csv``.
+
+    You can upload the file to your computer using the device browser as shown
+    in :numref:`fig_datalog_vscode_upload`. Then you can open it with common
+    spreadsheet applications, as well as most plain text editors.
+
+    .. _fig_datalog_vscode_upload:
+
+    .. figure:: ../api/images/datalog_vscode_upload.png
+        :width: 50 %
+
+        Uploading a file from the EV3 to your computer.
 
 .. toggle-header::
     :header: **Show/hide example: Logging and visualizing measurements**
+
+
 
     **Example**
 
@@ -28,11 +49,7 @@
 
     .. literalinclude:: ../../pybricks-projects/snippets/ev3/datalog/main.py
 
-    It creates a ``csv`` file on the EV3 brick with the name ``log`` and
-    the current date and time. For example, if you
-    run this example on 13 February 2020 on 10:07 and 44.431260
-    seconds, the file is called ``log_2020_02_13_10_07_44_431260.csv``. In this
-    case, it has the following contents::
+    In this example, the generated file has the following contents::
 
         time, angle
         3, 0
@@ -46,14 +63,22 @@
         838, 333
         942, 385
 
-    The file is created on the EV3 Brick. You can find the file in the ev3dev
-    device browser in the bottom left of your Visual Studio Code window. To
-    upload it to your computer, right click it and click ``upload``.
+    When you upload the file to your computer as shown above, you can open it
+    in a spreadsheet editor. You can then generate a graph of the data, as
+    shown in :numref:`fig_datalog_graph`.
 
-    You can open this ``csv`` file with spreadsheet tools such as
-    Microsoft Excel, Apple Numbers, or Libreoffice Calc (free). You can then
-    further analyse or plot the data. The file can also be opened with most
-    text editors.
+    In this example, we see that the motor angle changes slowly at first. Then
+    the angle begins to change faster, and the graph becomes a straight line.
+    This means that the motor has reached a constant speed. You can verify that
+    the angle increases by 500 degrees per second.
+
+    .. _fig_datalog_graph:
+
+    .. figure:: ../api/images/datalog_graph.png
+        :width: 100 %
+
+        Original file contents (left) and a generated graph (right).
+
 
 .. toggle-header::
     :header: **Show/hide example: Using the optional arguments**

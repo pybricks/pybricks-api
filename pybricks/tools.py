@@ -62,7 +62,7 @@ class DataLog:
             timestamp (bool): Choose ``True`` to add the date and time to the
                 file name. This way, your file has a unique name.
                 Choose ``False`` to omit the timestamp.
-            extension (str): File extension
+            extension (str): File extension.
         """
         pass
 
