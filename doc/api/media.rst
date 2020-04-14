@@ -62,11 +62,6 @@ Image Files
             .. image:: ../../media/ev3dev-media/images/mono/information/question_mark.png
                 :width: 15 %
 
-        .. data:: THUMBS_DOWN
-
-            .. image:: ../../media/ev3dev-media/images/mono/information/thumbs_down.png
-                :width: 15 %
-
         .. data:: RIGHT
 
             .. image:: ../../media/ev3dev-media/images/mono/information/right.png
@@ -84,7 +79,7 @@ Image Files
 
         .. data:: THUMBS_DOWN
 
-            .. image:: ../../media/ev3dev-media/images/mono/information/thumbs_up.png
+            .. image:: ../../media/ev3dev-media/images/mono/information/thumbs_down.png
                 :width: 15 %
 
         .. data:: THUMBS_UP
