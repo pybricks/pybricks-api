@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pybricks"
-version = "2.0.0b4"
+version = "2.0.0b5"
 description = "Documentation and user-API stubs for Pybricks MicroPython"
 authors = ["The Pybricks Authors <dev@pybricks.com>"]
 maintainers = ["Laurens Valk <laurens@pybricks.com>", "David Lechner <david@pybricks.com>" ]
