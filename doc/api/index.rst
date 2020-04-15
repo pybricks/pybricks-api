@@ -23,6 +23,7 @@ Intro
    :hidden:
 
    start_ev3
+   start_pup
 
 .. toctree::
    :maxdepth: 1
