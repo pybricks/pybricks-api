@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="svg2"
+   width="950"
+   height="365"
+   viewBox="0 0 949.99999 365"
+   sodipodi:docname="newproject.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <metadata
+     id="metadata8">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs6" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1853"
+     inkscape:window-height="1145"
+     id="namedview4"
+     showgrid="false"
+     inkscape:zoom="1.9594301"
+     inkscape:cx="589.37866"
+     inkscape:cy="199.25823"
+     inkscape:window-x="67"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" />
+  <image
+     sodipodi:absref="newproject.png"
+     xlink:href="newproject.png"
+     y="0"
+     x="0"
+     id="image869"
+     preserveAspectRatio="none"
+     height="365"
+     width="950" />
+  <rect
+     style="opacity:1;fill:#e7f2fa;fill-opacity:1;stroke:none;stroke-width:1.96674442;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     id="rect4173"
+     width="333.49551"
+     height="70.078781"
+     x="448.18661"
+     y="220.96611" />
+  <rect
+     style="opacity:1;fill:#6ab0de;fill-opacity:1;stroke:none;stroke-width:1.96674442;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     id="rect4175"
+     width="333.49551"
+     height="3.6876462"
+     x="448.18661"
+     y="220.96611" />
+  <text
+     id="text114"
+     y="249.16304"
+     x="457.3783"
+     style="font-style:normal;font-weight:normal;font-size:22.30511475px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#404140;fill-opacity:1;stroke:none;stroke-width:0.55762792"
+     xml:space="preserve"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab';fill:#404140;fill-opacity:1;stroke-width:0.55762792"
+       y="249.16304"
+       x="457.3783"
+       id="tspan112"
+       sodipodi:role="line">Choose a location for your</tspan><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab';fill:#404140;fill-opacity:1;stroke-width:0.55762792"
+       y="277.81964"
+       x="457.3783"
+       sodipodi:role="line"
+       id="tspan888">project in the pop-up window</tspan></text>
+  <circle
+     r="17.539316"
+     cy="214.22235"
+     cx="444.39377"
+     id="path118"
+     style="fill:#e7f2fa;fill-opacity:1;stroke:#6ab0de;stroke-width:3.68764615;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:22.30511475px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#404140;fill-opacity:1;stroke:none;stroke-width:0.55762792"
+     x="437.72189"
+     y="221.32712"
+     id="text4630"><tspan
+       sodipodi:role="line"
+       id="tspan4628"
+       x="437.72189"
+       y="221.32712"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab';fill:#404140;fill-opacity:1;stroke-width:0.55762792">4</tspan></text>
+  <circle
+     transform="scale(1,-1)"
+     r="19.625015"
+     cy="-309.70453"
+     cx="24.439426"
+     id="circle4644"
+     style="opacity:1;fill:none;fill-opacity:1;stroke:#6ab0de;stroke-width:3.86665988;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+  <path
+     inkscape:connector-curvature="0"
+     id="path4646"
+     d="M 43.095457,309.37051 H 105.025"
+     style="fill:none;stroke:#6ab0de;stroke-width:3.68764615;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <rect
+     y="288.87994"
+     x="76.722435"
+     height="38.805584"
+     width="303.03363"
+     id="rect4648"
+     style="opacity:1;fill:#e7f2fa;fill-opacity:1;stroke:none;stroke-width:2.36062527;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+  <rect
+     y="288.87994"
+     x="76.722435"
+     height="3.6876462"
+     width="303.03363"
+     id="rect4650"
+     style="opacity:1;fill:#6ab0de;fill-opacity:1;stroke:none;stroke-width:2.36062527;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:22.30511475px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#404140;fill-opacity:1;stroke:none;stroke-width:0.55762792"
+     x="85.914093"
+     y="317.07687"
+     id="text4654"><tspan
+       sodipodi:role="line"
+       id="tspan4652"
+       x="85.914093"
+       y="317.07687"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab';fill:#404140;fill-opacity:1;stroke-width:0.55762792">Open EV3 MicroPython tab</tspan></text>
+  <circle
+     style="fill:#e7f2fa;fill-opacity:1;stroke:#6ab0de;stroke-width:3.68764615;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="circle4656"
+     cx="75.736885"
+     cy="277.98779"
+     r="17.539316" />
+  <text
+     id="text4660"
+     y="285.09253"
+     x="71.218597"
+     style="font-style:normal;font-weight:normal;font-size:22.30511475px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#404140;fill-opacity:1;stroke:none;stroke-width:0.55762792"
+     xml:space="preserve"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab';fill:#404140;fill-opacity:1;stroke-width:0.55762792"
+       y="285.09253"
+       x="71.218597"
+       id="tspan4658"
+       sodipodi:role="line">1</tspan></text>
+  <path
+     inkscape:connector-curvature="0"
+     id="path4664"
+     d="M 274.67784,85.975869 V 136.49735"
+     style="fill:none;stroke:#6ab0de;stroke-width:3.68764615;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <rect
+     y="133.77058"
+     x="138.86736"
+     height="38.805584"
+     width="217.40086"
+     id="rect4666"
+     style="opacity:1;fill:#e7f2fa;fill-opacity:1;stroke:none;stroke-width:1.96674442;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+  <rect
+     y="133.77058"
+     x="138.86736"
+     height="3.6876462"
+     width="217.40086"
+     id="rect4668"
+     style="opacity:1;fill:#6ab0de;fill-opacity:1;stroke:none;stroke-width:1.96674442;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:22.30511475px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#404140;fill-opacity:1;stroke:none;stroke-width:0.55762792"
+     x="148.05894"
+     y="161.96753"
+     id="text4672"><tspan
+       sodipodi:role="line"
+       id="tspan4670"
+       x="148.05894"
+       y="161.96753"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab';fill:#404140;fill-opacity:1;stroke-width:0.55762792">Create new project</tspan></text>
+  <circle
+     style="fill:#e7f2fa;fill-opacity:1;stroke:#6ab0de;stroke-width:3.68764615;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="circle4674"
+     cx="355.06122"
+     cy="124.57327"
+     r="17.539316" />
+  <text
+     id="text4678"
+     y="131.67799"
+     x="348.38934"
+     style="font-style:normal;font-weight:normal;font-size:22.30511475px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#404140;fill-opacity:1;stroke:none;stroke-width:0.55762792"
+     xml:space="preserve"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab';fill:#404140;fill-opacity:1;stroke-width:0.55762792"
+       y="131.67799"
+       x="348.38934"
+       id="tspan4676"
+       sodipodi:role="line">2</tspan></text>
+  <rect
+     style="fill:none;fill-opacity:1;stroke:#6ab0de;stroke-width:3.68764639;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="rect4680"
+     width="259.89783"
+     height="28.034086"
+     x="52.598763"
+     y="58.706345"
+     rx="14.017044"
+     ry="14.017043" />
+  <path
+     style="fill:none;stroke:#6ab0de;stroke-width:3.68764615;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="M 500.07877,59.252453 V 109.77393"
+     id="path870"
+     inkscape:connector-curvature="0" />
+  <rect
+     style="opacity:1;fill:#e7f2fa;fill-opacity:1;stroke:none;stroke-width:1.96674442;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     id="rect872"
+     width="430.32477"
+     height="38.805584"
+     x="451.37408"
+     y="99.541374" />
+  <rect
+     style="opacity:1;fill:#6ab0de;fill-opacity:1;stroke:none;stroke-width:1.96674442;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     id="rect874"
+     width="430.32477"
+     height="3.6876462"
+     x="451.37408"
+     y="99.541374" />
+  <text
+     id="text878"
+     y="127.7383"
+     x="460.5657"
+     style="font-style:normal;font-weight:normal;font-size:22.30511475px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#404140;fill-opacity:1;stroke:none;stroke-width:0.55762792"
+     xml:space="preserve"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab';fill:#404140;fill-opacity:1;stroke-width:0.55762792"
+       y="127.7383"
+       x="460.5657"
+       id="tspan876"
+       sodipodi:role="line">Choose a project name and press enter</tspan></text>
+  <circle
+     r="17.539316"
+     cy="92.797623"
+     cx="447.58118"
+     id="circle880"
+     style="fill:#e7f2fa;fill-opacity:1;stroke:#6ab0de;stroke-width:3.68764615;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:22.30511475px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#404140;fill-opacity:1;stroke:none;stroke-width:0.55762792"
+     x="440.9093"
+     y="99.902321"
+     id="text884"><tspan
+       sodipodi:role="line"
+       id="tspan882"
+       x="440.9093"
+       y="99.902321"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab';fill:#404140;fill-opacity:1;stroke-width:0.55762792">3</tspan></text>
+  <rect
+     ry="14.017043"
+     rx="14.017044"
+     y="31.622057"
+     x="435.97662"
+     height="28.034086"
+     width="188.83939"
+     id="rect886"
+     style="fill:none;fill-opacity:1;stroke:#6ab0de;stroke-width:3.68764615;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+</svg>

@@ -19,6 +19,13 @@ Intro
 
 .. toctree::
    :maxdepth: 1
+   :caption: Getting started
+   :hidden:
+
+   start_ev3
+
+.. toctree::
+   :maxdepth: 1
    :caption: Pybricks Modules
    :hidden:
 
