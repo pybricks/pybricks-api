@@ -27,16 +27,8 @@
     use this class on 13 February 2020 on 10:07 and 44.431260
     seconds, the file is called ``log_2020_02_13_10_07_44_431260.csv``.
 
-    You can upload the file to your computer using the device browser as shown
-    in :numref:`fig_datalog_vscode_upload`. Then you can open it with common
-    spreadsheet applications, as well as most plain text editors.
-
-    .. _fig_datalog_vscode_upload:
-
-    .. figure:: ../api/images/datalog_vscode_upload.png
-        :width: 50 %
-
-        Uploading a file from the EV3 to your computer.
+    See :ref:`managing files on the EV3 <managefiles>` to learn how to upload
+    the log file back to your computer.
 
 .. toggle-header::
     :header: **Show/hide example: Logging and visualizing measurements**
