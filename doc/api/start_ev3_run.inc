@@ -11,7 +11,7 @@ This page shows you how to create such a project and how to transfer it to the E
 
 .. _fig_projectstructure:
 
-.. figure:: images/projectstructure_label.png
+.. figure:: ../api/images/projectstructure_label.png
    :width: 100 %
    :alt: projectstructure
    :align: center
@@ -26,7 +26,7 @@ To create a new project, open the EV3 MicroPython tab and click *create a new pr
 
 .. _fig_newproject:
 
-.. figure:: images/newproject_label.png
+.. figure:: ../api/images/newproject_label.png
    :width: 100 %
    :alt: newproject
    :align: center
@@ -39,7 +39,7 @@ If you are new to MicroPython programming, we recommend that you keep the existi
 
 .. _fig_projectoverview:
 
-.. figure:: images/projectoverview_label.png
+.. figure:: ../api/images/projectoverview_label.png
    :width: 100 %
    :alt: projectoverview
    :align: center
@@ -53,7 +53,7 @@ To open a project you created previously, click *File* and click *Open Folder*, 
 
 .. _fig_existingproject:
 
-.. figure:: images/existingproject_label.png
+.. figure:: ../api/images/existingproject_label.png
    :width: 75 %
    :alt: existingproject
    :align: center
@@ -72,7 +72,7 @@ To be able to transfer your code to the EV3 Brick, you'll first need to connect 
 
 .. _fig_connecting:
 
-.. figure:: images/connecting_label.png
+.. figure:: ../api/images/connecting_label.png
    :width: 100 %
    :alt: connecting
    :align: center
@@ -90,7 +90,7 @@ If your program produces any output with the ``print`` command, this is shown in
 
 .. _fig_running:
 
-.. figure:: images/running_label.png
+.. figure:: ../api/images/running_label.png
    :width: 100 %
    :alt: running
    :align: center
@@ -104,7 +104,7 @@ Now that you've run the basic code template, you can expand the program to make 
 
 .. _fig_firstprogram:
 
-.. figure:: images/firstprogram_label.png
+.. figure:: ../api/images/firstprogram_label.png
    :width: 100 %
    :alt: firstprogram
    :align: center
@@ -127,7 +127,7 @@ After you've downloaded a project to the EV3 Brick, you can run, delete, or back
 
 .. _fig_files:
 
-.. figure:: images/files_label.png
+.. figure:: ../api/images/files_label.png
    :width: 100 %
    :alt: files
    :align: center

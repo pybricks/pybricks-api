@@ -5,7 +5,7 @@ Make sure the EV3 Brick is turned off. Insert the microSD card you prepared into
 
 .. _fig_sd:
 
-.. figure:: images/sd_label.png
+.. figure:: ../api/images/sd_label.png
    :width: 75 %
    :alt: sd
    :align: center
@@ -24,7 +24,7 @@ To turn the EV3 Brick off, open the shutdown menu with the back button, and then
 
 .. _fig_onoff:
 
-.. figure:: images/onoff_label.png
+.. figure:: ../api/images/onoff_label.png
    :width: 65 %
    :alt: onoff
    :align: center
@@ -38,7 +38,7 @@ When you're not running a program, you can view motor and sensor values using th
 
 .. _fig_devicebrowser:
 
-.. figure:: images/devicebrowser_label.png
+.. figure:: ../api/images/devicebrowser_label.png
    :width: 100 %
    :alt: devicebrowser
    :align: center
@@ -54,7 +54,7 @@ To do so, find the program using the *file browser* on the EV3 screen and press 
 
 .. _fig_manualrun:
 
-.. figure:: images/manualrun_label.png
+.. figure:: ../api/images/manualrun_label.png
    :width: 100 %
    :alt: manualrun
    :align: center

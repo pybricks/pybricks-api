@@ -27,7 +27,7 @@ The typical configuration of this equipment is summarized in :numref:`fig_overvi
 
 .. _fig_overview:
 
-.. figure:: images/overview_label.png
+.. figure:: ../api/images/overview_label.png
    :width: 90 %
    :alt: overview
    :align: center
@@ -47,7 +47,7 @@ You'll write your MicroPython programs using Visual Studio Code. Follow the step
 
 .. _fig_store:
 
-.. figure:: images/store_label.png
+.. figure:: ../api/images/store_label.png
     :alt: store
     :align: center
  
@@ -79,7 +79,7 @@ To install the MicroPython tools on your microSD card:
 
 .. _fig_etcher:
 
-.. figure:: images/etcher_label.png
+.. figure:: ../api/images/etcher_label.png
    :width: 85 %
    :alt: etcher
    :align: center
