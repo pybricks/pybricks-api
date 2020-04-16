@@ -94,4 +94,4 @@
     name will always be the same. However, this means that the contents of
     ``my_file.txt`` will be overwritten every time you run this script.
 
-    .. literalinclude:: ../../pybricks-projects/snippets/ev3/datalog/extra.py
+    .. literalinclude:: ../../pybricks-projects/snippets/ev3/datalog_extra/main.py
