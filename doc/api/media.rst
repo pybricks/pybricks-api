@@ -1450,9 +1450,9 @@ Fonts
 
     Behind the scenes, Pybricks uses Fontconfig_ for fonts. The Fontconfig
     command line tools can be used to explore available fonts in more
-    detail.
-
-    Example::
+    detail. To do so, go to the ev3dev device browser,
+    right click on your EV3 brick, and click *Open SSH Terminal*. Then you can
+    enter one of these commands::
 
         # List available font families.
         fc-list :scalable=false:dpi=119 family
