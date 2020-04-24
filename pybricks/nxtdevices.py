@@ -169,7 +169,7 @@ class SoundSensor:
 
 
 class TemperatureSensor:
-    """LEGO® MINDSTORMS® NXT Ultrasonic Sensor."""
+    """LEGO® MINDSTORMS® NXT Temperature Sensor."""
 
     def __init__(self, port):
         """
