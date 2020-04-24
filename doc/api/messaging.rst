@@ -16,6 +16,24 @@ Pairing EV3 Bricks
 
     Brief intro and screenshots of pairing with brickman.
 
+.. _fig_bluetooth_on:
+
+.. figure:: ../api/images/bluetooth_on_label.png
+   :width: 100 %
+   :alt: bluetooth_on
+   :align: center
+
+   Turning on Bluetooth
+
+.. _fig_bluetooth_pair:
+
+.. figure:: ../api/images/bluetooth_pair_label.png
+   :width: 100 %
+   :alt: bluetooth_pair
+   :align: center
+
+   Pairing the client to the server
+
 Server and Client
 -----------------
 
