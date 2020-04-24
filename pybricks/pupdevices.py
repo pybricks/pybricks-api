@@ -13,7 +13,7 @@ class Motor(_Motor):
     def reset_angle(self, angle=None):
         """Sets the accumulated rotation angle of the motor to a desired value.
 
-        If you don't specify an angle, the :ref:`absolute angle <absangles>`
+        If you don't specify an angle, the absolute angle
         will be used if your motor supports it.
 
         Arguments:

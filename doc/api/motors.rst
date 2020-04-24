@@ -1,31 +1,31 @@
 More about Motors
 ===========================================
 
-Motor Tips & Tricks
-^^^^^^^^^^^^^^^^^^^
+.. Motor Tips & Tricks
+.. ^^^^^^^^^^^^^^^^^^^
 
 .. The difference between ``run_angle`` and ``run_target``
 .. -------------------------------------------------------
 
 .. *TODO*
 
-.. _absangles:
+.. .. _absangles:
 
-Absolute angles
-----------------------------
+.. Absolute angles
+.. ----------------------------
 
-.. todo::
+.. .. todo::
 
-    This section will be included in a future release.
+..     This section will be included in a future release.
 
-.. _stalled:
+.. .. _stalled:
 
-Using stall detection
----------------------
+.. Using stall detection
+.. ---------------------
 
-.. todo::
+.. .. todo::
 
-    This section will be included in a future release.
+..     This section will be included in a future release.
 
 .. When a motor cannot move any further despite using the maximally allowed
 .. torque we say that the motor is stalled. Something could be blocking the
@@ -49,14 +49,14 @@ Using stall detection
 
 .. TODO
 
-.. _gears:
+.. .. _gears:
 
-Using gears
------------------
+.. Using gears
+.. -----------------
 
-.. todo::
+.. .. todo::
 
-    This section will be included in a future release.
+..     This section will be included in a future release.
 
 .. Many LEGO robots use mechanisms with gears to change the speed and torque
 .. output of a motor. Let's consider the following dial mechanism.

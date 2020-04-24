@@ -168,8 +168,7 @@ class Motor(DCMotor):
 
                 When you specify a gear train, all motor commands and settings
                 are automatically adjusted to account for the resulting gear
-                ratio.  The motor direction remains unchanged by this. See
-                :ref:`gears` for more information.
+                ratio.  The motor direction remains unchanged by this.
         """
         pass
 
@@ -262,8 +261,7 @@ class Motor(DCMotor):
         pass
 
     def run_until_stalled(self, speed, then=Stop.COAST, duty_limit=None):
-        """Runs the motor at a constant speed until it
-        :ref:`stalls <stalled>`.
+        """Runs the motor at a constant speed until it stalls.
 
         Arguments:
             speed (:ref:`speed`): Speed of the motor.
