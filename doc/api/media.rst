@@ -1455,7 +1455,7 @@ Fonts
     enter one of these commands::
 
         # List available font families.
-        fc-list :scalable=false:dpi=119 family
+        fc-list :scalable=false family
         # Perform lookup similar to Font.DEFAULT
         fc-match :scalable=false:dpi=119:family=Lucida:size=12
         # Perform lookup similar to Font(size=24,lang=zh-cn)
