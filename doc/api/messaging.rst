@@ -9,12 +9,12 @@ An EV3 Brick can send information to another EV3 Brick using Bluetooth. This
 page shows you how to connect multiple bricks and how to write scripts to send
 messages between them.
 
-Pairing EV3 Bricks
-------------------
+Pairing two EV3 Bricks
+----------------------
 
-.. todo::
-
-    Brief intro and screenshots of pairing with brickman.
+Before two EV3 bricks can exchange messages, they must be *paired*.
+You'll need to do this only the first time. First, activate bluetooth on all
+EV3 bricks as shown in :numref:`fig_bluetooth_on`.
 
 .. _fig_bluetooth_on:
 
@@ -23,7 +23,13 @@ Pairing EV3 Bricks
    :alt: bluetooth_on
    :align: center
 
-   Turning on Bluetooth
+   Turn on Bluetooth and make Bluetooth visible.
+
+Now you can make one EV3 Brick search for the other and pair with it, as shown
+in :numref:`fig_bluetooth_pair`.
+
+Once they are paired, do *not* click *connect* in the menu that appears.
+The connection will be made when you run your programs, as described below.
 
 .. _fig_bluetooth_pair:
 
@@ -32,7 +38,14 @@ Pairing EV3 Bricks
    :alt: bluetooth_pair
    :align: center
 
-   Pairing the client to the server
+   Pairing one EV3 Brick to another EV3 Brick.
+
+When you scan for Bluetooth devices, you'll see a list of device names. By
+default, all EV3 Bricks are named *ev3dev*. Click :ref:`here <hostname>` to
+learn how to change that name. This makes it easy to tell them apart.
+
+Repeat the steps in :numref:`fig_bluetooth_pair` if you want to pair more than
+two EV3 Bricks.
 
 Server and Client
 -----------------
