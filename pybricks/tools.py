@@ -51,7 +51,8 @@ class StopWatch:
 class DataLog:
     """Create a file and log data."""
 
-    def __init__(self, *headers, name='log', timestamp=True, extension='csv'):
+    def __init__(self, *headers, name='log', timestamp=True, extension='csv',
+                 append=False):
         """
 
         Arguments:
@@ -63,6 +64,10 @@ class DataLog:
                 file name. This way, your file has a unique name.
                 Choose ``False`` to omit the timestamp.
             extension (str): File extension.
+            append (bool): Choose ``True`` to reopen an existing data log file
+                and append data to it. Choose ``False`` to clear existing
+                data. If the file does not exist yet, an empty file will be
+                created either way.
         """
         pass
 
