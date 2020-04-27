@@ -15,5 +15,7 @@ Intro
 
    Opening the Linux command line
 
+.. _hostname:
+
 Changing the EV3 Brick Name
 -----------------------------------------------------------
