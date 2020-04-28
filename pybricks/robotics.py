@@ -8,7 +8,20 @@ from ._common import Control as _Control
 
 class DriveBase:
     """A robotic vehicle with two powered wheels and an optional support
-    wheel or caster."""
+    wheel or caster.
+
+    By specifying the dimensions of your robot, this class
+    makes it easy to drive a given distance in millimeters or turn by a given
+    number of degrees.
+
+    **Positive** distances and drive speeds mean
+    driving **forward**. **Negative** means **backward**.
+
+    **Positive** angles and turn rates mean turning **right**.
+    **Negative** means **left**. So when viewed from the top,
+    positive means clockwise and negative means counterclockwise.
+
+    """
 
     distance_control = _Control()
     """The traveled distance and drive speed are controlled by a PID
@@ -38,10 +51,8 @@ class DriveBase:
         measured at the center point between the wheels of the robot.
 
         Arguments:
-            drive_speed (:ref:`linspeed`): Speed of the robot. Positive is forward,
-                negative is backward.
-            turn_rate (:ref:`speed`): Turn rate of the robot. Positive is to the
-                right, negative is to the left.
+            drive_speed (:ref:`linspeed`): Speed of the robot.
+            turn_rate (:ref:`speed`): Turn rate of the robot.
         """
         pass
 
