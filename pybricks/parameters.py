@@ -85,20 +85,6 @@ class Stop(_PybricksEnum):
 
         Keep controlling the motor to hold it at the commanded angle. This is
         only available on motors with encoders.
-
-    The stop type defines the resistance to motion after coming to a
-    standstill:
-
-    +-----------+-------------+------------------------------------------+
-    |Parameter  | Resistance  | Physical meaning                         |
-    +===========+=============+==========================================+
-    |Stop.COAST | low         | Friction                                 |
-    +-----------+-------------+------------------------------------------+
-    |Stop.BRAKE | medium      | Friction + Torque opposite to motion     |
-    +-----------+-------------+------------------------------------------+
-    |Stop.HOLD  | high        | Friction + Torque to hold commanded angle|
-    +-----------+-------------+------------------------------------------+
-
     """
 
     COAST = 0
