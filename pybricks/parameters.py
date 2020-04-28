@@ -107,8 +107,7 @@ class Stop(_PybricksEnum):
 
 
 class Direction(_PybricksEnum):
-    """Rotational direction for positive speed values: clockwise or
-    counterclockwise.
+    """Rotational direction for positive speed or angle values.
 
     .. data:: CLOCKWISE
 
@@ -118,51 +117,13 @@ class Direction(_PybricksEnum):
 
         A positive speed value should make the motor move counterclockwise.
 
-    For all motors, this is defined when looking at the shaft, just like
-    looking at a clock.
-
-    For NXT or EV3 motors, make sure to look at the motor with the red/orange
-    shaft to the lower right.
-
-    +----------------------------+-------------------+-----------------+
-    | Parameter                  | Positive speed    | Negative speed  |
-    +============================+===================+=================+
-    | Direction.CLOCKWISE        | clockwise         | counterclockwise|
-    +----------------------------+-------------------+-----------------+
-    | Direction.COUNTERCLOCKWISE | counterclockwise  | clockwise       |
-    +----------------------------+-------------------+-----------------+
-
-    ::
-
-
-         Medium EV3 Motor:
-
-
-         counterclockwise          clockwise
-               ____                 _____
-              /                          \\
-             /       _____________        \\
-            /       /              \\       \\
-            |      |        _       |       |
-            |      |     __| |__    |       |
-            v      |    |__ o __|   |       v
-                   |       |_|      |
-                   |                |
-                    \\______________/
-
-
-         Large EV3 Motor:
-
-               ________
-              /         \\       ___    ___
-            _|           \\     /          \\
-            |             ----/------      \\
-            counterclockwise  |    __\\__    |  clockwise
-             \\ __________     v   /     \\   v
-                          -------|   +   |
-                                  \\_____/
-
-
+    +--------------------------------+-------------------+-----------------+
+    | ``positive_direction =``       | Positive speed:   | Negative speed: |
+    +================================+===================+=================+
+    | ``Direction.CLOCKWISE``        | clockwise         | counterclockwise|
+    +--------------------------------+-------------------+-----------------+
+    | ``Direction.COUNTERCLOCKWISE`` | counterclockwise  | clockwise       |
+    +--------------------------------+-------------------+-----------------+
     """
 
     CLOCKWISE = 0

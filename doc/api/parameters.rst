@@ -47,6 +47,15 @@
 .. autoclass:: pybricks.parameters.Direction
     :no-members:
 
+    In general, clockwise is defined by **looking at the motor shaft, just
+    like looking at a clock**.
+
+    Some motors have two shafts. If in doubt, refer to the following diagrams:
+
+        - Clockwise direction for :ref:`EV3/NXT motors <fig_ev3motors>`
+        - Clockwise direction for :ref:`Powered Up Motors <fig_pupmotors>`
+        - Clockwise direction for :ref:`Move Hub Motors <fig_hubs>`
+
 .. autoclass:: pybricks.parameters.Stop
     :no-members:
 
