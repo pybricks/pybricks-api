@@ -42,8 +42,8 @@ class DriveBase:
             right_motor (Motor):
                 The motor that drives the right wheel.
             wheel_diameter (:ref:`dimension`): Diameter of the wheels.
-            axle_track (:ref:`dimension`): Distance between the midpoints of
-                                           the two wheels.
+            axle_track (:ref:`dimension`): Distance between the points where
+                both wheels touch the ground.
         """
 
     def drive(self, drive_speed, turn_rate):
