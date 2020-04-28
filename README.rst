@@ -12,6 +12,9 @@ used to generate the `official documentation`_.
 See the `contributor's guide <CONTRIBUTING.md>`_ for acceptable changes and
 instructions to build the documentation locally.
 
+For general discussion, please visit the `support`_ issue tracker.
+
 .. _Pybricks package: pybricks
 .. _Pybricks firmware: https://github.com/pybricks/pybricks-micropython
 .. _official documentation: https://docs.pybricks.com/
+.. _support: https://github.com/pybricks/support/issues
