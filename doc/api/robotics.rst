@@ -44,21 +44,6 @@
 
     .. automethod:: pybricks.robotics.DriveBase.reset
 
-    .. rubric:: Advanced Settings
-
-    The :meth:`.settings` method is used to adjust commonly used settings like
-    the default speed and acceleration for straight maneuvers and turns.
-    Use the following attributes to adjust more advanced control setttings.
-
-    You can only change the settings while the robot is stopped. This is
-    either before you begin driving or after you call :meth:`.stop`.
-
-    .. autoattribute:: pybricks.robotics.DriveBase.distance_control
-        :annotation:
-
-    .. autoattribute:: pybricks.robotics.DriveBase.heading_control
-        :annotation:
-
     .. rubric:: Measuring and validating the robot dimensions
 
     As a first estimate, you can measure the ``wheel_diameter`` and the
@@ -88,3 +73,19 @@
     When making these adjustments, always adjust the
     ``wheel_diameter`` first, as done above. Be sure to test both turning
     and driving straight after you are done.
+
+
+    .. rubric:: Advanced Settings
+
+    The :meth:`.settings` method is used to adjust commonly used settings like
+    the default speed and acceleration for straight maneuvers and turns.
+    Use the following attributes to adjust more advanced control setttings.
+
+    You can only change the settings while the robot is stopped. This is
+    either before you begin driving or after you call :meth:`.stop`.
+
+    .. autoattribute:: pybricks.robotics.DriveBase.distance_control
+        :annotation:
+
+    .. autoattribute:: pybricks.robotics.DriveBase.heading_control
+        :annotation:
