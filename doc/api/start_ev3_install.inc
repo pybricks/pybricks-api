@@ -67,8 +67,8 @@ If the microSD card contains files you want to keep, make sure to create a backu
 
 To install the MicroPython tools on your microSD card:
 
+.. include:: start_ev3_download.inc
 
-1. Download the `EV3 MicroPython microSD card image <https://pybricks.com/downloads/>`_ and save it in a convenient location. This file is approximately 360 MB. You do **not** need to unzip the file.
 2. Download and install a microSD card flashing tool such as `Etcher <https://www.balena.io/etcher/>`_.
 3. Insert the microSD card into your computer or card reader.
 4. Launch the flashing tool and follow the steps on your screen to install the file you have just downloaded. If you use Etcher, you can follow the instructions below, as shown in :numref:`fig_etcher`.
