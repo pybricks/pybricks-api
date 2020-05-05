@@ -40,7 +40,8 @@ you can do.
 **Step 3: Share what you made (or ask for help!)**
 
 Got questions or issues? Please share your
-findings on our `support page`_ so we can make Pybricks better. *Thank you!*
+findings on our `support page`_ so we can make Pybricks even better.
+*Thank you!*
 
 
 .. _support page: https://github.com/pybricks/support/issues/
@@ -59,6 +60,7 @@ findings on our `support page`_ so we can make Pybricks better. *Thank you!*
     Downloads <https://pybricks.com/downloads/>
     Example Projects <https://github.com/pybricks/pybricks-projects>
     Support <https://github.com/pybricks/support/issues/>
+    About Pybricks <https://pybricks.com/about/>
 
 .. toctree::
    :maxdepth: 1
