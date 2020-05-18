@@ -199,6 +199,7 @@ latex_elements = {
     # Additional stuff for the LaTeX preamble.
     #
     'preamble': r'''
+    \usepackage{CJKutf8}
     \makeatletter
     \fancypagestyle{normal}{
         \fancyhf{}

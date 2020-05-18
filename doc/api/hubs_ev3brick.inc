@@ -163,7 +163,15 @@
 
             **Example: Say hello... in several ways.**
 
+            .. raw:: latex
+
+               \begin{CJK}{UTF8}{gbsn}
+
             .. literalinclude:: ../../pybricks-projects/snippets/ev3/screen_print/main.py
+
+            .. raw:: latex
+
+               \end{CJK}
 
     .. automethod:: pybricks.hubs::EV3Brick.screen.set_font
 
