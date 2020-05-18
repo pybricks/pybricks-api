@@ -8,3 +8,5 @@ EV3 Quick Start
 .. include:: start_ev3_run.inc
 
 .. include:: start_ev3_linux.inc
+
+.. include:: start_ev3_upgrade.inc
