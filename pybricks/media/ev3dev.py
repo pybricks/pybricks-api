@@ -95,7 +95,7 @@ class Image:
         """
         pass
 
-    def draw_circle(self, x, y, r=0, fill=False, color=_Color.BLACK):
+    def draw_circle(self, x, y, r, fill=False, color=_Color.BLACK):
         """Draws a circle on |this image|.
 
         Arguments:
