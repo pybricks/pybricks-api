@@ -72,8 +72,8 @@ the center button key to start the program as shown in :numref:`fig_manualrun`.
 Going back to the original firmware
 -----------------------------------------------------------
 
-You can go back to the LEGO® firmware and your LEGO programs at any time. To do
-so:
+You can go back to the LEGO® firmware and your LEGO programs at any time. To
+do so:
 
 1. Turn the EV3 Brick off as shown above.
 2. Wait for the screen and brick status light to turn off.
