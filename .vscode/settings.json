@@ -23,6 +23,7 @@
         "markdown",
         "latex",
         "plaintext",
-        "python"
+        "python",
+        "restructuredtext",
     ]
 }
