@@ -41,7 +41,7 @@
                   note below middle C (``C4``).
                 - The octave is followed by ``/`` and a number that indicates
                   the size of the note. For example ``/4`` is a quarter note,
-                  ``/8`` is an eight note and so on.
+                  ``/8`` is an eighth note and so on.
                 - This can optionally followed by a ``.`` to make a dotted
                   note. Dotted notes are 1-1/2 times as long as notes without a
                   dot.
