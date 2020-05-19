@@ -32,6 +32,6 @@ jobs:
     - name: Build package
       run: poetry build
     - name: Lint docs
-      run: poetry run doc8
+      run: poetry run doc8 --extension .inc
     - name: Build html docs
       run: poetry run make -C doc html
