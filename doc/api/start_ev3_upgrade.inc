@@ -158,7 +158,7 @@ Other internal changes to existing features
   and specify others with *keywords*. This can make your code easier to read.
   For example:
 
-   :: 
+   ::
 
       my_motor.run_angle(500, 90, wait=False)
 - It is no longer necessary to import ``pybricks.tools.print``. The ``print``
