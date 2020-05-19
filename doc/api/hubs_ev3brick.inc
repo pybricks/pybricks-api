@@ -14,7 +14,8 @@
 
             **Example: Turn the light on and change the color.**
 
-            .. literalinclude:: ../../pybricks-projects/snippets/ev3/light_color/main.py
+            .. literalinclude::
+              ../../pybricks-projects/snippets/ev3/light_color/main.py
 
     .. automethod:: pybricks.hubs::EV3Brick.light.off
 
@@ -29,20 +30,24 @@
 
             Each note is a string with the following format:
 
-                - The first character is the name of the note, ``A`` to ``G`` or ``R``
-                  for a rest.
-                - Note names can also include an accidental ``#`` (sharp) or ``b``
-                  (flat). ``B#``/``Cb`` and ``E#``/``Fb`` are not allowed.
-                - The note name is followed by the octave number ``2`` to ``8``. For
-                  example ``C4`` is middle C. The octave changes to the next number at
-                  the note C, for example, ``B3`` is the note below middle C (``C4``).
-                - The octave is followed by ``/`` and a number that indicates the size
-                  of the note. For example ``/4`` is a quarter note, ``/8`` is an
-                  eight note and so on.
-                - This can optionally followed by a ``.`` to make a dotted note.
-                  Dotted notes are 1-1/2 times as long as notes without a dot.
-                - The note can optionally end with a ``_`` which is a tie or a slur.
-                  This causes there to be no pause between this note and the next note.
+                - The first character is the name of the note, ``A`` to ``G``
+                  or ``R`` for a rest.
+                - Note names can also include an accidental ``#`` (sharp) or
+                  ``b`` (flat). ``B#``/``Cb`` and ``E#``/``Fb`` are not
+                  allowed.
+                - The note name is followed by the octave number ``2``
+                  to ``8``. For example ``C4`` is middle C. The octave changes
+                  to the next number at the note C, for example, ``B3`` is the
+                  note below middle C (``C4``).
+                - The octave is followed by ``/`` and a number that indicates
+                  the size of the note. For example ``/4`` is a quarter note,
+                  ``/8`` is an eight note and so on.
+                - This can optionally followed by a ``.`` to make a dotted
+                  note. Dotted notes are 1-1/2 times as long as notes without a
+                  dot.
+                - The note can optionally end with a ``_`` which is a tie or a
+                  slur. This causes there to be no pause between this note and
+                  the next note.
 
 
     .. automethod:: pybricks.hubs::EV3Brick.speaker.play_file
@@ -70,7 +75,8 @@
                 - ``'en-gb'``: English (United Kingdom)
                 - ``'en-sc'``: English (Scotland)
                 - ``'en-uk-north'``: English (United Kingdom, Northern)
-                - ``'en-uk-rp'``: English (United Kingdom, Received Pronunciation)
+                - ``'en-uk-rp'``:
+                  English (United Kingdom, Received Pronunciation)
                 - ``'en-uk-wmids'``: English (United Kingdom, West Midlands)
                 - ``'en-us'``: English (United States)
                 - ``'en-wi'``: English (West Indies)
@@ -167,7 +173,8 @@
 
                \begin{CJK}{UTF8}{gbsn}
 
-            .. literalinclude:: ../../pybricks-projects/snippets/ev3/screen_print/main.py
+            .. literalinclude::
+              ../../pybricks-projects/snippets/ev3/screen_print/main.py
 
             .. raw:: latex
 
@@ -184,7 +191,8 @@
 
             **Example: Show an image on the screen.**
 
-            .. literalinclude:: ../../pybricks-projects/snippets/ev3/screen_image/main.py
+            .. literalinclude::
+              ../../pybricks-projects/snippets/ev3/screen_image/main.py
 
     .. automethod:: pybricks.hubs::EV3Brick.screen.draw_image
 
@@ -197,7 +205,8 @@
 
             **Example: Draw some shapes on the screen.**
 
-            .. literalinclude:: ../../pybricks-projects/snippets/ev3/screen_draw/main.py
+            .. literalinclude::
+              ../../pybricks-projects/snippets/ev3/screen_draw/main.py
 
     .. automethod:: pybricks.hubs::EV3Brick.screen.draw_box
 

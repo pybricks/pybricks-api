@@ -130,8 +130,9 @@ visit the `ev3dev sensors`_ page.
 
     In this example we use the LEGO MINDSTORMS EV3 Color Sensor with the raw
     RGB mode. This gives uncalibrated red, green, and blue reflection values.
-    
-    .. literalinclude:: ../../pybricks-projects/snippets/ev3/ev3devsensor/main.py
+
+    .. literalinclude::
+        ../../pybricks-projects/snippets/ev3/ev3devsensor/main.py
 
 .. toggle-header::
     :header: **Show/hide example: Extending the Ev3devSensor class**
@@ -141,7 +142,8 @@ visit the `ev3dev sensors`_ page.
     This example shows how to extend the ``Ev3devSensor`` class by accessing
     additional features found in the Linux system folder for this device.
 
-    .. literalinclude:: ../../pybricks-projects/snippets/ev3/ev3devsensor/class_example.py
+    .. literalinclude::
+        ../../pybricks-projects/snippets/ev3/ev3devsensor/class_example.py
 
 .. _ev3dev sensors: http://docs.ev3dev.org/projects/lego-linux-drivers/en/ev3dev-stretch/sensors.html
 .. _Mode name: http://docs.ev3dev.org/projects/lego-linux-drivers/en/ev3dev-stretch/sensor_data.html
