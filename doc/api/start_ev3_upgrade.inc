@@ -59,78 +59,146 @@ the following table as a starting point to upgrade your scripts. See the
 :class:`EV3Brick() <pybricks.hubs.EV3Brick>` class documentation for
 complete details of all methods and arguments.
 
-+-----------------+--------------------------------------------------+----------------------------------------------------+
-| Action          | v1.0                                             | v2.0                                               |
-+=================+==================================================+====================================================+
-| | Initialize    | ::                                               | ::                                                 |
-| | your EV3      |                                                  |                                                    |
-|                 |     from pybricks import ev3brick as brick       |     from pybricks.hubs import EV3Brick             |
-|                 |                                                  |                                                    |
-|                 |                                                  |     ev3 = EV3Brick()                               |
-+-----------------+--------------------------------------------------+----------------------------------------------------+
-| | Light on      | ::                                               | ::                                                 |
-|                 |                                                  |                                                    |
-|                 |     brick.light(Color.RED)                       |     ev3.light.on(Color.RED)                        |
-+-----------------+--------------------------------------------------+----------------------------------------------------+
-| | Light off     | ::                                               | ::                                                 |
-|                 |                                                  |                                                    |
-|                 |                                                  |                                                    |
-|                 |     brick.light(None)                            |     ev3.light.off()                                |
-+-----------------+--------------------------------------------------+----------------------------------------------------+
-| | Read          | ::                                               | ::                                                 |
-| | buttons       |                                                  |                                                    |
-|                 |     if Button.LEFT in brick.buttons():           |     if Button.LEFT in ev3.buttons.pressed():       |
-|                 |         print("Left is pressed.")                |         print("Left is pressed.")                  |
-+-----------------+--------------------------------------------------+----------------------------------------------------+
-| | Play a        | ::                                               | ::                                                 |
-| | beep          |                                                  |                                                    |
-|                 |     brick.sound.beep()                           |     ev3.speaker.beep()                             |
-+-----------------+--------------------------------------------------+----------------------------------------------------+
-| | Play a        | ::                                               | ::                                                 |
-| | sound file    |                                                  |                                                    |
-|                 |     brick.sound.file(SoundFile.HELLO)            |     ev3.speaker.play_file(SoundFile.HELLO)         |
-+-----------------+--------------------------------------------------+----------------------------------------------------+
-| | Speak given   |                                                  | ::                                                 |
-| | text          |                                                  |                                                    |
-|                 |                                                  |     ev3.speaker.say("I can say anything!")         |
-+-----------------+--------------------------------------------------+----------------------------------------------------+
-| | Play          |                                                  | ::                                                 |
-| | notes         |                                                  |                                                    |
-|                 |                                                  |                                                    |
-|                 |                                                  |     ev3.speaker.play_notes(['C4/4', 'G4/4'])       |
-+-----------------+--------------------------------------------------+----------------------------------------------------+
-| | Write text    | ::                                               | ::                                                 |
-| | at a given    |                                                  |                                                    |
-| | position      |     brick.display.text("Hello!", (50, 60))       |     ev3.screen.draw_text(50, 60, "Hello!")         |
-+-----------------+--------------------------------------------------+----------------------------------------------------+
-| | Write text    | ::                                               | ::                                                 |
-| | and scroll    |                                                  |                                                    |
-| | automatically |     brick.display.text("Hello")                  |     ev3.screen.print("Hello")                      |
-|                 |     brick.display.text("world!")                 |     ev3.screen.print("world!")                     |
-+-----------------+--------------------------------------------------+----------------------------------------------------+
-| | Change font   |                                                  | ::                                                 |
-| | size          |                                                  |                                                    |
-|                 |                                                  |    from pybricks.media.ev3dev import Font          |
-|                 |                                                  |                                                    |
-|                 |                                                  |    big_font = Font(size=24)                        |
-|                 |                                                  |    ev3.screen.set_font(big_font)                   |
-+-----------------+--------------------------------------------------+----------------------------------------------------+
-| | Display an    | ::                                               | ::                                                 |
-| | image on      |                                                  |                                                    |
-| | the screen    |     from pybricks.parameters import ImageFile    |     from pybricks.media.ev3dev import ImageFile    |
-|                 |                                                  |                                                    |
-|                 |     brick.display.image(ImageFile.QUESTION_MARK) |     ev3.screen.load_image(ImageFile.Question_MARK) |
-+-----------------+--------------------------------------------------+----------------------------------------------------+
-| | Draw shapes   |                                                  | ::                                                 |
-| | on the screen |                                                  |                                                    |
-|                 |                                                  |     ev3.screen.draw_line(30, 30, 30, 100)          |
-|                 |                                                  |     ev3.screen.draw_box(50, 30, 90, 60)            |
-|                 |                                                  |     ev3.screen.draw_circle(70, 90, 20, fill=True)  |
-+-----------------+--------------------------------------------------+----------------------------------------------------+
-| | Read          | ::                                               | ::                                                 |
-| | Battery       |                                                  |                                                    |
-| | voltage       |     brick.battery.voltage()                      |     ev3.battery.voltage()                          |
-+-----------------+--------------------------------------------------+----------------------------------------------------+
+.. list-table::
+
+  * - **Action**
+    - **v1.0**
+    - **v2.0**
+
+  * - | Initialize
+      | your EV3
+    - ::
+
+          from pybricks import ev3brick as brick
+    - ::
+
+          from pybricks.hubs import EV3Brick
+
+          ev3 = EV3Brick()
+
+  * - | Light on
+    - ::
+
+          brick.light(Color.RED)
+    - ::
+
+          ev3.light.on(Color.RED)
+
+  * - | Light off
+    - ::
+
+          brick.light(None)
+    - ::
+
+          ev3.light.off()
+
+  * - | Read
+      | Buttons
+    - ::
+
+          if Button.LEFT in brick.buttons():
+              print("Left is pressed.")
+    - ::
+
+          if Button.LEFT in ev3.buttons.pressed():
+              print("Left is pressed.")
+
+  * - | Play a
+      | beep
+    - ::
+
+          brick.sound.beep()
+    - ::
+
+          ev3.speaker.beep()
+
+  * - | Play a
+      | sound file
+    - ::
+
+          brick.sound.file(SoundFile.HELLO)
+    - ::
+
+          ev3.speaker.play_file(SoundFile.HELLO)
+
+  * - | Text to
+      | speech
+    -
+    - ::
+
+          ev3.speaker.say("I can say anything!")
+
+  * - | Play
+      | notes
+    -
+    - ::
+
+          ev3.speaker.play_notes(['C4/4', 'G4/4'])
+
+  * - | Write text
+      | at a given
+      | position
+    - ::
+
+          brick.display.text("Hello!", (50, 60))
+    - ::
+
+          ev3.screen.draw_text(50, 60, "Hello!")
+
+  * - | Write text
+      | and scroll
+      | automatically
+    - ::
+
+          brick.display.text("Hello")
+          brick.display.text("world!")
+    - ::
+
+          ev3.screen.print("Hello")
+          ev3.screen.print("world!")
+
+  * - | Change font
+      | size
+    -
+    - ::
+
+          from pybricks.media.ev3dev import Font
+
+          big_font = Font(size=24)
+          ev3.screen.set_font(big_font)
+
+  * - | Display an
+      | image on
+      | the screen
+    - ::
+
+          from pybricks.parameters import ImageFile
+
+          brick.display.image(ImageFile.QUESTION_MARK)
+    - ::
+
+          from pybricks.media.ev3dev import ImageFile
+
+          ev3.screen.load_image(ImageFile.Question_MARK)
+
+  * - | Draw shapes
+      | on the screen
+    -
+    - ::
+
+          ev3.screen.draw_line(30, 30, 30, 100)
+          ev3.screen.draw_box(50, 30, 90, 60)
+          ev3.screen.draw_circle(70, 90, 20, fill=True)
+
+  * - | Read
+      | battery
+      | voltage
+    - ::
+
+          brick.battery.voltage()
+    - ::
+
+          ev3.battery.voltage()
 
 
 Other internal changes to existing features
