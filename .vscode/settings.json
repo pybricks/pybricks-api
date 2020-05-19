@@ -18,6 +18,13 @@
         "/``[^]*?``/gm",
         "/'[^]*?'/gm",
         "/.. data:: [^]*?'*$/gm",
+        "/.. figure:: [^]*?'*$/gm",
+        "/.. include:: [^]*?'*$/gm",
+        "/.. raw:: [^]*?'*$/gm",
+        "/.. currentmodule:: [^]*?'*$/gm",
+        "/.. _[^]*?'*$/gm",
+        "/:target:[^]*?'*$/gm",
+        "/:alt:[^]*?'*$/gm",
     ],
     "spellright.documentTypes": [
         "markdown",

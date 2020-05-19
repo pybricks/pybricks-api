@@ -23,7 +23,7 @@ If not, you can upload files back to your computer using
 
 As with any software update, *be careful about when you update*. For example,
 if you developed your code using version v1.0 and you are halfway into your
-robotics competition season, you want to stick with v1.0 for now.
+robotics competition season, you may want to stick with v1.0 for now.
 
 
 Upgrading your existing programs

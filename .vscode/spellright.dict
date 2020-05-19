@@ -10,6 +10,7 @@ automethod
 automodule
 baudrate
 bool
+booleans
 builtins
 cdot
 Celcius
@@ -45,6 +46,7 @@ literalinclude
 Lojban
 Lucida
 maxdepth
+microSDHC
 milliampere
 millivolt
 milliwatt
@@ -71,6 +73,7 @@ sep
 signaltypes
 startinstall
 str
+submodules
 thermistor
 toctree
 TODO
