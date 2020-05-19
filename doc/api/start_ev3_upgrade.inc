@@ -238,3 +238,11 @@ Other internal changes to existing features
 - Sound and image files have moved to a dedicated :doc:`media <media>` module.
   Importing them from the old location will continue to work in this release,
   to make sure existing scripts will still work.
+
+**Installing an older version of the Visual Studio Code extension**
+
+The Visual Studio Code extension and this documentation are updated
+automatically. You can still use your existing scripts with the updated
+extension. If you absolutely wish to keep the old version, look for the EV3
+extension on the extension tab, click the gear icon, and
+click *install another version*.
