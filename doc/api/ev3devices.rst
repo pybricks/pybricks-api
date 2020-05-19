@@ -94,3 +94,14 @@ Gyroscopic Sensor
    :width: 18 %
 
 .. autoclass:: pybricks.ev3devices.GyroSensor
+    :no-members:
+
+    .. automethod:: pybricks.ev3devices.GyroSensor.speed
+
+    .. automethod:: pybricks.ev3devices.GyroSensor.angle
+
+         If you use the :meth:`.angle` method, you cannot use the
+         :meth:`.speed` method in the same program. Doing so would reset the
+         sensor angle to zero every time you read the speed.
+
+    .. automethod:: pybricks.ev3devices.GyroSensor.reset_angle
