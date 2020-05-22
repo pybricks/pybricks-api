@@ -4,7 +4,8 @@
 """LEGO® Powered Up motor, sensors, and lights."""
 
 from ._common import (KeyPad as _KeyPad, Accelerometer as _Accelerometer,
-                      ColorLight as _ColorLight, Motor as _Motor)
+                      ColorLight as _ColorLight, Motor as _Motor,
+                      LightArray as _LightArray)
 
 
 class Motor(_Motor):
@@ -135,3 +136,9 @@ class ColorDistanceSensor:
                                Choose ``None`` if you don't want to press
                                any button.
         """
+
+
+class ColorSensor:
+    """LEGO® SPIKE Color Sensor."""
+
+    lights = _LightArray(3)

@@ -435,36 +435,27 @@ class ColorLight:
 class LightArray:
     """Control an array of single-color lights."""
 
-    def __init__(self, lights):
+    def __init__(self, n):
         """Initializes the light array.
 
         Arguments:
-            lights (int): Number of lights
+            n (int): Number of lights
         """
         pass
 
-    def on(self, brightness=100):
-        """Turns on all the lights at the specified brightness.
+    def on(self, *brightness):
+        """Turns on the lights at the specified brightness.
 
         Arguments:
-            brightness (:ref:`brightness`):
-                Brightness of the lights.
+            *brightness (:ref:`brightness`, :ref:`brightness`, ...):
+                Brightness of each light. If you give only one value, it is
+                applied to all lights at once.
+
         """
         pass
 
     def off(self):
         """Turns off all the lights."""
-        pass
-
-    def array(self, *brightnesses):
-        """array(first_light, ..., last_light)
-
-        Sets the brightness of each light individually.
-
-        Arguments:
-            brightness (:ref:`brightness`, ..., :ref:`brightness`):
-                Brightness of each light.
-        """
         pass
 
 
