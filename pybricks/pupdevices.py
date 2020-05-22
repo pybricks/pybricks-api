@@ -142,3 +142,9 @@ class ColorSensor:
     """LEGO® SPIKE Color Sensor."""
 
     lights = _LightArray(3)
+
+
+class UltrasonicSensor:
+    """LEGO® SPIKE Color Sensor."""
+
+    lights = _LightArray(3)
