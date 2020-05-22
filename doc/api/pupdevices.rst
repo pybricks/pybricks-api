@@ -162,6 +162,17 @@ Ultrasonic Sensor
 
     .. automethod:: pybricks.pupdevices::UltrasonicSensor.lights.off
 
+Force Sensor
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. todo:: Support for this sensor is not yet implemented. API is experimental.
+
+.. figure:: ../api/images/sensor_force.png
+   :width: 35 %
+
+.. autoclass:: pybricks.pupdevices.ForceSensor
+    :no-members:
+
 
 .. Tilt Sensor
 .. ^^^^^^^^^^^^^^^^^^^^^^^^^
