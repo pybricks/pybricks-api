@@ -447,9 +447,9 @@ class LightArray:
         """Turns on the lights at the specified brightness.
 
         Arguments:
-            *brightness (:ref:`brightness`, :ref:`brightness`, ...):
-                Brightness of each light. If you give only one value, it is
-                applied to all lights at once.
+            *brightness (:ref:`brightness`, ...):
+                Brightness of each light, in the order shown above. If you
+                give only one value, all lights will get that same brightness.
 
         """
         pass
