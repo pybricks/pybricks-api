@@ -121,10 +121,8 @@ Color Sensor
 
 .. todo:: Support for this sensor is not yet implemented. API is experimental.
 
-    Add image with numbered labels for light index
-
-.. figure:: ../api/images/sensor_color.png
-   :width: 35 %
+.. figure:: ../api/images/sensor_color_lights_label.png
+   :width: 70 %
 
 .. autoclass:: pybricks.pupdevices.ColorSensor
     :no-members:
@@ -132,8 +130,8 @@ Color Sensor
     .. rubric:: Built-in lights
 
     This sensor has 3 built-in lights. You can adjust the brightness of each
-    light. If you use the sensor to measure something afterwards, the light
-    automatically turns back on as needed for the measurement.
+    light. If you use the sensor to measure something, the lights will
+    be turned on or off as needed for the measurement.
 
     .. automethod:: pybricks.pupdevices::ColorSensor.lights.on
 
@@ -145,8 +143,8 @@ Ultrasonic Sensor
 
 .. todo:: Support for this sensor is not yet implemented. API is experimental.
 
-.. figure:: ../api/images/sensor_ultrasonic.png
-   :width: 35 %
+.. figure:: ../api/images/sensor_ultrasonic_lights_label.png
+   :width: 80 %
 
 .. autoclass:: pybricks.pupdevices.UltrasonicSensor
     :no-members:
