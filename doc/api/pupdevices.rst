@@ -145,8 +145,6 @@ Ultrasonic Sensor
 
 .. todo:: Support for this sensor is not yet implemented. API is experimental.
 
-    Flip image to ensure top/bottom left/right description is correct
-
 .. figure:: ../api/images/sensor_ultrasonic.png
    :width: 35 %
 
