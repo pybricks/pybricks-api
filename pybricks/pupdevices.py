@@ -148,3 +148,8 @@ class UltrasonicSensor:
     """LEGO® SPIKE Color Sensor."""
 
     lights = _LightArray(3)
+
+
+class ForceSensor:
+    """LEGO® SPIKE Force Sensor."""
+    pass
