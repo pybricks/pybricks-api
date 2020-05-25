@@ -143,6 +143,83 @@ class ColorSensor:
 
     lights = _LightArray(3)
 
+    def color(self, illuminate=True):
+        """Scans the color of a surface or an external light source.
+
+        Arguments:
+            illuminate (bool): Choose ``true`` to keep the sensor light on.
+                This is useful to scan the color of objects and surfaces.
+                Choose ``false`` to turn the sensor light off. This is useful
+                to scan the color of a light source or screen.
+
+        :returns:
+            Detected color.
+        :rtype: :class:`Color <.parameters.Color>`, or ``None`` if no color is
+                detected.
+        """
+        pass
+
+    def color_map(self, hues, saturation, values):
+        """Configures how :meth:`.color` selects a
+        :class:`Color <.parameters.Color>` based on a :meth:`.hsv` measurement.
+
+        Specify only colors that you wish to detect in your application.
+        This way, measurements are
+        rounded to the nearest expected color, and other colors are ignored.
+
+        If you give no arguments, the current settings will be returned as a
+        tuple.
+
+        Arguments:
+            hues (dict): A dictionary that
+                maps :class:`Color <.parameters.Color>` to hues. When the
+                saturation is high, :meth:`.color` will return one of these
+                colors, whichever has the nearest hue.
+            saturation (:ref:`percentage`): Minimum saturation of a proper
+                color.
+            values (:ref:`percentage`): A dictionary that
+                maps ``Color.WHITE``, ``Color.GRAY``, ``Color.BLACK`` and
+                ``None`` to brightness values. When the saturation is
+                low, :meth:`.color` will return one of these colors, whichever
+                has the nearest value.
+        """
+        pass
+
+    def hsv(self, illuminate=True):
+        """Scans the hue, saturation and brightness value of a
+        surface or an external light source.
+
+        Arguments:
+            illuminate (bool): Choose ``true`` to keep the sensor light on.
+                This is useful to scan the color of objects and surfaces.
+                Choose ``false`` to turn the sensor light off. This is useful
+                to scan the color of a light source or screen.
+
+        :returns: Tuple with the hue, saturation, and value
+            (brightness) of the color.
+        :rtype: (:ref:`angle`, :ref:`percentage`, :ref:`percentage`)
+
+        """
+        pass
+
+    def ambient(self):
+        """Measures the ambient light intensity.
+
+        Returns:
+            :ref:`percentage`: Ambient light intensity, ranging from 0 (dark)
+            to 100 (bright).
+        """
+        pass
+
+    def reflection(self):
+        """Measures the reflection of a surface.
+
+        Returns:
+            :ref:`percentage`: Reflection, ranging from 0.0 (no reflection) to
+            100.0 (high reflection).
+        """
+        pass
+
 
 class UltrasonicSensor:
     """LEGO® SPIKE Color Sensor."""
