@@ -127,6 +127,16 @@ Color Sensor
 .. autoclass:: pybricks.pupdevices.ColorSensor
     :no-members:
 
+    .. automethod:: pybricks.pupdevices.ColorSensor.color
+
+    .. automethod:: pybricks.pupdevices.ColorSensor.hsv
+
+    .. automethod:: pybricks.pupdevices.ColorSensor.color_map
+
+    .. automethod:: pybricks.pupdevices.ColorSensor.ambient
+
+    .. automethod:: pybricks.pupdevices.ColorSensor.reflection
+
     .. rubric:: Built-in lights
 
     This sensor has 3 built-in lights. You can adjust the brightness of each
