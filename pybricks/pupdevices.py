@@ -244,14 +244,9 @@ class UltrasonicSensor:
         """
         pass
 
-    def distance(self, silent=False):
+    def distance(self):
         """Measures the distance between the sensor and an object using
         ultrasonic sound waves.
-
-        Arguments:
-            silent (bool): Choose ``True`` to turn the sensor off after
-                           measuring the distance. This reduces interference
-                           with other ultrasonic sensors.
 
         Returns:
             :ref:`distance`: Distance.
@@ -262,10 +257,6 @@ class UltrasonicSensor:
     def presence(self):
         """Checks for the presence of other ultrasonic sensors by detecting
         ultrasonic sounds.
-
-        If the other ultrasonic sensor is operating in silent mode, you can
-        only detect the presence of that sensor while it is taking a
-        measurement.
 
         Returns:
             bool: ``True`` if ultrasonic sounds are detected,
