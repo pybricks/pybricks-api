@@ -143,6 +143,15 @@ class ColorSensor:
 
     lights = _LightArray(3)
 
+    def __init__(self, port):
+        """
+
+        Arguments:
+            port (Port): Port to which the sensor is connected.
+
+        """
+        pass
+
     def color(self, illuminate=True):
         """Scans the color of a surface or an external light source.
 
@@ -227,7 +236,7 @@ class UltrasonicSensor:
     lights = _LightArray(3)
 
     def __init__(self, port):
-        """UltrasonicSensor(port)
+        """
 
         Arguments:
             port (Port): Port to which the sensor is connected.
@@ -267,4 +276,49 @@ class UltrasonicSensor:
 
 class ForceSensor:
     """LEGO® SPIKE Force Sensor."""
-    pass
+
+    def __init__(self, port):
+        """
+
+        Arguments:
+            port (Port): Port to which the sensor is connected.
+        """
+        pass
+
+    def force(self):
+        """Measures the force exerted on the sensor.
+
+        Returns:
+            :ref:`force`: Measured force (up to approximately 10.00 N).
+        """
+
+    def distance(self):
+        """Measures by how much the sensor button has moved.
+
+        Returns:
+            :ref:`distance`: How much the sensor button has
+            moved (up to approximately 8.00 mm).
+        """
+
+    def pressed(self, force=3):
+        """Checks if the sensor button is pressed.
+
+        Arguments:
+            force (:ref:`force`): Minimum force to be considered pressed.
+
+        Returns:
+            bool: ``True`` if the sensor is pressed, ``False`` if it is not.
+        """
+
+    def touched(self):
+        """Checks if the sensor is touched.
+
+        This is similar to :meth:`pressed`, but it detects slight movements of
+        the button even when the measured force is still considered zero.
+
+        Returns:
+            bool: ``True`` if the sensor is touched or pressed, ``False``
+            if it is not.
+        """
+
+        pass

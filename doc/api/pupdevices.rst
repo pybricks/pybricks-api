@@ -119,8 +119,6 @@ Color and Distance Sensor
 Color Sensor
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. todo:: Support for this sensor is not yet implemented. API is experimental.
-
 .. figure:: ../api/images/sensor_color_lights_label.png
    :width: 70 %
 
@@ -151,8 +149,6 @@ Color Sensor
 Ultrasonic Sensor
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. todo:: Support for this sensor is not yet implemented. API is experimental.
-
 .. figure:: ../api/images/sensor_ultrasonic_lights_label.png
    :width: 80 %
 
@@ -175,14 +171,19 @@ Ultrasonic Sensor
 Force Sensor
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. todo:: Support for this sensor is not yet implemented. API is experimental.
-
 .. figure:: ../api/images/sensor_force.png
    :width: 35 %
 
 .. autoclass:: pybricks.pupdevices.ForceSensor
     :no-members:
 
+    .. automethod:: pybricks.pupdevices.ForceSensor.force
+
+    .. automethod:: pybricks.pupdevices.ForceSensor.distance
+
+    .. automethod:: pybricks.pupdevices.ForceSensor.pressed
+
+    .. automethod:: pybricks.pupdevices.ForceSensor.touched
 
 .. Tilt Sensor
 .. ^^^^^^^^^^^^^^^^^^^^^^^^^
