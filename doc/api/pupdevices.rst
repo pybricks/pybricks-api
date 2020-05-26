@@ -159,6 +159,10 @@ Ultrasonic Sensor
 .. autoclass:: pybricks.pupdevices.UltrasonicSensor
     :no-members:
 
+    .. automethod:: pybricks.pupdevices.UltrasonicSensor.distance
+
+    .. automethod:: pybricks.pupdevices.UltrasonicSensor.presence
+
     .. rubric:: Built-in lights
 
     This sensor has 4 built-in lights. You can adjust the brightness of each
