@@ -152,14 +152,13 @@ class ColorSensor:
         """
         pass
 
-    def color(self, illuminate=True):
+    def color(self, surface=True):
         """Scans the color of a surface or an external light source.
 
         Arguments:
-            illuminate (bool): Choose ``true`` to keep the sensor light on.
-                This is useful to scan the color of objects and surfaces.
-                Choose ``false`` to turn the sensor light off. This is useful
-                to scan the color of a light source or screen.
+            surface (bool): Choose ``true`` to scan the color of objects
+                and surfaces. Choose ``false`` to scan the color of
+                screens and other external light sources.
 
         :returns:
             Detected color.
@@ -194,15 +193,14 @@ class ColorSensor:
         """
         pass
 
-    def hsv(self, illuminate=True):
+    def hsv(self, surface=True):
         """Scans the hue, saturation and brightness value of a
         surface or an external light source.
 
         Arguments:
-            illuminate (bool): Choose ``true`` to keep the sensor light on.
-                This is useful to scan the color of objects and surfaces.
-                Choose ``false`` to turn the sensor light off. This is useful
-                to scan the color of a light source or screen.
+            surface (bool): Choose ``true`` to scan the color of objects
+                and surfaces. Choose ``false`` to scan the color of
+                screens and other external light sources.
 
         :returns: Tuple with the hue, saturation, and value
             (brightness) of the color.
