@@ -19,9 +19,9 @@ Preparing your computer
 --------------------------------
 
 Make sure that Bluetooth is enabled on your device and go to
-`code.pybricks.com`_.
+`code.pybricks.com`_. That's it!
 
-Right now, we officially support only Google Chrome, *version 85 or newer*.
+Right now, we officially support only **Google Chrome, version 85 or newer**.
 It is currently available as a beta/developer version. You can install
 it on Windows, Mac, and Linux without affecting your existing browser or data.
 Download it `from here`_.
@@ -30,10 +30,7 @@ Download it `from here`_.
     :header: **Extra steps for Linux users**
 
     - In Google Chrome or Chromium, go to ``chrome://flags/``.
-    - Search for *Experimental Web Platform features*.
-    - Enable it.
-
-
+    - Search for *Experimental Web Platform features* and enable it.
 
 Installing the Pybricks firmware
 --------------------------------
@@ -45,23 +42,64 @@ Installing it is easy:
 
     <video controls src="http://pybricks.com/wp-content/uploads/2020/06/install.mp4" width="100%"></video>
 
-If you can't want watch the video, just follow these steps:
+.. toggle-header::
+    :header: **Click to show/hide the written steps**
 
-- Make sure your batteries are fresh.
-- Make sure the hub is off.
-- Press and hold the green button.
-- Wait for the light to blink, but keep holding the button.
-- On the Pybricks Code page, click the firmware update button.
-- Select the ``LEGO Bootloader`` and click *Pair*.
-- The light should change to a red/green/blue sequence.
-- You can now release the button.
-- Wait for the update to finish, indicated by a steady blue light.
-- If you use the recommended browser, this will take about 90 seconds.
+    If you can’t want watch the video, follow these steps instead:
+
+    - Make sure your batteries are fresh.
+    - Make sure the hub is off.
+    - Press and hold the green button.
+    - Wait for the light to blink, but keep holding the button.
+    - On the Pybricks Code page, click the firmware update button.
+    - Select the ``LEGO Bootloader`` and click *Pair*.
+    - The light should change to a red/green/blue sequence.
+    - You can now release the button.
+    - Wait for the update to finish, indicated by a steady blue light.
+    - If you use the recommended browser, this will take about 90 seconds.
 
 Running programs
 --------------------------------
 
+Once the firmware is installed, you can start coding! Use the Bluetooth button
+to search for and connect to your *Pybricks Hub*. Then press run to start your
+program.
 
+.. figure:: ../api/images/pybrickscode.png
+
+.. toggle-header::
+    :header: **Click to show/hide the example program**
+
+    To get started using the program shown above, just copy and paste
+    this snippet::
+
+        # Initialize hub and sensor
+        hub = CPlusHub()
+        sensor = ColorDistanceSensor(Port.C)
+
+        # We'll use two motors. One is a dial to
+        # set the speed of the other motor.
+        motor = Motor(Port.B)
+        dial = Motor(Port.A)
+
+        # Say hello :)
+        print("Hello, Pybricks!")
+
+        # First, we'll move the dial to absolute zero.
+        dial.run_target(500, 0, Stop.COAST)
+
+        while True:
+            # Set the speed based on dial angle
+            speed = dial.angle()*3
+            if abs(speed) < 100:
+                speed = 0
+            motor.run(speed)
+
+            # Turn on the hub light if an object is nearby
+            if sensor.distance() < 50:
+                hub.light.on(Color.RED)
+            else:
+                hub.light.off()
 
 Saving a program permanently
 --------------------------------------
