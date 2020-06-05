@@ -8,7 +8,7 @@ run your first scripts.
 **Step 1: Install Pybricks**
 
 To get started, go to the :doc:`EV3 Quick Start <start_ev3>`
-or the :doc:`Powered Up Quick Start <start_ev3>` or pick your hub
+or the :doc:`Powered Up Quick Start <start_pup>` or pick your hub
 below.
 
 .. list-table::
