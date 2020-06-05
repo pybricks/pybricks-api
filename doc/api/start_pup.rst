@@ -15,6 +15,12 @@ hand menu to modify the example program.
 
     - We welcome your questions, feedback and bug reports on our `support page`_.
 
+    - The *Pybricks Code* page is currently password protected. This helps us
+      start out with a small group of early users to iron out the main issues.
+    - Do you want to try it? Send us an email at ``team@pybricks.com``. Don't
+      worry if you've never used Python before -- feedback from beginning users
+      is actually very helpful!
+
 Preparing your computer
 --------------------------------
 
@@ -129,7 +135,7 @@ No connection required!*
         The firmware is a ZIP archive containing the basic firmware and one
         ``main.py`` script:
 
-        1. Go to the `latest builds`_.
+        1. Go to the `latest builds`_. [This link will be available shortly.]
         2. Click a build with a green checkmark.
         3. Download ZIP archive for your hub.
         4. Modify the ``main.py`` file as you like.
