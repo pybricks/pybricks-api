@@ -38,3 +38,5 @@ Select your programmable hub using the buttons below.
 
         .. figure:: ../api/images/cplushub.png
             :height: 15 em
+
+        .. include:: hubs_cplushub.inc
