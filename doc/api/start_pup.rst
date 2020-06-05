@@ -4,7 +4,7 @@ Powered Up Quick Start
 Coming soon!
 
 
-Installing the Pybricks Firmware
+Installing the Pybricks firmware
 --------------------------------
 
 .. raw:: html
@@ -12,12 +12,12 @@ Installing the Pybricks Firmware
     <video controls src="http://pybricks.com/wp-content/uploads/2020/06/install.mp4" width="100%"></video>
 
 
-Running Programs
+Running programs
 --------------------------------
 
 
 
-Advanced: Saving a Program on the Hub
+Saving a program permanently
 --------------------------------------
 
 When you run a program as shown above, it is deleted as soon as it's done.
@@ -60,6 +60,15 @@ problems, give your hub a few seconds before you start your program.
 
 Restoring the LEGO Firmware
 ---------------------------
+
+Pybricks uses the same update method as the LEGO apps; just with a different
+firmware file. This means you can go back to the original firmware any time.
+As shown in the video below, just put the hub in update mode and
+connect using a LEGO app.
+
+This video shows the Powered Up app in *create* mode. It has firmware for all
+hubs. As usual, you may need to restart the app to detect the hub. If it fails,
+try again with fresh batteries.
 
 .. raw:: html
 
