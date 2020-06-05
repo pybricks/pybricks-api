@@ -28,14 +28,16 @@ Make sure that Bluetooth is enabled on your device and go to
 `code.pybricks.com`_. That's it!
 
 Right now, we officially support only **Google Chrome, version 85 or newer**.
-It is currently available as a beta/developer version. You can install
-it on Windows, Mac, and Linux without affecting your existing browser or data.
-Download it `from here`_.
+It is currently available as a nightly build. Download it `from here`_.
+The official Chrome 85 release is
+scheduled for August 25th. You can install it on Windows, Mac, and Linux
+without affecting your existing browser or data.
 
 .. toggle-header::
     :header: **Extra steps for Linux users**
 
-    - In Google Chrome or Chromium, go to ``chrome://flags/``.
+    - For now, install the `developer version`_ debian package.
+    - In Google Chrome go to ``chrome://flags/``.
     - Search for *Experimental Web Platform features* and enable it.
 
 Installing the Pybricks firmware
@@ -168,4 +170,5 @@ try again with fresh batteries.
 .. _latest builds: https://github.com/pybricks/pybricks-micropython/actions?query=workflow%3ABuild+
 .. _support page: https://github.com/pybricks/support/issues/
 .. _code.pybricks.com: http://code.pybricks.com/
-.. _from here: https://www.google.com/chrome/dev/
+.. _from here: https://www.google.com/chrome/canary/
+.. _developer version: https://www.google.com/chrome/dev/
