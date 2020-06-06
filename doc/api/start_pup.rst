@@ -28,8 +28,8 @@ Make sure that Bluetooth is enabled on your device and go to
 `code.pybricks.com`_. That's it!
 
 Right now, we officially support only **Google Chrome, version 85 or newer**.
-It is currently available as a weekly developer build. Download it `from here`_.
-The official Chrome 85 release is
+It is currently available as a weekly developer build. Download it
+`from here`_. The official Chrome 85 release is
 scheduled for August 25th. You can install it on Windows, Mac, and Linux
 without affecting your existing browser or data.
 
