@@ -5,7 +5,7 @@
 
 from ._common import (KeyPad as _KeyPad, Accelerometer as _Accelerometer,
                       ColorLight as _ColorLight, Motor as _Motor,
-                      LightArray as _LightArray)
+                      LightArray as _LightArray, Light as _Light)
 
 
 class Motor(_Motor):
@@ -310,4 +310,17 @@ class ForceSensor:
             if it is not.
         """
 
+        pass
+
+
+class Light(_Light):
+    """LEGO® Powered Up Light."""
+
+    def __init__(self, port):
+        """
+
+        Arguments:
+            port (Port): Port to which the device is connected.
+
+        """
         pass

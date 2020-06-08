@@ -211,3 +211,16 @@ Force Sensor
     .. automethod:: pybricks.pupdevices::RemoteControl.light.off
 
     .. automethod:: pybricks.pupdevices::RemoteControl.buttons.pressed
+
+Light
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. figure:: ../api/images/light.png
+   :width: 90 %
+
+.. autoclass:: pybricks.pupdevices.Light
+    :no-members:
+
+    .. automethod:: pybricks.pupdevices.Light.on
+
+    .. automethod:: pybricks.pupdevices.Light.off

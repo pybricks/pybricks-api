@@ -393,7 +393,7 @@ class Light:
     """Control a single-color light."""
 
     def on(self, brightness=100):
-        """Turn on the light at the specified brightness.
+        """Turns on the light at the specified brightness.
 
         Arguments:
             brightness (:ref:`brightness`):
