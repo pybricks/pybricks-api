@@ -81,19 +81,19 @@ program.
     To get started using the program shown above, just copy and paste
     this snippet::
 
-        # Initialize hub and sensor
-        hub = CPlusHub()
-        sensor = ColorDistanceSensor(Port.C)
+        from pybricks.pupdevices import Motor
+        from pybricks.parameters import Port, Stop
+        from pybricks.tools import wait
 
-        # We'll use two motors. One is a dial to
-        # set the speed of the other motor.
+        # We'll use two motors. One is a dial
+        # to set the speed of the other motor.
         motor = Motor(Port.B)
         dial = Motor(Port.A)
 
         # Say hello :)
         print("Hello, Pybricks!")
 
-        # First, we'll move the dial to absolute zero.
+        # First, we'll move the dial to zero.
         dial.run_target(500, 0, Stop.COAST)
 
         while True:
@@ -101,13 +101,12 @@ program.
             speed = dial.angle()*3
             if abs(speed) < 100:
                 speed = 0
+
+            # Run motor at desired speed
             motor.run(speed)
 
-            # Turn on the hub light if an object is nearby
-            if sensor.distance() < 50:
-                hub.light.on(Color.RED)
-            else:
-                hub.light.off()
+            # Wait briefly, then repeat
+            wait(10)
 
 Saving a program permanently
 --------------------------------------
