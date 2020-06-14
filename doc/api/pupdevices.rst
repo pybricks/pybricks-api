@@ -82,8 +82,12 @@ Motors with Rotation Sensors
 
     .. automethod:: pybricks.pupdevices.Motor.track_target
 
-    .. autoattribute:: pybricks.pupdevices.Motor.control
+    .. autoattribute:: pybricks.ev3devices.Motor.control
         :annotation:
+        :noindex:
+
+.. FIXME: above should point to pupdevices but inherited class attributes
+   do not work yet (https://github.com/sphinx-doc/sphinx/issues/741).
 
 
 Color and Distance Sensor
