@@ -189,6 +189,22 @@ Force Sensor
 
     .. automethod:: pybricks.pupdevices.ForceSensor.touched
 
+Infrared Sensor
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. figure:: ../api/images/sensor_proximity.png
+   :width: 35 %
+
+.. autoclass:: pybricks.pupdevices.InfraredSensor
+    :no-members:
+
+    .. automethod:: pybricks.pupdevices.InfraredSensor.distance
+
+    .. automethod:: pybricks.pupdevices.InfraredSensor.reflection
+
+    .. automethod:: pybricks.pupdevices.InfraredSensor.count
+
+
 .. Tilt Sensor
 .. ^^^^^^^^^^^^^^^^^^^^^^^^^
 

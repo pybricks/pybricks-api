@@ -313,6 +313,45 @@ class ForceSensor:
         pass
 
 
+class InfraredSensor:
+    """LEGO® Powered Up Infrared Sensor."""
+
+    def __init__(self, port):
+        """
+
+        Arguments:
+            port (Port): Port to which the sensor is connected.
+        """
+        pass
+
+    def reflection(self):
+        """Measures the reflection of a surface using an infrared light.
+
+        Returns:
+            :ref:`percentage`: Reflection, ranging from 0.0 (no reflection) to
+            100.0 (high reflection).
+        """
+        pass
+
+    def distance(self):
+        """Measures the relative distance between the sensor and an object
+        using infrared light.
+
+        Returns:
+            :ref:`relativedistance`: Relative distance ranging from 0 (closest)
+            to 100 (farthest).
+        """
+        pass
+
+    def count(self):
+        """Counts the number of objects that have passed by the sensor.
+
+        Returns:
+            int: Number of objects counted.
+        """
+        pass
+
+
 class Light(_Light):
     """LEGO® Powered Up Light."""
 
