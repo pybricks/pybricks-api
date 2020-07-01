@@ -205,19 +205,23 @@ Infrared Sensor
     .. automethod:: pybricks.pupdevices.InfraredSensor.count
 
 
-.. Tilt Sensor
-.. ^^^^^^^^^^^^^^^^^^^^^^^^^
+Tilt Sensor
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. .. autoclass:: pybricks.pupdevices.TiltSensor
+.. figure:: ../api/images/sensor_tilt.png
+   :width: 35 %
+
+
+.. autoclass:: pybricks.pupdevices.TiltSensor
     :no-members:
-
-    .. automethod:: neutral
-
-    .. automethod:: acceleration
 
     .. automethod:: tilt
 
-    .. automethod:: up
+..    .. automethod:: neutral
+
+..    .. automethod:: acceleration
+
+..    .. automethod:: up
 
 
 .. Remote Control

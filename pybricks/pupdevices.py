@@ -3,7 +3,7 @@
 
 """LEGO® Powered Up motor, sensors, and lights."""
 
-from ._common import (KeyPad as _KeyPad, Accelerometer as _Accelerometer,
+from ._common import (KeyPad as _KeyPad,
                       ColorLight as _ColorLight, Motor as _Motor,
                       LightArray as _LightArray, Light as _Light)
 
@@ -43,14 +43,22 @@ class RemoteControl:
         pass
 
 
-class TiltSensor(_Accelerometer):
+class TiltSensor:
     """LEGO® Powered Up Tilt Sensor."""
 
     def __init__(self, port):
-        """TiltSensor(port)
+        """
 
         Arguments:
             port (Port): Port to which the sensor is connected.
+        """
+        pass
+
+    def tilt(self):
+        """Measures the tilt relative to the horizontal plane.
+
+        Returns:
+            (:ref:`angle`, :ref:`angle`): Tuple of pitch and roll angles.
         """
         pass
 
