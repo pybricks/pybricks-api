@@ -471,19 +471,39 @@ class LightGrid:
         """
         pass
 
-    def image(self, matrix, clear=True):
-        """Shows an image made up of pixels of a given brightness.
+    def image(self, binary, clear=True):
+        """Shows an image made up of pixels of full brightness, represented by
+        a single number.
+
+        You can use one of the built-in example images or make your own.
+
+        Arguments:
+            binary (int): Binary number representing the image. Each bit is one
+                pixel, where 1 means on and 0 means off. The least significant
+                bit is the last pixel.
+            clear (bool): Whether to turn off all the lights before showing
+                the new image. If you choose ``False``,
+                the given matrix is added to the one already shown.
+        """
+        pass
+
+    def matrix(self, matrix, clear=True):
+        """Shows an image made up of pixels of a given brightness, represented
+        by a matrix of intensity values.
+
+        Compared to :meth:`.image` you can make more refined images, but this
+        method is slower and uses more memory.
 
         Arguments:
             matrix (2D Array): Matrix of intensities (:ref:`brightness`).
             clear (bool): Whether to turn off all the lights before showing
                 the new image. If you choose ``False``,
-                the given matrix is added to one already shown.
+                the given matrix is added to the one already shown.
         """
         pass
 
     def pixel(self, row, column, brightness):
-        """Turns on a pixel at the specified brightness.
+        """Turns on one pixel at the specified brightness.
 
         Arguments:
             row (int): Vertical grid index, starting at 0 from the top.
@@ -509,7 +529,7 @@ class LightGrid:
         """Displays a number on the light grid.
 
         Arguments:
-            number (int): The number to be displayed.
+            number (int): The number to be displayed (0--99).
         """
         pass
 
