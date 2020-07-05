@@ -440,13 +440,13 @@ class ColorLight:
         """Turns off the light."""
         pass
 
-    def rgb(self, red, green, blue):
-        """Sets the brightness of the red, green, and blue light.
+    def hsv(self, hue, saturation=100, value=100):
+        """Set the hue, saturation and brightness of the light.
 
         Arguments:
-            red (:ref:`brightness`): Brightness of the red light.
-            green (:ref:`brightness`): Brightness of the green light.
-            blue (:ref:`brightness`): Brightness of the blue light.
+            hue (:ref:`angle`): Hue of the color.
+            saturation (:ref:`percentage`): Saturation of the color.
+            value (:ref:`percentage`): Brightness value of the color.
         """
         pass
 
