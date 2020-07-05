@@ -450,6 +450,27 @@ class ColorLight:
         """
         pass
 
+    def pattern(self, pattern, duration, repeat=True):
+        """Make the light follow a color pattern as a function of time.
+
+        The specified pattern function will be sampled at 64 points between 0
+        and the specified duration. The light will be held constant between
+        samples.
+
+        This function is not blocking. The pattern will be shown as the
+        user program continues.
+
+        Arguments:
+            pattern (callable): Function of the
+                form ``h, s, v = func(t)``` that returns a tuple of ``h``,
+                ``s``, and ``v`` as a function of time ``t`` in milliseconds.
+                Instead of an HSV tuple, you may return
+                a :class:`Button <.parameters.Color>` for simplicity.
+            time (:ref:`time`): Duration of the pattern.
+            repeat (bool): Whether to keep repeating the pattern after it
+                completes.
+        """
+
 
 class LightArray:
     """Control an array of single-color lights."""
