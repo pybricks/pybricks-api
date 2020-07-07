@@ -242,3 +242,11 @@ Fahrenheit (°F) or Kelvin (K), you can use the following conversion formulas:
     :math:`°\!F = °\!C \cdot \frac{9}{5} + 32`.
 
     :math:`K = °\!C + 273.15`.
+
+.. _hue:
+
+hue: deg
+--------------
+Hue of a color (0-359 degrees).
+
+TODO: diagram

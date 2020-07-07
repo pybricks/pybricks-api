@@ -212,7 +212,7 @@ class ColorSensor:
 
         :returns: Tuple with the hue, saturation, and value
             (brightness) of the color.
-        :rtype: (:ref:`angle`, :ref:`percentage`, :ref:`percentage`)
+        :rtype: (:ref:`hue`, :ref:`percentage`, :ref:`percentage`)
 
         """
         pass
