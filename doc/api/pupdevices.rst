@@ -248,3 +248,5 @@ Light
     .. automethod:: pybricks.pupdevices.Light.on
 
     .. automethod:: pybricks.pupdevices.Light.off
+
+..    .. automethod:: pybricks.pupdevices.Light.pattern

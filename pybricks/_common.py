@@ -405,20 +405,17 @@ class Light:
         pass
 
     def pattern(self, pattern, duration):
-        """Make the light brightness follow a pattern as a function of time.
+        """Makes the light brightness follow a pattern as a function of time.
 
         The specified pattern function will be sampled at 64 points between 0
         and the specified duration. The light will be held at a constant
         brightness between samples. After the given duration, the pattern
         repeats.
 
-        This function is not blocking. The pattern will be shown as the
-        user program continues.
-
         Arguments:
             pattern (callable): Function of the
-                form ``b = func(t)``` that returns the brightness ``b``
-                of the (0--100.0) as a function of time ``t`` in milliseconds.
+                form ``b = func(t)`` that returns the brightness ``b`` as a
+                function of time ``t`` in milliseconds.
             time (:ref:`time`): Duration of the pattern.
         """
 
@@ -445,7 +442,7 @@ class ColorLight:
         pass
 
     def hsv(self, hue, saturation=100, value=100):
-        """Set the hue, saturation and brightness of the light.
+        """Sets the hue, saturation and brightness of the light.
 
         Arguments:
             hue (:ref:`hue`): Hue of the color.
@@ -455,21 +452,19 @@ class ColorLight:
         pass
 
     def pattern(self, pattern, duration):
-        """Make the light follow a color pattern as a function of time.
+        """Makes the light follow a color pattern as a function of time.
 
         The specified pattern function will be sampled at 64 points between 0
         and the specified duration. The light will be held constant between
         samples. After the given duration, the pattern repeats.
 
-        This function is not blocking. The pattern will be shown as the
-        user program continues.
-
         Arguments:
             pattern (callable): Function of the
-                form ``h, s, v = func(t)``` that returns a tuple of ``h``,
+                form ``h, s, v = func(t)`` that returns a tuple of ``h``,
                 ``s``, and ``v`` as a function of time ``t`` in milliseconds.
-                Instead of an HSV tuple, you may return
-                a :class:`Button <.parameters.Color>` for simplicity.
+                A function of the
+                form :class:`col <.parameters.Color>` ``= func(t)`` is also
+                allowed.
             time (:ref:`time`): Duration of the pattern.
         """
 
