@@ -404,12 +404,13 @@ class Light:
         """Turns off the light."""
         pass
 
-    def pattern(self, pattern, duration, repeat=True):
+    def pattern(self, pattern, duration):
         """Make the light brightness follow a pattern as a function of time.
 
         The specified pattern function will be sampled at 64 points between 0
         and the specified duration. The light will be held at a constant
-        brightness between samples.
+        brightness between samples. After the given duration, the pattern
+        repeats.
 
         This function is not blocking. The pattern will be shown as the
         user program continues.
@@ -419,8 +420,6 @@ class Light:
                 form ``b = func(t)``` that returns the brightness ``b``
                 of the (0--100.0) as a function of time ``t`` in milliseconds.
             time (:ref:`time`): Duration of the pattern.
-            repeat (bool): Whether to keep repeating the pattern after it
-                completes.
         """
 
 
@@ -450,12 +449,12 @@ class ColorLight:
         """
         pass
 
-    def pattern(self, pattern, duration, repeat=True):
+    def pattern(self, pattern, duration):
         """Make the light follow a color pattern as a function of time.
 
         The specified pattern function will be sampled at 64 points between 0
         and the specified duration. The light will be held constant between
-        samples.
+        samples. After the given duration, the pattern repeats.
 
         This function is not blocking. The pattern will be shown as the
         user program continues.
@@ -467,8 +466,6 @@ class ColorLight:
                 Instead of an HSV tuple, you may return
                 a :class:`Button <.parameters.Color>` for simplicity.
             time (:ref:`time`): Duration of the pattern.
-            repeat (bool): Whether to keep repeating the pattern after it
-                completes.
         """
 
 
