@@ -448,7 +448,7 @@ class ColorLight:
         """Set the hue, saturation and brightness of the light.
 
         Arguments:
-            hue (:ref:`angle`): Hue of the color.
+            hue (:ref:`hue`): Hue of the color.
             saturation (:ref:`percentage`): Saturation of the color.
             value (:ref:`percentage`): Brightness value of the color.
         """
