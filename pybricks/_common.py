@@ -422,6 +422,11 @@ class Light:
             time (:ref:`time`): Duration of the pattern.
         """
 
+    def reset(self):
+        """Resets the light to the default system behavior."""
+        # This method is exposed on system lights only.
+        pass
+
 
 class ColorLight:
     """Control a multi-color light."""
@@ -467,6 +472,11 @@ class ColorLight:
                 a :class:`Button <.parameters.Color>` for simplicity.
             time (:ref:`time`): Duration of the pattern.
         """
+
+    def reset(self):
+        """Resets the light to the default system behavior."""
+        # This method is exposed on system lights only.
+        pass
 
 
 class LightArray:
@@ -587,9 +597,13 @@ class LightGrid:
 
         Arguments:
             character (str): The character or symbol to be displayed.
-            time (:ref:`time`): How long to show a character before showing
-                                the next one.
+            pause (:ref:`time`): How long to show a character before showing
+                                 the next one.
         """
+        pass
+
+    def reset(self):
+        """Resets the light grid to the default system behavior."""
         pass
 
 
