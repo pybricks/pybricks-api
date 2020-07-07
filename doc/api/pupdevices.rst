@@ -101,6 +101,10 @@ Color and Distance Sensor
 
     .. automethod:: pybricks.pupdevices.ColorDistanceSensor.color
 
+    .. automethod:: pybricks.pupdevices.ColorDistanceSensor.hsv
+
+    .. automethod:: pybricks.pupdevices.ColorDistanceSensor.color_map
+
     .. automethod:: pybricks.pupdevices.ColorDistanceSensor.ambient
 
     .. automethod:: pybricks.pupdevices.ColorDistanceSensor.reflection

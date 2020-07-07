@@ -77,11 +77,10 @@ class ColorDistanceSensor:
         pass
 
     def color(self):
-        """Measures the color of a surface.
+        """Scans the color of a surface.
 
         :returns:
-            ``Color.BLACK``, ``Color.BLUE``, ``Color.GREEN``, ``Color.YELLOW``,
-            ``Color.RED``, ``Color.WHITE``, or ``None``.
+            Detected color.
         :rtype: :class:`Color <.parameters.Color>`, or ``None`` if no color is
                 detected.
         """
@@ -97,7 +96,7 @@ class ColorDistanceSensor:
         pass
 
     def reflection(self):
-        """Measures the reflection of a surface using a red light.
+        """Measures the reflection of a surface.
 
         Returns:
             :ref:`percentage`: Reflection, ranging from 0.0 (no reflection) to
@@ -105,13 +104,39 @@ class ColorDistanceSensor:
         """
         pass
 
-    def rgb(self):
-        """Measures the reflection of a surface using a red, green, and then a
-        blue light.
+    def color_map(self, hues, saturation, values):
+        """Configures how :meth:`.color` selects a
+        :class:`Color <.parameters.Color>` based on a :meth:`.hsv` measurement.
 
-        :returns: Tuple of reflections for red, green, and blue light, each
-                  ranging from 0.0 (no reflection) to 100.0 (high reflection).
-        :rtype: (:ref:`percentage`, :ref:`percentage`, :ref:`percentage`)
+        Specify only colors that you wish to detect in your application.
+        This way, measurements are
+        rounded to the nearest expected color, and other colors are ignored.
+
+        If you give no arguments, the current settings will be returned as a
+        tuple.
+
+        Arguments:
+            hues (dict): A dictionary that
+                maps :class:`Color <.parameters.Color>` to hues. When the
+                saturation is high, :meth:`.color` will return one of these
+                colors, whichever has the nearest hue.
+            saturation (:ref:`percentage`): Minimum saturation of a proper
+                color.
+            values (:ref:`percentage`): A dictionary that
+                maps ``Color.WHITE``, ``Color.GRAY``, ``Color.BLACK`` and
+                ``None`` to brightness values. When the saturation is
+                low, :meth:`.color` will return one of these colors, whichever
+                has the nearest value.
+        """
+        pass
+
+    def hsv(self):
+        """Scans the hue, saturation and brightness value of a surface.
+
+        :returns: Tuple with the hue, saturation, and value
+            (brightness) of the color.
+        :rtype: (:ref:`hue`, :ref:`percentage`, :ref:`percentage`)
+
         """
         pass
 
