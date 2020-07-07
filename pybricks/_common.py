@@ -328,11 +328,11 @@ class Speaker:
         """
         pass
 
-    def play_file(self, file_name):
+    def play_file(self, file):
         """Plays a sound file.
 
         Arguments:
-            file_name (str):
+            file (str):
                 Path to the sound file, including the file extension.
         """
 
