@@ -46,12 +46,12 @@ class DriveBase:
                 both wheels touch the ground.
         """
 
-    def drive(self, drive_speed, turn_rate):
+    def drive(self, speed, turn_rate):
         """Starts driving at the specified speed and turn rate. Both values are
         measured at the center point between the wheels of the robot.
 
         Arguments:
-            drive_speed (:ref:`linspeed`): Speed of the robot.
+            speed (:ref:`linspeed`): Speed of the robot.
             turn_rate (:ref:`speed`): Turn rate of the robot.
         """
         pass
