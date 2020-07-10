@@ -280,7 +280,8 @@ class UltrasonicSensor:
         ultrasonic sound waves.
 
         Returns:
-            :ref:`distance`: Distance.
+            :ref:`distance`: Measured distance. If no valid distance was
+            measured, it returns 2000 mm.
 
         """
         pass
