@@ -5,40 +5,41 @@ This page shows how you can install Pybricks on your hub and run your first
 program. When you're ready, browse through the Pybricks Modules in the left
 hand menu to modify the example program.
 
-.. warning::
-
-    - **This is still in beta! Not everything may work as expected yet.**
-
-    - **As with any beta software, proceed with caution.**
-
-    - At the moment, only the **Control+ Hub** is ready for beta use.
+.. note::
 
     - We welcome your questions, feedback and bug reports on our `support page`_.
 
-    - The *Pybricks Code* page is currently password protected. This helps us
-      start out with a small group of early users to iron out the main issues.
-    - Do you want to try it? Send us an email at ``team@pybricks.com``. Don't
-      worry if you've never used Python before -- feedback from beginning users
-      is actually very helpful!
+    - **This is still in beta! Not everything may work as expected yet.**
 
-Preparing your computer
---------------------------------
+    - Main current bugs/limitations:
 
-Make sure that Bluetooth is enabled on your device and go to
-`code.pybricks.com`_. That's it!
+       - Sensors/motors are detected automatically only once. So if you change
+         the cables, you have to turn the hub off and on again. You can turn it
+         off by holding down the button for about 5 seconds.
 
-Right now, we officially support only **Google Chrome, version 85 or newer**.
-It is currently available as a weekly developer build. Download it
-`from here`_. The official Chrome 85 release is
-scheduled for August 25th. You can install it on Windows, Mac, and Linux
-without affecting your existing browser or data.
+       - On the BOOST Move Hub, ports C and D do not work yet.
+
+Installing Google Chrome 85
+--------------------------------------
+
+Writing Pybricks programs requires a web browser with up-to-date web Bluetooth
+functionality. Currently, only Google Chrome supports this. You need at least
+version 85.
+
+Download Google Chrome 85 beta `from here`_.
+
+
+The official Chrome 85 release is scheduled for August 25th. For now you can
+install this beta on Windows, Mac, and Linux without affecting your existing
+browsers.
 
 .. toggle-header::
-    :header: **Extra steps for Linux users**
+    :header: **Show/hide extra steps for Linux users**
 
     - In Google Chrome go to ``chrome://flags/``.
     - Search for *Experimental Web Platform features* and enable it.
-    - Flashing firmware will be slow if you have BlueZ < v5.51.
+    - Installing firmware will be slow if you have BlueZ < v5.51.
+      Check your version: ``bluetoothd -v``.
 
 Installing the Pybricks firmware
 --------------------------------
@@ -46,16 +47,15 @@ Installing the Pybricks firmware
 Pybricks uses an improved firmware that can run autonomous programs.
 Installing it is easy:
 
-.. raw:: html
-
-    <video controls src="http://pybricks.com/wp-content/uploads/2020/06/install.mp4" width="100%"></video>
+1. Make sure you use fresh batteries.
+2. Unplug all motors and sensors.
+3. Follow the steps in the video below.
 
 .. toggle-header::
-    :header: **Click to show/hide the written steps**
+    :header: **Click to show/hide written step-by-step instructions.**
 
-    If you can’t want watch the video, follow these steps instead:
-
-    - Make sure your batteries are fresh.
+    - Make sure you use fresh batteries.
+    - Unplug all motors and sensors.
     - Make sure the hub is off.
     - Press and hold the green button.
     - Wait for the light to blink, but keep holding the button.
@@ -66,12 +66,17 @@ Installing it is easy:
     - Wait for the update to finish, indicated by a steady blue light.
     - If you use the recommended browser, this will take about 90 seconds.
 
+.. raw:: html
+
+    <video controls src="http://pybricks.com/wp-content/uploads/2020/06/install.mp4" width="100%"></video>
+
+
 Running programs
 --------------------------------
 
-Once the firmware is installed, you can start coding! Use the Bluetooth button
-to search for and connect to your *Pybricks Hub*. Then press run to start your
-program.
+Once the firmware is installed, you can start coding! Use the *Bluetooth*
+button to search for and connect to your *Pybricks Hub*. Then press run to
+start your program.
 
 .. figure:: ../api/images/pybrickscode.png
 
@@ -168,5 +173,5 @@ try again with fresh batteries.
 
 .. _latest builds: https://github.com/pybricks/pybricks-micropython/actions?query=workflow%3ABuild+
 .. _support page: https://github.com/pybricks/support/issues/
-.. _code.pybricks.com: http://code.pybricks.com/
+.. _Pybricks Code: http://code.pybricks.com/
 .. _from here: https://www.google.com/chrome/dev/
