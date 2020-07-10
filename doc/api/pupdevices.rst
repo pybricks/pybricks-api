@@ -163,11 +163,15 @@ Ultrasonic Sensor
 .. toggle-header::
     :header: **Show/hide examples**
 
-    **Example: Measuring distance and switching on the lights**
+    **Example 1: Measuring distance and switching on the lights**
 
     .. literalinclude::
         ../../pybricks-projects/snippets/pup/sensor_ultrasonic/basics.py
 
+    **Example 2: Using math to gradually change the brightness of the lights**
+
+    .. literalinclude::
+        ../../pybricks-projects/snippets/pup/sensor_ultrasonic/math.py
 
 .. autoclass:: pybricks.pupdevices.UltrasonicSensor
     :no-members:
