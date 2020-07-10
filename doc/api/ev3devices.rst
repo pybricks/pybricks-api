@@ -74,6 +74,10 @@ Color Sensor
 Infrared Sensor and Beacon
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Each method of this class puts the sensor in a different *mode*. Switching
+modes takes about one second on this sensor. To make sure that your program
+runs quickly, use only of these methods in your program.
+
 .. figure:: ../api/images/sensor_ev3_ir.png
    :width: 60 %
 
