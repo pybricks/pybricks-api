@@ -69,6 +69,7 @@ Installing it is easy:
 .. raw:: html
 
     <video controls src="http://pybricks.com/wp-content/uploads/2020/06/install.mp4" width="100%"></video>
+    <br />
 
 
 Running programs
@@ -80,79 +81,75 @@ start your program.
 
 .. figure:: ../api/images/pybrickscode.png
 
+To get started, just copy and paste this snippet::
+
+    from pybricks.pupdevices import Motor
+    from pybricks.parameters import Port, Stop
+    from pybricks.tools import wait
+
+    # We'll use two motors. One is a dial
+    # to set the speed of the other motor.
+    motor = Motor(Port.B)
+    dial = Motor(Port.A)
+
+    # Say hello :)
+    print("Hello, Pybricks!")
+
+    # First, we'll move the dial to zero.
+    dial.run_target(500, 0, Stop.COAST)
+
+    while True:
+        # Set the speed based on dial angle
+        speed = dial.angle()*3
+        if abs(speed) < 100:
+            speed = 0
+
+        # Run motor at desired speed
+        motor.run(speed)
+
+        # Wait briefly, then repeat
+        wait(10)
+
+
 .. toggle-header::
-    :header: **Click to show/hide the example program**
+    :header: **Show/hide beta steps to save a program permanently**
 
-    To get started using the program shown above, just copy and paste
-    this snippet::
+    **Saving a program permanently (BETA)**
 
-        from pybricks.pupdevices import Motor
-        from pybricks.parameters import Port, Stop
-        from pybricks.tools import wait
+    .. note::
 
-        # We'll use two motors. One is a dial
-        # to set the speed of the other motor.
-        motor = Motor(Port.B)
-        dial = Motor(Port.A)
+        - This functionality is in beta. It is currently only recommended for
+          advanced users. In the long run, we'll make this easy to do with
+          the online editor.
+        - All LEGO motors and sensors need a few seconds to boot. You don't
+          normally notice because you spend that time connecting. But this is
+          way faster. So if you experience problems, give your hub a few
+          seconds before you start your program.
 
-        # Say hello :)
-        print("Hello, Pybricks!")
+    When you run a program the normal way, it is deleted as soon as it's done.
+    That's because Powered Up hubs don't have a file system to store programs.
+    Fortunately, you can still save a script on the hub by including it
+    in the firmware.
 
-        # First, we'll move the dial to zero.
-        dial.run_target(500, 0, Stop.COAST)
+    Of course, this is a bit slow to do every time. We recommend the
+    using the standard procedure most of the time.
+    When you're happy with your final program, you can save it permanently as
+    described below. To change the program, just repeat these steps:
 
-        while True:
-            # Set the speed based on dial angle
-            speed = dial.angle()*3
-            if abs(speed) < 100:
-                speed = 0
+    1. Sign in to GitHub.
+    2. Go to our `GitHub commits`_.
+    3. Click on the green checkmark next to the latest
+       commit. On the dialog that pops up, click `details`.
+    4. Then click `Artifacts` on the right hand side of the page.
+    5. Download the firmware for your hub. The firmware is a ZIP archive
+       containing the basic firmware and one ``main.py`` script.
+    6. Modify the ``main.py`` file as you like.
+    7. Drag your modified ZIP file *onto* the firmware update button of the
+       online editor.
+    8. The update now proceeds as usual.
 
-            # Run motor at desired speed
-            motor.run(speed)
-
-            # Wait briefly, then repeat
-            wait(10)
-
-Saving a program permanently
---------------------------------------
-
-When you run a program as shown above, it is deleted as soon as it's done.
-That's because Powered Up hubs don't have a file system to store
-programs. Fortunately, you can still save a script on the hub by including it
-in the firmware.
-
-Of course, this is a bit slow to do every time. We recommend the
-using the standard procedure most of the time.
-When you're happy with your final program, you can save it permanently as
-described below. To change the program, just repeat these steps.
-
-*Once installed, you can start that program with the green button.
-No connection required!*
-
-.. todo::
-
-    **Coming soon! This will be made easy with the click of a button.**
-
-    .. toggle-header::
-        :header: **But I want it now! Show me the hard way!**
-
-        **Installing a permanent program manually**
-
-        The firmware is a ZIP archive containing the basic firmware and one
-        ``main.py`` script:
-
-        1. Go to the `latest builds`_. [This link will be available shortly.]
-        2. Click a build with a green checkmark.
-        3. Download ZIP archive for your hub.
-        4. Modify the ``main.py`` file as you like.
-        5. Drag your modified ZIP file *onto* the firmware update button.
-        6. The update now proceeds as usual.
-        7. When it's done, start your program with the green button!
-
-Note: all LEGO motors and sensors need a few seconds to boot. You don't
-normally notice because you spend that time connecting. But with the
-program already installed, you're way faster. So if you experience
-problems, give your hub a few seconds before you start your program.
+    *Once installed, you can start that program with the green button.
+    No connection required!*
 
 Restoring the LEGO Firmware
 ---------------------------
@@ -170,8 +167,7 @@ try again with fresh batteries.
 
     <video controls src="http://pybricks.com/wp-content/uploads/2020/06/restore.mp4" width="100%"></video>
 
-
-.. _latest builds: https://github.com/pybricks/pybricks-micropython/actions?query=workflow%3ABuild+
+.. _GitHub commits: https://github.com/pybricks/pybricks-micropython/commits/master
 .. _support page: https://github.com/pybricks/support/issues/
 .. _Pybricks Code: http://code.pybricks.com/
 .. _from here: https://www.google.com/chrome/dev/
