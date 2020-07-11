@@ -101,17 +101,17 @@ Color and Distance Sensor
 
     .. automethod:: pybricks.pupdevices.ColorDistanceSensor.color
 
-    .. automethod:: pybricks.pupdevices.ColorDistanceSensor.hsv
-
-    .. automethod:: pybricks.pupdevices.ColorDistanceSensor.color_map
+    .. automethod:: pybricks.pupdevices.ColorDistanceSensor.reflection
 
     .. automethod:: pybricks.pupdevices.ColorDistanceSensor.ambient
 
-    .. automethod:: pybricks.pupdevices.ColorDistanceSensor.reflection
-
     .. automethod:: pybricks.pupdevices.ColorDistanceSensor.distance
 
-    .. automethod:: pybricks.pupdevices.ColorDistanceSensor.remote
+    .. rubric:: Advanced color sensing
+
+    .. automethod:: pybricks.pupdevices.ColorDistanceSensor.hsv
+
+    .. automethod:: pybricks.pupdevices.ColorDistanceSensor.color_map
 
     .. rubric:: Built-in light
 
@@ -122,6 +122,10 @@ Color and Distance Sensor
     .. automethod:: pybricks.pupdevices::ColorDistanceSensor.light.on
 
     .. automethod:: pybricks.pupdevices::ColorDistanceSensor.light.off
+
+    .. rubric:: Power Functions 1.0 Control
+
+    .. automethod:: pybricks.pupdevices.ColorDistanceSensor.remote
 
 
 Color Sensor
