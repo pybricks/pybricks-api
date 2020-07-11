@@ -212,6 +212,14 @@ Infrared Sensor
 .. figure:: ../api/images/sensor_proximity.png
    :width: 35 %
 
+.. toggle-header::
+    :header: **Show/hide example**
+
+    **Example: Measuring distance, object count, and reflection**
+
+    .. literalinclude::
+        ../../pybricks-projects/snippets/pup/sensor_infrared/basics.py
+
 .. autoclass:: pybricks.pupdevices.InfraredSensor
     :no-members:
 
@@ -228,6 +236,13 @@ Tilt Sensor
 .. figure:: ../api/images/sensor_tilt.png
    :width: 35 %
 
+.. toggle-header::
+    :header: **Show/hide example**
+
+    **Example: Measuring pitch and roll**
+
+    .. literalinclude::
+        ../../pybricks-projects/snippets/pup/sensor_tilt/basics.py
 
 .. autoclass:: pybricks.pupdevices.TiltSensor
     :no-members:
