@@ -22,6 +22,8 @@ Control+ Hub (Technic)
 Move Hub (BOOST)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+.. _fig_movehub:
+
 .. figure:: ../api/images/movehub_label.png
     :height: 15 em
 

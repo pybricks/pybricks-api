@@ -54,7 +54,7 @@
 
         - Clockwise direction for :ref:`EV3/NXT motors <fig_ev3motors>`
         - Clockwise direction for :ref:`Powered Up Motors <fig_pupmotors>`
-        - Clockwise direction for :ref:`Move Hub Motors <fig_hubs>`
+        - Clockwise direction for :ref:`Move Hub Motors <fig_movehub>`
 
 .. autoclass:: pybricks.parameters.Stop
     :no-members:
