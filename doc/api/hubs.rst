@@ -3,40 +3,34 @@
 
 .. module:: pybricks.hubs
 
-.. _fig_hubs:
+City Hub (City/System)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Select your programmable hub using the buttons below.
+.. figure:: ../api/images/cityhub.png
+    :height: 15 em
 
-.. content-tabs::
+.. include:: hubs_cityhub.inc
 
-    .. tab-container:: ev3brick
-        :title: EV3 Brick
+Control+ Hub (Technic)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-        .. figure:: ../api/images/ev3brick.png
-            :height: 15 em
+.. figure:: ../api/images/cplushub.png
+    :height: 15 em
 
-        .. include:: hubs_ev3brick.inc
+.. include:: hubs_cplushub.inc
 
-    .. tab-container:: movehub
-        :title: Move Hub
+Move Hub (BOOST)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-        .. figure:: ../api/images/movehub_label.png
-            :height: 15 em
+.. figure:: ../api/images/movehub_label.png
+    :height: 15 em
 
-        .. include:: hubs_movehub.inc
+.. include:: hubs_movehub.inc
 
-    .. tab-container:: cityhub
-        :title: City Hub
+EV3 Brick (MINDSTORMS)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-        .. figure:: ../api/images/cityhub.png
-            :height: 15 em
+.. figure:: ../api/images/ev3brick.png
+    :height: 15 em
 
-        .. include:: hubs_cityhub.inc
-
-    .. tab-container:: cplushub
-        :title: Control+ Hub
-
-        .. figure:: ../api/images/cplushub.png
-            :height: 15 em
-
-        .. include:: hubs_cplushub.inc
+.. include:: hubs_ev3brick.inc
