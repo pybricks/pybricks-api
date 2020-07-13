@@ -295,6 +295,22 @@ Force Sensor
 .. figure:: ../api/images/sensor_force.png
    :width: 35 %
 
+.. toggle-header::
+    :header: **Show/hide examples**
+
+
+    **Example 1: Measuring force and movement**
+
+    .. literalinclude::
+        ../../pybricks-projects/snippets/pup/sensor_force/basics.py
+
+
+    **Example 2: Measuring peak force**
+
+    .. literalinclude::
+        ../../pybricks-projects/snippets/pup/sensor_force/peak.py
+
+
 .. autoclass:: pybricks.pupdevices.ForceSensor
     :no-members:
 
