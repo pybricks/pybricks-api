@@ -68,7 +68,7 @@ Installing it is easy:
 
 .. raw:: html
 
-    <video controls src="http://pybricks.com/wp-content/uploads/2020/06/install.mp4" width="100%"></video>
+    <video controls src="https://pybricks.com/wp-content/uploads/2020/06/install.mp4" width="100%"></video>
     <br />
 
 
@@ -165,7 +165,7 @@ try again with fresh batteries.
 
 .. raw:: html
 
-    <video controls src="http://pybricks.com/wp-content/uploads/2020/06/restore.mp4" width="100%"></video>
+    <video controls src="https://pybricks.com/wp-content/uploads/2020/06/restore.mp4" width="100%"></video>
 
 .. _GitHub commits: https://github.com/pybricks/pybricks-micropython/commits/master
 .. _support page: https://github.com/pybricks/support/issues/
