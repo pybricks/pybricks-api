@@ -91,6 +91,19 @@ Motors with Rotation Sensors
 
     .. rubric:: Measuring
 
+    .. toggle-header::
+        :header: **Show/hide examples**
+
+        **Example 1: Measuring the angle and speed**
+
+        .. literalinclude::
+            ../../pybricks-projects/snippets/pup/motor/motor_measure.py
+
+        **Example 2: Resetting the measured angle**
+
+        .. literalinclude::
+            ../../pybricks-projects/snippets/pup/motor/motor_reset_angle.py
+
     .. automethod:: pybricks.pupdevices.Motor.speed
 
     .. automethod:: pybricks.pupdevices.Motor.angle
