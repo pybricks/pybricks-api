@@ -66,6 +66,29 @@ Motors with Rotation Sensors
     :noindex:
     :no-members:
 
+    .. toggle-header::
+        :header: **Show/hide examples**
+
+        **Example 1: Making the motor move back and forth**
+
+        .. literalinclude::
+            ../../pybricks-projects/snippets/pup/motor/motor_init_basic.py
+
+        **Example 2: Using more than one motor**
+
+        .. literalinclude::
+            ../../pybricks-projects/snippets/pup/motor/motor_init_multiple.py
+
+        **Example 3: Seting the positive direction as counterclockwise**
+
+        .. literalinclude::
+            ../../pybricks-projects/snippets/pup/motor/motor_init_direction.py
+
+        **Example 4: Using gears**
+
+        .. literalinclude::
+            ../../pybricks-projects/snippets/pup/motor/motor_init_gears.py
+
     .. rubric:: Measuring
 
     .. automethod:: pybricks.pupdevices.Motor.speed
