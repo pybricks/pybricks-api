@@ -112,6 +112,14 @@ Motors with Rotation Sensors
 
     .. rubric:: Stopping
 
+    .. toggle-header::
+        :header: **Show/hide example**
+
+        **Example: Stopping the motor in different ways**
+
+        .. literalinclude::
+            ../../pybricks-projects/snippets/pup/motor/motor_stop.py
+
     .. automethod:: pybricks.pupdevices.Motor.stop
 
     .. automethod:: pybricks.pupdevices.Motor.brake
@@ -119,6 +127,40 @@ Motors with Rotation Sensors
     .. automethod:: pybricks.pupdevices.Motor.hold
 
     .. rubric:: Action
+
+    .. toggle-header::
+        :header: **Show/hide examples**
+
+        **Example 1: Basic usage of all action methods**
+
+        .. literalinclude::
+            ../../pybricks-projects/snippets/pup/motor/motor_action_basic.py
+
+        **Example 2: Using the** ``then`` **argument to change how a motor stops**
+
+        .. literalinclude::
+            ../../pybricks-projects/snippets/pup/motor/motor_action_then.py
+
+        **Example 3: Using the** ``wait`` **argument to run motors in parallel**
+
+        .. literalinclude::
+            ../../pybricks-projects/snippets/pup/motor/motor_action_wait.py
+
+        **Example 4: Waiting for two actions to complete in parallel**
+
+        .. literalinclude::
+            ../../pybricks-projects/snippets/pup/motor/motor_action_wait_advanced.py
+
+        **Example 5: Running a motor until a mechanical endpoint**
+
+        .. literalinclude::
+            ../../pybricks-projects/snippets/pup/motor/motor_until_stalled.py
+
+        **Example 6: Centering a steering mechanism**
+
+        .. literalinclude::
+            ../../pybricks-projects/snippets/pup/motor/motor_until_stalled.py
+
 
     .. automethod:: pybricks.pupdevices.Motor.run
 
