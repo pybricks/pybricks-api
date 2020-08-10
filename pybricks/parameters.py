@@ -36,7 +36,6 @@ class Color(_PybricksEnum):
     .. data:: YELLOW
     .. data:: RED
     .. data:: WHITE
-    .. data:: BROWN
     .. data:: ORANGE
     .. data:: VIOLET
     """
@@ -47,7 +46,6 @@ class Color(_PybricksEnum):
     YELLOW = 4
     RED = 5
     WHITE = 6
-    BROWN = 7
     ORANGE = 8
     VIOLET = 9
 
