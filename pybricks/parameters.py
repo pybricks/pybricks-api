@@ -28,20 +28,7 @@ class _PybricksEnum(_Enum, metaclass=_PybricksEnumMeta):
 
 
 class Color(_PybricksEnum):
-    """Light or surface color.
-
-    .. data:: BLACK
-    .. data:: BLUE
-    .. data:: GREEN
-    .. data:: YELLOW
-    .. data:: RED
-    .. data:: WHITE
-    .. data:: ORANGE
-    .. data:: VIOLET
-    .. data:: MAGENTA
-    .. data:: CYAN
-    .. data:: GRAY
-    """
+    """Light or surface color."""
 
     BLACK = 1
     BLUE = 2
