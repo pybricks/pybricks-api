@@ -38,7 +38,7 @@ class Color(_PybricksEnum):
     .. data:: WHITE
     .. data:: BROWN
     .. data:: ORANGE
-    .. data:: PURPLE
+    .. data:: VIOLET
     """
 
     BLACK = 1
@@ -49,7 +49,7 @@ class Color(_PybricksEnum):
     WHITE = 6
     BROWN = 7
     ORANGE = 8
-    PURPLE = 9
+    VIOLET = 9
 
 
 class Port(_PybricksEnum):
