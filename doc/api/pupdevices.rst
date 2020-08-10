@@ -266,9 +266,21 @@ Color and Distance Sensor
 
     .. automethod:: pybricks.pupdevices::ColorDistanceSensor.light.off
 
-    .. rubric:: Power Functions 1.0 Control
+Power Functions
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
-    .. automethod:: pybricks.pupdevices.ColorDistanceSensor.remote
+.. autoclass:: pybricks.pupdevices.PFMotor
+    :noindex:
+    :no-members:
+
+    .. automethod:: pybricks.pupdevices.PFMotor.dc
+        :noindex:
+
+    .. automethod:: pybricks.pupdevices.PFMotor.stop
+        :noindex:
+
+    .. automethod:: pybricks.pupdevices.PFMotor.brake
+        :noindex:
 
 
 Color Sensor

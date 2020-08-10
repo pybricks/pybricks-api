@@ -3,9 +3,11 @@
 
 """LEGO® Powered Up motor, sensors, and lights."""
 
-from ._common import (KeyPad as _KeyPad,
+from ._common import (KeyPad as _KeyPad, DCMotor as _DCMotor,
                       ColorLight as _ColorLight, Motor as _Motor,
                       LightArray as _LightArray, Light as _Light)
+
+from .parameters import Direction as _Direction
 
 
 class Motor(_Motor):
@@ -150,25 +152,31 @@ class ColorDistanceSensor:
         """
         pass
 
-    def remote(self, channel, button_1=None, button_2=None):
-        """Makes the sensor act like a Power Functions 1.0 IR remote.
 
-        Choose a channel and up to two buttons to "press". The infrared
-        receiver behaves just as if responding to the real remote.
+class PFMotor(_DCMotor):
+    """Control Power Functions motors with the infrared functionality of the
+    :class:`ColorDistanceSensor <pybricks.pupdevices.ColorDistanceSensor>`."""
 
-        The sensor keeps sending the signal (as if you keep pressing the
-        buttons). It keeps going until you call this method again with
-        different buttons or no buttons at all.
+    def __init__(self,
+                 sensor,
+                 channel,
+                 color,
+                 positive_direction=_Direction.CLOCKWISE):
+        """
 
         Arguments:
-            channel (int): Channel number of the remote.
-            button_1 (Button): Button of the Power Functions 1.0 IR remote.
-                               Choose ``None`` if you don't want to press
-                               any button.
-            button_2 (Button): Button of the Power Functions 1.0 IR remote.
-                               Choose ``None`` if you don't want to press
-                               any button.
+            sensor (ColorDistanceSensor):
+                Sensor object.
+            channel (int):
+                Channel number of the receiver: ``1``, ``2``, ``3``, or ``4``.
+            color (Color):
+                Color marker on the receiver:
+                :class:`Color.BLUE <.parameters.Color>` or
+                :class:`Color.RED <.parameters.Color>`
+            positive_direction (Direction): Which direction the motor should
+                turn when you give a positive duty cycle value.
         """
+        pass
 
 
 class ColorSensor:
