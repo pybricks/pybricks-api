@@ -1,6 +1,7 @@
 0 Name: pupmotors
 0 Author: Pybricks {laurens@pybricks.com}
 0 !LICENSE MIT
+0 !LDCAD GROUP_DEF [topLevel=true] [LID=0] [GID=9FDP9pj0O55] [name=Group 1] [center=0 0 0]
 1 15 600 -280 180 1 0 0 0 1 0 0 0 1 37316.dat
 1 15 60 -272 160 -1 0 0 0 -1 0 0 0 1 37312c01.dat
 1 15 -400 -280 240 -1 0 0 0 -1 0 0 0 1 37308c01.dat
@@ -14,3 +15,7 @@
 1 15 1130 -280 240 1 0 0 0 1 0 0 0 1 37316.dat
 1 15 1290 -280 220 1 0 0 0 1 0 0 0 1 37308.dat
 1 0 690 -312 530 0 0 1 0 1 0 -1 0 0 22168.dat
+0 !LDCAD GROUP_NXT [ids=0] [nrs=2]
+1 71 704.852 -312 -628.188 -0.5 0 0.866 0 1 0 -0.866 0 -0.5 58123.dat
+0 !LDCAD GROUP_NXT [ids=0] [nrs=-1]
+1 71 972.1 -321.5 -814.7 0.5 0 -0.866 0 1 0 0.866 0 0.5 99499c01.dat
