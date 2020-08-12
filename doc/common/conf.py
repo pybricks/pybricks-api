@@ -32,6 +32,7 @@ import toml
 
 TOP_DIR = os.path.abspath(os.path.join('..', '..'))
 sys.path.insert(0, TOP_DIR)
+sys.path.append(os.path.abspath('../common/extensions'))
 
 from pybricks.hubs import EV3Brick  # noqa E402
 from pybricks.media.ev3dev import Image  # noqa E402
@@ -58,6 +59,7 @@ extensions = [
     'sphinx.ext.todo',
     'sphinx.ext.mathjax',
     'sphinxcontrib.contentui',
+    'color',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
