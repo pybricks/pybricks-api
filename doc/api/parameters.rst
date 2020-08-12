@@ -90,19 +90,50 @@
     .. rubric:: Saturated colors
 
     .. autoattribute:: RED
+
+        .. pybricks-color:: RED
+
     .. autoattribute:: ORANGE
+
+        .. pybricks-color:: ORANGE
+
     .. autoattribute:: YELLOW
+
+        .. pybricks-color:: YELLOW
+
     .. autoattribute:: GREEN
+
+        .. pybricks-color:: GREEN
+
     .. autoattribute:: CYAN
+
+        .. pybricks-color:: CYAN
+
     .. autoattribute:: BLUE
+
+        .. pybricks-color:: BLUE
+
     .. autoattribute:: VIOLET
+
+        .. pybricks-color:: VIOLET
+
     .. autoattribute:: MAGENTA
+
+        .. pybricks-color:: MAGENTA
 
     .. rubric:: Unsaturated colors
 
     .. autoattribute:: BLACK
+
+        .. pybricks-color:: BLACK
+
     .. autoattribute:: GRAY
+
+        .. pybricks-color:: GRAY
+
     .. autoattribute:: WHITE
+
+        .. pybricks-color:: WHITE
 
 .. autoclass:: pybricks.parameters.Button
     :no-members:
