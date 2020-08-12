@@ -89,20 +89,20 @@
 
     .. rubric:: Saturated colors
 
-    .. data:: RED
-    .. data:: ORANGE
-    .. data:: YELLOW
-    .. data:: GREEN
-    .. data:: CYAN
-    .. data:: BLUE
-    .. data:: VIOLET
-    .. data:: MAGENTA
+    .. autoattribute:: RED
+    .. autoattribute:: ORANGE
+    .. autoattribute:: YELLOW
+    .. autoattribute:: GREEN
+    .. autoattribute:: CYAN
+    .. autoattribute:: BLUE
+    .. autoattribute:: VIOLET
+    .. autoattribute:: MAGENTA
 
     .. rubric:: Unsaturated colors
 
-    .. data:: BLACK
-    .. data:: GRAY
-    .. data:: WHITE
+    .. autoattribute:: BLACK
+    .. autoattribute:: GRAY
+    .. autoattribute:: WHITE
 
 .. autoclass:: pybricks.parameters.Button
     :no-members:

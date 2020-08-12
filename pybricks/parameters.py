@@ -27,20 +27,36 @@ class _PybricksEnum(_Enum, metaclass=_PybricksEnumMeta):
         return str(self)
 
 
-class Color(_PybricksEnum):
+class Color:
     """Light or surface color."""
 
-    BLACK = 1
-    BLUE = 2
-    GREEN = 3
-    YELLOW = 4
-    RED = 5
-    WHITE = 6
-    ORANGE = 8
-    VIOLET = 9
-    MAGENTA = 10
-    CYAN = 11
-    GRAY = 12
+    def __init__(self, h, s=100, v=100, name='custom'):
+        self.h = h % 360
+        self.s = max(0, min(s, 100))
+        self.v = max(0, min(v, 100))
+        self.name = name
+
+    def __repr__(self):
+        return "Color({}, {}, {}, '{}')".format(
+            self.h, self.s, self.v, self.name
+        )
+
+    def __eq__(self, other):
+        return (isinstance(other, Color) and
+                self.h == other.h and self.s == other.s and self.v == other.v)
+
+
+Color.BLACK = Color(0, 0, 0, 'BLACK')
+Color.GRAY = Color(0, 0, 50, 'GRAY')
+Color.WHITE = Color(0, 0, 100, 'WHITE')
+Color.RED = Color(0, 100, 100, 'RED')
+Color.ORANGE = Color(30, 100, 100, 'ORANGE')
+Color.YELLOW = Color(60, 100, 100, 'YELLOW')
+Color.GREEN = Color(120, 100, 100, 'GREEN')
+Color.CYAN = Color(180, 100, 100, 'CYAN')
+Color.BLUE = Color(240, 100, 100, 'BLUE')
+Color.VIOLET = Color(270, 100, 100, 'VIOLET')
+Color.MAGENTA = Color(300, 100, 100, 'MAGENTA')
 
 
 class Port(_PybricksEnum):
