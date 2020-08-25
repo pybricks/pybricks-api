@@ -404,24 +404,31 @@ class Light:
         """Turns off the light."""
         pass
 
-    def pattern(self, pattern, duration):
-        """Makes the light brightness follow a pattern as a function of time.
+    def blink(self, durations):
+        """Blinks the light by turning it on and off for given durations.
 
-        The specified pattern function will be sampled at 64 points between 0
-        and the specified duration. The light will be held at a constant
-        brightness between samples. After the given duration, the pattern
-        repeats.
+        The light keeps blinking indefinitely while the rest of your
+        program keeps running.
 
         Arguments:
-            pattern (callable): Function of the
-                form ``b = func(t)`` that returns the brightness ``b`` as a
-                function of time ``t`` in milliseconds.
-            time (:ref:`time`): Duration of the pattern.
+            (list): List of (:ref:`time`) values of the
+                form ``[on_1, off_1, on_2, off_2, ...]``.
+        """
+
+    def animate(self, brightness_values, interval):
+        """Animates the light with a list of brightness values. The next
+        brightness value in the list is shown after the given interval.
+
+        The animation runs in the background while the rest of your program
+        keeps running. When the animation completes, it repeats.
+
+        Arguments:
+            brightness_values (list): List of :ref:`brightness` values.
+            interval (:ref:`time`): Time between brightness updates.
         """
 
     def reset(self):
-        """Resets the light to the default system behavior."""
-        # This method is exposed on system lights only.
+        """Resets the light to the default system behavior or animation."""
         pass
 
 
@@ -527,7 +534,7 @@ class LightGrid:
         """Shows an animation of images in the same format as :meth:`.image`,
         with a given interval between images.
 
-        This method is non-blocking: the animation runs in the background while
+        The animation runs in the background while
         the rest of your program keeps running. After all images have been
         displayed, the animation repeats.
 
