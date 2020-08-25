@@ -585,15 +585,15 @@ class LightGrid:
         """
         pass
 
-    def text(self, text, pause=500):
+    def text(self, text, on=500, off=50):
         """Displays a text string, one character at a time, with a pause
         between each character. After the last character is shown, the light
         grid turns off.
 
         Arguments:
             character (str): The character or symbol to be displayed.
-            pause (:ref:`time`): How long to show a character before showing
-                                 the next one.
+            on (:ref:`time`): How long a character is shown.
+            off (:ref:`time`): How long the light is off between characters.
         """
         pass
 
