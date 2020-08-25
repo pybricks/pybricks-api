@@ -442,23 +442,12 @@ class ColorLight:
         """Turns on the light at the specified color.
 
         Arguments:
-            color (Color): Color of the light. The light turns off if you
-                           choose ``None`` or a color that is not available.
+            color (Color): Color of the light.
         """
         pass
 
     def off(self):
         """Turns off the light."""
-        pass
-
-    def hsv(self, hue, saturation=100, value=100):
-        """Sets the hue, saturation and brightness of the light.
-
-        Arguments:
-            hue (:ref:`hue`): Hue of the color.
-            saturation (:ref:`percentage`): Saturation of the color.
-            value (:ref:`percentage`): Brightness value of the color.
-        """
         pass
 
     def pattern(self, pattern, duration):
