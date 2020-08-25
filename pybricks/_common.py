@@ -575,7 +575,7 @@ class LightGrid:
         """
         pass
 
-    def char(self, character):
+    def char(self, char):
         """Displays a character or symbol on the light grid. This may
         be any letter (``a``--``z``), capital letter (``A``--``Z``) or one of
         the following symbols: ``!"#$%&'()*+,-./:;<=>?@[\\]^_`{|}``.
