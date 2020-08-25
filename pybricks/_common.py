@@ -523,6 +523,20 @@ class LightGrid:
         """
         pass
 
+    def animate(self, matrices, interval):
+        """Shows an animation of images in the same format as :meth:`.image`,
+        with a given interval between images.
+
+        This method is non-blocking: the animation runs in the background while
+        the rest of your program keeps running. After all images have been
+        displayed, the animation repeats.
+
+        Arguments:
+            matrix (list): List of Matrix of intensities.
+            interval (:ref:`time`): Time to display each image.
+        """
+        pass
+
     def pixel(self, row, column, brightness):
         """Turns on one pixel at the specified brightness.
 
