@@ -450,26 +450,37 @@ class ColorLight:
         """Turns off the light."""
         pass
 
-    def pattern(self, pattern, duration):
-        """Makes the light follow a color pattern as a function of time.
+    def blink(self, color, durations):
+        """Blinks the light at a given color by turning it on and off for given
+        durations.
 
-        The specified pattern function will be sampled at 64 points between 0
-        and the specified duration. The light will be held constant between
-        samples. After the given duration, the pattern repeats.
+        The light keeps blinking indefinitely while the rest of your
+        program keeps running.
+
+        This method provides a simple way to make basic but useful patterns.
+        For more generic and multi-color patterns, use :meth:`.animate`
+        instead.
 
         Arguments:
-            pattern (callable): Function of the
-                form ``h, s, v = func(t)`` that returns a tuple of ``h``,
-                ``s``, and ``v`` as a function of time ``t`` in milliseconds.
-                A function of the
-                form :class:`col <.parameters.Color>` ``= func(t)`` is also
-                allowed.
-            time (:ref:`time`): Duration of the pattern.
+            color (Color): Color of the light.
+            (list): List of (:ref:`time`) values of the
+                form ``[on_1, off_1, on_2, off_2, ...]``.
+        """
+
+    def animate(self, colors, interval):
+        """Animates the light with a list of colors. The next
+        color in the list is shown after the given interval.
+
+        The animation runs in the background while the rest of your program
+        keeps running. When the animation completes, it repeats.
+
+        Arguments:
+            colors (list): List of :ref:`color` values.
+            interval (:ref:`time`): Time between color updates.
         """
 
     def reset(self):
-        """Resets the light to the default system behavior."""
-        # This method is exposed on system lights only.
+        """Resets the light to the default system behavior or animation."""
         pass
 
 
