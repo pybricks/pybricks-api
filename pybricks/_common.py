@@ -410,6 +410,9 @@ class Light:
         The light keeps blinking indefinitely while the rest of your
         program keeps running.
 
+        This method provides a simple way to make basic but useful patterns.
+        For more generic and smooth patterns, use :meth:`.animate` instead.
+
         Arguments:
             (list): List of (:ref:`time`) values of the
                 form ``[on_1, off_1, on_2, off_2, ...]``.
