@@ -583,15 +583,6 @@ class LightGrid:
         """
         pass
 
-    def on(self, brightness=100):
-        """Turns on all the pixels at the specified brightness.
-
-        Arguments:
-            brightness (:ref:`brightness`):
-                Brightness of the lights.
-        """
-        pass
-
     def off(self):
         """Turns off all the pixels."""
         pass
