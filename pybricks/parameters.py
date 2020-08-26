@@ -30,14 +30,14 @@ class _PybricksEnum(_Enum, metaclass=_PybricksEnumMeta):
 class Color:
     """Light or surface color."""
 
-    def __init__(self, h, s=100, v=100, name=''):
+    def __init__(self, h, s=100, v=100, name=None):
         self.h = h % 360
         self.s = max(0, min(s, 100))
         self.v = max(0, min(v, 100))
-        self.name = str(name)
+        self.name = name
 
     def __repr__(self):
-        name_str = '' if self.name == '' else ", '{}'".format(self.name)
+        name_str = '' if self.name is None else ", '{}'".format(self.name)
 
         return "Color({}, {}, {}{})".format(self.h, self.s, self.v, name_str)
 
