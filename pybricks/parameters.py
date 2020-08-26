@@ -45,6 +45,13 @@ class Color:
         return (isinstance(other, Color) and
                 self.h == other.h and self.s == other.s and self.v == other.v)
 
+    def __mul__(self, scale):
+        v = max(0, min(self.v * scale, 100))
+        return Color(self.h, self.s, int(v), self.name)
+
+    def __rmul__(self, scale):
+        return self.__mul__(scale)
+
 
 Color.BLACK = Color(0, 0, 0, 'BLACK')
 Color.GRAY = Color(0, 0, 50, 'GRAY')
