@@ -52,6 +52,12 @@ class Color:
     def __rmul__(self, scale):
         return self.__mul__(scale)
 
+    def __truediv__(self, scale):
+        return self.__mul__(1/scale)
+
+    def __floordiv__(self, scale):
+        return self.__mul__(1/scale)
+
 
 Color.BLACK = Color(0, 0, 0, 'BLACK')
 Color.GRAY = Color(0, 0, 50, 'GRAY')
