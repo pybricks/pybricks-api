@@ -234,15 +234,19 @@ Color and Distance Sensor
             ../../pybricks-projects/snippets/pup/sensor_color_distance/hsv.py
 
 
-        **Example 2: Modifying the default color map**
+        **Example 2: Changing the detectable colors**
+
+        By default, the sensor is configured to detect red, yellow, green,
+        blue, white, or ``None``, which suits many applications.
+
+        For better results in your application, you can measure your desired
+        colors in advance, and tell the sensor to look only for those colors.
+        Be sure to measure them at the **same distance and light conditions**
+        as in your final application. Then you'll get very accurate results
+        even for colors that are otherwise hard to detect.
 
         .. literalinclude::
-            ../../pybricks-projects/snippets/pup/sensor_color_distance/color_map_modify.py
-
-        **Example 3: Providing a whole new color map**
-
-        .. literalinclude::
-            ../../pybricks-projects/snippets/pup/sensor_color_distance/color_map_new.py
+            ../../pybricks-projects/snippets/pup/sensor_color_distance/detectable_colors.py
 
     .. automethod:: pybricks.pupdevices.ColorDistanceSensor.hsv
 
@@ -355,17 +359,21 @@ Color Sensor
             ../../pybricks-projects/snippets/pup/sensor_color/hsv.py
 
 
-        **Example 2: Modifying the default color map**
+        **Example 2: Changing the detectable colors**
+
+        By default, the sensor is configured to detect red, yellow, green,
+        blue, white, or ``None``, which suits many applications.
+
+        For better results in your application, you can measure your desired
+        colors in advance, and tell the sensor to look only for those colors.
+        Be sure to measure them at the **same distance and light conditions**
+        as in your final application. Then you'll get very accurate results
+        even for colors that are otherwise hard to detect.
 
         .. literalinclude::
-            ../../pybricks-projects/snippets/pup/sensor_color/color_map_modify.py
+            ../../pybricks-projects/snippets/pup/sensor_color/detectable_colors.py
 
-        **Example 3: Providing a whole new color map**
-
-        .. literalinclude::
-            ../../pybricks-projects/snippets/pup/sensor_color/color_map_new.py
-
-        **Example 4: Reading ambient hue, saturation, value, and color**
+        **Example 3: Reading ambient hue, saturation, value, and color**
 
         .. literalinclude::
             ../../pybricks-projects/snippets/pup/sensor_color/color_ambient.py
