@@ -250,7 +250,7 @@ Color and Distance Sensor
 
     .. automethod:: pybricks.pupdevices.ColorDistanceSensor.hsv
 
-    .. automethod:: pybricks.pupdevices.ColorDistanceSensor.color_map
+    .. automethod:: pybricks.pupdevices.ColorDistanceSensor.detectable_colors
 
     .. rubric:: Built-in light
 
@@ -380,7 +380,7 @@ Color Sensor
 
     .. automethod:: pybricks.pupdevices.ColorSensor.hsv
 
-    .. automethod:: pybricks.pupdevices.ColorSensor.color_map
+    .. automethod:: pybricks.pupdevices.ColorSensor.detectable_colors
 
     .. rubric:: Built-in lights
 

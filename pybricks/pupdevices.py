@@ -81,10 +81,14 @@ class ColorDistanceSensor:
     def color(self):
         """Scans the color of a surface.
 
+        You choose which colors are detected using the
+        :meth:`.detectable_colors` method. By default, it detects
+        ``Color.RED``, ``Color.YELLOW``, ``Color.GREEN``, ``Color.BLUE``,
+        ``Color.WHITE``, or ``None``.
+
         :returns:
             Detected color.
-        :rtype: :class:`Color <.parameters.Color>`, or ``None`` if no color is
-                detected.
+        :rtype: :class:`Color <.parameters.Color>`
         """
         pass
 
@@ -106,38 +110,38 @@ class ColorDistanceSensor:
         """
         pass
 
-    def color_map(self, hues, saturation, values):
-        """Configures how :meth:`.color` selects a
-        :class:`Color <.parameters.Color>` based on a :meth:`.hsv` measurement.
+    def detectable_colors(self, colors):
+        """Configures which colors the :meth:`.color` method should detect.
 
         Specify only colors that you wish to detect in your application.
-        This way, measurements are
-        rounded to the nearest expected color, and other colors are ignored.
+        This way, the full-color measurements are rounded to the nearest
+        desired color, and other colors are ignored. This improves reliability.
 
-        If you give no arguments, the current settings will be returned as a
-        tuple.
+        If you give no arguments, the currently chosen colors will be returned
+        as a tuple.
 
         Arguments:
-            hues (dict): A dictionary that
-                maps :class:`Color <.parameters.Color>` to hues. When the
-                saturation is high, :meth:`.color` will return one of these
-                colors, whichever has the nearest hue.
-            saturation (:ref:`percentage`): Minimum saturation of a proper
-                color.
-            values (:ref:`percentage`): A dictionary that
-                maps ``Color.WHITE``, ``Color.GRAY``, ``Color.BLACK`` and
-                ``None`` to brightness values. When the saturation is
-                low, :meth:`.color` will return one of these colors, whichever
-                has the nearest value.
+            colors (list): List of :class:`Color <.parameters.Color>` objects:
+                the colors that you want to detect. You can pick
+                standard colors such as ``Color.MAGENTA``, or provide your own
+                colors like
+                ``Color(h=348, s=96, v=40, name='MY_MAGENTA_BRICK')`` for even
+                better results. You measure your own colors with the
+                :meth:`.hsv` method.
         """
         pass
 
     def hsv(self):
-        """Scans the hue, saturation and brightness value of a surface.
+        """Scans the color of a surface.
 
-        :returns: Tuple with the hue, saturation, and value
-            (brightness) of the color.
-        :rtype: (:ref:`hue`, :ref:`percentage`, :ref:`percentage`)
+        This method is similar to :meth:`.color`, but it gives the full range
+        of hue, saturation and brightness values, instead of rounding it to the
+        nearest detectable color.
+
+        :returns:
+            Measured color. The color is described by a hue (0--359), a
+            saturation (0--100), and a brightness value (0--100).
+        :rtype: :class:`Color <.parameters.Color>`
 
         """
         pass
@@ -196,56 +200,58 @@ class ColorSensor:
     def color(self, surface=True):
         """Scans the color of a surface or an external light source.
 
+        You choose which colors are detected using the
+        :meth:`.detectable_colors` method. By default, it detects
+        ``Color.RED``, ``Color.YELLOW``, ``Color.GREEN``, ``Color.BLUE``,
+        ``Color.WHITE``, or ``None``.
+
+        Arguments:
+            surface (bool): Choose ``true`` to scan the color of objects
+                and surfaces. Choose ``false`` to scan the color of
+                screens and other external light sources.
+        :returns:
+            Detected color.
+        :rtype: :class:`Color <.parameters.Color>`
+        """
+        pass
+
+    def detectable_colors(self, colors):
+        """Configures which colors the :meth:`.color` method should detect.
+
+        Specify only colors that you wish to detect in your application.
+        This way, the full-color measurements are rounded to the nearest
+        desired color, and other colors are ignored. This improves reliability.
+
+        If you give no arguments, the currently chosen colors will be returned
+        as a tuple.
+
+        Arguments:
+            colors (list): List of :class:`Color <.parameters.Color>` objects:
+                the colors that you want to detect. You can pick
+                standard colors such as ``Color.MAGENTA``, or provide your own
+                colors like
+                ``Color(h=348, s=96, v=40, name='MY_MAGENTA_BRICK')`` for even
+                better results. You measure your own colors with the
+                :meth:`.hsv` method.
+        """
+        pass
+
+    def hsv(self, surface=True):
+        """Scans the color of a surface or an external light source.
+
+        This method is similar to :meth:`.color`, but it gives the full range
+        of hue, saturation and brightness values, instead of rounding it to the
+        nearest detectable color.
+
         Arguments:
             surface (bool): Choose ``true`` to scan the color of objects
                 and surfaces. Choose ``false`` to scan the color of
                 screens and other external light sources.
 
         :returns:
-            Detected color.
-        :rtype: :class:`Color <.parameters.Color>`, or ``None`` if no color is
-                detected.
-        """
-        pass
-
-    def color_map(self, hues, saturation, values):
-        """Configures how :meth:`.color` selects a
-        :class:`Color <.parameters.Color>` based on a :meth:`.hsv` measurement.
-
-        Specify only colors that you wish to detect in your application.
-        This way, measurements are
-        rounded to the nearest expected color, and other colors are ignored.
-
-        If you give no arguments, the current settings will be returned as a
-        tuple.
-
-        Arguments:
-            hues (dict): A dictionary that
-                maps :class:`Color <.parameters.Color>` to hues. When the
-                saturation is high, :meth:`.color` will return one of these
-                colors, whichever has the nearest hue.
-            saturation (:ref:`percentage`): Minimum saturation of a proper
-                color.
-            values (:ref:`percentage`): A dictionary that
-                maps ``Color.WHITE``, ``Color.GRAY``, ``Color.BLACK`` and
-                ``None`` to brightness values. When the saturation is
-                low, :meth:`.color` will return one of these colors, whichever
-                has the nearest value.
-        """
-        pass
-
-    def hsv(self, surface=True):
-        """Scans the hue, saturation and brightness value of a
-        surface or an external light source.
-
-        Arguments:
-            surface (bool): Choose ``true`` to scan the color of objects
-                and surfaces. Choose ``false`` to scan the color of
-                screens and other external light sources.
-
-        :returns: Tuple with the hue, saturation, and value
-            (brightness) of the color.
-        :rtype: (:ref:`hue`, :ref:`percentage`, :ref:`percentage`)
+            Measured color. The color is described by a hue (0--359), a
+            saturation (0--100), and a brightness value (0--100).
+        :rtype: :class:`Color <.parameters.Color>`
 
         """
         pass
