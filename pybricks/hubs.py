@@ -28,7 +28,7 @@ class CityHub:
     light = _ColorLight()
 
 
-class CPlusHub:
-    """LEGO® Technic Control+ Hub."""
+class TechnicHub:
+    """LEGO® Technic Hub."""
     battery = _Battery()
     light = _ColorLight()

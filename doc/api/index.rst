@@ -16,7 +16,7 @@ below.
    * - **EV3 Brick**
      - **Move Hub**
      - **City Hub**
-     - **Control+ Hub**
+     - **Technic Hub**
 
    * - .. image:: images/ev3brick.png
          :target: start_ev3.html
