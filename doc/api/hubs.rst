@@ -14,10 +14,10 @@ City Hub (City/System)
 Technic Hub (Technic)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. figure:: ../api/images/cplushub.png
+.. figure:: ../api/images/technichub.png
     :height: 15 em
 
-.. include:: hubs_cplushub.inc
+.. include:: hubs_technichub.inc
 
 Move Hub (BOOST)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
