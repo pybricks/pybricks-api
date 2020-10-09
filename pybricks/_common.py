@@ -458,12 +458,12 @@ class ColorLight:
         program keeps running.
 
         This method provides a simple way to make basic but useful patterns.
-        For more generic and multi-color patterns, use :meth:`.animate`
+        For more generic and multi-color patterns, use ``animate()``
         instead.
 
         Arguments:
             color (Color): Color of the light.
-            (list): List of (:ref:`time`) values of the
+            durations (list): List of (:ref:`time`) values of the
                 form ``[on_1, off_1, on_2, off_2, ...]``.
         """
 
@@ -475,7 +475,7 @@ class ColorLight:
         keeps running. When the animation completes, it repeats.
 
         Arguments:
-            colors (list): List of :ref:`color` values.
+            colors (list): List of :class:`Color <.parameters.Color>` values.
             interval (:ref:`time`): Time between color updates.
         """
 
