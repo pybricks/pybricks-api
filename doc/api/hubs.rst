@@ -19,6 +19,14 @@ Technic Hub (Technic)
 
 .. include:: hubs_technichub.inc
 
+Prime Hub (SPIKE)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. figure:: ../api/images/primehub.png
+    :height: 15 em
+
+.. include:: hubs_primehub.inc
+
 Move Hub (BOOST)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 

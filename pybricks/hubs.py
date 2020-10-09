@@ -32,3 +32,9 @@ class TechnicHub:
     """LEGO® Technic Hub."""
     battery = _Battery()
     light = _ColorLight()
+
+
+class PrimeHub:
+    """LEGO® SPIKE Prime Hub."""
+    battery = _Battery()
+    light = _ColorLight()
