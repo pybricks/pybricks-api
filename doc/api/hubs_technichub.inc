@@ -7,6 +7,10 @@
 
     .. automethod:: pybricks.hubs::TechnicHub.light.off
 
+    .. automethod:: pybricks.hubs::TechnicHub.light.blink
+
+    .. automethod:: pybricks.hubs::TechnicHub.light.animate
+
     .. rubric:: Using the battery
 
     .. automethod:: pybricks.hubs::TechnicHub.battery.voltage

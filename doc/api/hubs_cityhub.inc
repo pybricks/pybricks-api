@@ -7,11 +7,9 @@
 
     .. automethod:: pybricks.hubs::CityHub.light.off
 
-..    .. automethod:: pybricks.hubs::CityHub.light.hsv
+    .. automethod:: pybricks.hubs::CityHub.light.blink
 
-..    .. automethod:: pybricks.hubs::CityHub.light.pattern
-
-..    .. automethod:: pybricks.hubs::CityHub.light.reset
+    .. automethod:: pybricks.hubs::CityHub.light.animate
 
     .. rubric:: Using the battery
 
