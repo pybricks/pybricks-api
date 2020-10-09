@@ -556,7 +556,3 @@ Light
     .. automethod:: pybricks.pupdevices.Light.on
 
     .. automethod:: pybricks.pupdevices.Light.off
-
-    .. automethod:: pybricks.pupdevices.Light.blink
-
-    .. automethod:: pybricks.pupdevices.Light.animate
