@@ -27,7 +27,7 @@ below.
      - .. figure:: images/cityhub.png
          :target: start_pup.html
 
-     - .. figure:: images/cplushub.png
+     - .. figure:: images/technichub.png
           :target: start_pup.html
 
 

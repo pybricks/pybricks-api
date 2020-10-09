@@ -270,7 +270,7 @@ class AvailabilityDirective(Directive):
     option_spec = {
         'movehub': flag,
         'cityhub': flag,
-        'cplushub': flag,
+        'technichub': flag,
         'ev3dev-stretch': flag,
     }
 
