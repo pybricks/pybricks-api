@@ -11,7 +11,7 @@ City Hub (City/System)
 
 .. include:: hubs_cityhub.inc
 
-Control+ Hub (Technic)
+Technic Hub (Technic)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. figure:: ../api/images/cplushub.png
