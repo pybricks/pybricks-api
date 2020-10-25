@@ -11,31 +11,20 @@ hand menu to modify the example program.
 
 .. note::
 
-    - We welcome your questions, feedback and bug reports on our `support page`_.
-
     - **This is still in beta! Not everything may work as expected yet.**
 
-    - Main current bugs/limitations:
+    - We welcome your questions, feedback and bug reports on our `support page`_.
 
-       - Sensors/motors are detected automatically only once. So if you change
-         the cables, you have to turn the hub off and on again. You can turn it
-         off by holding down the button for about 5 seconds.
+    - For now, sensors/motors are detected automatically only once.
+      So if you change the cables, you have to turn the hub off and on again.
+      You can turn it off by holding down the button for about 5 seconds.
 
-       - On the BOOST Move Hub, ports C and D do not work yet.
-
-Installing Google Chrome 85
+Installing Google Chrome
 --------------------------------------
 
-Writing Pybricks programs requires a web browser with up-to-date web Bluetooth
-functionality. Currently, only Google Chrome supports this. You need at least
-version 85.
-
-Download Google Chrome 85 beta `from here`_.
-
-
-The official Chrome 85 release is scheduled for August 25th. For now you can
-install this beta on Windows, Mac, and Linux without affecting your existing
-browsers.
+Writing Pybricks programs requires a web browser with web Bluetooth
+functionality. Currently, only Google Chrome supports this.
+Download Google Chrome `from here`_.
 
 .. toggle-header::
     :header: **Show/hide extra steps for Linux users**
@@ -67,7 +56,7 @@ Installing it is easy:
     - Select the ``LEGO Bootloader`` and click *Pair*.
     - The light should change to a red/green/blue sequence.
     - You can now release the button.
-    - Wait for the update to finish, indicated by a steady blue light.
+    - Wait for the update to finish, indicated by a blinking blue light.
     - If you use the recommended browser, this will take about 90 seconds.
 
 .. raw:: html
@@ -174,4 +163,4 @@ try again with fresh batteries.
 .. _GitHub commits: https://github.com/pybricks/pybricks-micropython/commits/master
 .. _support page: https://github.com/pybricks/support/issues/
 .. _Pybricks Code: http://code.pybricks.com/
-.. _from here: https://www.google.com/chrome/dev/
+.. _from here: https://www.google.com/chrome/
