@@ -1,3 +1,9 @@
+MINDSTORMS EV3 Brick
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. figure:: ../../api/images/ev3brick.png
+    :height: 15 em
+
 .. autoclass:: pybricks.hubs.EV3Brick
     :no-members:
 
@@ -15,7 +21,7 @@
             **Example: Turn the light on and change the color.**
 
             .. literalinclude::
-              ../../pybricks-projects/snippets/ev3/light_color/main.py
+              ../../../pybricks-projects/snippets/ev3/light_color/main.py
 
     .. automethod:: pybricks.hubs::EV3Brick.light.off
 
@@ -174,7 +180,7 @@
                \begin{CJK}{UTF8}{gbsn}
 
             .. literalinclude::
-              ../../pybricks-projects/snippets/ev3/screen_print/main.py
+              ../../../pybricks-projects/snippets/ev3/screen_print/main.py
 
             .. raw:: latex
 
@@ -192,7 +198,7 @@
             **Example: Show an image on the screen.**
 
             .. literalinclude::
-              ../../pybricks-projects/snippets/ev3/screen_image/main.py
+              ../../../pybricks-projects/snippets/ev3/screen_image/main.py
 
     .. automethod:: pybricks.hubs::EV3Brick.screen.draw_image
 
@@ -206,7 +212,7 @@
             **Example: Draw some shapes on the screen.**
 
             .. literalinclude::
-              ../../pybricks-projects/snippets/ev3/screen_draw/main.py
+              ../../../pybricks-projects/snippets/ev3/screen_draw/main.py
 
     .. automethod:: pybricks.hubs::EV3Brick.screen.draw_box
 

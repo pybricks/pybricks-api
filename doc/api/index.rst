@@ -72,7 +72,7 @@ findings on our `support page`_ so we can make Pybricks even better.
    :caption: Pybricks Modules
    :hidden:
 
-   hubs
+   hubs/index
    pupdevices
    ev3devices
    nxtdevices
