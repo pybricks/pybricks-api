@@ -1,6 +1,10 @@
 Powered Up Quick Start
 ########################
 
+.. figure:: images/powereduphubs.png
+    :height: 15 em
+    :align: center
+
 This page shows how you can install Pybricks on your hub and run your first
 program. When you're ready, browse through the Pybricks Modules in the left
 hand menu to modify the example program.
