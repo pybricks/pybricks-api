@@ -7,28 +7,24 @@ run your first scripts.
 
 **Step 1: Install Pybricks**
 
-To get started, go to the :doc:`EV3 Quick Start <start_ev3>`
-or the :doc:`Powered Up Quick Start <start_pup>` or pick your hub
-below.
+Pybricks scripts are the same across all hubs. The only difference is in how
+you install Pybricks and how you run scripts. To get started, click one of
+the platforms below.
 
 .. list-table::
 
-   * - **EV3 Brick**
-     - **Move Hub**
-     - **City Hub**
-     - **Technic Hub**
+   * - **MINDSTORMS EV3**
+     - **Powered Up (Technic/City/BOOST)**
+     - **SPIKE / MINDSTORMS Inventor**
 
    * - .. image:: images/ev3brick.png
          :target: start_ev3.html
 
-     - .. figure:: images/movehub.png
+     - .. figure:: images/powereduphubs.png
          :target: start_pup.html
 
-     - .. figure:: images/cityhub.png
-         :target: start_pup.html
-
-     - .. figure:: images/technichub.png
-          :target: start_pup.html
+     - .. figure:: images/primeinventorhub.png
+          :target: start_inventor.html
 
 
 **Step 2: Start coding!**
