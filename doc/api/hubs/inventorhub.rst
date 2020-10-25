@@ -7,6 +7,10 @@ MINDSTORMS Inventor Hub
 .. autoclass:: pybricks.hubs.InventorHub
     :no-members:
 
+    This class is identical to the
+    :class:`PrimeHub <pybricks.hubs.PrimeHub>` class, except
+    for the name.
+
     .. rubric:: Using the hub status light
 
     .. toggle-header::

@@ -7,6 +7,10 @@ SPIKE Prime Hub
 .. autoclass:: pybricks.hubs.PrimeHub
     :no-members:
 
+    This class is identical to the
+    :class:`InventorHub <pybricks.hubs.InventorHub>` class, except
+    for the name.
+
     .. rubric:: Using the hub status light
 
     .. toggle-header::
