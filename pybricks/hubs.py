@@ -38,3 +38,8 @@ class PrimeHub:
     """LEGO® SPIKE Prime Hub."""
     battery = _Battery()
     light = _ColorLight()
+
+
+class InventorHub(PrimeHub):
+    """LEGO® MINDSTORMS Inventor Hub."""
+    pass
