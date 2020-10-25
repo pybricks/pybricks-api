@@ -69,6 +69,7 @@ findings on our `support page`_ so we can make Pybricks even better.
 
    start_ev3
    start_pup
+   start_inventor
 
 .. toctree::
    :maxdepth: 1
