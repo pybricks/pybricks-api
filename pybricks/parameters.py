@@ -195,8 +195,8 @@ class Axis(_PybricksEnum):
 
 
 class Side(_PybricksEnum):
-    """Sides or face of a device such as a hub or a sensor. Such devices are
-    usually shaped like a rectangular box with six of the following sides:
+    """Side of a hub or a sensor. These devices are
+    mostly rectangular boxes with six sides:
 
     .. data:: TOP
     .. data:: BOTTOM
