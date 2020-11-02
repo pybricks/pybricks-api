@@ -143,3 +143,35 @@
 
 .. autoclass:: pybricks.parameters.Side
     :no-members:
+
+    .. content-tabs::
+
+        .. tab-container:: primehub
+            :title: Prime Hub
+
+            .. figure:: ../api/images/orientation_primehub_label.png
+                :height: 20 em
+
+        .. tab-container:: inventorhub
+            :title: Inventor Hub
+
+            .. figure:: ../api/images/orientation_inventorhub_label.png
+                :height: 20 em
+
+        .. tab-container:: movehub
+            :title: Move Hub
+
+            .. figure:: ../api/images/orientation_movehub_label.png
+                :height: 20 em
+
+        .. tab-container:: technichub
+            :title: Technic Hub
+
+            .. figure:: ../api/images/orientation_technichub_label.png
+                :height: 20 em
+
+        .. tab-container:: tiltsensor
+            :title: Tilt Sensor
+
+            .. figure:: ../api/images/orientation_tiltsensor_label.png
+                :height: 20 em
