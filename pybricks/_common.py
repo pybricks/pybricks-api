@@ -549,6 +549,14 @@ class LightGrid:
         """
         pass
 
+    def orientation(self, up):
+        """Sets the orientation of the light matrix display.
+
+        Arguments:
+            top (Side): Which side of the hub or light matrix is "up".
+        """
+        pass
+
     def image(self, matrix):
         """Shows an image made up of pixels of a given brightness, represented
         by a matrix of intensity values (0--100). A 2D list of intensity values
