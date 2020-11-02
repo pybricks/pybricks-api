@@ -144,6 +144,12 @@
 .. autoclass:: pybricks.parameters.Side
     :no-members:
 
+    Screens or light matrices have only four sides. For those,
+    ``TOP`` is treated the same as ``FRONT``, and ``BOTTOM`` is treated the
+    same as ``BACK``.
+
+    Click a tab below to see the sides for relevant devices.
+
     .. content-tabs::
 
         .. tab-container:: primehub
