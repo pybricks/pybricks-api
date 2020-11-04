@@ -23,17 +23,17 @@ Motors without Rotation Sensors
     **Example 1: Making the motor move back and forth**
 
     .. literalinclude::
-        ../../pybricks-projects/snippets/pup/motor_dc/motor_dc_init_basic.py
+        ../../examples/pup/motor_dc/motor_dc_init_basic.py
 
     **Example 2: Seting the positive direction as counterclockwise**
 
     .. literalinclude::
-        ../../pybricks-projects/snippets/pup/motor_dc/motor_dc_init_direction.py
+        ../../examples/pup/motor_dc/motor_dc_init_direction.py
 
     **Example 3: Starting and stopping**
 
     .. literalinclude::
-        ../../pybricks-projects/snippets/pup/motor_dc/motor_dc_stop.py
+        ../../examples/pup/motor_dc/motor_dc_stop.py
 
 .. autoclass:: pybricks._common.DCMotor
     :noindex:
@@ -72,22 +72,22 @@ Motors with Rotation Sensors
         **Example 1: Making the motor move back and forth**
 
         .. literalinclude::
-            ../../pybricks-projects/snippets/pup/motor/motor_init_basic.py
+            ../../examples/pup/motor/motor_init_basic.py
 
         **Example 2: Using more than one motor**
 
         .. literalinclude::
-            ../../pybricks-projects/snippets/pup/motor/motor_init_multiple.py
+            ../../examples/pup/motor/motor_init_multiple.py
 
         **Example 3: Seting the positive direction as counterclockwise**
 
         .. literalinclude::
-            ../../pybricks-projects/snippets/pup/motor/motor_init_direction.py
+            ../../examples/pup/motor/motor_init_direction.py
 
         **Example 4: Using gears**
 
         .. literalinclude::
-            ../../pybricks-projects/snippets/pup/motor/motor_init_gears.py
+            ../../examples/pup/motor/motor_init_gears.py
 
     .. rubric:: Measuring
 
@@ -97,12 +97,12 @@ Motors with Rotation Sensors
         **Example 1: Measuring the angle and speed**
 
         .. literalinclude::
-            ../../pybricks-projects/snippets/pup/motor/motor_measure.py
+            ../../examples/pup/motor/motor_measure.py
 
         **Example 2: Resetting the measured angle**
 
         .. literalinclude::
-            ../../pybricks-projects/snippets/pup/motor/motor_reset_angle.py
+            ../../examples/pup/motor/motor_reset_angle.py
 
     .. automethod:: pybricks.pupdevices.Motor.speed
 
@@ -118,7 +118,7 @@ Motors with Rotation Sensors
         **Example: Stopping the motor in different ways**
 
         .. literalinclude::
-            ../../pybricks-projects/snippets/pup/motor/motor_stop.py
+            ../../examples/pup/motor/motor_stop.py
 
     .. automethod:: pybricks.pupdevices.Motor.stop
 
@@ -134,32 +134,32 @@ Motors with Rotation Sensors
         **Example 1: Basic usage of all action methods**
 
         .. literalinclude::
-            ../../pybricks-projects/snippets/pup/motor/motor_action_basic.py
+            ../../examples/pup/motor/motor_action_basic.py
 
         **Example 2: Using the** ``then`` **argument to change how a motor stops**
 
         .. literalinclude::
-            ../../pybricks-projects/snippets/pup/motor/motor_action_then.py
+            ../../examples/pup/motor/motor_action_then.py
 
         **Example 3: Using the** ``wait`` **argument to run motors in parallel**
 
         .. literalinclude::
-            ../../pybricks-projects/snippets/pup/motor/motor_action_wait.py
+            ../../examples/pup/motor/motor_action_wait.py
 
         **Example 4: Waiting for two actions to complete in parallel**
 
         .. literalinclude::
-            ../../pybricks-projects/snippets/pup/motor/motor_action_wait_advanced.py
+            ../../examples/pup/motor/motor_action_wait_advanced.py
 
         **Example 5: Running a motor until a mechanical endpoint**
 
         .. literalinclude::
-            ../../pybricks-projects/snippets/pup/motor/motor_until_stalled.py
+            ../../examples/pup/motor/motor_until_stalled.py
 
         **Example 6: Centering a steering mechanism**
 
         .. literalinclude::
-            ../../pybricks-projects/snippets/pup/motor/motor_until_stalled.py
+            ../../examples/pup/motor/motor_until_stalled.py
 
 
     .. automethod:: pybricks.pupdevices.Motor.run
@@ -199,18 +199,18 @@ Color and Distance Sensor
     **Example 1: Measuring color**
 
     .. literalinclude::
-        ../../pybricks-projects/snippets/pup/sensor_color_distance/color_print.py
+        ../../examples/pup/sensor_color_distance/color_print.py
 
 
     **Example 2: Waiting for a color**
 
     .. literalinclude::
-        ../../pybricks-projects/snippets/pup/sensor_color_distance/wait_for_color.py
+        ../../examples/pup/sensor_color_distance/wait_for_color.py
 
     **Example 3: Measuring distance**
 
     .. literalinclude::
-        ../../pybricks-projects/snippets/pup/sensor_color_distance/distance_blink.py
+        ../../examples/pup/sensor_color_distance/distance_blink.py
 
 .. autoclass:: pybricks.pupdevices.ColorDistanceSensor
     :no-members:
@@ -231,7 +231,7 @@ Color and Distance Sensor
         **Example 1: Reading hue, saturation, and value**
 
         .. literalinclude::
-            ../../pybricks-projects/snippets/pup/sensor_color_distance/hsv.py
+            ../../examples/pup/sensor_color_distance/hsv.py
 
 
         **Example 2: Changing the detectable colors**
@@ -246,7 +246,7 @@ Color and Distance Sensor
         even for colors that are otherwise hard to detect.
 
         .. literalinclude::
-            ../../pybricks-projects/snippets/pup/sensor_color_distance/detectable_colors.py
+            ../../examples/pup/sensor_color_distance/detectable_colors.py
 
     .. automethod:: pybricks.pupdevices.ColorDistanceSensor.hsv
 
@@ -264,7 +264,7 @@ Color and Distance Sensor
         **Example: Blinking the built-in light**
 
         .. literalinclude::
-            ../../pybricks-projects/snippets/pup/sensor_color_distance/distance_blink.py
+            ../../examples/pup/sensor_color_distance/distance_blink.py
 
     .. automethod:: pybricks.pupdevices::ColorDistanceSensor.light.on
 
@@ -296,13 +296,13 @@ and ambient conditions.
     **Example 1: Control a Power Functions motor**
 
     .. literalinclude::
-        ../../pybricks-projects/snippets/pup/motor_pf/motor_pf_basics.py
+        ../../examples/pup/motor_pf/motor_pf_basics.py
 
 
     **Example 2: Controlling multiple Power Functions motors**
 
     .. literalinclude::
-        ../../pybricks-projects/snippets/pup/motor_pf/motor_pf_pwm.py
+        ../../examples/pup/motor_pf/motor_pf_pwm.py
 
 .. autoclass:: pybricks.pupdevices.PFMotor
     :noindex:
@@ -331,13 +331,13 @@ Color Sensor
     **Example 1: Measuring color and reflection**
 
     .. literalinclude::
-        ../../pybricks-projects/snippets/pup/sensor_color/color_print.py
+        ../../examples/pup/sensor_color/color_print.py
 
 
     **Example 2: Waiting for a color**
 
     .. literalinclude::
-        ../../pybricks-projects/snippets/pup/sensor_color/wait_for_color.py
+        ../../examples/pup/sensor_color/wait_for_color.py
 
 .. autoclass:: pybricks.pupdevices.ColorSensor
     :no-members:
@@ -356,7 +356,7 @@ Color Sensor
         **Example 1: Reading hue, saturation, and value**
 
         .. literalinclude::
-            ../../pybricks-projects/snippets/pup/sensor_color/hsv.py
+            ../../examples/pup/sensor_color/hsv.py
 
 
         **Example 2: Changing the detectable colors**
@@ -371,12 +371,12 @@ Color Sensor
         even for colors that are otherwise hard to detect.
 
         .. literalinclude::
-            ../../pybricks-projects/snippets/pup/sensor_color/detectable_colors.py
+            ../../examples/pup/sensor_color/detectable_colors.py
 
         **Example 3: Reading ambient hue, saturation, value, and color**
 
         .. literalinclude::
-            ../../pybricks-projects/snippets/pup/sensor_color/color_ambient.py
+            ../../examples/pup/sensor_color/color_ambient.py
 
     .. automethod:: pybricks.pupdevices.ColorSensor.hsv
 
@@ -394,7 +394,7 @@ Color Sensor
         **Example: Blinking the built-in lights**
 
         .. literalinclude::
-            ../../pybricks-projects/snippets/pup/sensor_color/lights_blink.py
+            ../../examples/pup/sensor_color/lights_blink.py
 
     .. automethod:: pybricks.pupdevices::ColorSensor.lights.on
 
@@ -413,12 +413,12 @@ Ultrasonic Sensor
     **Example 1: Measuring distance and switching on the lights**
 
     .. literalinclude::
-        ../../pybricks-projects/snippets/pup/sensor_ultrasonic/basics.py
+        ../../examples/pup/sensor_ultrasonic/basics.py
 
     **Example 2: Using math to gradually change the brightness of the lights**
 
     .. literalinclude::
-        ../../pybricks-projects/snippets/pup/sensor_ultrasonic/math.py
+        ../../examples/pup/sensor_ultrasonic/math.py
 
 .. autoclass:: pybricks.pupdevices.UltrasonicSensor
     :no-members:
@@ -449,13 +449,13 @@ Force Sensor
     **Example 1: Measuring force and movement**
 
     .. literalinclude::
-        ../../pybricks-projects/snippets/pup/sensor_force/basics.py
+        ../../examples/pup/sensor_force/basics.py
 
 
     **Example 2: Measuring peak force**
 
     .. literalinclude::
-        ../../pybricks-projects/snippets/pup/sensor_force/peak.py
+        ../../examples/pup/sensor_force/peak.py
 
 
 .. autoclass:: pybricks.pupdevices.ForceSensor
@@ -481,7 +481,7 @@ Infrared Sensor
     **Example: Measuring distance, object count, and reflection**
 
     .. literalinclude::
-        ../../pybricks-projects/snippets/pup/sensor_infrared/basics.py
+        ../../examples/pup/sensor_infrared/basics.py
 
 .. autoclass:: pybricks.pupdevices.InfraredSensor
     :no-members:
@@ -505,7 +505,7 @@ Tilt Sensor
     **Example: Measuring pitch and roll**
 
     .. literalinclude::
-        ../../pybricks-projects/snippets/pup/sensor_tilt/basics.py
+        ../../examples/pup/sensor_tilt/basics.py
 
 .. autoclass:: pybricks.pupdevices.TiltSensor
     :no-members:
@@ -543,12 +543,12 @@ Light
     **Example 1: Making the light blink**
 
     .. literalinclude::
-        ../../pybricks-projects/snippets/pup/light/basics.py
+        ../../examples/pup/light/basics.py
 
     **Example 2: Using math to gradually change the brightness of the light**
 
     .. literalinclude::
-        ../../pybricks-projects/snippets/pup/light/math.py
+        ../../examples/pup/light/math.py
 
 .. autoclass:: pybricks.pupdevices.Light
     :no-members:

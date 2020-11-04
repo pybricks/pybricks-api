@@ -142,7 +142,7 @@ as shown  in :numref:`fig_firstprogram`.
 Next, edit *main.py* to make it look like this:
 
 .. literalinclude::
-   ../../pybricks-projects/snippets/ev3/getting_started/main.py
+   ../../examples/ev3/getting_started/main.py
 
 This program makes your robot beep, rotate the motor, and beep again with a
 higher pitched tone. Run the program to make sure that it works as expected.

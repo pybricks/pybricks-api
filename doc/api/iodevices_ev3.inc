@@ -19,7 +19,7 @@ I2C Device
 
     **Example: Read and write to an I2C device.**
 
-    .. literalinclude:: ../../pybricks-projects/snippets/ev3/i2c_basics/main.py
+    .. literalinclude:: ../../examples/ev3/i2c_basics/main.py
 
 .. _i2caddress:
 
@@ -41,7 +41,7 @@ data. You can achieve this behavior as shown in the examples below.
 
     **Example: Advanced I2C read and write techniques.**
 
-    .. literalinclude:: ../../pybricks-projects/snippets/ev3/i2c_extra/main.py
+    .. literalinclude:: ../../examples/ev3/i2c_extra/main.py
 
 **Additional technical resources**
 
@@ -69,7 +69,7 @@ UART Device
     **Example: Read and write to a UART device.**
 
     .. literalinclude::
-        ../../pybricks-projects/snippets/ev3/uart_basics/main.py
+        ../../examples/ev3/uart_basics/main.py
 
 DC Motor
 ^^^^^^^^^^^^
@@ -132,7 +132,7 @@ visit the `ev3dev sensors`_ page.
     RGB mode. This gives uncalibrated red, green, and blue reflection values.
 
     .. literalinclude::
-        ../../pybricks-projects/snippets/ev3/ev3devsensor/main.py
+        ../../examples/ev3/ev3devsensor/main.py
 
 .. toggle-header::
     :header: **Show/hide example: Extending the Ev3devSensor class**
@@ -143,7 +143,7 @@ visit the `ev3dev sensors`_ page.
     additional features found in the Linux system folder for this device.
 
     .. literalinclude::
-        ../../pybricks-projects/snippets/ev3/ev3devsensor/class_example.py
+        ../../examples/ev3/ev3devsensor/class_example.py
 
 .. _ev3dev sensors: http://docs.ev3dev.org/projects/lego-linux-drivers/en/ev3dev-stretch/sensors.html
 .. _Mode name: http://docs.ev3dev.org/projects/lego-linux-drivers/en/ev3dev-stretch/sensor_data.html

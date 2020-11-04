@@ -19,22 +19,22 @@ SPIKE Prime Hub
         **Example 1: Turning the light on and off**
 
         .. literalinclude::
-            ../../../pybricks-projects/snippets/pup/hub_primehub/light_off.py
+            ../../../examples/pup/hub_primehub/light_off.py
 
         **Example 2: Changing brightness and using custom colors**
 
         .. literalinclude::
-            ../../../pybricks-projects/snippets/pup/hub_primehub/light_hsv.py
+            ../../../examples/pup/hub_primehub/light_hsv.py
 
         **Example 3: Making the light blink**
 
         .. literalinclude::
-            ../../../pybricks-projects/snippets/pup/hub_primehub/light_blink.py
+            ../../../examples/pup/hub_primehub/light_blink.py
 
         **Example 4: Creating light animations**
 
         .. literalinclude::
-           ../../../pybricks-projects/snippets/pup/hub_primehub/light_animate.py
+           ../../../examples/pup/hub_primehub/light_animate.py
 
     .. automethod:: pybricks.hubs::PrimeHub.light.on
 

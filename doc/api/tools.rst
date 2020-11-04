@@ -39,7 +39,7 @@
 
     This example shows how to log the angle of a rotating wheel as time passes.
 
-    .. literalinclude:: ../../pybricks-projects/snippets/ev3/datalog/main.py
+    .. literalinclude:: ../../examples/ev3/datalog/main.py
 
     In this example, the generated file has the following contents::
 
@@ -86,4 +86,4 @@
     name will always be the same. However, this means that the contents of
     ``my_file.txt`` will be overwritten every time you run this script.
 
-    .. literalinclude:: ../../pybricks-projects/snippets/ev3/datalog_extra/main.py
+    .. literalinclude:: ../../examples/ev3/datalog_extra/main.py
