@@ -71,7 +71,7 @@ and the client can send a message to the server.
 
     This is the full version of the excerpt shown in :numref:`fig_messaging`.
 
-    .. literalinclude:: ../../pybricks-projects/snippets/ev3/bluetooth_server/server.py
+    .. literalinclude:: ../../examples/ev3/bluetooth_server/server.py
 
 .. toggle-header::
     :header: **Show/hide full client example**
@@ -80,7 +80,7 @@ and the client can send a message to the server.
 
     This is the full version of the excerpt shown in :numref:`fig_messaging`.
 
-    .. literalinclude:: ../../pybricks-projects/snippets/ev3/bluetooth_client/client.py
+    .. literalinclude:: ../../examples/ev3/bluetooth_client/client.py
 
 
 The only difference between the client and the server is which one initiates

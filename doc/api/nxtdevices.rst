@@ -95,4 +95,4 @@ Vernier Adapter
 
     **Example: Using the Surface Temperature Sensor.**
 
-    .. literalinclude:: ../../pybricks-projects/snippets/ev3/vernier_surface_temperature/main.py
+    .. literalinclude:: ../../examples/ev3/vernier_surface_temperature/main.py

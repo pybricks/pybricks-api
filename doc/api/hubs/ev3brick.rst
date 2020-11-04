@@ -21,7 +21,7 @@ MINDSTORMS EV3 Brick
             **Example: Turn the light on and change the color.**
 
             .. literalinclude::
-              ../../../pybricks-projects/snippets/ev3/light_color/main.py
+              ../../../examples/ev3/light_color/main.py
 
     .. automethod:: pybricks.hubs::EV3Brick.light.off
 
@@ -180,7 +180,7 @@ MINDSTORMS EV3 Brick
                \begin{CJK}{UTF8}{gbsn}
 
             .. literalinclude::
-              ../../../pybricks-projects/snippets/ev3/screen_print/main.py
+              ../../../examples/ev3/screen_print/main.py
 
             .. raw:: latex
 
@@ -198,7 +198,7 @@ MINDSTORMS EV3 Brick
             **Example: Show an image on the screen.**
 
             .. literalinclude::
-              ../../../pybricks-projects/snippets/ev3/screen_image/main.py
+              ../../../examples/ev3/screen_image/main.py
 
     .. automethod:: pybricks.hubs::EV3Brick.screen.draw_image
 
@@ -212,7 +212,7 @@ MINDSTORMS EV3 Brick
             **Example: Draw some shapes on the screen.**
 
             .. literalinclude::
-              ../../../pybricks-projects/snippets/ev3/screen_draw/main.py
+              ../../../examples/ev3/screen_draw/main.py
 
     .. automethod:: pybricks.hubs::EV3Brick.screen.draw_box
 
