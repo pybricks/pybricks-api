@@ -47,11 +47,6 @@ SPIKE Prime Hub
 
     .. automethod:: pybricks.hubs::PrimeHub.light.animate
 
-    .. rubric:: Using the buttons
-
-    .. figure:: ../../api/images/primehub_buttons_label.png
-        :width: 22 em
-
     .. rubric:: Using the light matrix display
 
     .. figure:: ../../api/images/primehub_display_label.png
@@ -73,6 +68,12 @@ SPIKE Prime Hub
 
     .. automethod:: pybricks.hubs::PrimeHub.display.text
 
+    .. rubric:: Using the buttons
+
+    .. figure:: ../../api/images/primehub_buttons_label.png
+        :width: 22 em
+
+    .. automethod:: pybricks.hubs::PrimeHub.buttons.pressed
 
     .. rubric:: Using the battery
 

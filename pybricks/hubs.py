@@ -40,6 +40,7 @@ class PrimeHub:
     battery = _Battery()
     light = _ColorLight()
     display = _LightMatrix(5, 5)
+    buttons = _KeyPad()
 
 
 class InventorHub(PrimeHub):
