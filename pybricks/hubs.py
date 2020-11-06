@@ -3,7 +3,8 @@
 
 """LEGO® Programmable Hubs."""
 from ._common import (Speaker as _Speaker, Battery as _Battery,
-                      ColorLight as _ColorLight, KeyPad as _KeyPad)
+                      ColorLight as _ColorLight, KeyPad as _KeyPad,
+                      LightMatrix as _LightMatrix)
 from .media.ev3dev import Image as _Image
 
 
@@ -38,6 +39,7 @@ class PrimeHub:
     """LEGO® SPIKE Prime Hub."""
     battery = _Battery()
     light = _ColorLight()
+    display = _LightMatrix(5, 5)
 
 
 class InventorHub(PrimeHub):

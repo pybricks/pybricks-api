@@ -537,11 +537,11 @@ class LightArray:
         """
 
 
-class LightGrid:
+class LightMatrix:
     """Control a rectangular grid of single-color lights."""
 
     def __init__(self, rows, columns):
-        """Initializes the light grid.
+        """Initializes the light matrix display.
 
         Arguments:
             rows (int): Number of rows in the grid
@@ -553,35 +553,36 @@ class LightGrid:
         """Sets the orientation of the light matrix display.
 
         Arguments:
-            top (Side): Which side of the hub or light matrix is "up".
+            top (Side): Which side of the light matrix display is "up" in your
+                design. Choose ``Side.TOP``, ``Side.LEFT``, ``Side.RIGHT``,
+                or ``Side.BOTTOM``.
         """
         pass
 
     def image(self, matrix):
-        """Shows an image made up of pixels of a given brightness, represented
-        by a matrix of intensity values (0--100). A 2D list of intensity values
-        is also accepted.
+        """Displays an image, represented by a matrix of :ref:`brightness`
+        values.
 
         Arguments:
-            matrix (Matrix): Matrix of intensities (:ref:`brightness`).
+            matrix (Matrix): Matrix of intensities (:ref:`brightness`).  A 2D
+                list is also accepted.
         """
         pass
 
     def animate(self, matrices, interval):
-        """Shows an animation of images in the same format as :meth:`.image`,
-        with a given interval between images.
+        """Displays an animation made using a list of images.
 
-        The animation runs in the background while
-        the rest of your program keeps running. After all images have been
-        displayed, the animation repeats.
+        Each image has the same format as :meth:`.image`. Each image is
+        shown for the given interval. The animation repeats
+        forever while the rest of your program keeps running.
 
         Arguments:
             matrix (list): List of Matrix of intensities.
-            interval (:ref:`time`): Time to display each image.
+            interval (:ref:`time`): Time to display each image in the list.
         """
         pass
 
-    def pixel(self, row, column, brightness):
+    def pixel(self, row, column, brightness=100):
         """Turns on one pixel at the specified brightness.
 
         Arguments:
@@ -596,10 +597,14 @@ class LightGrid:
         pass
 
     def number(self, number):
-        """Displays a number on the light grid.
+        """Displays a number in the range -99 to 99.
+
+        A minus sign (``-``) is shown as a faint dot
+        in the center of the display. Numbers greater than 99 are
+        shown as ``>``. Numbers less than -99 are shown as ``<``.
 
         Arguments:
-            number (int): The number to be displayed (0--99).
+            number (int): The number to be displayed.
         """
         pass
 
@@ -615,18 +620,19 @@ class LightGrid:
 
     def text(self, text, on=500, off=50):
         """Displays a text string, one character at a time, with a pause
-        between each character. After the last character is shown, the light
-        grid turns off.
+        between each character. After the last character is shown, all lights
+        turn off.
 
         Arguments:
-            character (str): The character or symbol to be displayed.
-            on (:ref:`time`): How long a character is shown.
-            off (:ref:`time`): How long the light is off between characters.
+            text (str): The text to be displayed.
+            on (:ref:`time`): For how long a character is shown.
+            off (:ref:`time`): For how long the display is off between
+                characters.
         """
         pass
 
     def reset(self):
-        """Resets the light grid to the default system behavior."""
+        """Resets the display to show the default run animation."""
         pass
 
 

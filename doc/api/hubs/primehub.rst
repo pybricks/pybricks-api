@@ -44,6 +44,25 @@ SPIKE Prime Hub
 
     .. automethod:: pybricks.hubs::PrimeHub.light.animate
 
+    .. rubric:: Using the light matrix display
+
+    .. automethod:: pybricks.hubs::PrimeHub.display.orientation
+
+    .. automethod:: pybricks.hubs::PrimeHub.display.off
+
+    .. automethod:: pybricks.hubs::PrimeHub.display.pixel
+
+    .. automethod:: pybricks.hubs::PrimeHub.display.image
+
+    .. automethod:: pybricks.hubs::PrimeHub.display.animate
+
+    .. automethod:: pybricks.hubs::PrimeHub.display.number
+
+    .. automethod:: pybricks.hubs::PrimeHub.display.char
+
+    .. automethod:: pybricks.hubs::PrimeHub.display.text
+
+
     .. rubric:: Using the battery
 
     .. automethod:: pybricks.hubs::PrimeHub.battery.voltage
