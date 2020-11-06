@@ -9,8 +9,20 @@
 
     .. content-tabs::
 
-        .. tab-container:: ev3brick
-            :title: EV3 Brick
+        .. tab-container:: pup
+            :title: Powered Up
+
+            Input/Output ports:
+
+                .. data:: A
+                .. data:: B
+                .. data:: C
+                .. data:: D
+                .. data:: E
+                .. data:: F
+
+        .. tab-container:: ev3
+            :title: EV3
 
             Motor ports:
 
@@ -25,24 +37,6 @@
                 .. data:: S2
                 .. data:: S3
                 .. data:: S4
-
-        .. tab-container:: movehub
-            :title: Move Hub
-
-            Input/Output ports:
-
-                .. data:: A
-                .. data:: B
-                .. data:: C
-                .. data:: D
-
-        .. tab-container:: cityhub
-            :title: City Hub
-
-            Input/Output ports:
-
-                .. data:: A
-                .. data:: B
 
 .. autoclass:: pybricks.parameters.Direction
     :no-members:
