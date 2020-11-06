@@ -12,9 +12,9 @@
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.1"
    id="svg2"
-   width="292"
+   width="450"
    height="106"
-   viewBox="0 0 292 106"
+   viewBox="0 0 450 106"
    sodipodi:docname="primehub_light.svg"
    inkscape:version="0.92.3 (2405546, 2018-03-11)">
   <metadata
@@ -78,9 +78,9 @@
      inkscape:window-height="1145"
      id="namedview4"
      showgrid="false"
-     inkscape:zoom="2.8284271"
-     inkscape:cx="122.40592"
-     inkscape:cy="71.846778"
+     inkscape:zoom="0.70710678"
+     inkscape:cx="333.41863"
+     inkscape:cy="-328.9942"
      inkscape:window-x="67"
      inkscape:window-y="27"
      inkscape:window-maximized="1"
@@ -90,26 +90,26 @@
   <rect
      style="fill:#fcfcfc;fill-opacity:1;stroke:none;stroke-width:1.13385844;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:75.59054565;stroke-opacity:1"
      id="rect844"
-     width="292"
+     width="450"
      height="106"
      x="0"
      y="0" />
   <image
      sodipodi:absref="primehubtop.png"
      xlink:href="primehubtop.png"
-     transform="translate(-72.879517,-296.61368)"
-     clip-path="url(#clipPath894)"
-     y="16.477236"
-     x="96.427216"
-     id="image853"
-     preserveAspectRatio="none"
-     height="386.06873"
+     style="stroke-width:3.63406801"
      width="244.9046"
-     style="stroke-width:3.63406801" />
+     height="386.06873"
+     preserveAspectRatio="none"
+     id="image853"
+     x="96.427216"
+     y="16.477236"
+     clip-path="url(#clipPath894)"
+     transform="translate(-0.0475179,-296.61368)" />
   <circle
      style="fill:#3d83ff;fill-opacity:0.36312848;stroke:#2d95ff;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:75.59054565;stroke-opacity:1"
      id="path860"
-     cx="146"
+     cx="218.832"
      cy="54.269928"
      r="32.29121" />
 </svg>
