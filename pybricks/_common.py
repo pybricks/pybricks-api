@@ -552,6 +552,9 @@ class LightMatrix:
     def orientation(self, up):
         """Sets the orientation of the light matrix display.
 
+        Only new displayed images and pixels are affected. The existing display
+        contents remain unchanged.
+
         Arguments:
             top (Side): Which side of the light matrix display is "up" in your
                 design. Choose ``Side.TOP``, ``Side.LEFT``, ``Side.RIGHT``,
