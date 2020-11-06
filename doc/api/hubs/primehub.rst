@@ -13,6 +13,9 @@ SPIKE Prime Hub
 
     .. rubric:: Using the hub status light
 
+    .. figure:: ../../api/images/primehub_light_label.png
+        :width: 15 em
+
     .. toggle-header::
         :header: **Show/hide examples**
 
@@ -44,7 +47,15 @@ SPIKE Prime Hub
 
     .. automethod:: pybricks.hubs::PrimeHub.light.animate
 
+    .. rubric:: Using the buttons
+
+    .. figure:: ../../api/images/primehub_buttons_label.png
+        :width: 22 em
+
     .. rubric:: Using the light matrix display
+
+    .. figure:: ../../api/images/primehub_display_label.png
+        :width: 18 em
 
     .. automethod:: pybricks.hubs::PrimeHub.display.orientation
 
