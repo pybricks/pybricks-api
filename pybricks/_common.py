@@ -575,7 +575,7 @@ class LightMatrix:
     def animate(self, matrices, interval):
         """Displays an animation made using a list of images.
 
-        Each image has the same format as :meth:`.image`. Each image is
+        Each image has the same format as above. Each image is
         shown for the given interval. The animation repeats
         forever while the rest of your program keeps running.
 

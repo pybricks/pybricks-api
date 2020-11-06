@@ -13,6 +13,9 @@ MINDSTORMS Inventor Hub
 
     .. rubric:: Using the hub status light
 
+    .. figure:: ../../api/images/primehub_light_label.png
+        :width: 22 em
+
     .. toggle-header::
         :header: **Show/hide examples**
 
@@ -43,6 +46,34 @@ MINDSTORMS Inventor Hub
     .. automethod:: pybricks.hubs::InventorHub.light.blink
 
     .. automethod:: pybricks.hubs::InventorHub.light.animate
+
+    .. rubric:: Using the light matrix display
+
+    .. figure:: ../../api/images/primehub_display_label.png
+        :width: 22 em
+
+    .. automethod:: pybricks.hubs::InventorHub.display.orientation
+
+    .. automethod:: pybricks.hubs::InventorHub.display.off
+
+    .. automethod:: pybricks.hubs::InventorHub.display.pixel
+
+    .. automethod:: pybricks.hubs::InventorHub.display.image
+
+    .. automethod:: pybricks.hubs::InventorHub.display.animate
+
+    .. automethod:: pybricks.hubs::InventorHub.display.number
+
+    .. automethod:: pybricks.hubs::InventorHub.display.char
+
+    .. automethod:: pybricks.hubs::InventorHub.display.text
+
+    .. rubric:: Using the buttons
+
+    .. figure:: ../../api/images/primehub_buttons_label.png
+        :width: 22 em
+
+    .. automethod:: pybricks.hubs::InventorHub.buttons.pressed
 
     .. rubric:: Using the battery
 
