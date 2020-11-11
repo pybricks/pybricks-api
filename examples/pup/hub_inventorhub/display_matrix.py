@@ -1,9 +1,9 @@
-from pybricks.hubs import ExampleHub
+from pybricks.hubs import InventorHub
 from pybricks.tools import wait
 from pybricks.geometry import Matrix
 
 # Initialize the hub.
-hub = ExampleHub()
+hub = InventorHub()
 
 # Make a square that is bright on the outside and faint in the middle.
 SQUARE = Matrix([
