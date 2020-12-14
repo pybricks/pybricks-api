@@ -24,6 +24,12 @@ Powered Up Device
 
    <h1>EV3 Only</h1>
 
-The classes listed below are **only available on the EV3**.
+The classes listed below are **only supported on the EV3** at this time. Some
+classes, such as ``UARTDevice``, ``I2CDevice`` and ``DCMotor`` could be added
+to Powered Up hubs in a future release.
+
+If you'd like to see this happen, be sure to ask us on our `support page`_.
 
 .. include:: iodevices_ev3.inc
+
+.. _support page: https://github.com/pybricks/support/issues/
