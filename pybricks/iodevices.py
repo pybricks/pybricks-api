@@ -4,6 +4,39 @@
 """Generic input/output devices."""
 
 
+class PUPDevice:
+    """Powered Up motor or sensor."""
+
+    def __init__(self, port):
+        """
+
+        Arguments:
+            port (Port): Port to which the device is connected.
+        """
+        pass
+
+    def read(self, mode):
+        """Reads values from a given mode.
+
+        Arguments:
+            mode (``int``): Device mode.
+
+        Returns:
+            ``tuple``: Values read from the sensor.
+        """
+        pass
+
+    def write(self, mode, values):
+        """Writes values to the sensor. Only selected sensors and modes support
+        this.
+
+        Arguments:
+            mode (``int``): Device mode.
+            data (``tuple``): Values to be written.
+        """
+        pass
+
+
 class LUMPDevice:
     """Devices using the LEGO UART Messaging Protocol."""
 
