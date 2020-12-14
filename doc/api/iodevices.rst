@@ -10,14 +10,6 @@
     and other custom electronics. You should only connect custom electronics
     or unofficial devices if you know what you are doing. Proceed with caution.
 
-LUMP Device
-^^^^^^^^^^^^^
-
-.. figure:: ../api/images/sensor_lump.png
-   :width: 80 %
-
-.. autoclass:: pybricks.iodevices.LUMPDevice
-
 .. raw:: html
 
    <h1>EV3 Only</h1>

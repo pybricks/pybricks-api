@@ -1,3 +1,11 @@
+LUMP Device
+^^^^^^^^^^^^^
+
+.. figure:: ../api/images/sensor_rj12_green.png
+   :width: 25 %
+
+.. autoclass:: pybricks.iodevices.LUMPDevice
+
 Analog Sensor
 ^^^^^^^^^^^^^
 
