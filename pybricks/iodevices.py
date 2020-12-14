@@ -59,16 +59,6 @@ class LUMPDevice:
         """
         pass
 
-    def write(self, mode, values):
-        """Writes values to the sensor. Only selected sensors and modes support
-        this.
-
-        Arguments:
-            mode (``int``): Device mode.
-            data (``tuple``): Values to be written.
-        """
-        pass
-
 
 class Ev3devSensor:
     """Read values of an ev3dev-compatible sensor."""
