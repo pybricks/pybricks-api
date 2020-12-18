@@ -41,6 +41,7 @@ class PrimeHub:
     light = _ColorLight()
     display = _LightMatrix(5, 5)
     buttons = _KeyPad()
+    speaker = _Speaker()
 
 
 class InventorHub(PrimeHub):

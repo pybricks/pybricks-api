@@ -126,6 +126,12 @@ MINDSTORMS Inventor Hub
 
     .. automethod:: pybricks.hubs::InventorHub.buttons.pressed
 
+    .. rubric:: Using the speaker
+
+    .. automethod:: pybricks.hubs::InventorHub.speaker.beep
+
+    .. automethod:: pybricks.hubs::InventorHub.speaker.play_notes
+
     .. rubric:: Using the battery
 
     .. automethod:: pybricks.hubs::InventorHub.battery.voltage

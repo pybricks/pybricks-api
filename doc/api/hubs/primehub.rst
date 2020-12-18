@@ -126,6 +126,12 @@ SPIKE Prime Hub
 
     .. automethod:: pybricks.hubs::PrimeHub.buttons.pressed
 
+    .. rubric:: Using the speaker
+
+    .. automethod:: pybricks.hubs::PrimeHub.speaker.beep
+
+    .. automethod:: pybricks.hubs::PrimeHub.speaker.play_notes
+
     .. rubric:: Using the battery
 
     .. automethod:: pybricks.hubs::PrimeHub.battery.voltage
