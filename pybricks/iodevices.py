@@ -15,6 +15,14 @@ class PUPDevice:
         """
         pass
 
+    def info(self):
+        """Returns information about the device.
+
+        Returns:
+            ``dict``: Dictionary with information, such as the device ``id``.
+        """
+        pass
+
     def read(self, mode):
         """Reads values from a given mode.
 

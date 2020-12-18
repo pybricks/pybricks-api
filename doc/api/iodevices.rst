@@ -18,7 +18,13 @@ Powered Up Device
    :width: 70 %
 
 .. autoclass:: pybricks.iodevices.PUPDevice
+    :no-members:
 
+    .. automethod:: pybricks.iodevices.PUPDevice.info
+
+    .. automethod:: pybricks.iodevices.PUPDevice.read
+
+    .. automethod:: pybricks.iodevices.PUPDevice.write
 
 .. raw:: html
 
