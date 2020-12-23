@@ -665,8 +665,8 @@ class Keypad:
     def pressed(self):
         """Checks which buttons are currently pressed.
 
-        :returns: List of pressed buttons.
-        :rtype: List of :class:`Button <.parameters.Button>`
+        :returns: Tuple of pressed buttons.
+        :rtype: Tuple of :class:`Button <.parameters.Button>`
 
         """
         pass
