@@ -3,7 +3,7 @@
 
 """LEGO® Programmable Hubs."""
 from ._common import (Speaker as _Speaker, Battery as _Battery,
-                      ColorLight as _ColorLight, KeyPad as _KeyPad,
+                      ColorLight as _ColorLight, Keypad as _Keypad,
                       LightMatrix as _LightMatrix)
 from .media.ev3dev import Image as _Image
 
@@ -14,7 +14,7 @@ class EV3Brick:
     speaker = _Speaker()
     battery = _Battery()
     light = _ColorLight()
-    buttons = _KeyPad()
+    buttons = _Keypad()
 
 
 class MoveHub:
@@ -40,7 +40,7 @@ class PrimeHub:
     battery = _Battery()
     light = _ColorLight()
     display = _LightMatrix(5, 5)
-    buttons = _KeyPad()
+    buttons = _Keypad()
     speaker = _Speaker()
 
 

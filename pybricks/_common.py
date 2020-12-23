@@ -659,7 +659,7 @@ class LightMatrix:
         pass
 
 
-class KeyPad:
+class Keypad:
     """Get status of buttons on a keypad layout."""
 
     def pressed(self):

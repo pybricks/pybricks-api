@@ -3,7 +3,7 @@
 
 """LEGO® Powered Up motor, sensors, and lights."""
 
-from ._common import (KeyPad as _KeyPad, DCMotor as _DCMotor,
+from ._common import (Keypad as _Keypad, DCMotor as _DCMotor,
                       ColorLight as _ColorLight, Motor as _Motor,
                       LightArray as _LightArray, Light as _Light)
 
@@ -29,7 +29,7 @@ class RemoteControl:
     """LEGO® Powered Up Bluetooth Remote Control/Handset."""
 
     light = _ColorLight()
-    buttons = _KeyPad()
+    buttons = _Keypad()
 
     def __init__(self, device=None, timeout=10000):
         """Connect the handset to the hub.
