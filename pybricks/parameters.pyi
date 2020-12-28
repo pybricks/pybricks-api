@@ -11,6 +11,10 @@ class Color:
     BROWN: Color
     ORANGE: Color
     PURPLE: Color
+    def __mul__(self, scale: float) -> Color: ...
+    def __rmul__(self, scale: float) -> Color: ...
+    def __truediv__(self, scale: float) -> Color: ...
+    def __floordiv__(self, scale: int) -> Color: ...
 
 class Port:
     A: Port
@@ -42,3 +46,17 @@ class Button:
     UP: Button
     BEACON: Button
     RIGHT_UP: Button
+
+class Axis:
+    X: Axis
+    Y: Axis
+    Z: Axis
+    ALL: Axis
+
+class Side:
+    RIGHT: Side
+    FRONT: Side
+    TOP: Side
+    LEFT: Side
+    BACK: Side
+    BOTTOM: Side

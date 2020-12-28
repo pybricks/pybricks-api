@@ -34,7 +34,7 @@ class PUPDevice:
         """
         pass
 
-    def write(self, mode, values):
+    def write(self, mode, data):
         """Writes values to the sensor. Only selected sensors and modes support
         this.
 
