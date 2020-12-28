@@ -14,15 +14,3 @@ class EV3Brick:
     battery = _Battery()
     light = _ColorLight()
     buttons = _KeyPad()
-
-
-class MoveHub:
-    """LEGO® Powered Up Move Hub."""
-    battery = _Battery()
-    light = _ColorLight()
-
-
-class CityHub:
-    """LEGO® Powered Up City Hub."""
-    battery = _Battery()
-    light = _ColorLight()

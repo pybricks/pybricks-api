@@ -7,28 +7,7 @@ run your first scripts.
 
 **Step 1: Install Pybricks**
 
-To get started, go to the :doc:`EV3 Quick Start <start_ev3>`
-or the :doc:`Powered Up Quick Start <start_ev3>` or pick your hub
-below.
-
-.. list-table::
-
-   * - **EV3 Brick**
-     - **Move Hub**
-     - **City Hub**
-     - **Control+ Hub**
-
-   * - .. image:: images/ev3brick.png
-         :target: start_ev3.html
-
-     - .. figure:: images/movehub.png
-         :target: start_pup.html
-
-     - .. figure:: images/cityhub.png
-         :target: start_pup.html
-
-     - .. figure:: images/cplushub.png
-          :target: start_pup.html
+To get started, go to the :doc:`EV3 Quick Start <start_ev3>`.
 
 
 **Step 2: Start coding!**
@@ -68,7 +47,6 @@ findings on our `support page`_ so we can make Pybricks even better.
    :hidden:
 
    start_ev3
-   start_pup
 
 .. toctree::
    :maxdepth: 1
@@ -76,7 +54,6 @@ findings on our `support page`_ so we can make Pybricks even better.
    :hidden:
 
    hubs
-   pupdevices
    ev3devices
    nxtdevices
    iodevices
