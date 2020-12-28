@@ -1,0 +1,23 @@
+# SPDX-License-Identifier: MIT
+# Copyright (c) 2020 The Pybricks Authors
+
+from typing import Any
+
+def wait(time: int) -> None: ...
+
+class StopWatch:
+    def time(self) -> int: ...
+    def pause(self) -> None: ...
+    def resume(self) -> None: ...
+    def reset(self) -> None: ...
+
+class DataLog:
+    def __init__(
+        self,
+        *headers: str,
+        name: str = "log",
+        timestamp: bool = True,
+        extension: str = "csv",
+        append: bool = False
+    ): ...
+    def log(self, *values: Any) -> None: ...
