@@ -13,11 +13,13 @@ classifiers = [
     "Development Status :: 3 - Alpha",
     "Programming Language :: Python :: Implementation :: MicroPython",
 ]
+include = ["pybricks/py.typed"]
 
 [tool.poetry.dependencies]
-python = "^3.5"
+python = "^3.8"
 
 [tool.poetry.dev-dependencies]
+black = {version = "^20.8b1", allow-prereleases = true}
 doc8 = "*"
 flake8 = "*"
 sphinx = "==1.7.9"
@@ -26,5 +28,5 @@ sphinxcontrib-contentui = "==0.2.2"
 toml = "^0.10.0"
 
 [build-system]
-requires = ["poetry>=0.12"]
-build-backend = "poetry.masonry.api"
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

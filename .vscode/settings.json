@@ -1,8 +1,10 @@
 {
     "python.pythonPath": "${workspaceFolder}/.venv",
+    "python.formatting.provider": "black",
     "python.linting.pycodestyleEnabled": false,
     "python.linting.flake8Enabled": true,
     "python.linting.enabled": true,
+    "python.languageServer": "Pylance",
     "files.associations": {"*.inc": "restructuredtext"},
     "restructuredtext.confPath": "${workspaceFolder}/doc/api",
     "spellright.language": [
