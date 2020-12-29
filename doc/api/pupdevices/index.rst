@@ -18,6 +18,7 @@
    ultrasonicsensor
    forcesensor
    light
+   remote
 
 .. class:: DCMotor
     :noindex:
@@ -88,3 +89,10 @@
 .. figure:: ../../api/images/light.png
    :width: 90 %
    :target: light.html
+
+.. class:: Remote
+    :noindex:
+
+.. figure:: ../../api/images/pupremote.png
+   :width: 50 %
+   :target: remote.html

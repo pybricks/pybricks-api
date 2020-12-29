@@ -1,7 +1,7 @@
 # SPDX-License-Identifier: MIT
 # Copyright (c) 2020 The Pybricks Authors
 
-from typing import Collection, List, Optional, Tuple
+from typing import Collection, List, Optional, Tuple, Union
 
 from ._common import Keypad, DCMotor, ColorLight, LightArray, Motor as BaseMotor, Light as BaseLight
 
@@ -9,10 +9,11 @@ from .parameters import Color, Direction, Port
 
 class Motor(BaseMotor): ...
 
-class RemoteControl:
+class Remote:
     light: ColorLight
     buttons: Keypad
-    def __init__(self, device: str = None, timeout: int = 10000): ...
+    addresss: Union[str, None]
+    def __init__(self, address: str = None, timeout: int = 10000): ...
 
 class TiltSensor:
     def __init__(self, port: Port): ...

@@ -25,22 +25,21 @@ class Motor(_Motor):
         pass
 
 
-class RemoteControl:
-    """LEGO® Powered Up Bluetooth Remote Control/Handset."""
+class Remote:
+    """LEGO® Powered Up Bluetooth Remote Control."""
 
     light = _ColorLight()
     buttons = _Keypad()
+    address = None
+    """Bluetooth address of the remote."""
 
-    def __init__(self, device=None, timeout=10000):
-        """Connect the handset to the hub.
+    def __init__(self, address=None, timeout=10000):
+        """Connects to the remote.
 
         Arguments:
-            device (str): Bluetooth address of the handset (? TODO ?).
-                 If you do not specify a device identifier, the hub will
-                 attempt to pair with any handset that is currently in
-                 advertising mode.
-            timeout (:ref:`time`): The amount of time before giving up
-                 searching.
+            device (str): Bluetooth address of the remote. If no address is
+                given, it connects to the first available remote that it finds.
+            timeout (:ref:`time`): How long to search for the remote.
         """
         pass
 
