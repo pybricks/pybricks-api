@@ -90,9 +90,6 @@ Vernier Adapter
 ^^^^^^^^^^^^^^^^^
 .. autoclass:: pybricks.nxtdevices.VernierAdapter
 
-.. toggle-header::
-    :header: **Show/hide example**
+**Example: Using the Surface Temperature Sensor.**
 
-    **Example: Using the Surface Temperature Sensor.**
-
-    .. literalinclude:: ../../examples/ev3/vernier_surface_temperature/main.py
+.. literalinclude:: ../../examples/ev3/vernier_surface_temperature/main.py
