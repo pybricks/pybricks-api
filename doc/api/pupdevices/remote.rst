@@ -13,6 +13,9 @@ Remote Control
 .. autoclass:: pybricks.pupdevices.Remote
   :no-members:
 
+  .. autoattribute:: pybricks.pupdevices::Remote.address
+       :annotation:
+
   .. automethod:: pybricks.pupdevices::Remote.light.on
 
   .. automethod:: pybricks.pupdevices::Remote.light.off

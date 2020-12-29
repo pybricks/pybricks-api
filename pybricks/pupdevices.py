@@ -31,7 +31,7 @@ class Remote:
     light = _ColorLight()
     buttons = _Keypad()
     address = None
-    """Bluetooth address of the remote."""
+    """Bluetooth address of the remote, or ``None`` if it is not connected."""
 
     def __init__(self, address=None, timeout=10000):
         """Connects to the remote.
