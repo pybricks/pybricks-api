@@ -11,29 +11,6 @@ BOOST Move Hub
 
     .. rubric:: Using the hub status light
 
-    .. toggle-header::
-        :header: **Show/hide examples**
-
-        **Example 1: Turning the light on and off**
-
-        .. literalinclude::
-            ../../../examples/pup/hub_movehub/light_off.py
-
-        **Example 2: Changing brightness and using custom colors**
-
-        .. literalinclude::
-            ../../../examples/pup/hub_movehub/light_hsv.py
-
-        **Example 3: Making the light blink**
-
-        .. literalinclude::
-            ../../../examples/pup/hub_movehub/light_blink.py
-
-        **Example 4: Creating light animations**
-
-        .. literalinclude::
-            ../../../examples/pup/hub_movehub/light_animate.py
-
     .. automethod:: pybricks.hubs::MoveHub.light.on
 
     .. automethod:: pybricks.hubs::MoveHub.light.off
@@ -47,3 +24,30 @@ BOOST Move Hub
     .. automethod:: pybricks.hubs::MoveHub.battery.voltage
 
     .. automethod:: pybricks.hubs::MoveHub.battery.current
+
+Status light examples
+---------------------
+
+Turning the light on and off
+******************************
+
+.. literalinclude::
+    ../../../examples/pup/hub_movehub/light_off.py
+
+Changing brightness and using custom colors
+**************************************************
+
+.. literalinclude::
+    ../../../examples/pup/hub_movehub/light_hsv.py
+
+Making the light blink
+******************************
+
+.. literalinclude::
+    ../../../examples/pup/hub_movehub/light_blink.py
+
+Creating light animations
+******************************
+
+.. literalinclude::
+    ../../../examples/pup/hub_movehub/light_animate.py

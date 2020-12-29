@@ -15,14 +15,6 @@ MINDSTORMS EV3 Brick
 
     .. automethod:: pybricks.hubs::EV3Brick.light.on
 
-        .. toggle-header::
-            :header: **Show/hide example**
-
-            **Example: Turn the light on and change the color.**
-
-            .. literalinclude::
-              ../../../examples/ev3/light_color/main.py
-
     .. automethod:: pybricks.hubs::EV3Brick.light.off
 
     .. rubric:: Using the speaker
@@ -145,35 +137,9 @@ MINDSTORMS EV3 Brick
 
     .. automethod:: pybricks.hubs::EV3Brick.screen.print
 
-        .. toggle-header::
-            :header: **Show/hide example**
-
-            **Example: Say hello... in several ways.**
-
-            .. raw:: latex
-
-               \begin{CJK}{UTF8}{gbsn}
-
-            .. literalinclude::
-              ../../../examples/ev3/screen_print/main.py
-
-            .. raw:: latex
-
-               \end{CJK}
-
     .. automethod:: pybricks.hubs::EV3Brick.screen.set_font
 
-        **Example:** See example in :meth:`print`.
-
     .. automethod:: pybricks.hubs::EV3Brick.screen.load_image
-
-        .. toggle-header::
-            :header: **Show/hide example**
-
-            **Example: Show an image on the screen.**
-
-            .. literalinclude::
-              ../../../examples/ev3/screen_image/main.py
 
     .. automethod:: pybricks.hubs::EV3Brick.screen.draw_image
 
@@ -181,21 +147,9 @@ MINDSTORMS EV3 Brick
 
     .. automethod:: pybricks.hubs::EV3Brick.screen.draw_line
 
-        .. toggle-header::
-            :header: **Show/hide example**
-
-            **Example: Draw some shapes on the screen.**
-
-            .. literalinclude::
-              ../../../examples/ev3/screen_draw/main.py
-
     .. automethod:: pybricks.hubs::EV3Brick.screen.draw_box
 
-        **Example:** See example in :meth:`draw_line`.
-
     .. automethod:: pybricks.hubs::EV3Brick.screen.draw_circle
-
-        **Example:** See example in :meth:`draw_line`.
 
     .. autoattribute:: pybricks.hubs::EV3Brick.screen.width
 
@@ -203,9 +157,46 @@ MINDSTORMS EV3 Brick
 
     .. automethod:: pybricks.hubs::EV3Brick.screen.save
 
-
     .. rubric:: Using the battery
 
     .. automethod:: pybricks.hubs::EV3Brick.battery.voltage
 
     .. automethod:: pybricks.hubs::EV3Brick.battery.current
+
+Status light examples
+---------------------
+
+Turn the light on and change the color
+**************************************
+
+.. literalinclude::
+    ../../../examples/ev3/light_color/main.py
+
+Screen examples
+---------------------
+
+Show an image on the screen
+***************************
+
+.. literalinclude::
+    ../../../examples/ev3/screen_image/main.py
+
+Drawing shapes on the screen
+****************************
+
+.. literalinclude::
+    ../../../examples/ev3/screen_draw/main.py
+
+Using different fonts
+*********************
+
+.. raw:: latex
+
+    \begin{CJK}{UTF8}{gbsn}
+
+.. literalinclude::
+    ../../../examples/ev3/screen_print/main.py
+
+.. raw:: latex
+
+    \end{CJK}
