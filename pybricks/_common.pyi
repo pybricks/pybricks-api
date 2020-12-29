@@ -1,7 +1,7 @@
 # SPDX-License-Identifier: MIT
 # Copyright (c) 2020 The Pybricks Authors
 
-from pybricks.geometry import Matrix
+from pybricks.geometry import Matrix, vector
 from typing import Collection, Iterable, List, Optional, Tuple, Union, overload
 
 from .parameters import Button, Color, Direction, Side, Stop, Port, Axis
@@ -150,6 +150,6 @@ class IMU(Accelerometer):
     def heading(self) -> int: ...
     def reset_heading(self, angle): ...
     @overload
-    def gyro(self) -> scalar[float, float, float]: ...
+    def gyro(self) -> vector[float, float, float]: ...
     @overload
     def gyro(self, axis: Axis) -> int: ...
