@@ -14,50 +14,45 @@
    inventorhub
    ev3brick
 
+.. class:: MoveHub
+    :noindex:
+
 .. figure:: ../images/movehub.png
-    :height: 8 em
+    :height: 10 em
     :target: movehub.html
 
-.. autoclass:: pybricks.hubs.MoveHub
-    :no-members:
+.. class:: CityHub
     :noindex:
 
 .. figure:: ../images/cityhub.png
-    :height: 8 em
+    :height: 10 em
     :target: cityhub.html
 
-.. autoclass:: pybricks.hubs.CityHub
-    :no-members:
+.. class:: TechnicHub
     :noindex:
 
 .. figure:: ../images/technichub.png
-    :height: 8 em
+    :height: 10 em
     :target: technichub.html
 
-.. autoclass:: pybricks.hubs.TechnicHub
-    :no-members:
+.. class:: PrimeHub
     :noindex:
 
 .. figure:: ../images/primehub.png
-    :height: 8 em
+    :height: 10 em
     :target: primehub.html
 
-.. autoclass:: pybricks.hubs.PrimeHub
-    :no-members:
+.. class:: InventorHub
     :noindex:
 
 .. figure:: ../images/inventorhub.png
-    :height: 8 em
+    :height: 10 em
     :target: inventorhub.html
 
-.. autoclass:: pybricks.hubs.InventorHub
-    :no-members:
+.. class:: EV3Brick
     :noindex:
 
 .. figure:: ../images/ev3brick.png
-    :height: 8 em
+    :height: 10 em
     :target: ev3brick.html
 
-.. autoclass:: pybricks.hubs.EV3Brick
-    :no-members:
-    :noindex:
