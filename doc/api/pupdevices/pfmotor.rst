@@ -16,22 +16,6 @@ and ambient conditions.
    motor (right). Here, the receiver uses channel
    1 with a motor on the red port.
 
-
-.. toggle-header::
-    :header: **Show/hide examples**
-
-
-    **Example 1: Control a Power Functions motor**
-
-    .. literalinclude::
-        ../../../examples/pup/motor_pf/motor_pf_basics.py
-
-
-    **Example 2: Controlling multiple Power Functions motors**
-
-    .. literalinclude::
-        ../../../examples/pup/motor_pf/motor_pf_pwm.py
-
 .. autoclass:: pybricks.pupdevices.PFMotor
     :noindex:
     :no-members:
@@ -44,3 +28,18 @@ and ambient conditions.
 
     .. automethod:: pybricks.pupdevices.PFMotor.brake
         :noindex:
+
+Examples
+-------------------
+
+Control a Power Functions motor
+*******************************
+
+.. literalinclude::
+    ../../../examples/pup/motor_pf/motor_pf_basics.py
+
+Controlling multiple Power Functions motors
+*******************************************
+
+.. literalinclude::
+    ../../../examples/pup/motor_pf/motor_pf_pwm.py
