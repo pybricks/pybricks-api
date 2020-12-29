@@ -16,43 +16,7 @@ Motors with Rotation Sensors
     :noindex:
     :no-members:
 
-    .. toggle-header::
-        :header: **Show/hide examples**
-
-        **Example 1: Making the motor move back and forth**
-
-        .. literalinclude::
-            ../../../examples/pup/motor/motor_init_basic.py
-
-        **Example 2: Using more than one motor**
-
-        .. literalinclude::
-            ../../../examples/pup/motor/motor_init_multiple.py
-
-        **Example 3: Setting the positive direction as counterclockwise**
-
-        .. literalinclude::
-            ../../../examples/pup/motor/motor_init_direction.py
-
-        **Example 4: Using gears**
-
-        .. literalinclude::
-            ../../../examples/pup/motor/motor_init_gears.py
-
     .. rubric:: Measuring
-
-    .. toggle-header::
-        :header: **Show/hide examples**
-
-        **Example 1: Measuring the angle and speed**
-
-        .. literalinclude::
-            ../../../examples/pup/motor/motor_measure.py
-
-        **Example 2: Resetting the measured angle**
-
-        .. literalinclude::
-            ../../../examples/pup/motor/motor_reset_angle.py
 
     .. automethod:: pybricks.pupdevices.Motor.speed
 
@@ -62,14 +26,6 @@ Motors with Rotation Sensors
 
     .. rubric:: Stopping
 
-    .. toggle-header::
-        :header: **Show/hide example**
-
-        **Example: Stopping the motor in different ways**
-
-        .. literalinclude::
-            ../../../examples/pup/motor/motor_stop.py
-
     .. automethod:: pybricks.pupdevices.Motor.stop
 
     .. automethod:: pybricks.pupdevices.Motor.brake
@@ -77,40 +33,6 @@ Motors with Rotation Sensors
     .. automethod:: pybricks.pupdevices.Motor.hold
 
     .. rubric:: Action
-
-    .. toggle-header::
-        :header: **Show/hide examples**
-
-        **Example 1: Basic usage of all action methods**
-
-        .. literalinclude::
-            ../../../examples/pup/motor/motor_action_basic.py
-
-        **Example 2: Using the** ``then`` **argument to change how a motor stops**
-
-        .. literalinclude::
-            ../../../examples/pup/motor/motor_action_then.py
-
-        **Example 3: Using the** ``wait`` **argument to run motors in parallel**
-
-        .. literalinclude::
-            ../../../examples/pup/motor/motor_action_wait.py
-
-        **Example 4: Waiting for two actions to complete in parallel**
-
-        .. literalinclude::
-            ../../../examples/pup/motor/motor_action_wait_advanced.py
-
-        **Example 5: Running a motor until a mechanical endpoint**
-
-        .. literalinclude::
-            ../../../examples/pup/motor/motor_until_stalled.py
-
-        **Example 6: Centering a steering mechanism**
-
-        .. literalinclude::
-            ../../../examples/pup/motor/motor_until_stalled.py
-
 
     .. automethod:: pybricks.pupdevices.Motor.run
 
@@ -134,3 +56,99 @@ Motors with Rotation Sensors
 
 .. FIXME: above should point to pupdevices but inherited class attributes
    do not work yet (https://github.com/sphinx-doc/sphinx/issues/741).
+
+
+Initialization Examples
+-----------------------
+
+Making the motor move back and forth
+*******************************************************
+
+.. literalinclude::
+    ../../../examples/pup/motor/motor_init_basic.py
+
+Initializing multiple motors
+*******************************************************
+
+.. literalinclude::
+    ../../../examples/pup/motor/motor_init_multiple.py
+
+Setting the positive direction as counterclockwise
+*******************************************************
+
+.. literalinclude::
+    ../../../examples/pup/motor/motor_init_direction.py
+
+Using gears
+*******************************************************
+
+.. literalinclude::
+    ../../../examples/pup/motor/motor_init_gears.py
+
+Measurement Examples
+-----------------------
+
+Measuring the angle and speed
+*******************************************************
+
+.. literalinclude::
+    ../../../examples/pup/motor/motor_measure.py
+
+Resetting the measured angle
+*******************************************************
+
+.. literalinclude::
+    ../../../examples/pup/motor/motor_reset_angle.py
+
+
+Movement Examples
+-----------------------
+
+Basic usage of all run methods
+*******************************************************
+
+.. literalinclude::
+    ../../../examples/pup/motor/motor_action_basic.py
+
+Stopping ongoing movements in different ways
+*******************************************************
+
+.. literalinclude::
+    ../../../examples/pup/motor/motor_stop.py
+
+Using the ``then`` argument to change how a run command stops
+*************************************************************
+
+.. literalinclude::
+    ../../../examples/pup/motor/motor_action_then.py
+
+Stall Examples
+-----------------------
+
+Running a motor until a mechanical endpoint
+*******************************************************
+
+.. literalinclude::
+    ../../../examples/pup/motor/motor_until_stalled.py
+
+Centering a steering mechanism
+*******************************************************
+
+.. literalinclude::
+    ../../../examples/pup/motor/motor_until_stalled.py
+
+
+Parallel Movement Examples
+--------------------------
+
+Using the ``wait`` argument to run motors in parallel
+*********************************************************
+
+.. literalinclude::
+    ../../../examples/pup/motor/motor_action_wait.py
+
+Waiting for two parallel actions to complete
+*******************************************************
+
+.. literalinclude::
+    ../../../examples/pup/motor/motor_action_wait_advanced.py

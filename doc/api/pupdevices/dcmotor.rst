@@ -11,24 +11,6 @@ Motors without Rotation Sensors
    Powered Up motors without rotation sensors. The arrows indicate the default
    positive direction.
 
-.. toggle-header::
-    :header: **Show/hide examples**
-
-    **Example 1: Making the motor move back and forth**
-
-    .. literalinclude::
-        ../../../examples/pup/motor_dc/motor_dc_init_basic.py
-
-    **Example 2: Setting the positive direction as counterclockwise**
-
-    .. literalinclude::
-        ../../../examples/pup/motor_dc/motor_dc_init_direction.py
-
-    **Example 3: Starting and stopping**
-
-    .. literalinclude::
-        ../../../examples/pup/motor_dc/motor_dc_stop.py
-
 .. autoclass:: pybricks._common.DCMotor
     :noindex:
     :no-members:
@@ -41,3 +23,24 @@ Motors without Rotation Sensors
 
     .. automethod:: pybricks._common.DCMotor.brake
         :noindex:
+
+Examples
+-------------------
+
+Making the motor move back and forth
+************************************
+
+.. literalinclude::
+    ../../../examples/pup/motor_dc/motor_dc_init_basic.py
+
+Changing the positive direction
+*******************************
+
+.. literalinclude::
+    ../../../examples/pup/motor_dc/motor_dc_init_direction.py
+
+Starting and stopping
+*********************
+
+.. literalinclude::
+    ../../../examples/pup/motor_dc/motor_dc_stop.py
