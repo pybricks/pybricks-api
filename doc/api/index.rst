@@ -73,7 +73,7 @@ findings on our `support page`_ so we can make Pybricks even better.
    :hidden:
 
    hubs/index
-   pupdevices
+   pupdevices/index
    ev3devices
    nxtdevices
    iodevices
