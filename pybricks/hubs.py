@@ -4,7 +4,7 @@
 """LEGO® Programmable Hubs."""
 from ._common import (Speaker as _Speaker, Battery as _Battery,
                       ColorLight as _ColorLight, Keypad as _Keypad,
-                      LightMatrix as _LightMatrix)
+                      LightMatrix as _LightMatrix, IMU as _IMU)
 from .media.ev3dev import Image as _Image
 from .parameters import Button as _Button
 
@@ -40,6 +40,7 @@ class TechnicHub:
     """LEGO® Technic Hub."""
     battery = _Battery()
     light = _ColorLight()
+    imu = _IMU()
 
 
 class PrimeHub:
@@ -54,6 +55,7 @@ class PrimeHub:
     light = _ColorLight()
     display = _LightMatrix(5, 5)
     speaker = _Speaker()
+    imu = _IMU()
 
 
 class InventorHub(PrimeHub):

@@ -52,6 +52,12 @@ MINDSTORMS Inventor Hub
 
     .. automethod:: pybricks.hubs::InventorHub.buttons.pressed
 
+    .. rubric:: Using the IMU
+
+    .. automethod:: pybricks.hubs::InventorHub.imu.acceleration
+
+    .. automethod:: pybricks.hubs::InventorHub.imu.gyro
+
     .. rubric:: Using the speaker
 
     .. automethod:: pybricks.hubs::InventorHub.speaker.beep
