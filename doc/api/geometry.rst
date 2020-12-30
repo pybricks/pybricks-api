@@ -11,3 +11,6 @@
     .. autoattribute:: pybricks.geometry::Matrix.shape
 
 .. autofunction:: pybricks.geometry.vector
+
+.. autoclass:: pybricks.geometry.Axis
+    :no-members:

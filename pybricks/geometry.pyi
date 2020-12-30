@@ -11,3 +11,8 @@ class Matrix:
     def shape(self) -> Tuple[int, int]: ...
 
 def vector(x: float, y: float, z: Optional[float] = None) -> Matrix: ...
+
+class Axis:
+    X: Matrix
+    Y: Matrix
+    Z: Matrix

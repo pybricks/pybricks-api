@@ -156,23 +156,6 @@ class Button(_PybricksEnum):
     BLUETOOTH = 9
 
 
-class Axis(_PybricksEnum):
-    """Unit axes of a coordinate system.
-
-    .. data:: X
-    .. data:: Y
-    .. data:: Z
-
-    Some methods let you measure along all axes at once:
-
-    .. data:: ALL
-    """
-    X = (1, 0, 0)
-    Y = (0, 1, 0)
-    Z = (0, 0, 1)
-    ALL = None
-
-
 class Side(_PybricksEnum):
     """Side of a hub or a sensor. These devices are
     mostly rectangular boxes with six sides:

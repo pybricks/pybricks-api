@@ -4,7 +4,7 @@
 """Generic cross-platform module for typical devices like lights, displays,
 speakers, and batteries."""
 
-from .parameters import Direction, Stop, Axis
+from .parameters import Direction, Stop
 
 
 class DCMotor:
@@ -717,21 +717,17 @@ class Accelerometer:
         """
         pass
 
-    def acceleration(self, axis=Axis.ALL):
-        """acceleration(axis=Axis.ALL)
-
-        Gets the acceleration of the device along a given axis in the
+    def acceleration(self, axis=None):
+        """Gets the acceleration of the device along a given axis in the
         :ref:`robot reference frame <robotframe>`.
 
         Arguments:
             axis (Axis): Axis along which the acceleration is
                          measured.
         Returns:
-            :ref:`linacceleration`. Returns a :ref:`scalar` of the acceleration
-            along the specified axis.
-            If you choose ``axis=Axis.ALL``, you get a :ref:`vector` with the
-            accelerations along all three axes (x, y, z).
-
+            :ref:`linacceleration`. Returns the acceleration along the
+            specified axis. If you specify no axis, this returns a vector
+            of accelerations along all axes.
         """
         pass
 
@@ -758,7 +754,6 @@ class Accelerometer:
                 otherwise.
 
         """
-        # def tapped(self, axis=Axis.ALL, bidirectional=True, tolerance=45):
         pass
 
     def shaken(self):
@@ -770,7 +765,6 @@ class Accelerometer:
                 otherwise.
 
         """
-        # def shaken(self, axis=Axis.ALL, bidirectional=True, tolerance=45):
         pass
 
     def up(self):
@@ -809,20 +803,16 @@ class IMU(Accelerometer):
         """
         pass
 
-    def gyro(self, axis=Axis.ALL):
-        """gyro(axis=Axis.ALL)
-
-        Measures the angular velocity of the device along a given axis in the
-        :ref:`robot reference frame <robotframe>`.
+    def gyro(self, axis=None):
+        """Measures the angular velocity of the device along a given axis in
+        the :ref:`robot reference frame <robotframe>`.
 
         Arguments:
             axis (Axis): Axis along which the angular velocity is
                          measured.
         Returns:
-            :ref:`speed`. Returns a :ref:`scalar` of the angular velocity
-            along the specified axis.
-            If you choose ``axis=Axis.ALL``, you get a :ref:`vector` with the
-            angular velocities along all three axes (x, y, z).
-
+            :ref:`speed`. Returns the angular velocity along the
+            specified axis. If you specify no axis, this returns a vector
+            of accelerations along all axes.
         """
         pass

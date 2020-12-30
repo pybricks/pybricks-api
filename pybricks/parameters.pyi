@@ -52,12 +52,6 @@ class Button:
     RIGHT_PLUS: Button
     BLUETOOTH: Button
 
-class Axis:
-    X: Axis
-    Y: Axis
-    Z: Axis
-    ALL: Axis
-
 class Side:
     RIGHT: Side
     FRONT: Side

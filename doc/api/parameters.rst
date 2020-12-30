@@ -174,9 +174,6 @@
     .. autoattribute:: pybricks.parameters.Button.RIGHT_PLUS
         :annotation:
 
-.. .. autoclass:: pybricks.parameters.Axis
-..     :no-members:
-
 .. autoclass:: pybricks.parameters.Side
     :no-members:
 

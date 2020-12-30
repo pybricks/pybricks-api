@@ -45,3 +45,16 @@ def vector(x, y, z=None):
             Matrix: A matrix with the shape of a column vector.
     """
     pass
+
+
+class Axis():
+    """Unit axes of a coordinate system.
+
+    .. data:: X = vector(1, 0, 0)
+    .. data:: Y = vector(0, 1, 0)
+    .. data:: Z = vector(0, 0, 1)
+
+    """
+    X = vector(1, 0, 0)
+    Y = vector(0, 1, 0)
+    Z = vector(0, 0, 1)
