@@ -662,6 +662,9 @@ class LightMatrix:
 class Keypad:
     """Get status of buttons on a keypad layout."""
 
+    def __init__(self, active_buttons):
+        pass
+
     def pressed(self):
         """Checks which buttons are currently pressed.
 

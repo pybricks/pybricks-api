@@ -7,7 +7,7 @@ from ._common import (Keypad as _Keypad, DCMotor as _DCMotor,
                       ColorLight as _ColorLight, Motor as _Motor,
                       LightArray as _LightArray, Light as _Light)
 
-from .parameters import Direction as _Direction
+from .parameters import Direction as _Direction, Button as _Button
 
 
 class Motor(_Motor):
@@ -29,7 +29,15 @@ class Remote:
     """LEGO® Powered Up Bluetooth Remote Control."""
 
     light = _ColorLight()
-    buttons = _Keypad()
+    buttons = _Keypad((
+        _Button.LEFT_MINUS,
+        _Button.RIGHT_MINUS,
+        _Button.LEFT,
+        _Button.CENTER,
+        _Button.RIGHT,
+        _Button.LEFT_PLUS,
+        _Button.RIGHT_PLUS
+    ))
     address = None
     """Bluetooth address of the remote, or ``None`` if it is not connected."""
 
