@@ -137,44 +137,22 @@ class Direction(_PybricksEnum):
 
 
 class Button(_PybricksEnum):
-    """Buttons on a brick or remote:
-
-    .. data:: LEFT_DOWN
-    .. data:: DOWN
-    .. data:: RIGHT_DOWN
-    .. data:: LEFT
-    .. data:: CENTER
-    .. data:: RIGHT
-    .. data:: LEFT_UP
-    .. data:: UP
-    .. data:: BEACON
-    .. data:: RIGHT_UP
-
-    +-----------+----------+-----------+
-    |           |          |           |
-    | LEFT_UP   |UP/BEACON | RIGHT_UP  |
-    |           |          |           |
-    +-----------+----------+-----------+
-    |           |          |           |
-    | LEFT      |  CENTER  | RIGHT     |
-    |           |          |           |
-    +-----------+----------+-----------+
-    |           |          |           |
-    | LEFT_DOWN |   DOWN   | RIGHT_DOWN|
-    |           |          |           |
-    +-----------+----------+-----------+
-    """
+    """Buttons on a brick or remote"""
 
     LEFT_DOWN = 1
+    LEFT_MINUS = 1
     DOWN = 2
     RIGHT_DOWN = 3
+    RIGHT_MINUS = 3
     LEFT = 4
     CENTER = 5
     RIGHT = 6
     LEFT_UP = 7
+    LEFT_PLUS = 7
     UP = 8
     BEACON = 8
     RIGHT_UP = 9
+    RIGHT_PLUS = 9
 
 
 class Axis(_PybricksEnum):

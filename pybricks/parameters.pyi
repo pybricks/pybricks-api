@@ -37,15 +37,19 @@ class Direction:
 
 class Button:
     LEFT_DOWN: Button
+    LEFT_MINUS: Button
     DOWN: Button
     RIGHT_DOWN: Button
+    RIGHT_MINUS: Button
     LEFT: Button
     CENTER: Button
     RIGHT: Button
     LEFT_UP: Button
+    LEFT_PLUS: Button
     UP: Button
     BEACON: Button
     RIGHT_UP: Button
+    RIGHT_PLUS: Button
 
 class Axis:
     X: Axis
