@@ -153,6 +153,7 @@ class Button(_PybricksEnum):
     BEACON = 8
     RIGHT_UP = 9
     RIGHT_PLUS = 9
+    BLUETOOTH = 9
 
 
 class Axis(_PybricksEnum):

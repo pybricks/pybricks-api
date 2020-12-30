@@ -50,6 +50,7 @@ class Button:
     BEACON: Button
     RIGHT_UP: Button
     RIGHT_PLUS: Button
+    BLUETOOTH: Button
 
 class Axis:
     X: Axis
