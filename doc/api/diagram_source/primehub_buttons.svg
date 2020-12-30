@@ -25,7 +25,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -63,15 +63,15 @@
      guidetolerance="10"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:window-width="1853"
-     inkscape:window-height="1145"
+     inkscape:window-width="1920"
+     inkscape:window-height="1172"
      id="namedview4"
      showgrid="false"
      inkscape:zoom="1.0606602"
-     inkscape:cx="354.39288"
-     inkscape:cy="242.38206"
-     inkscape:window-x="67"
-     inkscape:window-y="27"
+     inkscape:cx="264.34169"
+     inkscape:cy="315.96311"
+     inkscape:window-x="1920"
+     inkscape:window-y="0"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg2"
      inkscape:snap-global="false"
@@ -89,13 +89,13 @@
     <image
        sodipodi:absref="primehubtop.png"
        xlink:href="primehubtop.png"
-       style="stroke-width:3.63406801"
-       width="244.9046"
-       height="386.06873"
-       preserveAspectRatio="none"
-       id="image853"
+       y="28.855242"
        x="78.985664"
-       y="28.855242" />
+       id="image853"
+       preserveAspectRatio="none"
+       height="386.06873"
+       width="244.9046"
+       style="stroke-width:3.63406801" />
     <circle
        r="19.625"
        cy="80.700775"
@@ -124,35 +124,39 @@
      r="32.29121" />
   <path
      style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-     d="M 302.09375,59.790198 349.7056,28.088249"
+     d="M 276.1665,59.318793 228.55465,27.616844"
      id="path1036"
      inkscape:connector-curvature="0"
      sodipodi:nodetypes="cc" />
-  <rect
-     style="opacity:1;fill:#e7f2fa;fill-opacity:1;stroke:none;stroke-width:2.13333344;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-     id="rect1038"
-     width="125.77328"
-     height="42.092525"
-     x="307.62589"
-     y="2.5080223" />
-  <rect
-     style="opacity:1;fill:#6ab0de;fill-opacity:1;stroke:none;stroke-width:2.13333344;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-     id="rect1040"
-     width="125.77328"
-     height="4"
-     x="307.62589"
-     y="2.5080223" />
-  <text
-     id="text1044"
-     y="33.093319"
-     x="314.76282"
-     style="font-style:normal;font-weight:normal;font-size:24.19441986px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#404140;fill-opacity:1;stroke:none;stroke-width:0.60486054"
-     xml:space="preserve"><tspan
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab';fill:#404140;fill-opacity:1;stroke-width:0.60486054"
+  <g
+     id="g846"
+     transform="translate(-26.959225)">
+    <rect
+       y="2.5080223"
+       x="44.959225"
+       height="42.092525"
+       width="244.56721"
+       id="rect1038"
+       style="opacity:1;fill:#e7f2fa;fill-opacity:1;stroke:none;stroke-width:2.13333344;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <rect
+       y="2.5080223"
+       x="44.959225"
+       height="4"
+       width="244.56721"
+       id="rect1040"
+       style="opacity:1;fill:#6ab0de;fill-opacity:1;stroke:none;stroke-width:2.13333344;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:24.19441986px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#404140;fill-opacity:1;stroke:none;stroke-width:0.60486054"
+       x="52.096157"
        y="33.093319"
-       x="314.76282"
-       id="tspan1042"
-       sodipodi:role="line">Button.BT</tspan></text>
+       id="text1044"><tspan
+         sodipodi:role="line"
+         id="tspan1042"
+         x="52.096157"
+         y="33.093319"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab';fill:#404140;fill-opacity:1;stroke-width:0.60486054">Button.BLUETOOTH</tspan></text>
+  </g>
   <path
      style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      d="m 217.75258,250.87782 v 96.66666"
@@ -189,31 +193,35 @@
      id="path893"
      inkscape:connector-curvature="0"
      sodipodi:nodetypes="cc" />
-  <rect
-     y="404.98434"
-     x="10.871881"
-     height="42.092525"
-     width="159.69595"
-     id="rect1073"
-     style="opacity:1;fill:#e7f2fa;fill-opacity:1;stroke:none;stroke-width:2.13333344;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-  <rect
-     y="404.98434"
-     x="10.871881"
-     height="4"
-     width="159.69595"
-     id="rect1075"
-     style="opacity:1;fill:#6ab0de;fill-opacity:1;stroke:none;stroke-width:2.13333344;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-weight:normal;font-size:24.19441986px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#404140;fill-opacity:1;stroke:none;stroke-width:0.60486054"
-     x="18.008812"
-     y="435.56967"
-     id="text1079"><tspan
-       sodipodi:role="line"
-       id="tspan1077"
-       x="18.008812"
+  <g
+     id="g852"
+     transform="translate(7.1281185)">
+    <rect
+       style="opacity:1;fill:#e7f2fa;fill-opacity:1;stroke:none;stroke-width:2.13333344;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect1073"
+       width="159.69595"
+       height="42.092525"
+       x="10.871881"
+       y="404.98434" />
+    <rect
+       style="opacity:1;fill:#6ab0de;fill-opacity:1;stroke:none;stroke-width:2.13333344;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect1075"
+       width="159.69595"
+       height="4"
+       x="10.871881"
+       y="404.98434" />
+    <text
+       id="text1079"
        y="435.56967"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab';fill:#404140;fill-opacity:1;stroke-width:0.60486054">Button.LEFT</tspan></text>
+       x="18.008812"
+       style="font-style:normal;font-weight:normal;font-size:24.19441986px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#404140;fill-opacity:1;stroke:none;stroke-width:0.60486054"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab';fill:#404140;fill-opacity:1;stroke-width:0.60486054"
+         y="435.56967"
+         x="18.008812"
+         id="tspan1077"
+         sodipodi:role="line">Button.LEFT</tspan></text>
+  </g>
   <path
      sodipodi:nodetypes="cc"
      inkscape:connector-curvature="0"
