@@ -130,10 +130,9 @@ To get started, just copy and paste this snippet::
     described below. To change the program, just repeat these steps:
 
     1. Sign in to GitHub.
-    2. Go to our `GitHub commits`_.
-    3. Click on the green checkmark next to the latest
-       commit. On the dialog that pops up, click `details`.
-    4. Then click `Artifacts` on the right hand side of the page.
+    2. Go to our `GitHub builds`_.
+    3. Click on the build you want. This is usually the one at the top.
+    4. Then scroll down to `Artifacts`.
     5. Download the firmware for your hub. The firmware is a ZIP archive
        containing the basic firmware and one ``main.py`` script.
     6. Modify the ``main.py`` file as you like.
@@ -160,7 +159,7 @@ try again with fresh batteries.
 
     <video controls src="https://pybricks.com/wp-content/uploads/2020/06/restore.mp4" width="100%"></video>
 
-.. _GitHub commits: https://github.com/pybricks/pybricks-micropython/commits/master
+.. _GitHub builds: https://github.com/pybricks/pybricks-micropython/actions?query=is%3Asuccess+branch%3Amaster+workflow%3ABuild
 .. _support page: https://github.com/pybricks/support/issues/
 .. _Pybricks Code: http://code.pybricks.com/
 .. _from here: https://www.google.com/chrome/
