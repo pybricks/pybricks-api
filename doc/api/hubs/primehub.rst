@@ -4,12 +4,12 @@ SPIKE Prime Hub
 .. figure:: ../../api/images/primehub.png
     :height: 15 em
 
+This class is identical to the
+:class:`PrimeHub <pybricks.hubs.PrimeHub>` class, except
+for the name.
+
 .. autoclass:: pybricks.hubs.PrimeHub
     :no-members:
-
-    This class is identical to the
-    :class:`PrimeHub <pybricks.hubs.PrimeHub>` class, except
-    for the name.
 
     .. rubric:: Using the hub status light
 
