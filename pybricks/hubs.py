@@ -11,6 +11,9 @@ from .parameters import Button as _Button
 
 class EV3Brick:
     """LEGO® MINDSTORMS® EV3 Brick."""
+
+    # These class attributes are here for auto-documentation only.
+    # In reality, they are instance attributes created by __init__.
     buttons = _Keypad((
         _Button.LEFT,
         _Button.RIGHT,
@@ -26,18 +29,27 @@ class EV3Brick:
 
 class MoveHub:
     """LEGO® Powered Up Move Hub."""
+
+    # These class attributes are here for auto-documentation only.
+    # In reality, they are instance attributes created by __init__.
     battery = _Battery()
     light = _ColorLight()
 
 
 class CityHub:
     """LEGO® Powered Up City Hub."""
+
+    # These class attributes are here for auto-documentation only.
+    # In reality, they are instance attributes created by __init__.
     battery = _Battery()
     light = _ColorLight()
 
 
 class TechnicHub:
     """LEGO® Technic Hub."""
+
+    # These class attributes are here for auto-documentation only.
+    # In reality, they are instance attributes created by __init__.
     battery = _Battery()
     light = _ColorLight()
     imu = _IMU()
@@ -45,6 +57,9 @@ class TechnicHub:
 
 class PrimeHub:
     """LEGO® SPIKE Prime Hub."""
+
+    # These class attributes are here for auto-documentation only.
+    # In reality, they are instance attributes created by __init__.
     battery = _Battery()
     buttons = _Keypad((
         _Button.LEFT,
