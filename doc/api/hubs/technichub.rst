@@ -17,6 +17,12 @@ Technic Hub
 
     .. automethod:: pybricks.hubs::TechnicHub.light.animate
 
+    .. rubric:: Using the IMU
+
+    .. automethod:: pybricks.hubs::TechnicHub.imu.acceleration
+
+    .. automethod:: pybricks.hubs::TechnicHub.imu.gyro
+
     .. rubric:: Using the battery
 
     .. automethod:: pybricks.hubs::TechnicHub.battery.voltage

@@ -52,6 +52,12 @@ for the name.
 
     .. automethod:: pybricks.hubs::PrimeHub.buttons.pressed
 
+    .. rubric:: Using the IMU
+
+    .. automethod:: pybricks.hubs::PrimeHub.imu.acceleration
+
+    .. automethod:: pybricks.hubs::PrimeHub.imu.gyro
+
     .. rubric:: Using the speaker
 
     .. automethod:: pybricks.hubs::PrimeHub.speaker.beep
