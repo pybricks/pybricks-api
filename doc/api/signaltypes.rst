@@ -125,6 +125,15 @@ For example, you can adjust the acceleration setting of a
 :class:`DriveBase <.robotics.DriveBase>` to change how
 smoothly or how quickly it reaches the constant speed set point.
 
+.. _linacceleration_m:
+
+linear acceleration: m/s/s
+--------------------------------
+
+As above, but expressed in meters per second squared: :math:`m/s^2`.
+This is a more practical unit for large values such as those given by an
+accelerometer.
+
 Approximate and relative units
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 

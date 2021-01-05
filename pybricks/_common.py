@@ -725,7 +725,7 @@ class Accelerometer:
             axis (Axis): Axis along which the acceleration is
                          measured.
         Returns:
-            :ref:`linacceleration`. Returns the acceleration along the
+            :ref:`linacceleration_m`: Acceleration along the
             specified axis. If you specify no axis, this returns a vector
             of accelerations along all axes.
         """
@@ -811,7 +811,7 @@ class IMU(Accelerometer):
             axis (Axis): Axis along which the angular velocity is
                          measured.
         Returns:
-            :ref:`speed`. Returns the angular velocity along the
+            :ref:`speed`: Angular velocity along the
             specified axis. If you specify no axis, this returns a vector
             of accelerations along all axes.
         """
