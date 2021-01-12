@@ -380,12 +380,11 @@ class Speaker:
         Arguments:
             language (str):
                 Language of the text. For example, you can choose ``'en'``
-                (English) or ``'de'`` (German). A list of all available
-                languages is given below.
+                (English) or ``'de'`` (German). [#espeak_lang]_
             voice (str):
                 The voice to use. For example, you can choose ``'f1'`` (female
-                voice variant 1) or ``'m3'`` (male voice variant 3). A list of
-                all available voices is given below.
+                voice variant 1) or ``'m3'`` (male voice variant 3).
+                [#espeak_lang]_
             speed (int):
                 Number of words per minute.
             pitch (int):
