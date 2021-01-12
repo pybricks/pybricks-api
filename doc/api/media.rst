@@ -1532,3 +1532,163 @@ with image files using the ``Image`` class given below.
     .. rubric:: Saving the image
 
     .. automethod:: pybricks.media.ev3dev.Image.save
+
+.. rubric:: Available languages for fonts
+
+.. [#font_lang]
+
+    Note: Languages depend on installed fonts. Additional language
+    codes are possible and some listed language codes may not have
+    a satisfactory font.
+
+    - ``'aa'``: Afar
+    - ``'af'``: Afrikaans
+    - ``'an'``: Aragonese
+    - ``'av'``: Avaric
+    - ``'ay'``: Aymara
+    - ``'az-az'``: Azerbaijani
+    - ``'be'``: Belarusian
+    - ``'bg'``: Bulgarian
+    - ``'bi'``: Bislama
+    - ``'bm'``: Bambara
+    - ``'br'``: Breton
+    - ``'bs'``: Bosnian
+    - ``'bua'``: Buriat
+    - ``'ca'``: Catalan
+    - ``'ce'``: Chechen
+    - ``'ch'``: Chamorro
+    - ``'co'``: Corsican
+    - ``'crh'``: Crimean
+    - ``'cs'``: Czech
+    - ``'csb'``: Kashubian
+    - ``'cy'``: Welsh
+    - ``'da'``: Danish
+    - ``'de'``: German
+    - ``'ee'``: Ewe
+    - ``'el'``: Greek
+    - ``'en'``: English
+    - ``'eo'``: Esperanto
+    - ``'es'``: Spanish
+    - ``'et'``: Estonian
+    - ``'eu'``: Basque
+    - ``'ff'``: Fulah
+    - ``'fi'``: Finnish
+    - ``'fil'``: Filipino
+    - ``'fj'``: Fijian
+    - ``'fo'``: Faroese
+    - ``'fr'``: French
+    - ``'fur'``: Friulian
+    - ``'fy'``: Western Frisian
+    - ``'ga'``: Irish
+    - ``'gd'``: Gaelic
+    - ``'gl'``: Galician
+    - ``'gv'``: Manx
+    - ``'ha'``: Hausa
+    - ``'haw'``: Hawaiian
+    - ``'he'``: Hebrew
+    - ``'ho'``: Hiri Motu
+    - ``'hr'``: Croatian
+    - ``'hsb'``: Upper Sorbian
+    - ``'ht'``: Haitian
+    - ``'hu'``: Hungarian
+    - ``'ia'``: Interlingua
+    - ``'id'``: Indonesian
+    - ``'ie'``: Interlingue
+    - ``'ik'``: Inupiaq
+    - ``'io'``: Ido
+    - ``'is'``: Icelandic
+    - ``'it'``: Italian
+    - ``'ja'``: Japanese
+    - ``'jv'``: Javanese
+    - ``'ki'``: Kikuyu
+    - ``'kj'``: Kuanyama
+    - ``'kl'``: Kalaallisut
+    - ``'ko'``: Korean
+    - ``'ku-tr'``: Kurdish
+    - ``'kum'``: Kumyk
+    - ``'kw'``: Cornish
+    - ``'kwm'``: Kwambi
+    - ``'la'``: Latin
+    - ``'lb'``: Luxembourgish
+    - ``'lez'``: Lezghian
+    - ``'lg'``: Ganda
+    - ``'li'``: Limburgan
+    - ``'ln'``: Lingala
+    - ``'lt'``: Lithuanian
+    - ``'lv'``: Latvian
+    - ``'mg'``: Malagasy
+    - ``'mh'``: Marshallese
+    - ``'mi'``: Maori
+    - ``'mk'``: Macedonian
+    - ``'mn-mn'``: Mongolian
+    - ``'mo'``: Moldavian
+    - ``'ms'``: Malay
+    - ``'mt'``: Maltese
+    - ``'na'``: Nauru
+    - ``'nb'``: Norwegian Bokmål
+    - ``'nds'``: Low German
+    - ``'ng'``: Ndonga
+    - ``'nl'``: Dutch
+    - ``'nn'``: Norwegian Nynorsk
+    - ``'no'``: Norwegian
+    - ``'nr'``: South Ndebele
+    - ``'nso'``: Northern Sotho
+    - ``'nv'``: Navajo
+    - ``'ny'``: Chichewa
+    - ``'oc'``: Occitan
+    - ``'om'``: Oromo
+    - ``'os'``: Ossetian
+    - ``'pap-an'``: Papiamento, Netherlands Antilles
+    - ``'pap-aw'``: Papiamento, Aruba
+    - ``'pl'``: Polish
+    - ``'pt'``: Portuguese
+    - ``'qu'``: Quechua
+    - ``'quz'``: Cusco Quechua
+    - ``'rm'``: Romansh
+    - ``'rn'``: Rundi
+    - ``'ro'``: Romanian
+    - ``'ru'``: Russian
+    - ``'rw'``: Kinyarwanda
+    - ``'sc'``: Sardinian
+    - ``'sco'``: Scots
+    - ``'se'``: Northern Sami
+    - ``'sel'``: Selkup
+    - ``'sg'``: Sango
+    - ``'sk'``: Slovak
+    - ``'sl'``: Slovenian
+    - ``'sm'``: Samoan
+    - ``'sma'``: Southern Sami
+    - ``'smj'``: Lule Sami
+    - ``'smn'``: Inari Sami
+    - ``'sms'``: Skolt Sami
+    - ``'sn'``: Shona
+    - ``'so'``: Somali
+    - ``'sq'``: Albanian
+    - ``'sr'``: Serbian
+    - ``'ss'``: Swati
+    - ``'st'``: Southern Sotho
+    - ``'su'``: Sundanese
+    - ``'sv'``: Swedish
+    - ``'sw'``: Swahili
+    - ``'tk'``: Turkmen
+    - ``'tl'``: Tagalog
+    - ``'tn'``: Tswana
+    - ``'to'``: Tonga
+    - ``'tr'``: Turkish
+    - ``'ts'``: Tsonga
+    - ``'ty'``: Tahitian
+    - ``'uk'``: Ukrainian
+    - ``'uz'``: Uzbek
+    - ``'vo'``: Volapük
+    - ``'vot'``: Votic
+    - ``'wa'``: Walloon
+    - ``'wen'``: Sorbian
+    - ``'wo'``: Wolof
+    - ``'xh'``: Xhosa
+    - ``'yap'``: Yapese
+    - ``'yi'``: Yiddish
+    - ``'za'``: Zhuang
+    - ``'zh-cn'``: Chinese, China
+    - ``'zh-sg'``: Chinese, Singapore
+    - ``'zh-tw'``: Chinese, Taiwan
+    - ``'zu'``: Zulu
