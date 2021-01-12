@@ -4,9 +4,6 @@ from pybricks.tools import wait
 # Initialize the hub.
 hub = ExampleHub()
 
-# Turn off all the pixels.
-hub.display.off()
-
 # Turn on the pixel at row 1, column 2.
 hub.display.pixel(1, 2)
 wait(2000)
