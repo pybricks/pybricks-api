@@ -26,13 +26,8 @@ Writing Pybricks programs requires a web browser with web Bluetooth
 functionality. Currently, only Google Chrome supports this.
 Download Google Chrome `from here`_.
 
-.. toggle-header::
-    :header: **Show/hide extra steps for Linux users**
-
-    - In Google Chrome go to ``chrome://flags/``.
-    - Search for *Experimental Web Platform features* and enable it.
-    - Installing firmware will be slow if you have BlueZ < v5.51.
-      Check your version: ``bluetoothd -v``.
+If you use Linux, enable *Experimental Web Platform features* on
+the ``chrome://flags/`` page.
 
 Installing the Pybricks firmware
 --------------------------------
@@ -44,8 +39,12 @@ Installing it is easy:
 2. Unplug all motors and sensors.
 3. Follow the steps in the video below.
 
-.. toggle-header::
-    :header: **Click to show/hide written step-by-step instructions.**
+.. raw:: html
+
+    <video controls src="https://pybricks.com/wp-content/uploads/2020/06/install.mp4" width="100%"></video>
+    <br />
+
+If you prefer written instructions, follow these instead:
 
     - Make sure you use fresh batteries.
     - Unplug all motors and sensors.
@@ -58,12 +57,6 @@ Installing it is easy:
     - You can now release the button.
     - Wait for the update to finish, indicated by a blinking blue light.
     - If you use the recommended browser, this will take about 90 seconds.
-
-.. raw:: html
-
-    <video controls src="https://pybricks.com/wp-content/uploads/2020/06/install.mp4" width="100%"></video>
-    <br />
-
 
 Running programs
 --------------------------------
@@ -104,45 +97,6 @@ To get started, just copy and paste this snippet::
         wait(10)
 
 
-.. toggle-header::
-    :header: **Show/hide beta steps to save a program permanently**
-
-    **Saving a program permanently (BETA)**
-
-    .. note::
-
-        - This functionality is in beta. It is currently only recommended for
-          advanced users. In the long run, we'll make this easy to do with
-          the online editor.
-        - All LEGO motors and sensors need a few seconds to boot. You don't
-          normally notice because you spend that time connecting. But this is
-          way faster. So if you experience problems, give your hub a few
-          seconds before you start your program.
-
-    When you run a program the normal way, it is deleted as soon as it's done.
-    That's because Powered Up hubs don't have a file system to store programs.
-    Fortunately, you can still save a script on the hub by including it
-    in the firmware.
-
-    Of course, this is a bit slow to do every time. We recommend the
-    using the standard procedure most of the time.
-    When you're happy with your final program, you can save it permanently as
-    described below. To change the program, just repeat these steps:
-
-    1. Sign in to GitHub.
-    2. Go to our `GitHub builds`_.
-    3. Click on the build you want. This is usually the one at the top.
-    4. Then scroll down to `Artifacts`.
-    5. Download the firmware for your hub. The firmware is a ZIP archive
-       containing the basic firmware and one ``main.py`` script.
-    6. Modify the ``main.py`` file as you like.
-    7. Drag your modified ZIP file *onto* the firmware update button of the
-       online editor.
-    8. The update now proceeds as usual.
-
-    *Once installed, you can start that program with the green button.
-    No connection required!*
-
 Restoring the LEGO Firmware
 ---------------------------
 
@@ -151,13 +105,45 @@ firmware file. This means you can go back to the original firmware any time.
 As shown in the video below, just put the hub in update mode and
 connect using a LEGO app.
 
+.. raw:: html
+
+    <video controls src="https://pybricks.com/wp-content/uploads/2020/06/restore.mp4" width="100%"></video>
+
 This video shows the Powered Up app in *create* mode. It has firmware for all
 hubs. As usual, you may need to restart the app to detect the hub. If it fails,
 try again with fresh batteries.
 
-.. raw:: html
+Saving a program permanently (BETA)
+-----------------------------------
+.. note::
 
-    <video controls src="https://pybricks.com/wp-content/uploads/2020/06/restore.mp4" width="100%"></video>
+   This functionality is in beta. It is currently only recommended for
+   advanced users. In the long run, we'll make this easy to do with
+   the online editor.
+
+When you run a program the normal way, it is deleted as soon as it's done.
+That's because Powered Up hubs don't have a file system to store programs.
+Fortunately, you can still save a script on the hub by including it
+in the firmware.
+
+Of course, this is a bit slow to do every time. We recommend the
+using the standard procedure most of the time.
+When you're happy with your final program, you can save it permanently as
+described below. To change the program, just repeat these steps:
+
+1. Sign in to GitHub.
+2. Go to our `GitHub builds`_.
+3. Click on the build you want. This is usually the one at the top.
+4. Then scroll down to `Artifacts`.
+5. Download the firmware for your hub. The firmware is a ZIP archive
+   containing the basic firmware and one ``main.py`` script.
+6. Modify the ``main.py`` file as you like.
+7. Drag your modified ZIP file *onto* the firmware update button of the
+   online editor.
+8. The update now proceeds as usual.
+
+*Once installed, you can start that program with the green button.
+No connection required!*
 
 .. _GitHub builds: https://github.com/pybricks/pybricks-micropython/actions?query=is%3Asuccess+branch%3Amaster+workflow%3ABuild
 .. _support page: https://github.com/pybricks/support/issues/
