@@ -78,7 +78,7 @@ findings on our `support page`_ so we can make Pybricks even better.
    nxtdevices
    iodevices
    parameters
-   tools
+   tools/index
    robotics
    media
    messaging
