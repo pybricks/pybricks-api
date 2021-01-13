@@ -7,36 +7,21 @@
 .. autoclass:: pybricks.parameters.Port
     :no-members:
 
-    .. content-tabs::
+    Input/Output ports:
 
-        .. tab-container:: pup
-            :title: Powered Up
+        .. data:: A
+        .. data:: B
+        .. data:: C
+        .. data:: D
+        .. data:: E
+        .. data:: F
 
-            Input/Output ports:
+    EV3 Sensor ports:
 
-                .. data:: A
-                .. data:: B
-                .. data:: C
-                .. data:: D
-                .. data:: E
-                .. data:: F
-
-        .. tab-container:: ev3
-            :title: EV3
-
-            Motor ports:
-
-                .. data:: A
-                .. data:: B
-                .. data:: C
-                .. data:: D
-
-            Sensor ports:
-
-                .. data:: S1
-                .. data:: S2
-                .. data:: S3
-                .. data:: S4
+        .. data:: S1
+        .. data:: S2
+        .. data:: S3
+        .. data:: S4
 
 .. autoclass:: pybricks.parameters.Direction
     :no-members:
