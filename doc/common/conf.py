@@ -58,7 +58,6 @@ extensions = [
     'sphinx.ext.napoleon',
     'sphinx.ext.todo',
     'sphinx.ext.mathjax',
-    'sphinxcontrib.contentui',
     'color',
 ]
 
