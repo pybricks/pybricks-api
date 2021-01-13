@@ -76,7 +76,7 @@ findings on our `support page`_ so we can make Pybricks even better.
    pupdevices/index
    ev3devices
    nxtdevices
-   iodevices
+   iodevices/index
    parameters
    tools/index
    robotics

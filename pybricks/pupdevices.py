@@ -3,7 +3,7 @@
 
 """LEGO® Powered Up motor, sensors, and lights."""
 
-from ._common import (Keypad as _Keypad, DCMotor as _DCMotor,
+from ._common import (Keypad as _Keypad, DCMotor,
                       ColorLight as _ColorLight, Motor as _Motor,
                       LightArray as _LightArray, Light as _Light)
 
@@ -164,7 +164,7 @@ class ColorDistanceSensor:
         pass
 
 
-class PFMotor(_DCMotor):
+class PFMotor(DCMotor):
     """Control Power Functions motors with the infrared functionality of the
     :class:`ColorDistanceSensor <pybricks.pupdevices.ColorDistanceSensor>`."""
 
