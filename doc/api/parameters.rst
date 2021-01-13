@@ -164,38 +164,29 @@
 
     Screens or light matrices have only four sides. For those,
     ``TOP`` is treated the same as ``FRONT``, and ``BOTTOM`` is treated the
-    same as ``BACK``.
+    same as ``BACK``. The diagrams below define the sides for relevant devices.
 
-    Click a tab below to see the sides for relevant devices.
+    **Prime Hub**
 
-    .. content-tabs::
+    .. figure:: ../api/images/orientation_primehub_label.png
+        :height: 15 em
 
-        .. tab-container:: primehub
-            :title: Prime Hub
+    **Inventor Hub**
 
-            .. figure:: ../api/images/orientation_primehub_label.png
-                :height: 20 em
+    .. figure:: ../api/images/orientation_inventorhub_label.png
+        :height: 15 em
 
-        .. tab-container:: inventorhub
-            :title: Inventor Hub
+    **Move Hub**
 
-            .. figure:: ../api/images/orientation_inventorhub_label.png
-                :height: 20 em
+    .. figure:: ../api/images/orientation_movehub_label.png
+        :height: 15 em
 
-        .. tab-container:: movehub
-            :title: Move Hub
+    **Technic Hub**
 
-            .. figure:: ../api/images/orientation_movehub_label.png
-                :height: 20 em
+    .. figure:: ../api/images/orientation_technichub_label.png
+        :height: 15 em
 
-        .. tab-container:: technichub
-            :title: Technic Hub
+    **Tilt Sensor**
 
-            .. figure:: ../api/images/orientation_technichub_label.png
-                :height: 20 em
-
-        .. tab-container:: tiltsensor
-            :title: Tilt Sensor
-
-            .. figure:: ../api/images/orientation_tiltsensor_label.png
-                :height: 20 em
+    .. figure:: ../api/images/orientation_tiltsensor_label.png
+        :height: 15 em
