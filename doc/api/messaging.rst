@@ -64,25 +64,6 @@ and the client can send a message to the server.
 
    An example network with one server and one clients.
 
-.. toggle-header::
-    :header: **Show/hide full server example**
-
-    **Example: EV3 Bluetooth Server.**
-
-    This is the full version of the excerpt shown in :numref:`fig_messaging`.
-
-    .. literalinclude:: ../../examples/ev3/bluetooth_server/server.py
-
-.. toggle-header::
-    :header: **Show/hide full client example**
-
-    **Example: EV3 Bluetooth Client.**
-
-    This is the full version of the excerpt shown in :numref:`fig_messaging`.
-
-    .. literalinclude:: ../../examples/ev3/bluetooth_client/client.py
-
-
 The only difference between the client and the server is which one initiates
 the connection at the beginning of the program:
 
@@ -122,6 +103,21 @@ numbers, or text), you can choose one of the Mailboxes below.
 
 .. autoclass:: TextMailbox
     :no-members:
+
+Examples
+-----------------
+
+**EV3 Bluetooth Server**
+
+This is the full version of the excerpt shown in :numref:`fig_messaging`.
+
+.. literalinclude:: ../../examples/ev3/bluetooth_server/server.py
+
+**EV3 Bluetooth Client**
+
+This is the full version of the excerpt shown in :numref:`fig_messaging`.
+
+.. literalinclude:: ../../examples/ev3/bluetooth_client/client.py
 
 Making bigger networks
 ----------------------
