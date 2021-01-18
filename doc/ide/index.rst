@@ -3,7 +3,7 @@ Pybricks Documentation
 
 .. note::
 
-   The installation guide and other documentation are available at 
+   The installation guide and other documentation are available at
    `docs.pybricks.com`_. This window contains only
    documentation and examples for all available classes and methods.
 
@@ -27,5 +27,24 @@ Pybricks Documentation
 
    signaltypes
    motors
+
+Use the ☰ menu to navigate all available classes, methods, and tools. A few
+commonly used devices are listed below for quick reference.
+
+.. rubric:: Powered Up Hubs
+
+.. figure:: ../api/images/powereduphubs.png
+   :width: 80 %
+   :target: hubs/index.html
+
+.. figure:: ../api/images/primeinventorhub.png
+   :width: 80 %
+   :target: hubs/index.html
+
+.. rubric:: Powered Up Motors and Sensors
+
+.. figure:: ../api/images/pupmotors_label.png
+   :width: 100 %
+   :target: pupdevices/index.html
 
 .. _docs.pybricks.com: https://docs.pybricks.com/
