@@ -18,7 +18,7 @@ the platforms below.
      - **SPIKE / MINDSTORMS Inventor**
 
    * - .. image:: images/ev3brick.png
-         :target: start_ev3.html
+         :target: start_ev3/index.html
 
      - .. figure:: images/powereduphubs.png
          :target: start_pup.html
@@ -63,7 +63,7 @@ findings on our `support page`_ so we can make Pybricks even better.
    :caption: Getting started
    :hidden:
 
-   start_ev3
+   start_ev3/index
    start_pup
    start_inventor
 

@@ -19,7 +19,7 @@ EV3 Brick.
 
 .. _fig_projectstructure:
 
-.. figure:: ../api/images/projectstructure_label.png
+.. figure:: ../../api/images/projectstructure_label.png
    :width: 100 %
    :alt: projectstructure
    :align: center
@@ -38,7 +38,7 @@ choose a location for this program and confirm by clicking *choose folder*.
 
 .. _fig_newproject:
 
-.. figure:: ../api/images/newproject_label.png
+.. figure:: ../../api/images/newproject_label.png
    :width: 100 %
    :alt: newproject
    :align: center
@@ -55,7 +55,7 @@ existing code in place and add your code to it.
 
 .. _fig_projectoverview:
 
-.. figure:: ../api/images/projectoverview_label.png
+.. figure:: ../../api/images/projectoverview_label.png
    :width: 100 %
    :alt: projectoverview
    :align: center
@@ -72,7 +72,7 @@ recently used projects using the *Open Recent* menu option.
 
 .. _fig_existingproject:
 
-.. figure:: ../api/images/existingproject_label.png
+.. figure:: ../../api/images/existingproject_label.png
    :width: 75 %
    :alt: existingproject
    :align: center
@@ -93,7 +93,7 @@ the connection with Visual Studio Code. To do so:
 
 .. _fig_connecting:
 
-.. figure:: ../api/images/connecting_label.png
+.. figure:: ../../api/images/connecting_label.png
    :width: 100 %
    :alt: connecting
    :align: center
@@ -116,7 +116,7 @@ in the output window.
 
 .. _fig_running:
 
-.. figure:: ../api/images/running_label.png
+.. figure:: ../../api/images/running_label.png
    :width: 100 %
    :alt: running
    :align: center
@@ -132,7 +132,7 @@ as shown  in :numref:`fig_firstprogram`.
 
 .. _fig_firstprogram:
 
-.. figure:: ../api/images/firstprogram_label.png
+.. figure:: ../../api/images/firstprogram_label.png
    :width: 100 %
    :alt: firstprogram
    :align: center
@@ -142,7 +142,7 @@ as shown  in :numref:`fig_firstprogram`.
 Next, edit *main.py* to make it look like this:
 
 .. literalinclude::
-   ../../examples/ev3/getting_started/main.py
+   ../../../examples/ev3/getting_started/main.py
 
 This program makes your robot beep, rotate the motor, and beep again with a
 higher pitched tone. Run the program to make sure that it works as expected.
@@ -158,7 +158,7 @@ back up programs stored on it using the device browser as shown in
 
 .. _fig_files:
 
-.. figure:: ../api/images/files_label.png
+.. figure:: ../../api/images/files_label.png
    :width: 100 %
    :alt: files
    :align: center

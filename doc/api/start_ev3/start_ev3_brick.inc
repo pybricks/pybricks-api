@@ -6,7 +6,7 @@ into the microSD card slot on the EV3 Brick, as shown in :numref:`fig_sd`.
 
 .. _fig_sd:
 
-.. figure:: ../api/images/sd_label.png
+.. figure:: ../../api/images/sd_label.png
    :width: 75 %
    :alt: sd
    :align: center
@@ -30,7 +30,7 @@ in :numref:`fig_onoff`.
 
 .. _fig_onoff:
 
-.. figure:: ../api/images/onoff_label.png
+.. figure:: ../../api/images/onoff_label.png
    :width: 65 %
    :alt: onoff
    :align: center
@@ -45,7 +45,7 @@ the device browser, as shown in :numref:`fig_devicebrowser`.
 
 .. _fig_devicebrowser:
 
-.. figure:: ../api/images/devicebrowser_label.png
+.. figure:: ../../api/images/devicebrowser_label.png
    :width: 100 %
    :alt: devicebrowser
    :align: center
@@ -62,7 +62,7 @@ the center button key to start the program as shown in :numref:`fig_manualrun`.
 
 .. _fig_manualrun:
 
-.. figure:: ../api/images/manualrun_label.png
+.. figure:: ../../api/images/manualrun_label.png
    :width: 100 %
    :alt: manualrun
    :align: center

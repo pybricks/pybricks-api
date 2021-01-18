@@ -213,7 +213,7 @@ Other internal changes to existing features
   the speed to the newly given command. This works even if you keep
   adjusting the speed in a fast loop.
 - Methods to configure motor settings have changed. You can change settings
-  using the :doc:`control <motors>` attribute now. The old settings setters
+  using the ``control`` attribute now. The old settings setters
   continue to exist in the implementation, but they are no longer documented.
 - So-called Python *keyword arguments* are now supported. Previously, you
   could only enter the argument *values*. For example:
@@ -235,7 +235,7 @@ Other internal changes to existing features
   specific type and representation. For example, suppose you measure a color
   and print the result. If you do ``print(Color.RED)``, you will see the
   parameter instead of a technical number.
-- Sound and image files have moved to a dedicated :doc:`media <media>` module.
+- Sound and image files have moved to a dedicated ``media`` module.
   Importing them from the old location will continue to work in this release,
   to make sure existing scripts will still work.
 
