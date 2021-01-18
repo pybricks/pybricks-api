@@ -32,6 +32,8 @@ jobs:
     - name: Build package
       run: poetry build
     - name: Lint docs
-      run: poetry run doc8 --extension .inc
-    - name: Build html docs
+      run: poetry run doc8
+    - name: Build html docs for Read the Docs
       run: poetry run make -C doc html
+    - name: Build html docs for Pybricks Code IDE
+      run: poetry run make -C doc html SOURCEDIR=ide
