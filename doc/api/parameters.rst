@@ -27,20 +27,15 @@
     :no-members:
 
     In general, clockwise is defined by **looking at the motor shaft, just
-    like looking at a clock**.
-
-    Some motors have two shafts. If in doubt, refer to the following diagrams:
-
-        - Clockwise direction for :ref:`EV3/NXT motors <fig_ev3motors>`
-        - Clockwise direction for :ref:`Powered Up Motors <fig_pupmotors>`
-        - Clockwise direction for :ref:`Move Hub Motors <fig_movehub>`
+    like looking at a clock**. Some motors have two shafts. If in doubt,
+    refer to the diagram in the ``Motor`` class documentation.
 
 .. autoclass:: pybricks.parameters.Stop
     :no-members:
 
     The following table show how each stop type adds an extra level of
     resistance to motion. In these examples, ``m`` is a
-    :class:`Motor <pybricks.ev3devices.Motor>` and
+    ``Motor`` and
     and ``d`` is a :class:`DriveBase <pybricks.robotics.DriveBase>`. The
     examples also show how running at zero speed compares to these stop types.
 
