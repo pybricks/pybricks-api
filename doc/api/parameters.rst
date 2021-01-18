@@ -35,7 +35,7 @@
 
     The following table show how each stop type adds an extra level of
     resistance to motion. In these examples, ``m`` is a
-    ``Motor`` and
+    :class:`Motor <pybricks.pupdevices.Motor>` and
     and ``d`` is a :class:`DriveBase <pybricks.robotics.DriveBase>`. The
     examples also show how running at zero speed compares to these stop types.
 

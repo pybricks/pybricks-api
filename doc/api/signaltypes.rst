@@ -29,7 +29,7 @@ All angles are measured in degrees (deg). One full rotation corresponds to 360
 degrees.
 
 For example, the angle values of a ``Motor`` or
-the :meth:`GyroSensor <.ev3devices.GyroSensor.angle>` are expressed in degrees.
+the ``GyroSensor`` are expressed in degrees.
 
 .. _speed:
 
@@ -40,7 +40,7 @@ Rotational speed, or *angular velocity* describes how fast something rotates,
 expressed as the number of degrees per second (deg/s).
 
 For example, the rotational speed values of a ``Motor`` or the
-:meth:`GyroSensor <.ev3devices.GyroSensor.speed>` are expressed in degrees
+``GyroSensor`` are expressed in degrees
 per second.
 
 While we recommend working with degrees per second in your programs, you can
@@ -78,8 +78,8 @@ distance: mm
 -------------
 Distances are expressed in millimeters (mm) whenever possible.
 
-For example, the distance value of the :meth:`UltrasonicSensor
-<.ev3devices.UltrasonicSensor.distance>` is measured in millimeters.
+For example, the distance value of the ``UltrasonicSensor``
+is measured in millimeters.
 
 While we recommend working with millimeters in your programs, you can use the
 following table to convert between commonly used units.
@@ -158,8 +158,8 @@ Some distance measurements do not provide an accurate value with a specific
 unit, but they range from very close (0%) to very far (100%). These are
 referred to as relative distances.
 
-For example, the distance value of the :meth:`InfraredSensor
-<.ev3devices.InfraredSensor.distance>` is a relative distance.
+For example, the distance value of the ``InfraredSensor``
+is a relative distance.
 
 
 .. _brightness:

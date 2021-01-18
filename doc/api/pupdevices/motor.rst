@@ -13,7 +13,6 @@ Motors with Rotation Sensors
    directions of built-in motors.
 
 .. autoclass:: pybricks.pupdevices.Motor
-    :noindex:
     :no-members:
 
     .. rubric:: Measuring

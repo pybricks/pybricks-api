@@ -15,6 +15,7 @@ Motors
    EV3-compatible motors. The arrows indicate the default positive direction.
 
 .. autoclass:: pybricks.ev3devices.Motor
+    :noindex:
     :no-members:
 
     .. rubric:: Measuring

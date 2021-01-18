@@ -204,7 +204,7 @@ complete details of all methods and arguments.
 Other internal changes to existing features
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-- Most methods of the :class:`Motor() <pybricks.ev3devices.Motor>` class now
+- Most methods of the ``Motor`` class now
   have ``Stop.HOLD`` as the default instead of ``Stop.COAST``. This improves
   accuracy in most applications. You can still select ``Stop.COAST`` if you
   like.
