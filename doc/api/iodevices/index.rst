@@ -23,6 +23,8 @@
    :width: 70 %
    :target: pupdevice.html
 
+   This class is only available on Powered Up hubs.
+
 .. class:: I2CDevice
     :noindex:
 

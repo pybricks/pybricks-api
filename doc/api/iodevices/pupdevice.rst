@@ -1,10 +1,6 @@
 Powered Up Device
 ^^^^^^^^^^^^^^^^^
 
-.. note::
-
-   This class is only available on Powered Up Hubs.
-
 .. figure:: ../../api/images/sensor_pup.png
    :width: 70 %
 
