@@ -23,14 +23,14 @@
 .. class:: DCMotor
     :noindex:
 
-.. figure:: ../images/pupdcmotors_label.png
+.. figure:: ../../api/images/pupdcmotors_label.png
     :width: 70 %
     :target: dcmotor.html
 
 .. class:: Motor
     :noindex:
 
-.. figure:: ../images/pupmotors_label.png
+.. figure:: ../../api/images/pupmotors_label.png
     :width: 100 %
     :target: motor.html
 

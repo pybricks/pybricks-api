@@ -17,13 +17,13 @@ the platforms below.
      - **Powered Up (Technic/City/BOOST)**
      - **SPIKE / MINDSTORMS Inventor**
 
-   * - .. image:: images/ev3brick.png
+   * - .. image:: ../api/images/ev3brick.png
          :target: start_ev3/index.html
 
-     - .. figure:: images/powereduphubs.png
+     - .. figure:: ../api/images/powereduphubs.png
          :target: start_pup.html
 
-     - .. figure:: images/primeinventorhub.png
+     - .. figure:: ../api/images/primeinventorhub.png
           :target: start_inventor.html
 
 

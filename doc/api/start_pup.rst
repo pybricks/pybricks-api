@@ -1,7 +1,7 @@
 Powered Up Quick Start
 ########################
 
-.. figure:: images/powereduphubs.png
+.. figure:: ../api/images/powereduphubs.png
     :height: 15 em
     :align: center
 

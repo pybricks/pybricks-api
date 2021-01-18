@@ -17,42 +17,42 @@
 .. class:: MoveHub
     :noindex:
 
-.. figure:: ../images/movehub.png
+.. figure:: ../../api/images/movehub.png
     :height: 10 em
     :target: movehub.html
 
 .. class:: CityHub
     :noindex:
 
-.. figure:: ../images/cityhub.png
+.. figure:: ../../api/images/cityhub.png
     :height: 10 em
     :target: cityhub.html
 
 .. class:: TechnicHub
     :noindex:
 
-.. figure:: ../images/technichub.png
+.. figure:: ../../api/images/technichub.png
     :height: 10 em
     :target: technichub.html
 
 .. class:: PrimeHub
     :noindex:
 
-.. figure:: ../images/primehub.png
+.. figure:: ../../api/images/primehub.png
     :height: 10 em
     :target: primehub.html
 
 .. class:: InventorHub
     :noindex:
 
-.. figure:: ../images/inventorhub.png
+.. figure:: ../../api/images/inventorhub.png
     :height: 10 em
     :target: inventorhub.html
 
 .. class:: EV3Brick
     :noindex:
 
-.. figure:: ../images/ev3brick.png
+.. figure:: ../../api/images/ev3brick.png
     :height: 10 em
     :target: ev3brick.html
 
