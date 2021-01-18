@@ -13,14 +13,10 @@ the platforms below.
 
 .. list-table::
 
-   * - **MINDSTORMS EV3**
-     - **Powered Up (Technic/City/BOOST)**
+   * - **Powered Up (Technic/City/BOOST)**
      - **SPIKE / MINDSTORMS Inventor**
 
-   * - .. image:: ../api/images/ev3brick.png
-         :target: start_ev3/index.html
-
-     - .. figure:: ../api/images/powereduphubs.png
+   * - .. figure:: ../api/images/powereduphubs.png
          :target: start_pup.html
 
      - .. figure:: ../api/images/primeinventorhub.png
@@ -63,7 +59,6 @@ findings on our `support page`_ so we can make Pybricks even better.
    :caption: Getting started
    :hidden:
 
-   start_ev3/index
    start_pup
    start_inventor
 
@@ -74,14 +69,10 @@ findings on our `support page`_ so we can make Pybricks even better.
 
    hubs/index
    pupdevices/index
-   ev3devices
-   nxtdevices
    iodevices/index
    parameters
    tools/index
    robotics
-   media
-   messaging
    geometry
 
 .. toctree::
