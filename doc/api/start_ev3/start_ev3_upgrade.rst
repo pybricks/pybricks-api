@@ -7,8 +7,8 @@ This section is for users who have previously used LEGO MINDSTORMS EV3
 MicroPython v1.0. We'll explain what's changed and how you can upgrade to
 benefit from the latest improvements.
 
-If you are a new user and you just got started using version 2.0, you may skip
-this section.
+If you are a new user and you just got started using version 2.0, you can skip
+this page.
 
 Upgrading the microSD Card
 -----------------------------------------

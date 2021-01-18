@@ -3,23 +3,21 @@ EV3 Quick Start
 
 .. note::
 
-   This guide and documentation is for Pybricks **3.0**. It is under constant
-   development. This version includes support for LEGO MINDSTORMS EV3 and
-   LEGO Powered Up.
+   This documentation is for EV3 MicroPython with Pybricks **3.0**.
 
-   Click `here`_ to view the documentation for version **2.0**. This is
-   is the stable version officially supported by `LEGO Education`_. It includes
-   support for LEGO MINDSTORMS EV3 only.
+   Click `here`_ to view the documentation EV3 MicroPython **2.0**. This is
+   is the stable version officially supported by `LEGO Education`_.
 
-.. include:: start_ev3_install.inc
+.. rubric:: Table of contents
 
-.. include:: start_ev3_brick.inc
+.. toctree::
+   :maxdepth: 1
 
-.. include:: start_ev3_run.inc
-
-.. include:: start_ev3_linux.inc
-
-.. include:: start_ev3_upgrade.inc
+   start_ev3_install
+   start_ev3_brick
+   start_ev3_run
+   start_ev3_linux
+   start_ev3_upgrade
 
 .. _here: https://pybricks.github.io/ev3-micropython/index.html
 .. _LEGO Education: https://education.lego.com/en-us/support/mindstorms-ev3/python-for-ev3

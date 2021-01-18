@@ -6,15 +6,6 @@ Linux is an *operating system*. (Other popular operating
 systems are Microsoft Windows and Apple macOS.) This means that your EV3 is
 almost like a real computer, just much smaller.
 
-.. note::
-
-   *If you just want to write MicroPython programs, you can skip the
-   remaining sections.*
-
-   The remaining sections are aimed at curious users who want go beyond
-   MicroPython and access some of the other built-in features of Linux and
-   ev3dev.
-
 The Linux command line
 -----------------------------------------
 
