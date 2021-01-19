@@ -46,7 +46,7 @@
 
 .. figure:: ../../api/images/inventorhub.png
     :height: 10 em
-    :target: inventorhub.html
+    :target: primehub.html
 
 .. class:: EV3Brick
     :noindex:
