@@ -11,7 +11,6 @@
    cityhub
    technichub
    primehub
-   inventorhub
 
 .. class:: MoveHub
     :noindex:

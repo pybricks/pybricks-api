@@ -73,7 +73,7 @@ class TechnicHub:
 
 
 class PrimeHub:
-    """LEGO® SPIKE Prime Hub."""
+    """LEGO® SPIKE Prime Hub or LEGO® MINDSTORMS Inventor Hub."""
 
     # These class attributes are here for auto-documentation only.
     # In reality, they are instance attributes created by __init__.

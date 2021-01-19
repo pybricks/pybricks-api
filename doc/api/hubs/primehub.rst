@@ -1,12 +1,15 @@
-SPIKE Prime Hub
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Prime Hub / Inventor Hub
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. figure:: ../../api/images/primehub.png
+.. figure:: ../../api/images/primeinventorhub.png
     :height: 15 em
 
-This class is identical to the
-:class:`PrimeHub <pybricks.hubs.PrimeHub>` class, except
-for the name.
+.. class:: InventorHub
+
+    This class is the same as the ``PrimeHub`` class, shown below. Both classes
+    work on both hubs.
+
+    These hubs are completely identical. They use the same Pybricks firmware.
 
 .. autoclass:: pybricks.hubs.PrimeHub
     :no-members:
@@ -69,6 +72,10 @@ for the name.
     .. automethod:: pybricks.hubs::PrimeHub.battery.voltage
 
     .. automethod:: pybricks.hubs::PrimeHub.battery.current
+
+.. note:: The examples below use the ``PrimeHub`` class. The examples work fine
+          on both hubs because they are the identical. If you prefer, you can
+          change this to ``InventorHub``.
 
 Status light examples
 ---------------------

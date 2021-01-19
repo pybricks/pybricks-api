@@ -11,7 +11,6 @@
    cityhub
    technichub
    primehub
-   inventorhub
    ev3brick
 
 .. class:: MoveHub
