@@ -33,17 +33,13 @@ commonly used devices are listed below for quick reference.
 
 .. rubric:: Powered Up Hubs
 
-.. figure:: ../api/images/powereduphubs.png
-   :width: 80 %
-   :target: hubs/index.html
-
-.. figure:: ../api/images/primeinventorhub.png
-   :width: 80 %
+.. figure:: ../api/images/hubsoverview.png
+   :width: 100 %
    :target: hubs/index.html
 
 .. rubric:: Powered Up Motors and Sensors
 
-.. figure:: ../api/images/pupmotors_label.png
+.. figure:: ../api/images/pupdevicesoverview.png
    :width: 100 %
    :target: pupdevices/index.html
 
