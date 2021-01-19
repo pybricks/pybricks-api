@@ -29,7 +29,7 @@ class EV3Brick:
 
 
 class MoveHub:
-    """LEGO® Powered Up Move Hub."""
+    """LEGO® BOOST Move Hub."""
 
     # These class attributes are here for auto-documentation only.
     # In reality, they are instance attributes created by __init__.
@@ -38,7 +38,7 @@ class MoveHub:
 
 
 class CityHub:
-    """LEGO® Powered Up City Hub."""
+    """LEGO® City Hub."""
 
     # These class attributes are here for auto-documentation only.
     # In reality, they are instance attributes created by __init__.

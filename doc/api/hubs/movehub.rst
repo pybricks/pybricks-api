@@ -1,4 +1,4 @@
-BOOST Move Hub
+Move Hub
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. _fig_movehub:
