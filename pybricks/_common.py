@@ -731,12 +731,12 @@ class Accelerometer:
         pass
 
     def tilt(self):
-        """Gets the pitch and roll angles relative to the neutral, horizontal
-        orientation.
+        """Gets the pitch and roll angles. This is relative to the
+        :ref:`user-specified neutral orientation <robotframe>`.
 
         The order of rotation is pitch-then-roll. This is equivalent to a
-        positive rotation along the x-axis and then a positive rotation
-        along the y-axis.
+        positive rotation along the robot y-axis and then a positive rotation
+        along the x-axis.
 
         Returns:
             (:ref:`angle`, :ref:`angle`): Pitch and roll angles.
@@ -788,6 +788,8 @@ class IMU(Accelerometer):
         For a vehicle viewed from the top, this means that
         a positive heading value corresponds to a counterclockwise rotation.
 
+        .. note:: This method is not yet implemented.
+
         Returns:
             :ref:`angle`: Heading angle relative to starting orientation.
 
@@ -797,13 +799,15 @@ class IMU(Accelerometer):
     def reset_heading(self, angle):
         """Resets the accumulated heading angle of the robot.
 
+        .. note:: This method is not yet implemented.
+
         Arguments:
             angle (:ref:`angle`): Value to which the heading should be reset.
         """
         pass
 
-    def gyro(self, axis=None):
-        """Measures the angular velocity of the device along a given axis in
+    def angular_velocity(self, axis=None):
+        """Gets the angular velocity of the device along a given axis in
         the :ref:`robot reference frame <robotframe>`.
 
         Arguments:

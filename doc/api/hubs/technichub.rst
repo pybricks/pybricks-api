@@ -19,9 +19,17 @@ Technic Hub
 
     .. rubric:: Using the IMU
 
-    .. automethod:: pybricks.hubs::TechnicHub.imu.acceleration
+    .. automethod:: pybricks.hubs::PrimeHub.imu.up
 
-    .. automethod:: pybricks.hubs::TechnicHub.imu.gyro
+    .. automethod:: pybricks.hubs::PrimeHub.imu.tilt
+
+    .. automethod:: pybricks.hubs::PrimeHub.imu.acceleration
+
+    .. automethod:: pybricks.hubs::PrimeHub.imu.angular_velocity
+
+    .. automethod:: pybricks.hubs::PrimeHub.imu.heading
+
+    .. automethod:: pybricks.hubs::PrimeHub.imu.reset_heading
 
     .. rubric:: Using the battery
 
