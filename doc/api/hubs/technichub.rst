@@ -19,17 +19,17 @@ Technic Hub
 
     .. rubric:: Using the IMU
 
-    .. automethod:: pybricks.hubs::PrimeHub.imu.up
+    .. automethod:: pybricks.hubs::TechnicHub.imu.up
 
-    .. automethod:: pybricks.hubs::PrimeHub.imu.tilt
+    .. automethod:: pybricks.hubs::TechnicHub.imu.tilt
 
-    .. automethod:: pybricks.hubs::PrimeHub.imu.acceleration
+    .. automethod:: pybricks.hubs::TechnicHub.imu.acceleration
 
-    .. automethod:: pybricks.hubs::PrimeHub.imu.angular_velocity
+    .. automethod:: pybricks.hubs::TechnicHub.imu.angular_velocity
 
-    .. automethod:: pybricks.hubs::PrimeHub.imu.heading
+    .. automethod:: pybricks.hubs::TechnicHub.imu.heading
 
-    .. automethod:: pybricks.hubs::PrimeHub.imu.reset_heading
+    .. automethod:: pybricks.hubs::TechnicHub.imu.reset_heading
 
     .. rubric:: Using the battery
 
@@ -80,8 +80,20 @@ Reading the tilt value
 .. literalinclude::
     ../../../examples/pup/hub_technichub/imu_tilt.py
 
-Reading the tilt value with custom hub orientation
+Using a custom hub orientation
 **************************************************
 
 .. literalinclude::
     ../../../examples/pup/hub_technichub/imu_tilt_blast.py
+
+Reading acceleration and angular velocity vectors
+**************************************************
+
+.. literalinclude::
+    ../../../examples/pup/hub_technichub/imu_read_vector.py
+
+Reading acceleration and angular velocity on one axis
+*****************************************************
+
+.. literalinclude::
+    ../../../examples/pup/hub_technichub/imu_read_scalar.py

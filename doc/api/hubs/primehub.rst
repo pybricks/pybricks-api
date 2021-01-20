@@ -191,8 +191,20 @@ Reading the tilt value
 .. literalinclude::
     ../../../examples/pup/hub_primehub/imu_tilt.py
 
-Reading the tilt value with custom hub orientation
+Using a custom hub orientation
 **************************************************
 
 .. literalinclude::
     ../../../examples/pup/hub_primehub/imu_tilt_blast.py
+
+Reading acceleration and angular velocity vectors
+**************************************************
+
+.. literalinclude::
+    ../../../examples/pup/hub_primehub/imu_read_vector.py
+
+Reading acceleration and angular velocity on one axis
+*****************************************************
+
+.. literalinclude::
+    ../../../examples/pup/hub_primehub/imu_read_scalar.py
