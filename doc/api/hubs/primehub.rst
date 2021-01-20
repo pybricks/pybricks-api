@@ -145,6 +145,9 @@ Changing the display orientation
 .. literalinclude::
     ../../../examples/pup/hub_primehub/display_orientation.py
 
+.. literalinclude::
+    ../../../examples/pup/hub_primehub/display_orientation_imu.py
+
 Making your own images
 **********************
 
