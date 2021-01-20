@@ -63,3 +63,25 @@ Creating light animations
 
 .. literalinclude::
     ../../../examples/pup/hub_technichub/light_animate.py
+
+IMU examples
+---------------
+
+Testing which way is up
+********************************
+
+.. literalinclude::
+    ../../../examples/pup/hub_technichub/imu_up.py
+
+
+Reading the tilt value
+********************************
+
+.. literalinclude::
+    ../../../examples/pup/hub_technichub/imu_tilt.py
+
+Reading the tilt value with custom hub orientation
+**************************************************
+
+.. literalinclude::
+    ../../../examples/pup/hub_technichub/imu_tilt_blast.py

@@ -174,3 +174,25 @@ Detecting button presses
 
 .. literalinclude::
     ../../../examples/pup/hub_primehub/button_main.py
+
+IMU examples
+---------------
+
+Testing which way is up
+********************************
+
+.. literalinclude::
+    ../../../examples/pup/hub_primehub/imu_up.py
+
+
+Reading the tilt value
+********************************
+
+.. literalinclude::
+    ../../../examples/pup/hub_primehub/imu_tilt.py
+
+Reading the tilt value with custom hub orientation
+**************************************************
+
+.. literalinclude::
+    ../../../examples/pup/hub_primehub/imu_tilt_blast.py
