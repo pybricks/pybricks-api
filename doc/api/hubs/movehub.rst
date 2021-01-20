@@ -34,20 +34,8 @@ Turning the light on and off
 .. literalinclude::
     ../../../examples/pup/hub_movehub/light_off.py
 
-Changing brightness and using custom colors
-**************************************************
-
-.. literalinclude::
-    ../../../examples/pup/hub_movehub/light_hsv.py
-
 Making the light blink
 ******************************
 
 .. literalinclude::
     ../../../examples/pup/hub_movehub/light_blink.py
-
-Creating light animations
-******************************
-
-.. literalinclude::
-    ../../../examples/pup/hub_movehub/light_animate.py

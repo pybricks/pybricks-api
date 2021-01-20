@@ -1,3 +1,4 @@
+# ExampleHub = MoveHub CityHub TechnicHub PrimeHub
 from pybricks.hubs import ExampleHub
 from pybricks.parameters import Color
 from pybricks.tools import wait

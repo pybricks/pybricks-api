@@ -1,3 +1,4 @@
+# ExampleHub = CityHub TechnicHub PrimeHub
 from pybricks.hubs import ExampleHub
 from pybricks.parameters import Color
 from pybricks.tools import wait
@@ -5,7 +6,6 @@ from pybricks.tools import wait
 # Initialize the hub.
 hub = ExampleHub()
 
-# MOVEHUB SKIP_NEXT 5
 # Show the color at 30% brightness.
 hub.light.on(Color.RED * 0.3)
 

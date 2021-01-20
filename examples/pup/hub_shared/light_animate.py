@@ -1,7 +1,7 @@
+# ExampleHub = CityHub TechnicHub PrimeHub
 from pybricks.hubs import ExampleHub
 from pybricks.parameters import Color
 from pybricks.tools import wait
-# MOVEHUB SKIP_NEXT 1
 from math import sin, pi
 
 # Initialize the hub.
@@ -12,7 +12,6 @@ hub.light.animate([Color.RED, Color.GREEN, None], interval=500)
 
 wait(10000)
 
-# MOVEHUB SKIP_NEXT 6
 # Make the color RED grow faint and bright using a sine pattern.
 hub.light.animate(
     [Color.RED * (0.5 * sin(i / 15 * pi) + 0.5) for i in range(30)], 40)
