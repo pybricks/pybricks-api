@@ -11,12 +11,11 @@ copyright = '2018-2021 The Pybricks Authors'
 author = ''
 
 _TITLE = 'Pybricks Modules and Examples'
-_DISCLAIMER = 'LEGO, the LEGO logo, MINDSTORMS and the MINDSTORMS EV3 logo are\
-               trademarks and/or copyrights of the LEGO Group of companies \
-               which does not sponsor, authorize or endorse this site.'
+_DISCLAIMER = ''
 
 html_favicon = '../common/images/favicon.ico'
 html_logo = '../common/images/pybricks-logo-rtd.png'
-latex_logo = '../common/images/pybricks-logo-large.png'
+html_show_copyright = False
+html_show_sphinx = False
 
 exec(open(os.path.abspath("../common/conf.py")).read())
