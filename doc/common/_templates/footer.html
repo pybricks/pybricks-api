@@ -1,5 +1,5 @@
 {% extends '!footer.html' %}
 
 {% block extrafooter %}
-<div class="disclaimer">{{ disclaimer }}</div>
+{% if disclaimer %}<div class="disclaimer">{{ disclaimer }}</div>{% endif %}
 {% endblock %}
