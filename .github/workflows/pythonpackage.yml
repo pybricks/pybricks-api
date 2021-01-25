@@ -8,7 +8,7 @@ on: [ push, pull_request ]
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     strategy:
       matrix:
         python-version: [3.8, 3.9]
@@ -35,5 +35,9 @@ jobs:
       run: poetry run doc8
     - name: Build html docs for Read the Docs
       run: poetry run make -C doc html
+    - name: Instal IDE docs dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install dvisvgm preview-latex-style texlive texlive-fonts-extra texlive-latex-extra
     - name: Build html docs for Pybricks Code IDE
       run: poetry run make -C doc html SOURCEDIR=ide
