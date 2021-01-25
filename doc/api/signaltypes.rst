@@ -248,9 +248,9 @@ temperature: °C
 Temperature is measured in degrees Celcius (°C). To convert to degrees
 Fahrenheit (°F) or Kelvin (K), you can use the following conversion formulas:
 
-    :math:`°\kern1pt\!F = °\kern2pt\!C \cdot \frac{9}{5} + 32`.
+    :math:`^{\circ}\kern1pt\!F =\kern1pt^{\circ}\kern1pt\!C \cdot \frac{9}{5} + 32`.
 
-    :math:`K = °\kern2pt\!C + 273.15`.
+    :math:`K =\kern1pt^{\circ}\kern1pt\!C + 273.15`.
 
 .. _hue:
 
