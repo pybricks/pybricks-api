@@ -22,7 +22,7 @@ python = "^3.8"
 black = {version = "^20.8b1", allow-prereleases = true}
 doc8 = "*"
 flake8 = "*"
-sphinx = "==1.7.9"
+sphinx = "==1.8.5"
 sphinx-rtd-theme = "==0.4.3"
 toml = "^0.10.0"
 
