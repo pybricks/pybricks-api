@@ -19,3 +19,5 @@ html_show_copyright = False
 html_show_sphinx = False
 
 exec(open(os.path.abspath("../common/conf.py")).read())
+
+html_theme_options['prev_next_buttons_location'] = None  # noqa F821
