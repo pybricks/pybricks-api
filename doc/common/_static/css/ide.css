@@ -1,0 +1,6 @@
+
+/* These styles only apply to the ide build */
+
+.wy-breadcrumbs li.wy-breadcrumbs-aside {
+    display: none;
+}

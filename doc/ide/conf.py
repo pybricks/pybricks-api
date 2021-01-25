@@ -17,6 +17,7 @@ html_favicon = '../common/images/favicon.ico'
 html_logo = '../common/images/pybricks-logo-rtd.png'
 html_show_copyright = False
 html_show_sphinx = False
+html_css_files = ['css/ide.css']
 
 exec(open(os.path.abspath("../common/conf.py")).read())
 
