@@ -35,3 +35,9 @@ span.caption-number:after {
     font-size: 60%;
     margin: 0 0.2em;
 }
+
+/* don't show external link on figures */
+/* https://github.com/readthedocs/sphinx_rtd_theme/pull/494#issuecomment-354063112 */
+.figure > a.reference.external::after {
+    content: none !important;
+}
