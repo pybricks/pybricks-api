@@ -1,0 +1,24 @@
+{
+  "name": "@pybricks/ide-docs",
+  "version": "1.0.0",
+  "description": "Special build of Pybricks API docs for embedding in an IDE.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pybricks/pybricks-api",
+    "directory": "doc/ide"
+  },
+  "publishConfig": {
+      "registry": "https://registry.npmjs.org",
+      "access": "public"
+  },
+  "author": "The Pybricks Authors",
+  "license": "MIT",
+  "files": [
+    "build/html/**"
+  ],
+  "types": "index.d.ts",
+  "scripts": {
+    "clean": "poetry run make -C .. SOURCEDIR=ide clean",
+    "build": "poetry run make -C .. SOURCEDIR=ide html"
+  }
+}
