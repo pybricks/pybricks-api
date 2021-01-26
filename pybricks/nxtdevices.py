@@ -250,7 +250,7 @@ class VernierAdapter(_AnalogSensor):
 
         Arguments:
             port (Port): Port to which the sensor is connected.
-            conversion (callable): Function of the format :meth:`.conversion`.
+            conversion (callable): Function of the format ``conversion``.
                 This function is used to convert the raw analog voltage to the
                 sensor-specific output value. Each Vernier Sensor has its
                 own conversion function. The example given below demonstrates

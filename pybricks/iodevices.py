@@ -197,7 +197,7 @@ class UARTDevice:
             port (Port): Port to which the device is connected.
             baudrate (int): Baudrate of the UART device.
             timeout (:ref:`time`): How long to wait
-                during :meth:`.read` before giving up. If you choose ``None``,
+                during ``read`` before giving up. If you choose ``None``,
                 it will wait forever.
         """
         pass
