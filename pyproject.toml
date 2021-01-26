@@ -17,13 +17,13 @@ include = ["pybricks/py.typed"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
+doc8 = "^0.8.1"
+flake8 = "^3.8.4"
+Sphinx = "^3.4.3"
+sphinx-rtd-theme = "^0.5.1"
 
 [tool.poetry.dev-dependencies]
 black = {version = "^20.8b1", allow-prereleases = true}
-doc8 = "*"
-flake8 = "*"
-sphinx = "==1.8.5"
-sphinx-rtd-theme = "==0.4.3"
 toml = "^0.10.0"
 
 [build-system]
