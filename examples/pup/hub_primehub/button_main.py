@@ -23,7 +23,7 @@ if Button.LEFT in pressed:
     hub.display.image(Icon.ARROW_LEFT_DOWN)
 elif Button.RIGHT in pressed:
     hub.display.image(Icon.ARROW_RIGHT_DOWN)
-elif Button.BT in pressed:
+elif Button.BLUETOOTH in pressed:
     hub.display.image(Icon.ARROW_RIGHT_UP)
 
 wait(3000)
