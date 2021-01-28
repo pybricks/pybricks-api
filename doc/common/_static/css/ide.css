@@ -4,3 +4,39 @@
 .wy-breadcrumbs li.wy-breadcrumbs-aside {
     display: none;
 }
+
+/* Scrollbar styling to match Pybricks Code. */
+/* https://github.com/pybricks/pybricks-code/blob/master/src/index.scss */
+
+::-webkit-scrollbar {
+    width: 16px;
+}
+
+.bp3-dark ::-webkit-scrollbar-track {
+    background: #293742;
+}
+
+::-webkit-scrollbar-track {
+    background: #e8e8e8;
+}
+
+.bp3-dark ::-webkit-scrollbar-thumb {
+    border-color: #293742;
+    background: #a7b6c2;
+}
+
+::-webkit-scrollbar-thumb {
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 8px;
+    border-color: #e8e8e8;
+    background: #5c7080;
+}
+
+.bp3-dark ::-webkit-scrollbar-thumb:hover {
+    background: #f5f8fa;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #182026;
+}
