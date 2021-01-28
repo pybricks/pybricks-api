@@ -130,7 +130,10 @@ nitpick_ignore = [
 # -- Autodoc options ------------------------------------------------------
 
 autodoc_member_order = 'bysource'
-autodoc_default_flags = ['members', 'undoc-members']
+autodoc_default_options = {
+    'members': True,
+    'undoc-members': True,
+}
 autoclass_content = 'both'  # This ensures init arguments are not ignored
 add_module_names = False  # Hide module name
 
