@@ -1,6 +1,6 @@
 {
   "name": "@pybricks/ide-docs",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Special build of Pybricks API docs for embedding in an IDE.",
   "repository": {
     "type": "git",
@@ -8,8 +8,8 @@
     "directory": "doc/ide"
   },
   "publishConfig": {
-      "registry": "https://registry.npmjs.org",
-      "access": "public"
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
   },
   "author": "The Pybricks Authors",
   "license": "MIT",
