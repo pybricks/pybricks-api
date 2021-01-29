@@ -26,7 +26,7 @@ wait(1500)
 
 # Run at 500 deg/s for 90 degrees.
 print("Demo of run_angle")
-example_motor.run_angle(500, 180)
+example_motor.run_angle(500, 90)
 wait(1500)
 
 # Run at 500 deg/s back to the 0 angle
