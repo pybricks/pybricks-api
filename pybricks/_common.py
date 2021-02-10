@@ -144,6 +144,21 @@ class Control:
         """
         pass
 
+    def load(self):
+        """Gets the load acting on the ``Motor`` or ``DriveBase``.
+
+        This value is determined from the feedback torque that is
+        needed to track the speed or position command given by the user.
+
+        When coasting, braking, or controlling the duty cycle manually, the
+        load cannot be estimated in this way. Then this method returns zero.
+
+        Returns:
+            :ref:`torque`: The load torque. It returns 0 if control
+            is not active.
+        """
+        pass
+
 
 class Motor(DCMotor):
     """Generic class to control motors with built-in rotation sensors."""
@@ -271,7 +286,7 @@ class Motor(DCMotor):
         Arguments:
             speed (:ref:`speed`): Speed of the motor.
             then (Stop): What to do after coming to a standstill.
-            duty_limit (:ref:`percentage`): Torque limit during this
+            duty_limit (:ref:`percentage`): Duty cycle limit during this
                 command. This is useful to avoid applying the full motor
                 torque to a geared or lever mechanism.
 

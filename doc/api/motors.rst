@@ -126,6 +126,8 @@ the settings.
 
     .. automethod:: pybricks._common.Control.stalled
 
+    .. automethod:: pybricks._common.Control.load
+
     .. rubric:: Settings
 
     .. automethod:: pybricks._common.Control.limits
