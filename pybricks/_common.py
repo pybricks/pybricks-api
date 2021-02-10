@@ -54,8 +54,8 @@ class Control:
             motor this is the number of encoder pulses per degree of rotation.
     """
 
-    def limits(self, speed, acceleration, actuation):
-        """Configures the maximum speed, acceleration, and actuation.
+    def limits(self, speed, acceleration, duty, torque):
+        """Configures the maximum speed, acceleration, duty, and torque.
 
         If no arguments are given, this will return the current values.
 
@@ -64,8 +64,10 @@ class Control:
                 Maximum speed. All speed commands will be capped to this value.
             acceleration (:ref:`acceleration` or :ref:`linacceleration`):
                 Maximum acceleration.
-            actuation (:ref:`percentage`):
-                Maximum actuation as percentage of absolute maximum.
+            duty (:ref:`percentage`):
+                Maximum duty cycle during control.
+            torque (:ref:`torque`):
+                Maximum feedback torque during control.
         """
         pass
 
@@ -75,11 +77,14 @@ class Control:
         If no arguments are given, this will return the current values.
 
         Arguments:
-            kp (int): Proportional position (or integral speed) control
-                constant.
-            ki (int): Integral position control constant.
+            kp (int): Proportional position control
+                constant. It is the feedback torque per degree of
+                error: µNm/deg.
+            ki (int): Integral position control constant. It is the feedback
+                torque per accumulated degree of error: µNm/(deg s).
             kd (int): Derivative position (or proportional speed) control
-                constant.
+                constant. It is the feedback torque per
+                unit of speed: µNm/(deg/s).
             integral_range (:ref:`angle` or :ref:`distance`): Region around
                 the target angle or distance, in which integral control errors
                 are accumulated.

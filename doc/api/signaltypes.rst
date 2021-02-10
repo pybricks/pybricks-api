@@ -172,7 +172,7 @@ the light is off and 100% when the light is fully on. When you choose 50%, this
 means that the light is perceived as approximately half as bright to the human
 eye.
 
-Force
+Force and torque
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. _force:
@@ -193,6 +193,12 @@ following table to convert to and from other units.
 +---------+------+-------+-----------------------------+
 | 1 lbf = | 4448 | 4.448 | 1                           |
 +---------+------+-------+-----------------------------+
+
+.. _torque:
+
+torque: mNm
+------------
+Torque values are expressed in millinewtonmeter (mNm) unless stated otherwise.
 
 Electricity
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
