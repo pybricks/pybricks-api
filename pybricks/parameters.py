@@ -57,7 +57,7 @@ class Color:
 
 
 Color.NONE = Color(0, 0, 0)
-Color.BLACK = Color(0, 0, 20)
+Color.BLACK = Color(0, 0, 15)
 Color.GRAY = Color(0, 0, 50)
 Color.WHITE = Color(0, 0, 100)
 Color.RED = Color(0, 100, 100)

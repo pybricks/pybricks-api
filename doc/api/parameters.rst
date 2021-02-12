@@ -63,6 +63,9 @@
 
     .. rubric:: Saturated colors
 
+    These colors have maximum saturation and brightness value.
+    They differ only in hue.
+
     .. autoattribute:: RED
 
         .. pybricks-color:: RED
@@ -97,17 +100,46 @@
 
     .. rubric:: Unsaturated colors
 
-    .. autoattribute:: BLACK
+    These colors have zero hue and saturation. They differ only in brightness
+    value.
 
-        .. pybricks-color:: BLACK
+    When detecting these colors using sensors, their values depend a lot
+    on the distance to the object. If the distance between the sensor and the
+    object is not constant in your robot, it is better to use only one of these
+    colors in your programs.
+
+    .. autoattribute:: WHITE
+
+        .. pybricks-color:: WHITE
 
     .. autoattribute:: GRAY
 
         .. pybricks-color:: GRAY
 
-    .. autoattribute:: WHITE
+    .. autoattribute:: BLACK
 
-        .. pybricks-color:: WHITE
+        This represents dark objects that still reflect
+        a very small amount of light.
+
+        .. pybricks-color:: BLACK
+
+    .. autoattribute:: NONE
+
+        This is total darkness, with no reflection or light at all.
+
+        .. pybricks-color:: NONE
+
+.. rubric:: Making your own colors
+
+This example shows the basics of color properties, and how to define new colors.
+
+.. literalinclude::
+    ../../examples/pup/parameters/color_basics.py
+
+This example shows more advanced use cases of the ``Color`` class.
+
+.. literalinclude::
+    ../../examples/pup/parameters/color_advanced.py
 
 .. autoclass:: pybricks.parameters.Button
     :no-members:
