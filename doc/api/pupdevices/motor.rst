@@ -6,7 +6,6 @@ Motors with Rotation Sensors
 .. figure:: ../../api/images/pupmotors_label.png
    :width: 100 %
    :alt: pupmotors
-   :align: left
 
    Powered Up motors with rotation sensors. The arrows indicate the default
    positive direction. See the :mod:`hubs <pybricks.hubs>` module for default
