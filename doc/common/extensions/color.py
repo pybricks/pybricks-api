@@ -27,6 +27,11 @@ class PybricksColorDirective(Directive):
 
         # Render a small block of the given color
         css = "background-color: {0}; color: {0}; width: 50px;".format(rgbhex)
+
+        if name == "WHITE":
+            css += "border-style: solid; border-width: 0.5px;" + \
+                   "border-color: #666666;"
+
         html = '<div id="test" style="{0}">_</div>'.format(css)
 
         # Return the node
