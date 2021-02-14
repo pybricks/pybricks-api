@@ -12,36 +12,31 @@
    technichub
    primehub
 
-.. class:: MoveHub
-    :noindex:
+.. pybricks-classlink:: MoveHub
 
 .. figure:: ../../api/images/movehub.png
     :height: 10 em
     :target: movehub.html
 
-.. class:: CityHub
-    :noindex:
+.. pybricks-classlink:: CityHub
 
 .. figure:: ../../api/images/cityhub.png
     :height: 10 em
     :target: cityhub.html
 
-.. class:: TechnicHub
-    :noindex:
+.. pybricks-classlink:: TechnicHub
 
 .. figure:: ../../api/images/technichub.png
     :height: 10 em
     :target: technichub.html
 
-.. class:: PrimeHub
-    :noindex:
+.. pybricks-classlink:: PrimeHub
 
 .. figure:: ../../api/images/primehub.png
     :height: 10 em
     :target: primehub.html
 
-.. class:: InventorHub
-    :noindex:
+.. pybricks-classlink:: InventorHub
 
 .. figure:: ../../api/images/inventorhub.png
     :height: 10 em

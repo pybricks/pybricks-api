@@ -20,78 +20,67 @@
    light
    remote
 
-.. class:: DCMotor
-    :noindex:
+.. pybricks-classlink:: DCMotor
 
 .. figure:: ../../api/images/pupdcmotors_label.png
     :width: 70 %
     :target: dcmotor.html
 
-.. class:: Motor
-    :noindex:
+.. pybricks-classlink:: Motor
 
 .. figure:: ../../api/images/pupmotors_label.png
     :width: 100 %
     :target: motor.html
 
-.. class:: TiltSensor
-    :noindex:
+.. pybricks-classlink:: TiltSensor
 
 .. figure:: ../../api/images/sensor_tilt.png
    :width: 35 %
    :target: tiltsensor.html
 
-.. class:: InfraredSensor
-    :noindex:
+.. pybricks-classlink:: InfraredSensor
 
 .. figure:: ../../api/images/sensor_proximity.png
    :width: 35 %
    :target: infraredsensor.html
 
-.. class:: ColorDistanceSensor
-    :noindex:
+.. pybricks-classlink:: ColorDistanceSensor
 
 .. figure:: ../../api/images/sensor_colordistance.png
    :width: 32 %
    :target: colordistancesensor.html
 
-.. class:: PFMotor
-    :noindex:
+.. pybricks-classlink:: PFMotor
 
 .. figure:: ../../api/images/pfmotor.png
    :width: 95 %
    :target: pfmotor.html
 
-.. class:: ColorSensor
-    :noindex:
+.. pybricks-classlink:: ColorSensor
 
 .. figure:: ../../api/images/sensor_color.png
    :width: 32 %
    :target: colorsensor.html
 
-.. class:: UltrasonicSensor
-    :noindex:
+.. pybricks-classlink:: UltrasonicSensor
 
 .. figure:: ../../api/images/sensor_ultrasonic.png
    :width: 37 %
    :target: ultrasonicsensor.html
 
-.. class:: ForceSensor
-    :noindex:
+.. pybricks-classlink:: ForceSensor
 
 .. figure:: ../../api/images/sensor_force.png
    :width: 35 %
    :target: forcesensor.html
 
-.. class:: Light
-    :noindex:
+.. pybricks-classlink:: Light
 
 .. figure:: ../../api/images/light.png
    :width: 90 %
    :target: light.html
 
-.. class:: Remote
-    :noindex:
+.. pybricks-classlink:: Remote
 
 .. figure:: ../../api/images/pupremote.png
    :width: 50 %

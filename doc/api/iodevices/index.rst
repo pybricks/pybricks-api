@@ -16,8 +16,7 @@
    dcmotor
    ev3devsensor
 
-.. class:: PUPDevice
-    :noindex:
+.. pybricks-classlink:: PUPDevice
 
 .. figure:: ../../api/images/sensor_pup.png
    :width: 70 %
@@ -25,43 +24,37 @@
 
    This class is only available on Powered Up hubs.
 
-.. class:: I2CDevice
-    :noindex:
+.. pybricks-classlink:: I2CDevice
 
 .. figure:: ../../api/images/sensor_rj12_bluegreen.png
    :width: 25 %
    :target: i2cdevice.html
 
-.. class:: UARTDevice
-    :noindex:
+.. pybricks-classlink:: UARTDevice
 
 .. figure:: ../../api/images/sensor_rj12_gray.png
    :width: 25 %
    :target: uartdevice.html
 
-.. class:: AnalogSensor
-    :noindex:
+.. pybricks-classlink:: AnalogSensor
 
 .. figure:: ../../api/images/sensor_rj12_brown.png
    :width: 25 %
    :target: analogsensor.html
 
-.. class:: LUMPDevice
-    :noindex:
+.. pybricks-classlink:: LUMPDevice
 
 .. figure:: ../../api/images/sensor_rj12_green.png
    :width: 25 %
    :target: lumpdevice.html
 
-.. class:: DCMotor
-    :noindex:
+.. pybricks-classlink:: DCMotor
 
 .. figure:: ../../api/images/rcxmotor.png
    :width: 40 %
    :target: dcmotor.html
 
-.. class:: Ev3devSensor
-    :noindex:
+.. pybricks-classlink:: Ev3devSensor
 
 .. figure:: ../../api/images/sensor_ev3dev.png
    :width: 70 %
