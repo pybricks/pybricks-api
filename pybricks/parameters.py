@@ -121,7 +121,7 @@ class Direction(_PybricksEnum):
 
 
 class Button(_PybricksEnum):
-    """Buttons on a brick or remote"""
+    """Buttons on a hub or remote."""
 
     LEFT_DOWN = 1
     LEFT_MINUS = 1

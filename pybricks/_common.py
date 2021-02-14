@@ -688,7 +688,7 @@ class Keypad:
         """Checks which buttons are currently pressed.
 
         :returns: Tuple of pressed buttons.
-        :rtype: Tuple of :class:`Button <.parameters.Button>`
+        :rtype: Tuple of :class:`Button`
 
         """
         pass

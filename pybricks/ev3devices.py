@@ -130,7 +130,7 @@ class InfraredSensor:
             channel (int): Channel number of the remote.
 
         :returns: List of pressed buttons on the remote on selected channel.
-        :rtype: List of :class:`Button <.parameters.Button>`
+        :rtype: List of :class:`Button <Button>`
 
         """
         pass
@@ -144,7 +144,7 @@ class InfraredSensor:
         This method only works with the remote in channel 1.
 
         :returns: List of pressed buttons on the remote on selected channel.
-        :rtype: List of :class:`Button <.parameters.Button>`
+        :rtype: List of :class:`Button <Button>`
 
         """
         pass

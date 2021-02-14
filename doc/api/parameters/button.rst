@@ -1,8 +1,9 @@
 Button
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. autoclass:: pybricks.parameters.Button
-    :no-members:
+.. class:: Button
+
+    Buttons on a hub or remote.
 
     .. autoattribute:: pybricks.parameters.Button.LEFT_DOWN
         :annotation:
