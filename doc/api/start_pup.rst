@@ -1,4 +1,6 @@
-Powered Up Quick Start
+.. _pupguide:
+
+Powered Up
 ########################
 
 .. figure:: ../api/images/powereduphubs.png

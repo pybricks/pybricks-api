@@ -1,11 +1,12 @@
 Pybricks Documentation
 ==================================================================
 
-.. note::
+.. toctree::
+   :maxdepth: 1
+   :caption: Getting started
+   :hidden:
 
-   The installation guide and other documentation are available at
-   `docs.pybricks.com`_. This window contains only
-   documentation and examples for all available classes and methods.
+   start_pup
 
 .. toctree::
    :maxdepth: 1
@@ -29,9 +30,13 @@ Pybricks Documentation
    motors
 
 Use the ☰ menu to navigate all available classes, methods, and tools. A few
-commonly used devices are listed below for quick reference.
+commonly used devices and classes are listed below for quick reference.
 
-.. rubric:: Powered Up Hubs
+.. rubric:: Installation
+
+Click :ref:`to jump to the installation guide <pupguide>`.
+
+.. rubric:: Programmable Hubs
 
 .. figure:: ../api/images/hubsoverview.png
    :width: 100 %
@@ -42,5 +47,3 @@ commonly used devices are listed below for quick reference.
 .. figure:: ../api/images/pupdevicesoverview.png
    :width: 100 %
    :target: pupdevices/index.html
-
-.. _docs.pybricks.com: https://docs.pybricks.com/

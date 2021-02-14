@@ -1,4 +1,4 @@
-EV3 Quick Start
+MINDSTORMS EV3
 ########################
 
 .. note::
