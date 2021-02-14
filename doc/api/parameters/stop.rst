@@ -4,7 +4,7 @@ Stop
 .. autoclass:: pybricks.parameters.Stop
     :no-members:
 
-    The following table show how each stop type adds an extra level of
+    The following table shows how each stop type adds an extra level of
     resistance to motion. In these examples, ``m`` is a
     :class:`Motor <pybricks.pupdevices.Motor>` and
     and ``d`` is a :class:`DriveBase <pybricks.robotics.DriveBase>`. The
