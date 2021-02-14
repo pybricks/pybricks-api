@@ -111,27 +111,13 @@ class Stop(_PybricksEnum):
 
 
 class Direction(_PybricksEnum):
-    """Rotational direction for positive speed or angle values.
-
-    .. data:: CLOCKWISE
-
-        A positive speed value should make the motor move clockwise.
-
-    .. data:: COUNTERCLOCKWISE
-
-        A positive speed value should make the motor move counterclockwise.
-
-    +--------------------------------+-------------------+-----------------+
-    | ``positive_direction =``       | Positive speed:   | Negative speed: |
-    +================================+===================+=================+
-    | ``Direction.CLOCKWISE``        | clockwise         | counterclockwise|
-    +--------------------------------+-------------------+-----------------+
-    | ``Direction.COUNTERCLOCKWISE`` | counterclockwise  | clockwise       |
-    +--------------------------------+-------------------+-----------------+
-    """
+    """Rotational direction for positive speed or angle values."""
 
     CLOCKWISE = 0
+    """A positive speed value should make the motor move clockwise."""
+
     COUNTERCLOCKWISE = 1
+    """A positive speed value should make the motor move counterclockwise."""
 
 
 class Button(_PybricksEnum):
