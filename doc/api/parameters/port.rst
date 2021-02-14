@@ -1,21 +1,38 @@
 Port
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. autoclass:: pybricks.parameters.Port
-    :no-members:
+.. class:: Port
 
-    Input/Output ports:
+    Input and output ports:
 
-        .. data:: A
-        .. data:: B
-        .. data:: C
-        .. data:: D
-        .. data:: E
-        .. data:: F
+    .. autoattribute:: pybricks.parameters.Port.A
+        :annotation:
+
+    .. autoattribute:: pybricks.parameters.Port.B
+        :annotation:
+
+    .. autoattribute:: pybricks.parameters.Port.C
+        :annotation:
+
+    .. autoattribute:: pybricks.parameters.Port.D
+        :annotation:
+
+    .. autoattribute:: pybricks.parameters.Port.E
+        :annotation:
+
+    .. autoattribute:: pybricks.parameters.Port.F
+        :annotation:
 
     EV3 Sensor ports:
 
-        .. data:: S1
-        .. data:: S2
-        .. data:: S3
-        .. data:: S4
+    .. autoattribute:: pybricks.parameters.Port.S1
+        :annotation:
+
+    .. autoattribute:: pybricks.parameters.Port.S2
+        :annotation:
+
+    .. autoattribute:: pybricks.parameters.Port.S3
+        :annotation:
+
+    .. autoattribute:: pybricks.parameters.Port.S4
+        :annotation:

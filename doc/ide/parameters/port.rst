@@ -1,14 +1,24 @@
 Port
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. autoclass:: pybricks.parameters.Port
-    :no-members:
+.. class:: Port
 
-    Input/Output ports:
+    Input and output ports:
 
-        .. data:: A
-        .. data:: B
-        .. data:: C
-        .. data:: D
-        .. data:: E
-        .. data:: F
+    .. autoattribute:: pybricks.parameters.Port.A
+        :annotation:
+
+    .. autoattribute:: pybricks.parameters.Port.B
+        :annotation:
+
+    .. autoattribute:: pybricks.parameters.Port.C
+        :annotation:
+
+    .. autoattribute:: pybricks.parameters.Port.D
+        :annotation:
+
+    .. autoattribute:: pybricks.parameters.Port.E
+        :annotation:
+
+    .. autoattribute:: pybricks.parameters.Port.F
+        :annotation:
