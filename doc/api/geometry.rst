@@ -45,5 +45,5 @@ though the *hub* accelerates backward.
    How to configure the ``top_side`` and ``front_side`` settings for three
    different robot designs. The same technique can be applied to other hubs
    and other creations, by noting which way the top and
-   front :class:`Side <.parameters.Side>` of the hub are pointing. The example
+   front :class:`Side <Side>` of the hub are pointing. The example
    on the left is the default configuration.

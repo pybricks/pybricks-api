@@ -1,8 +1,29 @@
 Side
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. autoclass:: pybricks.parameters.Side
-    :no-members:
+.. class:: Side
+
+    Side of a hub or a sensor. These devices are
+    mostly rectangular boxes with six sides:
+
+    .. autoattribute:: pybricks.parameters.Side.TOP
+        :annotation:
+
+    .. autoattribute:: pybricks.parameters.Side.BOTTOM
+        :annotation:
+
+    .. autoattribute:: pybricks.parameters.Side.FRONT
+        :annotation:
+
+    .. autoattribute:: pybricks.parameters.Side.BACK
+        :annotation:
+
+    .. autoattribute:: pybricks.parameters.Side.LEFT
+        :annotation:
+
+    .. autoattribute:: pybricks.parameters.Side.RIGHT
+        :annotation:
+
 
     Screens or light matrices have only four sides. For those,
     ``TOP`` is treated the same as ``FRONT``, and ``BOTTOM`` is treated the
@@ -11,24 +32,24 @@ Side
     **Prime Hub**
 
     .. figure:: ../../api/images/orientation_primehub_label.png
-        :height: 15 em
+        :height: 17 em
 
     **Inventor Hub**
 
     .. figure:: ../../api/images/orientation_inventorhub_label.png
-        :height: 15 em
+        :height: 17 em
 
     **Move Hub**
 
     .. figure:: ../../api/images/orientation_movehub_label.png
-        :height: 15 em
+        :height: 17 em
 
     **Technic Hub**
 
     .. figure:: ../../api/images/orientation_technichub_label.png
-        :height: 15 em
+        :height: 17 em
 
     **Tilt Sensor**
 
     .. figure:: ../../api/images/orientation_tiltsensor_label.png
-        :height: 15 em
+        :height: 17 em

@@ -155,16 +155,7 @@ class Button(_PybricksEnum):
 
 
 class Side(_PybricksEnum):
-    """Side of a hub or a sensor. These devices are
-    mostly rectangular boxes with six sides:
-
-    .. data:: TOP
-    .. data:: BOTTOM
-    .. data:: FRONT
-    .. data:: BACK
-    .. data:: LEFT
-    .. data:: RIGHT
-    """
+    """Side of a hub or a sensor."""
 
     RIGHT = 6
     FRONT = 0

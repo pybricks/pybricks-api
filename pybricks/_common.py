@@ -792,7 +792,7 @@ class Accelerometer:
         :returns:
             ``Side.TOP``, ``Side.BOTTOM``, ``Side.LEFT``, ``Side.RIGHT``,
             ``Side.FRONT`` or ``Side.BACK``.
-        :rtype: :class:`Side <.parameters.Side>`
+        :rtype: :class:`Side`
 
         """
         pass
