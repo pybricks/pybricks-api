@@ -1,3 +1,9 @@
+# 1.1.1 - 2021-02-14
+
+## Added:
+- Added installation guide.
+- Various documentation fixes.
+
 # 1.1.0 - 2021-01-28
 
 ## Added:
