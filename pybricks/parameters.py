@@ -89,25 +89,17 @@ class Port(_PybricksEnum):
 
 
 class Stop(_PybricksEnum):
-    """Action after the motor stops: coast, brake, or hold.
-
-    .. data:: COAST
-
-        Let the motor move freely.
-
-    .. data:: BRAKE
-
-        Passively resist small external forces.
-
-    .. data:: HOLD
-
-        Keep controlling the motor to hold it at the commanded angle. This is
-        only available on motors with encoders.
-    """
+    """Action after the motor stops."""
 
     COAST = 0
+    """Let the motor move freely."""
+
     BRAKE = 1
+    """Passively resist small external forces."""
+
     HOLD = 2
+    """Keep controlling the motor to hold it at the commanded angle. This is
+    only available on motors with encoders."""
 
 
 class Direction(_PybricksEnum):
