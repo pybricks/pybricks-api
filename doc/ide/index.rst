@@ -15,7 +15,7 @@ Pybricks Documentation
    hubs/index
    pupdevices/index
    iodevices/index
-   parameters
+   parameters/index
    tools/index
    robotics
    geometry

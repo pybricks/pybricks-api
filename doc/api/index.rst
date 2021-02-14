@@ -77,7 +77,7 @@ findings on our `support page`_ so we can make Pybricks even better.
    ev3devices
    nxtdevices
    iodevices/index
-   parameters
+   parameters/index
    tools/index
    robotics
    media
