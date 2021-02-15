@@ -267,7 +267,7 @@ class Motor(DCMotor):
         given target angle.
 
         The direction of rotation is automatically selected based on the target
-        angle. It does matter if ``speed`` is positive or negative.
+        angle. It doesn't matter if ``speed`` is positive or negative.
 
         Arguments:
             speed (:ref:`speed`): Speed of the motor.
