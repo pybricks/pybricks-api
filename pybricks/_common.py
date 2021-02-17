@@ -715,7 +715,31 @@ class Battery:
         pass
 
 
-class Accelerometer:
+class SimpleAccelerometer:
+    """Get measurements from an accelerometer."""
+
+    def acceleration(self):
+        """Gets the acceleration of the device.
+
+        Returns:
+            tuple of :ref:`linacceleration_m`: Acceleration along all three
+            axes.
+        """
+        pass
+
+    def up(self):
+        """Checks which side of the hub currently faces upward.
+
+        :returns:
+            ``Side.TOP``, ``Side.BOTTOM``, ``Side.LEFT``, ``Side.RIGHT``,
+            ``Side.FRONT`` or ``Side.BACK``.
+        :rtype: :class:`Side`
+
+        """
+        pass
+
+
+class Accelerometer(SimpleAccelerometer):
     """Get measurements from an accelerometer."""
 
     def neutral(self, top, front):
@@ -782,17 +806,6 @@ class Accelerometer:
             bool:
                 ``True`` if shaken since this method was last called. ``False``
                 otherwise.
-
-        """
-        pass
-
-    def up(self):
-        """Checks which side of the device or hub currently faces upward.
-
-        :returns:
-            ``Side.TOP``, ``Side.BOTTOM``, ``Side.LEFT``, ``Side.RIGHT``,
-            ``Side.FRONT`` or ``Side.BACK``.
-        :rtype: :class:`Side`
 
         """
         pass

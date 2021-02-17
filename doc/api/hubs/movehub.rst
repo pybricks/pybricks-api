@@ -19,6 +19,12 @@ Move Hub
 
     .. automethod:: pybricks.hubs::MoveHub.light.animate
 
+    .. rubric:: Using the IMU
+
+    .. automethod:: pybricks.hubs::MoveHub.imu.up
+
+    .. automethod:: pybricks.hubs::MoveHub.imu.acceleration
+
     .. rubric:: Using the battery
 
     .. automethod:: pybricks.hubs::MoveHub.battery.voltage
