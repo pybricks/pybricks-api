@@ -45,3 +45,18 @@ Making the light blink
 
 .. literalinclude::
     ../../../examples/pup/hub_movehub/light_blink.py
+
+IMU examples
+---------------
+
+Testing which way is up
+********************************
+
+.. literalinclude::
+    ../../../examples/pup/hub_movehub/imu_up.py
+
+Reading acceleration
+**************************************************
+
+.. literalinclude::
+    ../../../examples/pup/hub_movehub/imu_read_acceleration.py
