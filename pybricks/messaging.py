@@ -180,5 +180,5 @@ class BluetoothMailboxClient:
                 There was a problem establishing the connection.
         """
 
-    def close(self):
+    def server_close(self):
         """Closes all connections."""
