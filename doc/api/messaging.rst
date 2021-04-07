@@ -41,7 +41,7 @@ The connection will be made when you run your programs, as described below.
    Pairing one EV3 Brick to another EV3 Brick.
 
 When you scan for Bluetooth devices, you'll see a list of device names. By
-default, all EV3 Bricks are named *ev3dev*. Click :ref:`here <hostname>` to
+default, all EV3 Bricks are named *ev3dev*. Click `here`_ to
 learn how to change that name. This makes it easy to tell them apart.
 
 Repeat the steps in :numref:`fig_bluetooth_pair` if you want to pair more than
@@ -134,3 +134,5 @@ is shown in :numref:`fig_messaging_network`.
    :align: center
 
    An example network with one server and two clients.
+
+.. _here: https://pybricks.com/install/mindstorms-ev3/beyond-micropython

@@ -13,7 +13,7 @@ At the moment, this class is only available on EV3.
     use this class on 13 February 2020 on 10:07 and 44.431260
     seconds, the file is called ``log_2020_02_13_10_07_44_431260.csv``.
 
-    See :ref:`managing files on the EV3 <managefiles>` to learn how to upload
+    See `managing files on the EV3`_ to learn how to upload
     the log file back to your computer.
 
 
@@ -71,3 +71,5 @@ name will always be the same. However, this means that the contents of
 ``my_file.txt`` will be overwritten every time you run this script.
 
 .. literalinclude:: ../../../examples/ev3/datalog_extra/main.py
+
+.. _managing files on the EV3: https://pybricks.com/install/mindstorms-ev3/running-programs#managing-files-on-the-ev3-brick

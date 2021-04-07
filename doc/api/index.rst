@@ -1,4 +1,4 @@
-Welcome to Pybricks!
+Pybricks API Documentation
 ==================================================================
 
 This documentation has everything you need to install Pybricks and
@@ -18,13 +18,13 @@ the platforms below.
      - **SPIKE / MINDSTORMS Inventor**
 
    * - .. image:: ../api/images/ev3brick.png
-         :target: start_ev3/index.html
+         :target: https://pybricks.com/install/mindstorms-ev3/installation
 
      - .. figure:: ../api/images/powereduphubs.png
-         :target: start_pup.html
+         :target: https://pybricks.com/install/technic-boost-city/
 
      - .. figure:: ../api/images/primeinventorhub.png
-          :target: start_inventor.html
+          :target: https://pybricks.com/install/spike-mindstorms/
 
 
 **Step 2: Start coding!**
@@ -53,19 +53,7 @@ findings on our `support page`_ so we can make Pybricks even better.
     :hidden:
 
     Home Page <https://pybricks.com>
-    Downloads <https://pybricks.com/downloads/>
-    Example Projects <https://github.com/pybricks/pybricks-projects>
-    Support <https://github.com/pybricks/support/issues/>
-    About Pybricks <https://pybricks.com/about/>
-
-.. toctree::
-   :maxdepth: 1
-   :caption: Getting started
-   :hidden:
-
-   start_ev3/index
-   start_pup
-   start_inventor
+    Installation <https://pybricks.com/install/>
 
 .. toctree::
    :maxdepth: 1

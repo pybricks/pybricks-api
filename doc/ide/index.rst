@@ -3,13 +3,6 @@ Pybricks Documentation
 
 .. toctree::
    :maxdepth: 1
-   :caption: Getting started
-   :hidden:
-
-   start_pup
-
-.. toctree::
-   :maxdepth: 1
    :caption: Pybricks Modules
    :hidden:
 
@@ -34,7 +27,7 @@ commonly used devices and classes are listed below for quick reference.
 
 .. rubric:: Installation
 
-Click :ref:`to jump to the installation guide <pupguide>`.
+Click `to jump to the installation guide`_.
 
 .. rubric:: Programmable Hubs
 
@@ -47,3 +40,5 @@ Click :ref:`to jump to the installation guide <pupguide>`.
 .. figure:: ../api/images/pupdevicesoverview.png
    :width: 100 %
    :target: pupdevices/index.html
+
+.. _to jump to the installation guide: https://pybricks.com/install/
