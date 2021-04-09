@@ -24,9 +24,8 @@ while True:
     # lights do something different.
     brightness = [sin(phase + offset*pi/2) * 50 + 50 for offset in range(4)]
 
-    # Set the brightness values for all lights. The * symbol unpacks the list
-    # of brightness values into separate arguments.
-    eyes.lights.on(*brightness)
+    # Set the brightness values for all lights.
+    eyes.lights.on(brightness)
 
     # Wait some time.
     wait(50)
