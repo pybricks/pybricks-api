@@ -22,12 +22,11 @@ Pybricks Documentation
    signaltypes
    motors
 
+To begin, install the Pybricks firmware on your hub. Check
+`pybricks.com/install`_ to learn how.
+
 Use the ☰ menu to navigate all available classes, methods, and tools. A few
 commonly used devices and classes are listed below for quick reference.
-
-.. rubric:: Installation
-
-Click `to jump to the installation guide`_.
 
 .. rubric:: Programmable Hubs
 
@@ -41,4 +40,4 @@ Click `to jump to the installation guide`_.
    :width: 100 %
    :target: pupdevices/index.html
 
-.. _to jump to the installation guide: https://pybricks.com/install/
+.. _pybricks.com/install: https://pybricks.com/install/
