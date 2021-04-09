@@ -1,3 +1,8 @@
+# 1.2.0 - 2021-04-09
+
+## Changed:
+- Moved installation guide to external site.
+
 # 1.1.1 - 2021-02-14
 
 ## Added:
