@@ -58,7 +58,7 @@ Changing the detectable colors
 ******************************
 
 By default, the sensor is configured to detect red, yellow, green,
-blue, white, or ``None``, which suits many applications.
+blue, white, or no color, which suits many applications.
 
 For better results in your application, you can measure your desired
 colors in advance, and tell the sensor to look only for those colors.
