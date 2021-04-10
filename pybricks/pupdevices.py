@@ -91,7 +91,7 @@ class ColorDistanceSensor:
         You choose which colors are detected using the
         :meth:`.detectable_colors` method. By default, it detects
         ``Color.RED``, ``Color.YELLOW``, ``Color.GREEN``, ``Color.BLUE``,
-        ``Color.WHITE``, or ``None``.
+        ``Color.WHITE``, or ``Color.NONE``.
 
         :returns:
             Detected color.
@@ -128,11 +128,10 @@ class ColorDistanceSensor:
         as a tuple.
 
         Arguments:
-            colors (list): List of :class:`Color <.parameters.Color>` objects:
+            colors (list): Tuple of :class:`Color <.parameters.Color>` objects:
                 the colors that you want to detect. You can pick
                 standard colors such as ``Color.MAGENTA``, or provide your own
-                colors like
-                ``Color(h=348, s=96, v=40, name='MY_MAGENTA_BRICK')`` for even
+                colors like ``Color(h=348, s=96, v=40)`` for even
                 better results. You measure your own colors with the
                 :meth:`.hsv` method.
         """
@@ -210,7 +209,7 @@ class ColorSensor:
         You choose which colors are detected using the
         :meth:`.detectable_colors` method. By default, it detects
         ``Color.RED``, ``Color.YELLOW``, ``Color.GREEN``, ``Color.BLUE``,
-        ``Color.WHITE``, or ``None``.
+        ``Color.WHITE``, or ``Color.NONE``.
 
         Arguments:
             surface (bool): Choose ``true`` to scan the color of objects
@@ -233,11 +232,10 @@ class ColorSensor:
         as a tuple.
 
         Arguments:
-            colors (list): List of :class:`Color <.parameters.Color>` objects:
+            colors (list): Tuple of :class:`Color <.parameters.Color>` objects:
                 the colors that you want to detect. You can pick
                 standard colors such as ``Color.MAGENTA``, or provide your own
-                colors like
-                ``Color(h=348, s=96, v=40, name='MY_MAGENTA_BRICK')`` for even
+                colors like ``Color(h=348, s=96, v=40)`` for even
                 better results. You measure your own colors with the
                 :meth:`.hsv` method.
         """
