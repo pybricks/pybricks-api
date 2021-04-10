@@ -22,8 +22,8 @@ python = "^3.8"
 black = {version = "^20.8b1", allow-prereleases = true}
 doc8 = "^0.8.1"
 flake8 = "^3.8.4"
-Sphinx = "^3.4.3"
-sphinx-rtd-theme = "^0.5.1"
+Sphinx = "==3.5.3"
+sphinx-rtd-theme = "==0.5.2"
 toml = "^0.10.0"
 
 [build-system]
