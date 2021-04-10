@@ -4,13 +4,17 @@
 class Color:
     BLACK: Color
     BLUE: Color
-    GREEN: Color
-    YELLOW: Color
-    RED: Color
-    WHITE: Color
     BROWN: Color
+    CYAN: Color
+    GRAY: Color
+    GREEN: Color
+    MAGENTA: Color
+    NONE: Color
     ORANGE: Color
-    PURPLE: Color
+    RED: Color
+    VIOLET: Color
+    WHITE: Color
+    YELLOW: Color
     def __mul__(self, scale: float) -> Color: ...
     def __rmul__(self, scale: float) -> Color: ...
     def __truediv__(self, scale: float) -> Color: ...
