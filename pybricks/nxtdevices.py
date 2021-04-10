@@ -81,9 +81,8 @@ class ColorSensor:
 
         :returns:
             ``Color.BLACK``, ``Color.BLUE``, ``Color.GREEN``, ``Color.YELLOW``,
-            ``Color.RED``, ``Color.WHITE`` or ``None``.
-        :rtype: :class:`Color <.parameters.Color>`, or ``None`` if no color is
-                detected.
+            ``Color.RED``, ``Color.WHITE`` or ``Color.NONE``.
+        :rtype: :class:`Color <.parameters.Color>`
 
         """
         pass
