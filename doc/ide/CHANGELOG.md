@@ -1,3 +1,8 @@
+# 1.3.1 - 2021-04-12
+
+## Changed:
+- Upgrade sphinx and rtd-theme to fix style issues.
+
 # 1.3.0 - 2021-04-12
 
 ## Removed:
