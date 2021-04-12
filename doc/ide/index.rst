@@ -12,7 +12,6 @@ Pybricks Documentation
    parameters/index
    tools/index
    robotics
-   geometry
 
 .. toctree::
    :maxdepth: 1
