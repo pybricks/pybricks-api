@@ -12,7 +12,6 @@
    color
    direction
    port
-   side
    stop
 
 .. pybricks-classlink:: Button
@@ -22,8 +21,6 @@
 .. pybricks-classlink:: Direction
 
 .. pybricks-classlink:: Port
-
-.. pybricks-classlink:: Side
 
 .. pybricks-classlink:: Stop
 
