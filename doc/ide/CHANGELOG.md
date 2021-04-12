@@ -1,3 +1,9 @@
+# 1.3.0 - 2021-04-12
+
+## Removed:
+- Removed features which not be in the official 3.0 release. These features
+  are still in beta. They'll come back in future releases once tested.
+
 # 1.2.0 - 2021-04-09
 
 ## Changed:
