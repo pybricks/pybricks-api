@@ -18,7 +18,6 @@
    ultrasonicsensor
    forcesensor
    light
-   remote
 
 .. pybricks-classlink:: DCMotor
 
@@ -79,9 +78,3 @@
 .. figure:: ../../api/images/light.png
    :width: 90 %
    :target: light.html
-
-.. pybricks-classlink:: Remote
-
-.. figure:: ../../api/images/pupremote.png
-   :width: 50 %
-   :target: remote.html
