@@ -30,7 +30,7 @@ commonly used devices and classes are listed below for quick reference.
 
 .. rubric:: Programmable Hubs
 
-.. figure:: ../api/images/hubsoverview.png
+.. figure:: ../api/images/powereduphubs.png
    :width: 100 %
    :target: hubs/index.html
 
