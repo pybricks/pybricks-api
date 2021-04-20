@@ -18,6 +18,7 @@ html_logo = '../common/images/pybricks-logo-rtd.png'
 html_show_copyright = False
 html_show_sphinx = False
 html_css_files = ['css/ide.css']
+html_js_files = ['js/ide.js']
 
 imgmath_image_format = 'svg'
 imgmath_use_preview = True  # requires Sphinx v3
