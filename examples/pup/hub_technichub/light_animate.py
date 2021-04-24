@@ -7,7 +7,7 @@ from math import sin, pi
 hub = TechnicHub()
 
 # Make an animation with multiple colors.
-hub.light.animate([Color.RED, Color.GREEN, None], interval=500)
+hub.light.animate([Color.RED, Color.GREEN, Color.NONE], interval=500)
 
 wait(10000)
 
