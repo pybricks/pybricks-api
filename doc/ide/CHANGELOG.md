@@ -1,3 +1,10 @@
+# 1.3.2 - 2021-04-26
+
+## Changed:
+- Theme style fixes.
+- Example code fixes
+- Match doc version to firmware version.
+
 # 1.3.1 - 2021-04-12
 
 ## Changed:
