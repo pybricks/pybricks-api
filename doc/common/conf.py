@@ -91,7 +91,7 @@ version = re.match(r'(v\d+\.\d+)', release)[0]
 language = None
 
 # The name of the Pygments (syntax highlighting) style to use.
-pygments_style = 'sphinx'
+pygments_style = 'xcode'
 
 # If true, `todo` and `todoList` produce output, else they produce nothing.
 todo_include_todos = True
