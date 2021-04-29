@@ -12,3 +12,12 @@ Powered Up Device
     .. automethod:: pybricks.iodevices.PUPDevice.read
 
     .. automethod:: pybricks.iodevices.PUPDevice.write
+
+Examples
+-------------------
+
+Detecting devices
+******************************
+
+.. literalinclude::
+    ../../../examples/pup/iodevices_pupdevice/port_info.py
