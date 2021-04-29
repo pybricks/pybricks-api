@@ -1,5 +1,6 @@
 from pybricks.iodevices import PUPDevice
 from pybricks.parameters import Port
+from uerrno import ENODEV
 
 # Dictionary of device identifiers along with their name.
 device_names = {
@@ -41,10 +42,13 @@ for port in ports:
     # Try to get the device, if it is attached.
     try:
         device = PUPDevice(port)
-    except OSError:
-        # No device found on this port.
-        print(port, ": ---")
-        continue
+    except OSError as ex:
+        if ex.args[0] == ENODEV:
+            # No device found on this port.
+            print(port, ": ---")
+            continue
+        else:
+            raise
 
     # Get the device id
     id = device.info()['id']
