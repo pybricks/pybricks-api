@@ -1,7 +1,7 @@
 # SPDX-License-Identifier: MIT
 # Copyright (c) 2020 The Pybricks Authors
 
-from typing import Optional, Tuple, overload
+from typing import Optional, Tuple, overload, Union
 from ._common import Control, Motor
 
 class DriveBase:
@@ -11,8 +11,8 @@ class DriveBase:
         self,
         left_motor: Motor,
         right_motor: Motor,
-        wheel_diameter: int,
-        axle_track: int,
+        wheel_diameter: Union[int,float],
+        axle_track: Union[int,float],
     ): ...
     def drive(self, drive_speed: int, turn_rate: int) -> None: ...
     def stop(self) -> None: ...
