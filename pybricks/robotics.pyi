@@ -11,8 +11,8 @@ class DriveBase:
         self,
         left_motor: Motor,
         right_motor: Motor,
-        wheel_diameter: Union[int,float],
-        axle_track: Union[int,float],
+        wheel_diameter: Union[int, float],
+        axle_track: Union[int, float],
     ): ...
     def drive(self, drive_speed: int, turn_rate: int) -> None: ...
     def stop(self) -> None: ...
