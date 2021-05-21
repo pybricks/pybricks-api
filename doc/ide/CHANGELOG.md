@@ -1,3 +1,9 @@
+# 1.3.3 - 2021-05-21
+
+## Changed:
+- Match example snippet styling to IDE.
+- Add more examples.
+
 # 1.3.2 - 2021-04-26
 
 ## Changed:
