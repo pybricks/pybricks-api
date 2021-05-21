@@ -26,6 +26,12 @@ Motors without Rotation Sensors
 Examples
 -------------------
 
+Making a train drive forever
+************************************
+
+.. literalinclude::
+    ../../../examples/pup/motor_dc/motor_dc_battery_box.py
+
 Making the motor move back and forth
 ************************************
 
