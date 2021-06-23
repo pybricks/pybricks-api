@@ -22,6 +22,16 @@ Pybricks Documentation
    signaltypes
    motors
 
+.. note::
+
+   **You are using a new beta version of Pybricks!**
+
+   This is great for trying the very latest features, but some things
+   might not work.
+
+   If in doubt, use the `latest stable release`_. Please report any
+   issues via our `support page`_. Thanks!
+
 To begin, install the Pybricks firmware on your hub. Check
 `pybricks.com/install`_ to learn how.
 
@@ -41,3 +51,5 @@ commonly used devices and classes are listed below for quick reference.
    :target: pupdevices/index.html
 
 .. _pybricks.com/install: https://pybricks.com/install/
+.. _latest stable release: https://www.code.pybricks.com/
+.. _support page: https://github.com/pybricks/support
