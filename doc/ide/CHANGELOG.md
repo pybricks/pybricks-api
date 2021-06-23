@@ -1,3 +1,9 @@
+# 1.4.0 - 2021-06-23
+
+## Added:
+- Enabled beta content that was hidden for the 3.0 release.
+- Added notice about using the latest beta version.
+
 # 1.3.3 - 2021-05-21
 
 ## Changed:
