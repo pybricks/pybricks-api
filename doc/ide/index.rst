@@ -12,6 +12,7 @@ Pybricks Documentation
    parameters/index
    tools/index
    robotics
+   geometry
 
 .. toctree::
    :maxdepth: 1
@@ -29,7 +30,7 @@ commonly used devices and classes are listed below for quick reference.
 
 .. rubric:: Programmable Hubs
 
-.. figure:: ../api/images/powereduphubs.png
+.. figure:: ../api/images/hubsoverview.png
    :width: 100 %
    :target: hubs/index.html
 

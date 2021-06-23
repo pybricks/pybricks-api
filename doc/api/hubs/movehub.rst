@@ -19,6 +19,12 @@ Move Hub
 
     .. automethod:: pybricks.hubs::MoveHub.light.animate
 
+    .. rubric:: Using the IMU
+
+    .. automethod:: pybricks.hubs::MoveHub.imu.up
+
+    .. automethod:: pybricks.hubs::MoveHub.imu.acceleration
+
     .. rubric:: Using the battery
 
     .. automethod:: pybricks.hubs::MoveHub.battery.voltage
@@ -40,3 +46,17 @@ Making the light blink
 .. literalinclude::
     ../../../examples/pup/hub_movehub/light_blink.py
 
+IMU examples
+---------------
+
+Testing which way is up
+********************************
+
+.. literalinclude::
+    ../../../examples/pup/hub_movehub/imu_up.py
+
+Reading acceleration
+**************************************************
+
+.. literalinclude::
+    ../../../examples/pup/hub_movehub/imu_read_acceleration.py

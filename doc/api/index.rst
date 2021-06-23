@@ -70,6 +70,7 @@ findings on our `support page`_ so we can make Pybricks even better.
    robotics
    media
    messaging
+   geometry
 
 .. toctree::
    :maxdepth: 1

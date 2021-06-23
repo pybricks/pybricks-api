@@ -10,6 +10,7 @@
    movehub
    cityhub
    technichub
+   primehub
    ev3brick
 
 .. pybricks-classlink:: MoveHub
@@ -29,6 +30,18 @@
 .. figure:: ../../api/images/technichub.png
     :height: 10 em
     :target: technichub.html
+
+.. pybricks-classlink:: PrimeHub
+
+.. figure:: ../../api/images/primehub.png
+    :height: 10 em
+    :target: primehub.html
+
+.. pybricks-classlink:: InventorHub
+
+.. figure:: ../../api/images/inventorhub.png
+    :height: 10 em
+    :target: primehub.html
 
 .. pybricks-classlink:: EV3Brick
 
