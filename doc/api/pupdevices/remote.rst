@@ -1,12 +1,6 @@
 Remote Control
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. warning::
-
-    This remote is not yet supported.
-    Upvote `this issue <https://github.com/pybricks/support/issues/186>`_ if
-    you want to see this happen.
-
 .. figure:: ../../api/images/pupremote.png
    :width: 60 %
 
@@ -21,3 +15,16 @@ Remote Control
   .. automethod:: pybricks.pupdevices::Remote.light.off
 
   .. automethod:: pybricks.pupdevices::Remote.buttons.pressed
+
+.. note::
+
+    The ``light`` and ``address`` features are not yet supported.
+
+Examples
+-------------------
+
+Check which buttons are pressed
+*******************************
+
+.. literalinclude::
+    ../../../examples/pup/remote/basics.py
