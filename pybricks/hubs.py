@@ -5,6 +5,7 @@
 from ._common import (Speaker as _Speaker, Battery as _Battery,
                       ColorLight as _ColorLight, Keypad as _Keypad,
                       LightMatrix as _LightMatrix, IMU as _IMU,
+                      System as _System,
                       SimpleAccelerometer as _SimpleAccelerometer)
 from .media.ev3dev import Image as _Image
 from .parameters import Button as _Button
@@ -37,6 +38,7 @@ class MoveHub:
     battery = _Battery()
     light = _ColorLight()
     imu = _SimpleAccelerometer()
+    system = _System()
 
 
 class CityHub:
@@ -46,6 +48,7 @@ class CityHub:
     # In reality, they are instance attributes created by __init__.
     battery = _Battery()
     light = _ColorLight()
+    system = _System()
 
 
 class TechnicHub:
@@ -56,6 +59,7 @@ class TechnicHub:
     battery = _Battery()
     light = _ColorLight()
     imu = _IMU()
+    system = _System()
 
     def __init__(self, top_side=_Axis.Z, front_side=_Axis.X):
         """__init__(top_side=Axis.Z, front_side=Axis.X)
@@ -90,6 +94,7 @@ class PrimeHub:
     display = _LightMatrix(5, 5)
     speaker = _Speaker()
     imu = _IMU()
+    system = _System()
 
     def __init__(self, top_side=_Axis.Z, front_side=_Axis.X):
         """__init__(top_side=Axis.Z, front_side=Axis.X)

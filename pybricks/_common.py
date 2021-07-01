@@ -7,6 +7,44 @@ speakers, and batteries."""
 from .parameters import Direction, Stop
 
 
+class System:
+    """System control actions for a hub."""
+
+    def reset(self, action):
+        """Shuts the hub down and optionally reboots.
+
+        Arguments:
+            action (int): Choose ``0`` to shut down, ``1`` to reboot,
+                or ``2`` to enter firmware update mode.
+        """
+        pass
+
+    def reset_reason(self):
+        """Gets the reason for the most recent reset.
+
+        Returns:
+            int: Gives ``0`` if the hub was shut down, or ``1`` if the hub
+            rebooted. It gives ``2`` if the watchdog timer expired, which
+            indicates a firmware issue.
+        """
+        pass
+
+    def set_stop_button(self, button):
+        """Sets the button or button combination that stops a running script.
+
+        Normally, the center button is used to stop a running script. You can
+        change or disable this behavior in order to use the button for other
+        purposes.
+
+        Arguments:
+            Button: A button such
+                as :attr:`Button.CENTER <pybricks.parameters.Button.CENTER>`,
+                or a tuple of multiple buttons. Choose ``None`` to disable the
+                stop button altogether.
+        """
+        pass
+
+
 class DCMotor:
     """Generic class to control simple motors without rotation sensors, such
     as train motors."""

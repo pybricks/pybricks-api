@@ -81,6 +81,14 @@ Prime Hub / Inventor Hub
 
     .. automethod:: pybricks.hubs::PrimeHub.battery.current
 
+    .. rubric:: System control
+
+    .. automethod:: pybricks.hubs::MoveHub.system.reset
+
+    .. automethod:: pybricks.hubs::MoveHub.system.reset_reason
+
+    .. automethod:: pybricks.hubs::MoveHub.system.set_stop_button
+
 .. note:: The examples below use the ``PrimeHub`` class. The examples work fine
           on both hubs because they are the identical. If you prefer, you can
           change this to ``InventorHub``.
