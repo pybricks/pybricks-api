@@ -1,3 +1,8 @@
+# 1.5.0 - 2021-07-01
+
+## Added:
+- Documentation for Powered Up Remote Control.
+
 # 1.4.0 - 2021-06-23
 
 ## Added:
