@@ -19,6 +19,7 @@ packages = [
     { include = "uerrno", from = "src" },
     { include = "uio", from = "src" },
     { include = "urandom", from = "src" },
+    { include = "uselect", from = "src" },
 ]
 
 [tool.poetry.dependencies]
