@@ -17,6 +17,7 @@ packages = [
     { include = "pybricks", from = "src" },
     { include = "micropython", from = "src" },
     { include = "uerrno", from = "src" },
+    { include = "uio", from = "src" },
 ]
 
 [tool.poetry.dependencies]
