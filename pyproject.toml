@@ -18,6 +18,7 @@ packages = [
     { include = "micropython", from = "src" },
     { include = "uerrno", from = "src" },
     { include = "uio", from = "src" },
+    { include = "urandom", from = "src" },
 ]
 
 [tool.poetry.dependencies]
