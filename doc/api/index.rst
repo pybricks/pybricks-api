@@ -81,6 +81,7 @@ findings on our `support page`_ so we can make Pybricks even better.
    uerrno
    uio
    urandom
+   uselect
 
 .. toctree::
    :maxdepth: 1
