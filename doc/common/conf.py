@@ -31,7 +31,7 @@ from sphinx.domains.python import PyClassmember, PythonDomain
 import toml
 
 TOP_DIR = os.path.abspath(os.path.join('..', '..'))
-sys.path.insert(0, TOP_DIR)
+sys.path.insert(0, os.path.join(TOP_DIR, 'src'))
 sys.path.append(os.path.abspath('../common/extensions'))
 
 from pybricks.hubs import EV3Brick  # noqa E402

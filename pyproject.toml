@@ -13,7 +13,9 @@ classifiers = [
     "Development Status :: 3 - Alpha",
     "Programming Language :: Python :: Implementation :: MicroPython",
 ]
-include = ["pybricks/py.typed"]
+packages = [
+    { include = "pybricks", from = "src" },
+]
 
 [tool.poetry.dependencies]
 python = "^3.8"
