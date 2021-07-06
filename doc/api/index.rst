@@ -80,6 +80,7 @@ findings on our `support page`_ so we can make Pybricks even better.
    micropython
    uerrno
    uio
+   urandom
 
 .. toctree::
    :maxdepth: 1
