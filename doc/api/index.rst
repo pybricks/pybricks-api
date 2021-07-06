@@ -74,6 +74,13 @@ findings on our `support page`_ so we can make Pybricks even better.
 
 .. toctree::
    :maxdepth: 1
+   :caption: Additional Modules
+   :hidden:
+
+   micropython
+
+.. toctree::
+   :maxdepth: 1
    :caption: Engineering Extras
    :hidden:
 

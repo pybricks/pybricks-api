@@ -128,6 +128,15 @@ nitpick_ignore = [
     ('py:exc', 'ValueError'),
 ]
 
+# Workaround until change below is released.
+# https://github.com/sphinx-doc/sphinx/commit/86091934db5ec593b4b0c982b7f08f3231ef995b
+nitpick_ignore.extend([
+    ('py:class', '0'),
+    ('py:class', '1'),
+    ('py:class', '2'),
+    ('py:class', '3'),
+])
+
 # -- Autodoc options ------------------------------------------------------
 
 autodoc_member_order = 'bysource'
