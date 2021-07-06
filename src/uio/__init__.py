@@ -63,3 +63,10 @@ class StringIO:
             initial_value: Optional string object that contains initial data.
             alloc_size: Optional number of preallocated bytes.
         """
+
+
+class FileIO:
+    """
+    This is type of a file open in binary mode, e.g. using ``open(name, 'rb')``.
+    You should not instantiate this class directly.
+    """
