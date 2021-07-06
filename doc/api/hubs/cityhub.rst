@@ -25,11 +25,11 @@ City Hub
 
     .. rubric:: System control
 
-    .. automethod:: pybricks.hubs::MoveHub.system.reset
+    .. automethod:: pybricks.hubs::CityHub.system.set_stop_button
 
-    .. automethod:: pybricks.hubs::MoveHub.system.reset_reason
+    .. automethod:: pybricks.hubs::CityHub.system.shutdown
 
-    .. automethod:: pybricks.hubs::MoveHub.system.set_stop_button
+    .. automethod:: pybricks.hubs::CityHub.system.reset_reason
 
 Status light examples
 ---------------------

@@ -83,11 +83,11 @@ Prime Hub / Inventor Hub
 
     .. rubric:: System control
 
-    .. automethod:: pybricks.hubs::MoveHub.system.reset
+    .. automethod:: pybricks.hubs::PrimeHub.system.set_stop_button
 
-    .. automethod:: pybricks.hubs::MoveHub.system.reset_reason
+    .. automethod:: pybricks.hubs::PrimeHub.system.shutdown
 
-    .. automethod:: pybricks.hubs::MoveHub.system.set_stop_button
+    .. automethod:: pybricks.hubs::PrimeHub.system.reset_reason
 
 .. note:: The examples below use the ``PrimeHub`` class. The examples work fine
           on both hubs because they are the identical. If you prefer, you can

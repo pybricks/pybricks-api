@@ -39,11 +39,11 @@ Technic Hub
 
     .. rubric:: System control
 
-    .. automethod:: pybricks.hubs::MoveHub.system.reset
+    .. automethod:: pybricks.hubs::TechnicHub.system.set_stop_button
 
-    .. automethod:: pybricks.hubs::MoveHub.system.reset_reason
+    .. automethod:: pybricks.hubs::TechnicHub.system.shutdown
 
-    .. automethod:: pybricks.hubs::MoveHub.system.set_stop_button
+    .. automethod:: pybricks.hubs::TechnicHub.system.reset_reason
 
 Status light examples
 ---------------------

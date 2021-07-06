@@ -10,25 +10,6 @@ from .parameters import Direction, Stop
 class System:
     """System control actions for a hub."""
 
-    def reset(self, action):
-        """Shuts the hub down and optionally reboots.
-
-        Arguments:
-            action (int): Choose ``0`` to shut down, ``1`` to reboot,
-                or ``2`` to enter firmware update mode.
-        """
-        pass
-
-    def reset_reason(self):
-        """Gets the reason for the most recent reset.
-
-        Returns:
-            int: Gives ``0`` if the hub was shut down, or ``1`` if the hub
-            rebooted. It gives ``2`` if the watchdog timer expired, which
-            indicates a firmware issue.
-        """
-        pass
-
     def set_stop_button(self, button):
         """Sets the button or button combination that stops a running script.
 
@@ -41,6 +22,23 @@ class System:
                 as :attr:`Button.CENTER <pybricks.parameters.Button.CENTER>`,
                 or a tuple of multiple buttons. Choose ``None`` to disable the
                 stop button altogether.
+        """
+        pass
+
+    def shutdown(self):
+        """Stops your program and shuts the hub down."""
+        pass
+
+    def reset_reason(self):
+        """Finds out how and why the hub (re)booted. This can be useful to
+        diagnose some problems.
+
+        Returns:
+            int: Returns ``0`` if the hub was previously powered off
+            normally. Returns ``1`` if the hub rebooted automatically, like
+            after a firmware update. Returns ``2`` if the hub previously
+            crashed due to a watchdog timeout, which indicates a firmware
+            issue.
         """
         pass
 
