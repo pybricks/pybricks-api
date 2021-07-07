@@ -78,6 +78,7 @@ findings on our `support page`_ so we can make Pybricks even better.
    :hidden:
 
    micropython
+   ubuiltins
    uerrno
    uio
    umath

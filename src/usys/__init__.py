@@ -15,7 +15,7 @@ from uio import FileIO
 
 # REVIST: most functions are excluded since they aren't useful for Pybricks
 
-stdin: FileIO
+stdin: FileIO = FileIO()
 """
 Stream object that receives input from a connected terminal, if any.
 
@@ -26,7 +26,7 @@ Also see :meth:`micropython.kbd_intr` to disable ``KeyboardInterrupt`` if you
 are passing binary data via ``stdin``.
 """
 
-stdout: FileIO
+stdout: FileIO = FileIO()
 """
 Stream object that sends output to a connected terminal, if any.
 
@@ -34,7 +34,7 @@ Reading may modify newline characters. Use ``usys.stdout.buffer`` instead if
 this is undesirable.
 """
 
-stderr: FileIO
+stderr: FileIO = FileIO()
 """
 Alias for :data:`stdout`.
 """

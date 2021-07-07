@@ -138,6 +138,8 @@ nitpick_ignore.extend([
     ('py:class', '1'),
     ('py:class', '2'),
     ('py:class', '3'),
+    ('py:class', 'big'),
+    ('py:class', 'little'),
 ])
 
 # -- Autodoc options ------------------------------------------------------
