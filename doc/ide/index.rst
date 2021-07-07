@@ -14,6 +14,22 @@ Pybricks Documentation
    robotics
    geometry
 
+
+.. toctree::
+   :maxdepth: 1
+   :caption: MicroPython Modules
+   :hidden:
+
+   micropython/index
+   micropython/micropython
+   micropython/uerrno
+   micropython/uio
+   micropython/umath
+   micropython/urandom
+   micropython/uselect
+   micropython/usys
+
+
 .. toctree::
    :maxdepth: 1
    :caption: Engineering Extras
