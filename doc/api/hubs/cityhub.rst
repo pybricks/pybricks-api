@@ -23,7 +23,9 @@ City Hub
 
     .. automethod:: pybricks.hubs::CityHub.battery.current
 
-    .. rubric:: System control
+    .. rubric:: Button and system control
+
+    .. automethod:: pybricks.hubs::CityHub.button.pressed
 
     .. automethod:: pybricks.hubs::CityHub.system.set_stop_button
 

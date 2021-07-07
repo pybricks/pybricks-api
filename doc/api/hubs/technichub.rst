@@ -37,7 +37,9 @@ Technic Hub
 
     .. automethod:: pybricks.hubs::TechnicHub.battery.current
 
-    .. rubric:: System control
+    .. rubric:: Button and system control
+
+    .. automethod:: pybricks.hubs::TechnicHub.button.pressed
 
     .. automethod:: pybricks.hubs::TechnicHub.system.set_stop_button
 

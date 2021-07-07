@@ -31,7 +31,9 @@ Move Hub
 
     .. automethod:: pybricks.hubs::MoveHub.battery.current
 
-    .. rubric:: System control
+    .. rubric:: Button and system control
+
+    .. automethod:: pybricks.hubs::MoveHub.button.pressed
 
     .. automethod:: pybricks.hubs::MoveHub.system.set_stop_button
 

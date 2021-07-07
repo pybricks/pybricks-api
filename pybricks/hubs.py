@@ -39,6 +39,7 @@ class MoveHub:
     light = _ColorLight()
     imu = _SimpleAccelerometer()
     system = _System()
+    button = _Keypad((_Button.CENTER,))
 
 
 class CityHub:
@@ -49,6 +50,7 @@ class CityHub:
     battery = _Battery()
     light = _ColorLight()
     system = _System()
+    button = _Keypad((_Button.CENTER,))
 
 
 class TechnicHub:
@@ -60,6 +62,7 @@ class TechnicHub:
     light = _ColorLight()
     imu = _IMU()
     system = _System()
+    button = _Keypad((_Button.CENTER,))
 
     def __init__(self, top_side=_Axis.Z, front_side=_Axis.X):
         """__init__(top_side=Axis.Z, front_side=Axis.X)
