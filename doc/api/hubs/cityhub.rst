@@ -59,3 +59,18 @@ Creating light animations
 
 .. literalinclude::
     ../../../examples/pup/hub_cityhub/light_animate.py
+
+Button and system examples
+----------------------------------
+
+Using the stop button during your program
+*****************************************
+
+.. literalinclude::
+    ../../../examples/pup/hub_cityhub/button_single.py
+
+Turning the hub off
+*****************************************
+
+.. literalinclude::
+    ../../../examples/pup/hub_cityhub/system_shutdown.py

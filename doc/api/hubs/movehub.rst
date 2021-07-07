@@ -70,3 +70,18 @@ Reading acceleration
 
 .. literalinclude::
     ../../../examples/pup/hub_movehub/imu_read_acceleration.py
+
+Button and system examples
+----------------------------------
+
+Using the stop button during your program
+*****************************************
+
+.. literalinclude::
+    ../../../examples/pup/hub_movehub/button_single.py
+
+Turning the hub off
+*****************************************
+
+.. literalinclude::
+    ../../../examples/pup/hub_movehub/system_shutdown.py

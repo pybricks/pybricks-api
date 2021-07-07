@@ -107,3 +107,18 @@ Reading acceleration and angular velocity on one axis
 
 .. literalinclude::
     ../../../examples/pup/hub_technichub/imu_read_scalar.py
+
+Button and system examples
+----------------------------------
+
+Using the stop button during your program
+*****************************************
+
+.. literalinclude::
+    ../../../examples/pup/hub_technichub/button_single.py
+
+Turning the hub off
+*****************************************
+
+.. literalinclude::
+    ../../../examples/pup/hub_technichub/system_shutdown.py
