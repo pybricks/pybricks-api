@@ -43,6 +43,8 @@ Technic Hub
 
     .. automethod:: pybricks.hubs::TechnicHub.system.set_stop_button
 
+    .. automethod:: pybricks.hubs::TechnicHub.system.name
+
     .. automethod:: pybricks.hubs::TechnicHub.system.shutdown
 
     .. automethod:: pybricks.hubs::TechnicHub.system.reset_reason

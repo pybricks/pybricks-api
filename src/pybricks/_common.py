@@ -42,6 +42,15 @@ class System:
         """
         pass
 
+    def name(self):
+        """Gets the hub name. This is the name you see when connecting
+        via Bluetooth.
+
+        Returns:
+            str: The hub name.
+        """
+        pass
+
 
 class DCMotor:
     """Generic class to control simple motors without rotation sensors, such

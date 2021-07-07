@@ -29,6 +29,8 @@ City Hub
 
     .. automethod:: pybricks.hubs::CityHub.system.set_stop_button
 
+    .. automethod:: pybricks.hubs::CityHub.system.name
+
     .. automethod:: pybricks.hubs::CityHub.system.shutdown
 
     .. automethod:: pybricks.hubs::CityHub.system.reset_reason

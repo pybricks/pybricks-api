@@ -37,6 +37,8 @@ Move Hub
 
     .. automethod:: pybricks.hubs::MoveHub.system.set_stop_button
 
+    .. automethod:: pybricks.hubs::MoveHub.system.name
+
     .. automethod:: pybricks.hubs::MoveHub.system.shutdown
 
     .. automethod:: pybricks.hubs::MoveHub.system.reset_reason
