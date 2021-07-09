@@ -218,3 +218,18 @@ Reading acceleration and angular velocity on one axis
 
 .. literalinclude::
     ../../../examples/pup/hub_primehub/imu_read_scalar.py
+
+System examples
+----------------------------------
+
+Changing the stop button combination
+*****************************************
+
+.. literalinclude::
+    ../../../examples/pup/hub_primehub/button_stop.py
+
+Turning the hub off
+*****************************************
+
+.. literalinclude::
+    ../../../examples/pup/hub_primehub/system_shutdown.py
