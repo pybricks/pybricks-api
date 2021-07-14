@@ -1,4 +1,4 @@
-:mod:`urandom` -- Generate pseudo-random numbers
+:mod:`urandom` -- Pseudo-random numbers
 ================================================
 
 .. automodule:: urandom

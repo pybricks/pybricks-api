@@ -74,11 +74,11 @@ findings on our `support page`_ so we can make Pybricks even better.
 
 .. toctree::
    :maxdepth: 1
-   :caption: Additional Modules
+   :caption: MicroPython Modules
    :hidden:
 
-   micropython
    ubuiltins
+   micropython
    uerrno
    uio
    umath

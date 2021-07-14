@@ -14,10 +14,7 @@
 # Copyright (c) 2001-2021 Python Software Foundation
 
 """
-All builtin functions and exceptions are described here. They are also
-available via ``ubuiltins`` module.
-
-.. tip:: Since these are built-in, you can (and should!) use them without importing.
+The following functions and exceptions can be used without importing anything.
 """
 
 from typing import (
