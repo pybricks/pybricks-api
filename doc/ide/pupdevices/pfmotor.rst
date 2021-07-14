@@ -1,1 +1,1 @@
-.. include:: ../../api/pupdevices/pfmotor.rst
+.. include:: ../../main/pupdevices/pfmotor.rst

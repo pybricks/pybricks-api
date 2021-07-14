@@ -1,1 +1,1 @@
-.. include:: ../../api/parameters/button.rst
+.. include:: ../../main/parameters/button.rst

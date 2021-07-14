@@ -1,1 +1,1 @@
-.. include:: ../../api/micropython/uio.rst
+.. include:: ../../main/micropython/uio.rst

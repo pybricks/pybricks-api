@@ -1,1 +1,1 @@
-.. include:: ../../api/pupdevices/remote.rst
+.. include:: ../../main/pupdevices/remote.rst

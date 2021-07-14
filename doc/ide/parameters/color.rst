@@ -1,1 +1,1 @@
-.. include:: ../../api/parameters/color.rst
+.. include:: ../../main/parameters/color.rst

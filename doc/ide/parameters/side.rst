@@ -1,1 +1,1 @@
-.. include:: ../../api/parameters/side.rst
+.. include:: ../../main/parameters/side.rst

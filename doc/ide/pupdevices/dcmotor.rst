@@ -1,1 +1,1 @@
-.. include:: ../../api/pupdevices/dcmotor.rst
+.. include:: ../../main/pupdevices/dcmotor.rst

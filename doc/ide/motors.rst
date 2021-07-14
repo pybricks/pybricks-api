@@ -1,1 +1,1 @@
-.. include:: ../api/motors.rst
+.. include:: ../main/motors.rst

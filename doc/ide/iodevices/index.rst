@@ -12,6 +12,6 @@
 
 .. pybricks-classlink:: PUPDevice
 
-.. figure:: ../../api/images/sensor_pup.png
+.. figure:: ../../main/images/sensor_pup.png
    :width: 70 %
    :target: pupdevice.html

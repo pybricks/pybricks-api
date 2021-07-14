@@ -62,15 +62,15 @@ Build docs:
 
     # Linux
     poetry run make -C doc html
-    xdg-open doc/api/build/html/index.html
+    xdg-open doc/main/build/html/index.html
 
     # macOS
     poetry run make -C doc html
-    open doc/api/build/html/index.html
+    open doc/main/build/html/index.html
 
     # Windows (PowerShell)
     poetry run doc\make.bat html
-    Invoke-Item doc\api\build\html\index.html
+    Invoke-Item doc\main\build\html\index.html
 
 Linting:
 

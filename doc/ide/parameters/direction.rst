@@ -1,1 +1,1 @@
-.. include:: ../../api/parameters/direction.rst
+.. include:: ../../main/parameters/direction.rst

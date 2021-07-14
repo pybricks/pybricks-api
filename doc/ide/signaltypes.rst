@@ -1,1 +1,1 @@
-.. include:: ../api/signaltypes.rst
+.. include:: ../main/signaltypes.rst

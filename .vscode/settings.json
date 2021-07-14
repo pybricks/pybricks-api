@@ -6,7 +6,7 @@
     "python.linting.enabled": true,
     "python.languageServer": "Pylance",
     "files.associations": {"*.inc": "restructuredtext"},
-    "restructuredtext.confPath": "${workspaceFolder}/doc/api",
+    "restructuredtext.confPath": "${workspaceFolder}/doc/main",
     "spellright.language": [
         "en_US"
     ],

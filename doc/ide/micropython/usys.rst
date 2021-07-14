@@ -1,1 +1,1 @@
-.. include:: ../../api/micropython/usys.rst
+.. include:: ../../main/micropython/usys.rst

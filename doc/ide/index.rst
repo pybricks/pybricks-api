@@ -56,13 +56,13 @@ commonly used devices and classes are listed below for quick reference.
 
 .. rubric:: Programmable Hubs
 
-.. figure:: ../api/images/hubsoverview.png
+.. figure:: ../main/images/hubsoverview.png
    :width: 100 %
    :target: hubs/index.html
 
 .. rubric:: Powered Up Motors and Sensors
 
-.. figure:: ../api/images/pupdevicesoverview.png
+.. figure:: ../main/images/pupdevicesoverview.png
    :width: 100 %
    :target: pupdevices/index.html
 

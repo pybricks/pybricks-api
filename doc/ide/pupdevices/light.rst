@@ -1,1 +1,1 @@
-.. include:: ../../api/pupdevices/light.rst
+.. include:: ../../main/pupdevices/light.rst

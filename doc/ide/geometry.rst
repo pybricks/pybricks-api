@@ -1,1 +1,1 @@
-.. include:: ../api/geometry.rst
+.. include:: ../main/geometry.rst

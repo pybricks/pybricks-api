@@ -8,7 +8,7 @@ if "%SPHINXBUILD%" == "" (
 	set SPHINXBUILD=sphinx-build
 )
 set SPHINXOPTS=-W
-set SOURCEDIR=api
+set SOURCEDIR=main
 set BUILDDIR=%SOURCEDIR%/build
 set SPHINXPROJ=Pybricks
 

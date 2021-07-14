@@ -1,1 +1,1 @@
-.. include:: ../../api/micropython/umath.rst
+.. include:: ../../main/micropython/umath.rst

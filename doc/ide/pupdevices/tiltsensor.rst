@@ -1,1 +1,1 @@
-.. include:: ../../api/pupdevices/tiltsensor.rst
+.. include:: ../../main/pupdevices/tiltsensor.rst

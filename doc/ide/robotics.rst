@@ -1,1 +1,1 @@
-.. include:: ../api/robotics.rst
+.. include:: ../main/robotics.rst

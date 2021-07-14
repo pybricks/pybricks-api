@@ -1,1 +1,1 @@
-.. include:: ../../api/micropython/uerrno.rst
+.. include:: ../../main/micropython/uerrno.rst

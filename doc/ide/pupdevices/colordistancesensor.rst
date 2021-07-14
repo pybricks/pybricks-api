@@ -1,1 +1,1 @@
-.. include:: ../../api/pupdevices/colordistancesensor.rst
+.. include:: ../../main/pupdevices/colordistancesensor.rst

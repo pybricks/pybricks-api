@@ -1,1 +1,1 @@
-.. include:: ../../api/iodevices/pupdevice.rst
+.. include:: ../../main/iodevices/pupdevice.rst

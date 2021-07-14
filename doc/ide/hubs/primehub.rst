@@ -1,1 +1,1 @@
-.. include:: ../../api/hubs/primehub.rst
+.. include:: ../../main/hubs/primehub.rst

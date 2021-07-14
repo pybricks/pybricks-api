@@ -1,1 +1,1 @@
-.. include:: ../../api/parameters/index.rst
+.. include:: ../../main/parameters/index.rst

@@ -1,1 +1,1 @@
-.. include:: ../../api/hubs/technichub.rst
+.. include:: ../../main/hubs/technichub.rst

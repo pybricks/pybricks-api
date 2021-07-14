@@ -1,1 +1,1 @@
-.. include:: ../../api/hubs/cityhub.rst
+.. include:: ../../main/hubs/cityhub.rst

@@ -1,1 +1,1 @@
-.. include:: ../../api/micropython/index.rst
+.. include:: ../../main/micropython/index.rst

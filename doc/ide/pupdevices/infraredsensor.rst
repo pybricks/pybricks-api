@@ -1,1 +1,1 @@
-.. include:: ../../api/pupdevices/infraredsensor.rst
+.. include:: ../../main/pupdevices/infraredsensor.rst

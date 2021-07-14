@@ -5,7 +5,7 @@
 SPHINXOPTS    = -W
 SPHINXBUILD   = sphinx-build
 SPHINXPROJ    = Pybricks
-SOURCEDIR     = api
+SOURCEDIR     = main
 BUILDDIR      = "$(SOURCEDIR)"/build
 
 # Put it first so that "make" without argument is like "make help".

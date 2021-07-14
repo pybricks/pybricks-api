@@ -1,1 +1,1 @@
-.. include:: ../../api/pupdevices/motor.rst
+.. include:: ../../main/pupdevices/motor.rst

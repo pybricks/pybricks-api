@@ -1,1 +1,1 @@
-.. include:: ../../api/micropython/urandom.rst
+.. include:: ../../main/micropython/urandom.rst

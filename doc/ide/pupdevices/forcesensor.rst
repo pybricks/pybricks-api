@@ -1,1 +1,1 @@
-.. include:: ../../api/pupdevices/forcesensor.rst
+.. include:: ../../main/pupdevices/forcesensor.rst

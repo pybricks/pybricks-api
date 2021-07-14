@@ -1,1 +1,1 @@
-.. include:: ../../api/micropython/uselect.rst
+.. include:: ../../main/micropython/uselect.rst

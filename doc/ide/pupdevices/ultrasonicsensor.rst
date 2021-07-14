@@ -1,1 +1,1 @@
-.. include:: ../../api/pupdevices/ultrasonicsensor.rst
+.. include:: ../../main/pupdevices/ultrasonicsensor.rst

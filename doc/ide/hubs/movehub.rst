@@ -1,1 +1,1 @@
-.. include:: ../../api/hubs/movehub.rst
+.. include:: ../../main/hubs/movehub.rst
