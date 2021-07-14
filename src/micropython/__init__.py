@@ -101,11 +101,10 @@ def qstr_info(*args):
     """
 
 
-def stack_use() -> None:
+def stack_use() -> int:
     """
-    Return an integer representing the current amount of stack that is being
-    used.  The absolute value of this is not particularly useful, rather it
-    should be used to compute differences in stack usage at different points.
+    Returns the amount of stack that is being used. This can be used to
+    compute differences in stack usage at different points in a script.
     """
 
 
