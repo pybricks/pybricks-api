@@ -9,15 +9,10 @@
 Access and control MicroPython internals.
 """
 
-from typing import Any, Literal, TypeVar, overload
-
-TConst = TypeVar("TConst", int, float)
-"""
-Allowable types for :meth:`const`.
-"""
+from typing import Any, Literal, Union, overload
 
 
-def const(expr: TConst) -> TConst:
+def const(expression: Union[int, float]) -> Union[int, float]:
     """
     Used to declare that the expression is a constant so that the compile can
     optimise it.  The use of this function should be as follows::

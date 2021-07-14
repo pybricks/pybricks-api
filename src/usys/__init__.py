@@ -22,7 +22,7 @@ Stream object that receives input from a connected terminal, if any.
 Writing may modify newline characters. Use ``usys.stdin.buffer`` instead if
 this is undesirable.
 
-Also see :meth:`micropython.kbd_intr` to disable ``KeyboardInterrupt`` if you
+Also see :func:`micropython.kbd_intr` to disable ``KeyboardInterrupt`` if you
 are passing binary data via ``stdin``.
 """
 
