@@ -91,12 +91,13 @@ def qstr_info(verbose: Any) -> None:
 
 def qstr_info(*args):
     """
-    Print information about currently interned strings.  If the ``verbose``
-    argument is given then extra information is printed.
+    Prints how many strings are interned and how much RAM they use.
 
-    The information that is printed is implementation dependent, but currently
-    includes the number of interned strings and the amount of RAM they use.  In
-    verbose mode it prints out the names of all RAM-interned strings.
+    MicroPython uses string interning to save both RAM and ROM.
+    This avoids having to store duplicate copies of the same string.
+
+    If the ``verbose`` argument is given it also prints out the names of all
+    RAM-interned strings.
     """
 
 
