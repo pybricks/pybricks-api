@@ -9,7 +9,7 @@
 Access and control MicroPython internals.
 """
 
-from typing import Any, Literal, overload
+from typing import Any, overload
 
 
 def const(value: int) -> int:
@@ -28,32 +28,35 @@ def const(value: int) -> int:
 
 
 @overload
-def opt_level() -> None:
+def opt_level() -> int:
     ...
 
 
 @overload
-def opt_level(level: Literal[0, 1, 2, 3]) -> None:
+def opt_level(level: int) -> None:
     ...
 
 
 def opt_level(*args):
     """
-    If ``level`` is given then this function sets the optimization level for subsequent
-    compilation of scripts, and returns ``None``.  Otherwise it returns the current
-    optimization level.
+    Sets the optimization level for code compiled on the hub:
 
-    The optimization level controls the following compilation features:
+    0. Assertion statements are enabled. The built-in ``__debug__`` variable
+       is ``True``. Script line numbers are saved, so they can be reported when
+       an Exception occurs.
+    1. Assertions are ignored and ``__debug__`` is ``False``.
+       Script line numbers are saved.
+    2. Assertions are ignored and ``__debug__`` is ``False``.
+       Script line numbers are saved.
+    3. Assertions are ignored and ``__debug__`` is ``False``.
+       Script line numbers are *not* saved.
 
-    - Assertions: at level 0 assertion statements are enabled and compiled into the
-      bytecode; at levels 1 and higher assertions are not compiled.
-    - Built-in ``__debug__`` variable: at level 0 this variable expands to ``True``;
-      at levels 1 and higher it expands to ``False``.
-    - Source-code line numbers: at levels 0, 1 and 2 source-code line number are
-      stored along with the bytecode so that exceptions can report the line number
-      they occurred at; at levels 3 and higher line numbers are not stored.
+    This applies only to code that you run in the REPL, because regular scripts
+    are already compiled before they are sent to the hub.
 
-    The default optimization level is usually level 0.
+    If no argument is given, this function returns the current optimization
+    level.
+
     """
 
 
