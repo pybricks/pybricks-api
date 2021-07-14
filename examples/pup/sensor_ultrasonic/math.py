@@ -2,9 +2,7 @@ from pybricks.pupdevices import UltrasonicSensor
 from pybricks.parameters import Port
 from pybricks.tools import wait, StopWatch
 
-# The math module is part of standard MicroPython:
-# https://docs.micropython.org/en/latest/library/math.html
-from math import pi, sin
+from umath import pi, sin
 
 # Initialize the sensor.
 eyes = UltrasonicSensor(Port.A)

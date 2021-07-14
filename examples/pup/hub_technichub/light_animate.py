@@ -1,7 +1,7 @@
 from pybricks.hubs import TechnicHub
 from pybricks.parameters import Color
 from pybricks.tools import wait
-from math import sin, pi
+from umath import sin, pi
 
 # Initialize the hub.
 hub = TechnicHub()

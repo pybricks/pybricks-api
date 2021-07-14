@@ -2,9 +2,7 @@ from pybricks.pupdevices import Light
 from pybricks.parameters import Port
 from pybricks.tools import wait, StopWatch
 
-# The math module is part of standard MicroPython:
-# https://docs.micropython.org/en/latest/library/math.html
-from math import pi, cos
+from umath import pi, cos
 
 # Initialize the light and a StopWatch.
 light = Light(Port.A)
