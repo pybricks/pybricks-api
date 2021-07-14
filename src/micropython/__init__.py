@@ -72,12 +72,10 @@ def mem_info(verbose: Any) -> None:
 
 def mem_info(*args):
     """
-    Print information about currently used memory.  If the ``verbose`` argument
-    is given then extra information is printed.
+    Prints information about stack and heap memory usage.
 
-    The information that is printed is implementation dependent, but currently
-    includes the amount of stack and heap used.  In verbose mode it prints out
-    the entire heap indicating which blocks are used and which are free.
+    If the ``verbose`` argument is given, it also prints out
+    the entire heap, indicating which blocks are used and which are free.
     """
 
 
