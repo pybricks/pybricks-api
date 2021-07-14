@@ -1,3 +1,9 @@
+# Unreleased
+
+## Added:
+- MicroPython module documentation.
+- Examples for hub system functions including stop button and shutdown.
+
 # 1.5.0 - 2021-07-01
 
 ## Added:
