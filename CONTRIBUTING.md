@@ -20,20 +20,23 @@ will actually be implemented.
 
 - Commit messages have a one-line subject, a blank line and a multiline body:
 
-        prefix: subject
+        prefix: Subject of the change.
 
         body...
 
-- Use a prefix to categorize the change. Usually this is the path the the file
-  being changed. 
-  - If it is a documentation change, it can be shortened to `doc/<file>` (omit
-    `api` from the path).
-  - If it is an API change (in the `pybricks` folder), write `api/<file>` 
-    instead of `pybricks/<file>`.
-- The subject briefly describes _what_ was changed, e.g. `fix typo`.
+- Use a prefix to categorize the change:
+  - Use the import path as the prefix whenever possible. Examples:
+     - pybricks.tools: Add StopWatch class.
+     - pybricks.tools: Reorganize RST files.
+     - pybricks.tools.StopWatch: Fix return type.
+     - pybricks.tools.wait: Add example of waiting.
+     - pybricks.pupdevices: Fix all sensor class ports.
+     - umath.sin: Fix spelling of Hypotenuse.
+  - If an import path makes no sense, just use the file path without extensions:
+     - .vscode/settings: Fix file associations.
+- The subject briefly describes _what_ was changed. Use a short full sentence as in the examples above.
 - The body describes _why_ the change was made, e.g. `The word "sensor" was
   spelled incorrectly`.
-- See the [commit history][commits] for more examples.
 
 [commits]: https://github.com/pybricks/pybricks-api/commits/master
 
