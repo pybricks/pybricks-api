@@ -77,14 +77,14 @@ findings on our `support page`_ so we can make Pybricks even better.
    :caption: MicroPython Modules
    :hidden:
 
-   ubuiltins
-   micropython
-   uerrno
-   uio
-   umath
-   urandom
-   uselect
-   usys
+   micropython/index
+   micropython/micropython
+   micropython/uerrno
+   micropython/uio
+   micropython/umath
+   micropython/urandom
+   micropython/uselect
+   micropython/usys
 
 .. toctree::
    :maxdepth: 1
