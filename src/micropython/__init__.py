@@ -9,28 +9,20 @@
 Access and control MicroPython internals.
 """
 
-from typing import Any, Literal, Union, overload
+from typing import Any, Literal, overload
 
 
-def const(expression: Union[int, float]) -> Union[int, float]:
+def const(value: int) -> int:
     """
-    Used to declare that the expression is a constant so that the compile can
-    optimise it.  The use of this function should be as follows::
+    Declares the value as a constant. This value will be
+    substituted wherever it is used, which makes your code more efficient.
 
-        from micropython import const
+    To reduce memory usage further, prefix its name with an
+    underscore (``_ORANGES``). This constant can only be used within the
+    same file.
 
-        CONST_X = const(123)
-        CONST_Y = const(2 * CONST_X + 1)
-
-    Constants declared this way are still accessible as global variables from
-    outside the module they are declared in.  On the other hand, if a constant
-    begins with an underscore then it is hidden, it is not available as a global
-    variable, and does not take up any memory during execution.
-
-    This ``const`` function is recognized directly by the MicroPython parser and is
-    provided as part of the :mod:`micropython` module mainly so that scripts can be
-    written which run under both CPython and MicroPython, by following the above
-    pattern.
+    If you want to import the value from another module, use a name without an
+    underscore (``APPLES``). This uses a bit more memory.
     """
     ...
 

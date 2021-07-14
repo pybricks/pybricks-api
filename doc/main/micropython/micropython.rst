@@ -17,4 +17,11 @@
 .. autofunction:: micropython.kbd_intr
 
 
+Examples
+---------------------
 
+Using constants for efficiency
+******************************
+
+.. literalinclude::
+    ../../../examples/micropython/const.py
