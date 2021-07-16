@@ -138,8 +138,8 @@ class bytes:
 
     def __init__(self, *args):
         """
-        Returns a new “bytes” object, which is an immutable sequence of integers
-        in the range ``0 <= x < 256``.
+        Returns a new ``bytes`` object, which is an immutable sequence of integers
+        in the range ``0 <= x <= 255``.
         """
 
 
