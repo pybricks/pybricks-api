@@ -77,9 +77,9 @@ findings on our `support page`_ so we can make Pybricks even better.
    :caption: MicroPython Modules
    :hidden:
 
-   micropython/index
+   micropython/builtins
+   micropython/exceptions
    micropython/micropython
-   micropython/uerrno
    micropython/uio
    micropython/umath
    micropython/urandom
