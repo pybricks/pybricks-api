@@ -39,6 +39,18 @@ import uio
 import usys
 
 
+# These get overridden later on, but we still want to use the originals
+# for the purpose of typing the doc strings.
+_bool = bool
+_bytes = bytes
+_callable = callable
+_complex = complex
+_dict = dict
+_float = float
+_int = int
+_str = str
+_type = type
+
 # Functions and types
 
 
@@ -51,7 +63,7 @@ def abs(x: Any) -> Any:
     """
 
 
-def all(iterable: Iterable) -> bool:
+def all(iterable: Iterable) -> _bool:
     """
     Returns ``True`` if all elements of the iterable are true (or if the
     iterable is empty).
@@ -66,7 +78,7 @@ def all(iterable: Iterable) -> bool:
     """
 
 
-def any(iterable: Iterable) -> bool:
+def any(iterable: Iterable) -> _bool:
     """
     Returns ``True`` if any element of the iterable is true. If the iterable is
     empty, returns ``False``.
@@ -81,7 +93,7 @@ def any(iterable: Iterable) -> bool:
     """
 
 
-def bin(x: Any) -> str:
+def bin(x: Any) -> _str:
     """
     Converts an integer number to a binary string prefixed with “0b”. The result
     is a valid Python expression. If ``x`` is not a Python :class:`int` object,
@@ -113,15 +125,15 @@ class bytes:
         ...
 
     @overload
-    def __init__(self, source: Union[int, bytes, Iterable[int]]) -> None:
+    def __init__(self, source: Union[_int, _bytes, Iterable[_int]]) -> None:
         ...
 
     @overload
-    def __init__(self, source: str, encoding: str) -> None:
+    def __init__(self, source: _str, encoding: _str) -> None:
         ...
 
     @overload
-    def __init__(self, source: str, encoding: str, errors: str) -> None:
+    def __init__(self, source: _str, encoding: _str, errors: _str) -> None:
         ...
 
     def __init__(self, *args):
@@ -131,13 +143,13 @@ class bytes:
         """
 
 
-def callable(object: Any) -> bool:
+def callable(object: Any) -> _bool:
     """
     Returns ``True`` if the object argument appears callable, ``False`` if not.
     """
 
 
-def chr(i: int) -> str:
+def chr(i: _int) -> _str:
     """
     Returns the string representing a character whose Unicode code point is the
     integer ``i``. For example, ``chr(97)`` returns the string ``'a'``.
@@ -146,7 +158,7 @@ def chr(i: int) -> str:
     """
 
 
-def classmethod(method: callable) -> callable:
+def classmethod(method: _callable) -> _callable:
     """
     Transforms a method into a class method.
     """
@@ -159,20 +171,20 @@ class complex:
 
     @overload
     def __init__(
-        self, real: Union[float, SupportsFloat, complex, SupportsComplex]
+        self, real: Union[_float, SupportsFloat, _complex, SupportsComplex]
     ) -> None:
         ...
 
     @overload
     def __init__(
         self,
-        real: Union[float, SupportsFloat, complex, SupportsComplex],
-        imag: Union[float, SupportsFloat, complex, SupportsComplex],
+        real: Union[_float, SupportsFloat, _complex, SupportsComplex],
+        imag: Union[_float, SupportsFloat, _complex, SupportsComplex],
     ) -> None:
         ...
 
     @overload
-    def __init__(self, value: str) -> None:
+    def __init__(self, value: _str) -> None:
         ...
 
     def __init__(self, *args) -> None:
@@ -200,16 +212,16 @@ class dict:
 
 
 @overload
-def dir() -> List[str]:
+def dir() -> List[_str]:
     ...
 
 
 @overload
-def dir(object: Any) -> List[str]:
+def dir(object: Any) -> List[_str]:
     ...
 
 
-def dir(*args) -> List[str]:
+def dir(*args) -> List[_str]:
     """
     Without arguments, return the list of names in the current local scope. With
     an argument, attempt to return a list of valid attributes for that object.
@@ -217,12 +229,12 @@ def dir(*args) -> List[str]:
 
 
 @overload
-def divmod(a: int, b: int) -> Tuple[int, int]:
+def divmod(a: _int, b: _int) -> Tuple[_int, _int]:
     ...
 
 
 @overload
-def divmod(a: float, b: float) -> Tuple[float, float]:
+def divmod(a: _float, b: _float) -> Tuple[_float, _float]:
     ...
 
 
@@ -239,7 +251,7 @@ def enumerate(iterable: Iterable) -> Iterable:
 
 
 @overload
-def enumerate(iterable: Iterable, start: int) -> Iterable:
+def enumerate(iterable: Iterable, start: _int) -> Iterable:
     ...
 
 
@@ -260,17 +272,17 @@ def enumerate(*args) -> Iterable:
 
 
 @overload
-def eval(expression: str) -> Any:
+def eval(expression: _str) -> Any:
     ...
 
 
 @overload
-def eval(expression: str, globals: dict) -> Any:
+def eval(expression: _str, globals: _dict) -> Any:
     ...
 
 
 @overload
-def eval(expression: str, globals: dict, locals: Mapping) -> Any:
+def eval(expression: _str, globals: _dict, locals: Mapping) -> Any:
     ...
 
 
@@ -291,12 +303,12 @@ def exec(object: Any) -> None:
 
 
 @overload
-def exec(object: Any, globals: dict) -> None:
+def exec(object: Any, globals: _dict) -> None:
     ...
 
 
 @overload
-def exec(object: Any, globals: dict, locals: Mapping) -> None:
+def exec(object: Any, globals: _dict, locals: Mapping) -> None:
     ...
 
 
@@ -312,7 +324,7 @@ class float:
         ...
 
     @overload
-    def __init__(self, x: int) -> None:
+    def __init__(self, x: _int) -> None:
         ...
 
     @overload
@@ -320,7 +332,7 @@ class float:
         ...
 
     @overload
-    def __init__(self, x: str) -> None:
+    def __init__(self, x: _str) -> None:
         ...
 
     def __init__(self, *args) -> None:
@@ -330,12 +342,12 @@ class float:
 
 
 @overload
-def getattr(object: Any, name: str) -> Any:
+def getattr(object: Any, name: _str) -> Any:
     ...
 
 
 @overload
-def getattr(object: Any, name: str, default: Any) -> Any:
+def getattr(object: Any, name: _str, default: Any) -> Any:
     ...
 
 
@@ -345,20 +357,20 @@ def getattr(*args):
     """
 
 
-def globals() -> Dict[str, Any]:
+def globals() -> Dict[_str, Any]:
     """
     Return a dictionary representing the current global symbol table.
     """
 
 
-def hasattr(object: Any, name: str) -> bool:
+def hasattr(object: Any, name: _str) -> _bool:
     """
     The result is ``True`` if the string is the name of one of the object’s
     attributes, ``False`` if not.
     """
 
 
-def hash(object: Any) -> int:
+def hash(object: Any) -> _int:
     """
     Returns the hash value of the object (if it has one).
     """
@@ -383,13 +395,13 @@ def help(*args) -> None:
     """
 
 
-def hex(x: int) -> str:
+def hex(x: _int) -> _str:
     """
     Converts an integer number to a lowercase hexadecimal string prefixed with “0x”.
     """
 
 
-def id() -> int:
+def id() -> _int:
     """
     Returns the “identity” of an object. This is an integer which is guaranteed
     to be unique and constant for this object during its lifetime.
@@ -397,16 +409,16 @@ def id() -> int:
 
 
 @overload
-def input() -> str:
+def input() -> _str:
     ...
 
 
 @overload
-def input(prompt: str) -> str:
+def input(prompt: _str) -> _str:
     ...
 
 
-def input(*args) -> str:
+def input(*args) -> _str:
     """
     If the prompt argument is present, it is written to standard output without
     a trailing newline. The function then reads a line from input, converts it
@@ -422,15 +434,15 @@ class int:
         ...
 
     @overload
-    def __init__(self, x: str) -> None:
+    def __init__(self, x: _str) -> None:
         ...
 
     @overload
-    def __init__(self, x: str, base: int) -> None:
+    def __init__(self, x: _str, base: _int) -> None:
         ...
 
     @overload
-    def __init__(self, x: Union[int, SupportsInt]) -> None:
+    def __init__(self, x: Union[_int, SupportsInt]) -> None:
         ...
 
     def __init__(self, *args) -> None:
@@ -439,26 +451,26 @@ class int:
         returns ``0`` if no arguments are given.
         """
 
-    def to_bytes(self, length: int, byteorder: Literal["little", "big"]) -> bytes:
+    def to_bytes(self, length: _int, byteorder: Literal["little", "big"]) -> _bytes:
         """
         Returns an array of bytes representing an integer.
         """
 
     @classmethod
-    def from_bytes(cls, bytes: bytes, byteorder: Literal["little", "big"]) -> int:
+    def from_bytes(cls, _bytes: _bytes, byteorder: Literal["little", "big"]) -> _int:
         """
         Returns the integer represented by the given array of bytes.
         """
 
 
-def isinstance(object: Any, classinfo: Union[type, Tuple[type]]) -> bool:
+def isinstance(object: Any, classinfo: Union[_type, Tuple[_type]]) -> _bool:
     """
     Returns ``True`` if the ``object`` argument is an instance of the ``classinfo``
     argument, or of a subclass thereof.
     """
 
 
-def issubclass(cls: type, classinfo: Union[type, Tuple[type]]) -> bool:
+def issubclass(cls: _type, classinfo: Union[_type, Tuple[_type]]) -> _bool:
     """
     Returns ``True`` if ``cls`` is a subclass of ``classinfo``.
     """
@@ -470,7 +482,7 @@ def iter(object: Union[Iterable, Sequence]) -> Iterator:
     """
 
 
-def len(s: Sequence) -> int:
+def len(s: Sequence) -> _int:
     """
     Returns the length (the number of items) of an object.
     """
@@ -491,7 +503,7 @@ class list:
         """
 
 
-def locals() -> dict:
+def locals() -> _dict:
     """
     Updates and returns a dictionary representing the current local symbol table.
     """
@@ -561,7 +573,7 @@ class object:
         """
 
 
-def oct(x: int) -> str:
+def oct(x: _int) -> _str:
     """
     Converts an integer number to an octal string prefixed with “0o”.
     """
@@ -570,7 +582,7 @@ def oct(x: int) -> str:
 # .. function:: open()
 
 
-def ord(c: str) -> int:
+def ord(c: _str) -> _int:
     """
     Given a string representing one Unicode character, return an integer
     representing the Unicode code point of that character.
@@ -580,12 +592,12 @@ def ord(c: str) -> int:
 
 
 @overload
-def pow(base: int, exp: int) -> Union[int, float]:
+def pow(base: _int, exp: _int) -> Union[_int, _float]:
     ...
 
 
 @overload
-def pow(base: int, exp: int, mod: int) -> Union[int, float]:
+def pow(base: _int, exp: _int, mod: _int) -> Union[_int, _float]:
     ...
 
 
@@ -599,7 +611,7 @@ def pow():
     """
 
 
-def print(*objects, sep: str = " ", end: str = "\n", file: uio.FileIO = usys.stdin):
+def print(*objects, sep: _str = " ", end: _str = "\n", file: uio.FileIO = usys.stdin):
     """
     Prints ``objects`` to the text stream ``file``, separated by ``sep`` and
     followed by ``end``. ``sep``, ``end`` and ``file``, if present,
@@ -611,24 +623,24 @@ def print(*objects, sep: str = " ", end: str = "\n", file: uio.FileIO = usys.std
 
 class range:
     @overload
-    def __init__(self, stop: int) -> None:
+    def __init__(self, stop: _int) -> None:
         ...
 
     @overload
-    def __init__(self, start: int, stop: int) -> None:
+    def __init__(self, start: _int, stop: _int) -> None:
         ...
 
     @overload
-    def __init__(self, start: int, stop: int, step: int) -> None:
+    def __init__(self, start: _int, stop: _int, step: _int) -> None:
         ...
 
     def __init__(self, *args) -> None:
         """
-        Rather than being a function, ``range`` is actually an immutable sequence type.
+        Rather than being a function, ``range`` is actually an immutable sequence _type.
         """
 
 
-def repr(object: Any) -> str:
+def repr(object: Any) -> _str:
     """
     Returns a string containing a printable representation of an object.
     """
@@ -643,12 +655,12 @@ def reversed(seq: Sequence) -> Iterator:
 
 
 @overload
-def round(number: float) -> int:
+def round(number: _float) -> _int:
     ...
 
 
 @overload
-def round(number: float, ndigits: int) -> float:
+def round(number: _float, ndigits: _int) -> _float:
     ...
 
 
@@ -670,21 +682,22 @@ def round(*args):
     """
 
 
-# class set:
-#     @overload
-#     def __init__(self) -> None:
-#         ...
-#     @overload
-#     def __init__(self, iterable: Iterable) -> None:
-#         ...
+class set:
+    @overload
+    def __init__(self) -> None:
+        ...
 
-#     def __init__(self, *args) -> None:
-#         """
-#         Returns a new set object, optionally with elements taken from ``iterable``.
-#         """
+    @overload
+    def __init__(self, iterable: Iterable) -> None:
+        ...
+
+    def __init__(self, *args) -> None:
+        """
+        Returns a new set object, optionally with elements taken from ``iterable``.
+        """
 
 
-def setattr(object: Any, name: str, value: Any) -> None:
+def setattr(object: Any, name: _str, value: Any) -> None:
     """
     Assigns the value to the attribute, provided the object allows it.
 
@@ -694,15 +707,15 @@ def setattr(object: Any, name: str, value: Any) -> None:
 
 class slice:
     @overload
-    def __init__(self, stop: int) -> None:
+    def __init__(self, stop: _int) -> None:
         ...
 
     @overload
-    def __init__(self, start: int, stop: int) -> None:
+    def __init__(self, start: _int, stop: _int) -> None:
         ...
 
     @overload
-    def __init__(self, start: int, stop: int, step: int) -> None:
+    def __init__(self, start: _int, stop: _int, step: _int) -> None:
         ...
 
     def __init__(self, *args) -> None:
@@ -723,7 +736,7 @@ def sorted(iterable: Iterable, key=None, reverse=False) -> List:
     """
 
 
-def staticmethod(method: callable) -> callable:
+def staticmethod(method: _callable) -> _callable:
     """
     Transforms a method into a static method.
     """
@@ -736,7 +749,7 @@ class str:
 
     @overload
     def __init__(
-        self, object: bytes = b"", encoding: str = "utf-8", errors: str = "strict"
+        self, object: _bytes = b"", encoding: _str = "utf-8", errors: _str = "strict"
     ) -> None:
         ...
 
@@ -747,12 +760,12 @@ class str:
 
 
 @overload
-def sum(iterable: Iterable) -> int:
+def sum(iterable: Iterable) -> _int:
     ...
 
 
 @overload
-def sum(iterable: Iterable, start: int) -> int:
+def sum(iterable: Iterable, start: _int) -> _int:
     ...
 
 
@@ -764,24 +777,24 @@ def sum(*args):
 
 
 @overload
-def super() -> type:
+def super() -> _type:
     ...
 
 
 @overload
-def super(type: type) -> type:
+def super(_type: _type) -> _type:
     ...
 
 
 @overload
-def super(type: type, object_or_type: Any) -> type:
+def super(_type: _type, object_or_type: Any) -> _type:
     ...
 
 
 def super(*args):
     """
     Returns am object that delegates method calls to a parent or sibling class
-    of ``type``.
+    of ``_type``.
     """
 
 
@@ -804,7 +817,7 @@ class tuple:
 class type:
     def __init__(self, object: Any) -> None:
         """
-        With one argument, returns the type of an ``object``.
+        With one argument, returns the _type of an ``object``.
         """
 
 
@@ -958,7 +971,7 @@ class OSError(Exception):
     error, including I/O failures.
     """
 
-    errno: int
+    errno: _int
     """
     A numeric error code.
 
