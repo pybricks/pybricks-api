@@ -233,29 +233,30 @@ def divmod(a, b):
     """
 
 
-class enumerate:
-    @overload
-    def __init__(self, iterable: Iterable) -> None:
-        ...
+@overload
+def enumerate(iterable: Iterable) -> Iterable:
+    ...
 
-    @overload
-    def __init__(self, iterable: Iterable, start: int) -> None:
-        ...
 
-    def __init__(self, *args) -> None:
-        """
-        Returns an enumerate object.
+@overload
+def enumerate(iterable: Iterable, start: int) -> Iterable:
+    ...
 
-        Equivalent to::
 
-            def enumerate(sequence, start=0):
-                n = start
-                for elem in sequence:
-                    yield n, elem
-                    n += 1
+def enumerate(*args) -> Iterable:
+    """
+    Returns an enumerate object.
 
-        .. note:: This type is not available on the BOOST Move hub.
-        """
+    Equivalent to::
+
+        def enumerate(sequence, start=0):
+            n = start
+            for elem in sequence:
+                yield n, elem
+                n += 1
+
+    .. note:: This type is not available on the BOOST Move hub.
+    """
 
 
 @overload
