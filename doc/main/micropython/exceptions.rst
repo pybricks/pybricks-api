@@ -33,8 +33,6 @@ Exceptions and error codes
 
 .. autoclass:: ubuiltins.NotImplementedError
 
-.. autoclass:: ubuiltins.OSError
-
 .. autoclass:: ubuiltins.OverflowError
 
 .. autoclass:: ubuiltins.RuntimeError
@@ -51,8 +49,19 @@ Exceptions and error codes
 
 .. autoclass:: ubuiltins.ZeroDivisionError
 
-.. automodule:: uerrno
-   :no-members:
+OSError
+--------
+
+.. autoclass:: ubuiltins.OSError
+
+
+.. rubric:: uerrno module
+
+.. module:: uerrno
+
+The ``errno`` attribute of an ``OSError`` indicates why the exception was
+raised. It has one of the following values, which can be imported from the
+``uerrno`` module:
 
 .. autodata:: uerrno.EAGAIN
 
@@ -73,3 +82,12 @@ Exceptions and error codes
 .. autodata:: uerrno.ETIMEDOUT
 
 .. autodata:: uerrno.errorcode
+
+Examples
+---------------------
+
+Detect devices using ``OSError``
+*****************************************
+
+.. literalinclude::
+    ../../../examples/micropython/oserror.py

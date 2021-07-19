@@ -967,15 +967,15 @@ class NotImplementedError(RuntimeError):
 
 class OSError(Exception):
     """
-    This exception is raised when a system function returns a system-related
-    error, including I/O failures.
+    This exception is raised by the firmware, which is
+    the Operating System that runs on the hub. For example, it
+    raises an ``OSError`` if you call ``Motor(Port.A)`` when there is no
+    motor on port A.
     """
 
     errno: _int
     """
-    A numeric error code.
-
-    Also see :mod:`uerrno`.
+    Specifies which kind of ``OSError`` occurred, as listed below.
     """
 
 
@@ -1010,8 +1010,7 @@ class SyntaxError(Exception):
 
 class SystemExit(BaseException):
     """
-    This exception is raised when the stop button is pressed (on the hub or in
-    the IDE).
+    Raised when you press the stop button on the hub or in the Pybricks Code app.
     """
 
 

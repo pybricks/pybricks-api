@@ -61,9 +61,5 @@ The operation timed out.
 
 errorcode: Dict[int, str]
 """
-Dictionary mapping numeric error codes to strings with symbolic error
-code (see above)::
-
-    >>> print(uerrno.errorcode[uerrno.EEXIST])
-    EEXIST
+Dictionary that maps numeric error codes to strings with symbolic error code.
 """
