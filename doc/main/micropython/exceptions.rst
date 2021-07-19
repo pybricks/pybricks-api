@@ -1,67 +1,116 @@
 Exceptions and error codes
 =====================================================
 
-.. autoclass:: ubuiltins.BaseException
 
-.. autoclass:: ubuiltins.Exception
+List of all exceptions
+----------------------
+
+This section lists all available exceptions in alphabetical order.
 
 .. autoclass:: ubuiltins.ArithmeticError
-
-.. autoclass:: ubuiltins.LookupError
+    :no-members:
 
 .. autoclass:: ubuiltins.AssertionError
+    :no-members:
 
 .. autoclass:: ubuiltins.AttributeError
+    :no-members:
+
+.. autoclass:: ubuiltins.BaseException
+    :no-members:
 
 .. autoclass:: ubuiltins.EOFError
+    :no-members:
+
+.. autoclass:: ubuiltins.Exception
+    :no-members:
 
 .. autoclass:: ubuiltins.GeneratorExit
+    :no-members:
 
 .. autoclass:: ubuiltins.ImportError
+    :no-members:
 
 .. autoclass:: ubuiltins.IndentationError
+    :no-members:
 
 .. autoclass:: ubuiltins.IndexError
-
-.. autoclass:: ubuiltins.KeyError
+    :no-members:
 
 .. autoclass:: ubuiltins.KeyboardInterrupt
+    :noindex:
+    :no-members:
+
+    See also `stopping a program`_.
+
+.. autoclass:: ubuiltins.KeyError
+    :no-members:
+
+.. autoclass:: ubuiltins.LookupError
+    :no-members:
 
 .. autoclass:: ubuiltins.MemoryError
+    :no-members:
 
 .. autoclass:: ubuiltins.NameError
+    :no-members:
 
 .. autoclass:: ubuiltins.NotImplementedError
-
-.. autoclass:: ubuiltins.OverflowError
-
-.. autoclass:: ubuiltins.RuntimeError
-
-.. autoclass:: ubuiltins.StopIteration
-
-.. autoclass:: ubuiltins.SyntaxError
-
-.. autoclass:: ubuiltins.SystemExit
-
-.. autoclass:: ubuiltins.TypeError
-
-.. autoclass:: ubuiltins.ValueError
-
-.. autoclass:: ubuiltins.ZeroDivisionError
-
-OSError
---------
+    :no-members:
 
 .. autoclass:: ubuiltins.OSError
+    :noindex:
 
+    See the `OSError`_ section for additional details.
 
-.. rubric:: uerrno module
+.. autoclass:: ubuiltins.OverflowError
+    :no-members:
 
-.. module:: uerrno
+.. autoclass:: ubuiltins.RuntimeError
+    :no-members:
+
+.. autoclass:: ubuiltins.StopIteration
+    :no-members:
+
+.. autoclass:: ubuiltins.SyntaxError
+    :no-members:
+
+.. autoclass:: ubuiltins.SystemExit
+    :noindex:
+    :no-members:
+
+    See also `stopping a program`_.
+
+.. autoclass:: ubuiltins.TypeError
+    :no-members:
+
+.. autoclass:: ubuiltins.ValueError
+    :no-members:
+
+.. autoclass:: ubuiltins.ZeroDivisionError
+    :no-members:
+
+.. _stopping a program:
+
+Stopping programs
+-----------------
+
+.. autoclass:: ubuiltins.KeyboardInterrupt
+    :no-members:
+
+.. autoclass:: ubuiltins.SystemExit
+    :no-members:
+
+.. _OSError:
+
+Using ``OSError`` with :mod:`uerrno`
+------------------------------------
 
 The ``errno`` attribute of an ``OSError`` indicates why the exception was
-raised. It has one of the following values, which can be imported from the
-``uerrno`` module:
+raised. This attribute has one of the following values, which can be imported
+from the ``uerrno`` module. See also :ref:`this example <device_detection>`.
+
+.. module:: uerrno
 
 .. autodata:: uerrno.EAGAIN
 
@@ -85,6 +134,8 @@ raised. It has one of the following values, which can be imported from the
 
 Examples
 ---------------------
+
+.. _device_detection:
 
 Detect devices using ``OSError``
 *****************************************

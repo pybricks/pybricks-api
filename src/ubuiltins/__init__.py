@@ -866,7 +866,7 @@ class BaseException:
 
 class Exception(BaseException):
     """
-    All built-in, non-system-exiting exceptions are derived from this class.
+    All built-in exceptions are derived from this class.
 
     All user-defined exceptions should also be derived from this class.
     """
@@ -916,7 +916,7 @@ class GeneratorExit(BaseException):
 
 class ImportError(Exception):
     """
-    Raised when the ``import`` statement has troubles trying to load a module.
+    Raised when the ``import`` statement is unable to load a module.
     """
 
 
@@ -975,7 +975,7 @@ class OSError(Exception):
 
     errno: _int
     """
-    Specifies which kind of ``OSError`` occurred, as listed below.
+    Specifies which kind of ``OSError`` occurred, as listed :ref:`here <OSError>`.
     """
 
 
@@ -998,7 +998,7 @@ class StopIteration(Exception):
     Raised by built-in function :meth:`next` and an iterator’s ``__next__()``
     method to signal that there are no further items produced by the iterator.
 
-    .. tip:: Generator functions should return instead of raising this directly.
+    Generator functions should return instead of raising this directly.
     """
 
 
@@ -1023,8 +1023,8 @@ class TypeError(Exception):
 class ValueError(Exception):
     """
     Raised when an operation or function receives an argument that has the right
-    type but an inappropriate value, and the situation is not described by a more
-    precise exception such as :class:`IndexError`.
+    type but an inappropriate value. This is used when the situation is
+    not described by a more precise exception such as :class:`IndexError`.
     """
 
 
