@@ -1,39 +1,45 @@
 Pybricks API Documentation
 ==================================================================
 
-This documentation has everything you need to install Pybricks and
-run your first scripts.
+`Pybricks <https://pybricks.com/>`_ is Python coding for smart LEGO® hubs.
+Run MicroPython scripts
+directly on the hub, and get full control of your motors and sensors.
+
+Pybricks runs on LEGO® BOOST, City, Technic, MINDSTORMS®, and SPIKE®. You can
+code using Windows, Mac, Linux, Chromebook, and Android.
+
+**What's on this page?**
+
+This page provides API documentation and short example snippets. If you're new
+to Pybricks, or if you're looking for bigger example projects, check out
+the `Pybricks website`_ instead.
 
 
-**Step 1: Install Pybricks**
+.. note:: Are you using LEGO MINDSTORMS EV3? Check out the
+          `EV3 documentation`_ instead.
 
-Pybricks scripts are the same across all hubs. The only difference is in how
-you install Pybricks and how you run scripts. To get started, click one of
-the platforms below.
+
+**Installation**
+
+To run Pybricks MicroPython scripts, you must update the firmware on the hub.
+To get started, click one of the platforms below.
 
 .. list-table::
 
-   * - **MINDSTORMS EV3**
-     - **Powered Up (Technic/City/BOOST)**
-     - **SPIKE / MINDSTORMS Inventor**
+   * - **Technic Hub, City Hub, BOOST Move Hub**
+     - **SPIKE Prime Hub / MINDSTORMS Inventor Hub**
 
-   * - .. image:: ../main/images/ev3brick.png
-         :target: https://pybricks.com/install/mindstorms-ev3/installation
-
-     - .. figure:: ../main/images/powereduphubs.png
+   * - .. figure:: ../main/images/powereduphubs.png
          :target: https://pybricks.com/install/technic-boost-city/
 
      - .. figure:: ../main/images/primeinventorhub.png
           :target: https://pybricks.com/install/spike-mindstorms/
 
-
-**Step 2: Start coding!**
-
-After you've followed the installation steps for your hub,
+Once installed, Pybricks works the same for all hubs.
 check out the Pybricks modules in the left hand menu to see what
 you can do.
 
-**Step 3: Share what you made (or ask for help!)**
+**Get involved!**
 
 Got questions or issues? Please share your
 findings on our `support page`_ so we can make Pybricks even better.
@@ -41,6 +47,8 @@ findings on our `support page`_ so we can make Pybricks even better.
 
 
 .. _support page: https://github.com/pybricks/support/issues/
+.. _EV3 documentation: https://pybricks.com/ev3-micropython/
+.. _Pybricks website: https://pybricks.com/
 
 .. toctree::
     :maxdepth: 1
