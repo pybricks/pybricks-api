@@ -258,7 +258,17 @@ latex_documents = [
      author, 'manual'),
 ]
 
-# -- Options for manual page output ---------------------------------------
+# -- Content control -----------------------------------------------------
+
+
+exclude_patterns = [
+    'ev3devices.rst',
+    'hubs/ev3brick.rst',
+    'media.rst',
+    'messaging.rst',
+    'nxtdevices.rst'
+]
+
 
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).

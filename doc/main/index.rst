@@ -70,14 +70,10 @@ findings on our `support page`_ so we can make Pybricks even better.
 
    hubs/index
    pupdevices/index
-   ev3devices
-   nxtdevices
    iodevices/index
    parameters/index
    tools/index
    robotics
-   media
-   messaging
    geometry
 
 .. toctree::
