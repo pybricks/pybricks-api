@@ -38,10 +38,7 @@ This section lists all available exceptions in alphabetical order.
     :no-members:
 
 .. autoclass:: ubuiltins.KeyboardInterrupt
-    :noindex:
     :no-members:
-
-    See also `stopping a program`_.
 
 .. autoclass:: ubuiltins.KeyError
     :no-members:
@@ -76,10 +73,7 @@ This section lists all available exceptions in alphabetical order.
     :no-members:
 
 .. autoclass:: ubuiltins.SystemExit
-    :noindex:
     :no-members:
-
-    See also `stopping a program`_.
 
 .. autoclass:: ubuiltins.TypeError
     :no-members:
@@ -88,17 +82,6 @@ This section lists all available exceptions in alphabetical order.
     :no-members:
 
 .. autoclass:: ubuiltins.ZeroDivisionError
-    :no-members:
-
-.. _stopping a program:
-
-Stopping programs
------------------
-
-.. autoclass:: ubuiltins.KeyboardInterrupt
-    :no-members:
-
-.. autoclass:: ubuiltins.SystemExit
     :no-members:
 
 .. _OSError:
@@ -135,9 +118,21 @@ from the ``uerrno`` module. See also :ref:`this example <device_detection>`.
 Examples
 ---------------------
 
+Debugging in the REPL terminal
+*****************************************
+
+.. literalinclude::
+    ../../../examples/micropython/keyboard_interrupt.py
+
+Running code when the stop button is pressed
+********************************************
+
+.. literalinclude::
+    ../../../examples/micropython/system_exit.py
+
 .. _device_detection:
 
-Detect devices using ``OSError``
+Detecting devices using ``OSError``
 *****************************************
 
 .. literalinclude::
