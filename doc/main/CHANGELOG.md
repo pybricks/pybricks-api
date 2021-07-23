@@ -3,6 +3,8 @@
 ## Added:
 - MicroPython module documentation.
 - Examples for hub system functions including stop button and shutdown.
+- Build IDE docs as main docs with minor changes, instead of a completely
+  separate build.
 
 # 1.5.0 - 2021-07-01
 
