@@ -42,10 +42,6 @@ from pybricks._common import Speaker  # noqa E402
 # this line of code grabbed from docs.readthedocs.org
 ON_RTD = os.environ.get('READTHEDOCS', None) == 'True'
 
-# Since tags cannot be passed via SPHINXOPTS on read the docs, add it manually.
-if ON_RTD:
-    tags.add('main')
-
 _pyproject = toml.load(os.path.join(TOP_DIR, 'pyproject.toml'))
 
 # -- General configuration ------------------------------------------------

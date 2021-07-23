@@ -19,4 +19,31 @@ html_favicon = '../common/images/favicon.ico'
 html_logo = '../common/images/pybricks-logo-rtd.png'
 latex_logo = '../common/images/pybricks-logo-large.png'
 
+# Build main docs for RTD by default.
+# Since tags cannot be passed via SPHINXOPTS on read the docs, add it manually.
+if os.environ.get('READTHEDOCS', None) == 'True':
+    tags.add('main')  # noqa F821
+
+
+# Addtional configuration of the IDE docs
+if 'ide' in tags.tags:  # noqa F821
+    _DISCLAIMER = ''
+    html_show_copyright = False
+    html_show_sphinx = False
+    html_css_files = ['css/ide.css']
+    html_js_files = ['js/ide.js']
+
+    imgmath_image_format = 'svg'
+    imgmath_use_preview = True  # requires Sphinx v3
+    imgmath_latex_preamble = r'''
+    \usepackage{newtxsf}
+    '''
+
 exec(open(os.path.abspath("../common/conf.py")).read())
+
+# Addtional configuration of the IDE docs
+if 'ide' in tags.tags:  # noqa F821
+
+    extensions.remove('sphinx.ext.mathjax')  # noqa F821
+    extensions.append('sphinx.ext.imgmath')  # noqa F821
+    html_theme_options['prev_next_buttons_location'] = None  # noqa F821
