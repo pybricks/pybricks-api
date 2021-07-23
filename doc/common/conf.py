@@ -326,32 +326,3 @@ def get_signature_prefix(self, sig):
 
 
 PyClassmember.get_signature_prefix = get_signature_prefix
-
-
-# HACK: For certain hub attributes, we list the class members of the attributes
-# class as if the attribute was a nested class so that readers don't have to
-# skip around the docs as much. To make this work, we replace the attribute
-# values with the type and override PythonDomain.find_obj so that references
-# still work.
-
-base_find_obj = PythonDomain.find_obj
-
-
-def find_obj(self, env, modname, classname, name, type, searchmode=0):
-    if modname == 'pybricks.hubs':
-        if classname == 'screen':
-            if name.startswith('Font.') or name == 'Font':
-                modname = 'pybricks.media.ev3dev'
-            elif name.startswith('Image.') or name == 'Image':
-                modname = 'pybricks.media.ev3dev'
-            else:
-                classname = 'EV3Brick.screen'
-        elif classname == 'speaker':
-            classname = 'EV3Brick.speaker'
-    return base_find_obj(self, env, modname, classname, name, type, searchmode)
-
-
-PythonDomain.find_obj = find_obj
-
-EV3Brick.screen = Image
-EV3Brick.speaker = Speaker
