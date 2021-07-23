@@ -34,7 +34,6 @@ class Control:
         kd: Optional[int] = None,
         integral_range: Optional[int] = None,
         integral_rate: Optional[int] = None,
-        feed_forward: Optional[int] = None,
     ) -> None: ...
     @overload
     def target_tolerances(self) -> Tuple[int, int]: ...

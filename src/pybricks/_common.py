@@ -116,7 +116,7 @@ class Control:
         """
         pass
 
-    def pid(self, kp, ki, kd, integral_range, integral_rate, feed_forward):
+    def pid(self, kp, ki, kd, integral_range, integral_rate):
         """Gets or sets the PID values for position and speed control.
 
         If no arguments are given, this will return the current values.
@@ -135,10 +135,6 @@ class Control:
                 are accumulated.
             integral_rate (:ref:`speed` or :ref:`linspeed`): Maximum rate at
                 which the error integral is allowed to grow.
-            feed_forward (:ref:`percentage`):
-                This adds a feed forward signal to the PID feedback signal, in
-                the direction of the speed reference. This value is expressed
-                as a percentage of the absolute maximum duty cycle.
         """
         pass
 
