@@ -40,4 +40,4 @@ jobs:
         sudo apt-get update
         sudo apt-get install dvisvgm preview-latex-style texlive texlive-fonts-extra texlive-latex-extra
     - name: Build html docs for Pybricks Code IDE
-      run: poetry run make -C doc html SOURCEDIR=main SPHINXOPTS=-tide
+      run: poetry run make -C doc html SOURCEDIR=main SPHINXOPTS="-W -tide"
