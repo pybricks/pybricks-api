@@ -190,10 +190,8 @@ class Control:
         pass
 
     def load(self):
-        """Gets the load acting on the ``Motor`` or ``DriveBase``.
-
-        This value is determined from the feedback torque that is
-        needed to track the speed or position command given by the user.
+        """Estimates the load based on the torque required to maintain the
+        specified speed or angle.
 
         When coasting, braking, or controlling the duty cycle manually, the
         load cannot be estimated in this way. Then this method returns zero.

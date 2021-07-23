@@ -132,5 +132,4 @@ Pybricks Documentation
    :hidden:
 
    signaltypes
-   motors
 ..    frames

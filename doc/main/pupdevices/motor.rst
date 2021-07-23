@@ -40,21 +40,41 @@ Motors with Rotation Sensors
 
     .. automethod:: pybricks.pupdevices.Motor.run_target
 
+    .. automethod:: pybricks.pupdevices.Motor.track_target
+
     .. automethod:: pybricks.pupdevices.Motor.run_until_stalled
 
     .. automethod:: pybricks.pupdevices.Motor.dc
 
-    .. rubric:: Advanced motion control
+    .. _settings:
 
-    .. automethod:: pybricks.pupdevices.Motor.track_target
+    .. rubric:: Motor status
 
-    .. autoattribute:: pybricks.ev3devices.Motor.control
-        :annotation:
-        :noindex:
+    .. attribute:: control.scale
 
-.. FIXME: above should point to pupdevices but inherited class attributes
-   do not work yet (https://github.com/sphinx-doc/sphinx/issues/741).
+        Number of degrees that the motor turns to complete one degree at the
+        output of the gear train. This is the gear ratio determined from the
+        ``gears`` argument when initializing the motor.
 
+    .. automethod:: pybricks.pupdevices.Motor.control.done
+
+    .. automethod:: pybricks.pupdevices.Motor.control.stalled
+
+    .. automethod:: pybricks.pupdevices.Motor.control.load
+
+    .. rubric:: Motor settings
+
+    You can only change these settings while the controller is stopped. For
+    example, you can change them at the start of your program. Alternatively,
+    first call :meth:`stop() <pybricks.pupdevices.Motor.stop>`, and then change the settings.
+
+    .. automethod:: pybricks.pupdevices.Motor.control.limits
+
+    .. automethod:: pybricks.pupdevices.Motor.control.pid
+
+    .. automethod:: pybricks.pupdevices.Motor.control.target_tolerances
+
+    .. automethod:: pybricks.pupdevices.Motor.control.stall_tolerances
 
 Initialization Examples
 -----------------------
