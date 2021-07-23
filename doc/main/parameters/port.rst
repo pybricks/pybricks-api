@@ -22,17 +22,3 @@ Port
 
     .. autoattribute:: pybricks.parameters.Port.F
         :annotation:
-
-    EV3 Sensor ports:
-
-    .. autoattribute:: pybricks.parameters.Port.S1
-        :annotation:
-
-    .. autoattribute:: pybricks.parameters.Port.S2
-        :annotation:
-
-    .. autoattribute:: pybricks.parameters.Port.S3
-        :annotation:
-
-    .. autoattribute:: pybricks.parameters.Port.S4
-        :annotation:
