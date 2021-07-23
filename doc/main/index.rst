@@ -101,7 +101,7 @@ Pybricks Documentation
 
 .. toctree::
    :maxdepth: 1
-   :caption: Pybricks Modules
+   :caption: Pybricks Package
    :hidden:
 
    hubs/index
@@ -111,6 +111,7 @@ Pybricks Documentation
    tools/index
    robotics
    geometry
+   signaltypes
 
 .. toctree::
    :maxdepth: 1
@@ -125,11 +126,3 @@ Pybricks Documentation
    micropython/urandom
    micropython/uselect
    micropython/usys
-
-.. toctree::
-   :maxdepth: 1
-   :caption: Engineering Extras
-   :hidden:
-
-   signaltypes
-..    frames
