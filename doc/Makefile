@@ -2,7 +2,7 @@
 #
 
 # You can set these variables from the command line.
-SPHINXOPTS    = -W
+SPHINXOPTS    = -W -tmain
 SPHINXBUILD   = sphinx-build
 SPHINXPROJ    = Pybricks
 SOURCEDIR     = main

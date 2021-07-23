@@ -61,15 +61,15 @@ Initial setup:
 Build docs:
 
     # Linux
-    poetry run make -C doc html SPHINXOPTS=-tmain
+    poetry run make -C doc html
     xdg-open doc/main/build/html/index.html
 
     # macOS
-    poetry run make -C doc html SPHINXOPTS=-tmain
+    poetry run make -C doc html
     open doc/main/build/html/index.html
 
     # Windows (PowerShell)
-    poetry run doc\make.bat html SPHINXOPTS=-tmain
+    poetry run doc\make.bat html
     Invoke-Item doc\main\build\html\index.html
 
 Linting:

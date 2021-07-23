@@ -7,7 +7,7 @@ REM Command file for Sphinx documentation
 if "%SPHINXBUILD%" == "" (
 	set SPHINXBUILD=sphinx-build
 )
-set SPHINXOPTS=-W
+set SPHINXOPTS=-W -tmain
 set SOURCEDIR=main
 set BUILDDIR=%SOURCEDIR%/build
 set SPHINXPROJ=Pybricks
