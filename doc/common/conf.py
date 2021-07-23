@@ -314,15 +314,3 @@ def setup(app: Sphinx):
 
 
 # -- Python domain hacks ---------------------------------------------------
-
-real_get_signature_prefix = PyClassmember.get_signature_prefix
-
-
-def get_signature_prefix(self, sig):
-    # hacks for battery and light
-    if sig.count('.') >= 2:
-        return ''
-    return real_get_signature_prefix(self, sig)
-
-
-PyClassmember.get_signature_prefix = get_signature_prefix
