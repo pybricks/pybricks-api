@@ -4,15 +4,6 @@
 .. automodule:: pybricks.tools
     :no-members:
 
-.. toctree::
-   :maxdepth: 1
-   :hidden:
-
-   datalog
-
-Timing
-^^^^^^^^^^^^^^^^^^^^^^^^^
-
 .. autofunction:: wait
 
 .. autoclass:: pybricks.tools.StopWatch

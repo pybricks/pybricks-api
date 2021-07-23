@@ -273,6 +273,7 @@ exclude_patterns = [
     'media.rst',
     'messaging.rst',
     'nxtdevices.rst',
+    'tools/datalog.rst'
 ]
 
 
