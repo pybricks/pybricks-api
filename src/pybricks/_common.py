@@ -90,13 +90,13 @@ class DCMotor:
 
 
 class Control:
-    """Class to interact with PID controller and settings.
+    """Class to interact with PID controller and settings."""
 
-        .. data:: scale
-
-            Scaling factor between the controlled integer variable
-            and the physical output. For example, for a single
-            motor this is the number of encoder pulses per degree of rotation.
+    scale = 1.0
+    """
+    Scaling factor between the controlled integer variable
+    and the physical output. For example, for a single
+    motor this is the number of encoder pulses per degree of rotation.
     """
 
     def limits(self, speed, acceleration, duty, torque):

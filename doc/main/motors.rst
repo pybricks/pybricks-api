@@ -25,6 +25,9 @@ the settings.
 .. autoclass:: pybricks._common.Control
     :no-members:
 
+    .. autoattribute:: pybricks._common.Control.scale
+      :annotation:
+
     .. rubric:: Status
 
     .. automethod:: pybricks._common.Control.done
