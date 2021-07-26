@@ -1,8 +1,7 @@
 :mod:`umath <umath>` -- Math functions
 ============================================================
 
-This module is available on the the City Hub, Technic Hub,
-Prime Hub, and Inventor Hub.
+.. pybricks-requirements:: stm32-extra stm32-float
 
 This MicroPython module is similar to the `math module`_ in Python.
 
