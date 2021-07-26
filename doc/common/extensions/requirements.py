@@ -35,36 +35,40 @@ class PybricksRequirementsDirective(Directive):
         # Get requirements from sphinx-directive.
         requirements = set(self.arguments)
 
-        # Check compatibility for all hubs.
-        compatible = {
-            hub: requirements <= features
+        # Cell with image of a hub.
+        hub_cell = """
+        <th><div class="align-default">
+        <img alt="" src="../_images/{0}.png">
+        </div></th>
+        """
+
+        # Table row with hub images.
+        hub_row = "".join([hub_cell.format(hub) for hub in HUB_FEATURES])
+
+        # Cell with checkmark or cross.
+        compat_cell = """<td><div style="text-align: center;">{0}</div></td>"""
+
+        # Table row with checkmark or cross.
+        compat_row = "".join([
+            compat_cell.format("✔️" if requirements <= features else "❌")
             for hub, features in HUB_FEATURES.items()
-        }
-
-        # Table cells with hub images.
-        hub_cells = ["<th>{0}</th>".format(hub) for hub in compatible]
-
-        # Table cells with checkmark or cross.
-        compat_cells = [
-            "<td>✔️</td>" if compat else "<td>❌</td>"
-            for hub, compat in compatible.items()
-        ]
+        ])
 
         # Generate full table.
         html = """
-        <table>
-            <thead>
-            <tr>
-                {0}
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                {1}
-            </tr>
-            </tbody>
-        </table>
-        """.format("".join(hub_cells), "".join(compat_cells))
+        <div class="wy-table-responsive">
+            <table class="docutils align-default">
+                <tbody>
+                    <tr>
+                        {0}
+                    </tr>
+                    <tr>
+                        {1}
+                    <tr/>
+                </tbody>
+            </table>
+        </div>
+        """.format(hub_row, compat_row)
 
         # Return the node.
         node = nodes.raw('', html, format="html")

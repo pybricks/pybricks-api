@@ -1,9 +1,11 @@
 :mod:`umath <umath>` -- Math functions
 ============================================================
 
+This MicroPython module is similar to the `math module`_ in Python.
+It is available on these hubs:
+
 .. pybricks-requirements:: stm32-extra stm32-float
 
-This MicroPython module is similar to the `math module`_ in Python.
 
 .. module:: umath
 
