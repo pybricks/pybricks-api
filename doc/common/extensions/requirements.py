@@ -1,6 +1,9 @@
+from os import path, makedirs
+
 from docutils import nodes
 from docutils.parsers.rst import Directive
 
+from sphinx.util.osutil import copyfile
 
 # Base feature set.
 FEATURES_SMALL = set()
@@ -32,25 +35,35 @@ class PybricksRequirementsDirective(Directive):
     optional_arguments = 10
 
     def run(self):
+
+        # Copy required resources to static
+        # CC BY-SA 4.0 via https://stackoverflow.com/a/63728208
+        env = self.state.document.settings.env
+
+        destdir = path.join(env.app.builder.outdir, '_images')
+        if not path.exists(destdir):
+            makedirs(destdir)
+
+        for hub in HUB_FEATURES:
+            for compat in ("true", "false"):
+                uri = 'compat_{0}_{1}_label.png'.format(hub, compat)
+                src_uri = path.join(env.app.builder.srcdir, 'images', uri)
+                build_uri = path.join(env.app.builder.outdir, '_images', uri)
+                copyfile(src_uri, build_uri)
+
         # Get requirements from sphinx-directive.
         requirements = set(self.arguments)
 
         # Cell with image of a hub.
         hub_cell = """
         <th><div class="align-default">
-        <img alt="" src="../_images/{0}.png">
+        <img alt="" src="../_images/compat_{0}_{1}_label.png">
         </div></th>
         """
 
         # Table row with hub images.
-        hub_row = "".join([hub_cell.format(hub) for hub in HUB_FEATURES])
-
-        # Cell with checkmark or cross.
-        compat_cell = """<td><div style="text-align: center;">{0}</div></td>"""
-
-        # Table row with checkmark or cross.
         compat_row = "".join([
-            compat_cell.format("✔️" if requirements <= features else "❌")
+            hub_cell.format(hub, "true" if requirements <= features else "false")
             for hub, features in HUB_FEATURES.items()
         ])
 
@@ -62,13 +75,10 @@ class PybricksRequirementsDirective(Directive):
                     <tr>
                         {0}
                     </tr>
-                    <tr>
-                        {1}
-                    <tr/>
                 </tbody>
             </table>
         </div>
-        """.format(hub_row, compat_row)
+        """.format(compat_row)
 
         # Return the node.
         node = nodes.raw('', html, format="html")
