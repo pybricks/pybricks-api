@@ -210,7 +210,8 @@ class Motor(DCMotor):
 
     def __init__(self, port,
                  positive_direction=Direction.CLOCKWISE,
-                 gears=None):
+                 gears=None,
+                 reset_angle=True):
         """
 
         Arguments:
@@ -228,6 +229,12 @@ class Motor(DCMotor):
                 When you specify a gear train, all motor commands and settings
                 are automatically adjusted to account for the resulting gear
                 ratio.  The motor direction remains unchanged by this.
+            reset_angle(bool):
+                Choose ``True`` to reset the rotation sensor value to the
+                absolute marker angle (between -180 and 179).
+                Choose ``False`` to keep the
+                current value, so your program knows where it left off last
+                time.
         """
         pass
 
