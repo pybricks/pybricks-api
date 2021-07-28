@@ -38,18 +38,29 @@ class Remote:
         _Button.LEFT_PLUS,
         _Button.RIGHT_PLUS
     ))
-    address = None
-    """Bluetooth address of the remote, or ``None`` if it is not connected."""
 
-    def __init__(self, address=None, timeout=10000):
-        """Connects to the remote.
+    def __init__(self, name=None, timeout=10000):
+        """When you instantiate this class, the hub will search for a remote
+        and connect automatically.
+
+        The remote must be on and ready for a connection, as indicated by a
+        white blinking light.
 
         Arguments:
-            device (str): Bluetooth address of the remote. If no address is
-                given, it connects to the first available remote that it finds.
+            name (str): Bluetooth name of the remote. If no name is given,
+                the hub connects to the first remote that it finds.
             timeout (:ref:`time`): How long to search for the remote.
         """
         pass
+
+    def name(self, name=None):
+        """Gets or sets the Bluetooth name of the remote.
+
+        If no name is given, this method returns the current name.
+
+        Arguments:
+            name (str): New Bluetooth name of the remote.
+        """
 
 
 class TiltSensor:
