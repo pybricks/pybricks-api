@@ -7,6 +7,8 @@ Classes and types
 
 .. autoclass:: ubuiltins.bool
 
+.. autoclass:: ubuiltins.bytearray
+
 .. autoclass:: ubuiltins.bytes
 
 .. autoclass:: ubuiltins.complex
