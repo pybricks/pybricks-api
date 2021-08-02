@@ -1,9 +1,5 @@
-Exceptions and error codes
+Exceptions and errors
 =====================================================
-
-
-List of all exceptions
-----------------------
 
 This section lists all available exceptions in alphabetical order.
 
@@ -55,10 +51,10 @@ This section lists all available exceptions in alphabetical order.
 .. autoclass:: ubuiltins.NotImplementedError
     :no-members:
 
+.. _OSError:
+
 .. autoclass:: ubuiltins.OSError
     :noindex:
-
-    See the `OSError`_ section for additional details.
 
 .. autoclass:: ubuiltins.OverflowError
     :no-members:
@@ -83,37 +79,6 @@ This section lists all available exceptions in alphabetical order.
 
 .. autoclass:: ubuiltins.ZeroDivisionError
     :no-members:
-
-.. _OSError:
-
-Using ``OSError`` with :mod:`uerrno`
-------------------------------------
-
-The ``errno`` attribute of an ``OSError`` indicates why the exception was
-raised. This attribute has one of the following values, which can be imported
-from the ``uerrno`` module. See also :ref:`this example <device_detection>`.
-
-.. module:: uerrno
-
-.. autodata:: uerrno.EAGAIN
-
-.. autodata:: uerrno.EBUSY
-
-.. autodata:: uerrno.ECANCELED
-
-.. autodata:: uerrno.EINVAL
-
-.. autodata:: uerrno.EIO
-
-.. autodata:: uerrno.ENODEV
-
-.. autodata:: uerrno.EOPNOTSUPP
-
-.. autodata:: uerrno.EPERM
-
-.. autodata:: uerrno.ETIMEDOUT
-
-.. autodata:: uerrno.errorcode
 
 Examples
 ---------------------

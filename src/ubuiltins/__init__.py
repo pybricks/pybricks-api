@@ -968,14 +968,16 @@ class NotImplementedError(RuntimeError):
 class OSError(Exception):
     """
     This exception is raised by the firmware, which is
-    the Operating System that runs on the hub. For example, it
+    the Operating System that runs on the hub.
+    For :ref:`example <device_detection>`, it
     raises an ``OSError`` if you call ``Motor(Port.A)`` when there is no
     motor on port A.
     """
 
     errno: _int
     """
-    Specifies which kind of ``OSError`` occurred, as listed :ref:`here <OSError>`.
+    Specifies which kind of ``OSError`` occurred, as listed in the
+    :mod:`uerrno` module.
     """
 
 
