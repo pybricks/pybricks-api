@@ -42,6 +42,7 @@ import usys
 # These get overridden later on, but we still want to use the originals
 # for the purpose of typing the doc strings.
 _bool = bool
+_bytearray = bytearray
 _bytes = bytes
 _callable = callable
 _complex = complex
@@ -140,6 +141,33 @@ class bytes:
         """
         Returns a new ``bytes`` object, which is an immutable sequence of integers
         in the range ``0 <= x <= 255``.
+        """
+
+
+class bytearray:
+    @overload
+    def __init__(self) -> None:
+        ...
+
+    @overload
+    def __init__(self, source: _int) -> None:
+        ...
+
+    @overload
+    def __init__(self, source: Union[_bytes, _bytearray, _str, Iterable[_int]]) -> None:
+        ...
+
+    def __init__(self, *args):
+        """
+        Creates a new ``bytearray`` object, which is a sequence of integers
+        in the range ``0 <= x <= 255``. This object is mutable, which means
+        that you can change its contents after you create it.
+
+           * If no argument is given, this creates an empty ``bytearray``.
+           * If the ``source`` argument is an integer, this creates a ``bytearray``
+             of zeros. The argument specifies how many zeros.
+           * For all other valid ``source`` arguments, this creates a bytearray with
+             the same byte sequence as the given ``source`` argument.
         """
 
 
