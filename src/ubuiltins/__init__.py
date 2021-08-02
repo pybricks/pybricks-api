@@ -113,10 +113,10 @@ class bool:
 
     def __init__(self, *args) -> None:
         """
-        Returns a Boolean value, i.e. one of ``True`` or ``False``.
+        Creates a boolean value, which is ``True`` or ``False``.
 
-        ``x`` is converted using the standard truth testing procedure. If ``x``
-        is false or omitted, this returns ``False``; otherwise it returns ``True``.
+        The argument is converted using the standard truth testing procedure.
+        If no argument is given, it returns ``False``.
         """
 
 
