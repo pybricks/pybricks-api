@@ -138,7 +138,7 @@ class bytes:
         ...
 
     def __init__(self, *args):
-        """
+        r"""
         Creates a new ``bytes`` object, which is a sequence of integers
         in the range :math:`0 \leq x \leq 255`. This object is *immutable*,
         which means that you *cannot* change its contents after you create it.
@@ -169,7 +169,7 @@ class bytearray:
         ...
 
     def __init__(self, *args):
-        """
+        r"""
         Creates a new ``bytearray`` object, which is a sequence of integers
         in the range :math:`0 \leq x \leq 255`. This object is *mutable*, which
         means that you *can* change its contents after you create it.
