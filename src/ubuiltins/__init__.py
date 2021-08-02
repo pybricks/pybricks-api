@@ -126,21 +126,32 @@ class bytes:
         ...
 
     @overload
-    def __init__(self, source: Union[_int, _bytes, Iterable[_int]]) -> None:
+    def __init__(self, source: _int) -> None:
+        ...
+
+    @overload
+    def __init__(self, source: Union[_bytes, _bytearray, Iterable[_int]]) -> None:
         ...
 
     @overload
     def __init__(self, source: _str, encoding: _str) -> None:
         ...
 
-    @overload
-    def __init__(self, source: _str, encoding: _str, errors: _str) -> None:
-        ...
-
     def __init__(self, *args):
         """
-        Returns a new ``bytes`` object, which is an immutable sequence of integers
-        in the range ``0 <= x <= 255``.
+        Creates a new ``bytes`` object, which is a sequence of integers
+        in the range :math:`0 \leq x \leq 255`. This object is *immutable*,
+        which means that you *cannot* change its contents after you create it.
+
+           * If no argument is given, this creates an empty ``bytes`` object.
+           * If the ``source`` argument is an integer, this creates a ``bytes``
+             object of zeros. The argument specifies how many zeros.
+           * If ``source`` is a ``bytearray``, ``bytes`` object, or some other
+             iterable of integers, this creates a ``bytes``
+             object with the same byte sequence as the ``source`` argument.
+           * If ``source`` is a string, choose ``'utf8'`` as the ``encoding``
+             argument. Then this creates a ``bytes`` object containing the
+             encoded string.
         """
 
 
@@ -160,8 +171,8 @@ class bytearray:
     def __init__(self, *args):
         """
         Creates a new ``bytearray`` object, which is a sequence of integers
-        in the range ``0 <= x <= 255``. This object is mutable, which means
-        that you can change its contents after you create it.
+        in the range :math:`0 \leq x \leq 255`. This object is *mutable*, which
+        means that you *can* change its contents after you create it.
 
            * If no argument is given, this creates an empty ``bytearray``.
            * If the ``source`` argument is an integer, this creates a ``bytearray``
