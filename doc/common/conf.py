@@ -60,6 +60,7 @@ extensions = [
     'sphinx.ext.mathjax',
     'color',
     'classlink',
+    'requirements',
     'requirements-static',
 ]
 

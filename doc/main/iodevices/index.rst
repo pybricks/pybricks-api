@@ -9,11 +9,9 @@
 
    pupdevice
 
+.. pybricks-requirements:: pybricks-iodevices
 
-This module has classes for generic input/output devices. It is available on
-these hubs:
-
-.. pybricks-requirements-static:: pybricks-iodevices
+This module has classes for generic input/output devices.
 
 .. pybricks-classlink:: PUPDevice
 
