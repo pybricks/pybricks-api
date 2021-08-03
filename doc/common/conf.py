@@ -60,7 +60,7 @@ extensions = [
     'sphinx.ext.mathjax',
     'color',
     'classlink',
-    'requirements',
+    'requirements-static',
 ]
 
 # Add any paths that contain templates here, relative to this directory.

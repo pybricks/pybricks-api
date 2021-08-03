@@ -13,7 +13,7 @@
 This module has classes for generic input/output devices. It is available on
 these hubs:
 
-.. pybricks-requirements:: pybricks-iodevices
+.. pybricks-requirements-static:: pybricks-iodevices
 
 .. pybricks-classlink:: PUPDevice
 
