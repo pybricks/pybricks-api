@@ -1,3 +1,5 @@
+.. pybricks-requirements::
+
 Power Functions
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 

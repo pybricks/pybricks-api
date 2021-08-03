@@ -1,3 +1,5 @@
+.. pybricks-requirements::
+
 Infrared Sensor
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 

@@ -1,3 +1,5 @@
+.. pybricks-requirements::
+
 :mod:`pupdevices <pybricks.pupdevices>` -- Powered Up Devices
 =============================================================
 

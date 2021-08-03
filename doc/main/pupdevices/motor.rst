@@ -1,3 +1,5 @@
+.. pybricks-requirements::
+
 Motors with Rotation Sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
