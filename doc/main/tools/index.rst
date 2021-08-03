@@ -1,3 +1,5 @@
+.. pybricks-requirements::
+
 :mod:`tools <pybricks.tools>` -- General purpose tools
 ========================================================
 
