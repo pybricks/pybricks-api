@@ -57,13 +57,21 @@ class PybricksRequirementsStaticDirective(Directive):
         # Cell with image of a hub.
         hub_cell = """
         <th><div class="align-default">
-        <img alt="" src="../_images/compat_{0}_{1}_label.png">
+        <img alt="" src="{0}_images/compat_{1}_{2}_label.png">
         </div></th>
         """
 
+        # Determine how far up the tree we are to set correct image path.
+        current_document = env.docname
+        depth = len(current_document.split("/")) - 1
+        depth_path = "../" * depth
+
         # Table row with hub images.
         compat_row = "".join([
-            hub_cell.format(hub, "true" if requirements <= features else "false")
+            hub_cell.format(
+                depth_path,
+                hub,
+                "true" if requirements <= features else "false")
             for hub, features in HUB_FEATURES.items()
         ])
 
