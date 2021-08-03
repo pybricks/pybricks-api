@@ -1,3 +1,5 @@
+.. pybricks-requirements:: cityhub
+
 City Hub
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
