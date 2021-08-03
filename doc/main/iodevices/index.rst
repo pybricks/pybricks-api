@@ -1,3 +1,5 @@
+.. pybricks-requirements:: pybricks-iodevices
+
 :mod:`iodevices <pybricks.iodevices>` -- Generic I/O Devices
 ============================================================
 
@@ -8,8 +10,6 @@
    :hidden:
 
    pupdevice
-
-.. pybricks-requirements:: pybricks-iodevices
 
 This module has classes for generic input/output devices.
 
