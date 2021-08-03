@@ -1,3 +1,5 @@
+.. pybricks-requirements::
+
 Color
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. autoclass:: pybricks.parameters.Color
