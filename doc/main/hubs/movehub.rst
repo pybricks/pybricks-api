@@ -1,3 +1,5 @@
+.. pybricks-requirements:: movehub
+
 Move Hub
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 

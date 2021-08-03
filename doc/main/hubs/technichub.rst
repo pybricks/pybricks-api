@@ -1,3 +1,5 @@
+.. pybricks-requirements:: technichub
+
 Technic Hub
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 

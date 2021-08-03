@@ -1,3 +1,5 @@
+.. pybricks-requirements:: primehub
+
 Prime Hub / Inventor Hub
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
