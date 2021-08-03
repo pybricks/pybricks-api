@@ -21,11 +21,11 @@ FEATURES_LARGE = FEATURES_MEDIUM | set()
 
 # Features per hub.
 HUB_FEATURES = {
-    'movehub': FEATURES_SMALL,
-    'cityhub': FEATURES_MEDIUM,
-    'technichub': FEATURES_MEDIUM,
-    'primehub': FEATURES_LARGE,
-    'inventorhub': FEATURES_LARGE,
+    'movehub': {'movehub'} | FEATURES_SMALL,
+    'cityhub': {'cityhub'} | FEATURES_MEDIUM,
+    'technichub': {'technichub'} | FEATURES_MEDIUM,
+    'primehub':  {'primehub', 'inventorhub'} | FEATURES_LARGE,
+    'inventorhub':  {'primehub', 'inventorhub'} | FEATURES_LARGE,
 }
 
 
