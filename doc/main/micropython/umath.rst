@@ -1,7 +1,7 @@
+.. pybricks-requirements:: stm32-extra stm32-float
+
 :mod:`umath <umath>` -- Math functions
 ============================================================
-
-.. pybricks-requirements:: stm32-extra stm32-float
 
 This MicroPython module is similar to the `math module`_ in Python.
 

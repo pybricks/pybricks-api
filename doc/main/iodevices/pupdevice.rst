@@ -1,3 +1,5 @@
+.. pybricks-requirements:: pybricks-iodevices
+
 Powered Up Device
 ^^^^^^^^^^^^^^^^^
 
