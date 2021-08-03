@@ -31,7 +31,7 @@ HUB_FEATURES = {
 
 class PybricksRequirementsDirective(Directive):
 
-    required_arguments = 1
+    required_arguments = 0
     optional_arguments = 10
 
     def run(self):
