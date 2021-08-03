@@ -1,3 +1,5 @@
+.. pybricks-requirements:: stm32-float
+
 :mod:`geometry <pybricks.geometry>` -- Geometry and algebra
 ============================================================
 
