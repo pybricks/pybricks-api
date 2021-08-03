@@ -1,3 +1,5 @@
+.. pybricks-requirements::
+
 :mod:`robotics <pybricks.robotics>` -- Robotics
 ======================================================
 
