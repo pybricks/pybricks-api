@@ -29,7 +29,7 @@ HUB_FEATURES = {
 }
 
 
-class PybricksRequirementsDirective(Directive):
+class PybricksRequirementsStaticDirective(Directive):
 
     required_arguments = 0
     optional_arguments = 10
@@ -88,6 +88,6 @@ class PybricksRequirementsDirective(Directive):
 def setup(app):
     app.add_directive_to_domain(
         'py',
-        'pybricks-requirements',
-        PybricksRequirementsDirective
+        'pybricks-requirements-static',
+        PybricksRequirementsStaticDirective
     )
