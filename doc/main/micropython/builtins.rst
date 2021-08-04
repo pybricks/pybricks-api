@@ -93,8 +93,6 @@ Class-related functions
 
 .. autofunction:: ubuiltins.callable
 
-.. autofunction:: ubuiltins.classmethod
-
 .. autofunction:: ubuiltins.dir
 
 .. autofunction:: ubuiltins.getattr
@@ -106,8 +104,6 @@ Class-related functions
 .. autofunction:: ubuiltins.issubclass
 
 .. autofunction:: ubuiltins.setattr
-
-.. autofunction:: ubuiltins.staticmethod
 
 .. autofunction:: ubuiltins.super
 
@@ -135,3 +131,11 @@ Runtime-related functions
 .. autofunction:: ubuiltins.id
 
 .. autofunction:: ubuiltins.help
+
+
+Method decorators
+-----------------
+
+.. autodecorator:: ubuiltins.classmethod
+
+.. autodecorator:: ubuiltins.staticmethod
