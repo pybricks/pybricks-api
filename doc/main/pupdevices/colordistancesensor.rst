@@ -47,14 +47,8 @@ Waiting for a color
 .. literalinclude::
     ../../../examples/pup/sensor_color_distance/wait_for_color.py
 
-Measuring distance
-******************
-
-.. literalinclude::
-    ../../../examples/pup/sensor_color_distance/distance_blink.py
-
-Blinking the built-in light
-***************************
+Measuring distance and blinking the light
+*****************************************
 
 .. literalinclude::
     ../../../examples/pup/sensor_color_distance/distance_blink.py
