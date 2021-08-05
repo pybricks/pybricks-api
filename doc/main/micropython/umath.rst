@@ -3,9 +3,12 @@
 :mod:`umath <umath>` -- Math functions
 ============================================================
 
+.. module:: umath
+
 This MicroPython module is similar to the `math module`_ in Python.
 
-.. module:: umath
+See also the :ref:`built-in math functions<builtinmath>` that can be used
+without importing anything.
 
 Rounding and sign
 -------------------------------------

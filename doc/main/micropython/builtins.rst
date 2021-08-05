@@ -4,20 +4,23 @@ Built-in classes and functions
 The classes and functions shown on this page can be used without
 importing anything.
 
-Classes and types
-----------------------
+Input and output
+------------------------
+
+.. pybricks-requirements:: stm32-extra
+
+.. autofunction:: ubuiltins.input
+
+.. pybricks-requirements::
+
+.. autofunction:: ubuiltins.print
+
+Basic types
+---------------------------
 
 .. pybricks-requirements::
 
 .. autoclass:: ubuiltins.bool
-
-.. pybricks-requirements:: stm32-extra
-
-.. autoclass:: ubuiltins.bytearray
-
-.. pybricks-requirements::
-
-.. autoclass:: ubuiltins.bytes
 
 .. pybricks-requirements:: stm32-float
 
@@ -37,15 +40,30 @@ Classes and types
 
 .. pybricks-requirements::
 
-.. autoclass:: ubuiltins.list
-
-.. pybricks-requirements::
-
 .. autoclass:: ubuiltins.object
 
 .. pybricks-requirements::
 
-.. autoclass:: ubuiltins.range
+.. autoclass:: ubuiltins.type
+
+Sequences
+---------------------------
+
+.. pybricks-requirements:: stm32-extra
+
+.. autoclass:: ubuiltins.bytearray
+
+.. pybricks-requirements::
+
+.. autoclass:: ubuiltins.bytes
+
+.. pybricks-requirements::
+
+.. autofunction:: ubuiltins.len
+
+.. pybricks-requirements::
+
+.. autoclass:: ubuiltins.list
 
 .. pybricks-requirements:: stm32-extra
 
@@ -59,42 +77,7 @@ Classes and types
 
 .. autoclass:: ubuiltins.tuple
 
-.. pybricks-requirements::
-
-.. autoclass:: ubuiltins.type
-
-Math-related functions
-----------------------
-
-.. pybricks-requirements::
-
-.. autofunction:: ubuiltins.abs
-
-.. pybricks-requirements::
-
-.. autofunction:: ubuiltins.divmod
-
-.. pybricks-requirements::
-
-.. autofunction:: ubuiltins.max
-
-.. pybricks-requirements::
-
-.. autofunction:: ubuiltins.min
-
-.. pybricks-requirements::
-
-.. autofunction:: ubuiltins.pow
-
-.. pybricks-requirements::
-
-.. autofunction:: ubuiltins.round
-
-.. pybricks-requirements::
-
-.. autofunction:: ubuiltins.sum
-
-Iterable-related functions
+Iterators
 --------------------------
 
 .. pybricks-requirements::
@@ -115,15 +98,15 @@ Iterable-related functions
 
 .. pybricks-requirements::
 
-.. autofunction:: ubuiltins.len
-
-.. pybricks-requirements::
-
 .. autofunction:: ubuiltins.map
 
 .. pybricks-requirements::
 
 .. autofunction:: ubuiltins.next
+
+.. pybricks-requirements::
+
+.. autoclass:: ubuiltins.range
 
 .. pybricks-requirements:: stm32-extra
 
@@ -164,7 +147,74 @@ Conversion functions
 
 .. autofunction:: ubuiltins.repr
 
-Class-related functions
+.. _builtinmath:
+
+Math functions
+----------------------
+
+See also :mod:`umath` for floating point math operations.
+
+.. pybricks-requirements::
+
+.. autofunction:: ubuiltins.abs
+
+.. pybricks-requirements::
+
+.. autofunction:: ubuiltins.divmod
+
+.. pybricks-requirements::
+
+.. autofunction:: ubuiltins.max
+
+.. pybricks-requirements::
+
+.. autofunction:: ubuiltins.min
+
+.. pybricks-requirements::
+
+.. autofunction:: ubuiltins.pow
+
+.. pybricks-requirements::
+
+.. autofunction:: ubuiltins.round
+
+.. pybricks-requirements::
+
+.. autofunction:: ubuiltins.sum
+
+Runtime functions
+-------------------------
+
+.. pybricks-requirements::
+
+.. autofunction:: ubuiltins.eval
+
+.. pybricks-requirements::
+
+.. autofunction:: ubuiltins.exec
+
+.. pybricks-requirements::
+
+.. autofunction:: ubuiltins.globals
+
+.. pybricks-requirements::
+
+.. autofunction:: ubuiltins.hash
+
+.. pybricks-requirements:: stm32-extra
+
+.. autofunction:: ubuiltins.help
+
+.. pybricks-requirements::
+
+.. autofunction:: ubuiltins.id
+
+.. pybricks-requirements::
+
+.. autofunction:: ubuiltins.locals
+
+
+Class functions
 ------------------------
 
 .. pybricks-requirements::
@@ -198,49 +248,6 @@ Class-related functions
 .. pybricks-requirements::
 
 .. autofunction:: ubuiltins.super
-
-Input/output functions
-------------------------
-
-.. pybricks-requirements:: stm32-extra
-
-.. autofunction:: ubuiltins.input
-
-.. pybricks-requirements::
-
-.. autofunction:: ubuiltins.print
-
-
-Runtime-related functions
--------------------------
-
-.. pybricks-requirements::
-
-.. autofunction:: ubuiltins.locals
-
-.. pybricks-requirements::
-
-.. autofunction:: ubuiltins.globals
-
-.. pybricks-requirements::
-
-.. autofunction:: ubuiltins.eval
-
-.. pybricks-requirements::
-
-.. autofunction:: ubuiltins.exec
-
-.. pybricks-requirements::
-
-.. autofunction:: ubuiltins.hash
-
-.. pybricks-requirements::
-
-.. autofunction:: ubuiltins.id
-
-.. pybricks-requirements:: stm32-extra
-
-.. autofunction:: ubuiltins.help
 
 
 Method decorators
