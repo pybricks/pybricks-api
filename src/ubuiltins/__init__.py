@@ -644,13 +644,25 @@ def pow():
     """
 
 
-def print(*objects, sep: _str = " ", end: _str = "\n", file: uio.FileIO = usys.stdin):
-    """
-    Prints ``objects`` to the text stream ``file``, separated by ``sep`` and
-    followed by ``end``. ``sep``, ``end`` and ``file``, if present,
-    must be given as keyword arguments.
+@overload
+def print(*objects):
+    ...
 
-    The ``file`` argument is not supported on the BOOST Move hub.
+
+@overload
+def print(*objects, sep: _str = " ", end: _str = "\n", file: uio.FileIO = usys.stdin):
+    ...
+
+
+def print(*args):
+    """
+    Prints text or other objects in the terminal window.
+
+    Printed objects are separated by ``sep`` and followed by ``end``. If used,
+    these arguments must be given as keyword arguments.
+
+    The ``file`` keyword argument can be used to write the result to a
+    file instead. This argument is not supported on the BOOST Move hub.
     """
 
 
