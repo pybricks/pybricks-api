@@ -453,9 +453,11 @@ def input(prompt: _str) -> _str:
 
 def input(*args) -> _str:
     """
-    If the prompt argument is present, it is written to standard output without
-    a trailing newline. The function then reads a line from input, converts it
-    to a string (stripping a trailing newline), and returns that.
+    Gets input from the user in the terminal window. This function waits until
+    the user presses :kbd:`Enter`. The input is returned as a string.
+
+    If the ``prompt`` argument is given, this is printed in the terminal window
+    first.
     """
 
 
