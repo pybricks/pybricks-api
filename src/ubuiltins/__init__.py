@@ -456,8 +456,12 @@ def input(*args) -> _str:
     Gets input from the user in the terminal window. This function waits until
     the user presses :kbd:`Enter`. The input is returned as a string.
 
-    If the ``prompt`` argument is given, this is printed in the terminal window
-    first.
+    Arguments:
+        prompt: If given, this is printed in the terminal window first. This
+                can be used to ask a question so the user knows what to type.
+
+    Returns:
+        Everything the user typed before pressing :kbd:`Enter`.
     """
 
 
@@ -658,11 +662,17 @@ def print(*args):
     """
     Prints text or other objects in the terminal window.
 
-    Printed objects are separated by ``sep`` and followed by ``end``. If used,
-    these arguments must be given as keyword arguments.
+    Arguments:
+        args: One or more objects to print.
 
-    The ``file`` keyword argument can be used to write the result to a
-    file instead. This argument is not supported on the BOOST Move hub.
+    Keyword Arguments:
+        sep: This is printed between objects, if there is more than one.
+        end: This is printed after the last object.
+        file: By default, the result is printed in the terminal window. This
+              argument lets you print it to a file instead. This argument is
+              not supported on the BOOST Move hub.
+
+
     """
 
 
