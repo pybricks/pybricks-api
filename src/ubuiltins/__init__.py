@@ -691,7 +691,7 @@ class range:
 
     def __init__(self, *args) -> None:
         """
-        Rather than being a function, ``range`` is actually an immutable sequence _type.
+        Rather than being a function, ``range`` is actually an immutable sequence type.
         """
 
 
@@ -833,19 +833,19 @@ def super() -> _type:
 
 
 @overload
-def super(_type: _type) -> _type:
+def super(type: _type) -> _type:
     ...
 
 
 @overload
-def super(_type: _type, object_or_type: Any) -> _type:
+def super(type: _type, object_or_type: Any) -> _type:
     ...
 
 
 def super(*args):
     """
     Returns am object that delegates method calls to a parent or sibling class
-    of ``_type``.
+    of ``type``.
     """
 
 
@@ -868,7 +868,7 @@ class tuple:
 class type:
     def __init__(self, object: Any) -> None:
         """
-        With one argument, returns the _type of an ``object``.
+        With one argument, returns the type of an ``object``.
         """
 
 
