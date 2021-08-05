@@ -230,8 +230,6 @@ class complex:
         """
         Returns a complex number with the value `real + imag*1j` or converts a
         string or number to a complex number.
-
-        .. note:: This type is not available on the BOOST Move hub.
         """
 
 
@@ -305,8 +303,6 @@ def enumerate(*args) -> Iterable:
             for elem in sequence:
                 yield n, elem
                 n += 1
-
-    .. note:: This type is not available on the BOOST Move hub.
     """
 
 
@@ -429,8 +425,6 @@ def help(*args) -> None:
     """
     Prints help for the ``object``. If no argument is given, prints general help.
     If object is ``'modules'``, prints available modules.
-
-    .. note:: This function is not available on the BOOST Move hub.
     """
 
 
@@ -462,8 +456,6 @@ def input(*args) -> _str:
     If the prompt argument is present, it is written to standard output without
     a trailing newline. The function then reads a line from input, converts it
     to a string (stripping a trailing newline), and returns that.
-
-    .. note:: This function is not available on the BOOST Move hub.
     """
 
 
@@ -656,7 +648,7 @@ def print(*objects, sep: _str = " ", end: _str = "\n", file: uio.FileIO = usys.s
     followed by ``end``. ``sep``, ``end`` and ``file``, if present,
     must be given as keyword arguments.
 
-    .. note:: The ``file`` argument is not supported on the BOOST Move hub.
+    The ``file`` argument is not supported on the BOOST Move hub.
     """
 
 
@@ -688,8 +680,6 @@ def repr(object: Any) -> _str:
 def reversed(seq: Sequence) -> Iterator:
     """
     Returns a reverse iterator.
-
-    .. note:: This function is not available on the BOOST Move hub.
     """
 
 
@@ -764,8 +754,6 @@ class slice:
 
         Slice objects are also generated when extended indexing syntax is used.
         For example: ``a[start:stop:step]`` or ``a[start:stop, i]``.
-
-        .. note:: This type is not available on the BOOST Move hub.
         """
 
 
