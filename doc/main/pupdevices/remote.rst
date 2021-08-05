@@ -26,6 +26,18 @@ Checking which buttons are pressed
 .. literalinclude::
     ../../../examples/pup/remote/basics.py
 
+Changing the remote light color
+**********************************
+
+.. literalinclude::
+    ../../../examples/pup/remote/set_color_basic.py
+
+Changing the light color using the buttons
+*******************************************
+
+.. literalinclude::
+    ../../../examples/pup/remote/set_color.py
+
 
 Using the timeout setting
 **********************************
