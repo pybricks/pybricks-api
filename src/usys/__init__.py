@@ -7,17 +7,16 @@
 
 """
 This module provides a subset of the standard Python ``sys`` module.
-
-.. note:: This module is not available on the BOOST Move hub.
 """
 
 from uio import FileIO
 
-# REVIST: most functions are excluded since they aren't useful for Pybricks
+# REVISIT: most functions are excluded since they aren't useful for Pybricks
 
 stdin: FileIO = FileIO()
 """
-Stream object that receives input from a connected terminal, if any.
+Stream object (:class:`uio.FileIO`) that receives input from a connected
+terminal, if any.
 
 Writing may modify newline characters. Use ``usys.stdin.buffer`` instead if
 this is undesirable.
@@ -28,7 +27,8 @@ are passing binary data via ``stdin``.
 
 stdout: FileIO = FileIO()
 """
-Stream object that sends output to a connected terminal, if any.
+Stream object (:class:`uio.FileIO`) that sends output to a connected terminal,
+if any.
 
 Reading may modify newline characters. Use ``usys.stdout.buffer`` instead if
 this is undesirable.
