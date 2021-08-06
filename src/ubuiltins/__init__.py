@@ -388,8 +388,18 @@ class float:
         ...
 
     def __init__(self, *args) -> None:
-        """
-        Returns a floating point number constructed from a number or string ``x``.
+        """float()
+        float(x: int)
+        float(x: str)
+
+        Creates a floating point number. If no arguments are given, this returns
+        ``0.0``.
+
+        Arguments:
+            x: Number or string that will be converted.
+
+        Returns:
+            The input argument ``x`` converted to a floating point number.
         """
 
 
