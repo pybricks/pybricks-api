@@ -31,8 +31,8 @@ python = "^3.8"
 black = {version = "^20.8b1", allow-prereleases = true}
 doc8 = "^0.8.1"
 flake8 = "^3.8.4"
-Sphinx = "==3.5.3"
-sphinx-rtd-theme = "==0.5.2"
+Sphinx = "^4.1.0"
+sphinx-rtd-theme = { git = "https://github.com/readthedocs/sphinx_rtd_theme.git", rev = "f5b02911ae074c09e690d2ad87ef95c0b2ee678c" }
 toml = "^0.10.0"
 
 [build-system]
