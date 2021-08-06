@@ -231,9 +231,23 @@ class complex:
         ...
 
     def __init__(self, *args) -> None:
-        """
-        Returns a complex number with the value `real + imag*1j` or converts a
-        string or number to a complex number.
+        """complex()
+        complex(string: str)
+        complex(a: Union[float, complex], b: Union[float, complex] = 0)
+
+        Creates a complex number from a string or from a pair of numbers.
+
+        If a string is given, it must be of the form ``'1+2j'``.
+        If a pair of numbers is provided, the result is computed
+        as: ``a + b * j``.
+
+        Arguments:
+            string: A string of the form ``'1+2j'`` .
+            a: A real-valued or complex number.
+            b: A real-valued or complex number.
+
+        Returns:
+            Complex number, obtained from the string or as the result of ``a + b * j``.
         """
 
 
