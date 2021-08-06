@@ -27,7 +27,6 @@ from docutils import nodes
 from docutils.parsers.rst.directives import flag
 from docutils.parsers.rst import Directive
 from sphinx.application import Sphinx
-from sphinx.domains.python import PyClassmember, PythonDomain
 import toml
 
 TOP_DIR = os.path.abspath(os.path.join('..', '..'))
