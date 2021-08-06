@@ -1,5 +1,5 @@
 # This file is strictly for building docs on readthedocs.org
 # See pyproject.toml for local development
-Sphinx==3.5.3
-sphinx-rtd-theme==0.5.2
+Sphinx==4.1.2
+git+git://github.com/readthedocs/sphinx_rtd_theme@f5b0291#egg=sphinx-rtd-theme
 toml
