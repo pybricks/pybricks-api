@@ -286,28 +286,27 @@ def divmod(a, b):
     """
 
 
-@overload
-def enumerate(iterable: Iterable) -> Iterable:
-    ...
+class enumerate:
+    @overload
+    def __init__(self, iterable: Iterable) -> None:
+        ...
 
+    @overload
+    def __init__(self, iterable: Iterable, start: _int) -> None:
+        ...
 
-@overload
-def enumerate(iterable: Iterable, start: _int) -> Iterable:
-    ...
+    def __init__(self, *args) -> None:
+        """
+        Returns an enumerate object.
 
+        Equivalent to::
 
-def enumerate(*args) -> Iterable:
-    """
-    Returns an enumerate object.
-
-    Equivalent to::
-
-        def enumerate(sequence, start=0):
-            n = start
-            for elem in sequence:
-                yield n, elem
-                n += 1
-    """
+            def enumerate(sequence, start=0):
+                n = start
+                for elem in sequence:
+                    yield n, elem
+                    n += 1
+        """
 
 
 @overload

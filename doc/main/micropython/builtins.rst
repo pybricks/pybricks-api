@@ -90,7 +90,7 @@ Iterators
 
 .. pybricks-requirements:: stm32-extra
 
-.. autofunction:: ubuiltins.enumerate
+.. autoclass:: ubuiltins.enumerate
 
 .. pybricks-requirements::
 
