@@ -389,11 +389,10 @@ class float:
 
     def __init__(self, *args) -> None:
         """float()
-        float(x: int)
-        float(x: str)
+        float(x: Union[int, float, str])
 
-        Creates a floating point number. If no arguments are given, this returns
-        ``0.0``.
+        Converts the argument to a floating point number.
+        If no argument is given, this returns ``0.0``.
 
         Arguments:
             x: Number or string that will be converted.
@@ -510,14 +509,30 @@ class int:
         ...
 
     def __init__(self, *args) -> None:
-        """
-        Returns an integer object constructed from a number or string ``x``, or
-        returns ``0`` if no arguments are given.
+        """int()
+        int(x: Union[int, float, str])
+
+        Converts the argument to an integer. If no argument is given, this
+        returns ``0``.
+
+        Arguments:
+            x: Number or string that will be converted.
+
+        Returns:
+            The input argument ``x`` converted to an integer.
         """
 
     def to_bytes(self, length: _int, byteorder: Literal["little", "big"]) -> _bytes:
         """
-        Returns an array of bytes representing an integer.
+        Returns a :class:`bytes` object representing the integer.
+
+        Arguments:
+            length: How many bytes to use.
+            byteorder: Choose ``"little"`` for little-endian encoding
+                       or ``"big"`` for big-endian encoding.
+
+        Returns:
+            The integer represented by a sequence of bytes.
         """
 
     @classmethod
