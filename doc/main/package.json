@@ -5,7 +5,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/pybricks/pybricks-api",
-    "directory": "doc/ide"
+    "directory": "doc/main"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org",
