@@ -1,4 +1,4 @@
-# Unreleased
+# 1.6.0 - 2021-08-30
 
 ## Added:
 - MicroPython module documentation.
