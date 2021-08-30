@@ -72,6 +72,15 @@ Build docs:
     poetry run doc\make.bat html
     Invoke-Item doc\main\build\html\index.html
 
+Building IDE docs variant:
+
+    # Linux/macOS
+    poetry run make -C doc html TAG=ide
+
+    # Windows (PowerShell)
+    $env:TAG="ide"
+    poetry run doc\make.bat html
+
 Linting:
 
     poetry run flake8  # check Python

@@ -20,7 +20,8 @@ html_logo = '../common/images/pybricks-logo-rtd.png'
 latex_logo = '../common/images/pybricks-logo-large.png'
 
 # Build main docs for RTD by default.
-# Since tags cannot be passed via SPHINXOPTS on read the docs, add it manually.
+# Since tags cannot be passed via the TAG make variable on read the docs,
+# add it manually.
 if os.environ.get('READTHEDOCS', None) == 'True':
     tags.add('main')  # noqa F821
 

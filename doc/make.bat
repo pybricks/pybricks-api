@@ -7,10 +7,13 @@ REM Command file for Sphinx documentation
 if "%SPHINXBUILD%" == "" (
 	set SPHINXBUILD=sphinx-build
 )
-set SPHINXOPTS=-W -tmain
+set SPHINXOPTS=-W
 set SOURCEDIR=main
 set BUILDDIR=%SOURCEDIR%/build
 set SPHINXPROJ=Pybricks
+if "%TAG%" == "" (
+	set TAG=main
+)
 
 if "%1" == "" goto help
 
@@ -27,11 +30,11 @@ if errorlevel 9009 (
 	exit /b 1
 )
 
-%SPHINXBUILD% -M %1 %SOURCEDIR% %BUILDDIR% %SPHINXOPTS%
+%SPHINXBUILD% -M %1 %SOURCEDIR% %BUILDDIR% %SPHINXOPTS% -t %TAG%
 goto end
 
 :help
-%SPHINXBUILD% -M help %SOURCEDIR% %BUILDDIR% %SPHINXOPTS%
+%SPHINXBUILD% -M help %SOURCEDIR% %BUILDDIR% %SPHINXOPTS% -t %TAG%
 
 :end
 popd

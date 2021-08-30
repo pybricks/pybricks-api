@@ -31,8 +31,8 @@ jobs:
         node-version: '14.x'
         registry-url: 'https://registry.npmjs.org'
     - run: yarn build
-      working-directory: doc/ide
+      working-directory: doc/main
     - run: yarn publish
-      working-directory: doc/ide
+      working-directory: doc/main
       env:
         NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
