@@ -5,6 +5,8 @@
 
 from ._common import Control as _Control
 
+from .parameters import Stop as _Stop
+
 
 class DriveBase:
     """A robotic vehicle with two powered wheels and an optional support
@@ -122,18 +124,24 @@ class DriveBase:
         """
         pass
 
-    def straight(self, distance):
+    def straight(self, distance, then=_Stop.HOLD, wait=True):
         """Drives straight for a given distance and then stops.
 
         Arguments:
-            distance (:ref:`distance`): Distance to travel.
+            distance (:ref:`distance`): Distance to travel
+            then (Stop): What to do after coming to a standstill.
+            wait (bool): Wait for the maneuver to complete before continuing
+                         with the rest of the program.
         """
         pass
 
-    def turn(self, angle):
+    def turn(self, angle, then=_Stop.HOLD, wait=True):
         """Turns in place by a given angle and then stops.
 
         Arguments:
             angle (:ref:`angle`): Angle of the turn.
+            then (Stop): What to do after coming to a standstill.
+            wait (bool): Wait for the maneuver to complete before continuing
+                         with the rest of the program.
         """
         pass
