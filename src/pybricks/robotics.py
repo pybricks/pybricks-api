@@ -16,7 +16,7 @@ class DriveBase:
     makes it easy to drive a given distance in millimeters or turn by a given
     number of degrees.
 
-    **Positive** distances and drive speeds mean
+    **Positive** distances, radii, or drive speeds mean
     driving **forward**. **Negative** means **backward**.
 
     **Positive** angles and turn rates mean turning **right**.
@@ -103,7 +103,7 @@ class DriveBase:
     def settings(self, straight_speed, straight_acceleration, turn_rate,
                  turn_acceleration):
         """Configures the speed and acceleration used
-        by :meth:`.straight` and :meth:`.turn`.
+        by :meth:`.straight`, :meth:`.turn`, and  :meth:`.curve`.
 
         If you give no arguments, this returns the current values as a tuple.
 
@@ -111,16 +111,12 @@ class DriveBase:
         either before you begin driving or after you call :meth:`.stop`.
 
         Arguments:
-            straight_speed (:ref:`linspeed`): Speed of the robot during
-                :meth:`.straight`.
-            straight_acceleration (:ref:`linacceleration`): Acceleration and
-                deceleration of the robot at the start and end
-                of :meth:`.straight`.
-            turn_rate (:ref:`speed`): Turn rate of the robot
-                during :meth:`.turn`.
+            straight_speed (:ref:`linspeed`): Straight-line speed of the robot.
+            straight_acceleration (:ref:`linacceleration`): Straight-line
+                acceleration and deceleration of the robot.
+            turn_rate (:ref:`speed`): Turn rate of the robot.
             turn_acceleration (:ref:`acceleration`): Angular acceleration and
-                deceleration of the robot at the start and end
-                of :meth:`.turn`.
+                deceleration of the robot.
         """
         pass
 
@@ -140,6 +136,18 @@ class DriveBase:
 
         Arguments:
             angle (:ref:`angle`): Angle of the turn.
+            then (Stop): What to do after coming to a standstill.
+            wait (bool): Wait for the maneuver to complete before continuing
+                         with the rest of the program.
+        """
+        pass
+
+    def curve(self, radius, angle, then=_Stop.HOLD, wait=True):
+        """Drives an arc along a circle of a given radius, by a given angle.
+
+        Arguments:
+            radius (:ref:`dimension`): Radius of the circle.
+            angle (:ref:`angle`): Angle along the circle.
             then (Stop): What to do after coming to a standstill.
             wait (bool): Wait for the maneuver to complete before continuing
                          with the rest of the program.

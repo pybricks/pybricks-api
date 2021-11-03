@@ -6,6 +6,7 @@
 
 ### Added
 - Added maximum voltage setter for `DCMotor` and `Motor`.
+- Documented `DriveBase.curve()` method.
 
 ### Changed
 - Removed `duty` setting from `Control.limits` method.

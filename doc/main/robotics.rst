@@ -22,6 +22,8 @@
 
     .. automethod:: pybricks.robotics.DriveBase.turn
 
+    .. automethod:: pybricks.robotics.DriveBase.curve
+
     .. automethod:: pybricks.robotics.DriveBase.settings
 
     .. rubric:: Drive forever
