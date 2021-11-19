@@ -5,7 +5,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/pybricks/pybricks-api",
-    "directory": "doc/main"
+    "directory": "npm/ide-docs"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org",
@@ -14,11 +14,10 @@
   "author": "The Pybricks Authors",
   "license": "MIT",
   "files": [
-    "build/html/**"
+    "html"
   ],
-  "types": "index.d.ts",
   "scripts": {
-    "clean": "poetry run make -C .. clean",
-    "build": "poetry run make -C .. TAG=ide html"
+    "clean": "poetry run make -C ../../doc clean",
+    "build": "poetry run make -C ../../doc TAG=ide html && rm -rf html && cp -R ../../doc/main/build/html html"
   }
 }
