@@ -6,6 +6,7 @@
 
 ### Added
 - Added `ColorLightMatrix` class.
+- Added `LWP3Device` class.
 
 ## 1.6.0 - 2021-08-30
 

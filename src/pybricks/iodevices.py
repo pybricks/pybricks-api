@@ -244,3 +244,59 @@ class UARTDevice:
     def clear(self):
         """Empties the buffer."""
         pass
+
+
+class LWP3Device:
+    """
+    Connects to a remote hub running official LEGO firmware using the the
+    `LEGO Wireless Protocol v3`_
+
+    .. _`LEGO Wireless Protocol v3`:
+        https://lego.github.io/lego-ble-wireless-protocol-docs/
+    """
+
+    def __init__(self, hub_kind, name=None, timeout=10000):
+        """
+
+        Arguments:
+            hub_kind (int):
+                The `hub type identifier`_ of the hub to connect to.
+            name (str):
+                The name of the hub to connect to or ``None`` to connect to any
+                hub.
+            timeout (int):
+                The time, in milliseconds, to wait for a connection before
+                raising an exception.
+
+
+        .. _`hub type identifier`:
+            https://github.com/pybricks/technical-info/blob/master/assigned-numbers.md#hub-type-ids
+        """
+
+    def name(self, name=None):
+        """Gets or sets the Bluetooth name of the remote.
+
+        If no name is given, this method returns the current name.
+
+        Arguments:
+            name (str): New Bluetooth name of the remote.
+        """
+
+    def write(self, buf):
+        """
+        Sends a message to the remote hub.
+
+        Arguments:
+            buf (bytes): The raw binary message to send.
+        """
+
+    def read(self):
+        """
+        Retrieves the most recent message received from the remote hub.
+
+        If a message has not been received since the last read, the method will
+        block until a message is received.
+
+        Returns:
+            bytes: The raw binary message.
+        """
