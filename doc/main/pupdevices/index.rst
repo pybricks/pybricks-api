@@ -81,7 +81,7 @@
 
 .. figure:: ../../main/images/color_light_matrix.png
    :width: 35 %
-   :target: color-light-matrix.html
+   :target: colorlightmatrix.html
 
 .. pybricks-classlink:: Light
 

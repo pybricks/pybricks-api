@@ -2,6 +2,11 @@
 
 <!-- refer to https://keepachangelog.com/en/1.0.0/ for guidance -->
 
+## Unreleased
+
+### Fixed
+- Fixed link to Color Light Matrix page.
+
 ## 3.1.0rc1 - 2021-11-19
 
 ### Added
