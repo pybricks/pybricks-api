@@ -19,6 +19,7 @@
    colorsensor
    ultrasonicsensor
    forcesensor
+   colorlightmatrix
    light
    remote
 
@@ -75,6 +76,12 @@
 .. figure:: ../../main/images/sensor_force.png
    :width: 35 %
    :target: forcesensor.html
+
+.. pybricks-classlink:: ColorLightMatrix
+
+.. figure:: ../../main/images/color_light_matrix.png
+   :width: 35 %
+   :target: color-light-matrix.html
 
 .. pybricks-classlink:: Light
 

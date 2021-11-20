@@ -377,6 +377,39 @@ class ForceSensor:
         pass
 
 
+class ColorLightMatrix:
+    """
+    LEGO® SPIKE 3x3 Color Light Matrix.
+    """
+
+    def __init__(self, port):
+        """
+
+        Arguments:
+            port (Port): Port to which the device is connected.
+
+        """
+        ...
+
+    def on(self, colors):
+        """
+        Turns the lights on.
+
+        Arguments:
+            colors (Color or list):
+                If a single :class:`.Color` is given, then all 9 lights are set
+                to that color. If a list of colors is given, then each light is
+                set to that color.
+        """
+        ...
+
+    def off(self):
+        """
+        Turns all of the lights off.
+        """
+        ...
+
+
 class InfraredSensor:
     """LEGO® Powered Up Infrared Sensor."""
 

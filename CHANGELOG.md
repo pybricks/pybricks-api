@@ -2,6 +2,11 @@
 
 <!-- refer to https://keepachangelog.com/en/1.0.0/ for guidance -->
 
+## Unreleased
+
+### Added
+- Added `ColorLightMatrix` class.
+
 ## 1.6.0 - 2021-08-30
 
 ### Added
