@@ -2,11 +2,14 @@
 
 <!-- refer to https://keepachangelog.com/en/1.0.0/ for guidance -->
 
-## Unreleased
+## 3.1.0rc1 - 2021-11-19
 
 ### Added
 - Added `ColorLightMatrix` class.
 - Added `LWP3Device` class.
+
+**NOTE: version number after this point were from JavaScript package and do
+not correspond to Pybricks firmware version numbers.**
 
 ## 1.6.0 - 2021-08-30
 
