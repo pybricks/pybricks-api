@@ -107,13 +107,13 @@ numbers, or text), you can choose one of the Mailboxes below.
 Examples
 -----------------
 
-**EV3 Bluetooth Server**
+**EV3 Bluetooth server**
 
 This is the full version of the excerpt shown in :numref:`fig_messaging`.
 
 .. literalinclude:: ../../examples/ev3/bluetooth_server/server.py
 
-**EV3 Bluetooth Client**
+**EV3 Bluetooth client**
 
 This is the full version of the excerpt shown in :numref:`fig_messaging`.
 

@@ -1,4 +1,4 @@
-:mod:`media <pybricks.media>` -- Sounds and Images
+:mod:`media <pybricks.media>` -- Sounds and images
 ==================================================
 
 .. module:: pybricks.media
@@ -18,7 +18,7 @@ and sound files. You can access them using the classes below.
 You can also use your own sound and image files by placing them in your project
 folder.
 
-Image Files
+Image files
 ^^^^^^^^^^^
 
 .. autoclass:: pybricks.media.ev3dev.ImageFile
@@ -223,7 +223,7 @@ Image Files
         .. image:: ../../media/ev3dev-media/images/mono/eyes/winking.png
             :width: 15 %
 
-Sound Files
+Sound files
 ^^^^^^^^^^^
 
 .. autoclass:: pybricks.media.ev3dev.SoundFile
@@ -1452,7 +1452,7 @@ Fonts
 .. _FontConfig: https://www.freedesktop.org/wiki/Software/fontconfig/
 
 
-Image Manipulation
+Image manipulation
 ^^^^^^^^^^^^^^^^^^
 
 Instead of drawing directly on the EV3 screen, you can make and interact

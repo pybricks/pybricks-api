@@ -1,4 +1,4 @@
-:mod:`ev3devices <pybricks.ev3devices>` -- EV3 Devices
+:mod:`ev3devices <pybricks.ev3devices>` -- EV3 devices
 ======================================================
 
 .. automodule:: pybricks.ev3devices

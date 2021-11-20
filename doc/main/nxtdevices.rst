@@ -1,4 +1,4 @@
-:mod:`nxtdevices <pybricks.nxtdevices>` -- NXT Devices
+:mod:`nxtdevices <pybricks.nxtdevices>` -- NXT devices
 ======================================================
 
 .. automodule:: pybricks.nxtdevices

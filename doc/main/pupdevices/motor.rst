@@ -1,6 +1,6 @@
 .. pybricks-requirements::
 
-Motors with Rotation Sensors
+Motors with rotation sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. _fig_pupmotors:
@@ -78,7 +78,7 @@ Motors with Rotation Sensors
 
     .. automethod:: pybricks.pupdevices.Motor.control.stall_tolerances
 
-Initialization Examples
+Initialization examples
 -----------------------
 
 Making the motor move back and forth
@@ -105,7 +105,7 @@ Using gears
 .. literalinclude::
     ../../../examples/pup/motor/motor_init_gears.py
 
-Measurement Examples
+Measurement examples
 -----------------------
 
 Measuring the angle and speed
@@ -121,7 +121,7 @@ Resetting the measured angle
     ../../../examples/pup/motor/motor_reset_angle.py
 
 
-Movement Examples
+Movement examples
 -----------------------
 
 Basic usage of all run methods
@@ -142,7 +142,7 @@ Using the ``then`` argument to change how a run command stops
 .. literalinclude::
     ../../../examples/pup/motor/motor_action_then.py
 
-Stall Examples
+Stall examples
 -----------------------
 
 Running a motor until a mechanical endpoint
@@ -158,7 +158,7 @@ Centering a steering mechanism
     ../../../examples/pup/motor/motor_until_stalled.py
 
 
-Parallel Movement Examples
+Parallel movement examples
 --------------------------
 
 Using the ``wait`` argument to run motors in parallel

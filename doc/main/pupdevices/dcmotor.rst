@@ -1,6 +1,6 @@
 .. pybricks-requirements::
 
-Motors without Rotation Sensors
+Motors without rotation sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. _fig_pupdcmotors:

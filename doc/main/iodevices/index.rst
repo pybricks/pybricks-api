@@ -1,6 +1,6 @@
 .. pybricks-requirements:: pybricks-iodevices
 
-:mod:`iodevices <pybricks.iodevices>` -- Generic I/O Devices
+:mod:`iodevices <pybricks.iodevices>` -- Generic I/O devices
 ============================================================
 
 .. module:: pybricks.iodevices

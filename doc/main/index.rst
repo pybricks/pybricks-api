@@ -65,13 +65,13 @@ Pybricks Documentation
    Use the ☰ menu to navigate all available classes, methods, and tools. A few
    commonly used devices and classes are listed below for quick reference.
 
-   .. rubric:: Programmable Hubs
+   .. rubric:: Programmable hubs
 
    .. figure:: ../main/images/hubsoverview.png
       :width: 100 %
       :target: hubs/index.html
 
-   .. rubric:: Powered Up Motors and Sensors
+   .. rubric:: Powered Up motors and sensors
 
    .. figure:: ../main/images/pupdevicesoverview.png
       :width: 100 %
@@ -88,7 +88,7 @@ Pybricks Documentation
 
 .. toctree::
     :maxdepth: 1
-    :caption: Table of Contents
+    :caption: Table of contents
     :hidden:
 
 .. toctree::
@@ -96,12 +96,12 @@ Pybricks Documentation
     :caption: Pybricks
     :hidden:
 
-    Home Page <https://pybricks.com>
+    Home page <https://pybricks.com>
     Installation <https://pybricks.com/install/>
 
 .. toctree::
    :maxdepth: 1
-   :caption: Pybricks Package
+   :caption: Pybricks modules
    :hidden:
 
    hubs/index
@@ -115,7 +115,7 @@ Pybricks Documentation
 
 .. toctree::
    :maxdepth: 1
-   :caption: MicroPython Modules
+   :caption: MicroPython modules
    :hidden:
 
    micropython/builtins

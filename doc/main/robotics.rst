@@ -88,7 +88,7 @@
     To deactivate the :class:`.DriveBase`, call :meth:`.stop`.
 
 
-    .. rubric:: Advanced Settings
+    .. rubric:: Advanced settings
 
     The :meth:`.settings` method is used to adjust commonly used settings like
     the default speed and acceleration for straight maneuvers and turns.
