@@ -38,7 +38,7 @@
     :height: 10 em
     :target: primehub.html
 
-.. pybricks-classlink:: InventorHub
+.. pybricks-classlink:: InventorHub PrimeHub
 
 .. figure:: ../../main/images/inventorhub.png
     :height: 10 em
