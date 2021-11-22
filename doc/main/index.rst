@@ -100,7 +100,6 @@ Pybricks Documentation
    parameters/index
    tools/index
    robotics
-   geometry
    signaltypes
 
 .. toctree::

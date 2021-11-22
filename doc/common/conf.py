@@ -266,6 +266,7 @@ exclude_patterns = [
     'ev3devices.rst',
     'hubs/ev3brick.rst',
     'hubs/primehub.rst',
+    'geometry.rst',
     'iodevices/analogsensor.rst',
     'iodevices/dcmotor.rst',
     'iodevices/ev3devsensor.rst',
