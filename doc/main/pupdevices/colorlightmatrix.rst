@@ -3,7 +3,7 @@
 Color Light Matrix
 ^^^^^^^^^^^^^^^^^^
 
-.. figure:: ../../main/images/color_light_matrix.png
+.. figure:: ../../main/images/sensor_colorlightmatrix_label.png
    :width: 35 %
 
 .. autoclass:: pybricks.pupdevices.ColorLightMatrix
