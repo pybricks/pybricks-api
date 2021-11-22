@@ -272,6 +272,7 @@ exclude_patterns = [
     'iodevices/ev3devsensor.rst',
     'iodevices/i2cdevice.rst',
     'iodevices/lumpdevice.rst',
+    'iodevices/lwp3device.rst',
     'iodevices/uartdevice.rst',
     'media.rst',
     'messaging.rst',
