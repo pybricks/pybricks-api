@@ -49,16 +49,6 @@ Pybricks Documentation
 
 .. only:: ide
 
-   .. note::
-
-      **You are using a new beta version of Pybricks!**
-
-      This is great for trying the very latest features, but some things
-      might not work.
-
-      If in doubt, use the `latest stable release`_. Please report any
-      issues via our `support page`_. Thanks!
-
    To begin, install the Pybricks firmware on your hub. Check
    `pybricks.com/install`_ to learn how.
 
