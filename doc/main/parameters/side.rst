@@ -26,21 +26,6 @@ Side
     .. autoattribute:: pybricks.parameters.Side.RIGHT
         :annotation:
 
-
-    Screens or light matrices have only four sides. For those,
-    ``TOP`` is treated the same as ``FRONT``, and ``BOTTOM`` is treated the
-    same as ``BACK``. The diagrams below define the sides for relevant devices.
-
-    **Prime Hub**
-
-    .. figure:: ../../main/images/orientation_primehub_label.png
-        :height: 17 em
-
-    **Inventor Hub**
-
-    .. figure:: ../../main/images/orientation_inventorhub_label.png
-        :height: 17 em
-
     **Move Hub**
 
     .. figure:: ../../main/images/orientation_movehub_label.png

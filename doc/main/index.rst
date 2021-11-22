@@ -67,7 +67,7 @@ Pybricks Documentation
 
    .. rubric:: Programmable hubs
 
-   .. figure:: ../main/images/hubsoverview.png
+   .. figure:: ../main/images/powereduphubs.png
       :width: 100 %
       :target: hubs/index.html
 
