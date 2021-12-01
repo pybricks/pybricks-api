@@ -88,6 +88,16 @@ class DCMotor:
         is generated while the motor is still moving."""
         pass
 
+    def settings(self, max_voltage):
+        """Configures (electrical) motor settings. If no arguments are given,
+        this returns the current values.
+
+        Arguments:
+            max_voltage (:ref:`voltage`):
+                Maximum voltage applied to the motor during all motor commands.
+        """
+        pass
+
 
 class Control:
     """Class to interact with PID controller and settings."""
