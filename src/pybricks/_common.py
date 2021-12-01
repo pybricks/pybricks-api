@@ -124,7 +124,7 @@ class Control:
         """
         pass
 
-    def pid(self, kp, ki, kd, integral_range, integral_rate):
+    def pid(self, kp, ki, kd, reserved, integral_rate):
         """Gets or sets the PID values for position and speed control.
 
         If no arguments are given, this will return the current values.
@@ -138,9 +138,7 @@ class Control:
             kd (int): Derivative position (or proportional speed) control
                 constant. It is the feedback torque per
                 unit of speed: µNm/(deg/s).
-            integral_range (:ref:`angle` or :ref:`distance`): Region around
-                the target angle or distance, in which integral control errors
-                are accumulated.
+            reserved: This setting is not used.
             integral_rate (:ref:`speed` or :ref:`linspeed`): Maximum rate at
                 which the error integral is allowed to grow.
         """
