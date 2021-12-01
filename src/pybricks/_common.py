@@ -89,7 +89,7 @@ class DCMotor:
         pass
 
     def settings(self, max_voltage):
-        """Configures (electrical) motor settings. If no arguments are given,
+        """Configures motor settings. If no arguments are given,
         this returns the current values.
 
         Arguments:

@@ -4,8 +4,16 @@
 
 ## Unreleased
 
+### Added
+- Added maximum voltage setter for `DCMotor` and `Motor`.
+
+### Changed
+- Removed `duty` setting from `Control.limits` method.
+- Removed `integral_range` setting from `Control.pid` method.
+
 ### Fixed
 - Fixed link to Color Light Matrix page.
+- Fixed link to Inventor Hub page.
 
 ## 3.1.0rc1 - 2021-11-19
 

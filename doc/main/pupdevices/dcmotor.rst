@@ -25,6 +25,9 @@ Motors without rotation sensors
     .. automethod:: pybricks.pupdevices.DCMotor.brake
         :noindex:
 
+    .. automethod:: pybricks.pupdevices.DCMotor.settings
+        :noindex:
+
 Examples
 -------------------
 
