@@ -109,7 +109,7 @@ class Control:
     motor this is the number of encoder pulses per degree of rotation.
     """
 
-    def limits(self, speed, acceleration, duty, torque):
+    def limits(self, speed, acceleration, torque):
         """Configures the maximum speed, acceleration, duty, and torque.
 
         If no arguments are given, this will return the current values.
@@ -119,8 +119,6 @@ class Control:
                 Maximum speed. All speed commands will be capped to this value.
             acceleration (:ref:`acceleration` or :ref:`linacceleration`):
                 Maximum acceleration.
-            duty (:ref:`percentage`):
-                Maximum duty cycle during control.
             torque (:ref:`torque`):
                 Maximum feedback torque during control.
         """
