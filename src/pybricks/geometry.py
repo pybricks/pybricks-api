@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: MIT
-# Copyright (c) 2018-2020 The Pybricks Authors
+# Copyright (c) 2018-2021 The Pybricks Authors
 
 """Core linear algebra functionality for orientation sensors and robotics."""
 
@@ -42,19 +42,21 @@ def vector(x, y, z=None):
 
 
     Returns:
-            Matrix: A matrix with the shape of a column vector.
+        Matrix: A matrix with the shape of a column vector.
     """
     pass
 
 
-class Axis():
+class Axis:
     """Unit axes of a coordinate system.
 
     .. data:: X = vector(1, 0, 0)
     .. data:: Y = vector(0, 1, 0)
     .. data:: Z = vector(0, 0, 1)
+    .. data:: ANY = None
 
     """
     X = vector(1, 0, 0)
     Y = vector(0, 1, 0)
     Z = vector(0, 0, 1)
+    ANY = None
