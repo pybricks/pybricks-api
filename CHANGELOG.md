@@ -2,7 +2,7 @@
 
 <!-- refer to https://keepachangelog.com/en/1.0.0/ for guidance -->
 
-## Unreleased
+## 3.1.0 - 2021-12-16
 
 ### Added
 - Added maximum voltage setter for `DCMotor` and `Motor`.
