@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: MIT
-# Copyright (c) 2018-2020 The Pybricks Authors
+# Copyright (c) 2018-2021 The Pybricks Authors
 
 """Robotics module for the Pybricks API."""
 
@@ -100,8 +100,9 @@ class DriveBase:
         """Resets the estimated driven distance and angle to 0."""
         pass
 
-    def settings(self, straight_speed, straight_acceleration, turn_rate,
-                 turn_acceleration):
+    def settings(
+        self, straight_speed, straight_acceleration, turn_rate, turn_acceleration
+    ):
         """Configures the speed and acceleration used
         by :meth:`.straight`, :meth:`.turn`, and  :meth:`.curve`.
 

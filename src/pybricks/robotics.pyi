@@ -1,8 +1,10 @@
 # SPDX-License-Identifier: MIT
-# Copyright (c) 2020 The Pybricks Authors
+# Copyright (c) 2020-2021 The Pybricks Authors
 
 from typing import Optional, Tuple, overload, Union
+
 from ._common import Control, Motor
+from .parameters import Stop
 
 class DriveBase:
     distance_control: Control
@@ -32,3 +34,6 @@ class DriveBase:
     ) -> None: ...
     def straight(self, distance: int) -> None: ...
     def turn(self, angle: int) -> None: ...
+    def curve(
+        self, radius: int, angle: int, then: Stop = Stop.HOLD, wait: bool = True
+    ) -> None: ...
