@@ -1,10 +1,10 @@
 # SPDX-License-Identifier: MIT
-# Copyright (c) 2020 The Pybricks Authors
+# Copyright (c) 2020-2021 The Pybricks Authors
 
-from pybricks.geometry import Matrix, vector
-from typing import Collection, Iterable, List, Optional, Tuple, Union, overload
+from typing import Collection, Iterable, Optional, Tuple, Union, overload
 
-from .parameters import Button, Color, Direction, Side, Stop, Port, Axis
+from .geometry import Axis, Matrix, vector
+from .parameters import Button, Color, Direction, Side, Stop, Port
 from .media.ev3dev import SoundFile
 
 class DCMotor:
@@ -32,7 +32,6 @@ class Control:
         kp: Optional[int] = None,
         ki: Optional[int] = None,
         kd: Optional[int] = None,
-        integral_range: Optional[int] = None,
         integral_rate: Optional[int] = None,
     ) -> None: ...
     @overload
