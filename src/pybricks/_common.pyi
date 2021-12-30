@@ -23,15 +23,16 @@ class Control:
         self,
         speed: Optional[int] = None,
         acceleration: Optional[int] = None,
-        actuation: Optional[int] = None,
+        torque: Optional[int] = None,
     ) -> None: ...
-    def pid(self) -> Tuple[int, int, int, int, int, int]: ...
+    def pid(self) -> Tuple[int, int, int, None, int]: ...
     @overload
     def pid(
         self,
         kp: Optional[int] = None,
         ki: Optional[int] = None,
         kd: Optional[int] = None,
+        reserved: Optional[int] = None,
         integral_rate: Optional[int] = None,
     ) -> None: ...
     @overload

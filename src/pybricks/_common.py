@@ -110,7 +110,7 @@ class Control:
     """
 
     def limits(self, speed, acceleration, torque):
-        """Configures the maximum speed, acceleration, duty, and torque.
+        """Configures the maximum speed, acceleration, and torque.
 
         If no arguments are given, this will return the current values.
 
