@@ -29,7 +29,7 @@ class TechnicHub:
 
 
 class PrimeHub:
-    def __init__(self, top_size: Axis, front_side: Axis): ...
+    def __init__(self, top_side: Axis = Axis.Z, front_side: Axis = Axis.X): ...
     battery: Battery
     light: ColorLight
     display: LightMatrix
@@ -38,4 +38,3 @@ class PrimeHub:
 
 
 class InventorHub(PrimeHub): ...
- 
