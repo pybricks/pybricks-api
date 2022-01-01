@@ -671,7 +671,7 @@ class LightMatrix:
         forever while the rest of your program keeps running.
 
         Arguments:
-            matrix (list): List of Matrix of intensities.
+            matrices (list): List of Matrix of intensities.
             interval (:ref:`time`): Time to display each image in the list.
         """
         pass
