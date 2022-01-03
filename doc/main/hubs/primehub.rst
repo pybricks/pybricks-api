@@ -235,3 +235,10 @@ Turning the hub off
 
 .. literalinclude::
     ../../../examples/pup/hub_primehub/system_shutdown.py
+
+Clean up after program stop
+*****************************************
+
+.. literalinclude::
+    ../../../examples/pup/hub_primehub/cleanup.py
+
