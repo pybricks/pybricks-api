@@ -73,6 +73,8 @@ Prime Hub / Inventor Hub
 
     .. rubric:: Using the speaker
 
+    .. automethod:: pybricks.hubs::PrimeHub.speaker.volume
+
     .. automethod:: pybricks.hubs::PrimeHub.speaker.beep
 
     .. automethod:: pybricks.hubs::PrimeHub.speaker.play_notes
