@@ -2,12 +2,14 @@
 # Copyright (c) 2020 The Pybricks Authors
 
 from ._common import Speaker, Battery, ColorLight, LightMatrix, Keypad
-from .media.ev3dev import Image
+from .ev3dev._speaker import Speaker as EV3Speaker
 from .geometry import Axis
+from .media.ev3dev import Image
+
 
 class EV3Brick:
     screen: Image
-    speaker: Speaker
+    speaker: EV3Speaker
     battery: Battery
     light: ColorLight
     buttons = Keypad

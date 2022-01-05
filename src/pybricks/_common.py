@@ -420,65 +420,6 @@ class Speaker:
         """
         pass
 
-    def play_file(self, file):
-        """Plays a sound file.
-
-        Arguments:
-            file (str):
-                Path to the sound file, including the file extension.
-        """
-
-        pass
-
-    def say(self, text):
-        """Says a given text string.
-
-        You can configure the language and voice of the text using
-        :meth:`set_speech_options`.
-
-        Arguments:
-            text (str): What to say.
-        """
-
-        pass
-
-    def set_speech_options(self, language=None, voice=None, speed=None, pitch=None):
-        """Configures speech settings used by the :meth:`say` method.
-
-        Any option that is set to ``None`` will not be changed. If an option
-        is set to an invalid value :meth:`say` will use the default value
-        instead.
-
-        Arguments:
-            language (str):
-                Language of the text. For example, you can choose ``'en'``
-                (English) or ``'de'`` (German). [#espeak_lang]_
-            voice (str):
-                The voice to use. For example, you can choose ``'f1'`` (female
-                voice variant 1) or ``'m3'`` (male voice variant 3).
-                [#espeak_lang]_
-            speed (int):
-                Number of words per minute.
-            pitch (int):
-                Pitch (0 to 99). Higher numbers make the voice higher pitched
-                and lower numbers make the voice lower pitched.
-        """
-        pass
-
-    def set_volume(self, volume, which='_all_'):
-        """Sets the speaker volume.
-
-        Arguments:
-            volume (:ref:`percentage`):
-                Volume of the speaker.
-            which (str):
-                Which volume to set. ``'Beep'`` sets the volume for
-                :meth:`beep` and :meth:`play_notes`. ``'PCM'`` sets the volume
-                for :meth:`play_file` and :meth:`say`. ``'_all_'`` sets both
-                at the same time.
-        """
-        pass
-
 
 class Light:
     """Control a single-color light."""
