@@ -7,9 +7,10 @@ from ._common import (Speaker as _Speaker, Battery as _Battery,
                       LightMatrix as _LightMatrix, IMU as _IMU,
                       System as _System,
                       SimpleAccelerometer as _SimpleAccelerometer)
+from .ev3dev._speaker import Speaker as _EV3Speaker
+from .geometry import Axis as _Axis
 from .media.ev3dev import Image as _Image
 from .parameters import Button as _Button
-from .geometry import Axis as _Axis
 
 
 class EV3Brick:
@@ -25,7 +26,7 @@ class EV3Brick:
         _Button.DOWN,
     ))
     screen = _Image('_screen_')
-    speaker = _Speaker()
+    speaker = _EV3Speaker()
     battery = _Battery()
     light = _ColorLight()
 
