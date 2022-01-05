@@ -373,13 +373,23 @@ class Motor(DCMotor):
 class Speaker:
     """Plays beeps and sounds using a speaker."""
 
+    def volume(self, volume=None):
+        """Gets or sets the speaker volume.
+
+        If no volume is given, this method returns the current volume.
+
+        Arguments:
+            volume (:ref:`percentage`):
+                Volume of the speaker in the 0-100 range.
+        """
+        pass
+
     def beep(self, frequency=500, duration=100):
         """Play a beep/tone.
 
         Arguments:
             frequency (:ref:`frequency`):
-                Frequency of the beep. Frequencies below 100
-                are treated as 100.
+                Frequency of the beep in the 64-24000 Hz range.
             duration (:ref:`time`):
                 Duration of the beep. If the duration is less
                 than 0, then the method returns immediately and the frequency
