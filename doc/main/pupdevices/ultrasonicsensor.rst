@@ -36,3 +36,9 @@ Gradually change the brightness of the lights
 
 .. literalinclude::
     ../../../examples/pup/sensor_ultrasonic/math.py
+
+Turn off the lights when the program ends
+**********************************************
+
+.. literalinclude::
+    ../../../examples/pup/sensor_ultrasonic/cleanup.py
