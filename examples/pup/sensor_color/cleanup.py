@@ -1,17 +1,15 @@
 from pybricks.parameters import Port
-from pybricks.pupdevices import UltrasonicSensor
+from pybricks.pupdevices import ColorSensor
 from pybricks.tools import wait
 
 # Initialize the sensor.
-sensor = UltrasonicSensor(Port.A)
-
-# Turn on the upper lights.
-sensor.lights.on([50, 50, 0, 0])
+sensor = ColorSensor(Port.A)
 
 
 def main():
+    # Run the main code.
     while True:
-        print("Main program is running.")
+        print(sensor.color())
         wait(500)
 
 

@@ -82,3 +82,9 @@ Blinking the built-in lights
 
 .. literalinclude::
     ../../../examples/pup/sensor_color/lights_blink.py
+
+Turning off the lights when the program ends
+**********************************************
+
+.. literalinclude::
+    ../../../examples/pup/sensor_color/cleanup.py
