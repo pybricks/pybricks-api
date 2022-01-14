@@ -5,7 +5,7 @@
 from ._common import (Speaker as _Speaker, Battery as _Battery,
                       ColorLight as _ColorLight, Keypad as _Keypad,
                       LightMatrix as _LightMatrix, IMU as _IMU,
-                      System as _System,
+                      Charger as _Charger, System as _System,
                       SimpleAccelerometer as _SimpleAccelerometer)
 from .ev3dev._speaker import Speaker as _EV3Speaker
 from .geometry import Axis as _Axis
@@ -94,6 +94,7 @@ class PrimeHub:
         _Button.CENTER,
         _Button.BLUETOOTH,
     ))
+    charger = _Charger()
     light = _ColorLight()
     display = _LightMatrix(5, 5)
     speaker = _Speaker()

@@ -83,6 +83,14 @@ Prime Hub / Inventor Hub
 
     .. automethod:: pybricks.hubs::PrimeHub.battery.current
 
+    .. rubric:: Getting the charger status
+
+    .. automethod:: pybricks.hubs::PrimeHub.charger.connected
+
+    .. automethod:: pybricks.hubs::PrimeHub.charger.current
+
+    .. automethod:: pybricks.hubs::PrimeHub.charger.status
+
     .. rubric:: System control
 
     .. automethod:: pybricks.hubs::PrimeHub.system.set_stop_button
