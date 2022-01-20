@@ -122,6 +122,12 @@ Resetting the measured angle
 .. literalinclude::
     ../../../examples/pup/motor/motor_reset_angle.py
 
+Getting the absolute angle
+*******************************************************
+
+.. literalinclude::
+    ../../../examples/pup/motor/motor_absolute.py
+
 
 Movement examples
 -----------------------
