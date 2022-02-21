@@ -1,10 +1,13 @@
 # SPDX-License-Identifier: MIT
-# Copyright (c) 2020 The Pybricks Authors
+# Copyright (c) 2020-2022 The Pybricks Authors
 
 from typing import List, Optional, Tuple
 
 from .parameters import Color, Direction, Port, Button
-from ._common import Motor  # noqa E402
+from ._common import DCMotor as _DCMotor, Motor as _Motor
+
+class DCMotor(_DCMotor): ...
+class Motor(_Motor): ...
 
 class TouchSensor:
     def __init__(self, port: Port): ...
