@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pybricks"
-version = "2.0.0.post1"
+version = "2.0.0.post2"
 description = "Documentation and user-API stubs for Pybricks MicroPython"
 authors = ["The Pybricks Authors <dev@pybricks.com>"]
 maintainers = ["Laurens Valk <laurens@pybricks.com>", "David Lechner <david@pybricks.com>" ]
@@ -12,7 +12,7 @@ documentation = "https://pybricks.github.io/ev3-micropython/"
 classifiers = [
     "Programming Language :: Python :: Implementation :: MicroPython",
 ]
-include = ["pybricks/py.typed"]
+include = ["CHANGELOG.md", "pybricks/py.typed"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
