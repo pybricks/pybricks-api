@@ -1,13 +1,17 @@
 # SPDX-License-Identifier: MIT
-# Copyright (c) 2018-2020 The Pybricks Authors
+# Copyright (c) 2018-2022 The Pybricks Authors
 
 """LEGO® Powered Up motor, sensors, and lights."""
 
-from ._common import (Keypad as _Keypad, DCMotor,
+from ._common import (Keypad as _Keypad, DCMotor as _DCMotor,
                       ColorLight as _ColorLight, Motor as _Motor,
                       LightArray as _LightArray, Light as _Light)
 
 from .parameters import Direction as _Direction, Button as _Button
+
+
+class DCMotor(_DCMotor):
+    pass
 
 
 class Motor(_Motor):

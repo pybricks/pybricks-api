@@ -1,13 +1,23 @@
 # SPDX-License-Identifier: MIT
-# Copyright (c) 2020 The Pybricks Authors
+# Copyright (c) 2020-2022 The Pybricks Authors
 
 from typing import Collection, List, Optional, Tuple, Union
 
-from ._common import Keypad, DCMotor, ColorLight, LightArray, Motor as BaseMotor, Light as BaseLight
+from ._common import (
+    Keypad,
+    DCMotor as _DCMotor,
+    ColorLight,
+    LightArray,
+    Motor as _Motor,
+    Light as BaseLight,
+)
 
 from .parameters import Color, Direction, Port
 
-class Motor(BaseMotor): ...
+class DCMotor(_DCMotor): ...
+
+class Motor(_Motor):
+    def reset_angle(self, angle: Optional[int]) -> None: ...
 
 class Remote:
     light: ColorLight
@@ -63,7 +73,7 @@ class ForceSensor:
 class ColorLightMatrix:
     def __init__(self, port: Port) -> None: ...
     def on(self, color: Union[Color, List[Color]]) -> None: ...
-    def off(self)-> None: ...
+    def off(self) -> None: ...
 
 class InfraredSensor:
     def __init__(self, port: Port): ...

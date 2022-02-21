@@ -4,6 +4,11 @@
 
 ## Unreleased
 
+### Fixed
+- Fixed code completion for `DCMotor` and `Motor` classes in MS Python VS Code extension.
+- Fixed missing `DCMotor` type in `ev3devices`.
+- Fixed type hint for `Motor.reset_angle()` in `pupdevices`.
+
 ## 3.1.0 - 2021-12-16
 
 ### Added

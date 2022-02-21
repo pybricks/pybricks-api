@@ -1,10 +1,18 @@
 # SPDX-License-Identifier: MIT
-# Copyright (c) 2018-2020 The Pybricks Authors
+# Copyright (c) 2018-2022 The Pybricks Authors
 
 """LEGO® MINDSTORMS® EV3 motors and sensors."""
 
 from .parameters import Direction as _Direction
-from ._common import Motor  # noqa E402
+from ._common import DCMotor as _DCMotor, Motor as _Motor
+
+
+class DCMotor(_DCMotor):
+    pass
+
+
+class Motor(_Motor):
+    pass
 
 
 class TouchSensor:
