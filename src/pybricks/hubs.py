@@ -79,8 +79,37 @@ class TechnicHub:
         """
 
 
+class EssentialHub:
+    """LEGO® SPIKE Essential Hub."""
+
+    # These class attributes are here for auto-documentation only.
+    # In reality, they are instance attributes created by __init__.
+    battery = _Battery()
+    button = _Keypad((_Button.CENTER,))
+    charger = _Charger()
+    light = _ColorLight()
+    imu = _IMU()
+    system = _System()
+
+    def __init__(self, top_side=_Axis.Z, front_side=_Axis.X):
+        """__init__(top_side=Axis.Z, front_side=Axis.X)
+
+        Initializes the hub. Optionally, specify how the hub is
+        :ref:`placed in your design <robotframe>` by saying in which
+        direction the top side (with the button) and the front side (with the USB
+        port, and I/O ports A and B) are pointing.
+
+        Arguments:
+            top_side (Axis): The axis that passes through the *top side* of
+                the hub.
+            front_side (Axis): The axis that passes through the *front side* of
+                the hub.
+        """
+        pass
+
+
 class PrimeHub:
-    """LEGO® SPIKE Prime Hub or LEGO® MINDSTORMS Inventor Hub."""
+    """LEGO® SPIKE Prime Hub."""
 
     # These class attributes are here for auto-documentation only.
     # In reality, they are instance attributes created by __init__.

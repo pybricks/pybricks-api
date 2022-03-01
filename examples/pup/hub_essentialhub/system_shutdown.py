@@ -1,9 +1,8 @@
-# ExampleHub = MoveHub CityHub TechnicHub PrimeHub EssentialHub
-from pybricks.hubs import ExampleHub
+from pybricks.hubs import EssentialHub
 from pybricks.tools import wait
 
 # Initialize the hub.
-hub = ExampleHub()
+hub = EssentialHub()
 
 # Say goodbye and give some time to send it.
 print("Goodbye!")

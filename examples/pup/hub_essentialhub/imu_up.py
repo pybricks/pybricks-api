@@ -1,10 +1,9 @@
-# ExampleHub = TechnicHub PrimeHub MoveHub EssentialHub
-from pybricks.hubs import ExampleHub
+from pybricks.hubs import EssentialHub
 from pybricks.parameters import Color, Side
 from pybricks.tools import wait
 
 # Initialize the hub.
-hub = ExampleHub()
+hub = EssentialHub()
 
 # Define colors for each side in a dictionary.
 SIDE_COLORS = {

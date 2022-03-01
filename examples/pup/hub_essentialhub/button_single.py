@@ -1,10 +1,9 @@
-# ExampleHub = MoveHub CityHub TechnicHub EssentialHub
-from pybricks.hubs import ExampleHub
+from pybricks.hubs import EssentialHub
 from pybricks.parameters import Color, Button
 from pybricks.tools import wait, StopWatch
 
 # Initialize the hub.
-hub = ExampleHub()
+hub = EssentialHub()
 
 # Disable the stop button.
 hub.system.set_stop_button(None)
