@@ -4,6 +4,9 @@
 
 ## Unreleased
 
+### Added
+- Code auto-completion for `hub.charger`, `hub.imu` and `hub.system`.
+
 ### Fixed
 - Fixed code completion for `DCMotor` and `Motor` classes in MS Python VS Code extension.
 - Fixed missing `DCMotor` type in `ev3devices`.

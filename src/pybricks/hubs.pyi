@@ -1,7 +1,7 @@
 # SPDX-License-Identifier: MIT
 # Copyright (c) 2020 The Pybricks Authors
 
-from ._common import Speaker, Battery, ColorLight, LightMatrix, Keypad
+from ._common import Battery, ColorLight, Charger, IMU, Keypad, LightMatrix, SimpleAccelerometer, Speaker, System
 from .ev3dev._speaker import Speaker as EV3Speaker
 from .geometry import Axis
 from .media.ev3dev import Image
@@ -17,17 +17,22 @@ class EV3Brick:
 class MoveHub:
     battery: Battery
     light: ColorLight
+    system: System
+    imu: SimpleAccelerometer
 
 
 class CityHub:
     battery: Battery
     light: ColorLight
+    system: System
 
 
 class TechnicHub:
     def __init__(self, top_size: Axis, front_side: Axis): ...
     battery: Battery
     light: ColorLight
+    system: System
+    imu: IMU
 
 
 class PrimeHub:
@@ -37,6 +42,9 @@ class PrimeHub:
     display: LightMatrix
     buttons: Keypad
     speaker: Speaker
+    system: System
+    imu: IMU
+    charger: Charger
 
 
 class InventorHub(PrimeHub): ...
