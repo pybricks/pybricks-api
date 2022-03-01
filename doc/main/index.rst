@@ -28,8 +28,8 @@ Pybricks Documentation
 
    .. list-table::
 
-      * - **Technic Hub, City Hub, BOOST Move Hub**
-        - **SPIKE Prime Hub / MINDSTORMS Inventor Hub**
+      * - **Technic, City, and BOOST Move Hubs**
+        - **SPIKE Essential/Prime, and MINDSTORMS Inventor Hubs**
 
       * - .. figure:: ../main/images/powereduphubs.png
             :target: https://pybricks.com/install/technic-boost-city/

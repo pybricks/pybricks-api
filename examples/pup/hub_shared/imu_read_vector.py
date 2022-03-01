@@ -1,4 +1,4 @@
-# ExampleHub = TechnicHub PrimeHub
+# ExampleHub = TechnicHub PrimeHub EssentialHub
 from pybricks.hubs import ExampleHub
 from pybricks.tools import wait
 

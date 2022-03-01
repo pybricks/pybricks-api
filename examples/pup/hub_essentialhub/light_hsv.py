@@ -1,10 +1,9 @@
-# ExampleHub = CityHub TechnicHub PrimeHub EssentialHub
-from pybricks.hubs import ExampleHub
+from pybricks.hubs import EssentialHub
 from pybricks.parameters import Color
 from pybricks.tools import wait
 
 # Initialize the hub.
-hub = ExampleHub()
+hub = EssentialHub()
 
 # Show the color at 30% brightness.
 hub.light.on(Color.RED * 0.3)

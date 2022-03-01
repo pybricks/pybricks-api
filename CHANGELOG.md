@@ -2,6 +2,11 @@
 
 <!-- refer to https://keepachangelog.com/en/1.0.0/ for guidance -->
 
+## Unreleased
+
+### Added
+- Code auto-completion for `EssentialHub`.
+
 ## 3.2.0b1-r3 - 2022-06-26
 
 ### Fixed
