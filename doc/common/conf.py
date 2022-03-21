@@ -126,18 +126,7 @@ nitpick_ignore = [
 ]
 
 # not sure why, but this is needed for typing.IO in uselect
-nitpick_ignore.append(('py:class', 'IO'))
-
-# Workaround until change below is released.
-# https://github.com/sphinx-doc/sphinx/commit/86091934db5ec593b4b0c982b7f08f3231ef995b
-nitpick_ignore.extend([
-    ('py:class', '0'),
-    ('py:class', '1'),
-    ('py:class', '2'),
-    ('py:class', '3'),
-    ('py:class', 'big'),
-    ('py:class', 'little'),
-])
+nitpick_ignore.append(('py:obj', 'typing.IO'))
 
 # -- Autodoc options ------------------------------------------------------
 
