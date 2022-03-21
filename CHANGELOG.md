@@ -12,6 +12,10 @@
 - Fixed missing `DCMotor` type in `ev3devices`.
 - Fixed type hint for `Motor.reset_angle()` in `pupdevices`.
 
+### Changed
+- Setter for acceleration can now also be used to set acceleration and
+  deceleration to different values, using a two-valued tuple.
+
 ## 3.1.0 - 2021-12-16
 
 ### Added

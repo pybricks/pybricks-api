@@ -118,7 +118,9 @@ class Control:
             speed (:ref:`speed` or :ref:`linspeed`):
                 Maximum speed. All speed commands will be capped to this value.
             acceleration (:ref:`acceleration` or :ref:`linacceleration`):
-                Maximum acceleration.
+                Slope of the speed curve when accelerating or decelerating.
+                Use a tuple to set acceleration and deceleration separately.
+                If one value is given, it is used for both.
             torque (:ref:`torque`):
                 Maximum feedback torque during control.
         """
