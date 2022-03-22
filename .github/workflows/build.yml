@@ -35,7 +35,7 @@ jobs:
       run: poetry run doc8
     - name: Build html docs for Read the Docs
       run: poetry run make -C doc html
-    - name: Instal IDE docs dependencies
+    - name: Install IDE docs dependencies
       run: |
         sudo apt-get update
         sudo apt-get install dvisvgm preview-latex-style texlive texlive-fonts-extra texlive-latex-extra
