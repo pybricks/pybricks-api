@@ -27,6 +27,10 @@ Move Hub
 
     .. automethod:: pybricks.hubs::MoveHub.imu.acceleration
 
+        .. versionchanged:: 3.2
+
+            Changed acceleration units from m/s/s to mm/s/s.
+
     .. rubric:: Using the battery
 
     .. automethod:: pybricks.hubs::MoveHub.battery.voltage

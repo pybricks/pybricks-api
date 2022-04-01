@@ -761,7 +761,7 @@ class SimpleAccelerometer:
         """Gets the acceleration of the device.
 
         Returns:
-            tuple of :ref:`linacceleration_m`: Acceleration along all three
+            tuple of :ref:`linacceleration`: Acceleration along all three
             axes.
         """
         pass
@@ -807,7 +807,7 @@ class Accelerometer(SimpleAccelerometer):
             axis (Axis): Axis along which the acceleration is
                          measured.
         Returns:
-            :ref:`linacceleration_m`: Acceleration along the
+            :ref:`linacceleration`: Acceleration along the
             specified axis. If you specify no axis, this returns a vector
             of accelerations along all axes.
         """
