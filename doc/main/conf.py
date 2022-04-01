@@ -25,6 +25,9 @@ latex_logo = '../common/images/pybricks-logo-large.png'
 if os.environ.get('READTHEDOCS', None) == 'True':
     tags.add('main')  # noqa F821
 
+# On https://docs.pybricks.com/en/latest/, show features tagged as beta.
+if os.environ.get('READTHEDOCS_VERSION_NAME', None) == 'latest':
+    tags.add('beta')  # noqa F821
 
 # Addtional configuration of the IDE docs
 if 'ide' in tags.tags:  # noqa F821
