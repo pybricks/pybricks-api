@@ -53,10 +53,12 @@ extensions = [
     'sphinx.ext.napoleon',
     'sphinx.ext.todo',
     'sphinx.ext.mathjax',
+    # Custom Pybricks extensions
     'color',
     'classlink',
     'requirements',
     'requirements-static',
+    'versionchanged',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
