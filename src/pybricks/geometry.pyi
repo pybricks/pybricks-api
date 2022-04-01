@@ -1,7 +1,6 @@
 # SPDX-License-Identifier: MIT
 # Copyright (c) 2020-2021 The Pybricks Authors
 
-from _typeshed import NoneType
 from typing import Collection, Optional, Tuple
 
 class Matrix:
@@ -29,4 +28,3 @@ class Axis:
     X: Matrix
     Y: Matrix
     Z: Matrix
-    ANY: NoneType
