@@ -4,9 +4,11 @@
 """Generic cross-platform module for typical devices like lights, displays,
 speakers, and batteries."""
 
-from .parameters import Direction, Stop, Button
+from .parameters import Direction, Stop, Button, Port
+from typing import Union, Iterable, overload, Optional, Tuple
 
-from typing import Union, Iterable
+
+Number = Union[int, float]
 
 
 class System:
@@ -63,9 +65,10 @@ class DCMotor:
     """Generic class to control simple motors without rotation sensors, such
     as train motors."""
 
-    def __init__(self, port,
-                 positive_direction=Direction.CLOCKWISE):
-        """
+    def __init__(
+        self, port: Port, positive_direction: Direction = Direction.CLOCKWISE
+    ):
+        """DCMotor(port, positive_direction=Direction.CLOCKWISE)
 
         Arguments:
             port (Port): Port to which the motor is connected.
@@ -74,11 +77,13 @@ class DCMotor:
         """
         pass
 
-    def dc(self, duty):
-        """Rotates the motor at a given duty cycle (also known as "power").
+    def dc(self, duty: Number):
+        """dc(duty)
+
+        Rotates the motor at a given duty cycle (also known as "power").
 
         Arguments:
-            duty (:ref:`percentage`): The duty cycle (-100.0 to 100).
+            duty (Number, %): The duty cycle (-100.0 to 100).
         """
         pass
 
@@ -95,12 +100,24 @@ class DCMotor:
         is generated while the motor is still moving."""
         pass
 
-    def settings(self, max_voltage):
-        """Configures motor settings. If no arguments are given,
+    @overload
+    def settings(self, max_voltage: Optional[int] = None) -> None:
+        ...
+
+    @overload
+    def settings(self) -> Tuple[int]:
+        ...
+
+    def settings(self, *args):
+        """
+        settings(max_voltage)
+        settings() -> Tuple[int]
+
+        Configures motor settings. If no arguments are given,
         this returns the current values.
 
         Arguments:
-            max_voltage (:ref:`voltage`):
+            max_voltage (Number, mV):
                 Maximum voltage applied to the motor during all motor commands.
         """
         pass

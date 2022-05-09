@@ -87,7 +87,7 @@ version = re.match(r'(v\d+\.\d+)', release)[0]
 #
 # This is also used if you do content translation via gettext catalogs.
 # Usually you set "language" from the command line for these cases.
-language = None
+language = 'en'
 
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = 'xcode'
@@ -309,7 +309,7 @@ def on_missing_reference(app, env, node, contnode):
     # References with special characters can't exist, so we have to supress
     # warnings when Sphinx tries to cross reference units like deg/s. For
     # consistency, we also treat units without special characters this way.
-    for unit in ['deg', 'deg/s', 'mm/s', '%']:
+    for unit in ['deg', 'deg/s', 'mm/s', '%', 'mV', 'mA']:
         if unit == contnode.rawsource or unit == str(contnode):
             return contnode
 
