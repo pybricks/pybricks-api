@@ -34,5 +34,6 @@
         "plaintext",
         "python",
         "restructuredtext",
-    ]
+    ],
+    "rewrap.wrappingColumn": 78,
 }
