@@ -4,21 +4,26 @@
 """Generic cross-platform module for typical devices like lights, displays,
 speakers, and batteries."""
 
-from .parameters import Direction, Stop
+from .parameters import Direction, Stop, Button
+
+from typing import Union, Iterable
 
 
 class System:
     """System control actions for a hub."""
 
-    def set_stop_button(self, button):
-        """Sets the button or button combination that stops a running script.
+    def set_stop_button(self, button: Union[Button, Iterable[Button]]):
+        """
+        set_stop_button(button)
+
+        Sets the button or button combination that stops a running script.
 
         Normally, the center button is used to stop a running script. You can
         change or disable this behavior in order to use the button for other
         purposes.
 
         Arguments:
-            Button: A button such
+            button (Button): A button such
                 as :attr:`Button.CENTER <pybricks.parameters.Button.CENTER>`,
                 or a tuple of multiple buttons. Choose ``None`` to disable the
                 stop button altogether.
@@ -29,25 +34,27 @@ class System:
         """Stops your program and shuts the hub down."""
         pass
 
-    def reset_reason(self):
+    def reset_reason(self) -> int:
         """Finds out how and why the hub (re)booted. This can be useful to
         diagnose some problems.
 
         Returns:
-            int: Returns ``0`` if the hub was previously powered off
-            normally. Returns ``1`` if the hub rebooted automatically, like
-            after a firmware update. Returns ``2`` if the hub previously
-            crashed due to a watchdog timeout, which indicates a firmware
-            issue.
+            * ``0`` if the hub was previously powered off
+              normally.
+            * ``1`` if the hub rebooted automatically, like
+              after a firmware update.
+            * ``2`` if the hub previously
+              crashed due to a watchdog timeout, which indicates a firmware
+              issue.
         """
         pass
 
-    def name(self):
+    def name(self) -> str:
         """Gets the hub name. This is the name you see when connecting
         via Bluetooth.
 
         Returns:
-            str: The hub name.
+            The hub name.
         """
         pass
 
