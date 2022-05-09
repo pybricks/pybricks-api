@@ -304,8 +304,19 @@ class AvailabilityDirective(Directive):
                 nodes.Text(', '.join(self.options))]
 
 
+
+def on_missing_reference(app, env, node, contnode):
+    # References with special characters can't exist, so we have to supress
+    # warnings when Sphinx tries to cross reference units like deg/s. For
+    # consistency, we also treat units without special characters this way.
+    for unit in ['deg', 'deg/s', 'mm/s', '%']:
+        if unit == contnode.rawsource or unit == str(contnode):
+            return contnode
+
+
 def setup(app: Sphinx):
     app.add_directive('availability', AvailabilityDirective)
+    app.connect('missing-reference', on_missing_reference)
 
 
 # -- Python domain hacks ---------------------------------------------------

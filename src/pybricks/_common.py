@@ -335,17 +335,21 @@ class Motor(DCMotor):
         pass
 
     def run_until_stalled(self, speed, then=Stop.COAST, duty_limit=None):
-        """Runs the motor at a constant speed until it stalls.
+        """
+        run_until_stalled(speed, then=Stop.COAST, duty_limit=None) -> int, deg
+
+        Runs the motor at a constant speed until it stalls.
 
         Arguments:
-            speed (:ref:`speed`): Speed of the motor.
+            speed (Number, deg/s): Speed of the motor.
             then (Stop): What to do after coming to a standstill.
-            duty_limit (:ref:`percentage`): Duty cycle limit during this
+            duty_limit (Number, %): Duty cycle limit during this
                 command. This is useful to avoid applying the full motor
-                torque to a geared or lever mechanism.
+                torque to a geared or lever mechanism. If it is ``None``, the
+                duty limit won't be changed during this command.
 
         Returns:
-            :ref:`angle`: Angle at which the motor becomes stalled.
+            Angle at which the motor becomes stalled.
         """
         pass
 
