@@ -27,6 +27,7 @@ from docutils import nodes
 from docutils.parsers.rst.directives import flag
 from docutils.parsers.rst import Directive
 from sphinx.application import Sphinx
+from sphinx.roles import XRefRole
 import toml
 
 TOP_DIR = os.path.abspath(os.path.join('..', '..'))
@@ -310,8 +311,26 @@ def on_missing_reference(app, env, node, contnode):
     # warnings when Sphinx tries to cross reference units like deg/s. For
     # consistency, we also treat units without special characters this way.
     for unit in ['deg', 'deg/s', 'mm/s', '%', 'mV', 'mA']:
-        if unit == contnode.rawsource or unit == str(contnode):
+        
+        # If they match on raw source, we are dealing with argument types.
+        if unit == contnode.rawsource:
+            # Return as-is to suppress missing cross reference warning. We
+            # could make this more fancy by returning an xref node that links
+            # to the signals page.
             return contnode
+        
+        # Return types are denoted as "int: deg"
+        try:
+            # Try to unpack the node.
+            ret_type, ret_unit = str(contnode).split(": ")
+        except ValueError:
+            # Not a valid format, so skip.
+            continue
+        
+        # If it's a match, we could format the node so it looks a bit nicer.
+        # For now just keep the colon notation as is.
+        if unit == ret_unit:
+            return nodes.Text(f"{ret_type}: {ret_unit}")
 
 
 def setup(app: Sphinx):

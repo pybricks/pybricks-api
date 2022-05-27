@@ -5,7 +5,7 @@
 speakers, and batteries."""
 
 from .parameters import Direction, Stop, Button, Port
-from typing import Union, Iterable, overload, Optional, Tuple
+from typing import Union, Iterable, overload, Optional, Tuple, Collection
 
 
 Number = Union[int, float]
@@ -240,11 +240,14 @@ class Motor(DCMotor):
     ``control`` attribute of the motor. See :ref:`control` for an overview
     of available methods."""
 
-    def __init__(self, port,
-                 positive_direction=Direction.CLOCKWISE,
-                 gears=None,
-                 reset_angle=True):
-        """
+    def __init__(
+        self,
+        port: Port,
+        positive_direction: Direction = Direction.CLOCKWISE,
+        gears: Optional[Union[Collection[int], Collection[Collection[int]]]] = None,
+        reset_angle: bool = True,
+    ):
+        """Motor(port, positive_direction=Direction.CLOCKWISE, gears=None, reset_angle=True)
 
         Arguments:
             port (Port): Port to which the motor is connected.
@@ -270,20 +273,23 @@ class Motor(DCMotor):
         """
         pass
 
-    def angle(self):
-        """Gets the rotation angle of the motor.
+    def angle(self) -> int:
+        """angle() -> int: deg
+
+        Gets the rotation angle of the motor.
 
         Returns:
-            :ref:`angle`: Motor angle.
-
+            Motor angle.
         """
         pass
 
-    def speed(self):
-        """Gets the speed of the motor.
+    def speed(self) -> int:
+        """speed() -> int: deg/s
+
+        Gets the speed of the motor.
 
         Returns:
-            :ref:`speed`: Motor speed.
+            Motor speed.
 
         """
         pass
@@ -360,7 +366,7 @@ class Motor(DCMotor):
 
     def run_until_stalled(self, speed, then=Stop.COAST, duty_limit=None):
         """
-        run_until_stalled(speed, then=Stop.COAST, duty_limit=None) -> int, deg
+        run_until_stalled(speed, then=Stop.COAST, duty_limit=None) -> int: deg
 
         Runs the motor at a constant speed until it stalls.
 
