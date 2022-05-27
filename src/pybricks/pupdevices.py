@@ -3,6 +3,8 @@
 
 """LEGO® Powered Up motor, sensors, and lights."""
 
+from typing import Optional
+
 from ._common import (Keypad as _Keypad, DCMotor as _DCMotor,
                       ColorLight as _ColorLight, Motor as _Motor,
                       LightArray as _LightArray, Light as _Light)
@@ -17,14 +19,16 @@ class DCMotor(_DCMotor):
 class Motor(_Motor):
     """Generic class to control motors with built-in rotation sensors."""
 
-    def reset_angle(self, angle=None):
-        """Sets the accumulated rotation angle of the motor to a desired value.
+    def reset_angle(self, angle: Optional[int]) -> None:
+        """reset_angle(angle=None)
+
+        Sets the accumulated rotation angle of the motor to a desired value.
 
         If you don't specify an angle, the absolute angle
         will be used if your motor supports it.
 
         Arguments:
-            angle (:ref:`angle`): Value to which the angle should be reset.
+            angle (Number, deg): Value to which the angle should be reset.
         """
         pass
 

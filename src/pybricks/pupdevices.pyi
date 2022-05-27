@@ -14,11 +14,6 @@ from ._common import (
 
 from .parameters import Color, Direction, Port
 
-class DCMotor(_DCMotor): ...
-
-class Motor(_Motor):
-    def reset_angle(self, angle: Optional[int]) -> None: ...
-
 class Remote:
     light: ColorLight
     buttons: Keypad

@@ -27,7 +27,6 @@ from docutils import nodes
 from docutils.parsers.rst.directives import flag
 from docutils.parsers.rst import Directive
 from sphinx.application import Sphinx
-from sphinx.roles import XRefRole
 import toml
 
 TOP_DIR = os.path.abspath(os.path.join('..', '..'))
@@ -310,7 +309,7 @@ def on_missing_reference(app, env, node, contnode):
     # References with special characters can't exist, so we have to supress
     # warnings when Sphinx tries to cross reference units like deg/s. For
     # consistency, we also treat units without special characters this way.
-    for unit in ['deg', 'deg/s', 'mm/s', '%', 'mV', 'mA']:
+    for unit in ['deg', 'deg/s', 'mm/s', '%', 'mV', 'mA', 'ms']:
         
         # If they match on raw source, we are dealing with argument types.
         if unit == contnode.rawsource:

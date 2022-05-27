@@ -14,7 +14,7 @@ Number = Union[int, float]
 class System:
     """System control actions for a hub."""
 
-    def set_stop_button(self, button: Union[Button, Iterable[Button]]):
+    def set_stop_button(self, button: Union[Button, Iterable[Button]]) -> None:
         """
         set_stop_button(button)
 
@@ -32,12 +32,16 @@ class System:
         """
         pass
 
-    def shutdown(self):
-        """Stops your program and shuts the hub down."""
+    def shutdown(self) -> None:
+        """shutdown()
+
+        Stops your program and shuts the hub down."""
         pass
 
     def reset_reason(self) -> int:
-        """Finds out how and why the hub (re)booted. This can be useful to
+        """reset_reason() -> int
+
+        Finds out how and why the hub (re)booted. This can be useful to
         diagnose some problems.
 
         Returns:
@@ -52,7 +56,9 @@ class System:
         pass
 
     def name(self) -> str:
-        """Gets the hub name. This is the name you see when connecting
+        """name() -> str
+
+        Gets the hub name. This is the name you see when connecting
         via Bluetooth.
 
         Returns:
@@ -77,7 +83,7 @@ class DCMotor:
         """
         pass
 
-    def dc(self, duty: Number):
+    def dc(self, duty: Number) -> None:
         """dc(duty)
 
         Rotates the motor at a given duty cycle (also known as "power").
@@ -87,14 +93,18 @@ class DCMotor:
         """
         pass
 
-    def stop(self):
-        """Stops the motor and lets it spin freely.
+    def stop(self) -> None:
+        """stop()
+
+        Stops the motor and lets it spin freely.
 
         The motor gradually stops due to friction."""
         pass
 
-    def brake(self):
-        """Passively brakes the motor.
+    def brake(self) -> None:
+        """brake()
+
+        Passively brakes the motor.
 
         The motor stops due to friction, plus the voltage that
         is generated while the motor is still moving."""
@@ -139,7 +149,7 @@ class Control:
         If no arguments are given, this will return the current values.
 
         Arguments:
-            speed (:ref:`speed` or :ref:`linspeed`):
+            speed (Number, deg/s or :ref:`linspeed`):
                 Maximum speed. All speed commands will be capped to this value.
             acceleration (:ref:`acceleration` or :ref:`linacceleration`):
                 Slope of the speed curve when accelerating or decelerating.
@@ -165,7 +175,7 @@ class Control:
                 constant. It is the feedback torque per
                 unit of speed: µNm/(deg/s).
             reserved: This setting is not used.
-            integral_rate (:ref:`speed` or :ref:`linspeed`): Maximum rate at
+            integral_rate (Number, deg/s or :ref:`linspeed`): Maximum rate at
                 which the error integral is allowed to grow.
         """
         pass
@@ -176,9 +186,9 @@ class Control:
         If no arguments are given, this will return the current values.
 
         Arguments:
-            speed (:ref:`speed` or :ref:`linspeed`): Allowed deviation
+            speed (Number, deg/s or :ref:`linspeed`): Allowed deviation
                 from zero speed before motion is considered complete.
-            position (:ref:`angle` or :ref:`distance`): Allowed
+            position (Number, deg or :ref:`distance`): Allowed
                 deviation from the target before motion is considered
                 complete.
         """
@@ -190,10 +200,10 @@ class Control:
         If no arguments are given, this will return the current values.
 
         Arguments:
-            speed (:ref:`speed` or :ref:`linspeed`): If the controller
+            speed (Number, deg/s or :ref:`linspeed`): If the controller
                 cannot reach this speed for some ``time`` even with maximum
                 actuation, it is stalled.
-            time (:ref:`time`): How long the controller has to be below this
+            time (Number, ms): How long the controller has to be below this
                 minimum ``speed`` before we say it is stalled.
         """
         pass
@@ -294,77 +304,95 @@ class Motor(DCMotor):
         """
         pass
 
-    def reset_angle(self, angle):
-        """Sets the accumulated rotation angle of the motor to a desired value.
+    def reset_angle(self, angle: int) -> None:
+        """
+        reset_angle(angle)
+
+        Sets the accumulated rotation angle of the motor to a desired value.
 
         Arguments:
-            angle (:ref:`angle`): Value to which the angle should be reset.
+            angle (Number, deg): Value to which the angle should be reset.
         """
         pass
 
-    def hold(self):
-        """Stops the motor and actively holds it at its current angle."""
+    def hold(self) -> None:
+        """hold()
+
+        Stops the motor and actively holds it at its current angle."""
         pass
 
-    def run(self, speed):
-        """Runs the motor at a constant speed.
+    def run(self, speed: int) -> None:
+        """run(speed)
+
+        Runs the motor at a constant speed.
 
         The motor accelerates to the given speed and keeps running at this
         speed until you give a new command.
 
         Arguments:
-            speed (:ref:`speed`): Speed of the motor.
+            speed (Number, deg/s): Speed of the motor.
         """
         pass
 
-    def run_time(self, speed, time, then=Stop.HOLD, wait=True):
-        """Runs the motor at a constant speed for a given amount of time.
+    def run_time(
+        self, speed: int, time: int, then: Stop = Stop.HOLD, wait: bool = True
+    ) -> None:
+        """run_time(speed, time, then=Stop.HOLD, wait=True)
+
+        Runs the motor at a constant speed for a given amount of time.
 
         The motor accelerates to the given speed, keeps running at this speed,
         and then decelerates. The total maneuver lasts for exactly the given
         amount of ``time``.
 
         Arguments:
-            speed (:ref:`speed`): Speed of the motor.
-            time (:ref:`time`): Duration of the maneuver.
+            speed (Number, deg/s): Speed of the motor.
+            time (Number, ms): Duration of the maneuver.
             then (Stop): What to do after coming to a standstill.
             wait (bool): Wait for the maneuver to complete before continuing
-                         with the rest of the program.
+                with the rest of the program.
         """
         pass
 
-    def run_angle(self, speed, rotation_angle, then=Stop.HOLD, wait=True):
-        """Runs the motor at a constant speed by a given angle.
+    def run_angle(
+        self, speed: int, rotation_angle: int, then: Stop = Stop.HOLD, wait: bool = True
+    ) -> None:
+        """run_angle(speed, rotation_angle, then=Stop.HOLD, wait=True)
+
+        Runs the motor at a constant speed by a given angle.
 
         Arguments:
-            speed (:ref:`speed`): Speed of the motor.
-            rotation_angle (:ref:`angle`): Angle by which the motor should
-                                           rotate.
+            speed (Number, deg/s): Speed of the motor.
+            rotation_angle (Number, deg): Angle by which the motor should
+                rotate.
             then (Stop): What to do after coming to a standstill.
             wait (bool): Wait for the maneuver to complete before continuing
-                         with the rest of the program.
+                with the rest of the program.
         """
         pass
 
-    def run_target(self, speed, target_angle, then=Stop.HOLD, wait=True):
-        """Runs the motor at a constant speed towards a
-        given target angle.
+    def run_target(
+        self, speed: int, target_angle: int, then: Stop = Stop.HOLD, wait: bool = True
+    ) -> None:
+        """run_target(speed, target_angle, then=Stop.HOLD, wait=True)
+
+        Runs the motor at a constant speed towards a given target angle.
 
         The direction of rotation is automatically selected based on the target
         angle. It does not matter if ``speed`` is positive or negative.
 
         Arguments:
-            speed (:ref:`speed`): Speed of the motor.
-            target_angle (:ref:`angle`): Angle that the motor should
-                                         rotate to.
+            speed (Number, deg/s): Speed of the motor.
+            target_angle (Number, deg): Angle that the motor should rotate to.
             then (Stop): What to do after coming to a standstill.
             wait (bool): Wait for the motor to reach the target
-                         before continuing with the rest of the
-                         program.
+                before continuing with the rest of the program.
         """
         pass
 
-    def run_until_stalled(self, speed, then=Stop.COAST, duty_limit=None):
+    def run_until_stalled(
+        self, speed: int, then: Stop = Stop.COAST, duty_limit: Optional[int] = None
+    ) -> int:
         """
         run_until_stalled(speed, then=Stop.COAST, duty_limit=None) -> int: deg
 
@@ -383,27 +411,19 @@ class Motor(DCMotor):
         """
         pass
 
-    def track_target(self, target_angle):
-        """Tracks a target angle. This is similar to :meth:`.run_target`, but
+    def track_target(self, target_angle: int) -> None:
+        """track_target(target_angle)
+
+        Tracks a target angle. This is similar to :meth:`.run_target`, but
         the usual smooth acceleration is skipped: it will move to the target
         angle as fast as possible. This method is useful if you want to
         continuously change the target angle.
 
         Arguments:
-            target_angle (:ref:`angle`): Target angle that the motor should
-                                         rotate to.
-
+            target_angle (Number, deg): Target angle that the motor should
+                rotate to.
         """
         pass
-
-    def dc(self, duty):
-        """Rotates the motor at a given duty cycle (also known as "power").
-
-        This method lets you use a motor just like a simple DC motor.
-
-        Arguments:
-            duty (:ref:`percentage`): The duty cycle (-100.0 to 100).
-        """
 
 
 class Speaker:
@@ -426,7 +446,7 @@ class Speaker:
         Arguments:
             frequency (:ref:`frequency`):
                 Frequency of the beep in the 64-24000 Hz range.
-            duration (:ref:`time`):
+            duration (Number, ms):
                 Duration of the beep. If the duration is less
                 than 0, then the method returns immediately and the frequency
                 play continues to play indefinitely.
@@ -492,7 +512,7 @@ class Light:
         For more generic and smooth patterns, use :meth:`.animate` instead.
 
         Arguments:
-            (list): List of (:ref:`time`) values of the
+            (list): List of time values of the
                 form ``[on_1, off_1, on_2, off_2, ...]``.
         """
 
@@ -505,7 +525,7 @@ class Light:
 
         Arguments:
             brightness_values (list): List of :ref:`brightness` values.
-            interval (:ref:`time`): Time between brightness updates.
+            interval (Number, ms): Time between brightness updates.
         """
 
     def reset(self):
@@ -541,7 +561,7 @@ class ColorLight:
 
         Arguments:
             color (Color): Color of the light.
-            durations (list): List of (:ref:`time`) values of the
+            durations (list): List of time values of the
                 form ``[on_1, off_1, on_2, off_2, ...]``.
         """
 
@@ -554,7 +574,7 @@ class ColorLight:
 
         Arguments:
             colors (list): List of :class:`Color <.parameters.Color>` values.
-            interval (:ref:`time`): Time between color updates.
+            interval (Number, ms): Time between color updates.
         """
 
     def reset(self):
@@ -598,7 +618,7 @@ class LightArray:
         For more generic and smooth patterns, use :meth:`.animate` instead.
 
         Arguments:
-            (list): List of (:ref:`time`) values of the
+            (list): List of time values of the
                 form ``[on_1, off_1, on_2, off_2, ...]``.
         """
 
@@ -611,7 +631,7 @@ class LightArray:
 
         Arguments:
             brightness_values (list): List of :ref:`brightness` tuples.
-            interval (:ref:`time`): Time between brightness updates.
+            interval (Number, ms): Time between brightness updates.
         """
 
 
@@ -659,7 +679,7 @@ class LightMatrix:
 
         Arguments:
             matrices (list): List of Matrix of intensities.
-            interval (:ref:`time`): Time to display each image in the list.
+            interval (Number, ms): Time to display each image in the list.
         """
         pass
 
@@ -706,8 +726,8 @@ class LightMatrix:
 
         Arguments:
             text (str): The text to be displayed.
-            on (:ref:`time`): For how long a character is shown.
-            off (:ref:`time`): For how long the display is off between
+            on (Number, ms): For how long a character is shown.
+            off (Number, ms): For how long the display is off between
                 characters.
         """
         pass
@@ -897,7 +917,7 @@ class IMU(Accelerometer):
         .. note:: This method is not yet implemented.
 
         Returns:
-            :ref:`angle`: Heading angle relative to starting orientation.
+            Heading angle relative to starting orientation.
 
         """
         pass
@@ -908,7 +928,7 @@ class IMU(Accelerometer):
         .. note:: This method is not yet implemented.
 
         Arguments:
-            angle (:ref:`angle`): Value to which the heading should be reset.
+            angle (Number, deg): Value to which the heading should be reset.
         """
         pass
 
@@ -920,7 +940,7 @@ class IMU(Accelerometer):
             axis (Axis): Axis along which the angular velocity is
                          measured.
         Returns:
-            :ref:`speed`: Angular velocity along the
+            Angular velocity along the
             specified axis. If you specify no axis, this returns a vector
             of accelerations along all axes.
         """
