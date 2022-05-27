@@ -134,22 +134,40 @@ class DCMotor:
 class Control:
     """Class to interact with PID controller and settings."""
 
-    scale = 1.0
+    scale: int
+
     """
     Scaling factor between the controlled integer variable
     and the physical output. For example, for a single
     motor this is the number of encoder pulses per degree of rotation.
     """
 
-    def limits(self, speed, acceleration, torque):
-        """Configures the maximum speed, acceleration, and torque.
+    @overload
+    def limits(self) -> Tuple[int, int, int]:
+        ...
+
+    @overload
+    def limits(
+        self,
+        speed: Optional[int] = None,
+        acceleration: Optional[int] = None,
+        torque: Optional[int] = None,
+    ) -> None:
+        ...
+
+    def limits(self, *args):
+        """
+        limits(speed, acceleration, torque)
+        limits() -> Tuple[int, int, int]
+
+        Configures the maximum speed, acceleration, and torque.
 
         If no arguments are given, this will return the current values.
 
         Arguments:
-            speed (Number, deg/s or :ref:`linspeed`):
+            speed (Number, deg/s or Number, mm/s):
                 Maximum speed. All speed commands will be capped to this value.
-            acceleration (:ref:`acceleration` or :ref:`linacceleration`):
+            acceleration (Number, deg/s/s or Number, mm/s/s):
                 Slope of the speed curve when accelerating or decelerating.
                 Use a tuple to set acceleration and deceleration separately.
                 If one value is given, it is used for both.
@@ -158,8 +176,26 @@ class Control:
         """
         pass
 
-    def pid(self, kp, ki, kd, reserved, integral_rate):
-        """Gets or sets the PID values for position and speed control.
+    @overload
+    def pid(self) -> Tuple[int, int, int, None, int]:
+        ...
+
+    @overload
+    def pid(
+        self,
+        kp: Optional[int] = None,
+        ki: Optional[int] = None,
+        kd: Optional[int] = None,
+        reserved: Optional[int] = None,
+        integral_rate: Optional[int] = None,
+    ) -> None:
+        ...
+
+    def pid(self, *args):
+        """pid(kp, ki, kd, reserved, integral_rate)
+        pid() -> Tuple[int, int, int, None, int]
+
+        Gets or sets the PID values for position and speed control.
 
         If no arguments are given, this will return the current values.
 
@@ -173,18 +209,31 @@ class Control:
                 constant. It is the feedback torque per
                 unit of speed: µNm/(deg/s).
             reserved: This setting is not used.
-            integral_rate (Number, deg/s or :ref:`linspeed`): Maximum rate at
+            integral_rate (Number, deg/s or Number, mm/s): Maximum rate at
                 which the error integral is allowed to grow.
         """
         pass
 
-    def target_tolerances(self, speed, position):
-        """Gets or sets the tolerances that say when a maneuver is done.
+    @overload
+    def target_tolerances(self) -> Tuple[int, int]:
+        ...
+
+    @overload
+    def target_tolerances(
+        self, speed: Optional[int] = None, position: Optional[int] = None
+    ) -> None:
+        ...
+
+    def target_tolerances(self, *args):
+        """target_tolerances(speed, position)
+        target_tolerances() -> Tuple[int, int]
+
+        Gets or sets the tolerances that say when a maneuver is done.
 
         If no arguments are given, this will return the current values.
 
         Arguments:
-            speed (Number, deg/s or :ref:`linspeed`): Allowed deviation
+            speed (Number, deg/s or Number, mm/s): Allowed deviation
                 from zero speed before motion is considered complete.
             position (Number, deg or :ref:`distance`): Allowed
                 deviation from the target before motion is considered
@@ -192,13 +241,26 @@ class Control:
         """
         pass
 
+    @overload
+    def stall_tolerances(self) -> Tuple[int, int]:
+        ...
+
+    @overload
+    def stall_tolerances(
+        self, speed: Optional[int] = None, time: Optional[int] = None
+    ) -> None:
+        ...
+
     def stall_tolerances(self, speed, time):
-        """Gets or sets stalling tolerances.
+        """stall_tolerances(speed, time)
+        stall_tolerances() -> Tuple[int, int]
+
+        Gets or sets stalling tolerances.
 
         If no arguments are given, this will return the current values.
 
         Arguments:
-            speed (Number, deg/s or :ref:`linspeed`): If the controller
+            speed (Number, deg/s or Number, mm/s): If the controller
                 cannot reach this speed for some ``time`` even with maximum
                 actuation, it is stalled.
             time (Number, ms): How long the controller has to be below this
@@ -206,35 +268,40 @@ class Control:
         """
         pass
 
-    def stalled(self):
-        """Checks if the controller is currently stalled.
+    def stalled(self) -> bool:
+        """stalled() -> bool
+
+        Checks if the controller is currently stalled.
 
         A controller is stalled when it cannot reach the target speed or
         position, even with the maximum actuation signal.
 
         Returns:
-            bool: ``True`` if the controller is stalled, ``False`` if not.
+            ``True`` if the controller is stalled, ``False`` if not.
         """
         pass
 
-    def done(self):
-        """Checks if an ongoing command or maneuver is done.
+    def done(self) -> bool:
+        """done() -> bool
+
+        Checks if an ongoing command or maneuver is done.
 
         Returns:
-            bool: ``True`` if the command is done, ``False`` if not.
+            ``True`` if the command is done, ``False`` if not.
         """
         pass
 
-    def load(self):
-        """Estimates the load based on the torque required to maintain the
+    def load(self) -> int:
+        """load() -> int: mNm
+
+        Estimates the load based on the torque required to maintain the
         specified speed or angle.
 
         When coasting, braking, or controlling the duty cycle manually, the
         load cannot be estimated in this way. Then this method returns zero.
 
         Returns:
-            :ref:`torque`: The load torque. It returns 0 if control
-            is not active.
+            The load torque. It returns 0 if control is not active.
         """
         pass
 
@@ -813,8 +880,7 @@ class SimpleAccelerometer:
         """Gets the acceleration of the device.
 
         Returns:
-            tuple of :ref:`linacceleration`: Acceleration along all three
-            axes.
+            Acceleration along all three axes.
         """
         pass
 
@@ -859,9 +925,8 @@ class Accelerometer(SimpleAccelerometer):
             axis (Axis): Axis along which the acceleration is
                          measured.
         Returns:
-            :ref:`linacceleration`: Acceleration along the
-            specified axis. If you specify no axis, this returns a vector
-            of accelerations along all axes.
+            Acceleration along the specified axis. If you specify no axis,
+            this returns a vector of accelerations along all axes.
         """
         pass
 

@@ -6,44 +6,6 @@ from typing import Collection, Iterable, Optional, Tuple, Union, overload
 from .geometry import Axis, Matrix, vector
 from .parameters import Button, Color, Direction, Side, Stop, Port
 
-class Control:
-    @overload
-    def limits(self) -> Tuple[int, int, int]: ...
-    @overload
-    def limits(
-        self,
-        speed: Optional[int] = None,
-        acceleration: Optional[int] = None,
-        torque: Optional[int] = None,
-    ) -> None: ...
-    def pid(self) -> Tuple[int, int, int, None, int]: ...
-    @overload
-    def pid(
-        self,
-        kp: Optional[int] = None,
-        ki: Optional[int] = None,
-        kd: Optional[int] = None,
-        reserved: Optional[int] = None,
-        integral_rate: Optional[int] = None,
-    ) -> None: ...
-    @overload
-    def target_tolerances(self) -> Tuple[int, int]: ...
-    @overload
-    def target_tolerances(
-        self, speed: Optional[int] = None, position: Optional[int] = None
-    ) -> None: ...
-    @overload
-    def stall_tolerances(self) -> Tuple[int, int]: ...
-    @overload
-    def stall_tolerances(
-        self, speed: Optional[int] = None, time: Optional[int] = None
-    ) -> None: ...
-    def trajectory(
-        self,
-    ) -> Tuple[int, int, int, int, int, int, int, int, int, int, int, int]: ...
-    def stalled(self) -> bool: ...
-    def done(self) -> bool: ...
-
 class Speaker:
     @overload
     def volume(self) -> int: ...

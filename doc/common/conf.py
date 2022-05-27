@@ -311,7 +311,19 @@ def on_missing_reference(app, env, node, contnode):
     # References with special characters can't exist, so we have to supress
     # warnings when Sphinx tries to cross reference units like deg/s. For
     # consistency, we also treat units without special characters this way.
-    for unit in ["deg", "deg/s", "mm/s", "%", "mV", "mA", "ms"]:
+    for unit in [
+        "deg",
+        "deg/s",
+        "deg/s/s",
+        "mm",
+        "mm/s",
+        "mm/s/s",
+        "%",
+        "mV",
+        "mA",
+        "ms",
+        "mNm",
+    ]:
 
         # If they match on raw source, we are dealing with argument types.
         if unit == contnode.rawsource:
