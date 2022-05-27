@@ -10,7 +10,7 @@ ev3 = EV3Brick()
 device = I2CDevice(Port.S2, 0xD2 >> 1)
 
 # Recommended for reading
-result, = device.read(reg=0x0F, length=1)
+(result,) = device.read(reg=0x0F, length=1)
 
 # Read 1 byte from no particular register:
 device.read(reg=None, length=1)
@@ -23,10 +23,10 @@ device.read(reg=None, length=0)
 # can choose to skip the register or data as follows:
 
 # Recommended for writing:
-device.write(reg=0x22, data=b'\x08')
+device.write(reg=0x22, data=b"\x08")
 
 # Write 1 byte to no particular register:
-device.write(reg=None, data=b'\x08')
+device.write(reg=None, data=b"\x08")
 
 # Write 0 bytes to a particular register:
 device.write(reg=0x08, data=None)

@@ -5,8 +5,8 @@ from pybricks.tools import wait
 hub = PrimeHub()
 
 # Display the letter A for two seconds.
-hub.display.char('A')
+hub.display.char("A")
 wait(2000)
 
 # Display text, one letter at a time.
-hub.display.text('Hello, world!')
+hub.display.text("Hello, world!")

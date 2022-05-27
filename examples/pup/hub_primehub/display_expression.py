@@ -12,15 +12,15 @@ while True:
 
     # Start with random left brow: up or down.
     if randint(0, 100) < 70:
-        brows = Icon.EYE_LEFT_BROW*0.5
+        brows = Icon.EYE_LEFT_BROW * 0.5
     else:
-        brows = Icon.EYE_LEFT_BROW_UP*0.5
+        brows = Icon.EYE_LEFT_BROW_UP * 0.5
 
     # Add random right brow: up or down.
     if randint(0, 100) < 70:
-        brows += Icon.EYE_RIGHT_BROW*0.5
+        brows += Icon.EYE_RIGHT_BROW * 0.5
     else:
-        brows += Icon.EYE_RIGHT_BROW_UP*0.5
+        brows += Icon.EYE_RIGHT_BROW_UP * 0.5
 
     for i in range(3):
         # Display eyes open plus the random brows.
@@ -28,5 +28,7 @@ while True:
         wait(2000)
 
         # Display eyes blinked plus the random brows.
-        hub.display.image(Icon.EYE_LEFT_BLINK*0.7 + Icon.EYE_RIGHT_BLINK*0.7 + brows)
+        hub.display.image(
+            Icon.EYE_LEFT_BLINK * 0.7 + Icon.EYE_RIGHT_BLINK * 0.7 + brows
+        )
         wait(200)

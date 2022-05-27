@@ -1,15 +1,9 @@
-
 from uctypes import addressof, sizeof, struct
 from usocket import socket, SOCK_STREAM
 
 from _thread import start_new_thread
 
-from pybricks.bluetooth import (
-    str2ba,
-    sockaddr_rc,
-    AF_BLUETOOTH,
-    BTPROTO_RFCOMM
-)
+from pybricks.bluetooth import str2ba, sockaddr_rc, AF_BLUETOOTH, BTPROTO_RFCOMM
 from pybricks.tools import wait, StopWatch
 
 
@@ -25,7 +19,7 @@ def get_bluetooth_rfcomm_socket(address, channel):
     return sock
 
 
-class SpikePrimeStreamReader():
+class SpikePrimeStreamReader:
     def __init__(self, address):
 
         try:
@@ -56,8 +50,8 @@ class SpikePrimeStreamReader():
                 break
             try:
                 data = eval(raw)
-                if data['m'] == 0:
-                    self._values = data['p']
+                if data["m"] == 0:
+                    self._values = data["p"]
             except (SyntaxError, KeyError):
                 pass
 
@@ -65,8 +59,8 @@ class SpikePrimeStreamReader():
         return self._values
 
     def device(self, port):
-        if 'A' <= port <= 'F':
-            return self.values()[ord(port)-ord('A')][1]
+        if "A" <= port <= "F":
+            return self.values()[ord(port) - ord("A")][1]
         else:
             raise ValueError
 

@@ -29,25 +29,25 @@ from sphinx.util.osutil import copyfile
 from sphinx.util import logging
 
 
-CSS_FILE = 'requirements.css'
-JS_FILE = 'requirements.js'
+CSS_FILE = "requirements.css"
+JS_FILE = "requirements.js"
 
 
 class PybricksRequirementsDirective(Directive):
     has_content = True
-    option_spec = {'header': directives.unchanged}
+    option_spec = {"header": directives.unchanged}
 
     required_arguments = 0
     optional_arguments = 10
 
     def run(self):
         node = nodes.container()
-        node['classes'].append('toggle-content')
+        node["classes"].append("toggle-content")
 
         par = nodes.container()
-        par['classes'].append('toggle-header')
+        par["classes"].append("toggle-header")
 
-        content = '.. pybricks-requirements-static:: ' + " ".join(self.arguments)
+        content = ".. pybricks-requirements-static:: " + " ".join(self.arguments)
 
         self.state.nested_parse(StringList([content]), self.content_offset, node)
 
@@ -60,20 +60,20 @@ def add_assets(app):
 
 
 def copy_assets(app, exception):
-    if app.builder.name not in ['html', 'readthedocs'] or exception:
+    if app.builder.name not in ["html", "readthedocs"] or exception:
         return
     logger = logging.getLogger(__name__)
-    logger.info('Copying requirements stylesheet/javascript... ', nonl=True)
-    dest = os.path.join(app.builder.outdir, '_static', CSS_FILE)
+    logger.info("Copying requirements stylesheet/javascript... ", nonl=True)
+    dest = os.path.join(app.builder.outdir, "_static", CSS_FILE)
     source = os.path.join(os.path.abspath(os.path.dirname(__file__)), CSS_FILE)
     copyfile(source, dest)
-    dest = os.path.join(app.builder.outdir, '_static', JS_FILE)
+    dest = os.path.join(app.builder.outdir, "_static", JS_FILE)
     source = os.path.join(os.path.abspath(os.path.dirname(__file__)), JS_FILE)
     copyfile(source, dest)
-    logger.info('done')
+    logger.info("done")
 
 
 def setup(app):
-    app.add_directive('pybricks-requirements', PybricksRequirementsDirective)
-    app.connect('builder-inited', add_assets)
-    app.connect('build-finished', copy_assets)
+    app.add_directive("pybricks-requirements", PybricksRequirementsDirective)
+    app.connect("builder-inited", add_assets)
+    app.connect("build-finished", copy_assets)

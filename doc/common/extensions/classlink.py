@@ -13,21 +13,23 @@ class PybricksClasslinkDirective(Directive):
         link = name if len(self.arguments) == 1 else self.arguments[1]
 
         html = (
-            '<a href="{0}.html">'.format(link.lower()) +
-            '<dl class="py class">' +
-            '<dt>' +
-            '<em class="property">class </em>' +
-            '<code class="sig-name descname">' + name + '</code>' +
-            '</dt>' +
-            '<dd></dd>' +
-            '</dl>' +
-            '</a>'
+            '<a href="{0}.html">'.format(link.lower())
+            + '<dl class="py class">'
+            + "<dt>"
+            + '<em class="property">class </em>'
+            + '<code class="sig-name descname">'
+            + name
+            + "</code>"
+            + "</dt>"
+            + "<dd></dd>"
+            + "</dl>"
+            + "</a>"
         )
 
         # Return the node
-        node = nodes.raw('', html, format="html")
+        node = nodes.raw("", html, format="html")
         return [node]
 
 
 def setup(app):
-    app.add_directive_to_domain('py', 'pybricks-classlink', PybricksClasslinkDirective)
+    app.add_directive_to_domain("py", "pybricks-classlink", PybricksClasslinkDirective)

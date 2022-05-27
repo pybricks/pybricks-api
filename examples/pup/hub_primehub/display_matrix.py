@@ -6,13 +6,15 @@ from pybricks.geometry import Matrix
 hub = PrimeHub()
 
 # Make a square that is bright on the outside and faint in the middle.
-SQUARE = Matrix([
-    [100, 100, 100, 100, 100],
-    [100, 50,  50,  50,  100],
-    [100, 50,  0,   50,  100],
-    [100, 50,  50,  50,  100],
-    [100, 100, 100, 100, 100],
-])
+SQUARE = Matrix(
+    [
+        [100, 100, 100, 100, 100],
+        [100, 50, 50, 50, 100],
+        [100, 50, 0, 50, 100],
+        [100, 50, 50, 50, 100],
+        [100, 100, 100, 100, 100],
+    ]
+)
 
 # Display the square.
 hub.display.image(SQUARE)

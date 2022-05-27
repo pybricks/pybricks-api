@@ -71,9 +71,7 @@ class DCMotor:
     """Generic class to control simple motors without rotation sensors, such
     as train motors."""
 
-    def __init__(
-        self, port: Port, positive_direction: Direction = Direction.CLOCKWISE
-    ):
+    def __init__(self, port: Port, positive_direction: Direction = Direction.CLOCKWISE):
         """DCMotor(port, positive_direction=Direction.CLOCKWISE)
 
         Arguments:
@@ -905,7 +903,6 @@ class Accelerometer(SimpleAccelerometer):
 
 
 class IMU(Accelerometer):
-
     def heading(self):
         """Gets the heading angle relative to the starting orientation. It is a
         a positive rotation around the :ref:`z-axis in the robot

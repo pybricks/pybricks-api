@@ -8,20 +8,20 @@ from enum import Enum as _Enum
 
 class _PybricksEnumMeta(type(_Enum)):
     def __dir__(cls):
-        yield '__class__'
-        yield '__name__'
+        yield "__class__"
+        yield "__name__"
         for member in cls:
             yield member.name
 
 
 class _PybricksEnum(_Enum, metaclass=_PybricksEnumMeta):
     def __dir__(self):
-        yield '__class__'
+        yield "__class__"
         for member in type(self):
             yield member.name
 
     def __str__(self):
-        return '{}.{}'.format(type(self).__name__, self.name)
+        return "{}.{}".format(type(self).__name__, self.name)
 
     def __repr__(self):
         return str(self)
@@ -39,8 +39,12 @@ class Color:
         return "Color(h={}, s={}, v={})".format(self.h, self.s, self.v)
 
     def __eq__(self, other):
-        return (isinstance(other, Color) and
-                self.h == other.h and self.s == other.s and self.v == other.v)
+        return (
+            isinstance(other, Color)
+            and self.h == other.h
+            and self.s == other.s
+            and self.v == other.v
+        )
 
     def __mul__(self, scale):
         v = max(0, min(self.v * scale, 100))
@@ -50,10 +54,10 @@ class Color:
         return self.__mul__(scale)
 
     def __truediv__(self, scale):
-        return self.__mul__(1/scale)
+        return self.__mul__(1 / scale)
 
     def __floordiv__(self, scale):
-        return self.__mul__(1/scale)
+        return self.__mul__(1 / scale)
 
 
 Color.NONE = Color(0, 0, 0)
@@ -75,18 +79,18 @@ class Port(_PybricksEnum):
     """Port on the programmable brick or hub."""
 
     # Generic motor/sensor ports
-    A = ord('A')
-    B = ord('B')
-    C = ord('C')
-    D = ord('D')
-    E = ord('E')
-    F = ord('F')
+    A = ord("A")
+    B = ord("B")
+    C = ord("C")
+    D = ord("D")
+    E = ord("E")
+    F = ord("F")
 
     # NXT/EV3 sensor ports
-    S1 = ord('1')
-    S2 = ord('2')
-    S3 = ord('3')
-    S4 = ord('4')
+    S1 = ord("1")
+    S2 = ord("2")
+    S3 = ord("3")
+    S4 = ord("4")
 
 
 class Stop(_PybricksEnum):

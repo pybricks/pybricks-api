@@ -11,7 +11,7 @@ ev3 = EV3Brick()
 ser = UARTDevice(Port.S2, baudrate=115200)
 
 # Write some data
-ser.write(b'\r\nHello, world!\r\n')
+ser.write(b"\r\nHello, world!\r\n")
 
 # Play a sound while we wait for some data
 for i in range(3):

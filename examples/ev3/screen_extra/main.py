@@ -15,12 +15,24 @@ ev3 = EV3Brick()
 # SPLIT SCREEN ################################################################
 
 # Make a sub-image for the left half of the screen
-left = Image(ev3.screen, sub=True, x1=0, y1=0,
-             x2=ev3.screen.width // 2 - 1, y2=ev3.screen.height - 1)
+left = Image(
+    ev3.screen,
+    sub=True,
+    x1=0,
+    y1=0,
+    x2=ev3.screen.width // 2 - 1,
+    y2=ev3.screen.height - 1,
+)
 
 # Make a sub-image for the right half of the screen
-right = Image(ev3.screen, sub=True, x1=ev3.screen.width // 2, y1=0,
-              x2=ev3.screen.width - 1, y2=ev3.screen.height - 1)
+right = Image(
+    ev3.screen,
+    sub=True,
+    x1=ev3.screen.width // 2,
+    y1=0,
+    x2=ev3.screen.width - 1,
+    y2=ev3.screen.height - 1,
+)
 
 # Use a monospaced font so that text is vertically aligned when we print
 right.set_font(Font(size=8, monospace=True))
@@ -53,7 +65,7 @@ for t in range(200):
 
     # Print every 10th value on right side
     if t % 10 == 0:
-        right.print('{:10.2f}{:10.2f}'.format(x1, y1))
+        right.print("{:10.2f}{:10.2f}".format(x1, y1))
 
     wait(100)
 
@@ -64,8 +76,8 @@ for t in range(200):
 buf = Image(ev3.screen)
 
 # Load images from file
-bg = Image('background.png')
-sprite = Image('sprite.png')
+bg = Image("background.png")
+sprite = Image("sprite.png")
 
 # Number of cells in each sprite animation
 NUM_CELLS = 8
@@ -75,12 +87,28 @@ CELL_WIDTH, CELL_HEIGHT = 75, 100
 
 # Get sub-images for each individual cell
 # This is more efficient that loading individual images
-walk_right = [Image(sprite, sub=True, x1=x * CELL_WIDTH, y1=0,
-                    x2=(x + 1) * CELL_WIDTH - 1, y2=CELL_HEIGHT - 1)
-              for x in range(NUM_CELLS)]
-walk_left = [Image(sprite, sub=True, x1=x * CELL_WIDTH, y1=CELL_HEIGHT,
-                   x2=(x + 1) * CELL_WIDTH - 1, y2=2 * CELL_HEIGHT - 1)
-             for x in range(NUM_CELLS)]
+walk_right = [
+    Image(
+        sprite,
+        sub=True,
+        x1=x * CELL_WIDTH,
+        y1=0,
+        x2=(x + 1) * CELL_WIDTH - 1,
+        y2=CELL_HEIGHT - 1,
+    )
+    for x in range(NUM_CELLS)
+]
+walk_left = [
+    Image(
+        sprite,
+        sub=True,
+        x1=x * CELL_WIDTH,
+        y1=CELL_HEIGHT,
+        x2=(x + 1) * CELL_WIDTH - 1,
+        y2=2 * CELL_HEIGHT - 1,
+    )
+    for x in range(NUM_CELLS)
+]
 
 
 # Walk from left to right

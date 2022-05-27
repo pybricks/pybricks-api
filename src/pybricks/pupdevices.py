@@ -5,9 +5,14 @@
 
 from typing import Optional
 
-from ._common import (Keypad as _Keypad, DCMotor as _DCMotor,
-                      ColorLight as _ColorLight, Motor as _Motor,
-                      LightArray as _LightArray, Light as _Light)
+from ._common import (
+    Keypad as _Keypad,
+    DCMotor as _DCMotor,
+    ColorLight as _ColorLight,
+    Motor as _Motor,
+    LightArray as _LightArray,
+    Light as _Light,
+)
 
 from .parameters import Direction as _Direction, Button as _Button
 
@@ -37,15 +42,17 @@ class Remote:
     """LEGO® Powered Up Bluetooth Remote Control."""
 
     light = _ColorLight()
-    buttons = _Keypad((
-        _Button.LEFT_MINUS,
-        _Button.RIGHT_MINUS,
-        _Button.LEFT,
-        _Button.CENTER,
-        _Button.RIGHT,
-        _Button.LEFT_PLUS,
-        _Button.RIGHT_PLUS
-    ))
+    buttons = _Keypad(
+        (
+            _Button.LEFT_MINUS,
+            _Button.RIGHT_MINUS,
+            _Button.LEFT,
+            _Button.CENTER,
+            _Button.RIGHT,
+            _Button.LEFT_PLUS,
+            _Button.RIGHT_PLUS,
+        )
+    )
 
     def __init__(self, name=None, timeout=10000):
         """When you instantiate this class, the hub will search for a remote
@@ -186,11 +193,7 @@ class PFMotor(DCMotor):
     """Control Power Functions motors with the infrared functionality of the
     :class:`ColorDistanceSensor <pybricks.pupdevices.ColorDistanceSensor>`."""
 
-    def __init__(self,
-                 sensor,
-                 channel,
-                 color,
-                 positive_direction=_Direction.CLOCKWISE):
+    def __init__(self, sensor, channel, color, positive_direction=_Direction.CLOCKWISE):
         """
 
         Arguments:

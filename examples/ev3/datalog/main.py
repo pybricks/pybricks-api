@@ -8,7 +8,7 @@ from pybricks.tools import DataLog, StopWatch, wait
 #   log_2020_02_13_10_07_44_431260.csv
 # * You can optionally specify the titles of your data columns. For example,
 #   if you want to record the motor angles at a given time, you could do:
-data = DataLog('time', 'angle')
+data = DataLog("time", "angle")
 
 # Initialize a motor and make it move
 wheel = Motor(Port.B)

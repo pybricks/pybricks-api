@@ -7,7 +7,7 @@ from pybricks.tools import wait
 
 class RCXTouchSensor(AnalogSensor):
     def pressed(self):
-        return self.resistance() < 50*1000
+        return self.resistance() < 50 * 1000
 
 
 ev3 = EV3Brick()

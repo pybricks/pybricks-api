@@ -51,7 +51,7 @@ for port in ports:
             raise
 
     # Get the device id
-    id = device.info()['id']
+    id = device.info()["id"]
 
     # Look up the name.
     try:

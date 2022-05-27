@@ -9,17 +9,17 @@
 from pybricks.messaging import BluetoothMailboxClient, TextMailbox
 
 # This is the name of the remote EV3 or PC we are connecting to.
-SERVER = 'ev3dev'
+SERVER = "ev3dev"
 
 client = BluetoothMailboxClient()
-mbox = TextMailbox('greeting', client)
+mbox = TextMailbox("greeting", client)
 
-print('establishing connection...')
+print("establishing connection...")
 client.connect(SERVER)
-print('connected!')
+print("connected!")
 
 # In this program, the client sends the first message and then waits for the
 # server to reply.
-mbox.send('hello!')
+mbox.send("hello!")
 mbox.wait()
 print(mbox.read())

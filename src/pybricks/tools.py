@@ -51,8 +51,9 @@ class StopWatch:
 class DataLog:
     """Create a file and log data."""
 
-    def __init__(self, *headers, name='log', timestamp=True, extension='csv',
-                 append=False):
+    def __init__(
+        self, *headers, name="log", timestamp=True, extension="csv", append=False
+    ):
         """
 
         Arguments:

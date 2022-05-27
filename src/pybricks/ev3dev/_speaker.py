@@ -97,7 +97,7 @@ class Speaker:
         """
         pass
 
-    def set_volume(self, volume, which='_all_'):
+    def set_volume(self, volume, which="_all_"):
         """Sets the speaker volume.
 
         Arguments:

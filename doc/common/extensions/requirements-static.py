@@ -10,10 +10,10 @@ FEATURES_SMALL = set()
 
 # Medium feature set.
 FEATURES_MEDIUM = FEATURES_SMALL | {
-    'pybricks-geometry',
-    'pybricks-iodevices',
-    'stm32-extra',
-    'stm32-float',
+    "pybricks-geometry",
+    "pybricks-iodevices",
+    "stm32-extra",
+    "stm32-float",
 }
 
 # Large feature set.
@@ -21,11 +21,11 @@ FEATURES_LARGE = FEATURES_MEDIUM | set()
 
 # Features per hub.
 HUB_FEATURES = {
-    'movehub': {'movehub'} | FEATURES_SMALL,
-    'cityhub': {'cityhub'} | FEATURES_MEDIUM,
-    'technichub': {'technichub'} | FEATURES_MEDIUM,
-    'primehub':  {'primehub', 'inventorhub'} | FEATURES_LARGE,
-    'inventorhub':  {'primehub', 'inventorhub'} | FEATURES_LARGE,
+    "movehub": {"movehub"} | FEATURES_SMALL,
+    "cityhub": {"cityhub"} | FEATURES_MEDIUM,
+    "technichub": {"technichub"} | FEATURES_MEDIUM,
+    "primehub": {"primehub", "inventorhub"} | FEATURES_LARGE,
+    "inventorhub": {"primehub", "inventorhub"} | FEATURES_LARGE,
 }
 
 
@@ -40,15 +40,15 @@ class PybricksRequirementsStaticDirective(Directive):
         # CC BY-SA 4.0 via https://stackoverflow.com/a/63728208
         env = self.state.document.settings.env
 
-        destdir = path.join(env.app.builder.outdir, '_images')
+        destdir = path.join(env.app.builder.outdir, "_images")
         if not path.exists(destdir):
             makedirs(destdir)
 
         for hub in HUB_FEATURES:
             for compat in ("true", "false"):
-                uri = 'compat_{0}_{1}_label.png'.format(hub, compat)
-                src_uri = path.join(env.app.builder.srcdir, 'images', uri)
-                build_uri = path.join(env.app.builder.outdir, '_images', uri)
+                uri = "compat_{0}_{1}_label.png".format(hub, compat)
+                src_uri = path.join(env.app.builder.srcdir, "images", uri)
+                build_uri = path.join(env.app.builder.outdir, "_images", uri)
                 copyfile(src_uri, build_uri)
 
         # Get requirements from sphinx-directive.
@@ -67,13 +67,14 @@ class PybricksRequirementsStaticDirective(Directive):
         depth_path = "../" * depth
 
         # Table row with hub images.
-        compat_row = "".join([
-            hub_cell.format(
-                depth_path,
-                hub,
-                "true" if requirements <= features else "false")
-            for hub, features in HUB_FEATURES.items()
-        ])
+        compat_row = "".join(
+            [
+                hub_cell.format(
+                    depth_path, hub, "true" if requirements <= features else "false"
+                )
+                for hub, features in HUB_FEATURES.items()
+            ]
+        )
 
         # Generate full table.
         html = """
@@ -86,16 +87,16 @@ class PybricksRequirementsStaticDirective(Directive):
                 </tbody>
             </table>
         </div>
-        """.format(compat_row)
+        """.format(
+            compat_row
+        )
 
         # Return the node.
-        node = nodes.raw('', html, format="html")
+        node = nodes.raw("", html, format="html")
         return [node]
 
 
 def setup(app):
     app.add_directive_to_domain(
-        'py',
-        'pybricks-requirements-static',
-        PybricksRequirementsStaticDirective
+        "py", "pybricks-requirements-static", PybricksRequirementsStaticDirective
     )

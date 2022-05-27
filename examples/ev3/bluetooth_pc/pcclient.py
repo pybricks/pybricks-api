@@ -17,17 +17,17 @@ from pybricks.messaging import BluetoothMailboxClient, TextMailbox
 # visible on the EV3. You can skip pairing if you already know the EV3 address.
 
 # This is the address of the server EV3 we are connecting to.
-SERVER = 'CC:78:AB:D8:4E:F6'
+SERVER = "CC:78:AB:D8:4E:F6"
 
 client = BluetoothMailboxClient()
-mbox = TextMailbox('greeting', client)
+mbox = TextMailbox("greeting", client)
 
-print('establishing connection...')
+print("establishing connection...")
 client.connect(SERVER)
-print('connected!')
+print("connected!")
 
 # In this program, the client sends the first message and then waits for the
 # server to reply.
-mbox.send('hello!')
+mbox.send("hello!")
 mbox.wait()
 print(mbox.read())

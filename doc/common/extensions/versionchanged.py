@@ -14,15 +14,18 @@ class PybricksVersionDirective(Directive):
 
     def run(self):
         html = ""
-        node = nodes.raw('', html, format="html")
+        node = nodes.raw("", html, format="html")
         return [node]
 
 
 def setup(app):
-    if 'ide' in app.tags.tags:
-        app.add_directive_to_domain('py', 'deprecated',
-                                    PybricksVersionDirective, override=True)
-        app.add_directive_to_domain('py', 'versionadded',
-                                    PybricksVersionDirective, override=True)
-        app.add_directive_to_domain('py', 'versionchanged',
-                                    PybricksVersionDirective, override=True)
+    if "ide" in app.tags.tags:
+        app.add_directive_to_domain(
+            "py", "deprecated", PybricksVersionDirective, override=True
+        )
+        app.add_directive_to_domain(
+            "py", "versionadded", PybricksVersionDirective, override=True
+        )
+        app.add_directive_to_domain(
+            "py", "versionchanged", PybricksVersionDirective, override=True
+        )

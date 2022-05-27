@@ -15,12 +15,12 @@ PERIOD = 3000
 
 while True:
     # The phase is where we are in the unit circle now.
-    phase = watch.time()/PERIOD*2*pi
+    phase = watch.time() / PERIOD * 2 * pi
 
     # Each light follows a sine wave with a mean of 50, with an amplitude of 50.
     # We offset this sine wave by 90 degrees for each light, so that all the
     # lights do something different.
-    brightness = [sin(phase + offset*pi/2) * 50 + 50 for offset in range(4)]
+    brightness = [sin(phase + offset * pi / 2) * 50 + 50 for offset in range(4)]
 
     # Set the brightness values for all lights.
     eyes.lights.on(brightness)

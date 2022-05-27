@@ -12,7 +12,7 @@ ev3 = EV3Brick()
 ev3.speaker.beep()
 
 # Create the connection. See README.md to find the address for your SPIKE hub.
-spike = SpikePrimeStreamReader('F4:84:4C:AA:C8:A4')
+spike = SpikePrimeStreamReader("F4:84:4C:AA:C8:A4")
 
 # Initialize the motors and drive base
 left_motor = Motor(Port.B)
@@ -24,5 +24,5 @@ while True:
     yaw, pitch, roll = spike.orientation()
 
     # Set speed and turn rate based on orientation
-    robot.drive(-pitch*6, roll*2)
+    robot.drive(-pitch * 6, roll * 2)
     wait(20)

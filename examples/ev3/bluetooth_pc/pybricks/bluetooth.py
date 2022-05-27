@@ -18,17 +18,17 @@ BDADDR_ANY = ""
 
 def str2ba(string, ba):
     """Convert string to Bluetooth address"""
-    for i, v in enumerate(string.split(':')):
-        ba.b[5-i] = int(v, 16)
+    for i, v in enumerate(string.split(":")):
+        ba.b[5 - i] = int(v, 16)
 
 
 def ba2str(ba):
     """Convert Bluetooth address to string"""
     string = []
     for b in ba.b:
-        string.append('{:02X}'.format(b))
+        string.append("{:02X}".format(b))
     string.reverse()
-    return ':'.join(string).upper()
+    return ":".join(string).upper()
 
 
 class RFCOMMServer:
@@ -37,6 +37,7 @@ class RFCOMMServer:
     This is based on the ``socketserver.SocketServer`` class in the Python
     standard library.
     """
+
     request_queue_size = 1
 
     def __init__(self, server_address, RequestHandlerClass):
@@ -88,6 +89,7 @@ class StreamRequestHandler:
     This is based on ``socketserver.StreamRequestHandler`` from the Python
     standard library.
     """
+
     def __init__(self, request, client_address, server):
         self.request = request
         self.client_address = client_address
@@ -113,6 +115,7 @@ class ThreadingRFCOMMServer(ThreadingMixIn, RFCOMMServer):
     """Version of :class:`RFCOMMServer` that handles connections in a new
     thread.
     """
+
     pass
 
 

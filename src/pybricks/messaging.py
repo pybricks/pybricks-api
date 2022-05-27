@@ -35,7 +35,7 @@ class Mailbox:
         Returns:
             The current value or ``None`` if the mailbox is empty.
         """
-        return ''
+        return ""
 
     def send(self, value, brick=None):
         """Sends a value to this mailbox on connected devices.

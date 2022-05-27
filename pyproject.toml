@@ -28,9 +28,9 @@ packages = [
 python = "^3.8"
 
 [tool.poetry.dev-dependencies]
-black = {version = "^20.8b1", allow-prereleases = true}
+black = "^22.3.0"
 doc8 = "^0.8.1"
-flake8 = "^3.8.4"
+flake8 = "^4.0"
 Sphinx = { git = "https://github.com/pybricks/sphinx.git", rev = "b00124cb" }
 sphinx-rtd-theme = "^1.0.0"
 toml = "^0.10.0"

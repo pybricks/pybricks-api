@@ -55,6 +55,7 @@ class Axis:
     .. data:: Z = vector(0, 0, 1)
 
     """
+
     X = vector(1, 0, 0)
     Y = vector(0, 1, 0)
     Z = vector(0, 0, 1)

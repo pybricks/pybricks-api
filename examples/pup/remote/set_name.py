@@ -7,6 +7,6 @@ my_remote = Remote()
 print(my_remote.name())
 
 # Choose a new name.
-my_remote.name('truck2')
+my_remote.name("truck2")
 
 print("Done!")

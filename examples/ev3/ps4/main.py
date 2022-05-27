@@ -21,7 +21,7 @@ in_file = open(infile_path, "rb")
 
 # Define the format the event data will be read.
 # https://docs.python.org/3/library/struct.html#format-characters
-FORMAT = 'llHHi'
+FORMAT = "llHHi"
 EVENT_SIZE = struct.calcsize(FORMAT)
 event = in_file.read(EVENT_SIZE)
 
@@ -30,9 +30,10 @@ event = in_file.read(EVENT_SIZE)
 # numbers (-100 to 100)
 def scale(val, src, dst):
 
-    result = (float(val - src[0]) / (src[1] - src[0]))
+    result = float(val - src[0]) / (src[1] - src[0])
     result = result * (dst[1] - dst[0]) + dst[0]
     return result
+
 
 # Create a loop to react to events
 # This loop reacte to all main PS4 button and stick events. I have left out

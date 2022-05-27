@@ -10,10 +10,10 @@ sensor = Ev3devSensor(Port.S3)
 
 while True:
     # Read the raw RGB values
-    r, g, b = sensor.read('RGB-RAW')
+    r, g, b = sensor.read("RGB-RAW")
 
     # Print results
-    print('R: {0}\t G: {1}\t B: {2}'.format(r, g, b))
+    print("R: {0}\t G: {1}\t B: {2}".format(r, g, b))
 
     # Wait
     wait(200)
