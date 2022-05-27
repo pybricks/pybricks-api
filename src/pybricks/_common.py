@@ -494,22 +494,34 @@ class Motor(DCMotor):
 class Speaker:
     """Plays beeps and sounds using a speaker."""
 
-    def volume(self, volume=None):
-        """Gets or sets the speaker volume.
+    @overload
+    def volume(self) -> int:
+        ...
+
+    @overload
+    def volume(self, volume: int) -> None:
+        ...
+
+    def volume(self, *args):
+        """volume(volume)
+        volume() -> int: %
+
+        Gets or sets the speaker volume.
 
         If no volume is given, this method returns the current volume.
 
         Arguments:
-            volume (:ref:`percentage`):
-                Volume of the speaker in the 0-100 range.
+            volume (Number, %): Volume of the speaker in the 0-100 range.
         """
         pass
 
-    def beep(self, frequency=500, duration=100):
-        """Play a beep/tone.
+    def beep(self, frequency: int = 500, duration: int = 100) -> None:
+        """beep(frequency=500, duration=100)
+
+        Play a beep/tone.
 
         Arguments:
-            frequency (:ref:`frequency`):
+            frequency (Number, Hz):
                 Frequency of the beep in the 64-24000 Hz range.
             duration (Number, ms):
                 Duration of the beep. If the duration is less
@@ -518,9 +530,11 @@ class Speaker:
         """
         pass
 
-    def play_notes(self, notes, tempo=120):
-        """Plays a sequence of musical notes. For example:
-        ``['C4/4', 'C4/4', 'G4/4', 'G4/4']``.
+    def play_notes(self, notes: Iterable[str], tempo: int = 120) -> None:
+        """play_notes(notes, tempo=120)
+
+        Plays a sequence of musical notes. For example:
+        ``["C4/4", "C4/4", "G4/4", "G4/4"]``.
 
         Each note is a string with the following format:
 
