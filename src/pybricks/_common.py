@@ -4,7 +4,7 @@
 """Generic cross-platform module for typical devices like lights, displays,
 speakers, and batteries."""
 
-from .parameters import Direction, Stop, Button, Port
+from .parameters import Direction, Stop, Button, Port, Color
 from typing import Union, Iterable, overload, Optional, Tuple, Collection
 
 
@@ -566,69 +566,29 @@ class Speaker:
         pass
 
 
-class Light:
-    """Control a single-color light."""
-
-    def on(self, brightness=100):
-        """Turns on the light at the specified brightness.
-
-        Arguments:
-            brightness (:ref:`brightness`):
-                Brightness of the light.
-        """
-
-    def off(self):
-        """Turns off the light."""
-        pass
-
-    def blink(self, durations):
-        """Blinks the light by turning it on and off for given durations.
-
-        The light keeps blinking indefinitely while the rest of your
-        program keeps running.
-
-        This method provides a simple way to make basic but useful patterns.
-        For more generic and smooth patterns, use :meth:`.animate` instead.
-
-        Arguments:
-            (list): List of time values of the
-                form ``[on_1, off_1, on_2, off_2, ...]``.
-        """
-
-    def animate(self, brightness_values, interval):
-        """Animates the light with a list of brightness values. The next
-        brightness value in the list is shown after the given interval.
-
-        The animation runs in the background while the rest of your program
-        keeps running. When the animation completes, it repeats.
-
-        Arguments:
-            brightness_values (list): List of :ref:`brightness` values.
-            interval (Number, ms): Time between brightness updates.
-        """
-
-    def reset(self):
-        """Resets the light to the default system behavior or animation."""
-        pass
-
-
 class ColorLight:
     """Control a multi-color light."""
 
-    def on(self, color):
-        """Turns on the light at the specified color.
+    def on(self, color: Color) -> None:
+        """on(color)
+
+        Turns on the light at the specified color.
 
         Arguments:
             color (Color): Color of the light.
         """
         pass
 
-    def off(self):
-        """Turns off the light."""
+    def off(self) -> None:
+        """off()
+
+        Turns off the light."""
         pass
 
-    def blink(self, color, durations):
-        """Blinks the light at a given color by turning it on and off for given
+    def blink(self, color: Color, durations: Collection[int]) -> None:
+        """blink(color, durations)
+
+        Blinks the light at a given color by turning it on and off for given
         durations.
 
         The light keeps blinking indefinitely while the rest of your
@@ -640,25 +600,24 @@ class ColorLight:
 
         Arguments:
             color (Color): Color of the light.
-            durations (list): List of time values of the
+            durations (list): Sequence of time values of the
                 form ``[on_1, off_1, on_2, off_2, ...]``.
         """
 
-    def animate(self, colors, interval):
-        """Animates the light with a list of colors. The next
-        color in the list is shown after the given interval.
+    def animate(self, colors: Collection[Color], interval: int) -> None:
+        """animate(colors, interval)
+
+        Animates the light with a sequence of colors, shown one by
+        one for the given interval.
 
         The animation runs in the background while the rest of your program
         keeps running. When the animation completes, it repeats.
 
         Arguments:
-            colors (list): List of :class:`Color <.parameters.Color>` values.
+            colors (iter): Sequence of :class:`Color <.parameters.Color>`
+                values.
             interval (Number, ms): Time between color updates.
         """
-
-    def reset(self):
-        """Resets the light to the default system behavior or animation."""
-        pass
 
 
 class LightArray:

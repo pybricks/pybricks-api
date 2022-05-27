@@ -11,7 +11,6 @@ from ._common import (
     ColorLight as _ColorLight,
     Motor as _Motor,
     LightArray as _LightArray,
-    Light as _Light,
 )
 
 from .parameters import Direction as _Direction, Button as _Button
@@ -460,7 +459,7 @@ class InfraredSensor:
         pass
 
 
-class Light(_Light):
+class Light:
     """LEGO® Powered Up Light."""
 
     def __init__(self, port):
@@ -470,4 +469,20 @@ class Light(_Light):
             port (Port): Port to which the device is connected.
 
         """
+        pass
+
+    def on(self, brightness: int = 100) -> None:
+        """on(brightness=100)
+
+        Turns on the light at the specified brightness.
+
+        Arguments:
+            brightness (Number, %):
+                Brightness of the light.
+        """
+
+    def off(self) -> None:
+        """off()
+
+        Turns off the light."""
         pass
