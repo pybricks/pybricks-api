@@ -4,7 +4,10 @@
 """Generic cross-platform module for typical devices like lights, displays,
 speakers, and batteries."""
 
-from .parameters import Direction, Stop, Button, Port, Color
+from .parameters import Direction, Stop, Button, Port, Color, Side
+
+from .geometry import Matrix
+
 from typing import Union, Iterable, overload, Optional, Tuple, Collection
 
 
@@ -639,7 +642,7 @@ class LightArray:
         Turns on the lights at the specified brightness.
 
         Arguments:
-            brightness (Number or tuple of Number):
+            brightness (Number or tuple):
                 Brightness (0--100) of each light, in the order shown above.
                 If you give just one brightness value, all lights get that
                 brightness.
@@ -656,8 +659,10 @@ class LightArray:
 class LightMatrix:
     """Control a rectangular grid of single-color lights."""
 
-    def __init__(self, rows, columns):
-        """Initializes the light matrix display.
+    def __init__(self, rows: int, columns: int):
+        """LightMatrix(rows, columns)
+
+        Initializes the light matrix display.
 
         Arguments:
             rows (int): Number of rows in the grid
@@ -665,8 +670,10 @@ class LightMatrix:
         """
         pass
 
-    def orientation(self, up):
-        """Sets the orientation of the light matrix display.
+    def orientation(self, up: Side) -> None:
+        """orientation(up)
+
+        Sets the orientation of the light matrix display.
 
         Only new displayed images and pixels are affected. The existing display
         contents remain unchanged.
@@ -678,8 +685,10 @@ class LightMatrix:
         """
         pass
 
-    def image(self, matrix):
-        """Displays an image, represented by a matrix of :ref:`brightness`
+    def image(self, matrix: Matrix) -> None:
+        """image(matrix)
+
+        Displays an image, represented by a matrix of :ref:`brightness`
         values.
 
         Arguments:
@@ -688,21 +697,26 @@ class LightMatrix:
         """
         pass
 
-    def animate(self, matrices, interval):
-        """Displays an animation made using a list of images.
+    def animate(self, matrices: Collection[Matrix], interval: int) -> None:
+        """animate(matrices, interval)
+
+        Displays an animation made using a list of images.
 
         Each image has the same format as above. Each image is
         shown for the given interval. The animation repeats
         forever while the rest of your program keeps running.
 
         Arguments:
-            matrices (list): List of Matrix of intensities.
+            matrices (iter): Sequence of
+                :class:`Matrix <pybricks.geometry.Matrix>` of intensities.
             interval (Number, ms): Time to display each image in the list.
         """
         pass
 
-    def pixel(self, row, column, brightness=100):
-        """Turns on one pixel at the specified brightness.
+    def pixel(self, row: int, column: int, brightness: int = 100) -> None:
+        """pixel(row, column, brightness=100)
+
+        Turns on one pixel at the specified brightness.
 
         Arguments:
             row (int): Vertical grid index, starting at 0 from the top.
@@ -711,12 +725,16 @@ class LightMatrix:
         """
         pass
 
-    def off(self):
-        """Turns off all the pixels."""
+    def off(self) -> None:
+        """off()
+
+        Turns off all the pixels."""
         pass
 
-    def number(self, number):
-        """Displays a number in the range -99 to 99.
+    def number(self, number: int) -> None:
+        """number(number)
+
+        Displays a number in the range -99 to 99.
 
         A minus sign (``-``) is shown as a faint dot
         in the center of the display. Numbers greater than 99 are
@@ -727,8 +745,10 @@ class LightMatrix:
         """
         pass
 
-    def char(self, char):
-        """Displays a character or symbol on the light grid. This may
+    def char(self, char: str) -> None:
+        """char(char)
+
+        Displays a character or symbol on the light grid. This may
         be any letter (``a``--``z``), capital letter (``A``--``Z``) or one of
         the following symbols: ``!"#$%&'()*+,-./:;<=>?@[\\]^_`{|}``.
 
@@ -737,8 +757,10 @@ class LightMatrix:
         """
         pass
 
-    def text(self, text, on=500, off=50):
-        """Displays a text string, one character at a time, with a pause
+    def text(self, text: str, on: int = 500, off: int = 50) -> None:
+        """text(text, on=500, off=50)
+
+        Displays a text string, one character at a time, with a pause
         between each character. After the last character is shown, all lights
         turn off.
 
@@ -748,10 +770,6 @@ class LightMatrix:
             off (Number, ms): For how long the display is off between
                 characters.
         """
-        pass
-
-    def reset(self):
-        """Resets the display to show the default run animation."""
         pass
 
 
