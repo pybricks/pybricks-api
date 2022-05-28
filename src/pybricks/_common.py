@@ -623,54 +623,34 @@ class ColorLight:
 class LightArray:
     """Control an array of single-color lights."""
 
-    def __init__(self, n):
-        """Initializes the light array.
+    def __init__(self, n: int):
+        """LightArray(n)
+
+        Initializes the light array.
 
         Arguments:
             n (int): Number of lights
         """
         pass
 
-    def on(self, brightness):
-        """Turns on the lights at the specified brightness.
+    def on(self, brightness: Union[int, Collection[int]]) -> None:
+        """on(brightness)
+
+        Turns on the lights at the specified brightness.
 
         Arguments:
-            brightness (tuple of :ref:`brightness`):
-                Brightness of each light, in the order shown above. If you give
-                one brightness value instead of a tuple, all lights get the
-                same brightness.
+            brightness (Number or tuple of Number):
+                Brightness (0--100) of each light, in the order shown above.
+                If you give just one brightness value, all lights get that
+                brightness.
         """
         pass
 
-    def off(self):
-        """Turns off all the lights."""
+    def off(self) -> None:
+        """off()
+
+        Turns off all the lights."""
         pass
-
-    def blink(self, durations):
-        """Blinks all lights by turning them on and off for given durations.
-
-        The lights keep blinking indefinitely while the rest of your
-        program keeps running.
-
-        This method provides a simple way to make basic but useful patterns.
-        For more generic and smooth patterns, use :meth:`.animate` instead.
-
-        Arguments:
-            (list): List of time values of the
-                form ``[on_1, off_1, on_2, off_2, ...]``.
-        """
-
-    def animate(self, brightness_values, interval):
-        """Animates the lights with a list of brightness tuples. The next
-        brightness tuple from the list is activated after the given interval.
-
-        The animation runs in the background while the rest of your program
-        keeps running. When the animation completes, it repeats.
-
-        Arguments:
-            brightness_values (list): List of :ref:`brightness` tuples.
-            interval (Number, ms): Time between brightness updates.
-        """
 
 
 class LightMatrix:
