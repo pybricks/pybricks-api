@@ -793,20 +793,23 @@ class Keypad:
 class Battery:
     """Get the status of a battery."""
 
-    def voltage(self):
-        """Gets the voltage of the battery.
+    def voltage(self) -> int:
+        """voltage() -> int: mV
+
+        Gets the voltage of the battery.
 
         Returns:
-            :ref:`voltage`: Battery voltage.
+            Battery voltage.
         """
         pass
 
-    def current(self):
-        """Gets the current supplied by the battery.
+    def current(self) -> int:
+        """current() -> int: mA
+
+        Gets the current supplied by the battery.
 
         Returns:
-            :ref:`current`: Battery current.
-
+            Battery current.
         """
         pass
 
