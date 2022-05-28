@@ -779,12 +779,13 @@ class Keypad:
     def __init__(self, active_buttons):
         pass
 
-    def pressed(self):
-        """Checks which buttons are currently pressed.
+    def pressed(self) -> Tuple[Button]:
+        """pressed() -> Tuple[Button]
 
-        :returns: Tuple of pressed buttons.
-        :rtype: Tuple of :class:`Button`
+        Checks which buttons are currently pressed.
 
+        Returns:
+            Tuple of pressed buttons.
         """
         pass
 

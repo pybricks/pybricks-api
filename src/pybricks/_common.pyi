@@ -6,9 +6,6 @@ from typing import Collection, Iterable, Optional, Tuple, Union, overload
 from .geometry import Axis, Matrix, vector
 from .parameters import Button, Color, Direction, Side, Stop, Port
 
-class Keypad:
-    def pressed(self) -> Tuple[Button]: ...
-
 class Battery:
     def voltage(self) -> int: ...
     def current(self) -> int: ...
