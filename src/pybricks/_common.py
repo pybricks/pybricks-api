@@ -372,7 +372,7 @@ class Motor(DCMotor):
         """
         pass
 
-    def reset_angle(self, angle: int) -> None:
+    def reset_angle(self, angle: Number) -> None:
         """
         reset_angle(angle)
 
@@ -389,7 +389,7 @@ class Motor(DCMotor):
         Stops the motor and actively holds it at its current angle."""
         pass
 
-    def run(self, speed: int) -> None:
+    def run(self, speed: Number) -> None:
         """run(speed)
 
         Runs the motor at a constant speed.
@@ -403,7 +403,7 @@ class Motor(DCMotor):
         pass
 
     def run_time(
-        self, speed: int, time: int, then: Stop = Stop.HOLD, wait: bool = True
+        self, speed: Number, time: Number, then: Stop = Stop.HOLD, wait: bool = True
     ) -> None:
         """run_time(speed, time, then=Stop.HOLD, wait=True)
 
@@ -423,7 +423,11 @@ class Motor(DCMotor):
         pass
 
     def run_angle(
-        self, speed: int, rotation_angle: int, then: Stop = Stop.HOLD, wait: bool = True
+        self,
+        speed: Number,
+        rotation_angle: Number,
+        then: Stop = Stop.HOLD,
+        wait: bool = True,
     ) -> None:
         """run_angle(speed, rotation_angle, then=Stop.HOLD, wait=True)
 
@@ -440,7 +444,11 @@ class Motor(DCMotor):
         pass
 
     def run_target(
-        self, speed: int, target_angle: int, then: Stop = Stop.HOLD, wait: bool = True
+        self,
+        speed: Number,
+        target_angle: Number,
+        then: Stop = Stop.HOLD,
+        wait: bool = True,
     ) -> None:
         """run_target(speed, target_angle, then=Stop.HOLD, wait=True)
 
@@ -459,7 +467,10 @@ class Motor(DCMotor):
         pass
 
     def run_until_stalled(
-        self, speed: int, then: Stop = Stop.COAST, duty_limit: Optional[int] = None
+        self,
+        speed: Number,
+        then: Stop = Stop.COAST,
+        duty_limit: Optional[Number] = None,
     ) -> int:
         """
         run_until_stalled(speed, then=Stop.COAST, duty_limit=None) -> int: deg
@@ -479,7 +490,7 @@ class Motor(DCMotor):
         """
         pass
 
-    def track_target(self, target_angle: int) -> None:
+    def track_target(self, target_angle: Number) -> None:
         """track_target(target_angle)
 
         Tracks a target angle. This is similar to :meth:`.run_target`, but
@@ -502,7 +513,7 @@ class Speaker:
         ...
 
     @overload
-    def volume(self, volume: int) -> None:
+    def volume(self, volume: Number) -> None:
         ...
 
     def volume(self, *args):
@@ -518,7 +529,7 @@ class Speaker:
         """
         pass
 
-    def beep(self, frequency: int = 500, duration: int = 100) -> None:
+    def beep(self, frequency: Number = 500, duration: Number = 100) -> None:
         """beep(frequency=500, duration=100)
 
         Play a beep/tone.
@@ -533,7 +544,7 @@ class Speaker:
         """
         pass
 
-    def play_notes(self, notes: Iterable[str], tempo: int = 120) -> None:
+    def play_notes(self, notes: Iterable[str], tempo: Number = 120) -> None:
         """play_notes(notes, tempo=120)
 
         Plays a sequence of musical notes. For example:
@@ -607,7 +618,7 @@ class ColorLight:
                 form ``[on_1, off_1, on_2, off_2, ...]``.
         """
 
-    def animate(self, colors: Collection[Color], interval: int) -> None:
+    def animate(self, colors: Collection[Color], interval: Number) -> None:
         """animate(colors, interval)
 
         Animates the light with a sequence of colors, shown one by
@@ -697,7 +708,7 @@ class LightMatrix:
         """
         pass
 
-    def animate(self, matrices: Collection[Matrix], interval: int) -> None:
+    def animate(self, matrices: Collection[Matrix], interval: Number) -> None:
         """animate(matrices, interval)
 
         Displays an animation made using a list of images.
@@ -713,7 +724,7 @@ class LightMatrix:
         """
         pass
 
-    def pixel(self, row: int, column: int, brightness: int = 100) -> None:
+    def pixel(self, row: int, column: int, brightness: Number = 100) -> None:
         """pixel(row, column, brightness=100)
 
         Turns on one pixel at the specified brightness.
@@ -731,7 +742,7 @@ class LightMatrix:
         Turns off all the pixels."""
         pass
 
-    def number(self, number: int) -> None:
+    def number(self, number: Number) -> None:
         """number(number)
 
         Displays a number in the range -99 to 99.
@@ -757,7 +768,7 @@ class LightMatrix:
         """
         pass
 
-    def text(self, text: str, on: int = 500, off: int = 50) -> None:
+    def text(self, text: str, on: Number = 500, off: Number = 50) -> None:
         """text(text, on=500, off=50)
 
         Displays a text string, one character at a time, with a pause
