@@ -936,9 +936,11 @@ class Accelerometer(SimpleAccelerometer):
 
 
 class IMU(Accelerometer):
-    def heading(self):
-        """Gets the heading angle relative to the starting orientation. It is a
-        a positive rotation around the :ref:`z-axis in the robot
+    def heading(self) -> float:
+        """heading() -> float: deg
+
+        Gets the heading angle relative to the starting orientation. It is a
+        positive rotation around the :ref:`z-axis in the robot
         frame <robotframe>`, prior to applying any tilt rotation.
 
         For a vehicle viewed from the top, this means that
@@ -952,8 +954,10 @@ class IMU(Accelerometer):
         """
         pass
 
-    def reset_heading(self, angle):
-        """Resets the accumulated heading angle of the robot.
+    def reset_heading(self, angle: Number) -> None:
+        """reset_heading(angle: Number)
+
+        Resets the accumulated heading angle of the robot.
 
         .. note:: This method is not yet implemented.
 
@@ -962,16 +966,27 @@ class IMU(Accelerometer):
         """
         pass
 
-    def angular_velocity(self, axis=None):
-        """Gets the angular velocity of the device along a given axis in
+    @overload
+    def angular_velocity(self) -> Matrix:
+        ...
+
+    @overload
+    def angular_velocity(self, axis: Axis) -> float:
+        ...
+
+    def angular_velocity(self, *args):
+        """
+        angular_velocity(axis) -> float: deg/s
+        angular_velocity() -> vector: deg/s
+
+        Gets the angular velocity of the device along a given axis in
         the :ref:`robot reference frame <robotframe>`.
 
         Arguments:
-            axis (Axis): Axis along which the angular velocity is
+            axis (Axis): Axis along which the angular velocity should be
                          measured.
         Returns:
-            Angular velocity along the
-            specified axis. If you specify no axis, this returns a vector
-            of accelerations along all axes.
+            Angular velocity along the specified axis. If you specify no axis,
+            this returns a vector of accelerations along all axes.
         """
         pass
