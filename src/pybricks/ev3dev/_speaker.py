@@ -1,26 +1,34 @@
 # SPDX-License-Identifier: MIT
 # Copyright (c) 2018-2021 The Pybricks Authors
 
+from typing import Iterable, Union, Optional
+
+from ..media.ev3dev import SoundFile
+
 
 class Speaker:
     """Plays beeps and sounds using a speaker."""
 
-    def beep(self, frequency=500, duration=100):
-        """Play a beep/tone.
+    def beep(self, frequency: int = 500, duration: int = 100) -> None:
+        """beep(frequency=500, duration=100)
+
+        Play a beep/tone.
 
         Arguments:
-            frequency (:ref:`frequency`):
-                Frequency of the beep. Frequencies below 100
-                are treated as 100.
-            duration (:ref:`time`):
-                Duration of the beep. If the duration is less
-                than 0, then the method returns immediately and the frequency
-                play continues to play indefinitely.
+            frequency (Number, Hz):
+                Frequency of the beep. Frequencies below 100 Hz are treated as
+                100 Hz.
+            duration (Number, ms):
+                Duration of the beep. If the duration is less than 0, then the
+                method returns immediately and the frequency play continues to
+                play indefinitely.
         """
         pass
 
-    def play_notes(self, notes, tempo=120):
-        """Plays a sequence of musical notes. For example:
+    def play_notes(self, notes: Iterable[str], tempo: int = 120) -> None:
+        """play_notes(notes, tempo=120)
+
+        Plays a sequence of musical notes. For example:
         ``['C4/4', 'C4/4', 'G4/4', 'G4/4']``.
 
         Each note is a string with the following format:
@@ -52,8 +60,10 @@ class Speaker:
         """
         pass
 
-    def play_file(self, file):
-        """Plays a sound file.
+    def play_file(self, file_name: Union[SoundFile, str]) -> None:
+        """play_file(file_name)
+
+        Plays a sound file.
 
         Arguments:
             file (str):
@@ -62,8 +72,10 @@ class Speaker:
 
         pass
 
-    def say(self, text):
-        """Says a given text string.
+    def say(self, text: str) -> None:
+        """say(text)
+
+        Says a given text string.
 
         You can configure the language and voice of the text using
         :meth:`.set_speech_options`.
@@ -74,8 +86,16 @@ class Speaker:
 
         pass
 
-    def set_speech_options(self, language=None, voice=None, speed=None, pitch=None):
-        """Configures speech settings used by the :meth:`.say` method.
+    def set_speech_options(
+        self,
+        language: Optional[str] = None,
+        voice: Optional[str] = None,
+        speed: Optional[int] = None,
+        pitch: Optional[int] = None,
+    ):
+        """set_speech_options(language, voice, speed, pitch)
+
+        Configures speech settings used by the :meth:`.say` method.
 
         Any option that is set to ``None`` will not be changed. If an option
         is set to an invalid value :meth:`.say` will use the default value
@@ -97,11 +117,13 @@ class Speaker:
         """
         pass
 
-    def set_volume(self, volume, which="_all_"):
-        """Sets the speaker volume.
+    def set_volume(self, volume: int, which: str = "_all_") -> None:
+        """set_volume(volume, which="_all_")
+
+        Sets the speaker volume.
 
         Arguments:
-            volume (:ref:`percentage`):
+            volume (Number, %):
                 Volume of the speaker.
             which (str):
                 Which volume to set. ``'Beep'`` sets the volume for
