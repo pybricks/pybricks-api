@@ -44,17 +44,42 @@ Motors
 
     .. automethod:: pybricks.ev3devices.Motor.run_target
 
+    .. automethod:: pybricks.ev3devices.Motor.track_target
+
     .. automethod:: pybricks.ev3devices.Motor.run_until_stalled
 
     .. automethod:: pybricks.ev3devices.Motor.dc
 
-    .. rubric:: Advanced motion control
+    .. rubric:: Motor status
 
-    .. automethod:: pybricks.ev3devices.Motor.track_target
+    .. attribute:: control.scale
 
-    .. autoattribute:: pybricks.ev3devices.Motor.control
-        :annotation:
+        Number of degrees that the motor turns to complete one degree at the
+        output of the gear train. This is the gear ratio determined from the
+        ``gears`` argument when initializing the motor.
 
+    .. automethod:: pybricks.ev3devices.Motor.control.done
+
+    .. automethod:: pybricks.ev3devices.Motor.control.stalled
+
+    .. automethod:: pybricks.ev3devices.Motor.control.load
+
+    .. rubric:: Motor settings
+
+    You can only change these settings while the controller is stopped. For
+    example, you can change them at the start of your program. Alternatively,
+    first call :meth:`stop() <pybricks.ev3devices.Motor.stop>`, and then change
+    the settings.
+
+    .. automethod:: pybricks.ev3devices.Motor.settings
+
+    .. automethod:: pybricks.ev3devices.Motor.control.limits
+
+    .. automethod:: pybricks.ev3devices.Motor.control.pid
+
+    .. automethod:: pybricks.ev3devices.Motor.control.target_tolerances
+
+    .. automethod:: pybricks.ev3devices.Motor.control.stall_tolerances
 
 Touch Sensor
 ^^^^^^^^^^^^

@@ -117,8 +117,9 @@ class Image:
             y (int):
                 The y-axis value where the top of the image will start.
             source (Image or str):
-                The source :class:`Image`. If the argument is a string, then
-                the ``source`` image is loaded from file.
+                The source :class:`Image <pybricks.media.ev3dev.Image>`. If
+                the argument is a string, then the ``source`` image is loaded
+                from file.
             transparent (Color):
                 The color of ``image`` to treat as transparent or ``None`` for
                 no transparency.
@@ -130,15 +131,17 @@ class Image:
 
         Arguments:
             source (Image or str):
-                The source :class:`Image`. If the argument is a string, then
-                the ``source`` image is loaded from file.
+                The source :class:`Image <pybricks.media.ev3dev.Image>`. If
+                the argument is a string, then the ``source`` image is loaded
+                from file.
         """
 
     def draw_text(self, x, y, text, text_color=_Color.BLACK, background_color=None):
         """Draws text on |this image|.
 
-        The most recent font set using :meth:`set_font` will be used or
-        :data:`Font.DEFAULT` if no font has been set yet.
+        The most recent font set using :meth:`.set_font` will be used or
+        :data:`Font.DEFAULT <pybricks.media.ev3dev.Font.DEFAULT>` if no font
+        has been set yet.
 
         Arguments:
             x (int):
@@ -150,8 +153,8 @@ class Image:
             text_color (Color):
                 The color used for drawing the text.
             background_color (Color):
-                The color used to fill the rectangle behind the text or ``None``
-                for transparent background.
+                The color used to fill the rectangle behind the text or
+                ``None`` for transparent background.
         """
         pass
 
@@ -161,14 +164,16 @@ class Image:
         This method works like the builtin ``print()`` function, but it writes
         on |this image| instead.
 
-        You can set the font using :meth:`set_font`. If no font has been set,
-        :data:`Font.DEFAULT` will be used. The text is always printed used
-        black text with a white background.
+        You can set the font using :meth:`.set_font`. If no font has been set,
+        :data:`Font.DEFAULT <pybricks.media.ev3dev.Font.DEFAULT>` will be
+        used. The text is always printed used black text with a white
+        background.
 
         Unlike the builtin ``print()``, the text does not wrap if it is too
-        wide to fit on |this image|. It just gets cut off. But if the text would
-        go off of the bottom of |this image|, the entire image is scrolled up and
-        the text is printed in the new blank area at the bottom of |this image|.
+        wide to fit on |this image|. It just gets cut off. But if the text
+        would go off of the bottom of |this image|, the entire image is
+        scrolled up and the text is printed in the new blank area at the
+        bottom of |this image|.
 
         Arguments:
             * (object):
@@ -184,10 +189,10 @@ class Image:
     def set_font(self, font):
         """Sets the font used for writing on |this image|.
 
-        The font is used for both :meth:`draw_text` and :meth:`print`.
+        The font is used for both :meth:`.draw_text` and :meth:`.print`.
 
         Arguments:
-            font (:class:`Font`):
+            font (Font):
                 The font to use.
         """
         pass

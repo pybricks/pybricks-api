@@ -66,7 +66,7 @@ class Speaker:
         """Says a given text string.
 
         You can configure the language and voice of the text using
-        :meth:`set_speech_options`.
+        :meth:`.set_speech_options`.
 
         Arguments:
             text (str): What to say.
@@ -75,10 +75,10 @@ class Speaker:
         pass
 
     def set_speech_options(self, language=None, voice=None, speed=None, pitch=None):
-        """Configures speech settings used by the :meth:`say` method.
+        """Configures speech settings used by the :meth:`.say` method.
 
         Any option that is set to ``None`` will not be changed. If an option
-        is set to an invalid value :meth:`say` will use the default value
+        is set to an invalid value :meth:`.say` will use the default value
         instead.
 
         Arguments:
@@ -105,8 +105,8 @@ class Speaker:
                 Volume of the speaker.
             which (str):
                 Which volume to set. ``'Beep'`` sets the volume for
-                :meth:`beep` and :meth:`play_notes`. ``'PCM'`` sets the volume
-                for :meth:`play_file` and :meth:`say`. ``'_all_'`` sets both
-                at the same time.
+                `beep` and `play_notes`. ``'PCM'`` sets the
+                volume for :meth:`.play_file` and :meth:`.say`. ``'_all_'``
+                sets both at the same time.
         """
         pass

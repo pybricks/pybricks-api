@@ -38,14 +38,18 @@ MINDSTORMS EV3 Brick
     .. automethod:: pybricks.hubs::EV3Brick.screen.clear
 
     .. automethod:: pybricks.hubs::EV3Brick.screen.draw_text
+        :noindex:
 
     .. automethod:: pybricks.hubs::EV3Brick.screen.print
+        :noindex:
 
     .. automethod:: pybricks.hubs::EV3Brick.screen.set_font
+        :noindex:
 
     .. automethod:: pybricks.hubs::EV3Brick.screen.load_image
 
     .. automethod:: pybricks.hubs::EV3Brick.screen.draw_image
+        :noindex:
 
     .. automethod:: pybricks.hubs::EV3Brick.screen.draw_pixel
 
