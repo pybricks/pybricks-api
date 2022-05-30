@@ -6,7 +6,7 @@ speakers, and batteries."""
 
 from .parameters import Direction, Stop, Button, Port, Color, Side
 
-from .geometry import Matrix
+from .geometry import Matrix, Axis
 
 from typing import Union, Iterable, overload, Optional, Tuple, Collection
 
@@ -868,22 +868,24 @@ class Charger:
 class SimpleAccelerometer:
     """Get measurements from an accelerometer."""
 
-    def acceleration(self):
-        """Gets the acceleration of the device.
+    def acceleration(self) -> Tuple[int, int, int]:
+        """acceleration() -> Tuple[int, int, int]: mm/s/s
+
+        Gets the acceleration of the device.
 
         Returns:
             Acceleration along all three axes.
         """
         pass
 
-    def up(self):
-        """Checks which side of the hub currently faces upward.
+    def up(self) -> Side:
+        """up() -> Side
 
-        :returns:
+        Checks which side of the hub currently faces upward.
+
+        Returns:
             ``Side.TOP``, ``Side.BOTTOM``, ``Side.LEFT``, ``Side.RIGHT``,
             ``Side.FRONT`` or ``Side.BACK``.
-        :rtype: :class:`Side`
-
         """
         pass
 
@@ -891,30 +893,25 @@ class SimpleAccelerometer:
 class Accelerometer(SimpleAccelerometer):
     """Get measurements from an accelerometer."""
 
-    def neutral(self, top, front):
-        """Configures the neutral orientation of the device or hub. You do this
-        by specifying how it is mounted on your design, in terms of the
-        :ref:`robot reference frame <robotframe>`.
+    @overload
+    def acceleration(self) -> Matrix:
+        ...
 
-        In this given neutral orientation, the tilt and heading will then be
-        zero.
+    @overload
+    def acceleration(self, axis: Axis) -> float:
+        ...
 
-        Arguments:
-            top (Axis): Which direction the top of the device faces in the
-                        neutral orientation. For example, you can
-                        choose ``top=-Axis.Z`` if you mounted it such that the
-                        neutral orientation is upside down.
-            front (Axis): Which direction the front of the device faces in the
-                        neutral orientation.
+    def acceleration(self, *args):
         """
-        pass
+        acceleration(axis) -> float: mm/s/s
+        acceleration() -> vector: mm/s/s
 
-    def acceleration(self, axis=None):
-        """Gets the acceleration of the device along a given axis in the
+
+        Gets the acceleration of the device along a given axis in the
         :ref:`robot reference frame <robotframe>`.
 
         Arguments:
-            axis (Axis): Axis along which the acceleration is
+            axis (Axis): Axis along which the acceleration should be
                          measured.
         Returns:
             Acceleration along the specified axis. If you specify no axis,
@@ -922,8 +919,10 @@ class Accelerometer(SimpleAccelerometer):
         """
         pass
 
-    def tilt(self):
-        """Gets the pitch and roll angles. This is relative to the
+    def tilt(self) -> Tuple[int, int]:
+        """tilt() -> Tuple[int, int]
+
+        Gets the pitch and roll angles. This is relative to the
         :ref:`user-specified neutral orientation <robotframe>`.
 
         The order of rotation is pitch-then-roll. This is equivalent to a
@@ -931,30 +930,7 @@ class Accelerometer(SimpleAccelerometer):
         along the x-axis.
 
         Returns:
-            (:ref:`angle`, :ref:`angle`): Pitch and roll angles.
-
-        """
-        pass
-
-    def tapped(self):
-        """Checks if the device or hub was tapped.
-
-        Returns:
-            bool:
-                ``True`` if tapped since this method was last called. ``False``
-                otherwise.
-
-        """
-        pass
-
-    def shaken(self):
-        """Checks if the device or hub was shaken.
-
-        Returns:
-            bool:
-                ``True`` if shaken since this method was last called. ``False``
-                otherwise.
-
+            Tuple of pitch and roll angles.
         """
         pass
 
