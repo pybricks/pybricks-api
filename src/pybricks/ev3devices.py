@@ -3,12 +3,10 @@
 
 """LEGO® MINDSTORMS® EV3 motors and sensors."""
 
-from .parameters import Direction as _Direction
-from ._common import DCMotor as _DCMotor, Motor as _Motor
+from .parameters import Direction, Port, Color, Button
+from ._common import Motor as _Motor
 
-
-class DCMotor(_DCMotor):
-    pass
+from typing import Optional, Tuple, List
 
 
 class Motor(_Motor):
@@ -18,7 +16,7 @@ class Motor(_Motor):
 class TouchSensor:
     """LEGO® MINDSTORMS® EV3 Touch Sensor."""
 
-    def __init__(self, port):
+    def __init__(self, port: Port):
         """TouchSensor(port)
 
         Arguments:
@@ -26,13 +24,14 @@ class TouchSensor:
         """
         pass
 
-    def pressed(self):
-        """Checks if the sensor is pressed.
+    def pressed(self) -> bool:
+        """pressed() -> bool
+
+        Checks if the sensor is pressed.
 
         Returns:
-            bool: ``True`` if the sensor is pressed, ``False`` if it is
+            ``True`` if the sensor is pressed, ``False`` if it is
             not pressed.
-
         """
         pass
 
@@ -40,53 +39,59 @@ class TouchSensor:
 class ColorSensor:
     """LEGO® MINDSTORMS® EV3 Color Sensor."""
 
-    def __init__(self, port):
+    def __init__(self, port: Port):
         """ColorSensor(port)
 
         Arguments:
             port (Port): Port to which the sensor is connected.
-
         """
         pass
 
-    def color(self):
-        """Measures the color of a surface.
+    def color(self) -> Optional[Color]:
+        """color() -> Color
 
-        :returns:
-            ``Color.BLACK``, ``Color.BLUE``, ``Color.GREEN``, ``Color.YELLOW``,
-            ``Color.RED``, ``Color.WHITE``, ``Color.BROWN`` or ``None``.
-        :rtype: :class:`Color <.parameters.Color>`, or ``None`` if no color is
-                detected.
-
-        """
-        pass
-
-    def ambient(self):
-        """Measures the ambient light intensity.
+        Measures the color of a surface.
 
         Returns:
-            :ref:`percentage`: Ambient light intensity, ranging from 0 (dark)
-            to 100 (bright).
+            ``Color.BLACK``, ``Color.BLUE``, ``Color.GREEN``,
+            ``Color.YELLOW``, ``Color.RED``, ``Color.WHITE``, ``Color.BROWN``,
+            or ``None`` if no color is detected.
+
         """
         pass
 
-    def reflection(self):
-        """Measures the reflection of a surface using a red light.
+    def ambient(self) -> int:
+        """ambient() -> int: %
+
+        Measures the ambient light intensity.
 
         Returns:
-            :ref:`percentage`: Reflection, ranging from 0 (no reflection) to
-            100 (high reflection).
+            Ambient light intensity, ranging from 0% (dark)
+            to 100% (bright).
+        """
+        pass
+
+    def reflection(self) -> int:
+        """reflection() -> int: %
+
+        Measures the reflection of a surface using a red light.
+
+        Returns:
+            Reflection, ranging from 0% (no reflection) to
+            100% (high reflection).
 
         """
         pass
 
-    def rgb(self):
-        """Measures the reflection of a surface using a red, green, and then a
+    def rgb(self) -> Tuple[int, int, int]:
+        """rgb() -> Tuple[int, int, int]
+
+        Measures the reflection of a surface using a red, green, and then a
         blue light.
 
-        :returns: Tuple of reflections for red, green, and blue light, each
-                  ranging from 0.0 (no reflection) to 100.0 (high reflection).
-        :rtype: (:ref:`percentage`, :ref:`percentage`, :ref:`percentage`)
+        Returns:
+            Tuple of reflections for red, green, and blue light, each
+            ranging from 0.0% (no reflection) to 100.0% (high reflection).
         """
         pass
 
@@ -94,7 +99,7 @@ class ColorSensor:
 class InfraredSensor:
     """LEGO® MINDSTORMS® EV3 Infrared Sensor and Beacon."""
 
-    def __init__(self, port):
+    def __init__(self, port: Port):
         """InfraredSensor(port)
 
         Arguments:
@@ -103,57 +108,66 @@ class InfraredSensor:
         """
         pass
 
-    def distance(self):
-        """Measures the relative distance between the sensor and an object using
+    def distance(self) -> int:
+        """distance() -> int: %
+
+        Measures the relative distance between the sensor and an object using
         infrared light.
 
         Returns:
-            :ref:`relativedistance`: Relative distance ranging from 0 (closest)
-            to 100 (farthest).
+            Relative distance ranging from 0% (closest)
+            to 100% (farthest).
 
         """
         pass
 
-    def beacon(self, channel):
-        """Measures the relative distance and angle between the remote and the
+    def beacon(self, channel: int) -> Tuple[Optional[int], Optional[int]]:
+        """
+        beacon(channel) -> Tuple[int, int]
+        beacon(channel) -> Tuple[None, None]
+
+        Measures the relative distance and angle between the remote and the
         infrared sensor.
 
         Arguments:
             channel (int): Channel number of the remote.
 
-        :returns: Tuple of relative distance (0 to 100) and approximate angle
-                  (-75 to 75 degrees) between remote and infrared sensor.
-        :rtype: (:ref:`relativedistance`, :ref:`angle`) or
-                (``None``, ``None``) if no remote is detected.
+        Returns:
+            Tuple of relative distance (0% to 100%) and approximate angle
+            (-75 to 75 degrees) between remote and infrared sensor or
+            a tuple of (``None``, ``None``) if no remote is detected.
         """
         pass
 
-    def buttons(self, channel):
-        """Checks which buttons on the infrared remote are pressed.
+    def buttons(self, channel: int) -> List[Button]:
+        """buttons(channel) -> List[Button]
+
+        Checks which buttons on the infrared remote are pressed.
 
         This method can detect up to two buttons at once. If you press
-        more buttons, you may not get useful data.
+        more buttons, you'll still get just two buttons.
 
         Arguments:
             channel (int): Channel number of the remote.
 
-        :returns: List of pressed buttons on the remote on selected channel.
-        :rtype: List of :class:`Button <Button>`
+        Returns:
+            List of pressed buttons on the remote on the selected channel.
 
         """
         pass
 
-    def keypad(self):
-        """Checks which buttons on the infrared remote are pressed.
+    def keypad(self) -> List[Button]:
+        """keypad() -> List[Button]
+
+        Checks which buttons on the infrared remote are pressed.
 
         This method can independently detect all 4 up/down buttons, but
         it cannot detect the beacon button.
 
         This method only works with the remote in channel 1.
 
-        :returns: List of pressed buttons on the remote on selected channel.
-        :rtype: List of :class:`Button <Button>`
-
+        Returns:
+            List of pressed buttons.
         """
         pass
 
@@ -161,8 +175,8 @@ class InfraredSensor:
 class GyroSensor:
     """LEGO® MINDSTORMS® EV3 Gyro Sensor."""
 
-    def __init__(self, port, positive_direction=_Direction.CLOCKWISE):
-        """
+    def __init__(self, port: Port, positive_direction: Direction = Direction.CLOCKWISE):
+        """GyroSensor(port)
 
         Arguments:
             port (Port): Port to which the sensor is connected.
@@ -173,41 +187,35 @@ class GyroSensor:
         """
         pass
 
-    def speed(self):
-        """Gets the speed (angular velocity) of the sensor.
+    def speed(self) -> int:
+        """speed() -> int: deg/s
+
+        Gets the speed (angular velocity) of the sensor.
 
         Returns:
-            :ref:`speed`: Sensor angular velocity.
+            Angular velocity.
 
         """
         pass
 
-    def angle(self):
-        """Gets the accumulated angle of the sensor.
+    def angle(self) -> int:
+        """angle() -> int: deg
+
+        Gets the accumulated angle of the sensor.
 
         Returns:
-            :ref:`angle`: Rotation angle.
+            Rotation angle.
 
         """
         pass
 
-    def reset_angle(self, angle):
-        """Sets the rotation angle of the sensor to a desired value.
+    def reset_angle(self, angle: int) -> None:
+        """reset_angle(angle)
+
+        Sets the rotation angle of the sensor to a desired value.
 
         Arguments:
-            angle (:ref:`angle`): Value to which the angle should be reset.
-        """
-        pass
-
-    def _calibrate(self):
-        """Calibrates the sensor.
-
-        This process sets the speed and angle to zero and ensures that the
-        angle value does not drift.
-
-        Make sure that the sensor does not move while calibrating.
-
-        This process can take up to 15 seconds.
+            angle (Number, deg): Value to which the angle should be reset.
         """
         pass
 
@@ -215,7 +223,7 @@ class GyroSensor:
 class UltrasonicSensor:
     """LEGO® MINDSTORMS® EV3 Ultrasonic Sensor."""
 
-    def __init__(self, port):
+    def __init__(self, port: Port):
         """UltrasonicSensor(port)
 
         Arguments:
@@ -224,8 +232,10 @@ class UltrasonicSensor:
         """
         pass
 
-    def distance(self, silent=False):
-        """Measures the distance between the sensor and an object using
+    def distance(self, silent: bool = False) -> int:
+        """distance(silent=False) -> int: mm
+
+        Measures the distance between the sensor and an object using
         ultrasonic sound waves.
 
         Arguments:
@@ -236,13 +246,15 @@ class UltrasonicSensor:
                            If this happens, unplug it and plug it back in.
 
         Returns:
-            :ref:`distance`: Distance.
+            Measured distance.
 
         """
         pass
 
-    def presence(self):
-        """Checks for the presence of other ultrasonic sensors by detecting
+    def presence(self) -> bool:
+        """presence() -> bool
+
+        Checks for the presence of other ultrasonic sensors by detecting
         ultrasonic sounds.
 
         If the other ultrasonic sensor is operating in silent mode, you can
@@ -250,7 +262,7 @@ class UltrasonicSensor:
         measurement.
 
         Returns:
-            bool: ``True`` if ultrasonic sounds are detected,
+            ``True`` if ultrasonic sounds are detected,
             ``False`` if not.
         """
         pass
