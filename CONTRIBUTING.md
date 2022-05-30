@@ -32,9 +32,11 @@ will actually be implemented.
      - pybricks.tools.wait: Add example of waiting.
      - pybricks.pupdevices: Fix all sensor class ports.
      - umath.sin: Fix spelling of Hypotenuse.
-  - If an import path makes no sense, just use the file path without extensions:
+  - If an import path makes no sense, just use the file path without
+    extensions:
      - .vscode/settings: Fix file associations.
-- The subject briefly describes _what_ was changed. Use a short full sentence as in the examples above.
+- The subject briefly describes _what_ was changed. Use a short full sentence
+  as in the examples above.
 - The body describes _why_ the change was made, e.g. `The word "sensor" was
   spelled incorrectly`.
 
@@ -49,8 +51,8 @@ Prerequisites:
 - [Python 3][python]
 - [Poetry][poetry]
 
-Information on installing prerequisites can be found on the [pybricks-micropython
-wiki][wiki].
+Information on installing prerequisites can be found on the
+[pybricks-micropython contributor's guide][contributing].
 
 Initial setup:
 
@@ -90,4 +92,4 @@ Linting:
 [git]: https://git-scm.com/
 [python]: https://www.python.org/
 [poetry]: https://python-poetry.org/
-[wiki]: https://github.com/pybricks-micropython/wiki
+[contributing]: https://github.com/pybricks/pybricks-micropython/blob/master/CONTRIBUTING.md
