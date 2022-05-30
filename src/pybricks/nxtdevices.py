@@ -1,31 +1,37 @@
 # SPDX-License-Identifier: MIT
-# Copyright (c) 2018-2020 The Pybricks Authors
+# Copyright (c) 2018-2022 The Pybricks Authors
 
 """Use LEGO® MINDSTORMS® NXT motors and sensors with the EV3 brick."""
 
 
-from .iodevices import AnalogSensor as _AnalogSensor
-from ._common import ColorLight as _ColorLight
+from .parameters import Port, Color
+
+from .iodevices import AnalogSensor
+from ._common import ColorLight
+
+
+from typing import Callable, Optional, Tuple
 
 
 class TouchSensor:
     """LEGO® MINDSTORMS® NXT Touch Sensor."""
 
-    def __init__(self, port):
-        """
+    def __init__(self, port: Port):
+        """TouchSensor(port)
 
         Arguments:
             port (Port): Port to which the sensor is connected.
         """
         pass
 
-    def pressed(self):
-        """Checks if the sensor is pressed.
+    def pressed(self) -> bool:
+        """pressed() -> bool
+
+        Checks if the sensor is pressed.
 
         Returns:
-            bool: ``True`` if the sensor is pressed, ``False`` if it is
+            ``True`` if the sensor is pressed, ``False`` if it is
             not pressed.
-
         """
         pass
 
@@ -33,86 +39,88 @@ class TouchSensor:
 class LightSensor:
     """LEGO® MINDSTORMS® NXT Color Sensor."""
 
-    def __init__(self, port):
-        """
+    def __init__(self, port: Port):
+        """LightSensor(port)
 
         Arguments:
             port (Port): Port to which the sensor is connected.
-
         """
         pass
 
-    def ambient(self):
-        """Measures the ambient light intensity.
+    def ambient(self) -> int:
+        """ambient() -> int: %
+
+        Measures the ambient light intensity.
 
         Returns:
-            :ref:`percentage`: Ambient light intensity, ranging from 0 (dark)
-            to 100 (bright).
+            Ambient light intensity, ranging from 0% (dark) to 100% (bright).
         """
         pass
 
-    def reflection(self):
-        """Measures the reflection of a surface using a red light.
+    def reflection(self) -> int:
+        """reflection() -> int: %
+
+        Measures the reflection of a surface using a red light.
 
         Returns:
-            :ref:`percentage`: Reflection, ranging from 0 (no reflection) to
-            100 (high reflection).
-
+            Reflection, ranging from 0% (no reflection) to 100% (high
+            reflection).
         """
         pass
 
 
-class ColorSensor:
+class ColorSensor(LightSensor):
     """LEGO® MINDSTORMS® NXT Color Sensor."""
 
-    light = _ColorLight()
+    light = ColorLight()
 
-    def __init__(self, port):
-        """
+    def __init__(self, port: Port):
+        """ColorSensor(port)
 
         Arguments:
             port (Port): Port to which the sensor is connected.
-
         """
         pass
 
-    def color(self):
-        """Measures the color of a surface.
+    def color(self) -> Color:
+        """color() -> Color
 
-        :returns:
+        Measures the color of a surface.
+
+        Returns:
             ``Color.BLACK``, ``Color.BLUE``, ``Color.GREEN``, ``Color.YELLOW``,
             ``Color.RED``, ``Color.WHITE`` or ``Color.NONE``.
-        :rtype: :class:`Color <.parameters.Color>`
-
         """
         pass
 
-    def ambient(self):
-        """Measures the ambient light intensity.
+    def ambient(self) -> int:
+        """ambient() -> int: %
+
+        Measures the ambient light intensity.
 
         Returns:
-            :ref:`percentage`: Ambient light intensity, ranging from 0 (dark)
-            to 100 (bright).
+            Ambient light intensity, ranging from 0% (dark) to 100% (bright).
         """
         pass
 
-    def reflection(self):
-        """Measures the reflection of a surface.
+    def reflection(self) -> int:
+        """reflection() -> int: %
+
+        Measures the reflection of a surface using a red light.
 
         Returns:
-            :ref:`percentage`: Reflection, ranging from 0 (no reflection) to
-            100 (high reflection).
-
+            Reflection, ranging from 0% (no reflection) to 100% (high
+            reflection).
         """
         pass
 
-    def rgb(self):
+    def rgb(self) -> Tuple[int, int, int]:
         """Measures the reflection of a surface using a red, green, and then a
         blue light.
 
-        :returns: Tuple of reflections for red, green, and blue light, each
-                  ranging from 0.0 (no reflection) to 100.0 (high reflection).
-        :rtype: (:ref:`percentage`, :ref:`percentage`, :ref:`percentage`)
+        Returns:
+            Tuple of reflections for red, green, and blue light, each
+            ranging from 0.0% (no reflection) to 100.0% (high reflection).
         """
         pass
 
@@ -120,22 +128,22 @@ class ColorSensor:
 class UltrasonicSensor:
     """LEGO® MINDSTORMS® NXT Ultrasonic Sensor."""
 
-    def __init__(self, port):
-        """
+    def __init__(self, port: Port):
+        """UltrasonicSensor(port)
 
         Arguments:
             port (Port): Port to which the sensor is connected.
-
         """
         pass
 
-    def distance(self):
-        """Measures the distance between the sensor and an object using
+    def distance(self) -> int:
+        """distance() -> int: mm
+
+        Measures the distance between the sensor and an object using
         ultrasonic sound waves.
 
         Returns:
-            :ref:`distance`: Distance.
-
+            Measured distance.
         """
         pass
 
@@ -143,17 +151,18 @@ class UltrasonicSensor:
 class SoundSensor:
     """LEGO® MINDSTORMS® NXT Sound Sensor."""
 
-    def __init__(self, port):
-        """
+    def __init__(self, port: Port):
+        """SoundSensor(port)
 
         Arguments:
             port (Port): Port to which the sensor is connected.
-
         """
         pass
 
-    def intensity(self, audible_only=True):
-        """Measures the ambient sound intensity (loudness).
+    def intensity(self, audible_only: bool = True) -> int:
+        """intensity(audible_only=True) -> int: %
+
+        Measures the ambient sound intensity (loudness).
 
         Arguments:
             audible_only (bool): Detect only audible sounds. This tries to
@@ -161,8 +170,7 @@ class SoundSensor:
                 human ear.
 
         Returns:
-            :ref:`percentage`: Sound intensity.
-
+            Sound intensity.
         """
         pass
 
@@ -170,21 +178,21 @@ class SoundSensor:
 class TemperatureSensor:
     """LEGO® MINDSTORMS® NXT Temperature Sensor."""
 
-    def __init__(self, port):
-        """
+    def __init__(self, port: Port):
+        """TemperatureSensor(port)
 
         Arguments:
             port (Port): Port to which the sensor is connected.
-
         """
         pass
 
-    def temperature(self):
-        """Measures the temperature.
+    def temperature(self) -> int:
+        """temperature() -> float: °C
+
+        Measures the temperature.
 
         Returns:
-            :ref:`temperature`: Measured temperature.
-
+            Measured temperature.
         """
         pass
 
@@ -192,26 +200,28 @@ class TemperatureSensor:
 class EnergyMeter:
     """LEGO® MINDSTORMS® Education NXT Energy Meter."""
 
-    def __init__(self, port):
-        """
+    def __init__(self, port: Port):
+        """EnergyMeter(port)
 
         Arguments:
             port (Port): Port to which the sensor is connected.
-
         """
         pass
 
-    def storage(self):
-        """Gets the total available energy stored in the battery.
+    def storage(self) -> int:
+        """storage() -> int: J
+
+        Gets the total available energy stored in the battery.
 
         Returns:
-            :ref:`energy`: Remaining stored energy.
-
+            Remaining stored energy.
         """
         pass
 
-    def input(self):
-        """Measures the electrical signals at the input (bottom) side
+    def input(self) -> Tuple[int, int, int]:
+        """input() -> Tuple[int, int, int]
+
+        Measures the electrical signals at the input (bottom) side
         of the energy meter. It measures the voltage applied to it and the
         current passing through it. The product of these two values is power.
         This power value is the rate at which the stored energy increases. This
@@ -219,14 +229,15 @@ class EnergyMeter:
         or an externally driven motor.
 
         Returns:
-            (:ref:`voltage`, :ref:`current`, :ref:`power`): Voltage, current,
-            and power measured at the input port.
-
+            Voltage (mV), current (mA), and power (mW) measured at the input
+            port.
         """
         pass
 
-    def output(self):
-        """Measures the electrical signals at the output (top) side
+    def output(self) -> Tuple[int, int, int]:
+        """output() -> Tuple[int, int, int]
+
+        Measures the electrical signals at the output (top) side
         of the energy meter. It measures the voltage applied to the external
         load and the current passing to it. The product of these two values
         is power. This power value is the rate at which the stored energy
@@ -234,22 +245,21 @@ class EnergyMeter:
         motor.
 
         Returns:
-            (:ref:`voltage`, :ref:`current`, :ref:`power`): Voltage, current,
-            and power measured at the output port.
-
+            Voltage (mV), current (mA), and power (mW) measured at the output
+            port.
         """
         pass
 
 
-class VernierAdapter(_AnalogSensor):
+class VernierAdapter(AnalogSensor):
     """LEGO® MINDSTORMS® Education NXT/EV3 Adapter for Vernier Sensors."""
 
-    def __init__(self, port, conversion=None):
-        """
+    def __init__(self, port: Port, conversion: Optional[Callable[[int], float]] = None):
+        """VernierAdapter(port, conversion=None)
 
         Arguments:
             port (Port): Port to which the sensor is connected.
-            conversion (callable): Function of the format ``conversion``.
+            conversion (callable): Function of the format :meth:`.conversion`.
                 This function is used to convert the raw analog voltage to the
                 sensor-specific output value. Each Vernier Sensor has its
                 own conversion function. The example given below demonstrates
@@ -257,33 +267,39 @@ class VernierAdapter(_AnalogSensor):
         """
         pass
 
-    def voltage(self):
-        """Measures the raw analog sensor voltage.
+    def voltage(self) -> int:
+        """voltage() -> int: mV
+
+        Measures the raw analog sensor voltage.
 
         Returns:
-            :ref:`voltage`: Analog voltage.
+            Analog voltage.
         """
         pass
 
-    def conversion(self, voltage):
-        """Converts the raw voltage (mV) to a sensor value.
+    def conversion(self, voltage: int) -> float:
+        """conversion(voltage) -> float
 
-        If you did not provide a ``conversion`` function earlier, no conversion
-        will be applied.
+        Converts the raw voltage (mV) to a sensor value.
+
+        If you did not provide a :meth:`.conversion` function earlier, no
+        conversion will be applied.
 
         Arguments:
-            voltage (:ref:`voltage`): Analog sensor voltage
+            voltage (Number, mV): Analog sensor voltage
 
-        :returns: Converted sensor value.
-        :rtype: float
+        Returns:
+            Converted sensor value.
         """
         pass
 
-    def value(self):
-        """Measures the sensor :meth:`.voltage` and then
+    def value(self) -> float:
+        """value() -> float
+
+        Measures the sensor :meth:`.voltage` and then
         applies your :meth:`.conversion` to give you the sensor value.
 
-        :returns: Converted sensor value.
-        :rtype: float
+        Returns:
+            Converted sensor value.
         """
         pass
