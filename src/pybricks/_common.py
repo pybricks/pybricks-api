@@ -828,33 +828,39 @@ class Battery:
 class Charger:
     """Get the status of a battery charger."""
 
-    def connected(self):
-        """Checks whether a charger is connected via USB.
+    def connected(self) -> bool:
+        """connected() -> bool
+
+        Checks whether a charger is connected via USB.
 
         Returns:
-            bool: ``True`` if a charger is connected, ``False`` if not.
+            ``True`` if a charger is connected, ``False`` if not.
         """
 
-    def status(self):
-        """Gets the status of the battery charger, represented by one of the
+    def status(self) -> int:
+        """status() -> int
+
+        Gets the status of the battery charger, represented by one of the
         following values. This corresponds to the battery light indicator
         right next to the USB port.
 
-            0. Not charging (off).
-            1. Charging (red).
-            2. Charging is complete (green).
-            3. There is a problem with the charger (yellow).
+            0. Not charging (light is off).
+            1. Charging (light is red).
+            2. Charging is complete (light is green).
+            3. There is a problem with the charger (light is yellow).
 
         Returns:
-            int: Status value.
+            Status value.
         """
         pass
 
-    def current(self):
-        """Gets the charging current.
+    def current(self) -> int:
+        """current() -> int: mA
+
+        Gets the charging current.
 
         Returns:
-            :ref:`current`: Charging current.
+            Charging current.
         """
         pass
 
