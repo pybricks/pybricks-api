@@ -170,7 +170,7 @@ class Control:
         Arguments:
             speed (Number, deg/s or Number, mm/s):
                 Maximum speed. All speed commands will be capped to this value.
-            acceleration (Number, deg/s/s or Number, mm/s/s):
+            acceleration (Number, deg/s² or Number, mm/s²):
                 Slope of the speed curve when accelerating or decelerating.
                 Use a tuple to set acceleration and deceleration separately.
                 If one value is given, it is used for both.
@@ -869,7 +869,7 @@ class SimpleAccelerometer:
     """Get measurements from an accelerometer."""
 
     def acceleration(self) -> Tuple[int, int, int]:
-        """acceleration() -> Tuple[int, int, int]: mm/s/s
+        """acceleration() -> Tuple[int, int, int]: mm/s²
 
         Gets the acceleration of the device.
 
@@ -903,8 +903,8 @@ class Accelerometer(SimpleAccelerometer):
 
     def acceleration(self, *args):
         """
-        acceleration(axis) -> float: mm/s/s
-        acceleration() -> vector: mm/s/s
+        acceleration(axis) -> float: mm/s²
+        acceleration() -> vector: mm/s²
 
 
         Gets the acceleration of the device along a given axis in the

@@ -29,7 +29,7 @@ Move Hub
 
         .. versionchanged:: 3.2
 
-            Changed acceleration units from m/s/s to mm/s/s.
+            Changed acceleration units from m/s² to mm/s².
 
     .. rubric:: Using the battery
 

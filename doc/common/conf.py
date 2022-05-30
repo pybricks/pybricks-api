@@ -314,10 +314,10 @@ def on_missing_reference(app, env, node, contnode):
     for unit in [
         "deg",
         "deg/s",
-        "deg/s/s",
+        "deg/s²",
         "mm",
         "mm/s",
-        "mm/s/s",
+        "mm/s²",
         "%",
         "mV",
         "mA",

@@ -76,12 +76,12 @@ use the following table to convert between commonly used units.
 
 .. _acceleration:
 
-rotational acceleration: deg/s/s
+rotational acceleration: deg/s²
 --------------------------------
 
 Rotational acceleration, or *angular acceleration* describes how fast the
 rotational speed changes. This is expressed as the change of the number of
-degrees per second, during one second (deg/s/s). This is also commonly written
+degrees per second, during one second (deg/s²). This is also commonly written
 as  :math:`deg/s^2`.
 
 For example, you can adjust the rotational acceleration setting of a ``Motor``
@@ -134,11 +134,11 @@ For example, the speed of a robotic vehicle is expressed in mm/s.
 
 .. _linacceleration:
 
-linear acceleration: mm/s/s
+linear acceleration: mm/s²
 --------------------------------
 
 Linear acceleration describes how fast the speed changes. This is expressed as
-the change of the millimeters per second, during one second (mm/s/s).
+the change of the millimeters per second, during one second (mm/s²).
 This is also commonly written as  :math:`mm/s^2`.
 
 For example, you can adjust the acceleration setting of a
