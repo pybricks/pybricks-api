@@ -2,10 +2,11 @@
 
 <!-- refer to https://keepachangelog.com/en/1.0.0/ for guidance -->
 
-## Unreleased
+## 3.2.0b1 - 2022-06-02
 
 ### Added
 - Code auto-completion for `hub.charger`, `hub.imu` and `hub.system`.
+- Moved typing from several `.pyi` files to the actual python modules.
 
 ### Fixed
 - Fixed code completion for `DCMotor` and `Motor` classes in MS Python VS Code extension.
