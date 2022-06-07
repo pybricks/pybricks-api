@@ -3,7 +3,7 @@
 
 """LEGO® Powered Up motor, sensors, and lights."""
 
-from typing import Optional
+from typing import Optional, Union, overload, Tuple
 
 from ._common import (
     Keypad as _Keypad,
@@ -13,7 +13,7 @@ from ._common import (
     LightArray as _LightArray,
 )
 
-from .parameters import Direction as _Direction, Button as _Button
+from .parameters import Button as _Button, Color, Direction
 
 
 class DCMotor(_DCMotor):
@@ -52,9 +52,12 @@ class Remote:
             _Button.RIGHT_PLUS,
         )
     )
+    addresss: Union[str, None]
 
-    def __init__(self, name=None, timeout=10000):
-        """When you instantiate this class, the hub will search for a remote
+    def __init__(self, name: str = None, timeout: int = 10000):
+        """Remote(name=None, timeout=10000)
+
+        When you instantiate this class, the hub will search for a remote
         and connect automatically.
 
         The remote must be on and ready for a connection, as indicated by a
@@ -63,17 +66,27 @@ class Remote:
         Arguments:
             name (str): Bluetooth name of the remote. If no name is given,
                 the hub connects to the first remote that it finds.
-            timeout (:ref:`time`): How long to search for the remote.
+            timeout (Number, ms): How long to search for the remote.
         """
         pass
 
-    def name(self, name=None):
-        """Gets or sets the Bluetooth name of the remote.
+    @overload
+    def name(self, name: str) -> None:
+        ...
 
-        If no name is given, this method returns the current name.
+    @overload
+    def name(self) -> str:
+        ...
+
+    def name(self, *args):
+        """name(name)
+        name() -> str
+
+        Sets or gets the Bluetooth name of the remote.
 
         Arguments:
-            name (str): New Bluetooth name of the remote.
+            name (str): New Bluetooth name of the remote. If no name is given,
+                this method returns the current name.
         """
 
 
@@ -81,18 +94,20 @@ class TiltSensor:
     """LEGO® Powered Up Tilt Sensor."""
 
     def __init__(self, port):
-        """
+        """TiltSensor(port)
 
         Arguments:
             port (Port): Port to which the sensor is connected.
         """
         pass
 
-    def tilt(self):
-        """Measures the tilt relative to the horizontal plane.
+    def tilt(self) -> Tuple[int, int]:
+        """tilt() -> Tuple[int, int]: deg
+
+        Measures the tilt relative to the horizontal plane.
 
         Returns:
-            (:ref:`angle`, :ref:`angle`): Tuple of pitch and roll angles.
+            Tuple of pitch and roll angles.
         """
         pass
 
@@ -192,8 +207,14 @@ class PFMotor(DCMotor):
     """Control Power Functions motors with the infrared functionality of the
     :class:`ColorDistanceSensor <pybricks.pupdevices.ColorDistanceSensor>`."""
 
-    def __init__(self, sensor, channel, color, positive_direction=_Direction.CLOCKWISE):
-        """
+    def __init__(
+        self,
+        sensor: ColorDistanceSensor,
+        channel: int,
+        color: Color,
+        positive_direction: Direction = Direction.CLOCKWISE,
+    ):
+        """PFMotor(sensor, channel, color, positive_direction=Direction.CLOCKWISE)
 
         Arguments:
             sensor (ColorDistanceSensor):
@@ -216,7 +237,7 @@ class ColorSensor:
     lights = _LightArray(3)
 
     def __init__(self, port):
-        """
+        """ColorSensor(port)
 
         Arguments:
             port (Port): Port to which the sensor is connected.
@@ -307,7 +328,7 @@ class UltrasonicSensor:
     lights = _LightArray(3)
 
     def __init__(self, port):
-        """
+        """UltrasonicSensor(port)
 
         Arguments:
             port (Port): Port to which the sensor is connected.
@@ -341,7 +362,7 @@ class ForceSensor:
     """LEGO® SPIKE Force Sensor."""
 
     def __init__(self, port):
-        """
+        """ForceSensor(port)
 
         Arguments:
             port (Port): Port to which the sensor is connected.
@@ -393,7 +414,7 @@ class ColorLightMatrix:
     """
 
     def __init__(self, port):
-        """
+        """ColorLightMatrix(port)
 
         Arguments:
             port (Port): Port to which the device is connected.
@@ -424,7 +445,7 @@ class InfraredSensor:
     """LEGO® Powered Up Infrared Sensor."""
 
     def __init__(self, port):
-        """
+        """InfraredSensor(port)
 
         Arguments:
             port (Port): Port to which the sensor is connected.
@@ -463,7 +484,7 @@ class Light:
     """LEGO® Powered Up Light."""
 
     def __init__(self, port):
-        """
+        """Light(port)
 
         Arguments:
             port (Port): Port to which the device is connected.

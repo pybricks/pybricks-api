@@ -12,17 +12,7 @@ from ._common import (
     Light as BaseLight,
 )
 
-from .parameters import Color, Direction, Port
-
-class Remote:
-    light: ColorLight
-    buttons: Keypad
-    addresss: Union[str, None]
-    def __init__(self, address: str = None, timeout: int = 10000): ...
-
-class TiltSensor:
-    def __init__(self, port: Port): ...
-    def tilt(self) -> Tuple[int, int]: ...
+from .parameters import Color, Port
 
 class ColorDistanceSensor:
     light: ColorLight
@@ -33,15 +23,6 @@ class ColorDistanceSensor:
     def detectable_colors(self, colors: Collection[Color]) -> None: ...
     def hsv(self) -> Color: ...
     def distance(self) -> int: ...
-
-class PFMotor(DCMotor):
-    def __init__(
-        self,
-        sensor: ColorDistanceSensor,
-        channel: int,
-        color: Color,
-        positive_direction: Direction = Direction.CLOCKWISE,
-    ): ...
 
 class ColorSensor:
     lights: LightArray
