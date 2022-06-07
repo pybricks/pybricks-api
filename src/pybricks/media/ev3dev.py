@@ -3,7 +3,11 @@
 
 """Images and Sounds for Pybricks on ev3dev."""
 
-from ..parameters import Color as _Color
+from __future__ import annotations
+
+from ..parameters import Color
+
+from typing import Union, Literal, overload, Optional, Any
 
 
 class Image:
@@ -15,8 +19,20 @@ class Image:
     # in that context and it is automatically replaced when the documentation
     # is generated.
 
-    def __init__(self, source, sub=False):
-        """
+    @overload
+    def __init__(self, /, source: Union[Image, ImageFile, str]):
+        ...
+
+    @overload
+    def __init__(
+        self, /, source: Image, sub: Literal[False], x1: int, y1: int, x2: int, y2: int
+    ):
+        ...
+
+    def __init__(self, *args):
+        """Image(source, sub=False)
+
+
         Arguments:
             source (str or Image):
                 The source of the image.
@@ -42,23 +58,27 @@ class Image:
         pass
 
     @property
-    def width(self):
+    def width(self) -> int:
         """Gets the width of |this image| in pixels."""
         return 0
 
     @property
-    def height(self):
+    def height(self) -> int:
         """Gets the height of |this image| in pixels."""
         return 0
 
-    def clear(self):
-        """Clears |this image|. All pixels on |this image| will be set to
+    def clear(self) -> None:
+        """clear()
+
+        Clears |this image|. All pixels on |this image| will be set to
         :attr:`Color.WHITE <pybricks.parameters.Color.WHITE>`.
         """
         pass
 
-    def draw_pixel(self, x, y, color=_Color.BLACK):
-        """Draws a single pixel on |this image|.
+    def draw_pixel(self, x: int, y: int, color: Color = Color.BLACK) -> None:
+        """draw_pixel(x, y, color=Color.BLACK)
+
+        Draws a single pixel on |this image|.
 
         Arguments:
             x (int): The x coordinate of the pixel.
@@ -67,8 +87,18 @@ class Image:
         """
         pass
 
-    def draw_line(self, x1, y1, x2, y2, width=1, color=_Color.BLACK):
-        """Draws a line on |this image|.
+    def draw_line(
+        self,
+        x1: int,
+        y1: int,
+        x2: int,
+        y2: int,
+        width: int = 1,
+        color: Color = Color.BLACK,
+    ) -> None:
+        """draw_line(x1, y1, x2, y2, width=1, color=Color.BLACK)
+
+        Draws a line on |this image|.
 
         Arguments:
             x1 (int): The x coordinate of the starting point of the line.
@@ -80,8 +110,19 @@ class Image:
         """
         pass
 
-    def draw_box(self, x1, y1, x2, y2, r=0, fill=False, color=_Color.BLACK):
-        """Draws a box on |this image|.
+    def draw_box(
+        self,
+        x1: int,
+        y1: int,
+        x2: int,
+        y2: int,
+        r: int = 0,
+        fill: bool = False,
+        color: Color = Color.BLACK,
+    ) -> None:
+        """draw_box(x1, y1, x2, y2, r=0, fill=False, color=Color.BLACK)
+
+        Draws a box on |this image|.
 
         Arguments:
             x1 (int): The x coordinate of the left side of the box.
@@ -95,8 +136,12 @@ class Image:
         """
         pass
 
-    def draw_circle(self, x, y, r, fill=False, color=_Color.BLACK):
-        """Draws a circle on |this image|.
+    def draw_circle(
+        self, x: int, y: int, r: int, fill: bool = False, color: Color = Color.BLACK
+    ) -> None:
+        """draw_circle(x, y, r, fill=False, color=Color.BLACK)
+
+        Draws a circle on |this image|.
 
         Arguments:
             x (int): The x coordinate of the center of the circle.
@@ -108,8 +153,16 @@ class Image:
         """
         pass
 
-    def draw_image(self, x, y, source, transparent=None):
-        """Draws the ``source`` image on |this image|.
+    def draw_image(
+        self,
+        x: int,
+        y: int,
+        source: Union[Image, ImageFile, str],
+        transparent: Optional[Color] = None,
+    ) -> None:
+        """draw_image(x, y, source, transparent=None)
+
+        Draws the ``source`` image on |this image|.
 
         Arguments:
             x (int):
@@ -125,8 +178,10 @@ class Image:
                 no transparency.
         """
 
-    def load_image(self, source):
-        """Clears this image, then draws the ``source`` image centered in
+    def load_image(self, source: Union[Image, ImageFile, str]) -> None:
+        """load_image(source)
+
+        Clears this image, then draws the ``source`` image centered in
         |this image|.
 
         Arguments:
@@ -136,8 +191,17 @@ class Image:
                 from file.
         """
 
-    def draw_text(self, x, y, text, text_color=_Color.BLACK, background_color=None):
-        """Draws text on |this image|.
+    def draw_text(
+        self,
+        x: int,
+        y: int,
+        text: str,
+        text_color: Color = Color.BLACK,
+        background_color: Optional[Color] = None,
+    ) -> None:
+        """draw_text(x, y, text, text_color=Color.BLACK, background_color=None)
+
+        Draws text on |this image|.
 
         The most recent font set using :meth:`.set_font` will be used or
         :data:`Font.DEFAULT <pybricks.media.ev3dev.Font.DEFAULT>` if no font
@@ -158,8 +222,10 @@ class Image:
         """
         pass
 
-    def print(self, *args, sep=" ", end="\n"):
-        """Prints a line of text on |this image|.
+    def print(self, *args: Any, sep: str = " ", end: str = "\n") -> None:
+        """print(*args, sep=" ", end="\\n")
+
+        Prints a line of text on |this image|.
 
         This method works like the builtin ``print()`` function, but it writes
         on |this image| instead.
@@ -176,18 +242,17 @@ class Image:
         bottom of |this image|.
 
         Arguments:
-            * (object):
-                Zero or more objects to print.
-            sep (str):
-                Separator that will be placed between each object that is
-                printed.
-            end (str):
-                End of line that will be printed after the last object.
+            args (Any): Zero or more objects to print.
+            sep (str): Separator that will be placed between each object that
+                is printed.
+            end (str): End of line that will be printed after the last object.
         """
         pass
 
-    def set_font(self, font):
-        """Sets the font used for writing on |this image|.
+    def set_font(self, font: Font) -> None:
+        """set_font(font)
+
+        Sets the font used for writing on |this image|.
 
         The font is used for both :meth:`.draw_text` and :meth:`.print`.
 
@@ -198,8 +263,8 @@ class Image:
         pass
 
     @staticmethod
-    def empty(width=178, height=128):
-        """empty(width=<screen width>, height=<screen height>)
+    def empty(width: int = 178, height: int = 128) -> Image:
+        """empty(width=178, height=128) -> Image
 
         Creates a new empty :class:`Image` object.
 
@@ -210,21 +275,22 @@ class Image:
                 The height of the image in pixels.
 
         Returns:
-            Image:
-                A new image with all pixels set to :attr:`Color.WHITE
-                <pybricks.parameters.Color.WHITE>`.
+            A new image with all pixels set
+            to :attr:`Color.WHITE <pybricks.parameters.Color.WHITE>`.
 
         Raises:
             TypeError:
-                ``width`` or ``height`` is not a number.
+                If ``width`` or ``height`` is not a number.
             ValueError:
-                ``width`` or ``height`` is less than 1.
+                If ``width`` or ``height`` is less than 1.
             RuntimeError:
-                There was a problem allocating a new image.
+                If there was a problem allocating a new image.
         """
 
-    def save(self, filename):
-        """Saves |this image| as a ``.png`` file.
+    def save(self, filename: str) -> None:
+        """save(filename)
+
+        Saves |this image| as a ``.png`` file.
 
         Arguments:
             filename (str):
