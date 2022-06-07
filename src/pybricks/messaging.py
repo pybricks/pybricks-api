@@ -5,10 +5,38 @@
 Classes to exchange messages between EV3 bricks.
 """
 
+from __future__ import annotations
 
-class Mailbox:
-    def __init__(self, name, connection, encode=None, decode=None):
-        """Object that represents a mailbox containing data.
+from typing import abstractmethod, TypeVar, Optional, Callable, Generic
+
+T = TypeVar("T")
+
+
+class Connection:
+    @abstractmethod
+    def read_from_mailbox(self, name: str) -> bytes:
+        ...
+
+    @abstractmethod
+    def send_to_mailbox(self, name: str, data: bytes) -> None:
+        ...
+
+    @abstractmethod
+    def wait_for_mailbox_update(self, name: str) -> None:
+        ...
+
+
+class Mailbox(Generic[T]):
+    def __init__(
+        self,
+        name: str,
+        connection: Connection,
+        encode: Optional[Callable[[T], bytes]] = None,
+        decode: Optional[Callable[[bytes], T]] = None,
+    ):
+        """Mailbox(name, connection, encode=None, decode=None)
+
+        Object that represents a mailbox containing data.
 
         You can read data that is delivered by other EV3 bricks, or send data
         to other bricks that have the same mailbox.
@@ -29,16 +57,20 @@ class Mailbox:
                 Function that creates a new Python object from bytes.
         """
 
-    def read(self):
-        """Gets the current value of the mailbox.
+    def read(self) -> T:
+        """read()
+
+        Gets the current value of the mailbox.
 
         Returns:
             The current value or ``None`` if the mailbox is empty.
         """
         return ""
 
-    def send(self, value, brick=None):
-        """Sends a value to this mailbox on connected devices.
+    def send(self, value: T, brick: Optional[str] = None) -> None:
+        """send(value, brick=None)
+
+        Sends a value to this mailbox on connected devices.
 
         Arguments:
             value:
@@ -52,13 +84,16 @@ class Mailbox:
                 There is a problem with the connection.
         """
 
-    def wait(self):
-        """Waits for the mailbox to be updated by remote device."""
+    def wait(self) -> None:
+        """wait()
 
-    def wait_new(self):
-        """Waits for a new value to be delivered to the mailbox that is not
+        Waits for the mailbox to be updated by remote device."""
+
+    def wait_new(self) -> T:
+        """wait_new()
+
+        Waits for a new value to be delivered to the mailbox that is not
         equal to the current value in the mailbox.
-
 
         Returns:
             The new value.
@@ -66,9 +101,11 @@ class Mailbox:
         return object()
 
 
-class LogicMailbox(Mailbox):
-    def __init__(self, name, connection):
-        """Object that represents a mailbox containing boolean data.
+class LogicMailbox(Mailbox[bool]):
+    def __init__(self, name: str, connection: Connection):
+        """LogicMailbox(name, connection)
+
+        Object that represents a mailbox containing boolean data.
 
         This works just like a regular :class:`Mailbox`, but values
         must be ``True`` or ``False``.
@@ -83,9 +120,11 @@ class LogicMailbox(Mailbox):
         """
 
 
-class NumericMailbox(Mailbox):
-    def __init__(self, name, connection):
-        """Object that represents a mailbox containing numeric data.
+class NumericMailbox(Mailbox[float]):
+    def __init__(self, name: str, connection: Connection):
+        """NumericMailbox(name, connection)
+
+        Object that represents a mailbox containing numeric data.
 
         This works just like a regular :class:`Mailbox`, but values must be a
         number, such as ``15`` or ``12.345``
@@ -100,12 +139,14 @@ class NumericMailbox(Mailbox):
         """
 
 
-class TextMailbox(Mailbox):
-    def __init__(self, name, connection):
-        """Object that represents a mailbox containing text data.
+class TextMailbox(Mailbox[str]):
+    def __init__(self, name: str, connection: Connection):
+        """TextMailbox(name, connection)
+
+        Object that represents a mailbox containing text data.
 
         This works just like a regular :class:`Mailbox`, but data must be a
-        string, such as ``'hello!'`` or ``'My name is EV3'``.
+        string, such as ``'hello!'``.
 
         This is compatible with the "text" mailbox type in EV3-G.
 
@@ -127,14 +168,16 @@ class BluetoothMailboxServer:
     A "server" waits for a "client" to connect to it.
     """
 
-    def __enter__(self):
+    def __enter__(self) -> BluetoothMailboxServer:
         return self
 
-    def __exit__(self, type, value, traceback):
-        self.close()
+    def __exit__(self, type, value, traceback) -> None:
+        self.server_close()
 
-    def wait_for_connection(self, count=1):
-        """Waits for a :class:`BluetoothMailboxClient` on a remote device to
+    def wait_for_connection(self, count: int = 1) -> None:
+        """wait_for_connection(count=1)
+
+        Waits for a :class:`BluetoothMailboxClient` on a remote device to
         connect.
 
         Arguments:
@@ -146,8 +189,10 @@ class BluetoothMailboxServer:
                 There was a problem establishing the connection.
         """
 
-    def close(self):
-        """Closes all connections."""
+    def server_close(self) -> None:
+        """server_close()
+
+        Closes all connections."""
 
 
 class BluetoothMailboxClient:
@@ -159,14 +204,16 @@ class BluetoothMailboxClient:
     A "client" initiates a connection to a waiting "server".
     """
 
-    def __enter__(self):
+    def __enter__(self) -> BluetoothMailboxClient:
         return self
 
-    def __exit__(self, type, value, traceback):
+    def __exit__(self, type, value, traceback) -> None:
         self.close()
 
-    def connect(self, brick):
-        """Connects to an :class:`BluetoothMailboxServer` on another device.
+    def connect(self, brick: str) -> None:
+        """connect(brick)
+
+        Connects to an :class:`BluetoothMailboxServer` on another device.
 
         The remote device must be paired and waiting for a connection. See
         :meth:`BluetoothMailboxServer.wait_for_connection`.
@@ -180,5 +227,7 @@ class BluetoothMailboxClient:
                 There was a problem establishing the connection.
         """
 
-    def server_close(self):
-        """Closes all connections."""
+    def close(self) -> None:
+        """close()
+
+        Closes all connections."""
