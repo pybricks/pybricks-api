@@ -1,15 +1,18 @@
 # SPDX-License-Identifier: MIT
-# Copyright (c) 2018-2020 The Pybricks Authors
+# Copyright (c) 2018-2022 The Pybricks Authors
 
 """Common tools for timing and data logging."""
 
+from typing import Any
 
-def wait(time):
-    """Pauses the user program for a specified amount of time.
+
+def wait(time: int) -> None:
+    """wait(time)
+
+    Pauses the user program for a specified amount of time.
 
     Arguments:
-        time (:ref:`time`): How long to wait.
-
+        time (Number, ms): How long to wait.
     """
     pass
 
@@ -21,24 +24,32 @@ class StopWatch:
     def __init__(self):
         pass
 
-    def time(self):
-        """Gets the current time of the stopwatch.
+    def time(self) -> int:
+        """time() -> int: ms
+
+        Gets the current time of the stopwatch.
 
         Returns:
-            :ref:`time`: Elapsed time.
+            Elapsed time.
         """
         pass
 
-    def pause(self):
-        """Pauses the stopwatch."""
+    def pause(self) -> None:
+        """pause()
+
+        Pauses the stopwatch."""
         pass
 
-    def resume(self):
-        """Resumes the stopwatch."""
+    def resume(self) -> None:
+        """resume()
+
+        Resumes the stopwatch."""
         pass
 
-    def reset(self):
-        """Resets the stopwatch time to 0.
+    def reset(self) -> None:
+        """reset()
+
+        Resets the stopwatch time to 0.
 
         The run state is unaffected:
 
@@ -52,12 +63,17 @@ class DataLog:
     """Create a file and log data."""
 
     def __init__(
-        self, *headers, name="log", timestamp=True, extension="csv", append=False
+        self,
+        *headers: str,
+        name: str = "log",
+        timestamp: bool = True,
+        extension: str = "csv",
+        append: bool = False
     ):
-        """
+        """DataLog(*headers, name='log', timestamp=True, extension='csv', append=False)
 
         Arguments:
-            headers (`col1`, `col2`, `...`): Column headers. These are the
+            headers (str, str, ...): Column headers. These are the
                 names of the data columns. For example, choose ``'time'`` and
                 ``'angle'``.
             name (str): Name of the file.
@@ -72,10 +88,12 @@ class DataLog:
         """
         pass
 
-    def log(self, *values):
-        """Saves one or more values on a new line in the file.
+    def log(self, *values: Any) -> None:
+        """log(value1, value2, ...)
+
+        Saves one or more values on a new line in the file.
 
         Arguments:
-            values (object, object, `...`): One or more objects or values.
+            values (object, object, ...): One or more objects or values.
         """
         pass
