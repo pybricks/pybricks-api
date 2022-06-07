@@ -5,28 +5,6 @@ from typing import Any, Literal, Optional, Union, overload
 
 from ..parameters import Color
 
-class Font:
-    DEFAULT: Font
-    def __init__(
-        self,
-        family: Optional[str] = None,
-        size: int = 12,
-        bold: bool = False,
-        monospace: bool = False,
-        lang: Optional[str] = None,
-        script: Optional[str] = None,
-    ): ...
-    @property
-    def family(self) -> str: ...
-    @property
-    def style(self) -> str: ...
-    @property
-    def width(self) -> int: ...
-    @property
-    def height(self) -> int: ...
-    def text_width(self, text: str) -> int: ...
-    def text_height(self, text: str) -> int: ...
-
 class SoundFile:
     SHOUTING: SoundFile
     CHEERING: SoundFile

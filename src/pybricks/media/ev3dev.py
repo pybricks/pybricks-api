@@ -307,13 +307,21 @@ class Image:
 class Font:
     """Object that represents a font for writing text."""
 
-    DEFAULT = None  # assigned later since we can't use Font() here
+    DEFAULT: Font = None  # assigned later since we can't use Font() here
     """The default font."""
 
     def __init__(
-        self, family=None, size=12, bold=False, monospace=False, lang=None, script=None
+        self,
+        family: Optional[str] = None,
+        size: int = 12,
+        bold: bool = False,
+        monospace: bool = False,
+        lang: Optional[str] = None,
+        script: Optional[str] = None,
     ):
-        """The font object will be a font that is the "best" match based on the
+        """Font(family=None, size=12, bold=False, monospace=False, lang=None, script=None)
+
+        The font object will be a font that is the "best" match based on the
         parameters given and available fonts installed.
 
         Arguments:
@@ -335,30 +343,34 @@ class Font:
         """
 
     @property
-    def family(self):
+    def family(self) -> str:
         """Gets the family name of the font."""
         return "Lucida"
 
     @property
-    def style(self):
-        """Gets a string describing the font style.
+    def style(self) -> str:
+        """style -> str
+
+        Gets a string describing the font style.
 
         Can be "Regular" or "Bold".
         """
         return "Regular"
 
     @property
-    def width(self):
+    def width(self) -> int:
         """Gets the width of the widest character of the font."""
         return 0
 
     @property
-    def height(self):
+    def height(self) -> int:
         """Gets the height of the font."""
         return 0
 
-    def text_width(self, text):
-        """Gets the width of the text when the text is drawn using this font.
+    def text_width(self, text: str) -> int:
+        """text_width(text)
+
+        Gets the width of the text when the text is drawn using this font.
 
         Arguments:
             text (str):
@@ -370,8 +382,10 @@ class Font:
         """
         return 0
 
-    def text_height(self, text):
-        """Gets the height of the text when the text is drawn using this font.
+    def text_height(self, text: str) -> int:
+        """text_height(text)
+
+        Gets the height of the text when the text is drawn using this font.
 
         Arguments:
             text (str):
