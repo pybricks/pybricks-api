@@ -313,6 +313,7 @@ def on_missing_reference(app, env, node, contnode):
         "Hz",
         "°C",
         "J",
+        "Ω",
     ]:
 
         # If they match on raw source, we are dealing with argument types.

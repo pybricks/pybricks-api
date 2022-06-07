@@ -3,44 +3,54 @@
 
 """Generic input/output devices."""
 
+from typing import Dict, Tuple, Optional, overload
+
+from .parameters import Port
+
 
 class PUPDevice:
     """Powered Up motor or sensor."""
 
-    def __init__(self, port):
-        """
+    def __init__(self, port: Port):
+        """PUPDevice(port)
 
         Arguments:
             port (Port): Port to which the device is connected.
         """
         pass
 
-    def info(self):
-        """Returns information about the device.
+    def info(self) -> Dict[str, str]:
+        """info() -> Dict
+
+        Gets information about the device.
 
         Returns:
-            ``dict``: Dictionary with information, such as the device ``id``.
+            Dictionary with information, such as the device ``id``.
         """
         pass
 
-    def read(self, mode):
-        """Reads values from a given mode.
+    def read(self, mode: int) -> Tuple:
+        """read(mode) -> Tuple
+
+        Reads values from a given mode.
 
         Arguments:
-            mode (``int``): Device mode.
+            mode (int): Device mode.
 
         Returns:
-            ``tuple``: Values read from the sensor.
+            Values read from the sensor.
         """
         pass
 
-    def write(self, mode, data):
-        """Writes values to the sensor. Only selected sensors and modes support
+    def write(self, mode: int, data: Tuple) -> None:
+        """write(mode, data)
+
+        Writes values to the sensor. Only selected sensors and modes support
         this.
 
         Arguments:
-            mode (``int``): Device mode.
-            data (``tuple``): Values to be written.
+            mode (int): Device mode.
+            data (tuple): Values to be written.
         """
         pass
 
@@ -48,22 +58,24 @@ class PUPDevice:
 class LUMPDevice:
     """Devices using the LEGO UART Messaging Protocol."""
 
-    def __init__(self, port):
-        """
+    def __init__(self, port: Port):
+        """LUMPDevice(port)
 
         Arguments:
             port (Port): Port to which the device is connected.
         """
         pass
 
-    def read(self, mode):
-        """Reads values from a given mode.
+    def read(self, mode: int) -> Tuple:
+        """read(mode) -> Tuple
+
+        Reads values from a given mode.
 
         Arguments:
-            mode (``int``): Device mode.
+            mode (int): Device mode.
 
         Returns:
-            ``tuple``: Values read from the sensor.
+            Values read from the sensor.
         """
         pass
 
@@ -71,28 +83,30 @@ class LUMPDevice:
 class Ev3devSensor:
     """Read values of an ev3dev-compatible sensor."""
 
-    sensor_index = 0
+    sensor_index: int
     """Index of the ev3dev sysfs `lego-sensor`_ class."""
 
-    port_index = 0
+    port_index: int
     """Index of the ev3dev sysfs `lego-port`_ class."""
 
-    def __init__(self, port):
-        """
+    def __init__(self, port: Port):
+        """Ev3devSensor(port)
 
         Arguments:
             port (Port): Port to which the device is connected.
         """
         pass
 
-    def read(self, mode):
-        """Reads values at a given mode.
+    def read(self, mode: str) -> Tuple:
+        """read(mode) -> Tuple
+
+        Reads values at a given mode.
 
         Arguments:
-            mode (``str``): `Mode name`_.
+            mode (str): `Mode name`_.
 
         Returns:
-            ``tuple``: Values read from the sensor.
+            values read from the sensor.
         """
         pass
 
@@ -100,35 +114,41 @@ class Ev3devSensor:
 class AnalogSensor:
     """Generic or custom analog sensor."""
 
-    def __init__(self, port):
-        """
+    def __init__(self, port: Port):
+        """AnalogSensor(port)
 
         Arguments:
             port (Port): Port to which the sensor is connected.
         """
         pass
 
-    def voltage(self):
-        """Measures analog voltage.
+    def voltage(self) -> int:
+        """voltage() -> int: mV
+
+        Measures analog voltage.
 
         Returns:
-            :ref:`voltage`: Analog voltage.
+            Analog voltage.
         """
         pass
 
-    def resistance(self):
-        """Measures resistance.
+    def resistance(self) -> int:
+        """resistance() -> int: Ω
+
+        Measures resistance.
 
         This value is only meaningful if the analog device is a passive load
         such as a resistor or thermistor.
 
         Returns:
-            :ref:`resistance: Ω <voltage>`: Resistance of the analog device.
+            Resistance of the analog device.
         """
         pass
 
-    def active(self):
-        """Sets sensor to active mode. This sets pin 5 of the sensor
+    def active(self) -> None:
+        """active()
+
+        Sets sensor to active mode. This sets pin 5 of the sensor
         port to `high`.
 
         This is used in some analog
@@ -138,8 +158,10 @@ class AnalogSensor:
         """
         pass
 
-    def passive(self):
-        """Sets sensor to passive mode. This sets pin 5 of the sensor
+    def passive(self) -> None:
+        """passive()
+
+        Sets sensor to passive mode. This sets pin 5 of the sensor
         port to `low`.
 
         This is used in some analog
@@ -153,8 +175,8 @@ class AnalogSensor:
 class I2CDevice:
     """Generic or custom I2C device."""
 
-    def __init__(self, port, address):
-        """
+    def __init__(self, port: Port, address: int):
+        """I2CDevice(port, address)
 
         Arguments:
             port (Port): Port to which the device is connected.
@@ -163,26 +185,30 @@ class I2CDevice:
         """
         pass
 
-    def read(self, reg, length=1):
-        """Reads bytes, starting at a given register.
+    def read(self, reg: Optional[int], length: Optional[int] = 1) -> bytes:
+        """read(reg, length=1)
+
+        Reads bytes, starting at a given register.
 
         Arguments:
-            reg (``int``): Register at which to begin
+            reg (int): Register at which to begin
                 reading: 0--255 or 0x00--0xFF.
-            length (``int``): How many bytes to read.
+            length (int): How many bytes to read.
 
         Returns:
-            ``bytes``: Bytes returned from the device.
+            Bytes returned from the device.
         """
         pass
 
-    def write(self, reg, data=None):
-        """Writes bytes, starting at a given register.
+    def write(self, reg: Optional[int], data: Optional[bytes] = None) -> None:
+        """write(reg, data=None)
+
+        Writes bytes, starting at a given register.
 
         Arguments:
-            reg (``int``): Register at which to begin
+            reg (int): Register at which to begin
                 writing: 0--255 or 0x00--0xFF.
-            data (``bytes``): Bytes to be written.
+            data (bytes): Bytes to be written.
         """
         pass
 
@@ -190,73 +216,83 @@ class I2CDevice:
 class UARTDevice:
     """Generic UART device."""
 
-    def __init__(self, port, baudrate, timeout=None):
-        """
+    def __init__(self, port: Port, baudrate: int, timeout: Optional[int] = None):
+        """UARTDevice(port, baudrate, timeout=None)
 
         Arguments:
             port (Port): Port to which the device is connected.
             baudrate (int): Baudrate of the UART device.
-            timeout (:ref:`time`): How long to wait
+            timeout (Number, ms): How long to wait
                 during ``read`` before giving up. If you choose ``None``,
                 it will wait forever.
         """
         pass
 
-    def read(self, length=1):
-        """Reads a given number of bytes from the buffer.
+    def read(self, length: int = 1) -> bytes:
+        """read(length=1) -> bytes
+
+        Reads a given number of bytes from the buffer.
 
         Your program will wait until the requested number of bytes are
         received. If this takes longer than ``timeout``, the ``ETIMEDOUT``
         exception is raised.
 
         Arguments:
-            length (``int``): How many bytes to read.
+            length (int): How many bytes to read.
 
         Returns:
-            ``bytes``: Bytes returned from the device.
+            Bytes returned from the device.
         """
         pass
 
-    def read_all(self):
-        """Reads all bytes from the buffer.
+    def read_all(self) -> bytes:
+        """read_all() -> bytes
+
+        Reads all bytes from the buffer.
 
         Returns:
-            ``bytes``: Bytes returned from the device.
+            Bytes returned from the device.
         """
         pass
 
-    def write(self, data):
-        """Writes bytes.
+    def write(self, data: bytes) -> None:
+        """write(data)
+
+        Writes bytes.
 
         Arguments:
-            data (``bytes``): Bytes to be written.
+            data (bytes): Bytes to be written.
         """
         pass
 
-    def waiting(self):
-        """Gets how many bytes are still waiting to be read.
+    def waiting(self) -> int:
+        """waiting() -> int
+
+        Gets how many bytes are still waiting to be read.
 
         Returns:
-            ``int``: Number of bytes in the buffer.
+            Number of bytes in the buffer.
         """
         pass
 
-    def clear(self):
-        """Empties the buffer."""
+    def clear(self) -> None:
+        """clear()
+
+        Empties the buffer."""
         pass
 
 
 class LWP3Device:
     """
-    Connects to a remote hub running official LEGO firmware using the the
+    Connects to a hub running official LEGO firmware using the
     `LEGO Wireless Protocol v3`_
 
     .. _`LEGO Wireless Protocol v3`:
         https://lego.github.io/lego-ble-wireless-protocol-docs/
     """
 
-    def __init__(self, hub_kind, name=None, timeout=10000):
-        """
+    def __init__(self, hub_kind: int, name: str = None, timeout: int = 10000):
+        """LWP3Device(hub_kind, name=None, timeout=10000)
 
         Arguments:
             hub_kind (int):
@@ -273,30 +309,42 @@ class LWP3Device:
             https://github.com/pybricks/technical-info/blob/master/assigned-numbers.md#hub-type-ids
         """
 
-    def name(self, name=None):
-        """Gets or sets the Bluetooth name of the remote.
+    @overload
+    def name(self, name: str) -> None:
+        ...
 
-        If no name is given, this method returns the current name.
+    @overload
+    def name(self) -> str:
+        ...
+
+    def name(self, *args):
+        """name(name)
+        name() -> str
+
+        Sets or gets the Bluetooth name of the device.
 
         Arguments:
-            name (str): New Bluetooth name of the remote.
+            name (str): New Bluetooth name of the device. If no name is given,
+                this method returns the current name.
         """
 
-    def write(self, buf):
-        """
+    def write(self, buf: bytes) -> None:
+        """write(buf)
+
         Sends a message to the remote hub.
 
         Arguments:
             buf (bytes): The raw binary message to send.
         """
 
-    def read(self):
-        """
+    def read(self) -> bytes:
+        """read() -> bytes
+
         Retrieves the most recent message received from the remote hub.
 
         If a message has not been received since the last read, the method will
         block until a message is received.
 
         Returns:
-            bytes: The raw binary message.
+            The raw binary message.
         """
