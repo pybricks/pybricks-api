@@ -105,12 +105,16 @@ Pybricks Documentation
    :hidden:
 
    hubs/index
+   ev3devices
+   nxtdevices
    pupdevices/index
    iodevices/index
    parameters/index
    tools/index
    robotics
    geometry
+   media
+   messaging
    signaltypes
 
 .. toctree::

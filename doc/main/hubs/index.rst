@@ -10,6 +10,7 @@
    :hidden:
 
    movehub
+   ev3brick
    cityhub
    technichub
    primehub
