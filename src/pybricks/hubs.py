@@ -3,20 +3,20 @@
 
 """LEGO® Programmable Hubs."""
 from ._common import (
-    Speaker as _Speaker,
-    Battery as _Battery,
-    ColorLight as _ColorLight,
-    Keypad as _Keypad,
-    LightMatrix as _LightMatrix,
-    IMU as _IMU,
-    Charger as _Charger,
-    System as _System,
-    SimpleAccelerometer as _SimpleAccelerometer,
+    Speaker,
+    Battery,
+    ColorLight,
+    Keypad,
+    LightMatrix,
+    IMU,
+    Charger,
+    System,
+    SimpleAccelerometer,
 )
-from .ev3dev._speaker import Speaker as _EV3Speaker
-from .geometry import Axis as _Axis
-from .media.ev3dev import Image as _Image
-from .parameters import Button as _Button
+from .ev3dev._speaker import Speaker as EV3Speaker
+from .geometry import Axis
+from .media.ev3dev import Image
+from .parameters import Button
 
 
 class EV3Brick:
@@ -24,19 +24,19 @@ class EV3Brick:
 
     # These class attributes are here for auto-documentation only.
     # In reality, they are instance attributes created by __init__.
-    buttons = _Keypad(
+    buttons = Keypad(
         (
-            _Button.LEFT,
-            _Button.RIGHT,
-            _Button.CENTER,
-            _Button.UP,
-            _Button.DOWN,
+            Button.LEFT,
+            Button.RIGHT,
+            Button.CENTER,
+            Button.UP,
+            Button.DOWN,
         )
     )
-    screen = _Image("_screen_")
-    speaker = _EV3Speaker()
-    battery = _Battery()
-    light = _ColorLight()
+    screen = Image("_screen_")
+    speaker = EV3Speaker()
+    battery = Battery()
+    light = ColorLight()
 
 
 class MoveHub:
@@ -44,11 +44,11 @@ class MoveHub:
 
     # These class attributes are here for auto-documentation only.
     # In reality, they are instance attributes created by __init__.
-    battery = _Battery()
-    light = _ColorLight()
-    imu = _SimpleAccelerometer()
-    system = _System()
-    button = _Keypad((_Button.CENTER,))
+    battery = Battery()
+    light = ColorLight()
+    imu = SimpleAccelerometer()
+    system = System()
+    button = Keypad((Button.CENTER,))
 
 
 class CityHub:
@@ -56,10 +56,10 @@ class CityHub:
 
     # These class attributes are here for auto-documentation only.
     # In reality, they are instance attributes created by __init__.
-    battery = _Battery()
-    light = _ColorLight()
-    system = _System()
-    button = _Keypad((_Button.CENTER,))
+    battery = Battery()
+    light = ColorLight()
+    system = System()
+    button = Keypad((Button.CENTER,))
 
 
 class TechnicHub:
@@ -67,14 +67,14 @@ class TechnicHub:
 
     # These class attributes are here for auto-documentation only.
     # In reality, they are instance attributes created by __init__.
-    battery = _Battery()
-    light = _ColorLight()
-    imu = _IMU()
-    system = _System()
-    button = _Keypad((_Button.CENTER,))
+    battery = Battery()
+    light = ColorLight()
+    imu = IMU()
+    system = System()
+    button = Keypad((Button.CENTER,))
 
-    def __init__(self, top_side=_Axis.Z, front_side=_Axis.X):
-        """__init__(top_side=Axis.Z, front_side=Axis.X)
+    def __init__(self, top_side: Axis = Axis.Z, front_side: Axis = Axis.X):
+        """TechnicHub(top_side=Axis.Z, front_side=Axis.X)
 
         Initializes the hub. Optionally, specify how the hub is
         :ref:`placed in your design <robotframe>` by saying in which
@@ -95,24 +95,24 @@ class PrimeHub:
 
     # These class attributes are here for auto-documentation only.
     # In reality, they are instance attributes created by __init__.
-    battery = _Battery()
-    buttons = _Keypad(
+    battery = Battery()
+    buttons = Keypad(
         (
-            _Button.LEFT,
-            _Button.RIGHT,
-            _Button.CENTER,
-            _Button.BLUETOOTH,
+            Button.LEFT,
+            Button.RIGHT,
+            Button.CENTER,
+            Button.BLUETOOTH,
         )
     )
-    charger = _Charger()
-    light = _ColorLight()
-    display = _LightMatrix(5, 5)
-    speaker = _Speaker()
-    imu = _IMU()
-    system = _System()
+    charger = Charger()
+    light = ColorLight()
+    display = LightMatrix(5, 5)
+    speaker = Speaker()
+    imu = IMU()
+    system = System()
 
-    def __init__(self, top_side=_Axis.Z, front_side=_Axis.X):
-        """__init__(top_side=Axis.Z, front_side=Axis.X)
+    def __init__(self, top_side: Axis = Axis.Z, front_side: Axis = Axis.X):
+        """PrimeHub(top_side=Axis.Z, front_side=Axis.X)
 
         Initializes the hub. Optionally, specify how the hub is
         :ref:`placed in your design <robotframe>` by saying in which
