@@ -3,9 +3,9 @@
 
 """Robotics module for the Pybricks API."""
 
-from ._common import Control, Motor, Number
+from ._common import Control, Motor
 
-from .parameters import Stop as _Stop
+from .parameters import Stop as _Stop, Number
 
 from typing import Tuple, Optional, overload
 

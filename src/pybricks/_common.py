@@ -4,14 +4,11 @@
 """Generic cross-platform module for typical devices like lights, displays,
 speakers, and batteries."""
 
-from .parameters import Direction, Stop, Button, Port, Color, Side
+from .parameters import Direction, Stop, Button, Port, Color, Side, Number
 
 from .geometry import Matrix, Axis
 
 from typing import Union, Iterable, overload, Optional, Tuple, Collection
-
-
-Number = Union[int, float]
 
 
 class System:
