@@ -434,17 +434,15 @@ class float:
         ...
 
     def __init__(self, *args) -> None:
-        """float()
-        float(x: Union[int, float, str])
+        """float(x=0.0)
 
-        Converts the argument to a floating point number.
-        If no argument is given, this returns ``0.0``.
+        Converts an object to a floating point number.
 
         Arguments:
-            x: Number or string that will be converted.
+            x (int or float or str): Number or string to be converted.
 
         Returns:
-            The input argument ``x`` converted to a floating point number.
+            The resulting floating point value.
         """
 
 
