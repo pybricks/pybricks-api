@@ -63,14 +63,12 @@ class Matrix:
     def T(self) -> Matrix:
         """Returns a new :class:`.Matrix` that is the transpose of the
         original."""
-        pass
 
     @property
     def shape(self) -> Tuple[int, int]:
         """Returns a tuple (``m``, ``n``),
         where ``m`` is the number of rows and ``n`` is the number of columns.
         """
-        pass
 
 
 @overload
@@ -99,7 +97,6 @@ def vector(*args):
     Returns:
         A matrix with the shape of a column vector.
     """
-    pass
 
 
 class Axis:

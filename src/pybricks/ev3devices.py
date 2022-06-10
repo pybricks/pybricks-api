@@ -22,7 +22,6 @@ class TouchSensor:
         Arguments:
             port (Port): Port to which the sensor is connected.
         """
-        pass
 
     def pressed(self) -> bool:
         """pressed() -> bool
@@ -33,7 +32,6 @@ class TouchSensor:
             ``True`` if the sensor is pressed, ``False`` if it is
             not pressed.
         """
-        pass
 
 
 class ColorSensor:
@@ -45,7 +43,6 @@ class ColorSensor:
         Arguments:
             port (Port): Port to which the sensor is connected.
         """
-        pass
 
     def color(self) -> Optional[Color]:
         """color() -> Color
@@ -58,7 +55,6 @@ class ColorSensor:
             or ``None`` if no color is detected.
 
         """
-        pass
 
     def ambient(self) -> int:
         """ambient() -> int: %
@@ -69,7 +65,6 @@ class ColorSensor:
             Ambient light intensity, ranging from 0% (dark)
             to 100% (bright).
         """
-        pass
 
     def reflection(self) -> int:
         """reflection() -> int: %
@@ -81,7 +76,6 @@ class ColorSensor:
             100% (high reflection).
 
         """
-        pass
 
     def rgb(self) -> Tuple[int, int, int]:
         """rgb() -> Tuple[int, int, int]
@@ -93,7 +87,6 @@ class ColorSensor:
             Tuple of reflections for red, green, and blue light, each
             ranging from 0.0% (no reflection) to 100.0% (high reflection).
         """
-        pass
 
 
 class InfraredSensor:
@@ -106,7 +99,6 @@ class InfraredSensor:
             port (Port): Port to which the sensor is connected.
 
         """
-        pass
 
     def distance(self) -> int:
         """distance() -> int: %
@@ -119,7 +111,6 @@ class InfraredSensor:
             to 100% (farthest).
 
         """
-        pass
 
     def beacon(self, channel: int) -> Tuple[Optional[int], Optional[int]]:
         """
@@ -137,7 +128,6 @@ class InfraredSensor:
             (-75 to 75 degrees) between remote and infrared sensor or
             a tuple of (``None``, ``None``) if no remote is detected.
         """
-        pass
 
     def buttons(self, channel: int) -> List[Button]:
         """buttons(channel) -> List[Button]
@@ -154,7 +144,6 @@ class InfraredSensor:
             List of pressed buttons on the remote on the selected channel.
 
         """
-        pass
 
     def keypad(self) -> List[Button]:
         """keypad() -> List[Button]
@@ -169,7 +158,6 @@ class InfraredSensor:
         Returns:
             List of pressed buttons.
         """
-        pass
 
 
 class GyroSensor:
@@ -185,7 +173,6 @@ class GyroSensor:
                 of the sensor.
 
         """
-        pass
 
     def speed(self) -> int:
         """speed() -> int: deg/s
@@ -196,7 +183,6 @@ class GyroSensor:
             Angular velocity.
 
         """
-        pass
 
     def angle(self) -> int:
         """angle() -> int: deg
@@ -207,7 +193,6 @@ class GyroSensor:
             Rotation angle.
 
         """
-        pass
 
     def reset_angle(self, angle: int) -> None:
         """reset_angle(angle)
@@ -217,7 +202,6 @@ class GyroSensor:
         Arguments:
             angle (Number, deg): Value to which the angle should be reset.
         """
-        pass
 
 
 class UltrasonicSensor:
@@ -230,7 +214,6 @@ class UltrasonicSensor:
             port (Port): Port to which the sensor is connected.
 
         """
-        pass
 
     def distance(self, silent: bool = False) -> int:
         """distance(silent=False) -> int: mm
@@ -249,7 +232,6 @@ class UltrasonicSensor:
             Measured distance.
 
         """
-        pass
 
     def presence(self) -> bool:
         """presence() -> bool
@@ -265,4 +247,3 @@ class UltrasonicSensor:
             ``True`` if ultrasonic sounds are detected,
             ``False`` if not.
         """
-        pass

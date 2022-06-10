@@ -30,13 +30,11 @@ class System:
                 or a tuple of multiple buttons. Choose ``None`` to disable the
                 stop button altogether.
         """
-        pass
 
     def shutdown(self) -> None:
         """shutdown()
 
         Stops your program and shuts the hub down."""
-        pass
 
     def reset_reason(self) -> int:
         """reset_reason() -> int
@@ -53,7 +51,6 @@ class System:
               crashed due to a watchdog timeout, which indicates a firmware
               issue.
         """
-        pass
 
     def name(self) -> str:
         """name() -> str
@@ -64,7 +61,6 @@ class System:
         Returns:
             The hub name.
         """
-        pass
 
 
 class DCMotor:
@@ -79,7 +75,6 @@ class DCMotor:
             positive_direction (Direction): Which direction the motor should
                 turn when you give a positive duty cycle value.
         """
-        pass
 
     def dc(self, duty: Number) -> None:
         """dc(duty)
@@ -89,7 +84,6 @@ class DCMotor:
         Arguments:
             duty (Number, %): The duty cycle (-100.0 to 100).
         """
-        pass
 
     def stop(self) -> None:
         """stop()
@@ -97,7 +91,6 @@ class DCMotor:
         Stops the motor and lets it spin freely.
 
         The motor gradually stops due to friction."""
-        pass
 
     def brake(self) -> None:
         """brake()
@@ -106,7 +99,6 @@ class DCMotor:
 
         The motor stops due to friction, plus the voltage that
         is generated while the motor is still moving."""
-        pass
 
     @overload
     def settings(self, max_voltage: Optional[int] = None) -> None:
@@ -128,7 +120,6 @@ class DCMotor:
             max_voltage (Number, mV):
                 Maximum voltage applied to the motor during all motor commands.
         """
-        pass
 
 
 class Control:
@@ -174,7 +165,6 @@ class Control:
             torque (:ref:`torque`):
                 Maximum feedback torque during control.
         """
-        pass
 
     @overload
     def pid(self) -> Tuple[int, int, int, None, int]:
@@ -212,7 +202,6 @@ class Control:
             integral_rate (Number, deg/s or Number, mm/s): Maximum rate at
                 which the error integral is allowed to grow.
         """
-        pass
 
     @overload
     def target_tolerances(self) -> Tuple[int, int]:
@@ -239,7 +228,6 @@ class Control:
                 deviation from the target before motion is considered
                 complete.
         """
-        pass
 
     @overload
     def stall_tolerances(self) -> Tuple[int, int]:
@@ -266,7 +254,6 @@ class Control:
             time (Number, ms): How long the controller has to be below this
                 minimum ``speed`` before we say it is stalled.
         """
-        pass
 
     def stalled(self) -> bool:
         """stalled() -> bool
@@ -279,7 +266,6 @@ class Control:
         Returns:
             ``True`` if the controller is stalled, ``False`` if not.
         """
-        pass
 
     def done(self) -> bool:
         """done() -> bool
@@ -289,7 +275,6 @@ class Control:
         Returns:
             ``True`` if the command is done, ``False`` if not.
         """
-        pass
 
     def load(self) -> int:
         """load() -> int: mNm
@@ -303,7 +288,6 @@ class Control:
         Returns:
             The load torque. It returns 0 if control is not active.
         """
-        pass
 
 
 class Motor(DCMotor):
@@ -346,7 +330,6 @@ class Motor(DCMotor):
                 current value, so your program knows where it left off last
                 time.
         """
-        pass
 
     def angle(self) -> int:
         """angle() -> int: deg
@@ -356,7 +339,6 @@ class Motor(DCMotor):
         Returns:
             Motor angle.
         """
-        pass
 
     def speed(self) -> int:
         """speed() -> int: deg/s
@@ -367,7 +349,6 @@ class Motor(DCMotor):
             Motor speed.
 
         """
-        pass
 
     def reset_angle(self, angle: Number) -> None:
         """
@@ -378,13 +359,11 @@ class Motor(DCMotor):
         Arguments:
             angle (Number, deg): Value to which the angle should be reset.
         """
-        pass
 
     def hold(self) -> None:
         """hold()
 
         Stops the motor and actively holds it at its current angle."""
-        pass
 
     def run(self, speed: Number) -> None:
         """run(speed)
@@ -397,7 +376,6 @@ class Motor(DCMotor):
         Arguments:
             speed (Number, deg/s): Speed of the motor.
         """
-        pass
 
     def run_time(
         self, speed: Number, time: Number, then: Stop = Stop.HOLD, wait: bool = True
@@ -417,7 +395,6 @@ class Motor(DCMotor):
             wait (bool): Wait for the maneuver to complete before continuing
                 with the rest of the program.
         """
-        pass
 
     def run_angle(
         self,
@@ -438,7 +415,6 @@ class Motor(DCMotor):
             wait (bool): Wait for the maneuver to complete before continuing
                 with the rest of the program.
         """
-        pass
 
     def run_target(
         self,
@@ -461,7 +437,6 @@ class Motor(DCMotor):
             wait (bool): Wait for the motor to reach the target
                 before continuing with the rest of the program.
         """
-        pass
 
     def run_until_stalled(
         self,
@@ -485,7 +460,6 @@ class Motor(DCMotor):
         Returns:
             Angle at which the motor becomes stalled.
         """
-        pass
 
     def track_target(self, target_angle: Number) -> None:
         """track_target(target_angle)
@@ -499,7 +473,6 @@ class Motor(DCMotor):
             target_angle (Number, deg): Target angle that the motor should
                 rotate to.
         """
-        pass
 
 
 class Speaker:
@@ -524,7 +497,6 @@ class Speaker:
         Arguments:
             volume (Number, %): Volume of the speaker in the 0-100 range.
         """
-        pass
 
     def beep(self, frequency: Number = 500, duration: Number = 100) -> None:
         """beep(frequency=500, duration=100)
@@ -539,7 +511,6 @@ class Speaker:
                 than 0, then the method returns immediately and the frequency
                 play continues to play indefinitely.
         """
-        pass
 
     def play_notes(self, notes: Iterable[str], tempo: Number = 120) -> None:
         """play_notes(notes, tempo=120)
@@ -574,7 +545,6 @@ class Speaker:
             tempo (int):
                 Beats per minute. A quarter note is one beat.
         """
-        pass
 
 
 class ColorLight:
@@ -588,13 +558,11 @@ class ColorLight:
         Arguments:
             color (Color): Color of the light.
         """
-        pass
 
     def off(self) -> None:
         """off()
 
         Turns off the light."""
-        pass
 
     def blink(self, color: Color, durations: Collection[int]) -> None:
         """blink(color, durations)
@@ -642,7 +610,6 @@ class LightArray:
         Arguments:
             n (int): Number of lights
         """
-        pass
 
     def on(self, brightness: Union[int, Collection[int]]) -> None:
         """on(brightness)
@@ -655,13 +622,11 @@ class LightArray:
                 If you give just one brightness value, all lights get that
                 brightness.
         """
-        pass
 
     def off(self) -> None:
         """off()
 
         Turns off all the lights."""
-        pass
 
 
 class LightMatrix:
@@ -676,7 +641,6 @@ class LightMatrix:
             rows (int): Number of rows in the grid
             columns (int): Number of columns in the grid
         """
-        pass
 
     def orientation(self, up: Side) -> None:
         """orientation(up)
@@ -691,7 +655,6 @@ class LightMatrix:
                 design. Choose ``Side.TOP``, ``Side.LEFT``, ``Side.RIGHT``,
                 or ``Side.BOTTOM``.
         """
-        pass
 
     def image(self, matrix: Matrix) -> None:
         """image(matrix)
@@ -703,7 +666,6 @@ class LightMatrix:
             matrix (Matrix): Matrix of intensities (:ref:`brightness`).  A 2D
                 list is also accepted.
         """
-        pass
 
     def animate(self, matrices: Collection[Matrix], interval: Number) -> None:
         """animate(matrices, interval)
@@ -719,7 +681,6 @@ class LightMatrix:
                 :class:`Matrix <pybricks.geometry.Matrix>` of intensities.
             interval (Number, ms): Time to display each image in the list.
         """
-        pass
 
     def pixel(self, row: int, column: int, brightness: Number = 100) -> None:
         """pixel(row, column, brightness=100)
@@ -731,13 +692,11 @@ class LightMatrix:
             column (int): Horizontal grid index, starting at 0 from the left.
             brightness (:ref:`brightness`): Brightness of the pixel.
         """
-        pass
 
     def off(self) -> None:
         """off()
 
         Turns off all the pixels."""
-        pass
 
     def number(self, number: Number) -> None:
         """number(number)
@@ -751,7 +710,6 @@ class LightMatrix:
         Arguments:
             number (int): The number to be displayed.
         """
-        pass
 
     def char(self, char: str) -> None:
         """char(char)
@@ -763,7 +721,6 @@ class LightMatrix:
         Arguments:
             character (str): The character or symbol to be displayed.
         """
-        pass
 
     def text(self, text: str, on: Number = 500, off: Number = 50) -> None:
         """text(text, on=500, off=50)
@@ -778,14 +735,13 @@ class LightMatrix:
             off (Number, ms): For how long the display is off between
                 characters.
         """
-        pass
 
 
 class Keypad:
     """Get status of buttons on a keypad layout."""
 
     def __init__(self, active_buttons):
-        pass
+        ...
 
     def pressed(self) -> Tuple[Button]:
         """pressed() -> Tuple[Button]
@@ -795,7 +751,6 @@ class Keypad:
         Returns:
             Tuple of pressed buttons.
         """
-        pass
 
 
 class Battery:
@@ -809,7 +764,6 @@ class Battery:
         Returns:
             Battery voltage.
         """
-        pass
 
     def current(self) -> int:
         """current() -> int: mA
@@ -819,7 +773,6 @@ class Battery:
         Returns:
             Battery current.
         """
-        pass
 
 
 class Charger:
@@ -849,7 +802,6 @@ class Charger:
         Returns:
             Status value.
         """
-        pass
 
     def current(self) -> int:
         """current() -> int: mA
@@ -859,7 +811,6 @@ class Charger:
         Returns:
             Charging current.
         """
-        pass
 
 
 class SimpleAccelerometer:
@@ -873,7 +824,6 @@ class SimpleAccelerometer:
         Returns:
             Acceleration along all three axes.
         """
-        pass
 
     def up(self) -> Side:
         """up() -> Side
@@ -884,7 +834,6 @@ class SimpleAccelerometer:
             ``Side.TOP``, ``Side.BOTTOM``, ``Side.LEFT``, ``Side.RIGHT``,
             ``Side.FRONT`` or ``Side.BACK``.
         """
-        pass
 
 
 class Accelerometer(SimpleAccelerometer):
@@ -914,7 +863,6 @@ class Accelerometer(SimpleAccelerometer):
             Acceleration along the specified axis. If you specify no axis,
             this returns a vector of accelerations along all axes.
         """
-        pass
 
     def tilt(self) -> Tuple[int, int]:
         """tilt() -> Tuple[int, int]
@@ -929,7 +877,6 @@ class Accelerometer(SimpleAccelerometer):
         Returns:
             Tuple of pitch and roll angles.
         """
-        pass
 
 
 class IMU(Accelerometer):
@@ -949,7 +896,6 @@ class IMU(Accelerometer):
             Heading angle relative to starting orientation.
 
         """
-        pass
 
     def reset_heading(self, angle: Number) -> None:
         """reset_heading(angle: Number)
@@ -961,7 +907,6 @@ class IMU(Accelerometer):
         Arguments:
             angle (Number, deg): Value to which the heading should be reset.
         """
-        pass
 
     @overload
     def angular_velocity(self) -> Matrix:
@@ -986,7 +931,6 @@ class IMU(Accelerometer):
             Angular velocity along the specified axis. If you specify no axis,
             this returns a vector of accelerations along all axes.
         """
-        pass
 
 
 class CommonColorSensor:
@@ -998,7 +942,6 @@ class CommonColorSensor:
         Arguments:
             port (Port): Port to which the sensor is connected.
         """
-        pass
 
     def color(self) -> Color:
         """color() -> Color
@@ -1013,7 +956,6 @@ class CommonColorSensor:
         Returns:
             Detected color.
         """
-        pass
 
     def hsv(self) -> Color:
         """hsv() -> Color
@@ -1028,7 +970,6 @@ class CommonColorSensor:
             Measured color. The color is described by a hue (0--359), a
             saturation (0--100), and a brightness value (0--100).
         """
-        pass
 
     def ambient(self) -> int:
         """ambient() -> int: %
@@ -1039,7 +980,6 @@ class CommonColorSensor:
             Ambient light intensity, ranging from 0% (dark)
             to 100% (bright).
         """
-        pass
 
     def reflection(self) -> int:
         """reflection() -> int: %
@@ -1051,7 +991,6 @@ class CommonColorSensor:
             Measured reflection, ranging from 0% (no reflection) to
             100% (high reflection).
         """
-        pass
 
     @overload
     def detectable_colors(self, colors: Collection[Color]) -> None:
@@ -1083,7 +1022,6 @@ class CommonColorSensor:
                 better results. You measure your own colors with the
                 ``hsv()`` method.
         """
-        pass
 
 
 class AmbientColorSensor(CommonColorSensor):
@@ -1108,7 +1046,6 @@ class AmbientColorSensor(CommonColorSensor):
         Returns:
             Detected color.`
         """
-        pass
 
     def hsv(self, surface: bool = True) -> Color:
         """hsv(surface=True) -> Color
@@ -1128,4 +1065,3 @@ class AmbientColorSensor(CommonColorSensor):
             Measured color. The color is described by a hue (0--359), a
             saturation (0--100), and a brightness value (0--100).
         """
-        pass

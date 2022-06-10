@@ -36,7 +36,6 @@ class Motor(_Motor):
         Arguments:
             angle (Number, deg): Value to which the angle should be reset.
         """
-        pass
 
 
 class Remote:
@@ -70,7 +69,6 @@ class Remote:
                 the hub connects to the first remote that it finds.
             timeout (Number, ms): How long to search for the remote.
         """
-        pass
 
     @overload
     def name(self, name: str) -> None:
@@ -101,7 +99,6 @@ class TiltSensor:
         Arguments:
             port (Port): Port to which the sensor is connected.
         """
-        pass
 
     def tilt(self) -> Tuple[int, int]:
         """tilt() -> Tuple[int, int]: deg
@@ -111,7 +108,6 @@ class TiltSensor:
         Returns:
             Tuple of pitch and roll angles.
         """
-        pass
 
 
 class ColorDistanceSensor(CommonColorSensor):
@@ -128,7 +124,6 @@ class ColorDistanceSensor(CommonColorSensor):
         Returns:
             Distance ranging from 0% (closest) to 100% (farthest).
         """
-        pass
 
 
 class PFMotor(DCMotor):
@@ -156,7 +151,6 @@ class PFMotor(DCMotor):
             positive_direction (Direction): Which direction the motor should
                 turn when you give a positive duty cycle value.
         """
-        pass
 
 
 class ColorSensor(AmbientColorSensor):
@@ -177,7 +171,6 @@ class UltrasonicSensor:
             port (Port): Port to which the sensor is connected.
 
         """
-        pass
 
     def distance(self) -> int:
         """distance() -> int: mm
@@ -190,7 +183,6 @@ class UltrasonicSensor:
             it returns 2000 mm.
 
         """
-        pass
 
     def presence(self) -> bool:
         """presence() -> bool
@@ -201,7 +193,6 @@ class UltrasonicSensor:
         Returns:
             ``True`` if ultrasonic sounds are detected, ``False`` if not.
         """
-        pass
 
 
 class ForceSensor:
@@ -213,7 +204,6 @@ class ForceSensor:
         Arguments:
             port (Port): Port to which the sensor is connected.
         """
-        pass
 
     def force(self) -> float:
         """force() -> float: N
@@ -257,8 +247,6 @@ class ForceSensor:
             ``True`` if the sensor is touched or pressed, ``False``
             if it is not.
         """
-
-        pass
 
 
 class ColorLightMatrix:
@@ -305,7 +293,6 @@ class InfraredSensor:
         Arguments:
             port (Port): Port to which the sensor is connected.
         """
-        pass
 
     def reflection(self) -> int:
         """reflection() -> int: %
@@ -316,7 +303,6 @@ class InfraredSensor:
             Measured reflection, ranging from 0% (no reflection) to
             100% (high reflection).
         """
-        pass
 
     def distance(self) -> int:
         """distance() -> int: %
@@ -327,7 +313,6 @@ class InfraredSensor:
         Returns:
             Distance ranging from 0% (closest) to 100% (farthest).
         """
-        pass
 
     def count(self) -> int:
         """count() -> int
@@ -337,7 +322,6 @@ class InfraredSensor:
         Returns:
             Number of objects counted.
         """
-        pass
 
 
 class Light:
@@ -349,7 +333,6 @@ class Light:
         Arguments:
             port (Port): Port to which the device is connected.
         """
-        pass
 
     def on(self, brightness: int = 100) -> None:
         """on(brightness=100)
@@ -365,4 +348,3 @@ class Light:
         """off()
 
         Turns off the light."""
-        pass

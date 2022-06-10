@@ -23,7 +23,6 @@ class Speaker:
                 method returns immediately and the frequency play continues to
                 play indefinitely.
         """
-        pass
 
     def play_notes(self, notes: Iterable[str], tempo: int = 120) -> None:
         """play_notes(notes, tempo=120)
@@ -58,7 +57,6 @@ class Speaker:
             tempo (int):
                 Beats per minute. A quarter note is one beat.
         """
-        pass
 
     def play_file(self, file_name: Union[SoundFile, str]) -> None:
         """play_file(file_name)
@@ -69,8 +67,6 @@ class Speaker:
             file (str):
                 Path to the sound file, including the file extension.
         """
-
-        pass
 
     def say(self, text: str) -> None:
         """say(text)
@@ -83,8 +79,6 @@ class Speaker:
         Arguments:
             text (str): What to say.
         """
-
-        pass
 
     def set_speech_options(
         self,
@@ -115,7 +109,6 @@ class Speaker:
                 Pitch (0 to 99). Higher numbers make the voice higher pitched
                 and lower numbers make the voice lower pitched.
         """
-        pass
 
     def set_volume(self, volume: int, which: str = "_all_") -> None:
         """set_volume(volume, which="_all_")
@@ -131,4 +124,3 @@ class Speaker:
                 volume for :meth:`.play_file` and :meth:`.say`. ``'_all_'``
                 sets both at the same time.
         """
-        pass

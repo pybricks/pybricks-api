@@ -17,7 +17,6 @@ class PUPDevice:
         Arguments:
             port (Port): Port to which the device is connected.
         """
-        pass
 
     def info(self) -> Dict[str, str]:
         """info() -> Dict
@@ -27,7 +26,6 @@ class PUPDevice:
         Returns:
             Dictionary with information, such as the device ``id``.
         """
-        pass
 
     def read(self, mode: int) -> Tuple:
         """read(mode) -> Tuple
@@ -40,7 +38,6 @@ class PUPDevice:
         Returns:
             Values read from the sensor.
         """
-        pass
 
     def write(self, mode: int, data: Tuple) -> None:
         """write(mode, data)
@@ -52,7 +49,6 @@ class PUPDevice:
             mode (int): Device mode.
             data (tuple): Values to be written.
         """
-        pass
 
 
 class LUMPDevice:
@@ -64,7 +60,6 @@ class LUMPDevice:
         Arguments:
             port (Port): Port to which the device is connected.
         """
-        pass
 
     def read(self, mode: int) -> Tuple:
         """read(mode) -> Tuple
@@ -77,7 +72,6 @@ class LUMPDevice:
         Returns:
             Values read from the sensor.
         """
-        pass
 
 
 class Ev3devSensor:
@@ -95,7 +89,6 @@ class Ev3devSensor:
         Arguments:
             port (Port): Port to which the device is connected.
         """
-        pass
 
     def read(self, mode: str) -> Tuple:
         """read(mode) -> Tuple
@@ -108,7 +101,6 @@ class Ev3devSensor:
         Returns:
             values read from the sensor.
         """
-        pass
 
 
 class AnalogSensor:
@@ -120,7 +112,6 @@ class AnalogSensor:
         Arguments:
             port (Port): Port to which the sensor is connected.
         """
-        pass
 
     def voltage(self) -> int:
         """voltage() -> int: mV
@@ -130,7 +121,6 @@ class AnalogSensor:
         Returns:
             Analog voltage.
         """
-        pass
 
     def resistance(self) -> int:
         """resistance() -> int: Ω
@@ -143,7 +133,6 @@ class AnalogSensor:
         Returns:
             Resistance of the analog device.
         """
-        pass
 
     def active(self) -> None:
         """active()
@@ -156,7 +145,6 @@ class AnalogSensor:
         Sensor as a custom analog sensor, this method will turn the light on.
         From then on, ``voltage()`` returns the raw reflected light value.
         """
-        pass
 
     def passive(self) -> None:
         """passive()
@@ -169,7 +157,6 @@ class AnalogSensor:
         Sensor as a custom analog sensor, this method will turn the light off.
         From then on, ``voltage()`` returns the raw ambient light value.
         """
-        pass
 
 
 class I2CDevice:
@@ -183,7 +170,6 @@ class I2CDevice:
             address(int): I2C address of the client device. See
                 :ref:`I2C Addresses <i2caddress>`.
         """
-        pass
 
     def read(self, reg: Optional[int], length: Optional[int] = 1) -> bytes:
         """read(reg, length=1)
@@ -198,7 +184,6 @@ class I2CDevice:
         Returns:
             Bytes returned from the device.
         """
-        pass
 
     def write(self, reg: Optional[int], data: Optional[bytes] = None) -> None:
         """write(reg, data=None)
@@ -210,7 +195,6 @@ class I2CDevice:
                 writing: 0--255 or 0x00--0xFF.
             data (bytes): Bytes to be written.
         """
-        pass
 
 
 class UARTDevice:
@@ -226,7 +210,6 @@ class UARTDevice:
                 during ``read`` before giving up. If you choose ``None``,
                 it will wait forever.
         """
-        pass
 
     def read(self, length: int = 1) -> bytes:
         """read(length=1) -> bytes
@@ -243,7 +226,6 @@ class UARTDevice:
         Returns:
             Bytes returned from the device.
         """
-        pass
 
     def read_all(self) -> bytes:
         """read_all() -> bytes
@@ -253,7 +235,6 @@ class UARTDevice:
         Returns:
             Bytes returned from the device.
         """
-        pass
 
     def write(self, data: bytes) -> None:
         """write(data)
@@ -263,7 +244,6 @@ class UARTDevice:
         Arguments:
             data (bytes): Bytes to be written.
         """
-        pass
 
     def waiting(self) -> int:
         """waiting() -> int
@@ -273,13 +253,11 @@ class UARTDevice:
         Returns:
             Number of bytes in the buffer.
         """
-        pass
 
     def clear(self) -> None:
         """clear()
 
         Empties the buffer."""
-        pass
 
 
 class LWP3Device:

@@ -22,7 +22,6 @@ class TouchSensor:
         Arguments:
             port (Port): Port to which the sensor is connected.
         """
-        pass
 
     def pressed(self) -> bool:
         """pressed() -> bool
@@ -33,7 +32,6 @@ class TouchSensor:
             ``True`` if the sensor is pressed, ``False`` if it is
             not pressed.
         """
-        pass
 
 
 class LightSensor:
@@ -45,7 +43,6 @@ class LightSensor:
         Arguments:
             port (Port): Port to which the sensor is connected.
         """
-        pass
 
     def ambient(self) -> int:
         """ambient() -> int: %
@@ -55,7 +52,6 @@ class LightSensor:
         Returns:
             Ambient light intensity, ranging from 0% (dark) to 100% (bright).
         """
-        pass
 
     def reflection(self) -> int:
         """reflection() -> int: %
@@ -66,7 +62,6 @@ class LightSensor:
             Reflection, ranging from 0% (no reflection) to 100% (high
             reflection).
         """
-        pass
 
 
 class ColorSensor(CommonColorSensor):
@@ -82,7 +77,6 @@ class ColorSensor(CommonColorSensor):
             Tuple of reflections for red, green, and blue light, each
             ranging from 0.0% (no reflection) to 100.0% (high reflection).
         """
-        pass
 
 
 class UltrasonicSensor:
@@ -94,7 +88,6 @@ class UltrasonicSensor:
         Arguments:
             port (Port): Port to which the sensor is connected.
         """
-        pass
 
     def distance(self) -> int:
         """distance() -> int: mm
@@ -105,7 +98,6 @@ class UltrasonicSensor:
         Returns:
             Measured distance.
         """
-        pass
 
 
 class SoundSensor:
@@ -117,7 +109,6 @@ class SoundSensor:
         Arguments:
             port (Port): Port to which the sensor is connected.
         """
-        pass
 
     def intensity(self, audible_only: bool = True) -> int:
         """intensity(audible_only=True) -> int: %
@@ -132,7 +123,6 @@ class SoundSensor:
         Returns:
             Sound intensity.
         """
-        pass
 
 
 class TemperatureSensor:
@@ -144,7 +134,6 @@ class TemperatureSensor:
         Arguments:
             port (Port): Port to which the sensor is connected.
         """
-        pass
 
     def temperature(self) -> int:
         """temperature() -> float: °C
@@ -154,7 +143,6 @@ class TemperatureSensor:
         Returns:
             Measured temperature.
         """
-        pass
 
 
 class EnergyMeter:
@@ -166,7 +154,6 @@ class EnergyMeter:
         Arguments:
             port (Port): Port to which the sensor is connected.
         """
-        pass
 
     def storage(self) -> int:
         """storage() -> int: J
@@ -176,7 +163,6 @@ class EnergyMeter:
         Returns:
             Remaining stored energy.
         """
-        pass
 
     def input(self) -> Tuple[int, int, int]:
         """input() -> Tuple[int, int, int]
@@ -192,7 +178,6 @@ class EnergyMeter:
             Voltage (mV), current (mA), and power (mW) measured at the input
             port.
         """
-        pass
 
     def output(self) -> Tuple[int, int, int]:
         """output() -> Tuple[int, int, int]
@@ -208,7 +193,6 @@ class EnergyMeter:
             Voltage (mV), current (mA), and power (mW) measured at the output
             port.
         """
-        pass
 
 
 class VernierAdapter(AnalogSensor):
@@ -225,7 +209,6 @@ class VernierAdapter(AnalogSensor):
                 own conversion function. The example given below demonstrates
                 the conversion for the Surface Temperature Sensor.
         """
-        pass
 
     def voltage(self) -> int:
         """voltage() -> int: mV
@@ -235,7 +218,6 @@ class VernierAdapter(AnalogSensor):
         Returns:
             Analog voltage.
         """
-        pass
 
     def conversion(self, voltage: int) -> float:
         """conversion(voltage) -> float
@@ -251,7 +233,6 @@ class VernierAdapter(AnalogSensor):
         Returns:
             Converted sensor value.
         """
-        pass
 
     def value(self) -> float:
         """value() -> float
@@ -262,4 +243,3 @@ class VernierAdapter(AnalogSensor):
         Returns:
             Converted sensor value.
         """
-        pass

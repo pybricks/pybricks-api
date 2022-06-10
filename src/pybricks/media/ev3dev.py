@@ -55,7 +55,6 @@ class Image:
                 bottom-right coordinates in the ``source`` image that will be
                 used as the bounds for the sub-image.
         """
-        pass
 
     @property
     def width(self) -> int:
@@ -73,7 +72,6 @@ class Image:
         Clears |this image|. All pixels on |this image| will be set to
         :attr:`Color.WHITE <pybricks.parameters.Color.WHITE>`.
         """
-        pass
 
     def draw_pixel(self, x: int, y: int, color: Color = Color.BLACK) -> None:
         """draw_pixel(x, y, color=Color.BLACK)
@@ -85,7 +83,6 @@ class Image:
             y (int): The y coordinate of the pixel.
             color (Color): The color of the pixel.
         """
-        pass
 
     def draw_line(
         self,
@@ -108,7 +105,6 @@ class Image:
             width (int): The width of the line in pixels.
             color (Color): The color of the line.
         """
-        pass
 
     def draw_box(
         self,
@@ -134,7 +130,6 @@ class Image:
                 otherwise only the outline of the box will be drawn.
             color (Color): The color of the box.
         """
-        pass
 
     def draw_circle(
         self, x: int, y: int, r: int, fill: bool = False, color: Color = Color.BLACK
@@ -151,7 +146,6 @@ class Image:
                 ``color``, otherwise only the circumference will be drawn.
             color (Color): The color of the circle.
         """
-        pass
 
     def draw_image(
         self,
@@ -220,7 +214,6 @@ class Image:
                 The color used to fill the rectangle behind the text or
                 ``None`` for transparent background.
         """
-        pass
 
     def print(self, *args: Any, sep: str = " ", end: str = "\n") -> None:
         """print(*args, sep=" ", end="\\n")
@@ -247,7 +240,6 @@ class Image:
                 is printed.
             end (str): End of line that will be printed after the last object.
         """
-        pass
 
     def set_font(self, font: Font) -> None:
         """set_font(font)
@@ -260,7 +252,6 @@ class Image:
             font (Font):
                 The font to use.
         """
-        pass
 
     @staticmethod
     def empty(width: int = 178, height: int = 128) -> Image:

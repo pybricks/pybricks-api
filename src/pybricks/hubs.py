@@ -87,7 +87,6 @@ class TechnicHub:
             front_side (Axis): The axis that passes through the *front side* of
                 the hub.
         """
-        pass
 
 
 class PrimeHub:
@@ -125,10 +124,7 @@ class PrimeHub:
             front_side (Axis): The axis that passes through the *front side* of
                 the hub.
         """
-        pass
 
 
 class InventorHub(PrimeHub):
     """LEGO® MINDSTORMS Inventor Hub."""
-
-    pass

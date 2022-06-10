@@ -14,7 +14,6 @@ def wait(time: int) -> None:
     Arguments:
         time (Number, ms): How long to wait.
     """
-    pass
 
 
 class StopWatch:
@@ -22,7 +21,7 @@ class StopWatch:
     feature on your phone."""
 
     def __init__(self):
-        pass
+        ...
 
     def time(self) -> int:
         """time() -> int: ms
@@ -32,19 +31,16 @@ class StopWatch:
         Returns:
             Elapsed time.
         """
-        pass
 
     def pause(self) -> None:
         """pause()
 
         Pauses the stopwatch."""
-        pass
 
     def resume(self) -> None:
         """resume()
 
         Resumes the stopwatch."""
-        pass
 
     def reset(self) -> None:
         """reset()
@@ -56,7 +52,6 @@ class StopWatch:
         * If it was paused, it stays paused (but now at 0).
         * If it was running, it stays running (but starting again from 0).
         """
-        pass
 
 
 class DataLog:
@@ -86,7 +81,6 @@ class DataLog:
                 data. If the file does not exist yet, an empty file will be
                 created either way.
         """
-        pass
 
     def log(self, *values: Any) -> None:
         """log(value1, value2, ...)
@@ -96,4 +90,3 @@ class DataLog:
         Arguments:
             values (object, object, ...): One or more objects or values.
         """
-        pass

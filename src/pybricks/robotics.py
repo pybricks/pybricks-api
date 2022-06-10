@@ -73,13 +73,11 @@ class DriveBase:
             speed (Number, mm/s): Speed of the robot.
             turn_rate (Number, deg/s): Turn rate of the robot.
         """
-        pass
 
     def stop(self) -> None:
         """stop()
 
         Stops the robot by letting the motors spin freely."""
-        pass
 
     def distance(self) -> int:
         """distance() -> int: mm
@@ -89,7 +87,6 @@ class DriveBase:
         Returns:
             Driven distance since last reset.
         """
-        pass
 
     def angle(self) -> int:
         """angle() -> int: deg
@@ -99,7 +96,6 @@ class DriveBase:
         Returns:
             Accumulated angle since last reset.
         """
-        pass
 
     def state(self) -> Tuple[int, int, int, int]:
         """state() -> Tuple[int, int, int, int]
@@ -109,13 +105,11 @@ class DriveBase:
         Returns:
             Tuple of distance, drive speed, angle, and turn rate of the robot.
         """
-        pass
 
     def reset(self) -> None:
         """reset()
 
         Resets the estimated driven distance and angle to 0."""
-        pass
 
     @overload
     def settings(
@@ -148,7 +142,6 @@ class DriveBase:
             turn_acceleration (Number, deg/s²): Angular acceleration and
                 deceleration of the robot.
         """
-        pass
 
     def straight(self, distance, then=_Stop.HOLD, wait=True) -> None:
         """straight(distance, then=Stop.HOLD, wait=True)
@@ -161,7 +154,6 @@ class DriveBase:
             wait (bool): Wait for the maneuver to complete before continuing
                          with the rest of the program.
         """
-        pass
 
     def turn(self, angle, then=_Stop.HOLD, wait=True) -> None:
         """turn(angle, then=Stop.HOLD, wait=True)
@@ -174,7 +166,6 @@ class DriveBase:
             wait (bool): Wait for the maneuver to complete before continuing
                          with the rest of the program.
         """
-        pass
 
     def curve(self, radius, angle, then=_Stop.HOLD, wait=True) -> None:
         """curve(radius, angle, then=Stop.HOLD, wait=True)
@@ -188,4 +179,3 @@ class DriveBase:
             wait (bool): Wait for the maneuver to complete before continuing
                          with the rest of the program.
         """
-        pass
