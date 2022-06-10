@@ -45,6 +45,7 @@ _bool = bool
 _bytearray = bytearray
 _bytes = bytes
 _callable = callable
+_classmethod = classmethod
 _complex = complex
 _dict = dict
 _float = float
@@ -585,7 +586,7 @@ class int:
             Byte sequence that represents the integer.
         """
 
-    # @classmethod
+    @_classmethod
     def from_bytes(cls, _bytes: _bytes, byteorder: Literal["little", "big"]) -> _int:
         """from_bytes(bytes, byteorder) -> int
 
