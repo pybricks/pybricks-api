@@ -15,10 +15,6 @@ if "%TAG%" == "" (
 	set TAG=main
 )
 
-if "%BETA%" == "1" (
-	set BETATAG=-tbeta
-)
-
 if "%1" == "" goto help
 
 %SPHINXBUILD% >NUL 2>NUL
@@ -34,11 +30,11 @@ if errorlevel 9009 (
 	exit /b 1
 )
 
-%SPHINXBUILD% -M %1 %SOURCEDIR% %BUILDDIR% %SPHINXOPTS% -t %TAG% %BETATAG%
+%SPHINXBUILD% -M %1 %SOURCEDIR% %BUILDDIR% %SPHINXOPTS% -t %TAG%
 goto end
 
 :help
-%SPHINXBUILD% -M help %SOURCEDIR% %BUILDDIR% %SPHINXOPTS% -t %TAG% %BETATAG%
+%SPHINXBUILD% -M help %SOURCEDIR% %BUILDDIR% %SPHINXOPTS% -t %TAG%
 
 :end
 popd

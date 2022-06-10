@@ -6,256 +6,250 @@ Prime Hub / Inventor Hub
 .. figure:: ../../main/images/primeinventorhub.png
     :height: 15 em
 
-.. only:: not beta
 
-    .. note:: Pybricks support for these hubs is currently in development.
-              Please check back later!
+.. note:: Pybricks support for these hubs is in beta.
+            Check the `installation instructions`_ to try it out.
+            The following functions may change before the final release.
 
-.. only:: beta
+.. class:: InventorHub
 
-    .. note:: Pybricks support for these hubs is in beta.
-              Check the `installation instructions`_ to try it out.
-              The following functions may change before the final release.
+    This class is the same as the ``PrimeHub`` class, shown below. Both classes
+    work on both hubs.
 
-    .. class:: InventorHub
+    These hubs are completely identical. They use the same Pybricks firmware.
 
-        This class is the same as the ``PrimeHub`` class, shown below. Both classes
-        work on both hubs.
+.. autoclass:: pybricks.hubs.PrimeHub
+    :no-members:
 
-        These hubs are completely identical. They use the same Pybricks firmware.
+    .. rubric:: Using the hub status light
 
-    .. autoclass:: pybricks.hubs.PrimeHub
-        :no-members:
+    .. figure:: ../../main/images/primehub_light_label.png
+        :width: 22 em
 
-        .. rubric:: Using the hub status light
+    .. automethod:: pybricks.hubs::PrimeHub.light.on
 
-        .. figure:: ../../main/images/primehub_light_label.png
-            :width: 22 em
+    .. automethod:: pybricks.hubs::PrimeHub.light.off
 
-        .. automethod:: pybricks.hubs::PrimeHub.light.on
+    .. automethod:: pybricks.hubs::PrimeHub.light.blink
 
-        .. automethod:: pybricks.hubs::PrimeHub.light.off
+    .. automethod:: pybricks.hubs::PrimeHub.light.animate
 
-        .. automethod:: pybricks.hubs::PrimeHub.light.blink
+    .. rubric:: Using the light matrix display
 
-        .. automethod:: pybricks.hubs::PrimeHub.light.animate
+    .. figure:: ../../main/images/primehub_display_label.png
+        :width: 22 em
 
-        .. rubric:: Using the light matrix display
+    .. automethod:: pybricks.hubs::PrimeHub.display.orientation
 
-        .. figure:: ../../main/images/primehub_display_label.png
-            :width: 22 em
+    .. automethod:: pybricks.hubs::PrimeHub.display.off
 
-        .. automethod:: pybricks.hubs::PrimeHub.display.orientation
+    .. automethod:: pybricks.hubs::PrimeHub.display.pixel
 
-        .. automethod:: pybricks.hubs::PrimeHub.display.off
+    .. automethod:: pybricks.hubs::PrimeHub.display.image
 
-        .. automethod:: pybricks.hubs::PrimeHub.display.pixel
+    .. automethod:: pybricks.hubs::PrimeHub.display.animate
 
-        .. automethod:: pybricks.hubs::PrimeHub.display.image
+    .. automethod:: pybricks.hubs::PrimeHub.display.number
 
-        .. automethod:: pybricks.hubs::PrimeHub.display.animate
+    .. automethod:: pybricks.hubs::PrimeHub.display.char
 
-        .. automethod:: pybricks.hubs::PrimeHub.display.number
+    .. automethod:: pybricks.hubs::PrimeHub.display.text
 
-        .. automethod:: pybricks.hubs::PrimeHub.display.char
+    .. rubric:: Using the buttons
 
-        .. automethod:: pybricks.hubs::PrimeHub.display.text
+    .. figure:: ../../main/images/primehub_buttons_label.png
+        :width: 22 em
 
-        .. rubric:: Using the buttons
+    .. automethod:: pybricks.hubs::PrimeHub.buttons.pressed
 
-        .. figure:: ../../main/images/primehub_buttons_label.png
-            :width: 22 em
+    .. rubric:: Using the IMU
 
-        .. automethod:: pybricks.hubs::PrimeHub.buttons.pressed
+    .. automethod:: pybricks.hubs::PrimeHub.imu.up
 
-        .. rubric:: Using the IMU
+    .. automethod:: pybricks.hubs::PrimeHub.imu.tilt
 
-        .. automethod:: pybricks.hubs::PrimeHub.imu.up
+    .. automethod:: pybricks.hubs::PrimeHub.imu.acceleration
 
-        .. automethod:: pybricks.hubs::PrimeHub.imu.tilt
+    .. automethod:: pybricks.hubs::PrimeHub.imu.angular_velocity
 
-        .. automethod:: pybricks.hubs::PrimeHub.imu.acceleration
+    .. automethod:: pybricks.hubs::PrimeHub.imu.heading
 
-        .. automethod:: pybricks.hubs::PrimeHub.imu.angular_velocity
+    .. automethod:: pybricks.hubs::PrimeHub.imu.reset_heading
 
-        .. automethod:: pybricks.hubs::PrimeHub.imu.heading
+    .. rubric:: Using the speaker
 
-        .. automethod:: pybricks.hubs::PrimeHub.imu.reset_heading
+    .. automethod:: pybricks.hubs::PrimeHub.speaker.volume
 
-        .. rubric:: Using the speaker
+    .. automethod:: pybricks.hubs::PrimeHub.speaker.beep
 
-        .. automethod:: pybricks.hubs::PrimeHub.speaker.volume
+    .. automethod:: pybricks.hubs::PrimeHub.speaker.play_notes
 
-        .. automethod:: pybricks.hubs::PrimeHub.speaker.beep
+    .. rubric:: Using the battery
 
-        .. automethod:: pybricks.hubs::PrimeHub.speaker.play_notes
+    .. automethod:: pybricks.hubs::PrimeHub.battery.voltage
 
-        .. rubric:: Using the battery
+    .. automethod:: pybricks.hubs::PrimeHub.battery.current
 
-        .. automethod:: pybricks.hubs::PrimeHub.battery.voltage
+    .. rubric:: Getting the charger status
 
-        .. automethod:: pybricks.hubs::PrimeHub.battery.current
+    .. automethod:: pybricks.hubs::PrimeHub.charger.connected
 
-        .. rubric:: Getting the charger status
+    .. automethod:: pybricks.hubs::PrimeHub.charger.current
 
-        .. automethod:: pybricks.hubs::PrimeHub.charger.connected
+    .. automethod:: pybricks.hubs::PrimeHub.charger.status
 
-        .. automethod:: pybricks.hubs::PrimeHub.charger.current
+    .. rubric:: System control
 
-        .. automethod:: pybricks.hubs::PrimeHub.charger.status
+    .. automethod:: pybricks.hubs::PrimeHub.system.set_stop_button
 
-        .. rubric:: System control
+    .. automethod:: pybricks.hubs::PrimeHub.system.name
 
-        .. automethod:: pybricks.hubs::PrimeHub.system.set_stop_button
+    .. automethod:: pybricks.hubs::PrimeHub.system.shutdown
 
-        .. automethod:: pybricks.hubs::PrimeHub.system.name
+    .. automethod:: pybricks.hubs::PrimeHub.system.reset_reason
 
-        .. automethod:: pybricks.hubs::PrimeHub.system.shutdown
+.. note:: The examples below use the ``PrimeHub`` class. The examples work fine
+        on both hubs because they are the identical. If you prefer, you can
+        change this to ``InventorHub``.
 
-        .. automethod:: pybricks.hubs::PrimeHub.system.reset_reason
+Status light examples
+---------------------
 
-    .. note:: The examples below use the ``PrimeHub`` class. The examples work fine
-            on both hubs because they are the identical. If you prefer, you can
-            change this to ``InventorHub``.
+Turning the light on and off
+****************************
 
-    Status light examples
-    ---------------------
+.. literalinclude::
+    ../../../examples/pup/hub_primehub/light_off.py
 
-    Turning the light on and off
-    ****************************
+Changing brightness and using custom colors
+*******************************************
 
-    .. literalinclude::
-        ../../../examples/pup/hub_primehub/light_off.py
+.. literalinclude::
+    ../../../examples/pup/hub_primehub/light_hsv.py
 
-    Changing brightness and using custom colors
-    *******************************************
+Making the light blink
+**********************
 
-    .. literalinclude::
-        ../../../examples/pup/hub_primehub/light_hsv.py
+.. literalinclude::
+    ../../../examples/pup/hub_primehub/light_blink.py
 
-    Making the light blink
-    **********************
+Creating light animations
+*************************
 
-    .. literalinclude::
-        ../../../examples/pup/hub_primehub/light_blink.py
+.. literalinclude::
+    ../../../examples/pup/hub_primehub/light_animate.py
 
-    Creating light animations
-    *************************
+Matrix display examples
+-----------------------
 
-    .. literalinclude::
-        ../../../examples/pup/hub_primehub/light_animate.py
+Displaying images
+*****************
 
-    Matrix display examples
-    -----------------------
+.. literalinclude::
+    ../../../examples/pup/hub_primehub/display_image.py
 
-    Displaying images
-    *****************
+Displaying numbers
+******************
 
-    .. literalinclude::
-        ../../../examples/pup/hub_primehub/display_image.py
+.. literalinclude::
+    ../../../examples/pup/hub_primehub/display_number.py
 
-    Displaying numbers
-    ******************
+Displaying text
+***************
 
-    .. literalinclude::
-        ../../../examples/pup/hub_primehub/display_number.py
+.. literalinclude::
+    ../../../examples/pup/hub_primehub/display_text.py
 
-    Displaying text
-    ***************
+Displaying individual pixels
+****************************
 
-    .. literalinclude::
-        ../../../examples/pup/hub_primehub/display_text.py
+.. literalinclude::
+    ../../../examples/pup/hub_primehub/display_pixel.py
 
-    Displaying individual pixels
-    ****************************
+Changing the display orientation
+********************************
 
-    .. literalinclude::
-        ../../../examples/pup/hub_primehub/display_pixel.py
+.. literalinclude::
+    ../../../examples/pup/hub_primehub/display_orientation.py
 
-    Changing the display orientation
-    ********************************
+.. literalinclude::
+    ../../../examples/pup/hub_primehub/display_orientation_imu.py
 
-    .. literalinclude::
-        ../../../examples/pup/hub_primehub/display_orientation.py
+Making your own images
+**********************
 
-    .. literalinclude::
-        ../../../examples/pup/hub_primehub/display_orientation_imu.py
+.. literalinclude::
+    ../../../examples/pup/hub_primehub/display_matrix.py
 
-    Making your own images
-    **********************
+Combining images to make expressions
+************************************
 
-    .. literalinclude::
-        ../../../examples/pup/hub_primehub/display_matrix.py
+.. literalinclude::
+    ../../../examples/pup/hub_primehub/display_expression.py
 
-    Combining images to make expressions
-    ************************************
+Displaying animations
+*********************
 
-    .. literalinclude::
-        ../../../examples/pup/hub_primehub/display_expression.py
+.. literalinclude::
+    ../../../examples/pup/hub_primehub/display_animate.py
 
-    Displaying animations
-    *********************
+Button examples
+---------------
 
-    .. literalinclude::
-        ../../../examples/pup/hub_primehub/display_animate.py
+Detecting button presses
+************************
 
-    Button examples
-    ---------------
+.. literalinclude::
+    ../../../examples/pup/hub_primehub/button_main.py
 
-    Detecting button presses
-    ************************
+IMU examples
+---------------
 
-    .. literalinclude::
-        ../../../examples/pup/hub_primehub/button_main.py
+Testing which way is up
+********************************
 
-    IMU examples
-    ---------------
+.. literalinclude::
+    ../../../examples/pup/hub_primehub/imu_up.py
 
-    Testing which way is up
-    ********************************
 
-    .. literalinclude::
-        ../../../examples/pup/hub_primehub/imu_up.py
+Reading the tilt value
+********************************
 
+.. literalinclude::
+    ../../../examples/pup/hub_primehub/imu_tilt.py
 
-    Reading the tilt value
-    ********************************
+Using a custom hub orientation
+**************************************************
 
-    .. literalinclude::
-        ../../../examples/pup/hub_primehub/imu_tilt.py
+.. literalinclude::
+    ../../../examples/pup/hub_primehub/imu_tilt_blast.py
 
-    Using a custom hub orientation
-    **************************************************
+Reading acceleration and angular velocity vectors
+**************************************************
 
-    .. literalinclude::
-        ../../../examples/pup/hub_primehub/imu_tilt_blast.py
+.. literalinclude::
+    ../../../examples/pup/hub_primehub/imu_read_vector.py
 
-    Reading acceleration and angular velocity vectors
-    **************************************************
+Reading acceleration and angular velocity on one axis
+*****************************************************
 
-    .. literalinclude::
-        ../../../examples/pup/hub_primehub/imu_read_vector.py
+.. literalinclude::
+    ../../../examples/pup/hub_primehub/imu_read_scalar.py
 
-    Reading acceleration and angular velocity on one axis
-    *****************************************************
+System examples
+----------------------------------
 
-    .. literalinclude::
-        ../../../examples/pup/hub_primehub/imu_read_scalar.py
+Changing the stop button combination
+*****************************************
 
-    System examples
-    ----------------------------------
+.. literalinclude::
+    ../../../examples/pup/hub_primehub/button_stop.py
 
-    Changing the stop button combination
-    *****************************************
+Turning the hub off
+*****************************************
 
-    .. literalinclude::
-        ../../../examples/pup/hub_primehub/button_stop.py
-
-    Turning the hub off
-    *****************************************
-
-    .. literalinclude::
-        ../../../examples/pup/hub_primehub/system_shutdown.py
+.. literalinclude::
+    ../../../examples/pup/hub_primehub/system_shutdown.py
 
 .. _installation instructions: https://pybricks.com/install/
 
