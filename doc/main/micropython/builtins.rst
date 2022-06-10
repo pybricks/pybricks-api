@@ -36,26 +36,12 @@ Basic types
 
 .. pybricks-requirements::
 
-..
-   _comment: The int class is defined manually because otherwise the classmethod is hidden, see https://github.com/pybricks/pybricks-api/issues/86
-
 .. autoclass:: ubuiltins.int
     :no-members:
 
     .. automethod:: ubuiltins.int.to_bytes
 
-    .. classmethod:: from_bytes(bytes: Union[bytes, bytearray], byteorder: Literal["little", "big"]) -> int
-
-        Returns the integer represented by the given bytes.
-
-        :param bytes: The bytes to convert.
-        :param byteorder: Determines the byte order used to represent the
-            integer. If byteorder is ``"big"``, the most significant byte is at
-            the beginning of the byte sequence. If byteorder is ``"little"``,
-            the most significant byte is at the end of the byte sequence.
-
-        :returns: The integer represented by the bytes.
-
+    .. automethod:: ubuiltins.int.from_bytes
 
 .. pybricks-requirements::
 

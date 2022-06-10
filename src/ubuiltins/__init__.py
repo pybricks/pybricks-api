@@ -436,13 +436,10 @@ class float:
     def __init__(self, *args) -> None:
         """float(x=0.0)
 
-        Converts an object to a floating point number.
+        Creates a floating point number from a given object.
 
         Arguments:
             x (int or float or str): Number or string to be converted.
-
-        Returns:
-            The resulting floating point value.
         """
 
 
@@ -564,36 +561,44 @@ class int:
         ...
 
     def __init__(self, *args) -> None:
-        """int()
-        int(x: Union[int, float, str])
+        """int(x=0)
 
-        Converts the argument to an integer. If no argument is given, this
-        returns ``0``.
+        Creates an integer.
 
         Arguments:
-            x: Number or string that will be converted.
-
-        Returns:
-            The input argument ``x`` converted to an integer.
+            x (int or float or str): Object to be converted.
         """
 
     def to_bytes(self, length: _int, byteorder: Literal["little", "big"]) -> _bytes:
         """
-        Returns a :class:`bytes` object representing the integer.
+        to_bytes(length, byteorder) -> bytes
+
+        Get a :class:`bytes` representation of the integer.
 
         Arguments:
-            length: How many bytes to use.
-            byteorder: Choose ``"little"`` for little-endian encoding
-                       or ``"big"`` for big-endian encoding.
+            length (int): How many bytes to use.
+            byteorder (str): Choose ``"big"`` to put the most significant byte
+                first. Choose ``"little"`` to put the least significant byte
+                first.
 
         Returns:
-            The integer represented by a sequence of bytes.
+            Byte sequence that represents the integer.
         """
 
-    @classmethod
+    # @classmethod
     def from_bytes(cls, _bytes: _bytes, byteorder: Literal["little", "big"]) -> _int:
-        """
-        Returns the integer represented by the given array of bytes.
+        """from_bytes(bytes, byteorder) -> int
+
+        Convert a byte sequence to the number it represents.
+
+        Arguments:
+            bytes (bytes): The bytes to convert.
+            byteorder (str): Choose ``"big"`` if the most significant byte is
+                the first element. Choose ``"little"`` if the least significant
+                byte is the first element.
+
+        Returns:
+            The number represented by the bytes.
         """
 
 
