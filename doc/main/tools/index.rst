@@ -19,8 +19,3 @@
 
     .. automethod:: pybricks.tools.StopWatch.reset
 
-.. toctree::
-   :maxdepth: 1
-   :hidden:
-
-   datalog

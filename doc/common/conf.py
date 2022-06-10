@@ -246,7 +246,20 @@ latex_documents = [
 # -- Content control -----------------------------------------------------
 
 
-exclude_patterns = []
+exclude_patterns = [
+    "ev3devices.rst",
+    "hubs/ev3brick.rst",
+    "iodevices/analogsensor.rst",
+    "iodevices/dcmotor.rst",
+    "iodevices/ev3devsensor.rst",
+    "iodevices/i2cdevice.rst",
+    "iodevices/lumpdevice.rst",
+    "iodevices/uartdevice.rst",
+    "media.rst",
+    "messaging.rst",
+    "nxtdevices.rst",
+    "tools/datalog.rst",
+]
 
 
 # One entry per manual page. List of tuples

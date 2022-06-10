@@ -11,12 +11,6 @@
 
    pupdevice
    lwp3device
-   analogsensor
-   dcmotor
-   ev3devsensor
-   i2cdevice
-   lumpdevice
-   uartdevice
 
 This module has classes for generic input/output devices.
 
