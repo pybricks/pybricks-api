@@ -11,7 +11,7 @@
 Math functions.
 """
 
-from typing import Tuple as _Tuple
+from typing import Tuple as Tuple
 
 
 e = 2.718282
@@ -23,305 +23,339 @@ pi = 3.141593
 
 
 def sin(x: float) -> float:
-    """Gets the sine of the given angle ``x``.
+    """sin(x) -> float
+
+    Gets the sine of an angle.
 
     Arguments:
-        x: Angle in radians.
+        x (float): Angle in radians.
 
     Returns:
         Sine of ``x``.
     """
-    pass
 
 
 def asin(x: float) -> float:
-    """Applies the inverse sine operation on ``x``.
+    """asin(x) -> float
+
+    Applies the inverse sine operation.
 
     Arguments:
-        x: Opposite / hypotenuse.
+        x (float): Opposite / hypotenuse.
 
     Returns:
         Arcsine of ``x``, in radians.
     """
-    pass
 
 
 def cos(x: float) -> float:
-    """Gets the cosine of the given angle ``x``.
+    """cos(x) -> float
+
+    Gets the cosine of an angle.
 
     Arguments:
-        x: Angle in radians.
+        x (float): Angle in radians.
 
     Returns:
         Cosine of ``x``.
     """
-    pass
 
 
 def acos(x: float) -> float:
-    """Applies the inverse cosine operation on ``x``.
+    """acos(x) -> float
+
+    Applies the inverse cosine operation.
 
     Arguments:
-        x: Adjacent / hypotenuse.
+        x (float): Adjacent / hypotenuse.
 
     Returns:
         Arccosine of ``x``, in radians.
     """
-    pass
 
 
 def tan(x: float) -> float:
-    """Gets the tangent of the given angle ``x``.
+    """tan(x) -> float
+
+    Gets the tangent of an angle.
 
     Arguments:
-        x: Angle in radians.
+        x (float): Angle in radians.
 
     Returns:
         Tangent of ``x``.
     """
-    pass
 
 
 def atan(x: float) -> float:
-    """Applies the inverse tangent operation on ``x``.
+    """atan(x) -> float
+
+    Applies the inverse tangent operation.
 
     Arguments:
-        x: Opposite / adjacent.
+        x (float): Opposite / adjacent.
 
     Returns:
         Arctangent of ``x``, in radians.
     """
-    pass
 
 
 def atan2(b: float, a: float) -> float:
-    """Applies the inverse tangent operation on ``b / a``, and accounts for
+    """atan2(b, a) -> float
+
+    Applies the inverse tangent operation on ``b / a``, and accounts for
     the signs of ``b`` and ``a`` to produce the expected angle.
 
     Arguments:
-        b: Opposite side of the triangle.
-        a: Adjacent side of the triangle.
+        b (float): Opposite side of the triangle.
+        a (float): Adjacent side of the triangle.
 
     Returns:
         Arctangent of ``b / a``, in radians.
     """
-    pass
 
 
 def degrees(x: float) -> float:
-    """Converts an angle ``x`` from radians to degrees.
+    """degrees(x) -> float
+
+    Converts an angle from radians to degrees.
 
     Arguments:
-        x: Angle in radians.
+        x (float): Angle in radians.
 
     Returns:
         Angle in degrees.
     """
-    pass
 
 
 def radians(x: float) -> float:
-    """Converts an angle ``x`` from degrees to radians.
+    """radians(x) -> float
+
+    Converts an angle from degrees to radians.
 
     Arguments:
-        x: Angle in degrees.
+        x (float): Angle in degrees.
 
     Returns:
         Angle in radians.
     """
-    pass
 
 
 def pow(x: float, y: float) -> float:
-    """Gets ``x`` raised to the power of ``y``.
+    """pow(x, y) -> float
+
+    Gets ``x`` raised to the power of ``y``.
 
     Arguments:
-        x: The base number.
-        y: The exponent.
+        x (float): The base number.
+        y (float): The exponent.
 
     Returns:
         ``x`` raised to the power of ``y``.
     """
-    pass
 
 
 def exp(x: float) -> float:
-    """Gets :attr:`e` raised to the power of ``x``.
+    """exp(x) -> float
+
+    Gets :attr:`e` raised to the power of ``x``.
 
     Arguments:
-        x: The exponent.
+        x (float): The exponent.
 
     Returns:
         :attr:`e` raised to the power of ``x``.
     """
-    pass
 
 
 def log(x: float) -> float:
-    """Gets the natural logarithm of ``x``.
+    """log(x) -> float
+
+    Gets the natural logarithm.
 
     Arguments:
-        x: The value ``x``.
+        x (float): The value.
 
     Returns:
         The natural logarithm of ``x``.
     """
-    pass
 
 
 def sqrt(x: float) -> float:
-    """Gets the square root of ``x``.
+    """sqrt(x) -> float
+
+    Gets the square root.
 
     Arguments:
-        x: The value ``x``.
+        x (float): The value ``x``.
 
     Returns:
         The square root of ``x``.
     """
-    pass
 
 
 def ceil(x: float) -> int:
-    """Rounds up.
+    """ceil(x) -> int
+
+    Rounds up.
 
     Arguments:
-        x: The value ``x``.
+        x (float): The value to be rounded.
 
     Returns:
         Value rounded towards positive infinity.
     """
-    pass
 
 
 def floor(x: float) -> int:
-    """Rounds down.
+    """floor(x) -> int
+
+    Rounds down.
 
     Arguments:
-        x: The value ``x``.
+        x (float): The value to be rounded.
 
     Returns:
         Value rounded towards negative infinity.
     """
-    pass
 
 
 def trunc(x: float) -> int:
-    """Truncates decimals to get the integer part of a value.
+    """trunc(x) -> int
+
+    Truncates decimals to get the integer part of a value.
 
     This is the same as rounding towards ``0``.
 
     Arguments:
-        x: The value ``x``.
+        x (float): The value to be truncated.
 
     Returns:
         Integer part of the value.
     """
-    pass
 
 
 def fmod(x: float, y: float) -> float:
-    """Gets the remainder of ``x / y``.
+    """fmod(x, y) -> float
+
+    Gets the remainder of ``x / y``.
 
     Not to be confused with :func:`modf`.
 
     Arguments:
-        x: The numerator.
-        y: The denominator.
+        x (float): The numerator.
+        y (float): The denominator.
 
     Returns:
         Remainder after division
     """
-    pass
 
 
 def fabs(x: float) -> float:
-    """Gets the absolute value of ``x``.
+    """fabs(x) -> float
+
+    Gets the absolute value.
 
     Arguments:
-        x: The value.
+        x (float): The value.
 
     Returns:
-        Absolute value.
+        Absolute value of ``x``.
     """
-    pass
 
 
-def modf(x: float) -> _Tuple[float, float]:
-    """Gets the fractional and integral parts of ``x``, both with the same sign
+def modf(x: float) -> Tuple[float, float]:
+    """modf(x) -> Tuple[float, float]
+
+    Gets the fractional and integral parts of ``x``, both with the same sign
     as ``x``.
 
     Not to be confused with :func:`fmod`.
 
     Arguments:
-        x: The value to be decomposed.
+        x (float): The value to be decomposed.
 
     Returns:
         Tuple of fractional and integral parts.
     """
-    pass
 
 
-def frexp(x: float) -> _Tuple[float, int]:
-    """Decomposes a value ``x`` into a
+def frexp(x: float) -> Tuple[float, int]:
+    """frexp(x) -> Tuple[float, float]
+
+    Decomposes a value ``x`` into a
     tuple ``(m, p)``, such that ``x == m * (2 ** p)``.
 
     Arguments:
-        x: The value to be decomposed.
+        x (float): The value to be decomposed.
 
     Returns:
         Tuple of ``m`` and ``p``.
     """
-    pass
 
 
 def ldexp(m: float, p: int) -> float:
-    """Computes ``m * (2 ** p)``.
+    """ldexp(m, p) -> float
+
+    Computes ``m * (2 ** p)``.
 
     Arguments:
-        m: The value.
-        p: The exponent.
+        m (float): The value.
+        p (float): The exponent.
 
     Returns:
         Result of ``m * (2 ** p)``.
     """
-    pass
 
 
 def copysign(x: float, y: float) -> float:
-    """Gets ``x`` with the sign of ``y``.
+    """copysign(x, y) -> float
+
+    Gets ``x`` with the sign of ``y``.
 
     Arguments:
-        x: Determines the magnitude of the return value.
-        y: Determines the sign of the return value.
+        x (float): Determines the magnitude of the return value.
+        y (float): Determines the sign of the return value.
 
     Returns:
         ``x`` with the sign of ``y``.
     """
-    pass
 
 
 def isfinite(x: float) -> bool:
-    """Checks if ``x`` is finite.
+    """isfinite(x) -> bool
+
+    Checks if a value is finite.
+
+    Arguments:
+        x (float): The value to be checked.
 
     Returns:
         ``True`` if ``x`` is finite, else ``False``.
     """
-    pass
 
 
 def isinfinite(x: float) -> bool:
-    """Checks if ``x`` is infinite.
+    """isinfinite(x) -> bool
+
+    Checks if a value is infinite.
+
+    Arguments:
+        x (float): The value to be checked.
 
     Returns:
         ``True`` if ``x`` is infinite, else ``False``.
     """
-    pass
 
 
 def isnan(x: float) -> bool:
-    """Checks if ``x`` is not-a-number.
+    """isnan(x) -> bool
+
+    Checks if a value is not-a-number.
+
+    Arguments:
+        x (float): The value to be checked.
 
     Returns:
         ``True`` if ``x`` is not-a-number, else ``False``.
     """
-    pass
