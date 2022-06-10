@@ -141,14 +141,19 @@ class bool:
 
     def __init__(self, *args) -> None:
         """
+        bool(​)
+        bool(x)
+
         Creates a boolean value, which is either ``True`` or ``False``.
 
+        The input value is converted using the standard truth testing
+        procedure. If no input is given, it is assumed to be ``False``.
+
         Arguments:
-            x: Value that is tested for being ``True`` or ``False``. It is
-               converted using the standard truth testing procedure.
+            x: Value to be converted.
 
         Returns:
-            Result of the truth-test. If no object is given, it returns ``False``.
+            Result of the truth-test.
         """
 
 
@@ -265,9 +270,9 @@ class complex:
         ...
 
     def __init__(self, *args) -> None:
-        """complex()
-        complex(string: str)
-        complex(a: Union[float, complex], b: Union[float, complex] = 0)
+        """
+        complex(string)
+        complex(a=0, b=0)
 
         Creates a complex number from a string or from a pair of numbers.
 
@@ -276,12 +281,12 @@ class complex:
         as: ``a + b * j``.
 
         Arguments:
-            string: A string of the form ``'1+2j'`` .
-            a: A real-valued or complex number.
-            b: A real-valued or complex number.
+            string (str): A string of the form ``'1+2j'`` .
+            a (float or complex): A real-valued or complex number.
+            b (float or complex): A real-valued or complex number.
 
         Returns:
-            Complex number, obtained from the string or as the result of ``a + b * j``.
+            The resulting complex number.
         """
 
 
