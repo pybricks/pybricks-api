@@ -521,13 +521,15 @@ def input(prompt: _str) -> _str:
 
 
 def input(*args) -> _str:
-    """
-    Gets input from the user in the terminal window. This function waits until
-    the user presses :kbd:`Enter`. The input is returned as a string.
+    """input() -> str
+    input(prompt) -> str
+
+    Gets input from the user in the terminal window. It waits until
+    the user presses :kbd:`Enter`.
 
     Arguments:
-        prompt: If given, this is printed in the terminal window first. This
-                can be used to ask a question so the user knows what to type.
+        prompt (str): If given, this is printed in the terminal window first.
+            This can be used to ask a question so the user knows what to type.
 
     Returns:
         Everything the user typed before pressing :kbd:`Enter`.
@@ -758,20 +760,19 @@ def print(*objects, sep: _str = " ", end: _str = "\n", file: uio.FileIO = usys.s
 
 
 def print(*args):
-    """
+    """print(*objects, sep=" ", end="\\n", file=usys.stdin)
+
     Prints text or other objects in the terminal window.
 
     Arguments:
-        args: One or more objects to print.
+        objects: Zero or more objects to print.
 
     Keyword Arguments:
         sep: This is printed between objects, if there is more than one.
         end: This is printed after the last object.
         file: By default, the result is printed in the terminal window. This
-              argument lets you print it to a file instead. This argument is
-              not supported on the BOOST Move hub.
-
-
+              argument lets you print it to a file instead, if files are
+              supported.
     """
 
 
