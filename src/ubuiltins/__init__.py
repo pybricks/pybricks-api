@@ -301,7 +301,14 @@ class dict:
 
     def __init__(self, *args, **kwargs) -> None:
         """
-        Creates a new dictionary.
+        dict(**kwargs)
+        dict(mapping, **kwargs)
+        dict(iterable, **kwargs)
+
+        See the standard
+        `Python documentation
+        <https://docs.python.org/3/library/stdtypes.html#mapping-types-dict>`_
+        for a comprehensive reference with examples.
         """
 
 
