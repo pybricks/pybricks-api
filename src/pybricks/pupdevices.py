@@ -3,7 +3,7 @@
 
 """LEGO® Powered Up motor, sensors, and lights."""
 
-from typing import Optional, Union, overload, Tuple
+from typing import Collection, Optional, Union, overload, Tuple
 
 from ._common import (
     Keypad as _Keypad,
@@ -95,7 +95,7 @@ class Remote:
 class TiltSensor:
     """LEGO® Powered Up Tilt Sensor."""
 
-    def __init__(self, port):
+    def __init__(self, port: Port):
         """TiltSensor(port)
 
         Arguments:
@@ -179,24 +179,27 @@ class UltrasonicSensor:
         """
         pass
 
-    def distance(self):
-        """Measures the distance between the sensor and an object using
+    def distance(self) -> int:
+        """distance() -> int: mm
+
+        Measures the distance between the sensor and an object using
         ultrasonic sound waves.
 
         Returns:
-            :ref:`distance`: Measured distance. If no valid distance was
-            measured, it returns 2000 mm.
+            Measured distance. If no valid distance was measured,
+            it returns 2000 mm.
 
         """
         pass
 
-    def presence(self):
-        """Checks for the presence of other ultrasonic sensors by detecting
+    def presence(self) -> bool:
+        """presence() -> bool
+
+        Checks for the presence of other ultrasonic sensors by detecting
         ultrasonic sounds.
 
         Returns:
-            bool: ``True`` if ultrasonic sounds are detected,
-            ``False`` if not.
+            ``True`` if ultrasonic sounds are detected, ``False`` if not.
         """
         pass
 
@@ -204,7 +207,7 @@ class UltrasonicSensor:
 class ForceSensor:
     """LEGO® SPIKE Force Sensor."""
 
-    def __init__(self, port):
+    def __init__(self, port: Port):
         """ForceSensor(port)
 
         Arguments:
@@ -212,39 +215,46 @@ class ForceSensor:
         """
         pass
 
-    def force(self):
-        """Measures the force exerted on the sensor.
+    def force(self) -> float:
+        """force() -> float: N
+
+        Measures the force exerted on the sensor.
 
         Returns:
-            :ref:`force`: Measured force (up to approximately 10.00 N).
+            Measured force (up to approximately 10.00 N).
         """
 
-    def distance(self):
-        """Measures by how much the sensor button has moved.
+    def distance(self) -> float:
+        """distance() -> float: mm
+
+        Measures by how much the sensor button has moved.
 
         Returns:
-            :ref:`distance`: How much the sensor button has
-            moved (up to approximately 8.00 mm).
+            Movement up to approximately 8.00 mm.
         """
 
-    def pressed(self, force=3):
-        """Checks if the sensor button is pressed.
+    def pressed(self, force=3) -> bool:
+        """pressed(force=3) -> bool
+
+        Checks if the sensor button is pressed.
 
         Arguments:
-            force (:ref:`force`): Minimum force to be considered pressed.
+            force (Number, N): Minimum force to be considered pressed.
 
         Returns:
-            bool: ``True`` if the sensor is pressed, ``False`` if it is not.
+            ``True`` if the sensor is pressed, ``False`` if it is not.
         """
 
-    def touched(self):
-        """Checks if the sensor is touched.
+    def touched(self) -> bool:
+        """touched() -> bool
+
+        Checks if the sensor is touched.
 
         This is similar to :meth:`pressed`, but it detects slight movements of
         the button even when the measured force is still considered zero.
 
         Returns:
-            bool: ``True`` if the sensor is touched or pressed, ``False``
+            ``True`` if the sensor is touched or pressed, ``False``
             if it is not.
         """
 
@@ -256,7 +266,7 @@ class ColorLightMatrix:
     LEGO® SPIKE 3x3 Color Light Matrix.
     """
 
-    def __init__(self, port):
+    def __init__(self, port: Port):
         """ColorLightMatrix(port)
 
         Arguments:
@@ -265,8 +275,9 @@ class ColorLightMatrix:
         """
         ...
 
-    def on(self, colors):
-        """
+    def on(self, color: Union[Color, Collection[Color]]) -> None:
+        """on(colors)
+
         Turns the lights on.
 
         Arguments:
@@ -277,9 +288,10 @@ class ColorLightMatrix:
         """
         ...
 
-    def off(self):
-        """
-        Turns all of the lights off.
+    def off(self) -> None:
+        """off()
+
+        Turns all lights off.
         """
         ...
 
@@ -287,7 +299,7 @@ class ColorLightMatrix:
 class InfraredSensor:
     """LEGO® Powered Up Infrared Sensor."""
 
-    def __init__(self, port):
+    def __init__(self, port: Port):
         """InfraredSensor(port)
 
         Arguments:
@@ -295,30 +307,35 @@ class InfraredSensor:
         """
         pass
 
-    def reflection(self):
-        """Measures the reflection of a surface using an infrared light.
+    def reflection(self) -> int:
+        """reflection() -> int: %
+
+        Measures the reflection of a surface using an infrared light.
 
         Returns:
-            :ref:`percentage`: Reflection, ranging from 0.0 (no reflection) to
-            100.0 (high reflection).
+            Measured reflection, ranging from 0% (no reflection) to
+            100% (high reflection).
         """
         pass
 
-    def distance(self):
-        """Measures the relative distance between the sensor and an object
+    def distance(self) -> int:
+        """distance() -> int: %
+
+        Measures the relative distance between the sensor and an object
         using infrared light.
 
         Returns:
-            :ref:`relativedistance`: Relative distance ranging from 0 (closest)
-            to 100 (farthest).
+            Distance ranging from 0% (closest) to 100% (farthest).
         """
         pass
 
-    def count(self):
-        """Counts the number of objects that have passed by the sensor.
+    def count(self) -> int:
+        """count() -> int
+
+        Counts the number of objects that have passed by the sensor.
 
         Returns:
-            int: Number of objects counted.
+            Number of objects counted.
         """
         pass
 
@@ -326,12 +343,11 @@ class InfraredSensor:
 class Light:
     """LEGO® Powered Up Light."""
 
-    def __init__(self, port):
+    def __init__(self, port: Port):
         """Light(port)
 
         Arguments:
             port (Port): Port to which the device is connected.
-
         """
         pass
 
