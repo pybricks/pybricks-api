@@ -45,6 +45,12 @@ NXT Color Sensor
 
     .. automethod:: pybricks.nxtdevices.ColorSensor.rgb
 
+    .. rubric:: Advanced color sensing
+
+    .. automethod:: pybricks.nxtdevices.ColorSensor.hsv
+
+    .. automethod:: pybricks.nxtdevices.ColorSensor.detectable_colors
+
     .. rubric:: Built-in light
 
     This sensor has a built-in light. You can make it red, green, blue, or turn

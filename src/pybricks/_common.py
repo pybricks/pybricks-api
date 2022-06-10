@@ -987,3 +987,145 @@ class IMU(Accelerometer):
             this returns a vector of accelerations along all axes.
         """
         pass
+
+
+class CommonColorSensor:
+    """Generic color sensor that supports Pybricks color calibration."""
+
+    def __init__(self, port: Port):
+        """__init__(port)
+
+        Arguments:
+            port (Port): Port to which the sensor is connected.
+        """
+        pass
+
+    def color(self) -> Color:
+        """color() -> Color
+
+        Scans the color of a surface.
+
+        You choose which colors are detected using the
+        ``detectable_colors()`` method. By default, it detects
+        ``Color.RED``, ``Color.YELLOW``, ``Color.GREEN``, ``Color.BLUE``,
+        ``Color.WHITE``, or ``Color.NONE``.
+
+        Returns:
+            Detected color.
+        """
+        pass
+
+    def hsv(self) -> Color:
+        """hsv() -> Color
+
+        Scans the color of a surface.
+
+        This method is similar to ``color()``, but it gives the full range
+        of hue, saturation and brightness values, instead of rounding it to the
+        nearest detectable color.
+
+        Returns:
+            Measured color. The color is described by a hue (0--359), a
+            saturation (0--100), and a brightness value (0--100).
+        """
+        pass
+
+    def ambient(self) -> int:
+        """ambient() -> int: %
+
+        Measures the ambient light intensity.
+
+        Returns:
+            Ambient light intensity, ranging from 0% (dark)
+            to 100% (bright).
+        """
+        pass
+
+    def reflection(self) -> int:
+        """reflection() -> int: %
+
+        Measures how much a surface reflects the light emitted by the
+        sensor.
+
+        Returns:
+            Measured reflection, ranging from 0% (no reflection) to
+            100% (high reflection).
+        """
+        pass
+
+    @overload
+    def detectable_colors(self, colors: Collection[Color]) -> None:
+        ...
+
+    @overload
+    def detectable_colors(self) -> Tuple[Color]:
+        ...
+
+    def detectable_colors(self, *args):
+        """
+        detectable_colors(colors)
+        detectable_colors() -> Tuple[Color]
+
+        Configures which colors the ``color()`` method should detect.
+
+        Specify only colors that you wish to detect in your application.
+        This way, the full-color measurements are rounded to the nearest
+        desired color, and other colors are ignored. This improves reliability.
+
+        If you give no arguments, the currently chosen colors will be returned
+        as a tuple.
+
+        Arguments:
+            colors (tuple): Tuple of :class:`Color <.parameters.Color>`
+                objects: the colors that you want to detect. You can pick
+                standard colors such as ``Color.MAGENTA``, or provide your
+                own colors like ``Color(h=348, s=96, v=40)`` for even
+                better results. You measure your own colors with the
+                ``hsv()`` method.
+        """
+        pass
+
+
+class AmbientColorSensor(CommonColorSensor):
+    """Like CommonColorSensor, but also detects ambient colors when the sensor
+    light is turned off"""
+
+    def color(self, surface: bool = True) -> Optional[Color]:
+        """color(surface=True) -> Color
+
+        Scans the color of a surface or an external light source.
+
+        You choose which colors are detected using the
+        ``detectable_colors()`` method. By default, it detects
+        ``Color.RED``, ``Color.YELLOW``, ``Color.GREEN``, ``Color.BLUE``,
+        ``Color.WHITE``, or ``Color.NONE``.
+
+        Arguments:
+            surface (bool): Choose ``true`` to scan the color of objects
+                and surfaces. Choose ``false`` to scan the color of
+                screens and other external light sources.
+
+        Returns:
+            Detected color.`
+        """
+        pass
+
+    def hsv(self, surface: bool = True) -> Color:
+        """hsv(surface=True) -> Color
+
+        Scans the color of a surface or an external light source.
+
+        This method is similar to ``color()``, but it gives the full range
+        of hue, saturation and brightness values, instead of rounding it to the
+        nearest detectable color.
+
+        Arguments:
+            surface (bool): Choose ``true`` to scan the color of objects
+                and surfaces. Choose ``false`` to scan the color of
+                screens and other external light sources.
+
+        Returns:
+            Measured color. The color is described by a hue (0--359), a
+            saturation (0--100), and a brightness value (0--100).
+        """
+        pass

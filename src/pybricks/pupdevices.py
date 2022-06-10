@@ -11,9 +11,11 @@ from ._common import (
     ColorLight as _ColorLight,
     Motor as _Motor,
     LightArray as _LightArray,
+    CommonColorSensor,
+    AmbientColorSensor,
 )
 
-from .parameters import Button as _Button, Color, Direction
+from .parameters import Button as _Button, Color, Direction, Port
 
 
 class DCMotor(_DCMotor):
@@ -112,93 +114,19 @@ class TiltSensor:
         pass
 
 
-class ColorDistanceSensor:
+class ColorDistanceSensor(CommonColorSensor):
     """LEGO® Powered Up Color and Distance Sensor."""
 
     light = _ColorLight()
 
-    def __init__(self, port):
-        """ColorDistanceSensor(port)
+    def distance(self) -> int:
+        """distance() -> int: %
 
-        Arguments:
-            port (Port): Port to which the sensor is connected.
-        """
-        pass
-
-    def color(self):
-        """Scans the color of a surface.
-
-        You choose which colors are detected using the
-        :meth:`.detectable_colors` method. By default, it detects
-        ``Color.RED``, ``Color.YELLOW``, ``Color.GREEN``, ``Color.BLUE``,
-        ``Color.WHITE``, or ``Color.NONE``.
-
-        :returns:
-            Detected color.
-        :rtype: :class:`Color <.parameters.Color>`
-        """
-        pass
-
-    def ambient(self):
-        """Measures the ambient light intensity.
-
-        Returns:
-            :ref:`percentage`: Ambient light intensity, ranging from 0 (dark)
-            to 100 (bright).
-        """
-        pass
-
-    def reflection(self):
-        """Measures the reflection of a surface.
-
-        Returns:
-            :ref:`percentage`: Reflection, ranging from 0.0 (no reflection) to
-            100.0 (high reflection).
-        """
-        pass
-
-    def detectable_colors(self, colors):
-        """Configures which colors the :meth:`.color` method should detect.
-
-        Specify only colors that you wish to detect in your application.
-        This way, the full-color measurements are rounded to the nearest
-        desired color, and other colors are ignored. This improves reliability.
-
-        If you give no arguments, the currently chosen colors will be returned
-        as a tuple.
-
-        Arguments:
-            colors (list): Tuple of :class:`Color <.parameters.Color>` objects:
-                the colors that you want to detect. You can pick
-                standard colors such as ``Color.MAGENTA``, or provide your own
-                colors like ``Color(h=348, s=96, v=40)`` for even
-                better results. You measure your own colors with the
-                :meth:`.hsv` method.
-        """
-        pass
-
-    def hsv(self):
-        """Scans the color of a surface.
-
-        This method is similar to :meth:`.color`, but it gives the full range
-        of hue, saturation and brightness values, instead of rounding it to the
-        nearest detectable color.
-
-        :returns:
-            Measured color. The color is described by a hue (0--359), a
-            saturation (0--100), and a brightness value (0--100).
-        :rtype: :class:`Color <.parameters.Color>`
-
-        """
-        pass
-
-    def distance(self):
-        """Measures the relative distance between the sensor and an object
+        Measures the relative distance between the sensor and an object
         using infrared light.
 
         Returns:
-            :ref:`relativedistance`: Relative distance ranging from 0 (closest)
-            to 100 (farthest).
+            Distance ranging from 0% (closest) to 100% (farthest).
         """
         pass
 
@@ -231,95 +159,10 @@ class PFMotor(DCMotor):
         pass
 
 
-class ColorSensor:
+class ColorSensor(AmbientColorSensor):
     """LEGO® SPIKE Color Sensor."""
 
     lights = _LightArray(3)
-
-    def __init__(self, port):
-        """ColorSensor(port)
-
-        Arguments:
-            port (Port): Port to which the sensor is connected.
-
-        """
-        pass
-
-    def color(self, surface=True):
-        """Scans the color of a surface or an external light source.
-
-        You choose which colors are detected using the
-        :meth:`.detectable_colors` method. By default, it detects
-        ``Color.RED``, ``Color.YELLOW``, ``Color.GREEN``, ``Color.BLUE``,
-        ``Color.WHITE``, or ``Color.NONE``.
-
-        Arguments:
-            surface (bool): Choose ``true`` to scan the color of objects
-                and surfaces. Choose ``false`` to scan the color of
-                screens and other external light sources.
-        :returns:
-            Detected color.
-        :rtype: :class:`Color <.parameters.Color>`
-        """
-        pass
-
-    def detectable_colors(self, colors):
-        """Configures which colors the :meth:`.color` method should detect.
-
-        Specify only colors that you wish to detect in your application.
-        This way, the full-color measurements are rounded to the nearest
-        desired color, and other colors are ignored. This improves reliability.
-
-        If you give no arguments, the currently chosen colors will be returned
-        as a tuple.
-
-        Arguments:
-            colors (list): Tuple of :class:`Color <.parameters.Color>` objects:
-                the colors that you want to detect. You can pick
-                standard colors such as ``Color.MAGENTA``, or provide your own
-                colors like ``Color(h=348, s=96, v=40)`` for even
-                better results. You measure your own colors with the
-                :meth:`.hsv` method.
-        """
-        pass
-
-    def hsv(self, surface=True):
-        """Scans the color of a surface or an external light source.
-
-        This method is similar to :meth:`.color`, but it gives the full range
-        of hue, saturation and brightness values, instead of rounding it to the
-        nearest detectable color.
-
-        Arguments:
-            surface (bool): Choose ``true`` to scan the color of objects
-                and surfaces. Choose ``false`` to scan the color of
-                screens and other external light sources.
-
-        :returns:
-            Measured color. The color is described by a hue (0--359), a
-            saturation (0--100), and a brightness value (0--100).
-        :rtype: :class:`Color <.parameters.Color>`
-
-        """
-        pass
-
-    def ambient(self):
-        """Measures the ambient light intensity.
-
-        Returns:
-            :ref:`percentage`: Ambient light intensity, ranging from 0 (dark)
-            to 100 (bright).
-        """
-        pass
-
-    def reflection(self):
-        """Measures the reflection of a surface.
-
-        Returns:
-            :ref:`percentage`: Reflection, ranging from 0.0 (no reflection) to
-            100.0 (high reflection).
-        """
-        pass
 
 
 class UltrasonicSensor:
@@ -327,7 +170,7 @@ class UltrasonicSensor:
 
     lights = _LightArray(3)
 
-    def __init__(self, port):
+    def __init__(self, port: Port):
         """UltrasonicSensor(port)
 
         Arguments:

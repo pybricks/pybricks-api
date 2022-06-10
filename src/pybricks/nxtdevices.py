@@ -4,10 +4,10 @@
 """Use LEGO® MINDSTORMS® NXT motors and sensors with the EV3 brick."""
 
 
-from .parameters import Port, Color
+from .parameters import Port
 
 from .iodevices import AnalogSensor
-from ._common import ColorLight
+from ._common import ColorLight, CommonColorSensor
 
 
 from typing import Callable, Optional, Tuple
@@ -69,50 +69,10 @@ class LightSensor:
         pass
 
 
-class ColorSensor(LightSensor):
+class ColorSensor(CommonColorSensor):
     """LEGO® MINDSTORMS® NXT Color Sensor."""
 
     light = ColorLight()
-
-    def __init__(self, port: Port):
-        """ColorSensor(port)
-
-        Arguments:
-            port (Port): Port to which the sensor is connected.
-        """
-        pass
-
-    def color(self) -> Color:
-        """color() -> Color
-
-        Measures the color of a surface.
-
-        Returns:
-            ``Color.BLACK``, ``Color.BLUE``, ``Color.GREEN``, ``Color.YELLOW``,
-            ``Color.RED``, ``Color.WHITE`` or ``Color.NONE``.
-        """
-        pass
-
-    def ambient(self) -> int:
-        """ambient() -> int: %
-
-        Measures the ambient light intensity.
-
-        Returns:
-            Ambient light intensity, ranging from 0% (dark) to 100% (bright).
-        """
-        pass
-
-    def reflection(self) -> int:
-        """reflection() -> int: %
-
-        Measures the reflection of a surface using a red light.
-
-        Returns:
-            Reflection, ranging from 0% (no reflection) to 100% (high
-            reflection).
-        """
-        pass
 
     def rgb(self) -> Tuple[int, int, int]:
         """Measures the reflection of a surface using a red, green, and then a
