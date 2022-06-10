@@ -56,49 +56,77 @@ _type = type
 
 
 def abs(x: Any) -> Any:
-    """
-    Returns the absolute value of a number. The argument may be an integer, a
-    floating point number, or an object implementing __abs__().
+    """abs(x) -> Any
 
-    .. If the argument is a complex number, its magnitude is returned.
+    Returns the absolute value of a number.
+
+    The argument may be an integer, a
+    floating point number, or any object implementing ``__abs__()``.
+    If the argument is a complex number, its magnitude is returned.
+
+    Arguments:
+        x (Any): The value.
+
+    Returns:
+        Absolute value of ``x``.
     """
 
 
-def all(iterable: Iterable) -> _bool:
-    """
-    Returns ``True`` if all elements of the iterable are true (or if the
-    iterable is empty).
+def all(x: Iterable) -> _bool:
+    """all(x) -> bool
+
+    Checks if all elements of the iterable are true.
 
     Equivalent to::
 
-        def all(iterable):
-            for element in iterable:
+        def all(x):
+            for element in x:
                 if not element:
                     return False
             return True
+
+    Arguments:
+        x (Iterable): The iterable to be checked.
+
+    Returns:
+        ``True`` if the iterable ``x`` is empty or if all elements
+        are true. Otherwise ``False``.
     """
 
 
-def any(iterable: Iterable) -> _bool:
-    """
-    Returns ``True`` if any element of the iterable is true. If the iterable is
-    empty, returns ``False``.
+def any(x: Iterable) -> _bool:
+    """any(x) -> bool
+
+    Checks if at least one elements of the iterable is true.
 
     Equivalent to::
 
-        def any(iterable):
-            for element in iterable:
+        def any(x):
+            for element in x:
                 if element:
                     return True
             return False
+
+    Arguments:
+        x (Iterable): The iterable to be checked.
+
+    Returns:
+        ``True`` if at least one element in ``x`` is true. Otherwise ``False``.
     """
 
 
 def bin(x: Any) -> _str:
-    """
-    Converts an integer number to a binary string prefixed with “0b”. The result
-    is a valid Python expression. If ``x`` is not a Python :class:`int` object,
-    it has to define an ``__index__()`` method that returns an integer.
+    """bin(x) -> str
+
+    Converts an integer to its binary representation. The result is a
+    string prefixed with ``0b``. The result is a valid Python expression.
+    For example, ``bin(5)`` gives ``"0b101"``.
+
+    Arguments:
+        x (int): Value to be converted.
+
+    Returns:
+        A string representing the binary form of the input.
     """
 
 
@@ -192,12 +220,18 @@ def callable(object: Any) -> _bool:
     """
 
 
-def chr(i: _int) -> _str:
-    """
-    Returns the string representing a character whose Unicode code point is the
-    integer ``i``. For example, ``chr(97)`` returns the string ``'a'``.
+def chr(x: _int) -> _str:
+    """chr(x) -> str
 
-    This is the inverse of :meth:`ord`.
+    Returns the string representing a character whose Unicode code is the
+    integer ``x``. This is the inverse of :meth:`ord`. For
+    example, ``chr(97)`` gives ``"a"``.
+
+    Arguments:
+        x (int): Value to be converted (0-255).
+
+    Returns:
+        A string with one character, corresponding to the given Unicode value.
     """
 
 
@@ -454,9 +488,18 @@ def help(*args) -> None:
     """
 
 
-def hex(x: _int) -> _str:
-    """
-    Converts an integer number to a lowercase hexadecimal string prefixed with “0x”.
+def hex(x: int) -> _str:
+    """hex(x) -> str
+
+    Converts an integer to its hexadecimal representation. The result is a
+    lowercase string prefixed with ``0x``. The result is a valid Python
+    expression. For example, ``hex(25)`` gives ``"0x19"``.
+
+    Arguments:
+        x (int): Value to be converted.
+
+    Returns:
+        A string representing the hexadecimal form of the input.
     """
 
 
@@ -653,8 +696,17 @@ class object:
 
 
 def oct(x: _int) -> _str:
-    """
-    Converts an integer number to an octal string prefixed with “0o”.
+    """oct(x) -> str
+
+    Converts an integer to its octal representation. The result is a
+    string prefixed with ``0o``. The result is a valid Python
+    expression. For example, ``oct(25)`` gives ``"0o31"``.
+
+    Arguments:
+        x (int): Value to be converted.
+
+    Returns:
+        A string representing the octal form of the input.
     """
 
 
@@ -662,11 +714,16 @@ def oct(x: _int) -> _str:
 
 
 def ord(c: _str) -> _int:
-    """
-    Given a string representing one Unicode character, return an integer
-    representing the Unicode code point of that character.
+    """ord(c) -> int
 
-    This is the inverse of :meth:`chr`.
+    Converts a string consisting of one Unicode character to the
+    corresponding number. This is the inverse of :meth:`chr`.
+
+    Arguments:
+        c (str): Character to be converted.
+
+    Returns:
+        Number that represents the character (0--255).
     """
 
 
@@ -737,9 +794,16 @@ class range:
         """
 
 
-def repr(object: Any) -> _str:
-    """
-    Returns a string containing a printable representation of an object.
+def repr(x: Any) -> _str:
+    """repr(object) -> str
+
+    Gets the string that represents an object.
+
+    Arguments:
+        x (object): Object to be converted.
+
+    Returns:
+        String representation implemented by the object's ``__repr__`` method.
     """
 
 
