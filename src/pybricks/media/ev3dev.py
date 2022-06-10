@@ -5,9 +5,9 @@
 
 from __future__ import annotations
 
-from ..parameters import Color
-
 from typing import Union, Literal, overload, Optional, Any
+
+from ..parameters import Color
 
 
 class Image:

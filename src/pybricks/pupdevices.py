@@ -6,24 +6,23 @@
 from typing import Collection, Optional, Union, overload, Tuple
 
 from ._common import (
-    Keypad as _Keypad,
-    DCMotor as _DCMotor,
-    ColorLight as _ColorLight,
-    Motor as _Motor,
-    LightArray as _LightArray,
-    CommonColorSensor,
     AmbientColorSensor,
+    ColorLight,
+    CommonColorSensor,
+    CommonDCMotor,
+    CommonMotor,
+    Keypad,
+    LightArray,
 )
-
-from .parameters import Button as _Button, Color, Direction, Port
-
-
-class DCMotor(_DCMotor):
-    pass
+from .parameters import Button, Color, Direction, Port
 
 
-class Motor(_Motor):
-    """Generic class to control motors with built-in rotation sensors."""
+class DCMotor(CommonDCMotor):
+    """LEGO® Powered Up motor without rotation sensors."""
+
+
+class Motor(CommonMotor):
+    """LEGO® Powered Up motor with rotation sensors."""
 
     def reset_angle(self, angle: Optional[int]) -> None:
         """reset_angle(angle=None)
@@ -41,16 +40,16 @@ class Motor(_Motor):
 class Remote:
     """LEGO® Powered Up Bluetooth Remote Control."""
 
-    light = _ColorLight()
-    buttons = _Keypad(
+    light = ColorLight()
+    buttons = Keypad(
         (
-            _Button.LEFT_MINUS,
-            _Button.RIGHT_MINUS,
-            _Button.LEFT,
-            _Button.CENTER,
-            _Button.RIGHT,
-            _Button.LEFT_PLUS,
-            _Button.RIGHT_PLUS,
+            Button.LEFT_MINUS,
+            Button.RIGHT_MINUS,
+            Button.LEFT,
+            Button.CENTER,
+            Button.RIGHT,
+            Button.LEFT_PLUS,
+            Button.RIGHT_PLUS,
         )
     )
     addresss: Union[str, None]
@@ -113,7 +112,7 @@ class TiltSensor:
 class ColorDistanceSensor(CommonColorSensor):
     """LEGO® Powered Up Color and Distance Sensor."""
 
-    light = _ColorLight()
+    light = ColorLight()
 
     def distance(self) -> int:
         """distance() -> int: %
@@ -156,13 +155,13 @@ class PFMotor(DCMotor):
 class ColorSensor(AmbientColorSensor):
     """LEGO® SPIKE Color Sensor."""
 
-    lights = _LightArray(3)
+    lights = LightArray(3)
 
 
 class UltrasonicSensor:
     """LEGO® SPIKE Color Sensor."""
 
-    lights = _LightArray(3)
+    lights = LightArray(3)
 
     def __init__(self, port: Port):
         """UltrasonicSensor(port)

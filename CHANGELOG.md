@@ -4,6 +4,10 @@
 
 ## Unreleased
 
+### Changed
+- Moved remaining type hints from `.pyi` files to the python stub modules, and
+  fixed numerous errors in the type hints throughout.
+
 ## 3.2.0b1-r1 - 2022-06-09
 
 ## Added

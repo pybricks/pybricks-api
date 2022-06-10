@@ -6,8 +6,8 @@
 
 from .parameters import Port
 
-from .iodevices import AnalogSensor
 from ._common import ColorLight, CommonColorSensor
+from .iodevices import AnalogSensor
 
 
 from typing import Callable, Optional, Tuple

@@ -9,12 +9,12 @@ EV3 DC Motor
 .. figure:: ../../main/images/rcxmotor.png
    :width: 40 %
 
-.. autoclass:: pybricks._common.DCMotor
+.. autoclass:: pybricks.iodevices.DCMotor
     :noindex:
     :no-members:
 
-    .. automethod:: pybricks._common.DCMotor.dc
+    .. automethod:: pybricks.iodevices.DCMotor.dc
         :noindex:
 
-    .. automethod:: pybricks._common.DCMotor.stop
+    .. automethod:: pybricks.iodevices.DCMotor.stop
         :noindex:

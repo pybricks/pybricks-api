@@ -3,14 +3,14 @@
 
 """LEGO® MINDSTORMS® EV3 motors and sensors."""
 
-from .parameters import Direction, Port, Color, Button
-from ._common import Motor as _Motor
-
 from typing import Optional, Tuple, List
 
+from ._common import CommonMotor
+from .parameters import Direction, Port, Color, Button
 
-class Motor(_Motor):
-    pass
+
+class Motor(CommonMotor):
+    """LEGO® MINDSTORMS® EV3 Motor."""
 
 
 class TouchSensor:

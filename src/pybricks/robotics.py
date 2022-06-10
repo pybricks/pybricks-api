@@ -3,11 +3,10 @@
 
 """Robotics module for the Pybricks API."""
 
-from ._common import Control, Motor
-
-from .parameters import Stop as _Stop, Number
-
 from typing import Tuple, Optional, overload
+
+from ._common import Control, CommonMotor as Motor
+from .parameters import Stop, Number
 
 
 class DriveBase:
@@ -143,7 +142,7 @@ class DriveBase:
                 deceleration of the robot.
         """
 
-    def straight(self, distance, then=_Stop.HOLD, wait=True) -> None:
+    def straight(self, distance, then=Stop.HOLD, wait=True) -> None:
         """straight(distance, then=Stop.HOLD, wait=True)
 
         Drives straight for a given distance and then stops.
@@ -155,7 +154,7 @@ class DriveBase:
                          with the rest of the program.
         """
 
-    def turn(self, angle, then=_Stop.HOLD, wait=True) -> None:
+    def turn(self, angle, then=Stop.HOLD, wait=True) -> None:
         """turn(angle, then=Stop.HOLD, wait=True)
 
         Turns in place by a given angle and then stops.
@@ -167,7 +166,7 @@ class DriveBase:
                          with the rest of the program.
         """
 
-    def curve(self, radius, angle, then=_Stop.HOLD, wait=True) -> None:
+    def curve(self, radius, angle, then=Stop.HOLD, wait=True) -> None:
         """curve(radius, angle, then=Stop.HOLD, wait=True)
 
         Drives an arc along a circle of a given radius, by a given angle.

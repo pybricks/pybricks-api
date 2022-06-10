@@ -5,15 +5,16 @@
 
 from __future__ import annotations
 
+from enum import Enum
 from typing import Union
-from enum import Enum as _Enum
+
 
 from .geometry import Matrix
 
 Number = Union[int, float]
 
 
-class _PybricksEnumMeta(type(_Enum)):
+class _PybricksEnumMeta(type(Enum)):
     def __dir__(cls):
         yield "__class__"
         yield "__name__"
@@ -21,7 +22,7 @@ class _PybricksEnumMeta(type(_Enum)):
             yield member.name
 
 
-class _PybricksEnum(_Enum, metaclass=_PybricksEnumMeta):
+class _PybricksEnum(Enum, metaclass=_PybricksEnumMeta):
     def __dir__(self):
         yield "__class__"
         for member in type(self):

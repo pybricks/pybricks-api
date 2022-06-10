@@ -4,11 +4,10 @@
 """Generic cross-platform module for typical devices like lights, displays,
 speakers, and batteries."""
 
-from .parameters import Direction, Stop, Button, Port, Color, Side, Number
+from typing import Union, Iterable, overload, Optional, Tuple, Collection
 
 from .geometry import Matrix, Axis
-
-from typing import Union, Iterable, overload, Optional, Tuple, Collection
+from .parameters import Direction, Stop, Button, Port, Color, Side, Number
 
 
 class System:
@@ -63,12 +62,12 @@ class System:
         """
 
 
-class DCMotor:
+class CommonDCMotor:
     """Generic class to control simple motors without rotation sensors, such
     as train motors."""
 
     def __init__(self, port: Port, positive_direction: Direction = Direction.CLOCKWISE):
-        """DCMotor(port, positive_direction=Direction.CLOCKWISE)
+        """__init__(port, positive_direction=Direction.CLOCKWISE)
 
         Arguments:
             port (Port): Port to which the motor is connected.
@@ -290,7 +289,7 @@ class Control:
         """
 
 
-class Motor(DCMotor):
+class CommonMotor(CommonDCMotor):
     """Generic class to control motors with built-in rotation sensors."""
 
     control = Control()
@@ -306,7 +305,7 @@ class Motor(DCMotor):
         gears: Optional[Union[Collection[int], Collection[Collection[int]]]] = None,
         reset_angle: bool = True,
     ):
-        """Motor(port, positive_direction=Direction.CLOCKWISE, gears=None, reset_angle=True)
+        """__init__(port, positive_direction=Direction.CLOCKWISE, gears=None, reset_angle=True)
 
         Arguments:
             port (Port): Port to which the motor is connected.

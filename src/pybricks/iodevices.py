@@ -5,6 +5,7 @@
 
 from typing import Dict, Tuple, Optional, overload
 
+from ._common import CommonDCMotor
 from .parameters import Port
 
 
@@ -72,6 +73,10 @@ class LUMPDevice:
         Returns:
             Values read from the sensor.
         """
+
+
+class DCMotor(CommonDCMotor):
+    """DC Motor for LEGO® MINDSTORMS EV3."""
 
 
 class Ev3devSensor:
