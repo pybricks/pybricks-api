@@ -2,6 +2,11 @@
 
 <!-- refer to https://keepachangelog.com/en/1.0.0/ for guidance -->
 
+## Unreleased
+
+## Added
+- Added `__init__.py` to `pybricks` package.
+
 ## 3.2.0b1 - 2022-06-02
 
 ### Added
