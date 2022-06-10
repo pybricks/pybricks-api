@@ -4,6 +4,8 @@
 
 ## Unreleased
 
+## 3.2.0b1-r1 - 2022-06-09
+
 ## Added
 - Added `__init__.py` to `pybricks` package.
 
