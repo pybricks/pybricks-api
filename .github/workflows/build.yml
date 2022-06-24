@@ -3,7 +3,19 @@
 
 name: Build Python package and docs
 
-on: [ push, pull_request ]
+on: 
+  push:
+    tags-ignore:
+      - "*"
+  pull_request:
+    paths:
+      - doc/**
+      - src/**
+      - poetry.lock
+      - poetry.toml
+      - pyproject.toml
+      - setup.cfg
+
 
 jobs:
   build:

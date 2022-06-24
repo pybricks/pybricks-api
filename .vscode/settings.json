@@ -49,4 +49,7 @@
     "python.analysis.extraPaths": [
         "jedi/src"
     ],
+    "yaml.schemas": {
+        "https://json.schemastore.org/github-workflow.json": "file:///home/david/work/pybricks/pybricks-api/.github/workflows/build.yml"
+    },
 }
