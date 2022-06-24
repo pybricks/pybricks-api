@@ -6,12 +6,33 @@
 from __future__ import annotations
 
 from enum import Enum
-from typing import Union
+from typing import Union, TYPE_CHECKING
+import os
 
+from .geometry import Matrix as _Matrix
 
-from .geometry import Matrix
+if TYPE_CHECKING or os.environ["SPHINX_BUILD"] == "True":
+    Number = Union[int, float]
+    """
+    Numbers can be represented as integers or floating point values:
 
-Number = Union[int, float]
+        * Integers (:class:`int <ubuiltins.int>`) are whole numbers
+          like ``15`` or ``-123``.
+        * Floating point values (:class:`float <ubuiltins.float>`) are decimal
+          numbers like ``3.14`` or ``-123.45``.
+
+    If you see :class:`Number` as the argument type, both
+    :class:`int <ubuiltins.int>` and :class:`float <ubuiltins.float>` may be used.
+
+    For example, :func:`wait(15) <pybricks.tools.wait>` and
+    :func:`wait(15.75) <pybricks.tools.wait>` are both allowed. In most functions,
+    however, your input value will be truncated to a whole number anyway. In this
+    example, either command makes the program pause for just 15 milliseconds.
+
+    .. warning::
+        The BOOST Move hub doesn't support floating point numbers due to
+        limited system resources, so only integers can be used on that hub.
+    """
 
 
 class _PybricksEnumMeta(type(Enum)):
@@ -163,39 +184,39 @@ class Side(_PybricksEnum):
 
 
 class Icon:
-    UP: Matrix
-    DOWN: Matrix
-    LEFT: Matrix
-    RIGHT: Matrix
-    ARROW_RIGHT_UP: Matrix
-    ARROW_RIGHT_DOWN: Matrix
-    ARROW_LEFT_UP: Matrix
-    ARROW_LEFT_DOWN: Matrix
-    ARROW_UP: Matrix
-    ARROW_DOWN: Matrix
-    ARROW_LEFT: Matrix
-    ARROW_RIGHT: Matrix
-    HAPPY: Matrix
-    SAD: Matrix
-    EYE_LEFT: Matrix
-    EYE_RIGHT: Matrix
-    EYE_LEFT_BLINK: Matrix
-    EYE_RIGHT_BLINK: Matrix
-    EYE_RIGHT_BROW: Matrix
-    EYE_LEFT_BROW: Matrix
-    EYE_LEFT_BROW_UP: Matrix
-    EYE_RIGHT_BROW_UP: Matrix
-    HEART: Matrix
-    PAUSE: Matrix
-    EMPTY: Matrix
-    FULL: Matrix
-    SQUARE: Matrix
-    TRIANGLE_RIGHT: Matrix
-    TRIANGLE_LEFT: Matrix
-    TRIANGLE_UP: Matrix
-    TRIANGLE_DOWN: Matrix
-    CIRCLE: Matrix
-    CLOCKWISE: Matrix
-    COUNTERCLOCKWISE: Matrix
-    TRUE: Matrix
-    FALSE: Matrix
+    UP: _Matrix
+    DOWN: _Matrix
+    LEFT: _Matrix
+    RIGHT: _Matrix
+    ARROW_RIGHT_UP: _Matrix
+    ARROW_RIGHT_DOWN: _Matrix
+    ARROW_LEFT_UP: _Matrix
+    ARROW_LEFT_DOWN: _Matrix
+    ARROW_UP: _Matrix
+    ARROW_DOWN: _Matrix
+    ARROW_LEFT: _Matrix
+    ARROW_RIGHT: _Matrix
+    HAPPY: _Matrix
+    SAD: _Matrix
+    EYE_LEFT: _Matrix
+    EYE_RIGHT: _Matrix
+    EYE_LEFT_BLINK: _Matrix
+    EYE_RIGHT_BLINK: _Matrix
+    EYE_RIGHT_BROW: _Matrix
+    EYE_LEFT_BROW: _Matrix
+    EYE_LEFT_BROW_UP: _Matrix
+    EYE_RIGHT_BROW_UP: _Matrix
+    HEART: _Matrix
+    PAUSE: _Matrix
+    EMPTY: _Matrix
+    FULL: _Matrix
+    SQUARE: _Matrix
+    TRIANGLE_RIGHT: _Matrix
+    TRIANGLE_LEFT: _Matrix
+    TRIANGLE_UP: _Matrix
+    TRIANGLE_DOWN: _Matrix
+    CIRCLE: _Matrix
+    CLOCKWISE: _Matrix
+    COUNTERCLOCKWISE: _Matrix
+    TRUE: _Matrix
+    FALSE: _Matrix

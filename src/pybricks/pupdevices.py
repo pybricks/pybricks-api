@@ -3,25 +3,27 @@
 
 """LEGO® Powered Up motor, sensors, and lights."""
 
-from typing import Collection, Optional, Union, overload, Tuple
+from __future__ import annotations
 
-from ._common import (
-    AmbientColorSensor,
-    ColorLight,
-    CommonColorSensor,
-    CommonDCMotor,
-    CommonMotor,
-    Keypad,
-    LightArray,
+from typing import TYPE_CHECKING, Collection, Optional, Union, overload, Tuple
+
+from . import _common
+from .parameters import (
+    Button as _Button,
+    Color as _Color,
+    Direction as _Direction,
+    Port as _Port,
 )
-from .parameters import Button, Color, Direction, Port
+
+if TYPE_CHECKING:
+    from .parameters import Number as _Number
 
 
-class DCMotor(CommonDCMotor):
+class DCMotor(_common.DCMotor):
     """LEGO® Powered Up motor without rotation sensors."""
 
 
-class Motor(CommonMotor):
+class Motor(_common.Motor):
     """LEGO® Powered Up motor with rotation sensors."""
 
     def reset_angle(self, angle: Optional[int]) -> None:
@@ -40,21 +42,21 @@ class Motor(CommonMotor):
 class Remote:
     """LEGO® Powered Up Bluetooth Remote Control."""
 
-    light = ColorLight()
-    buttons = Keypad(
+    light = _common.ColorLight()
+    buttons = _common.Keypad(
         (
-            Button.LEFT_MINUS,
-            Button.RIGHT_MINUS,
-            Button.LEFT,
-            Button.CENTER,
-            Button.RIGHT,
-            Button.LEFT_PLUS,
-            Button.RIGHT_PLUS,
+            _Button.LEFT_MINUS,
+            _Button.RIGHT_MINUS,
+            _Button.LEFT,
+            _Button.CENTER,
+            _Button.RIGHT,
+            _Button.LEFT_PLUS,
+            _Button.RIGHT_PLUS,
         )
     )
     addresss: Union[str, None]
 
-    def __init__(self, name: str = None, timeout: int = 10000):
+    def __init__(self, name: Optional[str] = None, timeout: int = 10000):
         """Remote(name=None, timeout=10000)
 
         When you instantiate this class, the hub will search for a remote
@@ -92,7 +94,7 @@ class Remote:
 class TiltSensor:
     """LEGO® Powered Up Tilt Sensor."""
 
-    def __init__(self, port: Port):
+    def __init__(self, port: _Port):
         """TiltSensor(port)
 
         Arguments:
@@ -109,10 +111,10 @@ class TiltSensor:
         """
 
 
-class ColorDistanceSensor(CommonColorSensor):
+class ColorDistanceSensor(_common.CommonColorSensor):
     """LEGO® Powered Up Color and Distance Sensor."""
 
-    light = ColorLight()
+    light = _common.ColorLight()
 
     def distance(self) -> int:
         """distance() -> int: %
@@ -133,8 +135,8 @@ class PFMotor(DCMotor):
         self,
         sensor: ColorDistanceSensor,
         channel: int,
-        color: Color,
-        positive_direction: Direction = Direction.CLOCKWISE,
+        color: _Color,
+        positive_direction: _Direction = _Direction.CLOCKWISE,
     ):
         """PFMotor(sensor, channel, color, positive_direction=Direction.CLOCKWISE)
 
@@ -152,18 +154,18 @@ class PFMotor(DCMotor):
         """
 
 
-class ColorSensor(AmbientColorSensor):
+class ColorSensor(_common.AmbientColorSensor):
     """LEGO® SPIKE Color Sensor."""
 
-    lights = LightArray(3)
+    lights = _common.LightArray(3)
 
 
 class UltrasonicSensor:
     """LEGO® SPIKE Color Sensor."""
 
-    lights = LightArray(3)
+    lights = _common.LightArray(3)
 
-    def __init__(self, port: Port):
+    def __init__(self, port: _Port):
         """UltrasonicSensor(port)
 
         Arguments:
@@ -197,7 +199,7 @@ class UltrasonicSensor:
 class ForceSensor:
     """LEGO® SPIKE Force Sensor."""
 
-    def __init__(self, port: Port):
+    def __init__(self, port: _Port):
         """ForceSensor(port)
 
         Arguments:
@@ -222,7 +224,7 @@ class ForceSensor:
             Movement up to approximately 8.00 mm.
         """
 
-    def pressed(self, force=3) -> bool:
+    def pressed(self, force: _Number = 3) -> bool:
         """pressed(force=3) -> bool
 
         Checks if the sensor button is pressed.
@@ -253,7 +255,7 @@ class ColorLightMatrix:
     LEGO® SPIKE 3x3 Color Light Matrix.
     """
 
-    def __init__(self, port: Port):
+    def __init__(self, port: _Port):
         """ColorLightMatrix(port)
 
         Arguments:
@@ -262,7 +264,7 @@ class ColorLightMatrix:
         """
         ...
 
-    def on(self, color: Union[Color, Collection[Color]]) -> None:
+    def on(self, color: Union[_Color, Collection[_Color]]) -> None:
         """on(colors)
 
         Turns the lights on.
@@ -286,7 +288,7 @@ class ColorLightMatrix:
 class InfraredSensor:
     """LEGO® Powered Up Infrared Sensor."""
 
-    def __init__(self, port: Port):
+    def __init__(self, port: _Port):
         """InfraredSensor(port)
 
         Arguments:
@@ -326,14 +328,14 @@ class InfraredSensor:
 class Light:
     """LEGO® Powered Up Light."""
 
-    def __init__(self, port: Port):
+    def __init__(self, port: _Port):
         """Light(port)
 
         Arguments:
             port (Port): Port to which the device is connected.
         """
 
-    def on(self, brightness: int = 100) -> None:
+    def on(self, brightness: _Number = 100) -> None:
         """on(brightness=100)
 
         Turns on the light at the specified brightness.

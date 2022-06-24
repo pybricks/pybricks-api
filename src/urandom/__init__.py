@@ -25,14 +25,6 @@ This module implements pseudo-random number generators.
 from typing import Any, Optional, Sequence, overload
 
 
-[
-    "random",
-    "uniform",
-]
-
-# bookkeeping
-
-
 def seed(a: Optional[int] = None) -> None:
     """
     Initialize the random number generator.

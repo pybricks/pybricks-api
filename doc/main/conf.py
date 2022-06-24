@@ -25,6 +25,9 @@ latex_logo = "../common/images/pybricks-logo-large.png"
 if os.environ.get("READTHEDOCS", None) == "True":
     tags.add("main")  # noqa F821
 
+# HACK: this allows Number type alias to be imported by Sphinx
+os.environ["SPHINX_BUILD"] = "True"
+
 # Addtional configuration of the IDE docs
 if "ide" in tags.tags:  # noqa F821
     _DISCLAIMER = ""

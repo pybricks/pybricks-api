@@ -5,18 +5,23 @@
 
 from typing import Optional, Tuple, List
 
-from ._common import CommonMotor
-from .parameters import Direction, Port, Color, Button
+from . import _common
+from .parameters import (
+    Button as _Button,
+    Color as _Color,
+    Direction as _Direction,
+    Port as _Port,
+)
 
 
-class Motor(CommonMotor):
+class Motor(_common.Motor):
     """LEGO® MINDSTORMS® EV3 Motor."""
 
 
 class TouchSensor:
     """LEGO® MINDSTORMS® EV3 Touch Sensor."""
 
-    def __init__(self, port: Port):
+    def __init__(self, port: _Port):
         """TouchSensor(port)
 
         Arguments:
@@ -37,14 +42,14 @@ class TouchSensor:
 class ColorSensor:
     """LEGO® MINDSTORMS® EV3 Color Sensor."""
 
-    def __init__(self, port: Port):
+    def __init__(self, port: _Port):
         """ColorSensor(port)
 
         Arguments:
             port (Port): Port to which the sensor is connected.
         """
 
-    def color(self) -> Optional[Color]:
+    def color(self) -> Optional[_Color]:
         """color() -> Color
 
         Measures the color of a surface.
@@ -92,7 +97,7 @@ class ColorSensor:
 class InfraredSensor:
     """LEGO® MINDSTORMS® EV3 Infrared Sensor and Beacon."""
 
-    def __init__(self, port: Port):
+    def __init__(self, port: _Port):
         """InfraredSensor(port)
 
         Arguments:
@@ -129,7 +134,7 @@ class InfraredSensor:
             a tuple of (``None``, ``None``) if no remote is detected.
         """
 
-    def buttons(self, channel: int) -> List[Button]:
+    def buttons(self, channel: int) -> List[_Button]:
         """buttons(channel) -> List[Button]
 
         Checks which buttons on the infrared remote are pressed.
@@ -145,7 +150,7 @@ class InfraredSensor:
 
         """
 
-    def keypad(self) -> List[Button]:
+    def keypad(self) -> List[_Button]:
         """keypad() -> List[Button]
 
         Checks which buttons on the infrared remote are pressed.
@@ -163,7 +168,9 @@ class InfraredSensor:
 class GyroSensor:
     """LEGO® MINDSTORMS® EV3 Gyro Sensor."""
 
-    def __init__(self, port: Port, positive_direction: Direction = Direction.CLOCKWISE):
+    def __init__(
+        self, port: _Port, positive_direction: _Direction = _Direction.CLOCKWISE
+    ):
         """GyroSensor(port)
 
         Arguments:
@@ -207,7 +214,7 @@ class GyroSensor:
 class UltrasonicSensor:
     """LEGO® MINDSTORMS® EV3 Ultrasonic Sensor."""
 
-    def __init__(self, port: Port):
+    def __init__(self, port: _Port):
         """UltrasonicSensor(port)
 
         Arguments:

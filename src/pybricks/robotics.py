@@ -3,10 +3,15 @@
 
 """Robotics module for the Pybricks API."""
 
-from typing import Tuple, Optional, overload
+from __future__ import annotations
 
-from ._common import Control, CommonMotor as Motor
-from .parameters import Stop, Number
+from typing import Tuple, Optional, overload, TYPE_CHECKING
+
+from . import _common
+from .parameters import Stop as _Stop
+
+if TYPE_CHECKING:
+    from .parameters import Number as _Number
 
 
 class DriveBase:
@@ -26,7 +31,7 @@ class DriveBase:
 
     """
 
-    distance_control = Control()
+    distance_control = _common.Control()
     """The traveled distance and drive speed are controlled by a PID
     controller. You can use this attribute to change its settings.
     See the :ref:`motor control <settings>` attribute for an overview of
@@ -34,7 +39,7 @@ class DriveBase:
     functionality, but the settings apply to every millimeter driven by the
     drive base, instead of degrees turned by one motor."""
 
-    heading_control = Control()
+    heading_control = _common.Control()
     """The robot turn angle and turn rate are controlled by a PID
     controller. You can use this attribute to change its settings.
     See the :ref:`motor control <settings>` attribute for an overview of
@@ -45,10 +50,10 @@ class DriveBase:
 
     def __init__(
         self,
-        left_motor: Motor,
-        right_motor: Motor,
-        wheel_diameter: Number,
-        axle_track: Number,
+        left_motor: _common.Motor,
+        right_motor: _common.Motor,
+        wheel_diameter: _Number,
+        axle_track: _Number,
     ):
         """DriveBase(left_motor, right_motor, wheel_diameter, axle_track)
 
@@ -62,7 +67,7 @@ class DriveBase:
                 both wheels touch the ground.
         """
 
-    def drive(self, speed: Number, turn_rate: Number) -> None:
+    def drive(self, speed: _Number, turn_rate: _Number) -> None:
         """drive(speed, turn_rate)
 
         Starts driving at the specified speed and turn rate. Both values are
@@ -113,10 +118,10 @@ class DriveBase:
     @overload
     def settings(
         self,
-        straight_speed: Optional[Number],
-        straight_acceleration: Optional[Number],
-        turn_rate: Optional[Number],
-        turn_acceleration: Optional[Number],
+        straight_speed: Optional[_Number],
+        straight_acceleration: Optional[_Number],
+        turn_rate: Optional[_Number],
+        turn_acceleration: Optional[_Number],
     ) -> None:
         ...
 
@@ -142,7 +147,7 @@ class DriveBase:
                 deceleration of the robot.
         """
 
-    def straight(self, distance, then=Stop.HOLD, wait=True) -> None:
+    def straight(self, distance: _Number, then=_Stop.HOLD, wait=True) -> None:
         """straight(distance, then=Stop.HOLD, wait=True)
 
         Drives straight for a given distance and then stops.
@@ -154,7 +159,7 @@ class DriveBase:
                          with the rest of the program.
         """
 
-    def turn(self, angle, then=Stop.HOLD, wait=True) -> None:
+    def turn(self, angle: _Number, then=_Stop.HOLD, wait=True) -> None:
         """turn(angle, then=Stop.HOLD, wait=True)
 
         Turns in place by a given angle and then stops.
@@ -166,7 +171,9 @@ class DriveBase:
                          with the rest of the program.
         """
 
-    def curve(self, radius, angle, then=Stop.HOLD, wait=True) -> None:
+    def curve(
+        self, radius: _Number, angle: _Number, then=_Stop.HOLD, wait=True
+    ) -> None:
         """curve(radius, angle, then=Stop.HOLD, wait=True)
 
         Drives an arc along a circle of a given radius, by a given angle.

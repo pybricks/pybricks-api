@@ -27,6 +27,9 @@ from docutils import nodes
 from docutils.parsers.rst.directives import flag
 from docutils.parsers.rst import Directive
 from sphinx.application import Sphinx
+from sphinx.addnodes import pending_xref
+from sphinx.environment import BuildEnvironment
+from sphinx.util.nodes import make_refnode
 import toml
 
 TOP_DIR = os.path.abspath(os.path.join("..", ".."))
@@ -307,7 +310,16 @@ class AvailabilityDirective(Directive):
         ]
 
 
-def on_missing_reference(app, env, node, contnode):
+def on_missing_reference(
+    app: Sphinx, env: BuildEnvironment, node: pending_xref, contnode: nodes.Element
+) -> nodes.Element:
+    # The Number type alias is on the Signals and Units page instead of on the
+    # pybricks.parameters page so normal resolution doesn't work
+    if node["reftype"] == "class" and node["reftarget"] == "Number":
+        return make_refnode(
+            app.builder, node["refdoc"], "signaltypes", "numbers", contnode
+        )
+
     # References with special characters can't exist, so we have to supress
     # warnings when Sphinx tries to cross reference units like deg/s. For
     # consistency, we also treat units without special characters this way.

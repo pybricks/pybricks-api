@@ -7,22 +7,8 @@ quantities. This page gives an overview of each quantity and its unit.
 Numbers
 ~~~~~~~
 
-.. class:: Number
-
-Numbers can be represented as integers or floating point values:
-
-    * Integers (:class:`int <ubuiltins.int>`) are whole numbers
-      like ``15`` or ``-123``.
-    * Floating point values (:class:`float <ubuiltins.float>`) are decimal
-      numbers like ``3.14`` or ``-123.45``.
-
-If you see :class:`Number <Number>` as the argument type, both
-:class:`int <ubuiltins.int>` and :class:`float <ubuiltins.float>` may be used.
-
-For example, :func:`wait(15) <pybricks.tools.wait>` and
-:func:`wait(15.75) <pybricks.tools.wait>` are both allowed. In most functions,
-however, your input value will be truncated to a whole number anyway. In this
-example, either command makes the program pause for just 15 milliseconds.
+.. autodata:: pybricks.parameters.Number
+  :noindex:
 
 Time
 ~~~~~~

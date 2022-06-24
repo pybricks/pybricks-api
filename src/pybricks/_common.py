@@ -4,16 +4,23 @@
 """Generic cross-platform module for typical devices like lights, displays,
 speakers, and batteries."""
 
-from typing import Union, Iterable, overload, Optional, Tuple, Collection
+from __future__ import annotations
+
+from typing import Union, Iterable, overload, Optional, Tuple, Collection, TYPE_CHECKING
 
 from .geometry import Matrix, Axis
-from .parameters import Direction, Stop, Button, Port, Color, Side, Number
+from .parameters import Direction, Stop, Button, Port, Color, Side
+
+if TYPE_CHECKING:
+    from .parameters import Number
 
 
 class System:
     """System control actions for a hub."""
 
-    def set_stop_button(self, button: Union[Button, Iterable[Button]]) -> None:
+    def set_stop_button(
+        self, button: Optional[Union[Button, Iterable[Button]]]
+    ) -> None:
         """
         set_stop_button(button)
 
@@ -62,7 +69,7 @@ class System:
         """
 
 
-class CommonDCMotor:
+class DCMotor:
     """Generic class to control simple motors without rotation sensors, such
     as train motors."""
 
@@ -289,7 +296,7 @@ class Control:
         """
 
 
-class CommonMotor(CommonDCMotor):
+class Motor(DCMotor):
     """Generic class to control motors with built-in rotation sensors."""
 
     control = Control()
@@ -897,7 +904,7 @@ class IMU(Accelerometer):
         """
 
     def reset_heading(self, angle: Number) -> None:
-        """reset_heading(angle: Number)
+        """reset_heading(angle)
 
         Resets the accumulated heading angle of the robot.
 

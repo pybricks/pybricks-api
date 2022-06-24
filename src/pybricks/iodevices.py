@@ -5,14 +5,14 @@
 
 from typing import Dict, Tuple, Optional, overload
 
-from ._common import CommonDCMotor
-from .parameters import Port
+from . import _common
+from .parameters import Port as _Port
 
 
 class PUPDevice:
     """Powered Up motor or sensor."""
 
-    def __init__(self, port: Port):
+    def __init__(self, port: _Port):
         """PUPDevice(port)
 
         Arguments:
@@ -55,7 +55,7 @@ class PUPDevice:
 class LUMPDevice:
     """Devices using the LEGO UART Messaging Protocol."""
 
-    def __init__(self, port: Port):
+    def __init__(self, port: _Port):
         """LUMPDevice(port)
 
         Arguments:
@@ -75,7 +75,7 @@ class LUMPDevice:
         """
 
 
-class DCMotor(CommonDCMotor):
+class DCMotor(_common.DCMotor):
     """DC Motor for LEGO® MINDSTORMS EV3."""
 
 
@@ -88,7 +88,7 @@ class Ev3devSensor:
     port_index: int
     """Index of the ev3dev sysfs `lego-port`_ class."""
 
-    def __init__(self, port: Port):
+    def __init__(self, port: _Port):
         """Ev3devSensor(port)
 
         Arguments:
@@ -111,7 +111,7 @@ class Ev3devSensor:
 class AnalogSensor:
     """Generic or custom analog sensor."""
 
-    def __init__(self, port: Port):
+    def __init__(self, port: _Port):
         """AnalogSensor(port)
 
         Arguments:
@@ -167,7 +167,7 @@ class AnalogSensor:
 class I2CDevice:
     """Generic or custom I2C device."""
 
-    def __init__(self, port: Port, address: int):
+    def __init__(self, port: _Port, address: int):
         """I2CDevice(port, address)
 
         Arguments:
@@ -205,7 +205,7 @@ class I2CDevice:
 class UARTDevice:
     """Generic UART device."""
 
-    def __init__(self, port: Port, baudrate: int, timeout: Optional[int] = None):
+    def __init__(self, port: _Port, baudrate: int, timeout: Optional[int] = None):
         """UARTDevice(port, baudrate, timeout=None)
 
         Arguments:

@@ -26,8 +26,9 @@ build/
 build-*/
 _build/
 
-# Test failure outputs
+# Tests
 ######################
+.pytest_cache/
 tests/*.exp
 tests/*.out
 

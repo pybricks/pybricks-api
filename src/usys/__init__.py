@@ -9,11 +9,11 @@
 This module provides a subset of the standard Python ``sys`` module.
 """
 
-from uio import FileIO
+from uio import FileIO as _FileIO
 
 # REVISIT: most functions are excluded since they aren't useful for Pybricks
 
-stdin: FileIO = FileIO()
+stdin: _FileIO = _FileIO()
 """
 Stream object (:class:`uio.FileIO`) that receives input from a connected
 terminal, if any.
@@ -25,7 +25,7 @@ Also see :func:`micropython.kbd_intr` to disable ``KeyboardInterrupt`` if you
 are passing binary data via ``stdin``.
 """
 
-stdout: FileIO = FileIO()
+stdout: _FileIO = _FileIO()
 """
 Stream object (:class:`uio.FileIO`) that sends output to a connected terminal,
 if any.
@@ -34,7 +34,7 @@ Reading may modify newline characters. Use ``usys.stdout.buffer`` instead if
 this is undesirable.
 """
 
-stderr: FileIO = FileIO()
+stderr: _FileIO = _FileIO()
 """
 Alias for :data:`stdout`.
 """
