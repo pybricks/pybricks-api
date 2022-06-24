@@ -27,7 +27,10 @@ jobs:
         python-version: "3.10"
     - run: pipx install poetry
     - run: poetry install
+      working-directory: ./jedi
     - run: poetry build
+      working-directory: ./jedi
     - run: poetry publish
+      working-directory: ./jedi
       env:
         POETRY_PYPI_TOKEN_PYPI: ${{ secrets.PYPI_PYBRICKS_JEDI_TOKEN }}
