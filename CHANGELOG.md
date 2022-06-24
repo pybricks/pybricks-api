@@ -2,7 +2,7 @@
 
 <!-- refer to https://keepachangelog.com/en/1.0.0/ for guidance -->
 
-## Unreleased
+## 3.2.0b1-r2 - 2022-06-24
 
 ### Changed
 - Moved remaining type hints from `.pyi` files to the python stub modules, and
