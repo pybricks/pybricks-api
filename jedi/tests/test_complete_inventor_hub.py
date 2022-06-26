@@ -7,7 +7,7 @@ Tests for correct code completion of the InventorHub class.
 
 
 import json
-from pybricks_jedi import SignatureHelp, complete, get_signatures, CompletionItem
+from pybricks_jedi import complete, CompletionItem
 
 IMPORT = "from pybricks.hubs import InventorHub"
 CREATE_INSTANCE = "hub = InventorHub()"
@@ -53,22 +53,6 @@ def test_hub_dot_battery_dot():
     ]
 
 
-def test_hub_dot_battery_dot_current():
-    line = "hub.battery.current("
-    code = _create_snippet(line)
-    signatures: SignatureHelp = json.loads(get_signatures(code, 3, len(line) + 1))
-    assert [s["label"] for s in signatures["signatures"]] == ["current() -> int"]
-    assert [s.get("activeParameter") for s in signatures["signatures"]] == [None]
-
-
-def test_hub_dot_battery_dot_voltage():
-    line = "hub.battery.voltage("
-    code = _create_snippet(line)
-    signatures: SignatureHelp = json.loads(get_signatures(code, 3, len(line) + 1))
-    assert [s["label"] for s in signatures["signatures"]] == ["voltage() -> int"]
-    assert [s.get("activeParameter") for s in signatures["signatures"]] == [None]
-
-
 def test_hub_dot_buttons_dot():
     line = "hub.buttons."
     code = _create_snippet(line)
@@ -76,16 +60,6 @@ def test_hub_dot_buttons_dot():
     assert [c["insertText"] for c in completions] == [
         "pressed",
     ]
-
-
-def test_hub_dot_battery_dot_pressed():
-    line = "hub.buttons.pressed("
-    code = _create_snippet(line)
-    signatures: SignatureHelp = json.loads(get_signatures(code, 3, len(line) + 1))
-    assert [s["label"] for s in signatures["signatures"]] == [
-        "pressed() -> Tuple[Button]"
-    ]
-    assert [s.get("activeParameter") for s in signatures["signatures"]] == [None]
 
 
 def test_hub_dot_charger_dot():
@@ -97,22 +71,6 @@ def test_hub_dot_charger_dot():
         "current",
         "status",
     ]
-
-
-def test_hub_dot_charger_dot_connected():
-    line = "hub.charger.connected("
-    code = _create_snippet(line)
-    signatures: SignatureHelp = json.loads(get_signatures(code, 3, len(line) + 1))
-    assert [s["label"] for s in signatures["signatures"]] == ["connected() -> bool"]
-    assert [s.get("activeParameter") for s in signatures["signatures"]] == [None]
-
-
-def test_hub_dot_charger_dot_current():
-    line = "hub.charger.current("
-    code = _create_snippet(line)
-    signatures: SignatureHelp = json.loads(get_signatures(code, 3, len(line) + 1))
-    assert [s["label"] for s in signatures["signatures"]] == ["current() -> int"]
-    assert [s.get("activeParameter") for s in signatures["signatures"]] == [None]
 
 
 def test_hub_dot_display_dot():
@@ -157,62 +115,6 @@ def test_hub_dot_light_dot():
     ]
 
 
-def test_hub_dot_light_dot_animate():
-    line = "hub.light.animate("
-    code = _create_snippet(line)
-    signatures: SignatureHelp = json.loads(get_signatures(code, 3, len(line) + 1))
-    assert [s["label"] for s in signatures["signatures"]] == [
-        "animate(colors: Collection[Color], interval: Number) -> None",
-    ]
-    assert [s.get("activeParameter") for s in signatures["signatures"]] == [0]
-    assert [
-        [p["label"] for p in s["parameters"]] for s in signatures["signatures"]
-    ] == [["colors: Collection[Color]", "interval: Number"]]
-
-
-def test_hub_dot_light_dot_animate2():
-    line = "hub.light.animate([],"
-    code = _create_snippet(line)
-    signatures: SignatureHelp = json.loads(get_signatures(code, 3, len(line) + 1))
-    assert [s["label"] for s in signatures["signatures"]] == [
-        "animate(colors: Collection[Color], interval: Number) -> None",
-    ]
-    assert [s.get("activeParameter") for s in signatures["signatures"]] == [1]
-    assert [
-        [p["label"] for p in s["parameters"]] for s in signatures["signatures"]
-    ] == [["colors: Collection[Color]", "interval: Number"]]
-
-
-def test_hub_dot_light_dot_blink():
-    line = "hub.light.blink("
-    code = _create_snippet(line)
-    signatures: SignatureHelp = json.loads(get_signatures(code, 3, len(line) + 1))
-    assert [s["label"] for s in signatures["signatures"]] == [
-        "blink(color: Color, durations: Collection[int]) -> None",
-    ]
-    assert [s.get("activeParameter") for s in signatures["signatures"]] == [0]
-
-
-def test_hub_dot_light_dot_blink2():
-    line = "hub.light.blink(Color.RED,"
-    code = _create_snippet(line)
-    signatures: SignatureHelp = json.loads(get_signatures(code, 3, len(line) + 1))
-    assert [s["label"] for s in signatures["signatures"]] == [
-        "blink(color: Color, durations: Collection[int]) -> None",
-    ]
-    assert [s.get("activeParameter") for s in signatures["signatures"]] == [1]
-
-
-def test_hub_dot_light_dot_on():
-    line = "hub.light.on("
-    code = _create_snippet(line)
-    signatures: SignatureHelp = json.loads(get_signatures(code, 3, len(line) + 1))
-    assert [s["label"] for s in signatures["signatures"]] == [
-        "on(color: Color) -> None",
-    ]
-    assert [s.get("activeParameter") for s in signatures["signatures"]] == [0]
-
-
 def test_hub_dot_speaker_dot():
     line = "hub.speaker."
     code = _create_snippet(line)
@@ -222,57 +124,6 @@ def test_hub_dot_speaker_dot():
         "play_notes",
         "volume",
     ]
-
-
-def test_hub_dot_speaker_dot_beep():
-    line = "hub.speaker.beep("
-    code = _create_snippet(line)
-    signatures: SignatureHelp = json.loads(get_signatures(code, 3, len(line) + 1))
-    assert [s["label"] for s in signatures["signatures"]] == [
-        "beep(frequency: Number=500, duration: Number=100) -> None",
-    ]
-    assert [s.get("activeParameter") for s in signatures["signatures"]] == [0]
-
-
-def test_hub_dot_speaker_dot_beep2():
-    line = "hub.speaker.beep(100,"
-    code = _create_snippet(line)
-    signatures: SignatureHelp = json.loads(get_signatures(code, 3, len(line) + 1))
-    assert [s["label"] for s in signatures["signatures"]] == [
-        "beep(frequency: Number=500, duration: Number=100) -> None",
-    ]
-    assert [s.get("activeParameter") for s in signatures["signatures"]] == [1]
-
-
-def test_hub_dot_speaker_dot_play_notes():
-    line = "hub.speaker.play_notes("
-    code = _create_snippet(line)
-    signatures: SignatureHelp = json.loads(get_signatures(code, 3, len(line) + 1))
-    assert [s["label"] for s in signatures["signatures"]] == [
-        "play_notes(notes: Iterable[str], tempo: Number=120) -> None",
-    ]
-    assert [s.get("activeParameter") for s in signatures["signatures"]] == [0]
-
-
-def test_hub_dot_speaker_dot_play_notes2():
-    line = "hub.speaker.play_notes([],"
-    code = _create_snippet(line)
-    signatures: SignatureHelp = json.loads(get_signatures(code, 3, len(line) + 1))
-    assert [s["label"] for s in signatures["signatures"]] == [
-        "play_notes(notes: Iterable[str], tempo: Number=120) -> None",
-    ]
-    assert [s.get("activeParameter") for s in signatures["signatures"]] == [1]
-
-
-def test_hub_dot_speaker_dot_volume():
-    line = "hub.speaker.volume("
-    code = _create_snippet(line)
-    signatures: SignatureHelp = json.loads(get_signatures(code, 3, len(line) + 1))
-    assert [s["label"] for s in signatures["signatures"]] == [
-        "volume() -> int",
-        "volume(volume: Number) -> None",
-    ]
-    assert [s.get("activeParameter") for s in signatures["signatures"]] == [None, 0]
 
 
 def test_hub_dot_system_dot():
@@ -285,43 +136,3 @@ def test_hub_dot_system_dot():
         "set_stop_button",
         "shutdown",
     ]
-
-
-def test_hub_dot_system_dot_name():
-    line = "hub.system.name("
-    code = _create_snippet(line)
-    signatures: SignatureHelp = json.loads(get_signatures(code, 3, len(line) + 1))
-    assert [s["label"] for s in signatures["signatures"]] == [
-        "name() -> str",
-    ]
-    assert [s.get("activeParameter") for s in signatures["signatures"]] == [None]
-
-
-def test_hub_dot_system_dot_reset_reason():
-    line = "hub.system.reset_reason("
-    code = _create_snippet(line)
-    signatures: SignatureHelp = json.loads(get_signatures(code, 3, len(line) + 1))
-    assert [s["label"] for s in signatures["signatures"]] == [
-        "reset_reason() -> int",
-    ]
-    assert [s.get("activeParameter") for s in signatures["signatures"]] == [None]
-
-
-def test_hub_dot_system_dot_set_stop_button():
-    line = "hub.system.set_stop_button("
-    code = _create_snippet(line)
-    signatures: SignatureHelp = json.loads(get_signatures(code, 3, len(line) + 1))
-    assert [s["label"] for s in signatures["signatures"]] == [
-        "set_stop_button(button: Optional[Union[Button, Iterable[Button]]]) -> None",
-    ]
-    assert [s.get("activeParameter") for s in signatures["signatures"]] == [0]
-
-
-def test_hub_dot_system_dot_shutdown():
-    line = "hub.system.shutdown("
-    code = _create_snippet(line)
-    signatures: SignatureHelp = json.loads(get_signatures(code, 3, len(line) + 1))
-    assert [s["label"] for s in signatures["signatures"]] == [
-        "shutdown() -> None",
-    ]
-    assert [s.get("activeParameter") for s in signatures["signatures"]] == [None]

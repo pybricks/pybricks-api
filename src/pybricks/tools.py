@@ -3,10 +3,15 @@
 
 """Common tools for timing and data logging."""
 
-from typing import Any
+from __future__ import annotations
+
+from typing import TYPE_CHECKING, Any
+
+if TYPE_CHECKING:
+    from .parameters import Number
 
 
-def wait(time: int) -> None:
+def wait(time: Number) -> None:
     """wait(time)
 
     Pauses the user program for a specified amount of time.
@@ -63,7 +68,7 @@ class DataLog:
         name: str = "log",
         timestamp: bool = True,
         extension: str = "csv",
-        append: bool = False
+        append: bool = False,
     ):
         """DataLog(*headers, name='log', timestamp=True, extension='csv', append=False)
 
@@ -90,3 +95,8 @@ class DataLog:
         Arguments:
             values (object, object, ...): One or more objects or values.
         """
+
+
+# HACK: hide from jedi
+if TYPE_CHECKING:
+    del Number

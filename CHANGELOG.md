@@ -2,6 +2,11 @@
 
 <!-- refer to https://keepachangelog.com/en/1.0.0/ for guidance -->
 
+## Unreleased
+
+### Fixed
+- Fixed more type hints and improved compatibility with jedi.
+
 ## 3.2.0b1-r2 - 2022-06-24
 
 ### Changed

@@ -8,25 +8,63 @@ from __future__ import annotations
 from typing import TYPE_CHECKING, Collection, Optional, Union, overload, Tuple
 
 from . import _common
-from .parameters import (
-    Button as _Button,
-    Color as _Color,
-    Direction as _Direction,
-    Port as _Port,
-)
+from .parameters import Button, Color, Direction
 
 if TYPE_CHECKING:
-    from .parameters import Number as _Number
+    from .parameters import Number, Port
 
 
 class DCMotor(_common.DCMotor):
     """LEGO® Powered Up motor without rotation sensors."""
 
+    # HACK: jedi can't find inherited __init__ so we have to duplicate docs
+    def __init__(self, port: Port, positive_direction: Direction = Direction.CLOCKWISE):
+        """__init__(port, positive_direction=Direction.CLOCKWISE)
+
+        Arguments:
+            port (Port): Port to which the motor is connected.
+            positive_direction (Direction): Which direction the motor should
+                turn when you give a positive duty cycle value.
+        """
+
 
 class Motor(_common.Motor):
     """LEGO® Powered Up motor with rotation sensors."""
 
-    def reset_angle(self, angle: Optional[int]) -> None:
+    # HACK: jedi can't find inherited __init__ so we have to duplicate docs
+    def __init__(
+        self,
+        port: Port,
+        positive_direction: Direction = Direction.CLOCKWISE,
+        gears: Optional[Union[Collection[int], Collection[Collection[int]]]] = None,
+        reset_angle: bool = True,
+    ):
+        """__init__(port, positive_direction=Direction.CLOCKWISE, gears=None, reset_angle=True)
+
+        Arguments:
+            port (Port): Port to which the motor is connected.
+            positive_direction (Direction): Which direction the motor should
+                turn when you give a positive speed value or
+                angle.
+            gears (list):
+                List of gears linked to the motor.
+
+                For example: ``[12, 36]`` represents a gear train with a
+                12-tooth and a 36-tooth gear. Use a list of lists for multiple
+                gear trains, such as ``[[12, 36], [20, 16, 40]]``.
+
+                When you specify a gear train, all motor commands and settings
+                are automatically adjusted to account for the resulting gear
+                ratio.  The motor direction remains unchanged by this.
+            reset_angle(bool):
+                Choose ``True`` to reset the rotation sensor value to the
+                absolute marker angle (between -180 and 179).
+                Choose ``False`` to keep the
+                current value, so your program knows where it left off last
+                time.
+        """
+
+    def reset_angle(self, angle: Optional[Number] = None) -> None:
         """reset_angle(angle=None)
 
         Sets the accumulated rotation angle of the motor to a desired value.
@@ -45,13 +83,13 @@ class Remote:
     light = _common.ColorLight()
     buttons = _common.Keypad(
         (
-            _Button.LEFT_MINUS,
-            _Button.RIGHT_MINUS,
-            _Button.LEFT,
-            _Button.CENTER,
-            _Button.RIGHT,
-            _Button.LEFT_PLUS,
-            _Button.RIGHT_PLUS,
+            Button.LEFT_MINUS,
+            Button.RIGHT_MINUS,
+            Button.LEFT,
+            Button.CENTER,
+            Button.RIGHT,
+            Button.LEFT_PLUS,
+            Button.RIGHT_PLUS,
         )
     )
     addresss: Union[str, None]
@@ -94,7 +132,7 @@ class Remote:
 class TiltSensor:
     """LEGO® Powered Up Tilt Sensor."""
 
-    def __init__(self, port: _Port):
+    def __init__(self, port: Port):
         """TiltSensor(port)
 
         Arguments:
@@ -116,6 +154,14 @@ class ColorDistanceSensor(_common.CommonColorSensor):
 
     light = _common.ColorLight()
 
+    # HACK: jedi can't find inherited __init__ so docs have to be duplicated
+    def __init__(self, port: Port):
+        """__init__(port)
+
+        Arguments:
+            port (Port): Port to which the sensor is connected.
+        """
+
     def distance(self) -> int:
         """distance() -> int: %
 
@@ -135,8 +181,8 @@ class PFMotor(DCMotor):
         self,
         sensor: ColorDistanceSensor,
         channel: int,
-        color: _Color,
-        positive_direction: _Direction = _Direction.CLOCKWISE,
+        color: Color,
+        positive_direction: Direction = Direction.CLOCKWISE,
     ):
         """PFMotor(sensor, channel, color, positive_direction=Direction.CLOCKWISE)
 
@@ -157,15 +203,59 @@ class PFMotor(DCMotor):
 class ColorSensor(_common.AmbientColorSensor):
     """LEGO® SPIKE Color Sensor."""
 
-    lights = _common.LightArray(3)
+    class _LightArray(_common.LightArray):
+        def __init__(self):
+            super().__init__(3)
+
+        def on(self, brightness: Union[Number, Tuple[Number, Number, Number]]) -> None:
+            """on(brightness)
+
+            Turns on the lights at the specified brightness.
+
+            Arguments:
+                brightness (Number or tuple, %):
+                    A single value will set the brightness of all three lights
+                    to the same value. A tuple of 3 values will set the
+                    brightness of each LED individually.
+            """
+            return super().on(brightness)
+
+    lights = _LightArray()
+
+    # HACK: jedi can't find inherited __init__ so docs have to be duplicated
+    def __init__(self, port: Port):
+        """__init__(port)
+
+        Arguments:
+            port (Port): Port to which the sensor is connected.
+        """
 
 
 class UltrasonicSensor:
     """LEGO® SPIKE Color Sensor."""
 
-    lights = _common.LightArray(3)
+    class _LightArray(_common.LightArray):
+        def __init__(self):
+            super().__init__(4)
 
-    def __init__(self, port: _Port):
+        def on(
+            self, brightness: Union[Number, Tuple[Number, Number, Number, Number]]
+        ) -> None:
+            """on(brightness)
+
+            Turns on the lights at the specified brightness.
+
+            Arguments:
+                brightness (Number or tuple, %):
+                    A single value will set the brightness of all four lights
+                    to the same value. A tuple of 4 values will set the
+                    brightness of each LED individually.
+            """
+            return super().on(brightness)
+
+    lights = _LightArray()
+
+    def __init__(self, port: Port):
         """UltrasonicSensor(port)
 
         Arguments:
@@ -199,7 +289,7 @@ class UltrasonicSensor:
 class ForceSensor:
     """LEGO® SPIKE Force Sensor."""
 
-    def __init__(self, port: _Port):
+    def __init__(self, port: Port):
         """ForceSensor(port)
 
         Arguments:
@@ -224,7 +314,7 @@ class ForceSensor:
             Movement up to approximately 8.00 mm.
         """
 
-    def pressed(self, force: _Number = 3) -> bool:
+    def pressed(self, force: Number = 3) -> bool:
         """pressed(force=3) -> bool
 
         Checks if the sensor button is pressed.
@@ -255,7 +345,7 @@ class ColorLightMatrix:
     LEGO® SPIKE 3x3 Color Light Matrix.
     """
 
-    def __init__(self, port: _Port):
+    def __init__(self, port: Port):
         """ColorLightMatrix(port)
 
         Arguments:
@@ -264,7 +354,7 @@ class ColorLightMatrix:
         """
         ...
 
-    def on(self, color: Union[_Color, Collection[_Color]]) -> None:
+    def on(self, color: Union[Color, Collection[Color]]) -> None:
         """on(colors)
 
         Turns the lights on.
@@ -288,7 +378,7 @@ class ColorLightMatrix:
 class InfraredSensor:
     """LEGO® Powered Up Infrared Sensor."""
 
-    def __init__(self, port: _Port):
+    def __init__(self, port: Port):
         """InfraredSensor(port)
 
         Arguments:
@@ -328,14 +418,14 @@ class InfraredSensor:
 class Light:
     """LEGO® Powered Up Light."""
 
-    def __init__(self, port: _Port):
+    def __init__(self, port: Port):
         """Light(port)
 
         Arguments:
             port (Port): Port to which the device is connected.
         """
 
-    def on(self, brightness: _Number = 100) -> None:
+    def on(self, brightness: Number = 100) -> None:
         """on(brightness=100)
 
         Turns on the light at the specified brightness.
@@ -349,3 +439,12 @@ class Light:
         """off()
 
         Turns off the light."""
+
+
+# HACK: exclude from jedi
+if TYPE_CHECKING:
+    del Button
+    del Color
+    del Direction
+    del Number
+    del Port

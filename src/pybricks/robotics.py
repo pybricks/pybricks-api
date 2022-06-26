@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: MIT
-# Copyright (c) 2018-2021 The Pybricks Authors
+# Copyright (c) 2018-2022 The Pybricks Authors
 
 """Robotics module for the Pybricks API."""
 
@@ -8,10 +8,11 @@ from __future__ import annotations
 from typing import Tuple, Optional, overload, TYPE_CHECKING
 
 from . import _common
-from .parameters import Stop as _Stop
+from .parameters import Stop
 
 if TYPE_CHECKING:
-    from .parameters import Number as _Number
+    from ._common import Motor
+    from .parameters import Number
 
 
 class DriveBase:
@@ -50,10 +51,10 @@ class DriveBase:
 
     def __init__(
         self,
-        left_motor: _common.Motor,
-        right_motor: _common.Motor,
-        wheel_diameter: _Number,
-        axle_track: _Number,
+        left_motor: Motor,
+        right_motor: Motor,
+        wheel_diameter: Number,
+        axle_track: Number,
     ):
         """DriveBase(left_motor, right_motor, wheel_diameter, axle_track)
 
@@ -67,7 +68,7 @@ class DriveBase:
                 both wheels touch the ground.
         """
 
-    def drive(self, speed: _Number, turn_rate: _Number) -> None:
+    def drive(self, speed: Number, turn_rate: Number) -> None:
         """drive(speed, turn_rate)
 
         Starts driving at the specified speed and turn rate. Both values are
@@ -118,10 +119,10 @@ class DriveBase:
     @overload
     def settings(
         self,
-        straight_speed: Optional[_Number],
-        straight_acceleration: Optional[_Number],
-        turn_rate: Optional[_Number],
-        turn_acceleration: Optional[_Number],
+        straight_speed: Optional[Number] = None,
+        straight_acceleration: Optional[Number] = None,
+        turn_rate: Optional[Number] = None,
+        turn_acceleration: Optional[Number] = None,
     ) -> None:
         ...
 
@@ -147,7 +148,9 @@ class DriveBase:
                 deceleration of the robot.
         """
 
-    def straight(self, distance: _Number, then=_Stop.HOLD, wait=True) -> None:
+    def straight(
+        self, distance: Number, then: Stop = Stop.HOLD, wait: bool = True
+    ) -> None:
         """straight(distance, then=Stop.HOLD, wait=True)
 
         Drives straight for a given distance and then stops.
@@ -159,7 +162,7 @@ class DriveBase:
                          with the rest of the program.
         """
 
-    def turn(self, angle: _Number, then=_Stop.HOLD, wait=True) -> None:
+    def turn(self, angle: Number, then: Stop = Stop.HOLD, wait: bool = True) -> None:
         """turn(angle, then=Stop.HOLD, wait=True)
 
         Turns in place by a given angle and then stops.
@@ -172,7 +175,7 @@ class DriveBase:
         """
 
     def curve(
-        self, radius: _Number, angle: _Number, then=_Stop.HOLD, wait=True
+        self, radius: Number, angle: Number, then: Stop = Stop.HOLD, wait: bool = True
     ) -> None:
         """curve(radius, angle, then=Stop.HOLD, wait=True)
 
@@ -185,3 +188,10 @@ class DriveBase:
             wait (bool): Wait for the maneuver to complete before continuing
                          with the rest of the program.
         """
+
+
+# HACK: hide from jedi
+if TYPE_CHECKING:
+    del Motor
+    del Number
+    del Stop

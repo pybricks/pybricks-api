@@ -1,8 +1,12 @@
-from enum import IntEnum
+import io
 import json
-from typing_extensions import TypedDict, NotRequired
+import re
+from enum import IntEnum
+
+import docstring_parser
 import jedi
-from jedi.api.classes import Completion, Signature, ParamName
+from jedi.api.classes import BaseName, Completion, Name, ParamName, Signature
+from typing_extensions import NotRequired, TypedDict
 
 # Packages included in Pybricks firmware that ships with Pybricks Code.
 PYBRICKS_CODE_PACKAGES = {
@@ -132,6 +136,23 @@ class Command(TypedDict):
     arguments: NotRequired[list]
 
 
+class UriComponents(TypedDict):
+    scheme: str
+    authority: str
+    path: str
+    query: str
+    fragment: str
+
+
+class IMarkdownString(TypedDict):
+    value: str
+    isTrusted: NotRequired[bool]
+    supportThemeIcons: NotRequired[bool]
+    supportHtml: NotRequired[bool]
+    baseUri: NotRequired[UriComponents]
+    uris: NotRequired[dict[str, UriComponents]]
+
+
 class CompletionItemKind(IntEnum):
     Method = 0
     Function = 1
@@ -251,6 +272,66 @@ def _is_pybricks(c: Completion) -> bool:
     return True
 
 
+def _get_docstring(name: BaseName) -> str:
+    """
+    Gets the docstring for a name.
+    """
+
+    docstring = name.docstring(raw=True)
+
+    # jedi does not appear to be smart enough to use __init__ docstring for class
+    if name.type == "class" and isinstance(name, Name):
+        n: Name
+        for n in name.defined_names():
+            if n.name == "__init__":
+                docstring = "\n".join([docstring, _get_docstring(n)])
+
+    return docstring
+
+
+def _parse_docstring(text: str) -> tuple[IMarkdownString, list[IMarkdownString]]:
+    """
+    Parses a doc string, removes the overload declarations, performs some
+    fixups and extracts the individual parameter strings.
+
+    Args:
+        The raw docstring.
+
+    Returns:
+        A tuple with the fixed up doc string and a list of parameter doc strings.
+    """
+    # docstring_parser does not support signatures at the beginning of the
+    # docstring, so we have to remove them
+    # https://www.sphinx-doc.org/en/master/usage/extensions/autodoc.html#confval-autodoc_docstring_signature
+
+    lines, end_of_signatures = [], False
+
+    for line in io.StringIO(text).readlines():
+        # signatures look like: "name(params...)"
+        if not end_of_signatures and re.match(r"^\w+\(.*\)", line):
+            continue
+
+        end_of_signatures = True
+
+        # TODO: we may want to do some restructured text to markdown fixes,
+        # e.g. strip off ":class:" from ":class:`SomeClass`" and replace
+        # ".. some-directive::" with an appropriate header
+
+        lines.append(line)
+
+    text = "".join(lines)
+
+    doc = docstring_parser.parse(text, docstring_parser.DocstringStyle.GOOGLE)
+
+    # convert to numpy doc for better markdown rendering (section names are underlined)
+    numpy_doc = docstring_parser.compose(doc, docstring_parser.Style.NUMPYDOC)
+
+    docstring = IMarkdownString(value=numpy_doc)
+    param_docstrings = [IMarkdownString(value=p.description) for p in doc.params]
+
+    return docstring, param_docstrings
+
+
 def _map_completion_kind(type: str) -> CompletionItemKind:
     match type:
         case "module":
@@ -294,22 +375,23 @@ def _map_completion_item(
             endLineNumber=line,
             endColumn=column,
         ),
-        documentation=completion.docstring(),
+        documentation=_parse_docstring(_get_docstring(completion))[0],
     )
 
 
-def _map_parameter(param: ParamName) -> ParameterInformation:
-    # NB: it is not possible to get docstring for individual parameters from jedi
-    return ParameterInformation(label=param.to_string())
+def _map_parameter(param: ParamName, docstr: str) -> ParameterInformation:
+    return ParameterInformation(label=param.to_string(), documentation=docstr)
 
 
 def _map_signature(signature: Signature) -> SignatureInformation:
     optional = {} if signature.index is None else dict(activeParameter=signature.index)
 
+    docstr, param_docstr = _parse_docstring(_get_docstring(signature))
+
     return SignatureInformation(
         label=signature.to_string(),
-        documentation=signature.docstring(),
-        parameters=[_map_parameter(p) for p in signature.params],
+        documentation=docstr,
+        parameters=[_map_parameter(*p) for p in zip(signature.params, param_docstr)],
         **optional,
     )
 

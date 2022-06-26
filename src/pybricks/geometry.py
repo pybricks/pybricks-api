@@ -5,7 +5,7 @@
 
 from __future__ import annotations
 
-from typing import Tuple, Collection, overload
+from typing import Sequence, Tuple, overload
 
 
 class Matrix:
@@ -51,7 +51,7 @@ class Matrix:
     def __ifloordiv__(self, other) -> Matrix:
         ...
 
-    def __init__(self, rows: Collection[Collection[int]]):
+    def __init__(self, rows: Sequence[Sequence[float]]):
         """Matrix(rows)
 
         Arguments:
@@ -73,12 +73,31 @@ class Matrix:
 
 @overload
 def vector(x: float, y: float) -> Matrix:
-    ...
+    """
+    Convenience function to create a :class:`.Matrix` with the shape (``2``, ``1``).
+
+    Arguments:
+        x (float): x-coordinate of the vector.
+        y (float): y-coordinate of the vector.
+
+    Returns:
+        A matrix with the shape of a column vector.
+    """
 
 
 @overload
 def vector(x: float, y: float, z: float) -> Matrix:
-    ...
+    """
+    Convenience function to create a :class:`.Matrix` with the shape (``3``, ``1``).
+
+    Arguments:
+        x (float): x-coordinate of the vector.
+        y (float): y-coordinate of the vector.
+        z (float): z-coordinate of the vector.
+
+    Returns:
+        A matrix with the shape of a column vector.
+    """
 
 
 def vector(*args):

@@ -4,7 +4,7 @@
 """LEGO® Programmable Hubs."""
 from . import _common
 from .ev3dev import _speaker
-from .geometry import Axis as _Axis
+from .geometry import Axis
 from .media.ev3dev import Image as _Image
 from .parameters import Button as _Button
 
@@ -63,7 +63,7 @@ class TechnicHub:
     system = _common.System()
     button = _common.Keypad([_Button.CENTER])
 
-    def __init__(self, top_side: _Axis = _Axis.Z, front_side: _Axis = _Axis.X):
+    def __init__(self, top_side: Axis = Axis.Z, front_side: Axis = Axis.X):
         """TechnicHub(top_side=Axis.Z, front_side=Axis.X)
 
         Initializes the hub. Optionally, specify how the hub is
@@ -100,7 +100,7 @@ class PrimeHub:
     imu = _common.IMU()
     system = _common.System()
 
-    def __init__(self, top_side: _Axis = _Axis.Z, front_side: _Axis = _Axis.X):
+    def __init__(self, top_side: Axis = Axis.Z, front_side: Axis = Axis.X):
         """PrimeHub(top_side=Axis.Z, front_side=Axis.X)
 
         Initializes the hub. Optionally, specify how the hub is
@@ -118,3 +118,7 @@ class PrimeHub:
 
 class InventorHub(PrimeHub):
     """LEGO® MINDSTORMS Inventor Hub."""
+
+
+# HACK: hide from jedi
+del Axis

@@ -107,7 +107,7 @@ class DCMotor:
         is generated while the motor is still moving."""
 
     @overload
-    def settings(self, max_voltage: Optional[int] = None) -> None:
+    def settings(self, max_voltage: Number) -> None:
         ...
 
     @overload
@@ -140,16 +140,16 @@ class Control:
     """
 
     @overload
-    def limits(self) -> Tuple[int, int, int]:
+    def limits(
+        self,
+        speed: Optional[Number] = None,
+        acceleration: Optional[Number] = None,
+        torque: Optional[Number] = None,
+    ) -> None:
         ...
 
     @overload
-    def limits(
-        self,
-        speed: Optional[int] = None,
-        acceleration: Optional[int] = None,
-        torque: Optional[int] = None,
-    ) -> None:
+    def limits(self) -> Tuple[int, int, int]:
         ...
 
     def limits(self, *args):
@@ -173,18 +173,18 @@ class Control:
         """
 
     @overload
-    def pid(self) -> Tuple[int, int, int, None, int]:
+    def pid(
+        self,
+        kp: Optional[Number] = None,
+        ki: Optional[Number] = None,
+        kd: Optional[Number] = None,
+        reserved: Optional[Number] = None,
+        integral_rate: Optional[Number] = None,
+    ) -> None:
         ...
 
     @overload
-    def pid(
-        self,
-        kp: Optional[int] = None,
-        ki: Optional[int] = None,
-        kd: Optional[int] = None,
-        reserved: Optional[int] = None,
-        integral_rate: Optional[int] = None,
-    ) -> None:
+    def pid(self) -> Tuple[int, int, int, None, int]:
         ...
 
     def pid(self, *args):
@@ -210,13 +210,13 @@ class Control:
         """
 
     @overload
-    def target_tolerances(self) -> Tuple[int, int]:
+    def target_tolerances(
+        self, speed: Optional[Number] = None, position: Optional[Number] = None
+    ) -> None:
         ...
 
     @overload
-    def target_tolerances(
-        self, speed: Optional[int] = None, position: Optional[int] = None
-    ) -> None:
+    def target_tolerances(self) -> Tuple[int, int]:
         ...
 
     def target_tolerances(self, *args):
@@ -236,13 +236,13 @@ class Control:
         """
 
     @overload
-    def stall_tolerances(self) -> Tuple[int, int]:
+    def stall_tolerances(
+        self, speed: Optional[Number] = None, time: Optional[Number] = None
+    ) -> None:
         ...
 
     @overload
-    def stall_tolerances(
-        self, speed: Optional[int] = None, time: Optional[int] = None
-    ) -> None:
+    def stall_tolerances(self) -> Tuple[int, int]:
         ...
 
     def stall_tolerances(self, speed, time):
@@ -356,7 +356,7 @@ class Motor(DCMotor):
 
         """
 
-    def reset_angle(self, angle: Number) -> None:
+    def reset_angle(self, angle: Optional[Number]) -> None:
         """
         reset_angle(angle)
 
@@ -485,11 +485,11 @@ class Speaker:
     """Plays beeps and sounds using a speaker."""
 
     @overload
-    def volume(self) -> int:
+    def volume(self, volume: Number) -> None:
         ...
 
     @overload
-    def volume(self, volume: Number) -> None:
+    def volume(self) -> int:
         ...
 
     def volume(self, *args):
@@ -570,7 +570,7 @@ class ColorLight:
 
         Turns off the light."""
 
-    def blink(self, color: Color, durations: Collection[int]) -> None:
+    def blink(self, color: Color, durations: Collection[Number]) -> None:
         """blink(color, durations)
 
         Blinks the light at a given color by turning it on and off for given
@@ -599,7 +599,7 @@ class ColorLight:
         keeps running. When the animation completes, it repeats.
 
         Arguments:
-            colors (iter): Sequence of :class:`Color <.parameters.Color>`
+            colors (list): Sequence of :class:`Color <.parameters.Color>`
                 values.
             interval (Number, ms): Time between color updates.
         """
@@ -617,7 +617,7 @@ class LightArray:
             n (int): Number of lights
         """
 
-    def on(self, brightness: Union[int, Collection[int]]) -> None:
+    def on(self, brightness: Union[Number, Collection[Number]]) -> None:
         """on(brightness)
 
         Turns on the lights at the specified brightness.
@@ -688,15 +688,15 @@ class LightMatrix:
             interval (Number, ms): Time to display each image in the list.
         """
 
-    def pixel(self, row: int, column: int, brightness: Number = 100) -> None:
+    def pixel(self, row: Number, column: Number, brightness: Number = 100) -> None:
         """pixel(row, column, brightness=100)
 
         Turns on one pixel at the specified brightness.
 
         Arguments:
-            row (int): Vertical grid index, starting at 0 from the top.
-            column (int): Horizontal grid index, starting at 0 from the left.
-            brightness (:ref:`brightness`): Brightness of the pixel.
+            row (Number): Vertical grid index, starting at 0 from the top.
+            column (Number): Horizontal grid index, starting at 0 from the left.
+            brightness (Number :ref:`brightness`): Brightness of the pixel.
         """
 
     def off(self) -> None:
@@ -749,13 +749,13 @@ class Keypad:
     def __init__(self, active_buttons):
         ...
 
-    def pressed(self) -> Tuple[Button]:
-        """pressed() -> Tuple[Button]
+    def pressed(self) -> Collection[Button]:
+        """pressed() -> Collection[Button]
 
         Checks which buttons are currently pressed.
 
         Returns:
-            Tuple of pressed buttons.
+            Set of pressed buttons.
         """
 
 
@@ -846,11 +846,11 @@ class Accelerometer(SimpleAccelerometer):
     """Get measurements from an accelerometer."""
 
     @overload
-    def acceleration(self) -> Matrix:
+    def acceleration(self, axis: Axis) -> float:
         ...
 
     @overload
-    def acceleration(self, axis: Axis) -> float:
+    def acceleration(self) -> Matrix:
         ...
 
     def acceleration(self, *args):
@@ -915,11 +915,11 @@ class IMU(Accelerometer):
         """
 
     @overload
-    def angular_velocity(self) -> Matrix:
+    def angular_velocity(self, axis: Axis) -> float:
         ...
 
     @overload
-    def angular_velocity(self, axis: Axis) -> float:
+    def angular_velocity(self) -> Matrix:
         ...
 
     def angular_velocity(self, *args):
@@ -1003,13 +1003,13 @@ class CommonColorSensor:
         ...
 
     @overload
-    def detectable_colors(self) -> Tuple[Color]:
+    def detectable_colors(self) -> Collection[Color]:
         ...
 
     def detectable_colors(self, *args):
         """
         detectable_colors(colors)
-        detectable_colors() -> Tuple[Color]
+        detectable_colors() -> Collection[Color]
 
         Configures which colors the ``color()`` method should detect.
 
@@ -1017,11 +1017,10 @@ class CommonColorSensor:
         This way, the full-color measurements are rounded to the nearest
         desired color, and other colors are ignored. This improves reliability.
 
-        If you give no arguments, the currently chosen colors will be returned
-        as a tuple.
+        If you give no arguments, the currently chosen colors will be returned.
 
         Arguments:
-            colors (tuple): Tuple of :class:`Color <.parameters.Color>`
+            colors (list or tuple): List of :class:`Color <.parameters.Color>`
                 objects: the colors that you want to detect. You can pick
                 standard colors such as ``Color.MAGENTA``, or provide your
                 own colors like ``Color(h=348, s=96, v=40)`` for even
