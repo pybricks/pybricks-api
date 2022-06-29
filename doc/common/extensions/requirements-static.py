@@ -26,6 +26,7 @@ HUB_FEATURES = {
     "technichub": {"technichub"} | FEATURES_MEDIUM,
     "primehub": {"primehub", "inventorhub"} | FEATURES_LARGE,
     "inventorhub": {"primehub", "inventorhub"} | FEATURES_LARGE,
+    "essentialhub": {"essentialhub"} | FEATURES_LARGE,
 }
 
 

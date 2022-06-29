@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: MIT
-# Copyright (c) 2018-2020 The Pybricks Authors
+# Copyright (c) 2018-2022 The Pybricks Authors
 
 """LEGO® Programmable Hubs."""
 from . import _common
@@ -84,14 +84,14 @@ class EssentialHub:
 
     # These class attributes are here for auto-documentation only.
     # In reality, they are instance attributes created by __init__.
-    battery = _Battery()
-    button = _Keypad((_Button.CENTER,))
-    charger = _Charger()
-    light = _ColorLight()
-    imu = _IMU()
-    system = _System()
+    battery = _common.Battery()
+    button = _common.Keypad([_Button.CENTER])
+    charger = _common.Charger()
+    light = _common.ColorLight()
+    imu = _common.IMU()
+    system = _common.System()
 
-    def __init__(self, top_side=_Axis.Z, front_side=_Axis.X):
+    def __init__(self, top_side=Axis.Z, front_side=Axis.X):
         """__init__(top_side=Axis.Z, front_side=Axis.X)
 
         Initializes the hub. Optionally, specify how the hub is
