@@ -409,6 +409,62 @@ METHOD_PARAMS = [
     pytest.param("pybricks.hubs", "PrimeHub", "system.name", [([], "str")]),
     pytest.param("pybricks.hubs", "PrimeHub", "system.shutdown", [([], "None")]),
     pytest.param("pybricks.hubs", "PrimeHub", "system.reset_reason", [([], "int")]),
+    pytest.param(
+        "pybricks.hubs", "EssentialHub", "light.on", [(["color: Color"], "None")]
+    ),
+    pytest.param("pybricks.hubs", "EssentialHub", "light.off", [([], "None")]),
+    pytest.param(
+        "pybricks.hubs",
+        "EssentialHub",
+        "light.blink",
+        [(["color: Color", "durations: Collection[Number]"], "None")],
+    ),
+    pytest.param(
+        "pybricks.hubs",
+        "EssentialHub",
+        "light.animate",
+        [(["colors: Collection[Color]", "interval: Number"], "None")],
+    ),
+    pytest.param(
+        "pybricks.hubs", "EssentialHub", "button.pressed", [([], "Collection[Button]")]
+    ),
+    pytest.param("pybricks.hubs", "EssentialHub", "imu.up", [([], "Side")]),
+    pytest.param(
+        "pybricks.hubs", "EssentialHub", "imu.tilt", [([], "Tuple[int, int]")]
+    ),
+    pytest.param(
+        "pybricks.hubs",
+        "EssentialHub",
+        "imu.acceleration",
+        [(["axis: Axis"], "float"), ([], "Matrix")],
+    ),
+    pytest.param(
+        "pybricks.hubs",
+        "EssentialHub",
+        "imu.angular_velocity",
+        [(["axis: Axis"], "float"), ([], "Matrix")],
+    ),
+    pytest.param("pybricks.hubs", "EssentialHub", "imu.heading", [([], "float")]),
+    pytest.param(
+        "pybricks.hubs",
+        "EssentialHub",
+        "imu.reset_heading",
+        [(["angle: Number"], "None")],
+    ),
+    pytest.param("pybricks.hubs", "EssentialHub", "battery.voltage", [([], "int")]),
+    pytest.param("pybricks.hubs", "EssentialHub", "battery.current", [([], "int")]),
+    pytest.param("pybricks.hubs", "EssentialHub", "charger.connected", [([], "bool")]),
+    pytest.param("pybricks.hubs", "EssentialHub", "charger.current", [([], "int")]),
+    pytest.param("pybricks.hubs", "EssentialHub", "charger.status", [([], "int")]),
+    pytest.param(
+        "pybricks.hubs",
+        "EssentialHub",
+        "system.set_stop_button",
+        [(["button: Optional[Union[Button, Iterable[Button]]]"], "None")],
+    ),
+    pytest.param("pybricks.hubs", "EssentialHub", "system.name", [([], "str")]),
+    pytest.param("pybricks.hubs", "EssentialHub", "system.shutdown", [([], "None")]),
+    pytest.param("pybricks.hubs", "EssentialHub", "system.reset_reason", [([], "int")]),
     # TODO: iodevices module here
     pytest.param("pybricks.pupdevices", "DCMotor", "dc", [(["duty: Number"], "None")]),
     pytest.param("pybricks.pupdevices", "DCMotor", "stop", [([], "None")]),

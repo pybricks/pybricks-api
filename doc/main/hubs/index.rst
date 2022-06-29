@@ -12,8 +12,8 @@
    movehub
    cityhub
    technichub
-   essentialhub
    primehub
+   essentialhub
 
 .. pybricks-classlink:: MoveHub
 
@@ -33,12 +33,6 @@
     :height: 10 em
     :target: technichub.html
 
-.. pybricks-classlink:: EssentialHub
-
-.. figure:: ../../main/images/primehub.png
-    :height: 10 em
-    :target: essentialhub.html
-
 .. pybricks-classlink:: PrimeHub
 
 .. figure:: ../../main/images/primehub.png
@@ -51,3 +45,8 @@
     :height: 10 em
     :target: primehub.html
 
+.. pybricks-classlink:: EssentialHub
+
+.. figure:: ../../main/images/essentialhub.png
+    :height: 10 em
+    :target: essentialhub.html

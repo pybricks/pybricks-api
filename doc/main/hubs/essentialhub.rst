@@ -3,15 +3,23 @@
 Essential Hub
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. figure:: ../../main/images/primehub.png
+.. figure:: ../../main/images/essentialhub.png
     :height: 15 em
+
+
+.. note:: Pybricks support for this hub is in beta.
+            Check the `installation instructions`_ to try it out.
+            The following functions may change before the final release.
+
+.. _installation instructions: https://pybricks.com/install/
+
 
 .. autoclass:: pybricks.hubs.EssentialHub
     :no-members:
 
     .. rubric:: Using the hub status light
 
-    .. figure:: ../../main/images/primehub_light_label.png
+    .. figure:: ../../main/images/essentialhub_light_label.png
         :width: 22 em
 
     .. automethod:: pybricks.hubs::EssentialHub.light.on
@@ -23,9 +31,6 @@ Essential Hub
     .. automethod:: pybricks.hubs::EssentialHub.light.animate
 
     .. rubric:: Using the button
-
-    .. figure:: ../../main/images/primehub_buttons_label.png
-        :width: 22 em
 
     .. automethod:: pybricks.hubs::EssentialHub.button.pressed
 
@@ -139,6 +144,12 @@ Reading acceleration and angular velocity on one axis
 
 System examples
 ----------------------------------
+
+Using the stop button during your program
+*****************************************
+
+.. literalinclude::
+    ../../../examples/pup/hub_essentialhub/button_single.py
 
 Turning the hub off
 *****************************************

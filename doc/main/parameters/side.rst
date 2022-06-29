@@ -41,6 +41,11 @@ Side
     .. figure:: ../../main/images/orientation_inventorhub_label.png
         :height: 17 em
 
+    **Essential Hub**
+
+    .. figure:: ../../main/images/orientation_essentialhub_label.png
+        :height: 17 em
+
     **Move Hub**
 
     .. figure:: ../../main/images/orientation_movehub_label.png
