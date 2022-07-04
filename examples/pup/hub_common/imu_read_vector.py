@@ -1,8 +1,9 @@
-from pybricks.hubs import EssentialHub
+# ThisHub = TechnicHub PrimeHub EssentialHub
+from pybricks.hubs import ThisHub
 from pybricks.tools import wait
 
 # Initialize the hub.
-hub = EssentialHub()
+hub = ThisHub()
 
 # Get the acceleration vector in g's.
 print(hub.imu.acceleration() / 9810)

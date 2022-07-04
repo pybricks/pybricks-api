@@ -4,6 +4,7 @@
 # Pybricks documentation build configuration file
 #
 import os
+import sys
 
 # General information about the project.
 project = "pybricks"
@@ -50,3 +51,7 @@ if "ide" in tags.tags:  # noqa F821
     extensions.remove("sphinx.ext.mathjax")  # noqa F821
     extensions.append("sphinx.ext.imgmath")  # noqa F821
     html_theme_options["prev_next_buttons_location"] = None  # noqa F821
+
+# Build hub specific example scripts.
+sys.path.append(os.path.abspath("../../examples/pup/hub_common"))
+import make_examples  # noqa F401, E402

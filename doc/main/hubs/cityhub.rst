@@ -44,25 +44,25 @@ Turning the light on and off
 ****************************
 
 .. literalinclude::
-    ../../../examples/pup/hub_cityhub/light_off.py
+    ../../../examples/pup/hub_common/build/light_off_cityhub.py
 
 Changing brightness and using custom colors
 *******************************************
 
 .. literalinclude::
-    ../../../examples/pup/hub_cityhub/light_hsv.py
+    ../../../examples/pup/hub_common/build/light_hsv_cityhub.py
 
 Making the light blink
 **********************
 
 .. literalinclude::
-    ../../../examples/pup/hub_cityhub/light_blink.py
+    ../../../examples/pup/hub_common/build/light_blink_cityhub.py
 
 Creating light animations
 *************************
 
 .. literalinclude::
-    ../../../examples/pup/hub_cityhub/light_animate.py
+    ../../../examples/pup/hub_common/build/light_animate_cityhub.py
 
 Button and system examples
 ----------------------------------
@@ -71,10 +71,10 @@ Using the stop button during your program
 *****************************************
 
 .. literalinclude::
-    ../../../examples/pup/hub_cityhub/button_single.py
+    ../../../examples/pup/hub_common/build/button_single_cityhub.py
 
 Turning the hub off
 *****************************************
 
 .. literalinclude::
-    ../../../examples/pup/hub_cityhub/system_shutdown.py
+    ../../../examples/pup/hub_common/build/system_shutdown_cityhub.py

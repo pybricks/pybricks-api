@@ -1,9 +1,10 @@
-from pybricks.hubs import PrimeHub
+# ThisHub = TechnicHub PrimeHub MoveHub EssentialHub
+from pybricks.hubs import ThisHub
 from pybricks.parameters import Color, Side
 from pybricks.tools import wait
 
 # Initialize the hub.
-hub = PrimeHub()
+hub = ThisHub()
 
 # Define colors for each side in a dictionary.
 SIDE_COLORS = {

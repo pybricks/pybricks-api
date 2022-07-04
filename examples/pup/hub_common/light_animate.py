@@ -1,10 +1,11 @@
-from pybricks.hubs import EssentialHub
+# ThisHub = CityHub TechnicHub PrimeHub EssentialHub
+from pybricks.hubs import ThisHub
 from pybricks.parameters import Color
 from pybricks.tools import wait
 from umath import sin, pi
 
 # Initialize the hub.
-hub = EssentialHub()
+hub = ThisHub()
 
 # Make an animation with multiple colors.
 hub.light.animate([Color.RED, Color.GREEN, Color.NONE], interval=500)

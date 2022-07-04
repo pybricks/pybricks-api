@@ -1,9 +1,10 @@
-from pybricks.hubs import EssentialHub
+# ThisHub = MoveHub CityHub TechnicHub PrimeHub EssentialHub
+from pybricks.hubs import ThisHub
 from pybricks.parameters import Color
 from pybricks.tools import wait
 
 # Initialize the hub.
-hub = EssentialHub()
+hub = ThisHub()
 
 # Turn the light on and off 5 times.
 for i in range(5):

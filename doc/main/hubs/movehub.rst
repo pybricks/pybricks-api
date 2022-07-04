@@ -56,13 +56,13 @@ Turning the light on and off
 ******************************
 
 .. literalinclude::
-    ../../../examples/pup/hub_movehub/light_off.py
+    ../../../examples/pup/hub_common/build/light_off_movehub.py
 
 Making the light blink
 ******************************
 
 .. literalinclude::
-    ../../../examples/pup/hub_movehub/light_blink.py
+    ../../../examples/pup/hub_common/build/light_blink_movehub.py
 
 IMU examples
 ---------------
@@ -71,7 +71,7 @@ Testing which way is up
 ********************************
 
 .. literalinclude::
-    ../../../examples/pup/hub_movehub/imu_up.py
+    ../../../examples/pup/hub_common/build/imu_up_movehub.py
 
 Reading acceleration
 **************************************************
@@ -86,10 +86,10 @@ Using the stop button during your program
 *****************************************
 
 .. literalinclude::
-    ../../../examples/pup/hub_movehub/button_single.py
+    ../../../examples/pup/hub_common/build/button_single_movehub.py
 
 Turning the hub off
 *****************************************
 
 .. literalinclude::
-    ../../../examples/pup/hub_movehub/system_shutdown.py
+    ../../../examples/pup/hub_common/build/system_shutdown_movehub.py

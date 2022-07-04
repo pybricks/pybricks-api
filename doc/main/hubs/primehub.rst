@@ -119,25 +119,25 @@ Turning the light on and off
 ****************************
 
 .. literalinclude::
-    ../../../examples/pup/hub_primehub/light_off.py
+    ../../../examples/pup/hub_common/build/light_off_primehub.py
 
 Changing brightness and using custom colors
 *******************************************
 
 .. literalinclude::
-    ../../../examples/pup/hub_primehub/light_hsv.py
+    ../../../examples/pup/hub_common/build/light_hsv_primehub.py
 
 Making the light blink
 **********************
 
 .. literalinclude::
-    ../../../examples/pup/hub_primehub/light_blink.py
+    ../../../examples/pup/hub_common/build/light_blink_primehub.py
 
 Creating light animations
 *************************
 
 .. literalinclude::
-    ../../../examples/pup/hub_primehub/light_animate.py
+    ../../../examples/pup/hub_common/build/light_animate_primehub.py
 
 Matrix display examples
 -----------------------
@@ -209,32 +209,32 @@ Testing which way is up
 ********************************
 
 .. literalinclude::
-    ../../../examples/pup/hub_primehub/imu_up.py
+    ../../../examples/pup/hub_common/build/imu_up_primehub.py
 
 
 Reading the tilt value
 ********************************
 
 .. literalinclude::
-    ../../../examples/pup/hub_primehub/imu_tilt.py
+    ../../../examples/pup/hub_common/build/imu_tilt_primehub.py
 
 Using a custom hub orientation
 **************************************************
 
 .. literalinclude::
-    ../../../examples/pup/hub_primehub/imu_tilt_blast.py
+    ../../../examples/pup/hub_common/build/imu_tilt_blast_primehub.py
 
 Reading acceleration and angular velocity vectors
 **************************************************
 
 .. literalinclude::
-    ../../../examples/pup/hub_primehub/imu_read_vector.py
+    ../../../examples/pup/hub_common/build/imu_read_vector_primehub.py
 
 Reading acceleration and angular velocity on one axis
 *****************************************************
 
 .. literalinclude::
-    ../../../examples/pup/hub_primehub/imu_read_scalar.py
+    ../../../examples/pup/hub_common/build/imu_read_scalar_primehub.py
 
 System examples
 ----------------------------------
@@ -249,7 +249,7 @@ Turning the hub off
 *****************************************
 
 .. literalinclude::
-    ../../../examples/pup/hub_primehub/system_shutdown.py
+    ../../../examples/pup/hub_common/build/system_shutdown_primehub.py
 
 .. _installation instructions: https://pybricks.com/install/
 

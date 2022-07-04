@@ -1,9 +1,10 @@
-from pybricks.hubs import MoveHub
+# ThisHub = MoveHub CityHub TechnicHub PrimeHub EssentialHub
+from pybricks.hubs import ThisHub
 from pybricks.parameters import Color
 from pybricks.tools import wait
 
 # Initialize the hub
-hub = MoveHub()
+hub = ThisHub()
 
 # Keep blinking red on and off.
 hub.light.blink(Color.RED, [500, 500])

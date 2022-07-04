@@ -1,8 +1,9 @@
-from pybricks.hubs import TechnicHub
+# ThisHub = TechnicHub PrimeHub EssentialHub
+from pybricks.hubs import ThisHub
 from pybricks.tools import wait
 
 # Initialize the hub.
-hub = TechnicHub()
+hub = ThisHub()
 
 while True:
     # Read the tilt values.

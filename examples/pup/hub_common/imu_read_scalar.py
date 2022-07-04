@@ -1,10 +1,10 @@
-# ExampleHub = TechnicHub PrimeHub EssentialHub
-from pybricks.hubs import ExampleHub
+# ThisHub = TechnicHub PrimeHub EssentialHub
+from pybricks.hubs import ThisHub
 from pybricks.tools import wait
 from pybricks.geometry import Axis
 
 # Initialize the hub.
-hub = ExampleHub()
+hub = ThisHub()
 
 # Get the acceleration or angular_velocity along a single axis.
 # If you need only one value, this is more memory efficient.

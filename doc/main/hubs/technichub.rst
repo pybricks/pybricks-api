@@ -58,25 +58,25 @@ Turning the light on and off
 ****************************
 
 .. literalinclude::
-    ../../../examples/pup/hub_technichub/light_off.py
+    ../../../examples/pup/hub_common/build/light_off_technichub.py
 
 Changing brightness and using custom colors
 *******************************************
 
 .. literalinclude::
-    ../../../examples/pup/hub_technichub/light_hsv.py
+    ../../../examples/pup/hub_common/build/light_hsv_technichub.py
 
 Making the light blink
 **********************
 
 .. literalinclude::
-    ../../../examples/pup/hub_technichub/light_blink.py
+    ../../../examples/pup/hub_common/build/light_blink_technichub.py
 
 Creating light animations
 *************************
 
 .. literalinclude::
-    ../../../examples/pup/hub_technichub/light_animate.py
+    ../../../examples/pup/hub_common/build/light_animate_technichub.py
 
 IMU examples
 ---------------
@@ -85,32 +85,32 @@ Testing which way is up
 ********************************
 
 .. literalinclude::
-    ../../../examples/pup/hub_technichub/imu_up.py
+    ../../../examples/pup/hub_common/build/imu_up_technichub.py
 
 
 Reading the tilt value
 ********************************
 
 .. literalinclude::
-    ../../../examples/pup/hub_technichub/imu_tilt.py
+    ../../../examples/pup/hub_common/build/imu_tilt_technichub.py
 
 Using a custom hub orientation
 **************************************************
 
 .. literalinclude::
-    ../../../examples/pup/hub_technichub/imu_tilt_blast.py
+    ../../../examples/pup/hub_common/build/imu_tilt_blast_technichub.py
 
 Reading acceleration and angular velocity vectors
 **************************************************
 
 .. literalinclude::
-    ../../../examples/pup/hub_technichub/imu_read_vector.py
+    ../../../examples/pup/hub_common/build/imu_read_vector_technichub.py
 
 Reading acceleration and angular velocity on one axis
 *****************************************************
 
 .. literalinclude::
-    ../../../examples/pup/hub_technichub/imu_read_scalar.py
+    ../../../examples/pup/hub_common/build/imu_read_scalar_technichub.py
 
 Button and system examples
 ----------------------------------
@@ -119,10 +119,10 @@ Using the stop button during your program
 *****************************************
 
 .. literalinclude::
-    ../../../examples/pup/hub_technichub/button_single.py
+    ../../../examples/pup/hub_common/build/button_single_technichub.py
 
 Turning the hub off
 *****************************************
 
 .. literalinclude::
-    ../../../examples/pup/hub_technichub/system_shutdown.py
+    ../../../examples/pup/hub_common/build/system_shutdown_technichub.py
