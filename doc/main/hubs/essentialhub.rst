@@ -19,9 +19,6 @@ Essential Hub
 
     .. rubric:: Using the hub status light
 
-    .. figure:: ../../main/images/essentialhub_light_label.png
-        :width: 22 em
-
     .. automethod:: pybricks.hubs::EssentialHub.light.on
 
     .. automethod:: pybricks.hubs::EssentialHub.light.off
@@ -98,15 +95,6 @@ Creating light animations
 
 .. literalinclude::
     ../../../examples/pup/hub_common/build/light_animate_essentialhub.py
-
-Button examples
----------------
-
-Detecting button presses
-************************
-
-.. literalinclude::
-    ../../../examples/pup/hub_common/build/button_single_essentialhub.py
 
 IMU examples
 ---------------
