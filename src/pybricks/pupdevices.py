@@ -203,24 +203,7 @@ class PFMotor(DCMotor):
 class ColorSensor(_common.AmbientColorSensor):
     """LEGO® SPIKE Color Sensor."""
 
-    class _LightArray(_common.LightArray):
-        def __init__(self):
-            super().__init__(3)
-
-        def on(self, brightness: Union[Number, Tuple[Number, Number, Number]]) -> None:
-            """on(brightness)
-
-            Turns on the lights at the specified brightness.
-
-            Arguments:
-                brightness (Number or tuple, %):
-                    A single value will set the brightness of all three lights
-                    to the same value. A tuple of 3 values will set the
-                    brightness of each LED individually.
-            """
-            return super().on(brightness)
-
-    lights = _LightArray()
+    lights = _common.LightArray3()
 
     # HACK: jedi can't find inherited __init__ so docs have to be duplicated
     def __init__(self, port: Port):
@@ -234,26 +217,7 @@ class ColorSensor(_common.AmbientColorSensor):
 class UltrasonicSensor:
     """LEGO® SPIKE Color Sensor."""
 
-    class _LightArray(_common.LightArray):
-        def __init__(self):
-            super().__init__(4)
-
-        def on(
-            self, brightness: Union[Number, Tuple[Number, Number, Number, Number]]
-        ) -> None:
-            """on(brightness)
-
-            Turns on the lights at the specified brightness.
-
-            Arguments:
-                brightness (Number or tuple, %):
-                    A single value will set the brightness of all four lights
-                    to the same value. A tuple of 4 values will set the
-                    brightness of each LED individually.
-            """
-            return super().on(brightness)
-
-    lights = _LightArray()
+    lights = _common.LightArray4()
 
     def __init__(self, port: Port):
         """UltrasonicSensor(port)

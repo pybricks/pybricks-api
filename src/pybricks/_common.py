@@ -605,34 +605,44 @@ class ColorLight:
         """
 
 
-class LightArray:
-    """Control an array of single-color lights."""
+class LightArray3:
+    """Control an array of three single-color lights."""
 
-    def __init__(self, n: int):
-        """LightArray(n)
-
-        Initializes the light array.
-
-        Arguments:
-            n (int): Number of lights
-        """
-
-    def on(self, brightness: Union[Number, Collection[Number]]) -> None:
+    def on(self, brightness: Union[Number, Tuple[Number, Number, Number]]) -> None:
         """on(brightness)
 
         Turns on the lights at the specified brightness.
 
         Arguments:
-            brightness (Number or tuple):
-                Brightness (0--100) of each light, in the order shown above.
-                If you give just one brightness value, all lights get that
-                brightness.
+            brightness (Number or tuple, %):
+                Use a single value to set the brightness of all lights at the
+                same time. Use a tuple of three values to set the brightness
+                of each light individually.
         """
 
     def off(self) -> None:
         """off()
 
         Turns off all the lights."""
+
+
+class LightArray4(LightArray3):
+    """Control an array of four single-color lights."""
+
+    def on(
+        self, brightness: Union[Number, Tuple[Number, Number, Number, Number]]
+    ) -> None:
+        """on(brightness)
+
+        Turns on the lights at the specified brightness.
+
+        Arguments:
+            brightness (Number or tuple, %):
+                Use a single value to set the brightness of all lights at the
+                same time. Use a tuple of four values to set the brightness
+                of each light individually. The order of the lights is shown
+                in the image above.
+        """
 
 
 class LightMatrix:
