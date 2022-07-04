@@ -58,3 +58,4 @@ genrst/
 # Virtual environment
 ######################
 .venv/
+.python-version
