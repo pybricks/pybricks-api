@@ -11,7 +11,7 @@ import os
 
 from .geometry import Matrix as _Matrix
 
-if TYPE_CHECKING or os.environ["SPHINX_BUILD"] == "True":
+if TYPE_CHECKING or os.environ.get("SPHINX_BUILD") == "True":
     Number = Union[int, float]
     """
     Numbers can be represented as integers or floating point values:
