@@ -331,7 +331,7 @@ class Font:
                 use the default language. [#font_lang]_
             script (str):
                 A unicode script identifier such as ``'Runr'`` or ``None``.
-        """
+        """   # noqa: E501
 
     @property
     def family(self) -> str:

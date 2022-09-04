@@ -335,7 +335,7 @@ class Motor(DCMotor):
                 Choose ``False`` to keep the
                 current value, so your program knows where it left off last
                 time.
-        """
+        """   # noqa: E501
 
     def angle(self) -> int:
         """angle() -> int: deg

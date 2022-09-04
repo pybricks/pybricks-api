@@ -62,7 +62,7 @@ class Motor(_common.Motor):
                 Choose ``False`` to keep the
                 current value, so your program knows where it left off last
                 time.
-        """
+        """   # noqa: E501
 
     def reset_angle(self, angle: Optional[Number] = None) -> None:
         """reset_angle(angle=None)

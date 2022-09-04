@@ -60,7 +60,7 @@ class Matrix:
         """
 
     @property
-    def T(self) -> Matrix:
+    def T(self) -> Matrix:   # noqa: N802
         """Returns a new :class:`.Matrix` that is the transpose of the
         original."""
 

@@ -36,7 +36,7 @@ if TYPE_CHECKING or os.environ["SPHINX_BUILD"] == "True":
 
 
 class _PybricksEnumMeta(type(Enum)):
-    def __dir__(cls):
+    def __dir__(cls):   # noqa: N805
         yield "__class__"
         yield "__name__"
         for member in cls:
