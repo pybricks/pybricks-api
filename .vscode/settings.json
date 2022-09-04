@@ -1,4 +1,10 @@
 {
+    "editor.rulers": [88],
+
+    "files.exclude": {
+      "**/__pycache__": true,
+    },
+
     "python.autoComplete.extraPaths": ["jedi/src"],
     "python.formatting.provider": "black",
     "python.linting.pylintEnabled": false,
