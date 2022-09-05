@@ -7,6 +7,9 @@
 ### Added
 - Code auto-completion for `EssentialHub`.
 
+### Fixed
+- Fixed some type hints in `parameters` submodule.
+
 ## 3.2.0b1-r3 - 2022-06-26
 
 ### Fixed
