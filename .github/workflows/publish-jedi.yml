@@ -1,0 +1,23 @@
+name: Release @pybricks/jedi
+
+on:
+  push:
+    tags: 
+    - '@pybricks/jedi/**'
+
+jobs:
+  publish_ide_docs:
+    runs-on: ubuntu-22.04
+    steps:
+    - uses: actions/checkout@v2
+    # Setup .npmrc file to publish to npm
+    - uses: actions/setup-node@v3
+      with:
+        node-version: '16.x'
+        registry-url: 'https://registry.npmjs.org'
+    - run: ./build.py
+      working-directory: npm/jedi
+    - run: yarn publish
+      working-directory: npm/jedi/build
+      env:
+        NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
