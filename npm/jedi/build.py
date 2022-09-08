@@ -12,7 +12,7 @@ BUILD_DIR = (pathlib.Path(__file__).parent / "build").resolve()
 
 package_json = {
     "name": "@pybricks/jedi",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Binary distribution of pybricks-jedi Python package and dependencies for use with Pyodide.",
     "repository": {
         "type": "git",
@@ -107,7 +107,7 @@ package_json["license"] = (
 )
 
 # create "exports" item from collect whl map
-package_json["exports"] = {k: f"./{v}" for k, v in whl_map.items()}
+package_json["exports"] = {f"./{k}.whl": f"./{v}" for k, v in whl_map.items()}
 
 with open(BUILD_DIR / "package.json", "w") as f:
     json.dump(package_json, f, indent=2)
@@ -123,3 +123,10 @@ with open(BUILD_DIR / "LICENSE", "w") as f:
         f.writelines([NEWLINE, DIVIDER, NEWLINE])
         f.write(text)
         f.write(NEWLINE)
+
+# copy additional files
+
+ROOT_DIR = (pathlib.Path(__file__).parent).resolve()
+
+for file in "README.md", "CHANGELOG.md":
+    shutil.copy(ROOT_DIR / file, BUILD_DIR / file)
