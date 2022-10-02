@@ -59,3 +59,9 @@ genrst/
 ######################
 .venv/
 .python-version
+
+# Generated LDRAW output
+######################
+stderr-ldview
+stdout-ldview
+LPub3D/
