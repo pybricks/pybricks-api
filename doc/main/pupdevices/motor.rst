@@ -5,7 +5,7 @@ Motors with rotation sensors
 
 .. _fig_pupmotors:
 
-.. figure:: ../../main/images/pupmotors_label.png
+.. figure:: ../../main/diagrams/pupmotors.png
    :width: 100 %
    :alt: pupmotors
 

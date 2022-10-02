@@ -3,7 +3,7 @@
 Force Sensor
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. figure:: ../../main/images/sensor_force.png
+.. figure:: ../../main/cad/output/pupdevice-force.png
    :width: 35 %
 
 .. autoclass:: pybricks.pupdevices.ForceSensor

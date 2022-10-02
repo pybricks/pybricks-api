@@ -3,7 +3,7 @@
 Ultrasonic Sensor
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. figure:: ../../main/images/sensor_ultrasonic_lights_label.png
+.. figure:: ../../main/diagrams/sensor_ultrasonic_lights.png
    :width: 80 %
 
 .. autoclass:: pybricks.pupdevices.UltrasonicSensor

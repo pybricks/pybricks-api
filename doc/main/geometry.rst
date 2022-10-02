@@ -41,7 +41,7 @@ though the *hub* accelerates backward.
 
 .. _fig_imuexamples:
 
-.. figure:: ../main/images/imuexamples_label.png
+.. figure:: ../main/diagrams/imuexamples.png
    :width: 100 %
 
    How to configure the ``top_side`` and ``front_side`` settings for three

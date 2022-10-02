@@ -5,7 +5,7 @@ Motors without rotation sensors
 
 .. _fig_pupdcmotors:
 
-.. figure:: ../../main/images/pupdcmotors_label.png
+.. figure:: ../../main/diagrams/pupdcmotors.png
    :width: 70 %
    :alt: pupmotors
    :align: center

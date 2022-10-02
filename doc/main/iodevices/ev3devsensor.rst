@@ -5,8 +5,8 @@ Ev3dev sensors
 
    This class is only available on EV3.
 
-.. figure:: ../../main/images/sensor_ev3dev.png
-   :width: 70 %
+.. figure:: ../../main/cad/output/iodevice-rj12pcbbox.png
+   :width: 30 %
 
 EV3 MicroPython is built on top of ev3dev, which means that a sensor
 may be supported even if it is not listed in this documentation. If so, you can

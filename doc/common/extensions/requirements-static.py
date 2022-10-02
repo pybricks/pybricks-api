@@ -47,8 +47,8 @@ class PybricksRequirementsStaticDirective(Directive):
 
         for hub in HUB_FEATURES:
             for compat in ("true", "false"):
-                uri = "compat_{0}_{1}_label.png".format(hub, compat)
-                src_uri = path.join(env.app.builder.srcdir, "images", uri)
+                uri = "compat_{0}_{1}.png".format(hub, compat)
+                src_uri = path.join(env.app.builder.srcdir, "diagrams", uri)
                 build_uri = path.join(env.app.builder.outdir, "_images", uri)
                 copyfile(src_uri, build_uri)
 

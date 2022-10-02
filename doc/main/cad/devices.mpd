@@ -1,0 +1,841 @@
+0 FILE main.ldr
+0 main
+0 Name: main.ldr
+0 Author: Pybricks
+0 !LPUB RESOLUTION GLOBAL 150 DPI
+0 !LPUB PAGE SIZE GLOBAL 33.1102 46.8110 A0
+0 !LPUB PAGE MARGINS GLOBAL 0.0000 0.0000
+0 !LPUB PLI SHOW GLOBAL FALSE
+0 !LPUB PAGE ORIENTATION GLOBAL LANDSCAPE
+0 !LPUB PAGE BACKGROUND GLOBAL TRANSPARENT
+0 !LPUB ASSEM MODEL_SCALE GLOBAL  0.3
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 0 730 0 -37 1 0 0 0 1 0 0 0 1 pupdevices.ldr
+1 0 0 0 140 1 0 0 0 1 0 0 0 1 hubs.ldr
+1 0 70 0 333 1 0 0 0 1 0 0 0 1 pupmotors.ldr
+1 0 1340 380 700 0 0 1 0 1 0 -1 0 0 pupdcmotors.ldr
+1 0 -590 380 570 1 0 0 0 1 0 0 0 1 nxtdevices.ldr
+1 0 -280 380 1730 1 0 0 0 1 0 0 0 1 ev3devices.ldr
+1 0 -720 380 1840 1 0 0 0 1 0 0 0 1 iodevices.ldr
+0 BUFEXCHG A STORE
+1 0 -720 380 1840 1 0 0 0 1 0 0 0 1 imu-orientation.ldr
+0 BUFEXCHG A RETRIEVE
+0 ROTSTEP 40 -35 0 ABS
+0 
+0 STEP
+0 !LPUB INSERT COVER_PAGE BACK
+0 NOFILE
+0
+0 FILE pupdevices.ldr
+0 New Model
+0 Name: pupdevices.ldr
+0 Author: Pybricks
+0 Unofficial Model
+0 !LPUB ASSEM MODEL_SCALE GLOBAL  0.35
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+0 BUFEXCHG A STORE
+0 GHOST 1 0 1043 0 -136 1 0 0 0 1 0 0 0 1 pupdevice-pfmotor.ldr
+0 BUFEXCHG A RETRIEVE
+1 0 349 0 -225 1 0 0 0 1 0 0 0 1 pupdevice-color.ldr
+1 0 -31 0 -215 1 0 0 0 1 0 0 0 1 pupdevice-force.ldr
+1 0 139 0 -235 1 0 0 0 1 0 0 0 1 pupdevice-ultrasonic.ldr
+1 0 460 0 20 1 0 0 0 1 0 0 0 1 pupdevice-tilt.ldr
+1 0 300 0 20 1 0 0 0 1 0 0 0 1 pupdevice-colordistance.ldr
+1 0 130 0 20 1 0 0 0 1 0 0 0 1 pupdevice-infrared.ldr
+1 0 510 0 -280 1 0 0 0 1 0 0 0 1 pupdevice-lightmatrix.ldr
+1 0 560 0 60 1 0 0 0 1 0 0 0 1 pupdevice-light.ldr
+1 0 330 0 350 1 0 0 0 1 0 0 0 1 pupdevice-remote.ldr
+0 ROTSTEP 35 -35 0 ABS
+0 
+0 
+0 
+0 
+0 NOFILE
+0
+0 FILE hubs.ldr
+0 New Model
+0 Name: hubs.ldr
+0 Author: Pybricks
+0 Unofficial Model
+0 !LPUB ASSEM MODEL_SCALE GLOBAL  0.35
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 0 80 30 -270 1 0 0 0 1 0 0 0 1 hub-prime.ldr
+1 0 -150 30 -130 1 0 0 0 1 0 0 0 1 hub-inventor.ldr
+0 ROTSTEP 40 -35 0 ABS
+1 0 280 0 -460 1 0 0 0 1 0 0 0 1 hub-essential.ldr
+1 0 0 0 0 1 0 0 0 1 0 0 0 1 hubs-lwp3.ldr
+0 STEP
+0 
+0 NOFILE
+0
+0 FILE pupdevice-color.ldr
+0 New Model
+0 Name: pupdevice-color.ldr
+0 Author: Pybricks
+0 Unofficial Model
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+0 GHOST 1 15 0 0 -50 -1 0 0 0 -1 0 0 0 1 37308.dat
+0 ROTSTEP 0 0 0 ABS
+1 15 0 0 0 -1 0 0 0 -1 0 0 0 1 37308c01.dat
+0 ROTSTEP 35 -35 0 ABS
+0 
+0 NOFILE
+0
+0 FILE pupdevice-ultrasonic.ldr
+0 New Model
+0 Name: pupdevice-ultrasonic.ldr
+0 Author: Pybricks
+0 Unofficial Model
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 15 0 0 0 1 0 0 0 1 0 0 0 1 37316.dat
+0 ROTSTEP 0 0 0 ABS
+1 511 0 14 0 -1 0 0 0 -1 0 0 0 1 u9218c01.dat
+0 ROTSTEP 35 -35 0 ABS
+0 
+0 NOFILE
+0
+0 FILE pupdevice-force.ldr
+0 New Model
+0 Name: pupdevice-force.ldr
+0 Author: Pybricks
+0 Unofficial Model
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 15 0 0 0 -1 0 0 0 -1 0 0 0 1 37312c01.dat
+0 ROTSTEP 35 -35 0 ABS
+0 
+0 NOFILE
+0
+0 FILE pupdevice-colordistance.ldr
+0 New Model
+0 Name: pupdevice-colordistance.ldr
+0 Author: Pybricks
+0 Unofficial Model
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 15 0 0 0 1 0 0 0 1 0 0 0 1 26912.dat
+1 256 0 8 35 -1 0 0 0 -1 0 0 0 1 u9218c01.dat
+0 ROTSTEP 35 -35 0 ABS
+0 
+0 NOFILE
+0
+0 FILE pupdevice-infrared.ldr
+0 New Model
+0 Name: pupdevice-infrared.ldr
+0 Author: Pybricks
+0 Unofficial Model
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 15 0 0 0 0 0 1 0 1 0 -1 0 0 20844.dat
+1 256 0 8 35 -1 0 0 0 -1 0 0 0 1 u9218c01.dat
+0 ROTSTEP 35 -35 0 ABS
+0 
+0 NOFILE
+0
+0 FILE pupdevice-tilt.ldr
+0 New Model
+0 Name: pupdevice-tilt.ldr
+0 Author: Pybricks
+0 Unofficial Model
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 256 0 8 35 -1 0 0 0 -1 0 0 0 1 u9218c01.dat
+1 15 0 0 0 0 0 1 0 1 0 -1 0 0 20841.dat
+0 ROTSTEP 35 -35 0 ABS
+1 15 0 0 0 0 0 1 0 1 0 -1 0 0 20841.dat
+0 ROTSTEP 45 -135 0 ABS
+0 
+0 
+0 NOFILE
+0
+0 FILE hub-technic.ldr
+0 New Model
+0 Name: hub-technic.ldr
+0 Author: Pybricks
+0 Unofficial Model
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 71 0 0 0 1 0 0 0 1 0 0 0 1 22127.dat
+0 ROTSTEP 35 -35 0 ABS
+1 71 0 0 0 1 0 0 0 1 0 0 0 1 22127.dat
+0 ROTSTEP 45 -135 0 ABS
+0 NOFILE
+0
+0 FILE hub-prime.ldr
+0 New Model
+0 Name: hub-prime.ldr
+0 Author: Pybricks
+0 Unofficial Model
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 15 0 0 0 1 0 0 0 1 0 0 0 1 45601.dat
+1 14 0 0 0 1 0 0 0 1 0 0 0 1 45610.dat
+0 ROTSTEP 35 -35 0 ABS
+1 14 0 0 0 1 0 0 0 1 0 0 0 1 45610.dat
+0 ROTSTEP 45 45 0 ABS
+1 14 0 0 0 1 0 0 0 1 0 0 0 1 45610.dat
+0 ROTSTEP 90 0 0 ABS
+0 
+0 NOFILE
+0
+0 FILE hub-inventor.ldr
+0 New Model
+0 Name: hub-inventor.ldr
+0 Author: Pybricks
+0 Unofficial Model
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 15 0 0 0 1 0 0 0 1 0 0 0 1 67718c01.dat
+0 ROTSTEP 35 -35 0 ABS
+1 15 0 0 0 1 0 0 0 1 0 0 0 1 67718c01.dat
+0 ROTSTEP 45 45 0 ABS
+0 
+0 NOFILE
+0
+0 FILE hub-city.ldr
+0 New Model
+0 Name: hub-city.ldr
+0 Author: Pybricks
+0 Unofficial Model
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 15 0 0 0 1 0 0 0 1 0 0 0 1 28738.dat
+0 ROTSTEP 35 -35 0 ABS
+0 
+0 NOFILE
+0
+0 FILE hub-move.ldr
+0 New Model
+0 Name: hub-move.ldr
+0 Author: Pybricks
+0 Unofficial Model
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 15 0 0 0 1 0 0 0 1 0 0 0 1 26910.dat
+0 ROTSTEP 35 -125 0 ABS
+1 15 0 0 0 1 0 0 0 1 0 0 0 1 26910.dat
+0 ROTSTEP 35 55 0 ABS
+1 15 0 0 0 1 0 0 0 1 0 0 0 1 26910.dat
+0 ROTSTEP 35 -35 0 ABS
+1 15 0 0 0 1 0 0 0 1 0 0 0 1 26910.dat
+0 ROTSTEP 45 45 0 ABS
+0 
+0 NOFILE
+0
+0 FILE hub-essential.ldr
+0 New Model
+0 Name: hub-essential.ldr
+0 Author: Pybricks
+0 Unofficial Model
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 15 0 0 0 1 0 0 0 1 0 0 0 1 67351c01.dat
+0 ROTSTEP 35 -35 0 ABS
+1 15 0 0 0 1 0 0 0 1 0 0 0 1 67351c01.dat
+0 ROTSTEP 45 45 0 ABS
+0 
+0 
+0 
+0 
+0 
+0 
+0 NOFILE
+0
+0 FILE pupdevice-lightmatrix.ldr
+0 New Model
+0 Name: pupdevice-lightmatrix.ldr
+0 Author: Pybricks
+0 Unofficial Model
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 15 0 0 0 -1 0 0 0 -1 0 0 0 1 47592c01.dat
+0 ROTSTEP 35 -35 0 ABS
+0 
+0 NOFILE
+0
+0 FILE pupdevice-light.ldr
+0 New Model
+0 Name: pupdevice-light.ldr
+0 Author: Pybricks
+0 Unofficial Model
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 0 0 0 0 1 0 0 0 1 0 0 0 1 22168.dat
+0 ROTSTEP 35 -35 0 ABS
+0 
+0 NOFILE
+0
+0 FILE pupdevice-pfmotor.ldr
+0 New Model
+0 Name: pupdevice-pfmotor.ldr
+0 Author: Pybricks
+0 Unofficial Model
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 71 445 -9 202 0 0 -1 0 1 0 1 0 0 99499c01.dat
+1 71 120 0 230 0 0 1 0 1 0 -1 0 0 58123.dat
+1 15 2.655 -31 364.341 0.965925 0 -0.258819 0 1 0 0.258819 0 0.965925 26912.dat
+1 256 -6.404 -23 398.149 -0.965925 0 -0.258819 0 -1 0 -0.258819 0 0.965925 u9218c01.dat
+0 ROTSTEP 35 -35 0 ABS
+0 
+0 NOFILE
+0
+0 FILE pupdevice-remote.ldr
+0 New Model
+0 Name: pupdevice-remote.ldr
+0 Author: Pybricks
+0 Unofficial Model
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 15 0 0 0 -1 0 0 0 1 0 0 0 -1 28739.dat
+0 ROTSTEP 35 -35 0 ABS
+0 
+0 
+0 NOFILE
+0
+0 FILE pupmotors.ldr
+0 New Model
+0 Name: pupmotors.ldr
+0 Author: Pybricks
+0 Unofficial Model
+0 !LPUB ASSEM MODEL_SCALE GLOBAL  0.35
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 15 450 -76 -20 0 0 1 1 0 0 0 1 0 54675c01.dat
+1 15 -30 -76 280 0 0 1 1 0 0 0 1 0 68488c01.dat
+1 71 550 -76 200 0 0 1 1 0 0 0 1 0 69730c01.dat
+1 15 180 -72 140 0 0 1 1 0 0 0 1 0 54696c01.dat
+1 15 260 -72 350 0 0 1 1 0 0 0 1 0 54696p02c01.dat
+1 71 430 -84 470 1 0 0 0 1 0 0 0 1 22169c01.dat
+1 71 590 -86 360 1 0 0 0 1 0 0 0 1 22172c01.dat
+1 15 300 -110 630 1 0 0 0 1 0 0 0 1 26913c01.dat
+0 ROTSTEP 35 -35 0 ABS
+0 
+0 
+0 NOFILE
+0
+0 FILE pupdcmotors.ldr
+0 New Model
+0 Name: pupdcmotors.ldr
+0 Author: Pybricks
+0 Unofficial Model
+0 !LPUB ASSEM MODEL_SCALE GLOBAL  0.35
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 256 61 -346 -31 1 0 0 0 1 0 0 0 1 u9218c01.dat
+1 0 60 -312 -150 1 0 0 0 1 0 0 0 1 3706.dat
+1 0 100 -312 -150 0 0 -1 0 1 0 1 0 0 u9241.dat
+1 0 100 -312 -30 0 0 -1 0 1 0 1 0 0 u9241.dat
+1 0 20 -312 -30 0 0 1 0 1 0 -1 0 0 u9241.dat
+1 0 20 -312 -150 0 0 1 0 1 0 -1 0 0 u9241.dat
+1 0 60 -312 -30 1 0 0 0 1 0 0 0 1 3706.dat
+1 0 90 -344 -90 1 0 0 0 1 0 0 0 1 2871b.dat
+1 0 60 -352 -90 -1 0 0 0 1 0 0 0 -1 2894.dat
+1 0 30 -344 -90 -1 0 0 0 1 0 0 0 -1 2871b.dat
+1 15 10 -376 -310 0 0 -1 0 1 0 1 0 0 21980c01.dat
+0 ROTSTEP 25 45 0 ABS
+0 
+0 
+0 
+0 
+0 NOFILE
+0
+0 FILE nxtdevices.ldr
+0 New Model
+0 Name: nxtdevices.ldr
+0 Author: Pybricks
+0 Unofficial Model
+0 !LPUB ASSEM MODEL_SCALE GLOBAL  0.35
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+0 GHOST 1 0 20 0 600 1 0 0 0 1 0 0 0 1 nxtdevice-nxt.ldr
+1 0 60 0 110 1 0 0 0 1 0 0 0 1 nxtdevice-touch.ldr
+1 0 180 0 30 1 0 0 0 1 0 0 0 1 nxtdevice-light.ldr
+1 0 290 0 -60 1 0 0 0 1 0 0 0 1 nxtdevice-color.ldr
+1 0 -80 0 200 1 0 0 0 1 0 0 0 1 nxtdevice-ultrasonic.ldr
+1 0 410 0 -150 1 0 0 0 1 0 0 0 1 nxtdevice-sound.ldr
+1 0 -210 0 420 1 0 0 0 1 0 0 0 1 nxtdevice-temperature.ldr
+1 0 340 0 520 1 0 0 0 1 0 0 0 1 nxtdevice-energy.ldr
+0 ROTSTEP 35 -35 0 ABS
+0 
+0 NOFILE
+0
+0 FILE nxtdevice-nxt.ldr
+0 New Model
+0 Name: nxtdevice-nxt.ldr
+0 Author: Pybricks
+0 Unofficial Model
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 151 0 0 0 1 0 0 0 1 0 0 0 1 53788c01.dat
+0 ROTSTEP 35 -35 0 ABS
+0 
+0 NOFILE
+0
+0 FILE nxtdevice-touch.ldr
+0 New Model
+0 Name: nxtdevice-touch.ldr
+0 Author: Pybricks
+0 Unofficial Model
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 151 0 0 0 1 0 0 0 1 0 0 0 1 53793.dat
+0 ROTSTEP 35 -35 0 ABS
+0 
+0 NOFILE
+0
+0 FILE nxtdevice-light.ldr
+0 New Model
+0 Name: nxtdevice-light.ldr
+0 Author: Pybricks
+0 Unofficial Model
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 151 0 0 0 1 0 0 0 1 0 0 0 1 55969.dat
+0 ROTSTEP 35 -35 0 ABS
+0 
+0 NOFILE
+0
+0 FILE nxtdevice-color.ldr
+0 New Model
+0 Name: nxtdevice-color.ldr
+0 Author: Pybricks
+0 Unofficial Model
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 151 0 0 0 1 0 0 0 1 0 0 0 1 64892.dat
+0 ROTSTEP 35 -35 0 ABS
+0 
+0 NOFILE
+0
+0 FILE nxtdevice-ultrasonic.ldr
+0 New Model
+0 Name: nxtdevice-ultrasonic.ldr
+0 Author: Pybricks
+0 Unofficial Model
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 151 0 0 0 1 0 0 0 1 0 0 0 1 53792.dat
+0 ROTSTEP 35 -35 0 ABS
+0 
+0 NOFILE
+0
+0 FILE nxtdevice-sound.ldr
+0 New Model
+0 Name: nxtdevice-sound.ldr
+0 Author: Pybricks
+0 Unofficial Model
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 151 0 0 0 1 0 0 0 1 0 0 0 1 55963.dat
+0 ROTSTEP 35 -35 0 ABS
+0 
+0 NOFILE
+0
+0 FILE nxtdevice-temperature.ldr
+0 New Model
+0 Name: nxtdevice-temperature.ldr
+0 Author: Pybricks
+0 Unofficial Model
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 151 0 0 0 1 0 0 0 1 0 0 0 1 62840.dat
+0 ROTSTEP 35 -35 0 ABS
+0 
+0 NOFILE
+0
+0 FILE nxtdevice-energy.ldr
+0 New Model
+0 Name: nxtdevice-energy.ldr
+0 Author: Pybricks
+0 Unofficial Model
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 71 0 0 0 1 0 0 0 1 0 0 0 1 87576c01.dat
+1 71 280 70 -220 1 0 0 0 1 0 0 0 1 87578.dat
+0 ROTSTEP 35 -35 0 ABS
+0 
+0 NOFILE
+0
+0 FILE nxtdevice-vernier.ldr
+0 New Model
+0 Name: nxtdevice-vernier.ldr
+0 Author: Pybricks
+0 Unofficial Model
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 151 0 0 0 1 0 0 0 1 0 0 0 1 53793.dat
+0 ROTSTEP 35 -35 0 ABS
+0 
+0 NOFILE
+0
+0 FILE nxtdevice-motor.ldr
+0 New Model
+0 Name: nxtdevice-motor.ldr
+0 Author: Pybricks
+0 Unofficial Model
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 151 0 0 0 1 0 0 0 1 0 0 0 1 53787.dat
+0 ROTSTEP 35 -35 0 ABS
+0 
+0 NOFILE
+0
+0 FILE ev3device-ev3.ldr
+0 New Model
+0 Name: ev3device-ev3.ldr
+0 Author: Pybricks
+0 Unofficial Model
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 15 0 0 0 1 0 0 0 1 0 0 0 1 95646c01.dat
+0 ROTSTEP 35 -35 0 ABS
+0 
+0 NOFILE
+0
+0 FILE ev3device-motors.ldr
+0 New Model
+0 Name: ev3device-motors.ldr
+0 Author: Pybricks
+0 Unofficial Model
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 15 370 -296 -430 0 0 1 0 1 0 -1 0 0 95658.dat
+1 15 90 -296 -340 1 0 0 0 1 0 0 0 1 99455.dat
+1 151 610 -296 -580 0 0 1 0 -1 0 1 0 0 53787.dat
+0 ROTSTEP 35 -35 0 ABS
+0 
+0 NOFILE
+0
+0 FILE ev3device-large.ldr
+0 New Model
+0 Name: ev3device-large.ldr
+0 Author: Pybricks
+0 Unofficial Model
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 15 0 0 0 1 0 0 0 1 0 0 0 1 95658.dat
+0 ROTSTEP 35 -35 0 ABS
+0 
+0 NOFILE
+0
+0 FILE ev3device-medium.ldr
+0 New Model
+0 Name: ev3device-medium.ldr
+0 Author: Pybricks
+0 Unofficial Model
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 15 0 0 0 1 0 0 0 1 0 0 0 1 99455.dat
+0 ROTSTEP 35 -35 0 ABS
+0 
+0 NOFILE
+0
+0 FILE ev3device-touch.ldr
+0 New Model
+0 Name: ev3device-touch.ldr
+0 Author: Pybricks
+0 Unofficial Model
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 15 0 0 0 1 0 0 0 1 0 0 0 1 95648.dat
+0 ROTSTEP 35 -35 0 ABS
+0 
+0 NOFILE
+0
+0 FILE ev3device-color.ldr
+0 New Model
+0 Name: ev3device-color.ldr
+0 Author: Pybricks
+0 Unofficial Model
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 15 0 0 0 1 0 0 0 1 0 0 0 1 95650.dat
+0 ROTSTEP 35 -35 0 ABS
+0 
+0 NOFILE
+0
+0 FILE ev3device-infrared.ldr
+0 New Model
+0 Name: ev3device-infrared.ldr
+0 Author: Pybricks
+0 Unofficial Model
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 15 0 0 0 1 0 0 0 1 0 0 0 1 95654.dat
+0 GHOST 1 15 210 -60 -190 -1 0 0 0 1 0 0 0 -1 72156.dat
+0 ROTSTEP 35 -35 0 ABS
+0 
+0 NOFILE
+0
+0 FILE ev3device-ultrasonic.ldr
+0 New Model
+0 Name: ev3device-ultrasonic.ldr
+0 Author: Pybricks
+0 Unofficial Model
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 15 0 0 0 1 0 0 0 1 0 0 0 1 95652.dat
+0 ROTSTEP 35 -35 0 ABS
+0 
+0 NOFILE
+0
+0 FILE ev3device-gyro.ldr
+0 New Model
+0 Name: ev3device-gyro.ldr
+0 Author: Pybricks
+0 Unofficial Model
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 15 0 0 0 1 0 0 0 1 0 0 0 1 99380.dat
+0 ROTSTEP 35 -35 0 ABS
+0 
+0 
+0 NOFILE
+0
+0 FILE ev3devices.ldr
+0 New Model
+0 Name: ev3devices.ldr
+0 Author: Pybricks
+0 Unofficial Model
+0 !LPUB ASSEM MODEL_SCALE GLOBAL  0.35
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 0 370 0 40 1 0 0 0 1 0 0 0 1 ev3device-ev3.ldr
+1 0 0 280 0 1 0 0 0 1 0 0 0 1 ev3device-motors.ldr
+1 0 590 0 10 1 0 0 0 1 0 0 0 1 ev3device-touch.ldr
+1 0 630 0 -340 1 0 0 0 1 0 0 0 1 ev3device-infrared.ldr
+1 0 790 0 -150 1 0 0 0 1 0 0 0 1 ev3device-color.ldr
+1 0 480 0 -210 1 0 0 0 1 0 0 0 1 ev3device-ultrasonic.ldr
+1 0 680 0 -80 1 0 0 0 1 0 0 0 1 ev3device-gyro.ldr
+0 ROTSTEP 35 -35 0 ABS
+0 
+0 
+0 NOFILE
+0
+0 FILE iodevices.ldr
+0 New Model
+0 Name: iodevices.ldr
+0 Author: Pybricks
+0 Unofficial Model
+0 !LPUB ASSEM MODEL_SCALE GLOBAL  0.35
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 0 470 0 170 1 0 0 0 1 0 0 0 1 iodevice-pupdevice.ldr
+1 0 320 -60 320 1 0 0 0 1 0 0 0 1 iodevice-dcmotor.ldr
+1 0 510 0 -100 1 0 0 0 1 0 0 0 1 iodevice-rj12green.ldr
+1 0 430 0 -40 1 0 0 0 1 0 0 0 1 iodevice-rj12brown.ldr
+1 0 170 0 100 1 0 0 0 1 0 0 0 1 iodevice-rj12cyan.ldr
+1 0 260 0 50 1 0 0 0 1 0 0 0 1 iodevice-rj12blue.ldr
+1 0 350 0 0 1 0 0 0 1 0 0 0 1 iodevice-rj12grey.ldr
+1 0 140 -50 330 1 0 0 0 1 0 0 0 1 iodevice-rj12pcbbox.ldr
+0 ROTSTEP 35 -35 0 ABS
+0 
+0 NOFILE
+0
+0 FILE iodevice-dcmotor.ldr
+0 New Model
+0 Name: iodevice-dcmotor.ldr
+0 Author: Pybricks
+0 Unofficial Model
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 16 0 0 -80 0 0 -1 0 1 0 1 0 0 6625c01.dat
+1 47 -70 0 160 0 0 -1 0 -1 0 -1 0 0 55804.dat
+1 0 0 0 80 0 0 -1 0 -1 0 -1 0 0 897.dat
+1 71 0 0 -60 1 0 0 0 1 0 0 0 1 71427.dat
+1 256 0 1.5 -64 0 0 1 -1 0 0 0 154 0 993.dat
+0 ROTSTEP 35 -35 0 ABS
+0 
+0 NOFILE
+0
+0 FILE iodevice-rj12green.ldr
+0 New Model
+0 Name: iodevice-rj12green.ldr
+0 Author: Pybricks
+0 Unofficial Model
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 2 0 0 50 0 0 -30 0 1 0 50 0 0 box.dat
+1 151 0 0 0 1 0 0 0 1 0 0 0 1 54732b.dat
+1 0 0 -1 80 -20 0 0 0 1 0 0 0 -10 box.dat
+0 ROTSTEP 35 -35 0 ABS
+0 
+0 NOFILE
+0
+0 FILE iodevice-rj12blue.ldr
+0 New Model
+0 Name: iodevice-rj12blue.ldr
+0 Author: Pybricks
+0 Unofficial Model
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 1 0 0 50 0 0 -30 0 1 0 50 0 0 box.dat
+1 151 0 0 0 1 0 0 0 1 0 0 0 1 54732b.dat
+1 0 0 -1 80 -20 0 0 0 1 0 0 0 -10 box.dat
+0 ROTSTEP 35 -35 0 ABS
+0 
+0 NOFILE
+0
+0 FILE iodevice-rj12brown.ldr
+0 New Model
+0 Name: iodevice-rj12brown.ldr
+0 Author: Pybricks
+0 Unofficial Model
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 6 0 0 50 0 0 -30 0 1 0 50 0 0 box.dat
+1 151 0 0 0 1 0 0 0 1 0 0 0 1 54732b.dat
+1 0 0 -1 80 -20 0 0 0 1 0 0 0 -10 box.dat
+0 ROTSTEP 35 -35 0 ABS
+0 
+0 NOFILE
+0
+0 FILE iodevice-rj12cyan.ldr
+0 New Model
+0 Name: iodevice-rj12cyan.ldr
+0 Author: Pybricks
+0 Unofficial Model
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 11 0 0 50 0 0 -30 0 1 0 50 0 0 box.dat
+1 151 0 0 0 1 0 0 0 1 0 0 0 1 54732b.dat
+1 0 0 -1 80 -20 0 0 0 1 0 0 0 -10 box.dat
+0 ROTSTEP 35 -35 0 ABS
+0 
+0 NOFILE
+0
+0 FILE iodevice-rj12grey.ldr
+0 New Model
+0 Name: iodevice-rj12grey.ldr
+0 Author: Pybricks
+0 Unofficial Model
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 7 0 0 50 0 0 -30 0 1 0 50 0 0 box.dat
+1 151 0 0 0 1 0 0 0 1 0 0 0 1 54732b.dat
+1 0 0 -1 80 -20 0 0 0 1 0 0 0 -10 box.dat
+0 ROTSTEP 35 -35 0 ABS
+0 
+0 NOFILE
+0
+0 FILE iodevice-rj12pcbbox.ldr
+0 New Model
+0 Name: iodevice-rj12pcbbox.ldr
+0 Author: Pybricks
+0 Unofficial Model
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 0 0 5 0 0 0 -40 0 6 0 50 0 0 box.dat
+1 151 0 0 -50 1 0 0 0 1 0 0 0 1 54732b.dat
+0 ROTSTEP 35 -35 0 ABS
+0 
+0 
+0 NOFILE
+0
+0 FILE iodevice-nxtgeneric.ldr
+0 New Model
+0 Name: iodevice-nxtgeneric.ldr
+0 Author: Pybricks
+0 Unofficial Model
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 151 1200 -392 -350 1 0 0 0 1 0 0 0 1 ms1040.dat
+0 ROTSTEP 35 -35 0 ABS
+0 
+0 NOFILE
+0
+0 FILE iodevice-pupdevice.ldr
+0 New Model
+0 Name: iodevice-pupdevice.ldr
+0 Author: Pybricks
+0 Unofficial Model
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 2 0 0 30 0 0 -30 0 1 0 50 0 0 box.dat
+1 0 0 0 80 1 0 0 0 1 0 0 0 1 u9218c01.dat
+1 0 0 -1 0 -20 0 0 0 1 0 0 0 -10 box.dat
+1 0 150 0 -50 1 0 0 0 1 0 0 0 1 u9470c01.dat
+1 15 150 15 -50 1 0 0 0 1 0 0 0 1 u9218c01.dat
+1 0 120 0 -81 15 0 0 0 0 15 0 -1 0 box.dat
+1 0 180 0 -81 0 0 -8 15 0 0 0 -1 0 box.dat
+1 0 160 0 -81 0 0 8 -15 0 0 0 -1 0 box.dat
+1 4 195 -8 -81 0 0 2 -2 0 0 0 -1 0 box.dat
+1 2 150 0 -80 50 0 0 0 0 20 0 -1 0 box.dat
+1 1 195 0 -81 0 0 2 -2 0 0 0 -1 0 box.dat
+1 14 195 8 -81 0 0 2 -2 0 0 0 -1 0 box.dat
+0 ROTSTEP 35 -35 0 ABS
+0 
+0 
+0 
+0 NOFILE
+0 
+0 
+0
+0 FILE imu-orientation.ldr
+0 New Model
+0 Name: imu-orientation.ldr
+0 Author: Pybricks
+0 Unofficial Model
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 15 -80 -20 160 0 0 1 0 1 0 -1 0 0 45601c01.dat
+1 322 0 20 70 1 0 0 0 1 0 0 0 1 39367p01.dat
+1 322 -160 20 70 1 0 0 0 1 0 0 0 1 39367p01.dat
+1 322 0 20 250 1 0 0 0 1 0 0 0 1 39367p01.dat
+1 322 -160 20 250 1 0 0 0 1 0 0 0 1 39367p01.dat
+0 WRITE Type in the comment
+1 15 720 -80 170 0 0 -1 0 -1 0 -1 0 0 45601c01.dat
+1 322 800 20 80 1 0 0 0 1 0 0 0 1 39367p01.dat
+1 322 640 20 80 1 0 0 0 1 0 0 0 1 39367p01.dat
+1 322 800 20 260 1 0 0 0 1 0 0 0 1 39367p01.dat
+1 322 640 20 260 1 0 0 0 1 0 0 0 1 39367p01.dat
+0 WRITE Type in the comment
+1 15 720 -70 -630 0 1 0 0 0 -1 -1 0 0 45601c01.dat
+1 322 770 20 -720 1 0 0 0 1 0 0 0 1 39367p01.dat
+1 322 610 20 -720 1 0 0 0 1 0 0 0 1 39367p01.dat
+1 322 770 20 -540 1 0 0 0 1 0 0 0 1 39367p01.dat
+1 322 610 20 -540 1 0 0 0 1 0 0 0 1 39367p01.dat
+0 WRITE Type in the comment
+0 WRITE Type in the comment
+0 MLCAD BTG Group name
+1 71 -230 60 -780 0 0 1 -1 0 0 0 -1 0 55615.dat
+0 MLCAD BTG Group name
+1 4 -90 60 -800 0 0 1 -1 0 0 0 -1 0 32278.dat
+0 MLCAD BTG Group name
+1 2 -250 60 -640 0 1 0 -1 0 0 0 0 1 32278.dat
+0 MLCAD BTG Group name
+1 71 -230 40 -780 0 0 1 0 1 0 -1 0 0 55615.dat
+0 MLCAD BTG Group name
+1 1 -250 -100 -780 0 1 0 0 0 -1 -1 0 0 32278.dat
+0 GROUP 5 Group name
+1 15 -20 90 -570 0 0 -1 0 -1 0 -1 0 0 3811.dat
+1 15 720 90 -570 0 0 -1 0 -1 0 -1 0 0 3811.dat
+1 15 -30 90 190 0 0 -1 0 -1 0 -1 0 0 3811.dat
+1 15 720 90 190 0 0 -1 0 -1 0 -1 0 0 3811.dat
+0 ROTSTEP 35 -45 0 ABS
+0 
+0 
+0 
+0 NOFILE
+0 
+0 
+0
+0 FILE hubs-lwp3.ldr
+0 New Model
+0 Name: hubs-lwp3.ldr
+0 Author: MLCad
+0 Unofficial Model
+0 ROTATION CENTER 0 0 0 1 "Custom" 
+0 ROTATION CONFIG 0 0
+1 0 200 0 70 1 0 0 0 1 0 0 0 1 hub-technic.ldr
+1 0 40 0 220 1 0 0 0 1 0 0 0 1 hub-city.ldr
+1 0 450 0 -40 1 0 0 0 1 0 0 0 1 hub-move.ldr
+0 ROTSTEP 40 -35 0 ABS
+0
+0
