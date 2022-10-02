@@ -17,36 +17,36 @@
 
 .. pybricks-classlink:: MoveHub
 
-.. figure:: ../../main/images/movehub.png
-    :height: 10 em
+.. figure:: ../../main/cad/output/hub-move.png
+    :width: 30%
     :target: movehub.html
 
 .. pybricks-classlink:: CityHub
 
-.. figure:: ../../main/images/cityhub.png
-    :height: 10 em
+.. figure:: ../../main/cad/output/hub-city.png
+    :width: 20%
     :target: cityhub.html
 
 .. pybricks-classlink:: TechnicHub
 
-.. figure:: ../../main/images/technichub.png
-    :height: 10 em
+.. figure:: ../../main/cad/output/hub-technic.png
+    :width: 25%
     :target: technichub.html
-
-.. pybricks-classlink:: PrimeHub
-
-.. figure:: ../../main/images/primehub.png
-    :height: 10 em
-    :target: primehub.html
 
 .. pybricks-classlink:: InventorHub PrimeHub
 
-.. figure:: ../../main/images/inventorhub.png
-    :height: 10 em
+.. figure:: ../../main/cad/output/hub-inventor.png
+    :width: 25%
+    :target: primehub.html
+
+.. pybricks-classlink:: PrimeHub
+
+.. figure:: ../../main/cad/output/hub-prime.png
+    :width: 25%
     :target: primehub.html
 
 .. pybricks-classlink:: EssentialHub
 
-.. figure:: ../../main/images/essentialhub.png
-    :height: 10 em
+.. figure:: ../../main/cad/output/hub-essential.png
+    :width: 20%
     :target: essentialhub.html

@@ -3,8 +3,8 @@
 Powered Up Device
 ^^^^^^^^^^^^^^^^^
 
-.. figure:: ../../main/images/sensor_pup.png
-   :width: 70 %
+.. figure:: ../cad/output/iodevice-pupdevice.png
+   :width: 60 %
 
 .. autoclass:: pybricks.iodevices.PUPDevice
     :no-members:

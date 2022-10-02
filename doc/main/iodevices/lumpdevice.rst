@@ -5,7 +5,7 @@ EV3 UART Device
 
    This class is only available on EV3.
 
-.. figure:: ../../main/images/sensor_rj12_green.png
+.. figure:: ../../main/cad/output/iodevice-rj12green.png
    :width: 25 %
 
 .. autoclass:: pybricks.iodevices.LUMPDevice

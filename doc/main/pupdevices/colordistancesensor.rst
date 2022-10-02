@@ -3,7 +3,7 @@
 Color and Distance Sensor
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. figure:: ../../main/images/sensor_colordistance.png
+.. figure:: ../../main/cad/output/pupdevice-colordistance.png
    :width: 35 %
 
 .. autoclass:: pybricks.pupdevices.ColorDistanceSensor

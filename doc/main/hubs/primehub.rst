@@ -3,7 +3,7 @@
 Prime Hub / Inventor Hub
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. figure:: ../../main/images/primeinventorhub.png
+.. figure:: ../../main/cad/output/hub-spike-inventor.png
     :height: 15 em
 
 
@@ -23,7 +23,7 @@ Prime Hub / Inventor Hub
 
     .. rubric:: Using the hub status light
 
-    .. figure:: ../../main/images/primehub_light_label.png
+    .. figure:: ../../main/diagrams/primehub_light.png
         :width: 22 em
 
     .. automethod:: pybricks.hubs::PrimeHub.light.on
@@ -36,7 +36,7 @@ Prime Hub / Inventor Hub
 
     .. rubric:: Using the light matrix display
 
-    .. figure:: ../../main/images/primehub_display_label.png
+    .. figure:: ../../main/diagrams/primehub_display.png
         :width: 22 em
 
     .. automethod:: pybricks.hubs::PrimeHub.display.orientation
@@ -57,7 +57,7 @@ Prime Hub / Inventor Hub
 
     .. rubric:: Using the buttons
 
-    .. figure:: ../../main/images/primehub_buttons_label.png
+    .. figure:: ../../main/diagrams/primehub_buttons.png
         :width: 22 em
 
     .. automethod:: pybricks.hubs::PrimeHub.buttons.pressed

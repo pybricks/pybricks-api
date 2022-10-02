@@ -9,7 +9,7 @@ use this technique to control medium, large, extra large, and train
 motors. The infrared range is limited to about 30 cm, depending on the angle
 and ambient conditions.
 
-.. figure:: ../../main/images/pfmotor.png
+.. figure:: ../../main/cad/output/pupdevice-pfmotor.png
    :width: 95 %
 
    Powered Up

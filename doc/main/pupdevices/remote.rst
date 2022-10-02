@@ -3,7 +3,7 @@
 Remote Control
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. figure:: ../../main/images/pupremote.png
+.. figure:: ../../main/cad/output/pupdevice-remote.png
    :width: 60 %
 
 .. autoclass:: pybricks.pupdevices.Remote

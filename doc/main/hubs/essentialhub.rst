@@ -3,8 +3,8 @@
 Essential Hub
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. figure:: ../../main/images/essentialhub.png
-    :height: 15 em
+.. figure:: ../../main/cad/output/hub-essential.png
+    :width: 30%
 
 
 .. note:: Pybricks support for this hub is in beta.

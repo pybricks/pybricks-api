@@ -3,7 +3,7 @@
 Color Sensor
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. figure:: ../../main/images/sensor_color_lights_label.png
+.. figure:: ../../main/diagrams/sensor_color_lights.png
    :width: 70 %
 
 .. autoclass:: pybricks.pupdevices.ColorSensor

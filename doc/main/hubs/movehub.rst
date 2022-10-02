@@ -5,7 +5,7 @@ Move Hub
 
 .. _fig_movehub:
 
-.. figure:: ../../main/images/movehub_label.png
+.. figure:: ../../main/diagrams/movehub.png
     :height: 15 em
 
 .. autoclass:: pybricks.hubs.MoveHub

@@ -10,7 +10,7 @@ Generic I2C Device
 .. _support page: https://github.com/pybricks/support/issues/
 
 
-.. figure:: ../../main/images/sensor_rj12_bluegreen.png
+.. figure:: ../../main/cad/output/iodevice-rj12cyan.png
    :width: 25 %
 
 .. autoclass:: pybricks.iodevices.I2CDevice

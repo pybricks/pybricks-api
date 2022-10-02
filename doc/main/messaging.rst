@@ -18,7 +18,7 @@ EV3 bricks as shown in :numref:`fig_bluetooth_on`.
 
 .. _fig_bluetooth_on:
 
-.. figure:: ../main/images/bluetooth_on_label.png
+.. figure:: ../main/diagrams/bluetooth_on.png
    :width: 100 %
    :alt: bluetooth_on
    :align: center
@@ -33,7 +33,7 @@ The connection will be made when you run your programs, as described below.
 
 .. _fig_bluetooth_pair:
 
-.. figure:: ../main/images/bluetooth_pair_label.png
+.. figure:: ../main/diagrams/bluetooth_pair.png
    :width: 100 %
    :alt: bluetooth_pair
    :align: center
@@ -57,7 +57,7 @@ and the client can send a message to the server.
 
 .. _fig_messaging:
 
-.. figure:: ../main/images/messaging_label.png
+.. figure:: ../main/diagrams/messaging.png
    :width: 90 %
    :alt: messaging
    :align: center
@@ -128,7 +128,7 @@ is shown in :numref:`fig_messaging_network`.
 
 .. _fig_messaging_network:
 
-.. figure:: ../main/images/messaging_network_label.png
+.. figure:: ../main/diagrams/messaging_network.png
    :width: 90 %
    :alt: messaging
    :align: center

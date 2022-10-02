@@ -9,7 +9,7 @@ Generic UART Device
 
 .. _support page: https://github.com/pybricks/support/issues/
 
-.. figure:: ../../main/images/sensor_rj12_gray.png
+.. figure:: ../../main/cad/output/iodevice-rj12grey.png
    :width: 25 %
 
 .. autoclass:: pybricks.iodevices.UARTDevice

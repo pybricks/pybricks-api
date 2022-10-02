@@ -3,7 +3,7 @@
 Infrared Sensor
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. figure:: ../../main/images/sensor_proximity.png
+.. figure:: ../../main/cad/output/pupdevice-infrared.png
    :width: 35 %
 
 .. autoclass:: pybricks.pupdevices.InfraredSensor

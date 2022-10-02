@@ -12,7 +12,7 @@ your programs using the :mod:`Motor <.ev3devices>` class.
 NXT Touch Sensor
 ^^^^^^^^^^^^^^^^
 
-.. figure:: ../main/images/sensor_nxt_touch.png
+.. figure:: ../main/cad/output/nxtdevice-touch.png
    :width: 18 %
 
 .. autoclass:: pybricks.nxtdevices.TouchSensor
@@ -23,7 +23,7 @@ NXT Touch Sensor
 NXT Light Sensor
 ^^^^^^^^^^^^^^^^
 
-.. figure:: ../main/images/sensor_nxt_light.png
+.. figure:: ../main/cad/output/nxtdevice-light.png
    :width: 18 %
 
 .. autoclass:: pybricks.nxtdevices.LightSensor
@@ -31,7 +31,7 @@ NXT Light Sensor
 NXT Color Sensor
 ^^^^^^^^^^^^^^^^
 
-.. figure:: ../main/images/sensor_nxt_color.png
+.. figure:: ../main/cad/output/nxtdevice-color.png
    :width: 18 %
 
 .. autoclass:: pybricks.nxtdevices.ColorSensor
@@ -63,7 +63,7 @@ NXT Color Sensor
 NXT Ultrasonic Sensor
 ^^^^^^^^^^^^^^^^^^^^^
 
-.. figure:: ../main/images/sensor_nxt_ultrasonic.png
+.. figure:: ../main/cad/output/nxtdevice-ultrasonic.png
    :width: 24 %
 
 .. autoclass:: pybricks.nxtdevices.UltrasonicSensor
@@ -71,7 +71,7 @@ NXT Ultrasonic Sensor
 NXT Sound Sensor
 ^^^^^^^^^^^^^^^^^^^^^
 
-.. figure:: ../main/images/sensor_nxt_sound.png
+.. figure:: ../main/cad/output/nxtdevice-sound.png
    :width: 18 %
 
 .. autoclass:: pybricks.nxtdevices.SoundSensor
@@ -79,7 +79,7 @@ NXT Sound Sensor
 NXT Temperature Sensor
 ^^^^^^^^^^^^^^^^^^^^^^
 
-.. figure:: ../main/images/sensor_nxt_temp.png
+.. figure:: ../main/cad/output/nxtdevice-temperature.png
    :width: 32 %
 
 .. autoclass:: pybricks.nxtdevices.TemperatureSensor
@@ -87,7 +87,7 @@ NXT Temperature Sensor
 NXT Energy Meter
 ^^^^^^^^^^^^^^^^^
 
-.. figure:: ../main/images/energymeter.png
+.. figure:: ../main/cad/output/nxtdevice-energy.png
    :width: 30 %
 
 .. autoclass:: pybricks.nxtdevices.EnergyMeter

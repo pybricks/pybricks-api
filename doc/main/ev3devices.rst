@@ -9,7 +9,7 @@ Motors
 
 .. _fig_ev3motors:
 
-.. figure:: ../main/images/ev3motors_label.png
+.. figure:: ../main/diagrams/ev3motors.png
    :width: 100 %
 
    EV3-compatible motors. The arrows indicate the default positive direction.
@@ -84,7 +84,7 @@ Motors
 Touch Sensor
 ^^^^^^^^^^^^
 
-.. figure:: ../main/images/sensor_ev3_touch.png
+.. figure:: ../main/cad/output/ev3device-touch.png
    :width: 18 %
 
 .. autoclass:: pybricks.ev3devices.TouchSensor
@@ -92,7 +92,7 @@ Touch Sensor
 Color Sensor
 ^^^^^^^^^^^^
 
-.. figure:: ../main/images/sensor_ev3_color.png
+.. figure:: ../main/cad/output/ev3device-color.png
    :width: 18 %
 
 .. autoclass:: pybricks.ev3devices.ColorSensor
@@ -104,7 +104,7 @@ Each method of this class puts the sensor in a different *mode*. Switching
 modes takes about one second on this sensor. To make sure that your program
 runs quickly, use only of these methods in your program.
 
-.. figure:: ../main/images/sensor_ev3_ir.png
+.. figure:: ../main/cad/output/ev3device-infrared.png
    :width: 60 %
 
 .. autoclass:: pybricks.ev3devices.InfraredSensor
@@ -112,7 +112,7 @@ runs quickly, use only of these methods in your program.
 Ultrasonic Sensor
 ^^^^^^^^^^^^^^^^^
 
-.. figure:: ../main/images/sensor_ev3_ultrasonic.png
+.. figure:: ../main/cad/output/ev3device-ultrasonic.png
    :width: 22 %
 
 .. autoclass:: pybricks.ev3devices.UltrasonicSensor
@@ -120,7 +120,7 @@ Ultrasonic Sensor
 Gyroscopic Sensor
 ^^^^^^^^^^^^^^^^^
 
-.. figure:: ../main/images/sensor_ev3_gyro.png
+.. figure:: ../main/cad/output/ev3device-gyro.png
    :width: 18 %
 
 .. autoclass:: pybricks.ev3devices.GyroSensor

@@ -3,8 +3,8 @@
 Light
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. figure:: ../../main/images/light.png
-   :width: 90 %
+.. figure:: ../../main/cad/output/pupdevice-light.png
+   :width: 35 %
 
 .. autoclass:: pybricks.pupdevices.Light
     :no-members:

@@ -6,7 +6,7 @@ EV3 DC Motor
    This class is specifically for on EV3. For Powered Up DC Motors, just use
    the :class:`DCMotor <pybricks.pupdevices.DCMotor>` class.
 
-.. figure:: ../../main/images/rcxmotor.png
+.. figure:: ../../main/cad/output/iodevice-dcmotor.png
    :width: 40 %
 
 .. autoclass:: pybricks.iodevices.DCMotor

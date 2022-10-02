@@ -3,7 +3,7 @@
 City Hub
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. figure:: ../../main/images/cityhub.png
+.. figure:: ../../main/cad/output/hub-city.png
     :height: 15 em
 
 .. autoclass:: pybricks.hubs.CityHub

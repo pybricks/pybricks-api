@@ -3,7 +3,7 @@
 Tilt Sensor
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. figure:: ../../main/images/sensor_tilt.png
+.. figure:: ../../main/cad/output/pupdevice-tilt.png
    :width: 35 %
 
 .. autoclass:: pybricks.pupdevices.TiltSensor
