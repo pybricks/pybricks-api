@@ -163,7 +163,7 @@ Centering a steering mechanism
 *******************************************************
 
 .. literalinclude::
-    ../../../examples/pup/motor/motor_until_stalled.py
+    ../../../examples/pup/motor/motor_until_stalled_center.py
 
 
 Parallel movement examples
