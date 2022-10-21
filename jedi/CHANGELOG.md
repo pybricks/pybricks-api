@@ -7,6 +7,9 @@
 ### Added
 - Added LICENSE file.
 
+### Changed
+- Updated to pybricks API package v3.2.0b4.
+
 ## 1.1.0 - 2022-06-26
 
 ### Added
