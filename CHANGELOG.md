@@ -4,6 +4,8 @@
 
 ## Unreleased
 
+## 3.2.0b4 - 2022-10-21
+
 ### Added
 - Code auto-completion for `EssentialHub`.
 - Added `System.storage` method.
