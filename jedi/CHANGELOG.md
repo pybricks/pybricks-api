@@ -4,6 +4,8 @@
 
 ## Unreleased
 
+## 1.2.0 - 2022-10-21
+
 ### Added
 - Added LICENSE file.
 
