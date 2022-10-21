@@ -6,6 +6,7 @@
 
 ### Added
 - Code auto-completion for `EssentialHub`.
+- Added `System.storage` method.
 
 ### Fixed
 - Fixed some type hints in `parameters` submodule.

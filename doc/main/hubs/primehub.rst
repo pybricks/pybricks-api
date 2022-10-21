@@ -104,6 +104,8 @@ Prime Hub / Inventor Hub
 
     .. automethod:: pybricks.hubs::PrimeHub.system.name
 
+    .. automethod:: pybricks.hubs::PrimeHub.system.storage
+
     .. automethod:: pybricks.hubs::PrimeHub.system.shutdown
 
     .. automethod:: pybricks.hubs::PrimeHub.system.reset_reason

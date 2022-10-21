@@ -65,6 +65,8 @@ Essential Hub
 
     .. automethod:: pybricks.hubs::EssentialHub.system.name
 
+    .. automethod:: pybricks.hubs::EssentialHub.system.storage
+
     .. automethod:: pybricks.hubs::EssentialHub.system.shutdown
 
     .. automethod:: pybricks.hubs::EssentialHub.system.reset_reason

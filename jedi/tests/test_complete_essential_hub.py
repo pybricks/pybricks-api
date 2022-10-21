@@ -106,4 +106,5 @@ def test_hub_dot_system_dot():
         "reset_reason",
         "set_stop_button",
         "shutdown",
+        "storage",
     ]

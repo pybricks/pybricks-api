@@ -228,6 +228,15 @@ METHOD_PARAMS = [
     ),
     pytest.param("pybricks.hubs", "MoveHub", "system.name", [([], "str")]),
     pytest.param("pybricks.hubs", "MoveHub", "system.shutdown", [([], "None")]),
+    pytest.param(
+        "pybricks.hubs",
+        "MoveHub",
+        "system.storage",
+        [
+            (["offset: int", "*", "read: int"], "bytes"),
+            (["offset: int", "*", "write: bytes"], "None"),
+        ],
+    ),
     pytest.param("pybricks.hubs", "MoveHub", "system.reset_reason", [([], "int")]),
     pytest.param("pybricks.hubs", "CityHub", "light.on", [(["color: Color"], "None")]),
     pytest.param("pybricks.hubs", "CityHub", "light.off", [([], "None")]),
@@ -256,6 +265,15 @@ METHOD_PARAMS = [
     ),
     pytest.param("pybricks.hubs", "CityHub", "system.name", [([], "str")]),
     pytest.param("pybricks.hubs", "CityHub", "system.shutdown", [([], "None")]),
+    pytest.param(
+        "pybricks.hubs",
+        "CityHub",
+        "system.storage",
+        [
+            (["offset: int", "*", "read: int"], "bytes"),
+            (["offset: int", "*", "write: bytes"], "None"),
+        ],
+    ),
     pytest.param("pybricks.hubs", "CityHub", "system.reset_reason", [([], "int")]),
     pytest.param(
         "pybricks.hubs", "TechnicHub", "light.on", [(["color: Color"], "None")]
@@ -307,6 +325,15 @@ METHOD_PARAMS = [
     ),
     pytest.param("pybricks.hubs", "TechnicHub", "system.name", [([], "str")]),
     pytest.param("pybricks.hubs", "TechnicHub", "system.shutdown", [([], "None")]),
+    pytest.param(
+        "pybricks.hubs",
+        "TechnicHub",
+        "system.storage",
+        [
+            (["offset: int", "*", "read: int"], "bytes"),
+            (["offset: int", "*", "write: bytes"], "None"),
+        ],
+    ),
     pytest.param("pybricks.hubs", "TechnicHub", "system.reset_reason", [([], "int")]),
     pytest.param("pybricks.hubs", "PrimeHub", "light.on", [(["color: Color"], "None")]),
     pytest.param("pybricks.hubs", "PrimeHub", "light.off", [([], "None")]),
@@ -408,6 +435,15 @@ METHOD_PARAMS = [
     ),
     pytest.param("pybricks.hubs", "PrimeHub", "system.name", [([], "str")]),
     pytest.param("pybricks.hubs", "PrimeHub", "system.shutdown", [([], "None")]),
+    pytest.param(
+        "pybricks.hubs",
+        "PrimeHub",
+        "system.storage",
+        [
+            (["offset: int", "*", "read: int"], "bytes"),
+            (["offset: int", "*", "write: bytes"], "None"),
+        ],
+    ),
     pytest.param("pybricks.hubs", "PrimeHub", "system.reset_reason", [([], "int")]),
     pytest.param(
         "pybricks.hubs", "EssentialHub", "light.on", [(["color: Color"], "None")]
@@ -464,6 +500,15 @@ METHOD_PARAMS = [
     ),
     pytest.param("pybricks.hubs", "EssentialHub", "system.name", [([], "str")]),
     pytest.param("pybricks.hubs", "EssentialHub", "system.shutdown", [([], "None")]),
+    pytest.param(
+        "pybricks.hubs",
+        "EssentialHub",
+        "system.storage",
+        [
+            (["offset: int", "*", "read: int"], "bytes"),
+            (["offset: int", "*", "write: bytes"], "None"),
+        ],
+    ),
     pytest.param("pybricks.hubs", "EssentialHub", "system.reset_reason", [([], "int")]),
     # TODO: iodevices module here
     pytest.param("pybricks.pupdevices", "DCMotor", "dc", [(["duty: Number"], "None")]),
@@ -830,6 +875,8 @@ def test_get_signature_for_methods(
         # ensure signatures are stripped from doc comment
         assert not sig["documentation"]["value"].startswith(f"{method}(")
 
-        for pi, p in zip_longest(sig["parameters"], params):
+        for pi, p in zip_longest(
+            sig["parameters"], filter(lambda p: p != "*" and p != "/", params)
+        ):
             assert pi["label"] == p
             assert pi["documentation"]["value"]

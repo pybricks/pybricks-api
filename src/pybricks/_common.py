@@ -68,6 +68,42 @@ class System:
             The hub name.
         """
 
+    @overload
+    def storage(self, offset: int, *, read: int) -> bytes:
+        ...
+
+    @overload
+    def storage(self, offset: int, *, write: bytes) -> None:
+        ...
+
+    def storage(self, offset, read=None, write=None):
+        """
+        storage(self, offset, read=) -> bytes
+        storage(self, offset, write=)
+
+        Reads or writes binary data to persistent storage.
+
+        The available storage size is 128 bytes on Move, City and Technic hubs
+        and 512 bytes on SPIKE and MINDSTORMS hubs.
+
+        .. note:: The data is written to flash memory on shutdown, so will only
+            be saved if the hub is properly shut down. It will not be saved if
+            the batteries are removed while the hub is still running.
+
+        Args:
+            offset (int): The offset from the start of the user storage memory in bytes.
+            read (int): The number of bytes to read. Omit this argument when writing.
+            write (bytes): The bytes to write. Omit this argument when reading.
+
+        Returns:
+            The bytes read if reading, otherwise ``None``.
+
+        Raises:
+            ValueError:
+                The offset and/or the size of bytes to be read/written are
+                outside of the range of the allocated memory.
+        """
+
 
 class DCMotor:
     """Generic class to control simple motors without rotation sensors, such

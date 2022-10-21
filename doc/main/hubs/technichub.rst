@@ -47,6 +47,8 @@ Technic Hub
 
     .. automethod:: pybricks.hubs::TechnicHub.system.name
 
+    .. automethod:: pybricks.hubs::TechnicHub.system.storage
+
     .. automethod:: pybricks.hubs::TechnicHub.system.shutdown
 
     .. automethod:: pybricks.hubs::TechnicHub.system.reset_reason

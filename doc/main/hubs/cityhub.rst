@@ -33,6 +33,8 @@ City Hub
 
     .. automethod:: pybricks.hubs::CityHub.system.name
 
+    .. automethod:: pybricks.hubs::CityHub.system.storage
+
     .. automethod:: pybricks.hubs::CityHub.system.shutdown
 
     .. automethod:: pybricks.hubs::CityHub.system.reset_reason
