@@ -58,7 +58,7 @@ class PybricksRequirementsStaticDirective(Directive):
         # Cell with image of a hub.
         hub_cell = """
         <th><div class="align-default">
-        <img alt="" src="{0}_images/compat_{1}_{2}_label.png">
+        <img alt="" src="{0}_images/compat_{1}_{2}.png">
         </div></th>
         """
 
