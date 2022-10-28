@@ -1,0 +1,23 @@
+name: Release @pybricks/images
+
+on:
+  push:
+    tags: 
+    - '@pybricks/images/**'
+
+jobs:
+  publish_ide_docs:
+    runs-on: ubuntu-22.04
+    steps:
+    - uses: actions/checkout@v3
+    # Setup .npmrc file to publish to npm
+    - uses: actions/setup-node@v3
+      with:
+        node-version: '16.x'
+        registry-url: 'https://registry.npmjs.org'
+    - run: ./build.py
+      working-directory: npm/images
+    - run: yarn publish
+      working-directory: npm/images/build
+      env:
+        NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
