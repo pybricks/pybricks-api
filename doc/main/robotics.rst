@@ -104,3 +104,12 @@
 
     .. autoattribute:: pybricks.robotics.DriveBase.heading_control
         :annotation:
+
+Examples
+-------------------
+
+Driving straight and turning in place
+**********************************************
+
+.. literalinclude::
+    ../../examples/pup/robotics/drivebase_basics.py
