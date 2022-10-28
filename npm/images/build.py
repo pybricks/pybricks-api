@@ -8,11 +8,11 @@ BUILD_DIR = (pathlib.Path(__file__).parent / "build").resolve()
 IMAGE_DIR = (
     pathlib.Path(__file__).parent.parent.parent / "doc" / "main" / "cad" / "output"
 ).resolve()
-HUBS = ["move", "city", "technic", "prime", "essential"]
+HUBS = ["move", "city", "technic", "prime", "essential", "inventor"]
 
 package_json = {
     "name": "@pybricks/images",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "Distribution of Pybricks images.",
     "license": "MIT",
     "repository": {
