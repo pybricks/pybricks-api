@@ -12,7 +12,7 @@ HUBS = ["move", "city", "technic", "prime", "essential", "inventor"]
 
 package_json = {
     "name": "@pybricks/images",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "description": "Distribution of Pybricks images.",
     "license": "MIT",
     "repository": {
