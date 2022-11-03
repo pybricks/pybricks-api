@@ -6,7 +6,7 @@ import shutil
 
 BUILD_DIR = (pathlib.Path(__file__).parent / "build").resolve()
 IMAGE_DIR = (
-    pathlib.Path(__file__).parent.parent.parent / "doc" / "main" / "cad" / "output"
+    pathlib.Path(__file__).parent.parent.parent / "doc" / "main" / "diagrams"
 ).resolve()
 HUBS = ["move", "city", "technic", "prime", "essential", "inventor"]
 
@@ -29,7 +29,7 @@ BUILD_DIR.mkdir()
 
 # copy the hub images
 for h in HUBS:
-    shutil.copyfile(IMAGE_DIR / f"hub-{h}.png", BUILD_DIR / f"hub-{h}.png")
+    shutil.copyfile(IMAGE_DIR / f"icon_{h}hub.png", BUILD_DIR / f"hub-{h}.png")
 
 # generate package.json file
 
