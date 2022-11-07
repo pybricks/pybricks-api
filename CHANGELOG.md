@@ -4,6 +4,9 @@
 
 ## Unreleased
 
+### Fixed
+- Fixed Jedi code completion for `Color` and `Icon` classes in `pybricks.parameters`.
+
 ## 3.2.0b4 - 2022-10-21
 
 ### Added

@@ -4,6 +4,9 @@
 
 ## Unreleased
 
+### Fixed
+- Fixed code completion for `Color` and `Icon` classes in `pybricks.parameters`.
+
 ## 1.2.0 - 2022-10-21
 
 ### Added

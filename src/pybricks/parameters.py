@@ -60,21 +60,43 @@ class _PybricksEnum(Enum, metaclass=_PybricksEnumMeta):
 class Color:
     """Light or surface color."""
 
-    h: int
-    s: int
-    v: int
+    NONE: Color = ...
+    BLACK: Color = ...
+    GRAY: Color = ...
+    WHITE: Color = ...
+    RED: Color = ...
+    ORANGE: Color = ...
+    BROWN: Color = ...
+    YELLOW: Color = ...
+    GREEN: Color = ...
+    CYAN: Color = ...
+    BLUE: Color = ...
+    VIOLET: Color = ...
+    MAGENTA: Color = ...
 
     def __init__(self, h: Number, s: Number = 100, v: Number = 100):
         """Color(h, s=100, v=100)
 
         Arguments:
-            h (Number, deg): Hue (0--360)
+            h (Number, deg): Hue.
             s (Number, %): Saturation.
             v (Number, %): Brightness value.
         """
-        self.h = h % 360
-        self.s = max(0, min(s, 100))
-        self.v = max(0, min(v, 100))
+
+        self.h = int(h) % 360
+        """
+        The hue.
+        """
+
+        self.s = max(0, min(int(s), 100))
+        """
+        The saturation.
+        """
+
+        self.v = max(0, min(int(v), 100))
+        """
+        The brightness value.
+        """
 
     def __repr__(self):
         return "Color(h={}, s={}, v={})".format(self.h, self.s, self.v)
@@ -191,7 +213,7 @@ class Icon:
     icons to adjust the brightness or add icons to make composites.
     """
 
-    UP: _Matrix
+    UP: _Matrix = ...
     """
     | ⬜⬜🟨⬜⬜
     | ⬜🟨🟨🟨⬜
@@ -199,7 +221,7 @@ class Icon:
     | ⬜🟨🟨🟨⬜
     | ⬜🟨🟨🟨⬜
     """
-    DOWN: _Matrix
+    DOWN: _Matrix = ...
     """
     | ⬜🟨🟨🟨⬜
     | ⬜🟨🟨🟨⬜
@@ -207,7 +229,7 @@ class Icon:
     | ⬜🟨🟨🟨⬜
     | ⬜⬜🟨⬜⬜
     """
-    LEFT: _Matrix
+    LEFT: _Matrix = ...
     """
     | ⬜⬜🟨⬜⬜
     | ⬜🟨🟨🟨🟨
@@ -215,7 +237,7 @@ class Icon:
     | ⬜🟨🟨🟨🟨
     | ⬜⬜🟨⬜⬜
     """
-    RIGHT: _Matrix
+    RIGHT: _Matrix = ...
     """
     | ⬜⬜🟨⬜⬜
     | 🟨🟨🟨🟨⬜
@@ -223,7 +245,7 @@ class Icon:
     | 🟨🟨🟨🟨⬜
     | ⬜⬜🟨⬜⬜
     """
-    ARROW_RIGHT_UP: _Matrix
+    ARROW_RIGHT_UP: _Matrix = ...
     """
     | ⬜⬜🟨🟨🟨
     | ⬜⬜⬜🟨🟨
@@ -231,7 +253,7 @@ class Icon:
     | ⬜🟨⬜⬜⬜
     | 🟨⬜⬜⬜⬜
     """
-    ARROW_RIGHT_DOWN: _Matrix
+    ARROW_RIGHT_DOWN: _Matrix = ...
     """
     | 🟨⬜⬜⬜⬜
     | ⬜🟨⬜⬜⬜
@@ -239,7 +261,7 @@ class Icon:
     | ⬜⬜⬜🟨🟨
     | ⬜⬜🟨🟨🟨
     """
-    ARROW_LEFT_UP: _Matrix
+    ARROW_LEFT_UP: _Matrix = ...
     """
     | 🟨🟨🟨⬜⬜
     | 🟨🟨⬜⬜⬜
@@ -247,7 +269,7 @@ class Icon:
     | ⬜⬜⬜🟨⬜
     | ⬜⬜⬜⬜🟨
     """
-    ARROW_LEFT_DOWN: _Matrix
+    ARROW_LEFT_DOWN: _Matrix = ...
     """
     | ⬜⬜⬜⬜🟨
     | ⬜⬜⬜🟨⬜
@@ -255,7 +277,7 @@ class Icon:
     | 🟨🟨⬜⬜⬜
     | 🟨🟨🟨⬜⬜
     """
-    ARROW_UP: _Matrix
+    ARROW_UP: _Matrix = ...
     """
     | ⬜⬜🟨⬜⬜
     | ⬜🟨🟨🟨⬜
@@ -263,7 +285,7 @@ class Icon:
     | ⬜⬜🟨⬜⬜
     | ⬜⬜🟨⬜⬜
     """
-    ARROW_DOWN: _Matrix
+    ARROW_DOWN: _Matrix = ...
     """
     | ⬜⬜🟨⬜⬜
     | ⬜⬜🟨⬜⬜
@@ -271,7 +293,7 @@ class Icon:
     | ⬜🟨🟨🟨⬜
     | ⬜⬜🟨⬜⬜
     """
-    ARROW_LEFT: _Matrix
+    ARROW_LEFT: _Matrix = ...
     """
     | ⬜⬜🟨⬜⬜
     | ⬜🟨⬜⬜⬜
@@ -279,7 +301,7 @@ class Icon:
     | ⬜🟨⬜⬜⬜
     | ⬜⬜🟨⬜⬜
     """
-    ARROW_RIGHT: _Matrix
+    ARROW_RIGHT: _Matrix = ...
     """
     | ⬜⬜🟨⬜⬜
     | ⬜⬜⬜🟨⬜
@@ -287,7 +309,7 @@ class Icon:
     | ⬜⬜⬜🟨⬜
     | ⬜⬜🟨⬜⬜
     """
-    HAPPY: _Matrix
+    HAPPY: _Matrix = ...
     """
     | 🟨🟨⬜🟨🟨
     | 🟨🟨⬜🟨🟨
@@ -295,7 +317,7 @@ class Icon:
     | 🟨⬜⬜⬜🟨
     | ⬜🟨🟨🟨⬜
     """
-    SAD: _Matrix
+    SAD: _Matrix = ...
     """
     | 🟨🟨⬜🟨🟨
     | 🟨🟨⬜🟨🟨
@@ -303,7 +325,7 @@ class Icon:
     | ⬜🟨🟨🟨⬜
     | 🟨⬜⬜⬜🟨
     """
-    EYE_LEFT: _Matrix
+    EYE_LEFT: _Matrix = ...
     """
     | ⬜⬜⬜⬜⬜
     | ⬜⬜⬜⬜⬜
@@ -311,7 +333,7 @@ class Icon:
     | 🟨🟨⬜⬜⬜
     | ⬜⬜⬜⬜⬜
     """
-    EYE_RIGHT: _Matrix
+    EYE_RIGHT: _Matrix = ...
     """
     | ⬜⬜⬜⬜⬜
     | ⬜⬜⬜⬜⬜
@@ -319,7 +341,7 @@ class Icon:
     | ⬜⬜⬜🟨🟨
     | ⬜⬜⬜⬜⬜
     """
-    EYE_LEFT_BLINK: _Matrix
+    EYE_LEFT_BLINK: _Matrix = ...
     """
     | ⬜⬜⬜⬜⬜
     | ⬜⬜⬜⬜⬜
@@ -327,7 +349,7 @@ class Icon:
     | 🟨🟨⬜⬜⬜
     | ⬜⬜⬜⬜⬜
     """
-    EYE_RIGHT_BLINK: _Matrix
+    EYE_RIGHT_BLINK: _Matrix = ...
     """
     | ⬜⬜⬜⬜⬜
     | ⬜⬜⬜⬜⬜
@@ -335,7 +357,7 @@ class Icon:
     | ⬜⬜⬜🟨🟨
     | ⬜⬜⬜⬜⬜
     """
-    EYE_RIGHT_BROW: _Matrix
+    EYE_RIGHT_BROW: _Matrix = ...
     """
     | ⬜⬜⬜⬜⬜
     | ⬜⬜⬜🟨🟨
@@ -343,7 +365,7 @@ class Icon:
     | ⬜⬜⬜⬜⬜
     | ⬜⬜⬜⬜⬜
     """
-    EYE_LEFT_BROW: _Matrix
+    EYE_LEFT_BROW: _Matrix = ...
     """
     | ⬜⬜⬜⬜⬜
     | 🟨🟨⬜⬜⬜
@@ -351,7 +373,7 @@ class Icon:
     | ⬜⬜⬜⬜⬜
     | ⬜⬜⬜⬜⬜
     """
-    EYE_LEFT_BROW_UP: _Matrix
+    EYE_LEFT_BROW_UP: _Matrix = ...
     """
     | 🟨🟨⬜⬜⬜
     | ⬜⬜⬜⬜⬜
@@ -359,7 +381,7 @@ class Icon:
     | ⬜⬜⬜⬜⬜
     | ⬜⬜⬜⬜⬜
     """
-    EYE_RIGHT_BROW_UP: _Matrix
+    EYE_RIGHT_BROW_UP: _Matrix = ...
     """
     | ⬜⬜⬜🟨🟨
     | ⬜⬜⬜⬜⬜
@@ -367,7 +389,7 @@ class Icon:
     | ⬜⬜⬜⬜⬜
     | ⬜⬜⬜⬜⬜
     """
-    HEART: _Matrix
+    HEART: _Matrix = ...
     """
     | ⬜🟨⬜🟨⬜
     | 🟨🟨🟨🟨🟨
@@ -375,7 +397,7 @@ class Icon:
     | ⬜🟨🟨🟨⬜
     | ⬜⬜🟨⬜⬜
     """
-    PAUSE: _Matrix
+    PAUSE: _Matrix = ...
     """
     | ⬜⬜⬜⬜⬜
     | ⬜🟨⬜🟨⬜
@@ -383,7 +405,7 @@ class Icon:
     | ⬜🟨⬜🟨⬜
     | ⬜⬜⬜⬜⬜
     """
-    EMPTY: _Matrix
+    EMPTY: _Matrix = ...
     """
     | ⬜⬜⬜⬜⬜
     | ⬜⬜⬜⬜⬜
@@ -391,7 +413,7 @@ class Icon:
     | ⬜⬜⬜⬜⬜
     | ⬜⬜⬜⬜⬜
     """
-    FULL: _Matrix
+    FULL: _Matrix = ...
     """
     | 🟨🟨🟨🟨🟨
     | 🟨🟨🟨🟨🟨
@@ -399,7 +421,7 @@ class Icon:
     | 🟨🟨🟨🟨🟨
     | 🟨🟨🟨🟨🟨
     """
-    SQUARE: _Matrix
+    SQUARE: _Matrix = ...
     """
     | ⬜⬜⬜⬜⬜
     | ⬜🟨🟨🟨⬜
@@ -407,7 +429,7 @@ class Icon:
     | ⬜🟨🟨🟨⬜
     | ⬜⬜⬜⬜⬜
     """
-    TRIANGLE_RIGHT: _Matrix
+    TRIANGLE_RIGHT: _Matrix = ...
     """
     | ⬜🟨⬜⬜⬜
     | ⬜🟨🟨⬜⬜
@@ -415,7 +437,7 @@ class Icon:
     | ⬜🟨🟨⬜⬜
     | ⬜🟨⬜⬜⬜
     """
-    TRIANGLE_LEFT: _Matrix
+    TRIANGLE_LEFT: _Matrix = ...
     """
     | ⬜⬜⬜🟨⬜
     | ⬜⬜🟨🟨⬜
@@ -423,7 +445,7 @@ class Icon:
     | ⬜⬜🟨🟨⬜
     | ⬜⬜⬜🟨⬜
     """
-    TRIANGLE_UP: _Matrix
+    TRIANGLE_UP: _Matrix = ...
     """
     | ⬜⬜⬜⬜⬜
     | ⬜⬜🟨⬜⬜
@@ -431,7 +453,7 @@ class Icon:
     | 🟨🟨🟨🟨🟨
     | ⬜⬜⬜⬜⬜
     """
-    TRIANGLE_DOWN: _Matrix
+    TRIANGLE_DOWN: _Matrix = ...
     """
     | ⬜⬜⬜⬜⬜
     | 🟨🟨🟨🟨🟨
@@ -439,7 +461,7 @@ class Icon:
     | ⬜⬜🟨⬜⬜
     | ⬜⬜⬜⬜⬜
     """
-    CIRCLE: _Matrix
+    CIRCLE: _Matrix = ...
     """
     | ⬜🟨🟨🟨⬜
     | 🟨🟨🟨🟨🟨
@@ -447,7 +469,7 @@ class Icon:
     | 🟨🟨🟨🟨🟨
     | ⬜🟨🟨🟨⬜
     """
-    CLOCKWISE: _Matrix
+    CLOCKWISE: _Matrix = ...
     """
     | 🟨🟨🟨🟨⬜
     | 🟨⬜⬜🟨⬜
@@ -455,7 +477,7 @@ class Icon:
     | 🟨⬜🟨🟨🟨
     | ⬜⬜⬜🟨⬜
     """
-    COUNTERCLOCKWISE: _Matrix
+    COUNTERCLOCKWISE: _Matrix = ...
     """
     | ⬜🟨🟨🟨🟨
     | ⬜🟨⬜⬜🟨
@@ -463,7 +485,7 @@ class Icon:
     | 🟨🟨🟨⬜🟨
     | ⬜🟨⬜⬜⬜
     """
-    TRUE: _Matrix
+    TRUE: _Matrix = ...
     """
     | ⬜⬜⬜⬜🟨
     | ⬜⬜⬜🟨⬜
@@ -471,7 +493,7 @@ class Icon:
     | ⬜🟨⬜⬜⬜
     | ⬜⬜⬜⬜⬜
     """
-    FALSE: _Matrix
+    FALSE: _Matrix = ...
     """
     | 🟨⬜⬜⬜🟨
     | ⬜🟨⬜🟨⬜
