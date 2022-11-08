@@ -2,6 +2,11 @@
 
 <!-- refer to https://keepachangelog.com/en/1.0.0/ for guidance -->
 
+## 1.2.1 - 2022-11-08
+
+### Changed
+- Changed size of some icons.
+
 ## 1.2.0 - 2022-10-28
 
 ### Changed
