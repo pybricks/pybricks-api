@@ -4,9 +4,9 @@
 <svg
    version="1.1"
    id="svg2"
-   width="625"
-   height="625"
-   viewBox="0 0 625 625"
+   width="525"
+   height="525"
+   viewBox="0 0 525 525"
    sodipodi:docname="icon_technichub.svg"
    inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -76,11 +76,12 @@
      inkscape:snap-global="false"
      inkscape:pagecheckerboard="0" />
   <image
-     width="535"
-     height="456"
+     width="525"
+     height="447.47662"
      preserveAspectRatio="none"
      xlink:href="../cad/output/hub-technic.png"
      id="image985"
-     x="47"
-     y="79" />
+     x="0"
+     y="35.996998"
+     style="stroke-width:1.01905" />
 </svg>

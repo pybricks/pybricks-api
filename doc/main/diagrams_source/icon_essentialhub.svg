@@ -4,9 +4,9 @@
 <svg
    version="1.1"
    id="svg2"
-   width="625"
-   height="625"
-   viewBox="0 0 625 625"
+   width="525"
+   height="525"
+   viewBox="0 0 525 525"
    sodipodi:docname="icon_essentialhub.svg"
    inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -81,6 +81,6 @@
      preserveAspectRatio="none"
      xlink:href="../cad/output/hub-essential.png"
      id="image1283"
-     x="129"
-     y="120" />
+     x="80"
+     y="80" />
 </svg>
