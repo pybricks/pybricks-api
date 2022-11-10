@@ -24,8 +24,8 @@ HUB_FEATURES = {
     "movehub": {"movehub"} | FEATURES_SMALL,
     "cityhub": {"cityhub"} | FEATURES_MEDIUM,
     "technichub": {"technichub"} | FEATURES_MEDIUM,
-    "primehub": {"primehub", "inventorhub"} | FEATURES_LARGE,
-    "inventorhub": {"primehub", "inventorhub"} | FEATURES_LARGE,
+    "primehub": {"primehub", "inventorhub", "light-matrix"} | FEATURES_LARGE,
+    "inventorhub": {"primehub", "inventorhub", "light-matrix"} | FEATURES_LARGE,
     "essentialhub": {"essentialhub"} | FEATURES_LARGE,
 }
 

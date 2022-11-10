@@ -177,13 +177,15 @@ Changing the display orientation
 .. literalinclude::
     ../../../examples/pup/hub_primehub/display_orientation_imu.py
 
+.. _make_icons:
+
 Making your own images
 **********************
 
 .. literalinclude::
     ../../../examples/pup/hub_primehub/display_matrix.py
 
-Combining images to make expressions
+Combining icons to make expressions
 ************************************
 
 .. literalinclude::
