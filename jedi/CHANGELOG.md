@@ -4,6 +4,9 @@
 
 ## Unreleased
 
+### Changed
+- Updated `pybricks` package to v3.2.0b5.
+
 ### Fixed
 - Fixed code completion for `Color` and `Icon` classes in `pybricks.parameters`.
 
