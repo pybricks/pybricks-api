@@ -1,6 +1,6 @@
 {
   "name": "@pybricks/ide-docs",
-  "version": "2.3.0",
+  "version": "2.4.0",
   "description": "Special build of Pybricks API docs for embedding in an IDE.",
   "repository": {
     "type": "git",
