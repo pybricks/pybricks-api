@@ -4,6 +4,10 @@
 
 ## Unreleased
 
+### Changed
+- Changed `PrimeHub.display.image()` to `PrimeHub.display.icon()` and renamed
+  its kwarg from `image` to `icon`.
+
 ## 3.2.0b5 - 2022-11-11
 
 ### Fixed

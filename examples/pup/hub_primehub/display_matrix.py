@@ -17,7 +17,7 @@ SQUARE = Matrix(
 )
 
 # Display the square.
-hub.display.image(SQUARE)
+hub.display.icon(SQUARE)
 wait(3000)
 
 # Make an image using a Python list comprehension. In this image, the
@@ -26,5 +26,5 @@ wait(3000)
 GRADIENT = Matrix([[(r + c) for c in range(5)] for r in range(5)]) * 12.5
 
 # Display the generated gradient.
-hub.display.image(GRADIENT)
+hub.display.icon(GRADIENT)
 wait(3000)

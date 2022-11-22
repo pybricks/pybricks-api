@@ -24,11 +24,9 @@ while True:
 
     for i in range(3):
         # Display eyes open plus the random brows.
-        hub.display.image(Icon.EYE_LEFT + Icon.EYE_RIGHT + brows)
+        hub.display.icon(Icon.EYE_LEFT + Icon.EYE_RIGHT + brows)
         wait(2000)
 
         # Display eyes blinked plus the random brows.
-        hub.display.image(
-            Icon.EYE_LEFT_BLINK * 0.7 + Icon.EYE_RIGHT_BLINK * 0.7 + brows
-        )
+        hub.display.icon(Icon.EYE_LEFT_BLINK * 0.7 + Icon.EYE_RIGHT_BLINK * 0.7 + brows)
         wait(200)

@@ -6,13 +6,13 @@ from pybricks.parameters import Icon
 hub = PrimeHub()
 
 # Display a big arrow pointing up.
-hub.display.image(Icon.UP)
+hub.display.icon(Icon.UP)
 
 # Wait so we can see what is displayed.
 wait(2000)
 
 # Display a heart at half brightness.
-hub.display.image(Icon.HEART / 2)
+hub.display.icon(Icon.HEART / 2)
 
 # Wait so we can see what is displayed.
 wait(2000)

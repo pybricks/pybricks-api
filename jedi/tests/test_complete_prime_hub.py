@@ -80,7 +80,7 @@ def test_hub_dot_display_dot():
     assert [c["insertText"] for c in completions] == [
         "animate",
         "char",
-        "image",
+        "icon",
         "number",
         "off",
         "orientation",

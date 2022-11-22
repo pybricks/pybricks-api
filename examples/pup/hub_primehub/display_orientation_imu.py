@@ -14,6 +14,6 @@ while True:
     hub.display.orientation(up_side)
 
     # Display something, like an arrow.
-    hub.display.image(Icon.UP)
+    hub.display.icon(Icon.UP)
 
     wait(10)

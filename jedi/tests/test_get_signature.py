@@ -360,7 +360,7 @@ METHOD_PARAMS = [
         [(["row: Number", "column: Number", "brightness: Number=100"], "None")],
     ),
     pytest.param(
-        "pybricks.hubs", "PrimeHub", "display.image", [(["matrix: Matrix"], "None")]
+        "pybricks.hubs", "PrimeHub", "display.icon", [(["icon: Matrix"], "None")]
     ),
     pytest.param(
         "pybricks.hubs",

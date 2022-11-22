@@ -12,7 +12,7 @@ while not any(pressed):
     wait(10)
 
 # Display a circle.
-hub.display.image(Icon.CIRCLE)
+hub.display.icon(Icon.CIRCLE)
 
 # Wait for all buttons to be released.
 while any(hub.buttons.pressed()):
@@ -20,10 +20,10 @@ while any(hub.buttons.pressed()):
 
 # Display an arrow to indicate which button was pressed.
 if Button.LEFT in pressed:
-    hub.display.image(Icon.ARROW_LEFT_DOWN)
+    hub.display.icon(Icon.ARROW_LEFT_DOWN)
 elif Button.RIGHT in pressed:
-    hub.display.image(Icon.ARROW_RIGHT_DOWN)
+    hub.display.icon(Icon.ARROW_RIGHT_DOWN)
 elif Button.BLUETOOTH in pressed:
-    hub.display.image(Icon.ARROW_RIGHT_UP)
+    hub.display.icon(Icon.ARROW_RIGHT_UP)
 
 wait(3000)

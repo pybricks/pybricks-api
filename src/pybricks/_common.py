@@ -708,14 +708,14 @@ class LightMatrix:
                 or ``Side.BOTTOM``.
         """
 
-    def image(self, matrix: Matrix) -> None:
-        """image(matrix)
+    def icon(self, icon: Matrix) -> None:
+        """icon(icon)
 
-        Displays an image, represented by a matrix of :ref:`brightness`
+        Displays an icon, represented by a matrix of :ref:`brightness`
         values.
 
         Arguments:
-            matrix (Matrix): Matrix of intensities (:ref:`brightness`).  A 2D
+            icon (Matrix): Matrix of intensities (:ref:`brightness`). A 2D
                 list is also accepted.
         """
 

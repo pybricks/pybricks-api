@@ -45,7 +45,7 @@ Prime Hub / Inventor Hub
 
     .. automethod:: pybricks.hubs::PrimeHub.display.pixel
 
-    .. automethod:: pybricks.hubs::PrimeHub.display.image
+    .. automethod:: pybricks.hubs::PrimeHub.display.icon
 
     .. automethod:: pybricks.hubs::PrimeHub.display.animate
 
