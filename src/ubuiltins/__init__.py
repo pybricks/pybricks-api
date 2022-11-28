@@ -585,7 +585,7 @@ def hex(x: int) -> _str:
     """
 
 
-def id() -> _int:
+def id(object: Any) -> _int:
     """
     Returns the “identity” of an object. This is an integer which is guaranteed
     to be unique and constant for this object during its lifetime.
