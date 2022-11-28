@@ -2,7 +2,7 @@
     "files.exclude": {
       "**/__pycache__": true,
     },
-
+    "python.defaultInterpreterPath": ".venv/bin/python",
     "python.autoComplete.extraPaths": ["jedi/src"],
     "python.formatting.provider": "black",
     "python.linting.pylintEnabled": false,
