@@ -835,23 +835,10 @@ def ord(c: _str) -> _int:
     """
 
 
-@overload
-def pow(base: _int, exp: _int) -> Union[_int, _float]:
-    ...
-
-
-@overload
-def pow(base: _int, exp: _int, mod: _int) -> Union[_int, _float]:
-    ...
-
-
-def pow():
+def pow(base: Union[_int, _float], exp: Union[_int, _float]) -> Union[_int, _float]:
     """
-    Returns ``base`` to the power ``exp``; if ``mod`` is present, returns ``base``
-    to the power ``exp``, modulo ``mod``.
-
-    The two-argument form ``pow(base, exp)`` is equivalent to using the power
-    operator: ``base ** exp``.
+    Returns ``base`` to the power ``exp``. This is equivalent to using the
+    power operator: ``base ** exp``.
     """
 
 
