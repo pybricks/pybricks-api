@@ -364,8 +364,21 @@ def divmod(a: _float, b: _float) -> Tuple[_float, _float]:
 
 def divmod(a, b):
     """
-    Takes two (non complex) numbers as arguments and returns a pair of numbers
-    consisting of their quotient and remainder when using integer division.
+    divmod(a, b) -> Tuple[int, int]
+
+    Gets the quotient and remainder for dividing two integers.
+
+    See the standard `Python divmod documentation
+    <https://docs.python.org/3/library/functions.html#divmod>`_ for
+    the expected behavior when ``a`` or ``b`` are floating point numbers
+    instead.
+
+    Arguments:
+        a (int): Numerator.
+        b (int): Denominator.
+
+    Returns:
+        A tuple with the quotient ``a // b`` and the remainder ``a % b``.
     """
 
 
