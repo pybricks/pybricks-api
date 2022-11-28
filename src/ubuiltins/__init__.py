@@ -669,7 +669,17 @@ class list:
 
     def __init__(self, *args) -> None:
         """
-        Creates a new list.
+        list(​)
+        list(iterable)
+
+        Creates a new list. If no argument is given, this creates an empty
+        ``list`` object.
+
+        A list is *mutable*, which means that you *can* change its contents
+        after you create it.
+
+        Arguments:
+            iterable (iter): Iterable from which to build the list.
         """
 
 
@@ -1013,8 +1023,17 @@ class tuple:
 
     def __init__(self, *args) -> None:
         """
-        Rather than being a function, :class:`tuple` is actually an immutable
-        sequence type.
+        tuple(​)
+        tuple(iterable)
+
+        Creates a new tuple. If no argument is given, this creates an empty
+        ``tuple`` object.
+
+        A tuple is *immutable*, which means that you *cannot* change its
+        contents after you create it.
+
+        Arguments:
+            iterable (iter): Iterable from which to build the tuple.
         """
 
 
