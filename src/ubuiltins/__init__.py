@@ -988,7 +988,20 @@ class slice:
 
 def sorted(iterable: Iterable, key=None, reverse=False) -> List:
     """
-    Returns a new sorted list from the items in ``iterable``.
+    Sorts objects.
+
+    Arguments:
+        iterable (iter): Objects to be sorted. This can also be a generator that
+            yield a finite number of objects.
+        key (callable): Function ``def(item) -> int`` that maps an object to a
+            numerical value. This is used to figure out the order of the sorted
+            items.
+        reverse (bool): Whether to sort in reverse, putting the highest value
+            first.
+
+
+    Returns:
+        A new list with the sorted items.
     """
 
 
