@@ -837,8 +837,19 @@ def ord(c: _str) -> _int:
 
 def pow(base: Union[_int, _float], exp: Union[_int, _float]) -> Union[_int, _float]:
     """
-    Returns ``base`` to the power ``exp``. This is equivalent to using the
-    power operator: ``base ** exp``.
+    pow(base, exp) -> int
+    pow(base, exp) -> float
+
+    Raises the base to the given exponent: :math:`\\text{base}^{\\mathrm{exp}}`.
+
+    This is the same as doing ``base ** exp``.
+
+    Arguments:
+        base (int or float): The base.
+        exp (int or float): The exponent.
+
+    Returns:
+        The result.
     """
 
 
