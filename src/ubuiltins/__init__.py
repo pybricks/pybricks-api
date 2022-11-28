@@ -745,7 +745,15 @@ def max(arg1: Any, arg2: Any, *args: Any) -> Any:
 
 def max(*args):
     """
-    Returns the largest item in an iterable or the largest of two or more arguments.
+    max(iterable) -> Any
+    max(arg1, arg2, ....) -> Any
+
+    Gets the object with largest value.
+
+    The argument may be a single iterable, or any number of objects.
+
+    Returns:
+        The object with the largest value.
     """
 
 
@@ -761,7 +769,15 @@ def min(arg1: Any, arg2: Any, *args: Any) -> Any:
 
 def min(*args):
     """
-    Returns the smallest item in an iterable or the smallest of two or more arguments.
+    min(iterable) -> Any
+    min(arg1, arg2, ....) -> Any
+
+    Gets the object with smallest value.
+
+    The argument may be a single iterable, or any number of objects.
+
+    Returns:
+        The object with the smallest value.
     """
 
 
