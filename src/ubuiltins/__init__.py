@@ -536,7 +536,18 @@ def getattr(object: Any, name: _str, default: Any) -> Any:
 
 def getattr(*args):
     """
-    Returns the value of the named attribute of object.
+    getattr(object, name) -> Any
+    getattr(object, name, default) -> Any
+
+    Looks up the attribute called ``name`` in the given ``object``.
+
+    Arguments:
+        object: Object in which to look for the attribute.
+        name (str): Name of the attribute.
+        default: Object to return if the attribute is not found.
+
+    Returns:
+        Returns the value of the named attribute.
     """
 
 
@@ -553,8 +564,16 @@ def globals() -> Dict[_str, Any]:
 
 def hasattr(object: Any, name: _str) -> _bool:
     """
-    The result is ``True`` if the string is the name of one of the object’s
-    attributes, ``False`` if not.
+    hasattr(object, name) -> bool
+
+    Checks if an attribute exists on an object.
+
+    Arguments:
+        object: Object in which to look for the attribute.
+        name (str): Name of the attribute.
+
+    Returns:
+        ``True`` if an attribute by that name exists, ``False`` if not.
     """
 
 
