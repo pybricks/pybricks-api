@@ -541,7 +541,15 @@ def hasattr(object: Any, name: _str) -> _bool:
 
 def hash(object: Any) -> _int:
     """
-    Returns the hash value of the object (if it has one).
+    hash(object) -> int
+
+    Gets the hash value of an object, if the object supports it.
+
+    Arguments:
+        object: Object for which to get a hash value.
+
+    Returns:
+        The hash value.
     """
 
 
