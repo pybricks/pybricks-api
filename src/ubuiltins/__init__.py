@@ -1067,9 +1067,16 @@ def round(*args):
 
 def setattr(object: Any, name: _str, value: Any) -> None:
     """
-    Assigns the value to the attribute, provided the object allows it.
+    setattr(object, name, value)
+
+    Assigns a value to an attribute, provided that the object allows it.
 
     This is the counterpart of :meth:`getattr`.
+
+    Arguments:
+        object: Object in which to store the attribute.
+        name (str): Name of the attribute.
+        value: Value to store.
     """
 
 
