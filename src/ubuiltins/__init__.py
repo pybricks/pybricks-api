@@ -1119,17 +1119,18 @@ class type:
 
 def zip(*iterables: Iterable) -> Iterable[Tuple]:
     """
-    Returns an iterator of tuples, where the i-th tuple contains the i-th
+    zip(iter_a, iter_b, ...) -> Iterable[Tuple]
+
+    Returns an iterator of tuples, where the *i*-th tuple contains the *i*-th
     element from each of the argument sequences or iterables. The iterator
     stops when the shortest input iterable is exhausted.
 
     With a single iterable argument, it returns an iterator of 1-tuples.
     With no arguments, it returns an empty iterator.
 
-    Equivalent to::
+    This functionality is equivalent to::
 
         def zip(*iterables):
-            # zip('ABCD', 'xy') --> Ax By
             sentinel = object()
             iterators = [iter(it) for it in iterables]
             while iterators:
@@ -1140,6 +1141,16 @@ def zip(*iterables: Iterable) -> Iterable[Tuple]:
                         return
                     result.append(elem)
                 yield tuple(result)
+
+    Arguments:
+        iter_a (iter): The first iterable. This provides the first value for
+            each of the yielded tuples.
+        iter_b (iter): The second iterable. This provides the second value in
+            each of the yielded tuples. And so on.
+
+    Returns:
+        A new iterator that yields tuples containing the values of the
+        individual iterables.
     """
 
 
