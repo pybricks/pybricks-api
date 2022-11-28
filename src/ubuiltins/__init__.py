@@ -1220,8 +1220,15 @@ def super(type: _type, object_or_type: Any) -> _type:
 
 def super(*args):
     """
-    Returns an object that delegates method calls to a parent or sibling class
-    of ``type``.
+    super() -> type
+    super(type) -> type
+    super(type, object_or_type) -> type
+
+    Gets an object that delegates method calls to a parent, or a sibling class
+    of the given type.
+
+    Returns:
+        The matching `super()` object.
     """
 
 
