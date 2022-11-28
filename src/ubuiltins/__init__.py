@@ -182,7 +182,7 @@ class bytes:
         bytes(​)
         bytes(integer)
         bytes(iterable)
-        bytes(string, "utf-8")
+        bytes(string, encoding)
 
         Creates a new ``bytes`` object, which is a sequence of integers
         in the range :math:`0 \leq x \leq 255`. This object is *immutable*,
@@ -199,7 +199,7 @@ class bytes:
             string (str): If the argument is a string, this creates a ``bytes``
               object containing the encoded string.
             encoding (str): Specifies which encoding to use for the ``string``
-              argument. Only ``'utf8'``  is supported.
+              argument. Only ``"utf-8"``  is supported.
         """
 
 
@@ -970,7 +970,20 @@ class str:
 
     def __init__(self) -> None:
         """
-        Return a :class:`str` version of object.
+        str(​)
+        str(object)
+        str(object, encoding)
+
+        Gets the string representation of an object.
+
+        If no argument is given, this creates an empty ``str`` object.
+
+        Arguments:
+            object: If only this argument is given, this returns the stirng
+              representation of the object.
+            encoding (str): If the first argument is a ``bytearray`` or ``bytes``
+              object and the encoding argument is ``"utf-8"``, this will decode
+              the byte data to get a string representation.
         """
 
 
