@@ -936,11 +936,12 @@ class slice:
 
     def __init__(self, *args) -> None:
         """
-        Returns a slice object representing the set of indices specified by
-        ``range(start, stop, step)``.
+        slice(​)
 
-        Slice objects are also generated when extended indexing syntax is used.
-        For example: ``a[start:stop:step]`` or ``a[start:stop, i]``.
+        Creating instances of this class is not supported.
+
+        Use indexing syntax instead. For
+        example: ``a[start:stop:step]`` or ``a[start:stop, i]``.
         """
 
 
