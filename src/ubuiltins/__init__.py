@@ -950,19 +950,23 @@ def round(number: _float, ndigits: _int) -> _float:
 
 def round(*args):
     """
-    Returns ``number`` rounded to ``ndigits`` precision after the decimal point.
-    If ``ndigits`` is omitted or is ``None``, it returns the nearest integer to
-    its input.
+    round(number) -> int
+    round(number, ndigits) -> float
 
-    .. tip:: To print a number use a format function instead. Since many floating
-        point numbers don't have exact representations, :meth:`round` often gives
-        unexpected results!
+    Round a number to a given number of digits after the decimal point.
 
-        Example::
+    If ``ndigits`` is omitted or ``None``, it returns the nearest integer.
 
-            # print two decimal places
-            print('my number: %.2f' % number)
-            print('my number: {:.2f}'.format(number))
+    Rounding with one or more digits after the decimal point will not always
+    truncate trailing zeros. To print numbers nicely, format strings instead::
+
+        # print two decimal places
+        print('my number: %.2f' % number) print('my number:
+        {:.2f}'.format(number))
+
+    Arguments:
+        number (float): The number to be rounded.
+        ndigits (int): The number of digits remaining after the decimal point.
     """
 
 
