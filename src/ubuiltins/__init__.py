@@ -746,21 +746,9 @@ def min(*args):
     """
 
 
-@overload
 def next(iterator: Iterator) -> Any:
-    ...
-
-
-@overload
-def next(iterator: Iterator, default: Any) -> Any:
-    ...
-
-
-def next(*args):
     """
     Retrieves the next item from the iterator by calling its ``__next__()`` method.
-    If ``default`` is given, it is returned if the iterator is exhausted,
-    otherwise ``StopIteration`` is raised.
     """
 
 
