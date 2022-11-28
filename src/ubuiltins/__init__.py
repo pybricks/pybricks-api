@@ -711,6 +711,9 @@ def map(function: Callable, iterable: Iterable, *args: Any) -> Iterator:
         iterable (iter): One or more source interables from which to draw data.
             With multiple iterables, the iterator stops when the shortest
             iterable is exhausted.
+
+    Returns:
+        The new, mapped iterator.
     """
 
 
@@ -748,7 +751,16 @@ def min(*args):
 
 def next(iterator: Iterator) -> Any:
     """
+    next(iterator) -> Any
+
     Retrieves the next item from the iterator by calling its ``__next__()`` method.
+
+    Arguments:
+        iterator (iter): Initialized generator object from which to draw the next
+            value.
+
+    Returns:
+        The next value from the generator.
     """
 
 
