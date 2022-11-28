@@ -733,14 +733,32 @@ class int:
 
 def isinstance(object: Any, classinfo: Union[_type, Tuple[_type]]) -> _bool:
     """
-    Returns ``True`` if the ``object`` argument is an instance of the ``classinfo``
-    argument, or of a subclass thereof.
+    isinstance(object, classinfo) -> bool
+
+    Checks if an object is an instance of a certain class.
+
+    Arguments:
+        object: Object to check the type of.
+        classinfo (type or tuple): Class information.
+
+    Returns:
+        ``True`` if the ``object`` argument is an instance of the ``classinfo``
+        argument, or of a subclass thereof.
     """
 
 
 def issubclass(cls: _type, classinfo: Union[_type, Tuple[_type]]) -> _bool:
     """
-    Returns ``True`` if ``cls`` is a subclass of ``classinfo``.
+    issubclass(cls, classinfo) -> bool
+
+    Checks if one class is a subclass of another class.
+
+    Arguments:
+        cls: Class type.
+        classinfo (type or tuple): Class information.
+
+    Returns:
+        ``True`` if ``cls`` is a subclass of ``classinfo``.
     """
 
 
