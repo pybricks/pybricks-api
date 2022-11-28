@@ -648,6 +648,9 @@ def iter(object: Union[Iterable, Sequence]) -> Iterator:
 
     Arguments:
         object: Object for which to get the iterator.
+
+    Returns:
+        The iterator.
     """
 
 
@@ -895,7 +898,16 @@ def repr(x: Any) -> _str:
 
 def reversed(seq: Sequence) -> Iterator:
     """
-    Returns a reverse iterator.
+    reversed(seq) -> Iterator
+
+    Gets an iterator that yields the values from the sequence in the reverse, if
+    supported.
+
+    Arguments:
+        seq: Sequence from which to draw samples.
+
+    Returns:
+        Iterator that yields values in reverse order, starting with the last value.
     """
 
 
