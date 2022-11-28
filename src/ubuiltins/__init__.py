@@ -565,8 +565,16 @@ def help(object: Any) -> None:
 
 def help(*args) -> None:
     """
-    Prints help for the ``object``. If no argument is given, prints general help.
-    If object is ``'modules'``, prints available modules.
+    help()
+    help(object)
+
+    Get information about an object.
+
+    If no arguments are given, this function prints instructions to operate the
+    REPL. If the argument is ``"modules"``, it prints the available modules.
+
+    Arguments:
+        object: Object for which to print help information.
     """
 
 
