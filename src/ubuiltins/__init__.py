@@ -242,7 +242,15 @@ class bytearray:
 
 def callable(object: Any) -> _bool:
     """
-    Returns ``True`` if the object argument appears callable, ``False`` if not.
+    callable(object) -> bool
+
+    Checks if an object is callable.
+
+    Arguments:
+        object: Object to check.
+
+    Returns:
+        ``True`` if the object argument appears callable, ``False`` if not.
     """
 
 
