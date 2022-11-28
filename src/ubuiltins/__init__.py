@@ -177,19 +177,27 @@ class bytes:
 
     def __init__(self, *args):
         r"""
+        bytes(​)
+        bytes(integer)
+        bytes(iterable)
+        bytes(string, "utf-8")
+
         Creates a new ``bytes`` object, which is a sequence of integers
         in the range :math:`0 \leq x \leq 255`. This object is *immutable*,
         which means that you *cannot* change its contents after you create it.
 
-           * If no argument is given, this creates an empty ``bytes`` object.
-           * If the ``source`` argument is an integer, this creates a ``bytes``
-             object of zeros. The argument specifies how many zeros.
-           * If ``source`` is a ``bytearray``, ``bytes`` object, or some other
-             iterable of integers, this creates a ``bytes``
-             object with the same byte sequence as the ``source`` argument.
-           * If ``source`` is a string, choose ``'utf8'`` as the ``encoding``
-             argument. Then this creates a ``bytes`` object containing the
-             encoded string.
+        If no argument is given, this creates an empty ``bytes`` object.
+
+        Arguments:
+            integer (int): If the argument is a single integer, this creates
+              a ``bytes`` object of zeros. The argument specifies how many.
+            iterable (iter): If the argument is a ``bytearray``, ``bytes``
+              object, or some other iterable of integers, this creates a ``bytes``
+              object with the same byte sequence as the argument.
+            string (str): If the argument is a string, this creates a ``bytes``
+              object containing the encoded string.
+            encoding (str): Specifies which encoding to use for the ``string``
+              argument. Only ``'utf8'``  is supported.
         """
 
 
@@ -208,15 +216,25 @@ class bytearray:
 
     def __init__(self, *args):
         r"""
+        bytearray(​)
+        bytearray(integer)
+        bytearray(iterable)
+        bytearray(string)
+
         Creates a new ``bytearray`` object, which is a sequence of integers
         in the range :math:`0 \leq x \leq 255`. This object is *mutable*, which
         means that you *can* change its contents after you create it.
 
-           * If no argument is given, this creates an empty ``bytearray``.
-           * If the ``source`` argument is an integer, this creates a ``bytearray``
-             of zeros. The argument specifies how many zeros.
-           * For all other valid ``source`` arguments, this creates a bytearray with
-             the same byte sequence as the given ``source`` argument.
+        If no argument is given, this creates an empty ``bytearray`` object.
+
+        Arguments:
+            integer (int): If the argument is a single integer, this creates
+              a ``bytearray`` object of zeros. The argument specifies how many.
+            iterable (iter): If the argument is a ``bytearray``, ``bytes``
+              object, or some other iterable of integers, this creates
+              a ``bytearray`` object with the same byte sequence as the argument.
+            string (str): If the argument is a string, this creates
+              a ``bytearray`` object containing the encoded string.
         """
 
 
@@ -305,6 +323,8 @@ class dict:
         dict(**kwargs)
         dict(mapping, **kwargs)
         dict(iterable, **kwargs)
+
+        Creates a dictionary object.
 
         See the standard
         `Python documentation
@@ -709,7 +729,7 @@ def next(*args):
 class object:
     def __init__(self) -> None:
         """
-        Return a new featureless object.
+        Creates a new, featureless object.
         """
 
 
@@ -967,7 +987,7 @@ def super(type: _type, object_or_type: Any) -> _type:
 
 def super(*args):
     """
-    Returns am object that delegates method calls to a parent or sibling class
+    Returns an object that delegates method calls to a parent or sibling class
     of ``type``.
     """
 
@@ -990,8 +1010,13 @@ class tuple:
 
 class type:
     def __init__(self, object: Any) -> None:
-        """
-        With one argument, returns the type of an ``object``.
+        """type(object)
+
+        Gets the type of an object. This can be used to check if an object
+        is an instance of a particular class.
+
+        Arguments:
+            object: Object of which to check the type.
         """
 
 
