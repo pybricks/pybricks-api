@@ -10,6 +10,9 @@ Stop
     .. autoattribute:: pybricks.parameters.Stop.COAST
         :annotation:
 
+    .. autoattribute:: pybricks.parameters.Stop.COAST_SMART
+        :annotation:
+
     .. autoattribute:: pybricks.parameters.Stop.BRAKE
         :annotation:
 

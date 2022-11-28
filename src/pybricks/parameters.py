@@ -157,6 +157,12 @@ class Stop(_PybricksEnum):
     COAST: Stop = 0
     """Let the motor move freely."""
 
+    COAST_SMART: Stop = 4
+    """Let the motor move freely. For the next relative angle maneuver,
+    take the last target angle (instead of the current angle) as the new
+    starting point. This reduces cumulative errors. This will apply only if the
+    current angle is less than twice the configured position tolerance."""
+
     BRAKE: Stop = 1
     """Passively resist small external forces."""
 
