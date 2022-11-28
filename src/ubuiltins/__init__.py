@@ -15,6 +15,8 @@
 
 """
 The following functions and exceptions can be used without importing anything.
+
+Most functions and classes in this module do not accept keyword arguments.
 """
 
 from typing import (
@@ -644,7 +646,15 @@ def iter(object: Union[Iterable, Sequence]) -> Iterator:
 
 def len(s: Sequence) -> _int:
     """
-    Returns the length (the number of items) of an object.
+    len(s) -> int
+
+    Gets the length (the number of items) of an object.
+
+    Arguments:
+        s (Sequence): The sequence of which to get the length.
+
+    Returns:
+        The length.
     """
 
 
