@@ -424,12 +424,23 @@ def eval(expression: _str, globals: _dict, locals: Mapping) -> Any:
 
 def eval(*args):
     """
-    The arguments are a string and optional globals and locals. If provided,
-    ``globals`` must be a dictionary. If provided, ``locals`` can be any mapping
-    object.
+    eval(expression) -> Any
+    eval(expression, globals) -> Any
+    eval(expression, globals, locals) -> Any
 
-    The return value is the result of the evaluated expression. Syntax errors
-    are reported as exceptions.
+    Evaluates the result of an expression by executing it as code.
+
+    Syntax errors are reported as exceptions.
+
+    Arguments:
+        expression (str): Expression to be executed.
+        globals (dict): If given, this controls what functions are available
+            for use in the expression. By default the global scope is accessible.
+        locals (dict): If given, this controls what functions are available
+            for use in the expression. Defaults to the same as ``globals``.
+
+    Returns:
+        The value obtained by executing the expression.
     """
 
 
