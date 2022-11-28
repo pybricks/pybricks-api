@@ -970,21 +970,6 @@ def round(*args):
     """
 
 
-class set:
-    @overload
-    def __init__(self) -> None:
-        ...
-
-    @overload
-    def __init__(self, iterable: Iterable) -> None:
-        ...
-
-    def __init__(self, *args) -> None:
-        """
-        Returns a new set object, optionally with elements taken from ``iterable``.
-        """
-
-
 def setattr(object: Any, name: _str, value: Any) -> None:
     """
     Assigns the value to the attribute, provided the object allows it.
