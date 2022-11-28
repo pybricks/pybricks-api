@@ -355,8 +355,19 @@ def dir(object: Any) -> List[_str]:
 
 def dir(*args) -> List[_str]:
     """
-    Without arguments, return the list of names in the current local scope. With
-    an argument, attempt to return a list of valid attributes for that object.
+    dir() -> List[str]
+    dir(object) -> List[str]
+
+    Gets a list of attributes of an object.
+
+    If no object argument is given, this function gets the list of names in the
+    current local scope.
+
+    Arguments:
+        object: Object to check for valid attributes.
+
+    Returns:
+        List of object attributes or list of names in current local scope.
     """
 
 
