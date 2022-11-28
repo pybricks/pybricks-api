@@ -865,7 +865,18 @@ class range:
 
     def __init__(self, *args) -> None:
         """
-        Rather than being a function, ``range`` is actually an immutable sequence type.
+        range(stop)
+        range(start, stop)
+        range(start, stop, step)
+
+        Creates a generator that yields values from ``start`` up to
+        ``stop``, with increments of ``step``.
+
+        Arguments:
+            start (int): Starting value. Defaults to ``0`` if only one argument is given.
+            stop (int): Endpoint. This value is *not* included.
+            step (int): Increment between values. Defaults to ``1`` if only one
+                or two arguments are given.
         """
 
 
