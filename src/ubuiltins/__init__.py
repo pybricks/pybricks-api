@@ -523,7 +523,12 @@ def getattr(*args):
 
 def globals() -> Dict[_str, Any]:
     """
-    Return a dictionary representing the current global symbol table.
+    globals() -> dict
+
+    Gets a dictionary representing the current global symbol table.
+
+    Returns:
+        The dictionary of globals.
     """
 
 
@@ -732,7 +737,12 @@ class list:
 
 def locals() -> _dict:
     """
-    Updates and returns a dictionary representing the current local symbol table.
+    locals() -> dict
+
+    Gets a dictionary representing the current local symbol table.
+
+    Returns:
+        The dictionary of locals.
     """
 
 
