@@ -380,9 +380,11 @@ class enumerate:
 
     def __init__(self, *args) -> None:
         """
-        Returns an enumerate object.
+        enumerate(iterable, start=0)
 
-        Equivalent to::
+        Enumerates an existing iterator by adding a numeric index.
+
+        This function is equivalent to::
 
             def enumerate(sequence, start=0):
                 n = start
@@ -640,7 +642,12 @@ def issubclass(cls: _type, classinfo: Union[_type, Tuple[_type]]) -> _bool:
 
 def iter(object: Union[Iterable, Sequence]) -> Iterator:
     """
-    Returns an iterator object.
+    iter(object) -> Iterator
+
+    Gets the iterator of the object if available.
+
+    Arguments:
+        object: Object for which to get the iterator.
     """
 
 
@@ -691,8 +698,19 @@ def locals() -> _dict:
 
 def map(function: Callable, iterable: Iterable, *args: Any) -> Iterator:
     """
-    Returns an iterator that applies function to every item of iterable,
-    yielding the results.
+    map(function, iterable) -> Iterator
+    map(function, iterable1, iterable2...) -> Iterator
+
+    Creates a new iterator that applies the given function to each item in the
+    given iterable and yields the results.
+
+    Arguments:
+        function (callable): Function that computes a result for one item in the
+            iterable(s). The number of arguments to this function must match
+            the number of iterables given.
+        iterable (iter): One or more source interables from which to draw data.
+            With multiple iterables, the iterator stops when the shortest
+            iterable is exhausted.
     """
 
 
