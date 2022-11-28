@@ -428,12 +428,12 @@ def eval(*args):
     eval(expression, globals) -> Any
     eval(expression, globals, locals) -> Any
 
-    Evaluates the result of an expression by executing it as code.
+    Evaluates the result of an expression.
 
     Syntax errors are reported as exceptions.
 
     Arguments:
-        expression (str): Expression to be executed.
+        expression (str): Expression to evaluate result of.
         globals (dict): If given, this controls what functions are available
             for use in the expression. By default the global scope is accessible.
         locals (dict): If given, this controls what functions are available
@@ -461,7 +461,20 @@ def exec(object: Any, globals: _dict, locals: Mapping) -> None:
 
 def exec(*args):
     """
-    This function supports dynamic execution of Python code.
+    exec(expression)
+    exec(expression, globals)
+    exec(expression, globals, locals)
+
+    Executes MicroPython code.
+
+    Syntax errors are reported as exceptions.
+
+    Arguments:
+        expression (str): Code to be executed.
+        globals (dict): If given, this controls what functions are available
+            for use in the expression. By default the global scope is accessible.
+        locals (dict): If given, this controls what functions are available
+            for use in the expression. Defaults to the same as ``globals``.
     """
 
 
