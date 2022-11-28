@@ -102,7 +102,7 @@ ENUMS = [
     ),
     pytest.param("Port", ["A", "B", "C", "D", "E", "F", "S1", "S2", "S3", "S4"]),
     pytest.param("Side", ["BACK", "BOTTOM", "FRONT", "LEFT", "RIGHT", "TOP"]),
-    pytest.param("Stop", ["BRAKE", "COAST", "HOLD"]),
+    pytest.param("Stop", ["BRAKE", "COAST", "COAST_SMART", "HOLD", "NONE"]),
 ]
 
 

@@ -152,23 +152,32 @@ class Port(_PybricksEnum):
 
 
 class Stop(_PybricksEnum):
-    """Action after the motor stops."""
+    """Action after the motor stops or reaches its target."""
 
     COAST: Stop = 0
     """Let the motor move freely."""
 
     COAST_SMART: Stop = 4
-    """Let the motor move freely. For the next relative angle maneuver,
+    """
+    Let the motor move freely. For the next relative angle maneuver,
     take the last target angle (instead of the current angle) as the new
     starting point. This reduces cumulative errors. This will apply only if the
-    current angle is less than twice the configured position tolerance."""
+    current angle is less than twice the configured position tolerance.
+    """
 
     BRAKE: Stop = 1
     """Passively resist small external forces."""
 
     HOLD: Stop = 2
-    """Keep controlling the motor to hold it at the commanded angle. This is
-    only available on motors with encoders."""
+    """Keep controlling the motor to hold it at the commanded angle."""
+
+    NONE: Stop = 3
+    """
+    Do not decelerate when approaching the target position. This can be used
+    to concatenate multiple motor or drive base maneuvers without stopping. If
+    no further commands are given, the motor will proceed to run indefinitely
+    at the given speed.
+    """
 
 
 class Direction(_PybricksEnum):
