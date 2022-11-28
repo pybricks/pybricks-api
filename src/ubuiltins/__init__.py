@@ -837,16 +837,15 @@ def ord(c: _str) -> _int:
 
 def pow(base: Union[_int, _float], exp: Union[_int, _float]) -> Union[_int, _float]:
     """
-    pow(base, exp) -> int
-    pow(base, exp) -> float
+    pow(base, exp) -> Number
 
     Raises the base to the given exponent: :math:`\\text{base}^{\\mathrm{exp}}`.
 
     This is the same as doing ``base ** exp``.
 
     Arguments:
-        base (int or float): The base.
-        exp (int or float): The exponent.
+        base (Number): The base.
+        exp (Number): The exponent.
 
     Returns:
         The result.
@@ -1069,8 +1068,17 @@ def sum(iterable: Iterable, start: _int) -> _int:
 
 def sum(*args):
     """
-    Sums ``start`` and the items of an ``iterable`` from left to right and
-    returns the total.
+    sum(iterable) -> Number
+    sum(iterable, start) -> Number
+
+    Sums the items from the iterable and the start value.
+
+    Arguments:
+        iterable (iter): Values to be summed, starting with the first value.
+        start (Number): Value added to the total.
+
+    Returns:
+        The total sum.
     """
 
 
