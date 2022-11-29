@@ -42,7 +42,9 @@ class BytesIO:
         Arguments:
             data (bytes or bytearray): Optional bytes-like object
                 that contains initial data.
-            alloc_size (int): Optional number of preallocated bytes.
+            alloc_size (int): Optional number of preallocated bytes. This
+                parameter is unique to MicroPython. It is not recommended to
+                use it in end-user code.
         """
 
     def getvalue(self) -> bytes:
@@ -76,7 +78,9 @@ class StringIO:
 
         Arguments:
             string (str): Optional string with initial data.
-            alloc_size (int): Optional number of preallocated bytes.
+            alloc_size (int): Optional number of preallocated bytes. This
+                parameter is unique to MicroPython. It is not recommended to
+                use it in end-user code.
         """
 
     def getvalue(self) -> str:
