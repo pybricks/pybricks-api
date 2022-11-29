@@ -17,7 +17,7 @@
 .. autofunction:: micropython.opt_level
 
 .. autofunction:: micropython.qstr_info
-    
+
 .. autofunction:: micropython.stack_use
 
 

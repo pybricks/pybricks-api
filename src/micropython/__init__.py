@@ -12,10 +12,31 @@ Access and control MicroPython internals.
 from typing import Any, overload
 
 
+@overload
 def const(value: int) -> int:
+    ...
+
+
+@overload
+def const(value: str) -> str:
+    ...
+
+
+@overload
+def const(value: float) -> float:
+    ...
+
+
+@overload
+def const(value: tuple) -> tuple:
+    ...
+
+
+def const(value):
     """
-    Declares the value as a constant. This value will be
-    substituted wherever it is used, which makes your code more efficient.
+    const(value) -> Any
+
+    Declares the value as a constant, which makes your code more efficient.
 
     To reduce memory usage further, prefix its name with an
     underscore (``_ORANGES``). This constant can only be used within the
@@ -23,8 +44,13 @@ def const(value: int) -> int:
 
     If you want to import the value from another module, use a name without an
     underscore (``APPLES``). This uses a bit more memory.
+
+    Arguments:
+        value (int or float or str or tuple): The literal to be made constant.
+
+    Returns:
+        The constant value.
     """
-    ...
 
 
 @overload
@@ -54,8 +80,11 @@ def opt_level(*args):
     This applies only to code that you run in the REPL, because regular scripts
     are already compiled before they are sent to the hub.
 
-    If no argument is given, this function returns the current optimization
-    level.
+    Arguments:
+        level (int): The level to be set.
+
+    Returns:
+        If no argument is given, this returns the current optimization level.
 
     """
 
@@ -72,10 +101,14 @@ def mem_info(verbose: Any) -> None:
 
 def mem_info(*args):
     """
+    mem_info()
+    mem_info(verbose)
+
     Prints information about stack and heap memory usage.
 
-    If the ``verbose`` argument is given, it also prints out
-    the entire heap, indicating which blocks are used and which are free.
+    Arguments:
+        verbose: If any value is given, it also prints out the entire heap.
+            This indicates which blocks are used and which are free.
     """
 
 
@@ -91,20 +124,29 @@ def qstr_info(verbose: Any) -> None:
 
 def qstr_info(*args):
     """
+    qstr_info()
+    qstr_info(verbose)
+
     Prints how many strings are interned and how much RAM they use.
 
     MicroPython uses string interning to save both RAM and ROM.
     This avoids having to store duplicate copies of the same string.
 
-    If the ``verbose`` argument is given it also prints out the names of all
-    RAM-interned strings.
+    Arguments:
+        verbose: If any value is given, it also prints out the names of all
+            RAM-interned strings.
     """
 
 
 def stack_use() -> int:
     """
-    Returns the amount of stack that is being used. This can be used to
+    stack_use() -> int
+
+    Checks the amount of stack that is being used. This can be used to
     compute differences in stack usage at different points in a script.
+
+    Returns:
+        The amount of stack in use.
     """
 
 
@@ -133,12 +175,13 @@ def heap_unlock() -> int:
 
 def kbd_intr(chr: int) -> None:
     """
-    Set the character that will raise a ``KeyboardInterrupt`` exception.  By
-    default this is set to ``3`` during script execution, corresponding to
-    :kbd:`Ctrl-C`. Passing ``-1`` to this function will disable capture of
-    :kbd:`Ctrl-C`, and passing ``3`` will restore it.
+    kbd_intr(chr)
 
-    This function can be used to prevent the capturing of :kbd:`Ctrl-C` on the
-    incoming stream of characters that is usually used for the REPL, in case
-    that stream is used for other purposes.
+    Sets the character that raises a ``KeyboardInterrupt`` exception when
+    you type it in the input window. By default it is set to ``3``,
+    corresponding to :kbd:`Ctrl-C`.
+
+    Arguments:
+        chr (int): Character that should raise the ``KeyboardInterrupt``.
+            Choose ``-1`` to disable this feature.
     """
