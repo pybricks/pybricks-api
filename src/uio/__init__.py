@@ -14,7 +14,7 @@ This module contains ``stream`` objects that behave like files.
 from typing import overload, Union
 
 # TODO: MicroPython streams implement '__enter__', '__exit__', 'close', 'read',
-# 'readinto', 'readline', 'write', 'flush', 'getvalue', 'seek', 'tell'
+# 'readinto', 'readline', 'write', 'flush', 'seek', 'tell'
 # and are iterable
 
 
@@ -45,6 +45,13 @@ class BytesIO:
             alloc_size (int): Optional number of preallocated bytes.
         """
 
+    def getvalue(self) -> bytes:
+        """
+        getvalue() -> bytes
+
+        Gets the contents of the underlying buffer.
+        """
+
 
 class StringIO:
     @overload
@@ -70,6 +77,13 @@ class StringIO:
         Arguments:
             string (str): Optional string with initial data.
             alloc_size (int): Optional number of preallocated bytes.
+        """
+
+    def getvalue(self) -> str:
+        """
+        getvalue() -> str
+
+        Gets the contents of the underlying buffer.
         """
 
 
