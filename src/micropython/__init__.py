@@ -108,7 +108,27 @@ def stack_use() -> int:
     """
 
 
-# REVISIT: Skipping heap lock funcs for now
+def heap_lock() -> None:
+    """
+    heap_lock()
+
+    Locks the heap. When locked, no memory allocation can occur. A
+    ``MemoryError`` will be raised if any heap allocation is attempted.
+    """
+
+
+def heap_unlock() -> int:
+    """
+    heap_unlock() -> int
+
+    Unlocks the heap. Memory allocation is now allowed again.
+
+    If :func:`heap_lock()` was called multiple times, :func:`heap_unlock()`
+    must be called the same number of times to make the heap available again.
+
+    Returns:
+        The lock depth after unlocking. It is ``0`` once it is unlocked.
+    """
 
 
 def kbd_intr(chr: int) -> None:
