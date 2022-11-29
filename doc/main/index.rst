@@ -79,6 +79,7 @@ on your hub. Check `pybricks.com/install`_ to learn how.
    micropython/micropython
    micropython/uerrno
    micropython/uio
+   micropython/ujson
    micropython/umath
    micropython/urandom
    micropython/uselect
