@@ -1,3 +1,5 @@
+.. pybricks-requirements:: stm32-extra
+
 :mod:`micropython` -- MicroPython internals
 ===========================================
 
