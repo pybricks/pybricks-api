@@ -260,5 +260,3 @@ Fahrenheit (°F) or Kelvin (K), you can use the following conversion formulas:
 hue: deg
 --------------
 Hue of a color (0-359 degrees).
-
-TODO: diagram
