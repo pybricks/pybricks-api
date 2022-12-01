@@ -29,9 +29,9 @@ if TYPE_CHECKING or os.environ.get("SPHINX_BUILD") == "True":
     however, your input value will be truncated to a whole number anyway. In this
     example, either command makes the program pause for just 15 milliseconds.
 
-    .. warning::
+    .. note::
         The BOOST Move hub doesn't support floating point numbers due to
-        limited system resources, so only integers can be used on that hub.
+        limited system resources. Only integers can be used on that hub.
     """
 
 
