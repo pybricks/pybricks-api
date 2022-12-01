@@ -238,8 +238,8 @@ def test_from_uselect_import():
     code = "from uselect import "
     completions: list[CompletionItem] = json.loads(complete(code, 1, len(code) + 1))
     assert [c["insertText"] for c in completions] == [
-        "poll",
         "Poll",
+        "poll",
         "POLLERR",
         "POLLHUP",
         "POLLIN",
