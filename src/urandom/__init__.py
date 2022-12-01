@@ -8,18 +8,6 @@
 
 """
 This module implements pseudo-random number generators.
-
-.. note:: This module is not available on the BOOST Move Hub.
-
-    You can make your own random number generator like this instead::
-
-        _rand = hub.battery.voltage() + hub.battery.current()  # seed
-
-        # Return a random integer N such that a <= N <= b.
-        def randint(a, b):
-            global _rand
-            _rand = 75 * _rand % 65537  # Lehmer
-            return _rand * (b - a + 1) // 65537 + a
 """
 
 from typing import Any, Optional, Sequence, overload

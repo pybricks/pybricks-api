@@ -6,11 +6,14 @@
 
 ### Added
 - Documented ``Stop.NONE`` and ``Stop.COAST_SMART``.
+- Documented ``ujson`` module.
 
 ### Changed
 - Changed `PrimeHub.display.image()` to `PrimeHub.display.icon()` and renamed
   its kwarg from `image` to `icon`.
-- Improved presentation and docstrings of the ``ubuiltins`` module.
+- Improved presentation and docstrings of the ``ubuiltins`` and other
+  MicroPython modules
+- Moved the random numbers example for Move Hub to the Move Hub page.
 
 ## 3.2.0b5 - 2022-11-11
 

@@ -95,3 +95,16 @@ Turning the hub off
 
 .. literalinclude::
     ../../../examples/pup/hub_common/build/system_shutdown_movehub.py
+
+Making random numbers
+**************************************************
+
+The Move Hub does not include the :mod:`urandom` module. If you need random
+numbers in your application, you can try a variation of the following example.
+
+To make it work better, change the initial value of ``_rand`` to something
+that is truly random in your application. You could use the IMU acceleration
+or a sensor value, for example.
+
+.. literalinclude::
+    ../../../examples/pup/hub_movehub/randint_implementation.py
