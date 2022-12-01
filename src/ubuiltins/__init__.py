@@ -985,9 +985,9 @@ def print(*args):
         objects: Zero or more objects to print.
 
     Keyword Arguments:
-        sep: This is printed between objects, if there is more than one.
-        end: This is printed after the last object.
-        file: By default, the result is printed in the terminal window. This
+        sep (str): This is printed between objects, if there is more than one.
+        end (str): This is printed after the last object.
+        file (FileIO): By default, the result is printed in the terminal window. This
               argument lets you print it to a file instead, if files are
               supported.
     """
