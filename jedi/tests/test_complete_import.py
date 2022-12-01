@@ -251,7 +251,10 @@ def test_from_usys_import():
     code = "from usys import "
     completions: list[CompletionItem] = json.loads(complete(code, 1, len(code) + 1))
     assert [c["insertText"] for c in completions] == [
+        "implementation",
         "stderr",
         "stdin",
         "stdout",
+        "version",
+        "version_info",
     ]

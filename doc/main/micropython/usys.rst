@@ -5,6 +5,8 @@
 
 This MicroPython module is a subset of the `sys module`_ in Python.
 
+.. rubric:: Input and output streams
+
 .. module:: usys
 
 .. autodata:: usys.stdin
@@ -16,8 +18,31 @@ This MicroPython module is a subset of the `sys module`_ in Python.
 .. autodata:: usys.stderr
     :annotation:
 
+.. rubric:: Version info
+
+.. autodata:: implementation
+    :annotation:
+
+.. autodata:: version
+    :annotation:
+
+.. autodata:: version_info
+    :annotation:
+
 Examples
 ---------------
+
+Version information
+*******************************
+
+.. literalinclude::
+    ../../../examples/micropython/usys/pybricks_version.py
+
+.. literalinclude::
+    ../../../examples/micropython/usys/micropython_version.py
+
+Standard input and output
+*******************************
 
 The ``stdin`` stream can be used to capture input via the Pybricks Code
 input/output window. See the `keyboard input`_ project to learn how this works.
