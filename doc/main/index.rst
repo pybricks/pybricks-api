@@ -83,4 +83,5 @@ on your hub. Check `pybricks.com/install`_ to learn how.
    micropython/umath
    micropython/urandom
    micropython/uselect
+   micropython/ustruct
    micropython/usys
