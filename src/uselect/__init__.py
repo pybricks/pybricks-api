@@ -7,8 +7,6 @@
 
 """
 This module provides functions to efficiently wait for events on multiple streams.
-
-.. note:: This module is not available on the BOOST Move hub.
 """
 
 from typing import IO, Iterator, List, Tuple, overload
@@ -25,61 +23,58 @@ More data can be written.
 
 POLLERR: int
 """
-Error condition happened on the associated stream.
+Error condition happened on the associated stream. Should be handled explicitly
+or else further invocations of :meth:`poll` may return right away.
 """
 
 POLLHUP: int
 """
-Hang up happened on the associated stream.
+Hang up happened on the associated stream. Should be handled explicitly
+or else further invocations of :meth:`poll` may return right away.
 """
 
 
-def poll() -> "Poll":
-    """
-    Creates an instance of the Poll class.
-    """
-
-
-# skipping def select(...)
-
-
 class Poll:
-    @overload
-    def register(self, obj: IO) -> None:
-        ...
-
-    @overload
-    def register(self, obj: IO, eventmask: int) -> None:
-        ...
-
-    def register(self, obj: IO, eventmask: int) -> None:
+    def register(self, object: IO, eventmask: int) -> None:
         """
-        Register `stream` ``obj`` for polling. ``eventmask`` is logical OR of:
+        register(object, eventmask=POLLOUT | POLLOUT)
 
-        * :data:`POLLIN`
-        * :data:`POLLOUT`
+        Register a stream object for polling. The stream object will now be
+        monitored for events. If an event happens, it becomes part of the
+        return value of :meth:`poll`.
 
-        Note that flags like :data:`POLLHUP` and :data:`POLLERR` are
-        *not* valid as input eventmask (these are unsolicited events which
-        will be returned from :meth:`poll` regardless of whether they are asked
-        for). This semantics is per POSIX.
+        If this method is called again for the same stream object, the object
+        will not be registered again, but the ``eventmask`` flags will be
+        updated, as if calling :meth:`modify()`.
 
-        ``eventmask`` defaults to ``POLLIN | POLLOUT``.
-
-        It is OK to call this function multiple times for the same ``obj``.
-        Successive calls will update ``obj``'s eventmask to the value of
-        ``eventmask`` (i.e. will behave as :meth:`modify()`).
+        Arguments:
+            object (FileIO): Stream to be registered for polling.
+            eventmask (int): Which events to use. Should be ``POLLIN``,
+                ``POLLOUT``, or their logical disjunction: ``POLLIN | POLLOUT``.
         """
 
-    def unregister(self, obj: IO) -> None:
+    def unregister(self, object: IO) -> None:
         """
-        Unregister ``obj`` from polling.
+        unregister(poll)
+
+        Unregister an object from polling.
+
+        Arguments:
+            object (FileIO): Stream to be unregistered from polling.
         """
 
     def modify(self, obj: IO, eventmask: int) -> None:
         """
-        Modify the ``eventmask`` for ``obj``. If ``obj`` is not registered, ``OSError``
-        is raised with error of ``ENOENT``.
+        modify(object, eventmask)
+
+        Modifies the event mask for the stream object.
+
+        Arguments:
+            object (FileIO): Stream to be registered for polling.
+            eventmask (int): Which events to use.
+
+        Raises:
+            ``OSError``: If the object is not registered. The error is ``ENOENT``.
         """
 
     @overload
@@ -92,21 +87,21 @@ class Poll:
 
     def poll(self, timeout: int = -1, /) -> List[Tuple[IO, int]]:
         """
-        Wait for at least one of the registered objects to become ready or have an
-        exceptional condition, with optional timeout in milliseconds (if ``timeout``
-        arg is not specified or -1, there is no timeout).
+        poll(timeout=-1) -> List[Tuple[FileIO, int]]
 
-        Returns list of (``obj``, ``event``, ...) tuples. There may be other elements in
-        tuple, depending on a platform and version, so don't assume that its size is 2.
-        The ``event`` element specifies which events happened with a stream and
-        is a combination of ``POLL*`` constants described above. Note that
-        flags :data:`POLLHUP` and :data:`POLLERR` can be returned at any time
-        (even if were not asked for), and must be acted on accordingly (the
-        corresponding stream unregistered from poll and likely closed), because
-        otherwise all further invocations of :meth:`poll` may return immediately with
-        these flags set for this stream again.
+        Wait until at least one of the registered objects has a new event or
+        exceptional condition ready to be handled.
 
-        In case of timeout, an empty list is returned.
+        Arguments:
+            timeout (int): Timeout in milliseconds. Choose ``0`` to return
+                immediately or choose ``-1`` to wait indefinitely.
+
+        Returns:
+            A list of tuples. There is one (``object``, ``eventmask``, ...)
+            tuple for each object with an event, or no tuples if there are no
+            events to be handled. The ``eventmask`` value
+            is a combination of poll flags to indicate what happened. This may
+            include ``POLLERR`` and ``POLLHUP`` even if they were not registered.
         """
 
     @overload
@@ -123,13 +118,32 @@ class Poll:
 
     def ipoll(self, timeout: int = -1, flags: int = 0, /) -> Iterator[Tuple[IO, int]]:
         """
-        Like :meth:`poll`, but instead returns an iterator which yields a
-        `callee-owned tuple`. This function provides an efficient, allocation-free
-        way to poll on streams.
+        ipoll(timeout=-1, flags=1) -> Iterator[Tuple[FileIO, int]]
 
-        If ``flags`` is 1, one-shot behavior for events is employed: streams for
-        which events happened will have their event masks automatically reset
-        (equivalent to ``poll.modify(obj, 0)``), so new events for such a stream
-        won't be processed until new mask is set with :meth:`modify`. This
-        behavior is useful for asynchronous I/O schedulers.
+        First, just like :meth:`poll`, wait until at least one of the registered
+        objects has a new event or exceptional condition ready to be handled.
+
+        But instead of a list, this method returns an iterator for improved
+        efficiency. The iterator yields one (``object``, ``eventmask``, ...)
+        tuple at a time, and overwrites it when yielding the next value. If you
+        need the values later, make sure to copy them explicitly.
+
+        Arguments:
+            timeout (int): Timeout in milliseconds. Choose ``0`` to return
+                immediately or choose ``-1`` to wait indefinitely.
+            flags (int): If set to ``1``, one-shot behavior for events is
+                employed. This means that streams for which events happened
+                will have their event masks automatically reset using
+                ``poll.modify(obj, 0)``. This way, new events for such a stream
+                won't be processed until a new mask is set with :meth:`modify`,
+                which is useful for asynchronous I/O schedulers.
         """
+
+
+def poll() -> Poll:
+    """
+    Creates an instance of the :class:`Poll` class.
+
+    Returns:
+        The :class:`Poll` instance.
+    """
