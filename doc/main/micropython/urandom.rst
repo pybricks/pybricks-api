@@ -4,3 +4,27 @@
 ================================================
 
 .. automodule:: urandom
+    :no-members:
+
+    .. rubric:: Basic random numbers
+
+    .. autofunction:: randint
+
+    .. autofunction:: random
+
+    .. rubric:: Random numbers from a range
+
+    .. autofunction:: getrandbits
+
+    .. autofunction:: randrange
+
+    .. autofunction:: uniform
+
+    .. rubric:: Random elements from a sequence
+
+    .. autofunction:: choice
+
+    .. rubric:: Updating the random seed
+
+    .. autofunction:: seed
+

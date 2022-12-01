@@ -71,46 +71,68 @@ def randrange(start, stop, step):
 
 def randint(a: int, b: int) -> int:
     """
-    Returns a random integer *N* such that ``a`` <= *N* <= ``b``.
+    randint(a, b) -> int
+
+    Gets a random integer :math:`N` satisfying :math:`a \\leq N \\leq b`.
+
+    Arguments:
+        a (int): Lowest value. This value *is* included in the range.
+        b (int): Highest value. This value *is* included in the range.
+
+    Returns:
+        The random integer.
     """
 
 
 def getrandbits(k: int) -> int:
     """
-    Returns a non-negative integer with ``k`` random bits.
+    getrandbits(k) -> int
+
+    Gets a random integer :math:`N` satisfying :math:`0 \\leq N < 2^{\\text{bits}}`.
+
+    Arguments:
+        k (int): How many bits to use for the result.
     """
-
-
-# sequences
 
 
 def choice(seq: Sequence[Any]) -> Any:
     """
-    Returns a random element from the non-empty sequence ``seq``.
+    choice(sequence) -> Any
 
-    If ``seq`` is empty, raises ``IndexError``.
+    Gets a random element from a sequence such as a tuple or list.
+
+    Arguments:
+        sequence: Sequence from which to select a random element.
+
+    Returns:
+        The randomly selected element.
+
+    Raises:
+        ``IndexError``: If the sequence is empty.
     """
-
-
-# real
 
 
 def random() -> float:
     """
     random() -> float
 
-    Gets a random value between ``0`` and ``1``.
+    Gets a random value :math:`x` satisfying :math:`0 \\leq x < 1`.
 
     Returns:
-        A random value satisfying :math:`0 \\leq x < 1`.
+        The random value.
     """
 
 
 def uniform(a: float, b: float) -> float:
     """
-    Returns a random floating point number *N* such that ``a`` <= *N* <= ``b``
-    for ``a`` <= ``b`` and ``b`` <= *N* <= ``a`` for ``b`` < ``a``.
+    uniform(a, b) -> float
 
-    The end-point value ``b`` may or may not be included in the range depending
-    on floating-point rounding in the equation ``a + (b-a) * random()``.
+    Gets a random floating point value :math:`x` satisfying :math:`a \\leq x \\leq b`.
+
+    Arguments:
+        a (float): Lowest value.
+        b (float): Highest value.
+
+    Returns:
+        The random value.
     """
