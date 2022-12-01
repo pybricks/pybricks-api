@@ -78,20 +78,23 @@ class System:
 
     def storage(self, offset, read=None, write=None):
         """
-        storage(self, offset, read=) -> bytes
         storage(self, offset, write=)
+        storage(self, offset, read=) -> bytes
 
         Reads or writes binary data to persistent storage.
 
-        The available storage size is 128 bytes on Move, City and Technic hubs
-        and 512 bytes on SPIKE and MINDSTORMS hubs.
+        This lets you store data that can be used the next time you run the
+        program.
 
-        .. note:: The data is written to flash memory on shutdown, so will only
-            be saved if the hub is properly shut down. It will not be saved if
-            the batteries are removed while the hub is still running.
+        The data will be saved to flash memory when you turn the hub off
+        normally. It will not be saved if the batteries are removed *while* the
+        hub is still running.
+
+        Once saved, the data will remain available even after you remove the
+        batteries.
 
         Args:
-            offset (int): The offset from the start of the user storage memory in bytes.
+            offset (int): The offset from the start of the user storage memory, in bytes.
             read (int): The number of bytes to read. Omit this argument when writing.
             write (bytes): The bytes to write. Omit this argument when reading.
 
@@ -100,8 +103,7 @@ class System:
 
         Raises:
             ValueError:
-                The offset and/or the size of bytes to be read/written are
-                outside of the range of the allocated memory.
+                If you try to read or write data outside of the allowed range.
         """
 
 

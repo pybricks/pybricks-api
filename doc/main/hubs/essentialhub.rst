@@ -67,6 +67,8 @@ Essential Hub
 
     .. automethod:: pybricks.hubs::EssentialHub.system.storage
 
+        You can store up to 512 bytes of data on this hub.
+
     .. automethod:: pybricks.hubs::EssentialHub.system.shutdown
 
     .. automethod:: pybricks.hubs::EssentialHub.system.reset_reason

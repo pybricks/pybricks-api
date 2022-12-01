@@ -106,6 +106,8 @@ Prime Hub / Inventor Hub
 
     .. automethod:: pybricks.hubs::PrimeHub.system.storage
 
+        You can store up to 512 bytes of data on this hub.
+
     .. automethod:: pybricks.hubs::PrimeHub.system.shutdown
 
     .. automethod:: pybricks.hubs::PrimeHub.system.reset_reason
