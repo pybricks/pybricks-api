@@ -8,6 +8,9 @@
 
 """
 This module implements pseudo-random number generators.
+
+All functions in this module should be used with positional arguments. Keyword
+arguments are not supported.
 """
 
 from typing import Any, Optional, Sequence, overload
@@ -15,17 +18,16 @@ from typing import Any, Optional, Sequence, overload
 
 def seed(a: Optional[int] = None) -> None:
     """
-    Initialize the random number generator.
+    seed(value=None)
 
-    Args:
-        a: Optional seed value. If ``None``, the system timer will be used.
+    Initializes the random number generator.
 
-    .. tip:: This is called when the module is imported, so normally you do
-        not need to call this.
+    This gets called when the module is imported, so normally you do
+    not need to call this.
+
+    Arguments:
+        value: Seed value. When using ``None``, the system timer will be used.
     """
-
-
-# integers
 
 
 @overload
@@ -45,7 +47,25 @@ def randrange(start: int, stop: int, step: int) -> int:
 
 def randrange(start, stop, step):
     """
+    randrange(stop) -> int
+    randrange(start, stop) -> int
+    randrange(start, stop, step) -> int
+
     Returns a randomly selected element from ``range(start, stop, step)``.
+
+    For example, ``randrange(1, 7, 2)`` returns random numbers from ``1`` up to
+    (but excluding) ``7``, in increments of ``2``. In other words, it
+    returns ``1``, ``3``, or ``5``.
+
+
+    Arguments:
+        start (int): Lowest value. Defaults to ``0`` if only one argument is given.
+        stop (int): Highest value. This value is *not* included in the range.
+        step (int): Increment between values. Defaults to ``1`` if only one
+            or two arguments are given.
+
+    Returns:
+        The random number.
     """
 
 
@@ -77,13 +97,12 @@ def choice(seq: Sequence[Any]) -> Any:
 
 def random() -> float:
     """
-    Return the next random floating point number in the range [0.0, 1.0).
+    random() -> float
 
-    .. tip:: The `interval notation`_ indicates that this includes 0.0 and
-        excludes 1.0.
+    Gets a random value between ``0`` and ``1``.
 
-    .. _interval notation:
-        https://en.wikipedia.org/wiki/Interval_(mathematics)#Notations_for_intervals
+    Returns:
+        A random value satisfying :math:`0 \\leq x < 1`.
     """
 
 
