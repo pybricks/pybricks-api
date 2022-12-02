@@ -18,9 +18,11 @@ def test_from():
         "pybricks",
         "uerrno",
         "uio",
+        "ujson",
         "umath",
         "urandom",
         "uselect",
+        "ustruct",
         "usys",
     ]
 
@@ -186,6 +188,19 @@ def test_from_uio_import():
     ]
 
 
+def test_from_ujson_import():
+    code = "from ujson import "
+    completions: list[CompletionItem] = json.loads(complete(code, 1, len(code) + 1))
+    assert [c["insertText"] for c in completions] == [
+        "decode",  # FIXME: Shouldn't be here
+        "dump",
+        "dumps",
+        "encode",  # FIXME: Shouldn't be here
+        "load",
+        "loads",
+    ]
+
+
 def test_from_umath_import():
     code = "from umath import "
     completions: list[CompletionItem] = json.loads(complete(code, 1, len(code) + 1))
@@ -244,6 +259,18 @@ def test_from_uselect_import():
         "POLLHUP",
         "POLLIN",
         "POLLOUT",
+    ]
+
+
+def test_from_ustruct_import():
+    code = "from ustruct import "
+    completions: list[CompletionItem] = json.loads(complete(code, 1, len(code) + 1))
+    assert [c["insertText"] for c in completions] == [
+        "calcsize",
+        "pack",
+        "pack_into",
+        "unpack",
+        "unpack_from",
     ]
 
 

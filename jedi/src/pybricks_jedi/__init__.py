@@ -21,9 +21,11 @@ PYBRICKS_CODE_PACKAGES = {
     "pybricks.tools",
     "uerrno",
     "uio",
+    "ujson",
     "umath",
     "urandom",
     "uselect",
+    "ustruct",
     "usys",
 }
 

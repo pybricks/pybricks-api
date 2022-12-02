@@ -11,10 +11,6 @@ Convert between Python objects and the JSON data format.
 
 from typing import IO, Any, Tuple
 
-import json
-
-json.dump
-
 
 def dump(object: Any, stream: IO, separators: Tuple[str, str] = (", ", ": ")):
     """

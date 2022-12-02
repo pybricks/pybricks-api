@@ -18,9 +18,11 @@ packages = [
     { include = "micropython", from = "src" },
     { include = "uerrno", from = "src" },
     { include = "uio", from = "src" },
+    { include = "ujson", from = "src" },
     { include = "umath", from = "src" },
     { include = "urandom", from = "src" },
     { include = "uselect", from = "src" },
+    { include = "ustruct", from = "src" },
     { include = "usys", from = "src" },
 ]
 
