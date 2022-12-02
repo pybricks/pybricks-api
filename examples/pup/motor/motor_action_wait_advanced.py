@@ -12,7 +12,7 @@ gripper_motor.run_angle(200, 720, wait=False)
 
 # While one or both of the motors are not done yet,
 # do something else. In this example, just wait.
-while not track_motor.control.done() or not gripper_motor.control.done():
+while not track_motor.done() or not gripper_motor.done():
     wait(10)
 
 print("Both motors are done!")
