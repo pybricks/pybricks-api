@@ -7,6 +7,7 @@
 ### Added
 - Documented ``Stop.NONE`` and ``Stop.COAST_SMART``.
 - Documented ``ujson`` module.
+- Added `done` and `stalled` methods for `DriveBase`.
 
 ### Changed
 - Changed `PrimeHub.display.image()` to `PrimeHub.display.icon()` and renamed

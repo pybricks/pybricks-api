@@ -189,6 +189,27 @@ class DriveBase:
                          with the rest of the program.
         """
 
+    def done(self) -> bool:
+        """done() -> bool
+
+        Checks if an ongoing command or maneuver is done.
+
+        Returns:
+            ``True`` if the command is done, ``False`` if not.
+        """
+
+    def stalled(self) -> bool:
+        """stalled() -> bool
+
+        Checks if the drive base is currently stalled.
+
+        It is stalled when it cannot reach the target speed or position, even
+        with the maximum actuation signal.
+
+        Returns:
+            ``True`` if the drivebase is stalled, ``False`` if not.
+        """
+
 
 # HACK: hide from jedi
 if TYPE_CHECKING:

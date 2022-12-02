@@ -10,7 +10,7 @@
 .. autoclass:: pybricks.robotics.DriveBase
     :no-members:
 
-    .. rubric:: Driving for a given distance or by an angle
+    .. rubric:: Driving by a given distance or angle
 
     Use the following commands to drive a given distance, or turn by a
     given angle.
@@ -25,6 +25,8 @@
     .. automethod:: pybricks.robotics.DriveBase.curve
 
     .. automethod:: pybricks.robotics.DriveBase.settings
+
+    .. automethod:: pybricks.robotics.DriveBase.done
 
     .. rubric:: Drive forever
 
@@ -47,6 +49,8 @@
     .. automethod:: pybricks.robotics.DriveBase.state
 
     .. automethod:: pybricks.robotics.DriveBase.reset
+
+    .. automethod:: pybricks.robotics.DriveBase.stalled
 
     .. rubric:: Measuring and validating the robot dimensions
 
@@ -88,7 +92,6 @@
     holding the wheels in place after a :meth:`.straight` or
     :meth:`.turn` command.
     To deactivate the :class:`.DriveBase`, call :meth:`.stop`.
-
 
     .. rubric:: Advanced settings
 
