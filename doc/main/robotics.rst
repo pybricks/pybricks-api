@@ -84,14 +84,11 @@
 
     .. rubric:: Using the DriveBase motors individually
 
-    Suppose you make a :class:`.DriveBase` object using two ``Motor`` objects called
-    ``left_motor`` and ``right_motor``. You **cannot** use these motors
-    individually while the DriveBase is **active**.
-
-    The DriveBase is active if it is driving, but also when it is actively
-    holding the wheels in place after a :meth:`.straight` or
-    :meth:`.turn` command.
-    To deactivate the :class:`.DriveBase`, call :meth:`.stop`.
+    After creating a :class:`.DriveBase` object, you can still use its two
+    motors individually. If you start one motor, the other motor will
+    automatically stop. Likewise, if a motor is already running and you make
+    the drive base move, the original maneuver is cancelled and the drive base
+    will take over.
 
     .. rubric:: Advanced settings
 
