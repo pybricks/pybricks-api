@@ -2,6 +2,11 @@
 
 <!-- refer to https://keepachangelog.com/en/1.0.0/ for guidance -->
 
+## 2.5.0 - 2022-12-02
+
+### Changed
+- Updated docs to v3.2.0b6.
+
 ## 2.4.0 - 2022-11-11
 
 ### Changed
