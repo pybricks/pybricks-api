@@ -88,6 +88,11 @@ Motors with rotation sensors
         output of the gear train. This is the gear ratio determined from the
         ``gears`` argument when initializing the motor.
 
+    .. versionchanged:: 3.2
+
+        The :meth:`done`, :meth:`stalled` and :meth:`load` methods have been
+        moved.
+
 Initialization examples
 -----------------------
 

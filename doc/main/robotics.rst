@@ -105,6 +105,10 @@
     .. autoattribute:: pybricks.robotics.DriveBase.heading_control
         :annotation:
 
+    .. versionchanged:: 3.2
+
+        The :meth:`done` and :meth:`stalled` methods have been moved.
+
 Examples
 -------------------
 
