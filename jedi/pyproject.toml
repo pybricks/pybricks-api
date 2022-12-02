@@ -7,7 +7,7 @@ license = "MIT"
 
 [tool.poetry.dependencies]
 python = ">= 3.10, < 3.11"
-pybricks = "3.2.0b5"
+pybricks = "3.2.0b6"
 jedi = "0.18.1"
 typing-extensions = "4.2.0"
 docstring-parser = "0.14.1"
