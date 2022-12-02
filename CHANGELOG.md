@@ -4,6 +4,8 @@
 
 ## Unreleased
 
+## 3.2.0b6 - 2022-12-02
+
 ### Added
 - Documented ``Stop.NONE`` and ``Stop.COAST_SMART``.
 - Documented ``ujson`` module.
