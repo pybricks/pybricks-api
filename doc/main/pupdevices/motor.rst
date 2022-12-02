@@ -24,6 +24,10 @@ Motors with rotation sensors
 
     .. automethod:: pybricks.pupdevices.Motor.reset_angle
 
+    .. automethod:: pybricks.pupdevices.Motor.load
+
+    .. automethod:: pybricks.pupdevices.Motor.stalled
+
     .. rubric:: Stopping
 
     .. automethod:: pybricks.pupdevices.Motor.stop
@@ -32,9 +36,13 @@ Motors with rotation sensors
 
     .. automethod:: pybricks.pupdevices.Motor.hold
 
-    .. rubric:: Action
+    .. rubric:: Running forever
 
     .. automethod:: pybricks.pupdevices.Motor.run
+
+    .. automethod:: pybricks.pupdevices.Motor.dc
+
+    .. rubric:: Running by a fixed amount
 
     .. automethod:: pybricks.pupdevices.Motor.run_time
 
@@ -46,31 +54,19 @@ Motors with rotation sensors
 
     .. automethod:: pybricks.pupdevices.Motor.run_until_stalled
 
-    .. automethod:: pybricks.pupdevices.Motor.dc
+    .. automethod:: pybricks.pupdevices.Motor.done
 
     .. _settings:
 
-    .. rubric:: Motor status
-
-    .. attribute:: control.scale
-
-        Number of degrees that the motor turns to complete one degree at the
-        output of the gear train. This is the gear ratio determined from the
-        ``gears`` argument when initializing the motor.
-
-    .. automethod:: pybricks.pupdevices.Motor.control.done
-
-    .. automethod:: pybricks.pupdevices.Motor.control.stalled
-
-    .. automethod:: pybricks.pupdevices.Motor.control.load
-
     .. rubric:: Motor settings
+
+    .. automethod:: pybricks.pupdevices.Motor.settings
+
+    .. rubric:: Control settings
 
     You can only change these settings while the controller is stopped. For
     example, you can change them at the start of your program. Alternatively,
     first call :meth:`stop() <pybricks.pupdevices.Motor.stop>`, and then change the settings.
-
-    .. automethod:: pybricks.pupdevices.Motor.settings
 
     .. automethod:: pybricks.pupdevices.Motor.control.limits
 
@@ -79,6 +75,12 @@ Motors with rotation sensors
     .. automethod:: pybricks.pupdevices.Motor.control.target_tolerances
 
     .. automethod:: pybricks.pupdevices.Motor.control.stall_tolerances
+
+    .. attribute:: control.scale
+
+        Number of degrees that the motor turns to complete one degree at the
+        output of the gear train. This is the gear ratio determined from the
+        ``gears`` argument when initializing the motor.
 
 Initialization examples
 -----------------------

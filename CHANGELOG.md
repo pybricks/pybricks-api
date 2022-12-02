@@ -14,6 +14,7 @@
 - Improved presentation and docstrings of the ``ubuiltins`` and other
   MicroPython modules
 - Moved the random numbers example for Move Hub to the Move Hub page.
+- Moved `done()`, `stalled()`, `load()` from `Control` to `Motor` object.
 
 ## 3.2.0b5 - 2022-11-11
 

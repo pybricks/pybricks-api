@@ -299,40 +299,6 @@ class Control:
                 minimum ``speed`` before we say it is stalled.
         """
 
-    def stalled(self) -> bool:
-        """stalled() -> bool
-
-        Checks if the controller is currently stalled.
-
-        A controller is stalled when it cannot reach the target speed or
-        position, even with the maximum actuation signal.
-
-        Returns:
-            ``True`` if the controller is stalled, ``False`` if not.
-        """
-
-    def done(self) -> bool:
-        """done() -> bool
-
-        Checks if an ongoing command or maneuver is done.
-
-        Returns:
-            ``True`` if the command is done, ``False`` if not.
-        """
-
-    def load(self) -> int:
-        """load() -> int: mNm
-
-        Estimates the load based on the torque required to maintain the
-        specified speed or angle.
-
-        When coasting, braking, or controlling the duty cycle manually, the
-        load cannot be estimated in this way. Then this method returns zero.
-
-        Returns:
-            The load torque. It returns 0 if control is not active.
-        """
-
 
 class Motor(DCMotor):
     """Generic class to control motors with built-in rotation sensors."""
@@ -392,6 +358,27 @@ class Motor(DCMotor):
         Returns:
             Motor speed.
 
+        """
+
+    def stalled(self) -> bool:
+        """stalled() -> bool
+
+        Checks if the motor is currently stalled.
+
+        It is stalled when it cannot reach the target speed or position, even
+        with the maximum actuation signal.
+
+        Returns:
+            ``True`` if the motor is stalled, ``False`` if not.
+        """
+
+    def load(self) -> int:
+        """load() -> int: mNm
+
+        Estimates the load that holds back the motor when it tries to move.
+
+        Returns:
+            The load torque.
         """
 
     def reset_angle(self, angle: Optional[Number]) -> None:
@@ -503,6 +490,15 @@ class Motor(DCMotor):
 
         Returns:
             Angle at which the motor becomes stalled.
+        """
+
+    def done(self) -> bool:
+        """done() -> bool
+
+        Checks if an ongoing command or maneuver is done.
+
+        Returns:
+            ``True`` if the command is done, ``False`` if not.
         """
 
     def track_target(self, target_angle: Number) -> None:
