@@ -64,13 +64,23 @@ Motors with rotation sensors
 
     .. rubric:: Control settings
 
+    .. pybricks-requirements:: pybricks-common-control
+
     .. automethod:: pybricks.pupdevices.Motor.control.limits
+
+    .. pybricks-requirements:: pybricks-common-control
 
     .. automethod:: pybricks.pupdevices.Motor.control.pid
 
+    .. pybricks-requirements:: pybricks-common-control
+
     .. automethod:: pybricks.pupdevices.Motor.control.target_tolerances
 
+    .. pybricks-requirements:: pybricks-common-control
+
     .. automethod:: pybricks.pupdevices.Motor.control.stall_tolerances
+
+    .. pybricks-requirements:: pybricks-common-control
 
     .. attribute:: control.scale
 
