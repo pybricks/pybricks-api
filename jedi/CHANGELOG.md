@@ -4,6 +4,11 @@
 
 ## Unreleased
 
+## 1.5.0 - 2022-12-02
+
+### Changed
+- Added `ujson` and `ustruct` modules.
+
 ## 1.4.0 - 2022-12-02
 
 ### Changed
