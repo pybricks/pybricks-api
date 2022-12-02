@@ -26,6 +26,10 @@ Motors
 
     .. automethod:: pybricks.ev3devices.Motor.reset_angle
 
+    .. automethod:: pybricks.ev3devices.Motor.load
+
+    .. automethod:: pybricks.ev3devices.Motor.stalled
+
     .. rubric:: Stopping
 
     .. automethod:: pybricks.ev3devices.Motor.stop
@@ -34,9 +38,13 @@ Motors
 
     .. automethod:: pybricks.ev3devices.Motor.hold
 
-    .. rubric:: Action
+    .. rubric:: Running forever
 
     .. automethod:: pybricks.ev3devices.Motor.run
+
+    .. automethod:: pybricks.ev3devices.Motor.dc
+
+    .. rubric:: Running by a fixed amount
 
     .. automethod:: pybricks.ev3devices.Motor.run_time
 
@@ -48,30 +56,13 @@ Motors
 
     .. automethod:: pybricks.ev3devices.Motor.run_until_stalled
 
-    .. automethod:: pybricks.ev3devices.Motor.dc
-
-    .. rubric:: Motor status
-
-    .. attribute:: control.scale
-
-        Number of degrees that the motor turns to complete one degree at the
-        output of the gear train. This is the gear ratio determined from the
-        ``gears`` argument when initializing the motor.
-
-    .. automethod:: pybricks.ev3devices.Motor.control.done
-
-    .. automethod:: pybricks.ev3devices.Motor.control.stalled
-
-    .. automethod:: pybricks.ev3devices.Motor.control.load
+    .. automethod:: pybricks.ev3devices.Motor.done
 
     .. rubric:: Motor settings
 
-    You can only change these settings while the controller is stopped. For
-    example, you can change them at the start of your program. Alternatively,
-    first call :meth:`stop() <pybricks.ev3devices.Motor.stop>`, and then change
-    the settings.
-
     .. automethod:: pybricks.ev3devices.Motor.settings
+
+    .. rubric:: Control settings
 
     .. automethod:: pybricks.ev3devices.Motor.control.limits
 
@@ -80,6 +71,12 @@ Motors
     .. automethod:: pybricks.ev3devices.Motor.control.target_tolerances
 
     .. automethod:: pybricks.ev3devices.Motor.control.stall_tolerances
+
+    .. attribute:: control.scale
+
+        Number of degrees that the motor turns to complete one degree at the
+        output of the gear train. This is the gear ratio determined from the
+        ``gears`` argument when initializing the motor.
 
 Touch Sensor
 ^^^^^^^^^^^^
