@@ -199,6 +199,9 @@ class Control:
 
         If no arguments are given, this will return the current values.
 
+        The new ``acceleration`` and ``speed`` limit will become effective
+        when you give a new motor command. Ongoing maneuvers are not affected.
+
         Arguments:
             speed (Number, deg/s or Number, mm/s):
                 Maximum speed. All speed commands will be capped to this value.

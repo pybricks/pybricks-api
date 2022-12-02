@@ -64,10 +64,6 @@ Motors with rotation sensors
 
     .. rubric:: Control settings
 
-    You can only change these settings while the controller is stopped. For
-    example, you can change them at the start of your program. Alternatively,
-    first call :meth:`stop() <pybricks.pupdevices.Motor.stop>`, and then change the settings.
-
     .. automethod:: pybricks.pupdevices.Motor.control.limits
 
     .. automethod:: pybricks.pupdevices.Motor.control.pid
