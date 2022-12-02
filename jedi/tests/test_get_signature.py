@@ -602,9 +602,9 @@ METHOD_PARAMS = [
         ],
     ),
     pytest.param("pybricks.pupdevices", "Motor", "dc", [(["duty: Number"], "None")]),
-    pytest.param("pybricks.pupdevices", "Motor", "control.done", [([], "bool")]),
-    pytest.param("pybricks.pupdevices", "Motor", "control.stalled", [([], "bool")]),
-    pytest.param("pybricks.pupdevices", "Motor", "control.load", [([], "int")]),
+    pytest.param("pybricks.pupdevices", "Motor", "done", [([], "bool")]),
+    pytest.param("pybricks.pupdevices", "Motor", "stalled", [([], "bool")]),
+    pytest.param("pybricks.pupdevices", "Motor", "load", [([], "int")]),
     pytest.param(
         "pybricks.pupdevices",
         "Motor",
@@ -853,6 +853,8 @@ METHOD_PARAMS = [
         "pybricks.robotics", "DriveBase", "state", [([], "Tuple[int, int, int, int]")]
     ),
     pytest.param("pybricks.robotics", "DriveBase", "reset", [([], "None")]),
+    pytest.param("pybricks.robotics", "DriveBase", "done", [([], "bool")]),
+    pytest.param("pybricks.robotics", "DriveBase", "stalled", [([], "bool")]),
 ]
 
 
