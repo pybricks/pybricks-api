@@ -52,12 +52,19 @@
 
     .. automethod:: pybricks.robotics.DriveBase.stalled
 
+    .. _measuring:
+
     .. rubric:: Measuring and validating the robot dimensions
 
     As a first estimate, you can measure the ``wheel_diameter`` and the
     ``axle_track`` with a ruler. Because it is hard to see where the wheels
     effectively touch the ground, you can estimate the ``axle_track`` as
     the distance between the midpoint of the wheels.
+
+    If you don't have a ruler, you can use a LEGO beam to measure. The
+    center-to-center distance of the holes is 8 mm. For some tyres, the
+    diameter is printed on the side. For example, 62.4 x 20 means that the
+    diameter is 62.4mm and that the width is 20 mm.
 
     In practice, most wheels compress slightly under the weight of your robot.
     To verify, make your robot drive 1000 mm using ``my_robot.straight(1000)``

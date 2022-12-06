@@ -28,8 +28,12 @@ class DriveBase:
 
     **Positive** angles and turn rates mean turning **right**.
     **Negative** means **left**. So when viewed from the top,
-    positive means clockwise and negative means counterclockwise.
+    positive means clockwise and negative means counterclockwise. If desired,
+    you can flip this convention by reversing the ``left_motor`` and
+    ``right_motor`` when you initialize this class.
 
+    See the `measuring`_ section for tips to measure and adjust the diameter
+    and axle track values.
     """
 
     distance_control = _common.Control()
@@ -138,6 +142,10 @@ class DriveBase:
         by :meth:`.straight`, :meth:`.turn`, and  :meth:`.curve`.
 
         If you give no arguments, this returns the current values as a tuple.
+
+        The default values are automatically configured based on your wheel
+        diameter and axle track. They are selected such that your robot
+        drives at about 40% of its maximum speed.
 
         Arguments:
             straight_speed (Number, mm/s): Straight-line speed of the robot.
