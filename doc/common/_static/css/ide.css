@@ -40,3 +40,11 @@
 ::-webkit-scrollbar-thumb:hover {
     background: #182026;
 }
+
+html.writer-html5 .rst-content dl.citation,
+html.writer-html5 .rst-content dl.field-list,
+html.writer-html5 .rst-content dl.footnote {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: unset;
+}
