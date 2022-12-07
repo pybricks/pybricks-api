@@ -7,13 +7,6 @@ Essential Hub
     :width: 30%
 
 
-.. note:: Pybricks support for this hub is in beta.
-            Check the `installation instructions`_ to try it out.
-            The following functions may change before the final release.
-
-.. _installation instructions: https://pybricks.com/install/
-
-
 .. autoclass:: pybricks.hubs.EssentialHub
     :no-members:
 

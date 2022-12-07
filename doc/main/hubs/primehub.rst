@@ -7,10 +7,6 @@ Prime Hub / Inventor Hub
     :height: 15 em
 
 
-.. note:: Pybricks support for these hubs is in beta.
-            Check the `installation instructions`_ to try it out.
-            The following functions may change before the final release.
-
 .. class:: InventorHub
 
     This class is the same as the ``PrimeHub`` class, shown below. Both classes
@@ -256,6 +252,4 @@ Turning the hub off
 
 .. literalinclude::
     ../../../examples/pup/hub_common/build/system_shutdown_primehub.py
-
-.. _installation instructions: https://pybricks.com/install/
 
