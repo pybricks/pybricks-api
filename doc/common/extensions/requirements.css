@@ -42,3 +42,19 @@ SOFTWARE. */
     margin-bottom: 0px;
 }
 
+.requirements-table {
+    width: 100%;
+}
+
+.requirements-table-th {
+    background-size:contain;
+    background-repeat: no-repeat;
+    text-align: right;
+    padding: 6px !important;
+  }
+
+.requirements-table-th:after {
+    content: '';
+    display: block;
+    margin-top: 80%;
+  }

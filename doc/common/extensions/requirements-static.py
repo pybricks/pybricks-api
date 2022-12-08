@@ -47,20 +47,19 @@ class PybricksRequirementsStaticDirective(Directive):
             makedirs(destdir)
 
         for hub in HUB_FEATURES:
-            for compat in ("true", "false"):
-                uri = "compat_{0}_{1}.png".format(hub, compat)
-                src_uri = path.join(env.app.builder.srcdir, "diagrams", uri)
-                build_uri = path.join(env.app.builder.outdir, "_images", uri)
-                copyfile(src_uri, build_uri)
+            uri = "compat_{0}.png".format(hub)
+            src_uri = path.join(env.app.builder.srcdir, "diagrams", uri)
+            build_uri = path.join(env.app.builder.outdir, "_images", uri)
+            copyfile(src_uri, build_uri)
 
         # Get requirements from sphinx-directive.
         requirements = set(self.arguments)
 
         # Cell with image of a hub.
         hub_cell = """
-        <th><div class="align-default">
-        <img alt="" src="{0}_images/compat_{1}_{2}.png">
-        </div></th>
+        <th background="{0}_images/compat_{1}.png" class="requirements-table-th requirements-table-th">
+        {2}
+        </th>
         """
 
         # Determine how far up the tree we are to set correct image path.
@@ -72,7 +71,7 @@ class PybricksRequirementsStaticDirective(Directive):
         compat_row = "".join(
             [
                 hub_cell.format(
-                    depth_path, hub, "true" if requirements <= features else "false"
+                    depth_path, hub, "✅" if requirements <= features else "❌"
                 )
                 for hub, features in HUB_FEATURES.items()
             ]
@@ -81,7 +80,7 @@ class PybricksRequirementsStaticDirective(Directive):
         # Generate full table.
         html = """
         <div class="wy-table-responsive">
-            <table class="docutils align-default">
+            <table class="docutils align-default requirements-table">
                 <tbody>
                     <tr>
                         {0}

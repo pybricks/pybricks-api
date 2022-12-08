@@ -8,7 +8,7 @@
    version="1.1"
    id="svg887"
    inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
-   sodipodi:docname="compat_inventorhub_true.svg"
+   sodipodi:docname="compat_primehub.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -38,9 +38,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="3.959798"
-     inkscape:cx="30.052038"
-     inkscape:cy="63.260803"
+     inkscape:zoom="2.5665087"
+     inkscape:cx="-39.742706"
+     inkscape:cy="115.13696"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -69,16 +69,11 @@
      id="layer1"
      transform="translate(0,-261.28123)">
     <image
-       xlink:href="../cad/output/hub-inventor.png"
-       id="image1481"
+       xlink:href="../cad/output/hub-prime.png"
+       id="image1503"
        x="2.6458333"
-       y="262.86874"
+       y="263.1333"
        width="34.237"
        height="31.087999" />
-    <path
-       style="fill:none;stroke:#84ba4c;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 31.147057,265.82725 1.011052,2.9815 3.622948,-4.60003"
-       id="path854"
-       inkscape:connector-curvature="0" />
   </g>
 </svg>
