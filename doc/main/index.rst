@@ -8,13 +8,21 @@ directly on the hub, and get full control of your motors and sensors.
 Pybricks runs on LEGO® BOOST, City, Technic, MINDSTORMS®, and SPIKE®. You
 can code using Windows, Mac, Linux, Chromebook, and Android.
 
-To run Pybricks MicroPython scripts, you must install the Pybricks firmware
-on your hub. Check `pybricks.com/install`_ to learn how.
+Click on any device below to see its documentation. Use the menu on the left
+to find documentation for additional modules. You may need to click the ☰ icon
+above to reveal this menu.
 
 .. only:: main
 
+   .. note:: You are viewing the stand-alone version of the documentation. To
+             learn more about Pybricks and to start coding, visit
+             the `Pybricks website`_
+
    .. note:: Are you using LEGO MINDSTORMS EV3? Check out the
             `EV3 documentation`_ instead.
+
+.. _EV3 documentation: https://pybricks.com/ev3-micropython/
+.. _Pybricks website: https://pybricks.com/
 
 .. rubric:: Programmable hubs
 
@@ -36,24 +44,10 @@ on your hub. Check `pybricks.com/install`_ to learn how.
    :width: 70 %
    :target: pupdevices/dcmotor.html
 
-.. _support page: https://github.com/pybricks/support/issues/
-.. _EV3 documentation: https://pybricks.com/ev3-micropython/
-.. _Pybricks website: https://pybricks.com/
-.. _pybricks.com/install: https://pybricks.com/install/
-.. _latest stable release: https://www.code.pybricks.com/
-
 .. toctree::
     :maxdepth: 1
     :caption: Table of contents
     :hidden:
-
-.. toctree::
-    :maxdepth: 1
-    :caption: Pybricks
-    :hidden:
-
-    Home page <https://pybricks.com>
-    Installation <https://pybricks.com/install/>
 
 .. toctree::
    :maxdepth: 1
