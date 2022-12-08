@@ -177,9 +177,9 @@ def kbd_intr(chr: int) -> None:
     """
     kbd_intr(chr)
 
-    Sets the character that raises a ``KeyboardInterrupt`` exception when
+    Sets the character that triggers a ``KeyboardInterrupt`` exception when
     you type it in the input window. By default it is set to ``3``,
-    corresponding to :kbd:`Ctrl-C`.
+    which corresponds to pressing :kbd:`Ctrl` :kbd:`C`.
 
     Arguments:
         chr (int): Character that should raise the ``KeyboardInterrupt``.

@@ -1399,7 +1399,7 @@ class KeyError(LookupError):
 
 class KeyboardInterrupt(BaseException):
     """
-    Raised when the user hits the interrupt key (normally :kbd:`Control-C`).
+    Raised when the user hits the interrupt key (normally :kbd:`Ctrl` :kbd:`C`).
     """
 
 
