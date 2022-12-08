@@ -8,7 +8,7 @@
    version="1.1"
    id="svg887"
    inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
-   sodipodi:docname="compat_movehub_true.svg"
+   sodipodi:docname="compat_technichub.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -38,9 +38,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="3.959798"
-     inkscape:cx="-61.114229"
-     inkscape:cy="79.170705"
+     inkscape:zoom="1.8594069"
+     inkscape:cx="-63.461097"
+     inkscape:cy="62.116582"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -69,16 +69,11 @@
      id="layer1"
      transform="translate(0,-261.28123)">
     <image
-       xlink:href="../cad/output/hub-move.png"
-       id="image1492"
-       x="0.67666757"
-       y="261.79425"
-       width="38.50182"
-       height="34.867249" />
-    <path
-       style="fill:none;stroke:#84ba4c;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 31.147057,265.82725 1.011052,2.9815 3.622948,-4.60003"
-       id="path854"
-       inkscape:connector-curvature="0" />
+       xlink:href="../cad/output/hub-technic.png"
+       id="image1514"
+       x="2.0608866"
+       y="263.52396"
+       width="35.710999"
+       height="30.552" />
   </g>
 </svg>

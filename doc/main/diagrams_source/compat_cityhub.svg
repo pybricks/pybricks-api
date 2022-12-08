@@ -8,7 +8,7 @@
    version="1.1"
    id="svg887"
    inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
-   sodipodi:docname="compat_primehub_false.svg"
+   sodipodi:docname="compat_cityhub.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -38,9 +38,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="3.4544425"
-     inkscape:cx="52.975264"
-     inkscape:cy="68.173085"
+     inkscape:zoom="3.3219805"
+     inkscape:cx="34.617903"
+     inkscape:cy="95.575516"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -69,26 +69,11 @@
      id="layer1"
      transform="translate(0,-261.28123)">
     <image
-       xlink:href="../cad/output/hub-prime.png"
-       id="image1503"
-       x="2.6458333"
-       y="263.1333"
-       width="34.237"
-       height="31.087999" />
-    <g
-       id="g862"
-       transform="matrix(0.84064533,0,0,0.84993509,-12.416361,243.07822)"
-       style="stroke-width:1.18304348">
-      <path
-         inkscape:connector-curvature="0"
-         id="path856"
-         d="m 51.33389,24.998882 5.622395,5.622396"
-         style="fill:none;stroke:#e2302f;stroke-width:1.18304348;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-      <path
-         style="fill:none;stroke:#e2302f;stroke-width:1.18304348;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         d="M 56.956285,24.998882 51.33389,30.621278"
-         id="path858"
-         inkscape:connector-curvature="0" />
-    </g>
+       xlink:href="../cad/output/hub-city.png"
+       id="image1470"
+       x="8.0035677"
+       y="265.09711"
+       width="23.382999"
+       height="26.799999" />
   </g>
 </svg>
