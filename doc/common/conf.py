@@ -169,6 +169,7 @@ html_context = {
 html_theme_options = {
     "style_external_links": True,
     "logo_only": True,
+    "style_nav_header_background": "#0088ce",  # Pybricks blue
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,

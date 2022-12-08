@@ -41,3 +41,7 @@ span.caption-number:after {
 .figure > a.reference.external::after {
     content: none !important;
 }
+
+.wy-side-nav-search > div.version {
+    color: hsla(0, 0%, 100%, 0.75);
+}
