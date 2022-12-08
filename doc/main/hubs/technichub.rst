@@ -4,7 +4,7 @@ Technic Hub
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. figure:: ../../main/cad/output/hub-technic.png
-    :height: 15 em
+    :width: 40%
 
 .. autoclass:: pybricks.hubs.TechnicHub
     :no-members:

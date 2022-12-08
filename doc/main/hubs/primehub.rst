@@ -4,8 +4,7 @@ Prime Hub / Inventor Hub
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. figure:: ../../main/cad/output/hub-spike-inventor.png
-    :height: 15 em
-
+    :width: 80%
 
 .. class:: InventorHub
 

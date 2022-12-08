@@ -34,29 +34,29 @@ Side
     **Prime Hub**
 
     .. figure:: ../../main/diagrams/orientation_primehub.png
-        :height: 17 em
+        :width: 60%
 
     **Inventor Hub**
 
     .. figure:: ../../main/diagrams/orientation_inventorhub.png
-        :height: 17 em
+        :width: 60%
 
     **Essential Hub**
 
     .. figure:: ../../main/diagrams/orientation_essentialhub.png
-        :height: 17 em
+        :width: 60%
 
     **Move Hub**
 
     .. figure:: ../../main/diagrams/orientation_movehub.png
-        :height: 17 em
+        :width: 60%
 
     **Technic Hub**
 
     .. figure:: ../../main/diagrams/orientation_technichub.png
-        :height: 17 em
+        :width: 60%
 
     **Tilt Sensor**
 
     .. figure:: ../../main/diagrams/orientation_tiltsensor.png
-        :height: 17 em
+        :width: 60%

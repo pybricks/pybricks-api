@@ -6,7 +6,6 @@ Essential Hub
 .. figure:: ../../main/cad/output/hub-essential.png
     :width: 30%
 
-
 .. autoclass:: pybricks.hubs.EssentialHub
     :no-members:
 

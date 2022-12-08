@@ -6,7 +6,7 @@ Move Hub
 .. _fig_movehub:
 
 .. figure:: ../../main/diagrams/movehub.png
-    :height: 15 em
+    :width: 100%
 
 .. autoclass:: pybricks.hubs.MoveHub
     :no-members:
