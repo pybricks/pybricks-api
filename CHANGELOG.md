@@ -4,6 +4,8 @@
 
 ## Unreleased
 
+## 3.2.0c1 - 2022-12-09
+
 ### Changed
 - Updated "front" side of the Technic Hub to be consistent with
   the Prime Hub.
