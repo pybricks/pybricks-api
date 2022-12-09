@@ -163,7 +163,7 @@
 1 71 0 0 0 1 0 0 0 1 0 0 0 1 22127.dat
 0 ROTSTEP 35 -35 0 ABS
 1 71 0 0 0 1 0 0 0 1 0 0 0 1 22127.dat
-0 ROTSTEP 45 -135 0 ABS
+0 ROTSTEP 45 45 0 ABS
 0 NOFILE
 0
 0 FILE hub-prime.ldr
@@ -837,5 +837,6 @@
 1 0 40 0 220 1 0 0 0 1 0 0 0 1 hub-city.ldr
 1 0 450 0 -40 1 0 0 0 1 0 0 0 1 hub-move.ldr
 0 ROTSTEP 40 -35 0 ABS
+0 
 0
 0

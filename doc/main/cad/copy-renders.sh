@@ -24,7 +24,7 @@ cp LPub3D/assem/main_1_hubs_1_hub-prime-*35_-35_0_ABS.png output/hub-prime.png
 cp LPub3D/assem/main_1_hubs_1_hub-prime-*45_45_0_ABS.png output/hub-prime-orientation.png
 cp LPub3D/assem/main_1_hubs_1_hub-prime-*90_0_0_ABS.png output/hub-prime-display.png
 cp LPub3D/assem/main_1_hubs_1_hub-technic-*35_-35_0_ABS.png output/hub-technic.png
-cp LPub3D/assem/main_1_hubs_1_hub-technic-*45_-135_0_ABS.png output/hub-technic-orientation.png
+cp LPub3D/assem/main_1_hubs_1_hub-technic-*45_45_0_ABS.png output/hub-technic-orientation.png
 cp LPub3D/assem/main_1_iodevices-*.png output/iodevice-all.png
 cp LPub3D/assem/main_1_iodevices_1_iodevice-dcmotor-*.png output/iodevice-dcmotor.png
 cp LPub3D/assem/main_1_iodevices_1_iodevice-pupdevice-*.png output/iodevice-pupdevice.png

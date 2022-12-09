@@ -56,7 +56,11 @@ Side
     .. figure:: ../../main/diagrams/orientation_technichub.png
         :width: 60%
 
+    .. versionchanged:: 3.2
+
+        Changed which side is the front.
+
     **Tilt Sensor**
 
     .. figure:: ../../main/diagrams/orientation_tiltsensor.png
-        :width: 60%
+        :width: 50%
