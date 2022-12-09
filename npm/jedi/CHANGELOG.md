@@ -2,6 +2,11 @@
 
 <!-- refer to https://keepachangelog.com/en/1.0.0/ for guidance -->
 
+## Unreleased
+
+### Changed
+- Updated `pybricks_jedi` Python package to v1.6.0.
+
 ## 1.5.0 - 2022-12-02
 
 ### Changed

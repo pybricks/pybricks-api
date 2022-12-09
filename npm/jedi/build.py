@@ -38,7 +38,7 @@ subprocess.check_call(
         "pip",
         "download",
         "--only-binary=any",
-        "pybricks-jedi==1.5.0",
+        "pybricks-jedi==1.6.0",
     ],
     cwd=BUILD_DIR,
 )
