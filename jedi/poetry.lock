@@ -10,7 +10,7 @@ python-versions = ">=3.5"
 dev = ["cloudpickle", "coverage[toml] (>=5.0.2)", "furo", "hypothesis", "mypy (>=0.900,!=0.940)", "pre-commit", "pympler", "pytest (>=4.3.0)", "pytest-mypy-plugins", "sphinx", "sphinx-notfound-page", "zope.interface"]
 docs = ["furo", "sphinx", "sphinx-notfound-page", "zope.interface"]
 tests = ["cloudpickle", "coverage[toml] (>=5.0.2)", "hypothesis", "mypy (>=0.900,!=0.940)", "pympler", "pytest (>=4.3.0)", "pytest-mypy-plugins", "zope.interface"]
-tests_no_zope = ["cloudpickle", "coverage[toml] (>=5.0.2)", "hypothesis", "mypy (>=0.900,!=0.940)", "pympler", "pytest (>=4.3.0)", "pytest-mypy-plugins"]
+tests-no-zope = ["cloudpickle", "coverage[toml] (>=5.0.2)", "hypothesis", "mypy (>=0.900,!=0.940)", "pympler", "pytest (>=4.3.0)", "pytest-mypy-plugins"]
 
 [[package]]
 name = "black"
@@ -180,7 +180,7 @@ testing = ["pytest", "pytest-benchmark"]
 
 [[package]]
 name = "pybricks"
-version = "3.2.0b6"
+version = "3.2.0c1"
 description = "Documentation and user-API stubs for Pybricks MicroPython"
 category = "main"
 optional = false
@@ -257,7 +257,7 @@ python-versions = ">=3.7"
 [metadata]
 lock-version = "1.1"
 python-versions = ">= 3.10, < 3.11"
-content-hash = "a0626d7e1cf972e4716f8122865c1d4b6355e1a5104b6f538da2c1cb44ba792c"
+content-hash = "971c6d0dddd9bb8e33a942e2360905a7d80a1a9d33015c0defc08345df5c1019"
 
 [metadata.files]
 attrs = [
