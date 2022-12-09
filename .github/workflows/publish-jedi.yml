@@ -6,7 +6,7 @@ on:
     - '@pybricks/jedi/**'
 
 jobs:
-  publish_ide_docs:
+  publish_jedi:
     runs-on: ubuntu-22.04
     steps:
     - uses: actions/checkout@v2
