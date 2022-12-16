@@ -1,6 +1,6 @@
 .. pybricks-requirements:: pybricks-iodevices
 
-:mod:`iodevices <pybricks.iodevices>` -- Generic I/O devices
+:mod:`iodevices <pybricks.iodevices>` -- Custom devices
 ============================================================
 
 .. module:: pybricks.iodevices
@@ -12,7 +12,7 @@
    pupdevice
    lwp3device
 
-This module has classes for generic input/output devices.
+This module has classes for generic and custom input/output devices.
 
 .. pybricks-classlink:: PUPDevice
 

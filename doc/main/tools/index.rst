@@ -1,6 +1,6 @@
 .. pybricks-requirements::
 
-:mod:`tools <pybricks.tools>` -- General purpose tools
+:mod:`tools <pybricks.tools>` -- Timing tools
 ========================================================
 
 .. automodule:: pybricks.tools

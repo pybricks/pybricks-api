@@ -1,7 +1,7 @@
 .. pybricks-requirements::
 
-:mod:`robotics <pybricks.robotics>` -- Robotics
-======================================================
+:mod:`robotics <pybricks.robotics>` -- Robotics and drive bases
+===============================================================
 
 .. automodule:: pybricks.robotics
     :no-members:

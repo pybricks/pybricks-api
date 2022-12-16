@@ -4,6 +4,9 @@
 
 ## Unreleased
 
+### Changed
+- Changed module TOC headings to make it easier to find things.
+
 ## 3.2.0c1 - 2022-12-09
 
 ### Changed
