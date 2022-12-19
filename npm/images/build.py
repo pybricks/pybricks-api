@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+from glob import glob
 import json
 import pathlib
 import shutil
@@ -21,6 +22,7 @@ package_json = {
         "directory": "npm/images",
     },
     "publishConfig": {"registry": "https://registry.npmjs.org", "access": "public"},
+    "exports": {},  # dynamically filled below
 }
 
 # ensure empty build directory so we don't end up with stale files
@@ -30,11 +32,15 @@ BUILD_DIR.mkdir()
 # copy the hub images
 for h in HUBS:
     shutil.copyfile(IMAGE_DIR / f"icon_{h}hub.png", BUILD_DIR / f"hub-{h}.png")
+    package_json["exports"][f"./hub-{h}.png"] = f"./hub-{h}.png"
+
+# copy DFU Windows driver images
+for path in glob("dfu_windows_*", root_dir=IMAGE_DIR):
+    file = pathlib.Path(path).name
+    shutil.copyfile(IMAGE_DIR / path, BUILD_DIR / file)
+    package_json["exports"][f"./{file}"] = f"./{file}"
 
 # generate package.json file
-
-# create "exports" item for hub images.
-package_json["exports"] = {f"./hub-{h}.png": f"./hub-{h}.png" for h in HUBS}
 
 with open(BUILD_DIR / "package.json", "w") as f:
     json.dump(package_json, f, indent=2)

@@ -2,6 +2,9 @@
 
 <!-- refer to https://keepachangelog.com/en/1.0.0/ for guidance -->
 
+### Added
+- Added DFU Windows driver images.
+
 ## 1.2.1 - 2022-11-08
 
 ### Changed
