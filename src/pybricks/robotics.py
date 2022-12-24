@@ -135,25 +135,30 @@ class DriveBase:
         ...
 
     def settings(self, *args):
-        """settings(straight_speed, straight_acceleration, turn_rate, turn_acceleration)
+        """
+        settings(straight_speed, straight_acceleration, turn_rate, turn_acceleration)
         settings() -> Tuple[int, int, int, int]
 
-        Configures the speed and acceleration used
-        by :meth:`.straight`, :meth:`.turn`, and  :meth:`.curve`.
+        Configures the drive base speed and acceleration.
 
         If you give no arguments, this returns the current values as a tuple.
 
-        The default values are automatically configured based on your wheel
+        The initial values are automatically configured based on your wheel
         diameter and axle track. They are selected such that your robot
         drives at about 40% of its maximum speed.
+
+        The speed values given here do not apply to the :meth:`.drive` method,
+        since you provide your own speed values as arguments in that method.
 
         Arguments:
             straight_speed (Number, mm/s): Straight-line speed of the robot.
             straight_acceleration (Number, mm/s²): Straight-line
-                acceleration and deceleration of the robot.
+                acceleration and deceleration of the robot. Provide a tuple with
+                two values to set acceleration and deceleration separately.
             turn_rate (Number, deg/s): Turn rate of the robot.
             turn_acceleration (Number, deg/s²): Angular acceleration and
-                deceleration of the robot.
+                deceleration of the robot. Provide a tuple with
+                two values to set acceleration and deceleration separately.
         """
 
     def straight(
