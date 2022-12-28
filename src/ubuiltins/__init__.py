@@ -1074,8 +1074,9 @@ def round(*args):
     truncate trailing zeros. To print numbers nicely, format strings instead::
 
         # print two decimal places
-        print('my number: %.2f' % number) print('my number:
-        {:.2f}'.format(number))
+        print('my number: %.2f' % number)
+        print('my number: {:.2f}'.format(number))
+        print(f'my number: {number:.2f}')
 
     Arguments:
         number (float): The number to be rounded.
