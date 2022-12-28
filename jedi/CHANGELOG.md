@@ -4,6 +4,9 @@
 
 ## Unreleased
 
+### Fixed
+- Fixed code completion for builtin types.
+
 ## 1.6.0 - 2022-12-09
 
 ### Changed

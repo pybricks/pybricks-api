@@ -7,6 +7,9 @@ Tests for correct code completion of builtins.
 
 
 import json
+
+import pytest
+
 from pybricks_jedi import CompletionItem, complete
 
 
@@ -124,3 +127,142 @@ def test_empty_code():
         "ZeroDivisionError",
         "zip",
     ]
+
+
+FUNCTION_PARAMS = [
+    pytest.param(
+        "''.",
+        [
+            "count",
+            "endswith",
+            "find",
+            "format",
+            "index",
+            "isalpha",
+            "isdigit",
+            "islower",
+            "isspace",
+            "isupper",
+            "join",
+            "lower",
+            "lstrip",
+            "replace",
+            "rfind",
+            "rindex",
+            "rsplit",
+            "rstrip",
+            "split",
+            "startswith",
+            "strip",
+            "upper",
+        ],
+    ),
+    pytest.param(
+        "str().",
+        [
+            "count",
+            "endswith",
+            "find",
+            "format",
+            "index",
+            "isalpha",
+            "isdigit",
+            "islower",
+            "isspace",
+            "isupper",
+            "join",
+            "lower",
+            "lstrip",
+            "replace",
+            "rfind",
+            "rindex",
+            "rsplit",
+            "rstrip",
+            "split",
+            "startswith",
+            "strip",
+            "upper",
+        ],
+    ),
+    pytest.param("(0).", ["from_bytes", "to_bytes"]),
+    pytest.param("int().", ["from_bytes", "to_bytes"]),
+    pytest.param(
+        "{}.",
+        [
+            "clear",
+            "copy",
+            "fromkeys",
+            "get",
+            "items",
+            "keys",
+            "pop",
+            "popitem",
+            "setdefault",
+            "update",
+            "values",
+        ],
+    ),
+    pytest.param(
+        "dict().",
+        [
+            "clear",
+            "copy",
+            "fromkeys",
+            "get",
+            "items",
+            "keys",
+            "pop",
+            "popitem",
+            "setdefault",
+            "update",
+            "values",
+        ],
+    ),
+    pytest.param(
+        "[].",
+        [
+            "append",
+            "clear",
+            "copy",
+            "count",
+            "extend",
+            "index",
+            "insert",
+            "pop",
+            "remove",
+            "reverse",
+            "sort",
+        ],
+    ),
+    pytest.param(
+        "list().",
+        [
+            "append",
+            "clear",
+            "copy",
+            "count",
+            "extend",
+            "index",
+            "insert",
+            "pop",
+            "remove",
+            "reverse",
+            "sort",
+        ],
+    ),
+    pytest.param("().", ["count", "index"]),
+    pytest.param("tuple().", ["count", "index"]),
+    pytest.param("bytearray().", ["append", "extend"]),
+    pytest.param("bytes().", []),
+    pytest.param("b''.", []),
+    pytest.param("float().", []),
+    pytest.param("(0.0).", []),
+    pytest.param("complex().", []),
+    pytest.param("type().", []),
+]
+
+
+@pytest.mark.parametrize("code,attributes", FUNCTION_PARAMS)
+def test_get_completion_for_builtins(code: str, attributes: list[str]):
+    completions: list[CompletionItem] = json.loads(complete(code, 1, len(code) + 1))
+    assert [c["insertText"] for c in completions] == attributes
