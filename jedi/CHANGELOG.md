@@ -4,6 +4,8 @@
 
 ## Unreleased
 
+## 1.7.0 - 2022-12-28
+
 ### Added
 - Added `update_user_modules()` function for filtering on user modules.
 
