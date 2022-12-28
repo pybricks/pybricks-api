@@ -4,6 +4,9 @@
 
 ## Unreleased
 
+### Added
+- Added `update_user_modules()` function for filtering on user modules.
+
 ### Fixed
 - Fixed code completion for builtin types.
 - Fixed code completion for names starting with `_`.

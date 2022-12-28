@@ -6,7 +6,9 @@ Tests for correct code completion of import statements.
 """
 
 import json
-from pybricks_jedi import CompletionItem, complete
+
+import pytest
+from pybricks_jedi import CompletionItem, complete, update_user_modules
 
 
 def test_from():
@@ -16,6 +18,32 @@ def test_from():
     assert [c["insertText"] for c in completions] == [
         "micropython",
         "pybricks",
+        "uerrno",
+        "uio",
+        "ujson",
+        "umath",
+        "urandom",
+        "uselect",
+        "ustruct",
+        "usys",
+    ]
+
+
+@pytest.fixture
+def user_modules():
+    update_user_modules(["jedi", "pytest"])
+    yield
+    update_user_modules([])
+
+
+def test_from_with_user_modules(user_modules):
+    code = "from "
+    completions: list[CompletionItem] = json.loads(complete(code, 1, len(code) + 1))
+    assert [c["insertText"] for c in completions] == [
+        "jedi",
+        "micropython",
+        "pybricks",
+        "pytest",
         "uerrno",
         "uio",
         "ujson",

@@ -2,6 +2,7 @@ import io
 import json
 import re
 from enum import IntEnum
+from typing import Iterable
 
 import docstring_parser
 import jedi
@@ -176,6 +177,8 @@ PYBRICKS_TYPING = {
 
 MICROPY_NOT_SUPPORTED_DUNDER = {"__doc__", "__package__"}
 
+user_modules = set()
+
 # Types from monaco editor
 
 
@@ -326,7 +329,7 @@ def _is_pybricks(c: Completion) -> bool:
 
     # filter out packages/modules that are not included in Pybricks firmware
     if c.type == "module" or c.type == "namespace":
-        return c.full_name in PYBRICKS_CODE_PACKAGES
+        return c.full_name in PYBRICKS_CODE_PACKAGES or c.full_name in user_modules
 
     # filter subset of builtins
     if c.module_name == "builtins" and c.type != "keyword":
@@ -541,3 +544,15 @@ def get_signatures(code: str, line: int, column: int) -> str:
     """
     signatures = jedi.Script(code).get_signatures(line, column - 1)
     return json.dumps(_map_signatures(signatures))
+
+
+def update_user_modules(names: Iterable[str]) -> None:
+    """
+    Updates the set of user module names used for filtering.
+
+    Args:
+        names:
+            An iterable of module names.
+    """
+    user_modules.clear()
+    user_modules.update(names)
