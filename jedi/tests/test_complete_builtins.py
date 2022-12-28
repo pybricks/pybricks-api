@@ -126,6 +126,7 @@ def test_empty_code():
         "yield",
         "ZeroDivisionError",
         "zip",
+        "__name__",
     ]
 
 

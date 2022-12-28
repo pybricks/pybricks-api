@@ -6,6 +6,7 @@
 
 ### Fixed
 - Fixed code completion for builtin types.
+- Fixed code completion for names starting with `_`.
 
 ## 1.6.0 - 2022-12-09
 

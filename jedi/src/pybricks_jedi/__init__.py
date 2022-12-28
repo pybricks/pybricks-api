@@ -174,6 +174,8 @@ PYBRICKS_TYPING = {
     "typing.Mapping.get",
 }
 
+MICROPY_NOT_SUPPORTED_DUNDER = {"__doc__", "__package__"}
+
 # Types from monaco editor
 
 
@@ -302,10 +304,14 @@ class SignatureHelp(TypedDict):
 
 def _is_pybricks(c: Completion) -> bool:
     # filter all "private" names (leading underscore)
-    if (isinstance(c.name, str)) and c.name.startswith("_"):
-        return False
+    if c.name is not None:
+        if c.name.startswith("_") and c.module_name != "__main__":
+            return False
 
-    if isinstance(c.full_name, str):
+        if c.name in MICROPY_NOT_SUPPORTED_DUNDER:
+            return False
+
+    if c.full_name is not None:
         # this catches things like `from __future__ import annotations`
         if c.full_name.startswith("_") and c.module_name != "__main__":
             return False
