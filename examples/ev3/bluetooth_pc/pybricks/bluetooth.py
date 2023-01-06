@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: MIT
-# Copyright (C) 2020 The Pybricks Authors
+# Copyright (C) 2020,2023 The Pybricks Authors
 
 """
 :class:`RFCOMMServer` can be used to communicate with other Bluetooth RFCOMM
@@ -10,29 +10,13 @@ remain a strict subset of that implementation when it comes to low-level
 implementation details.
 """
 
-from bluetooth import BluetoothSocket, RFCOMM
+from socket import socket, AF_BLUETOOTH, BTPROTO_RFCOMM, SOCK_STREAM
 from socketserver import ThreadingMixIn
-
-BDADDR_ANY = ""
-
-
-def str2ba(string, ba):
-    """Convert string to Bluetooth address"""
-    for i, v in enumerate(string.split(":")):
-        ba.b[5 - i] = int(v, 16)
-
-
-def ba2str(ba):
-    """Convert Bluetooth address to string"""
-    string = []
-    for b in ba.b:
-        string.append("{:02X}".format(b))
-    string.reverse()
-    return ":".join(string).upper()
 
 
 class RFCOMMServer:
-    """Object that simplifies setting up an RFCOMM socket server.
+    """
+    Object that simplifies setting up an RFCOMM socket server.
 
     This is based on the ``socketserver.SocketServer`` class in the Python
     standard library.
@@ -44,10 +28,10 @@ class RFCOMMServer:
         self.server_address = server_address
         self.RequestHandlerClass = RequestHandlerClass
 
-        self.socket = BluetoothSocket(RFCOMM)
+        self.socket = socket(AF_BLUETOOTH, SOCK_STREAM, BTPROTO_RFCOMM)
 
         try:
-            self.socket.bind((server_address[0], server_address[1]))
+            self.socket.bind(server_address)
             # self.server_address = self.socket.getsockname()
             self.socket.listen(self.request_queue_size)
         except Exception:
@@ -83,50 +67,21 @@ class RFCOMMServer:
         self.socket.close()
 
 
-class StreamRequestHandler:
-    """Class that handles incoming requests.
-
-    This is based on ``socketserver.StreamRequestHandler`` from the Python
-    standard library.
-    """
-
-    def __init__(self, request, client_address, server):
-        self.request = request
-        self.client_address = client_address
-        self.server = server
-        self.setup()
-        try:
-            self.handle()
-        finally:
-            self.finish()
-
-    def setup(self):
-        self.wfile = self.request
-        self.rfile = self.request
-
-    def handle(self):
-        pass
-
-    def finish(self):
-        pass
-
-
 class ThreadingRFCOMMServer(ThreadingMixIn, RFCOMMServer):
-    """Version of :class:`RFCOMMServer` that handles connections in a new
-    thread.
     """
-
-    pass
+    Version of :class:`RFCOMMServer` that handles connections in a new thread.
+    """
+    daemon_threads = True
 
 
 class RFCOMMClient:
     def __init__(self, client_address, RequestHandlerClass):
         self.client_address = client_address
         self.RequestHandlerClass = RequestHandlerClass
-        self.socket = BluetoothSocket(RFCOMM)
+        self.socket = socket(AF_BLUETOOTH, SOCK_STREAM, BTPROTO_RFCOMM)
 
     def handle_request(self):
-        self.socket.connect((self.client_address[0], self.client_address[1]))
+        self.socket.connect(self.client_address)
         try:
             self.process_request(self.socket, self.client_address)
         except Exception:
@@ -145,4 +100,7 @@ class RFCOMMClient:
 
 
 class ThreadingRFCOMMClient(ThreadingMixIn, RFCOMMClient):
-    pass
+    """
+    Version of :class:`RFCOMMClient` that handles connections in a new thread.
+    """
+    daemon_threads = True

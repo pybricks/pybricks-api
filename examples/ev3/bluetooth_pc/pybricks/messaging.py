@@ -1,16 +1,13 @@
 # SPDX-License-Identifier: MIT
-# Copyright (C) 2020 The Pybricks Authors
+# Copyright (C) 2020,2023 The Pybricks Authors
 
-from _thread import allocate_lock
 from errno import ECONNRESET
 from struct import pack, unpack
+from socket import BDADDR_ANY
+from socketserver import StreamRequestHandler
+from threading import Lock
 
-from .bluetooth import (
-    BDADDR_ANY,
-    ThreadingRFCOMMServer,
-    ThreadingRFCOMMClient,
-    StreamRequestHandler,
-)
+from .bluetooth import ThreadingRFCOMMServer, ThreadingRFCOMMClient
 
 
 def resolve(brick):
@@ -151,7 +148,7 @@ class MailboxHandler(StreamRequestHandler):
             self.server._clients[self.client_address[0]] = self.request
         while True:
             try:
-                buf = self.rfile.recv(2)
+                buf = self.rfile.read(2)
                 if len(buf) == 0:
                     break
             except OSError as ex:
@@ -160,7 +157,7 @@ class MailboxHandler(StreamRequestHandler):
                     break
                 raise
             (size,) = unpack("<H", buf)
-            buf = self.rfile.recv(size)
+            buf = self.rfile.read(size)
             msg_count, cmd_type, cmd, name_size = unpack("<HBBB", buf[0:5])
             if cmd_type != SYSTEM_COMMAND_NO_REPLY:
                 raise ValueError("Bad message type")
@@ -180,7 +177,7 @@ class MailboxHandler(StreamRequestHandler):
 class MailboxHandlerMixIn:
     def __init__(self):
         # protects against concurrent access of other attributes
-        self._lock = allocate_lock()
+        self._lock = Lock()
         # map of mailbox name to raw data
         self._mailboxes = {}
         # map of device name/address to object with send() method
@@ -247,7 +244,7 @@ class MailboxHandlerMixIn:
 
     def wait_for_mailbox_update(self, mbox):
         """Waits until ``mbox`` receives a value."""
-        lock = allocate_lock()
+        lock = Lock()
         lock.acquire()
         with self._lock:
             self._updates[mbox] = lock
