@@ -219,18 +219,18 @@ class Control:
         kp: Optional[Number] = None,
         ki: Optional[Number] = None,
         kd: Optional[Number] = None,
-        reserved: Optional[Number] = None,
+        integral_deadzone: Optional[Number] = None,
         integral_rate: Optional[Number] = None,
     ) -> None:
         ...
 
     @overload
-    def pid(self) -> Tuple[int, int, int, None, int]:
+    def pid(self) -> Tuple[int, int, int, int, int]:
         ...
 
     def pid(self, *args):
-        """pid(kp, ki, kd, reserved, integral_rate)
-        pid() -> Tuple[int, int, int, None, int]
+        """pid(kp, ki, kd, integral_deadzone, integral_rate)
+        pid() -> Tuple[int, int, int, int, int]
 
         Gets or sets the PID values for position and speed control.
 
@@ -245,7 +245,8 @@ class Control:
             kd (int): Derivative position (or proportional speed) control
                 constant. It is the feedback torque per
                 unit of speed: µNm/(deg/s).
-            reserved: This setting is not used.
+            integral_deadzone (Number, deg or Number, mm): Zone around the
+                target where the error integral does not accumulate errors.
             integral_rate (Number, deg/s or Number, mm/s): Maximum rate at
                 which the error integral is allowed to grow.
         """

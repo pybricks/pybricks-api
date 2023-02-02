@@ -4,6 +4,9 @@
 
 ## Unreleased
 
+### Added
+- Documented ``integral_deadzone`` in ``Control.pid()``.
+
 ## 3.2.0 - 2022-12-20
 
 ### Changed
