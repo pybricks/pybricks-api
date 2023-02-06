@@ -304,6 +304,52 @@ class Control:
         """
 
 
+class Model:
+    """Class to interact with motor state observer and settings."""
+
+    def state(self) -> Tuple[float, float, float, bool]:
+        """state() -> Tuple[float, float, float, bool]
+
+        Gets the estimated angle, speed, current, and stall state of the motor,
+        using a simulation model that mimics the real motor.
+        These estimates are updated faster than the real measurements,
+        which can be useful when building your own PID controllers.
+
+        For most applications it is better to used the *measured*
+        :meth:`angle <pybricks.pupdevices.Motor.angle>`,
+        :meth:`speed <pybricks.pupdevices.Motor.speed>`,
+        :meth:`load <pybricks.pupdevices.Motor.load>`, and
+        :meth:`stall <pybricks.pupdevices.Motor.stalled>` state instead.
+
+        Returns:
+            Tuple with the estimated angle (deg), speed (deg/s), current (mA),
+            and stall state (``True`` or ``False``).
+        """
+
+    @overload
+    def settings(self, values: tuple) -> None:
+        ...
+
+    @overload
+    def settings(self) -> tuple:
+        ...
+
+    def settings(self, speed, time):
+        """settings(values)
+        settings() -> Tuple
+
+        Gets or sets model settings as a tuple of integers. If no arguments are
+        given, this will return the current values. This method is mainly used
+        to debug the motor model class. Changing these settings should not be
+        needed in user programs.
+
+        .. _model settings: https://docs.pybricks.com/projects/pbio/en/latest/struct__pbio__observer__settings__t.html
+
+        Arguments:
+            values (Tuple): Tuple with `model settings`_.
+        """
+
+
 class Motor(DCMotor):
     """Generic class to control motors with built-in rotation sensors."""
 
@@ -312,6 +358,9 @@ class Motor(DCMotor):
     angle targets that you specify. You can change its behavior through the
     ``control`` attribute of the motor. See :ref:`control` for an overview
     of available methods."""
+
+    model = Model()
+    """Model representing the observer that estimates the motor state."""
 
     def __init__(
         self,

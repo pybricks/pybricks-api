@@ -93,6 +93,14 @@ Motors with rotation sensors
         The :meth:`done`, :meth:`stalled` and :meth:`load` methods have been
         moved.
 
+    .. pybricks-requirements:: pybricks-common-control
+
+    .. automethod:: pybricks.pupdevices.Motor.model.state
+
+    .. pybricks-requirements:: pybricks-common-control
+
+    .. automethod:: pybricks.pupdevices.Motor.model.settings
+
 Initialization examples
 -----------------------
 
