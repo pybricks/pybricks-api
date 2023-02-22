@@ -3,9 +3,14 @@ from pybricks.parameters import Port
 from uerrno import ENODEV
 
 # Dictionary of device identifiers along with their name.
+# Also check https://github.com/pybricks/technical-info/blob/master/assigned-numbers.md#io-device-type-ids
+# for retired/internal
 device_names = {
+    1: "Wedo 2.0 Medium Motor", #DCMotor, analog ID
+    2: "PUP Train Motor",       #DCMotor, analog ID
+    8: "PUP Light",             #Light, analog ID
     34: "Wedo 2.0 Tilt Sensor",
-    35: "Wedo 2.0 Infrared Sensor",
+    35: "Wedo 2.0 Infrared Sensor", # aka WeDo 2.0 Motion Sensor
     37: "BOOST Color Distance Sensor",
     38: "BOOST Interactive Motor",
     46: "Technic Large Motor",
@@ -15,6 +20,8 @@ device_names = {
     61: "SPIKE Color Sensor",
     62: "SPIKE Ultrasonic Sensor",
     63: "SPIKE Force Sensor",
+	64: "SPIKE 3x3 Color Light Matrix",
+	65: "SPIKE Small Angular Motor",
     75: "Technic Medium Angular Motor",
     76: "Technic Large Angular Motor",
 }
