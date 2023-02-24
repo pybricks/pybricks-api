@@ -110,6 +110,7 @@ device_names = {
     64: "SPIKE 3x3 Color Light Matrix",
 }
 
+
 def ConnectToDevice(port):
     # Returns a device dict()
     device = {'type': None, 'id': None, 'name': None, 'object': None}
@@ -129,7 +130,7 @@ def ConnectToDevice(port):
         device['name'] = device_names[device['id']]
     except KeyError:
         device['name'] = "Unknown"
-        #print(port, ":", "Unknown device with ID", xid)
+        # print(port, ":", "Unknown device with ID", xid)
     if len(temp_info) > 1:
         print(temp_info)
 
@@ -151,7 +152,7 @@ def ConnectToDevice(port):
             print("Motor could not be initiated: ", err)
             device['type'] = "Custom"
             pass
-    elif xid is 8:
+    elif xid == 8:
         try:
             device['object'] = Light(port)
             device['object'].on(brightness=50)
@@ -160,9 +161,10 @@ def ConnectToDevice(port):
             print("Light could not be initiated: ", err)
             device['type'] = "Custom"
             pass
-    elif xid is None:  #ToDo
+    elif xid == 64:
         try:
             device['object'] = ColorLightMatrix(port)
+            device['object'].on([Color.RED, Color.GREEN, Color.BLUE])
             device['type'] = "Matrix3x3"
         except OSError as err:
             print("Matrix could not be initiated: ", err)
@@ -170,62 +172,43 @@ def ConnectToDevice(port):
             pass
     elif xid in (34, 35, 37, 61, 62, 63):
         device['type'] = "Sensor"
-        if xid is 34:
-            try:
+        sensor_class = None
+        try:
+            if xid == 34:
+                sensor_class = "TiltSensor"
                 device['object'] = TiltSensor(port)
                 device['type'] += "/Tilt"
-            except OSError as err:
-                print("TiltSensor could not be initiated: ", err)
-                device['type'] += "/Custom"
-                pass
-        elif xid is 35:
-            try:
+            elif xid == 35:
+                sensor_class = "InfraredSensor"
                 device['object'] = InfraredSensor(port)
                 device['type'] += "/IR/Distance"
-            except OSError as err:
-                print("InfraredSensor could not be initiated: ", err)
-                device['type'] += "/Custom"
-                pass
-        elif xid is 37:
-            try:
+            elif xid == 37:
+                sensor_class = "ColorDistanceSensor"
                 device['object'] = ColorDistanceSensor(port)
                 device['type'] += "/Distance/Color/Light"
-            except OSError as err:
-                print("ColorDistanceSensor could not be initiated: ", err)
-                device['type'] += "/Custom"
-                pass
-        elif xid is 61:
-            try:
+            elif xid == 61:
+                sensor_class = "ColorSensor"
                 device['object'] = ColorSensor(port)
                 device['type'] += "/Color/Light"
-            except OSError as err:
-                print("ColorSensor could not be initiated: ", err)
-                device['type'] += "/Custom"
-                pass
-        elif xid is 62:
-            try:
+            elif xid == 62:
+                sensor_class = "UltrasonicSensor"
                 device['object'] = UltrasonicSensor(port)
                 device['type'] += "/Distance/Light"
-            except OSError as err:
-                print("UltrasonicSensor could not be initiated: ", err)
-                device['type'] += "/Custom"
-                pass
-        elif xid is 63:
-            try:
+            elif xid == 63:
+                sensor_class = "ForceSensor"
                 device['object'] = ForceSensor(port)
                 device['type'] += "/Force/Distance/Press"
-            except OSError as err:
-                print("ForceSensor could not be initiated: ", err)
-                device['type'] += "/Custom"
-                pass
+        except OSError as err:
+            print("class", sensor_class, "could not be initiated: ", err)
+            device['type'] += "/Custom"
+            pass
     else:
+        print("Not able to translate id:", xid, "to a class!")
         pass
-
     return device
-
 # end of ConnectToDevice(port)
 # -------------------------------------------------------------------
- 
+
 # Make a list of known ports.
 ports = [Port.A, Port.B]
 try:  # to add more ports, on hubs that support it.
@@ -250,7 +233,7 @@ def ConnectRemote():
     try:
         remote = Remote(name=None,timeout=10000)
         print("Remote: " + remote.name())
-        #remote.name("Remote of <user>")
+        # remote.name("Remote of <user>")
     except OSError as ex:
         if ex.errno == ETIMEDOUT:
             print("No Remote found.")
@@ -270,7 +253,7 @@ def ServiceRemote():
         return (ch1_val, ch2_val)
     if len(pressed) is 0:
         return (ch1_val, ch2_val)
-    #print(pressed)
+    # print(pressed)
 
     ch1_val_new = ch1_val
     ch2_val_new = ch2_val
@@ -303,7 +286,7 @@ def ServiceRemote():
 
 # 4: Main / Monitor changes
 # -------------------------------------------------------------------
-DIAGNOSTICS_PERIOD = 5000 # 5s
+DIAGNOSTICS_PERIOD = 5000  # 5s
 sys_tick = StopWatch()
 (hub, hub_info) = HubInit()
 print(hub_info)
@@ -322,7 +305,7 @@ for port in ports:
     if dev['type'] is None:
         print(port, ": ---")
     else:
-        print(port,dev['id'], ":", dev['name'], ":", dev['type'])
+        print(port, dev['id'], ":", dev['name'], ":", dev['type'])
         devices.append(dev)
 
 ConnectRemote()
