@@ -168,14 +168,12 @@ class InfraredSensor:
 class GyroSensor:
     """LEGO® MINDSTORMS® EV3 Gyro Sensor."""
 
-    def __init__(
-        self, port: _Port, positive_direction: _Direction = _Direction.CLOCKWISE
-    ):
+    def __init__(self, port: _Port, direction: _Direction = _Direction.CLOCKWISE):
         """GyroSensor(port)
 
         Arguments:
             port (Port): Port to which the sensor is connected.
-            positive_direction (Direction):
+            direction (Direction):
                 Positive rotation direction when looking at the red dot on top
                 of the sensor.
 
