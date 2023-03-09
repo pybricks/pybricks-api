@@ -1,9 +1,10 @@
 from pybricks.geometry import Axis
 from pybricks.iodevices import PUPDevice
-from pybricks.pupdevices import *
-from pybricks.parameters import Port, Button, Color  # if needed: Side
+from pybricks.pupdevices import DCMotor, Motor, Light, ColorLightMatrix, Remote, TiltSensor, InfraredSensor, ColorDistanceSensor, ColorSensor, UltrasonicSensor, ForceSensor
+from pybricks.parameters import Port, Button, Color, Direction  # if needed: Side
 from pybricks.tools import wait, StopWatch
 from uerrno import ENODEV, ETIMEDOUT
+from micropython import const
 
 # 1: Determine the type of hub
 # -------------------------------------------------------------------
@@ -73,12 +74,11 @@ def HubInit(mounted_top=Axis.Z, mounted_front=Axis.X):
 
     return (hub, hub_info)
 
+
 # 2: Diagnose connected devices
 # -------------------------------------------------------------------
 # Dictionary of device identifiers along with their name.
 # Also check https://github.com/pybricks/technical-info/blob/master/assigned-numbers.md#io-device-type-ids
-
-
 device_names = {
     # pybricks.pupdevices.DCMotor
     1: "Wedo 2.0 Medium Motor",
@@ -111,6 +111,21 @@ device_names = {
 }
 
 
+def GetPorts():
+    ports = [Port.A, Port.B]
+    try:  # to add more ports, on hubs that support it.
+        ports.append(Port.C)
+        ports.append(Port.D)
+    except AttributeError:
+        pass
+    try:  # to add more ports, on hubs that support it.
+        ports.append(Port.E)
+        ports.append(Port.F)
+    except AttributeError:
+        pass
+    return ports
+
+
 def ConnectToDevice(port):
     # Returns a device dict()
     device = {'type': None, 'id': None, 'name': None, 'object': None}
@@ -121,8 +136,8 @@ def ConnectToDevice(port):
         if ex.args[0] == ENODEV:
             # No device found on this port.
             return device
-        else:
-            raise
+        raise
+
     # Get the device id
     temp_info = pupdev.info()
     device['id'] = temp_info["id"]
@@ -130,97 +145,68 @@ def ConnectToDevice(port):
         device['name'] = device_names[device['id']]
     except KeyError:
         device['name'] = "Unknown"
-        # print(port, ":", "Unknown device with ID", xid)
     if len(temp_info) > 1:
         print(temp_info)
 
     # Initiate object and type
     xid = device['id']
-    if xid in (1, 2):
-        try:
+    device['type'] = ""  # Make it work with += "/Custom" in except
+    try:
+        if xid in (1, 2):
+            dev_class = "DCMotor"
             device['object'] = DCMotor(port)
             device['type'] = "DCMotor"
-        except OSError as err:
-            print("DCMotor could not be initiated: ", err)
-            device['type'] = "Custom"
-            pass
-    elif xid in (38, 46, 47, 48, 49, 65, 75, 76):
-        try:
+        elif xid in (38, 46, 47, 48, 49, 65, 75, 76):
+            dev_class = "Motor"
             device['object'] = Motor(port, positive_direction=Direction.CLOCKWISE, gears=None)
             device['type'] = "Motor"
-        except OSError as err:
-            print("Motor could not be initiated: ", err)
-            device['type'] = "Custom"
-            pass
-    elif xid == 8:
-        try:
+        elif xid == 8:
+            dev_class = "Light"
             device['object'] = Light(port)
             device['object'].on(brightness=50)
             device['type'] = "Light"
-        except OSError as err:
-            print("Light could not be initiated: ", err)
-            device['type'] = "Custom"
-            pass
-    elif xid == 64:
-        try:
+        elif xid == 64:
+            dev_class = "ColorLightMatrix"
             device['object'] = ColorLightMatrix(port)
             device['object'].on([Color.RED, Color.GREEN, Color.BLUE])
             device['type'] = "Matrix3x3"
-        except OSError as err:
-            print("Matrix could not be initiated: ", err)
-            device['type'] = "Custom"
-            pass
-    elif xid in (34, 35, 37, 61, 62, 63):
-        device['type'] = "Sensor"
-        sensor_class = None
-        try:
+        elif xid in (34, 35, 37, 61, 62, 63):
+            device['type'] = "Sensor"
             if xid == 34:
-                sensor_class = "TiltSensor"
+                dev_class = "TiltSensor"
                 device['object'] = TiltSensor(port)
                 device['type'] += "/Tilt"
             elif xid == 35:
-                sensor_class = "InfraredSensor"
+                dev_class = "InfraredSensor"
                 device['object'] = InfraredSensor(port)
                 device['type'] += "/IR/Distance"
             elif xid == 37:
-                sensor_class = "ColorDistanceSensor"
+                dev_class = "ColorDistanceSensor"
                 device['object'] = ColorDistanceSensor(port)
                 device['type'] += "/Distance/Color/Light"
             elif xid == 61:
-                sensor_class = "ColorSensor"
+                dev_class = "ColorSensor"
                 device['object'] = ColorSensor(port)
                 device['type'] += "/Color/Light"
             elif xid == 62:
-                sensor_class = "UltrasonicSensor"
+                dev_class = "UltrasonicSensor"
                 device['object'] = UltrasonicSensor(port)
                 device['type'] += "/Distance/Light"
             elif xid == 63:
-                sensor_class = "ForceSensor"
+                dev_class = "ForceSensor"
                 device['object'] = ForceSensor(port)
                 device['type'] += "/Force/Distance/Press"
-        except OSError as err:
-            print("class", sensor_class, "could not be initiated: ", err)
-            device['type'] += "/Custom"
-            pass
-    else:
-        print("Not able to translate id:", xid, "to a class!")
+            else:
+                print("Not able to translate id:", xid, "to a class!")
+    except OSError as err:
+        print("class", dev_class, "could not be initiated: ", err)
+        device['type'] += "/Custom"
         pass
+
     return device
 # end of ConnectToDevice(port)
 # -------------------------------------------------------------------
 
-# Make a list of known ports.
-ports = [Port.A, Port.B]
-try:  # to add more ports, on hubs that support it.
-    ports.append(Port.C)
-    ports.append(Port.D)
-except AttributeError:
-    pass
-try:  # to add more ports, on hubs that support it.
-    ports.append(Port.E)
-    ports.append(Port.F)
-except AttributeError:
-    pass
 
 # 3: Remote buttons check and remote init
 # -------------------------------------------------------------------
@@ -228,15 +214,17 @@ remote = None
 ch1_val = 0  # +/-100%, scale if needed
 ch2_val = 0  # +100%, scale if needed
 
+
 def ConnectRemote():
     global remote
     try:
-        remote = Remote(name=None,timeout=10000)
+        remote = Remote(name=None, timeout=10000)
         print("Remote: " + remote.name())
         # remote.name("Remote of <user>")
     except OSError as ex:
         if ex.errno == ETIMEDOUT:
             print("No Remote found.")
+
 
 def ServiceRemote():
     global remote
@@ -251,7 +239,7 @@ def ServiceRemote():
         print("Lost remote")
         remote = None  # empty handle
         return (ch1_val, ch2_val)
-    if len(pressed) is 0:
+    if len(pressed) == 0:
         return (ch1_val, ch2_val)
     # print(pressed)
 
@@ -284,10 +272,11 @@ def ServiceRemote():
     return (ch1_val_new, ch2_val_new)
 
 
-# 4: Main / Monitor changes
+# 4: Main loop: Monitor changes
 # -------------------------------------------------------------------
-DIAGNOSTICS_PERIOD = 5000  # 5s
+DIAGNOSTICS_PERIOD = const(2000)  # 5s
 sys_tick = StopWatch()
+last_diag = sys_tick.time()
 (hub, hub_info) = HubInit()
 print(hub_info)
 pressed = ()
@@ -297,8 +286,10 @@ tilt = None
 distance = None
 color = None
 force = None
+imu_tilt = None
 
 # Search through all available ports.
+ports = GetPorts()
 devices = []
 for port in ports:
     dev = ConnectToDevice(port)
@@ -320,12 +311,16 @@ while True:
         pressed = hub.button.pressed()
     except AttributeError:
         pass
-
-    if sys_tick.time() % DIAGNOSTICS_PERIOD:
+    if len(pressed) != 0:
+        print("Hub button(s) pressed:", pressed)
+    if (sys_tick.time() - last_diag) > DIAGNOSTICS_PERIOD:
+        last_diag = sys_tick.time()
         print("Hub voltage: ", hub.battery.voltage(), "mV")
         print("Hub current: ", hub.battery.current(), "mA")
+        if hub_info['has_imu'] is True:
+            imu_tilt = hub.imu.tilt()
         for device in devices:
-            if "DCMotor" or "Motor" in device['type']:
+            if "Motor" in device['type']:  # also catches DCMotor
                 device['object'].dc(ch1_val)
             if "Tilt" in device['type']:
                 tilt = device['object'].tilt()
@@ -335,10 +330,10 @@ while True:
                 color = device['object'].color()
             if "Force" in device['type']:
                 force = device['object'].force()
-        print("T:", tilt, "D:", distance, "C:", color, "F:", force)		
-    
+        print("D:", distance, "C:", color, "F:", force, "T:", tilt, "IMU.T:", imu_tilt)
+
     # do not set values blindly to not interfere with other code:
-    (ch1_val_new,ch2_val_new) = ServiceRemote()
+    (ch1_val_new, ch2_val_new) = ServiceRemote()
     if ch1_val_new is not ch1_val:
         ch1_val = ch1_val_new
         print("Channel 1 changed:", ch1_val)
