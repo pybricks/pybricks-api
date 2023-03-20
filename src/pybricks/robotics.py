@@ -8,7 +8,7 @@ from __future__ import annotations
 from typing import Tuple, Optional, overload, TYPE_CHECKING
 
 from . import _common
-from .parameters import Stop
+from .parameters import Stop, Direction
 
 if TYPE_CHECKING:
     from ._common import Motor
@@ -29,8 +29,7 @@ class DriveBase:
     **Positive** angles and turn rates mean turning **right**.
     **Negative** means **left**. So when viewed from the top,
     positive means clockwise and negative means counterclockwise. If desired,
-    you can flip this convention by reversing the ``left_motor`` and
-    ``right_motor`` when you initialize this class.
+    you can reverse this behavior with the ``positive_direction`` parameter.
 
     See the `measuring`_ section for tips to measure and adjust the diameter
     and axle track values.
@@ -59,8 +58,9 @@ class DriveBase:
         right_motor: Motor,
         wheel_diameter: Number,
         axle_track: Number,
+        positive_direction: Direction = Direction.CLOCKWISE,
     ):
-        """DriveBase(left_motor, right_motor, wheel_diameter, axle_track)
+        """DriveBase(left_motor, right_motor, wheel_diameter, axle_track, positive_direction=Direction.CLOCKWISE)
 
         Arguments:
             left_motor (Motor):
@@ -70,6 +70,9 @@ class DriveBase:
             wheel_diameter (Number, mm): Diameter of the wheels.
             axle_track (Number, mm): Distance between the points where
                 both wheels touch the ground.
+            positive_direction (Direction): Which direction the drive base
+                should turn when you give a positive turn rate or turn
+                angle, viewed from the top.
         """
 
     def drive(self, speed: Number, turn_rate: Number) -> None:
@@ -226,6 +229,7 @@ class DriveBase:
 
 # HACK: hide from jedi
 if TYPE_CHECKING:
+    del Direction
     del Motor
     del Number
     del Stop
