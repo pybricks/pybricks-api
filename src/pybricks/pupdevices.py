@@ -38,8 +38,9 @@ class Motor(_common.Motor):
         positive_direction: Direction = Direction.CLOCKWISE,
         gears: Optional[Union[Collection[int], Collection[Collection[int]]]] = None,
         reset_angle: bool = True,
+        profile: Number = None,
     ):
-        """__init__(port, positive_direction=Direction.CLOCKWISE, gears=None, reset_angle=True)
+        """__init__(port, positive_direction=Direction.CLOCKWISE, gears=None, reset_angle=True, profile=None)
 
         Arguments:
             port (Port): Port to which the motor is connected.
@@ -56,12 +57,16 @@ class Motor(_common.Motor):
                 When you specify a gear train, all motor commands and settings
                 are automatically adjusted to account for the resulting gear
                 ratio.  The motor direction remains unchanged by this.
-            reset_angle(bool):
+            reset_angle (bool):
                 Choose ``True`` to reset the rotation sensor value to the
                 absolute marker angle (between -180 and 179).
                 Choose ``False`` to keep the
                 current value, so your program knows where it left off last
                 time.
+            profile (Number, deg): Precision profile. A lower value
+                means more precise movement; a larger value means
+                smoother movement. If no value is given, a suitable profile for
+                this motor type will be selected automatically.
         """
 
     def reset_angle(self, angle: Optional[Number] = None) -> None:
