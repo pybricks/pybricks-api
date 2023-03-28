@@ -88,7 +88,7 @@ def getrandbits(k: int) -> int:
     """
     getrandbits(k) -> int
 
-    Gets a random integer :math:`N` satisfying :math:`0 \\leq N < 2^{\\text{bits}}`.
+    Gets a random integer :math:`N` satisfying :math:`0 \\leq N < 2^{\\text{k}}`.
 
     Arguments:
         k (int): How many bits to use for the result.
