@@ -983,7 +983,7 @@ class Accelerometer(SimpleAccelerometer):
         along the x-axis.
 
         Returns:
-            Tuple of pitch and roll angles.
+            Tuple of pitch and roll angles in degrees.
         """
 
 
@@ -998,7 +998,18 @@ class IMU(Accelerometer):
         For a vehicle viewed from the top, this means that
         a positive heading value corresponds to a counterclockwise rotation.
 
-        .. note:: This method is not yet implemented.
+        The heading value continously increments as the robot keeps turning. It
+        does *not* wrap around after reaching 180 degrees.
+
+        .. note:: *For now, this method only keeps track of the heading while
+                  the robot is on a flat surface.*
+
+                  This means that the value is
+                  no longer correct if you lift it from the table. To solve
+                  this, you can call ``reset_heading`` to reset the heading to
+                  a known value *after* you put it back down. For example, you
+                  could align your robot with the side of the competition table
+                  and reset the heading 90 degrees as the new starting point.
 
         Returns:
             Heading angle relative to starting orientation.
@@ -1009,8 +1020,6 @@ class IMU(Accelerometer):
         """reset_heading(angle)
 
         Resets the accumulated heading angle of the robot.
-
-        .. note:: This method is not yet implemented.
 
         Arguments:
             angle (Number, deg): Value to which the heading should be reset.
@@ -1038,6 +1047,41 @@ class IMU(Accelerometer):
         Returns:
             Angular velocity along the specified axis. If you specify no axis,
             this returns a vector of accelerations along all axes.
+        """
+
+    def rotation(self, axis: Axis) -> float:
+        """
+        rotation(axis) -> float: deg
+
+        Gets the rotation of the device along a given axis in
+        the :ref:`robot reference frame <robotframe>`.
+
+        This value is useful if your robot *only* rotates along the requested
+        axis. For general three-dimensional motion, use the
+        ``orientation()`` method instead.
+
+        The value starts counting from ``0`` when you initialize this class.
+
+        Arguments:
+            axis (Axis): Axis along which the rotation should be measured.
+        Returns:
+            The rotation angle.
+        """
+
+    def orientation(self) -> Matrix:
+        """
+        orientation() -> Matrix
+
+        Gets the three-dimensional orientation of the robot in
+        the :ref:`robot reference frame <robotframe>`.
+
+        It returns a rotation matrix whose columns represent the ``X``, ``Y``,
+        and ``Z`` axis of the robot.
+
+        .. note:: This method is not yet implemented.
+
+        Returns:
+            The rotation matrix.
         """
 
 

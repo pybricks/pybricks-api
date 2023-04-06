@@ -97,7 +97,9 @@ def test_hub_dot_imu_dot():
         "acceleration",
         "angular_velocity",
         "heading",
+        "orientation",
         "reset_heading",
+        "rotation",
         "tilt",
         "up",
     ]
