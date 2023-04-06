@@ -71,6 +71,10 @@ Prime Hub / Inventor Hub
 
     .. automethod:: pybricks.hubs::PrimeHub.imu.reset_heading
 
+    .. automethod:: pybricks.hubs::PrimeHub.imu.rotation
+
+    .. automethod:: pybricks.hubs::PrimeHub.imu.orientation
+
     .. rubric:: Using the speaker
 
     .. automethod:: pybricks.hubs::PrimeHub.speaker.volume

@@ -37,6 +37,10 @@ Essential Hub
 
     .. automethod:: pybricks.hubs::EssentialHub.imu.reset_heading
 
+    .. automethod:: pybricks.hubs::EssentialHub.imu.rotation
+
+    .. automethod:: pybricks.hubs::EssentialHub.imu.orientation
+
     .. rubric:: Using the battery
 
     .. automethod:: pybricks.hubs::EssentialHub.battery.voltage

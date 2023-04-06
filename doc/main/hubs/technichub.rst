@@ -33,6 +33,10 @@ Technic Hub
 
     .. automethod:: pybricks.hubs::TechnicHub.imu.reset_heading
 
+    .. automethod:: pybricks.hubs::TechnicHub.imu.rotation
+
+    .. automethod:: pybricks.hubs::TechnicHub.imu.orientation
+
     .. rubric:: Using the battery
 
     .. automethod:: pybricks.hubs::TechnicHub.battery.voltage
