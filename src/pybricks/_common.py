@@ -408,10 +408,18 @@ class Motor(DCMotor):
             Motor angle.
         """
 
-    def speed(self) -> int:
-        """speed() -> int: deg/s
+    def speed(self, window: Number = 100) -> int:
+        """speed(window=100) -> int: deg/s
 
         Gets the speed of the motor.
+
+        The speed is measured as the change in the motor angle during the
+        given time window. A short window makes the speed value more
+        responsive to motor movement, but less steady. A long window makes the
+        speed value less responsive, but more steady.
+
+        Arguments:
+            window (Number, ms): The time window used to determine the speed.
 
         Returns:
             Motor speed.

@@ -543,7 +543,12 @@ METHOD_PARAMS = [
         "settings",
         [(["max_voltage: Number"], "None"), ([], "Tuple[int]")],
     ),
-    pytest.param("pybricks.pupdevices", "Motor", "speed", [([], "int")]),
+    pytest.param(
+        "pybricks.pupdevices",
+        "Motor",
+        "speed",
+        [(["window: Number=100"], "int")],
+    ),
     pytest.param("pybricks.pupdevices", "Motor", "angle", [([], "int")]),
     pytest.param(
         "pybricks.pupdevices",
