@@ -59,6 +59,12 @@ Prime Hub / Inventor Hub
 
     .. rubric:: Using the IMU
 
+    .. automethod:: pybricks.hubs::PrimeHub.imu.ready
+
+    .. automethod:: pybricks.hubs::PrimeHub.imu.stationary
+
+    .. automethod:: pybricks.hubs::PrimeHub.imu.set_stationary_thresholds
+
     .. automethod:: pybricks.hubs::PrimeHub.imu.up
 
     .. automethod:: pybricks.hubs::PrimeHub.imu.tilt

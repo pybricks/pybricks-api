@@ -25,6 +25,12 @@ Essential Hub
 
     .. rubric:: Using the IMU
 
+    .. automethod:: pybricks.hubs::EssentialHub.imu.ready
+
+    .. automethod:: pybricks.hubs::EssentialHub.imu.stationary
+
+    .. automethod:: pybricks.hubs::EssentialHub.imu.set_stationary_thresholds
+
     .. automethod:: pybricks.hubs::EssentialHub.imu.up
 
     .. automethod:: pybricks.hubs::EssentialHub.imu.tilt

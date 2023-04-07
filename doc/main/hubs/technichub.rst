@@ -21,6 +21,12 @@ Technic Hub
 
     .. rubric:: Using the IMU
 
+    .. automethod:: pybricks.hubs::TechnicHub.imu.ready
+
+    .. automethod:: pybricks.hubs::TechnicHub.imu.stationary
+
+    .. automethod:: pybricks.hubs::TechnicHub.imu.set_stationary_thresholds
+
     .. automethod:: pybricks.hubs::TechnicHub.imu.up
 
     .. automethod:: pybricks.hubs::TechnicHub.imu.tilt
