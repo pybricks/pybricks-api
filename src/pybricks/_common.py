@@ -988,6 +988,54 @@ class Accelerometer(SimpleAccelerometer):
 
 
 class IMU(Accelerometer):
+    def ready(self) -> bool:
+        """ready() -> bool
+
+        Checks if the device is calibrated and ready for use.
+
+        This becomes ``True`` when the robot has been sitting stationary for a
+        few seconds, which allows the device to re-calibrate. It is ``False``
+        if the hub has just been started, or if it hasn't had a chance to
+        calibrate for more than 10 minutes.
+
+        Returns:
+            ``True`` if it is ready for use, ``False`` if not.
+        """
+
+    def stationary(self) -> bool:
+        """stationary() -> bool
+
+        Checks if the device is currently stationary (not moving).
+
+        Returns:
+            ``True`` if stationary for at least a second, ``False`` if it is
+            moving.
+        """
+
+    def set_stationary_thresholds(
+        self, angular_velocity: float, acceleration: float
+    ) -> None:
+        """set_stationary_thresholds(angular_velocity, acceleration)
+
+        When the angular velocity and acceleration measurements are below the
+        given threshold values for at least one second, the sensor is
+        considered stationary. This is when the sensor recalibrates itself.
+
+        If you are in a noisy room with high ambient vibrations (such as a
+        robot competition hall), it is recommended to increase these values
+        slightly to give your robot the chance to calibrate properly.
+
+        To verify that your settings are working, test that
+        the ``stationary()`` method gives ``False`` if your robot is moving,
+        and ``True`` if it is sitting still for at least a second.
+
+        Arguments:
+            angular_velocity (Number, deg/s): The threshold for angular
+                velocity. The default value is 1.5 deg/s.
+            acceleration (Number, mm/s²): The threshold for angular
+                velocity. The default value is 250 mm/s².
+        """
+
     def heading(self) -> float:
         """heading() -> float: deg
 

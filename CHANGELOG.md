@@ -10,7 +10,8 @@
 - Documented ``integral_deadzone`` in ``Control.pid()``.
 - Documented ``Motor.model``. This can be used to view the estimated motor
   state and change its settings.
-- Added `rotation` and `orientation` methods to `IMU` class.
+- Added `rotation`, `orientation`, `ready`, `stationary`
+  and `set_stationary_thresholds`  methods to `IMU` class.
 
 ### Changed
 - Change implementation status of `IMU.heading` and `IMU.reset_heading`. They

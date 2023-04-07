@@ -98,8 +98,11 @@ def test_hub_dot_imu_dot():
         "angular_velocity",
         "heading",
         "orientation",
+        "ready",
         "reset_heading",
         "rotation",
+        "set_stationary_thresholds",
+        "stationary",
         "tilt",
         "up",
     ]
