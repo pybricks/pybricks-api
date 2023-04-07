@@ -1012,27 +1012,42 @@ class IMU(Accelerometer):
             moving.
         """
 
-    def set_stationary_thresholds(
-        self, angular_velocity: float, acceleration: float
+    @overload
+    def settings(
+        self,
+        angular_velocity_threshold: float = None,
+        acceleration_threshold: float = None,
     ) -> None:
-        """set_stationary_thresholds(angular_velocity, acceleration)
+        ...
 
-        When the angular velocity and acceleration measurements are below the
-        given threshold values for at least one second, the sensor is
-        considered stationary. This is when the sensor recalibrates itself.
+    @overload
+    def settings(self) -> Tuple[float, float]:
+        ...
 
-        If you are in a noisy room with high ambient vibrations (such as a
-        robot competition hall), it is recommended to increase these values
-        slightly to give your robot the chance to calibrate properly.
+    def settings(self, *args):
+        """
+        settings(angular_velocity_threshold, acceleration_threshold)
+        settings() -> Tuple[float, float]
 
-        To verify that your settings are working, test that
+        Configures the IMU settings. If no arguments are given,
+        this returns the current values.
+
+        The ``angular_velocity_threshold`` and ``acceleration_threshold``
+        define when the hub is considered stationary. If all
+        measurements stay below these thresholds for one second, the IMU
+        will recalibrate itself.
+
+        In a noisy room with high ambient vibrations (such as a
+        competition hall), it is recommended to increase the thresholds
+        slightly to give your robot the chance to calibrate.
+        To verify that your settings are working as expected, test that
         the ``stationary()`` method gives ``False`` if your robot is moving,
         and ``True`` if it is sitting still for at least a second.
 
         Arguments:
-            angular_velocity (Number, deg/s): The threshold for angular
-                velocity. The default value is 1.5 deg/s.
-            acceleration (Number, mm/s²): The threshold for angular
+            angular_velocity_threshold (Number, deg/s): The threshold for
+                angular velocity. The default value is 1.5 deg/s.
+            acceleration_threshold (Number, mm/s²): The threshold for angular
                 velocity. The default value is 250 mm/s².
         """
 

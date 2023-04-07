@@ -29,8 +29,6 @@ Essential Hub
 
     .. automethod:: pybricks.hubs::EssentialHub.imu.stationary
 
-    .. automethod:: pybricks.hubs::EssentialHub.imu.set_stationary_thresholds
-
     .. automethod:: pybricks.hubs::EssentialHub.imu.up
 
     .. automethod:: pybricks.hubs::EssentialHub.imu.tilt
@@ -46,6 +44,8 @@ Essential Hub
     .. automethod:: pybricks.hubs::EssentialHub.imu.rotation
 
     .. automethod:: pybricks.hubs::EssentialHub.imu.orientation
+
+    .. automethod:: pybricks.hubs::EssentialHub.imu.settings
 
     .. rubric:: Using the battery
 

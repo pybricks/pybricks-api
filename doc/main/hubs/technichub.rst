@@ -25,8 +25,6 @@ Technic Hub
 
     .. automethod:: pybricks.hubs::TechnicHub.imu.stationary
 
-    .. automethod:: pybricks.hubs::TechnicHub.imu.set_stationary_thresholds
-
     .. automethod:: pybricks.hubs::TechnicHub.imu.up
 
     .. automethod:: pybricks.hubs::TechnicHub.imu.tilt
@@ -42,6 +40,8 @@ Technic Hub
     .. automethod:: pybricks.hubs::TechnicHub.imu.rotation
 
     .. automethod:: pybricks.hubs::TechnicHub.imu.orientation
+
+    .. automethod:: pybricks.hubs::TechnicHub.imu.settings
 
     .. rubric:: Using the battery
 
