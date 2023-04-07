@@ -20,11 +20,11 @@ Motors
 
     .. rubric:: Measuring
 
-    .. automethod:: pybricks.ev3devices.Motor.speed
-
     .. automethod:: pybricks.ev3devices.Motor.angle
 
     .. automethod:: pybricks.ev3devices.Motor.reset_angle
+
+    .. automethod:: pybricks.ev3devices.Motor.speed
 
     .. automethod:: pybricks.ev3devices.Motor.load
 

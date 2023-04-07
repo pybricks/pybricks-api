@@ -18,11 +18,11 @@ Motors with rotation sensors
 
     .. rubric:: Measuring
 
-    .. automethod:: pybricks.pupdevices.Motor.speed
-
     .. automethod:: pybricks.pupdevices.Motor.angle
 
     .. automethod:: pybricks.pupdevices.Motor.reset_angle
+
+    .. automethod:: pybricks.pupdevices.Motor.speed
 
     .. automethod:: pybricks.pupdevices.Motor.load
 
