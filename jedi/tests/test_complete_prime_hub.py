@@ -101,7 +101,7 @@ def test_hub_dot_imu_dot():
         "ready",
         "reset_heading",
         "rotation",
-        "set_stationary_thresholds",
+        "settings",
         "stationary",
         "tilt",
         "up",

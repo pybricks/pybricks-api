@@ -11,7 +11,7 @@
 - Documented ``Motor.model``. This can be used to view the estimated motor
   state and change its settings.
 - Added `rotation`, `orientation`, `ready`, `stationary`
-  and `set_stationary_thresholds`  methods to `IMU` class.
+  and `settings`  methods to `IMU` class.
 
 ### Changed
 - Change implementation status of `IMU.heading` and `IMU.reset_heading`. They

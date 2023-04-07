@@ -63,8 +63,6 @@ Prime Hub / Inventor Hub
 
     .. automethod:: pybricks.hubs::PrimeHub.imu.stationary
 
-    .. automethod:: pybricks.hubs::PrimeHub.imu.set_stationary_thresholds
-
     .. automethod:: pybricks.hubs::PrimeHub.imu.up
 
     .. automethod:: pybricks.hubs::PrimeHub.imu.tilt
@@ -80,6 +78,8 @@ Prime Hub / Inventor Hub
     .. automethod:: pybricks.hubs::PrimeHub.imu.rotation
 
     .. automethod:: pybricks.hubs::PrimeHub.imu.orientation
+
+    .. automethod:: pybricks.hubs::PrimeHub.imu.settings
 
     .. rubric:: Using the speaker
 
