@@ -1062,15 +1062,13 @@ class IMU(Accelerometer):
     def heading(self) -> float:
         """heading() -> float: deg
 
-        Gets the heading angle relative to the starting orientation. It is a
-        positive rotation around the :ref:`z-axis in the robot
-        frame <robotframe>`, prior to applying any tilt rotation.
+        Gets the heading angle of your robot. A positive value means a
+        clockwise turn.
 
-        For a vehicle viewed from the top, this means that
-        a positive heading value corresponds to a counterclockwise rotation.
+        The heading is 0 when your program starts. The value continues to grow
+        even as the robot turns more than 180 degrees. It does not wrap around
+        to -180 like it does in some apps.
 
-        The heading value continously increments as the robot keeps turning. It
-        does *not* wrap around after reaching 180 degrees.
 
         .. note:: *For now, this method only keeps track of the heading while
                   the robot is on a flat surface.*
