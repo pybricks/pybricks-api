@@ -6,7 +6,7 @@ name: Build Python package and docs
 on: 
   push:
     tags-ignore:
-      - "*"
+      - "@pybricks/*"
   pull_request:
     paths:
       - doc/**
