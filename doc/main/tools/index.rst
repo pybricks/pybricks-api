@@ -25,6 +25,10 @@ Timing tools
 Linear algebra tools
 --------------------
 
+.. versionchanged:: 3.3
+
+    These tools were previously located in the ``pybricks.geometry`` module.
+
 .. pybricks-requirements:: stm32-float
 
 .. autoclass:: pybricks.tools.Matrix
