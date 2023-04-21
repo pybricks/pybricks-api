@@ -159,7 +159,9 @@ def test_from_pybricks_pupdevices_import():
 def test_from_pybricks_robotics_import():
     code = "from pybricks.robotics import "
     completions: list[CompletionItem] = json.loads(complete(code, 1, len(code) + 1))
-    assert [c["insertText"] for c in completions] == ["DriveBase"]
+    assert [c["insertText"] for c in completions] == [
+        "DriveBase",
+    ]
 
 
 def test_from_pybricks_tools_import():

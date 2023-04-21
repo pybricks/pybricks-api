@@ -148,7 +148,6 @@ CONSTRUCTOR_PARAMS = [
                 "right_motor: Motor",
                 "wheel_diameter: Number",
                 "axle_track: Number",
-                "positive_direction: Direction=Direction.CLOCKWISE",
             ]
         ],
     ),
