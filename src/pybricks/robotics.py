@@ -59,9 +59,8 @@ class DriveBase:
         wheel_diameter: Number,
         axle_track: Number,
         positive_direction: Direction = Direction.CLOCKWISE,
-        use_gyro: bool = False,
     ):
-        """DriveBase(left_motor, right_motor, wheel_diameter, axle_track, positive_direction=Direction.CLOCKWISE, use_gyro=False)
+        """DriveBase(left_motor, right_motor, wheel_diameter, axle_track, positive_direction=Direction.CLOCKWISE)
 
         Arguments:
             left_motor (Motor):
@@ -74,12 +73,6 @@ class DriveBase:
             positive_direction (Direction): Which direction the drive base
                 should turn when you give a positive turn rate or turn
                 angle, viewed from the top.
-            use_gyro (bool): Choose ``True`` to use the internal gyrosope for
-                more accurate turns. This can only be used when
-                the ``positive_direction`` is set to counterclockwise. This is
-                only supported on hubs with an inertial measurement unit (IMU).
-                If you choose ``False`` (the default), turns are measured
-                using the wheel angles.
         """
 
     def drive(self, speed: Number, turn_rate: Number) -> None:
