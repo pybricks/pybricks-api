@@ -4,12 +4,14 @@
 
 ## Unreleased
 
+## 3.3.0b4 - 2023-04-21
+
 ### Added
-- Documented ``integral_deadzone`` in ``Control.pid()``.
-- Documented ``Motor.model``. This can be used to view the estimated motor
+- Documented `integral_deadzone` in `Control.pid()`.
+- Documented `Motor.model`. This can be used to view the estimated motor
   state and change its settings.
-- Added `rotation`, `orientation`, `ready`, `stationary`
-  and `settings`  methods to `IMU` class.
+- Added `rotation`, `orientation`, `ready`, `stationary` and `settings` methods
+  to `IMU` class.
 - Added `GyroDriveBase` class to `pybricks.robotics`.
 
 ### Changed
@@ -20,8 +22,6 @@
 
 ### Removed
 - Removed `pybricks.geometry` module.
-
-### Changed
 
 ## 3.2.0 - 2022-12-20
 
