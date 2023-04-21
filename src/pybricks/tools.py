@@ -1,7 +1,7 @@
 # SPDX-License-Identifier: MIT
-# Copyright (c) 2018-2022 The Pybricks Authors
+# Copyright (c) 2018-2023 The Pybricks Authors
 
-"""Common tools for timing, data logging, and geometry math tools."""
+"""Common tools for timing, data logging, and linear algebra."""
 
 from __future__ import annotations
 

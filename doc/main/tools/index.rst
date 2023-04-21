@@ -1,10 +1,13 @@
 .. pybricks-requirements::
 
-:mod:`tools <pybricks.tools>` -- Timing tools
+:mod:`tools <pybricks.tools>` -- General purpose tools
 ========================================================
 
 .. automodule:: pybricks.tools
     :no-members:
+
+Timing tools
+---------------
 
 .. autofunction:: wait
 
@@ -18,6 +21,9 @@
     .. automethod:: pybricks.tools.StopWatch.resume
 
     .. automethod:: pybricks.tools.StopWatch.reset
+
+Linear algebra tools
+--------------------
 
 .. pybricks-requirements:: stm32-float
 
