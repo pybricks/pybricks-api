@@ -8,7 +8,7 @@ import sys
 
 # General information about the project.
 project = "pybricks"
-copyright = "2018-2021 The Pybricks Authors"
+copyright = "2018-2023 The Pybricks Authors"
 author = ""
 
 _TITLE = "Pybricks Modules and Examples"
