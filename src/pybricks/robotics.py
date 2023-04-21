@@ -28,9 +28,7 @@ class DriveBase:
 
     **Positive** angles and turn rates mean turning **right**.
     **Negative** means **left**. So when viewed from the top,
-    positive means clockwise and negative means counterclockwise. If desired,
-    you can flip this convention by reversing the ``left_motor`` and
-    ``right_motor`` when you initialize this class.
+    positive means clockwise and negative means counterclockwise.
 
     See the `measuring`_ section for tips to measure and adjust the diameter
     and axle track values.
