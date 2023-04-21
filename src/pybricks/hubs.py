@@ -4,9 +4,8 @@
 """LEGO® Programmable Hubs."""
 from . import _common
 from .ev3dev import _speaker
-from .geometry import Axis
 from .media.ev3dev import Image as _Image
-from .parameters import Button as _Button
+from .parameters import Button as _Button, Axis
 
 
 class EV3Brick:

@@ -8,8 +8,8 @@ from __future__ import annotations
 
 from typing import Union, Iterable, overload, Optional, Tuple, Collection, TYPE_CHECKING
 
-from .geometry import Matrix, Axis
-from .parameters import Direction, Stop, Button, Port, Color, Side
+from .tools import Matrix
+from .parameters import Axis, Direction, Stop, Button, Port, Color, Side
 
 if TYPE_CHECKING:
     from .parameters import Number
@@ -794,7 +794,7 @@ class LightMatrix:
 
         Arguments:
             matrices (iter): Sequence of
-                :class:`Matrix <pybricks.geometry.Matrix>` of intensities.
+                :class:`Matrix <pybricks.tools.Matrix>` of intensities.
             interval (Number, ms): Time to display each image in the list.
         """
 

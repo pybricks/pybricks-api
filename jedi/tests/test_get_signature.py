@@ -31,7 +31,7 @@ def _get_function_signature(module: str, function: str) -> SignatureHelp:
 FUNCTION_PARAMS = [
     pytest.param("pybricks.tools", "wait", [(["time: Number"], "None")]),
     pytest.param(
-        "pybricks.geometry",
+        "pybricks.tools",
         "vector",
         [
             (["x: float", "y: float"], "Matrix"),
@@ -152,7 +152,7 @@ CONSTRUCTOR_PARAMS = [
         ],
     ),
     pytest.param(
-        "pybricks.geometry",
+        "pybricks.tools",
         "Matrix",
         [["rows: Sequence[Sequence[float]]"]],
     ),

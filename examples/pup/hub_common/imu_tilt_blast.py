@@ -1,7 +1,7 @@
 # ThisHub = TechnicHub PrimeHub EssentialHub
 from pybricks.hubs import ThisHub
 from pybricks.tools import wait
-from pybricks.geometry import Axis
+from pybricks.parameters import Axis
 
 # Initialize the hub. In this case, specify that the hub is mounted with the
 # top side facing forward and the front side facing to the right.

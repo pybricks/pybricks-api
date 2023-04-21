@@ -13,7 +13,6 @@ from typing_extensions import NotRequired, TypedDict
 PYBRICKS_CODE_PACKAGES = {
     "micropython",
     "pybricks",
-    "pybricks.geometry",
     "pybricks.hubs",
     "pybricks.iodevices",
     "pybricks.parameters",
@@ -489,7 +488,6 @@ def initialize():
         "pybricks._common",
         "pybricks.ev3dev",
         "pybricks.ev3dev.speaker",
-        "pybricks.geometry",
         "pybricks.hubs",
         "pybricks.iodevices",
         "pybricks.parameters",

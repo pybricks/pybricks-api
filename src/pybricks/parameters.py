@@ -9,7 +9,7 @@ from enum import Enum
 from typing import Union, TYPE_CHECKING
 import os
 
-from .geometry import Matrix as _Matrix
+from .tools import Matrix as _Matrix, vector as _vector
 
 if TYPE_CHECKING or os.environ.get("SPHINX_BUILD") == "True":
     Number = Union[int, float]
@@ -55,6 +55,20 @@ class _PybricksEnum(Enum, metaclass=_PybricksEnumMeta):
 
     def __repr__(self):
         return str(self)
+
+
+class Axis:
+    """Unit axes of a coordinate system.
+
+    .. data:: X = vector(1, 0, 0)
+    .. data:: Y = vector(0, 1, 0)
+    .. data:: Z = vector(0, 0, 1)
+
+    """
+
+    X: _Matrix = _vector(1, 0, 0)
+    Y: _Matrix = _vector(0, 1, 0)
+    Z: _Matrix = _vector(0, 0, 1)
 
 
 class Color:

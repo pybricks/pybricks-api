@@ -60,7 +60,6 @@ above to reveal this menu.
    parameters/index
    tools/index
    robotics
-   geometry
    signaltypes
 
 .. toctree::

@@ -10,7 +10,6 @@ FEATURES_SMALL = set()
 
 # Medium feature set.
 FEATURES_MEDIUM = FEATURES_SMALL | {
-    "pybricks-geometry",
     "pybricks-common-control",
     "pybricks-iodevices",
     "stm32-extra",

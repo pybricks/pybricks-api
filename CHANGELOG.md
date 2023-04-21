@@ -15,6 +15,13 @@
 ### Changed
 - Change implementation status of `IMU.heading` and `IMU.reset_heading`. They
   are now implemented, with some limitations as noted in a note box.
+- Moved `Matrix` and `vector` from `pybricks.geometry` to `pybricks.tools`.
+- Moved `Axis` from `pybricks.geometry` to `pybricks.parameters`.
+
+### Removed
+- Removed `pybricks.geometry` module.
+
+### Changed
 
 ## 3.2.0 - 2022-12-20
 

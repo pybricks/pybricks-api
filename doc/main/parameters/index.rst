@@ -10,6 +10,7 @@
    :maxdepth: 1
    :hidden:
 
+   axis
    button
    color
    direction
@@ -17,6 +18,8 @@
    port
    side
    stop
+
+.. pybricks-classlink:: Axis
 
 .. pybricks-classlink:: Button
 

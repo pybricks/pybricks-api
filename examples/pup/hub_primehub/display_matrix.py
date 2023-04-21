@@ -1,6 +1,5 @@
 from pybricks.hubs import PrimeHub
-from pybricks.tools import wait
-from pybricks.geometry import Matrix
+from pybricks.tools import wait, Matrix
 
 # Initialize the hub.
 hub = PrimeHub()
