@@ -1,11 +1,10 @@
-.. pybricks-requirements::
-
 :mod:`robotics <pybricks.robotics>` -- Robotics and drive bases
 ===============================================================
 
 .. automodule:: pybricks.robotics
     :no-members:
 
+.. pybricks-requirements::
 
 .. autoclass:: pybricks.robotics.DriveBase
     :no-members:
@@ -113,11 +112,47 @@
 
         The :meth:`done` and :meth:`stalled` methods have been moved.
 
+
+.. pybricks-requirements:: gyro
+
+.. class:: GyroDriveBase
+
+    This class works just like the :class:`DriveBase`, but it uses the hub's
+    built-in gyroscope to drive straight and turn more accurately.
+
+    If your hub is not mounted flat in your robot, make sure to specify
+    the ``top_side`` and ``front_side`` parameters when you initialize the
+    :class:`PrimeHub() <pybricks.hubs.PrimeHub>`,
+    :class:`InventorHub() <pybricks.hubs.PrimeHub>`,
+    :class:`EssentialHub() <pybricks.hubs.EssentialHub>`, or
+    :class:`TechnicHub() <pybricks.hubs.TechnicHub>`. This way your robot
+    knows which rotation to measure when turning.
+
+    The gyro in each hub is a bit different, which can cause it to be a few
+    degrees off for big turns, or many small turns in the same
+    direction. For example, you may need to use
+    :meth:`turn(357) <pybricks.robotics.DriveBase.turn>` or
+    :meth:`turn(362) <pybricks.robotics.DriveBase.turn>`
+    on your robot to make a full turn.
+
+    By default, this class tries to maintain the robot's position after a move
+    completes. This means the wheels will spin if you pick the robot up, in an
+    effort to maintain its heading angle. To avoid this, you can choose
+    ``then=Stop.COAST`` in your last
+    :meth:`straight <pybricks.robotics.DriveBase.straight>`,
+    :meth:`turn <pybricks.robotics.DriveBase.turn>`, or
+    :meth:`curve <pybricks.robotics.DriveBase.curve>` command.
+
 Examples
 -------------------
 
 Driving straight and turning in place
 **********************************************
+
+The following program shows the basics of driving and turning.
+
+To use the built-in gyro, just replace the two occurences of
+:class:`DriveBase` with :class:`GyroDriveBase`.
 
 .. literalinclude::
     ../../examples/pup/robotics/drivebase_basics.py

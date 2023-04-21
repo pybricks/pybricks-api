@@ -222,6 +222,12 @@ class DriveBase:
         """
 
 
+class GyroDriveBase(DriveBase):
+    """A robotic vehicle with two powered wheels and an optional support
+    wheel or caster. It measures the heading using the hub's built-in gyroscope,
+    which can make turning and driving straight more accurate."""
+
+
 # HACK: hide from jedi
 if TYPE_CHECKING:
     del Motor

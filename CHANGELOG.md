@@ -10,6 +10,7 @@
   state and change its settings.
 - Added `rotation`, `orientation`, `ready`, `stationary`
   and `settings`  methods to `IMU` class.
+- Added `GyroDriveBase` class to `pybricks.robotics`.
 
 ### Changed
 - Change implementation status of `IMU.heading` and `IMU.reset_heading`. They
