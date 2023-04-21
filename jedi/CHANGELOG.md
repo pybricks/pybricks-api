@@ -4,6 +4,9 @@
 
 ## Unreleased
 
+### Changed
+- Updated `pybricks` package to v3.3.0b4.
+
 ## 1.7.0 - 2022-12-28
 
 ### Added
