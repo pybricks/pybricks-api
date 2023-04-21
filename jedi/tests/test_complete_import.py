@@ -155,6 +155,7 @@ def test_from_pybricks_tools_import():
     code = "from pybricks.tools import "
     completions: list[CompletionItem] = json.loads(complete(code, 1, len(code) + 1))
     assert [c["insertText"] for c in completions] == [
+        "cross",
         "DataLog",
         "Matrix",
         "StopWatch",

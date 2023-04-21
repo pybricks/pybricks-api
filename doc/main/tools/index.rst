@@ -31,3 +31,5 @@
 .. pybricks-requirements:: stm32-float
 
 .. autofunction:: pybricks.tools.vector
+
+.. autofunction:: pybricks.tools.cross

@@ -207,6 +207,21 @@ def vector(*args):
     """
 
 
+def cross(a: Matrix, b: Matrix) -> Matrix:
+    """
+    cross(a, b) -> Matrix
+
+    Gets the cross product ``a`` × ``b`` of two vectors.
+
+    Arguments:
+        a (Matrix): A three-dimensional vector.
+        b (Matrix): A three-dimensional vector.
+
+    Returns:
+        The cross product, also a three-dimensional vector.
+    """
+
+
 # HACK: hide from jedi
 if TYPE_CHECKING:
     del Number
