@@ -151,7 +151,7 @@ Driving straight and turning in place
 
 The following program shows the basics of driving and turning.
 
-To use the built-in gyro, just replace the two occurences of
+To use the built-in gyro, just replace the two occurrences of
 :class:`DriveBase` with :class:`GyroDriveBase`.
 
 .. literalinclude::

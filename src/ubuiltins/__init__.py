@@ -1170,7 +1170,7 @@ class str:
         If no argument is given, this creates an empty ``str`` object.
 
         Arguments:
-            object: If only this argument is given, this returns the stirng
+            object: If only this argument is given, this returns the string
               representation of the object.
             encoding (str): If the first argument is a ``bytearray`` or ``bytes``
               object and the encoding argument is ``"utf-8"``, this will decode

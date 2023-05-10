@@ -321,7 +321,7 @@ def on_missing_reference(
             app.builder, node["refdoc"], "signaltypes", "numbers", contnode
         )
 
-    # References with special characters can't exist, so we have to supress
+    # References with special characters can't exist, so we have to suppress
     # warnings when Sphinx tries to cross reference units like deg/s. For
     # consistency, we also treat units without special characters this way.
     for unit in [

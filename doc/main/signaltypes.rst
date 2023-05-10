@@ -248,7 +248,7 @@ For example, you can choose the frequency of a beep to change the pitch.
 temperature: °C
 ---------------
 
-Temperature is measured in degrees Celcius (°C). To convert to degrees
+Temperature is measured in degrees Celsius (°C). To convert to degrees
 Fahrenheit (°F) or Kelvin (K), you can use the following conversion formulas:
 
     :math:`^{\circ}\kern1pt\!F =\kern1pt^{\circ}\kern1pt\!C \cdot \frac{9}{5} + 32`.

@@ -36,7 +36,7 @@ def scale(val, src, dst):
 
 
 # Create a loop to react to events
-# This loop reacte to all main PS4 button and stick events. I have left out
+# This loop reacts to all main PS4 button and stick events. I have left out
 # buttons like share and options, but can easily be added in by referring
 # to the table at: https://github.com/codeadamca/python-connect-ps4
 

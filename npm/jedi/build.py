@@ -30,7 +30,7 @@ whl_map: dict[str, str] = {}
 shutil.rmtree(BUILD_DIR, True)
 BUILD_DIR.mkdir()
 
-# download package and depedencies (*.whl files)
+# download package and dependencies (*.whl files)
 subprocess.check_call(
     [
         sys.executable,

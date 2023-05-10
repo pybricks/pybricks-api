@@ -97,7 +97,7 @@ class Remote:
             Button.RIGHT_PLUS,
         )
     )
-    addresss: Union[str, None]
+    address: Union[str, None]
 
     def __init__(self, name: Optional[str] = None, timeout: int = 10000):
         """Remote(name=None, timeout=10000)

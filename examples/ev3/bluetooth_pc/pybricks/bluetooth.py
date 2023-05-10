@@ -71,6 +71,7 @@ class ThreadingRFCOMMServer(ThreadingMixIn, RFCOMMServer):
     """
     Version of :class:`RFCOMMServer` that handles connections in a new thread.
     """
+
     daemon_threads = True
 
 
@@ -103,4 +104,5 @@ class ThreadingRFCOMMClient(ThreadingMixIn, RFCOMMClient):
     """
     Version of :class:`RFCOMMClient` that handles connections in a new thread.
     """
+
     daemon_threads = True

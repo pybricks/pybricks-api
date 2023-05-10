@@ -38,7 +38,7 @@ Powers and logarithms
 
 .. autofunction:: umath.sqrt
 
-Trigonomety
+Trigonometry
 -------------------------------
 
 .. autodata:: umath.pi
