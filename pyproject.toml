@@ -29,10 +29,12 @@ packages = [
 [tool.poetry.dependencies]
 python = "^3.8"
 
-[tool.poetry.dev-dependencies]
+[tool.poetry.group.lint.dependencies]
 black = "^22.3.0"
 doc8 = "^0.8.1"
 flake8 = "^4.0"
+
+[tool.poetry.group.doc.dependencies]
 Sphinx = { git = "https://github.com/pybricks/sphinx.git", rev = "b00124cb" }
 sphinx-rtd-theme = "^1.0.0"
 toml = "^0.10.0"
