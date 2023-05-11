@@ -21,8 +21,8 @@ City Hub
 
     .. rubric:: Using connectionless Bluetooth messaging
 
-    .. note:: ``ble.broadcast()`` does not work on ``CityHub`` due to a
-            bug in the Bluetooth chip frimware.
+    ``ble.broadcast()`` does not work on ``CityHub`` due to a bug in the
+    Bluetooth chip firmware.
 
     .. automethod:: pybricks.hubs::CityHub.ble.observe
 
@@ -84,12 +84,6 @@ Creating light animations
 
 Bluetooth examples
 ------------------
-
-Broadcasting data to other hubs
-*******************************
-
-.. literalinclude::
-    ../../../examples/pup/hub_common/build/ble_broadcast_cityhub.py
 
 Observing data from other hubs
 ******************************

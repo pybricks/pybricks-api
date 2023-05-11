@@ -53,9 +53,9 @@ class MoveHub:
                 A value from 0 to 255 indicating which channel ``hub.ble.broadcast()``
                 will use. Default is channel 0.
             observe_channels:
-                A list of channels channel to listen to when
-                ``hub.ble.observe()`` is called. Listening to more channels
-                requires more memory. Default is an empty list (no channels).
+                A list of channels to listen to when ``hub.ble.observe()`` is
+                called. Listening to more channels requires more memory.
+                Default is an empty list (no channels).
 
         .. versionchanged:: 3.3
             Added *broadcast_channel* and *observe_channels* arguments.
@@ -83,9 +83,9 @@ class CityHub:
                 A value from 0 to 255 indicating which channel ``hub.ble.broadcast()``
                 will use. Default is channel 0.
             observe_channels:
-                A list of channels channel to listen to when
-                ``hub.ble.observe()`` is called. Listening to more channels
-                requires more memory. Default is an empty list (no channels).
+                A list of channels to listen to when ``hub.ble.observe()`` is
+                called. Listening to more channels requires more memory.
+                Default is an empty list (no channels).
 
         .. versionchanged:: 3.3
             Added *broadcast_channel* and *observe_channels* arguments.
@@ -127,9 +127,9 @@ class TechnicHub:
                 A value from 0 to 255 indicating which channel ``hub.ble.broadcast()``
                 will use. Default is channel 0.
             observe_channels:
-                A list of channels channel to listen to when
-                ``hub.ble.observe()`` is called. Listening to more channels
-                requires more memory. Default is an empty list (no channels).
+                A list of channels to listen to when ``hub.ble.observe()`` is
+                called. Listening to more channels requires more memory.
+                Default is an empty list (no channels).
 
         .. versionchanged:: 3.3
             Added *broadcast_channel* and *observe_channels* arguments.
@@ -172,9 +172,9 @@ class EssentialHub:
                 A value from 0 to 255 indicating which channel ``hub.ble.broadcast()``
                 will use. Default is channel 0.
             observe_channels:
-                A list of channels channel to listen to when
-                ``hub.ble.observe()`` is called. Listening to more channels
-                requires more memory. Default is an empty list (no channels).
+                A list of channels to listen to when ``hub.ble.observe()`` is
+                called. Listening to more channels requires more memory.
+                Default is an empty list (no channels).
 
         .. versionchanged:: 3.3
             Added *broadcast_channel* and *observe_channels* arguments.
@@ -227,9 +227,9 @@ class PrimeHub:
                 A value from 0 to 255 indicating which channel ``hub.ble.broadcast()``
                 will use. Default is channel 0.
             observe_channels:
-                A list of channels channel to listen to when
-                ``hub.ble.observe()`` is called. Listening to more channels
-                requires more memory. Default is an empty list (no channels).
+                A list of channels to listen to when ``hub.ble.observe()`` is
+                called. Listening to more channels requires more memory.
+                Default is an empty list (no channels).
 
         .. versionchanged:: 3.3
             Added *broadcast_channel* and *observe_channels* arguments.
