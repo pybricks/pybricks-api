@@ -12,7 +12,15 @@ from .tools import Matrix
 from .parameters import Axis, Direction, Stop, Button, Port, Color, Side
 
 if TYPE_CHECKING:
+    from typing import Awaitable
+
     from .parameters import Number
+
+    class MaybeAsync(None, Awaitable[None]):
+        ...
+
+    class MaybeAsyncInt(int, Awaitable[int]):
+        ...
 
 
 class System:
@@ -476,7 +484,7 @@ class Motor(DCMotor):
 
     def run_time(
         self, speed: Number, time: Number, then: Stop = Stop.HOLD, wait: bool = True
-    ) -> None:
+    ) -> MaybeAsync:
         """run_time(speed, time, then=Stop.HOLD, wait=True)
 
         Runs the motor at a constant speed for a given amount of time.
@@ -499,7 +507,7 @@ class Motor(DCMotor):
         rotation_angle: Number,
         then: Stop = Stop.HOLD,
         wait: bool = True,
-    ) -> None:
+    ) -> MaybeAsync:
         """run_angle(speed, rotation_angle, then=Stop.HOLD, wait=True)
 
         Runs the motor at a constant speed by a given angle.
@@ -519,7 +527,7 @@ class Motor(DCMotor):
         target_angle: Number,
         then: Stop = Stop.HOLD,
         wait: bool = True,
-    ) -> None:
+    ) -> MaybeAsync:
         """run_target(speed, target_angle, then=Stop.HOLD, wait=True)
 
         Runs the motor at a constant speed towards a given target angle.
@@ -540,7 +548,7 @@ class Motor(DCMotor):
         speed: Number,
         then: Stop = Stop.COAST,
         duty_limit: Optional[Number] = None,
-    ) -> int:
+    ) -> MaybeAsyncInt:
         """
         run_until_stalled(speed, then=Stop.COAST, duty_limit=None) -> int: deg
 
@@ -604,7 +612,7 @@ class Speaker:
             volume (Number, %): Volume of the speaker in the 0-100 range.
         """
 
-    def beep(self, frequency: Number = 500, duration: Number = 100) -> None:
+    def beep(self, frequency: Number = 500, duration: Number = 100) -> MaybeAsync:
         """beep(frequency=500, duration=100)
 
         Play a beep/tone.
@@ -618,7 +626,7 @@ class Speaker:
                 play continues to play indefinitely.
         """
 
-    def play_notes(self, notes: Iterable[str], tempo: Number = 120) -> None:
+    def play_notes(self, notes: Iterable[str], tempo: Number = 120) -> MaybeAsync:
         """play_notes(notes, tempo=120)
 
         Plays a sequence of musical notes. For example:

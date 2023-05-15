@@ -429,13 +429,13 @@ METHOD_PARAMS = [
         "pybricks.hubs",
         "PrimeHub",
         "speaker.beep",
-        [(["frequency: Number=500", "duration: Number=100"], "None")],
+        [(["frequency: Number=500", "duration: Number=100"], "MaybeAsync")],
     ),
     pytest.param(
         "pybricks.hubs",
         "PrimeHub",
         "speaker.play_notes",
-        [(["notes: Iterable[str]", "tempo: Number=120"], "None")],
+        [(["notes: Iterable[str]", "tempo: Number=120"], "MaybeAsync")],
     ),
     pytest.param("pybricks.hubs", "PrimeHub", "battery.voltage", [([], "int")]),
     pytest.param("pybricks.hubs", "PrimeHub", "battery.current", [([], "int")]),
@@ -571,7 +571,7 @@ METHOD_PARAMS = [
                     "then: Stop=Stop.HOLD",
                     "wait: bool=True",
                 ],
-                "None",
+                "MaybeAsync",
             )
         ],
     ),
@@ -587,7 +587,7 @@ METHOD_PARAMS = [
                     "then: Stop=Stop.HOLD",
                     "wait: bool=True",
                 ],
-                "None",
+                "MaybeAsync",
             )
         ],
     ),
@@ -603,7 +603,7 @@ METHOD_PARAMS = [
                     "then: Stop=Stop.HOLD",
                     "wait: bool=True",
                 ],
-                "None",
+                "MaybeAsync",
             )
         ],
     ),
@@ -624,7 +624,7 @@ METHOD_PARAMS = [
                     "then: Stop=Stop.COAST",
                     "duty_limit: Optional[Number]=None",
                 ],
-                "int",
+                "MaybeAsyncInt",
             )
         ],
     ),
