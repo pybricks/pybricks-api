@@ -265,7 +265,7 @@ testing = ["pytest", "pytest-benchmark"]
 
 [[package]]
 name = "pybricks"
-version = "3.3.0a4"
+version = "3.3.0a5"
 description = "Documentation and user-API stubs for Pybricks MicroPython"
 category = "main"
 optional = false
@@ -367,4 +367,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = ">= 3.10, < 3.12"
-content-hash = "80c838121a027348930e78cdbd766f86e5180408c5ac682b3deba8d658b408d6"
+content-hash = "25da309474c7393923efe8ea98d47ed5759f373fdf8f4c71f6ccdc76c5f21882"
