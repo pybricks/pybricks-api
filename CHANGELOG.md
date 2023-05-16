@@ -4,6 +4,11 @@
 
 ## Unreleased
 
+## 3.3.0b5 - 2023-05-16
+
+### Added
+- Documented new `hub.ble` methods.
+
 ## 3.3.0b4 - 2023-04-21
 
 ### Added
