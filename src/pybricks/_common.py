@@ -1299,7 +1299,7 @@ class BLE:
 
         Starts broadcasting the given data values.
 
-        Each value can be any of ``int``, ``float``, ``str`, ``bytes``,
+        Each value can be any of ``int``, ``float``, ``str``, ``bytes``,
         ``None``, ``True``, or ``False``. The data is broadcasted on the
         *broadcast_channel* you selected when initializing the hub.
 
