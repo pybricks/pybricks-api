@@ -31,6 +31,16 @@ Move Hub
 
             Changed acceleration units from m/s² to mm/s².
 
+    .. rubric:: Using connectionless Bluetooth messaging
+
+    .. automethod:: pybricks.hubs::MoveHub.ble.broadcast
+
+    .. automethod:: pybricks.hubs::MoveHub.ble.observe
+
+    .. automethod:: pybricks.hubs::MoveHub.ble.signal_strength
+
+    .. automethod:: pybricks.hubs::MoveHub.ble.version
+
     .. rubric:: Using the battery
 
     .. automethod:: pybricks.hubs::MoveHub.battery.voltage
@@ -84,6 +94,23 @@ Reading acceleration
 
 .. literalinclude::
     ../../../examples/pup/hub_movehub/imu_read_acceleration.py
+
+
+Bluetooth examples
+------------------
+
+Broadcasting data to other hubs
+*******************************
+
+.. literalinclude::
+    ../../../examples/pup/hub_common/build/ble_broadcast_movehub.py
+
+Observing data from other hubs
+******************************
+
+.. literalinclude::
+    ../../../examples/pup/hub_common/build/ble_observe_movehub.py
+
 
 Button and system examples
 ----------------------------------

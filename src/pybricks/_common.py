@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: MIT
-# Copyright (c) 2018-2021 The Pybricks Authors
+# Copyright (c) 2018-2023 The Pybricks Authors
 
 """Generic cross-platform module for typical devices like lights, displays,
 speakers, and batteries."""
@@ -1284,4 +1284,80 @@ class AmbientColorSensor(CommonColorSensor):
         Returns:
             Measured color. The color is described by a hue (0--359), a
             saturation (0--100), and a brightness value (0--100).
+        """
+
+
+class BLE:
+    """
+    Bluetooth Low Energy.
+
+    .. versionadded:: 3.3
+    """
+
+    def broadcast(self, *args: Union[None, bool, int, float, str, bytes]) -> None:
+        """broadcast(data0, data1, ...)
+
+        Starts broadcasting the given data values.
+
+        Each value can be any of ``int``, ``float``, ``str`, ``bytes``,
+        ``None``, ``True``, or ``False``. The data is broadcasted on the
+        *broadcast_channel* you selected when initializing the hub.
+
+        The total data size is quite limited (26 bytes). ``None``, ``True`` and
+        ``False`` take 1 byte each. ``float`` takes 5 bytes. ``int`` takes 2 to
+        5 bytes depending on how big the number is. ``str`` and ``bytes`` take
+        the number of bytes in the object plus one extra byte.
+
+        Params:
+            args: Zero or more values to be broadcast.
+
+
+
+        .. versionadded:: 3.3
+        """
+
+    def observe(
+        self, channel: int
+    ) -> Optional[Tuple[Union[None, bool, int, float, str, bytes], ...]]:
+        """observe(channel) -> tuple | None
+
+        Retrieves the last observed data for a given channel.
+
+        Args:
+            channel (int): The channel to observe (0 to 255).
+
+        Returns:
+            A tuple of the received data or ``None`` if no recent data is
+            available.
+
+        .. tip:: Receiving data is more reliable when the hub is not connected
+            to a computer or other devices at the same time.
+
+        .. versionadded:: 3.3
+        """
+
+    def signal_strength(self, channel: int) -> int:
+        """signal_strength(channel) -> int: dBm
+
+        Gets the average signal strength in dBm for the given channel.
+
+        This is useful for detecting how near the broadcasting device is. A close
+        device may have a signal strength around -40 dBm while a far away device
+        might have a signal strength around -70 dBm.
+
+        Args:
+            channel (int): The channel number (0 to 255).
+
+        Returns:
+            The signal strength or ``-128`` if there is no recent observed data.
+
+        .. versionadded:: 3.3
+        """
+
+    def version(self) -> str:
+        """version() -> str
+
+        Gets the firmware version from the Bluetooth chip.
+
+        .. versionadded:: 3.3
         """

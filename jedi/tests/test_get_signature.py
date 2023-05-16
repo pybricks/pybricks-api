@@ -78,17 +78,51 @@ def _get_constructor_signature(module: str, type: str) -> SignatureHelp:
 
 
 CONSTRUCTOR_PARAMS = [
-    pytest.param("pybricks.hubs", "MoveHub", [[]]),
-    pytest.param("pybricks.hubs", "CityHub", [[]]),
+    pytest.param(
+        "pybricks.hubs",
+        "MoveHub",
+        [["broadcast_channel: int=0", "observe_channels: Sequence[int]=[]"]],
+    ),
+    pytest.param(
+        "pybricks.hubs",
+        "CityHub",
+        [["broadcast_channel: int=0", "observe_channels: Sequence[int]=[]"]],
+    ),
     pytest.param(
         "pybricks.hubs",
         "TechnicHub",
-        [["top_side: Axis=Axis.Z", "front_side: Axis=Axis.X"]],
+        [
+            [
+                "top_side: Axis=Axis.Z",
+                "front_side: Axis=Axis.X",
+                "broadcast_channel: int=0",
+                "observe_channels: Sequence[int]=[]",
+            ]
+        ],
     ),
     pytest.param(
         "pybricks.hubs",
         "PrimeHub",
-        [["top_side: Axis=Axis.Z", "front_side: Axis=Axis.X"]],
+        [
+            [
+                "top_side: Axis=Axis.Z",
+                "front_side: Axis=Axis.X",
+                "broadcast_channel: int=0",
+                "observe_channels: Sequence[int]=[]",
+            ]
+        ],
+    ),
+    pytest.param(
+        "pybricks.hubs",
+        "EssentialHub",
+        [
+            [
+                "top_side: Axis=Axis.Z",
+                "front_side: Axis=Axis.X",
+                "broadcast_channel: int=0",
+                "observe_channels: Sequence[int]=[]",
+            ]
+        ],
     ),
     pytest.param(
         "pybricks.pupdevices",

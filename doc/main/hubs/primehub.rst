@@ -89,6 +89,16 @@ Prime Hub / Inventor Hub
 
     .. automethod:: pybricks.hubs::PrimeHub.speaker.play_notes
 
+    .. rubric:: Using connectionless Bluetooth messaging
+
+    .. automethod:: pybricks.hubs::PrimeHub.ble.broadcast
+
+    .. automethod:: pybricks.hubs::PrimeHub.ble.observe
+
+    .. automethod:: pybricks.hubs::PrimeHub.ble.signal_strength
+
+    .. automethod:: pybricks.hubs::PrimeHub.ble.version
+
     .. rubric:: Using the battery
 
     .. automethod:: pybricks.hubs::PrimeHub.battery.voltage
@@ -246,6 +256,23 @@ Reading acceleration and angular velocity on one axis
 
 .. literalinclude::
     ../../../examples/pup/hub_common/build/imu_read_scalar_primehub.py
+
+
+Bluetooth examples
+------------------
+
+Broadcasting data to other hubs
+*******************************
+
+.. literalinclude::
+    ../../../examples/pup/hub_common/build/ble_broadcast_primehub.py
+
+Observing data from other hubs
+******************************
+
+.. literalinclude::
+    ../../../examples/pup/hub_common/build/ble_observe_primehub.py
+
 
 System examples
 ----------------------------------

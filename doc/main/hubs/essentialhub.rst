@@ -47,6 +47,16 @@ Essential Hub
 
     .. automethod:: pybricks.hubs::EssentialHub.imu.settings
 
+    .. rubric:: Using connectionless Bluetooth messaging
+
+    .. automethod:: pybricks.hubs::EssentialHub.ble.broadcast
+
+    .. automethod:: pybricks.hubs::EssentialHub.ble.observe
+
+    .. automethod:: pybricks.hubs::EssentialHub.ble.signal_strength
+
+    .. automethod:: pybricks.hubs::EssentialHub.ble.version
+
     .. rubric:: Using the battery
 
     .. automethod:: pybricks.hubs::EssentialHub.battery.voltage
@@ -135,6 +145,23 @@ Reading acceleration and angular velocity on one axis
 
 .. literalinclude::
     ../../../examples/pup/hub_common/build/imu_read_scalar_essentialhub.py
+
+
+Bluetooth examples
+------------------
+
+Broadcasting data to other hubs
+*******************************
+
+.. literalinclude::
+    ../../../examples/pup/hub_common/build/ble_broadcast_essentialhub.py
+
+Observing data from other hubs
+******************************
+
+.. literalinclude::
+    ../../../examples/pup/hub_common/build/ble_observe_essentialhub.py
+
 
 System examples
 ----------------------------------

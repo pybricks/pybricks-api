@@ -325,6 +325,7 @@ def on_missing_reference(
     # warnings when Sphinx tries to cross reference units like deg/s. For
     # consistency, we also treat units without special characters this way.
     for unit in [
+        "dBm",
         "deg",
         "deg/s",
         "deg/s²",
