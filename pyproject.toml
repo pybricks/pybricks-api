@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pybricks"
-version = "3.3.0a5"
+version = "3.3.0b5"
 description = "Documentation and user-API stubs for Pybricks MicroPython"
 authors = ["The Pybricks Authors <dev@pybricks.com>"]
 maintainers = ["Laurens Valk <laurens@pybricks.com>", "David Lechner <david@pybricks.com>" ]
@@ -10,7 +10,6 @@ homepage = "https://pybricks.com"
 repository = "https://github.com/pybricks/pybricks-api"
 documentation = "https://docs.pybricks.com"
 classifiers = [
-    "Development Status :: 3 - Alpha",
     "Programming Language :: Python :: Implementation :: MicroPython",
 ]
 packages = [
