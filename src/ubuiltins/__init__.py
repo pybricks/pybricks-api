@@ -23,6 +23,7 @@ from typing import (
     Any,
     Callable,
     Dict,
+    Hashable,
     Iterable,
     Iterator,
     List,
@@ -33,6 +34,7 @@ from typing import (
     SupportsFloat,
     SupportsInt,
     Tuple,
+    TypeVar,
     Union,
     overload,
 )
@@ -54,6 +56,8 @@ _float = float
 _int = int
 _str = str
 _type = type
+
+_Self = TypeVar("_Self")
 
 # Functions and types
 
@@ -1082,6 +1086,207 @@ def round(*args):
         number (float): The number to be rounded.
         ndigits (int): The number of digits remaining after the decimal point.
     """
+
+
+class set:
+    @overload
+    def __init__(self) -> None:
+        ...
+
+    @overload
+    def __init__(self, iterable: Iterable[Hashable]) -> None:
+        ...
+
+    def __init__(self, *args) -> None:
+        """
+        set()
+        set(iterable)
+
+        Creates a new set.
+
+        With no arguments, creates a new empty set, otherwise creates a set
+        containing unique items of *iterable*.
+
+        Sets can also be created using a set literal::
+
+            my_set = {1, 2, 3}
+
+        Elements of a set must be hashable. There are only a few types, like
+        :class:`list` that aren't hashable.
+
+        Args:
+            iterable: An iterable of hashable objects.
+        """
+
+    def copy(self: _Self) -> _Self:
+        """
+        copy() -> set
+
+        Returns a shallow copy of the set.
+
+        Returns:
+            A new set.
+        """
+
+    def difference(self: _Self, *others: set) -> _Self:
+        """
+        difference(other1, other2, ...) -> set
+
+        Returns a new set with elements that are not in any of the other sets.
+
+        The difference can also be computed using the ``-`` operator::
+
+            diff = s - other
+
+        Args:
+            others: 1 or more other sets.
+
+        Returns:
+            A new set.
+        """
+
+    def intersection(self: _Self, *others: set) -> _Self:
+        """
+        intersection(other1, other2, ...) -> set
+
+        Returns a new set with elements that are common between this set and
+        all other sets.
+
+        The intersection can also be computed using the ``&`` operator::
+
+            intersect = s & other
+
+        Args:
+            others: 1 or more other sets.
+
+        Returns:
+            A new set.
+        """
+
+    def isdisjoint(self, other: set) -> bool:
+        """
+        isdisjoint(other) -> bool
+
+        Tests if a set and *other* have no elements in common.
+
+        Args:
+            other: Another set.
+
+        Returns:
+            ``True`` if this set has no elements in common with *other*,
+            otherwise ``False``.
+        """
+
+    def issubset(self, other: set) -> bool:
+        """
+        issubset(other) -> bool
+
+        Tests if a set is a subset of *other*.
+
+        The test can also be performed using using the ``<=`` operator::
+
+            if s <= other:
+                # s is subset of other
+                ...
+
+        Args:
+            other: Another set.
+
+        Returns:
+            ``True`` if this set is a subset of *other*, otherwise ``False``.
+        """
+
+    def issuperset(self, other: set) -> bool:
+        """
+        issuperset(other) -> bool
+
+        Tests if a set is a superset of *other*.
+
+        The test can also be performed using using the ``>=`` operator::
+
+            if s >= other:
+                # s is superset of other
+                ...
+
+        Args:
+            other: Another set.
+
+        Returns:
+            ``True`` if this set is a superset of *other*, otherwise ``False``.
+        """
+
+    def symmetric_difference(self: _Self, other: set) -> _Self:
+        """
+        symmetric_difference(other) -> bool
+
+        Returns a new set with elements in one set or the other but not in both.
+
+        The symmetric difference can also be computed using the ``^`` operator::
+
+            diff = s ^ other
+
+        Args:
+            other: Another set.
+
+        Returns:
+            A new set.
+        """
+
+    def union(self: _Self, *others: set) -> _Self:
+        """
+        union(other1, other2, ...) -> set
+
+        Returns a new set with elements from this set and all other sets.
+
+        The union can also be computed using the ``|`` operator::
+
+            u = s | other
+
+        Args:
+            others: 1 or more other sets.
+
+        Returns:
+            A new set.
+        """
+
+    def __contains__(self, item: Hashable) -> bool:
+        ...
+
+    def __len__(self) -> int:
+        ...
+
+    def __bool__(self) -> bool:
+        ...
+
+    def __gt__(self, other: set) -> bool:
+        ...
+
+    def __lt__(self, other: set) -> bool:
+        ...
+
+    def __ge__(self, other: set) -> bool:
+        ...
+
+    def __le__(self, other: set) -> bool:
+        ...
+
+    def __eq__(self, other: set) -> bool:
+        ...
+
+    def __ne__(self, other: set) -> bool:
+        ...
+
+    def __sub__(self: _Self, other: set) -> _Self:
+        ...
+
+    def __and__(self: _Self, other: set) -> _Self:
+        ...
+
+    def __or__(self: _Self, other: set) -> _Self:
+        ...
+
+    def __xor__(self: _Self, other: set) -> _Self:
+        ...
 
 
 def setattr(object: Any, name: _str, value: Any) -> None:

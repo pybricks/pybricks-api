@@ -72,6 +72,10 @@ Sequences
 
 .. pybricks-requirements:: stm32-extra
 
+.. autoclass:: ubuiltins.set
+
+.. pybricks-requirements:: stm32-extra
+
 .. autoclass:: ubuiltins.slice
 
 .. pybricks-requirements::
