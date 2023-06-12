@@ -1,16 +1,23 @@
 # SPDX-License-Identifier: MIT
-# Copyright (c) 2018-2022 The Pybricks Authors
+# Copyright (c) 2018-2023 The Pybricks Authors
 
 """LEGO® Powered Up motor, sensors, and lights."""
 
 from __future__ import annotations
 
-from typing import TYPE_CHECKING, Collection, Optional, Union, overload, Tuple
+from typing import TYPE_CHECKING, Collection, Optional, Union, overload
 
 from . import _common
 from .parameters import Button, Color, Direction
 
 if TYPE_CHECKING:
+    from ._common import (
+        MaybeAwaitable,
+        MaybeAwaitableBool,
+        MaybeAwaitableFloat,
+        MaybeAwaitableInt,
+        MaybeAwaitableTuple,
+    )
     from .parameters import Number, Port
 
 
@@ -144,7 +151,7 @@ class TiltSensor:
             port (Port): Port to which the sensor is connected.
         """
 
-    def tilt(self) -> Tuple[int, int]:
+    def tilt(self) -> MaybeAwaitableTuple[int, int]:
         """tilt() -> Tuple[int, int]: deg
 
         Measures the tilt relative to the horizontal plane.
@@ -157,7 +164,7 @@ class TiltSensor:
 class ColorDistanceSensor(_common.CommonColorSensor):
     """LEGO® Powered Up Color and Distance Sensor."""
 
-    light = _common.ColorLight()
+    light = _common.ExternalColorLight()
 
     # HACK: jedi can't find inherited __init__ so docs have to be duplicated
     def __init__(self, port: Port):
@@ -167,7 +174,7 @@ class ColorDistanceSensor(_common.CommonColorSensor):
             port (Port): Port to which the sensor is connected.
         """
 
-    def distance(self) -> int:
+    def distance(self) -> MaybeAwaitableInt:
         """distance() -> int: %
 
         Measures the relative distance between the sensor and an object
@@ -178,7 +185,7 @@ class ColorDistanceSensor(_common.CommonColorSensor):
         """
 
 
-class PFMotor(DCMotor):
+class PFMotor:
     """Control Power Functions motors with the infrared functionality of the
     :class:`ColorDistanceSensor <pybricks.pupdevices.ColorDistanceSensor>`."""
 
@@ -202,6 +209,32 @@ class PFMotor(DCMotor):
                 :class:`Color.RED <.parameters.Color>`
             positive_direction (Direction): Which direction the motor should
                 turn when you give a positive duty cycle value.
+        """
+
+    def dc(self, duty: Number) -> MaybeAwaitable:
+        """dc(duty)
+
+        Rotates the motor at a given duty cycle (also known as "power").
+
+        Arguments:
+            duty (Number, %): The duty cycle (-100.0 to 100).
+        """
+
+    def stop(self) -> MaybeAwaitable:
+        """stop()
+
+        Stops the motor and lets it spin freely.
+
+        The motor gradually stops due to friction.
+        """
+
+    def brake(self) -> MaybeAwaitable:
+        """brake()
+
+        Passively brakes the motor.
+
+        The motor stops due to friction, plus the voltage that
+        is generated while the motor is still moving.
         """
 
 
@@ -232,7 +265,7 @@ class UltrasonicSensor:
 
         """
 
-    def distance(self) -> int:
+    def distance(self) -> MaybeAwaitableInt:
         """distance() -> int: mm
 
         Measures the distance between the sensor and an object using
@@ -244,7 +277,7 @@ class UltrasonicSensor:
 
         """
 
-    def presence(self) -> bool:
+    def presence(self) -> MaybeAwaitableBool:
         """presence() -> bool
 
         Checks for the presence of other ultrasonic sensors by detecting
@@ -265,7 +298,7 @@ class ForceSensor:
             port (Port): Port to which the sensor is connected.
         """
 
-    def force(self) -> float:
+    def force(self) -> MaybeAwaitableFloat:
         """force() -> float: N
 
         Measures the force exerted on the sensor.
@@ -274,7 +307,7 @@ class ForceSensor:
             Measured force (up to approximately 10.00 N).
         """
 
-    def distance(self) -> float:
+    def distance(self) -> MaybeAwaitableFloat:
         """distance() -> float: mm
 
         Measures by how much the sensor button has moved.
@@ -283,7 +316,7 @@ class ForceSensor:
             Movement up to approximately 8.00 mm.
         """
 
-    def pressed(self, force: Number = 3) -> bool:
+    def pressed(self, force: Number = 3) -> MaybeAwaitableBool:
         """pressed(force=3) -> bool
 
         Checks if the sensor button is pressed.
@@ -295,7 +328,7 @@ class ForceSensor:
             ``True`` if the sensor is pressed, ``False`` if it is not.
         """
 
-    def touched(self) -> bool:
+    def touched(self) -> MaybeAwaitableBool:
         """touched() -> bool
 
         Checks if the sensor is touched.
@@ -323,7 +356,7 @@ class ColorLightMatrix:
         """
         ...
 
-    def on(self, color: Union[Color, Collection[Color]]) -> None:
+    def on(self, color: Union[Color, Collection[Color]]) -> MaybeAwaitable:
         """on(colors)
 
         Turns the lights on.
@@ -336,7 +369,7 @@ class ColorLightMatrix:
         """
         ...
 
-    def off(self) -> None:
+    def off(self) -> MaybeAwaitable:
         """off()
 
         Turns all lights off.
@@ -354,7 +387,7 @@ class InfraredSensor:
             port (Port): Port to which the sensor is connected.
         """
 
-    def reflection(self) -> int:
+    def reflection(self) -> MaybeAwaitableInt:
         """reflection() -> int: %
 
         Measures the reflection of a surface using an infrared light.
@@ -364,7 +397,7 @@ class InfraredSensor:
             100% (high reflection).
         """
 
-    def distance(self) -> int:
+    def distance(self) -> MaybeAwaitableInt:
         """distance() -> int: %
 
         Measures the relative distance between the sensor and an object
@@ -374,7 +407,7 @@ class InfraredSensor:
             Distance ranging from 0% (closest) to 100% (farthest).
         """
 
-    def count(self) -> int:
+    def count(self) -> MaybeAwaitableInt:
         """count() -> int
 
         Counts the number of objects that have passed by the sensor.
@@ -415,5 +448,10 @@ if TYPE_CHECKING:
     del Button
     del Color
     del Direction
+    del MaybeAwaitable
+    del MaybeAwaitableBool
+    del MaybeAwaitableFloat
+    del MaybeAwaitableInt
+    del MaybeAwaitableTuple
     del Number
     del Port

@@ -1,12 +1,17 @@
 # SPDX-License-Identifier: MIT
-# Copyright (c) 2018-2020 The Pybricks Authors
+# Copyright (c) 2018-2023 The Pybricks Authors
 
 """Generic input/output devices."""
 
-from typing import Dict, Tuple, Optional, overload
+from __future__ import annotations
+
+from typing import Dict, Tuple, Optional, overload, TYPE_CHECKING
 
 from . import _common
 from .parameters import Port as _Port
+
+if TYPE_CHECKING:
+    from ._common import MaybeAwaitable, MaybeAwaitableTuple
 
 
 class PUPDevice:
@@ -28,7 +33,7 @@ class PUPDevice:
             Dictionary with information, such as the device ``id``.
         """
 
-    def read(self, mode: int) -> Tuple:
+    def read(self, mode: int) -> MaybeAwaitableTuple:
         """read(mode) -> Tuple
 
         Reads values from a given mode.
@@ -40,7 +45,7 @@ class PUPDevice:
             Values read from the sensor.
         """
 
-    def write(self, mode: int, data: Tuple) -> None:
+    def write(self, mode: int, data: Tuple) -> MaybeAwaitable:
         """write(mode, data)
 
         Writes values to the sensor. Only selected sensors and modes support
@@ -62,7 +67,7 @@ class LUMPDevice:
             port (Port): Port to which the device is connected.
         """
 
-    def read(self, mode: int) -> Tuple:
+    def read(self, mode: int) -> MaybeAwaitableTuple:
         """read(mode) -> Tuple
 
         Reads values from a given mode.
@@ -95,7 +100,7 @@ class Ev3devSensor:
             port (Port): Port to which the device is connected.
         """
 
-    def read(self, mode: str) -> Tuple:
+    def read(self, mode: str) -> MaybeAwaitableTuple:
         """read(mode) -> Tuple
 
         Reads values at a given mode.
@@ -331,3 +336,9 @@ class LWP3Device:
         Returns:
             The raw binary message.
         """
+
+
+# hide from jedi
+if TYPE_CHECKING:
+    del MaybeAwaitable
+    del MaybeAwaitableTuple

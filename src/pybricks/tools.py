@@ -8,10 +8,11 @@ from __future__ import annotations
 from typing import TYPE_CHECKING, Any, Optional, Sequence, Tuple, overload
 
 if TYPE_CHECKING:
+    from ._common import MaybeAwaitable
     from .parameters import Number
 
 
-def wait(time: Number) -> None:
+def wait(time: Number) -> MaybeAwaitable:
     """wait(time)
 
     Pauses the user program for a specified amount of time.
@@ -236,3 +237,4 @@ def read_input_byte() -> Optional[int]:
 # HACK: hide from jedi
 if TYPE_CHECKING:
     del Number
+    del MaybeAwaitable

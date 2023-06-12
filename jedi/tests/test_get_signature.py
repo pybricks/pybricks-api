@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: MIT
-# Copyright (c) 2022 The Pybricks Authors
+# Copyright (c) 2022-2023 The Pybricks Authors
 
 """
 Tests for correct signatures of the pupdevices.Motor class.
@@ -29,7 +29,8 @@ def _get_function_signature(module: str, function: str) -> SignatureHelp:
 
 
 FUNCTION_PARAMS = [
-    pytest.param("pybricks.tools", "wait", [(["time: Number"], "None")]),
+    pytest.param("pybricks.tools", "read_input_byte", [([], "Optional[int]")]),
+    pytest.param("pybricks.tools", "wait", [(["time: Number"], "MaybeAwaitable")]),
     pytest.param(
         "pybricks.tools",
         "vector",
@@ -463,13 +464,13 @@ METHOD_PARAMS = [
         "pybricks.hubs",
         "PrimeHub",
         "speaker.beep",
-        [(["frequency: Number=500", "duration: Number=100"], "None")],
+        [(["frequency: Number=500", "duration: Number=100"], "MaybeAwaitable")],
     ),
     pytest.param(
         "pybricks.hubs",
         "PrimeHub",
         "speaker.play_notes",
-        [(["notes: Iterable[str]", "tempo: Number=120"], "None")],
+        [(["notes: Iterable[str]", "tempo: Number=120"], "MaybeAwaitable")],
     ),
     pytest.param("pybricks.hubs", "PrimeHub", "battery.voltage", [([], "int")]),
     pytest.param("pybricks.hubs", "PrimeHub", "battery.current", [([], "int")]),
@@ -605,7 +606,7 @@ METHOD_PARAMS = [
                     "then: Stop=Stop.HOLD",
                     "wait: bool=True",
                 ],
-                "None",
+                "MaybeAwaitable",
             )
         ],
     ),
@@ -621,7 +622,7 @@ METHOD_PARAMS = [
                     "then: Stop=Stop.HOLD",
                     "wait: bool=True",
                 ],
-                "None",
+                "MaybeAwaitable",
             )
         ],
     ),
@@ -637,7 +638,7 @@ METHOD_PARAMS = [
                     "then: Stop=Stop.HOLD",
                     "wait: bool=True",
                 ],
-                "None",
+                "MaybeAwaitable",
             )
         ],
     ),
@@ -658,7 +659,7 @@ METHOD_PARAMS = [
                     "then: Stop=Stop.COAST",
                     "duty_limit: Optional[Number]=None",
                 ],
-                "int",
+                "MaybeAwaitableInt",
             )
         ],
     ),
@@ -737,24 +738,53 @@ METHOD_PARAMS = [
         ],
     ),
     pytest.param(
-        "pybricks.pupdevices", "TiltSensor", "tilt", [([], "Tuple[int, int]")]
-    ),
-    pytest.param("pybricks.pupdevices", "InfraredSensor", "distance", [([], "int")]),
-    pytest.param("pybricks.pupdevices", "InfraredSensor", "reflection", [([], "int")]),
-    pytest.param("pybricks.pupdevices", "InfraredSensor", "count", [([], "int")]),
-    pytest.param(
-        "pybricks.pupdevices", "ColorDistanceSensor", "color", [([], "Color")]
+        "pybricks.pupdevices",
+        "TiltSensor",
+        "tilt",
+        [([], "MaybeAwaitableTuple[int, int]")],
     ),
     pytest.param(
-        "pybricks.pupdevices", "ColorDistanceSensor", "reflection", [([], "int")]
+        "pybricks.pupdevices", "InfraredSensor", "distance", [([], "MaybeAwaitableInt")]
     ),
     pytest.param(
-        "pybricks.pupdevices", "ColorDistanceSensor", "ambient", [([], "int")]
+        "pybricks.pupdevices",
+        "InfraredSensor",
+        "reflection",
+        [([], "MaybeAwaitableInt")],
     ),
     pytest.param(
-        "pybricks.pupdevices", "ColorDistanceSensor", "distance", [([], "int")]
+        "pybricks.pupdevices", "InfraredSensor", "count", [([], "MaybeAwaitableInt")]
     ),
-    pytest.param("pybricks.pupdevices", "ColorDistanceSensor", "hsv", [([], "Color")]),
+    pytest.param(
+        "pybricks.pupdevices",
+        "ColorDistanceSensor",
+        "color",
+        [([], "MaybeAwaitableColor")],
+    ),
+    pytest.param(
+        "pybricks.pupdevices",
+        "ColorDistanceSensor",
+        "reflection",
+        [([], "MaybeAwaitableInt")],
+    ),
+    pytest.param(
+        "pybricks.pupdevices",
+        "ColorDistanceSensor",
+        "ambient",
+        [([], "MaybeAwaitableInt")],
+    ),
+    pytest.param(
+        "pybricks.pupdevices",
+        "ColorDistanceSensor",
+        "distance",
+        [([], "MaybeAwaitableInt")],
+    ),
+    pytest.param(
+        "pybricks.pupdevices",
+        "ColorDistanceSensor",
+        "hsv",
+        [([], "MaybeAwaitableColor")],
+    ),
     pytest.param(
         "pybricks.pupdevices",
         "ColorDistanceSensor",
@@ -765,27 +795,36 @@ METHOD_PARAMS = [
         "pybricks.pupdevices",
         "ColorDistanceSensor",
         "light.on",
-        [(["color: Color"], "None")],
+        [(["color: Color"], "MaybeAwaitable")],
     ),
     pytest.param(
-        "pybricks.pupdevices", "ColorDistanceSensor", "light.off", [([], "None")]
+        "pybricks.pupdevices",
+        "ColorDistanceSensor",
+        "light.off",
+        [([], "MaybeAwaitable")],
     ),
-    pytest.param("pybricks.pupdevices", "PFMotor", "dc", [(["duty: Number"], "None")]),
-    pytest.param("pybricks.pupdevices", "PFMotor", "stop", [([], "None")]),
-    pytest.param("pybricks.pupdevices", "PFMotor", "brake", [([], "None")]),
+    pytest.param(
+        "pybricks.pupdevices", "PFMotor", "dc", [(["duty: Number"], "MaybeAwaitable")]
+    ),
+    pytest.param("pybricks.pupdevices", "PFMotor", "stop", [([], "MaybeAwaitable")]),
+    pytest.param("pybricks.pupdevices", "PFMotor", "brake", [([], "MaybeAwaitable")]),
     pytest.param(
         "pybricks.pupdevices",
         "ColorSensor",
         "color",
-        [(["surface: bool=True"], "Optional[Color]")],
+        [(["surface: bool=True"], "MaybeAwaitableColor")],
     ),
-    pytest.param("pybricks.pupdevices", "ColorSensor", "reflection", [([], "int")]),
-    pytest.param("pybricks.pupdevices", "ColorSensor", "ambient", [([], "int")]),
+    pytest.param(
+        "pybricks.pupdevices", "ColorSensor", "reflection", [([], "MaybeAwaitableInt")]
+    ),
+    pytest.param(
+        "pybricks.pupdevices", "ColorSensor", "ambient", [([], "MaybeAwaitableInt")]
+    ),
     pytest.param(
         "pybricks.pupdevices",
         "ColorSensor",
         "hsv",
-        [(["surface: bool=True"], "Color")],
+        [(["surface: bool=True"], "MaybeAwaitableColor")],
     ),
     pytest.param(
         "pybricks.pupdevices",
@@ -797,11 +836,28 @@ METHOD_PARAMS = [
         "pybricks.pupdevices",
         "ColorSensor",
         "lights.on",
-        [(["brightness: Union[Number, Tuple[Number, Number, Number]]"], "None")],
+        [
+            (
+                ["brightness: Union[Number, Tuple[Number, Number, Number]]"],
+                "MaybeAwaitable",
+            )
+        ],
     ),
-    pytest.param("pybricks.pupdevices", "ColorSensor", "lights.off", [([], "None")]),
-    pytest.param("pybricks.pupdevices", "UltrasonicSensor", "distance", [([], "int")]),
-    pytest.param("pybricks.pupdevices", "UltrasonicSensor", "presence", [([], "bool")]),
+    pytest.param(
+        "pybricks.pupdevices", "ColorSensor", "lights.off", [([], "MaybeAwaitable")]
+    ),
+    pytest.param(
+        "pybricks.pupdevices",
+        "UltrasonicSensor",
+        "distance",
+        [([], "MaybeAwaitableInt")],
+    ),
+    pytest.param(
+        "pybricks.pupdevices",
+        "UltrasonicSensor",
+        "presence",
+        [([], "MaybeAwaitableBool")],
+    ),
     pytest.param(
         "pybricks.pupdevices",
         "UltrasonicSensor",
@@ -809,29 +865,40 @@ METHOD_PARAMS = [
         [
             (
                 ["brightness: Union[Number, Tuple[Number, Number, Number, Number]]"],
-                "None",
+                "MaybeAwaitable",
             )
         ],
     ),
     pytest.param(
-        "pybricks.pupdevices", "UltrasonicSensor", "lights.off", [([], "None")]
+        "pybricks.pupdevices",
+        "UltrasonicSensor",
+        "lights.off",
+        [([], "MaybeAwaitable")],
     ),
-    pytest.param("pybricks.pupdevices", "ForceSensor", "force", [([], "float")]),
-    pytest.param("pybricks.pupdevices", "ForceSensor", "distance", [([], "float")]),
+    pytest.param(
+        "pybricks.pupdevices", "ForceSensor", "force", [([], "MaybeAwaitableFloat")]
+    ),
+    pytest.param(
+        "pybricks.pupdevices", "ForceSensor", "distance", [([], "MaybeAwaitableFloat")]
+    ),
     pytest.param(
         "pybricks.pupdevices",
         "ForceSensor",
         "pressed",
-        [(["force: Number=3"], "bool")],
+        [(["force: Number=3"], "MaybeAwaitableBool")],
     ),
-    pytest.param("pybricks.pupdevices", "ForceSensor", "touched", [([], "bool")]),
+    pytest.param(
+        "pybricks.pupdevices", "ForceSensor", "touched", [([], "MaybeAwaitableBool")]
+    ),
     pytest.param(
         "pybricks.pupdevices",
         "ColorLightMatrix",
         "on",
-        [(["color: Union[Color, Collection[Color]]"], "None")],
+        [(["color: Union[Color, Collection[Color]]"], "MaybeAwaitable")],
     ),
-    pytest.param("pybricks.pupdevices", "ColorLightMatrix", "off", [([], "None")]),
+    pytest.param(
+        "pybricks.pupdevices", "ColorLightMatrix", "off", [([], "MaybeAwaitable")]
+    ),
     pytest.param(
         "pybricks.pupdevices", "Light", "on", [(["brightness: Number=100"], "None")]
     ),
@@ -860,13 +927,23 @@ METHOD_PARAMS = [
         "pybricks.robotics",
         "DriveBase",
         "straight",
-        [(["distance: Number", "then: Stop=Stop.HOLD", "wait: bool=True"], "None")],
+        [
+            (
+                ["distance: Number", "then: Stop=Stop.HOLD", "wait: bool=True"],
+                "MaybeAwaitable",
+            )
+        ],
     ),
     pytest.param(
         "pybricks.robotics",
         "DriveBase",
         "turn",
-        [(["angle: Number", "then: Stop=Stop.HOLD", "wait: bool=True"], "None")],
+        [
+            (
+                ["angle: Number", "then: Stop=Stop.HOLD", "wait: bool=True"],
+                "MaybeAwaitable",
+            )
+        ],
     ),
     pytest.param(
         "pybricks.robotics",
@@ -880,7 +957,7 @@ METHOD_PARAMS = [
                     "then: Stop=Stop.HOLD",
                     "wait: bool=True",
                 ],
-                "None",
+                "MaybeAwaitable",
             )
         ],
     ),

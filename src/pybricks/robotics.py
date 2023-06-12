@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: MIT
-# Copyright (c) 2018-2022 The Pybricks Authors
+# Copyright (c) 2018-2023 The Pybricks Authors
 
 """Robotics module for the Pybricks API."""
 
@@ -11,7 +11,7 @@ from . import _common
 from .parameters import Stop
 
 if TYPE_CHECKING:
-    from ._common import Motor
+    from ._common import Motor, MaybeAwaitable
     from .parameters import Number
 
 
@@ -161,7 +161,7 @@ class DriveBase:
 
     def straight(
         self, distance: Number, then: Stop = Stop.HOLD, wait: bool = True
-    ) -> None:
+    ) -> MaybeAwaitable:
         """straight(distance, then=Stop.HOLD, wait=True)
 
         Drives straight for a given distance and then stops.
@@ -173,7 +173,9 @@ class DriveBase:
                          with the rest of the program.
         """
 
-    def turn(self, angle: Number, then: Stop = Stop.HOLD, wait: bool = True) -> None:
+    def turn(
+        self, angle: Number, then: Stop = Stop.HOLD, wait: bool = True
+    ) -> MaybeAwaitable:
         """turn(angle, then=Stop.HOLD, wait=True)
 
         Turns in place by a given angle and then stops.
@@ -187,7 +189,7 @@ class DriveBase:
 
     def curve(
         self, radius: Number, angle: Number, then: Stop = Stop.HOLD, wait: bool = True
-    ) -> None:
+    ) -> MaybeAwaitable:
         """curve(radius, angle, then=Stop.HOLD, wait=True)
 
         Drives an arc along a circle of a given radius, by a given angle.
@@ -232,4 +234,5 @@ class GyroDriveBase(DriveBase):
 if TYPE_CHECKING:
     del Motor
     del Number
+    del MaybeAwaitable
     del Stop
