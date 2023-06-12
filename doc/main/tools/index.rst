@@ -22,6 +22,11 @@ Timing tools
 
     .. automethod:: pybricks.tools.StopWatch.reset
 
+Input tools
+-----------
+
+.. autofunction:: pybricks.tools.read_input_byte
+
 Linear algebra tools
 --------------------
 

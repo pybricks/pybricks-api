@@ -5,7 +5,7 @@
 
 from __future__ import annotations
 
-from typing import TYPE_CHECKING, Any, Sequence, Tuple, overload
+from typing import TYPE_CHECKING, Any, Optional, Sequence, Tuple, overload
 
 if TYPE_CHECKING:
     from .parameters import Number
@@ -219,6 +219,17 @@ def cross(a: Matrix, b: Matrix) -> Matrix:
 
     Returns:
         The cross product, also a three-dimensional vector.
+    """
+
+
+def read_input_byte() -> Optional[int]:
+    """
+    read_input_byte() -> int | None
+
+    Reads one byte from standard input without blocking.
+
+    Returns:
+        The numeric value of the byte read or ``None`` if no data is available.
     """
 
 

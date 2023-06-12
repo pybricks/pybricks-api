@@ -158,6 +158,7 @@ def test_from_pybricks_tools_import():
         "cross",
         "DataLog",
         "Matrix",
+        "read_input_byte",
         "StopWatch",
         "vector",
         "wait",
