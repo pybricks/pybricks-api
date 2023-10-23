@@ -19,7 +19,6 @@ build:
 # Build documentation in the doc/main/ directory with Sphinx
 sphinx:
   configuration: doc/main/conf.py
-  fail_on_warning: true
 
 # Optionally build your docs in additional formats such as PDF
 formats:

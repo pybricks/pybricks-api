@@ -34,7 +34,7 @@ doc8 = "^0.8.1"
 flake8 = "^4.0"
 
 [tool.poetry.group.doc.dependencies]
-Sphinx = { git = "https://github.com/pybricks/sphinx.git", rev = "b00124cb" }
+Sphinx = { git = "https://github.com/pybricks/sphinx.git", rev = "cd277d09" }
 sphinx-rtd-theme = "^1.0.0"
 toml = "^0.10.0"
 

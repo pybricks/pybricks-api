@@ -612,8 +612,8 @@ test = ["cython", "html5lib", "pytest (>=4.6)", "typed_ast"]
 [package.source]
 type = "git"
 url = "https://github.com/pybricks/sphinx.git"
-reference = "b00124cb"
-resolved_reference = "b00124cb07318fd6875f6d53e0b26e50c7dde597"
+reference = "cd277d09"
+resolved_reference = "cd277d098ea2df9c79f0a4cbce28a426ec4120bc"
 
 [[package]]
 name = "sphinx-rtd-theme"
@@ -833,4 +833,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.8"
-content-hash = "2257db817f98695b16f12009a95e9c11447b5ba2df438ae4058853fbcbd5d814"
+content-hash = "c3ac22f3861c372d4572b51aa6263a693a8c42a7fa77ff5e735fea3be0e3f15b"
