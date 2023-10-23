@@ -343,13 +343,16 @@ def on_missing_reference(
         "Ω",
         "N",
     ]:
+        try:
+            # If they match on raw source, we are dealing with argument types.
+            if unit == contnode.rawsource:
+                # Return as-is to suppress missing cross reference warning. We
+                # could make this more fancy by returning an xref node that links
+                # to the signals page.
+                return contnode
 
-        # If they match on raw source, we are dealing with argument types.
-        if unit == contnode.rawsource:
-            # Return as-is to suppress missing cross reference warning. We
-            # could make this more fancy by returning an xref node that links
-            # to the signals page.
-            return contnode
+        except AttributeError:
+            pass
 
         # Return types are denoted as "int: deg"
         try:
