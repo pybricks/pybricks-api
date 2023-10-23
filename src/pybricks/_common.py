@@ -101,8 +101,8 @@ class System:
 
     def storage(self, offset, read=None, write=None):
         """
-        storage(self, offset, write=)
-        storage(self, offset, read=) -> bytes
+        storage(offset, write=)
+        storage(offset, read=) -> bytes
 
         Reads or writes binary data to persistent storage.
 
