@@ -223,11 +223,16 @@ class DriveBase:
             ``True`` if the drivebase is stalled, ``False`` if not.
         """
 
+    def use_gyro(self, use_gyro: bool) -> None:
+        """use_gyro(use_gyro)
 
-class GyroDriveBase(DriveBase):
-    """A robotic vehicle with two powered wheels and an optional support
-    wheel or caster. It measures the heading using the hub's built-in gyroscope,
-    which can make turning and driving straight more accurate."""
+        Choose ``True`` to use the gyro sensor for turning and driving
+        straight. Choose ``False`` to rely only on the motor's built-in
+        rotation sensors.
+
+        Arguments:
+            use_gyro (bool): ``True`` to enable, ``False`` to disable.
+        """
 
 
 # HACK: hide from jedi

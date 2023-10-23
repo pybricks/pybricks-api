@@ -4,6 +4,10 @@
 
 ## Unreleased
 
+### Changed
+- Changed the beta feature for using the hub's gyro. Gyro control can now be
+  toggled using `use_gyro` instead of using a separate `GyroDriveBase` class.
+
 ## 3.3.0b5 - 2023-05-16
 
 ### Added
