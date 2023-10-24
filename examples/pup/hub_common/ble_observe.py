@@ -26,8 +26,7 @@ while True:
         # *data* contains the same values in the same order
         # that were passed to hub.ble.broadcast() on the
         # other hub.
-        left_angle = data[0]
-        right_angle = data[1]
+        left_angle, right_angle = data
 
         # Make the motors on this hub mirror the position of the
         # motors on the other hub.

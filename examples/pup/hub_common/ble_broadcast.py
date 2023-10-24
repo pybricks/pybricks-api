@@ -17,7 +17,8 @@ while True:
     right_angle = right_motor.angle()
 
     # Set the broadcast data and start broadcasting if not already doing so.
-    hub.ble.broadcast(left_angle, right_angle)
+    data = (left_angle, right_angle)
+    hub.ble.broadcast(data)
 
     # Broadcasts are only sent every 100 milliseconds, so there is no reason
     # to call the broadcast() method more often than that.

@@ -1339,44 +1339,42 @@ class BLE:
     .. versionadded:: 3.3
     """
 
-    def broadcast(self, *args: Union[None, bool, int, float, str, bytes]) -> None:
-        """broadcast(data0, data1, ...)
+    def broadcast(self, data: Union[bool, int, float, str, bytes]) -> None:
+        """broadcast(data)
 
-        Starts broadcasting the given data values.
+        Starts broadcasting the given data on
+        the *broadcast_channel* you selected when initializing the hub.
 
-        Each value can be any of ``int``, ``float``, ``str``, ``bytes``,
-        ``None``, ``True``, or ``False``. The data is broadcasted on the
-        *broadcast_channel* you selected when initializing the hub.
+        Data may be of type ``int``, ``float``, ``str``, ``bytes``,
+        ``True``, or ``False``, or a tuple thereof.
 
-        The total data size is quite limited (26 bytes). ``None``, ``True`` and
+        The total data size is quite limited (26 bytes). ``True`` and
         ``False`` take 1 byte each. ``float`` takes 5 bytes. ``int`` takes 2 to
         5 bytes depending on how big the number is. ``str`` and ``bytes`` take
         the number of bytes in the object plus one extra byte.
 
-        Params:
-            args: Zero or more values to be broadcast.
-
-
+        Args:
+            data: The value or values to be broadcast.
 
         .. versionadded:: 3.3
         """
 
     def observe(
         self, channel: int
-    ) -> Optional[Tuple[Union[None, bool, int, float, str, bytes], ...]]:
-        """observe(channel) -> tuple | None
+    ) -> Optional[Tuple[Union[bool, int, float, str, bytes], ...]]:
+        """observe(channel) -> bool | int | float | str | bytes | tuple | None
 
         Retrieves the last observed data for a given channel.
+
+        Receiving data is more reliable when the hub is not connected
+        to a computer or other devices at the same time.
 
         Args:
             channel (int): The channel to observe (0 to 255).
 
         Returns:
-            A tuple of the received data or ``None`` if no recent data is
-            available.
-
-        .. tip:: Receiving data is more reliable when the hub is not connected
-            to a computer or other devices at the same time.
+            The received data in the same format as it was sent, or ``None``
+            if no recent data is available.
 
         .. versionadded:: 3.3
         """
@@ -1386,8 +1384,8 @@ class BLE:
 
         Gets the average signal strength in dBm for the given channel.
 
-        This is useful for detecting how near the broadcasting device is. A close
-        device may have a signal strength around -40 dBm while a far away device
+        This indicates how near the broadcasting device is. Nearby devices
+        may have a signal strength around -40 dBm, while far away devices
         might have a signal strength around -70 dBm.
 
         Args:
