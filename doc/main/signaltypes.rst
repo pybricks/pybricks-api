@@ -293,25 +293,3 @@ though the *hub* accelerates backward.
    and other creations, by noting which way the top and
    front :class:`Side <Side>` of the hub are pointing. The example
    on the left is the default configuration.
-
-.. class:: await
-
-Multitasking
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Pybricks supports cooperative multitasking using the ``async`` and ``await``
-keywords. This allows operations that normally take some time to complete, to
-run in parallel with other operations.
-
-Whenever you see the word ``await`` in the documentation, this means that the
-method or function supports multitasking.
-
-The following example shows how to use multitasking to make a robot drive
-forward, then turn and move a gripper at the same time, and then drive
-backward.
-
-.. literalinclude::
-    ../../examples/pup/robotics/drivebase_async.py
-
-If you don't use multitasking, you can ignore the ``await`` keyword and write
-programs as usual.

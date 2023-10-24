@@ -55,3 +55,35 @@ Linear algebra tools
 .. autofunction:: pybricks.tools.vector
 
 .. autofunction:: pybricks.tools.cross
+
+Multitasking
+--------------------
+
+.. versionadded:: 3.3
+
+Pybricks supports cooperative multitasking using the ``async`` and ``await``
+keywords. This allows operations that normally take some time to complete to
+run in parallel with other operations.
+
+.. autofunction:: pybricks.tools.multitask
+
+.. autofunction:: pybricks.tools.run_task
+
+The following example shows how to use multitasking to make a robot drive
+forward, then turn and move a gripper at the same time, and then drive
+backward.
+
+.. literalinclude::
+    ../../../examples/pup/robotics/drivebase_async.py
+
+.. class:: coroutine
+
+.. class:: await
+
+Whenever you see a function or method prefixed by ``await``, this means that
+it supports multitasking. When running a coroutine with ``run_task``, all
+methods and functions prefixed by ``await`` will act as coroutines.
+
+If you don't use multitasking, you can ignore the ``await`` keyword and write
+programs as usual. Specifically, when ``run_task`` is not used, functions
+prefixed by ``await`` will act as normal functions.

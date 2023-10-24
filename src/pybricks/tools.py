@@ -5,10 +5,10 @@
 
 from __future__ import annotations
 
-from typing import TYPE_CHECKING, Any, Optional, Sequence, Tuple, overload
+from typing import TYPE_CHECKING, Any, Optional, Sequence, Tuple, overload, Coroutine
 
 if TYPE_CHECKING:
-    from ._common import MaybeAwaitable
+    from ._common import MaybeAwaitable, MaybeAwaitableTuple
     from .parameters import Number
 
 
@@ -255,7 +255,40 @@ def hub_menu(*symbols: int | str) -> int | str:
     """
 
 
+def multitask(*coroutines: Coroutine, race=False) -> MaybeAwaitableTuple:
+    """
+    multitask(coroutine1, coroutine2, ...) -> Tuple
+
+    Runs multiple coroutines concurrently. This creates a new coroutine that
+    can be used like any other, including in another ``multitask`` statement.
+
+    Arguments:
+        coroutines (coroutine, coroutine, ...): One or more coroutines to run
+            in parallel.
+        race (bool): Choose ``False`` to wait for all coroutines to finish.
+            Choose ``True`` to wait for one coroutine to finish and then
+            cancel the others, as if it's a "race".
+
+    Returns:
+        Tuple of the return values of each coroutine. Unfinished coroutines
+        will have ``None`` as their return value.
+    """
+
+
+def run_task(coroutine: Coroutine):
+    """
+    run_task(coroutine)
+
+    Runs a coroutine from start to finish while blocking the rest of the
+    program. This is used primarily to run the main coroutine of a program.
+
+    Arguments:
+        coroutine (coroutine): The main coroutine to run.
+    """
+
+
 # HACK: hide from jedi
 if TYPE_CHECKING:
     del Number
     del MaybeAwaitable
+    del MaybeAwaitableTuple
