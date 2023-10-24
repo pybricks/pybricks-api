@@ -27,6 +27,13 @@ Input tools
 
 .. autofunction:: pybricks.tools.read_input_byte
 
+.. pybricks-requirements:: light-matrix
+
+.. autofunction:: pybricks.tools.hub_menu
+
+.. literalinclude::
+    ../../../examples/pup/tools/hub_menu.py
+
 Linear algebra tools
 --------------------
 

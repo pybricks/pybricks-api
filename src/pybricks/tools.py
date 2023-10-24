@@ -234,6 +234,27 @@ def read_input_byte() -> Optional[int]:
     """
 
 
+def hub_menu(*symbols: int | str) -> int | str:
+    """
+    hub_menu(symbol1, symbol2, ...) -> int | str
+
+    Shows a menu on the hub display and waits for the user to select an item
+    using the buttons. Can be used in your own menu-program that lets you
+    choose which of your other programs to run.
+
+    Note that this is just a convenience function that combines the display,
+    buttons, and waits to make a simple menu. This means that it can be used
+    anywhere in a program, not just at the start.
+
+    Arguments:
+        symbol1 (int or str): The first symbol to show in the menu.
+        symbol2 (int or str): The second symbol, and so on...
+
+    Returns:
+        The selected symbol.
+    """
+
+
 # HACK: hide from jedi
 if TYPE_CHECKING:
     del Number

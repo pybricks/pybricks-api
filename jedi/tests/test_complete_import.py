@@ -157,6 +157,7 @@ def test_from_pybricks_tools_import():
     assert [c["insertText"] for c in completions] == [
         "cross",
         "DataLog",
+        "hub_menu",
         "Matrix",
         "read_input_byte",
         "StopWatch",
