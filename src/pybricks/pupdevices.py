@@ -70,10 +70,12 @@ class Motor(_common.Motor):
                 Choose ``False`` to keep the
                 current value, so your program knows where it left off last
                 time.
-            profile (Number, deg): Precision profile. A lower value
-                means more precise movement; a larger value means
-                smoother movement. If no value is given, a suitable profile for
-                this motor type will be selected automatically.
+            profile (Number, deg): Precision profile. This is the approximate
+                position tolerance in degrees that is acceptable in your
+                application. A lower value gives more precise but more erratic
+                movement; a higher value gives less precise but smoother
+                movement. If no value is given, a suitable profile for this
+                motor type will be selected automatically (about 11 degrees).
         """
 
     def reset_angle(self, angle: Optional[Number] = None) -> None:
