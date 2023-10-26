@@ -4,12 +4,17 @@
 
 ## Unreleased
 
+## 3.3.0b9 - 2023-10-26
+
 ### Changed
 - Changed the beta feature for using the hub's gyro. Gyro control can now be
   toggled using `use_gyro` instead of using a separate `GyroDriveBase` class.
+- Documentation updates to match firmware 3.3.0b5--3.3.0b9 updates.
 
 ## Added
 - Added `set` to `ubuiltins` module.
+- Basic multitasking docs.
+- Awaitable keyword for awaitable methods and functions.
 
 ## 3.3.0b5 - 2023-05-16
 
