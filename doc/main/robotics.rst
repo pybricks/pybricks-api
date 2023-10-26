@@ -39,6 +39,8 @@
 
     .. automethod:: pybricks.robotics.DriveBase.stop
 
+    .. automethod:: pybricks.robotics.DriveBase.brake
+
     .. rubric:: Measuring
 
     .. automethod:: pybricks.robotics.DriveBase.distance

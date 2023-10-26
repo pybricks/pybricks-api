@@ -86,6 +86,12 @@ class DriveBase:
 
         Stops the robot by letting the motors spin freely."""
 
+    def brake(self) -> None:
+        """brake()
+
+        Stops the robot by passively braking the motors.
+        """
+
     def distance(self) -> int:
         """distance() -> int: mm
 

@@ -985,6 +985,7 @@ METHOD_PARAMS = [
         [(["speed: Number", "turn_rate: Number"], "None")],
     ),
     pytest.param("pybricks.robotics", "DriveBase", "stop", [([], "None")]),
+    pytest.param("pybricks.robotics", "DriveBase", "brake", [([], "None")]),
     pytest.param("pybricks.robotics", "DriveBase", "distance", [([], "int")]),
     pytest.param("pybricks.robotics", "DriveBase", "angle", [([], "int")]),
     pytest.param(
