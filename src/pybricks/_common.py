@@ -998,6 +998,20 @@ class SimpleAccelerometer:
             ``Side.FRONT`` or ``Side.BACK``.
         """
 
+    def tilt(self) -> Tuple[int, int]:
+        """tilt() -> Tuple[int, int]
+
+        Gets the pitch and roll angles. This is relative to the
+        :ref:`user-specified neutral orientation <robotframe>`.
+
+        The order of rotation is pitch-then-roll. This is equivalent to a
+        positive rotation along the robot y-axis and then a positive rotation
+        along the x-axis.
+
+        Returns:
+            Tuple of pitch and roll angles in degrees.
+        """
+
 
 class Accelerometer(SimpleAccelerometer):
     """Get measurements from an accelerometer."""
@@ -1025,20 +1039,6 @@ class Accelerometer(SimpleAccelerometer):
         Returns:
             Acceleration along the specified axis. If you specify no axis,
             this returns a vector of accelerations along all axes.
-        """
-
-    def tilt(self) -> Tuple[int, int]:
-        """tilt() -> Tuple[int, int]
-
-        Gets the pitch and roll angles. This is relative to the
-        :ref:`user-specified neutral orientation <robotframe>`.
-
-        The order of rotation is pitch-then-roll. This is equivalent to a
-        positive rotation along the robot y-axis and then a positive rotation
-        along the x-axis.
-
-        Returns:
-            Tuple of pitch and roll angles in degrees.
         """
 
 
