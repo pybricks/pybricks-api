@@ -94,7 +94,7 @@ class Motor(_common.Motor):
 class Remote:
     """LEGO® Powered Up Bluetooth Remote Control."""
 
-    light = _common.ColorLight()
+    light = _common.ExternalColorLight()
     buttons = _common.Keypad(
         (
             Button.LEFT_MINUS,
