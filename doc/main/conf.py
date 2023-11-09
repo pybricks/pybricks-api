@@ -29,12 +29,14 @@ if os.environ.get("READTHEDOCS", None) == "True":
 # HACK: this allows Number type alias to be imported by Sphinx
 os.environ["SPHINX_BUILD"] = "True"
 
+html_css_files = ["css/blocks.css"]
+
 # Additional configuration of the IDE docs
 if "ide" in tags.tags:  # noqa F821
     _DISCLAIMER = ""
     html_show_copyright = False
     html_show_sphinx = False
-    html_css_files = ["css/ide.css"]
+    html_css_files.append("css/ide.css")
     html_js_files = ["js/ide.js"]
 
     imgmath_image_format = "svg"
@@ -47,7 +49,6 @@ exec(open(os.path.abspath("../common/conf.py")).read())
 
 # Additional configuration of the IDE docs
 if "ide" in tags.tags:  # noqa F821
-
     extensions.remove("sphinx.ext.mathjax")  # noqa F821
     extensions.append("sphinx.ext.imgmath")  # noqa F821
     html_theme_options["prev_next_buttons_location"] = None  # noqa F821

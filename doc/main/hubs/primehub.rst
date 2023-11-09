@@ -6,12 +6,22 @@ Prime Hub / Inventor Hub
 .. figure:: ../../main/cad/output/hub-spike-inventor.png
     :width: 80%
 
+.. blockimg:: pybricks_variables_set_inventor_hub_option0
+
+.. blockimg:: pybricks_variables_set_inventor_hub_option3
+    :stack:
+
 .. class:: InventorHub
 
     This class is the same as the ``PrimeHub`` class, shown below. Both classes
     work on both hubs.
 
     These hubs are completely identical. They use the same Pybricks firmware.
+
+.. blockimg:: pybricks_variables_set_prime_hub_option0
+
+.. blockimg:: pybricks_variables_set_prime_hub_option3
+    :stack:
 
 .. autoclass:: pybricks.hubs.PrimeHub
     :no-members:
@@ -21,7 +31,11 @@ Prime Hub / Inventor Hub
     .. figure:: ../../main/diagrams/primehub_light.png
         :width: 22 em
 
+    .. blockimg:: pybricks_blockLightOnColor_primehub_on
+
     .. automethod:: pybricks.hubs::PrimeHub.light.on
+
+    .. blockimg:: pybricks_blockLightOnColor_primehub_off
 
     .. automethod:: pybricks.hubs::PrimeHub.light.off
 

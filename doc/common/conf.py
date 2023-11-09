@@ -57,6 +57,7 @@ extensions = [
     "sphinx.ext.todo",
     "sphinx.ext.mathjax",
     # Custom Pybricks extensions
+    "blockimg",
     "color",
     "classlink",
     "requirements",
