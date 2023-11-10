@@ -2,16 +2,24 @@
 
 City Hub
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 .. figure:: ../../main/cad/output/hub-city.png
     :width: 30%
+
+.. blockimg:: pybricks_variables_set_city_hub_option0
+
+.. blockimg:: pybricks_variables_set_city_hub_option3
+    :stack:
 
 .. autoclass:: pybricks.hubs.CityHub
     :no-members:
 
     .. rubric:: Using the hub status light
 
+    .. blockimg:: pybricks_blockLightOnColor_cityhub_on
+
     .. automethod:: pybricks.hubs::CityHub.light.on
+
+    .. blockimg:: pybricks_blockLightOnColor_cityhub_off
 
     .. automethod:: pybricks.hubs::CityHub.light.off
 
@@ -21,7 +29,11 @@ City Hub
 
     .. rubric:: Using connectionless Bluetooth messaging
 
+    .. blockimg:: pybricks_blockBleBroadcast_CityHub
+
     .. automethod:: pybricks.hubs::CityHub.ble.broadcast
+
+    .. blockimg:: pybricks_blockBleObserve_CityHub
 
     .. automethod:: pybricks.hubs::CityHub.ble.observe
 
@@ -36,6 +48,8 @@ City Hub
     .. automethod:: pybricks.hubs::CityHub.battery.current
 
     .. rubric:: Button and system control
+
+    .. blockimg:: pybricks_blockButtonIsPressed_CityHub
 
     .. automethod:: pybricks.hubs::CityHub.button.pressed
 

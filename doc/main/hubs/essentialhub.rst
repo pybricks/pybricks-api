@@ -6,12 +6,21 @@ Essential Hub
 .. figure:: ../../main/cad/output/hub-essential.png
     :width: 30%
 
+.. blockimg:: pybricks_variables_set_essential_hub_option0
+
+.. blockimg:: pybricks_variables_set_essential_hub_option3
+    :stack:
+
 .. autoclass:: pybricks.hubs.EssentialHub
     :no-members:
 
     .. rubric:: Using the hub status light
 
+    .. blockimg:: pybricks_blockLightOnColor_essentialhub_on
+
     .. automethod:: pybricks.hubs::EssentialHub.light.on
+
+    .. blockimg:: pybricks_blockLightOnColor_essentialhub_off
 
     .. automethod:: pybricks.hubs::EssentialHub.light.off
 
@@ -21,7 +30,11 @@ Essential Hub
 
     .. rubric:: Using the button
 
+    .. blockimg:: pybricks_blockButtonIsPressed_EssentialHub
+
     .. automethod:: pybricks.hubs::EssentialHub.button.pressed
+
+    .. automethod:: pybricks.hubs::EssentialHub.system.set_stop_button
 
     .. rubric:: Using the IMU
 
@@ -31,15 +44,30 @@ Essential Hub
 
     .. automethod:: pybricks.hubs::EssentialHub.imu.up
 
+    .. blockimg:: pybricks_blockTilt_EssentialHub_imu.tilt.pitch
+
+    .. blockimg:: pybricks_blockTilt_EssentialHub_imu.tilt.roll
+        :stack:
+
     .. automethod:: pybricks.hubs::EssentialHub.imu.tilt
+
+    .. blockimg:: pybricks_blockImuAcceleration_EssentialHub
 
     .. automethod:: pybricks.hubs::EssentialHub.imu.acceleration
 
+    .. blockimg:: pybricks_blockImuRotation_EssentialHub_imu.angular_velocity
+
     .. automethod:: pybricks.hubs::EssentialHub.imu.angular_velocity
+
+    .. blockimg:: pybricks_blockImuGetHeading_EssentialHub
 
     .. automethod:: pybricks.hubs::EssentialHub.imu.heading
 
+    .. blockimg:: pybricks_blockImuResetHeading_EssentialHub
+
     .. automethod:: pybricks.hubs::EssentialHub.imu.reset_heading
+
+    .. blockimg:: pybricks_blockImuRotation_EssentialHub_imu.rotation
 
     .. automethod:: pybricks.hubs::EssentialHub.imu.rotation
 
@@ -49,7 +77,11 @@ Essential Hub
 
     .. rubric:: Using connectionless Bluetooth messaging
 
+    .. blockimg:: pybricks_blockBleBroadcast_EssentialHub
+
     .. automethod:: pybricks.hubs::EssentialHub.ble.broadcast
+
+    .. blockimg:: pybricks_blockBleObserve_EssentialHub
 
     .. automethod:: pybricks.hubs::EssentialHub.ble.observe
 
@@ -72,8 +104,6 @@ Essential Hub
     .. automethod:: pybricks.hubs::EssentialHub.charger.status
 
     .. rubric:: System control
-
-    .. automethod:: pybricks.hubs::EssentialHub.system.set_stop_button
 
     .. automethod:: pybricks.hubs::EssentialHub.system.name
 

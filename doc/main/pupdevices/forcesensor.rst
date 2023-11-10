@@ -6,10 +6,16 @@ Force Sensor
 .. figure:: ../../main/cad/output/pupdevice-force.png
    :width: 35 %
 
+.. blockimg:: pybricks_variables_set_force_sensor
+
 .. autoclass:: pybricks.pupdevices.ForceSensor
     :no-members:
 
+    .. blockimg:: pybricks_blockForce_ForceSensor
+
     .. automethod:: pybricks.pupdevices.ForceSensor.force
+
+    .. blockimg:: pybricks_blockDistance_ForceSensor
 
     .. automethod:: pybricks.pupdevices.ForceSensor.distance
 

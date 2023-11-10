@@ -9,16 +9,28 @@
 Timing tools
 ---------------
 
+.. blockimg:: pybricks_blockWaitTime
+
 .. autofunction:: wait
+
+.. blockimg:: pybricks_variables_set_stopwatch
 
 .. autoclass:: pybricks.tools.StopWatch
     :no-members:
 
+    .. blockimg:: pybricks_blockStopWatchTime
+
     .. automethod:: pybricks.tools.StopWatch.time
+
+    .. blockimg:: pybricks_blockStopWatchDo_StopWatch_pause
 
     .. automethod:: pybricks.tools.StopWatch.pause
 
+    .. blockimg:: pybricks_blockStopWatchDo_StopWatch_resume
+
     .. automethod:: pybricks.tools.StopWatch.resume
+
+    .. blockimg:: pybricks_blockStopWatchDo_StopWatch_reset
 
     .. automethod:: pybricks.tools.StopWatch.reset
 
@@ -52,6 +64,8 @@ Linear algebra tools
 
 .. pybricks-requirements:: stm32-float
 
+.. blockimg:: pybricks_blockVector
+
 .. autofunction:: pybricks.tools.vector
 
 .. autofunction:: pybricks.tools.cross
@@ -64,6 +78,8 @@ Multitasking
 Pybricks supports cooperative multitasking using the ``async`` and ``await``
 keywords. This allows operations that normally take some time to complete to
 run in parallel with other operations.
+
+.. blockimg:: pybricks_blockMultiTask
 
 .. autofunction:: pybricks.tools.multitask
 

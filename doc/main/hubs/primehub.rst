@@ -69,7 +69,11 @@ Prime Hub / Inventor Hub
     .. figure:: ../../main/diagrams/primehub_buttons.png
         :width: 22 em
 
+    .. blockimg:: pybricks_blockButtonIsPressed_PrimeHub
+
     .. automethod:: pybricks.hubs::PrimeHub.buttons.pressed
+
+    .. automethod:: pybricks.hubs::PrimeHub.system.set_stop_button
 
     .. rubric:: Using the IMU
 
@@ -79,15 +83,30 @@ Prime Hub / Inventor Hub
 
     .. automethod:: pybricks.hubs::PrimeHub.imu.up
 
+    .. blockimg:: pybricks_blockTilt_PrimeHub_imu.tilt.pitch
+
+    .. blockimg:: pybricks_blockTilt_PrimeHub_imu.tilt.roll
+        :stack:
+
     .. automethod:: pybricks.hubs::PrimeHub.imu.tilt
+
+    .. blockimg:: pybricks_blockImuAcceleration_PrimeHub
 
     .. automethod:: pybricks.hubs::PrimeHub.imu.acceleration
 
+    .. blockimg:: pybricks_blockImuRotation_PrimeHub_imu.angular_velocity
+
     .. automethod:: pybricks.hubs::PrimeHub.imu.angular_velocity
+
+    .. blockimg:: pybricks_blockImuGetHeading_PrimeHub
 
     .. automethod:: pybricks.hubs::PrimeHub.imu.heading
 
+    .. blockimg:: pybricks_blockImuResetHeading_PrimeHub
+
     .. automethod:: pybricks.hubs::PrimeHub.imu.reset_heading
+
+    .. blockimg:: pybricks_blockImuRotation_PrimeHub_imu.rotation
 
     .. automethod:: pybricks.hubs::PrimeHub.imu.rotation
 
@@ -105,7 +124,11 @@ Prime Hub / Inventor Hub
 
     .. rubric:: Using connectionless Bluetooth messaging
 
+    .. blockimg:: pybricks_blockBleBroadcast_PrimeHub
+
     .. automethod:: pybricks.hubs::PrimeHub.ble.broadcast
+
+    .. blockimg:: pybricks_blockBleObserve_PrimeHub
 
     .. automethod:: pybricks.hubs::PrimeHub.ble.observe
 
@@ -128,8 +151,6 @@ Prime Hub / Inventor Hub
     .. automethod:: pybricks.hubs::PrimeHub.charger.status
 
     .. rubric:: System control
-
-    .. automethod:: pybricks.hubs::PrimeHub.system.set_stop_button
 
     .. automethod:: pybricks.hubs::PrimeHub.system.name
 

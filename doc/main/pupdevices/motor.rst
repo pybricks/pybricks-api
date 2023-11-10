@@ -13,32 +13,56 @@ Motors with rotation sensors
    positive direction. See the :mod:`hubs <pybricks.hubs>` module for default
    directions of built-in motors.
 
+.. blockimg:: pybricks_variables_set_motor
+
 .. autoclass:: pybricks.pupdevices.Motor
     :no-members:
 
     .. rubric:: Measuring
 
+    .. blockimg:: pybricks_blockMotorMeasure_motor_angle
+
     .. automethod:: pybricks.pupdevices.Motor.angle
+
+    .. blockimg:: pybricks_blockMotorResetAngle
 
     .. automethod:: pybricks.pupdevices.Motor.reset_angle
 
+    .. blockimg:: pybricks_blockMotorMeasure_motor_speed
+
+    .. blockimg:: pybricks_blockMotorMeasure_motor_get_speed_average
+
     .. automethod:: pybricks.pupdevices.Motor.speed
 
+    .. blockimg:: pybricks_blockMotorMeasure_motor_load
+
     .. automethod:: pybricks.pupdevices.Motor.load
+
+    .. blockimg:: pybricks_blockMotorMeasure_motor_stalled
 
     .. automethod:: pybricks.pupdevices.Motor.stalled
 
     .. rubric:: Stopping
 
+    .. blockimg:: pybricks_blockMotorStop_Motor_coast
+
     .. automethod:: pybricks.pupdevices.Motor.stop
 
+    .. blockimg:: pybricks_blockMotorStop_Motor_brake
+
     .. automethod:: pybricks.pupdevices.Motor.brake
+
+    .. blockimg:: pybricks_blockMotorStop_Motor_hold
 
     .. automethod:: pybricks.pupdevices.Motor.hold
 
     .. rubric:: Running forever
 
+    .. blockimg:: pybricks_blockMotorRun_run
+
     .. automethod:: pybricks.pupdevices.Motor.run
+
+    .. blockimg:: pybricks_blockMotorDuty_Motor
 
     .. automethod:: pybricks.pupdevices.Motor.dc
 
@@ -46,19 +70,29 @@ Motors with rotation sensors
 
     .. automethod:: pybricks.pupdevices.Motor.run_time
 
+    .. blockimg:: pybricks_blockMotorRun_run_angle
+
     .. automethod:: pybricks.pupdevices.Motor.run_angle
+
+    .. blockimg:: pybricks_blockMotorRun_run_target
 
     .. automethod:: pybricks.pupdevices.Motor.run_target
 
-    .. automethod:: pybricks.pupdevices.Motor.track_target
+    .. blockimg:: pybricks_blockMotorRun_run_until_stalled
 
     .. automethod:: pybricks.pupdevices.Motor.run_until_stalled
+
+    .. blockimg:: pybricks_blockMotorTrack
+
+    .. automethod:: pybricks.pupdevices.Motor.track_target
 
     .. automethod:: pybricks.pupdevices.Motor.done
 
     .. _settings:
 
     .. rubric:: Motor settings
+
+    .. blockimg:: pybricks_blockMotorConfigure_motor_max_voltage
 
     .. automethod:: pybricks.pupdevices.Motor.settings
 
@@ -68,6 +102,14 @@ Motors with rotation sensors
 
     .. pybricks-requirements:: pybricks-common-control
 
+    .. blockimg:: pybricks_blockMotorConfigure_motor_max_speed
+
+    .. blockimg:: pybricks_blockMotorConfigure_motor_acceleration
+        :stack:
+
+    .. blockimg:: pybricks_blockMotorConfigure_motor_max_torque
+        :stack:
+
     .. automethod:: pybricks.pupdevices.Motor.control.limits
 
     .. pybricks-requirements:: pybricks-common-control
@@ -75,6 +117,8 @@ Motors with rotation sensors
     .. automethod:: pybricks.pupdevices.Motor.control.pid
 
     .. pybricks-requirements:: pybricks-common-control
+
+    .. blockimg:: pybricks_blockMotorConfigure_motor_target_tolerances
 
     .. automethod:: pybricks.pupdevices.Motor.control.target_tolerances
 

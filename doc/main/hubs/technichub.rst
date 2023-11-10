@@ -6,12 +6,21 @@ Technic Hub
 .. figure:: ../../main/cad/output/hub-technic.png
     :width: 40%
 
+.. blockimg:: pybricks_variables_set_technic_hub_option0
+
+.. blockimg:: pybricks_variables_set_technic_hub_option3
+    :stack:
+
 .. autoclass:: pybricks.hubs.TechnicHub
     :no-members:
 
     .. rubric:: Using the hub status light
 
+    .. blockimg:: pybricks_blockLightOnColor_technichub_on
+
     .. automethod:: pybricks.hubs::TechnicHub.light.on
+
+    .. blockimg:: pybricks_blockLightOnColor_technichub_off
 
     .. automethod:: pybricks.hubs::TechnicHub.light.off
 
@@ -27,15 +36,30 @@ Technic Hub
 
     .. automethod:: pybricks.hubs::TechnicHub.imu.up
 
+    .. blockimg:: pybricks_blockTilt_TechnicHub_imu.tilt.pitch
+
+    .. blockimg:: pybricks_blockTilt_TechnicHub_imu.tilt.roll
+        :stack:
+
     .. automethod:: pybricks.hubs::TechnicHub.imu.tilt
+
+    .. blockimg:: pybricks_blockImuAcceleration_TechnicHub
 
     .. automethod:: pybricks.hubs::TechnicHub.imu.acceleration
 
+    .. blockimg:: pybricks_blockImuRotation_TechnicHub_imu.angular_velocity
+
     .. automethod:: pybricks.hubs::TechnicHub.imu.angular_velocity
+
+    .. blockimg:: pybricks_blockImuGetHeading_TechnicHub
 
     .. automethod:: pybricks.hubs::TechnicHub.imu.heading
 
+    .. blockimg:: pybricks_blockImuResetHeading_TechnicHub
+
     .. automethod:: pybricks.hubs::TechnicHub.imu.reset_heading
+
+    .. blockimg:: pybricks_blockImuRotation_TechnicHub_imu.rotation
 
     .. automethod:: pybricks.hubs::TechnicHub.imu.rotation
 
@@ -45,7 +69,11 @@ Technic Hub
 
     .. rubric:: Using connectionless Bluetooth messaging
 
+    .. blockimg:: pybricks_blockBleBroadcast_TechnicHub
+
     .. automethod:: pybricks.hubs::TechnicHub.ble.broadcast
+
+    .. blockimg:: pybricks_blockBleObserve_TechnicHub
 
     .. automethod:: pybricks.hubs::TechnicHub.ble.observe
 
@@ -60,6 +88,8 @@ Technic Hub
     .. automethod:: pybricks.hubs::TechnicHub.battery.current
 
     .. rubric:: Button and system control
+
+    .. blockimg:: pybricks_blockButtonIsPressed_TechnicHub
 
     .. automethod:: pybricks.hubs::TechnicHub.button.pressed
 

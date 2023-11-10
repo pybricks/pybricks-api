@@ -13,14 +13,22 @@ Motors without rotation sensors
    Powered Up motors without rotation sensors. The arrows indicate the default
    positive direction.
 
+.. blockimg:: pybricks_variables_set_dc_motor
+
 .. autoclass:: pybricks.pupdevices.DCMotor
     :no-members:
+
+    .. blockimg:: pybricks_blockMotorDuty_DCMotor
 
     .. automethod:: pybricks.pupdevices.DCMotor.dc
         :noindex:
 
+    .. blockimg:: pybricks_blockMotorStop_DCMotor_coast
+
     .. automethod:: pybricks.pupdevices.DCMotor.stop
         :noindex:
+
+    .. blockimg:: pybricks_blockMotorStop_DCMotor_brake
 
     .. automethod:: pybricks.pupdevices.DCMotor.brake
         :noindex:

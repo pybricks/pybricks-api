@@ -6,8 +6,12 @@ Ultrasonic Sensor
 .. figure:: ../../main/diagrams/sensor_ultrasonic_lights.png
    :width: 80 %
 
+.. blockimg:: pybricks_variables_set_ultrasonic_sensor
+
 .. autoclass:: pybricks.pupdevices.UltrasonicSensor
     :no-members:
+
+    .. blockimg:: pybricks_blockDistance_UltrasonicSensor
 
     .. automethod:: pybricks.pupdevices.UltrasonicSensor.distance
 
@@ -18,7 +22,14 @@ Ultrasonic Sensor
     This sensor has 4 built-in lights. You can adjust the brightness of each
     light.
 
+    .. blockimg:: pybricks_blockLightOn_ultrasonicsensor_on
+
+    .. blockimg:: pybricks_blockLightOn_ultrasonicsensor_on_list
+        :stack:
+
     .. automethod:: pybricks.pupdevices::UltrasonicSensor.lights.on
+
+    .. blockimg:: pybricks_blockLightOn_ultrasonicsensor_off
 
     .. automethod:: pybricks.pupdevices::UltrasonicSensor.lights.off
 

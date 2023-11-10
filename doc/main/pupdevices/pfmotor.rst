@@ -18,15 +18,23 @@ and ambient conditions.
    motor (right). Here, the receiver uses channel
    1 with a motor on the red port.
 
+.. blockimg:: pybricks_variables_set_pf_motor
+
 .. autoclass:: pybricks.pupdevices.PFMotor
     :noindex:
     :no-members:
 
+    .. blockimg:: pybricks_blockMotorDuty_PFMotor
+
     .. automethod:: pybricks.pupdevices.PFMotor.dc
         :noindex:
 
+    .. blockimg:: pybricks_blockMotorStop_PFMotor_coast
+
     .. automethod:: pybricks.pupdevices.PFMotor.stop
         :noindex:
+
+    .. blockimg:: pybricks_blockMotorStop_PFMotor_brake
 
     .. automethod:: pybricks.pupdevices.PFMotor.brake
         :noindex:

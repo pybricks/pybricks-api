@@ -64,6 +64,13 @@ above to reveal this menu.
 
 .. toctree::
    :maxdepth: 1
+   :caption: Code with blocks
+   :hidden:
+
+   blocks/index
+
+.. toctree::
+   :maxdepth: 1
    :caption: MicroPython modules
    :hidden:
 

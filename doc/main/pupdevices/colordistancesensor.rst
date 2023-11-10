@@ -6,16 +6,30 @@ Color and Distance Sensor
 .. figure:: ../../main/cad/output/pupdevice-colordistance.png
    :width: 35 %
 
+.. blockimg:: pybricks_variables_set_color_distance_sensor_colordistancesensor_default
+
+.. blockimg:: pybricks_variables_set_color_distance_sensor_colordistancesensor_detectable_colors
+
 .. autoclass:: pybricks.pupdevices.ColorDistanceSensor
     :no-members:
 
+    .. blockimg:: pybricks_blockColor_ColorDistanceSensor_color
+
     .. automethod:: pybricks.pupdevices.ColorDistanceSensor.color
+
+    .. blockimg:: pybricks_blockLightReflection_ColorDistanceSensor
 
     .. automethod:: pybricks.pupdevices.ColorDistanceSensor.reflection
 
+    .. blockimg:: pybricks_blockLightAmbient_ColorDistanceSensor
+
     .. automethod:: pybricks.pupdevices.ColorDistanceSensor.ambient
 
+    .. blockimg:: pybricks_blockDistance_ColorDistanceSensor
+
     .. automethod:: pybricks.pupdevices.ColorDistanceSensor.distance
+
+    .. blockimg:: pybricks_blockColor_ColorDistanceSensor_hsv
 
     .. automethod:: pybricks.pupdevices.ColorDistanceSensor.hsv
 
@@ -27,7 +41,11 @@ Color and Distance Sensor
     it off. If you use the sensor to measure something afterwards, the light
     automatically turns back on at the default color for that sensing method.
 
+    .. blockimg:: pybricks_blockLightOnColor_colordistancesensor_on
+
     .. automethod:: pybricks.pupdevices::ColorDistanceSensor.light.on
+
+    .. blockimg:: pybricks_blockLightOnColor_colordistancesensor_off
 
     .. automethod:: pybricks.pupdevices::ColorDistanceSensor.light.off
 

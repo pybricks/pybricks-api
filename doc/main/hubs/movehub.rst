@@ -8,12 +8,21 @@ Move Hub
 .. figure:: ../../main/diagrams/movehub.png
     :width: 100%
 
+.. blockimg:: pybricks_variables_set_move_hub_option0
+
+.. blockimg:: pybricks_variables_set_move_hub_option3
+    :stack:
+
 .. autoclass:: pybricks.hubs.MoveHub
     :no-members:
 
     .. rubric:: Using the hub status light
 
+    .. blockimg:: pybricks_blockLightOnColor_movehub_on
+
     .. automethod:: pybricks.hubs::MoveHub.light.on
+
+    .. blockimg:: pybricks_blockLightOnColor_movehub_off
 
     .. automethod:: pybricks.hubs::MoveHub.light.off
 
@@ -25,7 +34,14 @@ Move Hub
 
     .. automethod:: pybricks.hubs::MoveHub.imu.up
 
-    .. automethod:: pybricks.hubs::TechnicHub.imu.tilt
+    .. blockimg:: pybricks_blockTilt_MoveHub_imu.tilt.pitch
+
+    .. blockimg:: pybricks_blockTilt_MoveHub_imu.tilt.roll
+        :stack:
+
+    .. automethod:: pybricks.hubs::MoveHub.imu.tilt
+
+    .. blockimg:: pybricks_blockImuAcceleration_MoveHub
 
     .. automethod:: pybricks.hubs::MoveHub.imu.acceleration
 
@@ -35,9 +51,13 @@ Move Hub
 
     .. rubric:: Using connectionless Bluetooth messaging
 
-    .. automethod:: pybricks.hubs::MoveHub.ble.broadcast
+    .. blockimg:: pybricks_blockBleBroadcast_PrimeHub
 
-    .. automethod:: pybricks.hubs::MoveHub.ble.observe
+    .. automethod:: pybricks.hubs::PrimeHub.ble.broadcast
+
+    .. blockimg:: pybricks_blockBleObserve_PrimeHub
+
+    .. automethod:: pybricks.hubs::PrimeHub.ble.observe
 
     .. automethod:: pybricks.hubs::MoveHub.ble.signal_strength
 
@@ -50,6 +70,8 @@ Move Hub
     .. automethod:: pybricks.hubs::MoveHub.battery.current
 
     .. rubric:: Button and system control
+
+    .. blockimg:: pybricks_blockButtonIsPressed_PrimeHub
 
     .. automethod:: pybricks.hubs::MoveHub.button.pressed
 

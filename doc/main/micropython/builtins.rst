@@ -20,6 +20,10 @@ Basic types
 
 .. pybricks-requirements::
 
+.. blockimg:: pybricks_blockLogicTrueFalse_false
+
+.. blockimg:: pybricks_blockLogicTrueFalse_true
+
 .. autoclass:: ubuiltins.bool
 
 .. pybricks-requirements:: stm32-float
@@ -64,9 +68,21 @@ Sequences
 
 .. pybricks-requirements::
 
+.. blockimg:: pybricks_blockListLength
+
 .. autofunction:: ubuiltins.len
 
 .. pybricks-requirements::
+
+.. blockimg:: pybricks_blockListCreate_list_empty
+
+.. blockimg:: pybricks_blockListCreate_list_3
+
+.. blockimg:: pybricks_blockListUnpack
+
+.. blockimg:: pybricks_lists_setIndex
+
+.. blockimg:: pybricks_lists_getIndex
 
 .. autoclass:: ubuiltins.list
 
@@ -79,6 +95,8 @@ Sequences
 .. autoclass:: ubuiltins.slice
 
 .. pybricks-requirements::
+
+.. blockimg:: pybricks_blockTextLiteral
 
 .. autoclass:: ubuiltins.str
 
@@ -165,6 +183,8 @@ See also :mod:`umath` for floating point math operations.
 
 .. pybricks-requirements::
 
+.. blockimg:: pybricks_blockMathOp_abs
+
 .. autofunction:: ubuiltins.abs
 
 .. pybricks-requirements::
@@ -173,9 +193,13 @@ See also :mod:`umath` for floating point math operations.
 
 .. pybricks-requirements::
 
+.. blockimg:: pybricks_blockMathOp_max
+
 .. autofunction:: ubuiltins.max
 
 .. pybricks-requirements::
+
+.. blockimg:: pybricks_blockMathOp_min
 
 .. autofunction:: ubuiltins.min
 
@@ -184,6 +208,8 @@ See also :mod:`umath` for floating point math operations.
 .. autofunction:: ubuiltins.pow
 
 .. pybricks-requirements::
+
+.. blockimg:: pybricks_blockMathOp_round
 
 .. autofunction:: ubuiltins.round
 

@@ -1291,6 +1291,8 @@ class CommonColorSensor:
 
         If you give no arguments, the currently chosen colors will be returned.
 
+        When coding with blocks, this is configured in the sensor setup block.
+
         Arguments:
             colors (list or tuple): List of :class:`Color <.parameters.Color>`
                 objects: the colors that you want to detect. You can pick
