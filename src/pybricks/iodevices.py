@@ -316,7 +316,7 @@ class LWP3Device:
                 this method returns the current name.
         """
 
-    def write(self, buf: bytes) -> None:
+    def write(self, buf: bytes) -> MaybeAwaitable:
         """write(buf)
 
         Sends a message to the remote hub.

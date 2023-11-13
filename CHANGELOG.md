@@ -4,6 +4,12 @@
 
 ## Unreleased
 
+## Added
+- Enabled tilt and orientation config for `MoveHub()`.
+
+## Fixed
+- Fixed missing awaitable for `Remote.light` and LWP3 writes.
+
 ## 3.3.0b9 - 2023-10-26
 
 ### Changed
