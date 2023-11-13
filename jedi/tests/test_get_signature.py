@@ -910,9 +910,14 @@ METHOD_PARAMS = [
         [(["name: str"], "None"), ([], "str")],
     ),
     pytest.param(
-        "pybricks.pupdevices", "Remote", "light.on", [(["color: Color"], "None")]
+        "pybricks.pupdevices",
+        "Remote",
+        "light.on",
+        [(["color: Color"], "MaybeAwaitable")],
     ),
-    pytest.param("pybricks.pupdevices", "Remote", "light.off", [([], "None")]),
+    pytest.param(
+        "pybricks.pupdevices", "Remote", "light.off", [([], "MaybeAwaitable")]
+    ),
     pytest.param(
         "pybricks.pupdevices",
         "Remote",

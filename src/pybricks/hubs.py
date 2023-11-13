@@ -46,9 +46,13 @@ class MoveHub:
     def __init__(
         self, broadcast_channel: int = 0, observe_channels: Sequence[int] = []
     ):
-        """MoveHub(broadcast_channel=0, observe_channels=[])
+        """MoveHub(top_side=Axis.Z, front_side=Axis.X, broadcast_channel=0, observe_channels=[])
 
         Arguments:
+            top_side (Axis): The axis that passes through the *top side* of
+                the hub.
+            front_side (Axis): The axis that passes through the *front side* of
+                the hub.
             broadcast_channel:
                 A value from 0 to 255 indicating which channel ``hub.ble.broadcast()``
                 will use. Default is channel 0.

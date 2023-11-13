@@ -25,6 +25,8 @@ Move Hub
 
     .. automethod:: pybricks.hubs::MoveHub.imu.up
 
+    .. automethod:: pybricks.hubs::TechnicHub.imu.tilt
+
     .. automethod:: pybricks.hubs::MoveHub.imu.acceleration
 
         .. versionchanged:: 3.2
