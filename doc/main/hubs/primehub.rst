@@ -50,7 +50,11 @@ Prime Hub / Inventor Hub
 
     .. automethod:: pybricks.hubs::PrimeHub.display.orientation
 
+    .. blockimg:: pybricks_blockLightMatrixDo_light_matrix_off
+
     .. automethod:: pybricks.hubs::PrimeHub.display.off
+
+    .. blockimg:: pybricks_blockLightMatrixDo_light_matrix_pixel
 
     .. automethod:: pybricks.hubs::PrimeHub.display.pixel
 
@@ -58,7 +62,11 @@ Prime Hub / Inventor Hub
 
     .. automethod:: pybricks.hubs::PrimeHub.display.animate
 
+    .. blockimg:: pybricks_blockLightMatrixDo_light_matrix_number
+
     .. automethod:: pybricks.hubs::PrimeHub.display.number
+
+    .. blockimg:: pybricks_blockLightMatrixDo_light_matrix_symbol
 
     .. automethod:: pybricks.hubs::PrimeHub.display.char
 

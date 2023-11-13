@@ -13,6 +13,10 @@ Input and output
 
 .. pybricks-requirements::
 
+.. blockimg:: pybricks_blockPrint_print_basic
+
+.. blockimg:: pybricks_blockPrint_print_multiple
+
 .. autofunction:: ubuiltins.print
 
 Basic types
