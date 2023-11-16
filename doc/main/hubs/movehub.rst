@@ -10,7 +10,7 @@ Move Hub
 
 .. blockimg:: pybricks_variables_set_move_hub_option0
 
-.. blockimg:: pybricks_variables_set_move_hub_option3
+.. blockimg:: pybricks_variables_set_move_hub_option4
     :stack:
 
 .. autoclass:: pybricks.hubs.MoveHub
@@ -65,7 +65,11 @@ Move Hub
 
     .. rubric:: Using the battery
 
+    .. blockimg:: pybricks_blockBatteryMeasure_MoveHub_battery.voltage
+
     .. automethod:: pybricks.hubs::MoveHub.battery.voltage
+
+    .. blockimg:: pybricks_blockBatteryMeasure_MoveHub_battery.current
 
     .. automethod:: pybricks.hubs::MoveHub.battery.current
 

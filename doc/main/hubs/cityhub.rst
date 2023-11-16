@@ -43,7 +43,11 @@ City Hub
 
     .. rubric:: Using the battery
 
+    .. blockimg:: pybricks_blockBatteryMeasure_CityHub_battery.voltage
+
     .. automethod:: pybricks.hubs::CityHub.battery.voltage
+
+    .. blockimg:: pybricks_blockBatteryMeasure_CityHub_battery.current
 
     .. automethod:: pybricks.hubs::CityHub.battery.current
 

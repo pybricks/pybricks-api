@@ -8,7 +8,7 @@ Essential Hub
 
 .. blockimg:: pybricks_variables_set_essential_hub_option0
 
-.. blockimg:: pybricks_variables_set_essential_hub_option3
+.. blockimg:: pybricks_variables_set_essential_hub_option4
     :stack:
 
 .. autoclass:: pybricks.hubs.EssentialHub
@@ -91,7 +91,11 @@ Essential Hub
 
     .. rubric:: Using the battery
 
+    .. blockimg:: pybricks_blockBatteryMeasure_EssentialHub_battery.voltage
+
     .. automethod:: pybricks.hubs::EssentialHub.battery.voltage
+
+    .. blockimg:: pybricks_blockBatteryMeasure_EssentialHub_battery.current
 
     .. automethod:: pybricks.hubs::EssentialHub.battery.current
 

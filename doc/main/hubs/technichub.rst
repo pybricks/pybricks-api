@@ -8,7 +8,7 @@ Technic Hub
 
 .. blockimg:: pybricks_variables_set_technic_hub_option0
 
-.. blockimg:: pybricks_variables_set_technic_hub_option3
+.. blockimg:: pybricks_variables_set_technic_hub_option4
     :stack:
 
 .. autoclass:: pybricks.hubs.TechnicHub
@@ -83,7 +83,11 @@ Technic Hub
 
     .. rubric:: Using the battery
 
+    .. blockimg:: pybricks_blockBatteryMeasure_TechnicHub_battery.voltage
+
     .. automethod:: pybricks.hubs::TechnicHub.battery.voltage
+
+    .. blockimg:: pybricks_blockBatteryMeasure_TechnicHub_battery.current
 
     .. automethod:: pybricks.hubs::TechnicHub.battery.current
 

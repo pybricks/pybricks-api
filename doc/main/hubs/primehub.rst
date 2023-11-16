@@ -8,7 +8,7 @@ Prime Hub / Inventor Hub
 
 .. blockimg:: pybricks_variables_set_inventor_hub_option0
 
-.. blockimg:: pybricks_variables_set_inventor_hub_option3
+.. blockimg:: pybricks_variables_set_inventor_hub_option4
     :stack:
 
 .. class:: InventorHub
@@ -20,7 +20,7 @@ Prime Hub / Inventor Hub
 
 .. blockimg:: pybricks_variables_set_prime_hub_option0
 
-.. blockimg:: pybricks_variables_set_prime_hub_option3
+.. blockimg:: pybricks_variables_set_prime_hub_option4
     :stack:
 
 .. autoclass:: pybricks.hubs.PrimeHub
@@ -146,7 +146,11 @@ Prime Hub / Inventor Hub
 
     .. rubric:: Using the battery
 
+    .. blockimg:: pybricks_blockBatteryMeasure_PrimeHub_battery.voltage
+
     .. automethod:: pybricks.hubs::PrimeHub.battery.voltage
+
+    .. blockimg:: pybricks_blockBatteryMeasure_PrimeHub_battery.current
 
     .. automethod:: pybricks.hubs::PrimeHub.battery.current
 
