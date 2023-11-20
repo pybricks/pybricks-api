@@ -62,6 +62,8 @@ Motors with rotation sensors
 
     .. automethod:: pybricks.pupdevices.Motor.settings
 
+    .. automethod:: pybricks.pupdevices.Motor.close
+
     .. rubric:: Control settings
 
     .. pybricks-requirements:: pybricks-common-control

@@ -605,6 +605,16 @@ class Motor(DCMotor):
                 rotate to.
         """
 
+    def close(self) -> None:
+        """close()
+
+        Closes the motor object so you can call ``Motor`` again to initialize
+        a new object.
+
+        This allows advanced users to change properties such as gearing in the
+        middle of the program, which can be useful for removeable attachments.
+        """
+
 
 class Speaker:
     """Plays beeps and sounds using a speaker."""

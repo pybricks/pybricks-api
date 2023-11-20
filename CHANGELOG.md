@@ -6,6 +6,7 @@
 
 ## Added
 - Enabled tilt and orientation config for `MoveHub()`.
+- Documented `Motor.close()`
 
 ## Fixed
 - Fixed missing awaitable for `Remote.light` and LWP3 writes.
