@@ -1,8 +1,8 @@
 [tool.poetry]
 name = "pybricks"
-version = "3.3.0b9"
+version = "3.3.0c1"
 description = "Documentation and user-API stubs for Pybricks MicroPython"
-authors = ["The Pybricks Authors <dev@pybricks.com>"]
+authors = ["The Pybricks Authors <team@pybricks.com>"]
 maintainers = ["Laurens Valk <laurens@pybricks.com>", "David Lechner <david@pybricks.com>" ]
 license = "MIT"
 readme = "README.rst"

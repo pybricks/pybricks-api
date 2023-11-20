@@ -4,6 +4,8 @@
 
 ## Unreleased
 
+## 3.3.0c1 - 2023-11-20
+
 ## Added
 - Enabled tilt and orientation config for `MoveHub()`.
 - Documented `Motor.close()`
