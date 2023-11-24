@@ -4,6 +4,11 @@
 
 ## Unreleased
 
+## 3.3.0 - 2023-11-24
+
+### Changed
+- Bump beta version to release version with no further changes.
+
 ## 3.3.0c1 - 2023-11-20
 
 ## Added
