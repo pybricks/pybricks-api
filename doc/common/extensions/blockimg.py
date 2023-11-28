@@ -6,7 +6,6 @@ from docutils.parsers.rst.directives.images import Image
 from docutils.nodes import image, paragraph
 from pathlib import Path
 
-SPHINX_DOC = "main"
 SPHINX_IMAGE_PATH = "blockimg"
 
 SVG_SCALE = 0.9
@@ -22,6 +21,10 @@ def get_svg_size(file_path):
     return float(width), float(height)
 
 
+# Global variable to store the app object
+app = None
+
+
 class BlockImageDirective(Image):
     option_spec = Image.option_spec.copy()
     option_spec["stack"] = directives.flag
@@ -30,7 +33,7 @@ class BlockImageDirective(Image):
         # Adjust the image path
         file_name = self.arguments[0] + ".svg"
         self.arguments[0] = "/" + SPHINX_IMAGE_PATH + "/" + file_name
-        path = Path(os.getcwd()) / SPHINX_DOC / SPHINX_IMAGE_PATH / file_name
+        path = Path(app.srcdir) / SPHINX_IMAGE_PATH / file_name
 
         # Set it to the scaled SVG size unless width explicitly set.
         if self.options.get("width") is None:
@@ -51,5 +54,7 @@ class BlockImageDirective(Image):
         return nodes
 
 
-def setup(app):
+def setup(apparg):
+    global app
+    app = apparg
     app.add_directive("blockimg", BlockImageDirective)
