@@ -4,7 +4,7 @@
 
 ## Unreleased
 
-## 3.4.0b1 - 2023-11-28
+## 3.4.0b2 - 2023-11-28
 
 ### Changed
 - Include first batch of block coding images.
