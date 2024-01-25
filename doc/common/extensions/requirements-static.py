@@ -14,6 +14,7 @@ FEATURES_MEDIUM = FEATURES_SMALL | {
     "pybricks-iodevices",
     "stm32-extra",
     "stm32-float",
+    "pybricks-frozen",
 }
 
 # Large feature set.
@@ -31,12 +32,10 @@ HUB_FEATURES = {
 
 
 class PybricksRequirementsStaticDirective(Directive):
-
     required_arguments = 0
     optional_arguments = 10
 
     def run(self):
-
         # Copy required resources to static
         # CC BY-SA 4.0 via https://stackoverflow.com/a/63728208
         env = self.state.document.settings.env

@@ -1,0 +1,989 @@
+<!-- Copyright (c) 2024 The Pybricks Authors. All rights reserved. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390.6171875 57.19999999999982" class="blocklySvg pybricks_renderer-renderer pybricks-zelos-light-theme" width="390.6171875" height="57.19999999999982" style="background-color: transparent"><style xmlns="http://www.w3.org/1999/xhtml">.pybricks_renderer-renderer.pybricks-zelos-light-theme .blocklyText,
+.pybricks_renderer-renderer.pybricks-zelos-light-theme .blocklyFlyoutLabelText {
+font: bold 12pt "Helvetica Neue", "Segoe UI", Helvetica, sans-serif;
+}
+.pybricks_renderer-renderer.pybricks-zelos-light-theme .blocklyText {
+fill: #fff;
+}
+.pybricks_renderer-renderer.pybricks-zelos-light-theme .blocklyNonEditableText&gt;rect:not(.blocklyDropdownRect),
+.pybricks_renderer-renderer.pybricks-zelos-light-theme .blocklyEditableText&gt;rect:not(.blocklyDropdownRect) {
+fill: #fff;
+}
+.pybricks_renderer-renderer.pybricks-zelos-light-theme .blocklyNonEditableText&gt;text,
+.pybricks_renderer-renderer.pybricks-zelos-light-theme .blocklyEditableText&gt;text,
+.pybricks_renderer-renderer.pybricks-zelos-light-theme .blocklyNonEditableText&gt;g&gt;text,
+.pybricks_renderer-renderer.pybricks-zelos-light-theme .blocklyEditableText&gt;g&gt;text {
+fill: #575E75;
+}
+.pybricks_renderer-renderer.pybricks-zelos-light-theme .blocklyFlyoutLabelText {
+fill: #575E75;
+}
+.pybricks_renderer-renderer.pybricks-zelos-light-theme .blocklyText.blocklyBubbleText {
+fill: #575E75;
+}
+.pybricks_renderer-renderer.pybricks-zelos-light-theme .blocklyDraggable:not(.blocklyDisabled)
+ .blocklyEditableText:not(.editing):hover&gt;rect,
+.pybricks_renderer-renderer.pybricks-zelos-light-theme .blocklyDraggable:not(.blocklyDisabled)
+ .blocklyEditableText:not(.editing):hover&gt;.blocklyPath {
+stroke: #fff;
+stroke-width: 2;
+}
+.pybricks_renderer-renderer.pybricks-zelos-light-theme .blocklyHtmlInput {
+font-family: "Helvetica Neue", "Segoe UI", Helvetica, sans-serif;
+font-weight: bold;
+color: #575E75;
+}
+.pybricks_renderer-renderer.pybricks-zelos-light-theme .blocklyDropdownText {
+fill: #fff !important;
+}
+.pybricks_renderer-renderer.pybricks-zelos-light-theme.blocklyWidgetDiv .goog-menuitem,
+.pybricks_renderer-renderer.pybricks-zelos-light-theme.blocklyDropDownDiv .goog-menuitem {
+font-family: "Helvetica Neue", "Segoe UI", Helvetica, sans-serif;
+}
+.pybricks_renderer-renderer.pybricks-zelos-light-theme.blocklyDropDownDiv .goog-menuitem-content {
+color: #fff;
+}
+.pybricks_renderer-renderer.pybricks-zelos-light-theme .blocklyHighlightedConnectionPath {
+stroke: #ffffff;
+}
+.pybricks_renderer-renderer.pybricks-zelos-light-theme .blocklyDisabled &gt; .blocklyOutlinePath {
+fill: url(#blocklyDisabledPattern5439580434912636)
+}
+.pybricks_renderer-renderer.pybricks-zelos-light-theme .blocklyInsertionMarker&gt;.blocklyPath {
+fill-opacity: 0.2;
+stroke: none;
+}
+
+.blocklySvg {
+  background-color: #fff;
+  outline: none;
+  overflow: hidden;  /* IE overflows by default. */
+  position: absolute;
+  display: block;
+}
+
+.blocklyWidgetDiv {
+  display: none;
+  position: absolute;
+  z-index: 99999;  /* big value for bootstrap3 compatibility */
+}
+
+.injectionDiv {
+  height: 100%;
+  position: relative;
+  overflow: hidden;  /* So blocks in drag surface disappear at edges */
+  touch-action: none;
+}
+
+.blocklyNonSelectable {
+  user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+}
+
+.blocklyBlockCanvas.blocklyCanvasTransitioning,
+.blocklyBubbleCanvas.blocklyCanvasTransitioning {
+  transition: transform .5s;
+}
+
+.blocklyTooltipDiv {
+  background-color: #ffffc7;
+  border: 1px solid #ddc;
+  box-shadow: 4px 4px 20px 1px rgba(0,0,0,.15);
+  color: #000;
+  display: none;
+  font: 9pt sans-serif;
+  opacity: .9;
+  padding: 2px;
+  position: absolute;
+  z-index: 100000;  /* big value for bootstrap3 compatibility */
+}
+
+.blocklyDropDownDiv {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  display: none;
+  border: 1px solid;
+  border-color: #dadce0;
+  background-color: #fff;
+  border-radius: 2px;
+  padding: 4px;
+  box-shadow: 0 0 3px 1px rgba(0,0,0,.3);
+}
+
+.blocklyDropDownDiv.blocklyFocused {
+  box-shadow: 0 0 6px 1px rgba(0,0,0,.3);
+}
+
+.blocklyDropDownContent {
+  max-height: 300px;  /* @todo: spec for maximum height. */
+  overflow: auto;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.blocklyDropDownArrow {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 16px;
+  height: 16px;
+  z-index: -1;
+  background-color: inherit;
+  border-color: inherit;
+}
+
+.blocklyDropDownButton {
+  display: inline-block;
+  float: left;
+  padding: 0;
+  margin: 4px;
+  border-radius: 4px;
+  outline: none;
+  border: 1px solid;
+  transition: box-shadow .1s;
+  cursor: pointer;
+}
+
+.blocklyArrowTop {
+  border-top: 1px solid;
+  border-left: 1px solid;
+  border-top-left-radius: 4px;
+  border-color: inherit;
+}
+
+.blocklyArrowBottom {
+  border-bottom: 1px solid;
+  border-right: 1px solid;
+  border-bottom-right-radius: 4px;
+  border-color: inherit;
+}
+
+.blocklyResizeSE {
+  cursor: se-resize;
+  fill: #aaa;
+}
+
+.blocklyResizeSW {
+  cursor: sw-resize;
+  fill: #aaa;
+}
+
+.blocklyResizeLine {
+  stroke: #515A5A;
+  stroke-width: 1;
+}
+
+.blocklyHighlightedConnectionPath {
+  fill: none;
+  stroke: #fc3;
+  stroke-width: 4px;
+}
+
+.blocklyPathLight {
+  fill: none;
+  stroke-linecap: round;
+  stroke-width: 1;
+}
+
+.blocklySelected&gt;.blocklyPathLight {
+  display: none;
+}
+
+.blocklyDraggable {
+  cursor: grab;
+  cursor: -webkit-grab;
+}
+
+.blocklyDragging {
+  cursor: grabbing;
+  cursor: -webkit-grabbing;
+}
+
+  /* Changes cursor on mouse down. Not effective in Firefox because of
+     https://bugzilla.mozilla.org/show_bug.cgi?id=771241 */
+.blocklyDraggable:active {
+  cursor: grabbing;
+  cursor: -webkit-grabbing;
+}
+
+.blocklyDragging.blocklyDraggingDelete {
+  cursor: url("https://blockly-demo.appspot.com/static/media/handdelete.cur"), auto;
+}
+
+.blocklyDragging&gt;.blocklyPath,
+.blocklyDragging&gt;.blocklyPathLight {
+  fill-opacity: .8;
+  stroke-opacity: .8;
+}
+
+.blocklyDragging&gt;.blocklyPathDark {
+  display: none;
+}
+
+.blocklyDisabled&gt;.blocklyPath {
+  fill-opacity: .5;
+  stroke-opacity: .5;
+}
+
+.blocklyDisabled&gt;.blocklyPathLight,
+.blocklyDisabled&gt;.blocklyPathDark {
+  display: none;
+}
+
+.blocklyInsertionMarker&gt;.blocklyPath,
+.blocklyInsertionMarker&gt;.blocklyPathLight,
+.blocklyInsertionMarker&gt;.blocklyPathDark {
+  fill-opacity: .2;
+  stroke: none;
+}
+
+.blocklyMultilineText {
+  font-family: monospace;
+}
+
+.blocklyNonEditableText&gt;text {
+  pointer-events: none;
+}
+
+.blocklyFlyout {
+  position: absolute;
+  z-index: 20;
+}
+
+.blocklyText text {
+  cursor: default;
+}
+
+/*
+  Don't allow users to select text.  It gets annoying when trying to
+  drag a block and selected text moves instead.
+*/
+.blocklySvg text {
+  user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  cursor: inherit;
+}
+
+.blocklyHidden {
+  display: none;
+}
+
+.blocklyFieldDropdown:not(.blocklyHidden) {
+  display: block;
+}
+
+.blocklyIconGroup {
+  cursor: default;
+}
+
+.blocklyIconGroup:not(:hover),
+.blocklyIconGroupReadonly {
+  opacity: .6;
+}
+
+.blocklyIconShape {
+  fill: #00f;
+  stroke: #fff;
+  stroke-width: 1px;
+}
+
+.blocklyIconSymbol {
+  fill: #fff;
+}
+
+.blocklyMinimalBody {
+  margin: 0;
+  padding: 0;
+}
+
+.blocklyHtmlInput {
+  border: none;
+  border-radius: 4px;
+  height: 100%;
+  margin: 0;
+  outline: none;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+  display: block;
+  box-sizing: border-box;
+}
+
+/* Remove the increase and decrease arrows on the field number editor */
+input.blocklyHtmlInput[type=number]::-webkit-inner-spin-button,
+input.blocklyHtmlInput[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.blocklyMainBackground {
+  stroke-width: 1;
+  stroke: #c6c6c6;  /* Equates to #ddd due to border being off-pixel. */
+}
+
+.blocklyMutatorBackground {
+  fill: #fff;
+  stroke: #ddd;
+  stroke-width: 1;
+}
+
+.blocklyFlyoutBackground {
+  fill: #ddd;
+  fill-opacity: .8;
+}
+
+.blocklyMainWorkspaceScrollbar {
+  z-index: 20;
+}
+
+.blocklyFlyoutScrollbar {
+  z-index: 30;
+}
+
+.blocklyScrollbarHorizontal,
+.blocklyScrollbarVertical {
+  position: absolute;
+  outline: none;
+}
+
+.blocklyScrollbarBackground {
+  opacity: 0;
+}
+
+.blocklyScrollbarHandle {
+  fill: #ccc;
+}
+
+.blocklyScrollbarBackground:hover+.blocklyScrollbarHandle,
+.blocklyScrollbarHandle:hover {
+  fill: #bbb;
+}
+
+/* Darken flyout scrollbars due to being on a grey background. */
+/* By contrast, workspace scrollbars are on a white background. */
+.blocklyFlyout .blocklyScrollbarHandle {
+  fill: #bbb;
+}
+
+.blocklyFlyout .blocklyScrollbarBackground:hover+.blocklyScrollbarHandle,
+.blocklyFlyout .blocklyScrollbarHandle:hover {
+  fill: #aaa;
+}
+
+.blocklyInvalidInput {
+  background: #faa;
+}
+
+.blocklyVerticalMarker {
+  stroke-width: 3px;
+  fill: rgba(255,255,255,.5);
+  pointer-events: none;
+}
+
+.blocklyComputeCanvas {
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.blocklyNoPointerEvents {
+  pointer-events: none;
+}
+
+.blocklyContextMenu {
+  border-radius: 4px;
+  max-height: 100%;
+}
+
+.blocklyDropdownMenu {
+  border-radius: 2px;
+  padding: 0 !important;
+}
+
+.blocklyDropdownMenu .blocklyMenuItem {
+  /* 28px on the left for icon or checkbox. */
+  padding-left: 28px;
+}
+
+/* BiDi override for the resting state. */
+.blocklyDropdownMenu .blocklyMenuItemRtl {
+  /* Flip left/right padding for BiDi. */
+  padding-left: 5px;
+  padding-right: 28px;
+}
+
+.blocklyWidgetDiv .blocklyMenu {
+  background: #fff;
+  border: 1px solid transparent;
+  box-shadow: 0 0 3px 1px rgba(0,0,0,.3);
+  font: normal 13px Arial, sans-serif;
+  margin: 0;
+  outline: none;
+  padding: 4px 0;
+  position: absolute;
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: 100%;
+  z-index: 20000;  /* Arbitrary, but some apps depend on it... */
+}
+
+.blocklyWidgetDiv .blocklyMenu.blocklyFocused {
+  box-shadow: 0 0 6px 1px rgba(0,0,0,.3);
+}
+
+.blocklyDropDownDiv .blocklyMenu {
+  background: inherit;  /* Compatibility with gapi, reset from goog-menu */
+  border: inherit;  /* Compatibility with gapi, reset from goog-menu */
+  font: normal 13px "Helvetica Neue", Helvetica, sans-serif;
+  outline: none;
+  position: relative;  /* Compatibility with gapi, reset from goog-menu */
+  z-index: 20000;  /* Arbitrary, but some apps depend on it... */
+}
+
+/* State: resting. */
+.blocklyMenuItem {
+  border: none;
+  color: #000;
+  cursor: pointer;
+  list-style: none;
+  margin: 0;
+  /* 7em on the right for shortcut. */
+  min-width: 7em;
+  padding: 6px 15px;
+  white-space: nowrap;
+}
+
+/* State: disabled. */
+.blocklyMenuItemDisabled {
+  color: #ccc;
+  cursor: inherit;
+}
+
+/* State: hover. */
+.blocklyMenuItemHighlight {
+  background-color: rgba(0,0,0,.1);
+}
+
+/* State: selected/checked. */
+.blocklyMenuItemCheckbox {
+  height: 16px;
+  position: absolute;
+  width: 16px;
+}
+
+.blocklyMenuItemSelected .blocklyMenuItemCheckbox {
+  background: url(https://blockly-demo.appspot.com/static/media/sprites.png) no-repeat -48px -16px;
+  float: left;
+  margin-left: -24px;
+  position: static;  /* Scroll with the menu. */
+}
+
+.blocklyMenuItemRtl .blocklyMenuItemCheckbox {
+  float: right;
+  margin-right: -24px;
+}
+
+
+.blocklyZoom&gt;image, .blocklyZoom&gt;svg&gt;image {
+  opacity: .4;
+}
+
+.blocklyZoom&gt;image:hover, .blocklyZoom&gt;svg&gt;image:hover {
+  opacity: .6;
+}
+
+.blocklyZoom&gt;image:active, .blocklyZoom&gt;svg&gt;image:active {
+  opacity: .8;
+}
+
+
+.blocklyCommentForeignObject {
+  position: relative;
+  z-index: 0;
+}
+
+.blocklyCommentRect {
+  fill: #E7DE8E;
+  stroke: #bcA903;
+  stroke-width: 1px;
+}
+
+.blocklyCommentTarget {
+  fill: transparent;
+  stroke: #bcA903;
+}
+
+.blocklyCommentTargetFocused {
+  fill: none;
+}
+
+.blocklyCommentHandleTarget {
+  fill: none;
+}
+
+.blocklyCommentHandleTargetFocused {
+  fill: transparent;
+}
+
+.blocklyFocused&gt;.blocklyCommentRect {
+  fill: #B9B272;
+  stroke: #B9B272;
+}
+
+.blocklySelected&gt;.blocklyCommentTarget {
+  stroke: #fc3;
+  stroke-width: 3px;
+}
+
+.blocklyCommentDeleteIcon {
+  cursor: pointer;
+  fill: #000;
+  display: none;
+}
+
+.blocklySelected &gt; .blocklyCommentDeleteIcon {
+  display: block;
+}
+
+.blocklyDeleteIconShape {
+  fill: #000;
+  stroke: #000;
+  stroke-width: 1px;
+}
+
+.blocklyDeleteIconShape.blocklyDeleteIconHighlighted {
+  stroke: #fc3;
+}
+
+
+.blocklyCommentTextarea {
+  background-color: #fef49c;
+  border: 0;
+  display: block;
+  margin: 0;
+  outline: 0;
+  padding: 3px;
+  resize: none;
+  text-overflow: hidden;
+}
+
+
+.blocklyAngleCircle {
+  stroke: #444;
+  stroke-width: 1;
+  fill: #ddd;
+  fill-opacity: 0.8;
+}
+
+.blocklyAngleMarks {
+  stroke: #444;
+  stroke-width: 1;
+}
+
+.blocklyAngleGauge {
+  fill: #f88;
+  fill-opacity: 0.8;
+  pointer-events: none;
+}
+
+.blocklyAngleLine {
+  stroke: #f00;
+  stroke-width: 2;
+  stroke-linecap: round;
+  pointer-events: none;
+}
+
+
+.blocklyColourTable {
+  border-collapse: collapse;
+  display: block;
+  outline: none;
+  padding: 1px;
+}
+
+.blocklyColourTable&gt;tr&gt;td {
+  border: 0.5px solid #888;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  height: 20px;
+  padding: 0;
+  width: 20px;
+}
+
+.blocklyColourTable&gt;tr&gt;td.blocklyColourHighlighted {
+  border-color: #eee;
+  box-shadow: 2px 2px 7px 2px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.blocklyColourSelected, .blocklyColourSelected:hover {
+  border-color: #eee !important;
+  outline: 1px solid #333;
+  position: relative;
+}
+
+
+.blocklyHtmlTextAreaInput {
+  font-family: monospace;
+  resize: none;
+  overflow: hidden;
+  height: 100%;
+  text-align: left;
+}
+
+.blocklyHtmlTextAreaInputOverflowedY {
+  overflow-y: scroll;
+}
+
+
+.blocklyFlyoutButton {
+  fill: #888;
+  cursor: default;
+}
+
+.blocklyFlyoutButtonShadow {
+  fill: #666;
+}
+
+.blocklyFlyoutButton:hover {
+  fill: #aaa;
+}
+
+.blocklyFlyoutLabel {
+  cursor: default;
+}
+
+.blocklyFlyoutLabelBackground {
+  opacity: 0;
+}
+
+
+.blocklyTreeRow:not(.blocklyTreeSelected):hover {
+  background-color: rgba(255, 255, 255, .2);
+}
+
+.blocklyToolboxDiv[layout="h"] .blocklyToolboxCategory {
+  margin: 1px 5px 1px 0;
+}
+
+.blocklyToolboxDiv[dir="RTL"][layout="h"] .blocklyToolboxCategory {
+  margin: 1px 0 1px 5px;
+}
+
+.blocklyTreeRow {
+  height: 22px;
+  line-height: 22px;
+  margin-bottom: 3px;
+  padding-right: 8px;
+  white-space: nowrap;
+}
+
+.blocklyToolboxDiv[dir="RTL"] .blocklyTreeRow {
+  margin-left: 8px;
+  padding-right: 0;
+}
+
+.blocklyTreeIcon {
+  background-image: url(https://blockly-demo.appspot.com/static/media/sprites.png);
+  height: 16px;
+  vertical-align: middle;
+  visibility: hidden;
+  width: 16px;
+}
+
+.blocklyTreeIconClosed {
+  background-position: -32px -1px;
+}
+
+.blocklyToolboxDiv[dir="RTL"] .blocklyTreeIconClosed {
+  background-position: 0 -1px;
+}
+
+.blocklyTreeSelected&gt;.blocklyTreeIconClosed {
+  background-position: -32px -17px;
+}
+
+.blocklyToolboxDiv[dir="RTL"] .blocklyTreeSelected&gt;.blocklyTreeIconClosed {
+  background-position: 0 -17px;
+}
+
+.blocklyTreeIconOpen {
+  background-position: -16px -1px;
+}
+
+.blocklyTreeSelected&gt;.blocklyTreeIconOpen {
+  background-position: -16px -17px;
+}
+
+.blocklyTreeLabel {
+  cursor: default;
+  font: 16px sans-serif;
+  padding: 0 3px;
+  vertical-align: middle;
+}
+
+.blocklyToolboxDelete .blocklyTreeLabel {
+  cursor: url("https://blockly-demo.appspot.com/static/media/handdelete.cur"), auto;
+}
+
+.blocklyTreeSelected .blocklyTreeLabel {
+  color: #fff;
+}
+
+
+.blocklyTreeSeparator {
+  border-bottom: solid #e5e5e5 1px;
+  height: 0;
+  margin: 5px 0;
+}
+
+.blocklyToolboxDiv[layout="h"] .blocklyTreeSeparator {
+  border-right: solid #e5e5e5 1px;
+  border-bottom: none;
+  height: auto;
+  margin: 0 5px 0 5px;
+  padding: 5px 0;
+  width: 0;
+}
+
+
+.blocklyToolboxDelete {
+  cursor: url("https://blockly-demo.appspot.com/static/media/handdelete.cur"), auto;
+}
+
+.blocklyToolboxGrab {
+  cursor: url("https://blockly-demo.appspot.com/static/media/handclosed.cur"), auto;
+  cursor: grabbing;
+  cursor: -webkit-grabbing;
+}
+
+/* Category tree in Toolbox. */
+.blocklyToolboxDiv {
+  background-color: #ddd;
+  overflow-x: visible;
+  overflow-y: auto;
+  padding: 4px 0 4px 0;
+  position: absolute;
+  z-index: 70;  /* so blocks go under toolbox when dragging */
+  -webkit-tap-highlight-color: transparent;  /* issue #1345 */
+}
+
+.blocklyToolboxContents {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.blocklyToolboxContents:focus {
+  outline: none;
+}
+
+
+.blocklyColourTable {
+  border-collapse: collapse;
+  display: block;
+  outline: none;
+  padding: 1px;
+}
+
+.blocklyColourTable&gt;tr&gt;td {
+  border: 0.5px solid #888;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  height: 20px;
+  padding: 0;
+  width: 20px;
+}
+
+.blocklyColourTable&gt;tr&gt;td.blocklyColourHighlighted {
+  border-color: #eee;
+  box-shadow: 2px 2px 7px 2px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.blocklyColourSelected, .blocklyColourSelected:hover {
+  border-color: #eee !important;
+  outline: 1px solid #333;
+  position: relative;
+}
+
+
+.fieldColourSliderContainer {
+  padding: 4px;
+}
+.fieldColourSliderContainer hr {
+  border: none;
+  border-top: 1px solid #bbb;
+}
+.fieldColourSliderLabel {
+  display: flex;
+  justify-content: space-between;
+  font: 12pt "Helvetica Neue", "Segoe UI", Helvetica, sans-serif;
+}
+.fieldColourEyedropper {
+  appearance: none;
+  position: relative;
+  border: none;
+  border-radius: 4px;
+  background: transparent;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fieldColourEyedropper:hover {
+  background: rgba(0,0,0,0.1)
+}
+.fieldColourEyedropper input {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.fieldColourEyedropper::before {
+  content: "Eyedropper";
+}
+.fieldColourEyedropper::after {
+  content: "";
+  margin-left: 8px;
+  width: 24px;
+  height: 24px;
+  background: currentColor;
+  pointer-events: none;
+  -webkit-mask-image: var(--customize-dial-symbol);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-image: var(--customize-dial-symbol);
+  mask-repeat: no-repeat;
+  mask-position: center;
+  --customize-dial-symbol: url('data:image/svg+xml,    &lt;svg xmlns="http://www.w3.org/2000/svg"          width="24px" height="24px"          viewBox="0 0 24 24"&gt;       &lt;path stroke="black" strokewidth="1.414" fill="none"             d="m 13 8 L 6 15 Q 3 18 2 21 Q 0 23 .5 23.5 Q 1 24 3 22                 Q 6 21 9 18 L 16 11"/&gt;       &lt;path fill="black"             d="m 12 7 Q 11 6 12 5 Q 13 4 14 5 Q 15 6 16 5 Q 20 -1 22.5 1.5                 Q 25 4 19 8 Q 18 9 19 10 Q 20 11 19 12 Q 18 13 17 12"/&gt;     &lt;/svg&gt;');
+}
+.fieldColourSlider {
+  -webkit-appearance: none;
+  width: 150px;
+  height: 24px;
+  margin: 4px 8px 24px 8px;
+  padding: 0;
+}
+.fieldColourSlider:last-child {
+  margin-bottom: 4px;
+}
+.fieldColourSlider:focus {
+  outline: none;
+}
+/* Webkit */
+.fieldColourSlider::-webkit-slider-runnable-track {
+  background: var(--slider-track-background);
+  border-radius: 8px;
+  height: 16px;
+}
+.fieldColourSlider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px rgba(0,0,0,.15);
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  margin-top: -4px;
+}
+/* Firefox */
+.fieldColourSlider::-moz-range-track {
+  background: var(--slider-track-background);
+  border-radius: 8px;
+  height: 16px;
+}
+.fieldColourSlider::-moz-range-thumb {
+  background: #fff;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px rgba(0,0,0,.15);
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+}
+.fieldColourSlider::-moz-focus-outer {
+  /* override the focus border style */
+  border: 0;
+}
+/* IE */
+.fieldColourSlider::-ms-track {
+  background: var(--slider-track-background);
+  border-radius: 12px;
+  width: 100%;
+  height: 24px;
+  /* remove default tick marks */
+  color: transparent;
+}
+.fieldColourSlider::-ms-fill-lower  {
+  background: transparent;
+}
+.fieldColourSlider::-ms-fill-upper  {
+  background: transparent;
+}
+.fieldColourSlider::-ms-thumb {
+  background: #fff;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px rgba(0,0,0,.15);
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+}
+
+
+.blocklyMultiselect&gt;image, .blocklyMultiselect&gt;svg&gt;image {
+  opacity: .2;
+}
+
+.blocklyMultiselect&gt;image:hover, .blocklyMultiselect&gt;svg&gt;image:hover {
+  opacity: .4;
+}
+
+.blocklyMultiselect&gt;image:active, .blocklyMultiselect&gt;svg&gt;image:active {
+  opacity: .6;
+}
+
+
+  .controlsIconStyleLightTheme {
+    opacity: 0.2;
+  }
+  .controlsIconStyleLightTheme:hover {
+    opacity: 0.4;
+  }
+  .controlsIconStyleLightTheme:active {
+    opacity: 0.6;
+  }
+  
+
+  .controlsIconStyleDarkTheme {
+    opacity: 0.4;
+    filter: invert(1);
+  }
+  .controlsIconStyleDarkTheme:hover {
+    opacity: 0.6;
+    filter: invert(1);
+  }
+  .controlsIconStyleDarkTheme:active {
+    opacity: 0.8;
+    filter: invert(1);
+  }
+  
+</style><g transform="translate(1, 1)"><g data-id="Cu98{O(w3vx8q1yJL0bh" class="blocklyDraggable"><path class="blocklyPath" stroke="#3971bf" fill="#4c97ff" d=" m 0,0  m 0,4 a 4 4 0 0,1 4,-4  h 5  c 1.6666666666666667,0  2.5,0.75  3.3333333333333335,1.5  l 3.3333333333333335,3  c 0.8333333333333334,0.75  1.6666666666666667,1.5  3.3333333333333335,1.5  h 10  c 1.6666666666666667,0  2.5,-0.75  3.3333333333333335,-1.5  l 3.3333333333333335,-3  c 0.8333333333333334,-0.75  1.6666666666666667,-1.5  3.3333333333333335,-1.5  h 345.6171875 a 4 4 0 0,1 4,4  v 6  V 43.2  V 45.2  V 45.2 a 4 4 0 0,1 -4,4  h -345.6171875  c -1.6666666666666667,0  -2.5,0.75  -3.3333333333333335,1.5  l -3.3333333333333335,3  c -0.8333333333333334,0.75  -1.6666666666666667,1.5  -3.3333333333333335,1.5  h -10  c -1.6666666666666667,0  -2.5,-0.75  -3.3333333333333335,-1.5  l -3.3333333333333335,-3  c -0.8333333333333334,-0.75  -1.6666666666666667,-1.5  -3.3333333333333335,-1.5  h -5 a 4 4 0 0,1 -4,-4 z&#10;"/><g data-id="AA6i8EiE1ExlrEfW98di" transform="translate(286.1796875, 6)" style="display: block;"><path class="blocklyPath" stroke="#3971bf" fill="#4180d9" d=" m 18.6,0  h 57.2375 a 18.6 18.6 0 0,1 18.6,18.6  v 0 a 18.6 18.6 0 0,1 -18.6,18.6  V 37.2  h -57.2375 a 18.6 18.6 0 0,1 -18.6,-18.6  v 0 a 18.6 18.6 0 0,1 18.6,-18.6 z&#10;"/><g class="blocklyEditableText" transform="translate(12,4.000000000000002)" style="cursor: text;"><rect rx="4" ry="4" x="0" y="0" height="29.2" width="42.6953125" class="blocklyFieldRect" stroke="#3971bf" style="display: block;"/><text class="blocklyText" dominant-baseline="central" x="8" y="14.6">500</text></g><g transform="translate(62.6953125,9.600000000000001)"><text class="blocklyText" dominant-baseline="central" x="0" y="9">°/s</text></g></g><g data-id="[B,O!y(OlBcRaZE,O_:;" transform="translate(55, 8.600000000000001)" style="display: block;"><path class="blocklyPath" stroke="#3971bf" fill="#4180d9" d=" m 16,0  h 36.0234375 a 16 16 0 0,1 16,16  v 0 a 16 16 0 0,1 -16,16  V 32  h -36.0234375 a 16 16 0 0,1 -16,-16  v 0 a 16 16 0 0,1 16,-16 z&#10;"/><g class="blocklyEditableText" transform="translate(12,7)" style="cursor: default;"><text class="blocklyText blocklyDropdownText" dominant-baseline="central" text-anchor="start" x="0" y="9">car</text><image style="display: none;"/><image height="12px" width="12px" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMi43MSIgaGVpZ2h0PSI4Ljc5IiB2aWV3Qm94PSIwIDAgMTIuNzEgOC43OSI+PHRpdGxlPmRyb3Bkb3duLWFycm93PC90aXRsZT48ZyBvcGFjaXR5PSIwLjEiPjxwYXRoIGQ9Ik0xMi43MSwyLjQ0QTIuNDEsMi40MSwwLDAsMSwxMiw0LjE2TDguMDgsOC4wOGEyLjQ1LDIuNDUsMCwwLDEtMy40NSwwTDAuNzIsNC4xNkEyLjQyLDIuNDIsMCwwLDEsMCwyLjQ0LDIuNDgsMi40OCwwLDAsMSwuNzEuNzFDMSwwLjQ3LDEuNDMsMCw2LjM2LDBTMTEuNzUsMC40NiwxMiwuNzFBMi40NCwyLjQ0LDAsMCwxLDEyLjcxLDIuNDRaIiBmaWxsPSIjMjMxZjIwIi8+PC9nPjxwYXRoIGQ9Ik02LjM2LDcuNzlhMS40MywxLjQzLDAsMCwxLTEtLjQyTDEuNDIsMy40NWExLjQ0LDEuNDQsMCwwLDEsMC0yYzAuNTYtLjU2LDkuMzEtMC41Niw5Ljg3LDBhMS40NCwxLjQ0LDAsMCwxLDAsMkw3LjM3LDcuMzdBMS40MywxLjQzLDAsMCwxLDYuMzYsNy43OVoiIGZpbGw9IiNmZmYiLz48L3N2Zz4=" transform="translate(32.0234375,3)"/></g></g><g transform="translate(8,9.100000000000001)"><image height="30px" width="28px" alt="*" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAyOCAzMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzLCA1KSI+CiAgICA8ZyB0cmFuc2Zvcm09Im1hdHJpeCguOTQ2OTkgMCAwIC45NDY5OCAtNjU0LjE2IC0xMzczLjIpIiBzdHJva2Utd2lkdGg9Ii45OTk2OSIgc3R5bGU9Ii13ZWJraXQtZm9udC1zbW9vdGhpbmc6YW50aWFsaWFzZWQiPgo8ZWxsaXBzZSBjeD0iNzAzLjk3IiBjeT0iMTQ2My4zIiByeD0iMTEuNjE2IiByeT0iMTEuNjE2IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMy4xNjgiIHN0eWxlPSItd2Via2l0LWZvbnQtc21vb3RoaW5nOmFudGlhbGlhc2VkIi8+CjxwYXRoIGQ9Im03MDMuOTcgMTQ3NXYtMTIuMjkzIiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMy4xNjgiIHN0eWxlPSItd2Via2l0LWZvbnQtc21vb3RoaW5nOmFudGlhbGlhc2VkIi8+CjxwYXRoIGQ9Im03MDUuMDggMTQ2My4zaDUuMzUwMyIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjIuMTEyIiBzdHlsZT0iLXdlYmtpdC1mb250LXNtb290aGluZzphbnRpYWxpYXNlZCIvPgo8cGF0aCBkPSJtNjkyLjMzIDE0NjMuM2gyMy4xMzEiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIzLjE2OCIgc3R5bGU9Ii13ZWJraXQtZm9udC1zbW9vdGhpbmc6YW50aWFsaWFzZWQiLz4KPGVsbGlwc2UgY3g9IjcwMy45NyIgY3k9IjE0NjMuMyIgcng9IjQuMjIzOSIgcnk9IjQuMjI0IiBmaWxsPSIjZmZmIi8+CjwvZz4KICA8L2c+Cjwvc3ZnPg=="/></g><g transform="translate(44,9.100000000000001)"><image height="30px" width="3px" alt="*" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAzIDMwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsIDApIj4KICAgIDxwYXRoIGQ9Im0yLjUgMC41djI5IiBmaWxsPSJub25lIiBzdHJva2U9IiMwMDAiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLW9wYWNpdHk9Ii4yNjI1Ii8+CiAgPC9nPgo8L3N2Zz4="/></g><g transform="translate(131.0234375,15.600000000000001)"><text class="blocklyText" dominant-baseline="central" x="0" y="9">drive at</text></g><g class="blocklyEditableText" transform="translate(195.9375,10.000000000000002)" style="cursor: default;"><rect rx="4" ry="4" x="0" y="0" height="29.2" width="82.2421875" class="blocklyFieldRect blocklyDropdownRect" stroke="#3971bf" fill="transparent"/><text class="blocklyText blocklyDropdownText" dominant-baseline="central" text-anchor="start" x="8" y="14.6">speed</text><image style="display: none;"/><image height="12px" width="12px" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMi43MSIgaGVpZ2h0PSI4Ljc5IiB2aWV3Qm94PSIwIDAgMTIuNzEgOC43OSI+PHRpdGxlPmRyb3Bkb3duLWFycm93PC90aXRsZT48ZyBvcGFjaXR5PSIwLjEiPjxwYXRoIGQ9Ik0xMi43MSwyLjQ0QTIuNDEsMi40MSwwLDAsMSwxMiw0LjE2TDguMDgsOC4wOGEyLjQ1LDIuNDUsMCwwLDEtMy40NSwwTDAuNzIsNC4xNkEyLjQyLDIuNDIsMCwwLDEsMCwyLjQ0LDIuNDgsMi40OCwwLDAsMSwuNzEuNzFDMSwwLjQ3LDEuNDMsMCw2LjM2LDBTMTEuNzUsMC40NiwxMiwuNzFBMi40NCwyLjQ0LDAsMCwxLDEyLjcxLDIuNDRaIiBmaWxsPSIjMjMxZjIwIi8+PC9nPjxwYXRoIGQ9Ik02LjM2LDcuNzlhMS40MywxLjQzLDAsMCwxLTEtLjQyTDEuNDIsMy40NWExLjQ0LDEuNDQsMCwwLDEsMC0yYzAuNTYtLjU2LDkuMzEtMC41Niw5Ljg3LDBhMS40NCwxLjQ0LDAsMCwxLDAsMkw3LjM3LDcuMzdBMS40MywxLjQzLDAsMCwxLDYuMzYsNy43OVoiIGZpbGw9IiNmZmYiLz48L3N2Zz4=" transform="translate(62.2421875,8.6)"/></g></g></g></svg>

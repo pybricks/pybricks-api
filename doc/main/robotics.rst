@@ -85,6 +85,8 @@
 
     .. automethod:: pybricks.robotics.DriveBase.stalled
 
+    .. pybricks-requirements:: gyro
+
     .. rubric:: Driving with the gyro
 
     .. blockimg:: pybricks_blockDriveBaseUseGyro
@@ -175,16 +177,47 @@
 
         The :meth:`done` and :meth:`stalled` methods have been moved.
 
+.. pybricks-requirements:: pybricks-frozen
 
-.. pybricks-requirements:: gyro
+.. blockimg:: pybricks_variables_set_car
+
+.. autoclass:: pybricks.robotics.Car
+    :no-members:
+
+    .. blockimg:: pybricks_blockCarSteer
+
+    .. automethod:: pybricks.robotics.Car.steer
+
+    .. blockimg:: pybricks_blockCarDrive_car_drive_at_power
+
+    .. automethod:: pybricks.robotics.Car.drive_power
+
+    .. blockimg:: pybricks_blockCarDrive_car_drive_at_speed
+
+    .. automethod:: pybricks.robotics.Car.drive_speed
 
 Examples
 -------------------
 
-Driving straight and turning in place
-**********************************************
+Driving straight and turning in place with a drive base
+********************************************************
 
-The following program shows the basics of driving and turning.
+This program shows the basics of driving and turning.
 
 .. literalinclude::
     ../../examples/pup/robotics/drivebase_basics.py
+
+Remote controlling a car with front wheel steering
+**************************************************
+
+This program shows how you can drive a car with front wheel steering
+using the :class:`remote control <pybricks.pupdevices.Remote>`.
+
+In this program, the ports match those of the `LEGO Technic 42099 Off-Roader
+<https://pybricks.com/projects/sets/technic/42099-off-roader/>`_, but you can
+use any other car with front wheel steering. If your vehicle has only one
+drive motor, you can use a single motor instead of a tuple of the motors used
+below.
+
+.. literalinclude::
+    ../../examples/pup/robotics/car_remote.py

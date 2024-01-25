@@ -241,6 +241,67 @@ class DriveBase:
         """
 
 
+class Car:
+    """A vehicle with one steering motor, and one or more motors for driving.
+
+    When you use this class, the steering motor will automatically find the
+    center position. This also determines which angle corresponds to 100%
+    steering.
+    """
+
+    def __init__(self, steering_motor: Motor, drive_motors: Motor | Tuple[Motor, ...]):
+        """Car(steering_motor, drive_motors)
+
+        Arguments:
+            steering_motor (Motor):
+                The motor that steers the front wheels.
+            drive_motors (Motor): The motor that drives the wheels. Use a tuple
+                for multiple motors.
+        """
+
+    def steer(self, percentage: Number) -> None:
+        """steer(percentage)
+
+        Steers the front wheels by a given amount. For 100% steering, it
+        steers right by the angle that was determined on initialization.
+        For -100% steering, it steers left and 0% means straight.
+
+        Arguments:
+            steering (Number, %): Amount to steer the front wheels.
+        """
+
+    def drive_power(self, power: Number) -> None:
+        """drive_power(power)
+
+        Drives the car at a given "power" level, as a percentage of the
+        battery voltage. Positive values drive forward, negative values drive
+        backward.
+
+        For ``power`` values below 30%, the car will coast the wheels in order
+        to roll out smoothly instead of braking abruptly.
+
+        This command is useful for remote control applications where you want
+        instant response to button presses or joystick movements.
+
+        Arguments:
+            speed (Number, %): Speed of the car.
+        """
+
+    def drive_speed(self, speed: Number) -> None:
+        """drive_speed(speed)
+
+        Drives the car at a given motor speed. Positive values drive forward,
+        negative values drive backward.
+
+        This command is useful for more precise driving with gentle
+        acceleration and deceleration. This automatically increases the power
+        to maintain speed as you drive across obstacles.
+
+        Arguments:
+            speed (Number, deg/s): Angular velocity of the drive motors.
+        """
+
+
 # HACK: hide from jedi
 if TYPE_CHECKING:
     del Motor

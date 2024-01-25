@@ -4,6 +4,10 @@
 
 ## Unreleased
 
+## Added
+
+- Added `pybricks.robotics.Car` class.
+
 ### Changed
 
 - Changed `pybricks.robotics.DriveBase` icon to two wheels instead of steering

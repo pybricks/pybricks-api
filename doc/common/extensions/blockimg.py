@@ -1,4 +1,3 @@
-import os
 import xml.etree.ElementTree as ET
 
 from docutils.parsers.rst import directives
