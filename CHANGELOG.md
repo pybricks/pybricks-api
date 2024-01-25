@@ -4,6 +4,11 @@
 
 ## Unreleased
 
+### Changed
+
+- Changed `pybricks.robotics.DriveBase` icon to two wheels instead of steering
+  wheel, which will be used for the new car class.
+
 ## 3.4.0b2 - 2023-11-28
 
 ### Changed
