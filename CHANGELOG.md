@@ -4,6 +4,8 @@
 
 ## Unreleased
 
+## 3.4.0b3 - 2024-01-30
+
 ## Added
 
 - Added `pybricks.robotics.Car` class.
