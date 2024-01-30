@@ -4,6 +4,14 @@
 
 ## Unreleased
 
+## 1.13.0 - 2024-01-30
+
+### Changed
+- Updated `pybricks_jedi` Python package to v1.13.0.
+
+### Changed
+- Updated `pybricks_jedi` Python package to v1.12.0.
+
 ## 1.12.0 - 2023-11-24
 
 ### Changed
