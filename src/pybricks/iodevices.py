@@ -298,12 +298,10 @@ class LWP3Device:
         """
 
     @overload
-    def name(self, name: str) -> None:
-        ...
+    def name(self, name: str) -> None: ...
 
     @overload
-    def name(self) -> str:
-        ...
+    def name(self) -> str: ...
 
     def name(self, *args):
         """name(name)
@@ -335,6 +333,66 @@ class LWP3Device:
 
         Returns:
             The raw binary message.
+        """
+
+
+class XboxController:
+    """Microsoft® Xbox® controller."""
+
+    buttons = _common.Keypad([])
+
+    def __init__(self):
+        """"""
+
+    def joystick_left(self) -> Tuple[int, int]:
+        """joystick_left() -> Tuple
+
+        Gets the left joystick position as percentages between -100%
+        and 100%. The center position is (0, 0).
+
+        Returns:
+            Tuple of X (horizontal) and Y (vertical) position.
+        """
+
+    def joystick_right(self) -> Tuple[int, int]:
+        """joystick_right() -> Tuple
+
+        Gets the right joystick position as percentages between -100%
+        and 100%. The center position is (0, 0).
+
+        Returns:
+            Tuple of X (horizontal) and Y (vertical) position.
+        """
+
+    def triggers(self) -> Tuple[int, int]:
+        """triggers() -> Tuple
+
+        Gets the left and right trigger positions as percentages between 0%
+        and 100%.
+
+        Returns:
+            Tuple of left and right trigger positions.
+        """
+
+    def dpad(self) -> int:
+        """dpad() -> int
+
+        Gets the direction-pad position. ``1`` is up, ``2`` is up-right,
+        ``3`` is right, ``4`` is down-right, ``5`` is down, ``6`` is
+        down-left, ``7`` is left, ``8`` is up-left, and ``0`` is not pressed.
+
+        Returns:
+            Direction-pad position.
+        """
+
+    def profile(self) -> int:
+        """profile() -> int
+
+        Gets the current profile of the controller. Only available on the
+        Xbox Elite Controller Series 2.
+
+        Returns:
+            Profile number.
         """
 
 

@@ -6,7 +6,16 @@ speakers, and batteries."""
 
 from __future__ import annotations
 
-from typing import Union, Iterable, overload, Optional, Tuple, Collection, TYPE_CHECKING
+from typing import (
+    Union,
+    Iterable,
+    overload,
+    Optional,
+    Tuple,
+    Collection,
+    Set,
+    TYPE_CHECKING,
+)
 
 from .tools import Matrix
 from .parameters import Axis, Direction, Stop, Button, Port, Color, Side
@@ -18,24 +27,18 @@ if TYPE_CHECKING:
 
     _T_co = TypeVar("_T_co", covariant=True)
 
-    class MaybeAwaitable(None, Awaitable[None]):
-        ...
+    class MaybeAwaitable(None, Awaitable[None]): ...
 
     # HACK: Cannot subclass bool, so using Any instead.
-    class MaybeAwaitableBool(Any, Awaitable[bool]):
-        ...
+    class MaybeAwaitableBool(Any, Awaitable[bool]): ...
 
-    class MaybeAwaitableFloat(float, Awaitable[float]):
-        ...
+    class MaybeAwaitableFloat(float, Awaitable[float]): ...
 
-    class MaybeAwaitableInt(int, Awaitable[int]):
-        ...
+    class MaybeAwaitableInt(int, Awaitable[int]): ...
 
-    class MaybeAwaitableTuple(Tuple[_T_co], Awaitable[Tuple[_T_co]]):
-        ...
+    class MaybeAwaitableTuple(Tuple[_T_co], Awaitable[Tuple[_T_co]]): ...
 
-    class MaybeAwaitableColor(Color, Awaitable[Color]):
-        ...
+    class MaybeAwaitableColor(Color, Awaitable[Color]): ...
 
 
 class System:
@@ -92,12 +95,10 @@ class System:
         """
 
     @overload
-    def storage(self, offset: int, *, read: int) -> bytes:
-        ...
+    def storage(self, offset: int, *, read: int) -> bytes: ...
 
     @overload
-    def storage(self, offset: int, *, write: bytes) -> None:
-        ...
+    def storage(self, offset: int, *, write: bytes) -> None: ...
 
     def storage(self, offset, read=None, write=None):
         """
@@ -168,12 +169,10 @@ class DCMotor:
         is generated while the motor is still moving."""
 
     @overload
-    def settings(self, max_voltage: Number) -> None:
-        ...
+    def settings(self, max_voltage: Number) -> None: ...
 
     @overload
-    def settings(self) -> Tuple[int]:
-        ...
+    def settings(self) -> Tuple[int]: ...
 
     def settings(self, *args):
         """
@@ -206,12 +205,10 @@ class Control:
         speed: Optional[Number] = None,
         acceleration: Optional[Number] = None,
         torque: Optional[Number] = None,
-    ) -> None:
-        ...
+    ) -> None: ...
 
     @overload
-    def limits(self) -> Tuple[int, int, int]:
-        ...
+    def limits(self) -> Tuple[int, int, int]: ...
 
     def limits(self, *args):
         """
@@ -244,12 +241,10 @@ class Control:
         kd: Optional[Number] = None,
         integral_deadzone: Optional[Number] = None,
         integral_rate: Optional[Number] = None,
-    ) -> None:
-        ...
+    ) -> None: ...
 
     @overload
-    def pid(self) -> Tuple[int, int, int, int, int]:
-        ...
+    def pid(self) -> Tuple[int, int, int, int, int]: ...
 
     def pid(self, *args):
         """pid(kp, ki, kd, integral_deadzone, integral_rate)
@@ -277,12 +272,10 @@ class Control:
     @overload
     def target_tolerances(
         self, speed: Optional[Number] = None, position: Optional[Number] = None
-    ) -> None:
-        ...
+    ) -> None: ...
 
     @overload
-    def target_tolerances(self) -> Tuple[int, int]:
-        ...
+    def target_tolerances(self) -> Tuple[int, int]: ...
 
     def target_tolerances(self, *args):
         """target_tolerances(speed, position)
@@ -303,12 +296,10 @@ class Control:
     @overload
     def stall_tolerances(
         self, speed: Optional[Number] = None, time: Optional[Number] = None
-    ) -> None:
-        ...
+    ) -> None: ...
 
     @overload
-    def stall_tolerances(self) -> Tuple[int, int]:
-        ...
+    def stall_tolerances(self) -> Tuple[int, int]: ...
 
     def stall_tolerances(self, speed, time):
         """stall_tolerances(speed, time)
@@ -350,12 +341,10 @@ class Model:
         """
 
     @overload
-    def settings(self, values: tuple) -> None:
-        ...
+    def settings(self, values: tuple) -> None: ...
 
     @overload
-    def settings(self) -> tuple:
-        ...
+    def settings(self) -> tuple: ...
 
     def settings(self, speed, time):
         """settings(values)
@@ -620,12 +609,10 @@ class Speaker:
     """Plays beeps and sounds using a speaker."""
 
     @overload
-    def volume(self, volume: Number) -> None:
-        ...
+    def volume(self, volume: Number) -> None: ...
 
     @overload
-    def volume(self) -> int:
-        ...
+    def volume(self) -> int: ...
 
     def volume(self, *args):
         """volume(volume)
@@ -913,11 +900,10 @@ class LightMatrix:
 class Keypad:
     """Get status of buttons on a keypad layout."""
 
-    def __init__(self, active_buttons):
-        ...
+    def __init__(self, active_buttons): ...
 
-    def pressed(self) -> Collection[Button]:
-        """pressed() -> Collection[Button]
+    def pressed(self) -> Set[Button]:
+        """pressed() -> Set[Button]
 
         Checks which buttons are currently pressed.
 
@@ -1027,12 +1013,10 @@ class Accelerometer(SimpleAccelerometer):
     """Get measurements from an accelerometer."""
 
     @overload
-    def acceleration(self, axis: Axis) -> float:
-        ...
+    def acceleration(self, axis: Axis) -> float: ...
 
     @overload
-    def acceleration(self) -> Matrix:
-        ...
+    def acceleration(self) -> Matrix: ...
 
     def acceleration(self, *args):
         """
@@ -1082,12 +1066,10 @@ class IMU(Accelerometer):
         self,
         angular_velocity_threshold: float = None,
         acceleration_threshold: float = None,
-    ) -> None:
-        ...
+    ) -> None: ...
 
     @overload
-    def settings(self) -> Tuple[float, float]:
-        ...
+    def settings(self) -> Tuple[float, float]: ...
 
     def settings(self, *args):
         """
@@ -1152,12 +1134,10 @@ class IMU(Accelerometer):
         """
 
     @overload
-    def angular_velocity(self, axis: Axis) -> float:
-        ...
+    def angular_velocity(self, axis: Axis) -> float: ...
 
     @overload
-    def angular_velocity(self) -> Matrix:
-        ...
+    def angular_velocity(self) -> Matrix: ...
 
     def angular_velocity(self, *args):
         """
@@ -1271,12 +1251,10 @@ class CommonColorSensor:
         """
 
     @overload
-    def detectable_colors(self, colors: Collection[Color]) -> None:
-        ...
+    def detectable_colors(self, colors: Collection[Color]) -> None: ...
 
     @overload
-    def detectable_colors(self) -> Collection[Color]:
-        ...
+    def detectable_colors(self) -> Collection[Color]: ...
 
     def detectable_colors(self, *args):
         """

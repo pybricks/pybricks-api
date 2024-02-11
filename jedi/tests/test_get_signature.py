@@ -253,9 +253,7 @@ METHOD_PARAMS = [
     ),
     pytest.param("pybricks.hubs", "MoveHub", "battery.voltage", [([], "int")]),
     pytest.param("pybricks.hubs", "MoveHub", "battery.current", [([], "int")]),
-    pytest.param(
-        "pybricks.hubs", "MoveHub", "button.pressed", [([], "Collection[Button]")]
-    ),
+    pytest.param("pybricks.hubs", "MoveHub", "button.pressed", [([], "Set[Button]")]),
     pytest.param(
         "pybricks.hubs",
         "MoveHub",
@@ -290,9 +288,7 @@ METHOD_PARAMS = [
     ),
     pytest.param("pybricks.hubs", "CityHub", "battery.voltage", [([], "int")]),
     pytest.param("pybricks.hubs", "CityHub", "battery.current", [([], "int")]),
-    pytest.param(
-        "pybricks.hubs", "CityHub", "button.pressed", [([], "Collection[Button]")]
-    ),
+    pytest.param("pybricks.hubs", "CityHub", "button.pressed", [([], "Set[Button]")]),
     pytest.param(
         "pybricks.hubs",
         "CityHub",
@@ -358,7 +354,7 @@ METHOD_PARAMS = [
     pytest.param("pybricks.hubs", "TechnicHub", "battery.voltage", [([], "int")]),
     pytest.param("pybricks.hubs", "TechnicHub", "battery.current", [([], "int")]),
     pytest.param(
-        "pybricks.hubs", "TechnicHub", "button.pressed", [([], "Collection[Button]")]
+        "pybricks.hubs", "TechnicHub", "button.pressed", [([], "Set[Button]")]
     ),
     pytest.param(
         "pybricks.hubs",
@@ -423,9 +419,7 @@ METHOD_PARAMS = [
         "display.text",
         [(["text: str", "on: Number=500", "off: Number=50"], "None")],
     ),
-    pytest.param(
-        "pybricks.hubs", "PrimeHub", "buttons.pressed", [([], "Collection[Button]")]
-    ),
+    pytest.param("pybricks.hubs", "PrimeHub", "buttons.pressed", [([], "Set[Button]")]),
     pytest.param("pybricks.hubs", "PrimeHub", "imu.up", [([], "Side")]),
     pytest.param("pybricks.hubs", "PrimeHub", "imu.tilt", [([], "Tuple[int, int]")]),
     pytest.param(
@@ -512,7 +506,7 @@ METHOD_PARAMS = [
         [(["colors: Collection[Color]", "interval: Number"], "None")],
     ),
     pytest.param(
-        "pybricks.hubs", "EssentialHub", "button.pressed", [([], "Collection[Button]")]
+        "pybricks.hubs", "EssentialHub", "button.pressed", [([], "Set[Button]")]
     ),
     pytest.param("pybricks.hubs", "EssentialHub", "imu.up", [([], "Side")]),
     pytest.param(
@@ -922,7 +916,7 @@ METHOD_PARAMS = [
         "pybricks.pupdevices",
         "Remote",
         "buttons.pressed",
-        [([], "Collection[Button]")],
+        [([], "Set[Button]")],
     ),
     pytest.param("pybricks.tools", "StopWatch", "time", [([], "int")]),
     pytest.param("pybricks.tools", "StopWatch", "pause", [([], "None")]),

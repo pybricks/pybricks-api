@@ -11,6 +11,7 @@
 
    pupdevice
    lwp3device
+   xboxcontroller
 
 This module has classes for generic and custom input/output devices.
 
@@ -25,3 +26,9 @@ This module has classes for generic and custom input/output devices.
 .. figure:: ../../main/cad/output/hub-lwp3.png
    :width: 80 %
    :target: lwp3device.html
+
+.. pybricks-classlink:: XboxController
+
+.. figure:: ../../main/diagrams_source/xboxcontroller.png
+   :width: 40 %
+   :target: xboxcontroller.html
