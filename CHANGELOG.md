@@ -4,6 +4,8 @@
 
 ## Unreleased
 
+## 3.4.0b4 - 2024-02-14
+
 ## Added
 
 - Added `pybricks.iodevices.XboxController` class.
