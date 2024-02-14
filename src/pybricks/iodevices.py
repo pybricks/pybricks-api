@@ -337,7 +337,14 @@ class LWP3Device:
 
 
 class XboxController:
-    """Microsoft® Xbox® controller."""
+    """Use the Microsoft® Xbox® controller as a sensor in your projects to
+    control them remotely.
+
+    The hub will scan for the controller and connect to it. It will disconnect
+    when the program ends.
+
+    For tips on connectivity and pairing, see :ref:`below <xbox-controller-pairing>`.
+    """
 
     buttons = _common.Keypad([])
 
