@@ -1335,15 +1335,24 @@ class BLE:
         """broadcast(data)
 
         Starts broadcasting the given data on
-        the *broadcast_channel* you selected when initializing the hub.
+        the ``broadcast_channel`` you selected when initializing the hub.
 
         Data may be of type ``int``, ``float``, ``str``, ``bytes``,
-        ``True``, or ``False``, or a tuple thereof.
+        ``True``, or ``False``, or a list thereof.
+
+        Choose ``None`` to stop broadcasting. This helps improve performance
+        when you don't need the broadcast feature, especially when observing
+        at the same time.
 
         The total data size is quite limited (26 bytes). ``True`` and
         ``False`` take 1 byte each. ``float`` takes 5 bytes. ``int`` takes 2 to
         5 bytes depending on how big the number is. ``str`` and ``bytes`` take
         the number of bytes in the object plus one extra byte.
+
+        When multitasking, only one task can broadcast at a time. To broadcast
+        information from multiple tasks (or block stacks), you could use a
+        dedicated separate task that broadcast new values when one or more
+        variables change.
 
         Args:
             data: The value or values to be broadcast.
