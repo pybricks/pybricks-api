@@ -14,7 +14,7 @@ watch = StopWatch()
 while watch.time() < 5000:
 
     # Set light to green if pressed, else red.
-    if hub.button.pressed():
+    if hub.buttons.pressed():
         hub.light.on(Color.GREEN)
     else:
         hub.light.on(Color.RED)

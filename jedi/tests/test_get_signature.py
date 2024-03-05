@@ -253,7 +253,7 @@ METHOD_PARAMS = [
     ),
     pytest.param("pybricks.hubs", "MoveHub", "battery.voltage", [([], "int")]),
     pytest.param("pybricks.hubs", "MoveHub", "battery.current", [([], "int")]),
-    pytest.param("pybricks.hubs", "MoveHub", "button.pressed", [([], "Set[Button]")]),
+    pytest.param("pybricks.hubs", "MoveHub", "buttons.pressed", [([], "Set[Button]")]),
     pytest.param(
         "pybricks.hubs",
         "MoveHub",
@@ -288,7 +288,7 @@ METHOD_PARAMS = [
     ),
     pytest.param("pybricks.hubs", "CityHub", "battery.voltage", [([], "int")]),
     pytest.param("pybricks.hubs", "CityHub", "battery.current", [([], "int")]),
-    pytest.param("pybricks.hubs", "CityHub", "button.pressed", [([], "Set[Button]")]),
+    pytest.param("pybricks.hubs", "CityHub", "buttons.pressed", [([], "Set[Button]")]),
     pytest.param(
         "pybricks.hubs",
         "CityHub",
@@ -354,7 +354,7 @@ METHOD_PARAMS = [
     pytest.param("pybricks.hubs", "TechnicHub", "battery.voltage", [([], "int")]),
     pytest.param("pybricks.hubs", "TechnicHub", "battery.current", [([], "int")]),
     pytest.param(
-        "pybricks.hubs", "TechnicHub", "button.pressed", [([], "Set[Button]")]
+        "pybricks.hubs", "TechnicHub", "buttons.pressed", [([], "Set[Button]")]
     ),
     pytest.param(
         "pybricks.hubs",
@@ -506,7 +506,7 @@ METHOD_PARAMS = [
         [(["colors: Collection[Color]", "interval: Number"], "None")],
     ),
     pytest.param(
-        "pybricks.hubs", "EssentialHub", "button.pressed", [([], "Set[Button]")]
+        "pybricks.hubs", "EssentialHub", "buttons.pressed", [([], "Set[Button]")]
     ),
     pytest.param("pybricks.hubs", "EssentialHub", "imu.up", [([], "Side")]),
     pytest.param(

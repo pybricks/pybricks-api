@@ -55,7 +55,7 @@ City Hub
 
     .. blockimg:: pybricks_blockButtonIsPressed_CityHub
 
-    .. automethod:: pybricks.hubs::CityHub.button.pressed
+    .. automethod:: pybricks.hubs::CityHub.buttons.pressed
 
     .. automethod:: pybricks.hubs::CityHub.system.set_stop_button
 

@@ -40,7 +40,7 @@ class MoveHub:
     light = _common.ColorLight()
     imu = _common.SimpleAccelerometer()
     system = _common.System()
-    button = _common.Keypad([_Button.CENTER])
+    buttons = _common.Keypad([_Button.CENTER])
     ble = _common.BLE()
 
     def __init__(
@@ -74,7 +74,7 @@ class CityHub:
     battery = _common.Battery()
     light = _common.ColorLight()
     system = _common.System()
-    button = _common.Keypad([_Button.CENTER])
+    buttons = _common.Keypad([_Button.CENTER])
     ble = _common.BLE()
 
     def __init__(
@@ -105,7 +105,7 @@ class TechnicHub:
     light = _common.ColorLight()
     imu = _common.IMU()
     system = _common.System()
-    button = _common.Keypad([_Button.CENTER])
+    buttons = _common.Keypad([_Button.CENTER])
     ble = _common.BLE()
 
     def __init__(
@@ -146,7 +146,7 @@ class EssentialHub:
     # These class attributes are here for auto-documentation only.
     # In reality, they are instance attributes created by __init__.
     battery = _common.Battery()
-    button = _common.Keypad([_Button.CENTER])
+    buttons = _common.Keypad([_Button.CENTER])
     charger = _common.Charger()
     light = _common.ColorLight()
     imu = _common.IMU()

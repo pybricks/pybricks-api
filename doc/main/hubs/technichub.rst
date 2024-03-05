@@ -95,7 +95,7 @@ Technic Hub
 
     .. blockimg:: pybricks_blockButtonIsPressed_TechnicHub
 
-    .. automethod:: pybricks.hubs::TechnicHub.button.pressed
+    .. automethod:: pybricks.hubs::TechnicHub.buttons.pressed
 
     .. automethod:: pybricks.hubs::TechnicHub.system.set_stop_button
 

@@ -77,7 +77,7 @@ Move Hub
 
     .. blockimg:: pybricks_blockButtonIsPressed_PrimeHub
 
-    .. automethod:: pybricks.hubs::MoveHub.button.pressed
+    .. automethod:: pybricks.hubs::MoveHub.buttons.pressed
 
     .. automethod:: pybricks.hubs::MoveHub.system.set_stop_button
 

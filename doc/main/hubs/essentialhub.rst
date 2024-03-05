@@ -32,7 +32,7 @@ Essential Hub
 
     .. blockimg:: pybricks_blockButtonIsPressed_EssentialHub
 
-    .. automethod:: pybricks.hubs::EssentialHub.button.pressed
+    .. automethod:: pybricks.hubs::EssentialHub.buttons.pressed
 
     .. automethod:: pybricks.hubs::EssentialHub.system.set_stop_button
 
