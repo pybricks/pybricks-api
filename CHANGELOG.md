@@ -4,6 +4,8 @@
 
 ## Unreleased
 
+## 3.4.0b4 - 2024-03-05
+
 ## Changed
 
 - Updates for v3.4.0b3 firmware.
