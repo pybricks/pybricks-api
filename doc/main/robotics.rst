@@ -177,9 +177,11 @@
 
         The :meth:`done` and :meth:`stalled` methods have been moved.
 
-.. pybricks-requirements:: pybricks-frozen
+.. pybricks-requirements::
 
 .. blockimg:: pybricks_variables_set_car
+
+.. versionadded:: 3.4
 
 .. autoclass:: pybricks.robotics.Car
     :no-members:

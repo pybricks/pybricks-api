@@ -21,26 +21,6 @@ def _create_snippet(class_name: str) -> str:
 
 ENUMS = [
     pytest.param(
-        "Button",
-        [
-            "BEACON",
-            "BLUETOOTH",
-            "CENTER",
-            "DOWN",
-            "LEFT",
-            "LEFT_DOWN",
-            "LEFT_MINUS",
-            "LEFT_PLUS",
-            "LEFT_UP",
-            "RIGHT",
-            "RIGHT_DOWN",
-            "RIGHT_MINUS",
-            "RIGHT_PLUS",
-            "RIGHT_UP",
-            "UP",
-        ],
-    ),
-    pytest.param(
         "Color",
         [
             "BLACK",

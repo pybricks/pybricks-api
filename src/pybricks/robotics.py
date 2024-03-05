@@ -131,12 +131,10 @@ class DriveBase:
         straight_acceleration: Optional[Number] = None,
         turn_rate: Optional[Number] = None,
         turn_acceleration: Optional[Number] = None,
-    ) -> None:
-        ...
+    ) -> None: ...
 
     @overload
-    def settings(self) -> Tuple[int, int, int, int]:
-        ...
+    def settings(self) -> Tuple[int, int, int, int]: ...
 
     def settings(self, *args):
         """
@@ -249,14 +247,22 @@ class Car:
     steering.
     """
 
-    def __init__(self, steering_motor: Motor, drive_motors: Motor | Tuple[Motor, ...]):
-        """Car(steering_motor, drive_motors)
+    def __init__(
+        self,
+        steer_motor: Motor,
+        drive_motors: Motor | Tuple[Motor, ...],
+        torque_limit: Number = 100,
+    ):
+        """Car(steer_motor, drive_motors, torque_limit=100)
 
         Arguments:
-            steering_motor (Motor):
+            steer_motor (Motor):
                 The motor that steers the front wheels.
             drive_motors (Motor): The motor that drives the wheels. Use a tuple
                 for multiple motors.
+            torque_limit (Number, %): The maximum torque limit used to find the
+                endpoints for the steering mechanism, as a percentage of the
+                maximum torque of the steering motor.
         """
 
     def steer(self, percentage: Number) -> None:
@@ -273,11 +279,11 @@ class Car:
     def drive_power(self, power: Number) -> None:
         """drive_power(power)
 
-        Drives the car at a given "power" level, as a percentage of the
-        battery voltage. Positive values drive forward, negative values drive
-        backward.
+        Drives the car at a given power level. Positive values drive forward,
+        negative values drive backward.
 
-        For ``power`` values below 30%, the car will coast the wheels in order
+        The ``power`` value is used to set the motor voltage as a percentage of
+        the battery voltage. Below 10%, the car will coast the wheels in order
         to roll out smoothly instead of braking abruptly.
 
         This command is useful for remote control applications where you want
