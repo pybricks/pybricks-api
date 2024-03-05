@@ -26,8 +26,7 @@ class StopWatch:
     """A stopwatch to measure time intervals. Similar to the stopwatch
     feature on your phone."""
 
-    def __init__(self):
-        ...
+    def __init__(self): ...
 
     def time(self) -> int:
         """time() -> int: ms
@@ -108,38 +107,27 @@ class Matrix:
 
     A :class:`.Matrix` object is immutable."""
 
-    def __add__(self, other) -> Matrix:
-        ...
+    def __add__(self, other) -> Matrix: ...
 
-    def __iadd__(self, other) -> Matrix:
-        ...
+    def __iadd__(self, other) -> Matrix: ...
 
-    def __sub__(self, other) -> Matrix:
-        ...
+    def __sub__(self, other) -> Matrix: ...
 
-    def __isub__(self, other) -> Matrix:
-        ...
+    def __isub__(self, other) -> Matrix: ...
 
-    def __mul__(self, other) -> Matrix:
-        ...
+    def __mul__(self, other) -> Matrix: ...
 
-    def __rmul__(self, other) -> Matrix:
-        ...
+    def __rmul__(self, other) -> Matrix: ...
 
-    def __imul__(self, other) -> Matrix:
-        ...
+    def __imul__(self, other) -> Matrix: ...
 
-    def __truediv__(self, other) -> Matrix:
-        ...
+    def __truediv__(self, other) -> Matrix: ...
 
-    def __itruediv__(self, other) -> Matrix:
-        ...
+    def __itruediv__(self, other) -> Matrix: ...
 
-    def __floordiv__(self, other) -> Matrix:
-        ...
+    def __floordiv__(self, other) -> Matrix: ...
 
-    def __ifloordiv__(self, other) -> Matrix:
-        ...
+    def __ifloordiv__(self, other) -> Matrix: ...
 
     def __init__(self, rows: Sequence[Sequence[float]]):
         """Matrix(rows)
@@ -275,15 +263,21 @@ def multitask(*coroutines: Coroutine, race=False) -> MaybeAwaitableTuple:
     """
 
 
-def run_task(coroutine: Coroutine):
+def run_task(coroutine: Coroutine) -> Optional[bool]:
     """
-    run_task(coroutine)
+    run_task(coroutine) -> bool | None
 
     Runs a coroutine from start to finish while blocking the rest of the
     program. This is used primarily to run the main coroutine of a program.
 
+    Calls to this function are not allowed to be nested.
+
     Arguments:
         coroutine (coroutine): The main coroutine to run.
+
+    Returns:
+        If no ``coroutine`` is given, this function returns whether the
+        run loop is currently active (``True``) or not (``False``).
     """
 
 
