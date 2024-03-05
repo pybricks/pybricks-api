@@ -17,11 +17,11 @@ Xbox Controller
 
     Buttons include:
 
-      * ``"A"``, ``"B"``, ``"X"``, ``"Y"``.
-      * ``"LB"`` and ``"RB"`` (bumpers).
-      * ``"LJ"`` and ``"RJ"`` (pressing the joysticks).
-      * ``"VIEW"``, ``"MENU"``, ``"GUIDE"`` (the Xbox logo), and ``"UPLOAD"``.
-      * ``"P1"``, ``"P2"``, ``"P3"``, and ``"P4"`` (Elite Series 2 only).
+      * ``Button.A``, ``Button.B``, ``Button.X``, ``Button.Y``.
+      * ``Button.LB`` and ``Button.RB`` (bumpers).
+      * ``Button.LJ`` and ``Button.RJ`` (pressing the joysticks).
+      * ``Button.VIEW``, ``Button.MENU``, ``Button.GUIDE`` (the Xbox logo), and ``Button.UPLOAD``.
+      * ``Button.P1``, ``Button.P2``, ``Button.P3``, and ``Button.P4`` (Elite Series 2 only).
         Pressing the paddles may also be detected as other button presses,
         depending on the currently active profile.
 

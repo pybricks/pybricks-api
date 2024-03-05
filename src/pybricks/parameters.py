@@ -115,8 +115,7 @@ class Color:
     def __repr__(self):
         return "Color(h={}, s={}, v={})".format(self.h, self.s, self.v)
 
-    def __eq__(self, other: Color) -> bool:
-        ...
+    def __eq__(self, other: Color) -> bool: ...
 
     def __mul__(self, scale: float) -> Color:
         v = max(0, min(self.v * scale, 100))
@@ -222,6 +221,22 @@ class Button(_PybricksEnum):
     RIGHT_UP: Button = 9
     RIGHT_PLUS: Button = 9
     BLUETOOTH: Button = 9
+    A: Button = 0
+    B: Button = 0
+    X: Button = 0
+    Y: Button = 0
+    LB: Button = 0
+    RB: Button = 0
+    LJ: Button = 0
+    RJ: Button = 0
+    P1: Button = 0
+    P2: Button = 0
+    P3: Button = 0
+    P4: Button = 0
+    GUIDE: Button = 0
+    MENU: Button = 0
+    UPLOAD: Button = 0
+    VIEW: Button = 0
 
 
 class Side(_PybricksEnum):
