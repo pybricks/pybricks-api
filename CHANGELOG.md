@@ -4,9 +4,15 @@
 
 ## Unreleased
 
+## 3.4.0 - 2024-03-11
+
+### Changed
+
+- Update list block screenshots to match implementation.
+
 ## 3.4.0b5 - 2024-03-05
 
-## Changed
+### Changed
 
 - Updates for v3.4.0b3 firmware (out of sync with docs).
 - Changed `hub.button` to `hub.buttons` on single button hubs. Access via
@@ -14,17 +20,17 @@
 
 ## 3.4.0b4 - 2024-02-14
 
-## Added
+### Added
 
 - Added `pybricks.iodevices.XboxController` class.
 
-## Changed
+### Changed
 
 - Changed `buttons.pressed` return type to set.
 
 ## 3.4.0b3 - 2024-01-30
 
-## Added
+### Added
 
 - Added `pybricks.robotics.Car` class.
 
@@ -45,7 +51,7 @@
 
 ## 3.3.0c1 - 2023-11-20
 
-## Added
+### Added
 - Enabled tilt and orientation config for `MoveHub()`.
 - Documented `Motor.close()`
 
@@ -59,7 +65,7 @@
   toggled using `use_gyro` instead of using a separate `GyroDriveBase` class.
 - Documentation updates to match firmware 3.3.0b5--3.3.0b9 updates.
 
-## Added
+### Added
 - Added `set` to `ubuiltins` module.
 - Basic multitasking docs.
 - Awaitable keyword for awaitable methods and functions.
@@ -141,7 +147,7 @@
 
 ## 3.2.0b1-r1 - 2022-06-09
 
-## Added
+### Added
 - Added `__init__.py` to `pybricks` package.
 
 ## 3.2.0b1 - 2022-06-02
@@ -212,7 +218,7 @@ not correspond to Pybricks firmware version numbers.**
 
 ## 1.3.2 - 2021-04-26
 
-## Changed
+### Changed
 - Theme style fixes.
 - Example code fixes
 - Match doc version to firmware version.
