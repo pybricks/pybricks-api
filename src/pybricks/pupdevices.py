@@ -55,15 +55,18 @@ class Motor(_common.Motor):
                 turn when you give a positive speed value or
                 angle.
             gears (list):
-                List of gears linked to the motor.
+                List of gears linked to the motor. The gear connected
+                to the motor comes first and the gear connected to the output
+                comes last.
 
                 For example: ``[12, 36]`` represents a gear train with a
-                12-tooth and a 36-tooth gear. Use a list of lists for multiple
+                12-tooth gear connected to the motor and a 36-tooth gear
+                connected to the output. Use a list of lists for multiple
                 gear trains, such as ``[[12, 36], [20, 16, 40]]``.
 
                 When you specify a gear train, all motor commands and settings
                 are automatically adjusted to account for the resulting gear
-                ratio.  The motor direction remains unchanged by this.
+                ratio. The motor direction remains unchanged by this.
             reset_angle (bool):
                 Choose ``True`` to reset the rotation sensor value to the
                 absolute marker angle (between -180 and 179).
@@ -124,12 +127,10 @@ class Remote:
         """
 
     @overload
-    def name(self, name: str) -> None:
-        ...
+    def name(self, name: str) -> None: ...
 
     @overload
-    def name(self) -> str:
-        ...
+    def name(self) -> str: ...
 
     def name(self, *args):
         """name(name)
