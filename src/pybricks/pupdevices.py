@@ -55,10 +55,13 @@ class Motor(_common.Motor):
                 turn when you give a positive speed value or
                 angle.
             gears (list):
-                List of gears linked to the motor.
+                List of gears linked to the motor, with the gear connected
+                to the motor listed and the gear connected to the output listed
+                last.
 
                 For example: ``[12, 36]`` represents a gear train with a
-                12-tooth and a 36-tooth gear. Use a list of lists for multiple
+                12-tooth gear connected to the motor and a 36-tooth gear
+                connected to the output. Use a list of lists for multiple
                 gear trains, such as ``[[12, 36], [20, 16, 40]]``.
 
                 When you specify a gear train, all motor commands and settings
