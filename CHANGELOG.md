@@ -4,6 +4,12 @@
 
 ## Unreleased
 
+## 3.4.1 - 2024-03-11
+
+### Fixed
+
+- Fixed Read The Docs virtual environment workflow.
+
 ## 3.4.0 - 2024-03-11
 
 ### Changed
