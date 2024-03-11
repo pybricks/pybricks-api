@@ -56,7 +56,7 @@ class Motor(_common.Motor):
                 angle.
             gears (list):
                 List of gears linked to the motor, with the gear connected
-                to the motor listed and the gear connected to the output listed
+                to the motor first and the gear connected to the output
                 last.
 
                 For example: ``[12, 36]`` represents a gear train with a
