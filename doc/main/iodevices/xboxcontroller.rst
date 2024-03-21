@@ -18,6 +18,8 @@ Xbox Controller
     Buttons include:
 
       * ``Button.A``, ``Button.B``, ``Button.X``, ``Button.Y``.
+      * ``Button.UP``, ``Button.DOWN``, ``Button.LEFT``, ``Button.RIGHT``
+        (direction pad). At most two of these can be pressed at the same time.
       * ``Button.LB`` and ``Button.RB`` (bumpers).
       * ``Button.LJ`` and ``Button.RJ`` (pressing the joysticks).
       * ``Button.VIEW``, ``Button.MENU``, ``Button.GUIDE`` (the Xbox logo), and ``Button.UPLOAD``.
@@ -53,6 +55,16 @@ Xbox Controller
   .. blockimg:: pybricks_blockJoystickValue_profile
 
   .. automethod:: pybricks.iodevices::XboxController.profile
+
+  .. blockimg:: pybricks_blockGamepadRumble_default
+
+  .. blockimg:: pybricks_blockGamepadRumble_default_with_list
+      :stack:
+
+  .. blockimg:: pybricks_blockGamepadRumble_with_options
+      :stack:
+
+  .. automethod:: pybricks.iodevices::XboxController.rumble
 
 .. _xbox-controller-pairing:
 

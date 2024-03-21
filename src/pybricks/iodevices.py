@@ -12,6 +12,7 @@ from .parameters import Port as _Port
 
 if TYPE_CHECKING:
     from ._common import MaybeAwaitable, MaybeAwaitableTuple
+    from .parameters import Number
 
 
 class PUPDevice:
@@ -384,12 +385,17 @@ class XboxController:
     def dpad(self) -> int:
         """dpad() -> int
 
-        Gets the direction-pad position. ``1`` is up, ``2`` is up-right,
-        ``3`` is right, ``4`` is down-right, ``5`` is down, ``6`` is
-        down-left, ``7`` is left, ``8`` is up-left, and ``0`` is not pressed.
+        Gets the direction-pad value. ``1`` is up, ``2`` is up-right, ``3``
+        is right, ``4`` is down-right, ``5`` is down, ``6`` is down-left,
+        ``7`` is left, ``8`` is up-left, and ``0`` is not pressed.
+
+        This is essentially the same as reading the state of the
+        ``Button.UP``, ``Button.RIGHT``, ``Button.DOWN``, and ``Button.LEFT``
+        buttons, but this method conveniently returns a number that indicates
+        a direction.
 
         Returns:
-            Direction-pad position.
+            Direction-pad position, indicating a direction.
         """
 
     def profile(self) -> int:
@@ -402,8 +408,39 @@ class XboxController:
             Profile number.
         """
 
+    def rumble(
+        self,
+        power: Number | Tuple[Number, Number, Number, Number] = 100,
+        duration: int = 200,
+        count: int = 1,
+        delay: int = 100,
+    ) -> MaybeAwaitable:
+        """rumble(power=100, duration=200, count=1, delay=100)
+
+        Makes the builtin actuators rumble, creating force feedback.
+
+        If you give a single ``power`` value, the left and right main actuators
+        will both rumble with that power. For more fine-grained control, set
+        ``power`` as a tuple of four values, which control the left main
+        actuator, right main actuator, left trigger actuator, and the right
+        trigger actuator, respectively. For example, ``power=(0, 0, 100, 0)``
+        makes the left trigger rumble at full power.
+
+        The rumble runs in the background while your program continues. To
+        make your program wait, just pause the program for a matching duration.
+        For one rumble, this equals ``duration``. For multiple rumbles, this
+        equals ``count * (duration + delay)``.
+
+        Arguments:
+            power (Number, % or tuple): Rumble power.
+            duration (Number, ms): Rumble duration.
+            count (int): Rumble count.
+            delay (Number, ms): Delay before each rumble. Only if ``count > 1``.
+        """
+
 
 # hide from jedi
 if TYPE_CHECKING:
     del MaybeAwaitable
     del MaybeAwaitableTuple
+    del Number
