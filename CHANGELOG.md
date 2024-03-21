@@ -4,6 +4,14 @@
 
 ## Unreleased
 
+## 3.5.0b1 - 2024-03-11
+
+### Added
+
+- Added `XboxController.rumble` method.
+- Added block icons for `hub.system.set_stop_button` and `hub.system.shutdown`.
+- Added program stop block (`raise SystemExit`).
+
 ## 3.4.1 - 2024-03-11
 
 ### Fixed
