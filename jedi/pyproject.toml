@@ -1,13 +1,13 @@
 [tool.poetry]
 name = "pybricks_jedi"
-version = "1.14.0"
+version = "1.15.0"
 description = "Code completion for Pybricks."
 authors = ["The Pybricks Authors <team@pybricks.com>"]
 license = "MIT"
 
 [tool.poetry.dependencies]
 python = ">= 3.10, < 3.12"
-pybricks = "3.4.0b5"
+pybricks = "3.5.0b1"
 jedi = "0.18.1"
 typing-extensions = "4.2.0"
 docstring-parser = "0.14.1"
