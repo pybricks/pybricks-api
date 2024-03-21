@@ -132,3 +132,13 @@ External tasks
 .. blockimg:: pybricks_blockImportTaskCallStatement
 
 .. blockimg:: pybricks_blockImportTaskCallValue
+
+Comments
+--------------------------
+
+.. blockimg:: pybricks_blockComment
+
+Stopping programs
+--------------------------
+
+.. blockimg:: pybricks_blockProgramStop
