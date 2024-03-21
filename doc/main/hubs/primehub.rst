@@ -81,6 +81,11 @@ Prime Hub / Inventor Hub
 
     .. automethod:: pybricks.hubs::PrimeHub.buttons.pressed
 
+    .. blockimg:: pybricks_blockHubStopButton_PrimeHub
+
+    .. blockimg:: pybricks_blockHubStopButton_PrimeHub_none
+        :stack:
+
     .. automethod:: pybricks.hubs::PrimeHub.system.set_stop_button
 
     .. rubric:: Using the IMU
@@ -169,6 +174,8 @@ Prime Hub / Inventor Hub
     .. automethod:: pybricks.hubs::PrimeHub.system.storage
 
         You can store up to 512 bytes of data on this hub.
+
+    .. blockimg:: pybricks_blockHubShutdown_PrimeHub
 
     .. automethod:: pybricks.hubs::PrimeHub.system.shutdown
 

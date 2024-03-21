@@ -34,6 +34,11 @@ Essential Hub
 
     .. automethod:: pybricks.hubs::EssentialHub.buttons.pressed
 
+    .. blockimg:: pybricks_blockHubStopButton_EssentialHub
+
+    .. blockimg:: pybricks_blockHubStopButton_EssentialHub_none
+        :stack:
+
     .. automethod:: pybricks.hubs::EssentialHub.system.set_stop_button
 
     .. rubric:: Using the IMU
@@ -114,6 +119,8 @@ Essential Hub
     .. automethod:: pybricks.hubs::EssentialHub.system.storage
 
         You can store up to 512 bytes of data on this hub.
+
+    .. blockimg:: pybricks_blockHubShutdown_EssentialHub
 
     .. automethod:: pybricks.hubs::EssentialHub.system.shutdown
 

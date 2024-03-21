@@ -60,7 +60,8 @@ class System:
             button (Button): A button such
                 as :attr:`Button.CENTER <pybricks.parameters.Button.CENTER>`,
                 or a tuple of multiple buttons. Choose ``None`` to disable the
-                stop button altogether.
+                stop button altogether. If you do, you can still turn the hub
+                off by holding the center button for three seconds.
         """
 
     def shutdown(self) -> None:
