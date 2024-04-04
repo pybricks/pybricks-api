@@ -56,6 +56,10 @@ Logic
 
 .. blockimg:: pybricks_blockLogicTernary
 
+.. blockimg:: pybricks_blockLogicTernaryDouble
+
+.. blockimg:: pybricks_blockIsIn
+
 Flow
 --------------------------
 
