@@ -37,7 +37,23 @@ Timing tools
 Input tools
 -----------
 
+.. blockimg:: pybricks_blockReadInput_read_input_first_byte
+
+.. blockimg:: pybricks_blockReadInput_read_input_first_char
+    :stack:
+
+.. blockimg:: pybricks_blockReadInput_read_input_last_byte
+    :stack:
+
+.. blockimg:: pybricks_blockReadInput_read_input_last_char
+    :stack:
+
 .. autofunction:: pybricks.tools.read_input_byte
+
+.. versionchanged:: 3.3
+
+    Added ``last`` and ``chr`` options.
+
 
 .. pybricks-requirements:: light-matrix
 

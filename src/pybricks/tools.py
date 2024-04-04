@@ -211,14 +211,23 @@ def cross(a: Matrix, b: Matrix) -> Matrix:
     """
 
 
-def read_input_byte() -> Optional[int]:
+def read_input_byte(last: bool = False, chr: bool = False) -> Optional[int | str]:
     """
-    read_input_byte() -> int | None
+    read_input_byte() -> int | str | None
 
-    Reads one byte from standard input without blocking.
+    Reads one byte from standard input without blocking and removes it from the
+    input buffer.
+
+    Arguments:
+        last (bool): Choose ``True`` to read the last (most recent) byte in the buffer and discard the rest.
+                     Choose ``False`` to read only the first (oldest) byte.
+        chr (bool): Choose ``True`` to convert the result to a one-character string.
 
     Returns:
-        The numeric value of the byte read or ``None`` if no data is available.
+        The byte that was read, as a numeric value (``0`` to ``255``) or
+        string (e.g. ``"B"``). Returns ``None`` if no data is available. If
+        ``chr=True``, it also return ``None`` if the byte that was read is not
+        printable as a character.
     """
 
 

@@ -29,7 +29,11 @@ def _get_function_signature(module: str, function: str) -> SignatureHelp:
 
 
 FUNCTION_PARAMS = [
-    pytest.param("pybricks.tools", "read_input_byte", [([], "Optional[int]")]),
+    pytest.param(
+        "pybricks.tools",
+        "read_input_byte",
+        [(["last: bool=False", "chr: bool=False"], "Optional[int | str]")],
+    ),
     pytest.param("pybricks.tools", "wait", [(["time: Number"], "MaybeAwaitable")]),
     pytest.param(
         "pybricks.tools",
