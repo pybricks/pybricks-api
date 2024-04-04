@@ -28,6 +28,8 @@ Remote Control
 
   .. automethod:: pybricks.pupdevices::Remote.buttons.pressed
 
+  .. automethod:: pybricks.pupdevices::Remote.disconnect
+
 Examples
 -------------------
 

@@ -299,7 +299,7 @@ class LWP3Device:
         """
 
     @overload
-    def name(self, name: str) -> None: ...
+    def name(self, name: str) -> MaybeAwaitable: ...
 
     @overload
     def name(self) -> str: ...
@@ -334,6 +334,12 @@ class LWP3Device:
 
         Returns:
             The raw binary message.
+        """
+
+    def disconnect(self) -> MaybeAwaitable:
+        """disconnect()
+
+        Disconnects the remote LWP3Device from the hub.
         """
 
 

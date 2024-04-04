@@ -143,6 +143,12 @@ class Remote:
                 this method returns the current name.
         """
 
+    def disconnect(self) -> MaybeAwaitable:
+        """disconnect()
+
+        Disconnects the remote from the hub.
+        """
+
 
 class TiltSensor:
     """LEGO® Powered Up Tilt Sensor."""
