@@ -90,9 +90,15 @@ Prime Hub / Inventor Hub
 
     .. rubric:: Using the IMU
 
+    .. blockimg:: pybricks_blockImuStatus_PrimeHub_ready
+
     .. automethod:: pybricks.hubs::PrimeHub.imu.ready
 
+    .. blockimg:: pybricks_blockImuStatus_PrimeHub_stationary
+
     .. automethod:: pybricks.hubs::PrimeHub.imu.stationary
+
+    .. blockimg:: pybricks_blockImuUp_PrimeHub
 
     .. automethod:: pybricks.hubs::PrimeHub.imu.up
 

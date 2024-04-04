@@ -7,6 +7,7 @@
 ### Added
 
 - Added `pybricks.pupdevices.Remote.disconnect` method.
+- Added blocks for `up`, `ready` and `stationary` for IMUs.
 
 ## 3.5.0b1 - 2024-03-11
 

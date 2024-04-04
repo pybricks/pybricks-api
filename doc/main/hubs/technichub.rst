@@ -30,9 +30,15 @@ Technic Hub
 
     .. rubric:: Using the IMU
 
+    .. blockimg:: pybricks_blockImuStatus_TechnicHub_ready
+
     .. automethod:: pybricks.hubs::TechnicHub.imu.ready
 
+    .. blockimg:: pybricks_blockImuStatus_TechnicHub_stationary
+
     .. automethod:: pybricks.hubs::TechnicHub.imu.stationary
+
+    .. blockimg:: pybricks_blockImuUp_TechnicHub
 
     .. automethod:: pybricks.hubs::TechnicHub.imu.up
 

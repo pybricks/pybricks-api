@@ -43,9 +43,15 @@ Essential Hub
 
     .. rubric:: Using the IMU
 
+    .. blockimg:: pybricks_blockImuStatus_EssentialHub_ready
+
     .. automethod:: pybricks.hubs::EssentialHub.imu.ready
 
+    .. blockimg:: pybricks_blockImuStatus_EssentialHub_stationary
+
     .. automethod:: pybricks.hubs::EssentialHub.imu.stationary
+
+    .. blockimg:: pybricks_blockImuUp_EssentialHub
 
     .. automethod:: pybricks.hubs::EssentialHub.imu.up
 

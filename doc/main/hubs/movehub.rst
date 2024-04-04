@@ -32,6 +32,8 @@ Move Hub
 
     .. rubric:: Using the IMU
 
+    .. blockimg:: pybricks_blockImuUp_MoveHub
+
     .. automethod:: pybricks.hubs::MoveHub.imu.up
 
     .. blockimg:: pybricks_blockTilt_MoveHub_imu.tilt.pitch
