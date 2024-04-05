@@ -4,6 +4,8 @@
 
 ## Unreleased
 
+## 3.5.0b2 - 2024-04-05
+
 ### Added
 
 - Added `pybricks.pupdevices.Remote.disconnect` method.
