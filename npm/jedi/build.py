@@ -12,7 +12,7 @@ BUILD_DIR = (pathlib.Path(__file__).parent / "build").resolve()
 
 package_json = {
     "name": "@pybricks/jedi",
-    "version": "1.15.0",
+    "version": "1.16.0",
     "description": "Binary distribution of pybricks-jedi Python package and dependencies for use with Pyodide.",
     "repository": {
         "type": "git",
@@ -38,7 +38,7 @@ subprocess.check_call(
         "pip",
         "download",
         "--only-binary=any",
-        "pybricks-jedi==1.15.0",
+        "pybricks-jedi==1.16.0",
     ],
     cwd=BUILD_DIR,
 )
