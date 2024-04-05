@@ -3,16 +3,23 @@ on:
     tags:
     - 'v3.*'
 
-name: Create release
+name: Create release on GitHub and PyPI
 
 permissions:
   contents: write
 
 jobs:
-  upload_release:
-    name: Upload Release Assets
+  create_release:
+    name: Create release on GitHub
     runs-on: ubuntu-22.04
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          submodules: true
+          fetch-depth: 0
+      - name: Get tag
+        run: echo "GITHUB_TAG=${GITHUB_REF#*refs/tags/}" >> $GITHUB_ENV
       - name: Create release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -28,3 +35,11 @@ jobs:
               --title="${tag#v}" \
               -F CHANGELOG.md \
               $PRERELEASE_FLAG
+  build_and_publish:
+    runs-on: ubuntu-22.04
+    steps:
+    - uses: actions/checkout@v3
+    - run: pipx run poetry build
+    - run: pipx run poetry publish
+      env:
+        POETRY_PYPI_TOKEN_PYPI: ${{ secrets.PYPI_TOKEN }}
