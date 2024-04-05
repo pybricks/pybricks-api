@@ -1,0 +1,30 @@
+on:
+  push:
+    tags:
+    - 'v3.*'
+
+name: Create release
+
+permissions:
+  contents: write
+
+jobs:
+  upload_release:
+    name: Upload Release Assets
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Create release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          tag: ${{ github.ref_name }}
+        run: |
+          if [[ "${{ contains(env.GITHUB_TAG, 'a') || contains(env.GITHUB_TAG, 'b') || contains(env.GITHUB_TAG, 'c') }}" == "true" ]]; then
+            PRERELEASE_FLAG="--prerelease"
+          else
+            PRERELEASE_FLAG=""
+          fi
+          gh release create "$tag" \
+              --repo="$GITHUB_REPOSITORY" \
+              --title="${tag#v}" \
+              -F CHANGELOG.md \
+              $PRERELEASE_FLAG
