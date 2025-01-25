@@ -1,3 +1,5 @@
+.. pybricks-requirements:: pybricks-iodevices
+
 LEGO Wireless Protocol v3 device
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
