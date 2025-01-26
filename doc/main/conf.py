@@ -53,6 +53,14 @@ if "ide" in tags.tags:  # noqa F821
     extensions.append("sphinx.ext.imgmath")  # noqa F821
     html_theme_options["prev_next_buttons_location"] = None  # noqa F821
 
+# Internationalization configuration
+language = 'en'
+locale_dirs = ['../locales']   # path relative to conf.py location
+gettext_compact = False        # optional
+gettext_uuid = True            # Use UUIDs to preserve translations when text moves
+gettext_location = True        # Include locations as comments for reference
+gettext_additional_targets = ['literal-block', 'image']  # Also translate code blocks and image captions
+
 # Build hub specific example scripts.
 sys.path.append(os.path.abspath("../../examples/pup/hub_common"))
 import make_examples  # noqa F401, E402
