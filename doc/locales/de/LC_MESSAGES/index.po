@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pybricks v3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-26 20:11+0100\n"
+"POT-Creation-Date: 2025-01-26 19:45+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: de\n"
@@ -19,79 +19,91 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.16.0\n"
 
-#: ../../main/index.rst:47
+#: ../../../main/index.rst:47
 msgid "Table of contents"
-msgstr ""
+msgstr "Inhaltsverzeichnis"
 
-#: ../../main/index.rst:52
+#: ../../../main/index.rst:52
 msgid "Pybricks modules"
-msgstr ""
+msgstr "Pybricks-Module"
 
-#: ../../main/index.rst:65
+#: ../../../main/index.rst:65
 msgid "Code with blocks"
-msgstr ""
+msgstr "Code mit Blöcken"
 
-#: ../../main/index.rst:72
+#: ../../../main/index.rst:72
 msgid "MicroPython modules"
-msgstr ""
+msgstr "MicroPython-Module"
 
-#: ../../main/index.rst:2 d8a5a3bce53e4b26a9fa905abb1f7aeb
+#: ../../../main/index.rst:2
 msgid "Pybricks Documentation"
-msgstr ""
+msgstr "Pybricks-Dokumentation"
 
-#: ../../main/index.rst:4 ace3f6b560d74c5d8310a1ec605a5cb1
+#: ../../../main/index.rst:4
 msgid ""
 "`Pybricks <https://pybricks.com/>`_ is Python coding for smart LEGO® "
 "hubs. Run MicroPython scripts directly on the hub, and get full control "
 "of your motors and sensors."
 msgstr ""
+"`Pybricks <https://pybricks.com/>`_ ist Python-Programmierung für intelligente LEGO® "
+"Hubs. Führen Sie MicroPython-Skripte direkt auf dem Hub aus und erhalten Sie "
+"volle Kontrolle über Ihre Motoren und Sensoren."
 
-#: ../../main/index.rst:8 5af5bfe703cb456987231815f44b2cfe
+#: ../../../main/index.rst:8
 msgid ""
 "Pybricks runs on LEGO® BOOST, City, Technic, MINDSTORMS®, and SPIKE®. You"
 " can code using Windows, Mac, Linux, Chromebook, and Android."
 msgstr ""
+"Pybricks läuft auf LEGO® BOOST, City, Technic, MINDSTORMS® und SPIKE®. Sie "
+"können mit Windows, Mac, Linux, Chromebook und Android programmieren."
 
-#: ../../main/index.rst:11 d6db49cd2dca414b94258551fd876cb1
+#: ../../../main/index.rst:11
 msgid ""
 "Click on any device below to see its documentation. Use the menu on the "
 "left to find documentation for additional modules. You may need to click "
 "the ☰ icon above to reveal this menu."
 msgstr ""
+"Klicken Sie unten auf ein Gerät, um dessen Dokumentation anzuzeigen. Verwenden "
+"Sie das Menü auf der linken Seite, um die Dokumentation für zusätzliche Module "
+"zu finden. Möglicherweise müssen Sie auf das ☰-Symbol oben klicken, um dieses "
+"Menü anzuzeigen."
 
-#: ../../main/index.rst:17 8edd21d2913c4d208e06954de552c473
+#: ../../../main/index.rst:17
 msgid ""
 "You are viewing the stand-alone version of the documentation. To learn "
 "more about Pybricks and to start coding, visit the `Pybricks website`_"
 msgstr ""
+"Sie sehen die eigenständige Version der Dokumentation. Um mehr über Pybricks "
+"zu erfahren und mit dem Programmieren zu beginnen, besuchen Sie die `Pybricks-Website`_"
 
-#: ../../main/index.rst:21 6ada5d3378004bf785cb4d04f15e6fce
+#: ../../../main/index.rst:21
 msgid ""
 "Are you using LEGO MINDSTORMS EV3? Check out the `EV3 documentation`_ "
 "instead."
 msgstr ""
+"Verwenden Sie LEGO MINDSTORMS EV3? Schauen Sie stattdessen in die "
+"`EV3-Dokumentation`_."
 
-#: ../../main/index.rst:28 241d4b5322ac4018be4c4150422314c5
+#: ../../../main/index.rst:28
 msgid "Programmable hubs"
-msgstr ""
+msgstr "Programmierbare Hubs"
 
-#: ../../main/index.rst:29 50e55b7c46524e5ba88fd4bbedd5588c
+#: ../../../main/index.rst:29
 msgid ".. image:: ../main/cad/output/hub-all.png"
 msgstr ""
 
-#: ../../main/index.rst:34 c1a176dd78fc443e880d6facee8d502a
+#: ../../../main/index.rst:34
 msgid "Powered Up motors and sensors"
-msgstr ""
+msgstr "Powered Up Motoren und Sensoren"
 
-#: ../../main/index.rst:35 6c8cc15971ec413ab0ea49f9112eaed2
+#: ../../../main/index.rst:35
 msgid ".. image:: ../main/cad/output/pupdevice-all.png"
 msgstr ""
 
-#: ../../main/index.rst:39 833315cebf2c4adca3cdffdeaae1573a
+#: ../../../main/index.rst:39
 msgid ".. image:: ../main/cad/output/pupdevice-motors.png"
 msgstr ""
 
-#: ../../main/index.rst:43 81874ef831ce4f1b87e55026cc18fd9d
+#: ../../../main/index.rst:43
 msgid ".. image:: ../main/cad/output/pupdevice-dcmotors.png"
 msgstr ""
-
