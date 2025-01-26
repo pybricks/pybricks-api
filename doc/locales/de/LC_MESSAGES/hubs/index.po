@@ -1,0 +1,49 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-2023 The Pybricks Authors
+# This file is distributed under the same license as the pybricks package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pybricks v3.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-01-26 20:11+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: de\n"
+"Language-Team: de <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../main/hubs/index.rst:4 d99f3eed06ec4fc1b67d5e7bcefeab81
+msgid ":mod:`hubs <pybricks.hubs>` -- Built-in hub functions"
+msgstr ""
+
+#: ../../main/hubs/index.rst:20 d61b8a8bf36541e09f4f5ee42588a529
+msgid ".. image:: ../../main/cad/output/hub-move.png"
+msgstr ""
+
+#: ../../main/hubs/index.rst:26 43c7161ca4d34a0283ac7c13759b75b3
+msgid ".. image:: ../../main/cad/output/hub-city.png"
+msgstr ""
+
+#: ../../main/hubs/index.rst:32 60a3050aff8d4949bea4904232deddc3
+msgid ".. image:: ../../main/cad/output/hub-technic.png"
+msgstr ""
+
+#: ../../main/hubs/index.rst:38 2fb4338938bb45b6b0b3898f92ba6e38
+msgid ".. image:: ../../main/cad/output/hub-inventor.png"
+msgstr ""
+
+#: ../../main/hubs/index.rst:44 72f70e18afb9482d99df560a4f5a38a7
+msgid ".. image:: ../../main/cad/output/hub-prime.png"
+msgstr ""
+
+#: ../../main/hubs/index.rst:50 fcb24dfbe8e0438da7253f923ec4aeb8
+msgid ".. image:: ../../main/cad/output/hub-essential.png"
+msgstr ""
+

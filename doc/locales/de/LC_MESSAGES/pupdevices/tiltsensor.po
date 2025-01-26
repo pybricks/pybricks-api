@@ -1,0 +1,93 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-2023 The Pybricks Authors
+# This file is distributed under the same license as the pybricks package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pybricks v3.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-01-26 20:11+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: de\n"
+"Language-Team: de <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../main/pupdevices/tiltsensor.rst:4 c9562448546c460eb3ed1df5c8c221a5
+msgid "Tilt Sensor"
+msgstr ""
+
+#: ../../main/pupdevices/tiltsensor.rst:6 052861e555e14fed95e1df9c15ac681f
+msgid ".. image:: ../../main/cad/output/pupdevice-tilt.png"
+msgstr ""
+
+#: ../../main/pupdevices/tiltsensor.rst:9 421b5334dd094807af3a724ce9d34c6c
+msgid ".. image:: /blockimg/pybricks_variables_set_tilt_sensor.svg"
+msgstr ""
+
+#: adbf87902bc549acb95f355c077242a8 of pybricks.pupdevices.TiltSensor:1
+msgid "LEGO® Powered Up Tilt Sensor."
+msgstr ""
+
+#: ../../main/pupdevices/tiltsensor.rst 75a56c42abca4ceba95d7261ae29bfff
+msgid "Parameters"
+msgstr ""
+
+#: a6d12a874e804cb1b626ef146d08c02e of pybricks.pupdevices.TiltSensor:3
+msgid "Port to which the sensor is connected."
+msgstr ""
+
+#: ../../main/pupdevices/tiltsensor.rst:14 bed39b3849e04332a6fbeff8bc866666
+msgid ".. image:: /blockimg/pybricks_blockTilt_TiltSensor_imu.tilt.pitch.svg"
+msgstr ""
+
+#: ../../main/pupdevices/tiltsensor.rst:16 1776f9cd8f85465bbebb8ba31e07cbce
+msgid ".. image:: /blockimg/pybricks_blockTilt_TiltSensor_imu.tilt.roll.svg"
+msgstr ""
+
+#: 62bc16290d844be5947b8a188ac333e3 of pybricks.pupdevices.TiltSensor.tilt:1
+msgid "Measures the tilt relative to the horizontal plane."
+msgstr ""
+
+#: ../../main/pupdevices/tiltsensor.rst 479c1806a8f1470581731a0c2a441078
+msgid "Returns"
+msgstr ""
+
+#: 90b226ae20d4458ca77ba164fc4a329e of pybricks.pupdevices.TiltSensor.tilt:3
+msgid "Tuple of pitch and roll angles."
+msgstr ""
+
+#: ../../main/pupdevices/tiltsensor.rst:22 44796d9c19ee49f88bcc74a7a57eb846
+msgid "Examples"
+msgstr ""
+
+#: ../../main/pupdevices/tiltsensor.rst:25 66d4f2c9e3004f49905e0149839a473b
+msgid "Measuring pitch and roll"
+msgstr ""
+
+#: ../../main/pupdevices/tiltsensor.rst:27 c0d0ce12d1eb4ca3a8570d12f263bef1
+msgid ""
+"from pybricks.pupdevices import TiltSensor\n"
+"from pybricks.parameters import Port\n"
+"from pybricks.tools import wait\n"
+"\n"
+"# Initialize the sensor.\n"
+"accel = TiltSensor(Port.A)\n"
+"\n"
+"while True:\n"
+"    # Read the tilt angles relative to the horizontal plane.\n"
+"    pitch, roll = accel.tilt()\n"
+"\n"
+"    # Print the values\n"
+"    print(\"Pitch:\", pitch, \"Roll:\", roll)\n"
+"\n"
+"    # Wait some time so we can read what is printed.\n"
+"    wait(100)\n"
+msgstr ""
+

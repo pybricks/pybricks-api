@@ -1,0 +1,78 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-2023 The Pybricks Authors
+# This file is distributed under the same license as the pybricks package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pybricks v3.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-01-26 20:11+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: de\n"
+"Language-Team: de <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../main/parameters/direction.rst:4 51d535e452b7498c9ce2ff12ecd652fd
+msgid "Direction"
+msgstr ""
+
+#: ../../main/parameters/direction.rst:8 98bb0818b8dd4590b13c791e51e37ac5
+msgid "Rotational direction for positive speed or angle values."
+msgstr ""
+
+#: ../../docstring d3c117b11ded4eee8dee61651917ad35 of
+#: pybricks.parameters.Direction.CLOCKWISE:1
+msgid "A positive speed value should make the motor move clockwise."
+msgstr ""
+
+#: ../../docstring dd53b422be4e4eefb0bb9bde36b3192d of
+#: pybricks.parameters.Direction.COUNTERCLOCKWISE:1
+msgid "A positive speed value should make the motor move counterclockwise."
+msgstr ""
+
+#: ../../main/parameters/direction.rst:17 95a5ce41eaa848aabaaa75bd77eea5b3
+msgid "``positive_direction =``"
+msgstr ""
+
+#: ../../main/parameters/direction.rst:17 ed36f71ad4cc48198e43a15df067c974
+msgid "Positive speed:"
+msgstr ""
+
+#: ../../main/parameters/direction.rst:17 e8683c361a60477ead9ace118b28a7b4
+msgid "Negative speed:"
+msgstr ""
+
+#: ../../main/parameters/direction.rst:19 48a3faed88ab43a0a5d542587d29e44d
+msgid "``Direction.CLOCKWISE``"
+msgstr ""
+
+#: ../../main/parameters/direction.rst:19
+#: ../../main/parameters/direction.rst:21 18b94f59abad4842a16ef053cea15ba7
+#: 2a8bde50c7204f99b2c1a395c0f7ca46
+msgid "clockwise"
+msgstr ""
+
+#: ../../main/parameters/direction.rst:19
+#: ../../main/parameters/direction.rst:21 b3057c3626724a2583151fd582932755
+#: fdd7c9a6c0164c35874a4244d3439e2f
+msgid "counterclockwise"
+msgstr ""
+
+#: ../../main/parameters/direction.rst:21 15345007bc404f0988148de4627f0542
+msgid "``Direction.COUNTERCLOCKWISE``"
+msgstr ""
+
+#: ../../main/parameters/direction.rst:24 5b7b11132fc441bba59e31f8126ed504
+msgid ""
+"In general, clockwise is defined by **looking at the motor shaft, just "
+"like looking at a clock**. Some motors have two shafts. If in doubt, "
+"refer to the diagram in the ``Motor`` class documentation."
+msgstr ""
+

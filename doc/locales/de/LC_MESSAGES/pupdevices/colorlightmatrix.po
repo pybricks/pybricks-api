@@ -1,0 +1,84 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-2023 The Pybricks Authors
+# This file is distributed under the same license as the pybricks package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pybricks v3.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-01-26 20:11+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: de\n"
+"Language-Team: de <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../main/pupdevices/colorlightmatrix.rst:4
+#: d9d427f85470473b989bc8e9c20397dc
+msgid "Color Light Matrix"
+msgstr ""
+
+#: ../../main/pupdevices/colorlightmatrix.rst:6
+#: 8963383b26214d53b17ef98d5b1e270d
+msgid ".. image:: ../../main/diagrams/sensor_colorlightmatrix.png"
+msgstr ""
+
+#: ../../main/pupdevices/colorlightmatrix.rst:9
+#: 2e3328391f3a4bd1bf1d763d74b93bfe
+msgid ".. image:: /blockimg/pybricks_variables_set_color_light_matrix.svg"
+msgstr ""
+
+#: 2a76b035df8d4e369b70d98f10a9b6b0 of pybricks.pupdevices.ColorLightMatrix:1
+msgid "LEGO® SPIKE 3x3 Color Light Matrix."
+msgstr ""
+
+#: ../../main/pupdevices/colorlightmatrix.rst d3ea9c3b90904b4c908bd07d152f07c7
+#: e9e2e67fdeb848558a76fb076291f128
+msgid "Parameters"
+msgstr ""
+
+#: c461f9fecc16449aad5a61eeb9245e0c of pybricks.pupdevices.ColorLightMatrix:3
+msgid "Port to which the device is connected."
+msgstr ""
+
+#: ../../main/pupdevices/colorlightmatrix.rst:14
+#: d1f69bd714ee423eb9ab5eb35fb5bb77
+msgid ".. image:: /blockimg/pybricks_blockLightOnColor_colorlightmatrix_on.svg"
+msgstr ""
+
+#: ../../main/pupdevices/colorlightmatrix.rst:16
+#: 87799403517e4c0282258322665e82a9
+msgid ""
+".. image:: "
+"/blockimg/pybricks_blockLightOnColor_colorlightmatrix_on_list.svg"
+msgstr ""
+
+#: 65e89e344a0a4f2dbe855dca64770f60 of
+#: pybricks.pupdevices.ColorLightMatrix.on:1
+msgid "Turns the lights on."
+msgstr ""
+
+#: d01561ad650243c0b9fa877ba3e44249 of
+#: pybricks.pupdevices.ColorLightMatrix.on:3
+msgid ""
+"If a single :class:`.Color` is given, then all 9 lights are set to that "
+"color. If a list of colors is given, then each light is set to that "
+"color."
+msgstr ""
+
+#: ../../main/pupdevices/colorlightmatrix.rst:20
+#: 3426d52c83c44d189ec07083957429ce
+msgid ".. image:: /blockimg/pybricks_blockLightOnColor_colorlightmatrix_off.svg"
+msgstr ""
+
+#: 47ecea22115b424a915652dca314f70c of
+#: pybricks.pupdevices.ColorLightMatrix.off:1
+msgid "Turns all lights off."
+msgstr ""
+

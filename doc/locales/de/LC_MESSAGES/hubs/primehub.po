@@ -1,0 +1,1664 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-2023 The Pybricks Authors
+# This file is distributed under the same license as the pybricks package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pybricks v3.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-01-26 20:11+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: de\n"
+"Language-Team: de <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../main/hubs/primehub.rst:4 ec24727afc6a497ba5fe0f2f81b95606
+msgid "Prime Hub / Inventor Hub"
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:6 f35fab25ddf54f009ca61ae710f8ae37
+msgid ".. image:: ../../main/cad/output/hub-spike-inventor.png"
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:9 fbfafec225c24d098cd155087c89768f
+msgid ".. image:: /blockimg/pybricks_variables_set_inventor_hub_option0.svg"
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:11 65e66cede2894de791ed7cfc0d315a69
+msgid ".. image:: /blockimg/pybricks_variables_set_inventor_hub_option4.svg"
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:16 9da66012daf24cd0bbbad734ce2ecea6
+msgid ""
+"This class is the same as the ``PrimeHub`` class, shown below. Both "
+"classes work on both hubs."
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:19 7ccc5bbca55a4a6c867bc7f0dc77cc16
+msgid "These hubs are completely identical. They use the same Pybricks firmware."
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:21 0bf656e3553d4e47aeb21696c146048e
+msgid ".. image:: /blockimg/pybricks_variables_set_prime_hub_option0.svg"
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:23 c7b4f324a1cc4e61a4febef22b272b35
+msgid ".. image:: /blockimg/pybricks_variables_set_prime_hub_option4.svg"
+msgstr ""
+
+#: b67cc6c451d746118dddeb3ab3da9981 of pybricks.hubs.PrimeHub:1
+msgid "LEGO® SPIKE Prime Hub."
+msgstr ""
+
+#: 1526de721dec467fadf11b0b1b0e2ae9 of pybricks.hubs.PrimeHub:3
+msgid ""
+"Initializes the hub. Optionally, specify how the hub is :ref:`placed in "
+"your design <robotframe>` by saying in which direction the top side (with"
+" the buttons) and front side (with the USB port) are pointing."
+msgstr ""
+
+#: ../../main/hubs/primehub.rst 0612540f1ad54248a5774e81932b8b72
+#: 1cd9b05ae9cb418eb2a1fd4aef6127e5 30956555231f47ba85ce7ca439e63799
+#: 411c6152eac040ffa63472b3e53da048 4f9353d39245465f9c86722e48f25dc6
+#: 511c0a59afef4c2d8984d2f58a6f3945 5b55d64f72d04ff78cc5da89d4f363b3
+#: 61949a83dad345ef8025432f632ea5e4 773b6b59c71140328c28474ba198bdde
+#: 8289a4d5e7e24d38ad7e9d1525180a89 893102c4fdf44c408647c85c272cc39b
+#: 89d8d851ede64d1888d7fc30776d4a0c 932bc4774d7b497b9c772f33cc859880
+#: 9c7cbd5c769041a4aad66b2f12083cfa a5b395a4b61f40cc8a3622afaa78a03d
+#: b8ed39b1d02d4b5bafd84941ad204e86 c2b90c13ac0f401db3623ca715d77c9e
+#: c5f2bec1b79d4137b685a22372469457 d4f7a5e899b5465c8d06c5ce372dcb4d
+#: d837cd671b444167acea3dba0c790c55 e1cc6f09ef9b40879f4961f9643220a0
+#: e56eadcb18e84367bd41c1b2a6ca390a ed546098b52547979a0fb67f42c05200
+#: fa155790f2b34d3cb096eade5eba6c12
+msgid "Parameters"
+msgstr ""
+
+#: 4f2755198ac74cbbab384faa3b11be90 of pybricks.hubs.PrimeHub:8
+msgid "The axis that passes through the *top side* of the hub."
+msgstr ""
+
+#: eb4f31b4b9db4591aaf0bcd09f26a088 of pybricks.hubs.PrimeHub:11
+msgid "The axis that passes through the *front side* of the hub."
+msgstr ""
+
+#: b1f18bc6a8ce414f8372181b57ad7e3f of pybricks.hubs.PrimeHub:14
+msgid ""
+"A value from 0 to 255 indicating which channel ``hub.ble.broadcast()`` "
+"will use. Default is channel 0."
+msgstr ""
+
+#: 39dcbe47d0e44046a6701115999ad6e5 of pybricks.hubs.PrimeHub:16
+msgid ""
+"A list of channels to listen to when ``hub.ble.observe()`` is called. "
+"Listening to more channels requires more memory. Default is an empty list"
+" (no channels)."
+msgstr ""
+
+#: 823f0e4c324043ccb6412804ade5c4a7 of pybricks.hubs.PrimeHub:20
+msgid "Added *broadcast_channel* and *observe_channels* arguments."
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:30 5c0d2acfa9ac475cb0e9cd7851655e8c
+msgid "Using the hub status light"
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:31 960eaf9e95ce47acbdc0ed00ee2ad5d8
+msgid ".. image:: ../../main/diagrams/primehub_light.png"
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:34 3f1f3d609f4f4d9f8006cbae35db8524
+msgid ".. image:: /blockimg/pybricks_blockLightOnColor_primehub_on.svg"
+msgstr ""
+
+#: 1d5c65ca14ee4d239a9fcfb95cd7410c of pybricks._common.ColorLight.on:1
+msgid "Turns on the light at the specified color."
+msgstr ""
+
+#: 2ca74b7902034ec88c29924638abb008 f25a0c97a4954b60be3a4935e4346496 of
+#: pybricks._common.ColorLight.blink:11 pybricks._common.ColorLight.on:3
+msgid "Color of the light."
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:38 256fb1bb195246c083c62edbbf5051bf
+msgid ".. image:: /blockimg/pybricks_blockLightOnColor_primehub_off.svg"
+msgstr ""
+
+#: a20860e09f174744a288e082201e946d of pybricks._common.ColorLight.off:1
+msgid "Turns off the light."
+msgstr ""
+
+#: aa2a56c045fb467da020ac0f719d9e7f of pybricks._common.ColorLight.blink:1
+msgid ""
+"Blinks the light at a given color by turning it on and off for given "
+"durations."
+msgstr ""
+
+#: 29c5cb1ef4854d56b534728a7dea4ec7 of pybricks._common.ColorLight.blink:4
+msgid ""
+"The light keeps blinking indefinitely while the rest of your program "
+"keeps running."
+msgstr ""
+
+#: d64bb8c722a4411d922cf8a00a515ed6 of pybricks._common.ColorLight.blink:7
+msgid ""
+"This method provides a simple way to make basic but useful patterns. For "
+"more generic and multi-color patterns, use ``animate()`` instead."
+msgstr ""
+
+#: 76a0713570324c8faa47024410203f3f of pybricks._common.ColorLight.blink:13
+msgid "Sequence of time values of the form ``[on_1, off_1, on_2, off_2, ...]``."
+msgstr ""
+
+#: 838e6f2a28b844f3a8d5a0ab39950d4e of pybricks._common.ColorLight.animate:1
+msgid ""
+"Animates the light with a sequence of colors, shown one by one for the "
+"given interval."
+msgstr ""
+
+#: d0f40e8e46fb4b81b5c448240d314b59 of pybricks._common.ColorLight.animate:4
+msgid ""
+"The animation runs in the background while the rest of your program keeps"
+" running. When the animation completes, it repeats."
+msgstr ""
+
+#: 62474878c26c4c0397b07c60e2438487 of pybricks._common.ColorLight.animate:7
+msgid "Sequence of :class:`Color <.parameters.Color>` values."
+msgstr ""
+
+#: f7900b5f291749589ef8751110c8e4fb of pybricks._common.ColorLight.animate:10
+msgid "Time between color updates."
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:47 08857c7b15e44f46a930b6c0641f7b68
+msgid "Using the light matrix display"
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:48 abbc701b0c5646fcafb83bf6ec1da75b
+msgid ".. image:: ../../main/diagrams/primehub_display.png"
+msgstr ""
+
+#: b073815c172547cb8bd816e49a757a17 of
+#: pybricks._common.LightMatrix.orientation:1
+msgid "Sets the orientation of the light matrix display."
+msgstr ""
+
+#: f7682fb1360e40aeb681b66cb0ea57b4 of
+#: pybricks._common.LightMatrix.orientation:3
+msgid ""
+"Only new displayed images and pixels are affected. The existing display "
+"contents remain unchanged."
+msgstr ""
+
+#: d8efe204a76c42f1b65fdab3ff8e68fa of
+#: pybricks._common.LightMatrix.orientation:6
+msgid ""
+"Which side of the light matrix display is \"up\" in your design. Choose "
+"``Side.TOP``, ``Side.LEFT``, ``Side.RIGHT``, or ``Side.BOTTOM``."
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:53 c274d1d4d05847f3a4f5a452986fd891
+msgid ".. image:: /blockimg/pybricks_blockLightMatrixDo_light_matrix_off.svg"
+msgstr ""
+
+#: 57f75be75fd74cbea39f8a1742c8a8d7 of pybricks._common.LightMatrix.off:1
+msgid "Turns off all the pixels."
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:57 ddcdc73046324342ac924966abe7461e
+msgid ".. image:: /blockimg/pybricks_blockLightMatrixDo_light_matrix_pixel.svg"
+msgstr ""
+
+#: a2e0387bf50f414382be782c1d07d607 of pybricks._common.LightMatrix.pixel:1
+msgid "Turns on one pixel at the specified brightness."
+msgstr ""
+
+#: 914a0e7522b741be8677a509c11b782b of pybricks._common.LightMatrix.pixel:3
+msgid "Vertical grid index, starting at 0 from the top."
+msgstr ""
+
+#: 1acdaaaf097d47079bbc0403a3b442ba of pybricks._common.LightMatrix.pixel:5
+msgid "Horizontal grid index, starting at 0 from the left."
+msgstr ""
+
+#: f661c580d1e943e2ae5d4bcdcef360cd of pybricks._common.LightMatrix.pixel:7
+msgid "Brightness of the pixel."
+msgstr ""
+
+#: fad3220419b0480da137a53706f4a8b6 of pybricks._common.LightMatrix.icon:1
+msgid "Displays an icon, represented by a matrix of :ref:`brightness` values."
+msgstr ""
+
+#: 645b0996edbf49b885820960b8f79e3f of pybricks._common.LightMatrix.icon:4
+msgid "Matrix of intensities (:ref:`brightness`). A 2D list is also accepted."
+msgstr ""
+
+#: c91494a7428a424ca3d8189397e3d56b of pybricks._common.LightMatrix.animate:1
+msgid "Displays an animation made using a list of images."
+msgstr ""
+
+#: 13a6d1cc43b64e40a8dd76a9f3086c93 of pybricks._common.LightMatrix.animate:3
+msgid ""
+"Each image has the same format as above. Each image is shown for the "
+"given interval. The animation repeats forever while the rest of your "
+"program keeps running."
+msgstr ""
+
+#: b6151a646d714681aa4286fafdc738c9 of pybricks._common.LightMatrix.animate:7
+msgid "Sequence of :class:`Matrix <pybricks.tools.Matrix>` of intensities."
+msgstr ""
+
+#: fdf9b01307404044805a723c8cad41e1 of pybricks._common.LightMatrix.animate:10
+msgid "Time to display each image in the list."
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:65 e41593134dd84251b8cf0f018998010a
+msgid ".. image:: /blockimg/pybricks_blockLightMatrixDo_light_matrix_number.svg"
+msgstr ""
+
+#: e59feb18f1994e018538cb631e2f13bd of pybricks._common.LightMatrix.number:1
+msgid "Displays a number in the range -99 to 99."
+msgstr ""
+
+#: 8850027e287a432680bdcf40dbfa2f5c of pybricks._common.LightMatrix.number:3
+msgid ""
+"A minus sign (``-``) is shown as a faint dot in the center of the "
+"display. Numbers greater than 99 are shown as ``>``. Numbers less than "
+"-99 are shown as ``<``."
+msgstr ""
+
+#: 9997a28c94824bd9a5f1d7a453176205 of pybricks._common.LightMatrix.number:7
+msgid "The number to be displayed."
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:69 1a2c4506c7c249c3990f3643c7abd293
+msgid ".. image:: /blockimg/pybricks_blockLightMatrixDo_light_matrix_symbol.svg"
+msgstr ""
+
+#: c675a5e660b3499db79f32cb337fe305 of pybricks._common.LightMatrix.char:1
+msgid ""
+"Displays a character or symbol on the light grid. This may be any letter "
+"(``a``--``z``), capital letter (``A``--``Z``) or one of the following "
+"symbols: ``!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}``."
+msgstr ""
+
+#: 7b8c7adc13ed440c9a61f8868b80f0b1 of pybricks._common.LightMatrix.char:5
+msgid "The character or symbol to be displayed."
+msgstr ""
+
+#: c90365e1ab7543408c44a15adab6c9f4 of pybricks._common.LightMatrix.text:1
+msgid ""
+"Displays a text string, one character at a time, with a pause between "
+"each character. After the last character is shown, all lights turn off."
+msgstr ""
+
+#: 02e34a740df54ede82c7c1f5e22d0178 of pybricks._common.LightMatrix.text:5
+msgid "The text to be displayed."
+msgstr ""
+
+#: 4fb87e2608f24e478804e2b3b994bfc9 of pybricks._common.LightMatrix.text:7
+msgid "For how long a character is shown."
+msgstr ""
+
+#: b373dee96f8b4d8bbe228631e4b9f692 of pybricks._common.LightMatrix.text:9
+msgid "For how long the display is off between characters."
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:76 c921ea9bcde74be0b4473a30d01fb121
+msgid "Using the buttons"
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:77 92cc111cd08c4c2897a22c212c435734
+msgid ".. image:: ../../main/diagrams/primehub_buttons.png"
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:80 c92ab1943f5f4df39e8a52ab8aecc14d
+msgid ".. image:: /blockimg/pybricks_blockButtonIsPressed_PrimeHub.svg"
+msgstr ""
+
+#: c9e5dfde33864002bdef5e4308fc019c of pybricks._common.Keypad.pressed:1
+msgid "Checks which buttons are currently pressed."
+msgstr ""
+
+#: ../../main/hubs/primehub.rst 00194d398654424f86a5220b831a253d
+#: 08d1b398e8f448a6ac3654d1fe9feb46 0cb1c679a87a4a5f9ab584c0b300da75
+#: 12b7a78757934fcfb97092f976120ebf 369403b0af784c118f9a873125a535b7
+#: 45ee2aa3123840fe850ea4e21fb4f812 4e68e1c764524885912cecd667c18ed0
+#: 557fe9c133ef46e2a73fa4c134da19f1 568e89e88cbb479d9b2f61098443c1ca
+#: 58eb996f765f469ba6e962d9307d066f 61f7e632f97e4c1ba8ca2ddcdb29057c
+#: 6bada488a7bb4a10b8f47ab8e9befb14 9766cdce84fb4344890b20d5dbd584e2
+#: 9d5f370540304b26bf022deffc61c7a8 acc49e42e4bf4ba5bbbd07ad387e178f
+#: b075e5ca75ad4d91b4f50307217fe39a b155a081026f4bb0b2117507b784fb39
+#: dde4a5789125405ea898f6fa5e7c2949 e2d6e4952d604d9486118f66ab51fae6
+#: e9bb574363274b4db768068aba062655
+msgid "Returns"
+msgstr ""
+
+#: fa0f88cd42ae4b07906f3d6fe976a23a of pybricks._common.Keypad.pressed:3
+msgid "Set of pressed buttons."
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:84 eee85ecb6af7447eb6dd8b0c8e86c315
+msgid ".. image:: /blockimg/pybricks_blockHubStopButton_PrimeHub.svg"
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:86 40b1730c2c2e49258031a11dd85d9988
+msgid ".. image:: /blockimg/pybricks_blockHubStopButton_PrimeHub_none.svg"
+msgstr ""
+
+#: b0f0e5c3a2cf40dc9bc21cdd2ffc80c0 of
+#: pybricks._common.System.set_stop_button:1
+msgid "Sets the button or button combination that stops a running script."
+msgstr ""
+
+#: a273aee8b3e44a4b921f9bfb607e918b of
+#: pybricks._common.System.set_stop_button:3
+msgid ""
+"Normally, the center button is used to stop a running script. You can "
+"change or disable this behavior in order to use the button for other "
+"purposes."
+msgstr ""
+
+#: 7b6acff7fe0f4f40b4278ea2da7821a6 of
+#: pybricks._common.System.set_stop_button:7
+msgid ""
+"A button such as :attr:`Button.CENTER "
+"<pybricks.parameters.Button.CENTER>`, or a tuple of multiple buttons. "
+"Choose ``None`` to disable the stop button altogether. If you do, you can"
+" still turn the hub off by holding the center button for three seconds."
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:92 07b42462dd2b4bd5bbf9ca851f07be34
+msgid "Using the IMU"
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:93 f0c41370935249c894a84d394fb8be37
+msgid ".. image:: /blockimg/pybricks_blockImuStatus_PrimeHub_ready.svg"
+msgstr ""
+
+#: ada8609b17034c79b9f0c45f2651ee96 of pybricks._common.IMU.ready:1
+msgid "Checks if the device is calibrated and ready for use."
+msgstr ""
+
+#: e6fbea87f0f24ef7a3255d1bdd44481a of pybricks._common.IMU.ready:3
+msgid ""
+"This becomes ``True`` when the robot has been sitting stationary for a "
+"few seconds, which allows the device to re-calibrate. It is ``False`` if "
+"the hub has just been started, or if it hasn't had a chance to calibrate "
+"for more than 10 minutes."
+msgstr ""
+
+#: a6acca58e5f548f99b58034b5cc88ac4 of pybricks._common.IMU.ready:8
+msgid "``True`` if it is ready for use, ``False`` if not."
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:97 f7c0747f4fbf42f1bcd48a5bb6726d41
+msgid ".. image:: /blockimg/pybricks_blockImuStatus_PrimeHub_stationary.svg"
+msgstr ""
+
+#: 0f9017c05d954c75b8c4d9cfb16655ab of pybricks._common.IMU.stationary:1
+msgid "Checks if the device is currently stationary (not moving)."
+msgstr ""
+
+#: 5dd1f2fbae3c434aba76245c553e6a74 of pybricks._common.IMU.stationary:3
+msgid "``True`` if stationary for at least a second, ``False`` if it is moving."
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:101 88c363534a274c51bfa494752e5e2517
+msgid ".. image:: /blockimg/pybricks_blockImuUp_PrimeHub.svg"
+msgstr ""
+
+#: 7e65fa0a3028468b929953b3ef2d87da of
+#: pybricks._common.SimpleAccelerometer.up:1
+msgid "Checks which side of the hub currently faces upward."
+msgstr ""
+
+#: 9ad0cc96049140e6ad5fe4833b71af26 of
+#: pybricks._common.SimpleAccelerometer.up:3
+msgid ""
+"``Side.TOP``, ``Side.BOTTOM``, ``Side.LEFT``, ``Side.RIGHT``, "
+"``Side.FRONT`` or ``Side.BACK``."
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:105 4493a764c6ce4811b75b4cb1e1f26a12
+msgid ".. image:: /blockimg/pybricks_blockTilt_PrimeHub_imu.tilt.pitch.svg"
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:107 0138d8b101d046a3bd874a0d75e8671c
+msgid ".. image:: /blockimg/pybricks_blockTilt_PrimeHub_imu.tilt.roll.svg"
+msgstr ""
+
+#: c482fc156d7947979e7becee587f1885 of
+#: pybricks._common.SimpleAccelerometer.tilt:1
+msgid ""
+"Gets the pitch and roll angles. This is relative to the :ref:`user-"
+"specified neutral orientation <robotframe>`."
+msgstr ""
+
+#: fe1c5b758acf4db1aeb94c25ae85fd04 of
+#: pybricks._common.SimpleAccelerometer.tilt:4
+msgid ""
+"The order of rotation is pitch-then-roll. This is equivalent to a "
+"positive rotation along the robot y-axis and then a positive rotation "
+"along the x-axis."
+msgstr ""
+
+#: fcd57af86765478e92e7c26eeaaa4e69 of
+#: pybricks._common.SimpleAccelerometer.tilt:8
+msgid "Tuple of pitch and roll angles in degrees."
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:112 ebbf9cfe8a4a4196881bb49e3074ba2b
+msgid ".. image:: /blockimg/pybricks_blockImuAcceleration_PrimeHub.svg"
+msgstr ""
+
+#: 7210b6fa926b4f85bb9102a7e12c4ac0 of
+#: pybricks._common.Accelerometer.acceleration:1
+msgid ""
+"Gets the acceleration of the device along a given axis in the :ref:`robot"
+" reference frame <robotframe>`."
+msgstr ""
+
+#: cb6d1763173f4197be85d1c2b9a6e68b of
+#: pybricks._common.Accelerometer.acceleration:4
+msgid "Axis along which the acceleration should be measured."
+msgstr ""
+
+#: 16f6343cda04469c8bab92cee646b3c7 of
+#: pybricks._common.Accelerometer.acceleration:8
+msgid ""
+"Acceleration along the specified axis. If you specify no axis, this "
+"returns a vector of accelerations along all axes."
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:116 e95132563c39478da497367ed9ef6054
+msgid ""
+".. image:: "
+"/blockimg/pybricks_blockImuRotation_PrimeHub_imu.angular_velocity.svg"
+msgstr ""
+
+#: 0def91ca7b8f40ac9662ac189726e357 of pybricks._common.IMU.angular_velocity:1
+msgid ""
+"Gets the angular velocity of the device along a given axis in the "
+":ref:`robot reference frame <robotframe>`."
+msgstr ""
+
+#: 513f6369d8ae4e29858fb48e71b3e360 of pybricks._common.IMU.angular_velocity:4
+msgid "Axis along which the angular velocity should be measured."
+msgstr ""
+
+#: dddd523de6004d3d808e20a183e8c734 of pybricks._common.IMU.angular_velocity:8
+msgid ""
+"Angular velocity along the specified axis. If you specify no axis, this "
+"returns a vector of accelerations along all axes."
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:120 26eeb4a849314b85bd9746b094540326
+msgid ".. image:: /blockimg/pybricks_blockImuGetHeading_PrimeHub.svg"
+msgstr ""
+
+#: 3ac70234bd07491ba055eb8484f10e7e of pybricks._common.IMU.heading:1
+msgid ""
+"Gets the heading angle of your robot. A positive value means a clockwise "
+"turn."
+msgstr ""
+
+#: 142cdf832b0d4fe7938f4b92b463f9f4 of pybricks._common.IMU.heading:4
+msgid ""
+"The heading is 0 when your program starts. The value continues to grow "
+"even as the robot turns more than 180 degrees. It does not wrap around to"
+" -180 like it does in some apps."
+msgstr ""
+
+#: 5e9ca72ea7b84fb5bbca9f30a1a3d23c of pybricks._common.IMU.heading:9
+msgid ""
+"*For now, this method only keeps track of the heading while the robot is "
+"on a flat surface.*"
+msgstr ""
+
+#: 6c44948ff7714f06b7f99f2eefb0bde4 of pybricks._common.IMU.heading:12
+msgid ""
+"This means that the value is no longer correct if you lift it from the "
+"table. To solve this, you can call ``reset_heading`` to reset the heading"
+" to a known value *after* you put it back down. For example, you could "
+"align your robot with the side of the competition table and reset the "
+"heading 90 degrees as the new starting point."
+msgstr ""
+
+#: 0875aea728e140819d04786168da4692 of pybricks._common.IMU.heading:19
+msgid "Heading angle relative to starting orientation."
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:124 055ca5ad9edb41d29209c4b68ec6cf87
+msgid ".. image:: /blockimg/pybricks_blockImuResetHeading_PrimeHub.svg"
+msgstr ""
+
+#: 3d92f9281d224bb69c92798a3c1ebd89 of pybricks._common.IMU.reset_heading:1
+msgid "Resets the accumulated heading angle of the robot."
+msgstr ""
+
+#: 2d4004c06e994da9baaf43ed4d325901 of pybricks._common.IMU.reset_heading:3
+msgid "Value to which the heading should be reset."
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:128 247edb89c4f2445c9fb37c6ee00ee74c
+msgid ".. image:: /blockimg/pybricks_blockImuRotation_PrimeHub_imu.rotation.svg"
+msgstr ""
+
+#: c219522e93964fd5a0cd3e38956670bf of pybricks._common.IMU.rotation:1
+msgid ""
+"Gets the rotation of the device along a given axis in the :ref:`robot "
+"reference frame <robotframe>`."
+msgstr ""
+
+#: ac488762362a4ad8bcc27df3ec4213bd of pybricks._common.IMU.rotation:4
+msgid ""
+"This value is useful if your robot *only* rotates along the requested "
+"axis. For general three-dimensional motion, use the ``orientation()`` "
+"method instead."
+msgstr ""
+
+#: 24e230a36eca47d98f1b5562a930faf8 of pybricks._common.IMU.rotation:8
+msgid "The value starts counting from ``0`` when you initialize this class."
+msgstr ""
+
+#: 5f06298612f34f0dbfac0ac077f86251 of pybricks._common.IMU.rotation:10
+msgid "Axis along which the rotation should be measured."
+msgstr ""
+
+#: 920ad1c356eb4ff8a859625a855492e1 of pybricks._common.IMU.rotation:13
+msgid "The rotation angle."
+msgstr ""
+
+#: c9fb21ba39bd46a495cd7860161e1dbd of pybricks._common.IMU.orientation:1
+msgid ""
+"Gets the three-dimensional orientation of the robot in the :ref:`robot "
+"reference frame <robotframe>`."
+msgstr ""
+
+#: fb617471181c4773a4db956e7f76c037 of pybricks._common.IMU.orientation:4
+msgid ""
+"It returns a rotation matrix whose columns represent the ``X``, ``Y``, "
+"and ``Z`` axis of the robot."
+msgstr ""
+
+#: bb98c26a40e9418888059bc809313794 of pybricks._common.IMU.orientation:7
+msgid "This method is not yet implemented."
+msgstr ""
+
+#: 40b3e47b965546daa8bdc704cfceba36 of pybricks._common.IMU.orientation:9
+msgid "The rotation matrix."
+msgstr ""
+
+#: 4638214ed646413f816b624959844f41 of pybricks._common.IMU.settings:1
+msgid ""
+"Configures the IMU settings. If no arguments are given, this returns the "
+"current values."
+msgstr ""
+
+#: 9c280bca1e3b43c3bf3c562f92a34f7e of pybricks._common.IMU.settings:4
+msgid ""
+"The ``angular_velocity_threshold`` and ``acceleration_threshold`` define "
+"when the hub is considered stationary. If all measurements stay below "
+"these thresholds for one second, the IMU will recalibrate itself."
+msgstr ""
+
+#: 15b9b356da2f47678c785e574a53526c of pybricks._common.IMU.settings:9
+msgid ""
+"In a noisy room with high ambient vibrations (such as a competition "
+"hall), it is recommended to increase the thresholds slightly to give your"
+" robot the chance to calibrate. To verify that your settings are working "
+"as expected, test that the ``stationary()`` method gives ``False`` if "
+"your robot is moving, and ``True`` if it is sitting still for at least a "
+"second."
+msgstr ""
+
+#: a7e01763236f4fa6879564de56a7301d of pybricks._common.IMU.settings:16
+msgid "The threshold for angular velocity. The default value is 1.5 deg/s."
+msgstr ""
+
+#: 12fe302ddebe457aa2c5b0e0dd8e60e9 of pybricks._common.IMU.settings:19
+msgid "The threshold for angular velocity. The default value is 250 mm/s²."
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:137 5e01f4cf0498439ca54aab8256a0f971
+msgid "Using the speaker"
+msgstr ""
+
+#: fe8dd2f9f56449aa83d7178c11c346ea of pybricks._common.Speaker.volume:1
+msgid "Gets or sets the speaker volume."
+msgstr ""
+
+#: 5f871012238c4e25863112e78eaa3d7b of pybricks._common.Speaker.volume:3
+msgid "If no volume is given, this method returns the current volume."
+msgstr ""
+
+#: 55c9c407d30d4a2ab666a7e72ad56794 of pybricks._common.Speaker.volume:5
+msgid "Volume of the speaker in the 0-100 range."
+msgstr ""
+
+#: 9563d21e80074d74bce97cfb24557202 of pybricks._common.Speaker.beep:1
+msgid "Play a beep/tone."
+msgstr ""
+
+#: e28f7caf28d84bccaa73c154ab2959e6 of pybricks._common.Speaker.beep:3
+msgid "Frequency of the beep in the 64-24000 Hz range."
+msgstr ""
+
+#: e71780ee23d44ac4ac764586de86f6fc of pybricks._common.Speaker.beep:5
+msgid ""
+"Duration of the beep. If the duration is less than 0, then the method "
+"returns immediately and the frequency play continues to play "
+"indefinitely."
+msgstr ""
+
+#: 7ce5f92e7c8040ce8f89c8e6193e3979 of pybricks._common.Speaker.play_notes:1
+msgid ""
+"Plays a sequence of musical notes. For example: ``[\"C4/4\", \"C4/4\", "
+"\"G4/4\", \"G4/4\"]``."
+msgstr ""
+
+#: 15ee13489ccd444ca5bf50763bda3c94 of pybricks._common.Speaker.play_notes:4
+msgid "Each note is a string with the following format:"
+msgstr ""
+
+#: 0b5dbbc153b540ad884427b69673d618 of pybricks._common.Speaker.play_notes:6
+msgid ""
+"The first character is the name of the note, ``A`` to ``G`` or ``R`` for "
+"a rest."
+msgstr ""
+
+#: 0678399f2fc049009bff2c332aa21f29 of pybricks._common.Speaker.play_notes:8
+msgid ""
+"Note names can also include an accidental ``#`` (sharp) or ``b`` (flat). "
+"``B#``/``Cb`` and ``E#``/``Fb`` are not allowed."
+msgstr ""
+
+#: 305469d8a3f740ebad1927f8af4c1841 of pybricks._common.Speaker.play_notes:11
+msgid ""
+"The note name is followed by the octave number ``2`` to ``8``. For "
+"example ``C4`` is middle C. The octave changes to the next number at the "
+"note C, for example, ``B3`` is the note below middle C (``C4``)."
+msgstr ""
+
+#: dbc6a18340d54d3a827ce252ed22c799 of pybricks._common.Speaker.play_notes:15
+msgid ""
+"The octave is followed by ``/`` and a number that indicates the size of "
+"the note. For example ``/4`` is a quarter note, ``/8`` is an eighth note "
+"and so on."
+msgstr ""
+
+#: e89db57cdcf84dc89072b38508bb99f8 of pybricks._common.Speaker.play_notes:18
+msgid ""
+"This can optionally followed by a ``.`` to make a dotted note. Dotted "
+"notes are 1-1/2 times as long as notes without a dot."
+msgstr ""
+
+#: 1dc0a9e0b86f44f6adf96e9b776b9d60 of pybricks._common.Speaker.play_notes:21
+msgid ""
+"The note can optionally end with a ``_`` which is a tie or a slur. This "
+"causes there to be no pause between this note and the next note."
+msgstr ""
+
+#: 7361d828687c4f3091c5c38d8c0320c4 of pybricks._common.Speaker.play_notes:25
+msgid "A sequence of notes to be played."
+msgstr ""
+
+#: e6859fd9a05f48eeaf6352ae676f5a5f of pybricks._common.Speaker.play_notes:27
+msgid "Beats per minute. A quarter note is one beat."
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:145 56f6380e1531471db353e3f598213826
+msgid "Using connectionless Bluetooth messaging"
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:146 4fe5314067954f449f83b8d97bc3d9cb
+msgid ".. image:: /blockimg/pybricks_blockBleBroadcast_PrimeHub.svg"
+msgstr ""
+
+#: 52a0dc8fa41442428adf2fb5c56ebb68 of pybricks._common.BLE.broadcast:1
+msgid ""
+"Starts broadcasting the given data on the ``broadcast_channel`` you "
+"selected when initializing the hub."
+msgstr ""
+
+#: 3fb5e06692ca448d91297baf609e5d2f of pybricks._common.BLE.broadcast:4
+msgid ""
+"Data may be of type ``int``, ``float``, ``str``, ``bytes``, ``True``, or "
+"``False``, or a list thereof."
+msgstr ""
+
+#: 43156a99298d488a801fa5c1ba9153ad of pybricks._common.BLE.broadcast:7
+msgid ""
+"Choose ``None`` to stop broadcasting. This helps improve performance when"
+" you don't need the broadcast feature, especially when observing at the "
+"same time."
+msgstr ""
+
+#: cd0c8997b23c424a9d567b4db1abbdf6 of pybricks._common.BLE.broadcast:11
+msgid ""
+"The total data size is quite limited (26 bytes). ``True`` and ``False`` "
+"take 1 byte each. ``float`` takes 5 bytes. ``int`` takes 2 to 5 bytes "
+"depending on how big the number is. ``str`` and ``bytes`` take the number"
+" of bytes in the object plus one extra byte."
+msgstr ""
+
+#: bb6e1e15d5aa4b399e59c29ee19b6dda of pybricks._common.BLE.broadcast:16
+msgid ""
+"When multitasking, only one task can broadcast at a time. To broadcast "
+"information from multiple tasks (or block stacks), you could use a "
+"dedicated separate task that broadcast new values when one or more "
+"variables change."
+msgstr ""
+
+#: 7c66b95db51c468eab7919a17004d444 of pybricks._common.BLE.broadcast:21
+msgid "The value or values to be broadcast."
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:150 cead8998764d47e7b4436c6238fb6aa8
+msgid ".. image:: /blockimg/pybricks_blockBleObserve_PrimeHub.svg"
+msgstr ""
+
+#: ebb99e8633c9479ab1f9cfa574bcb385 of pybricks._common.BLE.observe:1
+msgid "Retrieves the last observed data for a given channel."
+msgstr ""
+
+#: aab41d0549114c378033caaecd2cad2f of pybricks._common.BLE.observe:3
+msgid ""
+"Receiving data is more reliable when the hub is not connected to a "
+"computer or other devices at the same time."
+msgstr ""
+
+#: 967e367c845b4d7fb98bbde0f5b14937 of pybricks._common.BLE.observe:6
+msgid "The channel to observe (0 to 255)."
+msgstr ""
+
+#: 9474e1197917409b8930d322968fcfbb of pybricks._common.BLE.observe:9
+msgid ""
+"The received data in the same format as it was sent, or ``None`` if no "
+"recent data is available."
+msgstr ""
+
+#: 4a3796071b2e4d6ba436d0c537593b4f of pybricks._common.BLE.signal_strength:1
+msgid "Gets the average signal strength in dBm for the given channel."
+msgstr ""
+
+#: 6d2490d30ceb42c4b18515da2d4f9627 of pybricks._common.BLE.signal_strength:3
+msgid ""
+"This indicates how near the broadcasting device is. Nearby devices may "
+"have a signal strength around -40 dBm, while far away devices might have "
+"a signal strength around -70 dBm."
+msgstr ""
+
+#: fd4f5281153641e689f66711db3e66e4 of pybricks._common.BLE.signal_strength:7
+msgid "The channel number (0 to 255)."
+msgstr ""
+
+#: ceb689ba5796459f9df38387ff6dc5e3 of pybricks._common.BLE.signal_strength:10
+msgid "The signal strength or ``-128`` if there is no recent observed data."
+msgstr ""
+
+#: 0d24c85bc7c54d1a9e72d1fa19a43c87 of pybricks._common.BLE.version:1
+msgid "Gets the firmware version from the Bluetooth chip."
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:159 7d42db760fc04e0fb3be6683645eb42d
+msgid "Using the battery"
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:160 7cccce150bdd47adb4714d1a38a8c879
+msgid ""
+".. image:: "
+"/blockimg/pybricks_blockBatteryMeasure_PrimeHub_battery.voltage.svg"
+msgstr ""
+
+#: e11df868ac1d47cba85ca79663946220 of pybricks._common.Battery.voltage:1
+msgid "Gets the voltage of the battery."
+msgstr ""
+
+#: b734de0693784036aff1aeef4a71de19 of pybricks._common.Battery.voltage:3
+msgid "Battery voltage."
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:164 e7ce3ef73f8c4f27a34f131ccb4e921b
+msgid ""
+".. image:: "
+"/blockimg/pybricks_blockBatteryMeasure_PrimeHub_battery.current.svg"
+msgstr ""
+
+#: 664ca0dc22244f26af1ef6073ba9849c of pybricks._common.Battery.current:1
+msgid "Gets the current supplied by the battery."
+msgstr ""
+
+#: e2982d0e245f42a989cb89b6dfb6d475 of pybricks._common.Battery.current:3
+msgid "Battery current."
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:169 44965301796e483c8329bef230b59d1d
+msgid "Getting the charger status"
+msgstr ""
+
+#: fe82135cb5bb45aaa50a51a62cc465dc of pybricks._common.Charger.connected:1
+msgid "Checks whether a charger is connected via USB."
+msgstr ""
+
+#: 934fa6240c4a497895fcc3590cebbe13 of pybricks._common.Charger.connected:3
+msgid "``True`` if a charger is connected, ``False`` if not."
+msgstr ""
+
+#: 3486eedab52d4442a3bc1f1826f2e30e of pybricks._common.Charger.current:1
+msgid "Gets the charging current."
+msgstr ""
+
+#: 606a950f20254a8fa8220db99e5c4c89 of pybricks._common.Charger.current:3
+msgid "Charging current."
+msgstr ""
+
+#: 69d5c3eea18b4034890e0f993f105711 of pybricks._common.Charger.status:1
+msgid ""
+"Gets the status of the battery charger, represented by one of the "
+"following values. This corresponds to the battery light indicator right "
+"next to the USB port."
+msgstr ""
+
+#: 5a579c5a232441379c37e97d0eb39dfa of pybricks._common.Charger.status:5
+msgid "Not charging (light is off)."
+msgstr ""
+
+#: 92a78b74f5d142dc8e069f5360dbb8a3 of pybricks._common.Charger.status:6
+msgid "Charging (light is red)."
+msgstr ""
+
+#: 196f1be7314b4938bef4dd1cfdd2cdaa of pybricks._common.Charger.status:7
+msgid "Charging is complete (light is green)."
+msgstr ""
+
+#: 42246b0f64ad47999f9e67f1befe2035 of pybricks._common.Charger.status:8
+msgid "There is a problem with the charger (light is yellow)."
+msgstr ""
+
+#: c078b1ba7eca428c8a4040e71612f904 of pybricks._common.Charger.status:10
+msgid "Status value."
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:177 b9154398bf294e8bbda3af698a55dcff
+msgid "System control"
+msgstr ""
+
+#: 8b0e089d6bef4787ab6a290f6618a79b of pybricks._common.System.name:1
+msgid "Gets the hub name. This is the name you see when connecting via Bluetooth."
+msgstr ""
+
+#: d4a5a9eb2a9d481b8f92b1412a43490d of pybricks._common.System.name:4
+msgid "The hub name."
+msgstr ""
+
+#: c2deee8c96aa47f09255ec3002a1b0fe of pybricks._common.System.storage:1
+msgid "Reads or writes binary data to persistent storage."
+msgstr ""
+
+#: ee3dede377d6416680f9cac5f5834c38 of pybricks._common.System.storage:3
+msgid ""
+"This lets you store data that can be used the next time you run the "
+"program."
+msgstr ""
+
+#: 285f78c46fa94afe9fc659fcbc296d64 of pybricks._common.System.storage:6
+msgid ""
+"The data will be saved to flash memory when you turn the hub off "
+"normally. It will not be saved if the batteries are removed *while* the "
+"hub is still running."
+msgstr ""
+
+#: 14fb80c51176449c9ef3f1e0ab81c737 of pybricks._common.System.storage:10
+msgid ""
+"Once saved, the data will remain available even after you remove the "
+"batteries."
+msgstr ""
+
+#: ff3a3b3d1a4f4c6f97fa86e65ccb64a3 of pybricks._common.System.storage:13
+msgid "The offset from the start of the user storage memory, in bytes."
+msgstr ""
+
+#: 41932c0c5b3949a6975164724eb27dc8 of pybricks._common.System.storage:15
+msgid "The number of bytes to read. Omit this argument when writing."
+msgstr ""
+
+#: 3f51b9a27c3d4dffae092840af11f466 of pybricks._common.System.storage:17
+msgid "The bytes to write. Omit this argument when reading."
+msgstr ""
+
+#: 8f30e0de61c444b1a5f045861220068a of pybricks._common.System.storage:20
+msgid "The bytes read if reading, otherwise ``None``."
+msgstr ""
+
+#: ../../main/hubs/primehub.rst 2f7433d25e7d47f48ab86a6c5c724da5
+msgid "Raises"
+msgstr ""
+
+#: fe33fd74f8da41ab8a457ad9685ad1d5 of pybricks._common.System.storage:22
+msgid "If you try to read or write data outside of the allowed range."
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:182 7bcb4b49148e472cb7ef3e08f9fe8f98
+msgid "You can store up to 512 bytes of data on this hub."
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:184 565ed3e4027c43bd9b9ffd744fc05b3b
+msgid ".. image:: /blockimg/pybricks_blockHubShutdown_PrimeHub.svg"
+msgstr ""
+
+#: 81901d84fcc646b985953a33daa61a50 of pybricks._common.System.shutdown:1
+msgid "Stops your program and shuts the hub down."
+msgstr ""
+
+#: 78c1964226624fd490223730b4859198 of pybricks._common.System.reset_reason:1
+msgid ""
+"Finds out how and why the hub (re)booted. This can be useful to diagnose "
+"some problems."
+msgstr ""
+
+#: e9a652d75411453a8eece7066890e0d6 of pybricks._common.System.reset_reason:4
+msgid ""
+"* ``0`` if the hub was previously powered off   normally. * ``1`` if the "
+"hub rebooted automatically, like   after a firmware update. * ``2`` if "
+"the hub previously   crashed due to a watchdog timeout, which indicates a"
+" firmware   issue."
+msgstr ""
+
+#: 2ef18b2fbeaa4f7b9b3d5818b909cc82 of pybricks._common.System.reset_reason:6
+msgid "``0`` if the hub was previously powered off normally."
+msgstr ""
+
+#: bdd4d9b285304c4c90a515006b683abb of pybricks._common.System.reset_reason:8
+msgid "``1`` if the hub rebooted automatically, like after a firmware update."
+msgstr ""
+
+#: b631eeacab2a4122be6dacbfcae6deea of pybricks._common.System.reset_reason:10
+msgid ""
+"``2`` if the hub previously crashed due to a watchdog timeout, which "
+"indicates a firmware issue."
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:190 8de50009b9744bba87c77c777933b295
+msgid ""
+"The examples below use the ``PrimeHub`` class. The examples work fine on "
+"both hubs because they are the identical. If you prefer, you can change "
+"this to ``InventorHub``."
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:195 a715df03670a447a861fe165b43187cf
+msgid "Status light examples"
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:198 1b5afeb8d9894c9093a676cc1306d20b
+msgid "Turning the light on and off"
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:200 81526efc00ec42198453df9884c704a6
+msgid ""
+"from pybricks.hubs import PrimeHub\n"
+"from pybricks.parameters import Color\n"
+"from pybricks.tools import wait\n"
+"\n"
+"# Initialize the hub.\n"
+"hub = PrimeHub()\n"
+"\n"
+"# Turn the light on and off 5 times.\n"
+"for i in range(5):\n"
+"\n"
+"    hub.light.on(Color.RED)\n"
+"    wait(1000)\n"
+"\n"
+"    hub.light.off()\n"
+"    wait(500)\n"
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:204 ebd9e8d19dc2400c9f36494aebd19f57
+msgid "Changing brightness and using custom colors"
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:206 e820ee24bc3a4e81b01f72f6f777d482
+msgid ""
+"from pybricks.hubs import PrimeHub\n"
+"from pybricks.parameters import Color\n"
+"from pybricks.tools import wait\n"
+"\n"
+"# Initialize the hub.\n"
+"hub = PrimeHub()\n"
+"\n"
+"# Show the color at 30% brightness.\n"
+"hub.light.on(Color.RED * 0.3)\n"
+"\n"
+"wait(2000)\n"
+"\n"
+"# Use your own custom color.\n"
+"hub.light.on(Color(h=30, s=100, v=50))\n"
+"\n"
+"wait(2000)\n"
+"\n"
+"# Go through all the colors.\n"
+"for hue in range(360):\n"
+"    hub.light.on(Color(hue))\n"
+"    wait(10)\n"
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:210 58b5723c72054ba9a5ab9a713c345049
+msgid "Making the light blink"
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:212 7abc28a8edd64044852e1c3181279eaf
+msgid ""
+"from pybricks.hubs import PrimeHub\n"
+"from pybricks.parameters import Color\n"
+"from pybricks.tools import wait\n"
+"\n"
+"# Initialize the hub\n"
+"hub = PrimeHub()\n"
+"\n"
+"# Keep blinking red on and off.\n"
+"hub.light.blink(Color.RED, [500, 500])\n"
+"\n"
+"wait(10000)\n"
+"\n"
+"# Keep blinking green slowly and then quickly.\n"
+"hub.light.blink(Color.GREEN, [500, 500, 50, 900])\n"
+"\n"
+"wait(10000)\n"
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:216 87bd986fd079420cae2d0df3192d8680
+msgid "Creating light animations"
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:218 53552909ebb34e7f9ca2c2bbe594a68e
+msgid ""
+"from pybricks.hubs import PrimeHub\n"
+"from pybricks.parameters import Color\n"
+"from pybricks.tools import wait\n"
+"from umath import sin, pi\n"
+"\n"
+"# Initialize the hub.\n"
+"hub = PrimeHub()\n"
+"\n"
+"# Make an animation with multiple colors.\n"
+"hub.light.animate([Color.RED, Color.GREEN, Color.NONE], interval=500)\n"
+"\n"
+"wait(10000)\n"
+"\n"
+"# Make the color RED grow faint and bright using a sine pattern.\n"
+"hub.light.animate([Color.RED * (0.5 * sin(i / 15 * pi) + 0.5) for i in "
+"range(30)], 40)\n"
+"\n"
+"wait(10000)\n"
+"\n"
+"# Cycle through a rainbow of colors.\n"
+"hub.light.animate([Color(h=i * 8) for i in range(45)], interval=40)\n"
+"\n"
+"wait(10000)\n"
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:222 a11f76e7a7ca43f9969714e9ca568aa3
+msgid "Matrix display examples"
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:225 ba5d416cc8a3443a9eb738e5978115a2
+msgid "Displaying images"
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:227 34f287520a0142da8c4fd35609a245ab
+msgid ""
+"from pybricks.hubs import PrimeHub\n"
+"from pybricks.tools import wait\n"
+"from pybricks.parameters import Icon\n"
+"\n"
+"# Initialize the hub.\n"
+"hub = PrimeHub()\n"
+"\n"
+"# Display a big arrow pointing up.\n"
+"hub.display.icon(Icon.UP)\n"
+"\n"
+"# Wait so we can see what is displayed.\n"
+"wait(2000)\n"
+"\n"
+"# Display a heart at half brightness.\n"
+"hub.display.icon(Icon.HEART / 2)\n"
+"\n"
+"# Wait so we can see what is displayed.\n"
+"wait(2000)\n"
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:231 ce75eceb844c4dcf93781ecc002eb1e7
+msgid "Displaying numbers"
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:233 6173252fb86c4da6acf2b95974b592c6
+msgid ""
+"from pybricks.hubs import PrimeHub\n"
+"from pybricks.tools import wait\n"
+"\n"
+"# Initialize the hub.\n"
+"hub = PrimeHub()\n"
+"\n"
+"# Count from 0 to 99.\n"
+"for i in range(100):\n"
+"    hub.display.number(i)\n"
+"    wait(200)\n"
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:237 7c71a669ae844a6fac9a7ec4dc7a256f
+msgid "Displaying text"
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:239 461f69d6212747c1a3548e68e0f55c86
+msgid ""
+"from pybricks.hubs import PrimeHub\n"
+"from pybricks.tools import wait\n"
+"\n"
+"# Initialize the hub.\n"
+"hub = PrimeHub()\n"
+"\n"
+"# Display the letter A for two seconds.\n"
+"hub.display.char(\"A\")\n"
+"wait(2000)\n"
+"\n"
+"# Display text, one letter at a time.\n"
+"hub.display.text(\"Hello, world!\")\n"
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:243 806b187125aa4296821b75a0f8af5d85
+msgid "Displaying individual pixels"
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:245 aea18eb166834f4dabfe274052465463
+msgid ""
+"from pybricks.hubs import PrimeHub\n"
+"from pybricks.tools import wait\n"
+"\n"
+"# Initialize the hub.\n"
+"hub = PrimeHub()\n"
+"\n"
+"# Turn on the pixel at row 1, column 2.\n"
+"hub.display.pixel(1, 2)\n"
+"wait(2000)\n"
+"\n"
+"# Turn on the pixel at row 2, column 4, at 50% brightness.\n"
+"hub.display.pixel(2, 4, 50)\n"
+"wait(2000)\n"
+"\n"
+"# Turn off the pixel at row 1, column 2.\n"
+"hub.display.pixel(1, 2, 0)\n"
+"wait(2000)\n"
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:249 da80bde6ca564c03ba973c5374541b6b
+msgid "Changing the display orientation"
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:251 3c6309800e284feca5844408ff8f0b20
+msgid ""
+"from pybricks.hubs import PrimeHub\n"
+"from pybricks.tools import wait\n"
+"from pybricks.parameters import Side\n"
+"\n"
+"# Initialize the hub.\n"
+"hub = PrimeHub()\n"
+"\n"
+"# Rotate the display. Now right is up.\n"
+"hub.display.orientation(up=Side.RIGHT)\n"
+"\n"
+"# Display a number. This will be shown sideways.\n"
+"hub.display.number(23)\n"
+"\n"
+"# Wait so we can see what is displayed.\n"
+"wait(10000)\n"
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:254 64310a271a044f01ba2ddc7b88d17ac2
+msgid ""
+"from pybricks.hubs import PrimeHub\n"
+"from pybricks.parameters import Icon\n"
+"from pybricks.tools import wait\n"
+"\n"
+"# Initialize the hub.\n"
+"hub = PrimeHub()\n"
+"\n"
+"while True:\n"
+"\n"
+"    # Check which side of the hub is up.\n"
+"    up_side = hub.imu.up()\n"
+"\n"
+"    # Use this side to set the display orientation.\n"
+"    hub.display.orientation(up_side)\n"
+"\n"
+"    # Display something, like an arrow.\n"
+"    hub.display.icon(Icon.UP)\n"
+"\n"
+"    wait(10)\n"
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:260 784303cbfd6b47a4a4689357fad9f9e4
+msgid "Making your own images"
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:262 04fd5ed85462481a942c179ee1445c2b
+msgid ""
+"from pybricks.hubs import PrimeHub\n"
+"from pybricks.tools import wait, Matrix\n"
+"\n"
+"# Initialize the hub.\n"
+"hub = PrimeHub()\n"
+"\n"
+"# Make a square that is bright on the outside and faint in the middle.\n"
+"SQUARE = Matrix(\n"
+"    [\n"
+"        [100, 100, 100, 100, 100],\n"
+"        [100, 50, 50, 50, 100],\n"
+"        [100, 50, 0, 50, 100],\n"
+"        [100, 50, 50, 50, 100],\n"
+"        [100, 100, 100, 100, 100],\n"
+"    ]\n"
+")\n"
+"\n"
+"# Display the square.\n"
+"hub.display.icon(SQUARE)\n"
+"wait(3000)\n"
+"\n"
+"# Make an image using a Python list comprehension. In this image, the\n"
+"# brightness of each pixel is the sum of the row and column index. So the"
+"\n"
+"# light is faint in the top left and bright in the bottom right.\n"
+"GRADIENT = Matrix([[(r + c) for c in range(5)] for r in range(5)]) * 12.5"
+"\n"
+"\n"
+"# Display the generated gradient.\n"
+"hub.display.icon(GRADIENT)\n"
+"wait(3000)\n"
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:266 ea7b5cc5d77644ca8507aa273df03727
+msgid "Combining icons to make expressions"
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:268 98a479feb4f24413bf5663da2f16888b
+msgid ""
+"from pybricks.hubs import PrimeHub\n"
+"from pybricks.parameters import Icon, Side\n"
+"from pybricks.tools import wait\n"
+"\n"
+"from urandom import randint\n"
+"\n"
+"# Initialize the hub.\n"
+"hub = PrimeHub()\n"
+"hub.display.orientation(up=Side.RIGHT)\n"
+"\n"
+"while True:\n"
+"\n"
+"    # Start with random left brow: up or down.\n"
+"    if randint(0, 100) < 70:\n"
+"        brows = Icon.EYE_LEFT_BROW * 0.5\n"
+"    else:\n"
+"        brows = Icon.EYE_LEFT_BROW_UP * 0.5\n"
+"\n"
+"    # Add random right brow: up or down.\n"
+"    if randint(0, 100) < 70:\n"
+"        brows += Icon.EYE_RIGHT_BROW * 0.5\n"
+"    else:\n"
+"        brows += Icon.EYE_RIGHT_BROW_UP * 0.5\n"
+"\n"
+"    for i in range(3):\n"
+"        # Display eyes open plus the random brows.\n"
+"        hub.display.icon(Icon.EYE_LEFT + Icon.EYE_RIGHT + brows)\n"
+"        wait(2000)\n"
+"\n"
+"        # Display eyes blinked plus the random brows.\n"
+"        hub.display.icon(Icon.EYE_LEFT_BLINK * 0.7 + Icon.EYE_RIGHT_BLINK"
+" * 0.7 + brows)\n"
+"        wait(200)\n"
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:272 ba6935b91f424d8982e8ad7bb3eb5bec
+msgid "Displaying animations"
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:274 b64081437fa44f078500ec80200fe559
+msgid ""
+"from pybricks.hubs import PrimeHub\n"
+"from pybricks.parameters import Icon\n"
+"from pybricks.tools import wait\n"
+"\n"
+"# Initialize the hub.\n"
+"hub = PrimeHub()\n"
+"\n"
+"# Turn the hub light off (optional).\n"
+"hub.light.off()\n"
+"\n"
+"# Create a list of intensities from 0 to 100 and back.\n"
+"brightness = list(range(0, 100, 4)) + list(range(100, 0, -4))\n"
+"\n"
+"# Create an animation of the heart icon with changing brightness.\n"
+"hub.display.animate([Icon.HEART * i / 100 for i in brightness], 30)\n"
+"\n"
+"# The animation repeats in the background. Here we just wait.\n"
+"while True:\n"
+"    wait(100)\n"
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:278 235878862ab047c380187a102b4656e3
+msgid "Button examples"
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:281 c89298fac8294a41a5e03a4517c6daf6
+msgid "Detecting button presses"
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:283 c1547171ebdb4c36bdad1524211b76d5
+msgid ""
+"from pybricks.hubs import PrimeHub\n"
+"from pybricks.parameters import Button, Icon\n"
+"from pybricks.tools import wait\n"
+"\n"
+"# Initialize the hub.\n"
+"hub = PrimeHub()\n"
+"\n"
+"# Wait for any button to be pressed, and save the result.\n"
+"pressed = []\n"
+"while not any(pressed):\n"
+"    pressed = hub.buttons.pressed()\n"
+"    wait(10)\n"
+"\n"
+"# Display a circle.\n"
+"hub.display.icon(Icon.CIRCLE)\n"
+"\n"
+"# Wait for all buttons to be released.\n"
+"while any(hub.buttons.pressed()):\n"
+"    wait(10)\n"
+"\n"
+"# Display an arrow to indicate which button was pressed.\n"
+"if Button.LEFT in pressed:\n"
+"    hub.display.icon(Icon.ARROW_LEFT_DOWN)\n"
+"elif Button.RIGHT in pressed:\n"
+"    hub.display.icon(Icon.ARROW_RIGHT_DOWN)\n"
+"elif Button.BLUETOOTH in pressed:\n"
+"    hub.display.icon(Icon.ARROW_RIGHT_UP)\n"
+"\n"
+"wait(3000)\n"
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:287 c5dcd1e3312f4785a2ae17f17cc244e0
+msgid "IMU examples"
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:290 1c2476cf19e943c7b7d9c3e52c0c48a6
+msgid "Testing which way is up"
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:292 5b955aecc86f47d897f77e5e8823b24b
+msgid ""
+"from pybricks.hubs import PrimeHub\n"
+"from pybricks.parameters import Color, Side\n"
+"from pybricks.tools import wait\n"
+"\n"
+"# Initialize the hub.\n"
+"hub = PrimeHub()\n"
+"\n"
+"# Define colors for each side in a dictionary.\n"
+"SIDE_COLORS = {\n"
+"    Side.TOP: Color.RED,\n"
+"    Side.BOTTOM: Color.BLUE,\n"
+"    Side.LEFT: Color.GREEN,\n"
+"    Side.RIGHT: Color.YELLOW,\n"
+"    Side.FRONT: Color.MAGENTA,\n"
+"    Side.BACK: Color.BLACK,\n"
+"}\n"
+"\n"
+"# Keep updating the color based on detected up side.\n"
+"while True:\n"
+"\n"
+"    # Check which side of the hub is up.\n"
+"    up_side = hub.imu.up()\n"
+"\n"
+"    # Change the color based on the side.\n"
+"    hub.light.on(SIDE_COLORS[up_side])\n"
+"\n"
+"    # Also print the result.\n"
+"    print(up_side)\n"
+"    wait(50)\n"
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:297 8cf823cf373c415ebc2e03234d3716ea
+msgid "Reading the tilt value"
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:299 2dc8757a3641482eba59ba0769bc0874
+msgid ""
+"from pybricks.hubs import PrimeHub\n"
+"from pybricks.tools import wait\n"
+"\n"
+"# Initialize the hub.\n"
+"hub = PrimeHub()\n"
+"\n"
+"while True:\n"
+"    # Read the tilt values.\n"
+"    pitch, roll = hub.imu.tilt()\n"
+"\n"
+"    # Print the result.\n"
+"    print(pitch, roll)\n"
+"    wait(200)\n"
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:303 42485f2405204d2d8b9b9ef5627d93c8
+msgid "Using a custom hub orientation"
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:305 7fbe7a9bf7694efe876635f6ec58da73
+msgid ""
+"from pybricks.hubs import PrimeHub\n"
+"from pybricks.tools import wait\n"
+"from pybricks.parameters import Axis\n"
+"\n"
+"# Initialize the hub. In this case, specify that the hub is mounted with "
+"the\n"
+"# top side facing forward and the front side facing to the right.\n"
+"# For example, this is how the hub is mounted in BLAST in the 51515 set.\n"
+"hub = PrimeHub(top_side=Axis.X, front_side=-Axis.Y)\n"
+"\n"
+"while True:\n"
+"    # Read the tilt values. Now, the values are 0 when BLAST stands "
+"upright.\n"
+"    # Leaning forward gives positive pitch. Leaning right gives positive "
+"roll.\n"
+"    pitch, roll = hub.imu.tilt()\n"
+"\n"
+"    # Print the result.\n"
+"    print(pitch, roll)\n"
+"    wait(200)\n"
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:309 5894a5127dd04543be712699dc2b306b
+msgid "Reading acceleration and angular velocity vectors"
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:311 5ffe41fa536b44e681a7c0874bfa0d70
+msgid ""
+"from pybricks.hubs import PrimeHub\n"
+"from pybricks.tools import wait\n"
+"\n"
+"# Initialize the hub.\n"
+"hub = PrimeHub()\n"
+"\n"
+"# Get the acceleration vector in g's.\n"
+"print(hub.imu.acceleration() / 9810)\n"
+"\n"
+"# Get the angular velocity vector.\n"
+"print(hub.imu.angular_velocity())\n"
+"\n"
+"# Wait so we can see what we printed\n"
+"wait(5000)\n"
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:315 6fbbb8205df445ca8e5dd0d46dc4446d
+msgid "Reading acceleration and angular velocity on one axis"
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:317 d6b457b2ff474baf9eee16eaebb28652
+msgid ""
+"from pybricks.hubs import PrimeHub\n"
+"from pybricks.tools import wait\n"
+"from pybricks.parameters import Axis\n"
+"\n"
+"# Initialize the hub.\n"
+"hub = PrimeHub()\n"
+"\n"
+"# Get the acceleration or angular_velocity along a single axis.\n"
+"# If you need only one value, this is more memory efficient.\n"
+"while True:\n"
+"\n"
+"    # Read the forward acceleration.\n"
+"    forward_acceleration = hub.imu.acceleration(Axis.X)\n"
+"\n"
+"    # Read the yaw rate.\n"
+"    yaw_rate = hub.imu.angular_velocity(Axis.Z)\n"
+"\n"
+"    # Print the yaw rate.\n"
+"    print(yaw_rate)\n"
+"    wait(100)\n"
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:322 c5fa90fc16dc44ca95d0b2f4b5535ddf
+msgid "Bluetooth examples"
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:325 9ecb224cf3b645af93150a5a6705d202
+msgid "Broadcasting data to other hubs"
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:327 adf6e6c858a442808e0b3e912283b903
+msgid ""
+"from pybricks.hubs import PrimeHub\n"
+"from pybricks.pupdevices import Motor\n"
+"from pybricks.parameters import Port\n"
+"from pybricks.tools import wait\n"
+"\n"
+"# Initialize the hub.\n"
+"hub = PrimeHub(broadcast_channel=1)\n"
+"\n"
+"# Initialize the motors.\n"
+"left_motor = Motor(Port.A)\n"
+"right_motor = Motor(Port.B)\n"
+"\n"
+"while True:\n"
+"    # Read the motor angles to be sent to the other hub.\n"
+"    left_angle = left_motor.angle()\n"
+"    right_angle = right_motor.angle()\n"
+"\n"
+"    # Set the broadcast data and start broadcasting if not already doing "
+"so.\n"
+"    data = (left_angle, right_angle)\n"
+"    hub.ble.broadcast(data)\n"
+"\n"
+"    # Broadcasts are only sent every 100 milliseconds, so there is no "
+"reason\n"
+"    # to call the broadcast() method more often than that.\n"
+"    wait(100)\n"
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:331 479df91df61a413bb0453c832c24e679
+msgid "Observing data from other hubs"
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:333 e354ee7893924e22ae4d6fb7b88d2c56
+msgid ""
+"from pybricks.hubs import PrimeHub\n"
+"from pybricks.pupdevices import Motor\n"
+"from pybricks.parameters import Color, Port\n"
+"from pybricks.tools import wait\n"
+"\n"
+"# Initialize the hub.\n"
+"hub = PrimeHub(observe_channels=[1])\n"
+"\n"
+"# Initialize the motors.\n"
+"left_motor = Motor(Port.A)\n"
+"right_motor = Motor(Port.B)\n"
+"\n"
+"while True:\n"
+"    # Receive broadcast from the other hub.\n"
+"\n"
+"    data = hub.ble.observe(1)\n"
+"\n"
+"    if data is None:\n"
+"        # No data has been received in the last 1 second.\n"
+"        hub.light.on(Color.RED)\n"
+"    else:\n"
+"        # Data was received and is less that one second old.\n"
+"        hub.light.on(Color.GREEN)\n"
+"\n"
+"        # *data* contains the same values in the same order\n"
+"        # that were passed to hub.ble.broadcast() on the\n"
+"        # other hub.\n"
+"        left_angle, right_angle = data\n"
+"\n"
+"        # Make the motors on this hub mirror the position of the\n"
+"        # motors on the other hub.\n"
+"        left_motor.track_target(left_angle)\n"
+"        right_motor.track_target(right_angle)\n"
+"\n"
+"    # Broadcasts are only sent every 100 milliseconds, so there is\n"
+"    # no reason to call the observe() method more often than that.\n"
+"    wait(100)\n"
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:338 f9c02884fe7346ed8b889e7f3f6dd16e
+msgid "System examples"
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:341 fce45a93ad15463d81a7770b55938e68
+msgid "Changing the stop button combination"
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:343 e8479f58eb2648b791a968affde33cd5
+msgid ""
+"from pybricks.hubs import PrimeHub\n"
+"from pybricks.parameters import Button\n"
+"\n"
+"# Initialize the hub.\n"
+"hub = PrimeHub()\n"
+"\n"
+"# Configure the stop button combination. Now, your program stops\n"
+"# if you press the center and Bluetooth buttons simultaneously.\n"
+"hub.system.set_stop_button((Button.CENTER, Button.BLUETOOTH))\n"
+"\n"
+"# Now we can use the center button as a normal button.\n"
+"while True:\n"
+"\n"
+"    # Play a sound if the center button is pressed.\n"
+"    if Button.CENTER in hub.buttons.pressed():\n"
+"        hub.speaker.beep()\n"
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:347 a9c0720e81564db3a7dc9a08b7e67b71
+msgid "Turning the hub off"
+msgstr ""
+
+#: ../../main/hubs/primehub.rst:349 178e0ff920f84f9586da16ccee0d5875
+msgid ""
+"from pybricks.hubs import PrimeHub\n"
+"from pybricks.tools import wait\n"
+"\n"
+"# Initialize the hub.\n"
+"hub = PrimeHub()\n"
+"\n"
+"# Say goodbye and give some time to send it.\n"
+"print(\"Goodbye!\")\n"
+"wait(100)\n"
+"\n"
+"# Shut the hub down.\n"
+"hub.system.shutdown()\n"
+msgstr ""
+

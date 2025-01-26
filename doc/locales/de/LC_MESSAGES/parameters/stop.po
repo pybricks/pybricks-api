@@ -1,0 +1,159 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-2023 The Pybricks Authors
+# This file is distributed under the same license as the pybricks package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pybricks v3.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-01-26 20:11+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: de\n"
+"Language-Team: de <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../main/parameters/stop.rst:4 f25938bd8b17455e8c75bd626eea3868
+msgid "Stop"
+msgstr ""
+
+#: ../../main/parameters/stop.rst:8 47119f80bcb24d0581261b89e20c17bf
+msgid "Action after the motor stops."
+msgstr ""
+
+#: ../../docstring 4494092d5d0a4928b588724289293bcb of
+#: pybricks.parameters.Stop.COAST:1
+msgid "Let the motor move freely."
+msgstr ""
+
+#: ../../docstring 6e25e9020508471fbdcfb91d5098a3d8 of
+#: pybricks.parameters.Stop.COAST_SMART:1
+msgid ""
+"Let the motor move freely. For the next relative angle maneuver, take the"
+" last target angle (instead of the current angle) as the new starting "
+"point. This reduces cumulative errors. This will apply only if the "
+"current angle is less than twice the configured position tolerance."
+msgstr ""
+
+#: ../../docstring b69a0d9c48314bbf81eb076fb9bec6f9 of
+#: pybricks.parameters.Stop.BRAKE:1
+msgid "Passively resist small external forces."
+msgstr ""
+
+#: ../../docstring a1483ffe1b5d444c9bc96e428250b3b5 of
+#: pybricks.parameters.Stop.HOLD:1
+msgid "Keep controlling the motor to hold it at the commanded angle."
+msgstr ""
+
+#: ../../docstring cbdf613cd346493ea67b31e4ae7ea38b of
+#: pybricks.parameters.Stop.NONE:1
+msgid ""
+"Do not decelerate when approaching the target position. This can be used "
+"to concatenate multiple motor or drive base maneuvers without stopping. "
+"If no further commands are given, the motor will proceed to run "
+"indefinitely at the given speed."
+msgstr ""
+
+#: ../../main/parameters/stop.rst:25 f94fd39833b04e0a90ff47b642e60f60
+msgid ""
+"The following table shows how each of the basic stop types add an extra "
+"level of resistance to motion. In these examples, ``m`` is a "
+":class:`Motor <pybricks.pupdevices.Motor>` and and ``d`` is a "
+":class:`DriveBase <pybricks.robotics.DriveBase>`. The examples also show "
+"how running at zero speed compares to these stop types."
+msgstr ""
+
+#: ../../main/parameters/stop.rst 7f7326406af841018fa2d45d5b770c1a
+msgid "Type"
+msgstr ""
+
+#: ../../main/parameters/stop.rst 7795e968b2904bec9a20f4214190733f
+msgid "Friction"
+msgstr ""
+
+#: ../../main/parameters/stop.rst 8e19d33f13bc4a2a8f25a40d717ec3e9
+msgid "Back"
+msgstr ""
+
+#: ../../main/parameters/stop.rst a04bfb793169410cb77bc0fb1d5938cb
+msgid "EMF"
+msgstr ""
+
+#: ../../main/parameters/stop.rst af32e0232a9249ddb8e79d8b97c1e622
+msgid "Speed"
+msgstr ""
+
+#: ../../main/parameters/stop.rst 546bf08e00374220afa9b2bfa6b9e5ee
+msgid "kept at 0"
+msgstr ""
+
+#: ../../main/parameters/stop.rst 902f13d39b4c4eabbfe2f1a9df9d6971
+msgid "Angle kept"
+msgstr ""
+
+#: ../../main/parameters/stop.rst e0876aa496724f5392f4bedee7cae734
+msgid "at target"
+msgstr ""
+
+#: ../../main/parameters/stop.rst 1a64b4e348924fd49fef761417f5b3d5
+msgid "Examples"
+msgstr ""
+
+#: ../../main/parameters/stop.rst:35 ac68116d9b1d4badb150b01230976d12
+msgid "Coast"
+msgstr ""
+
+#: ../../main/parameters/stop.rst 877317b0e3b1478197c1213b6aae1bb4
+msgid "``m.stop()``"
+msgstr ""
+
+#: ../../main/parameters/stop.rst aef41b50d11c4b95aae74605931011a1
+msgid "``m.run_target(500, 90, Stop.COAST)``"
+msgstr ""
+
+#: ../../main/parameters/stop.rst:38 2775fd7e09204c78af032834ba0cb4f4
+msgid "Brake"
+msgstr ""
+
+#: ../../main/parameters/stop.rst b993a398e6504523b9db606cf11c8f3a
+msgid "``m.brake()``"
+msgstr ""
+
+#: ../../main/parameters/stop.rst f708da8d557b4bd2b341d461a87d513d
+msgid "``m.run_target(500, 90, Stop.BRAKE)``"
+msgstr ""
+
+#: ../../main/parameters/stop.rst 6f99737dfe2e4ba0981b120912e65745
+msgid "``m.run(0)``"
+msgstr ""
+
+#: ../../main/parameters/stop.rst 25487a92a58d45a2ac49210192562aaf
+msgid "``d.drive(0, 0)``"
+msgstr ""
+
+#: ../../main/parameters/stop.rst:44 3dcca85c6d9f4194b35061b770eecc4a
+msgid "Hold"
+msgstr ""
+
+#: ../../main/parameters/stop.rst bc3dfc641bcb4d8caa84d3520869c492
+msgid "``m.hold()``"
+msgstr ""
+
+#: ../../main/parameters/stop.rst c660f1ff4715408fa787d91c4fe3f0dd
+msgid "``m.run_target(500, 90, Stop.HOLD)``"
+msgstr ""
+
+#: ../../main/parameters/stop.rst 15dd15e118b04ef0b3d0e878aed50a88
+msgid "``d.straight(0)``"
+msgstr ""
+
+#: ../../main/parameters/stop.rst 78a541a771e7436f8bb8b243e2084a08
+msgid "``d.straight(100)``"
+msgstr ""
+

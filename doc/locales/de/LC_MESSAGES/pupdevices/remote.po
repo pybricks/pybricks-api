@@ -1,0 +1,324 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-2023 The Pybricks Authors
+# This file is distributed under the same license as the pybricks package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pybricks v3.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-01-26 20:11+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: de\n"
+"Language-Team: de <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../main/pupdevices/remote.rst:4 f0e0e64050454b91a4cf2ad05c2be276
+msgid "Remote Control"
+msgstr ""
+
+#: ../../main/pupdevices/remote.rst:6 fa580a515c2f483090e90eaa921cfe1b
+msgid ".. image:: ../../main/cad/output/pupdevice-remote.png"
+msgstr ""
+
+#: ../../main/pupdevices/remote.rst:9 1c9285cc2a2041748ce07238adb583a1
+msgid ".. image:: /blockimg/pybricks_variables_set_remote_connect_any.svg"
+msgstr ""
+
+#: ../../main/pupdevices/remote.rst:11 ../../main/pupdevices/remote.rst:87
+#: 46aa9d0a3e6c47a0bc4d4807c9eeb529 e0e39ad5acfa43afa46eb2b0b08dda13
+msgid ".. image:: /blockimg/pybricks_variables_set_remote_connect_name.svg"
+msgstr ""
+
+#: 5e2f6c2d3eff49e08c9eaaa02cb8db7e of pybricks.pupdevices.Remote:1
+msgid "LEGO® Powered Up Bluetooth Remote Control."
+msgstr ""
+
+#: 93324689865c4afc88648c42bcd8b514 of pybricks.pupdevices.Remote:3
+msgid ""
+"When you instantiate this class, the hub will search for a remote and "
+"connect automatically."
+msgstr ""
+
+#: 01330ca69ec34ec48698e6176b3a63b2 of pybricks.pupdevices.Remote:6
+msgid ""
+"The remote must be on and ready for a connection, as indicated by a white"
+" blinking light."
+msgstr ""
+
+#: ../../main/pupdevices/remote.rst 2e4b0f14c5e042269911a579bc604f53
+#: 5ea689d989d246acac496fd687d5f406 a04472f33c5c4fc49e974f55a1d9dcbc
+msgid "Parameters"
+msgstr ""
+
+#: 0d458af3ec7041c591380af8509b7786 of pybricks.pupdevices.Remote:9
+msgid ""
+"Bluetooth name of the remote. If no name is given, the hub connects to "
+"the first remote that it finds."
+msgstr ""
+
+#: 1f912845e84f40429cdb4e5d2d017a55 of pybricks.pupdevices.Remote:12
+msgid "How long to search for the remote."
+msgstr ""
+
+#: 15bee54782484f029aa179f64fe868d6 of pybricks.pupdevices.Remote.name:1
+msgid "name(name) name() -> str"
+msgstr ""
+
+#: 483f14355a484e64845c2df016049dd9 of pybricks.pupdevices.Remote.name:4
+msgid "Sets or gets the Bluetooth name of the remote."
+msgstr ""
+
+#: 65512cd9853f47b4bb06bec6c3b17e0f of pybricks.pupdevices.Remote.name:6
+msgid ""
+"New Bluetooth name of the remote. If no name is given, this method "
+"returns the current name."
+msgstr ""
+
+#: ../../main/pupdevices/remote.rst:19 ../../main/pupdevices/remote.rst:23
+#: 02b2c204439d470589c0e83c592e90f5 cb0256f07ef44cf3b776a9149675d7a1
+msgid ".. image:: /blockimg/pybricks_blockLightOnColor_remote_on.svg"
+msgstr ""
+
+#: f06bd26a02e046d5bbcc93dd5e1878a9 of pybricks._common.ExternalColorLight.on:1
+msgid "Turns on the light at the specified color."
+msgstr ""
+
+#: a82c76af3f2b4247a0c4c35e36a82d27 of pybricks._common.ExternalColorLight.on:3
+msgid "Color of the light."
+msgstr ""
+
+#: db3e4e7b24ef4911bd5279253c88acad of
+#: pybricks._common.ExternalColorLight.off:1
+msgid "Turns off the light."
+msgstr ""
+
+#: ../../main/pupdevices/remote.rst:27 2e2884ce9b4e4956a4a896c665f6e862
+msgid ".. image:: /blockimg/pybricks_blockButtonIsPressed_Remote.svg"
+msgstr ""
+
+#: 0a7aaece67a14169a7ddd690260cfc82 of pybricks._common.Keypad.pressed:1
+msgid "Checks which buttons are currently pressed."
+msgstr ""
+
+#: ../../main/pupdevices/remote.rst d48d6d7a5fbb47f3b6f3c2f00200cd6c
+msgid "Returns"
+msgstr ""
+
+#: 4ae3850e73234b79ad555bb4f2283770 of pybricks._common.Keypad.pressed:3
+msgid "Set of pressed buttons."
+msgstr ""
+
+#: b0c876790c0944659f1837a70ede0537 of pybricks.pupdevices.Remote.disconnect:1
+msgid "Disconnects the remote from the hub."
+msgstr ""
+
+#: ../../main/pupdevices/remote.rst:34 8a0bb617af254260a863a0cbb7d37e81
+msgid "Examples"
+msgstr ""
+
+#: ../../main/pupdevices/remote.rst:37 efaa3456c2f34efb9cb794be711d04f9
+msgid "Checking which buttons are pressed"
+msgstr ""
+
+#: ../../main/pupdevices/remote.rst:39 bcac3633d179480faa127692d2b14ec7
+msgid ""
+"from pybricks.pupdevices import Remote\n"
+"from pybricks.parameters import Button\n"
+"from pybricks.tools import wait\n"
+"\n"
+"# Connect to the remote.\n"
+"my_remote = Remote()\n"
+"\n"
+"while True:\n"
+"    # Check which buttons are pressed.\n"
+"    pressed = my_remote.buttons.pressed()\n"
+"\n"
+"    # Show the result.\n"
+"    print(\"pressed:\", pressed)\n"
+"\n"
+"    # Check a specific button.\n"
+"    if Button.CENTER in pressed:\n"
+"        print(\"You pressed the center button!\")\n"
+"\n"
+"    # Wait so we can see the result.\n"
+"    wait(100)\n"
+msgstr ""
+
+#: ../../main/pupdevices/remote.rst:43 3ecdc699aba0411099b2fe5be63e0841
+msgid "Changing the remote light color"
+msgstr ""
+
+#: ../../main/pupdevices/remote.rst:45 88c26497e1fe4bdabed3d7baa3aed524
+msgid ""
+"from pybricks.pupdevices import Remote\n"
+"from pybricks.parameters import Color\n"
+"from pybricks.tools import wait\n"
+"\n"
+"# Connect to the remote.\n"
+"remote = Remote()\n"
+"\n"
+"while True:\n"
+"    # Set the color to red.\n"
+"    remote.light.on(Color.RED)\n"
+"    wait(1000)\n"
+"\n"
+"    # Set the color to blue.\n"
+"    remote.light.on(Color.BLUE)\n"
+"    wait(1000)\n"
+msgstr ""
+
+#: ../../main/pupdevices/remote.rst:49 43c646d071724ca78ebca8ea10c4eb16
+msgid "Changing the light color using the buttons"
+msgstr ""
+
+#: ../../main/pupdevices/remote.rst:51 b0ed866559c248d1994416107bc4e088
+msgid ""
+"from pybricks.pupdevices import Remote\n"
+"from pybricks.parameters import Button, Color\n"
+"\n"
+"\n"
+"def button_to_color(buttons):\n"
+"\n"
+"    # Return a color depending on the button.\n"
+"    if Button.LEFT_PLUS in buttons:\n"
+"        return Color.RED\n"
+"    if Button.LEFT_MINUS in buttons:\n"
+"        return Color.GREEN\n"
+"    if Button.LEFT in buttons:\n"
+"        return Color.ORANGE\n"
+"    if Button.RIGHT_PLUS in buttons:\n"
+"        return Color.BLUE\n"
+"    if Button.RIGHT_MINUS in buttons:\n"
+"        return Color.YELLOW\n"
+"    if Button.RIGHT in buttons:\n"
+"        return Color.CYAN\n"
+"    if Button.CENTER in buttons:\n"
+"        return Color.VIOLET\n"
+"\n"
+"    # Return no color by default.\n"
+"    return Color.NONE\n"
+"\n"
+"\n"
+"# Connect to the remote.\n"
+"remote = Remote()\n"
+"\n"
+"while True:\n"
+"    # Wait until a button is pressed.\n"
+"    pressed = ()\n"
+"    while not pressed:\n"
+"        pressed = remote.buttons.pressed()\n"
+"\n"
+"    # Convert button code to color.\n"
+"    color = button_to_color(pressed)\n"
+"\n"
+"    # Set the remote light color.\n"
+"    remote.light.on(color)\n"
+"\n"
+"    # Wait until all buttons are released.\n"
+"    while pressed:\n"
+"        pressed = remote.buttons.pressed()\n"
+msgstr ""
+
+#: ../../main/pupdevices/remote.rst:56 921787da2acd43b39adb8fac9f679b68
+msgid "Using the timeout setting"
+msgstr ""
+
+#: ../../main/pupdevices/remote.rst:58 59a2596e624543dd8dcf1bba87c9db43
+msgid ""
+"You can use the ``timeout`` argument to change for how long the hub "
+"searches for the remote. If you choose ``None``, it will search forever."
+msgstr ""
+
+#: ../../main/pupdevices/remote.rst:61 83b9e5c0f6d74d47b147e2f60c1c0e8c
+msgid ""
+"from pybricks.pupdevices import Remote\n"
+"\n"
+"# Connect to any remote. Search forever until we find one.\n"
+"my_remote = Remote(timeout=None)\n"
+"\n"
+"print(\"Connected!\")\n"
+msgstr ""
+
+#: ../../main/pupdevices/remote.rst:65 2bed4c454f44483faad1f2930f07df57
+msgid ""
+"If the remote was not found within the specified ``timeout``, an "
+":ref:`OSError <OSError>` is raised. You can catch this exception to run "
+"other code if the remote is not available."
+msgstr ""
+
+#: ../../main/pupdevices/remote.rst:70 ba3508a52330481182fb0faa2a7e33a5
+msgid ""
+"from pybricks.pupdevices import Remote\n"
+"\n"
+"try:\n"
+"    # Search for a remote for 5 seconds.\n"
+"    my_remote = Remote(timeout=5000)\n"
+"\n"
+"    print(\"Connected!\")\n"
+"\n"
+"    # Here you can write code that uses the remote.\n"
+"\n"
+"except OSError:\n"
+"\n"
+"    print(\"Could not find the remote.\")\n"
+"\n"
+"    # Here you can make your robot do something\n"
+"    # without the remote.\n"
+msgstr ""
+
+#: ../../main/pupdevices/remote.rst:74 23472b1ddc374261a71bebe8baed91ec
+msgid "Changing the name of the remote"
+msgstr ""
+
+#: ../../main/pupdevices/remote.rst:76 aef5e611ac7040169d7674af2c08e3ba
+msgid ""
+"You can change the Bluetooth name of the remote. The factory default name"
+" is ``Handset``."
+msgstr ""
+
+#: ../../main/pupdevices/remote.rst:79 fceb2db5e0314bc88cfe9a5ae3ef280e
+msgid ".. image:: /blockimg/pybricks_variables_set_remote_connect_rename.svg"
+msgstr ""
+
+#: ../../main/pupdevices/remote.rst:81 05d2ad8e0068430dacf2d4d64d8d3de4
+msgid ""
+"from pybricks.pupdevices import Remote\n"
+"\n"
+"# Connect to any remote.\n"
+"my_remote = Remote()\n"
+"\n"
+"# Print the current name of the remote.\n"
+"print(my_remote.name())\n"
+"\n"
+"# Choose a new name.\n"
+"my_remote.name(\"truck2\")\n"
+"\n"
+"print(\"Done!\")\n"
+msgstr ""
+
+#: ../../main/pupdevices/remote.rst:84 7c58825b54be44299649d76cacd0dc71
+msgid ""
+"You can specify this name when connecting to the remote. This lets you "
+"pick the right one if multiple remotes are nearby."
+msgstr ""
+
+#: ../../main/pupdevices/remote.rst:89 ce24082f4da3494b9763582097f72c78
+msgid ""
+"from pybricks.pupdevices import Remote\n"
+"from pybricks.tools import wait\n"
+"\n"
+"# Connect to a remote called truck2.\n"
+"truck_remote = Remote(\"truck2\", timeout=None)\n"
+"\n"
+"print(\"Connected!\")\n"
+"\n"
+"wait(2000)\n"
+msgstr ""
+

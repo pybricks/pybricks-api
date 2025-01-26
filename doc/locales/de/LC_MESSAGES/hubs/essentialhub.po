@@ -1,0 +1,1130 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-2023 The Pybricks Authors
+# This file is distributed under the same license as the pybricks package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pybricks v3.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-01-26 20:11+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: de\n"
+"Language-Team: de <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../main/hubs/essentialhub.rst:4 09b29e88293c4d42ac82d3baac93598c
+msgid "Essential Hub"
+msgstr ""
+
+#: ../../main/hubs/essentialhub.rst:6 a7ef9666f4da4347b4db75c73547c10d
+msgid ".. image:: ../../main/cad/output/hub-essential.png"
+msgstr ""
+
+#: ../../main/hubs/essentialhub.rst:9 ac9a340042544ff2814098f0f089ba79
+msgid ".. image:: /blockimg/pybricks_variables_set_essential_hub_option0.svg"
+msgstr ""
+
+#: ../../main/hubs/essentialhub.rst:11 2ef5549dff294964ad498566d691c95c
+msgid ".. image:: /blockimg/pybricks_variables_set_essential_hub_option4.svg"
+msgstr ""
+
+#: 4c1c9ea0dc514aa8ae078a2d1ae85970 of pybricks.hubs.EssentialHub:1
+msgid "LEGO® SPIKE Essential Hub."
+msgstr ""
+
+#: 56370502cef1457580cadc6d1561e9ca of pybricks.hubs.EssentialHub:3
+msgid ""
+"Initializes the hub. Optionally, specify how the hub is :ref:`placed in "
+"your design <robotframe>` by saying in which direction the top side (with"
+" the button) and the front side (with the USB port, and I/O ports A and "
+"B) are pointing."
+msgstr ""
+
+#: ../../main/hubs/essentialhub.rst 07517519be924cab80d2ed48958c22d8
+#: 17d559ed155f4f13bf75e70e54c9845d 2ef15b1482264304b0e0495a2b93404e
+#: 3d65d1a7dfe848e8a7802f2d6c461b4f 4727c9a88ae7492f8a9c5b2a0903038b
+#: 5ae9fcc7d76d472387aa07d7e2be2835 9674d1dd10e94cf3b3491c473c6d476a
+#: a48333edb2ab4a548f0e8155e5ca0800 a8a02aa0602c49a1a5df511f807a393c
+#: c131bfe2b98243618d27e83d6ce784e1 cbe7e7066b084c5c93c2771edf9a4851
+#: e49e00e181e441cdad0fae62f2fcf819 e54520850dd84a80a812bd7e116ff7f0
+#: ed34b11e61cf45e4be736667957ac38c
+msgid "Parameters"
+msgstr ""
+
+#: 27ce49fe395b472284891a8209853788 of pybricks.hubs.EssentialHub:8
+msgid "The axis that passes through the *top side* of the hub."
+msgstr ""
+
+#: 4726601c71a34e71bd88f96b679cde1f of pybricks.hubs.EssentialHub:11
+msgid "The axis that passes through the *front side* of the hub."
+msgstr ""
+
+#: 412506f2454d465383e855e14af2dc5f of pybricks.hubs.EssentialHub:14
+msgid ""
+"A value from 0 to 255 indicating which channel ``hub.ble.broadcast()`` "
+"will use. Default is channel 0."
+msgstr ""
+
+#: 51abe73829694d4eb5c5447b9148f119 of pybricks.hubs.EssentialHub:16
+msgid ""
+"A list of channels to listen to when ``hub.ble.observe()`` is called. "
+"Listening to more channels requires more memory. Default is an empty list"
+" (no channels)."
+msgstr ""
+
+#: 63af3705e3104898bd2acff5f977f713 of pybricks.hubs.EssentialHub:20
+msgid "Added *broadcast_channel* and *observe_channels* arguments."
+msgstr ""
+
+#: ../../main/hubs/essentialhub.rst:18 cd5e41ab9c5d47af8e73f076587e9047
+msgid "Using the hub status light"
+msgstr ""
+
+#: ../../main/hubs/essentialhub.rst:19 c9eccdcda77149768fd942406d1dc7a7
+msgid ".. image:: /blockimg/pybricks_blockLightOnColor_essentialhub_on.svg"
+msgstr ""
+
+#: b4f5bf415baa48ed827f8a4c6ae465ba of pybricks._common.ColorLight.on:1
+msgid "Turns on the light at the specified color."
+msgstr ""
+
+#: 0e0405ef1bfb4cc7ab43304d0f171477 e04589e27a054c22ad0798c9f9280823 of
+#: pybricks._common.ColorLight.blink:11 pybricks._common.ColorLight.on:3
+msgid "Color of the light."
+msgstr ""
+
+#: ../../main/hubs/essentialhub.rst:23 65edb4fea87040c587c1dc605c5fe962
+msgid ".. image:: /blockimg/pybricks_blockLightOnColor_essentialhub_off.svg"
+msgstr ""
+
+#: 553de262d91145deb847c9123069e56b of pybricks._common.ColorLight.off:1
+msgid "Turns off the light."
+msgstr ""
+
+#: 0d25c06b71df427fa35caa27eff72767 of pybricks._common.ColorLight.blink:1
+msgid ""
+"Blinks the light at a given color by turning it on and off for given "
+"durations."
+msgstr ""
+
+#: 2506cb6f90ae41a388aaa920b992159a of pybricks._common.ColorLight.blink:4
+msgid ""
+"The light keeps blinking indefinitely while the rest of your program "
+"keeps running."
+msgstr ""
+
+#: 57ff44bf911e4cbb99392e573a16b3ed of pybricks._common.ColorLight.blink:7
+msgid ""
+"This method provides a simple way to make basic but useful patterns. For "
+"more generic and multi-color patterns, use ``animate()`` instead."
+msgstr ""
+
+#: 8dc888cb1ecb4eb3a748eb7a78fbe8b3 of pybricks._common.ColorLight.blink:13
+msgid "Sequence of time values of the form ``[on_1, off_1, on_2, off_2, ...]``."
+msgstr ""
+
+#: a1c6f19244b24773ac6b95ae602ad249 of pybricks._common.ColorLight.animate:1
+msgid ""
+"Animates the light with a sequence of colors, shown one by one for the "
+"given interval."
+msgstr ""
+
+#: c00986707d62433f85a7add0c5d8faca of pybricks._common.ColorLight.animate:4
+msgid ""
+"The animation runs in the background while the rest of your program keeps"
+" running. When the animation completes, it repeats."
+msgstr ""
+
+#: 9a07b75771f64831bc2bb4314615fea0 of pybricks._common.ColorLight.animate:7
+msgid "Sequence of :class:`Color <.parameters.Color>` values."
+msgstr ""
+
+#: cc6232aed68147baa8387a3fee5f7b04 of pybricks._common.ColorLight.animate:10
+msgid "Time between color updates."
+msgstr ""
+
+#: ../../main/hubs/essentialhub.rst:32 70461b63d22442ba997c347153e8199b
+msgid "Using the button"
+msgstr ""
+
+#: ../../main/hubs/essentialhub.rst:33 e721b62f9ecb49f78e97e72723ab65f5
+msgid ".. image:: /blockimg/pybricks_blockButtonIsPressed_EssentialHub.svg"
+msgstr ""
+
+#: 4a88413829f84ca2990b72da5ee22754 of pybricks._common.Keypad.pressed:1
+msgid "Checks which buttons are currently pressed."
+msgstr ""
+
+#: ../../main/hubs/essentialhub.rst 05273114748345c6862b4f9434e54a55
+#: 091ebfe5e65b49fbb80661ce691e9186 183a935a849a4a3bb0636268d1dfca30
+#: 185d5665ee0146f1b805302de65be291 20d30e74a4d14ae5a5ebf6ecb4e4a6c1
+#: 477d0e4ceb3b4051b5a929bae5122118 511a981d9787447284e10e60b538452a
+#: 58bbf081ad224fe98f7335b6f3c05581 6d6d400feda8429d8c518da7792f4d14
+#: 780b274414ff42ccb14a7e6216f951af 7819b75de0ed436db677d5fce5c77994
+#: 7e3f65def44b441aa831e35cd01ac13b 7f3772d45d0144e4bd83a09be1de61b4
+#: 8489ee82614c4befbba121e32a7b3998 8b16e0c86fdb48579f6b3b968138320f
+#: b07a4a5fcdad4820986d6b6a811cc609 b08318628af84a60904a7ebf488716c8
+#: b2d90b1e9fc34dd0b7c85e4118cb2509 caea7785e81f466c82dc062cf9580cb2
+#: cfc4844c89f14d6196b02f6f81e869aa
+msgid "Returns"
+msgstr ""
+
+#: 2658067bdae049e2b9b38b94f8aa0b55 of pybricks._common.Keypad.pressed:3
+msgid "Set of pressed buttons."
+msgstr ""
+
+#: ../../main/hubs/essentialhub.rst:37 aacc9df7159643e483a60289e22ad218
+msgid ".. image:: /blockimg/pybricks_blockHubStopButton_EssentialHub.svg"
+msgstr ""
+
+#: ../../main/hubs/essentialhub.rst:39 e306c01a695f4c368cb3d158e623dbc6
+msgid ".. image:: /blockimg/pybricks_blockHubStopButton_EssentialHub_none.svg"
+msgstr ""
+
+#: 80ff9d1894e14cd1aaaae1aa5368cf46 of
+#: pybricks._common.System.set_stop_button:1
+msgid "Sets the button or button combination that stops a running script."
+msgstr ""
+
+#: 3aaa6824512c4fbd9f9ca4c2786dd036 of
+#: pybricks._common.System.set_stop_button:3
+msgid ""
+"Normally, the center button is used to stop a running script. You can "
+"change or disable this behavior in order to use the button for other "
+"purposes."
+msgstr ""
+
+#: c490e3e2e3c745bca6c19e57877d80a8 of
+#: pybricks._common.System.set_stop_button:7
+msgid ""
+"A button such as :attr:`Button.CENTER "
+"<pybricks.parameters.Button.CENTER>`, or a tuple of multiple buttons. "
+"Choose ``None`` to disable the stop button altogether. If you do, you can"
+" still turn the hub off by holding the center button for three seconds."
+msgstr ""
+
+#: ../../main/hubs/essentialhub.rst:45 3f04b7af15e04880b19e2dcfa88e46ce
+msgid "Using the IMU"
+msgstr ""
+
+#: ../../main/hubs/essentialhub.rst:46 0baeff3f9ecf4ef4ad838013f9f65371
+msgid ".. image:: /blockimg/pybricks_blockImuStatus_EssentialHub_ready.svg"
+msgstr ""
+
+#: aa869da684ab4a6fbcab9eab00de82c1 of pybricks._common.IMU.ready:1
+msgid "Checks if the device is calibrated and ready for use."
+msgstr ""
+
+#: d3792fd5349e42f682ff505bad4b04f2 of pybricks._common.IMU.ready:3
+msgid ""
+"This becomes ``True`` when the robot has been sitting stationary for a "
+"few seconds, which allows the device to re-calibrate. It is ``False`` if "
+"the hub has just been started, or if it hasn't had a chance to calibrate "
+"for more than 10 minutes."
+msgstr ""
+
+#: 08d4f3b821a7436da93e3f3189c40c33 of pybricks._common.IMU.ready:8
+msgid "``True`` if it is ready for use, ``False`` if not."
+msgstr ""
+
+#: ../../main/hubs/essentialhub.rst:50 a40d4d2c180f4c06aed020418bbb8ba8
+msgid ".. image:: /blockimg/pybricks_blockImuStatus_EssentialHub_stationary.svg"
+msgstr ""
+
+#: 7e87bfe7a6f9493f91a280164b2c9bb0 of pybricks._common.IMU.stationary:1
+msgid "Checks if the device is currently stationary (not moving)."
+msgstr ""
+
+#: 969052b63e55489a885137e262fd01cc of pybricks._common.IMU.stationary:3
+msgid "``True`` if stationary for at least a second, ``False`` if it is moving."
+msgstr ""
+
+#: ../../main/hubs/essentialhub.rst:54 edad79af6ede4d168446c3564a44a235
+msgid ".. image:: /blockimg/pybricks_blockImuUp_EssentialHub.svg"
+msgstr ""
+
+#: c2744a2e8a364321ac1fb6c467a24353 of
+#: pybricks._common.SimpleAccelerometer.up:1
+msgid "Checks which side of the hub currently faces upward."
+msgstr ""
+
+#: 70418963098d46be9c670f49bfbc818c of
+#: pybricks._common.SimpleAccelerometer.up:3
+msgid ""
+"``Side.TOP``, ``Side.BOTTOM``, ``Side.LEFT``, ``Side.RIGHT``, "
+"``Side.FRONT`` or ``Side.BACK``."
+msgstr ""
+
+#: ../../main/hubs/essentialhub.rst:58 77a03e3fa845495ba2fedab1ab345077
+msgid ".. image:: /blockimg/pybricks_blockTilt_EssentialHub_imu.tilt.pitch.svg"
+msgstr ""
+
+#: ../../main/hubs/essentialhub.rst:60 716eda2dd6034fa0a85ea38ac00fa4aa
+msgid ".. image:: /blockimg/pybricks_blockTilt_EssentialHub_imu.tilt.roll.svg"
+msgstr ""
+
+#: 6ce61ca177884b5e99b64c89c76b1784 of
+#: pybricks._common.SimpleAccelerometer.tilt:1
+msgid ""
+"Gets the pitch and roll angles. This is relative to the :ref:`user-"
+"specified neutral orientation <robotframe>`."
+msgstr ""
+
+#: 6947b70c528c40aebf3583d4434e6ccb of
+#: pybricks._common.SimpleAccelerometer.tilt:4
+msgid ""
+"The order of rotation is pitch-then-roll. This is equivalent to a "
+"positive rotation along the robot y-axis and then a positive rotation "
+"along the x-axis."
+msgstr ""
+
+#: a132b1380f7f42a2b2ae90b84a47f893 of
+#: pybricks._common.SimpleAccelerometer.tilt:8
+msgid "Tuple of pitch and roll angles in degrees."
+msgstr ""
+
+#: ../../main/hubs/essentialhub.rst:65 e6f978a17c7b4c3295c29bb911e02f00
+msgid ".. image:: /blockimg/pybricks_blockImuAcceleration_EssentialHub.svg"
+msgstr ""
+
+#: 283f0d4e743745889f5e585d0d7709ff of
+#: pybricks._common.Accelerometer.acceleration:1
+msgid ""
+"Gets the acceleration of the device along a given axis in the :ref:`robot"
+" reference frame <robotframe>`."
+msgstr ""
+
+#: e96dddff04ce4b2397c06063c0415dd4 of
+#: pybricks._common.Accelerometer.acceleration:4
+msgid "Axis along which the acceleration should be measured."
+msgstr ""
+
+#: 1d0ac36b61e24f72a8e08099f930bf77 of
+#: pybricks._common.Accelerometer.acceleration:8
+msgid ""
+"Acceleration along the specified axis. If you specify no axis, this "
+"returns a vector of accelerations along all axes."
+msgstr ""
+
+#: ../../main/hubs/essentialhub.rst:69 fdabf1bab2da4131b521b2942a4999f0
+msgid ""
+".. image:: "
+"/blockimg/pybricks_blockImuRotation_EssentialHub_imu.angular_velocity.svg"
+msgstr ""
+
+#: b1eeb4c7dcb842f881398b559b44f9a9 of pybricks._common.IMU.angular_velocity:1
+msgid ""
+"Gets the angular velocity of the device along a given axis in the "
+":ref:`robot reference frame <robotframe>`."
+msgstr ""
+
+#: 6d54944349f84d69affe4ddc9ba245a8 of pybricks._common.IMU.angular_velocity:4
+msgid "Axis along which the angular velocity should be measured."
+msgstr ""
+
+#: 715d09cba4fe4cacabff5e83416f480f of pybricks._common.IMU.angular_velocity:8
+msgid ""
+"Angular velocity along the specified axis. If you specify no axis, this "
+"returns a vector of accelerations along all axes."
+msgstr ""
+
+#: ../../main/hubs/essentialhub.rst:73 e3f50f9df3e34bac919b81ab7f2d1e11
+msgid ".. image:: /blockimg/pybricks_blockImuGetHeading_EssentialHub.svg"
+msgstr ""
+
+#: ab4311d3f0604b7b9a4aa418f650ebac of pybricks._common.IMU.heading:1
+msgid ""
+"Gets the heading angle of your robot. A positive value means a clockwise "
+"turn."
+msgstr ""
+
+#: 28338e0cc7d4408b95be3d9564ee711b of pybricks._common.IMU.heading:4
+msgid ""
+"The heading is 0 when your program starts. The value continues to grow "
+"even as the robot turns more than 180 degrees. It does not wrap around to"
+" -180 like it does in some apps."
+msgstr ""
+
+#: a33f42e236f54447a7680d544b40c6f7 of pybricks._common.IMU.heading:9
+msgid ""
+"*For now, this method only keeps track of the heading while the robot is "
+"on a flat surface.*"
+msgstr ""
+
+#: ff7161ac2e564badb94bdba1ef5ced72 of pybricks._common.IMU.heading:12
+msgid ""
+"This means that the value is no longer correct if you lift it from the "
+"table. To solve this, you can call ``reset_heading`` to reset the heading"
+" to a known value *after* you put it back down. For example, you could "
+"align your robot with the side of the competition table and reset the "
+"heading 90 degrees as the new starting point."
+msgstr ""
+
+#: d5128e9c84a24057a230c4a1fe877285 of pybricks._common.IMU.heading:19
+msgid "Heading angle relative to starting orientation."
+msgstr ""
+
+#: ../../main/hubs/essentialhub.rst:77 d9dd3fc7ca2e48e587a1ed43a337cc60
+msgid ".. image:: /blockimg/pybricks_blockImuResetHeading_EssentialHub.svg"
+msgstr ""
+
+#: e3b8e22d04854d718efe12db6a4ec7d5 of pybricks._common.IMU.reset_heading:1
+msgid "Resets the accumulated heading angle of the robot."
+msgstr ""
+
+#: 4c4f17c3cf2e43c8ae1e92e68215eae5 of pybricks._common.IMU.reset_heading:3
+msgid "Value to which the heading should be reset."
+msgstr ""
+
+#: ../../main/hubs/essentialhub.rst:81 00442181242348c081f7e5eb196fe623
+msgid ""
+".. image:: "
+"/blockimg/pybricks_blockImuRotation_EssentialHub_imu.rotation.svg"
+msgstr ""
+
+#: 845f98aea3e14153b2aa22901cee0211 of pybricks._common.IMU.rotation:1
+msgid ""
+"Gets the rotation of the device along a given axis in the :ref:`robot "
+"reference frame <robotframe>`."
+msgstr ""
+
+#: e0d675950bd14330a64b7b4b16f88f30 of pybricks._common.IMU.rotation:4
+msgid ""
+"This value is useful if your robot *only* rotates along the requested "
+"axis. For general three-dimensional motion, use the ``orientation()`` "
+"method instead."
+msgstr ""
+
+#: e27e5f4756184e289d9763217520725d of pybricks._common.IMU.rotation:8
+msgid "The value starts counting from ``0`` when you initialize this class."
+msgstr ""
+
+#: 2aafe0e80e4940e6bd8f7939a612113c of pybricks._common.IMU.rotation:10
+msgid "Axis along which the rotation should be measured."
+msgstr ""
+
+#: a369f7e5d5d94066a1afe784bdb175d7 of pybricks._common.IMU.rotation:13
+msgid "The rotation angle."
+msgstr ""
+
+#: b14919af09fe4d0a92eafed1188d6658 of pybricks._common.IMU.orientation:1
+msgid ""
+"Gets the three-dimensional orientation of the robot in the :ref:`robot "
+"reference frame <robotframe>`."
+msgstr ""
+
+#: afe4d71dbbe14e37abe790429a45b1bb of pybricks._common.IMU.orientation:4
+msgid ""
+"It returns a rotation matrix whose columns represent the ``X``, ``Y``, "
+"and ``Z`` axis of the robot."
+msgstr ""
+
+#: 096b0ad4219948329895a42405a65782 of pybricks._common.IMU.orientation:7
+msgid "This method is not yet implemented."
+msgstr ""
+
+#: 925c990cedee49509c8391bb9de71c87 of pybricks._common.IMU.orientation:9
+msgid "The rotation matrix."
+msgstr ""
+
+#: e144361ae7824c0ea2c98dde30711106 of pybricks._common.IMU.settings:1
+msgid ""
+"Configures the IMU settings. If no arguments are given, this returns the "
+"current values."
+msgstr ""
+
+#: a3d1e553893144a99e9aa82fd04fb6ce of pybricks._common.IMU.settings:4
+msgid ""
+"The ``angular_velocity_threshold`` and ``acceleration_threshold`` define "
+"when the hub is considered stationary. If all measurements stay below "
+"these thresholds for one second, the IMU will recalibrate itself."
+msgstr ""
+
+#: 3a6041f861b7460d9976a63784933bad of pybricks._common.IMU.settings:9
+msgid ""
+"In a noisy room with high ambient vibrations (such as a competition "
+"hall), it is recommended to increase the thresholds slightly to give your"
+" robot the chance to calibrate. To verify that your settings are working "
+"as expected, test that the ``stationary()`` method gives ``False`` if "
+"your robot is moving, and ``True`` if it is sitting still for at least a "
+"second."
+msgstr ""
+
+#: d7635e62589e43a5b40da0a43a2844c8 of pybricks._common.IMU.settings:16
+msgid "The threshold for angular velocity. The default value is 1.5 deg/s."
+msgstr ""
+
+#: 63a804d9697c4e57bf4fec7d62a930f4 of pybricks._common.IMU.settings:19
+msgid "The threshold for angular velocity. The default value is 250 mm/s²."
+msgstr ""
+
+#: ../../main/hubs/essentialhub.rst:90 13ca454b512e440683bf18c70b9f3a06
+msgid "Using connectionless Bluetooth messaging"
+msgstr ""
+
+#: ../../main/hubs/essentialhub.rst:91 8e1d32c4ca824d5fb775df8d12b2ddfc
+msgid ".. image:: /blockimg/pybricks_blockBleBroadcast_EssentialHub.svg"
+msgstr ""
+
+#: d5514e8814a3482b9fc6cce61d6d9a9d of pybricks._common.BLE.broadcast:1
+msgid ""
+"Starts broadcasting the given data on the ``broadcast_channel`` you "
+"selected when initializing the hub."
+msgstr ""
+
+#: 17898588fa904bbc94bb7853c92dc6af of pybricks._common.BLE.broadcast:4
+msgid ""
+"Data may be of type ``int``, ``float``, ``str``, ``bytes``, ``True``, or "
+"``False``, or a list thereof."
+msgstr ""
+
+#: c57d0ba56c8c4abcb1af6dbaa53c49cb of pybricks._common.BLE.broadcast:7
+msgid ""
+"Choose ``None`` to stop broadcasting. This helps improve performance when"
+" you don't need the broadcast feature, especially when observing at the "
+"same time."
+msgstr ""
+
+#: 8561e09e7ca64b2f9fe069e3a5d10357 of pybricks._common.BLE.broadcast:11
+msgid ""
+"The total data size is quite limited (26 bytes). ``True`` and ``False`` "
+"take 1 byte each. ``float`` takes 5 bytes. ``int`` takes 2 to 5 bytes "
+"depending on how big the number is. ``str`` and ``bytes`` take the number"
+" of bytes in the object plus one extra byte."
+msgstr ""
+
+#: c084c5e2e16e4b578ca3fb1ed24868a2 of pybricks._common.BLE.broadcast:16
+msgid ""
+"When multitasking, only one task can broadcast at a time. To broadcast "
+"information from multiple tasks (or block stacks), you could use a "
+"dedicated separate task that broadcast new values when one or more "
+"variables change."
+msgstr ""
+
+#: 458b6ede0c004ef488bb3c0262b80c23 of pybricks._common.BLE.broadcast:21
+msgid "The value or values to be broadcast."
+msgstr ""
+
+#: ../../main/hubs/essentialhub.rst:95 86b94fd6a7334f6f9ca48ab398fef128
+msgid ".. image:: /blockimg/pybricks_blockBleObserve_EssentialHub.svg"
+msgstr ""
+
+#: 140781f852324d309e4f1ea3e6e29b9d of pybricks._common.BLE.observe:1
+msgid "Retrieves the last observed data for a given channel."
+msgstr ""
+
+#: bd4e4b53f79d42e08f9c2ff34c80a68e of pybricks._common.BLE.observe:3
+msgid ""
+"Receiving data is more reliable when the hub is not connected to a "
+"computer or other devices at the same time."
+msgstr ""
+
+#: 8e81ea35ecd543cdbe1d10eadd409c67 of pybricks._common.BLE.observe:6
+msgid "The channel to observe (0 to 255)."
+msgstr ""
+
+#: df47481a06924275bfd01aadabe596b1 of pybricks._common.BLE.observe:9
+msgid ""
+"The received data in the same format as it was sent, or ``None`` if no "
+"recent data is available."
+msgstr ""
+
+#: 0a69ff4c6857471e9201ab5040f0ba3a of pybricks._common.BLE.signal_strength:1
+msgid "Gets the average signal strength in dBm for the given channel."
+msgstr ""
+
+#: 7c0e1180a7fb4bf996cc808dcbc78a61 of pybricks._common.BLE.signal_strength:3
+msgid ""
+"This indicates how near the broadcasting device is. Nearby devices may "
+"have a signal strength around -40 dBm, while far away devices might have "
+"a signal strength around -70 dBm."
+msgstr ""
+
+#: 272fb33ba7f9475cbeb7dd1d7aef8fc0 of pybricks._common.BLE.signal_strength:7
+msgid "The channel number (0 to 255)."
+msgstr ""
+
+#: 6a5c6e1513994591b92a71aeae96135a of pybricks._common.BLE.signal_strength:10
+msgid "The signal strength or ``-128`` if there is no recent observed data."
+msgstr ""
+
+#: 27bfa5415f1b4a2da5bdff168044738c of pybricks._common.BLE.version:1
+msgid "Gets the firmware version from the Bluetooth chip."
+msgstr ""
+
+#: ../../main/hubs/essentialhub.rst:104 c45697895e8d4b0faa9df55eb73edc79
+msgid "Using the battery"
+msgstr ""
+
+#: ../../main/hubs/essentialhub.rst:105 2f866d92eb124e9b8952dccdccc20f56
+msgid ""
+".. image:: "
+"/blockimg/pybricks_blockBatteryMeasure_EssentialHub_battery.voltage.svg"
+msgstr ""
+
+#: e9ee83676d0a43da91d197e7d8c5e449 of pybricks._common.Battery.voltage:1
+msgid "Gets the voltage of the battery."
+msgstr ""
+
+#: c28c4da9b3854b15ad7774ed48d9d56c of pybricks._common.Battery.voltage:3
+msgid "Battery voltage."
+msgstr ""
+
+#: ../../main/hubs/essentialhub.rst:109 c3a38a07ab794daf88eb686cbeefe947
+msgid ""
+".. image:: "
+"/blockimg/pybricks_blockBatteryMeasure_EssentialHub_battery.current.svg"
+msgstr ""
+
+#: 9df4a02d8f304683bf7f5f649f5918de of pybricks._common.Battery.current:1
+msgid "Gets the current supplied by the battery."
+msgstr ""
+
+#: 8b6b0be3413d40a58bb8b95e52d83556 of pybricks._common.Battery.current:3
+msgid "Battery current."
+msgstr ""
+
+#: ../../main/hubs/essentialhub.rst:114 822daacddd8f4abe898a7ed6f4604e0d
+msgid "Getting the charger status"
+msgstr ""
+
+#: 55554eecf16c4ad685ca8172a030468f of pybricks._common.Charger.connected:1
+msgid "Checks whether a charger is connected via USB."
+msgstr ""
+
+#: 0a905c47882c454faf9108319f51770d of pybricks._common.Charger.connected:3
+msgid "``True`` if a charger is connected, ``False`` if not."
+msgstr ""
+
+#: 999a05b7daa941faa158fa6c1636ba32 of pybricks._common.Charger.current:1
+msgid "Gets the charging current."
+msgstr ""
+
+#: c7fceef22a8a4736a497d3ae5a734ad2 of pybricks._common.Charger.current:3
+msgid "Charging current."
+msgstr ""
+
+#: 722f5360fdc9438ca9ccc945f7700bd0 of pybricks._common.Charger.status:1
+msgid ""
+"Gets the status of the battery charger, represented by one of the "
+"following values. This corresponds to the battery light indicator right "
+"next to the USB port."
+msgstr ""
+
+#: 3c2cbde2c53d4b35a1b042df838758c2 of pybricks._common.Charger.status:5
+msgid "Not charging (light is off)."
+msgstr ""
+
+#: e7bf3ef0cb984a18b2dd91f3ef3d7659 of pybricks._common.Charger.status:6
+msgid "Charging (light is red)."
+msgstr ""
+
+#: 2c9de1c0b1ae4c3fa92bd1851164f0f6 of pybricks._common.Charger.status:7
+msgid "Charging is complete (light is green)."
+msgstr ""
+
+#: 1baa0a13322a4807a74e0c68b9a1d3fd of pybricks._common.Charger.status:8
+msgid "There is a problem with the charger (light is yellow)."
+msgstr ""
+
+#: fed3893881a64f3fa6d69c84b90c1c18 of pybricks._common.Charger.status:10
+msgid "Status value."
+msgstr ""
+
+#: ../../main/hubs/essentialhub.rst:122 c1a71050f43a44b1a4a7928ea8ec83a4
+msgid "System control"
+msgstr ""
+
+#: 30893eabe19c4862aeff35c17ec0a8a8 of pybricks._common.System.name:1
+msgid "Gets the hub name. This is the name you see when connecting via Bluetooth."
+msgstr ""
+
+#: 65a478770781486dbb6381de8c5343f7 of pybricks._common.System.name:4
+msgid "The hub name."
+msgstr ""
+
+#: ff29c8ca44014126aebaf6d0aa6c6aa4 of pybricks._common.System.storage:1
+msgid "Reads or writes binary data to persistent storage."
+msgstr ""
+
+#: 81480c40ca824d54b44a9cc8575ef506 of pybricks._common.System.storage:3
+msgid ""
+"This lets you store data that can be used the next time you run the "
+"program."
+msgstr ""
+
+#: 0f8f9c2b65fc4f3597b4be690de62a9c of pybricks._common.System.storage:6
+msgid ""
+"The data will be saved to flash memory when you turn the hub off "
+"normally. It will not be saved if the batteries are removed *while* the "
+"hub is still running."
+msgstr ""
+
+#: d937ba1e6cdb4c3f8f087b713452f7c8 of pybricks._common.System.storage:10
+msgid ""
+"Once saved, the data will remain available even after you remove the "
+"batteries."
+msgstr ""
+
+#: 5281b8cf3c1e447691bcf8e6c271dfbd of pybricks._common.System.storage:13
+msgid "The offset from the start of the user storage memory, in bytes."
+msgstr ""
+
+#: 9639d02c80f3470e9121ce5a26394ee8 of pybricks._common.System.storage:15
+msgid "The number of bytes to read. Omit this argument when writing."
+msgstr ""
+
+#: c8c9d2ab79b34817b0b7365c99d8748d of pybricks._common.System.storage:17
+msgid "The bytes to write. Omit this argument when reading."
+msgstr ""
+
+#: a0fe785cff9e4355b4d5ea555694267a of pybricks._common.System.storage:20
+msgid "The bytes read if reading, otherwise ``None``."
+msgstr ""
+
+#: ../../main/hubs/essentialhub.rst c3a039baa59a4be0a1b410948f56d5dd
+msgid "Raises"
+msgstr ""
+
+#: 59ac7d6e8a0541818ed969f58d643a6e of pybricks._common.System.storage:22
+msgid "If you try to read or write data outside of the allowed range."
+msgstr ""
+
+#: ../../main/hubs/essentialhub.rst:127 fccda237506141838df584cb099cbccd
+msgid "You can store up to 512 bytes of data on this hub."
+msgstr ""
+
+#: ../../main/hubs/essentialhub.rst:129 ffaa6872f8c84a95ab2cb50faf7d825e
+msgid ".. image:: /blockimg/pybricks_blockHubShutdown_EssentialHub.svg"
+msgstr ""
+
+#: 89de9ab1f2574d9dbfe120df98b4718c of pybricks._common.System.shutdown:1
+msgid "Stops your program and shuts the hub down."
+msgstr ""
+
+#: 7db8a2a24dcd491f818c0fd3f79286c6 of pybricks._common.System.reset_reason:1
+msgid ""
+"Finds out how and why the hub (re)booted. This can be useful to diagnose "
+"some problems."
+msgstr ""
+
+#: 841baee29d864d5081748572281d3941 of pybricks._common.System.reset_reason:4
+msgid ""
+"* ``0`` if the hub was previously powered off   normally. * ``1`` if the "
+"hub rebooted automatically, like   after a firmware update. * ``2`` if "
+"the hub previously   crashed due to a watchdog timeout, which indicates a"
+" firmware   issue."
+msgstr ""
+
+#: e3ea73f955d94b4db7e39d4cefe6d27d of pybricks._common.System.reset_reason:6
+msgid "``0`` if the hub was previously powered off normally."
+msgstr ""
+
+#: 889307577c30458ba191099add95eef8 of pybricks._common.System.reset_reason:8
+msgid "``1`` if the hub rebooted automatically, like after a firmware update."
+msgstr ""
+
+#: 17cfcb983786480badf18dab4f2c5da7 of pybricks._common.System.reset_reason:10
+msgid ""
+"``2`` if the hub previously crashed due to a watchdog timeout, which "
+"indicates a firmware issue."
+msgstr ""
+
+#: ../../main/hubs/essentialhub.rst:136 2251e1da6c294f8783459a4d32f2af02
+msgid "Status light examples"
+msgstr ""
+
+#: ../../main/hubs/essentialhub.rst:139 0c312b78de4d4d60905e1190515014ba
+msgid "Turning the light on and off"
+msgstr ""
+
+#: ../../main/hubs/essentialhub.rst:141 bf4d57c0357b49928568cb267b13aca2
+msgid ""
+"from pybricks.hubs import EssentialHub\n"
+"from pybricks.parameters import Color\n"
+"from pybricks.tools import wait\n"
+"\n"
+"# Initialize the hub.\n"
+"hub = EssentialHub()\n"
+"\n"
+"# Turn the light on and off 5 times.\n"
+"for i in range(5):\n"
+"\n"
+"    hub.light.on(Color.RED)\n"
+"    wait(1000)\n"
+"\n"
+"    hub.light.off()\n"
+"    wait(500)\n"
+msgstr ""
+
+#: ../../main/hubs/essentialhub.rst:145 e8213e5027554d46affb2fa17489b027
+msgid "Changing brightness and using custom colors"
+msgstr ""
+
+#: ../../main/hubs/essentialhub.rst:147 e9718d9b5a694769b9fb0e217f14e91b
+msgid ""
+"from pybricks.hubs import EssentialHub\n"
+"from pybricks.parameters import Color\n"
+"from pybricks.tools import wait\n"
+"\n"
+"# Initialize the hub.\n"
+"hub = EssentialHub()\n"
+"\n"
+"# Show the color at 30% brightness.\n"
+"hub.light.on(Color.RED * 0.3)\n"
+"\n"
+"wait(2000)\n"
+"\n"
+"# Use your own custom color.\n"
+"hub.light.on(Color(h=30, s=100, v=50))\n"
+"\n"
+"wait(2000)\n"
+"\n"
+"# Go through all the colors.\n"
+"for hue in range(360):\n"
+"    hub.light.on(Color(hue))\n"
+"    wait(10)\n"
+msgstr ""
+
+#: ../../main/hubs/essentialhub.rst:151 d551b722141341a8a1d4e8c8a9dd8a2f
+msgid "Making the light blink"
+msgstr ""
+
+#: ../../main/hubs/essentialhub.rst:153 71cd99eda8484b769b8712da731446b4
+msgid ""
+"from pybricks.hubs import EssentialHub\n"
+"from pybricks.parameters import Color\n"
+"from pybricks.tools import wait\n"
+"\n"
+"# Initialize the hub\n"
+"hub = EssentialHub()\n"
+"\n"
+"# Keep blinking red on and off.\n"
+"hub.light.blink(Color.RED, [500, 500])\n"
+"\n"
+"wait(10000)\n"
+"\n"
+"# Keep blinking green slowly and then quickly.\n"
+"hub.light.blink(Color.GREEN, [500, 500, 50, 900])\n"
+"\n"
+"wait(10000)\n"
+msgstr ""
+
+#: ../../main/hubs/essentialhub.rst:157 6707f8472fc54911ade965aad8c2d224
+msgid "Creating light animations"
+msgstr ""
+
+#: ../../main/hubs/essentialhub.rst:159 c900e531b8c44bb18cb7b078e3d3d9ba
+msgid ""
+"from pybricks.hubs import EssentialHub\n"
+"from pybricks.parameters import Color\n"
+"from pybricks.tools import wait\n"
+"from umath import sin, pi\n"
+"\n"
+"# Initialize the hub.\n"
+"hub = EssentialHub()\n"
+"\n"
+"# Make an animation with multiple colors.\n"
+"hub.light.animate([Color.RED, Color.GREEN, Color.NONE], interval=500)\n"
+"\n"
+"wait(10000)\n"
+"\n"
+"# Make the color RED grow faint and bright using a sine pattern.\n"
+"hub.light.animate([Color.RED * (0.5 * sin(i / 15 * pi) + 0.5) for i in "
+"range(30)], 40)\n"
+"\n"
+"wait(10000)\n"
+"\n"
+"# Cycle through a rainbow of colors.\n"
+"hub.light.animate([Color(h=i * 8) for i in range(45)], interval=40)\n"
+"\n"
+"wait(10000)\n"
+msgstr ""
+
+#: ../../main/hubs/essentialhub.rst:163 67ecd0f7ca4149c9b8fca0befb897cc4
+msgid "IMU examples"
+msgstr ""
+
+#: ../../main/hubs/essentialhub.rst:166 91a8effa41db4322839f902b530d0872
+msgid "Testing which way is up"
+msgstr ""
+
+#: ../../main/hubs/essentialhub.rst:168 446b794b58cc428da79181b8333fba56
+msgid ""
+"from pybricks.hubs import EssentialHub\n"
+"from pybricks.parameters import Color, Side\n"
+"from pybricks.tools import wait\n"
+"\n"
+"# Initialize the hub.\n"
+"hub = EssentialHub()\n"
+"\n"
+"# Define colors for each side in a dictionary.\n"
+"SIDE_COLORS = {\n"
+"    Side.TOP: Color.RED,\n"
+"    Side.BOTTOM: Color.BLUE,\n"
+"    Side.LEFT: Color.GREEN,\n"
+"    Side.RIGHT: Color.YELLOW,\n"
+"    Side.FRONT: Color.MAGENTA,\n"
+"    Side.BACK: Color.BLACK,\n"
+"}\n"
+"\n"
+"# Keep updating the color based on detected up side.\n"
+"while True:\n"
+"\n"
+"    # Check which side of the hub is up.\n"
+"    up_side = hub.imu.up()\n"
+"\n"
+"    # Change the color based on the side.\n"
+"    hub.light.on(SIDE_COLORS[up_side])\n"
+"\n"
+"    # Also print the result.\n"
+"    print(up_side)\n"
+"    wait(50)\n"
+msgstr ""
+
+#: ../../main/hubs/essentialhub.rst:173 185994f41aa643d3a7509958c3601aed
+msgid "Reading the tilt value"
+msgstr ""
+
+#: ../../main/hubs/essentialhub.rst:175 0b3c239b1ec94357b9a01b07d63c80fb
+msgid ""
+"from pybricks.hubs import EssentialHub\n"
+"from pybricks.tools import wait\n"
+"\n"
+"# Initialize the hub.\n"
+"hub = EssentialHub()\n"
+"\n"
+"while True:\n"
+"    # Read the tilt values.\n"
+"    pitch, roll = hub.imu.tilt()\n"
+"\n"
+"    # Print the result.\n"
+"    print(pitch, roll)\n"
+"    wait(200)\n"
+msgstr ""
+
+#: ../../main/hubs/essentialhub.rst:179 dca196657c4d4a0484a51dc42fdb6671
+msgid "Using a custom hub orientation"
+msgstr ""
+
+#: ../../main/hubs/essentialhub.rst:181 1cba6b7e965e4f4cb969117ef6faaa57
+msgid ""
+"from pybricks.hubs import EssentialHub\n"
+"from pybricks.tools import wait\n"
+"from pybricks.parameters import Axis\n"
+"\n"
+"# Initialize the hub. In this case, specify that the hub is mounted with "
+"the\n"
+"# top side facing forward and the front side facing to the right.\n"
+"# For example, this is how the hub is mounted in BLAST in the 51515 set.\n"
+"hub = EssentialHub(top_side=Axis.X, front_side=-Axis.Y)\n"
+"\n"
+"while True:\n"
+"    # Read the tilt values. Now, the values are 0 when BLAST stands "
+"upright.\n"
+"    # Leaning forward gives positive pitch. Leaning right gives positive "
+"roll.\n"
+"    pitch, roll = hub.imu.tilt()\n"
+"\n"
+"    # Print the result.\n"
+"    print(pitch, roll)\n"
+"    wait(200)\n"
+msgstr ""
+
+#: ../../main/hubs/essentialhub.rst:185 f5a680b97f234f2da1b4d26f5b92eb11
+msgid "Reading acceleration and angular velocity vectors"
+msgstr ""
+
+#: ../../main/hubs/essentialhub.rst:187 bf45e4cd9e174c5287004875f8234484
+msgid ""
+"from pybricks.hubs import EssentialHub\n"
+"from pybricks.tools import wait\n"
+"\n"
+"# Initialize the hub.\n"
+"hub = EssentialHub()\n"
+"\n"
+"# Get the acceleration vector in g's.\n"
+"print(hub.imu.acceleration() / 9810)\n"
+"\n"
+"# Get the angular velocity vector.\n"
+"print(hub.imu.angular_velocity())\n"
+"\n"
+"# Wait so we can see what we printed\n"
+"wait(5000)\n"
+msgstr ""
+
+#: ../../main/hubs/essentialhub.rst:191 54e3e6eaf69840de9798aa94f2898eb2
+msgid "Reading acceleration and angular velocity on one axis"
+msgstr ""
+
+#: ../../main/hubs/essentialhub.rst:193 73481194fbbc461282356ec4352860c8
+msgid ""
+"from pybricks.hubs import EssentialHub\n"
+"from pybricks.tools import wait\n"
+"from pybricks.parameters import Axis\n"
+"\n"
+"# Initialize the hub.\n"
+"hub = EssentialHub()\n"
+"\n"
+"# Get the acceleration or angular_velocity along a single axis.\n"
+"# If you need only one value, this is more memory efficient.\n"
+"while True:\n"
+"\n"
+"    # Read the forward acceleration.\n"
+"    forward_acceleration = hub.imu.acceleration(Axis.X)\n"
+"\n"
+"    # Read the yaw rate.\n"
+"    yaw_rate = hub.imu.angular_velocity(Axis.Z)\n"
+"\n"
+"    # Print the yaw rate.\n"
+"    print(yaw_rate)\n"
+"    wait(100)\n"
+msgstr ""
+
+#: ../../main/hubs/essentialhub.rst:198 9a8d27cbdecd4fe783e088942aae8233
+msgid "Bluetooth examples"
+msgstr ""
+
+#: ../../main/hubs/essentialhub.rst:201 4630515dfa774d269c19c0f1be555850
+msgid "Broadcasting data to other hubs"
+msgstr ""
+
+#: ../../main/hubs/essentialhub.rst:203 cccda56c0f284d2fa3224acdaeee9b87
+msgid ""
+"from pybricks.hubs import EssentialHub\n"
+"from pybricks.pupdevices import Motor\n"
+"from pybricks.parameters import Port\n"
+"from pybricks.tools import wait\n"
+"\n"
+"# Initialize the hub.\n"
+"hub = EssentialHub(broadcast_channel=1)\n"
+"\n"
+"# Initialize the motors.\n"
+"left_motor = Motor(Port.A)\n"
+"right_motor = Motor(Port.B)\n"
+"\n"
+"while True:\n"
+"    # Read the motor angles to be sent to the other hub.\n"
+"    left_angle = left_motor.angle()\n"
+"    right_angle = right_motor.angle()\n"
+"\n"
+"    # Set the broadcast data and start broadcasting if not already doing "
+"so.\n"
+"    data = (left_angle, right_angle)\n"
+"    hub.ble.broadcast(data)\n"
+"\n"
+"    # Broadcasts are only sent every 100 milliseconds, so there is no "
+"reason\n"
+"    # to call the broadcast() method more often than that.\n"
+"    wait(100)\n"
+msgstr ""
+
+#: ../../main/hubs/essentialhub.rst:207 88c03db8fe6047f58ab684cd985827ce
+msgid "Observing data from other hubs"
+msgstr ""
+
+#: ../../main/hubs/essentialhub.rst:209 b006de58d4ae43c4ac902184bb8e4091
+msgid ""
+"from pybricks.hubs import EssentialHub\n"
+"from pybricks.pupdevices import Motor\n"
+"from pybricks.parameters import Color, Port\n"
+"from pybricks.tools import wait\n"
+"\n"
+"# Initialize the hub.\n"
+"hub = EssentialHub(observe_channels=[1])\n"
+"\n"
+"# Initialize the motors.\n"
+"left_motor = Motor(Port.A)\n"
+"right_motor = Motor(Port.B)\n"
+"\n"
+"while True:\n"
+"    # Receive broadcast from the other hub.\n"
+"\n"
+"    data = hub.ble.observe(1)\n"
+"\n"
+"    if data is None:\n"
+"        # No data has been received in the last 1 second.\n"
+"        hub.light.on(Color.RED)\n"
+"    else:\n"
+"        # Data was received and is less that one second old.\n"
+"        hub.light.on(Color.GREEN)\n"
+"\n"
+"        # *data* contains the same values in the same order\n"
+"        # that were passed to hub.ble.broadcast() on the\n"
+"        # other hub.\n"
+"        left_angle, right_angle = data\n"
+"\n"
+"        # Make the motors on this hub mirror the position of the\n"
+"        # motors on the other hub.\n"
+"        left_motor.track_target(left_angle)\n"
+"        right_motor.track_target(right_angle)\n"
+"\n"
+"    # Broadcasts are only sent every 100 milliseconds, so there is\n"
+"    # no reason to call the observe() method more often than that.\n"
+"    wait(100)\n"
+msgstr ""
+
+#: ../../main/hubs/essentialhub.rst:214 b0b62103d2a44997ba1dd4ddb0c30c3f
+msgid "System examples"
+msgstr ""
+
+#: ../../main/hubs/essentialhub.rst:217 23e61666bcae40ffbd510f6dab3d40aa
+msgid "Using the stop button during your program"
+msgstr ""
+
+#: ../../main/hubs/essentialhub.rst:219 00c06c1501474a6c95d691337844dcb5
+msgid ""
+"from pybricks.hubs import EssentialHub\n"
+"from pybricks.parameters import Color, Button\n"
+"from pybricks.tools import wait, StopWatch\n"
+"\n"
+"# Initialize the hub.\n"
+"hub = EssentialHub()\n"
+"\n"
+"# Disable the stop button.\n"
+"hub.system.set_stop_button(None)\n"
+"\n"
+"# Check the button for 5 seconds.\n"
+"watch = StopWatch()\n"
+"while watch.time() < 5000:\n"
+"\n"
+"    # Set light to green if pressed, else red.\n"
+"    if hub.buttons.pressed():\n"
+"        hub.light.on(Color.GREEN)\n"
+"    else:\n"
+"        hub.light.on(Color.RED)\n"
+"\n"
+"# Enable the stop button again.\n"
+"hub.system.set_stop_button(Button.CENTER)\n"
+"\n"
+"# Now you can press the stop button as usual.\n"
+"wait(5000)\n"
+msgstr ""
+
+#: ../../main/hubs/essentialhub.rst:223 de2abc570da74363ad91a8adb6d31262
+msgid "Turning the hub off"
+msgstr ""
+
+#: ../../main/hubs/essentialhub.rst:225 ac01a64c305e4a98bd199f0f8fdd5176
+msgid ""
+"from pybricks.hubs import EssentialHub\n"
+"from pybricks.tools import wait\n"
+"\n"
+"# Initialize the hub.\n"
+"hub = EssentialHub()\n"
+"\n"
+"# Say goodbye and give some time to send it.\n"
+"print(\"Goodbye!\")\n"
+"wait(100)\n"
+"\n"
+"# Shut the hub down.\n"
+"hub.system.shutdown()\n"
+msgstr ""
+

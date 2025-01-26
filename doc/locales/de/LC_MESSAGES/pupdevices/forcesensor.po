@@ -1,0 +1,203 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-2023 The Pybricks Authors
+# This file is distributed under the same license as the pybricks package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pybricks v3.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-01-26 20:11+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: de\n"
+"Language-Team: de <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../main/pupdevices/forcesensor.rst:4 1fcf271d79c3495c80250019684437a7
+msgid "Force Sensor"
+msgstr ""
+
+#: ../../main/pupdevices/forcesensor.rst:6 7267662bc47d40b2a2942c87d41f3824
+msgid ".. image:: ../../main/cad/output/pupdevice-force.png"
+msgstr ""
+
+#: ../../main/pupdevices/forcesensor.rst:9 020022467ac84e5f8e3dbbd00799aca4
+msgid ".. image:: /blockimg/pybricks_variables_set_force_sensor.svg"
+msgstr ""
+
+#: fa300be616be4bbe8684ea1af125df32 of pybricks.pupdevices.ForceSensor:1
+msgid "LEGO® SPIKE Force Sensor."
+msgstr ""
+
+#: ../../main/pupdevices/forcesensor.rst 383d728c7bef475799f0d64c4cdbc9bd
+#: c57ac1cf5d8c4c0f84ccf0a5961d106b
+msgid "Parameters"
+msgstr ""
+
+#: 59677c93b4f84055b9b76e600ee166bd of pybricks.pupdevices.ForceSensor:3
+msgid "Port to which the sensor is connected."
+msgstr ""
+
+#: ../../main/pupdevices/forcesensor.rst:14 09737358d0334f16bc6436f2ef7f585e
+msgid ".. image:: /blockimg/pybricks_blockForce_ForceSensor.svg"
+msgstr ""
+
+#: 64d0ed8cd8af4693bdd79d748fa316fb of pybricks.pupdevices.ForceSensor.force:1
+msgid "Measures the force exerted on the sensor."
+msgstr ""
+
+#: ../../main/pupdevices/forcesensor.rst 099683af1a82478986d809ebf8ef8121
+#: 09ce7c791c9d491d8946db5faddc28f0 a8626dcab9864cb79edf2b3a56bb50be
+#: f492586f3a5e488999d1fe1be63dbf01
+msgid "Returns"
+msgstr ""
+
+#: aad1ffcb7edc403da508988a4eaff905 of pybricks.pupdevices.ForceSensor.force:3
+msgid "Measured force (up to approximately 10.00 N)."
+msgstr ""
+
+#: ../../main/pupdevices/forcesensor.rst:18 4396cddaaa714b2e82bdac358cb48eb6
+msgid ".. image:: /blockimg/pybricks_blockDistance_ForceSensor.svg"
+msgstr ""
+
+#: c7657936452c488d9c7e9bd20652d845 of
+#: pybricks.pupdevices.ForceSensor.distance:1
+msgid "Measures by how much the sensor button has moved."
+msgstr ""
+
+#: 7dda65be18c84299bfba42416205966c of
+#: pybricks.pupdevices.ForceSensor.distance:3
+msgid "Movement up to approximately 8.00 mm."
+msgstr ""
+
+#: 0f6003cb58874becaa388f36a18a2cb6 of
+#: pybricks.pupdevices.ForceSensor.pressed:1
+msgid "Checks if the sensor button is pressed."
+msgstr ""
+
+#: 3413119735fd40c9b86550ee3a9b1315 of
+#: pybricks.pupdevices.ForceSensor.pressed:3
+msgid "Minimum force to be considered pressed."
+msgstr ""
+
+#: 0dda52a965654fbdb8ab0ed7068164d0 of
+#: pybricks.pupdevices.ForceSensor.pressed:6
+msgid "``True`` if the sensor is pressed, ``False`` if it is not."
+msgstr ""
+
+#: f029fb289e8a46ad9a84203f7b7f87bf of
+#: pybricks.pupdevices.ForceSensor.touched:1
+msgid "Checks if the sensor is touched."
+msgstr ""
+
+#: 83f4ab5b96104e8ab476bf00120d58b9 of
+#: pybricks.pupdevices.ForceSensor.touched:3
+msgid ""
+"This is similar to :meth:`pressed`, but it detects slight movements of "
+"the button even when the measured force is still considered zero."
+msgstr ""
+
+#: 245ed1bdf1dd46ffa58f274cc239f594 of
+#: pybricks.pupdevices.ForceSensor.touched:6
+msgid "``True`` if the sensor is touched or pressed, ``False`` if it is not."
+msgstr ""
+
+#: ../../main/pupdevices/forcesensor.rst:27 8f633134679d4bd59dedf53bb74f158c
+msgid "Examples"
+msgstr ""
+
+#: ../../main/pupdevices/forcesensor.rst:30 9702722f93ac426fa3a0183da48fef6a
+msgid "Measuring force and movement"
+msgstr ""
+
+#: ../../main/pupdevices/forcesensor.rst:32 b0969cd166d04caf9cd1875630aa91c2
+msgid ""
+"from pybricks.pupdevices import ForceSensor\n"
+"from pybricks.parameters import Port\n"
+"from pybricks.tools import wait\n"
+"\n"
+"# Initialize the sensor.\n"
+"button = ForceSensor(Port.A)\n"
+"\n"
+"while True:\n"
+"    # Read all the information we can get from this sensor.\n"
+"    force = button.force()\n"
+"    dist = button.distance()\n"
+"    press = button.pressed()\n"
+"    touch = button.touched()\n"
+"\n"
+"    # Print the values\n"
+"    print(\"Force\", force, \"Dist:\", dist, \"Pressed:\", press, "
+"\"Touched:\", touch)\n"
+"\n"
+"    # Push the sensor button see what happens to the values.\n"
+"\n"
+"    # Wait some time so we can read what is printed.\n"
+"    wait(200)\n"
+msgstr ""
+
+#: ../../main/pupdevices/forcesensor.rst:36 b193a55513504d0984cf39cbefb60318
+msgid "Measuring peak force"
+msgstr ""
+
+#: ../../main/pupdevices/forcesensor.rst:38 975d85d2d49549c485fa345749c30be1
+msgid ""
+"from pybricks.pupdevices import ForceSensor\n"
+"from pybricks.parameters import Port\n"
+"from pybricks.tools import wait\n"
+"\n"
+"# Initialize the sensor.\n"
+"button = ForceSensor(Port.A)\n"
+"\n"
+"\n"
+"# This function waits until the button is pushed. It keeps track of the "
+"maximum\n"
+"# detected force until the button is released. Then it returns the "
+"maximum.\n"
+"def wait_for_force():\n"
+"\n"
+"    # Wait for a force, by doing nothing for as long the force is nearly "
+"zero.\n"
+"    print(\"Waiting for force.\")\n"
+"    while button.force() <= 0.1:\n"
+"        wait(10)\n"
+"\n"
+"    # Now we wait for the release, by waiting for the force to be zero "
+"again.\n"
+"    print(\"Waiting for release.\")\n"
+"\n"
+"    # While we wait for that to happen, we keep reading the force and "
+"remember\n"
+"    # the maximum force. We do this by initializing the maximum at 0, and"
+"\n"
+"    # updating it each time we detect a bigger force.\n"
+"    maximum = 0\n"
+"    force = 10\n"
+"    while force > 0.1:\n"
+"        # Read the force.\n"
+"        force = button.force()\n"
+"\n"
+"        # Update the maximum if the measured force is larger.\n"
+"        if force > maximum:\n"
+"            maximum = force\n"
+"\n"
+"        # Wait and then measure again.\n"
+"        wait(10)\n"
+"\n"
+"    # Return the maximum force.\n"
+"    return maximum\n"
+"\n"
+"\n"
+"# Keep waiting for the sensor button to be pushed. When it is, display\n"
+"# the peak force and repeat.\n"
+"while True:\n"
+"    peak = wait_for_force()\n"
+"    print(\"Released. Peak force: {0} N\\n\".format(peak))\n"
+msgstr ""
+

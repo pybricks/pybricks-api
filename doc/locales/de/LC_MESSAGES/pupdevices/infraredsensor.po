@@ -1,0 +1,125 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-2023 The Pybricks Authors
+# This file is distributed under the same license as the pybricks package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pybricks v3.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-01-26 20:11+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: de\n"
+"Language-Team: de <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../main/pupdevices/infraredsensor.rst:4 d7829c318c424fb4b2e7b6ad23733c5c
+msgid "Infrared Sensor"
+msgstr ""
+
+#: ../../main/pupdevices/infraredsensor.rst:6 a88a91ad0cf54d67b5e5078da064dcd8
+msgid ".. image:: ../../main/cad/output/pupdevice-infrared.png"
+msgstr ""
+
+#: ../../main/pupdevices/infraredsensor.rst:9 3c4be04079ea4c679320adc4cc7b4c89
+msgid ".. image:: /blockimg/pybricks_variables_set_infrared_sensor.svg"
+msgstr ""
+
+#: 754fa3eb687d404fa20f8680e2fcfa62 of pybricks.pupdevices.InfraredSensor:1
+msgid "LEGO® Powered Up Infrared Sensor."
+msgstr ""
+
+#: ../../main/pupdevices/infraredsensor.rst dd851ac630094211a10b25b098d8516e
+msgid "Parameters"
+msgstr ""
+
+#: d8c26fcb35614abaaead28a7ddb2ca90 of pybricks.pupdevices.InfraredSensor:3
+msgid "Port to which the sensor is connected."
+msgstr ""
+
+#: ../../main/pupdevices/infraredsensor.rst:14 c29094ad2a1c46dc967bc942f3d14c39
+msgid ".. image:: /blockimg/pybricks_blockDistance_InfraredSensor.svg"
+msgstr ""
+
+#: a88a6f3b87854c14b4e63483aa2e7b01 of
+#: pybricks.pupdevices.InfraredSensor.distance:1
+msgid ""
+"Measures the relative distance between the sensor and an object using "
+"infrared light."
+msgstr ""
+
+#: ../../main/pupdevices/infraredsensor.rst 2764dc27f1a64dde93a52abdf5dfc2ba
+#: c7eb9eac2d6c4e14a837da36a0c9e6f0 d748fa3befea49caa6066ab0caa2fc8a
+msgid "Returns"
+msgstr ""
+
+#: f660a41a27f84446a0451da687eeffbb of
+#: pybricks.pupdevices.InfraredSensor.distance:4
+msgid "Distance ranging from 0% (closest) to 100% (farthest)."
+msgstr ""
+
+#: ../../main/pupdevices/infraredsensor.rst:18 22bfedf612274021b65a6c7407e3340d
+msgid ".. image:: /blockimg/pybricks_blockLightReflection_InfraredSensor.svg"
+msgstr ""
+
+#: 225b780e28644edda85057ee9e729427 of
+#: pybricks.pupdevices.InfraredSensor.reflection:1
+msgid "Measures the reflection of a surface using an infrared light."
+msgstr ""
+
+#: 0e98eb2bd83f4c76b68359b19716e1b1 of
+#: pybricks.pupdevices.InfraredSensor.reflection:3
+msgid ""
+"Measured reflection, ranging from 0% (no reflection) to 100% (high "
+"reflection)."
+msgstr ""
+
+#: ee9fcb749d3e439281b43c529621c50f of
+#: pybricks.pupdevices.InfraredSensor.count:1
+msgid "Counts the number of objects that have passed by the sensor."
+msgstr ""
+
+#: 8cfaa4ac691b42f4814e2aedff2361af of
+#: pybricks.pupdevices.InfraredSensor.count:3
+msgid "Number of objects counted."
+msgstr ""
+
+#: ../../main/pupdevices/infraredsensor.rst:25 269052feb8a7401b8c9410d6bdf71f20
+msgid "Examples"
+msgstr ""
+
+#: ../../main/pupdevices/infraredsensor.rst:28 1e618b45f8eb47fbbea60a1cffacd18c
+msgid "Measuring distance, object count, and reflection"
+msgstr ""
+
+#: ../../main/pupdevices/infraredsensor.rst:30 109622004c2c4799ada0ef8326389228
+msgid ""
+"from pybricks.pupdevices import InfraredSensor\n"
+"from pybricks.parameters import Port\n"
+"from pybricks.tools import wait\n"
+"\n"
+"# Initialize the sensor.\n"
+"ir = InfraredSensor(Port.A)\n"
+"\n"
+"while True:\n"
+"    # Read all the information we can get from this sensor.\n"
+"    dist = ir.distance()\n"
+"    count = ir.count()\n"
+"    ref = ir.reflection()\n"
+"\n"
+"    # Print the values\n"
+"    print(\"Distance:\", dist, \"Count:\", count, \"Reflection:\", ref)\n"
+"\n"
+"    # Move the sensor around and move your hands in front\n"
+"    # of it to see what happens to the values.\n"
+"\n"
+"    # Wait some time so we can read what is printed.\n"
+"    wait(200)\n"
+msgstr ""
+

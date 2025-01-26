@@ -1,0 +1,270 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-2023 The Pybricks Authors
+# This file is distributed under the same license as the pybricks package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pybricks v3.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-01-26 20:11+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: de\n"
+"Language-Team: de <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../main/micropython/exceptions.rst:2 12565ae385c64804b48e8be5bd5a5d52
+msgid "Exceptions and errors"
+msgstr ""
+
+#: ../../main/micropython/exceptions.rst:4 62e2d35a1ac54375933622ef4862e473
+msgid "This section lists all available exceptions in alphabetical order."
+msgstr ""
+
+#: 34af942520c54a4ea492e859a5528087 of ubuiltins.ArithmeticError:1
+msgid ""
+"The base class for those built-in exceptions that are raised for various "
+"arithmetic errors."
+msgstr ""
+
+#: 29e5635d48a64ac6ba89555f26570a71 of ubuiltins.AssertionError:1
+msgid "Raised when an assert statement fails."
+msgstr ""
+
+#: f55d234028354c0fa0294226e1f76ead of ubuiltins.AttributeError:1
+msgid "Raised when an attribute reference or assignment fails."
+msgstr ""
+
+#: edceb1e8c6b842bebb14f2c2dbd87f2d of ubuiltins.BaseException:1
+msgid "The base class for all built-in exceptions."
+msgstr ""
+
+#: 100bcc2ca4614ecabf3d7e466ff1b8d1 of ubuiltins.BaseException:3
+msgid ""
+"It is not meant to be directly inherited by user-defined classes (for "
+"that, use :class:`Exception`)."
+msgstr ""
+
+#: 8b728bd1ed4541cdbb95a73cc65254f6 of ubuiltins.EOFError:1
+msgid ""
+"Raised when the :meth:`input` function hits an end-of-file condition "
+"(EOF) without reading any data."
+msgstr ""
+
+#: 2ca3c14ff42c4475837d0090a555be86 of ubuiltins.Exception:1
+msgid "All built-in exceptions are derived from this class."
+msgstr ""
+
+#: 5cab26a8fcf7474391a79bf931c4a2e7 of ubuiltins.Exception:3
+msgid "All user-defined exceptions should also be derived from this class."
+msgstr ""
+
+#: aa417a2205074b12bab4d0ede959b44c of ubuiltins.GeneratorExit:1
+msgid "Raised when a generator or coroutine is closed."
+msgstr ""
+
+#: ab819e507fc944768712e20c799d70dc of ubuiltins.ImportError:1
+msgid "Raised when the ``import`` statement is unable to load a module."
+msgstr ""
+
+#: a6f442773a3c443284dcb11ef30556e0 of ubuiltins.IndentationError:1
+msgid "Base class for syntax errors related to incorrect indentation."
+msgstr ""
+
+#: 90a8b12582364ecda35c59144f798440 of ubuiltins.IndexError:1
+msgid "Raised when a sequence subscript is out of range."
+msgstr ""
+
+#: 0cab63b71b294382b6defa992c7592e1 of ubuiltins.KeyboardInterrupt:1
+msgid ""
+"Raised when the user hits the interrupt key (normally :kbd:`Ctrl` "
+":kbd:`C`)."
+msgstr ""
+
+#: 52397d73b483489c896e5129d8e08879 of ubuiltins.KeyError:1
+msgid ""
+"Raised when a mapping (dictionary) key is not found in the set of "
+"existing keys."
+msgstr ""
+
+#: 4a8e5fe7f5cd4db583df43ef4e27833c of ubuiltins.LookupError:1
+msgid ""
+"The base class for the exceptions that are raised when a key or index "
+"used on a mapping or sequence is invalid."
+msgstr ""
+
+#: a62ed0cf181c4ada9af96f5918154d85 of ubuiltins.MemoryError:1
+msgid "Raised when an operation runs out of memory."
+msgstr ""
+
+#: 4abfd6f9aeb14eaf8bdc55a4514d0a19 of ubuiltins.NameError:1
+msgid "Raised when a local or global name is not found."
+msgstr ""
+
+#: ab18b487ef754a48a31199bb82866dbe of ubuiltins.NotImplementedError:1
+msgid ""
+"In user defined base classes, abstract methods should raise this "
+"exception when they require derived classes to override the method, or "
+"while the class is being developed to indicate that the real "
+"implementation still needs to be added."
+msgstr ""
+
+#: 7c2628e6ca164428a704d04537fa9ad9 of ubuiltins.OSError:1
+msgid ""
+"This exception is raised by the firmware, which is the Operating System "
+"that runs on the hub. For :ref:`example <device_detection>`, it raises an"
+" ``OSError`` if you call ``Motor(Port.A)`` when there is no motor on port"
+" A."
+msgstr ""
+
+#: ../../docstring 1e74f1a0248c4ef6af3f964d74821c4d of
+#: ubuiltins.OSError.errno:1
+msgid ""
+"Specifies which kind of ``OSError`` occurred, as listed in the "
+":mod:`uerrno` module."
+msgstr ""
+
+#: 2a6a36d48999438a826a59a7edfe2c56 of ubuiltins.OverflowError:1
+msgid ""
+"Raised when the result of an arithmetic operation is too large to be "
+"represented."
+msgstr ""
+
+#: 52b251c2dc32489a8df935f07a1f5261 of ubuiltins.RuntimeError:1
+msgid ""
+"Raised when an error is detected that doesn’t fall in any of the other "
+"categories."
+msgstr ""
+
+#: e449bbd00a434981a109f30a271db192 of ubuiltins.RuntimeError:3
+msgid "The associated value is a string indicating what precisely went wrong."
+msgstr ""
+
+#: 324e7a89db074c05a6bb63be0302cb62 of ubuiltins.StopIteration:1
+msgid ""
+"Raised by built-in function :meth:`next` and an iterator’s ``__next__()``"
+" method to signal that there are no further items produced by the "
+"iterator."
+msgstr ""
+
+#: a2fa3e14ef2e49ae85fbd5d76b448ab8 of ubuiltins.StopIteration:4
+msgid "Generator functions should return instead of raising this directly."
+msgstr ""
+
+#: 50acdf2b890e4d47bb8af4471f26a66d of ubuiltins.SyntaxError:1
+msgid "Raised when the parser encounters a syntax error."
+msgstr ""
+
+#: 394f3bb1dbfe4520863b543fed66c584 of ubuiltins.SystemExit:1
+msgid ""
+"Raised when you press the stop button on the hub or in the Pybricks Code "
+"app."
+msgstr ""
+
+#: 4c087c3909454594ba9accf7533568e0 of ubuiltins.TypeError:1
+msgid ""
+"Raised when an operation or function is applied to an object of "
+"inappropriate type."
+msgstr ""
+
+#: ec5ae0638ed341bdb8ea3c2c5e133b1d of ubuiltins.ValueError:1
+msgid ""
+"Raised when an operation or function receives an argument that has the "
+"right type but an inappropriate value. This is used when the situation is"
+" not described by a more precise exception such as :class:`IndexError`."
+msgstr ""
+
+#: fb83946477074d2f9d1782d7616bff62 of ubuiltins.ZeroDivisionError:1
+msgid "Raised when the second argument of a division or modulo operation is zero."
+msgstr ""
+
+#: ../../main/micropython/exceptions.rst:84 0a1e31c0aaea45eaa58701c74f67a323
+msgid "Examples"
+msgstr ""
+
+#: ../../main/micropython/exceptions.rst:87 d9aef24687d64ec481ed840c1ce64ee5
+msgid "Debugging in the REPL terminal"
+msgstr ""
+
+#: ../../main/micropython/exceptions.rst:89 99301cda7a2846aebe1625cb930d0845
+msgid ""
+"from pybricks.pupdevices import Motor\n"
+"from pybricks.parameters import Port\n"
+"from pybricks.tools import wait\n"
+"\n"
+"# Initialize the motor.\n"
+"test_motor = Motor(Port.A)\n"
+"\n"
+"# Start moving at 500 deg/s.\n"
+"test_motor.run(500)\n"
+"\n"
+"# If you click on the terminal window and press CTRL+C,\n"
+"# you can continue debugging in this terminal.\n"
+"wait(5000)\n"
+"\n"
+"# You can also do this to exit the script and enter the\n"
+"# terminal. Variables in the global scope are still available.\n"
+"raise KeyboardInterrupt\n"
+"\n"
+"# For example, you can copy the following line to the terminal\n"
+"# to get the angle, because test_motor is still available.\n"
+"test_motor.angle()\n"
+msgstr ""
+
+#: ../../main/micropython/exceptions.rst:93 8e2b13e79b8e434892683486b2afd313
+msgid "Running code when the stop button is pressed"
+msgstr ""
+
+#: ../../main/micropython/exceptions.rst:95 37c1574a7b6e4ea5aab2c3db10d511a8
+msgid ""
+"from pybricks.tools import wait\n"
+"\n"
+"print(\"Started!\")\n"
+"\n"
+"try:\n"
+"\n"
+"    # Run your script here as you normally would. In this\n"
+"    # example we just wait forever and do nothing.\n"
+"    while True:\n"
+"        wait(1000)\n"
+"\n"
+"except SystemExit:\n"
+"    # This code will run when you press the stop button.\n"
+"    # This can be useful to \"clean up\", such as to move\n"
+"    # the motors back to their starting positions.\n"
+"    print(\"You pressed the stop button!\")\n"
+msgstr ""
+
+#: ../../main/micropython/exceptions.rst:101 d1066dfe777b4276996e3988173b7d40
+msgid "Detecting devices using ``OSError``"
+msgstr ""
+
+#: ../../main/micropython/exceptions.rst:103 f5442faaede24372b6841b5df150cfd2
+msgid ""
+"from pybricks.pupdevices import Motor\n"
+"from pybricks.parameters import Port\n"
+"\n"
+"from uerrno import ENODEV\n"
+"\n"
+"try:\n"
+"    # Try to initialize a motor.\n"
+"    my_motor = Motor(Port.A)\n"
+"\n"
+"    # If all goes well, you'll see this message.\n"
+"    print(\"Detected a motor.\")\n"
+"except OSError as ex:\n"
+"    # If an OSError was raised, we can check what\n"
+"    # kind of error this was, like ENODEV.\n"
+"    if ex.errno == ENODEV:\n"
+"        # ENODEV is short for \"Error, no device.\"\n"
+"        print(\"There is no motor this port.\")\n"
+"    else:\n"
+"        print(\"Another error occurred.\")\n"
+msgstr ""
+

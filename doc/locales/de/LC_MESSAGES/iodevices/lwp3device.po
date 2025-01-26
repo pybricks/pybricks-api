@@ -1,0 +1,105 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-2023 The Pybricks Authors
+# This file is distributed under the same license as the pybricks package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pybricks v3.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-01-26 20:11+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: de\n"
+"Language-Team: de <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../main/iodevices/lwp3device.rst:4 dc7d19c27a6c4f12a268359f57655116
+msgid "LEGO Wireless Protocol v3 device"
+msgstr ""
+
+#: ../../main/iodevices/lwp3device.rst:8 73e7487e621b4958b2dadbb2b94f5414
+msgid ""
+"This is an experimental class. It has not been well tested and may be "
+"changed in future."
+msgstr ""
+
+#: ../../main/iodevices/lwp3device.rst:11 5245b3f080c04b6dae96d6350fb1d8d0
+msgid ".. image:: ../../main/cad/output/hub-lwp3.png"
+msgstr ""
+
+#: a147f21080554ede9a0270dd0c5754a9 of pybricks.iodevices.LWP3Device:1
+msgid ""
+"Connects to a hub running official LEGO firmware using the `LEGO Wireless"
+" Protocol v3`_"
+msgstr ""
+
+#: ../../main/iodevices/lwp3device.rst 72096b15bfbf46a88e8e52c990aaf4d3
+#: e726d33d2c8e4ea198c3960f8d64b206 f905f75d223c4b1a86891997baf95e76
+msgid "Parameters"
+msgstr ""
+
+#: 8d30eca4b91c4323be3b857a2f4bfd7a of pybricks.iodevices.LWP3Device:7
+msgid "The `hub type identifier`_ of the hub to connect to."
+msgstr ""
+
+#: 94bce86ffae6492780fb62e536a9826a of pybricks.iodevices.LWP3Device:9
+msgid "The name of the hub to connect to or ``None`` to connect to any hub."
+msgstr ""
+
+#: 6612032a97ee4ed8a4aa04e6c4969a1f of pybricks.iodevices.LWP3Device:12
+msgid ""
+"The time, in milliseconds, to wait for a connection before raising an "
+"exception."
+msgstr ""
+
+#: 02503a0bec9e4428908cb0236cf199fe of pybricks.iodevices.LWP3Device.name:1
+msgid "name(name) name() -> str"
+msgstr ""
+
+#: f63cef3545d94bb3b613ab8480179847 of pybricks.iodevices.LWP3Device.name:4
+msgid "Sets or gets the Bluetooth name of the device."
+msgstr ""
+
+#: 9a106f9029fb4046ad3147beddb5ba3b of pybricks.iodevices.LWP3Device.name:6
+msgid ""
+"New Bluetooth name of the device. If no name is given, this method "
+"returns the current name."
+msgstr ""
+
+#: ccea1505be7b47a7929b9fefdb12d9ac of pybricks.iodevices.LWP3Device.write:1
+msgid "Sends a message to the remote hub."
+msgstr ""
+
+#: 3f735e7718f7405ab0be2cdf0bfe4257 of pybricks.iodevices.LWP3Device.write:3
+msgid "The raw binary message to send."
+msgstr ""
+
+#: 5098a5d20fa44470934702693ae3b401 of pybricks.iodevices.LWP3Device.read:1
+msgid "Retrieves the most recent message received from the remote hub."
+msgstr ""
+
+#: c13b7002518e44a3997db61837e680e5 of pybricks.iodevices.LWP3Device.read:3
+msgid ""
+"If a message has not been received since the last read, the method will "
+"block until a message is received."
+msgstr ""
+
+#: ../../main/iodevices/lwp3device.rst d02cfd1453c6494faf7382baf85fe29c
+msgid "Returns"
+msgstr ""
+
+#: deaaab2ab9164ee1b421bfa4dea94354 of pybricks.iodevices.LWP3Device.read:6
+msgid "The raw binary message."
+msgstr ""
+
+#: bc066de8c0ce4ee28b56c01df5a60cff of
+#: pybricks.iodevices.LWP3Device.disconnect:1
+msgid "Disconnects the remote LWP3Device from the hub."
+msgstr ""
+

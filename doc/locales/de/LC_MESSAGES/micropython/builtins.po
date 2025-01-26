@@ -1,0 +1,1391 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-2023 The Pybricks Authors
+# This file is distributed under the same license as the pybricks package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pybricks v3.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-01-26 20:11+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: de\n"
+"Language-Team: de <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../main/micropython/builtins.rst:2 b85a6c29396f4e5b8ab7c9f5417462a2
+msgid "Built-in classes and functions"
+msgstr ""
+
+#: ../../main/micropython/builtins.rst:4 7d7c86b29d424d16ad0c2ba19663173c
+msgid ""
+"The classes and functions shown on this page can be used without "
+"importing anything."
+msgstr ""
+
+#: ../../main/micropython/builtins.rst:8 ec5b7b889e634251a7bfa6cd7687b372
+msgid "Input and output"
+msgstr ""
+
+#: bacda4e6fb4f4375984ba79988de52d3 of ubuiltins.input:1
+msgid "input() -> str input(prompt) -> str"
+msgstr ""
+
+#: f659923d9daa4f269e5a7cbb1090e02d of ubuiltins.input:4
+msgid ""
+"Gets input from the user in the terminal window. It waits until the user "
+"presses :kbd:`Enter`."
+msgstr ""
+
+#: ../../main/micropython/builtins.rst 03549ab4ad6648b5b474c53f6a2d85f1
+#: 086f353c635843c4ac00bb8c78aba0a1 137015d943234185b5a2121f1a851d0c
+#: 143502e94b804a2e9cc260ca3cad43cd 14520705c87141d9b52bab3dc7aa7120
+#: 1483e3d8722d448aa6bb702cf7cd78ba 157fe0a621cd4427abe139e9f385d050
+#: 1ad57990f97c42c1b38b33d07ba2ac22 2948b35bb1bb4cec8495876960b05a3c
+#: 2ddf93a0fafd4217a6110b736ed57ff9 3ce0822d00694be686356ace97a089c7
+#: 3d94ec02b877405fa4f756e560263bd0 4670d4948a834bc7b063c25f6bd7d02e
+#: 4b0be7684ebc477cb8b93541b73a5e67 5304b50553d34df394ccc3dc00b081e9
+#: 5484eed76be34057b3a96a74aaba9c07 5d2b13c8ecc64824b305662918c888e2
+#: 62a313600099453db6f95a5916a6d814 63c15c96746c4c8cac2dec6e61c172bc
+#: 6566b8ce31984785af04b10f5f02df5a 7208ca8bea094e71bc8c8548b4393c4d
+#: 753b652cbb8047d08e9301b1aea8fc37 77051ec9518d4c7097daaac9f1031d24
+#: 78fb87c21f8b4cdd9484163c57eddc02 7a9210aedc454de6b58a460e1a0d7063
+#: 7aa1576416bb4532828f561183c8afcf 80b4e62186534aa18ef02c71a75eaa54
+#: 80d14de2456e4eb2b1a1154be1d22cc1 8dd5ac681cd04e2c95e382cc9504e9d1
+#: 963e18da01b64884a80676f7aeb2b47d 982e913d33024d89bd2c7792c90239f2
+#: 9aa678a5cd724da4b18c060eac455737 9e4ae2490f4d4d399e8a38ffc1fee6ce
+#: a0b8dd4c4bbc4dac9f3da5d4a0243268 a203781ac4724d618e1f968aef8f2eb6
+#: a268c04c88084b3dad9476a6b0f23d67 a80cbaba70314db1be439fa3b1c5ed72
+#: b1988a4ea19d48deb2298df88f1d7ac9 b4abf439a52546918568aaee5c973e89
+#: b8f434895eb045edbfbecfc76a23552c c3f8edb18a9a4e20993d4df23aec9e45
+#: c874bddccf3d49ebbc8f3227a0602299 cd9b916739ad48418b8f9ea2ae5803c4
+#: cf53cc2a9da2475a83fca115a76a79cc d106c1ca57a14b34b4e241d3ec8a3cdb
+#: d3289dc553454ecd955ca77e643ebfff d4541caaaf1646d6a60ebc742ef18f62
+#: da1beef8b1c34e868131a32b2406f63e db1ba6d0f06f4842a301775af1ed59d0
+#: e53b03acdf234bb7b8ab6a0eb5c1287f e80b196d87114d2abe4d39c3c38f3476
+#: e9f44ff2744840a5acae4b49995bc93c ef9d829271ab404aa25fae5fb240d84d
+#: f807afe168014a17ac6ca6cd172501b3 ff47f17b597e444daf0bf384f66221eb
+msgid "Parameters"
+msgstr ""
+
+#: 687e1fe888b84ca1ac0eb8919dbc1010 of ubuiltins.input:7
+msgid ""
+"If given, this is printed in the terminal window first. This can be used "
+"to ask a question so the user knows what to type."
+msgstr ""
+
+#: ../../main/micropython/builtins.rst 03ed9b549e674f8b830b5688c929bee4
+#: 0935a7421438452d9ff2783afeee0d9d 130a45f1c1784187b619fa3cb9aa450a
+#: 14ada215ef0b4d14bfb486eb79fdd83e 1ca5ccdd3f0540afbc63a27b9069ffb5
+#: 287ae187cecc4e48807a171c879fd8cf 316c48e0bd9e4a0ead3bb1ebbbad5ecc
+#: 34db986bb0f04361a83fcfdd8d69a76b 3746a091ca83417c99d322779fae97a0
+#: 3769fd0899e4436384b74ac219c8353f 3b7bb45febcb40439111b580be42c7c4
+#: 4c3fd1d713c7448daf2d0acbb72d67f2 4fa97816ade545cfa3c7fa4383cbaeb5
+#: 502a2296841a4f1ca22d185faae172d5 56d4dae7c68d46d9bc99ae90d9bed392
+#: 5d6458b426234c56bb2a89c02a3ccaa7 69f7824c670845f6b53b396111570b96
+#: 757336b9d9a948fba657c9ae7fc2fdc1 7ba140c7381d47249a00fa33498f90fa
+#: 82f6ce832c0a43be9b98223c98cde3e7 84918014efde4d72ad89b1458b8aee2a
+#: 87d38b1e9ab44810a309c585cc498cb7 9d555585055e4358bc93fe58730cc43b
+#: a2d267efba5a422a802ad04c027a1687 a38a1e2500b64ca7bb76854969192e21
+#: a8748292772d4fb287ad982b94a13b6a aae1d60298554e56aded9177524a9909
+#: abe622c5de3845f6bf8ef53fa357bd4c ac25172d6f814cb28678d81bb8a1ccf5
+#: ace0d8adf9c04ccbae89c8d094de2600 ae74ae20a9ae4bb787d9dbb0b6e5f2ab
+#: b63e7666761a48a8885ea34f866b83ac b6a1433356034781b36785bb244dcacd
+#: b893aaf749e04283a9c47e314378cd57 b8b2ae46ceed4d61a645eeec53d73f57
+#: bef1d8d179b14e8d8107c768a6ba90f0 c6a2d9a38ebd49baabd98ba70c0c1674
+#: c7c0e3eda69b446bb896f50c5304cd77 d038a8afb42041e8ac8f2dc7fbea9a4b
+#: d7c8bfd301274d8a97defb3f544e767b d7fef30b013e42c09331291ace05fba3
+#: e78c1e4730f64f0dbde39fda02968048 f2dc42c6a8c048df8e59586c04dfd3b0
+#: f6e2010a64844a22bc795b36fbca9850 f70604514ded4f279832cc512a82f56f
+#: fb3437eaa6af4267b112c2f4f546cc44
+msgid "Returns"
+msgstr ""
+
+#: 02c2d8d370dd4cb7a590c8db58b474e3 of ubuiltins.input:11
+msgid "Everything the user typed before pressing :kbd:`Enter`."
+msgstr ""
+
+#: ../../main/micropython/builtins.rst:16 48ad70213b954e9cb2baaeb82af33e70
+msgid ".. image:: /blockimg/pybricks_blockPrint_print_basic.svg"
+msgstr ""
+
+#: ../../main/micropython/builtins.rst:18 b3c0b5d399ec46f5b789c96359480c03
+msgid ".. image:: /blockimg/pybricks_blockPrint_print_multiple.svg"
+msgstr ""
+
+#: 8e0fcc096a7d4cd5965f5cc4f941f4f0 of ubuiltins.print:1
+msgid "print(*objects, sep=\" \", end=\"\\n\", file=usys.stdin)"
+msgstr ""
+
+#: 7f73ced025464b3882125ee7eb1d40b0 of ubuiltins.print:3
+msgid "Prints text or other objects in the terminal window."
+msgstr ""
+
+#: e7d24f9c70e54f3ab5e3ed7dd8ebb1ae of ubuiltins.print:5
+msgid "Zero or more objects to print."
+msgstr ""
+
+#: ../../main/micropython/builtins.rst 6ead053d2ae6461f85492acedc6e1ea0
+msgid "Keyword Arguments"
+msgstr ""
+
+#: d43a5d96288e49ef9f02fcbfc2f4e2bc of ubuiltins.print:7
+msgid "This is printed between objects, if there is more than one."
+msgstr ""
+
+#: 6ae54732958f469c82538e43f212ddb6 of ubuiltins.print:9
+msgid "This is printed after the last object."
+msgstr ""
+
+#: fb9bdd4c539d460782f0ac4939df89a3 of ubuiltins.print:11
+msgid ""
+"By default, the result is printed in the terminal window. This argument "
+"lets you print it to a file instead, if files are supported."
+msgstr ""
+
+#: ../../main/micropython/builtins.rst:23 7de845d6f5f54e6bb30a9d6cdc863c63
+msgid "Basic types"
+msgstr ""
+
+#: ../../main/micropython/builtins.rst:27 f0f0a75253424c1abcdeb1cf61c997e1
+msgid ".. image:: /blockimg/pybricks_blockLogicTrueFalse_false.svg"
+msgstr ""
+
+#: ../../main/micropython/builtins.rst:29 81c029d38832444483b9bf467626ae36
+msgid ".. image:: /blockimg/pybricks_blockLogicTrueFalse_true.svg"
+msgstr ""
+
+#: 204a516d758e4894afb5b6f3645cd0b1 of ubuiltins.bool:1
+msgid "Creates a boolean value, which is either ``True`` or ``False``."
+msgstr ""
+
+#: 463585771f0d487985b3dcf51ff21c83 of ubuiltins.bool:3
+msgid ""
+"The input value is converted using the standard truth testing procedure. "
+"If no input is given, it is assumed to be ``False``."
+msgstr ""
+
+#: 4c8cdc27d8804b8db4a1fc89974f2af3 7122dfe7be5e4a5cb23c9cf1e1c0b374
+#: cad451dd63d54b94a770b45dc81d5483 f8ba0231b0f44421b9c4b3bc441fd992 of
+#: ubuiltins.bin:5 ubuiltins.bool:6 ubuiltins.hex:5 ubuiltins.oct:5
+msgid "Value to be converted."
+msgstr ""
+
+#: 77e813b776684f469760991d93d2b93f of ubuiltins.bool:8
+msgid "Result of the truth-test."
+msgstr ""
+
+#: 6d6bd4a7aabe4093ab89000406726aeb of ubuiltins.complex:1
+msgid "Creates a complex number from a string or from a pair of numbers."
+msgstr ""
+
+#: 7ab387787bf840aa90e5e98bc371424e of ubuiltins.complex:3
+msgid ""
+"If a string is given, it must be of the form ``'1+2j'``. If a pair of "
+"numbers is provided, the result is computed as: ``a + b * j``."
+msgstr ""
+
+#: 6a4489610d30499b9f40ea74721407c4 of ubuiltins.complex:7
+msgid "A string of the form ``'1+2j'`` ."
+msgstr ""
+
+#: 1ed12ed8bb4241c3926a4ef77d44b209 bfa326fc1cb44e5aab0c954c1b3bde83 of
+#: ubuiltins.complex:9 ubuiltins.complex:11
+msgid "A real-valued or complex number."
+msgstr ""
+
+#: 42cd1a176247467eb33b0189816180fc of ubuiltins.complex:14
+msgid "The resulting complex number."
+msgstr ""
+
+#: b7cf8336bfc04d1aa4705ac50bfdec3c of ubuiltins.dict:1
+msgid "Creates a dictionary object."
+msgstr ""
+
+#: 13c43e04654840fba3f64dd1a8f95f13 of ubuiltins.dict:3
+msgid ""
+"See the standard `Python documentation "
+"<https://docs.python.org/3/library/stdtypes.html#mapping-types-dict>`_ "
+"for a comprehensive reference with examples."
+msgstr ""
+
+#: 7bbbbee2e6a64e65bc54098b9440de4f of ubuiltins.float:1
+msgid "Creates a floating point number from a given object."
+msgstr ""
+
+#: a09b9a7cf62042458d9190a6d85da939 of ubuiltins.float:3
+msgid "Number or string to be converted."
+msgstr ""
+
+#: a7db6b1b684e4e699317f98c6848b6f6 of ubuiltins.int:1
+msgid "Creates an integer."
+msgstr ""
+
+#: 3ad58a348c8e432a9a36fcc38472357b 78be22492744410d9a4b9727352ac431 of
+#: ubuiltins.int:3 ubuiltins.repr:3
+msgid "Object to be converted."
+msgstr ""
+
+#: e51c93a4947a4eb5af81f7fda5dc7ed0 of ubuiltins.int.to_bytes:1
+msgid "Get a :class:`bytes` representation of the integer."
+msgstr ""
+
+#: d0682e3b6c7c4585a383085771c98c27 of ubuiltins.int.to_bytes:3
+msgid "How many bytes to use."
+msgstr ""
+
+#: a9ae4a825c6444d3905ae63a237e1d74 of ubuiltins.int.to_bytes:5
+msgid ""
+"Choose ``\"big\"`` to put the most significant byte first. Choose "
+"``\"little\"`` to put the least significant byte first."
+msgstr ""
+
+#: ae0887f4552f4590abc4cc6f30f2d82e of ubuiltins.int.to_bytes:10
+msgid "Byte sequence that represents the integer."
+msgstr ""
+
+#: 0a9f519c555f4d31ba0d6663b816f23c of ubuiltins.int.from_bytes:1
+msgid "Convert a byte sequence to the number it represents."
+msgstr ""
+
+#: 27dc9efaf258475997f7c56e408ae263 of ubuiltins.int.from_bytes:3
+msgid "The bytes to convert."
+msgstr ""
+
+#: d89eeb20c83c4494bfb6dec39645aa86 of ubuiltins.int.from_bytes:5
+msgid ""
+"Choose ``\"big\"`` if the most significant byte is the first element. "
+"Choose ``\"little\"`` if the least significant byte is the first element."
+msgstr ""
+
+#: 2b2fccd983ea4e198974d36cc537ee72 of ubuiltins.int.from_bytes:10
+msgid "The number represented by the bytes."
+msgstr ""
+
+#: 9847a6e46892457aacce3006d4287126 of ubuiltins.object:1
+msgid "Creates a new, featureless object."
+msgstr ""
+
+#: b41978b611ee44e0a906ba6bfe901dc3 of ubuiltins.type:1
+msgid ""
+"Gets the type of an object. This can be used to check if an object is an "
+"instance of a particular class."
+msgstr ""
+
+#: a3988299ba12487eb7307cf859fefadf of ubuiltins.type:4
+msgid "Object of which to check the type."
+msgstr ""
+
+#: ../../main/micropython/builtins.rst:63 da300c3abf79483aad382a8b17a47048
+msgid "Sequences"
+msgstr ""
+
+#: efb9abde8a3e40cabed69a17cf911f90 of ubuiltins.bytearray:1
+msgid ""
+"Creates a new ``bytearray`` object, which is a sequence of integers in "
+"the range :math:`0 \\leq x \\leq 255`. This object is *mutable*, which "
+"means that you *can* change its contents after you create it."
+msgstr ""
+
+#: 95509a686a544d90a6348f5f83c3fbc1 of ubuiltins.bytearray:5
+msgid "If no argument is given, this creates an empty ``bytearray`` object."
+msgstr ""
+
+#: 1dc60154ead2403aad61e52105cf13c6 of ubuiltins.bytearray:7
+msgid ""
+"If the argument is a single integer, this creates a ``bytearray`` object "
+"of zeros. The argument specifies how many."
+msgstr ""
+
+#: 0dff25e5e1fb4ede828ca2a4894f5005 of ubuiltins.bytearray:10
+msgid ""
+"If the argument is a ``bytearray``, ``bytes`` object, or some other "
+"iterable of integers, this creates a ``bytearray`` object with the same "
+"byte sequence as the argument."
+msgstr ""
+
+#: adf5651a2a5845b6ae7b56e8883378a0 of ubuiltins.bytearray:14
+msgid ""
+"If the argument is a string, this creates a ``bytearray`` object "
+"containing the encoded string."
+msgstr ""
+
+#: 4922495975dc49298b660f8e2c639ba0 of ubuiltins.bytes:1
+msgid ""
+"Creates a new ``bytes`` object, which is a sequence of integers in the "
+"range :math:`0 \\leq x \\leq 255`. This object is *immutable*, which "
+"means that you *cannot* change its contents after you create it."
+msgstr ""
+
+#: bd7545c95d2c40718411295adcedd4f5 of ubuiltins.bytes:5
+msgid "If no argument is given, this creates an empty ``bytes`` object."
+msgstr ""
+
+#: bc592cc99a23468d8274c216031a4582 of ubuiltins.bytes:7
+msgid ""
+"If the argument is a single integer, this creates a ``bytes`` object of "
+"zeros. The argument specifies how many."
+msgstr ""
+
+#: 218598bcf8f542b9b6cdfafed8d6ecf2 of ubuiltins.bytes:10
+msgid ""
+"If the argument is a ``bytearray``, ``bytes`` object, or some other "
+"iterable of integers, this creates a ``bytes`` object with the same byte "
+"sequence as the argument."
+msgstr ""
+
+#: 2431a031208444dbab6330161a2656f4 of ubuiltins.bytes:14
+msgid ""
+"If the argument is a string, this creates a ``bytes`` object containing "
+"the encoded string."
+msgstr ""
+
+#: 47c6278496f24ac6bb1bfa1168b3cb04 of ubuiltins.bytes:17
+msgid ""
+"Specifies which encoding to use for the ``string`` argument. Only "
+"``\"utf-8\"``  is supported."
+msgstr ""
+
+#: ../../main/micropython/builtins.rst:75 cfc4b740999549edbffd51c3e8d6e513
+msgid ".. image:: /blockimg/pybricks_blockListLength.svg"
+msgstr ""
+
+#: 25f09c52a7d747a9a4af78b386bfdb4a of ubuiltins.len:1
+msgid "Gets the length (the number of items) of an object."
+msgstr ""
+
+#: b9a30edb319b4fa2b1b93f37d636dcb7 of ubuiltins.len:3
+msgid "The sequence of which to get the length."
+msgstr ""
+
+#: 1b9fbe2eef9c44f18bec8ee13bdd5d32 of ubuiltins.len:6
+msgid "The length."
+msgstr ""
+
+#: ../../main/micropython/builtins.rst:81 f3d4d6628bc7492e8bd6cb15bdfafbc3
+msgid ".. image:: /blockimg/pybricks_blockListCreate_list_empty.svg"
+msgstr ""
+
+#: ../../main/micropython/builtins.rst:84 cd85640f24ec4b9d840406f250f0ec7e
+msgid ".. image:: /blockimg/pybricks_blockListCreate_list_3.svg"
+msgstr ""
+
+#: ../../main/micropython/builtins.rst:87 92f56bae52bb4e67937ee02f143d1c07
+msgid ".. image:: /blockimg/pybricks_blockListUnpack.svg"
+msgstr ""
+
+#: ../../main/micropython/builtins.rst:90 4cfe77ea0734477ab7f17addb4346cd3
+msgid ".. image:: /blockimg/pybricks_blockListGet_list_get_first.svg"
+msgstr ""
+
+#: ../../main/micropython/builtins.rst:93 df224935c7df45beb0e6284303298384
+msgid ".. image:: /blockimg/pybricks_blockListGet_list_get_index.svg"
+msgstr ""
+
+#: ../../main/micropython/builtins.rst:96 1dcc5a4e1c9b4f82872b45a63b2c14bd
+msgid ".. image:: /blockimg/pybricks_blockListGet_list_get_last.svg"
+msgstr ""
+
+#: ../../main/micropython/builtins.rst:99 8524aeeab16e440ea9897f960d3cbc9e
+msgid ".. image:: /blockimg/pybricks_blockListGet_list_get_random.svg"
+msgstr ""
+
+#: ../../main/micropython/builtins.rst:102 0a2e4d4687b04390b6ec99fc1f0070dd
+msgid ".. image:: /blockimg/pybricks_blockListSet_list_insert_first.svg"
+msgstr ""
+
+#: ../../main/micropython/builtins.rst:105 ce94de4fb23747d1928aa08f7556c5eb
+msgid ".. image:: /blockimg/pybricks_blockListSet_list_insert_index.svg"
+msgstr ""
+
+#: ../../main/micropython/builtins.rst:108 2dfbbb64fe0a47c28eb0f6d58047c26f
+msgid ".. image:: /blockimg/pybricks_blockListSet_list_insert_last.svg"
+msgstr ""
+
+#: ../../main/micropython/builtins.rst:111 1b34b0a87d854bd5b1a310a4bda6eaa0
+msgid ".. image:: /blockimg/pybricks_blockListSet_list_remove_first.svg"
+msgstr ""
+
+#: ../../main/micropython/builtins.rst:114 a85187f5dd81483783f621cfdef45f7d
+msgid ".. image:: /blockimg/pybricks_blockListSet_list_remove_index.svg"
+msgstr ""
+
+#: ../../main/micropython/builtins.rst:117 b26184a0c6be4ee3a8b309d7bc10ca14
+msgid ".. image:: /blockimg/pybricks_blockListSet_list_remove_last.svg"
+msgstr ""
+
+#: ../../main/micropython/builtins.rst:120 55b76be9582146f189008b3d7ee97da6
+msgid ".. image:: /blockimg/pybricks_blockListSet_list_set_first.svg"
+msgstr ""
+
+#: ../../main/micropython/builtins.rst:123 03cc129d069a4045bd2ca139961cf88a
+msgid ".. image:: /blockimg/pybricks_blockListSet_list_set_index.svg"
+msgstr ""
+
+#: ../../main/micropython/builtins.rst:126 900b25a2c2dd47a4971ff435b716cb3e
+msgid ".. image:: /blockimg/pybricks_blockListSet_list_set_last.svg"
+msgstr ""
+
+#: 21d81f744226411f9a9609983d3f9910 of ubuiltins.list:1
+msgid ""
+"Creates a new list. If no argument is given, this creates an empty "
+"``list`` object."
+msgstr ""
+
+#: cc30ffeb6fe54ff5bf99db28238449f5 of ubuiltins.list:4
+msgid ""
+"A list is *mutable*, which means that you *can* change its contents after"
+" you create it."
+msgstr ""
+
+#: 08bede73e7b14eeb840e683e3ebbaf3e of ubuiltins.list:7
+msgid "Iterable from which to build the list."
+msgstr ""
+
+#: 5d1f7c832729409db3db11cc2230988b of ubuiltins.set:1
+msgid "Creates a new set."
+msgstr ""
+
+#: f6457e1e58bf4220847d89c78fa21122 of ubuiltins.set:3
+msgid ""
+"With no arguments, creates a new empty set, otherwise creates a set "
+"containing unique items of *iterable*."
+msgstr ""
+
+#: 409ef67b15f94528a516470613c153b4 of ubuiltins.set:6
+msgid "Sets can also be created using a set literal::"
+msgstr ""
+
+#: 4960675c45a144b2aa08a5d4c4582a36 of ubuiltins.set:8
+msgid "my_set = {1, 2, 3}"
+msgstr ""
+
+#: 1fb7d9e44cb546ed82868844da607403 of ubuiltins.set:10
+msgid ""
+"Elements of a set must be hashable. There are only a few types, like "
+":class:`list` that aren't hashable."
+msgstr ""
+
+#: 1031a3ae8ab54c86a693f28fd838bb68 of ubuiltins.set:13
+msgid "An iterable of hashable objects."
+msgstr ""
+
+#: 671ffdb644bb46f5b1de71b43fe9f004 of ubuiltins.set.copy:1
+msgid "Returns a shallow copy of the set."
+msgstr ""
+
+#: 6d81610e639c4ede817c62ddc996abf9 725100f51b0e4d6b82592c0325275a4d
+#: aab0b4f65ba54910a0dc03c8b6f2d764 aef51f30d5f14ccdb3201034eb10bb27
+#: b40c68618c78402dab4d70e805608b69 of ubuiltins.set.copy:3
+#: ubuiltins.set.difference:9 ubuiltins.set.intersection:10
+#: ubuiltins.set.symmetric_difference:9 ubuiltins.set.union:9
+msgid "A new set."
+msgstr ""
+
+#: 3800c3ac82c94b07ba48b960305aedcd of ubuiltins.set.difference:1
+msgid "Returns a new set with elements that are not in any of the other sets."
+msgstr ""
+
+#: 93dbc160381e46d596359e1a3b40a6e7 of ubuiltins.set.difference:3
+msgid "The difference can also be computed using the ``-`` operator::"
+msgstr ""
+
+#: d6b4fcc8faa74445888199aa83bf9f45 of ubuiltins.set.difference:5
+msgid "diff = s - other"
+msgstr ""
+
+#: 516116608dbe484795d2c0a1b47507af 64ed9263a54d4fa7bec951d8a5ea37a0
+#: e1a8797c8bd14eab866f06b1538ee468 of ubuiltins.set.difference:7
+#: ubuiltins.set.intersection:8 ubuiltins.set.union:7
+msgid "1 or more other sets."
+msgstr ""
+
+#: 754841bb9c35414e83ae79e110cb819c of ubuiltins.set.intersection:1
+msgid ""
+"Returns a new set with elements that are common between this set and all "
+"other sets."
+msgstr ""
+
+#: 124c9575ad114abaa85ecd182a80891f of ubuiltins.set.intersection:4
+msgid "The intersection can also be computed using the ``&`` operator::"
+msgstr ""
+
+#: 10ec83b4903743c6b78852682f29865d of ubuiltins.set.intersection:6
+msgid "intersect = s & other"
+msgstr ""
+
+#: 718dfd3460db4d2cbb29c4ddda1dcdd1 of ubuiltins.set.isdisjoint:1
+msgid "Tests if a set and *other* have no elements in common."
+msgstr ""
+
+#: 364e5c0b210748ae80cbe7c4899f3e5f 89c94b438e6f440fa88c0c772b2b1c0a
+#: a758a11a58b8479fb2eb8f4e62973835 aa546f135a05436d99e81a5b7033533b of
+#: ubuiltins.set.isdisjoint:3 ubuiltins.set.issubset:9
+#: ubuiltins.set.issuperset:9 ubuiltins.set.symmetric_difference:7
+msgid "Another set."
+msgstr ""
+
+#: 7c5ebb23126c4935b6d9ccbe5cfa4063 of ubuiltins.set.isdisjoint:5
+msgid ""
+"``True`` if this set has no elements in common with *other*, otherwise "
+"``False``."
+msgstr ""
+
+#: c8187579782b4c82b177931d8586ea28 of ubuiltins.set.issubset:1
+msgid "Tests if a set is a subset of *other*."
+msgstr ""
+
+#: 76d6b57cc8714388a0b643478e080548 of ubuiltins.set.issubset:3
+msgid "The test can also be performed using using the ``<=`` operator::"
+msgstr ""
+
+#: 945aac4f12a94ad0bdeb2a8efc5eda6f of ubuiltins.set.issubset:5
+msgid ""
+"if s <= other:\n"
+"    # s is subset of other\n"
+"    ..."
+msgstr ""
+
+#: f3631e0309d74b69aef3eaea44ef9007 of ubuiltins.set.issubset:11
+msgid "``True`` if this set is a subset of *other*, otherwise ``False``."
+msgstr ""
+
+#: 146f5991750d40e4b92024a52e4596a7 of ubuiltins.set.issuperset:1
+msgid "Tests if a set is a superset of *other*."
+msgstr ""
+
+#: 8df6ee6cba5a4538a4a651b21332a014 of ubuiltins.set.issuperset:3
+msgid "The test can also be performed using using the ``>=`` operator::"
+msgstr ""
+
+#: b23a8b243b4f4ccc9378df7bf6323c0d of ubuiltins.set.issuperset:5
+msgid ""
+"if s >= other:\n"
+"    # s is superset of other\n"
+"    ..."
+msgstr ""
+
+#: f654000474c949b38ee0586985578ce3 of ubuiltins.set.issuperset:11
+msgid "``True`` if this set is a superset of *other*, otherwise ``False``."
+msgstr ""
+
+#: c3e50312e71e40bdab47355deed5a32e of ubuiltins.set.symmetric_difference:1
+msgid "Returns a new set with elements in one set or the other but not in both."
+msgstr ""
+
+#: 9342b527803548698cd4196b36cbe953 of ubuiltins.set.symmetric_difference:3
+msgid "The symmetric difference can also be computed using the ``^`` operator::"
+msgstr ""
+
+#: fb7c70197dbd4626b6312bfde6ac1f3e of ubuiltins.set.symmetric_difference:5
+msgid "diff = s ^ other"
+msgstr ""
+
+#: f61b5ba6d79e49a194ac349b6e6938c2 of ubuiltins.set.union:1
+msgid "Returns a new set with elements from this set and all other sets."
+msgstr ""
+
+#: 4eb5bce469de418faf6062cfd8085fc9 of ubuiltins.set.union:3
+msgid "The union can also be computed using the ``|`` operator::"
+msgstr ""
+
+#: 9b62b447ad864b3e922649d14eb44767 of ubuiltins.set.union:5
+msgid "u = s | other"
+msgstr ""
+
+#: b4c84ce2865646c28f61c5a38dad056a of ubuiltins.slice:1
+msgid "Creating instances of this class is not supported."
+msgstr ""
+
+#: 769b0fefbc2440f487684e382f8056ff of ubuiltins.slice:3
+msgid ""
+"Use indexing syntax instead. For example: ``a[start:stop:step]`` or "
+"``a[start:stop, i]``."
+msgstr ""
+
+#: ../../main/micropython/builtins.rst:141 2a8f959e5c0e495e8059ac7881cca56f
+msgid ".. image:: /blockimg/pybricks_blockTextLiteral.svg"
+msgstr ""
+
+#: 78aef3249c3740d4be00dbb8c4746b96 of ubuiltins.str:1
+msgid "Gets the string representation of an object."
+msgstr ""
+
+#: 8a5c0f93441a40c69c438d0d85241942 of ubuiltins.str:3
+msgid "If no argument is given, this creates an empty ``str`` object."
+msgstr ""
+
+#: e96cb063d3844eafbe9e8188c907c49d of ubuiltins.str:5
+msgid ""
+"If only this argument is given, this returns the string representation of"
+" the object."
+msgstr ""
+
+#: c1d6a1ad4184402b8172d691994b7093 of ubuiltins.str:7
+msgid ""
+"If the first argument is a ``bytearray`` or ``bytes`` object and the "
+"encoding argument is ``\"utf-8\"``, this will decode the byte data to get"
+" a string representation."
+msgstr ""
+
+#: ceec84ecd09d4a59a650fd1f64122a88 of ubuiltins.tuple:1
+msgid ""
+"Creates a new tuple. If no argument is given, this creates an empty "
+"``tuple`` object."
+msgstr ""
+
+#: c9cbb79294ed4535a3aba488127d651e of ubuiltins.tuple:4
+msgid ""
+"A tuple is *immutable*, which means that you *cannot* change its contents"
+" after you create it."
+msgstr ""
+
+#: ddef1526ef9546e7b6df03d2639739e7 of ubuiltins.tuple:7
+msgid "Iterable from which to build the tuple."
+msgstr ""
+
+#: ../../main/micropython/builtins.rst:150 c757be623df8472bbbf6633eb4a7bec5
+msgid "Iterators"
+msgstr ""
+
+#: e74ccbbf25954b25b873069bab71c6cc of ubuiltins.all:1
+msgid "Checks if all elements of the iterable are true."
+msgstr ""
+
+#: 7bf136436c8b442c956887806d2c2add faf73cc670d24776baf928c5939b1a7d of
+#: ubuiltins.all:3 ubuiltins.any:3
+msgid "Equivalent to::"
+msgstr ""
+
+#: 764122b61bb94519bf982ba6ab24e3c6 of ubuiltins.all:5
+msgid ""
+"def all(x):\n"
+"    for element in x:\n"
+"        if not element:\n"
+"            return False\n"
+"    return True"
+msgstr ""
+
+#: 61a91b7da74a4eee97a3bebce076b363 a12bc7f35cc349bbaa475edbbd6110b0 of
+#: ubuiltins.all:11 ubuiltins.any:11
+msgid "The iterable to be checked."
+msgstr ""
+
+#: 7e0baf5eda444c75aa5437de647b9350 of ubuiltins.all:14
+msgid ""
+"``True`` if the iterable ``x`` is empty or if all elements are true. "
+"Otherwise ``False``."
+msgstr ""
+
+#: 6b9961a018984c1292e8167aebe6b653 of ubuiltins.any:1
+msgid "Checks if at least one elements of the iterable is true."
+msgstr ""
+
+#: 8f559c7de5b54bc6b45a3257bfe6c1cf of ubuiltins.any:5
+msgid ""
+"def any(x):\n"
+"    for element in x:\n"
+"        if element:\n"
+"            return True\n"
+"    return False"
+msgstr ""
+
+#: 7faf4881991947ad92161d94ab036658 of ubuiltins.any:14
+msgid "``True`` if at least one element in ``x`` is true. Otherwise ``False``."
+msgstr ""
+
+#: e703dc52e58c4b9dab7db76193475b5d of ubuiltins.enumerate:1
+msgid "Enumerates an existing iterator by adding a numeric index."
+msgstr ""
+
+#: f68da5ccefe348d69fe66b3030066d33 of ubuiltins.enumerate:3
+msgid "This function is equivalent to::"
+msgstr ""
+
+#: 370fd57b1a604483b63dc65f4cde0439 of ubuiltins.enumerate:5
+msgid ""
+"def enumerate(sequence, start=0):\n"
+"    n = start\n"
+"    for elem in sequence:\n"
+"        yield n, elem\n"
+"        n += 1"
+msgstr ""
+
+#: b3fef563a0654b2a95b3d5f32c1c6bad of ubuiltins.iter:1
+msgid "Gets the iterator of the object if available."
+msgstr ""
+
+#: 2274feb713614af895bda78514798cdb of ubuiltins.iter:3
+msgid "Object for which to get the iterator."
+msgstr ""
+
+#: 6d7e36e989fa43688c16043ebb0c330a of ubuiltins.iter:5
+msgid "The iterator."
+msgstr ""
+
+#: 4135ba1990d249d08755419cd207e08f of ubuiltins.map:1
+msgid ""
+"Creates a new iterator that applies the given function to each item in "
+"the given iterable and yields the results."
+msgstr ""
+
+#: 0aea4dbf61294444a1f7e2b2e412b68d of ubuiltins.map:4
+msgid ""
+"Function that computes a result for one item in the iterable(s). The "
+"number of arguments to this function must match the number of iterables "
+"given."
+msgstr ""
+
+#: 43a3634afee543b2b806a9697456f381 of ubuiltins.map:8
+msgid ""
+"One or more source interables from which to draw data. With multiple "
+"iterables, the iterator stops when the shortest iterable is exhausted."
+msgstr ""
+
+#: a4e59fbadb1b4911b6912c8026141d63 of ubuiltins.map:13
+msgid "The new, mapped iterator."
+msgstr ""
+
+#: ea1312ba913948078bf5a734f6a26cbe of ubuiltins.next:1
+msgid ""
+"Retrieves the next item from the iterator by calling its ``__next__()`` "
+"method."
+msgstr ""
+
+#: 9f3a50d0b4f7414792bf06f9569b261a of ubuiltins.next:3
+msgid "Initialized generator object from which to draw the next value."
+msgstr ""
+
+#: 58252e1659534d758dcf38f1e0748de6 of ubuiltins.next:7
+msgid "The next value from the generator."
+msgstr ""
+
+#: 4d58fdc12c624b748ff0efb9353a124f of ubuiltins.range:1
+msgid ""
+"Creates a generator that yields values from ``start`` up to ``stop``, "
+"with increments of ``step``."
+msgstr ""
+
+#: 859fbaebc9474af2a1f8642681aec95b of ubuiltins.range:4
+msgid "Starting value. Defaults to ``0`` if only one argument is given."
+msgstr ""
+
+#: 108cd25f88104929be7ace064e37d2c8 of ubuiltins.range:6
+msgid "Endpoint. This value is *not* included."
+msgstr ""
+
+#: a33dcd208cb04e668d60bcce2e30e6e2 of ubuiltins.range:8
+msgid ""
+"Increment between values. Defaults to ``1`` if only one or two arguments "
+"are given."
+msgstr ""
+
+#: 94886e1ac7f74334992622025ec7ea49 of ubuiltins.reversed:1
+msgid ""
+"Gets an iterator that yields the values from the sequence in the reverse,"
+" if supported."
+msgstr ""
+
+#: c19b7c353c304949b319ddc319cdfe72 of ubuiltins.reversed:4
+msgid "Sequence from which to draw samples."
+msgstr ""
+
+#: 156d54d4646d4be9b94d0792f2548f66 of ubuiltins.reversed:6
+msgid ""
+"Iterator that yields values in reverse order, starting with the last "
+"value."
+msgstr ""
+
+#: 62536eac93064cb2a0703982faa1233a of ubuiltins.sorted:1
+msgid "Sorts objects."
+msgstr ""
+
+#: c24d391286d040a1af47109d4eb08680 of ubuiltins.sorted:3
+msgid ""
+"Objects to be sorted. This can also be a generator that yield a finite "
+"number of objects."
+msgstr ""
+
+#: ff151b2111b843d8807b51819166f47c of ubuiltins.sorted:6
+msgid ""
+"Function ``def(item) -> int`` that maps an object to a numerical value. "
+"This is used to figure out the order of the sorted items."
+msgstr ""
+
+#: 56f1ecf9543e4217ad62aeac3003bc59 of ubuiltins.sorted:10
+msgid "Whether to sort in reverse, putting the highest value first."
+msgstr ""
+
+#: 876fd7e68e4a455db1ce221891add205 of ubuiltins.sorted:14
+msgid "A new list with the sorted items."
+msgstr ""
+
+#: 648ca1b8ad6f41fa9200f3c6f6965f1e of ubuiltins.zip:1
+msgid ""
+"Returns an iterator of tuples, where the *i*-th tuple contains the *i*-th"
+" element from each of the argument sequences or iterables. The iterator "
+"stops when the shortest input iterable is exhausted."
+msgstr ""
+
+#: 33774896b11f44aeb89a43c12f614546 of ubuiltins.zip:5
+msgid ""
+"With a single iterable argument, it returns an iterator of 1-tuples. With"
+" no arguments, it returns an empty iterator."
+msgstr ""
+
+#: e6696b1bba4b4f9794b4642eeb4d301c of ubuiltins.zip:8
+msgid "This functionality is equivalent to::"
+msgstr ""
+
+#: 1ba25f2666cd40dea6d953e5111ef360 of ubuiltins.zip:10
+msgid ""
+"def zip(*iterables):\n"
+"    sentinel = object()\n"
+"    iterators = [iter(it) for it in iterables]\n"
+"    while iterators:\n"
+"        result = []\n"
+"        for it in iterators:\n"
+"            elem = next(it, sentinel)\n"
+"            if elem is sentinel:\n"
+"                return\n"
+"            result.append(elem)\n"
+"        yield tuple(result)"
+msgstr ""
+
+#: bf2ca3c502f04fdead0f80b2e9f9649e of ubuiltins.zip:22
+msgid ""
+"The first iterable. This provides the first value for each of the yielded"
+" tuples."
+msgstr ""
+
+#: f1f8f2467f454bd68451874ce2cc2931 of ubuiltins.zip:25
+msgid ""
+"The second iterable. This provides the second value in each of the "
+"yielded tuples. And so on."
+msgstr ""
+
+#: 844d12b67a914b8098cce039812c458b of ubuiltins.zip:29
+msgid ""
+"A new iterator that yields tuples containing the values of the individual"
+" iterables."
+msgstr ""
+
+#: ../../main/micropython/builtins.rst:193 03368c0ad5cf4ca584dde7553d5aa371
+msgid "Conversion functions"
+msgstr ""
+
+#: ae4a941a2c8e4ffd9d6bbcda392a4cfe of ubuiltins.bin:1
+msgid ""
+"Converts an integer to its binary representation. The result is a string "
+"prefixed with ``0b``. The result is a valid Python expression. For "
+"example, ``bin(5)`` gives ``\"0b101\"``."
+msgstr ""
+
+#: f6892969d2c14b84b7b3a44b05e6c692 of ubuiltins.bin:8
+msgid "A string representing the binary form of the input."
+msgstr ""
+
+#: 49b3bcb2a7d940ae8b9df3e1ddf85125 of ubuiltins.chr:1
+msgid ""
+"Returns the string representing a character whose Unicode code is the "
+"integer ``x``. This is the inverse of :meth:`ord`. For example, "
+"``chr(97)`` gives ``\"a\"``."
+msgstr ""
+
+#: 98f0c23104da4f878714a3719ab3f4cb of ubuiltins.chr:5
+msgid "Value to be converted (0-255)."
+msgstr ""
+
+#: b019555c1fbd4a1ca2893c1bceb1fd9f of ubuiltins.chr:8
+msgid "A string with one character, corresponding to the given Unicode value."
+msgstr ""
+
+#: ae3666fb7ffc49c6ac9a717aac397ec5 of ubuiltins.hex:1
+msgid ""
+"Converts an integer to its hexadecimal representation. The result is a "
+"lowercase string prefixed with ``0x``. The result is a valid Python "
+"expression. For example, ``hex(25)`` gives ``\"0x19\"``."
+msgstr ""
+
+#: 9bb7f9c165304ce289303fe9dec1b95c of ubuiltins.hex:8
+msgid "A string representing the hexadecimal form of the input."
+msgstr ""
+
+#: e3f518c87c974176ba60df3bb284f754 of ubuiltins.oct:1
+msgid ""
+"Converts an integer to its octal representation. The result is a string "
+"prefixed with ``0o``. The result is a valid Python expression. For "
+"example, ``oct(25)`` gives ``\"0o31\"``."
+msgstr ""
+
+#: eff453b2d10740d8a65a2031193cb912 of ubuiltins.oct:8
+msgid "A string representing the octal form of the input."
+msgstr ""
+
+#: f50dfa3c1eae4f95b655518f4b24b810 of ubuiltins.ord:1
+msgid ""
+"Converts a string consisting of one Unicode character to the "
+"corresponding number. This is the inverse of :meth:`chr`."
+msgstr ""
+
+#: 5eaa4c3c00684cc2b46caeb94e1c9a0c of ubuiltins.ord:4
+msgid "Character to be converted."
+msgstr ""
+
+#: 830773257ab945fb8d0318367310c971 of ubuiltins.ord:7
+msgid "Number that represents the character (0--255)."
+msgstr ""
+
+#: b58356a8ce0b4950a33bf9900b777c94 of ubuiltins.repr:1
+msgid "Gets the string that represents an object."
+msgstr ""
+
+#: 74302d90ff1f4190af7301fcde52d794 of ubuiltins.repr:6
+msgid "String representation implemented by the object's ``__repr__`` method."
+msgstr ""
+
+#: ../../main/micropython/builtins.rst:222 2e2597bf040c41b5ae037f72498900a8
+msgid "Math functions"
+msgstr ""
+
+#: ../../main/micropython/builtins.rst:224 0c27b8ce453b40e693302f3585321f6e
+msgid "See also :mod:`umath` for floating point math operations."
+msgstr ""
+
+#: ../../main/micropython/builtins.rst:228 a05c63c024824d8ca2b36d50a802b95a
+msgid ".. image:: /blockimg/pybricks_blockMathOp_abs.svg"
+msgstr ""
+
+#: dda3d087291b4a3dbba8168a46cf8777 of ubuiltins.abs:1
+msgid "Returns the absolute value of a number."
+msgstr ""
+
+#: 8355bbcb9e6b431da6346ba5c0170adb of ubuiltins.abs:3
+msgid ""
+"The argument may be an integer, a floating point number, or any object "
+"implementing ``__abs__()``. If the argument is a complex number, its "
+"magnitude is returned."
+msgstr ""
+
+#: 33b52bb976664780bcef309b4f704c7d of ubuiltins.abs:7
+msgid "The value."
+msgstr ""
+
+#: 0b85195db24744598ec18979ead6e337 of ubuiltins.abs:10
+msgid "Absolute value of ``x``."
+msgstr ""
+
+#: 985cc1b439024356a30060beeee16772 of ubuiltins.divmod:1
+msgid "divmod(a, b) -> Tuple[int, int]"
+msgstr ""
+
+#: d9f49e08da244dd6abca6efb80da5a2f of ubuiltins.divmod:3
+msgid "Gets the quotient and remainder for dividing two integers."
+msgstr ""
+
+#: 3754fac14ee144ffa37bd1dfb896fc4c of ubuiltins.divmod:5
+msgid ""
+"See the standard `Python divmod documentation "
+"<https://docs.python.org/3/library/functions.html#divmod>`_ for the "
+"expected behavior when ``a`` or ``b`` are floating point numbers instead."
+msgstr ""
+
+#: 30d8a1ad36ee4d9086eb1c0388201534 of ubuiltins.divmod:10
+msgid "Numerator."
+msgstr ""
+
+#: 8181f4ff9b184dde8956428cc858b11b of ubuiltins.divmod:12
+msgid "Denominator."
+msgstr ""
+
+#: 5ab244e408e042eb9e7ca194064e2c0d of ubuiltins.divmod:15
+msgid "A tuple with the quotient ``a // b`` and the remainder ``a % b``."
+msgstr ""
+
+#: ../../main/micropython/builtins.rst:238 99d025233f1c4d10ae0533810809787e
+msgid ".. image:: /blockimg/pybricks_blockMathOp_max.svg"
+msgstr ""
+
+#: 21e1bae3d5d94fca94180f5d64f38c8a of ubuiltins.max:1
+msgid "max(iterable) -> Any max(arg1, arg2, ....) -> Any"
+msgstr ""
+
+#: eefb093adacd45df8f0d81aa39dc7cdf of ubuiltins.max:4
+msgid "Gets the object with largest value."
+msgstr ""
+
+#: 2e9f7e9395794b23a3013ea8362562de 793524bbf8504dd3b88c4e7c58031b7f of
+#: ubuiltins.max:6 ubuiltins.min:6
+msgid "The argument may be a single iterable, or any number of objects."
+msgstr ""
+
+#: c83a508af78040209bc45e61a399ff32 of ubuiltins.max:8
+msgid "The object with the largest value."
+msgstr ""
+
+#: ../../main/micropython/builtins.rst:244 65c82a8aee694251b4e338c3bfeec975
+msgid ".. image:: /blockimg/pybricks_blockMathOp_min.svg"
+msgstr ""
+
+#: 089163468fba4894b3c6b1a55effd77a of ubuiltins.min:1
+msgid "min(iterable) -> Any min(arg1, arg2, ....) -> Any"
+msgstr ""
+
+#: f9914fb202344ff7ae98ce261c466c77 of ubuiltins.min:4
+msgid "Gets the object with smallest value."
+msgstr ""
+
+#: 3041df60564143f1b03cc9228212ee7b of ubuiltins.min:8
+msgid "The object with the smallest value."
+msgstr ""
+
+#: fe0cf74815734a34975de47038253d0e of ubuiltins.pow:1
+msgid ""
+"Raises the base to the given exponent: "
+":math:`\\text{base}^{\\mathrm{exp}}`."
+msgstr ""
+
+#: 0ab7ce54cf5b4ca88f3cc176bf35bb2f of ubuiltins.pow:3
+msgid "This is the same as doing ``base ** exp``."
+msgstr ""
+
+#: c6bb1979e2db48989971326822a7bc73 of ubuiltins.pow:5
+msgid "The base."
+msgstr ""
+
+#: 86db63c0e94f4310a40edc8b045542a5 of ubuiltins.pow:7
+msgid "The exponent."
+msgstr ""
+
+#: bcaf4020e9324507b1aaf99fbe6afd16 of ubuiltins.pow:10
+msgid "The result."
+msgstr ""
+
+#: ../../main/micropython/builtins.rst:254 740f43fd8d9540d4ae582c0f3a0cd49a
+msgid ".. image:: /blockimg/pybricks_blockMathOp_round.svg"
+msgstr ""
+
+#: 5417726a3e884991af842b3632350d84 of ubuiltins.round:1
+msgid "round(number) -> int round(number, ndigits) -> float"
+msgstr ""
+
+#: c300874193e94e09a319fdc54a20d197 of ubuiltins.round:4
+msgid "Round a number to a given number of digits after the decimal point."
+msgstr ""
+
+#: 3e9bbfe72f1a479ba7a3afab05936bfe of ubuiltins.round:6
+msgid "If ``ndigits`` is omitted or ``None``, it returns the nearest integer."
+msgstr ""
+
+#: 9825053727654d26a6b57b9f1b7ef5fe of ubuiltins.round:8
+msgid ""
+"Rounding with one or more digits after the decimal point will not always "
+"truncate trailing zeros. To print numbers nicely, format strings "
+"instead::"
+msgstr ""
+
+#: f5b00dc22a974398a8a497f4e150063c of ubuiltins.round:11
+#, python-format
+msgid ""
+"# print two decimal places\n"
+"print('my number: %.2f' % number)\n"
+"print('my number: {:.2f}'.format(number))\n"
+"print(f'my number: {number:.2f}')"
+msgstr ""
+
+#: e5b9932afe6a4c47826dfbcf2296af19 of ubuiltins.round:16
+msgid "The number to be rounded."
+msgstr ""
+
+#: 7bd7b806172a449ab9f8204cf6cd19ef of ubuiltins.round:18
+msgid "The number of digits remaining after the decimal point."
+msgstr ""
+
+#: 677413f4514a4846b88510ae1e4f2793 of ubuiltins.sum:1
+msgid "sum(iterable) -> Number sum(iterable, start) -> Number"
+msgstr ""
+
+#: 902e48615d2c4cdda651272ac4802a7e of ubuiltins.sum:4
+msgid "Sums the items from the iterable and the start value."
+msgstr ""
+
+#: ab2cc6c89b2745d99997cd4b7c5bfefd of ubuiltins.sum:6
+msgid "Values to be summed, starting with the first value."
+msgstr ""
+
+#: 9e25544dfab5407ea440594b633feeda of ubuiltins.sum:8
+msgid "Value added to the total."
+msgstr ""
+
+#: 9240f269048e4c90ab8ac0648582097b of ubuiltins.sum:11
+msgid "The total sum."
+msgstr ""
+
+#: ../../main/micropython/builtins.rst:263 804cbe1db1924268bc1655041c5a52dd
+msgid "Runtime functions"
+msgstr ""
+
+#: 27dcb66edc294875a01f4f053be0d2a3 of ubuiltins.eval:1
+msgid ""
+"eval(expression) -> Any eval(expression, globals) -> Any eval(expression,"
+" globals, locals) -> Any"
+msgstr ""
+
+#: 8c8126a199f04ab793ce645cb348a8d9 of ubuiltins.eval:5
+msgid "Evaluates the result of an expression."
+msgstr ""
+
+#: 7bf41dce74c64168a199a0c15fd2abfa c180e6f0461745c5b77640c054fef023 of
+#: ubuiltins.eval:7 ubuiltins.exec:7
+msgid "Syntax errors are reported as exceptions."
+msgstr ""
+
+#: 59f1bb4c40504e7bb4be48091acbfce2 of ubuiltins.eval:9
+msgid "Expression to evaluate result of."
+msgstr ""
+
+#: 8ee23f16879c4f559262e32094b32e08 9dca6ff7d3e6484795a5e4c74a7ed9bc of
+#: ubuiltins.eval:11 ubuiltins.exec:11
+msgid ""
+"If given, this controls what functions are available for use in the "
+"expression. By default the global scope is accessible."
+msgstr ""
+
+#: 4aac0480e4154f9c8e316c8a832249ce 9ced64133efb4ab3ad19ae9862960913 of
+#: ubuiltins.eval:14 ubuiltins.exec:14
+msgid ""
+"If given, this controls what functions are available for use in the "
+"expression. Defaults to the same as ``globals``."
+msgstr ""
+
+#: 2995f5be1b0a4b6289c467769f74969c of ubuiltins.eval:18
+msgid "The value obtained by executing the expression."
+msgstr ""
+
+#: f905963f9c10458b85de7857b5ae9aa7 of ubuiltins.exec:1
+msgid ""
+"exec(expression) exec(expression, globals) exec(expression, globals, "
+"locals)"
+msgstr ""
+
+#: 0199fd836f654430acc59c8fad63fd43 of ubuiltins.exec:5
+msgid "Executes MicroPython code."
+msgstr ""
+
+#: 22b6e91f251b4f7aad534f7727fc8add of ubuiltins.exec:9
+msgid "Code to be executed."
+msgstr ""
+
+#: 410d78011ab742d9bc00d4e958f7c08c of ubuiltins.globals:1
+msgid "Gets a dictionary representing the current global symbol table."
+msgstr ""
+
+#: b76c8caec3e64cc889bbc58a6b325dbe of ubuiltins.globals:3
+msgid "The dictionary of globals."
+msgstr ""
+
+#: 4da56a2fa94b41278b1e99aa5f58a3f2 of ubuiltins.hash:1
+msgid "Gets the hash value of an object, if the object supports it."
+msgstr ""
+
+#: aaed6f300b854b829453922d53522b11 of ubuiltins.hash:3
+msgid "Object for which to get a hash value."
+msgstr ""
+
+#: 3a35ffe8d7624a0480771cb63afeda51 of ubuiltins.hash:5
+msgid "The hash value."
+msgstr ""
+
+#: da74fe567c8645229c1d73cbdef4f64a of ubuiltins.help:1
+msgid "help() help(object)"
+msgstr ""
+
+#: 59cef90477274f5098607e2a88a44b9e of ubuiltins.help:4
+msgid "Get information about an object."
+msgstr ""
+
+#: 3bfb1ffdcd8e49049648c64f84601c0b of ubuiltins.help:6
+msgid ""
+"If no arguments are given, this function prints instructions to operate "
+"the REPL. If the argument is ``\"modules\"``, it prints the available "
+"modules."
+msgstr ""
+
+#: a170901e16f046c8a5d1fdbcd6f89a39 of ubuiltins.help:9
+msgid "Object for which to print help information."
+msgstr ""
+
+#: 86950669eec44840bcaf53a6edebed40 of ubuiltins.id:1
+msgid ""
+"Gets the *identity* of an object. This is an integer which is guaranteed "
+"to be unique and constant for this object during its lifetime."
+msgstr ""
+
+#: 567ab4095c844dca8bf3e51f671c02fd of ubuiltins.id:4
+msgid "Object of which to get the identifier."
+msgstr ""
+
+#: 74322645936f4768a5cfb7e29a930b7e of ubuiltins.id:6
+msgid "The identifier."
+msgstr ""
+
+#: 042d3210d25a4df59cece2d9af6c33e3 of ubuiltins.locals:1
+msgid "Gets a dictionary representing the current local symbol table."
+msgstr ""
+
+#: 48afdf4b5572462599342b9a3109e44a of ubuiltins.locals:3
+msgid "The dictionary of locals."
+msgstr ""
+
+#: ../../main/micropython/builtins.rst:295 11d0e8c3a0bd40fe861d04a885362363
+msgid "Class functions"
+msgstr ""
+
+#: 3b114b6dcc0a49ddaa900b95ac26d251 of ubuiltins.callable:1
+msgid "Checks if an object is callable."
+msgstr ""
+
+#: e48e9dcee3714c348c03b0e7dfbabb30 of ubuiltins.callable:3
+msgid "Object to check."
+msgstr ""
+
+#: 09bebc240992400a95b8bccfec58630b of ubuiltins.callable:5
+msgid "``True`` if the object argument appears callable, ``False`` if not."
+msgstr ""
+
+#: 44bde476cf6f40aa9a6babc608eb5d08 of ubuiltins.dir:1
+msgid "dir() -> List[str] dir(object) -> List[str]"
+msgstr ""
+
+#: 9b602518ec0c4449a7364adc9cb182a8 of ubuiltins.dir:4
+msgid "Gets a list of attributes of an object."
+msgstr ""
+
+#: bb2be9c993124033a3052b87f14b254f of ubuiltins.dir:6
+msgid ""
+"If no object argument is given, this function gets the list of names in "
+"the current local scope."
+msgstr ""
+
+#: 36ac58ce134d42f79efb4517d6eee19f of ubuiltins.dir:9
+msgid "Object to check for valid attributes."
+msgstr ""
+
+#: 5fef769835994279830dcd4e6fc5e78e of ubuiltins.dir:11
+msgid "List of object attributes or list of names in current local scope."
+msgstr ""
+
+#: 136c285006644d4c8326d6991c01572b of ubuiltins.getattr:1
+msgid "getattr(object, name) -> Any getattr(object, name, default) -> Any"
+msgstr ""
+
+#: 41f16f8ce37e4bdf8667dc94c379b0ce of ubuiltins.getattr:4
+msgid "Looks up the attribute called ``name`` in the given ``object``."
+msgstr ""
+
+#: 41652dd04a924292a12a78fc5056e579 e59196bba26949a295e186a97f259b53 of
+#: ubuiltins.getattr:6 ubuiltins.hasattr:3
+msgid "Object in which to look for the attribute."
+msgstr ""
+
+#: 27340d067c0d4a1086eb37a057a5cd95 97e24631e2f8474ca9f57218f8a95588
+#: eb71e92a7d8d406388b2060d8b49e2a8 of ubuiltins.getattr:7 ubuiltins.hasattr:4
+#: ubuiltins.setattr:6
+msgid "Name of the attribute."
+msgstr ""
+
+#: 88ec665d2b8640d3adb7f911d4d41731 of ubuiltins.getattr:9
+msgid "Object to return if the attribute is not found."
+msgstr ""
+
+#: e8c03abc9a8c4ad6bd2443bf02759d3a of ubuiltins.getattr:11
+msgid "Returns the value of the named attribute."
+msgstr ""
+
+#: 2a6771d8be794268b852e86ec90448ac of ubuiltins.hasattr:1
+msgid "Checks if an attribute exists on an object."
+msgstr ""
+
+#: 15a9767a106f4b7ebd888470835dec80 of ubuiltins.hasattr:7
+msgid "``True`` if an attribute by that name exists, ``False`` if not."
+msgstr ""
+
+#: f7b36fa2a8eb4d2b86515187dc82f1be of ubuiltins.isinstance:1
+msgid "Checks if an object is an instance of a certain class."
+msgstr ""
+
+#: b7f9b28fe51c4327b91d29cdb0988f26 of ubuiltins.isinstance:3
+msgid "Object to check the type of."
+msgstr ""
+
+#: c087c5ff79874426b83195c7d92a505c cf24e22c770441039312199f6a3dcf41 of
+#: ubuiltins.isinstance:4 ubuiltins.issubclass:4
+msgid "Class information."
+msgstr ""
+
+#: 915a221e02d6496d9b846afbcb2f9b35 of ubuiltins.isinstance:7
+msgid ""
+"``True`` if the ``object`` argument is an instance of the ``classinfo`` "
+"argument, or of a subclass thereof."
+msgstr ""
+
+#: 88bd9025ee514a299a3cdabfdf02cf00 of ubuiltins.issubclass:1
+msgid "Checks if one class is a subclass of another class."
+msgstr ""
+
+#: 4fc5637872334072b736c6b3bc368992 of ubuiltins.issubclass:3
+msgid "Class type."
+msgstr ""
+
+#: d69b46050a844bdcb67ea404e47ed556 of ubuiltins.issubclass:7
+msgid "``True`` if ``cls`` is a subclass of ``classinfo``."
+msgstr ""
+
+#: 913feac0aec24f1d8180001f843acf8d of ubuiltins.setattr:1
+msgid "Assigns a value to an attribute, provided that the object allows it."
+msgstr ""
+
+#: 20275130867149a1a28b1ad05ed7e640 of ubuiltins.setattr:3
+msgid "This is the counterpart of :meth:`getattr`."
+msgstr ""
+
+#: c91abcb2a1174f90a12ee3c5f3065ea4 of ubuiltins.setattr:5
+msgid "Object in which to store the attribute."
+msgstr ""
+
+#: 6e3702a85b954ce1900dd3949403dbda of ubuiltins.setattr:8
+msgid "Value to store."
+msgstr ""
+
+#: a4064a2d701447c4b561a83d3ab9b458 of ubuiltins.super:1
+msgid "super() -> type super(type) -> type super(type, object_or_type) -> type"
+msgstr ""
+
+#: 4bf998947d9048d0bd72f304bef5fb06 of ubuiltins.super:5
+msgid ""
+"Gets an object that delegates method calls to a parent, or a sibling "
+"class of the given type."
+msgstr ""
+
+#: dc9fe581703c4687b9b8c2260cc9477d of ubuiltins.super:8
+msgid "The matching `super()` object."
+msgstr ""
+
+#: ../../main/micropython/builtins.rst:331 4e5a77d06565477caeca93f4b10c8e19
+msgid "Method decorators"
+msgstr ""
+
+#: 6d8ca77abd064e2e8ccbb8f554b20115 of ubuiltins.classmethod:1
+msgid "Transforms a method into a class method."
+msgstr ""
+
+#: 6d9fe96317c44860afc83cc479cc24a6 of ubuiltins.staticmethod:1
+msgid "Transforms a method into a static method."
+msgstr ""
+

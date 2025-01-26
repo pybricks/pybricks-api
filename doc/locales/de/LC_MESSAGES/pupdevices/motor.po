@@ -1,0 +1,1055 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-2023 The Pybricks Authors
+# This file is distributed under the same license as the pybricks package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pybricks v3.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-01-26 20:11+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: de\n"
+"Language-Team: de <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../main/pupdevices/motor.rst:4 81bede5b30124cf981b41e6a4d6b6993
+msgid "Motors with rotation sensors"
+msgstr ""
+
+#: ../../main/pupdevices/motor.rst:8 3dba485ea83f43a19338ce482368d434
+msgid "pupmotors"
+msgstr ""
+
+#: ../../main/pupdevices/motor.rst:8 3dba485ea83f43a19338ce482368d434
+msgid ".. image:: ../../main/diagrams/pupmotors.png"
+msgstr ""
+
+#: ../../main/pupdevices/motor.rst:12 291a36b434f84d4bafb0bbca14e54ad7
+msgid ""
+"Powered Up motors with rotation sensors. The arrows indicate the default "
+"positive direction. See the :mod:`hubs <pybricks.hubs>` module for "
+"default directions of built-in motors."
+msgstr ""
+
+#: ../../main/pupdevices/motor.rst:16 9e7f8a10282e4cdb9447af44139ea111
+msgid ".. image:: /blockimg/pybricks_variables_set_motor.svg"
+msgstr ""
+
+#: 8250870baa6345849cd1ee635cd86b7e of pybricks.pupdevices.Motor:1
+msgid "LEGO® Powered Up motor with rotation sensors."
+msgstr ""
+
+#: ../../main/pupdevices/motor.rst 1a9ef6eb37cd4cf78d0981a6e3e22cb7
+#: 203b9c6af2b24ebd830e8a2baa5022f7 206fa21e27d54920a68b7739b0a2170e
+#: 5742e2c2b0eb4fc882e6bd2221a37051 61032272d4bb4a85aa39a69479439c90
+#: 76cb1aefb64d4764b760ca5c458083fa 7a82fd9a6bdc4afbb0bcd2fab4da9979
+#: 7d824cb851eb46f8a420ec2b2de5bff2 8669762e067e4e9b8063d025b5288ded
+#: a8ae3d9b6ac44c76bfe7ef8385705741 b23f7610ced84cc48dfa73cecfef41eb
+#: d5ebcc59d4394e0ca369fd3b5ac81704 f4aff3405927453dbbf72331d6db0096
+#: f5fa3261b6ef4439a2f7905aeb7cf9ab fafefb711e7244d1affd71c37a76c195
+#: fe5e80b48186483e8d448cf34716cfe4
+msgid "Parameters"
+msgstr ""
+
+#: 8ec9f2179d814b8cb75d4ce1af81c2af of pybricks.pupdevices.Motor:3
+msgid "Port to which the motor is connected."
+msgstr ""
+
+#: 64caab05e498483fb2b86ff2189e43c5 of pybricks.pupdevices.Motor:5
+msgid ""
+"Which direction the motor should turn when you give a positive speed "
+"value or angle."
+msgstr ""
+
+#: eba38e5c012b451cb1d3bf1790c7e782 of pybricks.pupdevices.Motor:9
+msgid ""
+"List of gears linked to the motor. The gear connected to the motor comes "
+"first and the gear connected to the output comes last.  For example: "
+"``[12, 36]`` represents a gear train with a 12-tooth gear connected to "
+"the motor and a 36-tooth gear connected to the output. Use a list of "
+"lists for multiple gear trains, such as ``[[12, 36], [20, 16, 40]]``.  "
+"When you specify a gear train, all motor commands and settings are "
+"automatically adjusted to account for the resulting gear ratio. The motor"
+" direction remains unchanged by this."
+msgstr ""
+
+#: f218b50dcb1f4a6f8abe621e87ef2129 of pybricks.pupdevices.Motor:9
+msgid ""
+"List of gears linked to the motor. The gear connected to the motor comes "
+"first and the gear connected to the output comes last."
+msgstr ""
+
+#: e676c89b2c42486e870c5636413d006b of pybricks.pupdevices.Motor:13
+msgid ""
+"For example: ``[12, 36]`` represents a gear train with a 12-tooth gear "
+"connected to the motor and a 36-tooth gear connected to the output. Use a"
+" list of lists for multiple gear trains, such as ``[[12, 36], [20, 16, "
+"40]]``."
+msgstr ""
+
+#: 8803c4330af1414e82004ceb4916985b of pybricks.pupdevices.Motor:18
+msgid ""
+"When you specify a gear train, all motor commands and settings are "
+"automatically adjusted to account for the resulting gear ratio. The motor"
+" direction remains unchanged by this."
+msgstr ""
+
+#: 525edf13e2ab47cba7703a1843d87bb7 of pybricks.pupdevices.Motor:22
+msgid ""
+"Choose ``True`` to reset the rotation sensor value to the absolute marker"
+" angle (between -180 and 179). Choose ``False`` to keep the current "
+"value, so your program knows where it left off last time."
+msgstr ""
+
+#: 717c8608b5e545c2a99e96fc9e8b13d5 of pybricks.pupdevices.Motor:28
+msgid ""
+"Precision profile. This is the approximate position tolerance in degrees "
+"that is acceptable in your application. A lower value gives more precise "
+"but more erratic movement; a higher value gives less precise but smoother"
+" movement. If no value is given, a suitable profile for this motor type "
+"will be selected automatically (about 11 degrees)."
+msgstr ""
+
+#: ../../main/pupdevices/motor.rst:22 12b35e569efa457bb856a04c22b6c51a
+msgid "Measuring"
+msgstr ""
+
+#: ../../main/pupdevices/motor.rst:23 ffc37cbca6bb4f25a7636cc46e561c42
+msgid ".. image:: /blockimg/pybricks_blockMotorMeasure_motor_angle.svg"
+msgstr ""
+
+#: 9ef69b7f10224572b8633385f56358aa of pybricks._common.Motor.angle:1
+msgid "Gets the rotation angle of the motor."
+msgstr ""
+
+#: ../../main/pupdevices/motor.rst 0cad5bb637c2494983a5610b24516139
+#: 23b6196b7d7f4469abdc81417c845753 390ac056aad84744b7ef9a217947968f
+#: 3cdf235a4d7240df964222ed7bd64b49 53c206ebd29649988a059e274e1c0e37
+#: 8cf58815ee784efdb02d8a5a1cd794ba fe0a81775c124c35b104c873d24dec52
+msgid "Returns"
+msgstr ""
+
+#: 0395cf32cc3442c69a8e4d41d1402f3b of pybricks._common.Motor.angle:3
+msgid "Motor angle."
+msgstr ""
+
+#: ../../main/pupdevices/motor.rst:27 0b50aae1ea864954ab446b70445a7526
+msgid ".. image:: /blockimg/pybricks_blockMotorResetAngle.svg"
+msgstr ""
+
+#: b50b205911bd4f27a9d450d3f902e1cb of pybricks.pupdevices.Motor.reset_angle:1
+msgid "Sets the accumulated rotation angle of the motor to a desired value."
+msgstr ""
+
+#: 80166980f8544e0fbedb0461986d95ad of pybricks.pupdevices.Motor.reset_angle:3
+msgid ""
+"If you don't specify an angle, the absolute angle will be used if your "
+"motor supports it."
+msgstr ""
+
+#: 8d2a9bfbb7c34ac7a80d842fc00ce97d of pybricks.pupdevices.Motor.reset_angle:6
+msgid "Value to which the angle should be reset."
+msgstr ""
+
+#: ../../main/pupdevices/motor.rst:31 33d0843a783d46e592f36ef16dd970df
+msgid ".. image:: /blockimg/pybricks_blockMotorMeasure_motor_speed.svg"
+msgstr ""
+
+#: ../../main/pupdevices/motor.rst:33 dd8a206d1bd94eee85aecba4247edf29
+msgid ""
+".. image:: "
+"/blockimg/pybricks_blockMotorMeasure_motor_get_speed_average.svg"
+msgstr ""
+
+#: 8511ccfa6b1349ccba588549fa971e2b of pybricks._common.Motor.speed:1
+msgid "Gets the speed of the motor."
+msgstr ""
+
+#: deb65813530040b1865375abb0bfe1cc of pybricks._common.Motor.speed:3
+msgid ""
+"The speed is measured as the change in the motor angle during the given "
+"time window. A short window makes the speed value more responsive to "
+"motor movement, but less steady. A long window makes the speed value less"
+" responsive, but more steady."
+msgstr ""
+
+#: 11dc6a597ecd47eaa553557f5cf041a1 of pybricks._common.Motor.speed:8
+msgid "The time window used to determine the speed."
+msgstr ""
+
+#: 75f550a1a0ec4def897ae9a99fea1abd of pybricks._common.Motor.speed:11
+msgid "Motor speed."
+msgstr ""
+
+#: ../../main/pupdevices/motor.rst:37 701ad273f6ea4c2e8b44bfca4a37bda1
+msgid ".. image:: /blockimg/pybricks_blockMotorMeasure_motor_load.svg"
+msgstr ""
+
+#: bab20cb9000948e58369608344a3918a of pybricks._common.Motor.load:1
+msgid "Estimates the load that holds back the motor when it tries to move."
+msgstr ""
+
+#: a3b0a90d5b174705b9cce1765e470b68 of pybricks._common.Motor.load:3
+msgid "The load torque."
+msgstr ""
+
+#: ../../main/pupdevices/motor.rst:41 820b36bda78745358cc8bb6e24f2b472
+msgid ".. image:: /blockimg/pybricks_blockMotorMeasure_motor_stalled.svg"
+msgstr ""
+
+#: e971e0aabe2344319f372ba873259ed5 of pybricks._common.Motor.stalled:1
+msgid "Checks if the motor is currently stalled."
+msgstr ""
+
+#: ebc6d7e5ca5e4802b36b84321d56a0ec of pybricks._common.Motor.stalled:3
+msgid ""
+"It is stalled when it cannot reach the target speed or position, even "
+"with the maximum actuation signal."
+msgstr ""
+
+#: cf06a7dd18c142c2826e727928cc15c9 of pybricks._common.Motor.stalled:6
+msgid "``True`` if the motor is stalled, ``False`` if not."
+msgstr ""
+
+#: ../../main/pupdevices/motor.rst:46 6ec59ade17d14057a55310647d14fcdb
+msgid "Stopping"
+msgstr ""
+
+#: ../../main/pupdevices/motor.rst:47 07cbb8e0cd764682b995e544eb362419
+msgid ".. image:: /blockimg/pybricks_blockMotorStop_Motor_coast.svg"
+msgstr ""
+
+#: 84e2a43b5f2f4fefa476d3af90b1ae43 of pybricks._common.DCMotor.stop:1
+msgid "Stops the motor and lets it spin freely."
+msgstr ""
+
+#: 6463d035842141e2adcdddceeb9df53d of pybricks._common.DCMotor.stop:3
+msgid "The motor gradually stops due to friction."
+msgstr ""
+
+#: ../../main/pupdevices/motor.rst:51 3199eba1ba08484790e8f2a471989e72
+msgid ".. image:: /blockimg/pybricks_blockMotorStop_Motor_brake.svg"
+msgstr ""
+
+#: f3479dd0bb274f83b476ed64e3e2400b of pybricks._common.DCMotor.brake:1
+msgid "Passively brakes the motor."
+msgstr ""
+
+#: 78b3af53adfd444bb59c8836442b57d2 of pybricks._common.DCMotor.brake:3
+msgid ""
+"The motor stops due to friction, plus the voltage that is generated while"
+" the motor is still moving."
+msgstr ""
+
+#: ../../main/pupdevices/motor.rst:55 bbfb7424d45940859da5025abe70db43
+msgid ".. image:: /blockimg/pybricks_blockMotorStop_Motor_hold.svg"
+msgstr ""
+
+#: a6bad666d4cc41748e4fe121f7c605ac of pybricks._common.Motor.hold:1
+msgid "Stops the motor and actively holds it at its current angle."
+msgstr ""
+
+#: ../../main/pupdevices/motor.rst:60 2432f4a382d44dc7984f2657d84b4894
+msgid "Running forever"
+msgstr ""
+
+#: ../../main/pupdevices/motor.rst:61 124f0f156ab34c2f821110218e3c3125
+msgid ".. image:: /blockimg/pybricks_blockMotorRun_run.svg"
+msgstr ""
+
+#: dc1c1464928c4ca69dd2627560a08a3f of pybricks._common.Motor.run:1
+msgid "Runs the motor at a constant speed."
+msgstr ""
+
+#: a1ecd383606e41c5bbed7058e3294ff0 of pybricks._common.Motor.run:3
+msgid ""
+"The motor accelerates to the given speed and keeps running at this speed "
+"until you give a new command."
+msgstr ""
+
+#: 09ac50ad9fae4e09a0a95a5fd167c17f 5751b35ca4694588b96d48a862265526
+#: 7abfd4ecc2b1489693d6a54dd87bfcdc 8dcd378f2d724b06adb975fdae86355b
+#: fbf7ea77766b45a291c648a69672a37a of pybricks._common.Motor.run:6
+#: pybricks._common.Motor.run_angle:3 pybricks._common.Motor.run_target:6
+#: pybricks._common.Motor.run_time:7 pybricks._common.Motor.run_until_stalled:3
+msgid "Speed of the motor."
+msgstr ""
+
+#: ../../main/pupdevices/motor.rst:65 41f6a6de9d374c068ae6dc5951afa01b
+msgid ".. image:: /blockimg/pybricks_blockMotorDuty_Motor.svg"
+msgstr ""
+
+#: f5320230dfa14c528bb473070997e46e of pybricks._common.DCMotor.dc:1
+msgid "Rotates the motor at a given duty cycle (also known as \"power\")."
+msgstr ""
+
+#: 6b91aacc345c4ed4aaa1efe19fb3d8ef of pybricks._common.DCMotor.dc:3
+msgid "The duty cycle (-100.0 to 100)."
+msgstr ""
+
+#: ../../main/pupdevices/motor.rst:70 a920eefcbd2e4518b4edc753f1e17ac7
+msgid "Running by a fixed amount"
+msgstr ""
+
+#: d6f9887383bd4532916f54a164cd75c2 of pybricks._common.Motor.run_time:1
+msgid "Runs the motor at a constant speed for a given amount of time."
+msgstr ""
+
+#: 95436189c3304a378848d3f1204946d5 of pybricks._common.Motor.run_time:3
+msgid ""
+"The motor accelerates to the given speed, keeps running at this speed, "
+"and then decelerates. The total maneuver lasts for exactly the given "
+"amount of ``time``."
+msgstr ""
+
+#: 2479b4f56d3d430a918976882b891ede of pybricks._common.Motor.run_time:9
+msgid "Duration of the maneuver."
+msgstr ""
+
+#: 44bfe517da6a4f0bb3edb3c3854ca94d 4d092731a26748d190e9c9c7e8417771
+#: 7a6cc6d370964ee7ad915be8bdc803a0 ed1f964d1f074f55866a518ca95d456d of
+#: pybricks._common.Motor.run_angle:8 pybricks._common.Motor.run_target:10
+#: pybricks._common.Motor.run_time:11
+#: pybricks._common.Motor.run_until_stalled:5
+msgid "What to do after coming to a standstill."
+msgstr ""
+
+#: 74413236e577442f94c9980134f2def8 7e05bc9640e64675a306004cb8e46557 of
+#: pybricks._common.Motor.run_angle:10 pybricks._common.Motor.run_time:13
+msgid ""
+"Wait for the maneuver to complete before continuing with the rest of the "
+"program."
+msgstr ""
+
+#: ../../main/pupdevices/motor.rst:73 c1a1e0dc062c4f3ca9dcc35698da24db
+msgid ".. image:: /blockimg/pybricks_blockMotorRun_run_angle.svg"
+msgstr ""
+
+#: fdf1b4c091c1427bb7e875dddff691ac of pybricks._common.Motor.run_angle:1
+msgid "Runs the motor at a constant speed by a given angle."
+msgstr ""
+
+#: 1d0a2fc50460469cbfee261b2e0bac83 of pybricks._common.Motor.run_angle:5
+msgid "Angle by which the motor should rotate."
+msgstr ""
+
+#: ../../main/pupdevices/motor.rst:77 f54173265a764285b0d45a408020b739
+msgid ".. image:: /blockimg/pybricks_blockMotorRun_run_target.svg"
+msgstr ""
+
+#: 1cc42364529b4b46982a05fb5e5fdc1f of pybricks._common.Motor.run_target:1
+msgid "Runs the motor at a constant speed towards a given target angle."
+msgstr ""
+
+#: 276e9567dc5c4d8baaefa5d25c7fb0eb of pybricks._common.Motor.run_target:3
+msgid ""
+"The direction of rotation is automatically selected based on the target "
+"angle. It does not matter if ``speed`` is positive or negative."
+msgstr ""
+
+#: aa52fe161a5a41dfac65f6a293df5403 of pybricks._common.Motor.run_target:8
+msgid "Angle that the motor should rotate to."
+msgstr ""
+
+#: 40e7c4f6bf6141e3b25b464732b5b23a of pybricks._common.Motor.run_target:12
+msgid ""
+"Wait for the motor to reach the target before continuing with the rest of"
+" the program."
+msgstr ""
+
+#: ../../main/pupdevices/motor.rst:81 76dd659dab4f49dca908a1f30fa44965
+msgid ".. image:: /blockimg/pybricks_blockMotorRun_run_until_stalled.svg"
+msgstr ""
+
+#: 586fd47acde34dcd85db887acdb62c99 of
+#: pybricks._common.Motor.run_until_stalled:1
+msgid "Runs the motor at a constant speed until it stalls."
+msgstr ""
+
+#: 4e4463b26f74427fa034b20c8eaeec36 of
+#: pybricks._common.Motor.run_until_stalled:7
+msgid ""
+"Duty cycle limit during this command. This is useful to avoid applying "
+"the full motor torque to a geared or lever mechanism. If it is ``None``, "
+"the duty limit won't be changed during this command."
+msgstr ""
+
+#: d5182e118c2d4d3eb7e9c9263e49ad83 of
+#: pybricks._common.Motor.run_until_stalled:13
+msgid "Angle at which the motor becomes stalled."
+msgstr ""
+
+#: ../../main/pupdevices/motor.rst:85 d6f875c2152146b7bf9aaa4d639682d4
+msgid ".. image:: /blockimg/pybricks_blockMotorTrack.svg"
+msgstr ""
+
+#: 727a6505d7ed4cb3b9f5841e8002f5e5 of pybricks._common.Motor.track_target:1
+msgid ""
+"Tracks a target angle. This is similar to :meth:`.run_target`, but the "
+"usual smooth acceleration is skipped: it will move to the target angle as"
+" fast as possible. This method is useful if you want to continuously "
+"change the target angle."
+msgstr ""
+
+#: 5eda83755a834c98b31d03f18ab1594e of pybricks._common.Motor.track_target:6
+msgid "Target angle that the motor should rotate to."
+msgstr ""
+
+#: 1fed2a6cb2644bd5b2e36b0de3df33b6 of pybricks._common.Motor.done:1
+msgid "Checks if an ongoing command or maneuver is done."
+msgstr ""
+
+#: 9903476a3286439e81890da1a2e69197 of pybricks._common.Motor.done:3
+msgid "``True`` if the command is done, ``False`` if not."
+msgstr ""
+
+#: ../../main/pupdevices/motor.rst:94 17b2cd77deec40a39c00ab5b0b39eceb
+msgid "Motor settings"
+msgstr ""
+
+#: ../../main/pupdevices/motor.rst:95 a16df31fae614d2099df8f9b1c44f719
+msgid ".. image:: /blockimg/pybricks_blockMotorConfigure_motor_max_voltage.svg"
+msgstr ""
+
+#: 0e9a7c49335946988840c75c669a723e of pybricks._common.DCMotor.settings:1
+msgid ""
+"Configures motor settings. If no arguments are given, this returns the "
+"current values."
+msgstr ""
+
+#: 5d30ca07eeab4b1390ae594c7a9d382f of pybricks._common.DCMotor.settings:4
+msgid "Maximum voltage applied to the motor during all motor commands."
+msgstr ""
+
+#: ea795018056f4b9ebcde13b5464e9de7 of pybricks._common.Motor.close:1
+msgid ""
+"Closes the motor object so you can call ``Motor`` again to initialize a "
+"new object."
+msgstr ""
+
+#: a6595d5c6156481e897218c2dcd9106b of pybricks._common.Motor.close:4
+msgid ""
+"This allows advanced users to change properties such as gearing in the "
+"middle of the program, which can be useful for removeable attachments."
+msgstr ""
+
+#: ../../main/pupdevices/motor.rst:102 bbe41aa70ba04ab6aa921cb2c35b3887
+msgid "Control settings"
+msgstr ""
+
+#: ../../main/pupdevices/motor.rst:105 7a2d13a64ea94973b9951a66482c9b37
+msgid ".. image:: /blockimg/pybricks_blockMotorConfigure_motor_max_speed.svg"
+msgstr ""
+
+#: ../../main/pupdevices/motor.rst:107 4e0e400b65824f0390e88057ebab94c0
+msgid ".. image:: /blockimg/pybricks_blockMotorConfigure_motor_acceleration.svg"
+msgstr ""
+
+#: ../../main/pupdevices/motor.rst:110 12f5b11e4e644523bde165789ec2e82f
+msgid ".. image:: /blockimg/pybricks_blockMotorConfigure_motor_max_torque.svg"
+msgstr ""
+
+#: 989612a73c9641e692226f757df440de of pybricks._common.Control.limits:1
+msgid "Configures the maximum speed, acceleration, and torque."
+msgstr ""
+
+#: 265f376d0eb64479ac5748502710e6eb 3e48c44c0fb64edbb4bdc817cdc7913e
+#: 47cd9f1f1dfa4f5d8d071f1cd2080ab3 95ec32f06a754724ad4e9d8e12060c67 of
+#: pybricks._common.Control.limits:3 pybricks._common.Control.pid:3
+#: pybricks._common.Control.stall_tolerances:3
+#: pybricks._common.Control.target_tolerances:3
+msgid "If no arguments are given, this will return the current values."
+msgstr ""
+
+#: d7faf7bec6ab49cf923b30a7e4d0c8bb of pybricks._common.Control.limits:5
+msgid ""
+"The new ``acceleration`` and ``speed`` limit will become effective when "
+"you give a new motor command. Ongoing maneuvers are not affected."
+msgstr ""
+
+#: 04a6f7356aaf4f3986742512823eeeb7 of pybricks._common.Control.limits:8
+msgid "Maximum speed. All speed commands will be capped to this value."
+msgstr ""
+
+#: ac297aad4d7e4dbebca983aae77d1fd5 of pybricks._common.Control.limits:10
+msgid ""
+"Slope of the speed curve when accelerating or decelerating. Use a tuple "
+"to set acceleration and deceleration separately. If one value is given, "
+"it is used for both."
+msgstr ""
+
+#: 613f812f76eb4d77b3e75f5a60e0dc35 of pybricks._common.Control.limits:14
+msgid "Maximum feedback torque during control."
+msgstr ""
+
+#: 11b7d713cbf540f3bb71a81d5625a950 of pybricks._common.Control.pid:1
+msgid "Gets or sets the PID values for position and speed control."
+msgstr ""
+
+#: 87a5ded48eaa4f99b5de468b72cab46b of pybricks._common.Control.pid:5
+msgid ""
+"Proportional position control constant. It is the feedback torque per "
+"degree of error: µNm/deg."
+msgstr ""
+
+#: 58a2faf57ec14ed0a98689f3967146d3 of pybricks._common.Control.pid:9
+msgid ""
+"Integral position control constant. It is the feedback torque per "
+"accumulated degree of error: µNm/(deg s)."
+msgstr ""
+
+#: ab4ab578ac9c4bc1bd9629d77318107b of pybricks._common.Control.pid:12
+msgid ""
+"Derivative position (or proportional speed) control constant. It is the "
+"feedback torque per unit of speed: µNm/(deg/s)."
+msgstr ""
+
+#: 35d2d99308cb4bdf9f4ec0ff18320675 of pybricks._common.Control.pid:16
+msgid ""
+"Zone around the target where the error integral does not accumulate "
+"errors."
+msgstr ""
+
+#: eec47e3a19c247c6a107b3b98e10f132 of pybricks._common.Control.pid:19
+msgid "Maximum rate at which the error integral is allowed to grow."
+msgstr ""
+
+#: ../../main/pupdevices/motor.rst:121 74fdb01a2aa3478996731610db88c1cb
+msgid ""
+".. image:: "
+"/blockimg/pybricks_blockMotorConfigure_motor_target_tolerances.svg"
+msgstr ""
+
+#: d95f6993307a496f9d8bf116dbe647c4 of
+#: pybricks._common.Control.target_tolerances:1
+msgid "Gets or sets the tolerances that say when a maneuver is done."
+msgstr ""
+
+#: fcd8aeb317a2444e946e4c69d4f85adb of
+#: pybricks._common.Control.target_tolerances:5
+msgid "Allowed deviation from zero speed before motion is considered complete."
+msgstr ""
+
+#: bba107e6d2fa42d1a6468beda1ab735c of
+#: pybricks._common.Control.target_tolerances:8
+msgid "Allowed deviation from the target before motion is considered complete."
+msgstr ""
+
+#: 81d794f50e414f0cbb135adb6e1b44d2 of
+#: pybricks._common.Control.stall_tolerances:1
+msgid "Gets or sets stalling tolerances."
+msgstr ""
+
+#: 677c68557ecc4f49abbd8a963bc42fe1 of
+#: pybricks._common.Control.stall_tolerances:5
+msgid ""
+"If the controller cannot reach this speed for some ``time`` even with "
+"maximum actuation, it is stalled."
+msgstr ""
+
+#: 57b2ebe753884530a2af98fba014502b of
+#: pybricks._common.Control.stall_tolerances:9
+msgid ""
+"How long the controller has to be below this minimum ``speed`` before we "
+"say it is stalled."
+msgstr ""
+
+#: ../../main/pupdevices/motor.rst:133 b356848b51484681a01cb09c92d2d3d7
+msgid ""
+"Number of degrees that the motor turns to complete one degree at the "
+"output of the gear train. This is the gear ratio determined from the "
+"``gears`` argument when initializing the motor."
+msgstr ""
+
+#: ../../main/pupdevices/motor.rst:139 0e8ff62f8816443f842e4e4877b72325
+msgid ""
+"The :meth:`done`, :meth:`stalled` and :meth:`load` methods have been "
+"moved."
+msgstr ""
+
+#: 6d08a810d5914e10b43026ec5b2a9a0a of pybricks._common.Model.state:1
+msgid ""
+"Gets the estimated angle, speed, current, and stall state of the motor, "
+"using a simulation model that mimics the real motor. These estimates are "
+"updated faster than the real measurements, which can be useful when "
+"building your own PID controllers."
+msgstr ""
+
+#: 9052378e3b1549dd9a2695c0465f3aac of pybricks._common.Model.state:6
+msgid ""
+"For most applications it is better to used the *measured* :meth:`angle "
+"<pybricks.pupdevices.Motor.angle>`, :meth:`speed "
+"<pybricks.pupdevices.Motor.speed>`, :meth:`load "
+"<pybricks.pupdevices.Motor.load>`, and :meth:`stall "
+"<pybricks.pupdevices.Motor.stalled>` state instead."
+msgstr ""
+
+#: 154e58dfe24f489fa80772cc7494a347 of pybricks._common.Model.state:12
+msgid ""
+"Tuple with the estimated angle (deg), speed (deg/s), current (mA), and "
+"stall state (``True`` or ``False``)."
+msgstr ""
+
+#: 3680039bb0e84239bfb36a4cbe1c7deb of pybricks._common.Model.settings:1
+msgid ""
+"Gets or sets model settings as a tuple of integers. If no arguments are "
+"given, this will return the current values. This method is mainly used to"
+" debug the motor model class. Changing these settings should not be "
+"needed in user programs."
+msgstr ""
+
+#: 098483be074d4da5a02d73b4b869fdbc of pybricks._common.Model.settings:8
+msgid "Tuple with `model settings`_."
+msgstr ""
+
+#: ../../main/pupdevices/motor.rst:151 2672191934174a918bdee8e3a4b78717
+msgid "Initialization examples"
+msgstr ""
+
+#: ../../main/pupdevices/motor.rst:154 98d94834bf3647dc85f6b6dfe43f9145
+msgid "Making the motor move back and forth"
+msgstr ""
+
+#: ../../main/pupdevices/motor.rst:156 d57b46e02b8b427fa5c4466631e9efb5
+msgid ""
+"from pybricks.pupdevices import Motor\n"
+"from pybricks.parameters import Port\n"
+"from pybricks.tools import wait\n"
+"\n"
+"# Initialize a motor on port A.\n"
+"example_motor = Motor(Port.A)\n"
+"\n"
+"# Make the motor run clockwise at 500 degrees per second.\n"
+"example_motor.run(500)\n"
+"\n"
+"# Wait for three seconds.\n"
+"wait(3000)\n"
+"\n"
+"# Make the motor run counterclockwise at 500 degrees per second.\n"
+"example_motor.run(-500)\n"
+"\n"
+"# Wait for three seconds.\n"
+"wait(3000)\n"
+msgstr ""
+
+#: ../../main/pupdevices/motor.rst:160 6e29e952a05a4025aec5ccb64fed6d81
+msgid "Initializing multiple motors"
+msgstr ""
+
+#: ../../main/pupdevices/motor.rst:162 04da7337822a42bda33667337c2dd8c7
+msgid ""
+"from pybricks.pupdevices import Motor\n"
+"from pybricks.parameters import Port\n"
+"from pybricks.tools import wait\n"
+"\n"
+"# Initialize motors on port A and B.\n"
+"track_motor = Motor(Port.A)\n"
+"gripper_motor = Motor(Port.B)\n"
+"\n"
+"# Make both motors run at 500 degrees per second.\n"
+"track_motor.run(500)\n"
+"gripper_motor.run(500)\n"
+"\n"
+"# Wait for three seconds.\n"
+"wait(3000)\n"
+msgstr ""
+
+#: ../../main/pupdevices/motor.rst:166 62fbc622faaf47888462394529744f8b
+msgid "Setting the positive direction as counterclockwise"
+msgstr ""
+
+#: ../../main/pupdevices/motor.rst:168 8f1f01120901400a855ccba5eb697803
+msgid ""
+"from pybricks.pupdevices import Motor\n"
+"from pybricks.parameters import Port, Direction\n"
+"from pybricks.tools import wait\n"
+"\n"
+"# Initialize a motor on port A with the positive direction as "
+"counterclockwise.\n"
+"example_motor = Motor(Port.A, Direction.COUNTERCLOCKWISE)\n"
+"\n"
+"# When we choose a positive speed value, the motor now goes "
+"counterclockwise.\n"
+"example_motor.run(500)\n"
+"\n"
+"# This is useful when your motor is mounted in reverse or upside down.\n"
+"# By changing the positive direction, your script will be easier to read,"
+"\n"
+"# because a positive value now makes your robot/mechanism go forward.\n"
+"\n"
+"# Wait for three seconds.\n"
+"wait(3000)\n"
+msgstr ""
+
+#: ../../main/pupdevices/motor.rst:172 7d8197ba1fb44e639f77b4d706a209e8
+msgid "Using gears"
+msgstr ""
+
+#: ../../main/pupdevices/motor.rst:174 912271016d1540e685eae5c5f8f9cb5e
+msgid ""
+"from pybricks.pupdevices import Motor\n"
+"from pybricks.parameters import Port, Direction\n"
+"from pybricks.tools import wait\n"
+"\n"
+"# Initialize a motor on port A with the positive direction as "
+"counterclockwise.\n"
+"# Also specify one gear train with a 12-tooth and a 36-tooth gear. The "
+"12-tooth\n"
+"# gear is attached to the motor axle. The 36-tooth gear is at the output "
+"axle.\n"
+"geared_motor = Motor(Port.A, Direction.COUNTERCLOCKWISE, [12, 36])\n"
+"\n"
+"# Make the output axle run at 100 degrees per second. The motor speed\n"
+"# is automatically increased to compensate for the gears.\n"
+"geared_motor.run(100)\n"
+"\n"
+"# Wait for three seconds.\n"
+"wait(3000)\n"
+msgstr ""
+
+#: ../../main/pupdevices/motor.rst:178 20dcbb598c43481a99692484802a4cf7
+msgid "Measurement examples"
+msgstr ""
+
+#: ../../main/pupdevices/motor.rst:181 fcb94d6c9d5b4c839cf53a81d7f063a5
+msgid "Measuring the angle and speed"
+msgstr ""
+
+#: ../../main/pupdevices/motor.rst:183 d00564b993674a93aa331cc3d58aa07c
+msgid ""
+"from pybricks.pupdevices import Motor\n"
+"from pybricks.parameters import Port\n"
+"from pybricks.tools import wait\n"
+"\n"
+"# Initialize a motor on port A.\n"
+"example_motor = Motor(Port.A)\n"
+"\n"
+"# Start moving at 300 degrees per second.\n"
+"example_motor.run(300)\n"
+"\n"
+"# Display the angle and speed 50 times.\n"
+"for i in range(100):\n"
+"\n"
+"    # Read the angle (degrees) and speed (degrees per second).\n"
+"    angle = example_motor.angle()\n"
+"    speed = example_motor.speed()\n"
+"\n"
+"    # Print the values.\n"
+"    print(angle, speed)\n"
+"\n"
+"    # Wait some time so we can read what is displayed.\n"
+"    wait(200)\n"
+msgstr ""
+
+#: ../../main/pupdevices/motor.rst:187 5ac86d47222346a4a9fe558695502d5f
+msgid "Resetting the measured angle"
+msgstr ""
+
+#: ../../main/pupdevices/motor.rst:189 8b57fc6e23c24c298dc0475ec95c6374
+msgid ""
+"from pybricks.pupdevices import Motor\n"
+"from pybricks.parameters import Port\n"
+"\n"
+"# Initialize a motor on port A.\n"
+"example_motor = Motor(Port.A)\n"
+"\n"
+"# Reset the angle to 0.\n"
+"example_motor.reset_angle(0)\n"
+"\n"
+"# Reset the angle to 1234.\n"
+"example_motor.reset_angle(1234)\n"
+"\n"
+"# Reset the angle to the absolute angle.\n"
+"# This is only supported on motors that have\n"
+"# an absolute encoder. For other motors, this\n"
+"# will raise an error.\n"
+"example_motor.reset_angle()\n"
+msgstr ""
+
+#: ../../main/pupdevices/motor.rst:193 0c31f70142fc480da85630d30180851c
+msgid "Getting the absolute angle"
+msgstr ""
+
+#: ../../main/pupdevices/motor.rst:195 ba5d7180c4ef44288123ae525ff67370
+msgid ""
+"from pybricks.pupdevices import Motor\n"
+"from pybricks.parameters import Port\n"
+"from pybricks.tools import wait\n"
+"\n"
+"# Initialize a motor on port A.\n"
+"example_motor = Motor(Port.A)\n"
+"\n"
+"while True:\n"
+"\n"
+"    # Get the default angle value.\n"
+"    angle = example_motor.angle()\n"
+"\n"
+"    # Get the angle between 0 and 360.\n"
+"    absolute_angle = example_motor.angle() % 360\n"
+"\n"
+"    # Get the angle between -180 and 179.\n"
+"    wrapped_angle = (example_motor.angle() + 180) % 360 - 180\n"
+"\n"
+"    # Print the results.\n"
+"    print(angle, absolute_angle, wrapped_angle)\n"
+"    wait(100)\n"
+msgstr ""
+
+#: ../../main/pupdevices/motor.rst:200 3aa0cc92e19f4a149fbcad705b2e558f
+msgid "Movement examples"
+msgstr ""
+
+#: ../../main/pupdevices/motor.rst:203 50136d49e19742c4ab85ccd8690e87a4
+msgid "Basic usage of all run methods"
+msgstr ""
+
+#: ../../main/pupdevices/motor.rst:205 dc16bed7ff77449d804ae027eded2bf5
+#, python-format
+msgid ""
+"from pybricks.pupdevices import Motor\n"
+"from pybricks.parameters import Port\n"
+"from pybricks.tools import wait\n"
+"\n"
+"# Initialize a motor on port A.\n"
+"example_motor = Motor(Port.A)\n"
+"\n"
+"# Run at 500 deg/s and then stop by coasting.\n"
+"print(\"Demo of run\")\n"
+"example_motor.run(500)\n"
+"wait(1500)\n"
+"example_motor.stop()\n"
+"wait(1500)\n"
+"\n"
+"# Run at 70% duty cycle (\"power\") and then stop by coasting.\n"
+"print(\"Demo of dc\")\n"
+"example_motor.dc(50)\n"
+"wait(1500)\n"
+"example_motor.stop()\n"
+"wait(1500)\n"
+"\n"
+"# Run at 500 deg/s for two seconds.\n"
+"print(\"Demo of run_time\")\n"
+"example_motor.run_time(500, 2000)\n"
+"wait(1500)\n"
+"\n"
+"# Run at 500 deg/s for 90 degrees.\n"
+"print(\"Demo of run_angle\")\n"
+"example_motor.run_angle(500, 90)\n"
+"wait(1500)\n"
+"\n"
+"# Run at 500 deg/s back to the 0 angle\n"
+"print(\"Demo of run_target to 0\")\n"
+"example_motor.run_target(500, 0)\n"
+"wait(1500)\n"
+"\n"
+"# Run at 500 deg/s back to the -90 angle\n"
+"print(\"Demo of run_target to -90\")\n"
+"example_motor.run_target(500, -90)\n"
+"wait(1500)\n"
+"\n"
+"# Run at 500 deg/s until the motor stalls\n"
+"print(\"Demo of run_until_stalled\")\n"
+"example_motor.run_until_stalled(500)\n"
+"print(\"Done\")\n"
+"wait(1500)\n"
+msgstr ""
+
+#: ../../main/pupdevices/motor.rst:209 c1206da3d6de492f91a03415f63452b9
+msgid "Stopping ongoing movements in different ways"
+msgstr ""
+
+#: ../../main/pupdevices/motor.rst:211 586b178cea08480386ba3143b89f04b9
+msgid ""
+"from pybricks.pupdevices import Motor\n"
+"from pybricks.parameters import Port\n"
+"from pybricks.tools import wait\n"
+"\n"
+"# Initialize a motor on port A.\n"
+"example_motor = Motor(Port.A)\n"
+"\n"
+"# Run at 500 deg/s and then stop by coasting.\n"
+"example_motor.run(500)\n"
+"wait(1500)\n"
+"example_motor.stop()\n"
+"wait(1500)\n"
+"\n"
+"# Run at 500 deg/s and then stop by braking.\n"
+"example_motor.run(500)\n"
+"wait(1500)\n"
+"example_motor.brake()\n"
+"wait(1500)\n"
+"\n"
+"# Run at 500 deg/s and then stop by holding.\n"
+"example_motor.run(500)\n"
+"wait(1500)\n"
+"example_motor.hold()\n"
+"wait(1500)\n"
+"\n"
+"# Run at 500 deg/s and then stop by running at 0 speed.\n"
+"example_motor.run(500)\n"
+"wait(1500)\n"
+"example_motor.run(0)\n"
+"wait(1500)\n"
+msgstr ""
+
+#: ../../main/pupdevices/motor.rst:215 98bc6f56b5444209abe66df216a4abb5
+msgid "Using the ``then`` argument to change how a run command stops"
+msgstr ""
+
+#: ../../main/pupdevices/motor.rst:217 98a061917b1a43bab9496e852337a5bf
+msgid ""
+"from pybricks.pupdevices import Motor\n"
+"from pybricks.parameters import Port, Stop\n"
+"from pybricks.tools import wait\n"
+"\n"
+"# Initialize a motor on port A.\n"
+"example_motor = Motor(Port.A)\n"
+"\n"
+"# By default, the motor holds the position. It keeps\n"
+"# correcting the angle if you move it.\n"
+"example_motor.run_angle(500, 360)\n"
+"wait(1000)\n"
+"\n"
+"# This does exactly the same as above.\n"
+"example_motor.run_angle(500, 360, then=Stop.HOLD)\n"
+"wait(1000)\n"
+"\n"
+"# You can also brake. This applies some resistance\n"
+"# but the motor does not move back if you move it.\n"
+"example_motor.run_angle(500, 360, then=Stop.BRAKE)\n"
+"wait(1000)\n"
+"\n"
+"# This makes the motor coast freely after it stops.\n"
+"example_motor.run_angle(500, 360, then=Stop.COAST)\n"
+"wait(1000)\n"
+msgstr ""
+
+#: ../../main/pupdevices/motor.rst:221 6b2734775c6947d6a8a6e94c2c9b1407
+msgid "Stall examples"
+msgstr ""
+
+#: ../../main/pupdevices/motor.rst:224 574796ba0f3f4e7ab88a659e94e1d0fa
+msgid "Running a motor until a mechanical endpoint"
+msgstr ""
+
+#: ../../main/pupdevices/motor.rst:226 0b1ad707a4a24af58f66797342c675b8
+msgid ""
+"from pybricks.pupdevices import Motor\n"
+"from pybricks.parameters import Port\n"
+"\n"
+"# Initialize a motor on port A.\n"
+"example_motor = Motor(Port.A)\n"
+"\n"
+"# We'll use a speed of 200 deg/s in all our commands.\n"
+"speed = 200\n"
+"\n"
+"# Run the motor in reverse until it hits a mechanical stop.\n"
+"# The duty_limit=30 setting means that it will apply only 30%\n"
+"# of the maximum torque against the mechanical stop. This way,\n"
+"# you don't push against it with too much force.\n"
+"example_motor.run_until_stalled(-speed, duty_limit=30)\n"
+"\n"
+"# Reset the angle to 0. Now whenever the angle is 0, you know\n"
+"# that it has reached the mechanical endpoint.\n"
+"example_motor.reset_angle(0)\n"
+"\n"
+"# Now make the motor go back and forth in a loop.\n"
+"# This will now work the same regardless of the\n"
+"# initial motor angle, because we always start\n"
+"# from the mechanical endpoint.\n"
+"for count in range(10):\n"
+"    example_motor.run_target(speed, 180)\n"
+"    example_motor.run_target(speed, 90)\n"
+msgstr ""
+
+#: ../../main/pupdevices/motor.rst:230 41031665553e432ba839806c630355e8
+msgid "Centering a steering mechanism"
+msgstr ""
+
+#: ../../main/pupdevices/motor.rst:232 f4ca1df7e76e468db835577199f3c3a1
+msgid ""
+"from pybricks.pupdevices import Motor\n"
+"from pybricks.parameters import Port\n"
+"from pybricks.tools import wait\n"
+"\n"
+"# Initialize a motor on port A.\n"
+"example_motor = Motor(Port.A)\n"
+"\n"
+"# Please have a look at the previous example first. This example\n"
+"# finds two endspoints and then makes the middle the zero point.\n"
+"\n"
+"# The run_until_stalled gives us the angle at which it stalled.\n"
+"# We want to know this value for both endpoints.\n"
+"left_end = example_motor.run_until_stalled(-200, duty_limit=30)\n"
+"right_end = example_motor.run_until_stalled(200, duty_limit=30)\n"
+"\n"
+"# We have just moved to the rightmost endstop. So, we can reset\n"
+"# this angle to be half the distance between the two endpoints.\n"
+"# That way, the middle corresponds to 0 degrees.\n"
+"example_motor.reset_angle((right_end - left_end) / 2)\n"
+"\n"
+"# From now on we can simply run towards zero to reach the middle.\n"
+"example_motor.run_target(200, 0)\n"
+"\n"
+"wait(1000)\n"
+msgstr ""
+
+#: ../../main/pupdevices/motor.rst:237 13daa8e8b7c64b1fba5062b1d876cdf5
+msgid "Parallel movement examples"
+msgstr ""
+
+#: ../../main/pupdevices/motor.rst:240 6bc51b1da045411ebbb1dffe0bc8514e
+msgid "Using the ``wait`` argument to run motors in parallel"
+msgstr ""
+
+#: ../../main/pupdevices/motor.rst:242 ec16cdf1e16f4e2aae4a5f52010a46b6
+msgid ""
+"from pybricks.pupdevices import Motor\n"
+"from pybricks.parameters import Port\n"
+"\n"
+"# Initialize motors on port A and B.\n"
+"track_motor = Motor(Port.A)\n"
+"gripper_motor = Motor(Port.B)\n"
+"\n"
+"# Make the track motor start moving,\n"
+"# but don't wait for it to finish.\n"
+"track_motor.run_angle(500, 360, wait=False)\n"
+"\n"
+"# Now make the gripper motor rotate. This\n"
+"# means they move at the same time.\n"
+"gripper_motor.run_angle(200, 720)\n"
+msgstr ""
+
+#: ../../main/pupdevices/motor.rst:246 c908969c638d4e83b2504b878f3611ec
+msgid "Waiting for two parallel actions to complete"
+msgstr ""
+
+#: ../../main/pupdevices/motor.rst:248 d4f142839d904c00829a41cc0255e054
+msgid ""
+"from pybricks.pupdevices import Motor\n"
+"from pybricks.parameters import Port\n"
+"from pybricks.tools import wait\n"
+"\n"
+"# Initialize motors on port A and B.\n"
+"track_motor = Motor(Port.A)\n"
+"gripper_motor = Motor(Port.B)\n"
+"\n"
+"# Make both motors perform an action with wait=False\n"
+"track_motor.run_angle(500, 360, wait=False)\n"
+"gripper_motor.run_angle(200, 720, wait=False)\n"
+"\n"
+"# While one or both of the motors are not done yet,\n"
+"# do something else. In this example, just wait.\n"
+"while not track_motor.done() or not gripper_motor.done():\n"
+"    wait(10)\n"
+"\n"
+"print(\"Both motors are done!\")\n"
+msgstr ""
+

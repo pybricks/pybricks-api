@@ -1,0 +1,443 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-2023 The Pybricks Authors
+# This file is distributed under the same license as the pybricks package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pybricks v3.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-01-26 20:11+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: de\n"
+"Language-Team: de <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../main/micropython/umath.rst:4 8bc6a3d6da2a441092f32689bdd7b109
+msgid ":mod:`umath <umath>` -- Math functions"
+msgstr ""
+
+#: ../../main/micropython/umath.rst:8 1c0c8d809bf04cd8b117fa606531725c
+msgid "This MicroPython module is similar to the `math module`_ in Python."
+msgstr ""
+
+#: ../../main/micropython/umath.rst:10 07ab6aa7ad70444197a030b710ec61b8
+msgid ""
+"See also the :ref:`built-in math functions<builtinmath>` that can be used"
+" without importing anything."
+msgstr ""
+
+#: ../../main/micropython/umath.rst:14 019139e6e5ca46d1959be60b712141f7
+msgid "Rounding and sign"
+msgstr ""
+
+#: ../../main/micropython/umath.rst:16 52372542384c4a3ea2ea404d77cb07b8
+msgid ".. image:: /blockimg/pybricks_blockMathOp_roundup.svg"
+msgstr ""
+
+#: 8924043c1c8b48139168a9f4c1e9261f of umath.ceil:1
+msgid "Rounds up."
+msgstr ""
+
+#: ../../main/micropython/umath.rst 0157859416c746d988a9067a3d10de75
+#: 1905259029f44920bce88325bfc0bcb4 19b74b7822024056905f560ca4df6fc4
+#: 1a2cfc5d7f474047880c41c576217d9d 1ff18cfc9f134958a6fb107d71e93074
+#: 30055845e06b4f679395e0e257381f8b 54b2d6307cc94f3584e75ae5084d23de
+#: 6bddcbf2a0ea4025b6e7e3934700236d 6e3bb6992d2a4f3f9152f2afd89541bf
+#: 7130acd238b848689b4667aea306c91f 858ad3a2b9e643b5877833d0b33d389c
+#: 9f67f64b9d0c4f14bc6bcf864557461f a29f8e564abb482fb837209b903b5607
+#: a6ce4161852e4be58d5181558d151408 ab141c0b6cca42d688de1fe273ccb1f3
+#: ae1f8a48d893445499e6b340e4d8c055 b57dd5284e984b699b449d09ab58871f
+#: b703052c93e24f74aeac3fca21ac9960 b813a8d1d81243979851639d0f5300cd
+#: c5762dde6b3e4d238070a8b9c88b7caa cb0ca86bebc44de095cc5d10e974cc36
+#: e4e205d6e8224f83af19cde795264bed e59b6ec7f0a9480eaeb642eeb8f69008
+#: f852586cd8834fe7839f4287826a826e f96dbc3f13d14f2a97f214361e668136
+msgid "Parameters"
+msgstr ""
+
+#: 57b0dc1998434ad5b0987348de3299df adbec7dce8d7419588e4ec8861f868a9 of
+#: umath.ceil:3 umath.floor:3
+msgid "The value to be rounded."
+msgstr ""
+
+#: ../../main/micropython/umath.rst 05afbf84b7214793bc7564256d67e1d6
+#: 0c834ce2b4a34bb8b9bbb36e4d4e207b 142ca45d829a43f1bf73f4d1ad661baa
+#: 2f6e43bedfa141adabda9ceba649fceb 41f6c09077a44553b0589a84db3ab9bc
+#: 455fd46aea1346cb9279059aafababf1 4b7f3de1eb6447278d5db151ea1e8683
+#: 4c54e5fe65a44c6480e6947d058bec22 77210d73cc364ccc826fb6c1da51a34a
+#: 79b132bffc3b4560ab87a18e1da1745b 7e67d9db1a7345e7928d592e089e7a0a
+#: 87ceb5245e0a4c28ac08eeb9c592cdf4 8e4f881d65af456fac2708a37db9d384
+#: 92dac805a885473f8692d22239e95307 93bdf7dbe3be483cb5fa7c9a04789f4a
+#: 94bb882981e24aa2b504ca253fc1add1 97a4407c74dc4b18a01a42ba13f21930
+#: a47f4094c4914a4081a9ff6c36e5a3d6 b84eb3de89494a70aef6bf0534fa7007
+#: c87adf42cb504da9820ccb05a9ba04c5 cf5a0be317c54b09b90bd73e58818e25
+#: de533a4cae924c8ba8fe6b1b4914a6fb e2a7d30f1714467daa9c1d7b60038bc9
+#: e3a4b50f120a46fda18b2fbc4a6ff741 fdccfb0ba97f4f44a8cb2cd5bc153325
+msgid "Returns"
+msgstr ""
+
+#: 2478654d8ef844beaf4e8fea8f5cd779 of umath.ceil:6
+msgid "Value rounded towards positive infinity."
+msgstr ""
+
+#: ../../main/micropython/umath.rst:20 95a1d74cbeba45419a4115c586364eee
+msgid ".. image:: /blockimg/pybricks_blockMathOp_rounddown.svg"
+msgstr ""
+
+#: f8191d11ba3c4db4910b17c8892ff31d of umath.floor:1
+msgid "Rounds down."
+msgstr ""
+
+#: 90182ab4827145f7995dd42316fc148d of umath.floor:6
+msgid "Value rounded towards negative infinity."
+msgstr ""
+
+#: 43936d9cf4994732854a6c4e277f9165 of umath.trunc:1
+msgid "Truncates decimals to get the integer part of a value."
+msgstr ""
+
+#: 25966d061a4745adbe7e0ccf55e58a8e of umath.trunc:3
+msgid "This is the same as rounding towards ``0``."
+msgstr ""
+
+#: 916d8477722548aa86481422d6d86f40 of umath.trunc:5
+msgid "The value to be truncated."
+msgstr ""
+
+#: 5e2566ca01ed4ce7a6c054dfb6a75c88 of umath.trunc:8
+msgid "Integer part of the value."
+msgstr ""
+
+#: 8c160ef843e04da8806ad37fabd0e16a of umath.fmod:1
+msgid "Gets the remainder of ``x / y``."
+msgstr ""
+
+#: f296904900064c119b5b1605908575df of umath.fmod:3
+msgid "Not to be confused with :func:`modf`."
+msgstr ""
+
+#: 25efe1d72dcf482c89f2e72b7fe9206e of umath.fmod:5
+msgid "The numerator."
+msgstr ""
+
+#: bc08752523de4c43959ebc36f9c3abb0 of umath.fmod:7
+msgid "The denominator."
+msgstr ""
+
+#: de318d81179848cdb8e40a7cc27ea0a5 of umath.fmod:10
+msgid "Remainder after division"
+msgstr ""
+
+#: 3c49283776a44d2d8104ce0da61f0981 of umath.fabs:1
+msgid "Gets the absolute value."
+msgstr ""
+
+#: 46fff28e0d26464d8130a4a02e6eaab8 5c95582646a44edbbc8bef69d3a507a4
+#: b3b93fd05eb641148f587911e87535a6 of umath.fabs:3 umath.ldexp:3 umath.log:3
+msgid "The value."
+msgstr ""
+
+#: 352f19e8fe264bd58286b0f9425db90b of umath.fabs:6
+msgid "Absolute value of ``x``."
+msgstr ""
+
+#: f2fb1b5175bb4a34b1dc9c2e39f4c9ad of umath.copysign:1
+msgid "Gets ``x`` with the sign of ``y``."
+msgstr ""
+
+#: 47d4755f85434eebb82932f84fcdc47f of umath.copysign:3
+msgid "Determines the magnitude of the return value."
+msgstr ""
+
+#: c22658fe586d4ac6a2350159a84c7790 of umath.copysign:5
+msgid "Determines the sign of the return value."
+msgstr ""
+
+#: 6e1cafe08f0245aa91266adaf6399186 of umath.copysign:8
+msgid "``x`` with the sign of ``y``."
+msgstr ""
+
+#: ../../main/micropython/umath.rst:33 932eacea3894401a8fd1ddbf5c9934d2
+msgid "Powers and logarithms"
+msgstr ""
+
+#: ../../docstring b44e8bda342e406993d9403cd4a4b5bf of umath.e:1
+msgid "The mathematical constant e."
+msgstr ""
+
+#: ../../main/micropython/umath.rst:37 db1e396014ca4d43becd586002147a10
+msgid ".. image:: /blockimg/pybricks_blockMathOp_exp.svg"
+msgstr ""
+
+#: bdd309a94a954cf982e8495c36378ed2 of umath.exp:1
+msgid "Gets :attr:`e` raised to the power of ``x``."
+msgstr ""
+
+#: 2183f4fd96464637bd5c803595e23d0f 8bdb4d95b3444934a5b9b0b259627928
+#: c09964d5f6b640438ef8c31ea7bce196 of umath.exp:3 umath.ldexp:5 umath.pow:5
+msgid "The exponent."
+msgstr ""
+
+#: 2e875fc6056b40c89d7f6fe247ae17aa of umath.exp:6
+msgid ":attr:`e` raised to the power of ``x``."
+msgstr ""
+
+#: ../../main/micropython/umath.rst:41 ff756b6b87204dd6898528535a9f3714
+msgid ".. image:: /blockimg/pybricks_blockMathArithmetic_power.svg"
+msgstr ""
+
+#: ../../main/micropython/umath.rst:43 39f779babcd04c36aff3fda0848609c1
+msgid ".. image:: /blockimg/pybricks_blockMathOp_pow10.svg"
+msgstr ""
+
+#: 59b7252d7f93477b8be646a08c4c52aa of umath.pow:1
+msgid "Gets ``x`` raised to the power of ``y``."
+msgstr ""
+
+#: 43d9fec90a4c4cc39995f0a1a0423e8c of umath.pow:3
+msgid "The base number."
+msgstr ""
+
+#: 52abecd8b59a4504a261ee6675816472 of umath.pow:8
+msgid "``x`` raised to the power of ``y``."
+msgstr ""
+
+#: ../../main/micropython/umath.rst:47 707772d3a2da47ecb42a3b193abddf61
+msgid ".. image:: /blockimg/pybricks_blockMathOp_ln.svg"
+msgstr ""
+
+#: 160f6260fbbd4f1887ab4e75f48ee1fa of umath.log:1
+msgid "Gets the natural logarithm."
+msgstr ""
+
+#: 82e34c8bab1f4c688259bcccf64bbcfd of umath.log:6
+msgid "The natural logarithm of ``x``."
+msgstr ""
+
+#: ../../main/micropython/umath.rst:51 65e76ddbd3f647379aff2f9c279b57a8
+msgid ".. image:: /blockimg/pybricks_blockMathOp_root.svg"
+msgstr ""
+
+#: 3c517f8f958d40d99f2d2d970f2f9f22 of umath.sqrt:1
+msgid "Gets the square root."
+msgstr ""
+
+#: 063c8378dbda48788f6243ce45904106 of umath.sqrt:3
+msgid "The value ``x``."
+msgstr ""
+
+#: 604e777742704306896b937e6e88e8e2 of umath.sqrt:6
+msgid "The square root of ``x``."
+msgstr ""
+
+#: ../../main/micropython/umath.rst:56 0929ad50b75b4b1896095e3798fa76d3
+msgid "Trigonometry"
+msgstr ""
+
+#: ../../docstring 93e28c0ab5e0476ba894c7524656d8d2 of umath.pi:1
+msgid "The mathematical constant π."
+msgstr ""
+
+#: 5ba2e33f3d704d01aa17f2417dee83fe of umath.degrees:1
+msgid "Converts an angle from radians to degrees."
+msgstr ""
+
+#: 07791ec1acaf45e2a9e1bf68d6a033fd 12db1c87878a448f919de19a9b49e7a0
+#: 58c25755819a45d092f2a6d69fa5793e 5c51f61063f74408b368620f9a612a13
+#: 9fac08d4e4b249f3b65f5276f0010043 of umath.cos:3 umath.degrees:3
+#: umath.radians:6 umath.sin:3 umath.tan:3
+msgid "Angle in radians."
+msgstr ""
+
+#: 1557494c4efb4ac396f450ede6febae8 31abb036cd14414295c83c6232cd4b38 of
+#: umath.degrees:6 umath.radians:3
+msgid "Angle in degrees."
+msgstr ""
+
+#: bdf42ff45955459d9dc8fbc0e525230c of umath.radians:1
+msgid "Converts an angle from degrees to radians."
+msgstr ""
+
+#: ../../main/micropython/umath.rst:64 e9f0fc25ed2c4d089d5c72bcb0823de8
+msgid ".. image:: /blockimg/pybricks_blockMathOp_sin.svg"
+msgstr ""
+
+#: df9d44201c934076a28a51e53e6150f9 of umath.sin:1
+msgid "Gets the sine of an angle."
+msgstr ""
+
+#: 42ff8ae02869402bba3d305eca2c8605 of umath.sin:6
+msgid "Sine of ``x``."
+msgstr ""
+
+#: ../../main/micropython/umath.rst:68 29e8059f43f7452191f7534eb1b271db
+msgid ".. image:: /blockimg/pybricks_blockMathOp_asin.svg"
+msgstr ""
+
+#: 96f5d7574571466bb0936e7743ceedef of umath.asin:1
+msgid "Applies the inverse sine operation."
+msgstr ""
+
+#: 8362598470504ed5b9121d5065414b06 of umath.asin:3
+msgid "Opposite / hypotenuse."
+msgstr ""
+
+#: 7ff16f1fcce04d249f99b3107f2dc7a3 of umath.asin:6
+msgid "Arcsine of ``x``, in radians."
+msgstr ""
+
+#: ../../main/micropython/umath.rst:72 2699210d6d9c450e861feabc15ad6a8d
+msgid ".. image:: /blockimg/pybricks_blockMathOp_cos.svg"
+msgstr ""
+
+#: d54d50a9effe4768aeaa0f5aae4f2e3e of umath.cos:1
+msgid "Gets the cosine of an angle."
+msgstr ""
+
+#: 8a79adb3d7fc4370b4a66e83363e7924 of umath.cos:6
+msgid "Cosine of ``x``."
+msgstr ""
+
+#: ../../main/micropython/umath.rst:76 fae09ada2bd84b9fbbe117569203b186
+msgid ".. image:: /blockimg/pybricks_blockMathOp_acos.svg"
+msgstr ""
+
+#: 3ae0c8cdb38a4e889740d71f171afba8 of umath.acos:1
+msgid "Applies the inverse cosine operation."
+msgstr ""
+
+#: 6554301797e94949bdbc8e215837a22b of umath.acos:3
+msgid "Adjacent / hypotenuse."
+msgstr ""
+
+#: 230c9f1aa38a4cb4affb872fafb1688e of umath.acos:6
+msgid "Arccosine of ``x``, in radians."
+msgstr ""
+
+#: ../../main/micropython/umath.rst:80 aeb552c26c944cc68be233075fc8df4b
+msgid ".. image:: /blockimg/pybricks_blockMathOp_tan.svg"
+msgstr ""
+
+#: 15e97f98db4f4700869f95dc0c955442 of umath.tan:1
+msgid "Gets the tangent of an angle."
+msgstr ""
+
+#: bb4e39ae514247448ef50593c9f2c186 of umath.tan:6
+msgid "Tangent of ``x``."
+msgstr ""
+
+#: ../../main/micropython/umath.rst:84 7754ba38970e4b49acfbf174e9c71953
+msgid ".. image:: /blockimg/pybricks_blockMathOp_atan.svg"
+msgstr ""
+
+#: f959b874b0c44acaa4756b24bfa3e7d0 of umath.atan:1
+msgid "Applies the inverse tangent operation."
+msgstr ""
+
+#: 8499436f9a3549c3a051ae4646f04b4c of umath.atan:3
+msgid "Opposite / adjacent."
+msgstr ""
+
+#: 0952dbd1a6bf464eaf8ed4eb4515e332 of umath.atan:6
+msgid "Arctangent of ``x``, in radians."
+msgstr ""
+
+#: ../../main/micropython/umath.rst:88 7d3d6ecc686e41998a2de3671e87341d
+msgid ".. image:: /blockimg/pybricks_blockMathOp_atan2.svg"
+msgstr ""
+
+#: 5ca021ff91b943aea4bbf4d1c5a6b9e8 of umath.atan2:1
+msgid ""
+"Applies the inverse tangent operation on ``b / a``, and accounts for the "
+"signs of ``b`` and ``a`` to produce the expected angle."
+msgstr ""
+
+#: fae3a224c24b42a3a18d127d74a5a63b of umath.atan2:4
+msgid "Opposite side of the triangle."
+msgstr ""
+
+#: afaa9c6e276c49178b8b5ac4a997c1f3 of umath.atan2:6
+msgid "Adjacent side of the triangle."
+msgstr ""
+
+#: 6feadc83f68049feb53fa8cf4c71c8bd of umath.atan2:9
+msgid "Arctangent of ``b / a``, in radians."
+msgstr ""
+
+#: ../../main/micropython/umath.rst:93 09003031cf6f493aaaf4ef3b27d2e8f2
+msgid "Other math functions"
+msgstr ""
+
+#: c525aa58a1494df496dc92953f7517f2 of umath.isfinite:1
+msgid "Checks if a value is finite."
+msgstr ""
+
+#: 1cc239eaecaa48b1afddc1d80900d26a b41f61f983364478be4c77f80a90e52c
+#: e8a6e4f8a96d4dff9b9d54fd06d64a37 of umath.isfinite:3 umath.isinfinite:3
+#: umath.isnan:3
+msgid "The value to be checked."
+msgstr ""
+
+#: 16227f637e6a44cbbf3f5cf70f3c9279 of umath.isfinite:6
+msgid "``True`` if ``x`` is finite, else ``False``."
+msgstr ""
+
+#: 7d297a43f0954a4eb8d74dbfb2a65378 of umath.isinfinite:1
+msgid "Checks if a value is infinite."
+msgstr ""
+
+#: 60edbe25369d43dd8dc73f3419cf3e24 of umath.isinfinite:6
+msgid "``True`` if ``x`` is infinite, else ``False``."
+msgstr ""
+
+#: 114d15d0be7749af8b56799f5e8a5c12 of umath.isnan:1
+msgid "Checks if a value is not-a-number."
+msgstr ""
+
+#: a726e3d381a54717944e5d932818a15f of umath.isnan:6
+msgid "``True`` if ``x`` is not-a-number, else ``False``."
+msgstr ""
+
+#: 8e96826734ed4a9699af32d65d0e5e5c of umath.modf:1
+msgid ""
+"Gets the fractional and integral parts of ``x``, both with the same sign "
+"as ``x``."
+msgstr ""
+
+#: 08bcecf7a91841119147a7202da7386c of umath.modf:4
+msgid "Not to be confused with :func:`fmod`."
+msgstr ""
+
+#: 65ff92e6dcb945609307601644dbcbe1 c5b28b27a8254806a1e71ec5659d2906 of
+#: umath.frexp:4 umath.modf:6
+msgid "The value to be decomposed."
+msgstr ""
+
+#: 28f79c3c3948464699b96d13dca69b8b of umath.modf:9
+msgid "Tuple of fractional and integral parts."
+msgstr ""
+
+#: 5b19aa8117ca4fe796e72702689b2382 of umath.frexp:1
+msgid ""
+"Decomposes a value ``x`` into a tuple ``(m, p)``, such that ``x == m * (2"
+" ** p)``."
+msgstr ""
+
+#: 0976bcfba3b64dc6bdc90923891a71c4 of umath.frexp:7
+msgid "Tuple of ``m`` and ``p``."
+msgstr ""
+
+#: da484d0eeb7348099d553ee53ea99a58 of umath.ldexp:1
+msgid "Computes ``m * (2 ** p)``."
+msgstr ""
+
+#: 98aa6ea3e9964720997e983d1950a0e4 of umath.ldexp:8
+msgid "Result of ``m * (2 ** p)``."
+msgstr ""
+

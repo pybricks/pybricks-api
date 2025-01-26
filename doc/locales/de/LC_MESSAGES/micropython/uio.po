@@ -1,0 +1,68 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-2023 The Pybricks Authors
+# This file is distributed under the same license as the pybricks package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pybricks v3.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-01-26 20:11+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: de\n"
+"Language-Team: de <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../main/micropython/uio.rst:4 c8f1e2fffa604cfbab8c7bab9b18ad3d
+msgid ":mod:`uio` -- Input/output streams"
+msgstr ""
+
+#: 988368d23f6049bb8e83741ac81646c5 of uio:1
+msgid "This module contains ``stream`` objects that behave like files."
+msgstr ""
+
+#: 7b5a341fab0e44ee97bd59b85f0880c1 of uio.BytesIO:1
+msgid "A binary stream using an in-memory bytes buffer."
+msgstr ""
+
+#: ../../main/micropython/uio.rst 076888ce7c1b4974b4e8c835907c1fc3
+#: 73ec1e848d9b4768826103aa19d8be2d
+msgid "Parameters"
+msgstr ""
+
+#: 6ec7da908ac24375a9d718d5f73274fc of uio.BytesIO:3
+msgid "Optional bytes-like object that contains initial data."
+msgstr ""
+
+#: 3a1a784029104b0c8bbefbecfaefebff 473e83a122a8488da4d9df543dbc3527 of
+#: uio.BytesIO:6 uio.StringIO:5
+msgid ""
+"Optional number of preallocated bytes. This parameter is unique to "
+"MicroPython. It is not recommended to use it in end-user code."
+msgstr ""
+
+#: d9e47e0470eb47c09955b9cae9a52f6f df0e63639f1d4c8cbdb5c357263e2fe7 of
+#: uio.BytesIO.getvalue:1 uio.StringIO.getvalue:1
+msgid "Gets the contents of the underlying buffer."
+msgstr ""
+
+#: 2897928194c3449d8fdc5339fb215487 of uio.StringIO:1
+msgid "A stream using an in-memory string buffer."
+msgstr ""
+
+#: 5200d8e4f3fd44a395e0c481d6e7f1e4 of uio.StringIO:3
+msgid "Optional string with initial data."
+msgstr ""
+
+#: f59b8cd0af47444db6408cd7a80dcc15 of uio.FileIO:1
+msgid ""
+"This type represents a file opened in binary mode with ``open(name, "
+"'rb')``. You should not instantiate this class directly."
+msgstr ""
+

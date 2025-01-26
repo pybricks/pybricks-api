@@ -1,0 +1,352 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-2023 The Pybricks Authors
+# This file is distributed under the same license as the pybricks package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pybricks v3.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-01-26 20:11+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: de\n"
+"Language-Team: de <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../main/parameters/icon.rst:4 0a53cb43ac4b423fa4e46ed29f332a97
+msgid "Icon"
+msgstr ""
+
+#: 8293516ffd7a414a89a6f35221e405d1 of pybricks.parameters.Icon:1
+msgid "Icons to display on a light matrix."
+msgstr ""
+
+#: 4681f65f94184f1391a29a83022474c4 of pybricks.parameters.Icon:3
+msgid ""
+"Each of the following attributes are matrices. This means you can scale "
+"icons to adjust the brightness or add icons to make composites."
+msgstr ""
+
+#: ../../main/parameters/icon.rst:8 f3009e9851c847aeab3f4353a01c6db1
+msgid "See the :ref:`make_icons` section for examples."
+msgstr ""
+
+#: ../../docstring 10920119426740b4a101d6414d5fb12c
+#: 14bd93cc21464d75aefddf3da2b97ad3 18377c49e74947819eeb3141d4279f97
+#: 1be2ac9ca3ef4e9b85358f6401575665 4070dff00ef445f5ab41af9670ccefb8
+#: 51baa4f777f44a36be2a5fabd5ec4ba0 5993dd066da34af39b2a3f1c5baf4156
+#: 7fb080de2829479386b0353eaaa63cce 84001e5b47eb459e9843c3a89030a78e
+#: 8b011bb0bd23451fb5bb9caf6987831c 8fae61b6af3345138234228504da3f40
+#: 91cdd147799d45d2920326a274201c2d 95826803103544cfbd7a166d3f56cc7b
+#: 9c804ff190de4ad59abc1aa1d43a03e0 b7b1fdfa5f364b27a2d814eb7ad45932
+#: bf1cf3af5d714d41a97643155c1efedf cb088da4736c4a94a0512d0fbd08877a
+#: ee1fcce66a6742e39ece5bb544424162 ee4c32bf0fc2439089af9568bfd20a30
+#: eeb43f2510a94b89bd9beca227185ae3 of pybricks.parameters.Icon.ARROW_DOWN:1
+#: pybricks.parameters.Icon.ARROW_DOWN:2 pybricks.parameters.Icon.ARROW_DOWN:5
+#: pybricks.parameters.Icon.ARROW_LEFT:1 pybricks.parameters.Icon.ARROW_LEFT:5
+#: pybricks.parameters.Icon.ARROW_RIGHT:1
+#: pybricks.parameters.Icon.ARROW_RIGHT:5 pybricks.parameters.Icon.ARROW_UP:1
+#: pybricks.parameters.Icon.ARROW_UP:4 pybricks.parameters.Icon.ARROW_UP:5
+#: pybricks.parameters.Icon.DOWN:5 pybricks.parameters.Icon.FALSE:3
+#: pybricks.parameters.Icon.HEART:5 pybricks.parameters.Icon.LEFT:1
+#: pybricks.parameters.Icon.LEFT:5 pybricks.parameters.Icon.RIGHT:1
+#: pybricks.parameters.Icon.RIGHT:5 pybricks.parameters.Icon.TRIANGLE_DOWN:4
+#: pybricks.parameters.Icon.TRIANGLE_UP:2 pybricks.parameters.Icon.UP:1
+msgid "⬜⬜🟨⬜⬜"
+msgstr ""
+
+#: ../../docstring 1f1daf9e4e9047d393e9d8512dae9ea5
+#: 26a7171978cc443498f4355f0821e40d 3bca3137330940e2a6a96d3abcab09d0
+#: 3d69dd11f21f402f85a0d2ddc3ef5661 3df337d69de244df8ca81b41f3d2c31d
+#: 55ff6042e6f54cddb1aaf5997f59590e 57e0cf0364c84354916787c263e4165e
+#: 616dc212fc4144428c80a75ef2cfed32 70030470351042f788262368e1fe9cf3
+#: 82da1b21173942c2b5e0bab10e10d1e4 84aa511ae8674a56a6f6715925faaa0e
+#: 89246d621283403dad0e48f272847de8 900153f5900d4860b152246c61f390d2
+#: a21b1dc92d0f4587b1bb7ed26be652e0 c9d635003f74481e99b7c13ed280c3d4
+#: ce0ef23b29b74db0b5c85be428c50020 d65be416714b4929b9ebc84570b099bc
+#: dbc51d6cf4024809a391abd38aee6f2e ea1fbf605bc64d9da5c2985970209be0
+#: ff05af9dd84e4644afbf9f5d23219760 of pybricks.parameters.Icon.ARROW_DOWN:4
+#: pybricks.parameters.Icon.ARROW_UP:2 pybricks.parameters.Icon.CIRCLE:1
+#: pybricks.parameters.Icon.CIRCLE:5 pybricks.parameters.Icon.DOWN:1
+#: pybricks.parameters.Icon.DOWN:2 pybricks.parameters.Icon.DOWN:4
+#: pybricks.parameters.Icon.HAPPY:5 pybricks.parameters.Icon.HEART:4
+#: pybricks.parameters.Icon.SAD:4 pybricks.parameters.Icon.SQUARE:2
+#: pybricks.parameters.Icon.SQUARE:3 pybricks.parameters.Icon.SQUARE:4
+#: pybricks.parameters.Icon.TRIANGLE_DOWN:3
+#: pybricks.parameters.Icon.TRIANGLE_LEFT:3
+#: pybricks.parameters.Icon.TRIANGLE_RIGHT:3
+#: pybricks.parameters.Icon.TRIANGLE_UP:3 pybricks.parameters.Icon.UP:2
+#: pybricks.parameters.Icon.UP:4 pybricks.parameters.Icon.UP:5
+msgid "⬜🟨🟨🟨⬜"
+msgstr ""
+
+#: ../../docstring 19643dafb79b4cf888431050a2333461
+#: 20064aedcbc04b038559679b942e0cbb 28f3e185703942468530a60ccf85a99c
+#: 38d78514e5f64afa9f242da11c795b89 395b0c0d14c3417fbe640a5b4239f097
+#: 3d2ee41329854246b34267f44db37dae 44e73cceb2754c0899974ef398bf8e97
+#: 53fea568ffa14347a89c690bac86ea6e 682c6fc0c7dd4043b8472b5f59c83945
+#: 9887dec8cf4b46458378f80e6e8ca683 a258d2786414405ba11075ceee5f0672
+#: a7d8132f849147d6bea50e0b549cf2fc abf9e5d3e23a4fbd89f83bd1989aeb1b
+#: b6e352d372c54bbf8fd3eda838b7d142 c4158f9f25ef4433a4a3f8ea98e1faa1
+#: d4f3d64a534a47e1ad65bc4c9e76cfd6 db47106076e14819a88ff2ffe0a2c374
+#: f1eec914bd7b453d845b73c3b7b7ebec of pybricks.parameters.Icon.ARROW_LEFT:3
+#: pybricks.parameters.Icon.ARROW_RIGHT:3 pybricks.parameters.Icon.CIRCLE:2
+#: pybricks.parameters.Icon.CIRCLE:3 pybricks.parameters.Icon.CIRCLE:4
+#: pybricks.parameters.Icon.DOWN:3 pybricks.parameters.Icon.FULL:1
+#: pybricks.parameters.Icon.FULL:2 pybricks.parameters.Icon.FULL:3
+#: pybricks.parameters.Icon.FULL:4 pybricks.parameters.Icon.FULL:5
+#: pybricks.parameters.Icon.HEART:2 pybricks.parameters.Icon.HEART:3
+#: pybricks.parameters.Icon.LEFT:3 pybricks.parameters.Icon.RIGHT:3
+#: pybricks.parameters.Icon.TRIANGLE_DOWN:2
+#: pybricks.parameters.Icon.TRIANGLE_UP:4 pybricks.parameters.Icon.UP:3
+msgid "🟨🟨🟨🟨🟨"
+msgstr ""
+
+#: ../../docstring 12f61e2a7cb94b09b740b05767dbb110
+#: 4b1a3e8c4a8c4a8b97bcf0868423ebad fbe272b8a9d54530b0050bc5fc9711f0 of
+#: pybricks.parameters.Icon.COUNTERCLOCKWISE:1 pybricks.parameters.Icon.LEFT:2
+#: pybricks.parameters.Icon.LEFT:4
+msgid "⬜🟨🟨🟨🟨"
+msgstr ""
+
+#: ../../docstring 0c3bdd4aabc949b186ef7150c8684805
+#: 4f6a6893643a4ae88d29fe1465154b10 f6f17647253c4f3fa696aecf8864944c of
+#: pybricks.parameters.Icon.CLOCKWISE:1 pybricks.parameters.Icon.RIGHT:2
+#: pybricks.parameters.Icon.RIGHT:4
+msgid "🟨🟨🟨🟨⬜"
+msgstr ""
+
+#: ../../docstring b47789bdef2d47f883eb64f6522ae8cc
+#: f48fdb11ab6d47cc8e13a9fa7c165baa of
+#: pybricks.parameters.Icon.ARROW_RIGHT_DOWN:5
+#: pybricks.parameters.Icon.ARROW_RIGHT_UP:1
+msgid "⬜⬜🟨🟨🟨"
+msgstr ""
+
+#: ../../docstring 44207ff2a3f74aa5a4030becbb8dd666
+#: 828203a5dcc848fe8a41250488e3c164 861960d57129484abee732e2fd0e6517
+#: 87c91dda294c4e42b9593e1505a4c0bb a76eabc0dca1463faf875e266a82af5f
+#: b47decd7518344e1a23e94ee1e84e620 d60431c543cd4750b7386fc787907cdb of
+#: pybricks.parameters.Icon.ARROW_RIGHT_DOWN:4
+#: pybricks.parameters.Icon.ARROW_RIGHT_UP:2
+#: pybricks.parameters.Icon.EYE_RIGHT:3 pybricks.parameters.Icon.EYE_RIGHT:4
+#: pybricks.parameters.Icon.EYE_RIGHT_BLINK:4
+#: pybricks.parameters.Icon.EYE_RIGHT_BROW:2
+#: pybricks.parameters.Icon.EYE_RIGHT_BROW_UP:1
+msgid "⬜⬜⬜🟨🟨"
+msgstr ""
+
+#: ../../docstring 15537289a1964db28adc9a799677c398
+#: 7f96d40d95c44eae8999857fe10d84f9 of
+#: pybricks.parameters.Icon.ARROW_RIGHT_DOWN:3
+#: pybricks.parameters.Icon.ARROW_RIGHT_UP:3
+msgid "⬜⬜🟨⬜🟨"
+msgstr ""
+
+#: ../../docstring 21758202c97644518ecf325044dbf6db
+#: 25f2c6464a9241e9a034ba4eb0e5be87 58df5e09fe274529b31cbf7048bdb53a
+#: 72064307673a444d937a639ed34e24b5 8cf24848fafa4668bb084dca0a584ded
+#: aaa35dd1a7e240e48dc7ff44a9f98568 bfcc863a3cd840ec96bca9fd9c00c0c5
+#: f4a70e0908b744afa25197d6c3609d36 of pybricks.parameters.Icon.ARROW_LEFT:2
+#: pybricks.parameters.Icon.ARROW_LEFT:4
+#: pybricks.parameters.Icon.ARROW_RIGHT_DOWN:2
+#: pybricks.parameters.Icon.ARROW_RIGHT_UP:4
+#: pybricks.parameters.Icon.COUNTERCLOCKWISE:5
+#: pybricks.parameters.Icon.TRIANGLE_RIGHT:1
+#: pybricks.parameters.Icon.TRIANGLE_RIGHT:5 pybricks.parameters.Icon.TRUE:4
+msgid "⬜🟨⬜⬜⬜"
+msgstr ""
+
+#: ../../docstring 826eeb4d5c4344829c21dfdd1e325278
+#: e8d87b0c6175442797697f96ea7bcd8b of
+#: pybricks.parameters.Icon.ARROW_RIGHT_DOWN:1
+#: pybricks.parameters.Icon.ARROW_RIGHT_UP:5
+msgid "🟨⬜⬜⬜⬜"
+msgstr ""
+
+#: ../../docstring 64653dc03f4041f883193f908c15f4f7
+#: bf05ae70975444798a806a69d68b35f9 of
+#: pybricks.parameters.Icon.ARROW_LEFT_DOWN:5
+#: pybricks.parameters.Icon.ARROW_LEFT_UP:1
+msgid "🟨🟨🟨⬜⬜"
+msgstr ""
+
+#: ../../docstring 0f96e86c350a40d3993ed83f7b77dfc2
+#: 249cf344d69e4b66b35c31b6e42152e7 44255871799e420283c98028dad915a3
+#: 8548b98f9a4c4c27b394590c351193d3 8d1fa70f9c724158a56110077e8e13b6
+#: b783152199c644888173594b12783b2c dfcce8e028c6402f981ea6ac8c005a87 of
+#: pybricks.parameters.Icon.ARROW_LEFT_DOWN:4
+#: pybricks.parameters.Icon.ARROW_LEFT_UP:2 pybricks.parameters.Icon.EYE_LEFT:3
+#: pybricks.parameters.Icon.EYE_LEFT:4
+#: pybricks.parameters.Icon.EYE_LEFT_BLINK:4
+#: pybricks.parameters.Icon.EYE_LEFT_BROW:2
+#: pybricks.parameters.Icon.EYE_LEFT_BROW_UP:1
+msgid "🟨🟨⬜⬜⬜"
+msgstr ""
+
+#: ../../docstring 4cdf9ab7978c44be99b4b93affeabe1c
+#: 67af0b5520384b1d98bdf6cc7b10e8fe b47d7bbee3cc47fba5266dd5417a0b64 of
+#: pybricks.parameters.Icon.ARROW_LEFT_DOWN:3
+#: pybricks.parameters.Icon.ARROW_LEFT_UP:3 pybricks.parameters.Icon.TRUE:3
+msgid "🟨⬜🟨⬜⬜"
+msgstr ""
+
+#: ../../docstring 12159770968a43809298613fea3dc397
+#: 6cac1a5be0ac488cb77084bd9f8e3261 700a9baebccb4189b7fc6f667beffd05
+#: 7512008f7966427a93de7cea10c6dfaf bd45af22ca7a4b3c8790f4021b6b3a35
+#: de85a50945a54f67b9b0a31c1d22701b e79ff5fadb69450b9ab70a9d458c778c
+#: fef1e76ceb644225afb915ec1181fe01 of
+#: pybricks.parameters.Icon.ARROW_LEFT_DOWN:2
+#: pybricks.parameters.Icon.ARROW_LEFT_UP:4
+#: pybricks.parameters.Icon.ARROW_RIGHT:2
+#: pybricks.parameters.Icon.ARROW_RIGHT:4 pybricks.parameters.Icon.CLOCKWISE:5
+#: pybricks.parameters.Icon.TRIANGLE_LEFT:1
+#: pybricks.parameters.Icon.TRIANGLE_LEFT:5 pybricks.parameters.Icon.TRUE:2
+msgid "⬜⬜⬜🟨⬜"
+msgstr ""
+
+#: ../../docstring 337e3fa8a29b4ca38d19ebeddbaffd37
+#: 9a10d84d97b24cb98fd3f8d55a063fd7 d7719d4b4f5b4807813f57f03b837c58 of
+#: pybricks.parameters.Icon.ARROW_LEFT_DOWN:1
+#: pybricks.parameters.Icon.ARROW_LEFT_UP:5 pybricks.parameters.Icon.TRUE:1
+msgid "⬜⬜⬜⬜🟨"
+msgstr ""
+
+#: ../../docstring 2838493521334c80a15780b845e95774
+#: 7a4e897bbbee402ea15f062eb32a5126 of pybricks.parameters.Icon.ARROW_DOWN:3
+#: pybricks.parameters.Icon.ARROW_UP:3
+msgid "🟨⬜🟨⬜🟨"
+msgstr ""
+
+#: ../../docstring 0778c08077474584aa486d054c9290bd
+#: 08a8dbd302be4878ae5bab300a08f3c8 3d149c62c27a442eb03cfd3cb8e90bc1
+#: 7653835806004bd28a45d99f66ef87f6 of pybricks.parameters.Icon.HAPPY:1
+#: pybricks.parameters.Icon.HAPPY:2 pybricks.parameters.Icon.SAD:1
+#: pybricks.parameters.Icon.SAD:2
+msgid "🟨🟨⬜🟨🟨"
+msgstr ""
+
+#: ../../docstring 017af6bb0e514e018e4abb8fad612192
+#: 0601b5d44c16471fa3507b701e62f46e 095bf1ff8d0c4ce2a2bdfa4eff5bfeb0
+#: 15f13430fc0f4f32a8f0824c438545f2 1e369286633f40698b0750a0801f7afe
+#: 220b0cb293104f4e96998f25bb74bebc 2e3f37cfdca04d12a26f3c32515cc8eb
+#: 2e56b655ef6542c4ba1b120cf55cba81 34decefabb3845d88c26e13b5272bc5e
+#: 3527068d6dff4f5883342ea76417ffcd 3d74df3c00f141f69c8cf8884a531c7f
+#: 3fc09f1b586748d18ac59a8ad479d933 404897d8479e4d4d9daefae58255b583
+#: 42188173df1346ab82cb0e4b70cb08d9 4604ef89f83045308b5e70028fafedd5
+#: 48c15339bc0945c4b7e9437c281b89cc 48cdb6067080452c96069c2b0fdd8be1
+#: 513be4c42bc64513b64623e4728e557d 56bb196eaf8146ecabdcc28714a17ff3
+#: 5c844978cb6a43e3a2cd8677f3c2a2ce 6399d3891ea54c689f65ba93dd59cb33
+#: 645acb5944794c669b26f9dbb6019ab2 6d2d07c4714d433ba44c3dababac31bb
+#: 7a64ba000fde4a9ab70f22e70c7dcdd5 866903cb59c84832bbd971475ff54cb6
+#: 8a9744ae8e11428db6a10f450499ac4a 91367efb694b4f319d35fd37d05271a7
+#: 915935100f37426f896c01f087c17005 96a8dd348b3349c6a8d5d2bd7af97333
+#: 974e2c260d304e7e9da25a139fada540 98b4dd93fefb47f7a6598e63d70e6ec0
+#: ab8d393103af48acae650829868513bf aed60ae28f5e4da7b98df8a600e6272f
+#: b1941dfb105945a8a3a5a5faaa50ae94 b581ae998eaa4c138670878dabddc914
+#: c45aec5309e84d78bdc6fcee4bf412fd c61e442dc0474ad2bec939e711645b38
+#: cb2c7e3c9a2140218f0526e6b74fbd8e dfcad5a0c1be4c639bd17f9c33603366
+#: e118c3e5c78641f496c1cb1c53d270be e69c48ad14214935b81b992581e97a9c
+#: e8ef35f674ea413cbfc4d08ebb31bbeb ed9c4e0b1b6840c59fc223fae207b361
+#: f60674b3287a4e029a142b335fd9e49c fa63e71b0d1b42758f21f92f3dcca20d
+#: ff9b131b23444c1796c51558957e8777 of pybricks.parameters.Icon.EMPTY:1
+#: pybricks.parameters.Icon.EMPTY:2 pybricks.parameters.Icon.EMPTY:3
+#: pybricks.parameters.Icon.EMPTY:4 pybricks.parameters.Icon.EMPTY:5
+#: pybricks.parameters.Icon.EYE_LEFT:1 pybricks.parameters.Icon.EYE_LEFT:2
+#: pybricks.parameters.Icon.EYE_LEFT:5
+#: pybricks.parameters.Icon.EYE_LEFT_BLINK:1
+#: pybricks.parameters.Icon.EYE_LEFT_BLINK:2
+#: pybricks.parameters.Icon.EYE_LEFT_BLINK:3
+#: pybricks.parameters.Icon.EYE_LEFT_BLINK:5
+#: pybricks.parameters.Icon.EYE_LEFT_BROW:1
+#: pybricks.parameters.Icon.EYE_LEFT_BROW:3
+#: pybricks.parameters.Icon.EYE_LEFT_BROW:4
+#: pybricks.parameters.Icon.EYE_LEFT_BROW:5
+#: pybricks.parameters.Icon.EYE_LEFT_BROW_UP:2
+#: pybricks.parameters.Icon.EYE_LEFT_BROW_UP:3
+#: pybricks.parameters.Icon.EYE_LEFT_BROW_UP:4
+#: pybricks.parameters.Icon.EYE_LEFT_BROW_UP:5
+#: pybricks.parameters.Icon.EYE_RIGHT:1 pybricks.parameters.Icon.EYE_RIGHT:2
+#: pybricks.parameters.Icon.EYE_RIGHT:5
+#: pybricks.parameters.Icon.EYE_RIGHT_BLINK:1
+#: pybricks.parameters.Icon.EYE_RIGHT_BLINK:2
+#: pybricks.parameters.Icon.EYE_RIGHT_BLINK:3
+#: pybricks.parameters.Icon.EYE_RIGHT_BLINK:5
+#: pybricks.parameters.Icon.EYE_RIGHT_BROW:1
+#: pybricks.parameters.Icon.EYE_RIGHT_BROW:3
+#: pybricks.parameters.Icon.EYE_RIGHT_BROW:4
+#: pybricks.parameters.Icon.EYE_RIGHT_BROW:5
+#: pybricks.parameters.Icon.EYE_RIGHT_BROW_UP:2
+#: pybricks.parameters.Icon.EYE_RIGHT_BROW_UP:3
+#: pybricks.parameters.Icon.EYE_RIGHT_BROW_UP:4
+#: pybricks.parameters.Icon.EYE_RIGHT_BROW_UP:5
+#: pybricks.parameters.Icon.HAPPY:3 pybricks.parameters.Icon.PAUSE:1
+#: pybricks.parameters.Icon.PAUSE:5 pybricks.parameters.Icon.SAD:3
+#: pybricks.parameters.Icon.SQUARE:1 pybricks.parameters.Icon.SQUARE:5
+#: pybricks.parameters.Icon.TRIANGLE_DOWN:1
+#: pybricks.parameters.Icon.TRIANGLE_DOWN:5
+#: pybricks.parameters.Icon.TRIANGLE_UP:1
+#: pybricks.parameters.Icon.TRIANGLE_UP:5 pybricks.parameters.Icon.TRUE:5
+msgid "⬜⬜⬜⬜⬜"
+msgstr ""
+
+#: ../../docstring 56bd9cf22487440cae82453af3ca3666
+#: 9f338a770f64442fa6c4acd0466edcab c0d3f4094b144451b649ace218140d7d
+#: d33bc1ec999540579527665db35fa41d of pybricks.parameters.Icon.FALSE:1
+#: pybricks.parameters.Icon.FALSE:5 pybricks.parameters.Icon.HAPPY:4
+#: pybricks.parameters.Icon.SAD:5
+msgid "🟨⬜⬜⬜🟨"
+msgstr ""
+
+#: ../../docstring 3d96cb9eea1246f4aadf2238f3014c7e
+#: 527cb9cba05d4c68a7a8f0de0ec72c63 96a335c5c4d3489095e1371a22241fd1
+#: a8ddd3867da548ccab3e848ee3d01874 b07db7d0b0c24d18a282ce53dfce1a0e
+#: b7239fe1c41246cf973174d593a2862f of pybricks.parameters.Icon.FALSE:2
+#: pybricks.parameters.Icon.FALSE:4 pybricks.parameters.Icon.HEART:1
+#: pybricks.parameters.Icon.PAUSE:2 pybricks.parameters.Icon.PAUSE:3
+#: pybricks.parameters.Icon.PAUSE:4
+msgid "⬜🟨⬜🟨⬜"
+msgstr ""
+
+#: ../../docstring d4fdae5d07e441e19876024ac124b3a9
+#: eb0e0465d178459384be46b1ee8f4457 of
+#: pybricks.parameters.Icon.TRIANGLE_RIGHT:2
+#: pybricks.parameters.Icon.TRIANGLE_RIGHT:4
+msgid "⬜🟨🟨⬜⬜"
+msgstr ""
+
+#: ../../docstring 9be707dd62b54209a44831ef179da11f
+#: d97ee0b858c34746a979db21076ad1b3 of pybricks.parameters.Icon.TRIANGLE_LEFT:2
+#: pybricks.parameters.Icon.TRIANGLE_LEFT:4
+msgid "⬜⬜🟨🟨⬜"
+msgstr ""
+
+#: ../../docstring 17119c02969c46a9b6f760e045e11b89
+#: df58cc4345994a0a8419be0dec001d93 of pybricks.parameters.Icon.CLOCKWISE:2
+#: pybricks.parameters.Icon.CLOCKWISE:3
+msgid "🟨⬜⬜🟨⬜"
+msgstr ""
+
+#: ../../docstring b8708e1fa83e453cbed41563762d185d of
+#: pybricks.parameters.Icon.CLOCKWISE:4
+msgid "🟨⬜🟨🟨🟨"
+msgstr ""
+
+#: ../../docstring 5a238c1807d945ecba7d8590f5da88bc
+#: b959a671969341678155644ae53fb714 of
+#: pybricks.parameters.Icon.COUNTERCLOCKWISE:2
+#: pybricks.parameters.Icon.COUNTERCLOCKWISE:3
+msgid "⬜🟨⬜⬜🟨"
+msgstr ""
+
+#: ../../docstring d8572343e1d74bfaaca56cddb8125eb2 of
+#: pybricks.parameters.Icon.COUNTERCLOCKWISE:4
+msgid "🟨🟨🟨⬜🟨"
+msgstr ""
+

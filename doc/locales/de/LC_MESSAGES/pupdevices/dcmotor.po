@@ -1,0 +1,219 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-2023 The Pybricks Authors
+# This file is distributed under the same license as the pybricks package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pybricks v3.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-01-26 20:11+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: de\n"
+"Language-Team: de <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../main/pupdevices/dcmotor.rst:4 9f32d370d1b7496ba064e7074956dc7e
+msgid "Motors without rotation sensors"
+msgstr ""
+
+#: ../../main/pupdevices/dcmotor.rst:8 d87b071d01264ea19483d00459a72063
+msgid "pupmotors"
+msgstr ""
+
+#: ../../main/pupdevices/dcmotor.rst:8 d87b071d01264ea19483d00459a72063
+msgid ".. image:: ../../main/diagrams/pupdcmotors.png"
+msgstr ""
+
+#: ../../main/pupdevices/dcmotor.rst:13 72c1a8893ede44c1a4e4069d38a6b81e
+msgid ""
+"Powered Up motors without rotation sensors. The arrows indicate the "
+"default positive direction."
+msgstr ""
+
+#: ../../main/pupdevices/dcmotor.rst:16 74e70f8135ff48d2a5abd2e112d5f593
+msgid ".. image:: /blockimg/pybricks_variables_set_dc_motor.svg"
+msgstr ""
+
+#: c5f94b1a5d574d1ca4e3e08265a6b7d6 of pybricks.pupdevices.DCMotor:1
+msgid "LEGO® Powered Up motor without rotation sensors."
+msgstr ""
+
+#: ../../main/pupdevices/dcmotor.rst 18ba76413c84400a8da19a4eae4ec996
+#: 7aff3fb87fea4603b01e9c61fdf497f4 98a2d55ff59a4dbc9ce6176f0279a8b2
+msgid "Parameters"
+msgstr ""
+
+#: c74cdf9a8883489db1a9561b479f66a9 of pybricks.pupdevices.DCMotor:3
+msgid "Port to which the motor is connected."
+msgstr ""
+
+#: 5a5d7f272d914d1b809ac3350983b4d3 of pybricks.pupdevices.DCMotor:5
+msgid ""
+"Which direction the motor should turn when you give a positive duty cycle"
+" value."
+msgstr ""
+
+#: ../../main/pupdevices/dcmotor.rst:21 aa53538c782249beb0984c86d19b58fc
+msgid ".. image:: /blockimg/pybricks_blockMotorDuty_DCMotor.svg"
+msgstr ""
+
+#: 20817b7a5e154a60a9ade23aeeb63611 of pybricks._common.DCMotor.dc:1
+msgid "Rotates the motor at a given duty cycle (also known as \"power\")."
+msgstr ""
+
+#: f3d6a01db71a4e95be3ebbb79e3572c3 of pybricks._common.DCMotor.dc:3
+msgid "The duty cycle (-100.0 to 100)."
+msgstr ""
+
+#: ../../main/pupdevices/dcmotor.rst:26 034e909d94f9432fb9e9151ce3f4df89
+msgid ".. image:: /blockimg/pybricks_blockMotorStop_DCMotor_coast.svg"
+msgstr ""
+
+#: 4ca88a7cb81843798dc3d4180a40275d of pybricks._common.DCMotor.stop:1
+msgid "Stops the motor and lets it spin freely."
+msgstr ""
+
+#: b0d05e05f3384d84a51baf21a1766003 of pybricks._common.DCMotor.stop:3
+msgid "The motor gradually stops due to friction."
+msgstr ""
+
+#: ../../main/pupdevices/dcmotor.rst:31 64de981cf15a4b0baa7d5c81666096da
+msgid ".. image:: /blockimg/pybricks_blockMotorStop_DCMotor_brake.svg"
+msgstr ""
+
+#: 1e9ef6b298ec43cebf040d28c1a946e8 of pybricks._common.DCMotor.brake:1
+msgid "Passively brakes the motor."
+msgstr ""
+
+#: 30368a82f6944dc4b797ded58874ecc0 of pybricks._common.DCMotor.brake:3
+msgid ""
+"The motor stops due to friction, plus the voltage that is generated while"
+" the motor is still moving."
+msgstr ""
+
+#: 3d5487446f5e4a15a8c4c02cc020f13c of pybricks._common.DCMotor.settings:1
+msgid "settings(max_voltage) settings() -> Tuple[int]"
+msgstr ""
+
+#: 7038489566ca43daa50c98d0774a4611 of pybricks._common.DCMotor.settings:4
+msgid ""
+"Configures motor settings. If no arguments are given, this returns the "
+"current values."
+msgstr ""
+
+#: b2ed5bb1de2d43f49480bee700d0d89b of pybricks._common.DCMotor.settings:7
+msgid "Maximum voltage applied to the motor during all motor commands."
+msgstr ""
+
+#: ../../main/pupdevices/dcmotor.rst:40 8a537596e8464e43b130c4cc9d18c701
+msgid "Examples"
+msgstr ""
+
+#: ../../main/pupdevices/dcmotor.rst:43 2f2d43ae39aa4099a6105555aebcd671
+msgid "Making a train drive forever"
+msgstr ""
+
+#: ../../main/pupdevices/dcmotor.rst:45 011483c882b449e095cddc155d658fac
+msgid ""
+"from pybricks.pupdevices import DCMotor\n"
+"from pybricks.parameters import Port\n"
+"from pybricks.tools import wait\n"
+"\n"
+"# Initialize the motor.\n"
+"train_motor = DCMotor(Port.A)\n"
+"\n"
+"# Choose the \"power\" level for your train. Negative means reverse.\n"
+"train_motor.dc(50)\n"
+"\n"
+"# Keep doing nothing. The train just keeps going.\n"
+"while True:\n"
+"    wait(1000)\n"
+msgstr ""
+
+#: ../../main/pupdevices/dcmotor.rst:49 331924d8275948889bae8964bb08393f
+msgid "Making the motor move back and forth"
+msgstr ""
+
+#: ../../main/pupdevices/dcmotor.rst:51 e124a04763284a4bb2c6f921cd0956c2
+#, python-format
+msgid ""
+"from pybricks.pupdevices import DCMotor\n"
+"from pybricks.parameters import Port\n"
+"from pybricks.tools import wait\n"
+"\n"
+"# Initialize a motor without rotation sensors on port A.\n"
+"example_motor = DCMotor(Port.A)\n"
+"\n"
+"# Make the motor go clockwise (forward) at 70% duty cycle (\"70% "
+"power\").\n"
+"example_motor.dc(70)\n"
+"\n"
+"# Wait for three seconds.\n"
+"wait(3000)\n"
+"\n"
+"# Make the motor go counterclockwise (backward) at 70% duty cycle.\n"
+"example_motor.dc(-70)\n"
+"\n"
+"# Wait for three seconds.\n"
+"wait(3000)\n"
+msgstr ""
+
+#: ../../main/pupdevices/dcmotor.rst:55 86c823caec06434bb330a0c56ee20d01
+msgid "Changing the positive direction"
+msgstr ""
+
+#: ../../main/pupdevices/dcmotor.rst:57 a440561c2cd941c4bf4715d9e2ed5475
+msgid ""
+"from pybricks.pupdevices import DCMotor\n"
+"from pybricks.parameters import Port, Direction\n"
+"from pybricks.tools import wait\n"
+"\n"
+"# Initialize a motor without rotation sensors on port A,\n"
+"# with the positive direction as counterclockwise.\n"
+"example_motor = DCMotor(Port.A, Direction.COUNTERCLOCKWISE)\n"
+"\n"
+"# When we choose a positive duty cycle, the motor now goes "
+"counterclockwise.\n"
+"example_motor.dc(70)\n"
+"\n"
+"# This is useful when your (train) motor is mounted in reverse or upside "
+"down.\n"
+"# By changing the positive direction, your script will be easier to read,"
+"\n"
+"# because a positive value now makes your train/robot go forward.\n"
+"\n"
+"# Wait for three seconds.\n"
+"wait(3000)\n"
+msgstr ""
+
+#: ../../main/pupdevices/dcmotor.rst:61 f8fa4925e094484f9b7eb45a18062c01
+msgid "Starting and stopping"
+msgstr ""
+
+#: ../../main/pupdevices/dcmotor.rst:63 c5d3453be8b74dbaa7bfdc22c4372da9
+msgid ""
+"from pybricks.pupdevices import DCMotor\n"
+"from pybricks.parameters import Port\n"
+"from pybricks.tools import wait\n"
+"\n"
+"# Initialize a motor without rotation sensors on port A.\n"
+"example_motor = DCMotor(Port.A)\n"
+"\n"
+"# Start and stop 10 times.\n"
+"for count in range(10):\n"
+"    print(\"Counter:\", count)\n"
+"\n"
+"    example_motor.dc(70)\n"
+"    wait(1000)\n"
+"\n"
+"    example_motor.stop()\n"
+"    wait(1000)\n"
+msgstr ""
+

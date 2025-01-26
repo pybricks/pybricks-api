@@ -1,0 +1,163 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-2023 The Pybricks Authors
+# This file is distributed under the same license as the pybricks package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pybricks v3.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-01-26 20:11+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: de\n"
+"Language-Team: de <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../main/iodevices/pupdevice.rst:4 3f2b717ea65f4f4f8319ec02436bc7ec
+msgid "Powered Up Device"
+msgstr ""
+
+#: ../../main/iodevices/pupdevice.rst:6 ed0d66e4f8f449bab7f53d68faf13120
+msgid ".. image:: ../cad/output/iodevice-pupdevice.png"
+msgstr ""
+
+#: 8addb77097f54c9a9c32b1640efa9c13 of pybricks.iodevices.PUPDevice:1
+msgid "Powered Up motor or sensor."
+msgstr ""
+
+#: ../../main/iodevices/pupdevice.rst b59e9ffef11043948dfbfd3b3d5df45b
+#: b83d509326af494cab61f56215513eba dcffb70b1fee4106887639745b528359
+msgid "Parameters"
+msgstr ""
+
+#: 67c0dd8106614e99a65ab29d80ec1bfa of pybricks.iodevices.PUPDevice:3
+msgid "Port to which the device is connected."
+msgstr ""
+
+#: d3950ee859ce469ca6bcecade9372306 of pybricks.iodevices.PUPDevice.info:1
+msgid "Gets information about the device."
+msgstr ""
+
+#: ../../main/iodevices/pupdevice.rst 99f6e80fa6ac4e0788be527dcb483b91
+#: 9af3b7fe84424c4a858b4e1a3094886e
+msgid "Returns"
+msgstr ""
+
+#: 78e1dd02b9b443faa4a286e45b8ad86d of pybricks.iodevices.PUPDevice.info:3
+msgid "Dictionary with information, such as the device ``id``."
+msgstr ""
+
+#: 3cfeca952ad6434fa9ba063f9a0b639a of pybricks.iodevices.PUPDevice.read:1
+msgid "Reads values from a given mode."
+msgstr ""
+
+#: 452ecdf7e58d4cbba68f07e172e34456 c0ac5960f3e24ac0997066576fce5880 of
+#: pybricks.iodevices.PUPDevice.read:3 pybricks.iodevices.PUPDevice.write:4
+msgid "Device mode."
+msgstr ""
+
+#: a8f6850b64574f00aaf22bb866315978 of pybricks.iodevices.PUPDevice.read:6
+msgid "Values read from the sensor."
+msgstr ""
+
+#: d7fa0b55308843ae8d70ed25729a9e01 of pybricks.iodevices.PUPDevice.write:1
+msgid "Writes values to the sensor. Only selected sensors and modes support this."
+msgstr ""
+
+#: f71e10fd1e5a477097de4851587e79fe of pybricks.iodevices.PUPDevice.write:6
+msgid "Values to be written."
+msgstr ""
+
+#: ../../main/iodevices/pupdevice.rst:19 b250ed31a0ea4c58a1738b474ce0f810
+msgid "Examples"
+msgstr ""
+
+#: ../../main/iodevices/pupdevice.rst:22 ee5ab0007fcb4098a76c8f6a204d8fc3
+msgid "Detecting devices"
+msgstr ""
+
+#: ../../main/iodevices/pupdevice.rst:24 ba2a783202ec4c38ac9388d4789b99a4
+msgid ""
+"from pybricks.iodevices import PUPDevice\n"
+"from pybricks.parameters import Port\n"
+"from uerrno import ENODEV\n"
+"\n"
+"# Dictionary of device identifiers along with their name.\n"
+"device_names = {\n"
+"    # pybricks.pupdevices.DCMotor\n"
+"    1: \"Wedo 2.0 Medium Motor\",\n"
+"    2: \"Powered Up Train Motor\",\n"
+"    # pybricks.pupdevices.Light\n"
+"    8: \"Powered Up Light\",\n"
+"    # pybricks.pupdevices.Motor\n"
+"    38: \"BOOST Interactive Motor\",\n"
+"    46: \"Technic Large Motor\",\n"
+"    47: \"Technic Extra Large Motor\",\n"
+"    48: \"SPIKE Medium Angular Motor\",\n"
+"    49: \"SPIKE Large Angular Motor\",\n"
+"    65: \"SPIKE Small Angular Motor\",\n"
+"    75: \"Technic Medium Angular Motor\",\n"
+"    76: \"Technic Large Angular Motor\",\n"
+"    # pybricks.pupdevices.TiltSensor\n"
+"    34: \"Wedo 2.0 Tilt Sensor\",\n"
+"    # pybricks.pupdevices.InfraredSensor\n"
+"    35: \"Wedo 2.0 Infrared Motion Sensor\",\n"
+"    # pybricks.pupdevices.ColorDistanceSensor\n"
+"    37: \"BOOST Color Distance Sensor\",\n"
+"    # pybricks.pupdevices.ColorSensor\n"
+"    61: \"SPIKE Color Sensor\",\n"
+"    # pybricks.pupdevices.UltrasonicSensor\n"
+"    62: \"SPIKE Ultrasonic Sensor\",\n"
+"    # pybricks.pupdevices.ForceSensor\n"
+"    63: \"SPIKE Force Sensor\",\n"
+"    # pybricks.pupdevices.ColorLightMatrix\n"
+"    64: \"SPIKE 3x3 Color Light Matrix\",\n"
+"}\n"
+"\n"
+"# Make a list of known ports.\n"
+"ports = [Port.A, Port.B]\n"
+"\n"
+"# On hubs that support it, add more ports.\n"
+"try:\n"
+"    ports.append(Port.C)\n"
+"    ports.append(Port.D)\n"
+"except AttributeError:\n"
+"    pass\n"
+"\n"
+"# On hubs that support it, add more ports.\n"
+"try:\n"
+"    ports.append(Port.E)\n"
+"    ports.append(Port.F)\n"
+"except AttributeError:\n"
+"    pass\n"
+"\n"
+"# Go through all available ports.\n"
+"for port in ports:\n"
+"\n"
+"    # Try to get the device, if it is attached.\n"
+"    try:\n"
+"        device = PUPDevice(port)\n"
+"    except OSError as ex:\n"
+"        if ex.args[0] == ENODEV:\n"
+"            # No device found on this port.\n"
+"            print(port, \": ---\")\n"
+"            continue\n"
+"        else:\n"
+"            raise\n"
+"\n"
+"    # Get the device id\n"
+"    id = device.info()[\"id\"]\n"
+"\n"
+"    # Look up the name.\n"
+"    try:\n"
+"        print(port, \":\", device_names[id])\n"
+"    except KeyError:\n"
+"        print(port, \":\", \"Unknown device with ID\", id)\n"
+msgstr ""
+

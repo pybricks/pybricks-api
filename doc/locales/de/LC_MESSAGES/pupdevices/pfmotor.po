@@ -1,0 +1,185 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-2023 The Pybricks Authors
+# This file is distributed under the same license as the pybricks package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pybricks v3.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-01-26 20:11+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: de\n"
+"Language-Team: de <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../main/pupdevices/pfmotor.rst:4 48d3b9be899e420b82e0d8140063e0d3
+msgid "Power Functions"
+msgstr ""
+
+#: ../../main/pupdevices/pfmotor.rst:6 c074f2b8e49f4d9aaba9ef5d46818707
+msgid ""
+"The :class:`ColorDistanceSensor "
+"<pybricks.pupdevices.ColorDistanceSensor>` can send infrared signals to "
+"control Power Functions infrared receivers. You can use this technique to"
+" control medium, large, extra large, and train motors. The infrared range"
+" is limited to about 30 cm, depending on the angle and ambient "
+"conditions."
+msgstr ""
+
+#: ../../main/pupdevices/pfmotor.rst:12 e406302c959f4287a26bc3c5d4557005
+msgid ".. image:: ../../main/cad/output/pupdevice-pfmotor.png"
+msgstr ""
+
+#: ../../main/pupdevices/pfmotor.rst:15 425315c703534b1ebdda406414538255
+msgid ""
+"Powered Up :class:`ColorDistanceSensor "
+"<pybricks.pupdevices.ColorDistanceSensor>` (left), Power Functions "
+"infrared receiver (middle), and a Power Functions motor (right). Here, "
+"the receiver uses channel 1 with a motor on the red port."
+msgstr ""
+
+#: ../../main/pupdevices/pfmotor.rst:21 051b19ae09d541dca7f173a4912c0f8e
+msgid ".. image:: /blockimg/pybricks_variables_set_pf_motor.svg"
+msgstr ""
+
+#: 78d6c9fe3a714831a7ca25178b844b78 of pybricks.pupdevices.PFMotor:1
+msgid ""
+"Control Power Functions motors with the infrared functionality of the "
+":class:`ColorDistanceSensor <pybricks.pupdevices.ColorDistanceSensor>`."
+msgstr ""
+
+#: ../../main/pupdevices/pfmotor.rst 6184116737c44d25811cfe7fb68d71df
+#: ef4db882318049729875b02bf0cdf989
+msgid "Parameters"
+msgstr ""
+
+#: 49760f1ddd9845239e8c7bda5cd5ce9a of pybricks.pupdevices.PFMotor:4
+msgid "Sensor object."
+msgstr ""
+
+#: 7c9fb9bea92b4f65ac04c76ac0b851c3 of pybricks.pupdevices.PFMotor:6
+msgid "Channel number of the receiver: ``1``, ``2``, ``3``, or ``4``."
+msgstr ""
+
+#: 069aa0b31a0a462eb0c2baaa17c86564 of pybricks.pupdevices.PFMotor:8
+msgid ""
+"Color marker on the receiver: :class:`Color.BLUE <.parameters.Color>` or "
+":class:`Color.RED <.parameters.Color>`"
+msgstr ""
+
+#: f0bea0029aac4463a400f5efad601ec9 of pybricks.pupdevices.PFMotor:12
+msgid ""
+"Which direction the motor should turn when you give a positive duty cycle"
+" value."
+msgstr ""
+
+#: ../../main/pupdevices/pfmotor.rst:27 c7bb789126e4405e82abe23b51958a70
+msgid ".. image:: /blockimg/pybricks_blockMotorDuty_PFMotor.svg"
+msgstr ""
+
+#: 396b4f23aef8438186de29dd4f89956a of pybricks.pupdevices.PFMotor.dc:1
+msgid "Rotates the motor at a given duty cycle (also known as \"power\")."
+msgstr ""
+
+#: 0b6ed50334d14f21b3cdcd2b9bc8fd7d of pybricks.pupdevices.PFMotor.dc:3
+msgid "The duty cycle (-100.0 to 100)."
+msgstr ""
+
+#: ../../main/pupdevices/pfmotor.rst:32 ecfe3a61bbca4b53a8ae2d0e55728ccc
+msgid ".. image:: /blockimg/pybricks_blockMotorStop_PFMotor_coast.svg"
+msgstr ""
+
+#: 05161062ca23401aa1327f31c2199773 of pybricks.pupdevices.PFMotor.stop:1
+msgid "Stops the motor and lets it spin freely."
+msgstr ""
+
+#: e0c92215f82b46ee80bc1cc1985dd814 of pybricks.pupdevices.PFMotor.stop:3
+msgid "The motor gradually stops due to friction."
+msgstr ""
+
+#: ../../main/pupdevices/pfmotor.rst:37 b9fb2d44f9d249b2b5d7cc8c7569d790
+msgid ".. image:: /blockimg/pybricks_blockMotorStop_PFMotor_brake.svg"
+msgstr ""
+
+#: 8ea4ef0f7fd540e19fcfb6897294b2f8 of pybricks.pupdevices.PFMotor.brake:1
+msgid "Passively brakes the motor."
+msgstr ""
+
+#: 59133e8570dd41b2bcfb0324ea66964f of pybricks.pupdevices.PFMotor.brake:3
+msgid ""
+"The motor stops due to friction, plus the voltage that is generated while"
+" the motor is still moving."
+msgstr ""
+
+#: ../../main/pupdevices/pfmotor.rst:43 0ebbce4f80094c8b8b19e1337ef85756
+msgid "Examples"
+msgstr ""
+
+#: ../../main/pupdevices/pfmotor.rst:46 08cc3d3da7e849949a20201bd32ed626
+msgid "Control a Power Functions motor"
+msgstr ""
+
+#: ../../main/pupdevices/pfmotor.rst:48 363bc700f7ae430095ee9f969a95d9d9
+msgid ""
+"from pybricks.pupdevices import ColorDistanceSensor, PFMotor\n"
+"from pybricks.parameters import Port, Color\n"
+"from pybricks.tools import wait\n"
+"\n"
+"# Initialize the sensor.\n"
+"sensor = ColorDistanceSensor(Port.B)\n"
+"\n"
+"# Initialize a motor on channel 1, on the red output.\n"
+"motor = PFMotor(sensor, 1, Color.RED)\n"
+"\n"
+"# Rotate and then stop.\n"
+"motor.dc(100)\n"
+"wait(1000)\n"
+"motor.stop()\n"
+"wait(1000)\n"
+"\n"
+"# Rotate the other way at half speed, and then stop.\n"
+"motor.dc(-50)\n"
+"wait(1000)\n"
+"motor.stop()\n"
+msgstr ""
+
+#: ../../main/pupdevices/pfmotor.rst:52 d8324bd195f94de4a025925231c31c00
+msgid "Controlling multiple Power Functions motors"
+msgstr ""
+
+#: ../../main/pupdevices/pfmotor.rst:54 936f959aa2d3442886a1bbb4b8963adf
+msgid ""
+"from pybricks.pupdevices import ColorDistanceSensor, PFMotor\n"
+"from pybricks.parameters import Port, Color, Direction\n"
+"from pybricks.tools import wait\n"
+"\n"
+"# Initialize the sensor.\n"
+"sensor = ColorDistanceSensor(Port.B)\n"
+"\n"
+"# You can use multiple motors on different channels.\n"
+"arm = PFMotor(sensor, 1, Color.BLUE)\n"
+"wheel = PFMotor(sensor, 4, Color.RED, Direction.COUNTERCLOCKWISE)\n"
+"\n"
+"# Accelerate both motors. Only these values are available.\n"
+"# Other values will be rounded down to the nearest match.\n"
+"for duty in [15, 30, 45, 60, 75, 90, 100]:\n"
+"    arm.dc(duty)\n"
+"    wheel.dc(duty)\n"
+"    wait(1000)\n"
+"\n"
+"# To make the signal more reliable, there is a short\n"
+"# pause between commands. So, they change speed and\n"
+"# stop at a slightly different time.\n"
+"\n"
+"# Brake both motors.\n"
+"arm.brake()\n"
+"wheel.brake()\n"
+msgstr ""
+

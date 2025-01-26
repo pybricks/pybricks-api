@@ -1,0 +1,186 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-2023 The Pybricks Authors
+# This file is distributed under the same license as the pybricks package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pybricks v3.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-01-26 20:11+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: de\n"
+"Language-Team: de <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../main/micropython/urandom.rst:4 c263fc08849d42caa527005573703e1a
+msgid ":mod:`urandom` -- Pseudo-random numbers"
+msgstr ""
+
+#: 20defd2993bb4e1694d141a89e0a6970 of urandom:1
+msgid "This module implements pseudo-random number generators."
+msgstr ""
+
+#: 6982808e22bc4f439533b0be45892638 of urandom:3
+msgid ""
+"All functions in this module should be used with positional arguments. "
+"Keyword arguments are not supported."
+msgstr ""
+
+#: ../../main/micropython/urandom.rst:10 7373d7b8183e43dd8e8c7733a06a4978
+msgid "Basic random numbers"
+msgstr ""
+
+#: ../../main/micropython/urandom.rst:11 206881cf675142db8b5ebf9bdcb6fb37
+msgid ".. image:: /blockimg/pybricks_blockRandInt.svg"
+msgstr ""
+
+#: 956c530e619c40fdba867de11c5c0222 of urandom.randint:1
+msgid "Gets a random integer :math:`N` satisfying :math:`a \\leq N \\leq b`."
+msgstr ""
+
+#: ../../main/micropython/urandom.rst 15bb5b0dd5294221bdca444762834dd0
+#: 1f4e57cba3674efea5e6ae4bf6647f67 668c73471f7145a9b992af89b3169d36
+#: 945dd3176214466a9b4bdde5d001f175 9e1c0b307f194a5baa5438634d6b1f25
+#: ff37f8905c2c4f0cb82cc69782a4c8e7
+msgid "Parameters"
+msgstr ""
+
+#: ed818cf64eec411a9100281c4261dd6b of urandom.randint:3
+msgid "Lowest value. This value *is* included in the range."
+msgstr ""
+
+#: 905dd34d0ccf4e3eb859c9ace2467e88 of urandom.randint:5
+msgid "Highest value. This value *is* included in the range."
+msgstr ""
+
+#: ../../main/micropython/urandom.rst 1844f8ef1e8c4341bfd342039682730f
+#: 4b41b88ea0f0406a83a6fb3a5f2c4ad4 6b19c533bad44d87bc8dd315d4bde619
+#: 766144c1fe1e495d9cd395050cd9ab50 ae2855b0013446fb9ad895fee45bac08
+msgid "Returns"
+msgstr ""
+
+#: d8dbb7193b874823ab774010e6cb1164 of urandom.randint:8
+msgid "The random integer."
+msgstr ""
+
+#: 56b7c7c5e66e46009a51bbae26adec51 of urandom.random:1
+msgid "Gets a random value :math:`x` satisfying :math:`0 \\leq x < 1`."
+msgstr ""
+
+#: d261df89166745ef89ee3635f825ea36 d2ba89ef6422412aa907fa155124d9a3 of
+#: urandom.random:3 urandom.uniform:8
+msgid "The random value."
+msgstr ""
+
+#: ../../main/micropython/urandom.rst:18 cc342d9b617a4a529a4c2e5e20d32156
+msgid "Random numbers from a range"
+msgstr ""
+
+#: f9bfeee4ad4d4d05ac706ef42c1aa0d6 of urandom.getrandbits:1
+msgid ""
+"Gets a random integer :math:`N` satisfying :math:`0 \\leq N < "
+"2^{\\text{k}}`."
+msgstr ""
+
+#: d57af5cb97da44069a5132119f4ac8f5 of urandom.getrandbits:3
+msgid "How many bits to use for the result."
+msgstr ""
+
+#: 4479b17412e14dfbbde17910d7476c26 of urandom.randrange:1
+msgid ""
+"randrange(stop) -> int randrange(start, stop) -> int randrange(start, "
+"stop, step) -> int"
+msgstr ""
+
+#: b1280881aca24fb983d713f3711756f2 of urandom.randrange:5
+msgid "Returns a randomly selected element from ``range(start, stop, step)``."
+msgstr ""
+
+#: 92afebcba2e44149a418247a52eb0b86 of urandom.randrange:7
+msgid ""
+"For example, ``randrange(1, 7, 2)`` returns random numbers from ``1`` up "
+"to (but excluding) ``7``, in increments of ``2``. In other words, it "
+"returns ``1``, ``3``, or ``5``."
+msgstr ""
+
+#: b1116ec95be84681adae6de1ab35fb2b of urandom.randrange:12
+msgid "Lowest value. Defaults to ``0`` if only one argument is given."
+msgstr ""
+
+#: a21ae641b47046fdbf415e5e778f96fa of urandom.randrange:14
+msgid "Highest value. This value is *not* included in the range."
+msgstr ""
+
+#: a43987b0bda4477b9c1d3d22f5ae1069 of urandom.randrange:16
+msgid ""
+"Increment between values. Defaults to ``1`` if only one or two arguments "
+"are given."
+msgstr ""
+
+#: 8e17509201d345c9ba5f5f31634b99f3 of urandom.randrange:20
+msgid "The random number."
+msgstr ""
+
+#: 79e629bd8f484fde9e6701332a625c50 of urandom.uniform:1
+msgid ""
+"Gets a random floating point value :math:`x` satisfying :math:`a \\leq x "
+"\\leq b`."
+msgstr ""
+
+#: bcb2ac5ef1ee4779b04ea400a3be6d17 of urandom.uniform:3
+msgid "Lowest value."
+msgstr ""
+
+#: d67de72267ca408f857b5491273a28cf of urandom.uniform:5
+msgid "Highest value."
+msgstr ""
+
+#: ../../main/micropython/urandom.rst:26 b10f2504850e4665b3d97fa906c2288e
+msgid "Random elements from a sequence"
+msgstr ""
+
+#: 2e2f4f1078794d6d9a19a97ceb512769 of urandom.choice:1
+msgid "Gets a random element from a sequence such as a tuple or list."
+msgstr ""
+
+#: 6bb01e4ace7e455fa5b0723ce25a8576 of urandom.choice:3
+msgid "Sequence from which to select a random element."
+msgstr ""
+
+#: 7468bad4c4c0433ea4a6bf2b191ea621 of urandom.choice:5
+msgid "The randomly selected element."
+msgstr ""
+
+#: ../../main/micropython/urandom.rst debb79fe169744fe96fb4ea6ed3352d2
+msgid "Raises"
+msgstr ""
+
+#: 6bbe3ea3cccd45d5b2cf4f3d8298ab92 of urandom.choice:7
+msgid "If the sequence is empty."
+msgstr ""
+
+#: ../../main/micropython/urandom.rst:30 ca509c4201df4d05bce69da941aa2b23
+msgid "Updating the random seed"
+msgstr ""
+
+#: 54443a5a12024dd9af06354ed052c4e2 of urandom.seed:1
+msgid "Initializes the random number generator."
+msgstr ""
+
+#: fe34891c50e64238b190c22a602053a3 of urandom.seed:3
+msgid ""
+"This gets called when the module is imported, so normally you do not need"
+" to call this."
+msgstr ""
+
+#: 13f95c513b9141829121f23d68b9741f of urandom.seed:6
+msgid "Seed value. When using ``None``, the system timer will be used."
+msgstr ""
+
