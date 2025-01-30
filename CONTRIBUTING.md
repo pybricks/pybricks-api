@@ -118,6 +118,47 @@ Then follows a list of arguments:
 Then follows a description of the return value. The type is omitted here since
 it is already include in the docstring signature.
 
+**Translating Code Examples:**
+
+The documentation system supports translating comments in code examples without duplicating the code itself. This is particularly useful for maintaining example code in multiple languages while keeping the actual code synchronized.
+
+Directory Structure:
+```
+examples/
+├── micropython/
+│   └── example.py          # Original example with English comments
+└── translations/
+    └── de/                 # Language code (e.g., 'de' for German)
+        └── micropython/
+            └── example.py.comments  # Translations file
+```
+
+Translation Files:
+- Create a `.comments` file in the corresponding language directory
+- Use the format: `original comment = translated comment`
+- Each translation should be on a new line
+- Lines starting with `#` are ignored (can be used for translator notes)
+
+Example translation file (`example.py.comments`):
+```
+# Translations for example.py
+Initialize the motor. = Initialisiere den Motor.
+Start moving at 500 deg/s. = Beginne die Bewegung mit 500 Grad/Sekunde.
+```
+
+In RST files, use the `translated-literalinclude` directive instead of `literalinclude` to include code examples that should have translated comments:
+
+```rst
+.. translated-literalinclude::
+    ../../../examples/micropython/example.py
+```
+
+The translation system will:
+1. Include the original code file
+2. If building for a non-English language, look for corresponding `.comments` file
+3. Replace comments with translations if they exist
+4. Fall back to original comments if no translation exists
+
 **Development environment:**
 
 Prerequisites:
