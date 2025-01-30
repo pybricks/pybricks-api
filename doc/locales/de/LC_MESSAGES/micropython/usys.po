@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pybricks v3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-26 20:11+0100\n"
+"POT-Creation-Date: 2025-01-30 22:50+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: de\n"
@@ -19,93 +19,71 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.16.0\n"
 
-#: ../../main/micropython/usys.rst:4 4be65c67faf748d8b37efb1791683b9c
+#: ../../main/micropython/usys.rst:4 34bc5f36087d4b7081d17c38fa996791
 msgid ":mod:`usys` -- System specific functions"
 msgstr ""
 
-#: ../../main/micropython/usys.rst:6 c3171b6ffcc34b6fb86690922264006b
+#: ../../main/micropython/usys.rst:6 300de92c07f74f6aa416f154e760b9ef
 msgid "This MicroPython module is a subset of the `sys module`_ in Python."
 msgstr ""
 
-#: ../../main/micropython/usys.rst:9 b994c38a1f77403f91c609aa1479efa4
+#: ../../main/micropython/usys.rst:9 b7fb591fb3fd4377a9445f33e6e7b0ec
 msgid "Input and output streams"
 msgstr ""
 
-#: ../../docstring 185e64808fe44ba5924a4c23eda71e91 of usys.stdin:1
+#: ../../docstring 0fd0be08fb7c494ea4afc6e1d88b7cdb of usys.stdin:1
 msgid ""
 "This is a stream object (:class:`uio.FileIO`) that receives input from a "
 "connected terminal, if any."
 msgstr ""
 
-#: ../../docstring a538f465830e45a6aa5374b22271dd03 of usys.stdin:4
+#: ../../docstring 2095e28f0ed74d8c802b94a7afbcbbeb of usys.stdin:4
 msgid ""
 "Also see :func:`kbd_intr <micropython.kbd_intr>` to disable "
 "``KeyboardInterrupt`` when passing binary data via ``stdin``."
 msgstr ""
 
-#: ../../docstring e49b30e0bdc744318e2d47f06b935ce9 of usys.stdout:1
+#: ../../docstring ba92da55dd164fa7a8b349e9fe91af31 of usys.stdout:1
 msgid ""
 "This is a stream object (:class:`uio.FileIO`) that sends output to a "
 "connected terminal, if any."
 msgstr ""
 
-#: ../../docstring fd585c6494f54633ad6f1507347478a4 of usys.stderr:1
+#: ../../docstring 96f7300cfa544cb795487a64b2c22ccf of usys.stderr:1
 msgid "Alias for :data:`stdout`."
 msgstr ""
 
-#: ../../main/micropython/usys.rst:22 9a54f5727e6645e9ae5618083495bcf6
+#: ../../main/micropython/usys.rst:22 5931e90e0fcf40a5aec547a22c32202e
 msgid "Version info"
 msgstr ""
 
-#: ../../docstring 9ed32254c292447f9f7b1f7755f55f99 of usys.implementation:1
+#: ../../docstring d9978506236a4656adeda02c70edd6d0 of usys.implementation:1
 msgid "MicroPython version tuple. See format and example below."
 msgstr ""
 
-#: ../../docstring 22cb0ad6092a43c8a3dd86499189f0b9 of usys.version:1
+#: ../../docstring 907345582a9a4850b2e420797785f605 of usys.version:1
 msgid ""
 "Python compatibility version, Pybricks version, and build date. See "
 "format and example below."
 msgstr ""
 
-#: ../../docstring e82ecf11c93e4741a480184309c7f19d of usys.version_info:1
+#: ../../docstring c4c1532b96454a8ab355c3a15507f7fb of usys.version_info:1
 msgid "Python compatibility version. See format and example below."
 msgstr ""
 
-#: ../../main/micropython/usys.rst:33 86ffa9a57cfd49a9a2634e2fac530e35
+#: ../../main/micropython/usys.rst:33 7da4bf9610e043c68c54a7a0e78996dd
 msgid "Examples"
 msgstr ""
 
-#: ../../main/micropython/usys.rst:36 d3af1091b64a417ca385e4817b47fa4f
+#: ../../main/micropython/usys.rst:36 f43150fe5fb3453692030f7f79603d4f
 msgid "Version information"
 msgstr ""
 
-#: ../../main/micropython/usys.rst:38 8447a54a80014c238e9e7b7ec239dc26
-msgid ""
-"from pybricks import version\n"
-"\n"
-"# ('essentialhub', '3.2.0b5', 'v3.2.0b5 on 2022-11-11')\n"
-"print(version)\n"
-msgstr ""
-
-#: ../../main/micropython/usys.rst:41 b22f0d6d59684cdba3e9dc9a7e0ee638
-msgid ""
-"import usys\n"
-"\n"
-"# ('micropython', (1, 19, 1), 'SPIKE Essential Hub with STM32F413RG', 6)\n"
-"print(usys.implementation)\n"
-"\n"
-"# '3.4.0; Pybricks MicroPython v3.2.0b5 on 2022-11-11'\n"
-"print(usys.version)\n"
-"\n"
-"# (3, 4, 0)\n"
-"print(usys.version_info)\n"
-msgstr ""
-
-#: ../../main/micropython/usys.rst:45 2fa74e5d046948919f516bca5b2f1499
+#: ../../main/micropython/usys.rst:45 992ebf69706e4523a9b82de7cac96942
 msgid "Standard input and output"
 msgstr ""
 
-#: ../../main/micropython/usys.rst:47 33947b67c1cb405e99385bc7e3cfc337
+#: ../../main/micropython/usys.rst:47 275685cc438a49d8b0884ff58c94d1ec
 msgid ""
 "The ``stdin`` stream can be used to capture input via the Pybricks Code "
 "input/output window. See the `keyboard input`_ project to learn how this "

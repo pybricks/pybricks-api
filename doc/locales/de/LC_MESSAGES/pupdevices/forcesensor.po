@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pybricks v3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-26 20:11+0100\n"
+"POT-Creation-Date: 2025-01-30 22:50+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: de\n"
@@ -19,185 +19,104 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.16.0\n"
 
-#: ../../main/pupdevices/forcesensor.rst:4 1fcf271d79c3495c80250019684437a7
+#: ../../main/pupdevices/forcesensor.rst:4 9da2838bc58a4168a38c011787f0bde3
 msgid "Force Sensor"
 msgstr ""
 
-#: ../../main/pupdevices/forcesensor.rst:6 7267662bc47d40b2a2942c87d41f3824
+#: ../../main/pupdevices/forcesensor.rst:6 27ddb71415914b81bf2cd1aa91a26c7d
 msgid ".. image:: ../../main/cad/output/pupdevice-force.png"
 msgstr ""
 
-#: ../../main/pupdevices/forcesensor.rst:9 020022467ac84e5f8e3dbbd00799aca4
+#: ../../main/pupdevices/forcesensor.rst:9 89256240e7ca43ef92da22ea6b81170f
 msgid ".. image:: /blockimg/pybricks_variables_set_force_sensor.svg"
 msgstr ""
 
-#: fa300be616be4bbe8684ea1af125df32 of pybricks.pupdevices.ForceSensor:1
+#: e6a7d74440474dcab7d8251e7a8392ee of pybricks.pupdevices.ForceSensor:1
 msgid "LEGO® SPIKE Force Sensor."
 msgstr ""
 
-#: ../../main/pupdevices/forcesensor.rst 383d728c7bef475799f0d64c4cdbc9bd
-#: c57ac1cf5d8c4c0f84ccf0a5961d106b
+#: ../../main/pupdevices/forcesensor.rst 0d3cc35ef48644f08d08309293db017d
+#: 69c22363f65f47f5a6160f7c30239cd7
 msgid "Parameters"
 msgstr ""
 
-#: 59677c93b4f84055b9b76e600ee166bd of pybricks.pupdevices.ForceSensor:3
+#: 9c0059c7957b48d5bf99845bed8442b0 of pybricks.pupdevices.ForceSensor:3
 msgid "Port to which the sensor is connected."
 msgstr ""
 
-#: ../../main/pupdevices/forcesensor.rst:14 09737358d0334f16bc6436f2ef7f585e
+#: ../../main/pupdevices/forcesensor.rst:14 cbb47a4e0e6b46f4be8fc23d3de5c067
 msgid ".. image:: /blockimg/pybricks_blockForce_ForceSensor.svg"
 msgstr ""
 
-#: 64d0ed8cd8af4693bdd79d748fa316fb of pybricks.pupdevices.ForceSensor.force:1
+#: 514143b84bd94488813ea61b197dcb3c of pybricks.pupdevices.ForceSensor.force:1
 msgid "Measures the force exerted on the sensor."
 msgstr ""
 
-#: ../../main/pupdevices/forcesensor.rst 099683af1a82478986d809ebf8ef8121
-#: 09ce7c791c9d491d8946db5faddc28f0 a8626dcab9864cb79edf2b3a56bb50be
-#: f492586f3a5e488999d1fe1be63dbf01
+#: ../../main/pupdevices/forcesensor.rst 3195c7c515bf43db8ac4f1eaf0a58ff8
+#: 7440421940064839bf145bad968ae382 79816d7b368d446ba8f3264314af1f92
+#: d40d83e0fd804c6d9da39e58611b9672
 msgid "Returns"
 msgstr ""
 
-#: aad1ffcb7edc403da508988a4eaff905 of pybricks.pupdevices.ForceSensor.force:3
+#: 6ef63756138f497e9c01b91d3bb5143d of pybricks.pupdevices.ForceSensor.force:3
 msgid "Measured force (up to approximately 10.00 N)."
 msgstr ""
 
-#: ../../main/pupdevices/forcesensor.rst:18 4396cddaaa714b2e82bdac358cb48eb6
+#: ../../main/pupdevices/forcesensor.rst:18 c4699c7da9354803940f2e32253d5b9b
 msgid ".. image:: /blockimg/pybricks_blockDistance_ForceSensor.svg"
 msgstr ""
 
-#: c7657936452c488d9c7e9bd20652d845 of
+#: 157df13e85174701a068a87730407634 of
 #: pybricks.pupdevices.ForceSensor.distance:1
 msgid "Measures by how much the sensor button has moved."
 msgstr ""
 
-#: 7dda65be18c84299bfba42416205966c of
+#: 594209e4e0614d8da59c0508286c0924 of
 #: pybricks.pupdevices.ForceSensor.distance:3
 msgid "Movement up to approximately 8.00 mm."
 msgstr ""
 
-#: 0f6003cb58874becaa388f36a18a2cb6 of
+#: dd8ab01a7c67491b8986c15683b1f80f of
 #: pybricks.pupdevices.ForceSensor.pressed:1
 msgid "Checks if the sensor button is pressed."
 msgstr ""
 
-#: 3413119735fd40c9b86550ee3a9b1315 of
+#: e77b77d156874b6bbd7e836df0776aa5 of
 #: pybricks.pupdevices.ForceSensor.pressed:3
 msgid "Minimum force to be considered pressed."
 msgstr ""
 
-#: 0dda52a965654fbdb8ab0ed7068164d0 of
+#: 4af791437b4244ffbcd0fcea1e6fd85b of
 #: pybricks.pupdevices.ForceSensor.pressed:6
 msgid "``True`` if the sensor is pressed, ``False`` if it is not."
 msgstr ""
 
-#: f029fb289e8a46ad9a84203f7b7f87bf of
+#: 2d612d1eedd749ad9f5a6e261a1e42c9 of
 #: pybricks.pupdevices.ForceSensor.touched:1
 msgid "Checks if the sensor is touched."
 msgstr ""
 
-#: 83f4ab5b96104e8ab476bf00120d58b9 of
+#: 6431035c514c473993ec89274a508b3b of
 #: pybricks.pupdevices.ForceSensor.touched:3
 msgid ""
 "This is similar to :meth:`pressed`, but it detects slight movements of "
 "the button even when the measured force is still considered zero."
 msgstr ""
 
-#: 245ed1bdf1dd46ffa58f274cc239f594 of
+#: 8c84c8d307ed43888ec31acdcfc5268b of
 #: pybricks.pupdevices.ForceSensor.touched:6
 msgid "``True`` if the sensor is touched or pressed, ``False`` if it is not."
 msgstr ""
 
-#: ../../main/pupdevices/forcesensor.rst:27 8f633134679d4bd59dedf53bb74f158c
+#: ../../main/pupdevices/forcesensor.rst:27 eff4627dd4fa41d7901e534cc89b925e
 msgid "Examples"
 msgstr ""
 
-#: ../../main/pupdevices/forcesensor.rst:30 9702722f93ac426fa3a0183da48fef6a
+#: ../../main/pupdevices/forcesensor.rst:30 1a34092bfdb94329b3969b49246cbe56
 msgid "Measuring force and movement"
 msgstr ""
 
-#: ../../main/pupdevices/forcesensor.rst:32 b0969cd166d04caf9cd1875630aa91c2
-msgid ""
-"from pybricks.pupdevices import ForceSensor\n"
-"from pybricks.parameters import Port\n"
-"from pybricks.tools import wait\n"
-"\n"
-"# Initialize the sensor.\n"
-"button = ForceSensor(Port.A)\n"
-"\n"
-"while True:\n"
-"    # Read all the information we can get from this sensor.\n"
-"    force = button.force()\n"
-"    dist = button.distance()\n"
-"    press = button.pressed()\n"
-"    touch = button.touched()\n"
-"\n"
-"    # Print the values\n"
-"    print(\"Force\", force, \"Dist:\", dist, \"Pressed:\", press, "
-"\"Touched:\", touch)\n"
-"\n"
-"    # Push the sensor button see what happens to the values.\n"
-"\n"
-"    # Wait some time so we can read what is printed.\n"
-"    wait(200)\n"
-msgstr ""
-
-#: ../../main/pupdevices/forcesensor.rst:36 b193a55513504d0984cf39cbefb60318
+#: ../../main/pupdevices/forcesensor.rst:36 021198cb22694a3da03757adeb7fb2f5
 msgid "Measuring peak force"
-msgstr ""
-
-#: ../../main/pupdevices/forcesensor.rst:38 975d85d2d49549c485fa345749c30be1
-msgid ""
-"from pybricks.pupdevices import ForceSensor\n"
-"from pybricks.parameters import Port\n"
-"from pybricks.tools import wait\n"
-"\n"
-"# Initialize the sensor.\n"
-"button = ForceSensor(Port.A)\n"
-"\n"
-"\n"
-"# This function waits until the button is pushed. It keeps track of the "
-"maximum\n"
-"# detected force until the button is released. Then it returns the "
-"maximum.\n"
-"def wait_for_force():\n"
-"\n"
-"    # Wait for a force, by doing nothing for as long the force is nearly "
-"zero.\n"
-"    print(\"Waiting for force.\")\n"
-"    while button.force() <= 0.1:\n"
-"        wait(10)\n"
-"\n"
-"    # Now we wait for the release, by waiting for the force to be zero "
-"again.\n"
-"    print(\"Waiting for release.\")\n"
-"\n"
-"    # While we wait for that to happen, we keep reading the force and "
-"remember\n"
-"    # the maximum force. We do this by initializing the maximum at 0, and"
-"\n"
-"    # updating it each time we detect a bigger force.\n"
-"    maximum = 0\n"
-"    force = 10\n"
-"    while force > 0.1:\n"
-"        # Read the force.\n"
-"        force = button.force()\n"
-"\n"
-"        # Update the maximum if the measured force is larger.\n"
-"        if force > maximum:\n"
-"            maximum = force\n"
-"\n"
-"        # Wait and then measure again.\n"
-"        wait(10)\n"
-"\n"
-"    # Return the maximum force.\n"
-"    return maximum\n"
-"\n"
-"\n"
-"# Keep waiting for the sensor button to be pushed. When it is, display\n"
-"# the peak force and repeat.\n"
-"while True:\n"
-"    peak = wait_for_force()\n"
-"    print(\"Released. Peak force: {0} N\\n\".format(peak))\n"
 msgstr ""
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pybricks v3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-26 20:11+0100\n"
+"POT-Creation-Date: 2025-01-30 22:50+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: de\n"
@@ -19,51 +19,51 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.16.0\n"
 
-#: ../../main/parameters/color.rst:4 2b3e093b9ed24e399542088cdd03dfc5
+#: ../../main/parameters/color.rst:4 dc190879722b4b628b3825be65e83be9
 msgid "Color"
 msgstr ""
 
-#: 81a30dcd327e48569f549ae8539885ba of pybricks.parameters.Color:1
+#: 426d66d958494292bf5c3c994f217b4d of pybricks.parameters.Color:1
 msgid "Light or surface color."
 msgstr ""
 
-#: ../../main/parameters/color.rst fac0813e62854f859cadebcf73380ff0
+#: ../../main/parameters/color.rst a1c0624a42194992b4a235c2a5a78963
 msgid "Parameters"
 msgstr ""
 
-#: 1050305007b2416ab2ff6818071bb70c of pybricks.parameters.Color:3
+#: 7cca5187386e414fbbd4b62a3b577657 of pybricks.parameters.Color:3
 msgid "Hue."
 msgstr ""
 
-#: 0640a855e6b34ddc9735af4490ec44f6 of pybricks.parameters.Color:5
+#: d02c0e7514ec4932a8325906c1bb8215 of pybricks.parameters.Color:5
 msgid "Saturation."
 msgstr ""
 
-#: c8e00f606aaf451699d0838c97675916 of pybricks.parameters.Color:7
+#: 01db5613f2284e968e5736c959420cc8 of pybricks.parameters.Color:7
 msgid "Brightness value."
 msgstr ""
 
-#: ../../main/parameters/color.rst:9 04615747c9294bcd9f2cea6a5160362c
+#: ../../main/parameters/color.rst:9 5b9e7d93a3c8422b8ce01520a47b6870
 msgid "Saturated colors"
 msgstr ""
 
-#: ../../main/parameters/color.rst:10 aaf65185faff456a99eb886128976600
+#: ../../main/parameters/color.rst:10 55e9097a39404c8eb0d442edaab5e620
 msgid ""
 "These colors have maximum saturation and brightness value. They differ "
 "only in hue."
 msgstr ""
 
-#: ../../main/parameters/color.rst:46 c0c0cdf6b98541f18361a37aca9d9eae
+#: ../../main/parameters/color.rst:46 d1921864e70947e39945b5d17f81a93a
 msgid "Unsaturated colors"
 msgstr ""
 
-#: ../../main/parameters/color.rst:47 e9fd189fa9d542f4ad1710b911677d65
+#: ../../main/parameters/color.rst:47 66f008c3ceb14368a1d42494e7869a6b
 msgid ""
 "These colors have zero hue and saturation. They differ only in brightness"
 " value."
 msgstr ""
 
-#: ../../main/parameters/color.rst:50 16ae89e65f374c0e852af41d55a68902
+#: ../../main/parameters/color.rst:50 40e4b609111e4e84a22de02382af7556
 msgid ""
 "When detecting these colors using sensors, their values depend a lot on "
 "the distance to the object. If the distance between the sensor and the "
@@ -71,92 +71,27 @@ msgid ""
 "these colors in your programs."
 msgstr ""
 
-#: ../../main/parameters/color.rst:65 e7db49253b0e4df5b13da733da65742e
+#: ../../main/parameters/color.rst:65 b1ebdcd51fa943869826f25c021e50a2
 msgid ""
 "This represents dark objects that still reflect a very small amount of "
 "light."
 msgstr ""
 
-#: ../../main/parameters/color.rst:72 1888d5d356214eacbb2f95bf7a128ffa
+#: ../../main/parameters/color.rst:72 151ef2d685cb4ad8ab7cb18fdaa56752
 msgid "This is total darkness, with no reflection or light at all."
 msgstr ""
 
-#: ../../main/parameters/color.rst:77 c6df6be5de7540bf85e32bac6cfac845
+#: ../../main/parameters/color.rst:77 70d6763328594c348827e243c481a28b
 msgid "Making your own colors"
 msgstr ""
 
-#: ../../main/parameters/color.rst:78 eac7b503d3c94a138fcbffaeefca4203
+#: ../../main/parameters/color.rst:78 778c384775c54e05a2e5a0e3e9c3541a
 msgid ""
 "This example shows the basics of color properties, and how to define new "
 "colors."
 msgstr ""
 
-#: ../../main/parameters/color.rst:80 d66f1dd374f14a6bb2a351991cfad05d
-msgid ""
-"from pybricks.parameters import Color\n"
-"\n"
-"# You can print colors. Colors may be obtained from the Color class, or\n"
-"# from sensors that return color measurements.\n"
-"print(Color.RED)\n"
-"\n"
-"# You can read hue, saturation, and value properties.\n"
-"print(Color.RED.h, Color.RED.s, Color.RED.v)\n"
-"\n"
-"# You can make your own colors. Saturation and value are 100 by default.\n"
-"my_green = Color(h=125)\n"
-"my_dark_green = Color(h=125, s=80, v=30)\n"
-"\n"
-"# When you print custom colors, you see exactly how they were defined.\n"
-"print(my_dark_green)\n"
-"\n"
-"# You can also add colors to the builtin colors.\n"
-"Color.MY_DARK_BLUE = Color(h=235, s=80, v=30)\n"
-"\n"
-"# When you add them like this, printing them only shows its name. But you"
-" can\n"
-"# still read h, s, v by reading its attributes.\n"
-"print(Color.MY_DARK_BLUE)\n"
-"print(Color.MY_DARK_BLUE.h, Color.MY_DARK_BLUE.s, Color.MY_DARK_BLUE.v)\n"
-msgstr ""
-
-#: ../../main/parameters/color.rst:83 109c91a0c8774428976dacc7a677468b
+#: ../../main/parameters/color.rst:83 51e80c8da01c4691b99a4aad2afbdaa7
 msgid "This example shows more advanced use cases of the ``Color`` class."
-msgstr ""
-
-#: ../../main/parameters/color.rst:85 00399918f0b44ebf89e01321a877b77a
-msgid ""
-"from pybricks.parameters import Color\n"
-"\n"
-"# Two colors are equal if their h, s, and v attributes are equal.\n"
-"if Color.BLUE == Color(240, 100, 100):\n"
-"    print(\"Yes, these colors are the same.\")\n"
-"\n"
-"# You can scale colors to change their brightness value.\n"
-"red_dark = Color.RED * 0.5\n"
-"\n"
-"# You can shift colors to change their hue.\n"
-"red_shifted = Color.RED >> 30\n"
-"\n"
-"# Colors are immutable, so you can't change h, s, or v of an existing "
-"object.\n"
-"try:\n"
-"    Color.GREEN.h = 125\n"
-"except AttributeError:\n"
-"    print(\"Sorry, can't change the hue of an existing color object!\")\n"
-"\n"
-"# But you can override builtin colors by defining a whole new color.\n"
-"Color.GREEN = Color(h=125)\n"
-"\n"
-"# You can access and store colors as class attributes, or as a "
-"dictionary.\n"
-"print(Color.BLUE)\n"
-"print(Color[\"BLUE\"])\n"
-"print(Color[\"BLUE\"] is Color.BLUE)\n"
-"print(Color)\n"
-"print([c for c in Color])\n"
-"\n"
-"# This allows you to update existing colors in a loop.\n"
-"for name in (\"BLUE\", \"RED\", \"GREEN\"):\n"
-"    Color[name] = Color(1, 2, 3)\n"
 msgstr ""
 

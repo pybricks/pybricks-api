@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pybricks v3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-26 20:11+0100\n"
+"POT-Creation-Date: 2025-01-30 22:50+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: de\n"
@@ -19,106 +19,106 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.16.0\n"
 
-#: ../../main/micropython/uselect.rst:4 a2f4c6c81cda46f287f7e51fa57d9f90
+#: ../../main/micropython/uselect.rst:4 1ae29a4871b84d8b88428cda28f7862f
 msgid ":mod:`uselect` -- Wait for events"
 msgstr ""
 
-#: 7ae2510990b841199e97f3ac7e972e65 of uselect:1
+#: 169f2208ca8d4cf2b3f64458b10dbce3 of uselect:1
 msgid ""
 "This module provides functions to efficiently wait for events on multiple"
 " streams."
 msgstr ""
 
-#: ../../main/micropython/uselect.rst:10 f63cb13b964a41b7aefd9250ccfd688d
+#: ../../main/micropython/uselect.rst:10 b1ea928f1aab4f7eb3137b5683b8e4a1
 msgid "Poll instance and class"
 msgstr ""
 
-#: 78ea2b8ff40646de89b2931b0194a7f8 of uselect.poll:1
+#: 50222f6ad512462fa281fbda1d20d1b5 of uselect.poll:1
 msgid "Creates an instance of the :class:`Poll` class."
 msgstr ""
 
-#: ../../main/micropython/uselect.rst d716b4458ecc464c8c0c730e5ee8d777
-#: fd158e9b994e4a6ca557e09ad0dd2e3b
+#: ../../main/micropython/uselect.rst 6420ce21803e433391d926bfa45f8e53
+#: 709d39d53c1a4d339a92b1e87185dd60
 msgid "Returns"
 msgstr ""
 
-#: 37460669f839452abfa777c17381b0ad of uselect.poll:3
+#: dec50f83d0d146f6b7d4c0dc9e1c7598 of uselect.poll:3
 msgid "The :class:`Poll` instance."
 msgstr ""
 
-#: 9d8eb80587874b36a9ec7ed77725590f of uselect.Poll.register:1
+#: bb14bb6b15a64ecb95ce7a1fa53e0a14 of uselect.Poll.register:1
 msgid ""
 "Register a stream object for polling. The stream object will now be "
 "monitored for events. If an event happens, it becomes part of the return "
 "value of :meth:`poll`."
 msgstr ""
 
-#: 8c573d0d574f430a8237a5b3dba96ab4 of uselect.Poll.register:5
+#: a5bd7162a48948d4bfd5dc15cc2262b0 of uselect.Poll.register:5
 msgid ""
 "If this method is called again for the same stream object, the object "
 "will not be registered again, but the ``eventmask`` flags will be "
 "updated, as if calling :meth:`modify()`."
 msgstr ""
 
-#: ../../main/micropython/uselect.rst 1d7bab506e7f43d6bacfdbce4da52e75
-#: 2ee0a73ba5524d8f9493966392b682c6 390943851993450a9b936f4eb2ff0777
-#: 92e9e398f8be45149cc5bd292f92f624 cf71df78681b42a0b3540aa382a16ed4
+#: ../../main/micropython/uselect.rst 6b2754fe84a04f5f8d1bb39a2edd8bcf
+#: 6dd9d9f08df84d65839902b82f8723c0 9c9bc6e1cd9a4d43b8cdc9987a07a1b3
+#: b31069cbe9fc473da85dd4bdbc1d2b08 d861895c6daa445392d17369d5efae99
 msgid "Parameters"
 msgstr ""
 
-#: 9f7483d964d14dbab4dc92d016b4d69f ff088c884a6841f688e46e452ed006c6 of
+#: 5dacb6704aab457988b04567f68dafcd 75c9ab8d6c5547d6ab66514f51d7ef9a of
 #: uselect.Poll.modify:3 uselect.Poll.register:9
 msgid "Stream to be registered for polling."
 msgstr ""
 
-#: 113800cf3c6a4910a4a1dbe7998d9e2c of uselect.Poll.register:11
+#: 8af8f3dc67404a42a029228756b12d5d of uselect.Poll.register:11
 msgid ""
 "Which events to use. Should be ``POLLIN``, ``POLLOUT``, or their logical "
 "disjunction: ``POLLIN | POLLOUT``."
 msgstr ""
 
-#: a79a361be21345e09c72bda761bd0ffe of uselect.Poll.unregister:1
+#: 85a891c931cf4b26b8c6cc049dd9369e of uselect.Poll.unregister:1
 msgid "Unregister an object from polling."
 msgstr ""
 
-#: e0f0f1067dd044288f698c0c498f8a75 of uselect.Poll.unregister:3
+#: 0b27ea29e5c84ed4a58816b3bd423a01 of uselect.Poll.unregister:3
 msgid "Stream to be unregistered from polling."
 msgstr ""
 
-#: 11509e246bc947368425dc1ea57324de of uselect.Poll.modify:1
+#: b85e53ab286b4a19a720c16a06c17482 of uselect.Poll.modify:1
 msgid "Modifies the event mask for the stream object."
 msgstr ""
 
-#: a48ab07eab9e40edb404d93dbb68dc4a of uselect.Poll.modify:5
+#: 7b72bf172edc4339b14719f8a96a7a64 of uselect.Poll.modify:5
 msgid "Which events to use."
 msgstr ""
 
-#: ../../main/micropython/uselect.rst 5911ce75a2094d8db74d5a7c5a64a423
+#: ../../main/micropython/uselect.rst 9636de4c92b24947ada46519754d468d
 msgid "Raises"
 msgstr ""
 
-#: 44d9424d642b45cabefa22e451e29032 of uselect.Poll.modify:8
+#: 954b8323ef4c42b6ac7e617a7f1919b9 of uselect.Poll.modify:8
 msgid "If the object is not registered. The error is ``ENOENT``."
 msgstr ""
 
-#: 00e05011ded24173a75b53ed569764c1 of uselect.Poll.poll:1
+#: 5204b4378d1447af8933edfbc1281810 of uselect.Poll.poll:1
 msgid "poll(timeout=-1) -> List[Tuple[FileIO, int]]"
 msgstr ""
 
-#: 30242c660b8640d2a624edbf9e8c4140 of uselect.Poll.poll:3
+#: 8ec57ce64e3c4514a16546051ab21e3a of uselect.Poll.poll:3
 msgid ""
 "Wait until at least one of the registered objects has a new event or "
 "exceptional condition ready to be handled."
 msgstr ""
 
-#: a1cfafd1c8c64e8ea8a2010818ee363d bdeb6d6f721c4aaeabaf0fd3a582fafa of
+#: 47c48e75904d4a7faed45c2d4262675c 607502e1e5ae40ac9bec6e69b1c4c5a4 of
 #: uselect.Poll.ipoll:11 uselect.Poll.poll:6
 msgid ""
 "Timeout in milliseconds. Choose ``0`` to return immediately or choose "
 "``-1`` to wait indefinitely."
 msgstr ""
 
-#: 9759d0cfe44049fd9be0703ba0e56a68 of uselect.Poll.poll:10
+#: 9e41ed4a95d04dd68f9faf7deeb71773 of uselect.Poll.poll:10
 msgid ""
 "A list of tuples. There is one (``object``, ``eventmask``, ...) tuple for"
 " each object with an event, or no tuples if there are no events to be "
@@ -127,17 +127,17 @@ msgid ""
 " if they were not registered."
 msgstr ""
 
-#: 23eb9a60fc8a409886a51102d0913b65 of uselect.Poll.ipoll:1
+#: cc7e75838893421a833ca1d049035cb6 of uselect.Poll.ipoll:1
 msgid "ipoll(timeout=-1, flags=1) -> Iterator[Tuple[FileIO, int]]"
 msgstr ""
 
-#: 89f1a373e4b247a9ac0bcea481a8f7f5 of uselect.Poll.ipoll:3
+#: 67abd99f9f3e4377af1558f0b5a5781b of uselect.Poll.ipoll:3
 msgid ""
 "First, just like :meth:`poll`, wait until at least one of the registered "
 "objects has a new event or exceptional condition ready to be handled."
 msgstr ""
 
-#: 9c774506584546dea047057e0b38a24f of uselect.Poll.ipoll:6
+#: ba54e7999c35469c98e3dd69efed2c10 of uselect.Poll.ipoll:6
 msgid ""
 "But instead of a list, this method returns an iterator for improved "
 "efficiency. The iterator yields one (``object``, ``eventmask``, ...) "
@@ -145,7 +145,7 @@ msgid ""
 "need the values later, make sure to copy them explicitly."
 msgstr ""
 
-#: eea15fc6325a4028b4f163af9d8dd08b of uselect.Poll.ipoll:14
+#: 643d391ecfc14ddf9596e26167b01319 of uselect.Poll.ipoll:14
 msgid ""
 "If set to ``1``, one-shot behavior for events is employed. This means "
 "that streams for which events happened will have their event masks "
@@ -154,36 +154,36 @@ msgid ""
 ":meth:`modify`, which is useful for asynchronous I/O schedulers."
 msgstr ""
 
-#: ../../main/micropython/uselect.rst:27 6ffa24380b084ebcb4e6069afee37532
+#: ../../main/micropython/uselect.rst:27 6dd71e479c7241fc99b33c445b2d94de
 msgid "Event mask flags"
 msgstr ""
 
-#: ../../docstring afe9c5d15d784da59e2ff894773de413 of uselect.POLLIN:1
+#: ../../docstring e1a5eded49a84eaa8a6ddf2dc901166d of uselect.POLLIN:1
 msgid "Data is available for reading."
 msgstr ""
 
-#: ../../docstring c7a36c178f244416b27410d9f6d4f5af of uselect.POLLOUT:1
+#: ../../docstring ffa276bca24d40a581a165e322146a9b of uselect.POLLOUT:1
 msgid "More data can be written."
 msgstr ""
 
-#: ../../docstring 03ed06e7111e4a8abfebdfb4186a5860 of uselect.POLLERR:1
+#: ../../docstring 247a2f897d0b4b938cdb3876a3ebf582 of uselect.POLLERR:1
 msgid ""
 "Error condition happened on the associated stream. Should be handled "
 "explicitly or else further invocations of :meth:`poll` may return right "
 "away."
 msgstr ""
 
-#: ../../docstring f86a19e20b174e85b5644b87d9539700 of uselect.POLLHUP:1
+#: ../../docstring cea7747bb7d844bc83e189226e31d5e7 of uselect.POLLHUP:1
 msgid ""
 "Hang up happened on the associated stream. Should be handled explicitly "
 "or else further invocations of :meth:`poll` may return right away."
 msgstr ""
 
-#: ../../main/micropython/uselect.rst:37 258fd1c608b94313a8e773680d75fa4b
+#: ../../main/micropython/uselect.rst:37 a0bd447cc5b84f599f90d71db9602907
 msgid "Examples"
 msgstr ""
 
-#: ../../main/micropython/uselect.rst:39 44030ab5b71b4f5fb5abd19cc698cfa4
+#: ../../main/micropython/uselect.rst:39 55506a404acd4e3298e765e64e2502b5
 msgid "See the `projects website`_ for a demo that uses this module."
 msgstr ""
 

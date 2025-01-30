@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pybricks v3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-26 20:11+0100\n"
+"POT-Creation-Date: 2025-01-30 22:50+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: de\n"
@@ -19,44 +19,44 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.16.0\n"
 
-#: ../../main/signaltypes.rst:2 587d7cfdd23e446ca7fa27a352bca75a
+#: ../../main/signaltypes.rst:2 39afce23500b4279ac6f1118dbfe0507
 msgid "Signals and Units"
 msgstr ""
 
-#: ../../main/signaltypes.rst:4 8627ec1faa5948f6b521c069b81fdb88
+#: ../../main/signaltypes.rst:4 50d4cd69776e453b8acedac08c166dad
 msgid ""
 "Many commands allow you to specify arguments in terms of well-known "
 "physical quantities. This page gives an overview of each quantity and its"
 " unit."
 msgstr ""
 
-#: ../../main/signaltypes.rst:8 6f8d2167f04c46df8319a5b998877689
+#: ../../main/signaltypes.rst:8 d48b4d1a7afe49e395ac91ed1c47a1c5
 msgid "Numbers"
 msgstr ""
 
-#: ../../docstring a86489a3fb4c4e6c983280be9ce0c33a of typing.Union:5
+#: ../../docstring 3ca5daeacaf84a9a83786359da7291ac of typing.Union:5
 msgid "Numbers can be represented as integers or floating point values:"
 msgstr ""
 
-#: ../../docstring b712a9c5fbb54f62a6aca15c815fe8c4 of typing.Union:7
+#: ../../docstring 12c7c0fbace64670a8a6f638fb858921 of typing.Union:7
 msgid ""
 "Integers (:class:`int <ubuiltins.int>`) are whole numbers like ``15`` or "
 "``-123``."
 msgstr ""
 
-#: ../../docstring 99acf620e6184405841acb315e1e856e of typing.Union:9
+#: ../../docstring 1ba437f0623a4f2183899680c8c72c6a of typing.Union:9
 msgid ""
 "Floating point values (:class:`float <ubuiltins.float>`) are decimal "
 "numbers like ``3.14`` or ``-123.45``."
 msgstr ""
 
-#: ../../docstring 3783d89309e641f9b59f643e59697a6a of typing.Union:12
+#: ../../docstring 8099d6a791c345129b2cb355e81b98b2 of typing.Union:12
 msgid ""
 "If you see :class:`Number` as the argument type, both :class:`int "
 "<ubuiltins.int>` and :class:`float <ubuiltins.float>` may be used."
 msgstr ""
 
-#: ../../docstring f1e9b00922804cf4ab77dcccc78d6fa5 of typing.Union:15
+#: ../../docstring 6addbd8ba72f4963adc691a9587c37fb of typing.Union:15
 msgid ""
 "For example, :func:`wait(15) <pybricks.tools.wait>` and "
 ":func:`wait(15.75) <pybricks.tools.wait>` are both allowed. In most "
@@ -65,81 +65,81 @@ msgid ""
 "15 milliseconds."
 msgstr ""
 
-#: ../../docstring 443ca2e13d8d406abf9cb97c034ad8fd of typing.Union:21
+#: ../../docstring b76a14c5a1c94bc2b0d7e2ec67b648b7 of typing.Union:21
 msgid ""
 "The BOOST Move hub doesn't support floating point numbers due to limited "
 "system resources. Only integers can be used on that hub."
 msgstr ""
 
-#: ../../main/signaltypes.rst:14 906375da852e4136a34f49b19d7a71f1
+#: ../../main/signaltypes.rst:14 5504374807ad498ea5ef52d6eb81653a
 msgid "Time"
 msgstr ""
 
-#: ../../main/signaltypes.rst:19 e97b8e753c1440cfb2f1d79201566b6f
+#: ../../main/signaltypes.rst:19 fab27d0d413148d8b60158fa17173015
 msgid "time: ms"
 msgstr ""
 
-#: ../../main/signaltypes.rst:20 28a7e5c7e5fb44e8952e97713aa526df
+#: ../../main/signaltypes.rst:20 9efe9f68d5c448dbab40bde0699d5168
 msgid "All time and duration values are measured in milliseconds (ms)."
 msgstr ""
 
-#: ../../main/signaltypes.rst:22 e46d05e9a7844f5ca397989f510531b5
+#: ../../main/signaltypes.rst:22 d103b6914989401fb1afd4a57d43c347
 msgid ""
 "For example, the duration of motion with ``run_time``, and the duration "
 "of :func:`wait <.tools.wait>` are specified in milliseconds."
 msgstr ""
 
-#: ../../main/signaltypes.rst:27 68acdcc5f43840b99e1a50a37db7dddd
+#: ../../main/signaltypes.rst:27 65dfff952ec94dbcac040e3f450e5647
 msgid "Angles and angular motion"
 msgstr ""
 
-#: ../../main/signaltypes.rst:32 40f944a5071b485ab7e917e03f3c617f
+#: ../../main/signaltypes.rst:32 42e92910c54b4100b2a50d0e0d841448
 msgid "angle: deg"
 msgstr ""
 
-#: ../../main/signaltypes.rst:34 6da89456b13b4a7486953d9d610bf33c
+#: ../../main/signaltypes.rst:34 8492e9b60ffb461894f09e1b8530b917
 msgid ""
 "All angles are measured in degrees (deg). One full rotation corresponds "
 "to 360 degrees."
 msgstr ""
 
-#: ../../main/signaltypes.rst:37 47123da1d45643918585d11015121d2c
+#: ../../main/signaltypes.rst:37 4eb72a19389f4931acb1a5953c079b4b
 msgid ""
 "For example, the angle values of a ``Motor`` or the ``GyroSensor`` are "
 "expressed in degrees."
 msgstr ""
 
-#: ../../main/signaltypes.rst:43 cba94fa8701742358d0cf171b7f003ec
+#: ../../main/signaltypes.rst:43 f7191f49abd742518a387f6a22ba1e3e
 msgid "rotational speed: deg/s"
 msgstr ""
 
-#: ../../main/signaltypes.rst:45 32c38ce7c5ef4743987b9dc56bc7e9c2
+#: ../../main/signaltypes.rst:45 f51e48d862c2489db30027c8e9b01593
 msgid ""
 "Rotational speed, or *angular velocity* describes how fast something "
 "rotates, expressed as the number of degrees per second (deg/s)."
 msgstr ""
 
-#: ../../main/signaltypes.rst:48 d28fc9afcaa040fcb28ba3bf58c47441
+#: ../../main/signaltypes.rst:48 1029f0d942934a1cb730d1775498251c
 msgid ""
 "For example, the rotational speed values of a ``Motor`` or the "
 "``GyroSensor`` are expressed in degrees per second."
 msgstr ""
 
-#: ../../main/signaltypes.rst:52 c2c6d80225df41b69e48b258038029a0
+#: ../../main/signaltypes.rst:52 4f2158876c10487581a8bcb538ac1d5b
 msgid ""
 "While we recommend working with degrees per second in your programs, you "
 "can use the following table to convert between commonly used units."
 msgstr ""
 
-#: ../../main/signaltypes.rst:56 8ac0a08a0e9342348220cfc2cbfe3444
+#: ../../main/signaltypes.rst:56 f0e13330d2a14dc7968e426669e3f01b
 msgid "deg/s"
 msgstr ""
 
-#: ../../main/signaltypes.rst:56 a8314dcf20c54b369dd3f66771317164
+#: ../../main/signaltypes.rst:56 6ca66aceb1dd40b2a8f45d390e5004fe
 msgid "rpm"
 msgstr ""
 
-#: ../../main/signaltypes.rst:58 be317824bd7b447fba6573b12a40c7f3
+#: ../../main/signaltypes.rst:58 ccc3c01e73ff49b8b12069ae18ca6632
 msgid "1 deg/s ="
 msgstr ""
 
@@ -147,30 +147,30 @@ msgstr ""
 #: ../../main/signaltypes.rst:96 ../../main/signaltypes.rst:98
 #: ../../main/signaltypes.rst:100 ../../main/signaltypes.rst:187
 #: ../../main/signaltypes.rst:189 ../../main/signaltypes.rst:191
-#: 3b02baab6d9c493cac3a4168b8ae2b54 47e61a1f2f1b43d7aaaa188df91a503e
-#: 75e1c126e82542249cf6f37014838ce3 7a7d64a7ec754a0bbf83f7fefeaa8a89
-#: 9a7397026cce4bfc8f9e94f29e836869 a6a55b02dd9f4f97b1842da40d0f1926
-#: c5f7ff0dac6849328d30c4602e90da9d df3aa0b065bd46aaa24138964463bdba
+#: 123f3dd4298d4791bded142c5e5f0882 6ef83f93d32c44f1b9d31e101e24ecc5
+#: 9132414b2de5455e8525f5f727f6bd5e c9ad17292dcd477d9a3aa5e4bfdb88c0
+#: d797bc72ae4a482991a9a7b43752fcb1 e21759de69bf47e48012a255a0b9d7b4
+#: efbe8b1d18214eff9277edb077304e72 fe8a506c4f93442aae0b93ccdc61765f
 msgid "1"
 msgstr ""
 
-#: ../../main/signaltypes.rst:58 55928614c3244f50b57327d774dad0ee
+#: ../../main/signaltypes.rst:58 4fd0d65cab8943f19acaf602f2d8ad7c
 msgid "1/6=0.167"
 msgstr ""
 
-#: ../../main/signaltypes.rst:60 75978d0aa6ed4c2b94e0e6b9c1d2894c
+#: ../../main/signaltypes.rst:60 41936691287c4e28bc0d33855a0a8a38
 msgid "1 rpm ="
 msgstr ""
 
-#: ../../main/signaltypes.rst:60 c2f60d85baad4a7787c0927666731465
+#: ../../main/signaltypes.rst:60 49100032016d4b1d8e655ed280838a15
 msgid "6"
 msgstr ""
 
-#: ../../main/signaltypes.rst:66 03a3966ff4764015bc64cebf4447b736
+#: ../../main/signaltypes.rst:66 8ce7c59d578c41c6b4b799d246aee173
 msgid "rotational acceleration: deg/s²"
 msgstr ""
 
-#: ../../main/signaltypes.rst:68 f3ce0e7b607c45bd8d9c9e2605b7980c
+#: ../../main/signaltypes.rst:68 fa88d6c2c89745ca9db35981a24602a0
 msgid ""
 "Rotational acceleration, or *angular acceleration* describes how fast the"
 " rotational speed changes. This is expressed as the change of the number "
@@ -178,170 +178,170 @@ msgid ""
 "written as  :math:`deg/s^2`."
 msgstr ""
 
-#: ../../main/signaltypes.rst:73 55975ff30b52412d9509cbb9c67829f6
+#: ../../main/signaltypes.rst:73 52c394b141464c3f913a1f8bbdc960f6
 msgid ""
 "For example, you can adjust the rotational acceleration setting of a "
 "``Motor`` to change how smoothly or how quickly it reaches the constant "
 "speed set point."
 msgstr ""
 
-#: ../../main/signaltypes.rst:79 48272d3b9ecc407dbc0eef731199327f
+#: ../../main/signaltypes.rst:79 42a3a8cc9a344504a30d82a7f655e115
 msgid "Distance and linear motion"
 msgstr ""
 
-#: ../../main/signaltypes.rst:84 106dc62608824c158f4c6deb54f8b61c
+#: ../../main/signaltypes.rst:84 8e791ea67bc04f1a89f8a1e1acb40104
 msgid "distance: mm"
 msgstr ""
 
-#: ../../main/signaltypes.rst:85 865c1486aca741c99d278b7d14fe1beb
+#: ../../main/signaltypes.rst:85 beb36c4f996c43daa1409b41b4847ec1
 msgid "Distances are expressed in millimeters (mm) whenever possible."
 msgstr ""
 
-#: ../../main/signaltypes.rst:87 3c1c3cadb48d4ddd96ff2c32c482e504
+#: ../../main/signaltypes.rst:87 3fc2e6356dcc48c1b71431b2f388a783
 msgid ""
 "For example, the distance value of the ``UltrasonicSensor`` is measured "
 "in millimeters."
 msgstr ""
 
-#: ../../main/signaltypes.rst:90 4648f888dcbd4beba60506a45db5eb32
+#: ../../main/signaltypes.rst:90 dccf08b9eb07442c8efc645b14b8e82e
 msgid ""
 "While we recommend working with millimeters in your programs, you can use"
 " the following table to convert between commonly used units."
 msgstr ""
 
-#: ../../main/signaltypes.rst:94 c217617087294fa7befd71c4cf1393f9
+#: ../../main/signaltypes.rst:94 161e2f6d311b44b9b1b9d139ff2a61fd
 msgid "mm"
 msgstr ""
 
-#: ../../main/signaltypes.rst:94 328b2eca09714f6fb6e693e48d9927b8
+#: ../../main/signaltypes.rst:94 184e592c0a18434aaea8323de7a533b5
 msgid "cm"
 msgstr ""
 
-#: ../../main/signaltypes.rst:94 863d8e92cf5b4528afb07cb86b3d0eea
+#: ../../main/signaltypes.rst:94 dbb1c9bc8a784b50993c1c19eb6f4c2b
 msgid "inch"
 msgstr ""
 
-#: ../../main/signaltypes.rst:96 eb9dffe282f74429a2334da720576c6b
+#: ../../main/signaltypes.rst:96 75d7750d5b2e46f5ac02c11742e98bed
 msgid "1 mm ="
 msgstr ""
 
-#: ../../main/signaltypes.rst:96 dc4878df858d4b7f9834ff9817305bd5
+#: ../../main/signaltypes.rst:96 e45fe4e809d243ca94b9d7ae84c9ae23
 msgid "0.1"
 msgstr ""
 
-#: ../../main/signaltypes.rst:96 9dfb9b843e254823912b8e4256c4b8b0
+#: ../../main/signaltypes.rst:96 d78c729318a34b87804d517555a702a8
 msgid "0.0394"
 msgstr ""
 
-#: ../../main/signaltypes.rst:98 681ec4e47e0543b08b167cc2aeea1b4a
+#: ../../main/signaltypes.rst:98 f867a03af1e1469d80abea8f19d0ced5
 msgid "1 cm ="
 msgstr ""
 
-#: ../../main/signaltypes.rst:98 91e6c95fb7e649e1b7cd3800b8695a9d
+#: ../../main/signaltypes.rst:98 4dbc6f0e528447668d59a6e3eef535d9
 msgid "10"
 msgstr ""
 
-#: ../../main/signaltypes.rst:98 34d7676b66294997b20e7bbf5a019c90
+#: ../../main/signaltypes.rst:98 6abd6bc3d65945aa9f88edd17900f9eb
 msgid "0.394"
 msgstr ""
 
-#: ../../main/signaltypes.rst:100 b00c126b02ec4cf694b6ddda3ed11c25
+#: ../../main/signaltypes.rst:100 5726abe2ffab4f5b98e53c7c7bd10a90
 msgid "1 inch ="
 msgstr ""
 
-#: ../../main/signaltypes.rst:100 40b16238220d412690b1b1e3bd8f3685
+#: ../../main/signaltypes.rst:100 7fb0d1bdae2843e292f079a526a80e86
 msgid "25.4"
 msgstr ""
 
-#: ../../main/signaltypes.rst:100 20840d29626c49e8918206e90ea9be49
+#: ../../main/signaltypes.rst:100 c048a1cc48a84102bfe794692b81ff1b
 msgid "2.54"
 msgstr ""
 
-#: ../../main/signaltypes.rst:106 465d8e6aec354159992d5098877c75b5
+#: ../../main/signaltypes.rst:106 e6f4f0551b184df3bb1af64153a270fc
 msgid "dimension: mm"
 msgstr ""
 
-#: ../../main/signaltypes.rst:108 f94667f7e0a641b497ad88da6f08e8bf
+#: ../../main/signaltypes.rst:108 261c0d731a7146fc9dc915280ac32227
 msgid "Dimensions are expressed in millimeters (mm), just like distances."
 msgstr ""
 
-#: ../../main/signaltypes.rst:111 767caebc2ebf4fe498eca87fdb534cb1
+#: ../../main/signaltypes.rst:111 968e9e7c1d224004b89e5e2ae035ebb9
 msgid "For example, the diameter of a wheel is measured in millimeters."
 msgstr ""
 
-#: ../../main/signaltypes.rst:116 3a78f3aed7044436b9d1ff83872cceed
+#: ../../main/signaltypes.rst:116 1437bb9922844d618d65d64f0e73ac6d
 msgid "speed: mm/s"
 msgstr ""
 
-#: ../../main/signaltypes.rst:117 bbc2cf112fc84ca4b56636dd338d70b2
+#: ../../main/signaltypes.rst:117 c72c642e96574aa1b1ae9aa97ab8427c
 msgid "Linear speeds are expressed as millimeters per second (mm/s)."
 msgstr ""
 
-#: ../../main/signaltypes.rst:119 1467b2326bcf41b9b333ba52a3b90c03
+#: ../../main/signaltypes.rst:119 7a493f8fa4074313b10089f78413862a
 msgid "For example, the speed of a robotic vehicle is expressed in mm/s."
 msgstr ""
 
-#: ../../main/signaltypes.rst:124 f7418689a7f041d38c3b4fa081a7f5fc
+#: ../../main/signaltypes.rst:124 f7911d0927d84360a419457114e1fe2d
 msgid "linear acceleration: mm/s²"
 msgstr ""
 
-#: ../../main/signaltypes.rst:126 16009641dbe24ca0ba864e4c8f7d9e38
+#: ../../main/signaltypes.rst:126 3a2714c6d205426f92b3e3aba3b1d598
 msgid ""
 "Linear acceleration describes how fast the speed changes. This is "
 "expressed as the change of the millimeters per second, during one second "
 "(mm/s²). This is also commonly written as  :math:`mm/s^2`."
 msgstr ""
 
-#: ../../main/signaltypes.rst:130 209530dbac894f2eb430d082f4c0d24d
+#: ../../main/signaltypes.rst:130 4d7bc5f6f8084c8396aad02e1df3dada
 msgid ""
 "For example, you can adjust the acceleration setting of a "
 ":class:`DriveBase <.robotics.DriveBase>` to change how smoothly or how "
 "quickly it reaches the constant speed set point."
 msgstr ""
 
-#: ../../main/signaltypes.rst:135 cf98e3e263f44cd7bfb9e6b785a773cc
+#: ../../main/signaltypes.rst:135 2447f3e9057e44a0b7e2608813eda296
 msgid "Approximate and relative units"
 msgstr ""
 
-#: ../../main/signaltypes.rst:140 84eb39ebd7574387aa34bf5fb61d7cbf
+#: ../../main/signaltypes.rst:140 639e07963685498fb9fd5838660f65bc
 msgid "percentage: %"
 msgstr ""
 
-#: ../../main/signaltypes.rst:142 44221bacd2334e1ea32b60c989967a3e
+#: ../../main/signaltypes.rst:142 c20388b7c5554977a2b62253e787cab6
 msgid ""
 "Some signals do not have specific units. They range from a minimum (0%) "
 "to a maximum (100%). Specifics type of percentages are :ref:`relative "
 "distances <relativedistance>` or  :ref:`brightness <brightness>`."
 msgstr ""
 
-#: ../../main/signaltypes.rst:146 2c5b9c4d674f4716a9e87c2ed7c37f7a
+#: ../../main/signaltypes.rst:146 fb193a13ba8d46b7b0be30d831911db3
 msgid ""
 "Another example is the sound volume, which ranges from 0% (silent) to "
 "100% (loudest)."
 msgstr ""
 
-#: ../../main/signaltypes.rst:152 6b9cba9d63dd49528d4e2f422e144aaa
+#: ../../main/signaltypes.rst:152 fe33f88597534695b03fa71f1138bd24
 msgid "relative distance: %"
 msgstr ""
 
-#: ../../main/signaltypes.rst:154 aad23d7a5cae47c7b8d80f62b7603d28
+#: ../../main/signaltypes.rst:154 a05d4f00b3bc46a7827823d0a47f4e37
 msgid ""
 "Some distance measurements do not provide an accurate value with a "
 "specific unit, but they range from very close (0%) to very far (100%). "
 "These are referred to as relative distances."
 msgstr ""
 
-#: ../../main/signaltypes.rst:158 c6251f2804744560af17b8868a4a28d8
+#: ../../main/signaltypes.rst:158 ebdac81672f64fab8b2b049c3e3ed608
 msgid ""
 "For example, the distance value of the ``InfraredSensor`` is a relative "
 "distance."
 msgstr ""
 
-#: ../../main/signaltypes.rst:165 9cd4cf361c67455b832633c501e69635
+#: ../../main/signaltypes.rst:165 47f54a078a5d4a0b972592c37fb7052b
 msgid "brightness: %"
 msgstr ""
 
-#: ../../main/signaltypes.rst:167 549edd75b4bf4deb8417a0ea7a74e01f
+#: ../../main/signaltypes.rst:167 a644a2ce832740b29e3a7c2a0f0acac7
 msgid ""
 "The perceived brightness of a light is expressed as a percentage. It is "
 "0% when the light is off and 100% when the light is fully on. When you "
@@ -349,194 +349,194 @@ msgid ""
 "as bright to the human eye."
 msgstr ""
 
-#: ../../main/signaltypes.rst:173 efeeb8a7e93547f996c80a118cbb80d2
+#: ../../main/signaltypes.rst:173 9656b5cae66e48f1b823972f0d91efe6
 msgid "Force and torque"
 msgstr ""
 
-#: ../../main/signaltypes.rst:178 52ffc8334afa4460b918d74f7623ba54
+#: ../../main/signaltypes.rst:178 1feff4ceb2c147849767f6c9b10c77bd
 msgid "force: N"
 msgstr ""
 
-#: ../../main/signaltypes.rst:179 7f829275306641dda80d5aae19b54fb5
+#: ../../main/signaltypes.rst:179 f9b450d8a7614fa6af34218b95fcbacb
 msgid "Force values are expressed in newtons (N)."
 msgstr ""
 
-#: ../../main/signaltypes.rst:181 d16517491a6f46409b20636b73332f00
+#: ../../main/signaltypes.rst:181 fd938d70561f46fa9c21436685ea2478
 msgid ""
 "While we recommend working with newtons in your programs, you can use the"
 " following table to convert to and from other units."
 msgstr ""
 
-#: ../../main/signaltypes.rst:185 40c8fc9876eb4d038ec5d9e294c8836f
+#: ../../main/signaltypes.rst:185 de090fd2a7324bfc930041a5ffbac88b
 msgid "mN"
 msgstr ""
 
-#: ../../main/signaltypes.rst:185 3caa29df064f423dac9c32cb43468b82
+#: ../../main/signaltypes.rst:185 9fedec9576af43cba8ff58df03a58fc2
 msgid "N"
 msgstr ""
 
-#: ../../main/signaltypes.rst:185 2f234ee7eee3493caa1fdfce923a348f
+#: ../../main/signaltypes.rst:185 ca755f6efd9f49e38c8a849e8b9b0163
 msgid "lbf"
 msgstr ""
 
-#: ../../main/signaltypes.rst:187 7a6897e4bcdf401697f209466b8b8138
+#: ../../main/signaltypes.rst:187 c29d65634e614233a42e7ce56feec0ae
 msgid "1 mN ="
 msgstr ""
 
-#: ../../main/signaltypes.rst:187 7db924906ffc40ada35df824ff3563a7
+#: ../../main/signaltypes.rst:187 ad7b288492af42829a5b8c05368b0708
 msgid "0.001"
 msgstr ""
 
-#: ../../main/signaltypes.rst:187 a1a335bc8f8440398a4278ab33a89dc1
+#: ../../main/signaltypes.rst:187 65c8ba8f363340b996995814c8beab60
 msgid ":math:`2.248 \\cdot 10^{-4}`"
 msgstr ""
 
-#: ../../main/signaltypes.rst:189 09a9fbb4b08c47ea8d5af184e7a67483
+#: ../../main/signaltypes.rst:189 fa58293c2bb24963abf9acf30290af2d
 msgid "1 N ="
 msgstr ""
 
-#: ../../main/signaltypes.rst:189 d60da45eb581435abfed9a680232db1f
+#: ../../main/signaltypes.rst:189 248d40f2820f48f888df2c52549f1b3a
 msgid "1000"
 msgstr ""
 
-#: ../../main/signaltypes.rst:189 682bfdce46c04862b7e6815377df067a
+#: ../../main/signaltypes.rst:189 4904ce3ae1044501b7418979a0543560
 msgid "0.2248"
 msgstr ""
 
-#: ../../main/signaltypes.rst:191 2dabe17640ba44879a4e56109b2f782c
+#: ../../main/signaltypes.rst:191 236f94cd09e54bd18ad5413a7df73b8f
 msgid "1 lbf ="
 msgstr ""
 
-#: ../../main/signaltypes.rst:191 6733343834e5461bb195f9880dc2a413
+#: ../../main/signaltypes.rst:191 1e023257cc094684834eff1c7102ae17
 msgid "4448"
 msgstr ""
 
-#: ../../main/signaltypes.rst:191 e25c71346c8a4cd5bec0a20863f50b20
+#: ../../main/signaltypes.rst:191 2709684993e44b89b0e534ca7c779677
 msgid "4.448"
 msgstr ""
 
-#: ../../main/signaltypes.rst:197 32dc04268d984d119bf1272dabb2ae70
+#: ../../main/signaltypes.rst:197 abec5af396434c9197f2e421d02fd6a4
 msgid "torque: mNm"
 msgstr ""
 
-#: ../../main/signaltypes.rst:198 cdb6bac3038b44b183a76bb8a1253bbd
+#: ../../main/signaltypes.rst:198 f70eb5af78a747ecbc2aed4b2bc6b52a
 msgid ""
 "Torque values are expressed in millinewtonmeter (mNm) unless stated "
 "otherwise."
 msgstr ""
 
-#: ../../main/signaltypes.rst:201 5a97db5fab6941f488bf4b61e77942c3
+#: ../../main/signaltypes.rst:201 7fbf56c28b61495aa5fcb0563db519ec
 msgid "Electricity"
 msgstr ""
 
-#: ../../main/signaltypes.rst:206 d027352ab6fe4ec583a2c715314100a0
+#: ../../main/signaltypes.rst:206 66e1de87d09e49428af63cdae81cebd0
 msgid "voltage: mV"
 msgstr ""
 
-#: ../../main/signaltypes.rst:207 ceb948e4909e44298b44b9f2c5f85c36
+#: ../../main/signaltypes.rst:207 10a39af84d69416a9f2ef5a6cc068df0
 msgid "Voltages are expressed in millivolt (mV)."
 msgstr ""
 
-#: ../../main/signaltypes.rst:209 f18ca0b611dc44c997ce38aed0d80f3e
+#: ../../main/signaltypes.rst:209 b12fe9f4059f409bafdd8f4b5df7b439
 msgid "For example, you can check the voltage of the battery."
 msgstr ""
 
-#: ../../main/signaltypes.rst:214 01eb19fffddb4f179e7391e1f05cf650
+#: ../../main/signaltypes.rst:214 d9100d58f7dd42a8b75181cede70469e
 msgid "current: mA"
 msgstr ""
 
-#: ../../main/signaltypes.rst:216 26cd1d24ef6f458db159f40efbe52f96
+#: ../../main/signaltypes.rst:216 e321f4329c6340b6ae43f69d28add200
 msgid "Electrical currents are expressed in milliampere (mA)."
 msgstr ""
 
-#: ../../main/signaltypes.rst:218 aee6bd0e958146fbaea4f790d53ee119
+#: ../../main/signaltypes.rst:218 bb48fedd4d4d42ec85b62581bf7e4319
 msgid "For example, you can check the current supplied by the battery."
 msgstr ""
 
-#: ../../main/signaltypes.rst:223 c49c10a67ed546e985d636d054372ea7
+#: ../../main/signaltypes.rst:223 76ae6d7d9a5441ee9ac9af073cca7a8f
 msgid "energy: J"
 msgstr ""
 
-#: ../../main/signaltypes.rst:225 710dc6ce8b34452bbe903c1383613eb2
+#: ../../main/signaltypes.rst:225 516d828d376c45dd97bb959dc971e102
 msgid "Stored energy or energy consumption can be expressed in Joules (J)."
 msgstr ""
 
-#: ../../main/signaltypes.rst:230 d2efb6a3436a4950b9cb65fc9bce4682
+#: ../../main/signaltypes.rst:230 03f051f51228465cb6164f4b76a896a3
 msgid "power: mW"
 msgstr ""
 
-#: ../../main/signaltypes.rst:232 585b2c6912f34cf69199f11b840ae3e4
+#: ../../main/signaltypes.rst:232 2ddedb357cea4e5fa8847e0e2c72d2ae
 msgid ""
 "Power is the rate at which energy is stored or consumed. It is expressed "
 "in milliwatt (mW)."
 msgstr ""
 
-#: ../../main/signaltypes.rst:236 d9801e0467ca4d7ea1b3392d1d5af929
+#: ../../main/signaltypes.rst:236 2f8b159eb71d49ce982f6dc76fe40f9d
 msgid "Ambient environment"
 msgstr ""
 
-#: ../../main/signaltypes.rst:241 7e37d4257aec4d43980c132f2474e7ca
+#: ../../main/signaltypes.rst:241 26ca18e75c094cbf8d5ca2ed9075b9a7
 msgid "frequency: Hz"
 msgstr ""
 
-#: ../../main/signaltypes.rst:242 d1a252b83c2f4c60b2f27c827a9381bd
+#: ../../main/signaltypes.rst:242 ec815c3375284a06beb9d0dffaaf8f42
 msgid "Sound frequencies are expressed in Hertz (Hz)."
 msgstr ""
 
-#: ../../main/signaltypes.rst:244 ff4761be45244d5a859a58fe0491f5e7
+#: ../../main/signaltypes.rst:244 e17cff52325248019db35e0834baec22
 msgid "For example, you can choose the frequency of a beep to change the pitch."
 msgstr ""
 
-#: ../../main/signaltypes.rst:249 915ba54483f7412d9bd53a40d6db35a6
+#: ../../main/signaltypes.rst:249 07742c2afacd45f8953b8115267d4703
 msgid "temperature: °C"
 msgstr ""
 
-#: ../../main/signaltypes.rst:251 89b93b1da3074043a122768126c02f5b
+#: ../../main/signaltypes.rst:251 9cf81a21fa8f433c90d5da97b30150c2
 msgid ""
 "Temperature is measured in degrees Celsius (°C). To convert to degrees "
 "Fahrenheit (°F) or Kelvin (K), you can use the following conversion "
 "formulas:"
 msgstr ""
 
-#: ../../main/signaltypes.rst:254 dca891b749fd4b36bf5d124aadffb6b3
+#: ../../main/signaltypes.rst:254 0bcd924a2e8540b695d0b002a183ecd1
 msgid ""
 ":math:`^{\\circ}\\kern1pt\\!F =\\kern1pt^{\\circ}\\kern1pt\\!C \\cdot "
 "\\frac{9}{5} + 32`."
 msgstr ""
 
-#: ../../main/signaltypes.rst:256 388d75300e004bf0977f0943bdc5a40b
+#: ../../main/signaltypes.rst:256 9805b6d520ab47ebba6a1328cab2fee2
 msgid ":math:`K =\\kern1pt^{\\circ}\\kern1pt\\!C + 273.15`."
 msgstr ""
 
-#: ../../main/signaltypes.rst:261 b4bf839d7ddc4f07a0e93e504b3b0eb5
+#: ../../main/signaltypes.rst:261 899defa0a4d54a3b8162fd0a16c9ba3a
 msgid "hue: deg"
 msgstr ""
 
-#: ../../main/signaltypes.rst:262 0d63595901744fad8528d2ad28402604
+#: ../../main/signaltypes.rst:262 3fd85171c47b42e0a433120ef2af3925
 msgid "Hue of a color (0-359 degrees)."
 msgstr ""
 
-#: ../../main/signaltypes.rst:267 ab1e848f38804d9392026d30fb69974a
+#: ../../main/signaltypes.rst:267 c43c0f57f952438e885cc2133ac89e39
 msgid "Reference frames"
 msgstr ""
 
-#: ../../main/signaltypes.rst:269 440af53730494cdfbfe4081cb0cf4edb
+#: ../../main/signaltypes.rst:269 dd5d5dd6cbd04853904c13f29ce4dfa1
 msgid "The Pybricks module and this documentation use the following conventions:"
 msgstr ""
 
-#: ../../main/signaltypes.rst:271 1b5b7cc4d3c34fbba2c5fa55ef091d7c
+#: ../../main/signaltypes.rst:271 a8ced0a2ce984e6ca846c42100c59820
 msgid "X: Positive means forward. Negative means backward."
 msgstr ""
 
-#: ../../main/signaltypes.rst:272 e61e1ebded54446696a4084aae689f28
+#: ../../main/signaltypes.rst:272 099c458175ca4e20aef51a8e50b5559b
 msgid "Y: Positive means to the left. Negative means to the right."
 msgstr ""
 
-#: ../../main/signaltypes.rst:273 1cf496c58a9a4c838a875720c9fe513a
+#: ../../main/signaltypes.rst:273 a8a6f0caead94796a99d5cf7e865a83f
 msgid "Z: Positive means upward. Negative means downward."
 msgstr ""
 
-#: ../../main/signaltypes.rst:275 83797145165847979f148b37e48efe5f
+#: ../../main/signaltypes.rst:275 c2c280952afa45e381a3bee7c4cdb862
 msgid ""
 "To make sure that all hub measurements (such as acceleration) have the "
 "correct value and sign, you can specify how the hub is mounted in your "
@@ -544,7 +544,7 @@ msgid ""
 " *robot* is moving, rather than how the *hub* is moving."
 msgstr ""
 
-#: ../../main/signaltypes.rst:280 048cf888c68f4740b994987a43b08ee3
+#: ../../main/signaltypes.rst:280 b452aeb383624331b844eabaef6dc454
 msgid ""
 "For example, the hub may be mounted upside down in your design. If you "
 "configure the settings as shown in :numref:`fig_imuexamples`, the hub "
@@ -553,11 +553,11 @@ msgid ""
 " forward, even though the *hub* accelerates backward."
 msgstr ""
 
-#: ../../main/signaltypes.rst:288 2c27a8227fd548d3940b0f497c931209
+#: ../../main/signaltypes.rst:288 659036cd77aa4357a6ec27e9756e1c3a
 msgid ".. image:: ../main/diagrams/imuexamples.png"
 msgstr ""
 
-#: ../../main/signaltypes.rst:291 86db91be1d164843bcd1cc5a6d3b8ce0
+#: ../../main/signaltypes.rst:291 3e34f0c8fba94513bf1ac490e88cfb79
 msgid ""
 "How to configure the ``top_side`` and ``front_side`` settings for three "
 "different robot designs. The same technique can be applied to other hubs "

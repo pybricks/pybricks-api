@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pybricks v3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-26 20:11+0100\n"
+"POT-Creation-Date: 2025-01-30 22:50+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: de\n"
@@ -19,140 +19,140 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.16.0\n"
 
-#: ../../main/tools/index.rst:4 eaa2de9007d94e2db587e4adac4d05fd
+#: ../../main/tools/index.rst:4 ea11f5279c044df29d6bd00a3b18af5e
 msgid ":mod:`tools <pybricks.tools>` -- General purpose tools"
 msgstr ""
 
-#: 3510ef17238e45d5b65bc34528afe878 of pybricks.tools:1
+#: 40463f2f7ecc4e5ea8cd4f0a85612465 of pybricks.tools:1
 msgid "Common tools for timing, data logging, and linear algebra."
 msgstr ""
 
-#: ../../main/tools/index.rst:10 4cacc297b62a4122827f648db19ff575
+#: ../../main/tools/index.rst:10 737ab92c563b488298a54116155d4c4c
 msgid "Timing tools"
 msgstr ""
 
-#: ../../main/tools/index.rst:12 1f6822001173405ba3fd97e7a7e152e3
+#: ../../main/tools/index.rst:12 5b7f3d9a4aa44effb9a1a4e6bdc30b53
 msgid ".. image:: /blockimg/pybricks_blockWaitTime.svg"
 msgstr ""
 
-#: 6b674cf0405f41e6a7fb1cb53fc54693 of pybricks.tools.wait:1
+#: 5dc81770bdce4e1f83a0cd6fabdbda11 of pybricks.tools.wait:1
 msgid "Pauses the user program for a specified amount of time."
 msgstr ""
 
-#: ../../main/tools/index.rst 072e0454d8d9438cbe9c18ee5861743d
-#: 322393eca42849618670e47e88df8e80 640aa8eb8b854d6fa9607c9d3b4d9835
-#: 91e5ee034a3544a1a699be180e7b35ea 9fd8a972d4e640b7bb60e6561f9fa078
-#: d8a797283bad4b6090bf3171369144c7 d8e527f42f1d429fab1f7df555b0cc51
-#: e62871530ed047cdae8982228eeb9cc1
+#: ../../main/tools/index.rst 012f3145303648e7910d4baba0bc319a
+#: 115ee8887fed4affa0703dee8f42225a 768f6fb5ea8b498aa3eb40f0c0d679bb
+#: 82c73b17851a427d8c031013643b3cc8 8df641e68974492d88f508a6a0ac87ec
+#: e2995888888743fea6790c1279a6ced0 e424d2cebfe04e6cab14cd8502f00a29
+#: f270725f602844cfac3f472f6f08dda1
 msgid "Parameters"
 msgstr ""
 
-#: 0ef1b82ac0b24d87baeafcdf576f8813 of pybricks.tools.wait:3
+#: 1049e9505ad948e8907ca039b44c6843 of pybricks.tools.wait:3
 msgid "How long to wait."
 msgstr ""
 
-#: ../../main/tools/index.rst:16 c29203e5e9b84d0996b4e91ba4b258db
+#: ../../main/tools/index.rst:16 7f8e8916b2ca4c0580a75b884d2953a0
 msgid ".. image:: /blockimg/pybricks_variables_set_stopwatch.svg"
 msgstr ""
 
-#: 316f5942284d44439653f62d31d1cc9c of pybricks.tools.StopWatch:1
+#: 0a54663e633c4c789fd1132fba94b976 of pybricks.tools.StopWatch:1
 msgid ""
 "A stopwatch to measure time intervals. Similar to the stopwatch feature "
 "on your phone."
 msgstr ""
 
-#: ../../main/tools/index.rst:21 459b026449fb48238ec315bde4e24de1
+#: ../../main/tools/index.rst:21 c5c4ba315306451db6bbe06cde16f2eb
 msgid ".. image:: /blockimg/pybricks_blockStopWatchTime.svg"
 msgstr ""
 
-#: e1e6e487bf6a425fb4846d3c9b19d233 of pybricks.tools.StopWatch.time:1
+#: 318866d0af24481bb49d6f7a1a411155 of pybricks.tools.StopWatch.time:1
 msgid "Gets the current time of the stopwatch."
 msgstr ""
 
-#: ../../main/tools/index.rst 2af5519ab3464471860a290c4a00e99a
-#: 31192f9e1e824418b4b3469e4788b4c8 329a361ac238442e96f5540f768fd637
-#: 5cc1f8b3f95e4a0e8efcf91024ea21c6 6c0654c3a1e342518eb4a36382940e3c
-#: 9b82e6129121476e954360dd66e35798 a4c48e9f4cd745f39673e45f7c495b57
+#: ../../main/tools/index.rst 0def3070679e4c9286e540cb78acef5c
+#: 1f0293af7cc64e65a6e5ba984287d3b6 2f823316276a4f68a99e68bb86953046
+#: 65b639b2a16d4972900d5721effd47e6 6879a54cd8f64e73915008f64a0f4c46
+#: 96a6f73a0b9540558374a1bd09a01e29 b31b688ba8fb4d7fac964f377ceafd09
 msgid "Returns"
 msgstr ""
 
-#: 790af270b58e4c0ab4fcb243478c3ed3 of pybricks.tools.StopWatch.time:3
+#: 58046d8ebce448668c9d0b52f9bb48d0 of pybricks.tools.StopWatch.time:3
 msgid "Elapsed time."
 msgstr ""
 
-#: ../../main/tools/index.rst:25 7dbc19c543fb41898728f7332d2baae3
+#: ../../main/tools/index.rst:25 afa5e634fa724621a8628d9295ddf7c9
 msgid ".. image:: /blockimg/pybricks_blockStopWatchDo_StopWatch_pause.svg"
 msgstr ""
 
-#: 50b34f2bfb0345d6b71cddb455be3e55 of pybricks.tools.StopWatch.pause:1
+#: 3ceb4da02c6240f2b2b41d81e7a6d6da of pybricks.tools.StopWatch.pause:1
 msgid "Pauses the stopwatch."
 msgstr ""
 
-#: ../../main/tools/index.rst:29 7462bc658706426591dd2621f2504383
+#: ../../main/tools/index.rst:29 19bb29d1e13048c98ac3d9f80e9dcabb
 msgid ".. image:: /blockimg/pybricks_blockStopWatchDo_StopWatch_resume.svg"
 msgstr ""
 
-#: b06bb6b0555644d79ba468e04f597a98 of pybricks.tools.StopWatch.resume:1
+#: 1082a8138ea5474ba4ca7adbc3abcb35 of pybricks.tools.StopWatch.resume:1
 msgid "Resumes the stopwatch."
 msgstr ""
 
-#: ../../main/tools/index.rst:33 b32ec8e3810f4fec92edfcb7ddaf612d
+#: ../../main/tools/index.rst:33 d19fb4e0d0af44d4b0a3a33e4dfb2d8a
 msgid ".. image:: /blockimg/pybricks_blockStopWatchDo_StopWatch_reset.svg"
 msgstr ""
 
-#: df6bfbfce1d3441d8d1432900a412dd0 of pybricks.tools.StopWatch.reset:1
+#: 5f3f149a178643e08cfd0a23617fd38f of pybricks.tools.StopWatch.reset:1
 msgid "Resets the stopwatch time to 0."
 msgstr ""
 
-#: 87498a510b134d1089b3b7f45c1c12fe of pybricks.tools.StopWatch.reset:3
+#: 67060a8acbe14f38b9cb18ede59e88d6 of pybricks.tools.StopWatch.reset:3
 msgid "The run state is unaffected:"
 msgstr ""
 
-#: 8b23224a9b60408198e39e72fccbd2d7 of pybricks.tools.StopWatch.reset:5
+#: 819428df598240f290a62c345b8cc024 of pybricks.tools.StopWatch.reset:5
 msgid "If it was paused, it stays paused (but now at 0)."
 msgstr ""
 
-#: 79ac0c492610443e8c5650f1253e40fa of pybricks.tools.StopWatch.reset:6
+#: 569bec92f4674c1eb516124410e57d4b of pybricks.tools.StopWatch.reset:6
 msgid "If it was running, it stays running (but starting again from 0)."
 msgstr ""
 
-#: ../../main/tools/index.rst:38 27681e8c60d64b2aa8a30d3f852d5af8
+#: ../../main/tools/index.rst:38 5d3630ceac75457fa4861a5101be3d5b
 msgid "Input tools"
 msgstr ""
 
-#: ../../main/tools/index.rst:40 e458cc529c224dd2a32af7587f529d33
+#: ../../main/tools/index.rst:40 276424e6f2f144cb826ceecf43533754
 msgid ".. image:: /blockimg/pybricks_blockReadInput_read_input_first_byte.svg"
 msgstr ""
 
-#: ../../main/tools/index.rst:42 62d3ed5fac45400ebd9dff12b41dcbb5
+#: ../../main/tools/index.rst:42 a9322da92db34227ac6bec58cf1f16e2
 msgid ".. image:: /blockimg/pybricks_blockReadInput_read_input_first_char.svg"
 msgstr ""
 
-#: ../../main/tools/index.rst:45 2ed957d1d3f7493d8920a96caf121ada
+#: ../../main/tools/index.rst:45 34467b8f8fcc4c6682e765b48de30807
 msgid ".. image:: /blockimg/pybricks_blockReadInput_read_input_last_byte.svg"
 msgstr ""
 
-#: ../../main/tools/index.rst:48 d53f9705017247bda56f086dd154fada
+#: ../../main/tools/index.rst:48 d0b60aeee3c941808a41d37dfb934679
 msgid ".. image:: /blockimg/pybricks_blockReadInput_read_input_last_char.svg"
 msgstr ""
 
-#: ede5a46c01e944deb6636ed8afb5df57 of pybricks.tools.read_input_byte:1
+#: e788f2631a124c05a8ca0f45c28f5f75 of pybricks.tools.read_input_byte:1
 msgid ""
 "Reads one byte from standard input without blocking and removes it from "
 "the input buffer."
 msgstr ""
 
-#: 1c9014ebcf7f4b32b584054a2c1f662d of pybricks.tools.read_input_byte:4
+#: 29d949d7f0b64d2daa33913b91ded01c of pybricks.tools.read_input_byte:4
 msgid ""
 "Choose ``True`` to read the last (most recent) byte in the buffer and "
 "discard the rest. Choose ``False`` to read only the first (oldest) byte."
 msgstr ""
 
-#: ef165bccf89e47f08d69e9d07de61bd0 of pybricks.tools.read_input_byte:7
+#: 6a163a5fffdc4af78975542899059781 of pybricks.tools.read_input_byte:7
 msgid "Choose ``True`` to convert the result to a one-character string."
 msgstr ""
 
-#: ddd9f5d32bfe46698b9afc6f8261ca70 of pybricks.tools.read_input_byte:10
+#: eb3f4208533d40b3bbfeff7d100bafd2 of pybricks.tools.read_input_byte:10
 msgid ""
 "The byte that was read, as a numeric value (``0`` to ``255``) or string "
 "(e.g. ``\"B\"``). Returns ``None`` if no data is available. If "
@@ -160,239 +160,186 @@ msgid ""
 "printable as a character."
 msgstr ""
 
-#: ../../main/tools/index.rst:55 28a2ea5678b741eeab78ecc6cac8b002
+#: ../../main/tools/index.rst:55 1d7474dff23444908fbd9dbb0cfefd92
 msgid "Added ``last`` and ``chr`` options."
 msgstr ""
 
-#: d75ba8b8f8964c15830b22d4dd9940d6 of pybricks.tools.hub_menu:1
+#: 4001fcbd8309429dbc2d80123ca0c262 of pybricks.tools.hub_menu:1
 msgid ""
 "Shows a menu on the hub display and waits for the user to select an item "
 "using the buttons. Can be used in your own menu-program that lets you "
 "choose which of your other programs to run."
 msgstr ""
 
-#: 4d5359d45a494b6a86433cbd255ce280 of pybricks.tools.hub_menu:5
+#: 99f3f7b0bc3d4c5b9b5eba3b1845a215 of pybricks.tools.hub_menu:5
 msgid ""
 "Note that this is just a convenience function that combines the display, "
 "buttons, and waits to make a simple menu. This means that it can be used "
 "anywhere in a program, not just at the start."
 msgstr ""
 
-#: e84e5e90c2de463f930473507b71936e of pybricks.tools.hub_menu:9
+#: 282ab304f61a4a0585fe51b2662bab04 of pybricks.tools.hub_menu:9
 msgid "The first symbol to show in the menu."
 msgstr ""
 
-#: 85742d0a024f4af4bfb4983414d3fbb7 of pybricks.tools.hub_menu:11
+#: aa10a46c85944e6eb4b0d4d1fd423431 of pybricks.tools.hub_menu:11
 msgid "The second symbol, and so on..."
 msgstr ""
 
-#: a9c7e59619d545829ba23ad79ce12deb of pybricks.tools.hub_menu:14
+#: 47c3b144b51d40a98734829f4b8d7b86 of pybricks.tools.hub_menu:14
 msgid "The selected symbol."
 msgstr ""
 
-#: ../../main/tools/index.rst:62 dbb145e8ca574c718885781234373b27
-msgid ""
-"from pybricks.tools import hub_menu\n"
-"\n"
-"# This example assumes that you have three other programs in Pybricks "
-"Code,\n"
-"# called \"fly_mission\", \"drive_mission\", and \"zigzag\". This example"
-" creates a\n"
-"# menu that lets you pick which one to run.\n"
-"\n"
-"# Choose a letter.\n"
-"selected = hub_menu(\"F\", \"D\", \"Z\")\n"
-"\n"
-"# Based on the selection, run a program.\n"
-"if selected == \"F\":\n"
-"    import fly_mission\n"
-"elif selected == \"D\":\n"
-"    import drive_mission\n"
-"elif selected == \"Z\":\n"
-"    import zigzag\n"
-msgstr ""
-
-#: ../../main/tools/index.rst:66 a26543bdc2e847da913371dcaa2f836c
+#: ../../main/tools/index.rst:66 6927ece29bcc43b8a4b0b5cd8537bac9
 msgid "Linear algebra tools"
 msgstr ""
 
-#: ../../main/tools/index.rst:70 2d2bcdf2b7ae4765b4b8b74552db62b3
+#: ../../main/tools/index.rst:70 689971a5f9cb4414aac27e2842260fc8
 msgid "These tools were previously located in the ``pybricks.geometry`` module."
 msgstr ""
 
-#: 10341f4dc3c2466681707c1c4c731a95 of pybricks.tools.Matrix:1
+#: 0060ed6ffe824100a28e74e57e78951f of pybricks.tools.Matrix:1
 msgid ""
 "Mathematical representation of a matrix. It supports addition (``A + "
 "B``), subtraction (``A - B``), and matrix multiplication (``A * B``) for "
 "matrices of compatible size."
 msgstr ""
 
-#: 60f3acb5ab9b45d0affc6c75f6165a33 of pybricks.tools.Matrix:5
+#: 043ba02c2f294e2d8a842008b914bd8b of pybricks.tools.Matrix:5
 msgid ""
 "It also supports scalar multiplication (``c * A`` or ``A * c``) and "
 "scalar division (``A / c``)."
 msgstr ""
 
-#: a407977d161f4768a5f8b85f4dad5fe9 of pybricks.tools.Matrix:8
+#: 3bbf300362094b758c3c07c469734c3b of pybricks.tools.Matrix:8
 msgid "A :class:`.Matrix` object is immutable."
 msgstr ""
 
-#: 48b3cddceeae4a83b77782ac72a50091 of pybricks.tools.Matrix:10
+#: 90baf541ffca488888e5267af3e45c93 of pybricks.tools.Matrix:10
 msgid "List of rows. Each row is itself a list of numbers."
 msgstr ""
 
-#: ../../docstring f817846e05c64b14873c0951f53e3039 of
+#: ../../docstring fbb91735dca64edcabf56bc2369a54cd of
 #: pybricks.tools.Matrix.T:1
 msgid "Returns a new :class:`.Matrix` that is the transpose of the original."
 msgstr ""
 
-#: ../../docstring c332b07e7fef41f3be646afa0c63179b of
+#: ../../docstring 880fadd242fe4b579791b6e074de3ecc of
 #: pybricks.tools.Matrix.shape:1
 msgid ""
 "Returns a tuple (``m``, ``n``), where ``m`` is the number of rows and "
 "``n`` is the number of columns."
 msgstr ""
 
-#: ../../main/tools/index.rst:83 07a441ee478b4983aea3f4a4cd107b35
+#: ../../main/tools/index.rst:83 435559831e844a3b81a816053eadf462
 msgid ".. image:: /blockimg/pybricks_blockVector.svg"
 msgstr ""
 
-#: f638284cbb264871aedafbce9d14bd39 of pybricks.tools.vector:1
+#: 538f50ff75764c4da5bca43bce27b4d1 of pybricks.tools.vector:1
 msgid "vector(x, y) -> Matrix vector(x, y, z) -> Matrix"
 msgstr ""
 
-#: ae7eb3af7dde4f1499209008da319041 of pybricks.tools.vector:4
+#: 42fc3f8ccddd46189786232b112a8ccd of pybricks.tools.vector:4
 msgid ""
 "Convenience function to create a :class:`.Matrix` with the shape (``2``, "
 "``1``) or (``3``, ``1``)."
 msgstr ""
 
-#: 337eafe4ebc7436a9d3e46c8c1488d34 of pybricks.tools.vector:7
+#: 23e72c17a0244a43a4d9f915f456fe86 of pybricks.tools.vector:7
 msgid "x-coordinate of the vector."
 msgstr ""
 
-#: f31b81fadaa349bbba67d8f6406b6bdc of pybricks.tools.vector:9
+#: 3a058bb62ae14173a064943d4bd812fc of pybricks.tools.vector:9
 msgid "y-coordinate of the vector."
 msgstr ""
 
-#: 6c437bea5bcd44668a123cbba83ea460 of pybricks.tools.vector:11
+#: 01bf7b18b0434c84a15761cc52285096 of pybricks.tools.vector:11
 msgid "z-coordinate of the vector (optional)."
 msgstr ""
 
-#: 2b07fda498b44d1181e0e3012df396a4 of pybricks.tools.vector:14
+#: 1a4e5c244f504f6794c70add83d8e30b of pybricks.tools.vector:14
 msgid "A matrix with the shape of a column vector."
 msgstr ""
 
-#: 3649bf6b10e74e98b8598fb14ae7d4a6 of pybricks.tools.cross:1
+#: af7bf4aab240464f8f111cb876e79fd6 of pybricks.tools.cross:1
 msgid "Gets the cross product ``a`` × ``b`` of two vectors."
 msgstr ""
 
-#: 5a1e4f8ca8b940fe99327f4da1d7f395 73a4b7a7522b4abbade7b901c348f7c2 of
+#: 1cc6626de6804136a3e46d7ba7dbe847 c9cb7f5e459e46bea6ea4720216630c0 of
 #: pybricks.tools.cross:3 pybricks.tools.cross:5
 msgid "A three-dimensional vector."
 msgstr ""
 
-#: 00d512f702924f27b495f4553ff4b33e of pybricks.tools.cross:8
+#: 72f8b2ff56494f798c24482d7e9ef544 of pybricks.tools.cross:8
 msgid "The cross product, also a three-dimensional vector."
 msgstr ""
 
-#: ../../main/tools/index.rst:90 cc3ed2406ebb42bb965c46a538ec0efa
+#: ../../main/tools/index.rst:90 d33d9e5754314d86bf08f2cc13d165f3
 msgid "Multitasking"
 msgstr ""
 
-#: ../../main/tools/index.rst:94 d79790869c7e41eba529e14616385288
+#: ../../main/tools/index.rst:94 d147a316d9e440d080521a5d6c83b51b
 msgid ""
 "Pybricks supports cooperative multitasking using the ``async`` and "
 "``await`` keywords. This allows operations that normally take some time "
 "to complete to run in parallel with other operations."
 msgstr ""
 
-#: ../../main/tools/index.rst:98 5268c3d8f5154d4ebdcc55b91c3a5c89
+#: ../../main/tools/index.rst:98 b2529f2d283145e092fce149a503fc54
 msgid ".. image:: /blockimg/pybricks_blockMultiTask.svg"
 msgstr ""
 
-#: 823e1b7558894f3491fe250b80784492 of pybricks.tools.multitask:1
+#: 9f5be920644249acacd4cd2737683728 of pybricks.tools.multitask:1
 msgid ""
 "Runs multiple coroutines concurrently. This creates a new coroutine that "
 "can be used like any other, including in another ``multitask`` statement."
 msgstr ""
 
-#: 9d552173d9ec44f7b1939fa6fa8285f7 of pybricks.tools.multitask:4
+#: e7bc594ba4734ee39859aa860bc7f539 of pybricks.tools.multitask:4
 msgid "One or more coroutines to run in parallel."
 msgstr ""
 
-#: cb91e86ba48c4a64b57e6fc9b8f8aa09 of pybricks.tools.multitask:7
+#: ecb9a25ddc7542c08891a3f71541f32e of pybricks.tools.multitask:7
 msgid ""
 "Choose ``False`` to wait for all coroutines to finish. Choose ``True`` to"
 " wait for one coroutine to finish and then cancel the others, as if it's "
 "a \"race\"."
 msgstr ""
 
-#: c2bc04cd3ad44c8eb8f3ac0693e28ac4 of pybricks.tools.multitask:12
+#: cd80d4723e95407885b948da3d814c02 of pybricks.tools.multitask:12
 msgid ""
 "Tuple of the return values of each coroutine. Unfinished coroutines will "
 "have ``None`` as their return value."
 msgstr ""
 
-#: 96200a0caee948b69823a5c01298f185 of pybricks.tools.run_task:1
+#: da80618b51b34a42b5ae2dc27ae56799 of pybricks.tools.run_task:1
 msgid ""
 "Runs a coroutine from start to finish while blocking the rest of the "
 "program. This is used primarily to run the main coroutine of a program."
 msgstr ""
 
-#: be9dd0086ed74090a8a5909bffd2d2ab of pybricks.tools.run_task:4
+#: e7f1f2e580fd4f2da0f45515e9b1077c of pybricks.tools.run_task:4
 msgid "Calls to this function are not allowed to be nested."
 msgstr ""
 
-#: 069c3bd3d6b34636b121b27d60be9af0 of pybricks.tools.run_task:6
+#: 7d1bb7a15a6d48889d79595797a72920 of pybricks.tools.run_task:6
 msgid "The main coroutine to run."
 msgstr ""
 
-#: abb87427d8cf48afb29f6896eeed1ff1 of pybricks.tools.run_task:9
+#: f682f3e01e024e598d547cf05fc6a4a0 of pybricks.tools.run_task:9
 msgid ""
 "If no ``coroutine`` is given, this function returns whether the run loop "
 "is currently active (``True``) or not (``False``)."
 msgstr ""
 
-#: ../../main/tools/index.rst:104 17b6c1df82254f878eeaaf7dea8586c3
+#: ../../main/tools/index.rst:104 5a3fddd54500494ebcd04117e9d8ae42
 msgid ""
 "The following example shows how to use multitasking to make a robot drive"
 " forward, then turn and move a gripper at the same time, and then drive "
 "backward."
 msgstr ""
 
-#: ../../main/tools/index.rst:108 c8757ca07ad540e189aac45e16307824
-msgid ""
-"from pybricks.pupdevices import Motor\n"
-"from pybricks.parameters import Direction, Port\n"
-"from pybricks.robotics import DriveBase\n"
-"from pybricks.tools import multitask, run_task\n"
-"\n"
-"# Set up all devices.\n"
-"left = Motor(Port.A, Direction.COUNTERCLOCKWISE)\n"
-"right = Motor(Port.B)\n"
-"gripper = Motor(Port.C)\n"
-"drive_base = DriveBase(left, right, 56, 114)\n"
-"\n"
-"\n"
-"# Move the gripper up and down.\n"
-"async def move_gripper():\n"
-"    await gripper.run_angle(500, -90)\n"
-"    await gripper.run_angle(500, 90)\n"
-"\n"
-"\n"
-"# Drive forward, turn move gripper at the same time, and drive backward.\n"
-"async def main():\n"
-"    await drive_base.straight(250)\n"
-"    await multitask(drive_base.turn(90), move_gripper())\n"
-"    await drive_base.straight(-250)\n"
-"\n"
-"\n"
-"# Runs the main program from start to finish.\n"
-"run_task(main())\n"
-msgstr ""
-
-#: ../../main/tools/index.rst:115 750d7d9900034684954c71ba4962e460
+#: ../../main/tools/index.rst:115 2d1da9a7a41646c2a84fd8b11ff18273
 msgid ""
 "Whenever you see a function or method prefixed by ``await``, this means "
 "that it supports multitasking. When running a coroutine with "
@@ -400,7 +347,7 @@ msgid ""
 " coroutines."
 msgstr ""
 
-#: ../../main/tools/index.rst:119 aed044f7d8e74414a2faa5ca9f0d6690
+#: ../../main/tools/index.rst:119 c14488be23a442b7a2f3bae2fc10e5d1
 msgid ""
 "If you don't use multitasking, you can ignore the ``await`` keyword and "
 "write programs as usual. Specifically, when ``run_task`` is not used, "

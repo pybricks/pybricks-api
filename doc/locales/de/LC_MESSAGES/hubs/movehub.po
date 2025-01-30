@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pybricks v3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-26 20:11+0100\n"
+"POT-Creation-Date: 2025-01-30 22:50+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: de\n"
@@ -19,171 +19,171 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.16.0\n"
 
-#: ../../main/hubs/movehub.rst:4 9c7d44da467a4d39914ff489bdd4198c
+#: ../../main/hubs/movehub.rst:4 31a866edf29943da8e6850697c06cddd
 msgid "Move Hub"
 msgstr ""
 
-#: ../../main/hubs/movehub.rst:8 00bbf6271cb54051ae79b73f7f1f2662
+#: ../../main/hubs/movehub.rst:8 68b56eea1298450b9d2e5c649195e41a
 msgid ".. image:: ../../main/diagrams/movehub.png"
 msgstr ""
 
-#: ../../main/hubs/movehub.rst:11 cf03ad45a9374996b263fc1893dd4820
+#: ../../main/hubs/movehub.rst:11 706de6b30352408f9134bc97f4fed8b3
 msgid ".. image:: /blockimg/pybricks_variables_set_move_hub_option0.svg"
 msgstr ""
 
-#: ../../main/hubs/movehub.rst:13 8e8b2ba0573d4da8aa31d0fa7014dbd7
+#: ../../main/hubs/movehub.rst:13 4a1facca35d74393928b3bb7fe822413
 msgid ".. image:: /blockimg/pybricks_variables_set_move_hub_option4.svg"
 msgstr ""
 
-#: 04e0acacb0f44e2ba9481b727df6a076 of pybricks.hubs.MoveHub:1
+#: 61253fd2b6c848d4a8aae705a22ebd1a of pybricks.hubs.MoveHub:1
 msgid "LEGO® BOOST Move Hub."
 msgstr ""
 
-#: ../../main/hubs/movehub.rst 29e02797f85c4eff9ce511f090db7020
-#: 45a72f651b6f46c895a131343f2a4775 8f43b6d7c35a4ad699a9574779cdfe64
-#: 904f348c27e44a0bbc974cf983cffd40 9157c9ff8c5f48e28b4eae895185fde5
-#: 9a4b191aea9940a89840b8aa13bb6f41 a8348a4207f5408d9a65da0df6ebe48d
-#: ae2e1b761c5d4c0cbf1e25bd80ef02b7 f938df10e322433ba5139afd3543fa02
+#: ../../main/hubs/movehub.rst 150f203a65fe47f695bae233d350eecf
+#: 3f12dd4c33aa4f6a8907d19803b2d4d2 5359ee9ff4354dd9aa9ee4decbef0382
+#: 7623acd7a2784d21a177f6c355d4a0ef 7eeb864dfa9145058048e1dec7c118ec
+#: 8ae0d9e0cfb34274b570134f36cb34a2 bab9b6e3ed91437bbafe92dadaaa1295
+#: bac5772d5a524da2b62dfd9e60833fd9 cccc975ed5b94a4492614432c557b610
 msgid "Parameters"
 msgstr ""
 
-#: 790304ec80944c589e54db4f80dfd35e of pybricks.hubs.MoveHub:3
+#: a0e6c5ee84954459baddcb9968f8244d of pybricks.hubs.MoveHub:3
 msgid "The axis that passes through the *top side* of the hub."
 msgstr ""
 
-#: 31198960bdf9465d9228512ec0d36390 of pybricks.hubs.MoveHub:6
+#: 2c777e58d14f4f168b2054a5a28dc317 of pybricks.hubs.MoveHub:6
 msgid "The axis that passes through the *front side* of the hub."
 msgstr ""
 
-#: 3b08085af1684bd8aa4972f9b007ca3f of pybricks.hubs.MoveHub:9
+#: 938b0048cbc743cebde5cf81f6013e97 of pybricks.hubs.MoveHub:9
 msgid ""
 "A value from 0 to 255 indicating which channel ``hub.ble.broadcast()`` "
 "will use. Default is channel 0."
 msgstr ""
 
-#: f89cd05c8b684b879b795f06fcad9974 of pybricks.hubs.MoveHub:11
+#: 7a44064374eb435b91ead0bde294a090 of pybricks.hubs.MoveHub:11
 msgid ""
 "A list of channels to listen to when ``hub.ble.observe()`` is called. "
 "Listening to more channels requires more memory. Default is an empty list"
 " (no channels)."
 msgstr ""
 
-#: f9c84c2dbdcf4bb6b1851f95e4e911ac of pybricks.hubs.MoveHub:15
+#: e87b1717fa0b4a74920a33d6887d01c9 of pybricks.hubs.MoveHub:15
 msgid "Added *broadcast_channel* and *observe_channels* arguments."
 msgstr ""
 
-#: ../../main/hubs/movehub.rst:20 964e6bef509b47f4b740df300efc17b7
+#: ../../main/hubs/movehub.rst:20 586a1cfc36844ede8a7c8f7c9b8aca04
 msgid "Using the hub status light"
 msgstr ""
 
-#: ../../main/hubs/movehub.rst:21 a3e8032effe647d1b37247fc68824a20
+#: ../../main/hubs/movehub.rst:21 62ed277fd82447f4a4d6abb658b69aa5
 msgid ".. image:: /blockimg/pybricks_blockLightOnColor_movehub_on.svg"
 msgstr ""
 
-#: 6513dd2de9914829ac2fd1076283fd70 of pybricks._common.ColorLight.on:1
+#: 51070db82e084fc3920be68545200440 of pybricks._common.ColorLight.on:1
 msgid "Turns on the light at the specified color."
 msgstr ""
 
-#: 0e5221deebd34ba5883c551e659a5513 d5896b2c465a439384c6d6d51fab4c12 of
+#: 16cb9aac34874d87935bfd6e36f03610 2dc14345e07049f98ef55542551cadec of
 #: pybricks._common.ColorLight.blink:11 pybricks._common.ColorLight.on:3
 msgid "Color of the light."
 msgstr ""
 
-#: ../../main/hubs/movehub.rst:25 847cd5a89270486d960cd266c314c50e
+#: ../../main/hubs/movehub.rst:25 89d2a655600e47ae8d63b0701aad2c5c
 msgid ".. image:: /blockimg/pybricks_blockLightOnColor_movehub_off.svg"
 msgstr ""
 
-#: 14ab25ba2b9c42ef8baa0cee0860cdd2 of pybricks._common.ColorLight.off:1
+#: fde50d18fa6743018011beea81101cb8 of pybricks._common.ColorLight.off:1
 msgid "Turns off the light."
 msgstr ""
 
-#: 627e64ea99884ccfb918df21d0b75d0c of pybricks._common.ColorLight.blink:1
+#: 05160eea3f8d4e61ad3d8a50a6bed052 of pybricks._common.ColorLight.blink:1
 msgid ""
 "Blinks the light at a given color by turning it on and off for given "
 "durations."
 msgstr ""
 
-#: 4cadb5d7ee4d4c26afe11f460aa7ae20 of pybricks._common.ColorLight.blink:4
+#: 725d8bfea6c54609a7aced46e10d11ef of pybricks._common.ColorLight.blink:4
 msgid ""
 "The light keeps blinking indefinitely while the rest of your program "
 "keeps running."
 msgstr ""
 
-#: 0bfb170b70c043ff93d4ea39d7f55f3f of pybricks._common.ColorLight.blink:7
+#: bf371142fcde4f16859542eef83c1b45 of pybricks._common.ColorLight.blink:7
 msgid ""
 "This method provides a simple way to make basic but useful patterns. For "
 "more generic and multi-color patterns, use ``animate()`` instead."
 msgstr ""
 
-#: 8416857d6c1942f1b65ce535e3e1bcd6 of pybricks._common.ColorLight.blink:13
+#: 3fca22a273104ed38393c7c4c03286ff of pybricks._common.ColorLight.blink:13
 msgid "Sequence of time values of the form ``[on_1, off_1, on_2, off_2, ...]``."
 msgstr ""
 
-#: 994d23e577b34e74b5ea3850a5d0e984 of pybricks._common.ColorLight.animate:1
+#: 355426963c524b5b854e33a08af9dd51 of pybricks._common.ColorLight.animate:1
 msgid ""
 "Animates the light with a sequence of colors, shown one by one for the "
 "given interval."
 msgstr ""
 
-#: ad129f2c53c7402fbd6182086fddcaca of pybricks._common.ColorLight.animate:4
+#: 72032c4172eb463d8cf403311a708c57 of pybricks._common.ColorLight.animate:4
 msgid ""
 "The animation runs in the background while the rest of your program keeps"
 " running. When the animation completes, it repeats."
 msgstr ""
 
-#: 6510085da3f643fea2bd474b7c328737 of pybricks._common.ColorLight.animate:7
+#: 70761edb89d64912b40ec51b4f24edac of pybricks._common.ColorLight.animate:7
 msgid "Sequence of :class:`Color <.parameters.Color>` values."
 msgstr ""
 
-#: 0a77ca8d878b4df8a976fed5d8620939 of pybricks._common.ColorLight.animate:10
+#: 6c7e4d9047a34bff809fa60f4962024d of pybricks._common.ColorLight.animate:10
 msgid "Time between color updates."
 msgstr ""
 
-#: ../../main/hubs/movehub.rst:34 10195217b3eb4e18a27ca111ab720323
+#: ../../main/hubs/movehub.rst:34 5f8b431d14aa434bb80af9b3f928fe12
 msgid "Using the IMU"
 msgstr ""
 
-#: ../../main/hubs/movehub.rst:35 45f2c333cdf741498f37ba33ecf76196
+#: ../../main/hubs/movehub.rst:35 a12d0c39a92149ac920d5fd889a9ae9a
 msgid ".. image:: /blockimg/pybricks_blockImuUp_MoveHub.svg"
 msgstr ""
 
-#: 8107cc94918f4c7e90ab404798e899a1 of
+#: c0cb70ba9dc5418288db1ecfcb03ac91 of
 #: pybricks._common.SimpleAccelerometer.up:1
 msgid "Checks which side of the hub currently faces upward."
 msgstr ""
 
-#: ../../main/hubs/movehub.rst 026a5fcabc734e11b1ba4996541f0067
-#: 0797a6f3b61c412db339def42948e44f 12da0e0d4c0748dca321de4c461d7ff1
-#: 52e8861d10a441f688577840e7028bb5 60905b100b264c56ab10c945c774088d
-#: 68b90255fa7b443dae9e5fa73be5665d aba9a8bd7ef341babd0480e5cfa481ef
-#: d2639b03a43c48958a775e090822e820 d3b3cb205aac44439602013804eaf07e
-#: d7e93ab4d3354d0d99658f34c93fad2b f2970aa1f8224c3d9e7891d8b89c5e4d
+#: ../../main/hubs/movehub.rst 1530a58992354700bd76e1da371a7a9c
+#: 19275f49d96244749a48052c09cade68 1bf72e6526ec49f8a5c9e3a142e34e7a
+#: 3c28878d716d48e1839ac0a628bd5438 4a067ee6a2304404bbd4fc5c2dac91e6
+#: 556f8025636c42319f7e436a6692ffa6 a57ec0e9a3c1477998a8b3f85c4448b2
+#: d62d81ab2f3c41ec8941bb1381076a67 e07cc6f1eca6460f9ae4aa57f5d3a426
+#: f4ed537afb4448b9a65dfd521bd74972 fc14dd1d658c4859b6ac73f859380146
 msgid "Returns"
 msgstr ""
 
-#: a427b664bcd24140b21f40479b5edf3c of
+#: d1a8fb27ba684161be8497ce877eaeff of
 #: pybricks._common.SimpleAccelerometer.up:3
 msgid ""
 "``Side.TOP``, ``Side.BOTTOM``, ``Side.LEFT``, ``Side.RIGHT``, "
 "``Side.FRONT`` or ``Side.BACK``."
 msgstr ""
 
-#: ../../main/hubs/movehub.rst:39 ccedb27a8c2d44ed82d80fc60a6e22da
+#: ../../main/hubs/movehub.rst:39 5c03c01834c04ed28e6681907dd62fd1
 msgid ".. image:: /blockimg/pybricks_blockTilt_MoveHub_imu.tilt.pitch.svg"
 msgstr ""
 
-#: ../../main/hubs/movehub.rst:41 ddd4389ad86b4f10b76081bd390d2eaa
+#: ../../main/hubs/movehub.rst:41 683c5a5a217b42ee99ddd125587b4ed2
 msgid ".. image:: /blockimg/pybricks_blockTilt_MoveHub_imu.tilt.roll.svg"
 msgstr ""
 
-#: e07120e34ed04c6bbe8a48c3d9edbfea of
+#: 4a6345f746b34d1892f3333bb11c321a of
 #: pybricks._common.SimpleAccelerometer.tilt:1
 msgid ""
 "Gets the pitch and roll angles. This is relative to the :ref:`user-"
 "specified neutral orientation <robotframe>`."
 msgstr ""
 
-#: db411922ef3846f9a6ae9aa3b16e11b4 of
+#: 28befb4c54f34ceebca681ece12a3dc8 of
 #: pybricks._common.SimpleAccelerometer.tilt:4
 msgid ""
 "The order of rotation is pitch-then-roll. This is equivalent to a "
@@ -191,57 +191,57 @@ msgid ""
 "along the x-axis."
 msgstr ""
 
-#: 9df26d213c8946948a30f4fc2a55dea7 of
+#: 65e39604c29041449365cb67a24bf61d of
 #: pybricks._common.SimpleAccelerometer.tilt:8
 msgid "Tuple of pitch and roll angles in degrees."
 msgstr ""
 
-#: ../../main/hubs/movehub.rst:46 c001175bf7694063a29d608934598173
+#: ../../main/hubs/movehub.rst:46 ef81c7dc4a6043e3a9d09d8ef57a830b
 msgid ".. image:: /blockimg/pybricks_blockImuAcceleration_MoveHub.svg"
 msgstr ""
 
-#: 7c97e4a80c714e2ea08aa8a728eef933 of
+#: ed1a31ddd29b4ebea5bb3301dbc901bf of
 #: pybricks._common.SimpleAccelerometer.acceleration:1
 msgid "Gets the acceleration of the device."
 msgstr ""
 
-#: d066d70391944ae8bf35c30bae0b1827 of
+#: e1e4d54ed0154f09871cb75a73c06c02 of
 #: pybricks._common.SimpleAccelerometer.acceleration:3
 msgid "Acceleration along all three axes."
 msgstr ""
 
-#: ../../main/hubs/movehub.rst:52 f67548bed6414c989ebf3c0f6c7bedc4
+#: ../../main/hubs/movehub.rst:52 ef17bac6f37043b095fcca9a8d16c02f
 msgid "Changed acceleration units from m/s² to mm/s²."
 msgstr ""
 
-#: ../../main/hubs/movehub.rst:55 9699ae5079704e2492e640f06bc07ea9
+#: ../../main/hubs/movehub.rst:55 9fd6e69b3efc478ea3ff90131ac66d9a
 msgid "Using connectionless Bluetooth messaging"
 msgstr ""
 
-#: ../../main/hubs/movehub.rst:56 fc14bcb149d549a3b9ffb8f7cb3172f9
+#: ../../main/hubs/movehub.rst:56 2632a29549b04f96b610a749e8562c61
 msgid ".. image:: /blockimg/pybricks_blockBleBroadcast_PrimeHub.svg"
 msgstr ""
 
-#: 1bbd86cc1c71498f9d5308214ed9c594 of pybricks._common.BLE.broadcast:1
+#: d1b9be64896e4c07bd332dbaa5e0df25 of pybricks._common.BLE.broadcast:1
 msgid ""
 "Starts broadcasting the given data on the ``broadcast_channel`` you "
 "selected when initializing the hub."
 msgstr ""
 
-#: e00e3f830e0d477e80df77e20a1e8797 of pybricks._common.BLE.broadcast:4
+#: 2cd87eb1bcb0499baf3ed4f6c931b1cf of pybricks._common.BLE.broadcast:4
 msgid ""
 "Data may be of type ``int``, ``float``, ``str``, ``bytes``, ``True``, or "
 "``False``, or a list thereof."
 msgstr ""
 
-#: 19daf26f0a9a42eb84e13a355f436ce7 of pybricks._common.BLE.broadcast:7
+#: 231de2962b604da7881e8ddabf958712 of pybricks._common.BLE.broadcast:7
 msgid ""
 "Choose ``None`` to stop broadcasting. This helps improve performance when"
 " you don't need the broadcast feature, especially when observing at the "
 "same time."
 msgstr ""
 
-#: d8cb0935be934b7bada09eaeb13af2a8 of pybricks._common.BLE.broadcast:11
+#: 3fb6b3def7b043ffa2f824e72fbac8e6 of pybricks._common.BLE.broadcast:11
 msgid ""
 "The total data size is quite limited (26 bytes). ``True`` and ``False`` "
 "take 1 byte each. ``float`` takes 5 bytes. ``int`` takes 2 to 5 bytes "
@@ -249,7 +249,7 @@ msgid ""
 " of bytes in the object plus one extra byte."
 msgstr ""
 
-#: 8b95869a34a548ea8fc63fccf4064d63 of pybricks._common.BLE.broadcast:16
+#: 1879d0b032174121af9d52b377f5eb8e of pybricks._common.BLE.broadcast:16
 msgid ""
 "When multitasking, only one task can broadcast at a time. To broadcast "
 "information from multiple tasks (or block stacks), you could use a "
@@ -257,119 +257,119 @@ msgid ""
 "variables change."
 msgstr ""
 
-#: 46560ab2a72b45a1be422dcb12f7e3a5 of pybricks._common.BLE.broadcast:21
+#: f990a203965249678702d6d9683d54ce of pybricks._common.BLE.broadcast:21
 msgid "The value or values to be broadcast."
 msgstr ""
 
-#: ../../main/hubs/movehub.rst:60 38ebf810ac54406b8a339a0671da8087
+#: ../../main/hubs/movehub.rst:60 b7595a28a79e4ad882798800d0b938a4
 msgid ".. image:: /blockimg/pybricks_blockBleObserve_PrimeHub.svg"
 msgstr ""
 
-#: e720a64ae83c40f69f2ea9998da455ef of pybricks._common.BLE.observe:1
+#: 809fe2d37a7240cf9025ac036a57dc7f of pybricks._common.BLE.observe:1
 msgid "Retrieves the last observed data for a given channel."
 msgstr ""
 
-#: 4b46fe96d23b4333a85f1a9c610e823a of pybricks._common.BLE.observe:3
+#: afab8b885bb249d0bfa7f8c8e241e380 of pybricks._common.BLE.observe:3
 msgid ""
 "Receiving data is more reliable when the hub is not connected to a "
 "computer or other devices at the same time."
 msgstr ""
 
-#: 6f468fae4d194c49af531b6cdc576b69 of pybricks._common.BLE.observe:6
+#: 2e147af4853242939a31500a895ee937 of pybricks._common.BLE.observe:6
 msgid "The channel to observe (0 to 255)."
 msgstr ""
 
-#: e2432f70a20a4391a418c745544e80f8 of pybricks._common.BLE.observe:9
+#: ead78feb28314990b83361e5393520b7 of pybricks._common.BLE.observe:9
 msgid ""
 "The received data in the same format as it was sent, or ``None`` if no "
 "recent data is available."
 msgstr ""
 
-#: 087917fa3657455598a2e372d8134ad8 of pybricks._common.BLE.signal_strength:1
+#: a6146569b86c4270a5ef923e66e0f98c of pybricks._common.BLE.signal_strength:1
 msgid "Gets the average signal strength in dBm for the given channel."
 msgstr ""
 
-#: d1a9b060e63d40adb2a8ad64951bc56c of pybricks._common.BLE.signal_strength:3
+#: 1adfd9d066a0460d8fc58a9009882f5a of pybricks._common.BLE.signal_strength:3
 msgid ""
 "This indicates how near the broadcasting device is. Nearby devices may "
 "have a signal strength around -40 dBm, while far away devices might have "
 "a signal strength around -70 dBm."
 msgstr ""
 
-#: 2159d77ac77b44e0a21172eb15d8b40d of pybricks._common.BLE.signal_strength:7
+#: 757120a17ab84f248e978ca722e224a8 of pybricks._common.BLE.signal_strength:7
 msgid "The channel number (0 to 255)."
 msgstr ""
 
-#: 33d4aa75939a4ea59cf7c76b1aaf6946 of pybricks._common.BLE.signal_strength:10
+#: 5f111ea118e749d4a36418ffe7060089 of pybricks._common.BLE.signal_strength:10
 msgid "The signal strength or ``-128`` if there is no recent observed data."
 msgstr ""
 
-#: 86511c646a2d4f989a80161d17659822 of pybricks._common.BLE.version:1
+#: ecb3903cbb5248bf9d0ca02301d67e3c of pybricks._common.BLE.version:1
 msgid "Gets the firmware version from the Bluetooth chip."
 msgstr ""
 
-#: ../../main/hubs/movehub.rst:69 ca0cbd620b5446bcb0361f9e61dedfd1
+#: ../../main/hubs/movehub.rst:69 a4ef409fb3b44fb1a0df87d0c9cf6cf3
 msgid "Using the battery"
 msgstr ""
 
-#: ../../main/hubs/movehub.rst:70 21172e914aa44f53bc850f45cdfbffcc
+#: ../../main/hubs/movehub.rst:70 033ee0515e8449b8a70f07123ce097bc
 msgid ""
 ".. image:: "
 "/blockimg/pybricks_blockBatteryMeasure_MoveHub_battery.voltage.svg"
 msgstr ""
 
-#: 7f00b22e14c84637b6f214e5049f80b7 of pybricks._common.Battery.voltage:1
+#: 0e348fdc5efc4a37b147e0b0f99b8d44 of pybricks._common.Battery.voltage:1
 msgid "Gets the voltage of the battery."
 msgstr ""
 
-#: 2cca4e8a52944b28879f14d2dbe4bc45 of pybricks._common.Battery.voltage:3
+#: 2cb4bec61cc84cc4b1213301330b08b2 of pybricks._common.Battery.voltage:3
 msgid "Battery voltage."
 msgstr ""
 
-#: ../../main/hubs/movehub.rst:74 7763949a228e45af88982318e9659391
+#: ../../main/hubs/movehub.rst:74 2de269ee3b834b9899d29c553ae035d6
 msgid ""
 ".. image:: "
 "/blockimg/pybricks_blockBatteryMeasure_MoveHub_battery.current.svg"
 msgstr ""
 
-#: d51aa1f35b624b68b91e05dad95ca576 of pybricks._common.Battery.current:1
+#: 8e99f95757134e8090f2cd379750a2cb of pybricks._common.Battery.current:1
 msgid "Gets the current supplied by the battery."
 msgstr ""
 
-#: 16a010ffd04940a1afcd06c4757157db of pybricks._common.Battery.current:3
+#: ac4e75764bb1490bbdfee7f279d93f6a of pybricks._common.Battery.current:3
 msgid "Battery current."
 msgstr ""
 
-#: ../../main/hubs/movehub.rst:79 54d2a7efdd9f49aa981ba4b5249e52c1
+#: ../../main/hubs/movehub.rst:79 f6c047c3953b479c956749b2ea66da25
 msgid "Button and system control"
 msgstr ""
 
-#: ../../main/hubs/movehub.rst:80 4edc3f618a7b4af49436438b743a25a5
+#: ../../main/hubs/movehub.rst:80 431b63747e5f49deb958c8cff818f31b
 msgid ".. image:: /blockimg/pybricks_blockButtonIsPressed_PrimeHub.svg"
 msgstr ""
 
-#: c8ca40f6d58b4e45b4822a7f3d1d17e8 of pybricks._common.Keypad.pressed:1
+#: c2c82e5d8d0f4ff1b346ec1f7bd32d17 of pybricks._common.Keypad.pressed:1
 msgid "Checks which buttons are currently pressed."
 msgstr ""
 
-#: 7e7f93c75da24b87a21fa8ec049e8857 of pybricks._common.Keypad.pressed:3
+#: 2215e49cc3cf450b940cf1730f0a1118 of pybricks._common.Keypad.pressed:3
 msgid "Set of pressed buttons."
 msgstr ""
 
-#: ../../main/hubs/movehub.rst:84 6958c37bb48f4cd6b5f56962d041cb5c
+#: ../../main/hubs/movehub.rst:84 44f699e1ac8c4cc08e6d6c37cfcb31d8
 msgid ".. image:: /blockimg/pybricks_blockHubStopButton_MoveHub.svg"
 msgstr ""
 
-#: ../../main/hubs/movehub.rst:86 2f929c178b65485b9f16c55724ea3354
+#: ../../main/hubs/movehub.rst:86 2071e1564ea0419ea8ef6f943beb0dea
 msgid ".. image:: /blockimg/pybricks_blockHubStopButton_MoveHub_none.svg"
 msgstr ""
 
-#: 5fbf6bb9b4804acdbdc33ba47793bfd8 of
+#: 79615ce7aea74e259674d24bbadd1339 of
 #: pybricks._common.System.set_stop_button:1
 msgid "Sets the button or button combination that stops a running script."
 msgstr ""
 
-#: e15d3146a06f4192b2345cd16d953a70 of
+#: b4faa7a8663e4f49b3a04cf86dcd5623 of
 #: pybricks._common.System.set_stop_button:3
 msgid ""
 "Normally, the center button is used to stop a running script. You can "
@@ -377,7 +377,7 @@ msgid ""
 "purposes."
 msgstr ""
 
-#: 366fbb1802494c60a8421fc0855013c3 of
+#: adff6cec5a5b41f2a2c222ad69eae27b of
 #: pybricks._common.System.set_stop_button:7
 msgid ""
 "A button such as :attr:`Button.CENTER "
@@ -386,83 +386,83 @@ msgid ""
 " still turn the hub off by holding the center button for three seconds."
 msgstr ""
 
-#: eaad7efab2e14454b51eef8e723d260a of pybricks._common.System.name:1
+#: 185055454ad948a59dc1fd6a1668a2f5 of pybricks._common.System.name:1
 msgid "Gets the hub name. This is the name you see when connecting via Bluetooth."
 msgstr ""
 
-#: 42526191568e4d61a2349eb2e8be2986 of pybricks._common.System.name:4
+#: 30f3264f317b48f4868ce4f00bd71a97 of pybricks._common.System.name:4
 msgid "The hub name."
 msgstr ""
 
-#: a5274c7075cf4f1bb89d778c8ad35409 of pybricks._common.System.storage:1
+#: c575fba9dbb94f629dba8763e0188076 of pybricks._common.System.storage:1
 msgid "Reads or writes binary data to persistent storage."
 msgstr ""
 
-#: f81d1a2917d34ea0a507c57b5f0f705d of pybricks._common.System.storage:3
+#: cf4d3dc8328541979b3a7e56694db9de of pybricks._common.System.storage:3
 msgid ""
 "This lets you store data that can be used the next time you run the "
 "program."
 msgstr ""
 
-#: 9a200e3efae2451c90196860d9a97f5c of pybricks._common.System.storage:6
+#: 32b7895085cf4519b5fb2b1989433d34 of pybricks._common.System.storage:6
 msgid ""
 "The data will be saved to flash memory when you turn the hub off "
 "normally. It will not be saved if the batteries are removed *while* the "
 "hub is still running."
 msgstr ""
 
-#: d70a80b3ef9343d6bd05ad217416402d of pybricks._common.System.storage:10
+#: 0c34abb327154d04b4d11673d87394bf of pybricks._common.System.storage:10
 msgid ""
 "Once saved, the data will remain available even after you remove the "
 "batteries."
 msgstr ""
 
-#: 6765e74f297e40d98cdb8fae2e58acc0 of pybricks._common.System.storage:13
+#: 6a82ccabcfc340fa98c8580e1a881058 of pybricks._common.System.storage:13
 msgid "The offset from the start of the user storage memory, in bytes."
 msgstr ""
 
-#: 26f96e39ea5a4e83a62bfa2b4bebbb01 of pybricks._common.System.storage:15
+#: 4e73448e926c46ecb5ef09e66ebfbb9a of pybricks._common.System.storage:15
 msgid "The number of bytes to read. Omit this argument when writing."
 msgstr ""
 
-#: a54d1260fa024cbb85e95f059a7fe962 of pybricks._common.System.storage:17
+#: 39f53b70683b4286b02a66980774113b of pybricks._common.System.storage:17
 msgid "The bytes to write. Omit this argument when reading."
 msgstr ""
 
-#: 5303d2e252b244339052dbd76f374734 of pybricks._common.System.storage:20
+#: 6039dc37b0484421946dc247c99a2a92 of pybricks._common.System.storage:20
 msgid "The bytes read if reading, otherwise ``None``."
 msgstr ""
 
-#: ../../main/hubs/movehub.rst e6c7ea86a0754184a775c31132c11b94
+#: ../../main/hubs/movehub.rst b140d50f40fa47509b46fa37928879b4
 msgid "Raises"
 msgstr ""
 
-#: 8e26e9583de744e7a11006a4aa832c53 of pybricks._common.System.storage:22
+#: 420af20b996d481e926d9945ed813502 of pybricks._common.System.storage:22
 msgid "If you try to read or write data outside of the allowed range."
 msgstr ""
 
-#: ../../main/hubs/movehub.rst:95 70f7c85412884d88b432733cde3fd677
+#: ../../main/hubs/movehub.rst:95 7a21ee7f6e314bf5b4ef088856a24f8f
 msgid ""
 "You can store up to 128 bytes of data on this hub. The data is cleared "
 "when you update the Pybricks firmware or if you restore the original "
 "firmware."
 msgstr ""
 
-#: ../../main/hubs/movehub.rst:99 48e30e061e3746378c6cddd1761d7d98
+#: ../../main/hubs/movehub.rst:99 087ce4b828f54d42856a2bd24b88445d
 msgid ".. image:: /blockimg/pybricks_blockHubShutdown_MoveHub.svg"
 msgstr ""
 
-#: 6c5845d88f21451b991bc533d659572e of pybricks._common.System.shutdown:1
+#: 342464982509400f89446db6410b5596 of pybricks._common.System.shutdown:1
 msgid "Stops your program and shuts the hub down."
 msgstr ""
 
-#: 228da4a7e64a4ce7b6e37d74ae3e6574 of pybricks._common.System.reset_reason:1
+#: 1f4836f5600a43c78c7398faa1b394fe of pybricks._common.System.reset_reason:1
 msgid ""
 "Finds out how and why the hub (re)booted. This can be useful to diagnose "
 "some problems."
 msgstr ""
 
-#: d42a7d748bdd4733b6ec7b758fa35b04 of pybricks._common.System.reset_reason:4
+#: 71e45289751846ccada3dfd116ffd7a3 of pybricks._common.System.reset_reason:4
 msgid ""
 "* ``0`` if the hub was previously powered off   normally. * ``1`` if the "
 "hub rebooted automatically, like   after a firmware update. * ``2`` if "
@@ -470,314 +470,83 @@ msgid ""
 " firmware   issue."
 msgstr ""
 
-#: ca980ce597834ea1adb34343fb62cde4 of pybricks._common.System.reset_reason:6
+#: e104e354814144708f745081435b866e of pybricks._common.System.reset_reason:6
 msgid "``0`` if the hub was previously powered off normally."
 msgstr ""
 
-#: 8a08a114430a4f60bdb3f13a7edd5c08 of pybricks._common.System.reset_reason:8
+#: 89909103c9814d7c8952744341c953f4 of pybricks._common.System.reset_reason:8
 msgid "``1`` if the hub rebooted automatically, like after a firmware update."
 msgstr ""
 
-#: 323dff436f1c497e95feac199d470abf of pybricks._common.System.reset_reason:10
+#: cf60933631244a65972a982f467cfe79 of pybricks._common.System.reset_reason:10
 msgid ""
 "``2`` if the hub previously crashed due to a watchdog timeout, which "
 "indicates a firmware issue."
 msgstr ""
 
-#: ../../main/hubs/movehub.rst:106 8499bf3203154c7db450a273fff42a00
+#: ../../main/hubs/movehub.rst:106 924601694622449ba1530e4d2b93d75c
 msgid "Status light examples"
 msgstr ""
 
-#: ../../main/hubs/movehub.rst:109 9d4094fcb3184ccb8c1b52e33b482174
+#: ../../main/hubs/movehub.rst:109 c18676dd960b48cc9d7ff6caf82277f4
 msgid "Turning the light on and off"
 msgstr ""
 
-#: ../../main/hubs/movehub.rst:111 0af8e2a60a65479da6cd16a6a314ca84
-msgid ""
-"from pybricks.hubs import MoveHub\n"
-"from pybricks.parameters import Color\n"
-"from pybricks.tools import wait\n"
-"\n"
-"# Initialize the hub.\n"
-"hub = MoveHub()\n"
-"\n"
-"# Turn the light on and off 5 times.\n"
-"for i in range(5):\n"
-"\n"
-"    hub.light.on(Color.RED)\n"
-"    wait(1000)\n"
-"\n"
-"    hub.light.off()\n"
-"    wait(500)\n"
-msgstr ""
-
-#: ../../main/hubs/movehub.rst:115 04a1471f992347f29eb007892b5574c7
+#: ../../main/hubs/movehub.rst:115 91784586d61e4c728575983a34e2b951
 msgid "Making the light blink"
 msgstr ""
 
-#: ../../main/hubs/movehub.rst:117 965334d174e64bfbad91d0ef43057e8f
-msgid ""
-"from pybricks.hubs import MoveHub\n"
-"from pybricks.parameters import Color\n"
-"from pybricks.tools import wait\n"
-"\n"
-"# Initialize the hub\n"
-"hub = MoveHub()\n"
-"\n"
-"# Keep blinking red on and off.\n"
-"hub.light.blink(Color.RED, [500, 500])\n"
-"\n"
-"wait(10000)\n"
-"\n"
-"# Keep blinking green slowly and then quickly.\n"
-"hub.light.blink(Color.GREEN, [500, 500, 50, 900])\n"
-"\n"
-"wait(10000)\n"
-msgstr ""
-
-#: ../../main/hubs/movehub.rst:121 1c9988136e3548e3bb45084ca6309924
+#: ../../main/hubs/movehub.rst:121 5c4152dcaea84667a939b5fef6464c93
 msgid "IMU examples"
 msgstr ""
 
-#: ../../main/hubs/movehub.rst:124 179380abe89f4c9a9cd6983ffa275ac5
+#: ../../main/hubs/movehub.rst:124 842614a78e3e4237af0f7c54487e0eb5
 msgid "Testing which way is up"
 msgstr ""
 
-#: ../../main/hubs/movehub.rst:126 118d455c5b104276b1cbb0b680e20e13
-msgid ""
-"from pybricks.hubs import MoveHub\n"
-"from pybricks.parameters import Color, Side\n"
-"from pybricks.tools import wait\n"
-"\n"
-"# Initialize the hub.\n"
-"hub = MoveHub()\n"
-"\n"
-"# Define colors for each side in a dictionary.\n"
-"SIDE_COLORS = {\n"
-"    Side.TOP: Color.RED,\n"
-"    Side.BOTTOM: Color.BLUE,\n"
-"    Side.LEFT: Color.GREEN,\n"
-"    Side.RIGHT: Color.YELLOW,\n"
-"    Side.FRONT: Color.MAGENTA,\n"
-"    Side.BACK: Color.BLACK,\n"
-"}\n"
-"\n"
-"# Keep updating the color based on detected up side.\n"
-"while True:\n"
-"\n"
-"    # Check which side of the hub is up.\n"
-"    up_side = hub.imu.up()\n"
-"\n"
-"    # Change the color based on the side.\n"
-"    hub.light.on(SIDE_COLORS[up_side])\n"
-"\n"
-"    # Also print the result.\n"
-"    print(up_side)\n"
-"    wait(50)\n"
-msgstr ""
-
-#: ../../main/hubs/movehub.rst:130 d5d076762664412d847dd175cf2ee8f1
+#: ../../main/hubs/movehub.rst:130 ac30040ff8ab4d73b18c706fefac8e8a
 msgid "Reading acceleration"
 msgstr ""
 
-#: ../../main/hubs/movehub.rst:132 5fa245c2e87442e9822d097d0a4e1949
-msgid ""
-"from pybricks.hubs import MoveHub\n"
-"from pybricks.tools import wait\n"
-"\n"
-"# Initialize the hub.\n"
-"hub = MoveHub()\n"
-"\n"
-"# Get the acceleration tuple.\n"
-"print(hub.imu.acceleration())\n"
-"\n"
-"while True:\n"
-"    # Get individual acceleration values.\n"
-"    x, y, z = hub.imu.acceleration()\n"
-"    print(x, y, z)\n"
-"\n"
-"    # Wait so we can see what we printed.\n"
-"    wait(100)\n"
-msgstr ""
-
-#: ../../main/hubs/movehub.rst:137 d7a2fc5f5ed94c309a024dda2020326b
+#: ../../main/hubs/movehub.rst:137 237d8eda63c6451faa4968cd6a1957be
 msgid "Bluetooth examples"
 msgstr ""
 
-#: ../../main/hubs/movehub.rst:140 95cb2b0f0c0a41488d61095c48c80dd8
+#: ../../main/hubs/movehub.rst:140 58787df7e8fe47c8afa36cfff21c4c00
 msgid "Broadcasting data to other hubs"
 msgstr ""
 
-#: ../../main/hubs/movehub.rst:142 66dfd3f9e698457ab9be9f386331b67d
-msgid ""
-"from pybricks.hubs import MoveHub\n"
-"from pybricks.pupdevices import Motor\n"
-"from pybricks.parameters import Port\n"
-"from pybricks.tools import wait\n"
-"\n"
-"# Initialize the hub.\n"
-"hub = MoveHub(broadcast_channel=1)\n"
-"\n"
-"# Initialize the motors.\n"
-"left_motor = Motor(Port.A)\n"
-"right_motor = Motor(Port.B)\n"
-"\n"
-"while True:\n"
-"    # Read the motor angles to be sent to the other hub.\n"
-"    left_angle = left_motor.angle()\n"
-"    right_angle = right_motor.angle()\n"
-"\n"
-"    # Set the broadcast data and start broadcasting if not already doing "
-"so.\n"
-"    data = (left_angle, right_angle)\n"
-"    hub.ble.broadcast(data)\n"
-"\n"
-"    # Broadcasts are only sent every 100 milliseconds, so there is no "
-"reason\n"
-"    # to call the broadcast() method more often than that.\n"
-"    wait(100)\n"
-msgstr ""
-
-#: ../../main/hubs/movehub.rst:146 038fd68a9e1b464e99bd5c70d5072f95
+#: ../../main/hubs/movehub.rst:146 ab679aada0df403897b28fa4884aaeb9
 msgid "Observing data from other hubs"
 msgstr ""
 
-#: ../../main/hubs/movehub.rst:148 c3c7d70c157542e389a2b441cf4078de
-msgid ""
-"from pybricks.hubs import MoveHub\n"
-"from pybricks.pupdevices import Motor\n"
-"from pybricks.parameters import Color, Port\n"
-"from pybricks.tools import wait\n"
-"\n"
-"# Initialize the hub.\n"
-"hub = MoveHub(observe_channels=[1])\n"
-"\n"
-"# Initialize the motors.\n"
-"left_motor = Motor(Port.A)\n"
-"right_motor = Motor(Port.B)\n"
-"\n"
-"while True:\n"
-"    # Receive broadcast from the other hub.\n"
-"\n"
-"    data = hub.ble.observe(1)\n"
-"\n"
-"    if data is None:\n"
-"        # No data has been received in the last 1 second.\n"
-"        hub.light.on(Color.RED)\n"
-"    else:\n"
-"        # Data was received and is less that one second old.\n"
-"        hub.light.on(Color.GREEN)\n"
-"\n"
-"        # *data* contains the same values in the same order\n"
-"        # that were passed to hub.ble.broadcast() on the\n"
-"        # other hub.\n"
-"        left_angle, right_angle = data\n"
-"\n"
-"        # Make the motors on this hub mirror the position of the\n"
-"        # motors on the other hub.\n"
-"        left_motor.track_target(left_angle)\n"
-"        right_motor.track_target(right_angle)\n"
-"\n"
-"    # Broadcasts are only sent every 100 milliseconds, so there is\n"
-"    # no reason to call the observe() method more often than that.\n"
-"    wait(100)\n"
-msgstr ""
-
-#: ../../main/hubs/movehub.rst:153 50bd45547b384a539ef9662f958b10c7
+#: ../../main/hubs/movehub.rst:153 1afd4bb636034623ad3b258ac5fc2d1b
 msgid "Button and system examples"
 msgstr ""
 
-#: ../../main/hubs/movehub.rst:156 25f8f1827e674540b15b903f5e526fee
+#: ../../main/hubs/movehub.rst:156 4d44e67c57c34b03bd930a2eb66fb5a9
 msgid "Using the stop button during your program"
 msgstr ""
 
-#: ../../main/hubs/movehub.rst:158 c8b4eab5895f4cedb32b045d2c3fc2cf
-msgid ""
-"from pybricks.hubs import MoveHub\n"
-"from pybricks.parameters import Color, Button\n"
-"from pybricks.tools import wait, StopWatch\n"
-"\n"
-"# Initialize the hub.\n"
-"hub = MoveHub()\n"
-"\n"
-"# Disable the stop button.\n"
-"hub.system.set_stop_button(None)\n"
-"\n"
-"# Check the button for 5 seconds.\n"
-"watch = StopWatch()\n"
-"while watch.time() < 5000:\n"
-"\n"
-"    # Set light to green if pressed, else red.\n"
-"    if hub.buttons.pressed():\n"
-"        hub.light.on(Color.GREEN)\n"
-"    else:\n"
-"        hub.light.on(Color.RED)\n"
-"\n"
-"# Enable the stop button again.\n"
-"hub.system.set_stop_button(Button.CENTER)\n"
-"\n"
-"# Now you can press the stop button as usual.\n"
-"wait(5000)\n"
-msgstr ""
-
-#: ../../main/hubs/movehub.rst:162 08edabd28a284594a7242a86d2bef934
+#: ../../main/hubs/movehub.rst:162 7a2b41684cf3456c90c302db4aeec780
 msgid "Turning the hub off"
 msgstr ""
 
-#: ../../main/hubs/movehub.rst:164 2db026e8851441368146c72008393c4d
-msgid ""
-"from pybricks.hubs import MoveHub\n"
-"from pybricks.tools import wait\n"
-"\n"
-"# Initialize the hub.\n"
-"hub = MoveHub()\n"
-"\n"
-"# Say goodbye and give some time to send it.\n"
-"print(\"Goodbye!\")\n"
-"wait(100)\n"
-"\n"
-"# Shut the hub down.\n"
-"hub.system.shutdown()\n"
-msgstr ""
-
-#: ../../main/hubs/movehub.rst:168 6186e7affa6242d7ad4c8c7aa46a0fc9
+#: ../../main/hubs/movehub.rst:168 de7c37c94965448a9ba59a6b99ea212e
 msgid "Making random numbers"
 msgstr ""
 
-#: ../../main/hubs/movehub.rst:170 07c19a3da402454388f3b4f25d786639
+#: ../../main/hubs/movehub.rst:170 5e3d69efd871482a8d0ff681520d4f27
 msgid ""
 "The Move Hub does not include the :mod:`urandom` module. If you need "
 "random numbers in your application, you can try a variation of the "
 "following example."
 msgstr ""
 
-#: ../../main/hubs/movehub.rst:173 bd08b3fc8fe449ab8c22e09ffcc37b9a
+#: ../../main/hubs/movehub.rst:173 bc5bdd8d87b5461a8eca84afc0576662
 msgid ""
 "To make it work better, change the initial value of ``_rand`` to "
 "something that is truly random in your application. You could use the IMU"
 " acceleration or a sensor value, for example."
-msgstr ""
-
-#: ../../main/hubs/movehub.rst:177 08a8423c18b947809d02fdb1cae58484
-msgid ""
-"from pybricks.hubs import MoveHub\n"
-"\n"
-"# Initialize the hub.\n"
-"hub = MoveHub()\n"
-"\n"
-"# Initialize \"random\" seed.\n"
-"_rand = hub.battery.voltage() + hub.battery.current()\n"
-"\n"
-"\n"
-"# Return a random integer N such that a <= N <= b.\n"
-"def randint(a, b):\n"
-"    global _rand\n"
-"    _rand = 75 * _rand % 65537  # Lehmer\n"
-"    return _rand * (b - a + 1) // 65537 + a\n"
-"\n"
-"\n"
-"# Generate a few example numbers.\n"
-"for i in range(5):\n"
-"    print(randint(0, 1000))\n"
 msgstr ""
 

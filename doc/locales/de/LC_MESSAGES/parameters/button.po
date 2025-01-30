@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pybricks v3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-26 20:11+0100\n"
+"POT-Creation-Date: 2025-01-30 22:50+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: de\n"
@@ -19,68 +19,68 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.16.0\n"
 
-#: ../../main/parameters/button.rst:4 351ffa8371954c79a4d5ff5cfc9bbd3a
+#: ../../main/parameters/button.rst:4 074555e1e5e84794911ee618695db249
 msgid "Button"
 msgstr ""
 
-#: ../../main/parameters/button.rst:9 edf242191d6542e3ad03bd8a971e4cb2
+#: ../../main/parameters/button.rst:9 74ac99aacd404276bfd3957a5880d685
 msgid "Remote and hub buttons"
 msgstr ""
 
 #: ../../main/parameters/button.rst:13 ../../main/parameters/button.rst:18
 #: ../../main/parameters/button.rst:23 ../../main/parameters/button.rst:28
-#: 482d0ce3c3f740b98195a6ed03dc915a 7dce0d5aa2e94028baac756bfb073d5d
-#: 95ceb1e979e94c3690dfe6d2d0179b71 ca56528b7ee948168ef013eea9086add
+#: 9a6ec99503fb4ad19975705efb50cea5 b3ca6d6dace94ea1b9501d1ffed3eed1
+#: c9f78647ded149878427eb1474638c7d eeb09f22bd074d48a39e65ec273b34f6
 msgid "Powered Up Remote only."
 msgstr ""
 
-#: ../../main/parameters/button.rst:33 dcdf9f87f8594b6bb391c871ed46dc48
+#: ../../main/parameters/button.rst:33 6c614352f9974acfa0e025bd2ebd42b8
 msgid "Powered Up Remote (green button) or hub power button."
 msgstr ""
 
-#: ../../main/parameters/button.rst:38 bce0d092a095437c89c2da3b7c56a5e0
+#: ../../main/parameters/button.rst:38 19aa8df60e6f4ddea6db3e857fd0d638
 msgid "Powered Up Remote (left red button) and Prime/Inventor Hub (left button)."
 msgstr ""
 
-#: ../../main/parameters/button.rst:43 dd2bc05427b24d1c92d72501aefb20fc
+#: ../../main/parameters/button.rst:43 4b806aac48a24e4180d7d266657d75ed
 msgid ""
 "Powered Up Remote (right red button) and Prime/Inventor Hub (right "
 "button)."
 msgstr ""
 
-#: ../../main/parameters/button.rst:48 d04f7a483b744ff2a5c24e4c4174be81
+#: ../../main/parameters/button.rst:48 7ea3482d0dd14261ab8567ae85b35522
 msgid "Prime/Inventor Hub button with Bluetooth icon."
 msgstr ""
 
-#: ../../main/parameters/button.rst:51 e54b6618ebc140c19ee89e2ad0d7c934
+#: ../../main/parameters/button.rst:51 f0ec8e58f82b4d9cacea6cdf4c8923ab
 msgid "Xbox controller buttons"
 msgstr ""
 
-#: ../../main/parameters/button.rst:67 5598ca092eaa4046b9ec4bdbfe9377ab
+#: ../../main/parameters/button.rst:67 8e98379e596f472a96a44314467e0394
 msgid "The left bumper."
 msgstr ""
 
-#: ../../main/parameters/button.rst:72 a9798cf65370424591042619d7580662
+#: ../../main/parameters/button.rst:72 1323ab6e655b4b61b662f7a736fdc622
 msgid "The right bumper."
 msgstr ""
 
-#: ../../main/parameters/button.rst:77 c67312ea762443adbd6652f90e5ab875
+#: ../../main/parameters/button.rst:77 05eae469f1f443f98770772a7bfe4795
 msgid "Pressing the left joystick."
 msgstr ""
 
-#: ../../main/parameters/button.rst:82 eb3832d630f4476abd5644b644812b00
+#: ../../main/parameters/button.rst:82 b7a6304dec664e5ba4b4c409884e32b0
 msgid "Pressing the right joystick."
 msgstr ""
 
-#: ../../main/parameters/button.rst:87 9d5b080e317f439fa073759232bc0dd5
+#: ../../main/parameters/button.rst:87 0702d8b9fc0e4a6a90cfc1607aab9e02
 msgid "The Xbox button in the center of the controller."
 msgstr ""
 
-#: ../../main/parameters/button.rst:95 399d5c4e14a04e66b7b2bd2c88ce6107
+#: ../../main/parameters/button.rst:95 268cd0e63c8d450d9d6c473c3c758289
 msgid "Only available on newer Xbox controllers."
 msgstr ""
 
-#: ../../main/parameters/button.rst:101 bcfc778a34ba4cc49cf2d8c84ba10bac
+#: ../../main/parameters/button.rst:101 1c34a293fb2348ada6ccda449cb6639b
 msgid "Xbox Elite Series 2 controller paddles"
 msgstr ""
 

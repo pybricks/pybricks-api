@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pybricks v3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-26 20:11+0100\n"
+"POT-Creation-Date: 2025-01-30 22:50+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: de\n"
@@ -19,145 +19,66 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.16.0\n"
 
-#: ../../main/iodevices/pupdevice.rst:4 3f2b717ea65f4f4f8319ec02436bc7ec
+#: ../../main/iodevices/pupdevice.rst:4 66c55b4499334e4b9c2dfe445dae36e4
 msgid "Powered Up Device"
 msgstr ""
 
-#: ../../main/iodevices/pupdevice.rst:6 ed0d66e4f8f449bab7f53d68faf13120
+#: ../../main/iodevices/pupdevice.rst:6 b96c0a9d75954af89e46eced105dace9
 msgid ".. image:: ../cad/output/iodevice-pupdevice.png"
 msgstr ""
 
-#: 8addb77097f54c9a9c32b1640efa9c13 of pybricks.iodevices.PUPDevice:1
+#: 87242daedd154ce48014e5715c8e0d6d of pybricks.iodevices.PUPDevice:1
 msgid "Powered Up motor or sensor."
 msgstr ""
 
-#: ../../main/iodevices/pupdevice.rst b59e9ffef11043948dfbfd3b3d5df45b
-#: b83d509326af494cab61f56215513eba dcffb70b1fee4106887639745b528359
+#: ../../main/iodevices/pupdevice.rst 17de9c0c5990493d938a32812a30648f
+#: 7561660c7d7e4954b27a1f44c7a2ef2d d04eff15f50b4be1ade0f48cebe919ba
 msgid "Parameters"
 msgstr ""
 
-#: 67c0dd8106614e99a65ab29d80ec1bfa of pybricks.iodevices.PUPDevice:3
+#: 2c14978064654205b6dba9f465825af3 of pybricks.iodevices.PUPDevice:3
 msgid "Port to which the device is connected."
 msgstr ""
 
-#: d3950ee859ce469ca6bcecade9372306 of pybricks.iodevices.PUPDevice.info:1
+#: 44d8cf400a73496f96b8bc8b6b87b683 of pybricks.iodevices.PUPDevice.info:1
 msgid "Gets information about the device."
 msgstr ""
 
-#: ../../main/iodevices/pupdevice.rst 99f6e80fa6ac4e0788be527dcb483b91
-#: 9af3b7fe84424c4a858b4e1a3094886e
+#: ../../main/iodevices/pupdevice.rst 5b469b4a8a174818970e140a66b70861
+#: aa02df9794464cd6af4b1fc8f1b10bdb
 msgid "Returns"
 msgstr ""
 
-#: 78e1dd02b9b443faa4a286e45b8ad86d of pybricks.iodevices.PUPDevice.info:3
+#: c41d24a83ed44c55b6689516328242cb of pybricks.iodevices.PUPDevice.info:3
 msgid "Dictionary with information, such as the device ``id``."
 msgstr ""
 
-#: 3cfeca952ad6434fa9ba063f9a0b639a of pybricks.iodevices.PUPDevice.read:1
+#: bc6330b8a0d04e92b24d06e161d8563d of pybricks.iodevices.PUPDevice.read:1
 msgid "Reads values from a given mode."
 msgstr ""
 
-#: 452ecdf7e58d4cbba68f07e172e34456 c0ac5960f3e24ac0997066576fce5880 of
+#: 07e6c0c1971a4ad1bce68eb1afbc3985 5bcd1bec955a45baa0acb6f275c5e884 of
 #: pybricks.iodevices.PUPDevice.read:3 pybricks.iodevices.PUPDevice.write:4
 msgid "Device mode."
 msgstr ""
 
-#: a8f6850b64574f00aaf22bb866315978 of pybricks.iodevices.PUPDevice.read:6
+#: d9675c7b87374ccd8b620477e1c69dde of pybricks.iodevices.PUPDevice.read:6
 msgid "Values read from the sensor."
 msgstr ""
 
-#: d7fa0b55308843ae8d70ed25729a9e01 of pybricks.iodevices.PUPDevice.write:1
+#: de09bad6d3c747db9bbf46d29ce21a11 of pybricks.iodevices.PUPDevice.write:1
 msgid "Writes values to the sensor. Only selected sensors and modes support this."
 msgstr ""
 
-#: f71e10fd1e5a477097de4851587e79fe of pybricks.iodevices.PUPDevice.write:6
+#: b8324b3a906d4c8fb5aa5e193665a76e of pybricks.iodevices.PUPDevice.write:6
 msgid "Values to be written."
 msgstr ""
 
-#: ../../main/iodevices/pupdevice.rst:19 b250ed31a0ea4c58a1738b474ce0f810
+#: ../../main/iodevices/pupdevice.rst:19 621875252611499c80dd382f8304781c
 msgid "Examples"
 msgstr ""
 
-#: ../../main/iodevices/pupdevice.rst:22 ee5ab0007fcb4098a76c8f6a204d8fc3
+#: ../../main/iodevices/pupdevice.rst:22 ef808579c7fd4cc58e5ca69c7554c172
 msgid "Detecting devices"
-msgstr ""
-
-#: ../../main/iodevices/pupdevice.rst:24 ba2a783202ec4c38ac9388d4789b99a4
-msgid ""
-"from pybricks.iodevices import PUPDevice\n"
-"from pybricks.parameters import Port\n"
-"from uerrno import ENODEV\n"
-"\n"
-"# Dictionary of device identifiers along with their name.\n"
-"device_names = {\n"
-"    # pybricks.pupdevices.DCMotor\n"
-"    1: \"Wedo 2.0 Medium Motor\",\n"
-"    2: \"Powered Up Train Motor\",\n"
-"    # pybricks.pupdevices.Light\n"
-"    8: \"Powered Up Light\",\n"
-"    # pybricks.pupdevices.Motor\n"
-"    38: \"BOOST Interactive Motor\",\n"
-"    46: \"Technic Large Motor\",\n"
-"    47: \"Technic Extra Large Motor\",\n"
-"    48: \"SPIKE Medium Angular Motor\",\n"
-"    49: \"SPIKE Large Angular Motor\",\n"
-"    65: \"SPIKE Small Angular Motor\",\n"
-"    75: \"Technic Medium Angular Motor\",\n"
-"    76: \"Technic Large Angular Motor\",\n"
-"    # pybricks.pupdevices.TiltSensor\n"
-"    34: \"Wedo 2.0 Tilt Sensor\",\n"
-"    # pybricks.pupdevices.InfraredSensor\n"
-"    35: \"Wedo 2.0 Infrared Motion Sensor\",\n"
-"    # pybricks.pupdevices.ColorDistanceSensor\n"
-"    37: \"BOOST Color Distance Sensor\",\n"
-"    # pybricks.pupdevices.ColorSensor\n"
-"    61: \"SPIKE Color Sensor\",\n"
-"    # pybricks.pupdevices.UltrasonicSensor\n"
-"    62: \"SPIKE Ultrasonic Sensor\",\n"
-"    # pybricks.pupdevices.ForceSensor\n"
-"    63: \"SPIKE Force Sensor\",\n"
-"    # pybricks.pupdevices.ColorLightMatrix\n"
-"    64: \"SPIKE 3x3 Color Light Matrix\",\n"
-"}\n"
-"\n"
-"# Make a list of known ports.\n"
-"ports = [Port.A, Port.B]\n"
-"\n"
-"# On hubs that support it, add more ports.\n"
-"try:\n"
-"    ports.append(Port.C)\n"
-"    ports.append(Port.D)\n"
-"except AttributeError:\n"
-"    pass\n"
-"\n"
-"# On hubs that support it, add more ports.\n"
-"try:\n"
-"    ports.append(Port.E)\n"
-"    ports.append(Port.F)\n"
-"except AttributeError:\n"
-"    pass\n"
-"\n"
-"# Go through all available ports.\n"
-"for port in ports:\n"
-"\n"
-"    # Try to get the device, if it is attached.\n"
-"    try:\n"
-"        device = PUPDevice(port)\n"
-"    except OSError as ex:\n"
-"        if ex.args[0] == ENODEV:\n"
-"            # No device found on this port.\n"
-"            print(port, \": ---\")\n"
-"            continue\n"
-"        else:\n"
-"            raise\n"
-"\n"
-"    # Get the device id\n"
-"    id = device.info()[\"id\"]\n"
-"\n"
-"    # Look up the name.\n"
-"    try:\n"
-"        print(port, \":\", device_names[id])\n"
-"    except KeyError:\n"
-"        print(port, \":\", \"Unknown device with ID\", id)\n"
 msgstr ""
 

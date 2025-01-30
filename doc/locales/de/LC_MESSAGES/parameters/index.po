@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pybricks v3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-26 20:11+0100\n"
+"POT-Creation-Date: 2025-01-30 22:50+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: de\n"
@@ -19,11 +19,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.16.0\n"
 
-#: ../../main/parameters/index.rst:4 279fc21ea9b046f58443309cfd459694
+#: ../../main/parameters/index.rst:4 b2e781401de74a77a3ce6074fc4c2ca8
 msgid ":mod:`parameters <pybricks.parameters>` -- Parameters and constants"
 msgstr ""
 
-#: 529133622286452c9ac4eb36316bbc64 of pybricks.parameters:1
+#: 02f75638d9e14d83b69b406f62077fef of pybricks.parameters:1
 msgid "Constant parameters/arguments for the Pybricks API."
 msgstr ""
 

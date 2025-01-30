@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pybricks v3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-26 20:11+0100\n"
+"POT-Creation-Date: 2025-01-30 22:50+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: de\n"
@@ -19,48 +19,48 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.16.0\n"
 
-#: ../../main/micropython/uio.rst:4 c8f1e2fffa604cfbab8c7bab9b18ad3d
+#: ../../main/micropython/uio.rst:4 92cc392d3bb84879ad0713be5efcedd8
 msgid ":mod:`uio` -- Input/output streams"
 msgstr ""
 
-#: 988368d23f6049bb8e83741ac81646c5 of uio:1
+#: a7f3756edcc5412086316561202baa24 of uio:1
 msgid "This module contains ``stream`` objects that behave like files."
 msgstr ""
 
-#: 7b5a341fab0e44ee97bd59b85f0880c1 of uio.BytesIO:1
+#: 6f6fe20f0a8247f8a5ef44c5dae70e7d of uio.BytesIO:1
 msgid "A binary stream using an in-memory bytes buffer."
 msgstr ""
 
-#: ../../main/micropython/uio.rst 076888ce7c1b4974b4e8c835907c1fc3
-#: 73ec1e848d9b4768826103aa19d8be2d
+#: ../../main/micropython/uio.rst 1a51d113f7104e22b99bd06d505c604f
+#: c7a8d348375e483c965a53fa800f24b9
 msgid "Parameters"
 msgstr ""
 
-#: 6ec7da908ac24375a9d718d5f73274fc of uio.BytesIO:3
+#: 7fb7ac2795fe4ccc8f9250241a0f9160 of uio.BytesIO:3
 msgid "Optional bytes-like object that contains initial data."
 msgstr ""
 
-#: 3a1a784029104b0c8bbefbecfaefebff 473e83a122a8488da4d9df543dbc3527 of
+#: 4e6e9f84e18542aebcc61c1c828cc3fc f75819f5ca564151a999113fe2dcdfaf of
 #: uio.BytesIO:6 uio.StringIO:5
 msgid ""
 "Optional number of preallocated bytes. This parameter is unique to "
 "MicroPython. It is not recommended to use it in end-user code."
 msgstr ""
 
-#: d9e47e0470eb47c09955b9cae9a52f6f df0e63639f1d4c8cbdb5c357263e2fe7 of
+#: 83898a9292a44406ae0320f3c257703b d45e60f5ca9c4dca8d76ab81fed6d804 of
 #: uio.BytesIO.getvalue:1 uio.StringIO.getvalue:1
 msgid "Gets the contents of the underlying buffer."
 msgstr ""
 
-#: 2897928194c3449d8fdc5339fb215487 of uio.StringIO:1
+#: d5127c104ef44c31ace7563d9200d905 of uio.StringIO:1
 msgid "A stream using an in-memory string buffer."
 msgstr ""
 
-#: 5200d8e4f3fd44a395e0c481d6e7f1e4 of uio.StringIO:3
+#: c8e00c760202453d86f66877ca726767 of uio.StringIO:3
 msgid "Optional string with initial data."
 msgstr ""
 
-#: f59b8cd0af47444db6408cd7a80dcc15 of uio.FileIO:1
+#: d3ea1916229b4dea9dba82640f05c799 of uio.FileIO:1
 msgid ""
 "This type represents a file opened in binary mode with ``open(name, "
 "'rb')``. You should not instantiate this class directly."

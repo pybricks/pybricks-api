@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pybricks v3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-26 20:11+0100\n"
+"POT-Creation-Date: 2025-01-30 22:50+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: de\n"
@@ -19,11 +19,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.16.0\n"
 
-#: ../../main/parameters/port.rst:4 97e05843208444cf83700ebcded3cafe
+#: ../../main/parameters/port.rst:4 60e446ac73dd4b00ab58427808dcac6d
 msgid "Port"
 msgstr ""
 
-#: ../../main/parameters/port.rst:8 9c8127b0477a43b2a2315e41af85f54c
+#: ../../main/parameters/port.rst:8 79ba80ed665749219fcd89436fc8f798
 msgid "Input and output ports:"
 msgstr ""
 

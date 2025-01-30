@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pybricks v3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-26 20:11+0100\n"
+"POT-Creation-Date: 2025-01-30 22:50+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: de\n"
@@ -19,203 +19,203 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.16.0\n"
 
-#: ../../main/iodevices/xboxcontroller.rst:4 da498f76d1e648829bc06abfa5e7c28e
+#: ../../main/iodevices/xboxcontroller.rst:4 1341f409cd1b48dd96ac6a8b92feda61
 msgid "Xbox Controller"
 msgstr ""
 
-#: ../../main/iodevices/xboxcontroller.rst:6 3f1f4b1875404b72b65dc207694ff75a
+#: ../../main/iodevices/xboxcontroller.rst:6 881beba057df4b8d9452382dc4c9169c
 msgid ".. image:: ../../main/diagrams_source/xboxcontroller.png"
 msgstr ""
 
-#: ../../main/iodevices/xboxcontroller.rst:9 4b93c07bbc45422fac1c9d9c78a0ef2a
+#: ../../main/iodevices/xboxcontroller.rst:9 e2472666ab784059a7e0fb7dc42b1076
 msgid ".. image:: /blockimg/pybricks_variables_set_xbox_controller.svg"
 msgstr ""
 
-#: f64a7486a6344157be5d5fff9adbfdf0 of pybricks.iodevices.XboxController:1
+#: cc21bae1610d414c9a51a38b295c6aef of pybricks.iodevices.XboxController:1
 msgid ""
 "Use the Microsoft® Xbox® controller as a sensor in your projects to "
 "control them remotely."
 msgstr ""
 
-#: ff6191937f84457a9ddf87f7ce0c4d59 of pybricks.iodevices.XboxController:4
+#: ca3a2c5e19584d0ca1724810c37a275a of pybricks.iodevices.XboxController:4
 msgid ""
 "The hub will scan for the controller and connect to it. It will "
 "disconnect when the program ends."
 msgstr ""
 
-#: cf8326e9ab45410ea4f7a8e4207552c7 of pybricks.iodevices.XboxController:7
+#: fe139d8c95ea4dd2b3ee5638a355c4d5 of pybricks.iodevices.XboxController:7
 msgid ""
 "For tips on connectivity and pairing, see :ref:`below <xbox-controller-"
 "pairing>`."
 msgstr ""
 
-#: ../../main/iodevices/xboxcontroller.rst:14 3aa9b72a7bdb4c9d99b1ff7d73cc37bc
+#: ../../main/iodevices/xboxcontroller.rst:14 0fd94845fd5f41a383a603dad38f2dba
 msgid ".. image:: /blockimg/pybricks_blockButtonIsPressed_XboxController.svg"
 msgstr ""
 
-#: 0888867720534cb6af3bab36b01023ef of pybricks._common.Keypad.pressed:1
+#: dffebb1fe91444b2aff0f877ea6aa403 of pybricks._common.Keypad.pressed:1
 msgid "Checks which buttons are currently pressed."
 msgstr ""
 
-#: ../../main/iodevices/xboxcontroller.rst 11e6125b70d84f778412238b9e4258fb
-#: 89bd355cb680426cb9befbe6679ba9df 932e6c94c2814221abbf0e9797486107
-#: b53b649c3fb44817b59442d6bf1de9a2 cf950589fa57409ebe7c86969ee714f8
-#: f6b61e75475040b1811817d92519f8dc
+#: ../../main/iodevices/xboxcontroller.rst 00c45de24b2b4810be4bbd427133a6ab
+#: 1956ecec6caf4d18acddc8a7889d9d07 8181edced89b40dba13b4cacde8c26dc
+#: 9adbf76d418046578ad85d571c5ea20b a20024d285a04939b01fdf53489df9e9
+#: fac8816e8420456e95b645fda1ea571e
 msgid "Returns"
 msgstr ""
 
-#: 763d16630d094f2fb8c47ddf3ee4e58c of pybricks._common.Keypad.pressed:3
+#: d9235153a4334b1186cd666ecc079fa0 of pybricks._common.Keypad.pressed:3
 msgid "Set of pressed buttons."
 msgstr ""
 
-#: ../../main/iodevices/xboxcontroller.rst:18 1e8d42ab931141c18859d8a726795160
+#: ../../main/iodevices/xboxcontroller.rst:18 568b97aa35804f269226306488306dff
 msgid "Buttons include:"
 msgstr ""
 
-#: ../../main/iodevices/xboxcontroller.rst:20 eaf7d14383774a05bb3aa03a62daa251
+#: ../../main/iodevices/xboxcontroller.rst:20 2db7e35892324053bf2d4c68dcdba443
 msgid "``Button.A``, ``Button.B``, ``Button.X``, ``Button.Y``."
 msgstr ""
 
-#: ../../main/iodevices/xboxcontroller.rst:21 b03834221c1a4d16aeb68292be5b5fca
+#: ../../main/iodevices/xboxcontroller.rst:21 95255435e1b54bd1855dd04f90d684bf
 msgid ""
 "``Button.UP``, ``Button.DOWN``, ``Button.LEFT``, ``Button.RIGHT`` "
 "(direction pad). At most two of these can be pressed at the same time."
 msgstr ""
 
-#: ../../main/iodevices/xboxcontroller.rst:23 ead35b31bf154ba8862f6e7588471813
+#: ../../main/iodevices/xboxcontroller.rst:23 2ad1a82dd71d4c6f9d3ee84b07d68831
 msgid "``Button.LB`` and ``Button.RB`` (bumpers)."
 msgstr ""
 
-#: ../../main/iodevices/xboxcontroller.rst:24 9bcb960fd5364ada9cbb519515a2fa6a
+#: ../../main/iodevices/xboxcontroller.rst:24 8e3d9563759645c0929eec9eed118f1e
 msgid "``Button.LJ`` and ``Button.RJ`` (pressing the joysticks)."
 msgstr ""
 
-#: ../../main/iodevices/xboxcontroller.rst:25 3fd6271d97d64a8a97de60bf46c3ac55
+#: ../../main/iodevices/xboxcontroller.rst:25 5f0667874b974cf5b21013d65554d956
 msgid ""
 "``Button.VIEW``, ``Button.MENU``, ``Button.GUIDE`` (the Xbox logo), and "
 "``Button.UPLOAD``."
 msgstr ""
 
-#: ../../main/iodevices/xboxcontroller.rst:26 e7cd7c10f1b04764a5b8bc99e186e05f
+#: ../../main/iodevices/xboxcontroller.rst:26 7b9ccf7beded497182069631541f724c
 msgid ""
 "``Button.P1``, ``Button.P2``, ``Button.P3``, and ``Button.P4`` (Elite "
 "Series 2 only). Pressing the paddles may also be detected as other button"
 " presses, depending on the currently active profile."
 msgstr ""
 
-#: ../../main/iodevices/xboxcontroller.rst:30 ebe84ea0169d4d438873ee7c9b43713a
+#: ../../main/iodevices/xboxcontroller.rst:30 202f9e89bf244856a2c29f56027ac3fe
 msgid ".. image:: /blockimg/pybricks_blockJoystickValue_lj_x.svg"
 msgstr ""
 
-#: ../../main/iodevices/xboxcontroller.rst:32 91d934c247614547b161d9116ee5641e
+#: ../../main/iodevices/xboxcontroller.rst:32 12c6b09729684374a1ca998f99012ea1
 msgid ".. image:: /blockimg/pybricks_blockJoystickValue_lj_y.svg"
 msgstr ""
 
-#: 1eed8f9d310449e4b105fab1578c36bf of
+#: e8afb7a7c91746c989ba7e7241313291 of
 #: pybricks.iodevices.XboxController.joystick_left:1
 msgid ""
 "Gets the left joystick position as percentages between -100% and 100%. "
 "The center position is (0, 0)."
 msgstr ""
 
-#: 89670685c5454096a986ff465e2cfdfe ff801829fe9a4c5db3557a9b630d73da of
+#: 131eee3128a848f2ba8477fa70a47884 e92c973429164ca1830c147ea879ba44 of
 #: pybricks.iodevices.XboxController.joystick_left:4
 #: pybricks.iodevices.XboxController.joystick_right:4
 msgid "Tuple of X (horizontal) and Y (vertical) position."
 msgstr ""
 
-#: ../../main/iodevices/xboxcontroller.rst:37 5b85df5ff92946caa5bd8b50b69ab036
+#: ../../main/iodevices/xboxcontroller.rst:37 1a1e59059a374b17b69c46839cbc12fd
 msgid ".. image:: /blockimg/pybricks_blockJoystickValue_rj_x.svg"
 msgstr ""
 
-#: ../../main/iodevices/xboxcontroller.rst:39 58867a7c4fd94e0d8261f4a2abf0add0
+#: ../../main/iodevices/xboxcontroller.rst:39 7d5ebefe2d7b4535a5865ba0d720326f
 msgid ".. image:: /blockimg/pybricks_blockJoystickValue_rj_y.svg"
 msgstr ""
 
-#: d3c74e213d7a46519f04c872a9df9a9f of
+#: 8bea02714a6247669518767d953fe82f of
 #: pybricks.iodevices.XboxController.joystick_right:1
 msgid ""
 "Gets the right joystick position as percentages between -100% and 100%. "
 "The center position is (0, 0)."
 msgstr ""
 
-#: ../../main/iodevices/xboxcontroller.rst:44 637367956fb44f48a703d837b5ffd458
+#: ../../main/iodevices/xboxcontroller.rst:44 fd3323b29adc4d208b5902f46c73f244
 msgid ".. image:: /blockimg/pybricks_blockJoystickValue_lt.svg"
 msgstr ""
 
-#: ../../main/iodevices/xboxcontroller.rst:46 f64833af4b6548ef93804524a7b97cef
+#: ../../main/iodevices/xboxcontroller.rst:46 956b89aaa59d4a5dad31b2a5224393a2
 msgid ".. image:: /blockimg/pybricks_blockJoystickValue_rt.svg"
 msgstr ""
 
-#: 880f3263397d42c0a409682a9ed3c7ec of
+#: c198adf98da7468e931758268917d782 of
 #: pybricks.iodevices.XboxController.triggers:1
 msgid ""
 "Gets the left and right trigger positions as percentages between 0% and "
 "100%."
 msgstr ""
 
-#: dffbde2d44e540bbad8e8f790e6f06a5 of
+#: ed4e4504916c44aca2391acf82ea9c4e of
 #: pybricks.iodevices.XboxController.triggers:4
 msgid "Tuple of left and right trigger positions."
 msgstr ""
 
-#: ../../main/iodevices/xboxcontroller.rst:51 0d7b9919fade4a38be18a20548e441dd
+#: ../../main/iodevices/xboxcontroller.rst:51 978e84155d924f569543fb51820c46b6
 msgid ".. image:: /blockimg/pybricks_blockJoystickValue_dpad.svg"
 msgstr ""
 
-#: 3c2a333ab37444e494fc1cd4d04f669c of pybricks.iodevices.XboxController.dpad:1
+#: 8fe0d874d2954ea49ca91b6d47c046d6 of pybricks.iodevices.XboxController.dpad:1
 msgid ""
 "Gets the direction-pad value. ``1`` is up, ``2`` is up-right, ``3`` is "
 "right, ``4`` is down-right, ``5`` is down, ``6`` is down-left, ``7`` is "
 "left, ``8`` is up-left, and ``0`` is not pressed."
 msgstr ""
 
-#: f54b9217b6fa4711884eb0fd259c4300 of pybricks.iodevices.XboxController.dpad:5
+#: 892968cc5dd547c2b5b0b24c520b8f0b of pybricks.iodevices.XboxController.dpad:5
 msgid ""
 "This is essentially the same as reading the state of the ``Button.UP``, "
 "``Button.RIGHT``, ``Button.DOWN``, and ``Button.LEFT`` buttons, but this "
 "method conveniently returns a number that indicates a direction."
 msgstr ""
 
-#: 101a0bdfd58b4c14bfc435cdbc2c6d6f of
+#: 1b9c8f532b534e27b2a1bb22c9e3dc5c of
 #: pybricks.iodevices.XboxController.dpad:10
 msgid "Direction-pad position, indicating a direction."
 msgstr ""
 
-#: ../../main/iodevices/xboxcontroller.rst:55 8a24a38809af43babee508797ae30a1c
+#: ../../main/iodevices/xboxcontroller.rst:55 cacbf8e6494a4bf38ed7c3cd69c3c326
 msgid ".. image:: /blockimg/pybricks_blockJoystickValue_profile.svg"
 msgstr ""
 
-#: ff866bbba41d49e991f85cbcafb6179c of
+#: 6c76bc083b50443ba28e09aa601168c1 of
 #: pybricks.iodevices.XboxController.profile:1
 msgid ""
 "Gets the current profile of the controller. Only available on the Xbox "
 "Elite Controller Series 2."
 msgstr ""
 
-#: 4c1de3b8b13f47b4a7396cc71e9aaa99 of
+#: a708f64fbbf74cd0b1eaf5d8c8a81597 of
 #: pybricks.iodevices.XboxController.profile:4
 msgid "Profile number."
 msgstr ""
 
-#: ../../main/iodevices/xboxcontroller.rst:59 736ccd9f180a4ada833f3c910e519a3b
+#: ../../main/iodevices/xboxcontroller.rst:59 f977a6753073493ebc0b9eca8bdf2afd
 msgid ".. image:: /blockimg/pybricks_blockGamepadRumble_default.svg"
 msgstr ""
 
-#: ../../main/iodevices/xboxcontroller.rst:61 1d0579c8fc4a4dd19388e18414fca60c
+#: ../../main/iodevices/xboxcontroller.rst:61 c288b8091212482db290994927d83822
 msgid ".. image:: /blockimg/pybricks_blockGamepadRumble_default_with_list.svg"
 msgstr ""
 
-#: ../../main/iodevices/xboxcontroller.rst:64 a714858865ca48c7bf77709dacb7f44c
+#: ../../main/iodevices/xboxcontroller.rst:64 f49e3c8d00cc4f6a960bad0b2768ddff
 msgid ".. image:: /blockimg/pybricks_blockGamepadRumble_with_options.svg"
 msgstr ""
 
-#: 8581ae36786e41278af5659d7438fb3d of
+#: 47d05d6f71ce4731a7c3f9b8a92744bd of
 #: pybricks.iodevices.XboxController.rumble:1
 msgid "Makes the builtin actuators rumble, creating force feedback."
 msgstr ""
 
-#: ef0dbe3e20c04b78a46da6b4e2f93f04 of
+#: 12034ea403f244b0bc73a635d8ca5cab of
 #: pybricks.iodevices.XboxController.rumble:3
 msgid ""
 "If you give a single ``power`` value, the left and right main actuators "
@@ -226,7 +226,7 @@ msgid ""
 "makes the left trigger rumble at full power."
 msgstr ""
 
-#: 7c059ce5900c4982a5828ceb37b9f972 of
+#: fa7b28b88b114de49aac5c93980537ae of
 #: pybricks.iodevices.XboxController.rumble:10
 msgid ""
 "The rumble runs in the background while your program continues. To make "
@@ -235,35 +235,35 @@ msgid ""
 "``count * (duration + delay)``."
 msgstr ""
 
-#: ../../main/iodevices/xboxcontroller.rst 3a9f251edc1941739ef338430da362f7
+#: ../../main/iodevices/xboxcontroller.rst e401b1f5acdd483d91b1c353ba3bac93
 msgid "Parameters"
 msgstr ""
 
-#: fcca7b5dbcfb4c54af7137a103dfcf2a of
+#: 676016f432204eee809d11d134559615 of
 #: pybricks.iodevices.XboxController.rumble:15
 msgid "Rumble power."
 msgstr ""
 
-#: b3a3a8912b9644bf9617f890a2a15a4c of
+#: 10d517cfca2d423b840d3eb56a0659d2 of
 #: pybricks.iodevices.XboxController.rumble:17
 msgid "Rumble duration."
 msgstr ""
 
-#: 14a42649ee36470bb75e12e7f1f6b370 of
+#: 24709cfb3e8b46e4aa29540f83253e3a of
 #: pybricks.iodevices.XboxController.rumble:19
 msgid "Rumble count."
 msgstr ""
 
-#: 67679a2216254ab9ab11235b8dcbd77c of
+#: 715a7532d23641aeae4fa8b83e0e0b60 of
 #: pybricks.iodevices.XboxController.rumble:21
 msgid "Delay before each rumble. Only if ``count > 1``."
 msgstr ""
 
-#: ../../main/iodevices/xboxcontroller.rst:72 96310cab3f934963b9c8c8b4aef53910
+#: ../../main/iodevices/xboxcontroller.rst:72 18964abb7bd14b96ba97dc5096037128
 msgid "Xbox Controller Pairing Instructions"
 msgstr ""
 
-#: ../../main/iodevices/xboxcontroller.rst:73 393dbcaa8601481193f4ff66c402e71b
+#: ../../main/iodevices/xboxcontroller.rst:73 5e424b52a81d487aa59ec9a469d62f8c
 msgid ""
 "The first time you use a controller with a hub, you will need to pair "
 "them: Turn the controller on and then press and hold the pairing button "
@@ -271,24 +271,24 @@ msgid ""
 " Xbox button starts flashing more rapidly. Then start your program."
 msgstr ""
 
-#: ../../main/iodevices/xboxcontroller.rst:78 64df7cb9a450498aa308e98b43da99a0
+#: ../../main/iodevices/xboxcontroller.rst:78 c65bb18fe6494f11b4222dd76ae3c460
 msgid ""
 "When pairing and the connection is succesful, the Xbox button will stop "
 "flashing and stay on for as long as the program is running."
 msgstr ""
 
-#: ../../main/iodevices/xboxcontroller.rst:82 1e84c1c4d20643cc8cd5344ab551f1f1
+#: ../../main/iodevices/xboxcontroller.rst:82 26d82f2aaf0d433e84b505762494dc48
 msgid "Repeat Connections"
 msgstr ""
 
-#: ../../main/iodevices/xboxcontroller.rst:84 397a9fe28edd44519e1ca33d91874cf0
+#: ../../main/iodevices/xboxcontroller.rst:84 9ad1abff9cfb4853866e5e03d147311b
 msgid ""
 "If you keep using the same controller with the same hub, you can simply "
 "turn the controller on the next time and the hub will connect to it "
 "automatically when your program with this class runs."
 msgstr ""
 
-#: ../../main/iodevices/xboxcontroller.rst:88 82fe1f81b74048ef974539caf51a5a15
+#: ../../main/iodevices/xboxcontroller.rst:88 2fb77cd9b9b744bc9c8a2687ccc46705
 msgid ""
 "The Xbox controller only accepts this simpler connection with the most "
 "recently connected device. So if you connect to your Xbox console again, "
@@ -296,11 +296,11 @@ msgid ""
 "above."
 msgstr ""
 
-#: ../../main/iodevices/xboxcontroller.rst:94 1f3d3faa91bd47c39086d45fc49f68ff
+#: ../../main/iodevices/xboxcontroller.rst:94 8a80b89cec8b4ca39b70faf585feef3e
 msgid "Compatible Controllers"
 msgstr ""
 
-#: ../../main/iodevices/xboxcontroller.rst:96 31791ddeb3fe49998b7bab5cc8c86e27
+#: ../../main/iodevices/xboxcontroller.rst:96 7f14a710bfd14bd5972b02697f348927
 msgid ""
 "All Xbox controllers released since 2016 are compatible. This includes "
 "the controller from the One S (``1708`` from 2016), the Elite Series 2 "
@@ -308,18 +308,18 @@ msgid ""
 "the latest model as of this writing."
 msgstr ""
 
-#: ../../main/iodevices/xboxcontroller.rst:107 47ec4f14fc5a4dc2ba7dfa45fb9ec1c2
+#: ../../main/iodevices/xboxcontroller.rst:107 c48d275cbfa64e58a3c923247454e0a0
 msgid "Updating the Xbox Controller"
 msgstr ""
 
-#: ../../main/iodevices/xboxcontroller.rst:109 29d8fb8ae4004d8e9b019711f548a1ee
+#: ../../main/iodevices/xboxcontroller.rst:109 6a74033bf499458ab44763e798cffb58
 msgid ""
 "If you frequently use the Xbox Controller with your console, your "
 "controller is probably already up to date. If you have not used it for a "
 "while or if you bought one recently, you may need to update it."
 msgstr ""
 
-#: ../../main/iodevices/xboxcontroller.rst:113 2bb1b6d4c5ba4d4e83a64e153dade81b
+#: ../../main/iodevices/xboxcontroller.rst:113 4d5d23796c3745dbab59165de986a39a
 msgid ""
 "To update the controller without a console, you can use the Xbox "
 "Accessories app on a Windows computer. You can download it from the "
@@ -327,11 +327,11 @@ msgid ""
 "follow the instructions in the app to click on \"Update now\"."
 msgstr ""
 
-#: ../../main/iodevices/xboxcontroller.rst:119 8f69d636c52f45a0a919749b2cbe782e
+#: ../../main/iodevices/xboxcontroller.rst:119 2c02765a3f76489e882007ed125651e0
 msgid "Technic Hub Limitations"
 msgstr ""
 
-#: ../../main/iodevices/xboxcontroller.rst:121 b49a24581a294452ae0893aa66a56614
+#: ../../main/iodevices/xboxcontroller.rst:121 2b941e0a53c54a04ae5acaae59390e1d
 msgid ""
 "Due to limitations of the Technic Hub, the hub will disconnect from the "
 "computer when searching for the Xbox controller. This means you will not "

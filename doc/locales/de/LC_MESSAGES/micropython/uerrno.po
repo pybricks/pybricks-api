@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pybricks v3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-26 20:11+0100\n"
+"POT-Creation-Date: 2025-01-30 22:50+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: de\n"
@@ -19,56 +19,56 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.16.0\n"
 
-#: ../../main/micropython/uerrno.rst:2 ac63891881a744f180343ee81c7fe787
+#: ../../main/micropython/uerrno.rst:2 ff759a8794bf412182a2f51d747b6820
 msgid ":mod:`uerrno <uerrno>` -- Error codes"
 msgstr ""
 
-#: ../../main/micropython/uerrno.rst:6 167ff2bdc30f4a3db57da170c1c79472
+#: ../../main/micropython/uerrno.rst:6 ccfd0892159b400899ea59b0a99f68f6
 msgid ""
 "The ``errno`` attribute of an :ref:`OSError <OSError>` indicates why this"
 " exception was raised. This attribute has one of the following values. "
 "See also :ref:`this example <device_detection>`."
 msgstr ""
 
-#: ../../docstring dcd499fff45549b4b2867a044cb1466a of uerrno.EAGAIN:1
+#: ../../docstring a1bcda0c278d4590bcbe0a033fe94cc0 of uerrno.EAGAIN:1
 msgid "The operation is not complete and should be tried again soon."
 msgstr ""
 
-#: ../../docstring 4b947521daef4f8085318308ecb49a2c of uerrno.EBUSY:1
+#: ../../docstring 73f6115066ad482e8ec7f099af911dc1 of uerrno.EBUSY:1
 msgid "The device or resource is busy and cannot be used right now."
 msgstr ""
 
-#: ../../docstring 13defda7c6184fadb31c90a3267b5d43 of uerrno.ECANCELED:1
+#: ../../docstring 6cfc6e1f3b754d5db468e63deadf73e7 of uerrno.ECANCELED:1
 msgid "The operation was canceled."
 msgstr ""
 
-#: ../../docstring 2623181ca8a949eb9aa1aa1ec10c9491 of uerrno.EINVAL:1
+#: ../../docstring 8c85703b04b64653875a8e2375748c7f of uerrno.EINVAL:1
 msgid "An invalid argument was given. Usually ``ValueError`` is used instead."
 msgstr ""
 
-#: ../../docstring c6381b858aae4167b8800f9c28e4aceb of uerrno.EIO:1
+#: ../../docstring 9ca910a54ab941d9aba48d9d778fd4a0 of uerrno.EIO:1
 msgid "An unspecified error occurred."
 msgstr ""
 
-#: ../../docstring 35e6d031178543808431da27b488e2e6 of uerrno.ENODEV:1
+#: ../../docstring d823a072c03c49dbb93a07a9d8f8b9d0 of uerrno.ENODEV:1
 msgid ""
 "Device was not found. For example, a sensor or motor is not plugged in "
 "the correct port."
 msgstr ""
 
-#: ../../docstring 6a173428748047d5b2b3085fe4bebc28 of uerrno.EOPNOTSUPP:1
+#: ../../docstring 54e3571aeaaa45c9856e37045683d296 of uerrno.EOPNOTSUPP:1
 msgid "The operation is not supported on this hub or on the connected device."
 msgstr ""
 
-#: ../../docstring faaded4af3074ffbbe1db73901a25969 of uerrno.EPERM:1
+#: ../../docstring d79514ae9f0347f89fb7c084c60546c9 of uerrno.EPERM:1
 msgid "The operation cannot be performed in the current state."
 msgstr ""
 
-#: ../../docstring 2e07271a7b9d4fa89927585b8b014c2d of uerrno.ETIMEDOUT:1
+#: ../../docstring c2a2f0f08a454fe7810f156a22a2f07a of uerrno.ETIMEDOUT:1
 msgid "The operation timed out."
 msgstr ""
 
-#: ../../docstring b44f3ffc21d54639ab23a300cd6d2d9d of uerrno.errorcode:1
+#: ../../docstring ed839cb1c179419fb342beef504d935f of uerrno.errorcode:1
 msgid ""
 "Dictionary that maps numeric error codes to strings with symbolic error "
 "code."

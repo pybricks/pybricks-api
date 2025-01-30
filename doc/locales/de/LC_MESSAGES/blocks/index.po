@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pybricks v3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-26 20:11+0100\n"
+"POT-Creation-Date: 2025-01-30 22:50+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: de\n"
@@ -19,265 +19,265 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.16.0\n"
 
-#: ../../main/blocks/index.rst:4 bbf0428a87c744a5a41a61a5c7400df3
+#: ../../main/blocks/index.rst:4 4a3bd35813e54c9a95e29be82035f77e
 msgid "Other blocks"
 msgstr ""
 
-#: ../../main/blocks/index.rst:6 9bae0978607a44e7a43a904bbc8b78da
+#: ../../main/blocks/index.rst:6 4e641d9f5a644b8f922ba5bb8558ffce
 msgid ""
 "Most blocks correspond directly to one of the documented Python commands."
 " This page lists the remaining blocks."
 msgstr ""
 
-#: ../../main/blocks/index.rst:9 d9afda44235f483cbfa80dcff99425cc
+#: ../../main/blocks/index.rst:9 8483628c42ba428cb76d9f6aa73c663e
 msgid "This page will be expanded with more details in the next release."
 msgstr ""
 
-#: ../../main/blocks/index.rst:12 403c5b901ce44977b923464492863ac9
+#: ../../main/blocks/index.rst:12 2505c3173a6c4034b1407b0f2d44b52f
 msgid "Math"
 msgstr ""
 
-#: ../../main/blocks/index.rst:14 97cf5a87c81f49579d668718f79cceb9
+#: ../../main/blocks/index.rst:14 96912ef980eb4794a9d458b55a401609
 msgid "See also :mod:`umath` for other math operations."
 msgstr ""
 
-#: ../../main/blocks/index.rst:16 97ce10b7b672416c813919fdc5604497
+#: ../../main/blocks/index.rst:16 794448b9703249aab496ff18631d08b1
 msgid ".. image:: /blockimg/pybricks_blockMathFormula.svg"
 msgstr ""
 
-#: ../../main/blocks/index.rst:18 e9c5805792b1449b9d5fe1310b0de6de
+#: ../../main/blocks/index.rst:18 914e4011e3b84c3eb1ef7bb5197bf2d2
 msgid ".. image:: /blockimg/pybricks_blockMathOp_modulo.svg"
 msgstr ""
 
-#: ../../main/blocks/index.rst:20 61a507b760d94187a9fe373e7a6d9523
+#: ../../main/blocks/index.rst:20 d28313f0015f411285718405402e470f
 msgid ".. image:: /blockimg/pybricks_blockMathArithmetic_add.svg"
 msgstr ""
 
-#: ../../main/blocks/index.rst:22 ae6386f043ff4586867442a2b580b865
+#: ../../main/blocks/index.rst:22 31a46bb3400b4c2ea424191476d8ca53
 msgid ".. image:: /blockimg/pybricks_blockMathArithmetic_minus.svg"
 msgstr ""
 
-#: ../../main/blocks/index.rst:24 84c7b562816d47faac134f1efadaf896
+#: ../../main/blocks/index.rst:24 371738c0deb74faf93edc7eec0f0b3db
 msgid ".. image:: /blockimg/pybricks_blockMathArithmetic_multiply.svg"
 msgstr ""
 
-#: ../../main/blocks/index.rst:26 a45f79e48d5843d997d26e3b269d0df4
+#: ../../main/blocks/index.rst:26 e87e866f96b1462882f4b0267efe66fb
 msgid ".. image:: /blockimg/pybricks_blockMathArithmetic_divide.svg"
 msgstr ""
 
-#: ../../main/blocks/index.rst:28 84edf51e89fc442192fcb9188db0f8a9
+#: ../../main/blocks/index.rst:28 218c844a37404409a21457060519c917
 msgid ".. image:: /blockimg/pybricks_blockMathArithmetic_power.svg"
 msgstr ""
 
-#: ../../main/blocks/index.rst:31 8a10c0e4fd624489a9171a0fc5b2c8aa
+#: ../../main/blocks/index.rst:31 b2f0675e99ad41f3b83c9e85b35e5548
 msgid "Logic"
 msgstr ""
 
-#: ../../main/blocks/index.rst:33 b87b7ad68ce147d9be21e5facebdc0f6
+#: ../../main/blocks/index.rst:33 0d8bffe42bb04ca188cc6700604b4eaa
 msgid ".. image:: /blockimg/pybricks_blockLogicCompareDouble.svg"
 msgstr ""
 
-#: ../../main/blocks/index.rst:35 1bad08140a10482db9f0037ace2ec149
+#: ../../main/blocks/index.rst:35 e8e15c46d6b24ef88ea668a034e92784
 msgid ".. image:: /blockimg/pybricks_blockLogicCompare_eq.svg"
 msgstr ""
 
-#: ../../main/blocks/index.rst:37 e96d4aaecd57425a8a48831c50b7b2ce
+#: ../../main/blocks/index.rst:37 3d5d1ae00ee641b8a9aae032345d73ac
 msgid ".. image:: /blockimg/pybricks_blockLogicCompare_gte.svg"
 msgstr ""
 
-#: ../../main/blocks/index.rst:39 4be5575aae46431fa907b322665a4f37
+#: ../../main/blocks/index.rst:39 294afce3a1404a8aaf6f0a4ba5fea5ee
 msgid ".. image:: /blockimg/pybricks_blockLogicCompare_gt.svg"
 msgstr ""
 
-#: ../../main/blocks/index.rst:41 53f1f13d6d7f418aa9715a15e6d4c494
+#: ../../main/blocks/index.rst:41 ffbb8e24d5004e18a5d918836971a8f3
 msgid ".. image:: /blockimg/pybricks_blockLogicCompare_lte.svg"
 msgstr ""
 
-#: ../../main/blocks/index.rst:43 1e9a25d8c3214c77ae496eaec15a4baf
+#: ../../main/blocks/index.rst:43 447783e6397a4745ab7560baeb4df381
 msgid ".. image:: /blockimg/pybricks_blockLogicCompare_lt.svg"
 msgstr ""
 
-#: ../../main/blocks/index.rst:45 348b163b01f843618406b16cbdf93712
+#: ../../main/blocks/index.rst:45 0e615ebd1be640ed81834c4c621eb090
 msgid ".. image:: /blockimg/pybricks_blockLogicCompare_neq.svg"
 msgstr ""
 
-#: ../../main/blocks/index.rst:47 5e13277fe2274bfb89f3ab9f2ffd0000
+#: ../../main/blocks/index.rst:47 8f117b0d8a3b49bd9c06a1ac74b90188
 msgid ".. image:: /blockimg/pybricks_blockLogicIsNone_is_none.svg"
 msgstr ""
 
-#: ../../main/blocks/index.rst:49 f745df7fd9c544d0bd4fae86f181b9ec
+#: ../../main/blocks/index.rst:49 11c84055c4ef4b67b5c99f2dc2f299c3
 msgid ".. image:: /blockimg/pybricks_blockLogicIsNone_is_not_none.svg"
 msgstr ""
 
-#: ../../main/blocks/index.rst:51 8a09d74a4909486d9bb57233039164db
+#: ../../main/blocks/index.rst:51 78c0aa7820d54ccdb811e6a9c4adfd41
 msgid ".. image:: /blockimg/pybricks_blockLogicIsNone_not.svg"
 msgstr ""
 
-#: ../../main/blocks/index.rst:53 b9db063093894cd09da24f2cab19e24c
+#: ../../main/blocks/index.rst:53 95fc85d08f0a4dfc80d5a513cbed9cfc
 msgid ".. image:: /blockimg/pybricks_blockLogicOperation_and.svg"
 msgstr ""
 
-#: ../../main/blocks/index.rst:55 69c2788fef634435a2995ac36d3df14e
+#: ../../main/blocks/index.rst:55 646ccb76890841f3a40f06aff62814be
 msgid ".. image:: /blockimg/pybricks_blockLogicOperation_or.svg"
 msgstr ""
 
-#: ../../main/blocks/index.rst:57 5cb193e92e724dbc91984f3ec080ad43
+#: ../../main/blocks/index.rst:57 e2eac44e2bf7437bbab95c7c689e423f
 msgid ".. image:: /blockimg/pybricks_blockLogicTernary.svg"
 msgstr ""
 
-#: ../../main/blocks/index.rst:59 21b141f3869e475e9cc8d14ce1190b75
+#: ../../main/blocks/index.rst:59 e63b8b8f48374cf5876072d275998706
 msgid ".. image:: /blockimg/pybricks_blockLogicTernaryDouble.svg"
 msgstr ""
 
-#: ../../main/blocks/index.rst:61 62d75ce07ebb40918ba84824c82c9ac6
+#: ../../main/blocks/index.rst:61 423825b40b8b4c50ba2b384a5b7f1c43
 msgid ".. image:: /blockimg/pybricks_blockIsIn.svg"
 msgstr ""
 
-#: ../../main/blocks/index.rst:64 de1f9fa6415e40cfa67e3ca629097efc
+#: ../../main/blocks/index.rst:64 14390f76325345d7a5b0878ca572bb59
 msgid "Flow"
 msgstr ""
 
-#: ../../main/blocks/index.rst:66 95e47af1a51540b89901ee14aecc4a71
+#: ../../main/blocks/index.rst:66 607dd43edddf40a3b1ff97aa98af1060
 msgid ".. image:: /blockimg/pybricks_blockFlowBreakContinue_break.svg"
 msgstr ""
 
-#: ../../main/blocks/index.rst:68 109a025be48648358af331d6f3d8a42d
+#: ../../main/blocks/index.rst:68 08c50293350f4de482de9e77062caeef
 msgid ".. image:: /blockimg/pybricks_blockFlowBreakContinue_continue.svg"
 msgstr ""
 
-#: ../../main/blocks/index.rst:70 6703456e0b9a4d0683d329cf181afb2b
+#: ../../main/blocks/index.rst:70 4499312148534f1390cb99bc91c0add1
 msgid ".. image:: /blockimg/pybricks_blockFlowForEach_loop_for.svg"
 msgstr ""
 
-#: ../../main/blocks/index.rst:72 728a9743fa05458080cbb18c899575fe
+#: ../../main/blocks/index.rst:72 1a309e69fb364249b4dc07ea4d12fcac
 msgid ".. image:: /blockimg/pybricks_blockFlowForEach_loop_for_list.svg"
 msgstr ""
 
-#: ../../main/blocks/index.rst:74 5e460a7e3a8348ce9e2070f5cee7f4e4
+#: ../../main/blocks/index.rst:74 c51a9dd357fb433ab6765704e27df1a9
 msgid ".. image:: /blockimg/pybricks_blockFlowForEach_loop_for_range.svg"
 msgstr ""
 
-#: ../../main/blocks/index.rst:76 c2f6ab8fe0ae449987adc3463138ff43
+#: ../../main/blocks/index.rst:76 e074d94dc4ad4b3a81b1032b9f32314e
 msgid ".. image:: /blockimg/pybricks_blockFlowRepeat.svg"
 msgstr ""
 
-#: ../../main/blocks/index.rst:78 a392be3b7edb4414b593d2f427c7fefa
+#: ../../main/blocks/index.rst:78 e5825856fe2d44869e635e0e951e7171
 msgid ".. image:: /blockimg/pybricks_blockFlowWhile_until.svg"
 msgstr ""
 
-#: ../../main/blocks/index.rst:80 d7889bea5be344869a2ea0214777d032
+#: ../../main/blocks/index.rst:80 588297cf0c7949a0ab257fabe1b8521c
 msgid ".. image:: /blockimg/pybricks_blockFlowWhile_while.svg"
 msgstr ""
 
-#: ../../main/blocks/index.rst:83 f0c8e8cd2f6d405ea9e9c71caf3523b4
+#: ../../main/blocks/index.rst:83 d2c207d9689d48b8a9b0fb2e8c277e5c
 msgid ".. image:: /blockimg/pybricks_blockIfElse_if_else.svg"
 msgstr ""
 
-#: ../../main/blocks/index.rst:85 bc836bd1a2a04cda95c6db1bcf4463f8
+#: ../../main/blocks/index.rst:85 f8f49d3cce7f48d4936153fa2643d7f6
 msgid ".. image:: /blockimg/pybricks_blockIfElse_if_else_else.svg"
 msgstr ""
 
-#: ../../main/blocks/index.rst:87 75531194266a47b78929dbbdbab44db3
+#: ../../main/blocks/index.rst:87 7c46cb2e9c4349e89e1ead3baa1e3956
 msgid ".. image:: /blockimg/pybricks_blockIfElse_if_only.svg"
 msgstr ""
 
-#: ../../main/blocks/index.rst:91 4e565b0ba4e64a61b9a355c5c581e793
+#: ../../main/blocks/index.rst:91 7af993fdca7d4c73a1434d478ae9d20e
 msgid "Device and system setup"
 msgstr ""
 
-#: ../../main/blocks/index.rst:93 aa8ef9f52beb42a5bdb0e8fbb3a0044b
+#: ../../main/blocks/index.rst:93 2591602c21ce4d97933feb435a126761
 msgid ".. image:: /blockimg/pybricks_blockGlobalSetup.svg"
 msgstr ""
 
-#: ../../main/blocks/index.rst:96 3be4165b492445adb750c5309c9398ac
+#: ../../main/blocks/index.rst:96 21fc09268ec74451b2a601700b0b8ab2
 msgid "Waiting"
 msgstr ""
 
-#: ../../main/blocks/index.rst:98 5da78e0d825c43dbb08adb67541f6107
+#: ../../main/blocks/index.rst:98 623831b00fbc4d8e85160bfd9669968e
 msgid ".. image:: /blockimg/pybricks_blockWaitTime.svg"
 msgstr ""
 
-#: ../../main/blocks/index.rst:100 ca374cae706141d295a833d4ef02af9d
+#: ../../main/blocks/index.rst:100 cf86fb78735b426288fb65f8c1734a31
 msgid ".. image:: /blockimg/pybricks_blockWaitUntil.svg"
 msgstr ""
 
-#: ../../main/blocks/index.rst:102 ced49d50361e4b9688ed0f19b26ef720
+#: ../../main/blocks/index.rst:102 60e3eedc459e4b90a4daf060c49e593a
 msgid ".. image:: /blockimg/pybricks_blockWaitForever.svg"
 msgstr ""
 
-#: ../../main/blocks/index.rst:107 7c5da062009c4cbe9bc59070860d0dcd
+#: ../../main/blocks/index.rst:107 04ad83b9bbdb4ef783d130cf47146879
 msgid "Variables"
 msgstr ""
 
-#: ../../main/blocks/index.rst:109 fab70143d7154714a180d105ee4559d4
+#: ../../main/blocks/index.rst:109 3fa27066ba2e4284a8d2503fb07cdd61
 msgid ".. image:: /blockimg/pybricks_variables_setup_any.svg"
 msgstr ""
 
-#: ../../main/blocks/index.rst:111 9a349582da5e457f82bb90d2ad7c3150
+#: ../../main/blocks/index.rst:111 3a7531df1a424437b96b715064356cc6
 msgid ".. image:: /blockimg/pybricks_blockVariableGetValue.svg"
 msgstr ""
 
-#: ../../main/blocks/index.rst:113 46342489c31d4681b07490fd35f8b627
+#: ../../main/blocks/index.rst:113 c16d107ec09b487aaf288b7383e8f0fb
 msgid ".. image:: /blockimg/pybricks_blockVariableSetValue.svg"
 msgstr ""
 
-#: ../../main/blocks/index.rst:116 5989311707e145e6b8a175e957188320
+#: ../../main/blocks/index.rst:116 02c650ebaf8844338b8e5475c33a68be
 msgid "Multitasking"
 msgstr ""
 
-#: ../../main/blocks/index.rst:118 c9ebf66a838248e38ec4b2a9bbacc6a9
+#: ../../main/blocks/index.rst:118 6821e7c0334249a28670b015791bb724
 msgid ".. image:: /blockimg/pybricks_blockGlobalStart.svg"
 msgstr ""
 
-#: ../../main/blocks/index.rst:120 6585c34381844be6a4c0c58a1e62ff2b
+#: ../../main/blocks/index.rst:120 d3cd3218186841bd8e31c20ad5aeae35
 msgid ".. image:: /blockimg/pybricks_blockMultiTask.svg"
 msgstr ""
 
-#: ../../main/blocks/index.rst:123 f9401481c49842389ade49d67e84cbfa
+#: ../../main/blocks/index.rst:123 c3eca9040e384e89b8e1bc44b96beb67
 msgid "Your own tasks"
 msgstr ""
 
-#: ../../main/blocks/index.rst:125 8fa430fad1dd40baadc702d6f7e180a7
+#: ../../main/blocks/index.rst:125 da319652506f4757a94aef8ca1dcbaa8
 msgid ".. image:: /blockimg/pybricks_variables_setup_function_basic.svg"
 msgstr ""
 
-#: ../../main/blocks/index.rst:127 46845a6d83e64e9a822e714dabe3739e
+#: ../../main/blocks/index.rst:127 979a3485580c4b568db464dddec20edb
 msgid ".. image:: /blockimg/pybricks_variables_setup_function_with_args.svg"
 msgstr ""
 
-#: ../../main/blocks/index.rst:129 7a837e832eca4760ad24745a0be276f9
+#: ../../main/blocks/index.rst:129 79c714f6301b481caaa3f0f2e652ed96
 msgid ".. image:: /blockimg/pybricks_blockTaskReturn.svg"
 msgstr ""
 
-#: ../../main/blocks/index.rst:132 c64e5a9c408f40ce85a4cdc566fd78b7
+#: ../../main/blocks/index.rst:132 ff9ed6f4df5144438465a92ddc196452
 msgid "External tasks"
 msgstr ""
 
-#: ../../main/blocks/index.rst:134 e28f90992fd84dd296f20a07ac052fb0
+#: ../../main/blocks/index.rst:134 c45145e87eeb4528bf81c6bd15608be1
 msgid ".. image:: /blockimg/pybricks_variables_setup_imported_function.svg"
 msgstr ""
 
-#: ../../main/blocks/index.rst:136 3e16c9941f36448ba8628ce6aab78395
+#: ../../main/blocks/index.rst:136 13a9e2f0a939481686c3009fcb623686
 msgid ".. image:: /blockimg/pybricks_blockImportTaskCallStatement.svg"
 msgstr ""
 
-#: ../../main/blocks/index.rst:138 1f3b09b2e8ce41c98dd9a711f4a4a765
+#: ../../main/blocks/index.rst:138 7062c663837944b1b355ec1781d7751d
 msgid ".. image:: /blockimg/pybricks_blockImportTaskCallValue.svg"
 msgstr ""
 
-#: ../../main/blocks/index.rst:141 d0a7739b589b470cbb5e0679db876fd7
+#: ../../main/blocks/index.rst:141 d875fa47be1f4330aaf08d495d30f72d
 msgid "Comments"
 msgstr ""
 
-#: ../../main/blocks/index.rst:143 082d8f7f50164884bd1d7421573d3481
+#: ../../main/blocks/index.rst:143 1a98d39a829f47a9b168ddc95d4ba274
 msgid ".. image:: /blockimg/pybricks_blockComment.svg"
 msgstr ""
 
-#: ../../main/blocks/index.rst:146 79298fb781ca4dfd841553ad76a65c2f
+#: ../../main/blocks/index.rst:146 c1cdb1f70b364df8bccede6b5fcc9c30
 msgid "Stopping programs"
 msgstr ""
 
-#: ../../main/blocks/index.rst:148 d91019ffdec441cf97be5d79252c8b78
+#: ../../main/blocks/index.rst:148 f8d6ae9c279144a8bc6fef1388d85b6e
 msgid ".. image:: /blockimg/pybricks_blockProgramStop.svg"
 msgstr ""
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pybricks v3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-26 20:11+0100\n"
+"POT-Creation-Date: 2025-01-30 22:50+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: de\n"
@@ -19,59 +19,59 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.16.0\n"
 
-#: ../../main/pupdevices/index.rst:4 8af9d44f8737437f9fea7e8a51a780ba
+#: ../../main/pupdevices/index.rst:4 5d3d165946f04d0db38d884a53d5e56c
 msgid ":mod:`pupdevices <pybricks.pupdevices>` -- Motors, sensors, lights"
 msgstr ""
 
-#: adeb7654450d4905818304e00a2c779f of pybricks.pupdevices:1
+#: 8566aa31b0de4c0eb73d8f35b4a58819 of pybricks.pupdevices:1
 msgid "LEGO® Powered Up motor, sensors, and lights."
 msgstr ""
 
-#: ../../main/pupdevices/index.rst:28 ba0627ec45dd4a6daabe38d953383558
+#: ../../main/pupdevices/index.rst:28 1dc7aa6808f643aba3dab3eb21b2b47d
 msgid ".. image:: ../../main/cad/output/pupdevice-dcmotors.png"
 msgstr ""
 
-#: ../../main/pupdevices/index.rst:34 8c612dbe328f4e288a618a2d33cfc446
+#: ../../main/pupdevices/index.rst:34 33bb907bd1204b1a9f09f3553a79d14e
 msgid ".. image:: ../../main/cad/output/pupdevice-motors.png"
 msgstr ""
 
-#: ../../main/pupdevices/index.rst:40 1e831a9df15646d6b53761ee788c783a
+#: ../../main/pupdevices/index.rst:40 e7319833efd844c4b160826203107454
 msgid ".. image:: ../../main/cad/output/pupdevice-tilt.png"
 msgstr ""
 
-#: ../../main/pupdevices/index.rst:46 db9fa8ffad4849ce96169159cab951a2
+#: ../../main/pupdevices/index.rst:46 c9213a769473422692b879a8f9b3deba
 msgid ".. image:: ../../main/cad/output/pupdevice-infrared.png"
 msgstr ""
 
-#: ../../main/pupdevices/index.rst:52 e82a328cddbc43f4be8c2bc99e55755f
+#: ../../main/pupdevices/index.rst:52 10c6ef0d8ca54b5ca1c09b41776dad3f
 msgid ".. image:: ../../main/cad/output/pupdevice-colordistance.png"
 msgstr ""
 
-#: ../../main/pupdevices/index.rst:58 5e996d2b11d84097b0c0b48fe099146a
+#: ../../main/pupdevices/index.rst:58 02fa0d9b33914f858f354036fae3d182
 msgid ".. image:: ../../main/cad/output/pupdevice-pfmotor.png"
 msgstr ""
 
-#: ../../main/pupdevices/index.rst:64 5d585df5542d402090e7e5a949220fe5
+#: ../../main/pupdevices/index.rst:64 2d46434f815f4142b7192d0f74df1912
 msgid ".. image:: ../../main/cad/output/pupdevice-color.png"
 msgstr ""
 
-#: ../../main/pupdevices/index.rst:70 f4b13cf4c78840d0883aab7ee498cf36
+#: ../../main/pupdevices/index.rst:70 dc3a0cf3039040b399b96e1ba6b5214e
 msgid ".. image:: ../../main/cad/output/pupdevice-ultrasonic.png"
 msgstr ""
 
-#: ../../main/pupdevices/index.rst:76 91bd0680a50e4373bacc1ae869184b3e
+#: ../../main/pupdevices/index.rst:76 2c26cfbd1cd8492c90686e4272f8d174
 msgid ".. image:: ../../main/cad/output/pupdevice-force.png"
 msgstr ""
 
-#: ../../main/pupdevices/index.rst:82 47ce8952b3934804befebb9e227ac478
+#: ../../main/pupdevices/index.rst:82 0c49298eb18c45ee88e10faca3b54efd
 msgid ".. image:: ../../main/diagrams/sensor_colorlightmatrix.png"
 msgstr ""
 
-#: ../../main/pupdevices/index.rst:88 7f9bf8afd7ac487e8ccc9d7ee1c0d2e8
+#: ../../main/pupdevices/index.rst:88 62ca9b02be9d4eafbcf72781469cd1b9
 msgid ".. image:: ../../main/cad/output/pupdevice-light.png"
 msgstr ""
 
-#: ../../main/pupdevices/index.rst:94 8e5b86e4a0fc4424af45762472ce34bc
+#: ../../main/pupdevices/index.rst:94 c6164725a8ac4ae7a9457514ab2468ee
 msgid ".. image:: ../../main/cad/output/pupdevice-remote.png"
 msgstr ""
 

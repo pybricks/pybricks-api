@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pybricks v3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-26 20:11+0100\n"
+"POT-Creation-Date: 2025-01-30 22:50+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: de\n"
@@ -19,23 +19,23 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.16.0\n"
 
-#: ../../main/iodevices/index.rst:4 3cfb8b8319b9454195be43ce15225a64
+#: ../../main/iodevices/index.rst:4 e6fb89d1925648cfba1877cb1f9c345d
 msgid ":mod:`iodevices <pybricks.iodevices>` -- Custom devices"
 msgstr ""
 
-#: ../../main/iodevices/index.rst:16 dac253e1fd9a4ff3977871206e9a71cf
+#: ../../main/iodevices/index.rst:16 3ebcf4dc193d40f2ba4c52180f68ba58
 msgid "This module has classes for generic and custom input/output devices."
 msgstr ""
 
-#: ../../main/iodevices/index.rst:20 7724b890d67942ddb4a0b65bccb7daa0
+#: ../../main/iodevices/index.rst:20 f1199230082f4db4a3b641a968aeec89
 msgid ".. image:: ../../main/cad/output/iodevice-pupdevice.png"
 msgstr ""
 
-#: ../../main/iodevices/index.rst:26 f8f3964521b24ab9b2c89f4f11f32b8f
+#: ../../main/iodevices/index.rst:26 7cf5377c68d04932a48444061edf9d62
 msgid ".. image:: ../../main/cad/output/hub-lwp3.png"
 msgstr ""
 
-#: ../../main/iodevices/index.rst:32 83fd7f6751b24bb2a27d56ff4554842c
+#: ../../main/iodevices/index.rst:32 c3d0b0917d854aa8bbca4d61e3f8865f
 msgid ".. image:: ../../main/diagrams_source/xboxcontroller.png"
 msgstr ""
 

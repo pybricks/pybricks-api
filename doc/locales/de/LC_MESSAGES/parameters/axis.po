@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pybricks v3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-26 20:11+0100\n"
+"POT-Creation-Date: 2025-01-30 22:50+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: de\n"
@@ -19,15 +19,15 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.16.0\n"
 
-#: ../../main/parameters/axis.rst:4 349963ebf7ad42eab81ce2af2646456d
+#: ../../main/parameters/axis.rst:4 6b614e0f6141470ca864abbb4abc96c5
 msgid "Axis"
 msgstr ""
 
-#: 0dcb24069d924025a8ef6887d4aa501b of pybricks.parameters.Axis:1
+#: 222b715f0dc6417795e135c16348a54b of pybricks.parameters.Axis:1
 msgid "Unit axes of a coordinate system."
 msgstr ""
 
-#: ../../main/parameters/axis.rst:9 a3da3046215342a1a090d554fd42ba11
+#: ../../main/parameters/axis.rst:9 3330b0e45c66494c9844c25be7299f17
 msgid ""
 "On Move Hub, doing math with these vectors is not supported. The axes can"
 " still be used to set up the hub orientation."
