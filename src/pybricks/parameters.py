@@ -112,6 +112,10 @@ class Color:
         The brightness value.
         """
 
+    def __iter__(self):
+        """Allows unpacking of the Color instance into h, s, and v."""
+        return iter((self.h, self.s, self.v))
+
     def __repr__(self):
         return "Color(h={}, s={}, v={})".format(self.h, self.s, self.v)
 
