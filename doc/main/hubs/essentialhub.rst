@@ -124,9 +124,12 @@ Essential Hub
 
     .. automethod:: pybricks.hubs::EssentialHub.system.storage
 
-        You can store up to 512 bytes of data on this hub.
+        You can store up to 512 bytes of data on this hub. The data is cleared
+        when you update the Pybricks firmware.
 
     .. blockimg:: pybricks_blockHubShutdown_EssentialHub
+
+    .. automethod:: pybricks.hubs::EssentialHub.system.reset_storage
 
     .. automethod:: pybricks.hubs::EssentialHub.system.shutdown
 

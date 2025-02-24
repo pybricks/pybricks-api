@@ -131,6 +131,12 @@ class System:
                 If you try to read or write data outside of the allowed range.
         """
 
+    def reset_storage(self) -> None:
+        """reset_storage()
+
+        Resets all user settings to default values and erases user programs.
+        """
+
 
 class DCMotor:
     """Generic class to control simple motors without rotation sensors, such
@@ -1073,38 +1079,89 @@ class IMU(Accelerometer):
     @overload
     def settings(
         self,
+        *,
         angular_velocity_threshold: float = None,
         acceleration_threshold: float = None,
+        heading_correction: float = None,
+        angular_velocity_bias: Tuple[float, float, float] = None,
+        angular_velocity_scale: Tuple[float, float, float] = None,
+        acceleration_correction: Tuple[float, float, float, float, float, float] = None,
     ) -> None: ...
 
     @overload
-    def settings(self) -> Tuple[float, float]: ...
+    def settings(
+        self,
+    ) -> Tuple[
+        float,
+        float,
+        float,
+        Tuple[float, float, float],
+        Tuple[float, float, float],
+        Tuple[float, float, float, float, float, float],
+    ]: ...
 
     def settings(self, *args):
         """
-        settings(angular_velocity_threshold, acceleration_threshold)
-        settings() -> Tuple[float, float]
+        settings(*, angular_velocity_threshold, acceleration_threshold, heading_correction, angular_velocity_bias, angular_velocity_scale, acceleration_correction)
+        settings() -> Tuple
 
         Configures the IMU settings. If no arguments are given,
-        this returns the current values.
+        this returns the current values. Use keyword arguments for each value
+        to ensure correct behavior because settings may be added or changed in
+        future releases.
+
+        These IMU settings are saved on the hub. They will keep their values
+        until you change them again. The values will be reset to default values
+        if you update the hub to a different firmware version or call the
+        ``hub.system.reset_storage`` method.
 
         The ``angular_velocity_threshold`` and ``acceleration_threshold``
         define when the hub is considered stationary. If all
         measurements stay below these thresholds for one second, the IMU
-        will recalibrate itself.
-
-        In a noisy room with high ambient vibrations (such as a
-        competition hall), it is recommended to increase the thresholds
+        will recalibrate itself. In a noisy room with high ambient vibrations (such as a
+        competition hall), you can increase the thresholds
         slightly to give your robot the chance to calibrate.
         To verify that your settings are working as expected, test that
         the ``stationary()`` method gives ``False`` if your robot is moving,
-        and ``True`` if it is sitting still for at least a second.
+        and ``True`` if it is sitting still.
+
+        The gyroscope measures how fast the hub rotates to estimate the total
+        angle. Due to variations in the production process, each
+        hub consistently reports a different value for a full rotation. For
+        example, your hub might consistently report `357` degrees for every
+        `360` degree turn. You can measure this value
+        with ``hub.imu.rotation(-Axis.Z)`` and enter it as
+        the ``heading_correction`` setting. Then, the ``hub.imu.heading()``
+        method will take it into account going forward, correctly scaling it
+        to 360 degrees for a full rotation.
 
         Arguments:
             angular_velocity_threshold (Number, deg/s): The threshold for
-                angular velocity. The default value is 1.5 deg/s.
-            acceleration_threshold (Number, mm/s²): The threshold for angular
-                velocity. The default value is 250 mm/s².
+                variations in the angular velocity below which the hub is
+                considered stationary enough to calibrate.
+                After a reset the value is 2 deg/s.
+            acceleration_threshold (Number, mm/s²): The threshold for
+                variations in acceleration below which the hub is considered
+                stationary enough to calibrate. After a reset the value
+                is 2500 mm/s².
+            heading_correction (Number, deg): Number of degrees reported by
+                ``imu.rotation(-Axis.Z)`` for one full rotation of your robot.
+                After a reset the value is 360 degrees.
+            angular_velocity_bias (tuple, deg/s): Initial bias for angular
+                velocity measurements along x, y, and z immediately after boot.
+                After a reset the value is (0, 0, 0) deg/s.
+            angular_velocity_scale (tuple, deg): Scale adjustment for x, y, and
+                z rotation to account for manufacturing differences. After a reset the
+                value is (360, 360, 360) deg/s. The correct values can be
+                obtained using `hub.imu.rotation(Axis.X, calibrated=False)` and
+                repeating it for each axis.
+            acceleration_correction (tuple, mm/s²): Scale adjustment for x, y,
+                and z gravity magnitude in both directions to account for
+                manufacturing differences. After a reset the
+                value is (9806.65, -9806.65, 9806.65, -9806.65, 9806.65, -9806.65) mm/s².
+                The correct values can be
+                obtained using `hub.imu.acceleration(Axis.X, calibrated=False)`
+                and repeating it for all axes in both directions.
         """
 
     def heading(self) -> float:
@@ -1138,8 +1195,48 @@ class IMU(Accelerometer):
 
         Resets the accumulated heading angle of the robot.
 
+        This cannot be called while a drive base is using the gyro to drive or
+        hold position.
+        Use :meth:`DriveBase.reset() <pybricks.robotics.DriveBase.reset>`
+        instead, which will stop the robot and then set the new heading value.
+
+        .. versionchanged:: 3.6 Resetting the angle while driving is not allowed.
+
         Arguments:
             angle (Number, deg): Value to which the heading should be reset.
+
+        Raises:
+            OSError:
+                There is a drive base that is currently using the gyro.
+        """
+
+    def update_heading_correction(self) -> None:
+        """update_heading_correction()
+
+        Runs an interactive routine to automatically update the saved heading
+        correction value. Follow the instructions in the output pane in
+        Pybricks Code. The value will only be updated if this method completes
+        successfully.
+
+        The gyro sensor is _precise_, but not _accurate_ in knowing how much
+        movement exactly means 360 degrees. This is different for every hub.
+
+        This method helps you find a correction factor for your hub. This
+        improves the values you get from the ``heading()``. And likewise, it
+        improves ``DriveBase`` motion when you use ``use_gyro(True)``.
+
+        The result is saved on the hub. It will remain unchanged until you run
+        this method again. It is cleared when you update the firmware to a new
+        version.
+
+        So this method should be run as a one-off for your robot in a separate
+        script. It should not be part of your day-to-day programs, because it
+        take a few minutes to run.
+
+        If your hub is mounted in a custom orientation and you specify your own
+        ``top_side`` and ``front_side`` axes, you should use the same axes when
+        you run this update method. If you change your design later, be
+        sure to run this routine again with the updated axes values.
         """
 
     @overload
@@ -1176,6 +1273,10 @@ class IMU(Accelerometer):
         ``orientation()`` method instead.
 
         The value starts counting from ``0`` when you initialize this class.
+
+        This value is _not_ automatically adjusted to give an exact 360 value
+        for a full turn. For an adjusted value, use the ``heading`` method.
+
 
         Arguments:
             axis (Axis): Axis along which the rotation should be measured.

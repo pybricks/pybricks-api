@@ -179,7 +179,10 @@ Prime Hub / Inventor Hub
 
     .. automethod:: pybricks.hubs::PrimeHub.system.storage
 
-        You can store up to 512 bytes of data on this hub.
+        You can store up to 512 bytes of data on this hub. The data is cleared
+        when you update the Pybricks firmware.
+
+    .. automethod:: pybricks.hubs::PrimeHub.system.reset_storage
 
     .. blockimg:: pybricks_blockHubShutdown_PrimeHub
 

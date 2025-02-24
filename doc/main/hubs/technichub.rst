@@ -118,6 +118,8 @@ Technic Hub
         when you update the Pybricks firmware or if you restore the original
         firmware.
 
+    .. automethod:: pybricks.hubs::TechnicHub.system.reset_storage
+
     .. blockimg:: pybricks_blockHubShutdown_TechnicHub
 
     .. automethod:: pybricks.hubs::TechnicHub.system.shutdown

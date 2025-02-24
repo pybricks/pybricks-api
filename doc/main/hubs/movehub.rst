@@ -96,6 +96,8 @@ Move Hub
         when you update the Pybricks firmware or if you restore the original
         firmware.
 
+    .. automethod:: pybricks.hubs::MoveHub.system.reset_storage
+
     .. blockimg:: pybricks_blockHubShutdown_MoveHub
 
     .. automethod:: pybricks.hubs::MoveHub.system.shutdown
