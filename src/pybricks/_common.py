@@ -1444,14 +1444,14 @@ class BLE:
     .. versionadded:: 3.3
     """
 
-    def broadcast(self, data: Union[bool, int, float, str, bytes]) -> None:
+    def broadcast(self, data: Union[bool, int, float, str, bytes]) -> MaybeAwaitable:
         """broadcast(data)
 
         Starts broadcasting the given data on
         the ``broadcast_channel`` you selected when initializing the hub.
 
         Data may be of type ``int``, ``float``, ``str``, ``bytes``,
-        ``True``, or ``False``, or a list thereof.
+        ``True``, or ``False``. It can also be a list or tuple of these.
 
         Choose ``None`` to stop broadcasting. This helps improve performance
         when you don't need the broadcast feature, especially when observing

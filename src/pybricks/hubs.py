@@ -44,9 +44,9 @@ class MoveHub:
     ble = _common.BLE()
 
     def __init__(
-        self, broadcast_channel: int = 0, observe_channels: Sequence[int] = []
+        self, broadcast_channel: int = None, observe_channels: Sequence[int] = []
     ):
-        """MoveHub(top_side=Axis.Z, front_side=Axis.X, broadcast_channel=0, observe_channels=[])
+        """MoveHub(top_side=Axis.Z, front_side=Axis.X, broadcast_channel=None, observe_channels=[])
 
         Arguments:
             top_side (Axis): The axis that passes through the *top side* of
@@ -54,8 +54,8 @@ class MoveHub:
             front_side (Axis): The axis that passes through the *front side* of
                 the hub.
             broadcast_channel:
-                A value from 0 to 255 indicating which channel ``hub.ble.broadcast()``
-                will use. Default is channel 0.
+                Channel number (0 to 255) used to broadcast data.
+                Choose ``None`` when not using broadcasting.
             observe_channels:
                 A list of channels to listen to when ``hub.ble.observe()`` is
                 called. Listening to more channels requires more memory.
@@ -78,14 +78,14 @@ class CityHub:
     ble = _common.BLE()
 
     def __init__(
-        self, broadcast_channel: int = 0, observe_channels: Sequence[int] = []
+        self, broadcast_channel: int = None, observe_channels: Sequence[int] = []
     ):
-        """CityHub(broadcast_channel=0, observe_channels=[])
+        """CityHub(broadcast_channel=None, observe_channels=[])
 
         Arguments:
             broadcast_channel:
-                A value from 0 to 255 indicating which channel ``hub.ble.broadcast()``
-                will use. Default is channel 0.
+                Channel number (0 to 255) used to broadcast data.
+                Choose ``None`` when not using broadcasting.
             observe_channels:
                 A list of channels to listen to when ``hub.ble.observe()`` is
                 called. Listening to more channels requires more memory.
@@ -112,10 +112,10 @@ class TechnicHub:
         self,
         top_side: Axis = Axis.Z,
         front_side: Axis = Axis.X,
-        broadcast_channel: int = 0,
+        broadcast_channel: int = None,
         observe_channels: Sequence[int] = [],
     ):
-        """TechnicHub(top_side=Axis.Z, front_side=Axis.X, broadcast_channel=0, observe_channels=[])
+        """TechnicHub(top_side=Axis.Z, front_side=Axis.X, broadcast_channel=None, observe_channels=[])
 
         Initializes the hub. Optionally, specify how the hub is
         :ref:`placed in your design <robotframe>` by saying in which
@@ -128,8 +128,8 @@ class TechnicHub:
             front_side (Axis): The axis that passes through the *front side* of
                 the hub.
             broadcast_channel:
-                A value from 0 to 255 indicating which channel ``hub.ble.broadcast()``
-                will use. Default is channel 0.
+                Channel number (0 to 255) used to broadcast data.
+                Choose ``None`` when not using broadcasting.
             observe_channels:
                 A list of channels to listen to when ``hub.ble.observe()`` is
                 called. Listening to more channels requires more memory.
@@ -157,10 +157,10 @@ class EssentialHub:
         self,
         top_side: Axis = Axis.Z,
         front_side: Axis = Axis.X,
-        broadcast_channel: int = 0,
+        broadcast_channel: int = None,
         observe_channels: Sequence[int] = [],
     ):
-        """EssentialHub(top_side=Axis.Z, front_side=Axis.X, broadcast_channel=0, observe_channels=[])
+        """EssentialHub(top_side=Axis.Z, front_side=Axis.X, broadcast_channel=None, observe_channels=[])
 
         Initializes the hub. Optionally, specify how the hub is
         :ref:`placed in your design <robotframe>` by saying in which
@@ -173,8 +173,8 @@ class EssentialHub:
             front_side (Axis): The axis that passes through the *front side* of
                 the hub.
             broadcast_channel:
-                A value from 0 to 255 indicating which channel ``hub.ble.broadcast()``
-                will use. Default is channel 0.
+                Channel number (0 to 255) used to broadcast data.
+                Choose ``None`` when not using broadcasting.
             observe_channels:
                 A list of channels to listen to when ``hub.ble.observe()`` is
                 called. Listening to more channels requires more memory.
@@ -212,10 +212,10 @@ class PrimeHub:
         self,
         top_side: Axis = Axis.Z,
         front_side: Axis = Axis.X,
-        broadcast_channel: int = 0,
+        broadcast_channel: int = None,
         observe_channels: Sequence[int] = [],
     ):
-        """PrimeHub(top_side=Axis.Z, front_side=Axis.X, broadcast_channel=0, observe_channels=[])
+        """PrimeHub(top_side=Axis.Z, front_side=Axis.X, broadcast_channel=None, observe_channels=[])
 
         Initializes the hub. Optionally, specify how the hub is
         :ref:`placed in your design <robotframe>` by saying in which
@@ -228,8 +228,8 @@ class PrimeHub:
             front_side (Axis): The axis that passes through the *front side* of
                 the hub.
             broadcast_channel:
-                A value from 0 to 255 indicating which channel ``hub.ble.broadcast()``
-                will use. Default is channel 0.
+                Channel number (0 to 255) used to broadcast data.
+                Choose ``None`` when not using broadcasting.
             observe_channels:
                 A list of channels to listen to when ``hub.ble.observe()`` is
                 called. Listening to more channels requires more memory.
