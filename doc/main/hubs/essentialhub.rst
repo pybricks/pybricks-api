@@ -43,6 +43,13 @@ Essential Hub
 
     .. rubric:: Using the IMU
 
+    .. versionchanged:: 3.6
+
+        The methods below now return calibrated data by default. Depending on
+        the method used, this combines data from the accelerometer, gyroscope,
+        with your calibration values. Use ``calibrated=False`` where applicable
+        to get the raw data you got before.
+
     .. blockimg:: pybricks_blockImuStatus_EssentialHub_ready
 
     .. automethod:: pybricks.hubs::EssentialHub.imu.ready

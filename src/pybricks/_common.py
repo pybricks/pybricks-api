@@ -1024,34 +1024,67 @@ class SimpleAccelerometer:
         """
 
 
-class Accelerometer(SimpleAccelerometer):
-    """Get measurements from an accelerometer."""
+class IMU:
+
+    def up(self, calibrated=True) -> Side:
+        """up(calibrated=True) -> Side
+
+        Checks which side of the hub currently faces upward.
+
+        Arguments:
+            calibrated (bool): Choose ``True`` to use calibrated gyroscope and
+                accelerometer data to determine which way is up. Choose
+                ``False`` to use raw acceleration values.
+
+        Returns:
+            ``Side.TOP``, ``Side.BOTTOM``, ``Side.LEFT``, ``Side.RIGHT``,
+            ``Side.FRONT`` or ``Side.BACK``.
+        """
+
+    def tilt(self, calibrated=True) -> Tuple[int, int]:
+        """tilt(calibrated=True) -> Tuple[int, int]
+
+        Gets the pitch and roll angles. This is relative to the
+        :ref:`user-specified neutral orientation <robotframe>`.
+
+        The order of rotation is pitch-then-roll. This is equivalent to a
+        positive rotation along the robot y-axis and then a positive rotation
+        along the x-axis.
+
+        Arguments:
+            calibrated (bool): Choose ``True`` to use calibrated gyroscope and
+                accelerometer data to determine the tilt. Choose ``False``
+                to use raw acceleration values.
+
+        Returns:
+            Tuple of pitch and roll angles in degrees.
+        """
 
     @overload
-    def acceleration(self, axis: Axis) -> float: ...
+    def acceleration(self, axis: Axis = None, calibrated=True) -> float: ...
 
     @overload
-    def acceleration(self) -> Matrix: ...
+    def acceleration(self, calibrated=True) -> Matrix: ...
 
     def acceleration(self, *args):
         """
-        acceleration(axis) -> float: mm/s²
-        acceleration() -> vector: mm/s²
-
+        acceleration(axis, calibrated=True) -> float: mm/s²
+        acceleration(calibrated=True) -> vector: mm/s²
 
         Gets the acceleration of the device along a given axis in the
         :ref:`robot reference frame <robotframe>`.
 
         Arguments:
             axis (Axis): Axis along which the acceleration should be
-                         measured.
+                measured, or ``None`` to get a vector along all axes.
+            calibrated (bool): Choose ``True`` to use calibrated acceleration
+                values. Choose ``False`` to use raw acceleration values.
+
         Returns:
             Acceleration along the specified axis. If you specify no axis,
             this returns a vector of accelerations along all axes.
         """
 
-
-class IMU(Accelerometer):
     def ready(self) -> bool:
         """ready() -> bool
 
@@ -1179,11 +1212,11 @@ class IMU(Accelerometer):
                   the robot is on a flat surface.*
 
                   This means that the value is
-                  no longer correct if you lift it from the table. To solve
-                  this, you can call ``reset_heading`` to reset the heading to
-                  a known value *after* you put it back down. For example, you
-                  could align your robot with the side of the competition table
-                  and reset the heading 90 degrees as the new starting point.
+                  no longer correct if you lift it from the table or turn on
+                  a ramp. Try ``hub.imu.heading('3D')`` for a heading value
+                  that compensates for this. This will become the default in a
+                  future release. If you try it, please let us know on our
+                  forums!
 
         Returns:
             Heading angle relative to starting orientation.
@@ -1200,7 +1233,7 @@ class IMU(Accelerometer):
         Use :meth:`DriveBase.reset() <pybricks.robotics.DriveBase.reset>`
         instead, which will stop the robot and then set the new heading value.
 
-        .. versionchanged:: 3.6 Resetting the angle while driving is not allowed.
+        .. versionchanged:: 3.6 Resetting the angle while driving is not allowed. Stop first.
 
         Arguments:
             angle (Number, deg): Value to which the heading should be reset.
@@ -1210,60 +1243,35 @@ class IMU(Accelerometer):
                 There is a drive base that is currently using the gyro.
         """
 
-    def update_heading_correction(self) -> None:
-        """update_heading_correction()
-
-        Runs an interactive routine to automatically update the saved heading
-        correction value. Follow the instructions in the output pane in
-        Pybricks Code. The value will only be updated if this method completes
-        successfully.
-
-        The gyro sensor is _precise_, but not _accurate_ in knowing how much
-        movement exactly means 360 degrees. This is different for every hub.
-
-        This method helps you find a correction factor for your hub. This
-        improves the values you get from the ``heading()``. And likewise, it
-        improves ``DriveBase`` motion when you use ``use_gyro(True)``.
-
-        The result is saved on the hub. It will remain unchanged until you run
-        this method again. It is cleared when you update the firmware to a new
-        version.
-
-        So this method should be run as a one-off for your robot in a separate
-        script. It should not be part of your day-to-day programs, because it
-        take a few minutes to run.
-
-        If your hub is mounted in a custom orientation and you specify your own
-        ``top_side`` and ``front_side`` axes, you should use the same axes when
-        you run this update method. If you change your design later, be
-        sure to run this routine again with the updated axes values.
-        """
+    @overload
+    def angular_velocity(self, axis: Axis = None, calibrated=True) -> float: ...
 
     @overload
-    def angular_velocity(self, axis: Axis) -> float: ...
-
-    @overload
-    def angular_velocity(self) -> Matrix: ...
+    def angular_velocity(self, calibrated=True) -> Matrix: ...
 
     def angular_velocity(self, *args):
         """
-        angular_velocity(axis) -> float: deg/s
-        angular_velocity() -> vector: deg/s
+        angular_velocity(axis, calibrated=True) -> float: deg/s
+        angular_velocity(calibrated=True) -> vector: deg/s
 
         Gets the angular velocity of the device along a given axis in
         the :ref:`robot reference frame <robotframe>`.
 
         Arguments:
             axis (Axis): Axis along which the angular velocity should be
-                         measured.
+                measured, or ``None`` to get a vector along all axes.
+            calibrated (bool): Choose ``True`` to compensate for the estimated
+                bias and configured scale of the gyroscope. Choose ``False``
+                to get raw angular velocity values.
+
         Returns:
             Angular velocity along the specified axis. If you specify no axis,
             this returns a vector of accelerations along all axes.
         """
 
-    def rotation(self, axis: Axis) -> float:
+    def rotation(self, axis: Axis, calibrated=True) -> float:
         """
-        rotation(axis) -> float: deg
+        rotation(axis, calibrated=True) -> float: deg
 
         Gets the rotation of the device along a given axis in
         the :ref:`robot reference frame <robotframe>`.
@@ -1272,14 +1280,11 @@ class IMU(Accelerometer):
         axis. For general three-dimensional motion, use the
         ``orientation()`` method instead.
 
-        The value starts counting from ``0`` when you initialize this class.
-
-        This value is _not_ automatically adjusted to give an exact 360 value
-        for a full turn. For an adjusted value, use the ``heading`` method.
-
-
         Arguments:
             axis (Axis): Axis along which the rotation should be measured.
+            calibrated (bool): Choose ``True`` to compensate for configured
+                scale of the gyroscope. Choose ``False`` to get unscaled values.
+
         Returns:
             The rotation angle.
         """
@@ -1294,10 +1299,8 @@ class IMU(Accelerometer):
         It returns a rotation matrix whose columns represent the ``X``, ``Y``,
         and ``Z`` axis of the robot.
 
-        .. note:: This method is not yet implemented.
-
         Returns:
-            The rotation matrix.
+            The 3x3 rotation matrix.
         """
 
 
