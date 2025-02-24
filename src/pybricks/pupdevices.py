@@ -86,11 +86,15 @@ class Motor(_common.Motor):
 
         Sets the accumulated rotation angle of the motor to a desired value.
 
-        If you don't specify an angle, the absolute angle
-        will be used if your motor supports it.
+        If this motor is also being used by a drive base, its distance and
+        angle values will also be affected. You might want to
+        use its :meth:`reset <pybricks.robotics.DriveBase.reset>`
+        method instead.
 
         Arguments:
             angle (Number, deg): Value to which the angle should be reset.
+                                 Choose ``None`` to reset it to the absolute
+                                 value of the motor.
         """
 
 

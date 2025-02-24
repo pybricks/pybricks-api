@@ -471,6 +471,11 @@ class Motor(DCMotor):
 
         Sets the accumulated rotation angle of the motor to a desired value.
 
+        If this motor is also being used by a drive base, its distance and
+        angle values will also be affected. You might want to
+        use its :meth:`reset <pybricks.robotics.DriveBase.reset>`
+        method instead.
+
         Arguments:
             angle (Number, deg): Value to which the angle should be reset.
         """
