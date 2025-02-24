@@ -119,10 +119,19 @@ class DriveBase:
             Tuple of distance, drive speed, angle, and turn rate of the robot.
         """
 
-    def reset(self) -> None:
-        """reset()
+    def reset(self, distance=0, angle=0) -> None:
+        """reset(distance=0, angle=0)
 
-        Resets the estimated driven distance and angle to 0."""
+        Resets the estimated driven distance and heading angle.
+
+        This also calls :meth:`.stop` to stop ongoing movements.
+        If your robot is controlled with :meth:`.use_gyro` set to ``True``,
+        calling this method will `also` set the gyro to the given angle.
+
+        Arguments:
+            distance (Number, mm): Speed of the robot.
+            angle (Number, deg): Heading angle of the robot.
+        """
 
     @overload
     def settings(
@@ -191,6 +200,40 @@ class DriveBase:
                          with the rest of the program.
         """
 
+    def arc(
+        self,
+        radius: Number,
+        angle: Number = None,
+        distance: Number = None,
+        then: Stop = Stop.HOLD,
+        wait: bool = True,
+    ) -> MaybeAwaitable:
+        """arc(radius, angle=None, distance=None, then=Stop.HOLD, wait=True)
+
+        Drives an arc (a partial circle) with a given radius. You can specify
+        how far to drive using either an angle or a distance.
+
+        With a positive radius, the robot drives along a circle to its right.
+        With a negative radius, the robot drives along a circle to its left.
+
+        You can specify how far to travel along that circle as an angle
+        (degrees) or distance (mm). A positive value means driving forward
+        along the circle. Negative means driving in reverse.
+
+        Arguments:
+            radius (Number, mm): Radius of the circle.
+            angle (Number, deg): Angle to drive along the circle.
+            distance (Number, mm): Distance to drive along the circle,
+                                   measured at the center of the robot.
+            then (Stop): What to do after coming to a standstill.
+            wait (bool): Wait for the maneuver to complete before continuing
+                         with the rest of the program.
+        Raises:
+            ValueError:
+                You must specify ``angle`` or ``distance``, but not both. The
+                radius cannot be zero. Use :meth:`.turn` for in-place turns.
+        """
+
     def curve(
         self, radius: Number, angle: Number, then: Stop = Stop.HOLD, wait: bool = True
     ) -> MaybeAwaitable:
@@ -224,7 +267,7 @@ class DriveBase:
         with the maximum actuation signal.
 
         Returns:
-            ``True`` if the drivebase is stalled, ``False`` if not.
+            ``True`` if the drive base is stalled, ``False`` if not.
         """
 
     def use_gyro(self, use_gyro: bool) -> None:
@@ -233,6 +276,9 @@ class DriveBase:
         Choose ``True`` to use the gyro sensor for turning and driving
         straight. Choose ``False`` to rely only on the motor's built-in
         rotation sensors.
+
+        This method will automatically call :meth:`.stop` to stop ongoing
+        movements.
 
         Arguments:
             use_gyro (bool): ``True`` to enable, ``False`` to disable.
