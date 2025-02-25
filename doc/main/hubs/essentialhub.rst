@@ -91,6 +91,15 @@ Essential Hub
 
     .. automethod:: pybricks.hubs::EssentialHub.imu.orientation
 
+    .. blockimg:: pybricks_blockImuConfigure_EssentialHub_imu.settings_heading_correction
+        :stack:
+
+    .. blockimg:: pybricks_blockImuConfigure_EssentialHub_imu.settings_angular_velocity_threshold
+        :stack:
+
+    .. blockimg:: pybricks_blockImuConfigure_EssentialHub_imu.settings_acceleration_threshold
+        :stack:
+
     .. automethod:: pybricks.hubs::EssentialHub.imu.settings
 
     .. rubric:: Using connectionless Bluetooth messaging

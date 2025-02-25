@@ -78,6 +78,15 @@ Technic Hub
 
     .. automethod:: pybricks.hubs::TechnicHub.imu.orientation
 
+    .. blockimg:: pybricks_blockImuConfigure_TechnicHub_imu.settings_heading_correction
+        :stack:
+
+    .. blockimg:: pybricks_blockImuConfigure_TechnicHub_imu.settings_angular_velocity_threshold
+        :stack:
+
+    .. blockimg:: pybricks_blockImuConfigure_TechnicHub_imu.settings_acceleration_threshold
+        :stack:
+
     .. automethod:: pybricks.hubs::TechnicHub.imu.settings
 
     .. rubric:: Using connectionless Bluetooth messaging
