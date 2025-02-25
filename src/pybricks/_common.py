@@ -1028,7 +1028,7 @@ class SimpleAccelerometer:
 
 class IMU:
 
-    def up(self, calibrated=True) -> Side:
+    def up(self, calibrated: bool = True) -> Side:
         """up(calibrated=True) -> Side
 
         Checks which side of the hub currently faces upward.
@@ -1043,7 +1043,7 @@ class IMU:
             ``Side.FRONT`` or ``Side.BACK``.
         """
 
-    def tilt(self, calibrated=True) -> Tuple[int, int]:
+    def tilt(self, calibrated: bool = True) -> Tuple[int, int]:
         """tilt(calibrated=True) -> Tuple[int, int]
 
         Gets the pitch and roll angles. This is relative to the
@@ -1063,10 +1063,10 @@ class IMU:
         """
 
     @overload
-    def acceleration(self, axis: Axis = None, calibrated=True) -> float: ...
+    def acceleration(self, axis: Axis = None, calibrated: bool = True) -> float: ...
 
     @overload
-    def acceleration(self, calibrated=True) -> Matrix: ...
+    def acceleration(self, calibrated: bool = True) -> Matrix: ...
 
     def acceleration(self, *args):
         """
@@ -1246,10 +1246,10 @@ class IMU:
         """
 
     @overload
-    def angular_velocity(self, axis: Axis = None, calibrated=True) -> float: ...
+    def angular_velocity(self, axis: Axis = None, calibrated: bool = True) -> float: ...
 
     @overload
-    def angular_velocity(self, calibrated=True) -> Matrix: ...
+    def angular_velocity(self, calibrated: bool = True) -> Matrix: ...
 
     def angular_velocity(self, *args):
         """
@@ -1271,7 +1271,7 @@ class IMU:
             this returns a vector of accelerations along all axes.
         """
 
-    def rotation(self, axis: Axis, calibrated=True) -> float:
+    def rotation(self, axis: Axis, calibrated: bool = True) -> float:
         """
         rotation(axis, calibrated=True) -> float: deg
 

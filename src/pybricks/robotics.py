@@ -119,7 +119,7 @@ class DriveBase:
             Tuple of distance, drive speed, angle, and turn rate of the robot.
         """
 
-    def reset(self, distance=0, angle=0) -> None:
+    def reset(self, distance: Number = 0, angle: Number = 0) -> None:
         """reset(distance=0, angle=0)
 
         Resets the estimated driven distance and heading angle.

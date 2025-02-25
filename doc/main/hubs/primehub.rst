@@ -196,7 +196,7 @@ Prime Hub / Inventor Hub
     .. automethod:: pybricks.hubs::PrimeHub.system.shutdown
 
 .. note::
-    
+
         The examples below use the ``PrimeHub`` class. The examples work fine
         on both hubs because they are the identical. If you prefer, you can
         change this to ``InventorHub``.
