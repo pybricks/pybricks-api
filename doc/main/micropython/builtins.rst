@@ -262,11 +262,11 @@ See also :mod:`umath` for floating point math operations.
 Runtime functions
 -------------------------
 
-.. pybricks-requirements::
+.. pybricks-requirements:: stm32-extra
 
 .. autofunction:: ubuiltins.eval
 
-.. pybricks-requirements::
+.. pybricks-requirements:: stm32-extra
 
 .. autofunction:: ubuiltins.exec
 
