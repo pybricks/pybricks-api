@@ -12,7 +12,7 @@ wait(1500)
 example_motor.stop()
 wait(1500)
 
-# Run at 70% duty cycle ("power") and then stop by coasting.
+# Run at 50% duty cycle ("power") and then stop by coasting.
 print("Demo of dc")
 example_motor.dc(50)
 wait(1500)
