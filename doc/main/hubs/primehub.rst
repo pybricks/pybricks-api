@@ -182,7 +182,7 @@ Prime Hub / Inventor Hub
 
     .. rubric:: System control
 
-    .. automethod:: pybricks.hubs::PrimeHub.system.name
+    .. automethod:: pybricks.hubs::PrimeHub.system.info
 
     .. automethod:: pybricks.hubs::PrimeHub.system.storage
 
@@ -195,9 +195,9 @@ Prime Hub / Inventor Hub
 
     .. automethod:: pybricks.hubs::PrimeHub.system.shutdown
 
-    .. automethod:: pybricks.hubs::PrimeHub.system.reset_reason
-
-.. note:: The examples below use the ``PrimeHub`` class. The examples work fine
+.. note::
+    
+        The examples below use the ``PrimeHub`` class. The examples work fine
         on both hubs because they are the identical. If you prefer, you can
         change this to ``InventorHub``.
 

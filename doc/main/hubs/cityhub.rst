@@ -64,8 +64,6 @@ City Hub
 
     .. automethod:: pybricks.hubs::CityHub.system.set_stop_button
 
-    .. automethod:: pybricks.hubs::CityHub.system.name
-
     .. automethod:: pybricks.hubs::CityHub.system.storage
 
         You can store up to 128 bytes of data on this hub. The data is cleared
@@ -78,7 +76,6 @@ City Hub
 
     .. automethod:: pybricks.hubs::CityHub.system.shutdown
 
-    .. automethod:: pybricks.hubs::CityHub.system.reset_reason
 
 Status light examples
 ---------------------

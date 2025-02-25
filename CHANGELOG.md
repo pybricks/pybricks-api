@@ -7,6 +7,10 @@
 ## 3.5.0- 2024-04-11
 
 ### Changed
+
+- Update API for firmware 3.6.0. See upstream changelog for details.
+
+### Changed
 - Bump version to 3.5.0 without additional changes.
 
 ## 3.5.0b2 - 2024-04-05

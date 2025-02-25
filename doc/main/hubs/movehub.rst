@@ -88,8 +88,6 @@ Move Hub
 
     .. automethod:: pybricks.hubs::MoveHub.system.set_stop_button
 
-    .. automethod:: pybricks.hubs::MoveHub.system.name
-
     .. automethod:: pybricks.hubs::MoveHub.system.storage
 
         You can store up to 128 bytes of data on this hub. The data is cleared
@@ -101,8 +99,6 @@ Move Hub
     .. blockimg:: pybricks_blockHubShutdown_MoveHub
 
     .. automethod:: pybricks.hubs::MoveHub.system.shutdown
-
-    .. automethod:: pybricks.hubs::MoveHub.system.reset_reason
 
 Status light examples
 ---------------------

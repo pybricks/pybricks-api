@@ -69,32 +69,6 @@ class System:
 
         Stops your program and shuts the hub down."""
 
-    def reset_reason(self) -> int:
-        """reset_reason() -> int
-
-        Finds out how and why the hub (re)booted. This can be useful to
-        diagnose some problems.
-
-        Returns:
-            * ``0`` if the hub was previously powered off
-              normally.
-            * ``1`` if the hub rebooted automatically, like
-              after a firmware update.
-            * ``2`` if the hub previously
-              crashed due to a watchdog timeout, which indicates a firmware
-              issue.
-        """
-
-    def name(self) -> str:
-        """name() -> str
-
-        Gets the hub name. This is the name you see when connecting
-        via Bluetooth.
-
-        Returns:
-            The hub name.
-        """
-
     @overload
     def storage(self, offset: int, *, read: int) -> bytes: ...
 
@@ -135,6 +109,34 @@ class System:
         """reset_storage()
 
         Resets all user settings to default values and erases user programs.
+        """
+
+    def info(self) -> dict:
+        """info() -> dict
+
+        Gets information about the hub as a dictionary with the following keys:
+
+         - ``"name"``: The hub name. This is the name you see when connecting
+           via Bluetooth.
+         - ``"reset_reason"``: Why the hub (re)booted. It is ``0`` if the hub
+           was previously powered off normally. It is ``1`` if the hub rebooted
+           automatically, like after a firmware update. It is ``2`` if the hub
+           previously crashed due to a watchdog timeout, which indicates a
+           firmware issue.
+         - ``"host_connected_ble"``: Whether the hub is connected to a computer,
+           tablet, or phone via Bluetooth.
+         - ``"program_start_type"``: It is ``1`` if the program started
+           automatically when the hub was powered on. It is ``2`` if the program
+           was started with the hub buttons. It is ``3`` if the program was
+           started from your connected computer.
+
+        Returns:
+            A dictionary with system info.
+
+        .. versionchanged:: 3.6
+            The name and reset reason where previously available as separate
+            methods. Now they are included in the info dictionary. The methods
+            are still available for compatibility.
         """
 
 
