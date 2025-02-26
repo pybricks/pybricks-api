@@ -151,6 +151,9 @@ import sphinx_rtd_theme
 html_theme = "sphinx_rtd_theme"
 html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 
+html_show_sourcelink = False
+html_copy_source = False
+
 html_context = {
     "disclaimer": _DISCLAIMER,
 }
@@ -261,6 +264,7 @@ exclude_patterns = [
     "messaging.rst",
     "nxtdevices.rst",
     "tools/datalog.rst",
+    "*.rst.txt",
 ]
 
 
