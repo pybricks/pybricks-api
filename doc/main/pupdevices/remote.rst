@@ -9,7 +9,6 @@ Remote Control
 .. blockimg:: pybricks_variables_set_remote_connect_any
 
 .. blockimg:: pybricks_variables_set_remote_connect_name
-    :stack:
 
 .. autoclass:: pybricks.pupdevices.Remote
   :no-members:

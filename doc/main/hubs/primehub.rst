@@ -9,7 +9,6 @@ Prime Hub / Inventor Hub
 .. blockimg:: pybricks_variables_set_inventor_hub_option0
 
 .. blockimg:: pybricks_variables_set_inventor_hub_option4
-    :stack:
 
 .. class:: InventorHub
 
@@ -21,7 +20,6 @@ Prime Hub / Inventor Hub
 .. blockimg:: pybricks_variables_set_prime_hub_option0
 
 .. blockimg:: pybricks_variables_set_prime_hub_option4
-    :stack:
 
 .. autoclass:: pybricks.hubs.PrimeHub
     :no-members:
@@ -84,8 +82,7 @@ Prime Hub / Inventor Hub
     .. blockimg:: pybricks_blockHubStopButton_PrimeHub
 
     .. blockimg:: pybricks_blockHubStopButton_PrimeHub_none
-        :stack:
-
+    
     .. automethod:: pybricks.hubs::PrimeHub.system.set_stop_button
 
     .. rubric:: Using the IMU
@@ -112,8 +109,7 @@ Prime Hub / Inventor Hub
     .. blockimg:: pybricks_blockTilt_PrimeHub_imu.tilt.pitch
 
     .. blockimg:: pybricks_blockTilt_PrimeHub_imu.tilt.roll
-        :stack:
-
+    
     .. automethod:: pybricks.hubs::PrimeHub.imu.tilt
 
     .. blockimg:: pybricks_blockImuAcceleration_PrimeHub
@@ -139,14 +135,11 @@ Prime Hub / Inventor Hub
     .. automethod:: pybricks.hubs::PrimeHub.imu.orientation
 
     .. blockimg:: pybricks_blockImuConfigure_PrimeHub_imu.settings_heading_correction
-        :stack:
-
+    
     .. blockimg:: pybricks_blockImuConfigure_PrimeHub_imu.settings_angular_velocity_threshold
-        :stack:
-
+    
     .. blockimg:: pybricks_blockImuConfigure_PrimeHub_imu.settings_acceleration_threshold
-        :stack:
-
+    
     .. automethod:: pybricks.hubs::PrimeHub.imu.settings
 
     .. rubric:: Using the speaker

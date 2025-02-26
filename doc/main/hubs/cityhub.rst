@@ -8,7 +8,6 @@ City Hub
 .. blockimg:: pybricks_variables_set_city_hub_option0
 
 .. blockimg:: pybricks_variables_set_city_hub_option3
-    :stack:
 
 .. autoclass:: pybricks.hubs.CityHub
     :no-members:
@@ -60,8 +59,7 @@ City Hub
     .. blockimg:: pybricks_blockHubStopButton_CityHub
 
     .. blockimg:: pybricks_blockHubStopButton_CityHub_none
-        :stack:
-
+    
     .. automethod:: pybricks.hubs::CityHub.system.set_stop_button
 
     .. automethod:: pybricks.hubs::CityHub.system.storage

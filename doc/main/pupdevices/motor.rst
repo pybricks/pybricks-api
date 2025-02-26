@@ -105,11 +105,9 @@ Motors with rotation sensors
     .. blockimg:: pybricks_blockMotorConfigure_motor_max_speed
 
     .. blockimg:: pybricks_blockMotorConfigure_motor_acceleration
-        :stack:
-
+    
     .. blockimg:: pybricks_blockMotorConfigure_motor_max_torque
-        :stack:
-
+    
     .. automethod:: pybricks.pupdevices.Motor.control.limits
 
     .. pybricks-requirements:: pybricks-common-control

@@ -11,7 +11,6 @@ Move Hub
 .. blockimg:: pybricks_variables_set_move_hub_option0
 
 .. blockimg:: pybricks_variables_set_move_hub_option4
-    :stack:
 
 .. autoclass:: pybricks.hubs.MoveHub
     :no-members:
@@ -39,8 +38,7 @@ Move Hub
     .. blockimg:: pybricks_blockTilt_MoveHub_imu.tilt.pitch
 
     .. blockimg:: pybricks_blockTilt_MoveHub_imu.tilt.roll
-        :stack:
-
+    
     .. automethod:: pybricks.hubs::MoveHub.imu.tilt
 
     .. blockimg:: pybricks_blockImuAcceleration_MoveHub
@@ -84,8 +82,7 @@ Move Hub
     .. blockimg:: pybricks_blockHubStopButton_MoveHub
 
     .. blockimg:: pybricks_blockHubStopButton_MoveHub_none
-        :stack:
-
+    
     .. automethod:: pybricks.hubs::MoveHub.system.set_stop_button
 
     .. automethod:: pybricks.hubs::MoveHub.system.storage

@@ -14,8 +14,7 @@ Tilt Sensor
     .. blockimg:: pybricks_blockTilt_TiltSensor_imu.tilt.pitch
 
     .. blockimg:: pybricks_blockTilt_TiltSensor_imu.tilt.roll
-        :stack:
-
+    
     .. automethod:: tilt
 
 Examples

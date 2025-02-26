@@ -1,56 +1,38 @@
 import xml.etree.ElementTree as ET
-
-from docutils.parsers.rst import directives
-from docutils.parsers.rst.directives.images import Image
-from docutils.nodes import image, paragraph
+from docutils.parsers.rst import Directive, directives
+from docutils import nodes
 from pathlib import Path
 
 SPHINX_IMAGE_PATH = "blockimg"
 
-SVG_SCALE = 0.9
 
-
-def get_svg_size(file_path):
-    tree = ET.parse(file_path)
-    root = tree.getroot()
-
-    width = root.attrib.get("width")
-    height = root.attrib.get("height")
-
-    return float(width), float(height)
+def get_svg_content(file_path):
+    with open(file_path, "r", encoding="utf-8") as file:
+        return file.read()
 
 
 # Global variable to store the app object
 app = None
 
 
-class BlockImageDirective(Image):
-    option_spec = Image.option_spec.copy()
-    option_spec["stack"] = directives.flag
+class BlockImageDirective(Directive):
+    has_content = False
+    required_arguments = 1
+    optional_arguments = 0
 
     def run(self):
         # Adjust the image path
         file_name = self.arguments[0] + ".svg"
-        self.arguments[0] = "/" + SPHINX_IMAGE_PATH + "/" + file_name
-        path = Path(app.srcdir) / SPHINX_IMAGE_PATH / file_name
+        file_path = Path(app.srcdir) / SPHINX_IMAGE_PATH / file_name
 
-        # Set it to the scaled SVG size unless width explicitly set.
-        if self.options.get("width") is None:
-            width, height = get_svg_size(path)
-            self.options["width"] = str(round(width * SVG_SCALE)) + "px"
-            self.options["height"] = str(round(height * SVG_SCALE)) + "px"
+        # Read the SVG content
+        svg_content = get_svg_content(file_path)
 
-        # Call the parent class's run method
-        nodes = super().run()
+        # Create a raw HTML node with the SVG content
+        raw_html = f'<div class="svg-container">{svg_content}</div>'
+        raw_node = nodes.raw("", raw_html, format="html")
 
-        # Wrap each image node in a paragraph node
-        for i, node in enumerate(nodes):
-            if isinstance(node, image):
-                if "stack" not in self.options:
-                    node["classes"].append("block-image")
-                nodes[i] = paragraph("", "", node)
-
-        return nodes
+        return [raw_node]
 
 
 def setup(apparg):

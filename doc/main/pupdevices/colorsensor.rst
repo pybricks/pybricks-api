@@ -42,8 +42,7 @@ Color Sensor
     .. blockimg:: pybricks_blockLightOn_colorsensor_on
 
     .. blockimg:: pybricks_blockLightOn_colorsensor_on_list
-        :stack:
-
+    
     .. automethod:: pybricks.pupdevices::ColorSensor.lights.on
 
     .. blockimg:: pybricks_blockLightOn_colorsensor_off

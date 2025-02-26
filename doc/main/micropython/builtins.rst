@@ -79,52 +79,36 @@ Sequences
 .. pybricks-requirements::
 
 .. blockimg:: pybricks_blockListCreate_list_empty
-    :stack:
 
 .. blockimg:: pybricks_blockListCreate_list_3
-    :stack:
 
 .. blockimg:: pybricks_blockListUnpack
-    :stack:
 
 .. blockimg:: pybricks_blockListGet_list_get_first
-    :stack:
 
 .. blockimg:: pybricks_blockListGet_list_get_index
-    :stack:
 
 .. blockimg:: pybricks_blockListGet_list_get_last
-    :stack:
 
 .. blockimg:: pybricks_blockListGet_list_get_random
-    :stack:
 
 .. blockimg:: pybricks_blockListSet_list_insert_first
-    :stack:
 
 .. blockimg:: pybricks_blockListSet_list_insert_index
-    :stack:
 
 .. blockimg:: pybricks_blockListSet_list_insert_last
-    :stack:
 
 .. blockimg:: pybricks_blockListSet_list_remove_first
-    :stack:
 
 .. blockimg:: pybricks_blockListSet_list_remove_index
-    :stack:
 
 .. blockimg:: pybricks_blockListSet_list_remove_last
-    :stack:
 
 .. blockimg:: pybricks_blockListSet_list_set_first
-    :stack:
 
 .. blockimg:: pybricks_blockListSet_list_set_index
-    :stack:
 
 .. blockimg:: pybricks_blockListSet_list_set_last
-    :stack:
 
 .. autoclass:: ubuiltins.list
 

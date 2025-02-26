@@ -1,3 +1,11 @@
-.block-image {
-    margin-top: 10px;
+.svg-container {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+}
+
+.svg-container svg {
+    position: relative;
+    height: auto;
+    max-width: 100%;
 }
