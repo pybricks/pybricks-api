@@ -29,13 +29,13 @@ Examples
 Using constants for efficiency
 ******************************
 
-.. literalinclude::
+.. translated-literalinclude::
     ../../../examples/micropython/const.py
 
 Checking free RAM
 ******************************
 
-.. literalinclude::
+.. translated-literalinclude::
     ../../../examples/micropython/memuse.py
 
 This prints information in the format shown below. In this example for the
@@ -47,8 +47,14 @@ the variables in your code. ::
     No. of 1-blocks: 4, 2-blocks: 2, max blk sz: 8, max free sz: 16103
 
 
+Handling keyboard interrupts
+******************************
+
+.. translated-literalinclude::
+    ../../../examples/micropython/keyboard_interrupt.py
+
 Getting more memory statistics
 ******************************
 
-.. literalinclude::
+.. translated-literalinclude::
     ../../../examples/micropython/memstat.py
