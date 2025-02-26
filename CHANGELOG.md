@@ -4,11 +4,13 @@
 
 ## Unreleased
 
-## 3.5.0- 2024-04-11
+## 3.6.b5 - 2024-04-11
 
 ### Changed
 
-- Update API for firmware 3.6.0. See upstream changelog for details.
+- Update API for firmware 3.6.0b5. See upstream changelog for details.
+
+## 3.5.0 - 2024-04-11
 
 ### Changed
 - Bump version to 3.5.0 without additional changes.
