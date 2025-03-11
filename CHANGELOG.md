@@ -4,7 +4,13 @@
 
 ## Unreleased
 
-## 3.6.b5 - 2025-02-26
+## 3.6.0 - 2025-03-11
+
+### Changed
+
+- Update API for firmware 3.6.0. See upstream changelog for details.
+
+## 3.6.0b5 - 2025-02-26
 
 ### Changed
 
