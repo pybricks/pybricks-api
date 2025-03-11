@@ -1,0 +1,5 @@
+# German translations for const.py comments
+This value can be used here. Other files can import it too. = Dieser Wert kann hier verwendet werden. Andere Dateien können ihn auch importieren.
+These values can only be used within this file. = Diese Werte können nur innerhalb dieser Datei verwendet werden.
+You can read the constants as normal values. The compiler = Sie können die Konstanten wie normale Werte lesen. Der Compiler
+will just insert the numeric values for you. = wird die numerischen Werte für Sie einsetzen.

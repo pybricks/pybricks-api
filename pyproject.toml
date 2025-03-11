@@ -36,6 +36,7 @@ flake8 = "^4.0"
 [tool.poetry.group.doc.dependencies]
 Sphinx = { git = "https://github.com/pybricks/sphinx.git", rev = "cd277d09" }
 sphinx-rtd-theme = "^1.0.0"
+sphinx-intl = "^2.1.0"
 toml = "^0.10.0"
 
 [build-system]

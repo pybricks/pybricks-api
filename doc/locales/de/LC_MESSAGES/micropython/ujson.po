@@ -1,0 +1,103 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-2023 The Pybricks Authors
+# This file is distributed under the same license as the pybricks package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pybricks v3.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-01-30 22:50+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: de\n"
+"Language-Team: de <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../main/micropython/ujson.rst:4 1b97798b6060431c855e6922b81dc1af
+msgid ":mod:`ujson` -- JSON encoding and decoding"
+msgstr ""
+
+#: cdc8893dba794b898560e15b2833fc69 of ujson:1
+msgid "Convert between Python objects and the JSON data format."
+msgstr ""
+
+#: 7bdd2bf30e3541f6a4d8ea9014fbcace of ujson.dump:1
+msgid "Serializes an object to a JSON string and write it to a stream."
+msgstr ""
+
+#: ../../main/micropython/ujson.rst 1c5826b3b9d0493fab262e15c5a8c209
+#: 23baeaf758e946088e25076d02a7ca82 24f65343b2bb49009f9842c7173c5c74
+#: e02860a6d96c492887f3739c9f99ae59
+msgid "Parameters"
+msgstr ""
+
+#: 1ce7a3f87f8540659fbb6e32dd8bedab 268bfd709514459e862b7305a8a6f486 of
+#: ujson.dump:3 ujson.dumps:3
+msgid "Object to serialize."
+msgstr ""
+
+#: 8fc852b26d9b42cdb8eec5e3b877d53b of ujson.dump:4
+msgid "Stream to write the output to."
+msgstr ""
+
+#: 7c33c71ee4e24e9bbb966024fad8581c e31a0e7191894590bb9ef5277d5d53d3 of
+#: ujson.dump:5 ujson.dumps:4
+msgid ""
+"An ``(item_separator, key_separator)`` tuple to specify how elements "
+"should be separated."
+msgstr ""
+
+#: 5ab605a395fa4fa18268c717b01d18ca of ujson.dumps:1
+msgid "Serializes an object to JSON and return it as a string"
+msgstr ""
+
+#: ../../main/micropython/ujson.rst 577ad4d755b14bd9a6944c127d756eb2
+#: 859ac671c65f494a92edb2de24380a1d f0e61161bbd44a408aefa43a78e15052
+msgid "Returns"
+msgstr ""
+
+#: 250e7a82d8b64266be826d401c70a138 of ujson.dumps:8
+msgid "The JSON string."
+msgstr ""
+
+#: 52690b9083e24a2eb2ddd37626c02f33 of ujson.load:1
+msgid ""
+"Parses the stream to interpret and deserialize the JSON data to a "
+"MicroPython object."
+msgstr ""
+
+#: 4a4b07f45c7b4fa08bbc7ec5250d1794 of ujson.load:4
+msgid ""
+"Parsing continues until end-of-file is encountered. A ``ValueError`` is "
+"raised if the data in stream is not correctly formed."
+msgstr ""
+
+#: be019e6e85a34e23bf30b787d37042c6 of ujson.load:7
+msgid "Stream from which to read the JSON string."
+msgstr ""
+
+#: 345f54a69dec40b4ab593ef34af168dd a962e2091e6049df9953fe66baaf450a of
+#: ujson.load:9 ujson.loads:9
+msgid "The deserialized MicroPython object."
+msgstr ""
+
+#: 1972e01c379a4a5885c8669b318089d7 of ujson.loads:1
+msgid ""
+"Parses the string to interpret and deserialize the JSON data to a "
+"MicroPython object."
+msgstr ""
+
+#: 07e15183db964f548d3eb84a69b560ac of ujson.loads:4
+msgid "A ``ValueError`` is raised if the string is not correctly formed."
+msgstr ""
+
+#: a1a048c50c6c4a0f92690b6857b68186 of ujson.loads:6
+msgid "JSON string to decode."
+msgstr ""
+
