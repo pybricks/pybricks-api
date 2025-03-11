@@ -1165,7 +1165,7 @@ class IMU:
         hub consistently reports a different value for a full rotation. For
         example, your hub might consistently report `357` degrees for every
         `360` degree turn. You can measure this value
-        with ``hub.imu.rotation(-Axis.Z)`` and enter it as
+        with ``hub.imu.rotation(-Axis.Z, calibrated=False)`` and enter it as
         the ``heading_correction`` setting. Then, the ``hub.imu.heading()``
         method will take it into account going forward, correctly scaling it
         to 360 degrees for a full rotation.
@@ -1179,17 +1179,19 @@ class IMU:
                 variations in acceleration below which the hub is considered
                 stationary enough to calibrate. After a reset the value
                 is 2500 mm/s².
-            heading_correction (Number, deg): Number of degrees reported by
-                ``imu.rotation(-Axis.Z)`` for one full rotation of your robot.
-                After a reset the value is 360 degrees.
+            heading_correction (Number, deg): Number of degrees
+                reported by for one full rotation of your robot.
+                After a reset the value is 360 degrees. This is applied on top
+                of any scaling that is done by the ``angular_velocity_scale``
+                setting.
             angular_velocity_bias (tuple, deg/s): Initial bias for angular
                 velocity measurements along x, y, and z immediately after boot.
                 After a reset the value is (0, 0, 0) deg/s.
             angular_velocity_scale (tuple, deg): Scale adjustment for x, y, and
-                z rotation to account for manufacturing differences. After a reset the
-                value is (360, 360, 360) deg/s. The correct values can be
-                obtained using `hub.imu.rotation(Axis.X, calibrated=False)` and
-                repeating it for each axis.
+                z rotation to account for manufacturing differences. After a
+                reset the value is (360, 360, 360) deg/s. The correct values
+                can be obtained using `hub.imu.rotation(Axis.X, calibrated=False)`
+                and repeating it for each axis.
             acceleration_correction (tuple, mm/s²): Scale adjustment for x, y,
                 and z gravity magnitude in both directions to account for
                 manufacturing differences. After a reset the
