@@ -1,0 +1,86 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-2023 The Pybricks Authors
+# This file is distributed under the same license as the pybricks package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pybricks v3.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-01-30 22:50+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: de\n"
+"Language-Team: de <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../main/parameters/button.rst:4 074555e1e5e84794911ee618695db249
+msgid "Button"
+msgstr ""
+
+#: ../../main/parameters/button.rst:9 74ac99aacd404276bfd3957a5880d685
+msgid "Remote and hub buttons"
+msgstr ""
+
+#: ../../main/parameters/button.rst:13 ../../main/parameters/button.rst:18
+#: ../../main/parameters/button.rst:23 ../../main/parameters/button.rst:28
+#: 9a6ec99503fb4ad19975705efb50cea5 b3ca6d6dace94ea1b9501d1ffed3eed1
+#: c9f78647ded149878427eb1474638c7d eeb09f22bd074d48a39e65ec273b34f6
+msgid "Powered Up Remote only."
+msgstr ""
+
+#: ../../main/parameters/button.rst:33 6c614352f9974acfa0e025bd2ebd42b8
+msgid "Powered Up Remote (green button) or hub power button."
+msgstr ""
+
+#: ../../main/parameters/button.rst:38 19aa8df60e6f4ddea6db3e857fd0d638
+msgid "Powered Up Remote (left red button) and Prime/Inventor Hub (left button)."
+msgstr ""
+
+#: ../../main/parameters/button.rst:43 4b806aac48a24e4180d7d266657d75ed
+msgid ""
+"Powered Up Remote (right red button) and Prime/Inventor Hub (right "
+"button)."
+msgstr ""
+
+#: ../../main/parameters/button.rst:48 7ea3482d0dd14261ab8567ae85b35522
+msgid "Prime/Inventor Hub button with Bluetooth icon."
+msgstr ""
+
+#: ../../main/parameters/button.rst:51 f0ec8e58f82b4d9cacea6cdf4c8923ab
+msgid "Xbox controller buttons"
+msgstr ""
+
+#: ../../main/parameters/button.rst:67 8e98379e596f472a96a44314467e0394
+msgid "The left bumper."
+msgstr ""
+
+#: ../../main/parameters/button.rst:72 1323ab6e655b4b61b662f7a736fdc622
+msgid "The right bumper."
+msgstr ""
+
+#: ../../main/parameters/button.rst:77 05eae469f1f443f98770772a7bfe4795
+msgid "Pressing the left joystick."
+msgstr ""
+
+#: ../../main/parameters/button.rst:82 b7a6304dec664e5ba4b4c409884e32b0
+msgid "Pressing the right joystick."
+msgstr ""
+
+#: ../../main/parameters/button.rst:87 0702d8b9fc0e4a6a90cfc1607aab9e02
+msgid "The Xbox button in the center of the controller."
+msgstr ""
+
+#: ../../main/parameters/button.rst:95 268cd0e63c8d450d9d6c473c3c758289
+msgid "Only available on newer Xbox controllers."
+msgstr ""
+
+#: ../../main/parameters/button.rst:101 1c34a293fb2348ada6ccda449cb6639b
+msgid "Xbox Elite Series 2 controller paddles"
+msgstr ""
+
