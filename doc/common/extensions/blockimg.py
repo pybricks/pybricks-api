@@ -1,5 +1,4 @@
-import xml.etree.ElementTree as ET
-from docutils.parsers.rst import Directive, directives
+from docutils.parsers.rst import Directive
 from docutils import nodes
 from pathlib import Path
 
