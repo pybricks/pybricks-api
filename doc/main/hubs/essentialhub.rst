@@ -36,7 +36,7 @@ Essential Hub
     .. blockimg:: pybricks_blockHubStopButton_EssentialHub
 
     .. blockimg:: pybricks_blockHubStopButton_EssentialHub_none
-    
+
     .. automethod:: pybricks.hubs::EssentialHub.system.set_stop_button
 
     .. rubric:: Using the IMU
@@ -63,7 +63,7 @@ Essential Hub
     .. blockimg:: pybricks_blockTilt_EssentialHub_imu.tilt.pitch
 
     .. blockimg:: pybricks_blockTilt_EssentialHub_imu.tilt.roll
-    
+
     .. automethod:: pybricks.hubs::EssentialHub.imu.tilt
 
     .. blockimg:: pybricks_blockImuAcceleration_EssentialHub
@@ -89,11 +89,11 @@ Essential Hub
     .. automethod:: pybricks.hubs::EssentialHub.imu.orientation
 
     .. blockimg:: pybricks_blockImuConfigure_EssentialHub_imu.settings_heading_correction
-    
+
     .. blockimg:: pybricks_blockImuConfigure_EssentialHub_imu.settings_angular_velocity_threshold
-    
+
     .. blockimg:: pybricks_blockImuConfigure_EssentialHub_imu.settings_acceleration_threshold
-    
+
     .. automethod:: pybricks.hubs::EssentialHub.imu.settings
 
     .. rubric:: Using connectionless Bluetooth messaging

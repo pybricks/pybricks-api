@@ -82,7 +82,7 @@ Prime Hub / Inventor Hub
     .. blockimg:: pybricks_blockHubStopButton_PrimeHub
 
     .. blockimg:: pybricks_blockHubStopButton_PrimeHub_none
-    
+
     .. automethod:: pybricks.hubs::PrimeHub.system.set_stop_button
 
     .. rubric:: Using the IMU
@@ -109,7 +109,7 @@ Prime Hub / Inventor Hub
     .. blockimg:: pybricks_blockTilt_PrimeHub_imu.tilt.pitch
 
     .. blockimg:: pybricks_blockTilt_PrimeHub_imu.tilt.roll
-    
+
     .. automethod:: pybricks.hubs::PrimeHub.imu.tilt
 
     .. blockimg:: pybricks_blockImuAcceleration_PrimeHub
@@ -135,11 +135,11 @@ Prime Hub / Inventor Hub
     .. automethod:: pybricks.hubs::PrimeHub.imu.orientation
 
     .. blockimg:: pybricks_blockImuConfigure_PrimeHub_imu.settings_heading_correction
-    
+
     .. blockimg:: pybricks_blockImuConfigure_PrimeHub_imu.settings_angular_velocity_threshold
-    
+
     .. blockimg:: pybricks_blockImuConfigure_PrimeHub_imu.settings_acceleration_threshold
-    
+
     .. automethod:: pybricks.hubs::PrimeHub.imu.settings
 
     .. rubric:: Using the speaker

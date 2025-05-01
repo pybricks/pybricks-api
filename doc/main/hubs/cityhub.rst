@@ -61,7 +61,7 @@ City Hub
     .. blockimg:: pybricks_blockHubStopButton_CityHub
 
     .. blockimg:: pybricks_blockHubStopButton_CityHub_none
-    
+
     .. automethod:: pybricks.hubs::CityHub.system.set_stop_button
 
     .. automethod:: pybricks.hubs::CityHub.system.storage

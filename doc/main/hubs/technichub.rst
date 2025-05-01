@@ -51,7 +51,7 @@ Technic Hub
     .. blockimg:: pybricks_blockTilt_TechnicHub_imu.tilt.pitch
 
     .. blockimg:: pybricks_blockTilt_TechnicHub_imu.tilt.roll
-    
+
     .. automethod:: pybricks.hubs::TechnicHub.imu.tilt
 
     .. blockimg:: pybricks_blockImuAcceleration_TechnicHub
@@ -77,11 +77,11 @@ Technic Hub
     .. automethod:: pybricks.hubs::TechnicHub.imu.orientation
 
     .. blockimg:: pybricks_blockImuConfigure_TechnicHub_imu.settings_heading_correction
-    
+
     .. blockimg:: pybricks_blockImuConfigure_TechnicHub_imu.settings_angular_velocity_threshold
-    
+
     .. blockimg:: pybricks_blockImuConfigure_TechnicHub_imu.settings_acceleration_threshold
-    
+
     .. automethod:: pybricks.hubs::TechnicHub.imu.settings
 
     .. rubric:: Using connectionless Bluetooth messaging
@@ -119,7 +119,7 @@ Technic Hub
     .. blockimg:: pybricks_blockHubStopButton_TechnicHub
 
     .. blockimg:: pybricks_blockHubStopButton_TechnicHub_none
-    
+
     .. automethod:: pybricks.hubs::TechnicHub.system.set_stop_button
 
     .. automethod:: pybricks.hubs::TechnicHub.system.storage

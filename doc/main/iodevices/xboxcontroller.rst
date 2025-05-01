@@ -30,19 +30,19 @@ Xbox Controller
   .. blockimg:: pybricks_blockJoystickValue_lj_x
 
   .. blockimg:: pybricks_blockJoystickValue_lj_y
-  
+
   .. automethod:: pybricks.iodevices::XboxController.joystick_left
 
   .. blockimg:: pybricks_blockJoystickValue_rj_x
 
   .. blockimg:: pybricks_blockJoystickValue_rj_y
-  
+
   .. automethod:: pybricks.iodevices::XboxController.joystick_right
 
   .. blockimg:: pybricks_blockJoystickValue_lt
 
   .. blockimg:: pybricks_blockJoystickValue_rt
-  
+
   .. automethod:: pybricks.iodevices::XboxController.triggers
 
   .. blockimg:: pybricks_blockJoystickValue_dpad
@@ -56,9 +56,9 @@ Xbox Controller
   .. blockimg:: pybricks_blockGamepadRumble_default
 
   .. blockimg:: pybricks_blockGamepadRumble_default_with_list
-  
+
   .. blockimg:: pybricks_blockGamepadRumble_with_options
-  
+
   .. automethod:: pybricks.iodevices::XboxController.rumble
 
 .. _xbox-controller-pairing:

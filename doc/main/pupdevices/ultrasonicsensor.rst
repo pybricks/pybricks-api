@@ -25,7 +25,7 @@ Ultrasonic Sensor
     .. blockimg:: pybricks_blockLightOn_ultrasonicsensor_on
 
     .. blockimg:: pybricks_blockLightOn_ultrasonicsensor_on_list
-    
+
     .. automethod:: pybricks.pupdevices::UltrasonicSensor.lights.on
 
     .. blockimg:: pybricks_blockLightOn_ultrasonicsensor_off

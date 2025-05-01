@@ -38,7 +38,7 @@ Move Hub
     .. blockimg:: pybricks_blockTilt_MoveHub_imu.tilt.pitch
 
     .. blockimg:: pybricks_blockTilt_MoveHub_imu.tilt.roll
-    
+
     .. automethod:: pybricks.hubs::MoveHub.imu.tilt
 
     .. blockimg:: pybricks_blockImuAcceleration_MoveHub
@@ -84,7 +84,7 @@ Move Hub
     .. blockimg:: pybricks_blockHubStopButton_MoveHub
 
     .. blockimg:: pybricks_blockHubStopButton_MoveHub_none
-    
+
     .. automethod:: pybricks.hubs::MoveHub.system.set_stop_button
 
     .. automethod:: pybricks.hubs::MoveHub.system.storage
