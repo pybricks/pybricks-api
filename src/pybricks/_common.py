@@ -123,8 +123,8 @@ class System:
            automatically, like after a firmware update. It is ``2`` if the hub
            previously crashed due to a watchdog timeout, which indicates a
            firmware issue.
-         - ``"host_connected_ble"``: Whether the hub is connected to a computer,
-           tablet, or phone via Bluetooth.
+         - ``"host_connected_ble"``: ``True`` if the hub is connected to a
+           computer, tablet, or phone via Bluetooth, and ``False`` otherwise.
          - ``"program_start_type"``: It is ``1`` if the program started
            automatically when the hub was powered on. It is ``2`` if the program
            was started with the hub buttons. It is ``3`` if the program was
@@ -136,7 +136,7 @@ class System:
         .. versionchanged:: 3.6
             The name and reset reason where previously available as separate
             methods. Now they are included in the info dictionary. The methods
-            are still available for compatibility.
+            are still available for backwards compatibility.
         """
 
 

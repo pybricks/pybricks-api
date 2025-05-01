@@ -4,6 +4,10 @@
 
 ## Unreleased
 
+### Fixed
+
+- Fixed missing `hub.system.info` method on some hubs.
+
 ## 3.6.0 - 2025-03-11
 
 ### Changed

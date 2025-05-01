@@ -79,6 +79,8 @@ Move Hub
 
     .. automethod:: pybricks.hubs::MoveHub.buttons.pressed
 
+    .. automethod:: pybricks.hubs::MoveHub.system.info
+
     .. blockimg:: pybricks_blockHubStopButton_MoveHub
 
     .. blockimg:: pybricks_blockHubStopButton_MoveHub_none

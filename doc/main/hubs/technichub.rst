@@ -114,6 +114,8 @@ Technic Hub
 
     .. automethod:: pybricks.hubs::TechnicHub.buttons.pressed
 
+    .. automethod:: pybricks.hubs::TechnicHub.system.info
+
     .. blockimg:: pybricks_blockHubStopButton_TechnicHub
 
     .. blockimg:: pybricks_blockHubStopButton_TechnicHub_none
