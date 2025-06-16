@@ -161,6 +161,13 @@ class DriveBase:
         The speed values given here do not apply to the :meth:`.drive` method,
         since you provide your own speed values as arguments in that method.
 
+        The robot will calculate the max turn rate for your robot based on the
+        ``axle_track`` and ``wheel_diameter`` settings when you initialize the robot in
+        the :class:`DriveBase` constructor. If you try to set ``turn_rate`` to a value that 
+        exceeds the calculated value the robot will raise a ``ValueError`` exception.
+        The max possible value for turn_rate is 1000 deg/s. A wider drivebase 
+        or one with smaller wheels will have a lower top speed for the ``turn_rate``.
+
         Arguments:
             straight_speed (Number, mm/s): Straight-line speed of the robot.
             straight_acceleration (Number, mm/s²): Straight-line
