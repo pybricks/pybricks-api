@@ -1,0 +1,8 @@
+# German translations for memstat.py comments
+Get stack at start. = Stack-Zustand zu Beginn ermitteln.
+Print REPL compiler optimization level. = REPL-Compiler-Optimierungsstufe ausgeben.
+Print memory usage. = Speichernutzung ausgeben.
+Print memory usage and a memory map. = Speichernutzung und Speicherkarte ausgeben.
+Print interned string information. = Informationen zu internen Strings ausgeben.
+Print interned string information and their names. = Informationen zu internen Strings und deren Namen ausgeben.
+Check the stack. = Stack überprüfen.

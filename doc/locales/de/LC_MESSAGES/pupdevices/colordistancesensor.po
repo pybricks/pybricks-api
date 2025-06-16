@@ -1,0 +1,277 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-2023 The Pybricks Authors
+# This file is distributed under the same license as the pybricks package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pybricks v3.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-01-30 22:50+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: de\n"
+"Language-Team: de <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../main/pupdevices/colordistancesensor.rst:4
+#: 931a2064099a48e2a26de18633b4431d
+msgid "Color and Distance Sensor"
+msgstr ""
+
+#: ../../main/pupdevices/colordistancesensor.rst:6
+#: f64e03f69f1b44c581abef3dbeebd228
+msgid ".. image:: ../../main/cad/output/pupdevice-colordistance.png"
+msgstr ""
+
+#: ../../main/pupdevices/colordistancesensor.rst:9
+#: 44f032f19702450a9be9b56f7c8d0fcd
+msgid ""
+".. image:: "
+"/blockimg/pybricks_variables_set_color_distance_sensor_colordistancesensor_default.svg"
+msgstr ""
+
+#: ../../main/pupdevices/colordistancesensor.rst:11
+#: 58fe0df013d74b83bf8198f441c76a54
+msgid ""
+".. image:: "
+"/blockimg/pybricks_variables_set_color_distance_sensor_colordistancesensor_detectable_colors.svg"
+msgstr ""
+
+#: 92910966dd444763bb4a09a7c73d1da8 of
+#: pybricks.pupdevices.ColorDistanceSensor:1
+msgid "LEGO® Powered Up Color and Distance Sensor."
+msgstr ""
+
+#: ../../main/pupdevices/colordistancesensor.rst
+#: 4bab230ce1c04cd1abd740179bcd1bee 7fc6e0b8131d4607abdaedb3359a0543
+#: d5c99c7628434e3cb05d156349208d83
+msgid "Parameters"
+msgstr ""
+
+#: c2e27def60b44f20b4f2c89db9bfa1a0 of
+#: pybricks.pupdevices.ColorDistanceSensor:3
+msgid "Port to which the sensor is connected."
+msgstr ""
+
+#: ../../main/pupdevices/colordistancesensor.rst:16
+#: de3e3e7e4ea64f6cb9122cf514f9b2b7
+msgid ".. image:: /blockimg/pybricks_blockColor_ColorDistanceSensor_color.svg"
+msgstr ""
+
+#: c5c5afb120fd4edc95215a7a6d24341d e2a4f505f8f34f51ac142724202fe01c of
+#: pybricks._common.CommonColorSensor.color:1
+#: pybricks._common.CommonColorSensor.hsv:1
+msgid "Scans the color of a surface."
+msgstr ""
+
+#: 17a5eb9155ea45dba0f21258b18338c6 of
+#: pybricks._common.CommonColorSensor.color:3
+msgid ""
+"You choose which colors are detected using the ``detectable_colors()`` "
+"method. By default, it detects ``Color.RED``, ``Color.YELLOW``, "
+"``Color.GREEN``, ``Color.BLUE``, ``Color.WHITE``, or ``Color.NONE``."
+msgstr ""
+
+#: ../../main/pupdevices/colordistancesensor.rst
+#: 0774c107a3a64bf2b56f93b0af35071b 14ae199f8353439cb4256f95f89ced80
+#: 1feab10b15c04735bf9412edc3fad6b6 2a5a3128aed24eed95e6c5216c4700c1
+#: 421e43e54e0149cd8fbdf6fe3c18711e
+msgid "Returns"
+msgstr ""
+
+#: 408296756f3c4681a51a2f093c2369ac of
+#: pybricks._common.CommonColorSensor.color:8
+msgid "Detected color."
+msgstr ""
+
+#: ../../main/pupdevices/colordistancesensor.rst:20
+#: 0d94c2b2128246f49474b1dbaad0b9c9
+msgid ".. image:: /blockimg/pybricks_blockLightReflection_ColorDistanceSensor.svg"
+msgstr ""
+
+#: 871a17225fc54032a544c7a996144ec2 of
+#: pybricks._common.CommonColorSensor.reflection:1
+msgid "Measures how much a surface reflects the light emitted by the sensor."
+msgstr ""
+
+#: 56ebbdec32524205a0b1bae10890fb11 of
+#: pybricks._common.CommonColorSensor.reflection:4
+msgid ""
+"Measured reflection, ranging from 0% (no reflection) to 100% (high "
+"reflection)."
+msgstr ""
+
+#: ../../main/pupdevices/colordistancesensor.rst:24
+#: fee394789ba24434a95126d4abf127bc
+msgid ".. image:: /blockimg/pybricks_blockLightAmbient_ColorDistanceSensor.svg"
+msgstr ""
+
+#: 5d87b428193644a5a3af3bae50b7bdfd of
+#: pybricks._common.CommonColorSensor.ambient:1
+msgid "Measures the ambient light intensity."
+msgstr ""
+
+#: b6d0cb0df1e144ee8687818fff55eca9 of
+#: pybricks._common.CommonColorSensor.ambient:3
+msgid "Ambient light intensity, ranging from 0% (dark) to 100% (bright)."
+msgstr ""
+
+#: ../../main/pupdevices/colordistancesensor.rst:28
+#: 3a00e9b4ce29477e97f8f050a5e2e0ed
+msgid ".. image:: /blockimg/pybricks_blockDistance_ColorDistanceSensor.svg"
+msgstr ""
+
+#: 8a5fc12e930348f6a5621d4b4f96c0d8 of
+#: pybricks.pupdevices.ColorDistanceSensor.distance:1
+msgid ""
+"Measures the relative distance between the sensor and an object using "
+"infrared light."
+msgstr ""
+
+#: 96498a992cb440b4a9f729239bedd064 of
+#: pybricks.pupdevices.ColorDistanceSensor.distance:4
+msgid "Distance ranging from 0% (closest) to 100% (farthest)."
+msgstr ""
+
+#: ../../main/pupdevices/colordistancesensor.rst:32
+#: 92410c3938424e789ca6af1eb84ed54c
+msgid ".. image:: /blockimg/pybricks_blockColor_ColorDistanceSensor_hsv.svg"
+msgstr ""
+
+#: 8212208993c14e1aa4d4375f166e2152 of pybricks._common.CommonColorSensor.hsv:3
+msgid ""
+"This method is similar to ``color()``, but it gives the full range of "
+"hue, saturation and brightness values, instead of rounding it to the "
+"nearest detectable color."
+msgstr ""
+
+#: b8d02c78aa184775ae1a802ed0d137e5 of pybricks._common.CommonColorSensor.hsv:7
+msgid ""
+"Measured color. The color is described by a hue (0--359), a saturation (0"
+"--100), and a brightness value (0--100)."
+msgstr ""
+
+#: b2503c3a73ee4d4199b2de98e1ef1652 of
+#: pybricks._common.CommonColorSensor.detectable_colors:1
+msgid "Configures which colors the ``color()`` method should detect."
+msgstr ""
+
+#: ade5e0a62b04495baeb0183b2c858dd3 of
+#: pybricks._common.CommonColorSensor.detectable_colors:3
+msgid ""
+"Specify only colors that you wish to detect in your application. This "
+"way, the full-color measurements are rounded to the nearest desired "
+"color, and other colors are ignored. This improves reliability."
+msgstr ""
+
+#: d34d7e6e182c48659c8391e07bd3043c of
+#: pybricks._common.CommonColorSensor.detectable_colors:7
+msgid "If you give no arguments, the currently chosen colors will be returned."
+msgstr ""
+
+#: 550397df148a4698a7bdb9c5ed5bcf06 of
+#: pybricks._common.CommonColorSensor.detectable_colors:9
+msgid "When coding with blocks, this is configured in the sensor setup block."
+msgstr ""
+
+#: df510510616740a69bdc60bcd569669d of
+#: pybricks._common.CommonColorSensor.detectable_colors:11
+msgid ""
+"List of :class:`Color <.parameters.Color>` objects: the colors that you "
+"want to detect. You can pick standard colors such as ``Color.MAGENTA``, "
+"or provide your own colors like ``Color(h=348, s=96, v=40)`` for even "
+"better results. You measure your own colors with the ``hsv()`` method."
+msgstr ""
+
+#: ../../main/pupdevices/colordistancesensor.rst:39
+#: 3db28ce4c9684f75b09d3e6c37ef1541
+msgid "Built-in light"
+msgstr ""
+
+#: ../../main/pupdevices/colordistancesensor.rst:40
+#: ccfc8cf2018c4b1c8cd3647aa0a6ff6f
+msgid ""
+"This sensor has a built-in light. You can make it red, green, blue, or "
+"turn it off. If you use the sensor to measure something afterwards, the "
+"light automatically turns back on at the default color for that sensing "
+"method."
+msgstr ""
+
+#: ../../main/pupdevices/colordistancesensor.rst:44
+#: 749572d67d1346e68eb66aa47a6e8f49
+msgid ".. image:: /blockimg/pybricks_blockLightOnColor_colordistancesensor_on.svg"
+msgstr ""
+
+#: e820060cf2c94cbbb3bf1d24da1b2da1 of pybricks._common.ExternalColorLight.on:1
+msgid "Turns on the light at the specified color."
+msgstr ""
+
+#: 14d5e88ac789426d8866daa97ab5b110 of pybricks._common.ExternalColorLight.on:3
+msgid "Color of the light."
+msgstr ""
+
+#: ../../main/pupdevices/colordistancesensor.rst:48
+#: 449eec5762394b828ab566aca5c68ac7
+msgid ""
+".. image:: "
+"/blockimg/pybricks_blockLightOnColor_colordistancesensor_off.svg"
+msgstr ""
+
+#: edd4b5f4406e450992ae61f0b1974d69 of
+#: pybricks._common.ExternalColorLight.off:1
+msgid "Turns off the light."
+msgstr ""
+
+#: ../../main/pupdevices/colordistancesensor.rst:53
+#: 5c416c090b924f808d163b6c16465148
+msgid "Examples"
+msgstr ""
+
+#: ../../main/pupdevices/colordistancesensor.rst:56
+#: 38f4dd3406854c81a51bd9c3e146b21c
+msgid "Measuring color"
+msgstr ""
+
+#: ../../main/pupdevices/colordistancesensor.rst:63
+#: 6edb2f74d6b84c0bb5ad5878662dd137
+msgid "Waiting for a color"
+msgstr ""
+
+#: ../../main/pupdevices/colordistancesensor.rst:69
+#: 374c8182b799467e8acecc9f10a35525
+msgid "Measuring distance and blinking the light"
+msgstr ""
+
+#: ../../main/pupdevices/colordistancesensor.rst:75
+#: 864fe3ced8804999a3e4658876224748
+msgid "Reading hue, saturation, value"
+msgstr ""
+
+#: ../../main/pupdevices/colordistancesensor.rst:81
+#: 023c44c9da944e3393b68bdd03753af3
+msgid "Changing the detectable colors"
+msgstr ""
+
+#: ../../main/pupdevices/colordistancesensor.rst:83
+#: 33d65ce0a9d2457c94b1ee6a17e232f1
+msgid ""
+"By default, the sensor is configured to detect red, yellow, green, blue, "
+"white, or no color, which suits many applications."
+msgstr ""
+
+#: ../../main/pupdevices/colordistancesensor.rst:86
+#: 1a72954319ec4ee1a7e40486c11f2e9b
+msgid ""
+"For better results in your application, you can measure your desired "
+"colors in advance, and tell the sensor to look only for those colors. Be "
+"sure to measure them at the **same distance and light conditions** as in "
+"your final application. Then you'll get very accurate results even for "
+"colors that are otherwise hard to detect."
+msgstr ""
+

@@ -65,3 +65,8 @@ genrst/
 stderr-ldview
 stdout-ldview
 LPub3D/
+
+# Translation files
+######################
+doc/locales/pot/
+*.mo
