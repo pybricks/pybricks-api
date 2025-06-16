@@ -274,14 +274,21 @@ class UARTDevice:
 class LWP3Device:
     """
     Connects to a hub running official LEGO firmware using the
-    `LEGO Wireless Protocol v3`_
+    `LEGO Wireless Protocol v3`_.
 
     .. _`LEGO Wireless Protocol v3`:
         https://lego.github.io/lego-ble-wireless-protocol-docs/
     """
 
-    def __init__(self, hub_kind: int, name: str = None, timeout: int = 10000):
-        """LWP3Device(hub_kind, name=None, timeout=10000)
+    def __init__(
+        self,
+        hub_kind: int,
+        name: str = None,
+        timeout: int = 10000,
+        pair: bool = False,
+        num_notifications: int = 8,
+    ):
+        """LWP3Device(hub_kind, name=None, timeout=10000, pair=False, num_notifications=8)
 
         Arguments:
             hub_kind (int):
@@ -292,7 +299,18 @@ class LWP3Device:
             timeout (int):
                 The time, in milliseconds, to wait for a connection before
                 raising an exception.
+            pair (bool): Whether to attempt pairing for a secure connection.
+                This is required for some newer hubs.
+            num_notifications (int): Number of incoming messages from the remote
+                hub to store before discarding older messages.
 
+        .. versionchanged:: 3.6
+
+            Added ``pair`` parameter.
+
+        .. versionchanged:: 3.7
+
+            Added ``num_notifications`` parameter.
 
         .. _`hub type identifier`:
             https://github.com/pybricks/technical-info/blob/master/assigned-numbers.md#hub-type-ids
@@ -324,16 +342,20 @@ class LWP3Device:
             buf (bytes): The raw binary message to send.
         """
 
-    def read(self) -> bytes:
-        """read() -> bytes
+    def read(self) -> bytes | None:
+        """read() -> bytes | None
 
-        Retrieves the most recent message received from the remote hub.
+        Retrieves the oldest buffered message received from the remote hub.
 
-        If a message has not been received since the last read, the method will
-        block until a message is received.
+        If all buffered messages have already been read, this returns ``None``.
 
         Returns:
-            The raw binary message.
+            The oldest raw binary message or ``None`` if there are no more messages.
+
+        .. versionchanged:: 3.7
+
+            Now supports reading multiple buffered messages instead of blocking
+            until one new message was received.
         """
 
     def disconnect(self) -> MaybeAwaitable:
