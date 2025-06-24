@@ -1517,6 +1517,17 @@ class BLE:
         .. versionadded:: 3.3
         """
 
+    def observe_enable(self, enable: bool) -> MaybeAwaitable:
+        """observe_enable(enable)
+
+        Enables or disable observing (on by default).
+
+        Args:
+            enable: True to enable, false to disable observing.
+
+        .. versionadded:: 3.6
+        """
+
     def signal_strength(self, channel: int) -> int:
         """signal_strength(channel) -> int: dBm
 
