@@ -3,7 +3,7 @@
 
 """LEGO® Programmable Hubs."""
 
-from typing import Sequence
+from typing import Sequence, Optional
 
 from . import _common
 from .ev3dev import _speaker
@@ -44,7 +44,9 @@ class MoveHub:
     ble = _common.BLE()
 
     def __init__(
-        self, broadcast_channel: int = None, observe_channels: Sequence[int] = []
+        self,
+        broadcast_channel: Optional[int] = None,
+        observe_channels: Sequence[int] = [],
     ):
         """MoveHub(top_side=Axis.Z, front_side=Axis.X, broadcast_channel=None, observe_channels=[])
 
@@ -78,7 +80,7 @@ class CityHub:
     ble = _common.BLE()
 
     def __init__(
-        self, broadcast_channel: int = None, observe_channels: Sequence[int] = []
+        self, broadcast_channel: Optional[int] = None, observe_channels: Sequence[int] = []
     ):
         """CityHub(broadcast_channel=None, observe_channels=[])
 
@@ -112,7 +114,7 @@ class TechnicHub:
         self,
         top_side: Axis = Axis.Z,
         front_side: Axis = Axis.X,
-        broadcast_channel: int = None,
+        broadcast_channel: Optional[int] = None,
         observe_channels: Sequence[int] = [],
     ):
         """TechnicHub(top_side=Axis.Z, front_side=Axis.X, broadcast_channel=None, observe_channels=[])
@@ -157,7 +159,7 @@ class EssentialHub:
         self,
         top_side: Axis = Axis.Z,
         front_side: Axis = Axis.X,
-        broadcast_channel: int = None,
+        broadcast_channel: Optional[int] = None,
         observe_channels: Sequence[int] = [],
     ):
         """EssentialHub(top_side=Axis.Z, front_side=Axis.X, broadcast_channel=None, observe_channels=[])
@@ -212,7 +214,7 @@ class PrimeHub:
         self,
         top_side: Axis = Axis.Z,
         front_side: Axis = Axis.X,
-        broadcast_channel: int = None,
+        broadcast_channel: Optional[int] = None,
         observe_channels: Sequence[int] = [],
     ):
         """PrimeHub(top_side=Axis.Z, front_side=Axis.X, broadcast_channel=None, observe_channels=[])

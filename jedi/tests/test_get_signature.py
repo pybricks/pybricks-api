@@ -86,12 +86,22 @@ CONSTRUCTOR_PARAMS = [
     pytest.param(
         "pybricks.hubs",
         "MoveHub",
-        [["broadcast_channel: int=None", "observe_channels: Sequence[int]=[]"]],
+        [
+            [
+                "broadcast_channel: Optional[int]=None",
+                "observe_channels: Sequence[int]=[]",
+            ]
+        ],
     ),
     pytest.param(
         "pybricks.hubs",
         "CityHub",
-        [["broadcast_channel: int=None", "observe_channels: Sequence[int]=[]"]],
+        [
+            [
+                "broadcast_channel: Optional[int]=None",
+                "observe_channels: Sequence[int]=[]",
+            ]
+        ],
     ),
     pytest.param(
         "pybricks.hubs",
@@ -100,7 +110,7 @@ CONSTRUCTOR_PARAMS = [
             [
                 "top_side: Axis=Axis.Z",
                 "front_side: Axis=Axis.X",
-                "broadcast_channel: int=None",
+                "broadcast_channel: Optional[int]=None",
                 "observe_channels: Sequence[int]=[]",
             ]
         ],
@@ -112,7 +122,7 @@ CONSTRUCTOR_PARAMS = [
             [
                 "top_side: Axis=Axis.Z",
                 "front_side: Axis=Axis.X",
-                "broadcast_channel: int=None",
+                "broadcast_channel: Optional[int]=None",
                 "observe_channels: Sequence[int]=[]",
             ]
         ],
@@ -124,7 +134,7 @@ CONSTRUCTOR_PARAMS = [
             [
                 "top_side: Axis=Axis.Z",
                 "front_side: Axis=Axis.X",
-                "broadcast_channel: int=None",
+                "broadcast_channel: Optional[int]=None",
                 "observe_channels: Sequence[int]=[]",
             ]
         ],
