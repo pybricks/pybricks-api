@@ -1448,7 +1448,22 @@ class BLE:
     .. versionadded:: 3.3
     """
 
+    @overload
+    def broadcast(
+        self, data: Iterable[Union[bool, int, float, str, bytes]]
+    ) -> MaybeAwaitable:
+        ...
+
+    @overload
     def broadcast(self, data: Union[bool, int, float, str, bytes]) -> MaybeAwaitable:
+        ...
+
+    def broadcast(
+        self,
+        data: Union[
+            Iterable[Union[bool, int, float, str, bytes]], bool, int, float, str, bytes
+        ],
+    ) -> MaybeAwaitable:
         """broadcast(data)
 
         Starts broadcasting the given data on
@@ -1479,7 +1494,12 @@ class BLE:
 
     def observe(
         self, channel: int
-    ) -> Optional[Tuple[Union[bool, int, float, str, bytes], ...]]:
+    ) -> Optional[
+        Union[
+            Tuple[Union[bool, int, float, str, bytes], ...],
+            Union[bool, int, float, str, bytes],
+        ]
+    ]:
         """observe(channel) -> bool | int | float | str | bytes | tuple | None
 
         Retrieves the last observed data for a given channel.
