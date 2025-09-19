@@ -101,8 +101,8 @@ class DriveBase:
             Driven distance since last reset.
         """
 
-    def angle(self) -> int:
-        """angle() -> int: deg
+    def angle(self) -> float:
+        """angle() -> float: deg
 
         Gets the estimated rotation angle of the drive base.
 
