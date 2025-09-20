@@ -4,6 +4,10 @@
 
 ## Unreleased
 
+### Fixed
+
+- Fixed `DriveBase.angle` reporting an incorrect return type.
+
 ## 3.6.1 - 2025-05-01
 
 ### Fixed
