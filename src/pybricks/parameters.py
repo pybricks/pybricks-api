@@ -135,7 +135,7 @@ class Color:
         return self.__mul__(1 / scale)
 
 
-Color.NONE = Color(0, 0, 0)
+Color.NONE = Color(0, 0, -40)
 Color.BLACK = Color(0, 0, 10)
 Color.GRAY = Color(0, 0, 50)
 Color.WHITE = Color(0, 0, 100)

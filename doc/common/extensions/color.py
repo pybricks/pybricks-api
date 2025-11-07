@@ -16,7 +16,7 @@ class PybricksColorDirective(Directive):
         color = getattr(Color, name)
 
         # Convert HSV to RGB
-        r, g, b = hsv_to_rgb(color.h / 360, color.s / 100, color.v / 100)
+        r, g, b = hsv_to_rgb(color.h / 360, color.s / 100, max(color.v, 0) / 100)
 
         # Convert RGB to HEX
         rgbhex = "#{0:02x}{1:02x}{2:02x}".format(
