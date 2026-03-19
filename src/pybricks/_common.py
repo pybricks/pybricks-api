@@ -828,7 +828,7 @@ class LightMatrix:
         contents remain unchanged.
 
         Arguments:
-            top (Side): Which side of the light matrix display is "up" in your
+            up (Side): Which side of the light matrix display is "up" in your
                 design. Choose ``Side.TOP``, ``Side.LEFT``, ``Side.RIGHT``,
                 or ``Side.BOTTOM``.
         """
