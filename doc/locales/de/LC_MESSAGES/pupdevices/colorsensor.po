@@ -1,0 +1,262 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-2023 The Pybricks Authors
+# This file is distributed under the same license as the pybricks package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pybricks v3.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-01-30 22:50+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: de\n"
+"Language-Team: de <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../main/pupdevices/colorsensor.rst:4 a6a5a57960614bcf81951f5a0096e613
+msgid "Color Sensor"
+msgstr ""
+
+#: ../../main/pupdevices/colorsensor.rst:6 c11b2ce4e5f145deb198a556adca457f
+msgid ".. image:: ../../main/diagrams/sensor_color_lights.png"
+msgstr ""
+
+#: ../../main/pupdevices/colorsensor.rst:9 e4b2477cf02548d4934eaaa0ee2e02f9
+msgid ""
+".. image:: "
+"/blockimg/pybricks_variables_set_color_sensor_colorsensor_default.svg"
+msgstr ""
+
+#: ../../main/pupdevices/colorsensor.rst:11 512d4c71cb674bc7a69df7951d1bb43c
+msgid ""
+".. image:: "
+"/blockimg/pybricks_variables_set_color_sensor_colorsensor_detectable_colors.svg"
+msgstr ""
+
+#: c06e6a643a33407f8cf478cb1a433a17 of pybricks.pupdevices.ColorSensor:1
+msgid "LEGO® SPIKE Color Sensor."
+msgstr ""
+
+#: ../../main/pupdevices/colorsensor.rst 04cb19cdb9344d09b2c736c17301fe88
+#: 4e301c935e854821938258dffb99a562 7640cae4c3e8458fb4af7151302a4908
+#: 782c3c88bc7947a6b5bddb430a0cb0fc cabf6d49350d40dca352dc9db8b712d8
+msgid "Parameters"
+msgstr ""
+
+#: 89c8e3d23ae74249a97f04b4794ca728 of pybricks.pupdevices.ColorSensor:3
+msgid "Port to which the sensor is connected."
+msgstr ""
+
+#: ../../main/pupdevices/colorsensor.rst:16 cfff5a32206c4b91886159319ff7f83e
+msgid ".. image:: /blockimg/pybricks_blockColor_ColorSensor_color.svg"
+msgstr ""
+
+#: 422d5c4b04694d53800a275ad5c220ad 9104f20dbe27416fbdf95d9316be057b of
+#: pybricks._common.AmbientColorSensor.color:1
+#: pybricks._common.AmbientColorSensor.hsv:1
+msgid "Scans the color of a surface or an external light source."
+msgstr ""
+
+#: 61255c2b78294e83943bc872c14931bf of
+#: pybricks._common.AmbientColorSensor.color:3
+msgid ""
+"You choose which colors are detected using the ``detectable_colors()`` "
+"method. By default, it detects ``Color.RED``, ``Color.YELLOW``, "
+"``Color.GREEN``, ``Color.BLUE``, ``Color.WHITE``, or ``Color.NONE``."
+msgstr ""
+
+#: 1b51cb08e12d4225ae769d5449015834 5784a772ff174333b3275c34f4bf97f5 of
+#: pybricks._common.AmbientColorSensor.color:8
+#: pybricks._common.AmbientColorSensor.hsv:7
+msgid ""
+"Choose ``true`` to scan the color of objects and surfaces. Choose "
+"``false`` to scan the color of screens and other external light sources."
+msgstr ""
+
+#: ../../main/pupdevices/colorsensor.rst b5bd1fa9a8b94eac9aef5f95d9f23561
+#: c2dd03767c2442baa33459ad5b8f751f ca571f4de77e4c0da47380d2c7b268f2
+#: e5d774e1066d43d0bd7b0470b15decd8
+msgid "Returns"
+msgstr ""
+
+#: b36d9c640a7c42c9adb76aa9703e65dd of
+#: pybricks._common.AmbientColorSensor.color:13
+msgid "Detected color.`"
+msgstr ""
+
+#: ../../main/pupdevices/colorsensor.rst:20 0a6d9cee1d81452e9a6d50d32613bc0c
+msgid ".. image:: /blockimg/pybricks_blockLightReflection_ColorSensor.svg"
+msgstr ""
+
+#: cd81552839114610a886d7e737c7c374 of
+#: pybricks._common.CommonColorSensor.reflection:1
+msgid "Measures how much a surface reflects the light emitted by the sensor."
+msgstr ""
+
+#: 9b15af778b634bb7b7082136e8996754 of
+#: pybricks._common.CommonColorSensor.reflection:4
+msgid ""
+"Measured reflection, ranging from 0% (no reflection) to 100% (high "
+"reflection)."
+msgstr ""
+
+#: ../../main/pupdevices/colorsensor.rst:24 d9c1dd27088c46f6ae0e46539ab1c671
+msgid ".. image:: /blockimg/pybricks_blockLightAmbient_ColorSensor.svg"
+msgstr ""
+
+#: d0e4fed579a648a1a1575c59bbe5f4d3 of
+#: pybricks._common.CommonColorSensor.ambient:1
+msgid "Measures the ambient light intensity."
+msgstr ""
+
+#: b74226b5947241d4913545877f4898b1 of
+#: pybricks._common.CommonColorSensor.ambient:3
+msgid "Ambient light intensity, ranging from 0% (dark) to 100% (bright)."
+msgstr ""
+
+#: ../../main/pupdevices/colorsensor.rst:29 0e77eaede27d426cbb5f5d7fb14ba879
+msgid "Advanced color sensing"
+msgstr ""
+
+#: ../../main/pupdevices/colorsensor.rst:30 71d36a6873ad4c08b0b7d1136fae10d4
+msgid ".. image:: /blockimg/pybricks_blockColor_ColorSensor_hsv.svg"
+msgstr ""
+
+#: efd23ec91a0f4528b9da63096a7a241b of
+#: pybricks._common.AmbientColorSensor.hsv:3
+msgid ""
+"This method is similar to ``color()``, but it gives the full range of "
+"hue, saturation and brightness values, instead of rounding it to the "
+"nearest detectable color."
+msgstr ""
+
+#: b96d4d1b809c4ec6b1cbda0d9eca103c of
+#: pybricks._common.AmbientColorSensor.hsv:12
+msgid ""
+"Measured color. The color is described by a hue (0--359), a saturation (0"
+"--100), and a brightness value (0--100)."
+msgstr ""
+
+#: 6f76e86db36940dd94577e89e53a4c13 of
+#: pybricks._common.CommonColorSensor.detectable_colors:1
+msgid "Configures which colors the ``color()`` method should detect."
+msgstr ""
+
+#: 8993936eece4487a879603b581f7bf25 of
+#: pybricks._common.CommonColorSensor.detectable_colors:3
+msgid ""
+"Specify only colors that you wish to detect in your application. This "
+"way, the full-color measurements are rounded to the nearest desired "
+"color, and other colors are ignored. This improves reliability."
+msgstr ""
+
+#: 88629267953f48418d9f2fac77275590 of
+#: pybricks._common.CommonColorSensor.detectable_colors:7
+msgid "If you give no arguments, the currently chosen colors will be returned."
+msgstr ""
+
+#: 5c96674474934c7d8f3e61c0cdc4c924 of
+#: pybricks._common.CommonColorSensor.detectable_colors:9
+msgid "When coding with blocks, this is configured in the sensor setup block."
+msgstr ""
+
+#: f04e4913d67e4659b0dbddd2691e9068 of
+#: pybricks._common.CommonColorSensor.detectable_colors:11
+msgid ""
+"List of :class:`Color <.parameters.Color>` objects: the colors that you "
+"want to detect. You can pick standard colors such as ``Color.MAGENTA``, "
+"or provide your own colors like ``Color(h=348, s=96, v=40)`` for even "
+"better results. You measure your own colors with the ``hsv()`` method."
+msgstr ""
+
+#: ../../main/pupdevices/colorsensor.rst:37 9a18b3e5cce94de4be129ea1f89d8793
+msgid "Built-in lights"
+msgstr ""
+
+#: ../../main/pupdevices/colorsensor.rst:38 0c73f851767c48b2b196421bc07880ab
+msgid ""
+"This sensor has 3 built-in lights. You can adjust the brightness of each "
+"light. If you use the sensor to measure something, the lights will be "
+"turned on or off as needed for the measurement."
+msgstr ""
+
+#: ../../main/pupdevices/colorsensor.rst:42 f6b7819c01aa4d21b6d333ed4ba128d5
+msgid ".. image:: /blockimg/pybricks_blockLightOn_colorsensor_on.svg"
+msgstr ""
+
+#: ../../main/pupdevices/colorsensor.rst:44 7d151c47b07542f19d46b6c0200fca00
+msgid ".. image:: /blockimg/pybricks_blockLightOn_colorsensor_on_list.svg"
+msgstr ""
+
+#: cc5e801f171b484a9910f1a0fa028c5a of pybricks._common.LightArray3.on:1
+msgid "Turns on the lights at the specified brightness."
+msgstr ""
+
+#: bc510e690d52492d8ed6d912f77693a7 of pybricks._common.LightArray3.on:3
+msgid ""
+"Use a single value to set the brightness of all lights at the same time. "
+"Use a tuple of three values to set the brightness of each light "
+"individually."
+msgstr ""
+
+#: ../../main/pupdevices/colorsensor.rst:49 80227678442a4654aaed2924709e3051
+msgid ".. image:: /blockimg/pybricks_blockLightOn_colorsensor_off.svg"
+msgstr ""
+
+#: 473ea6124b20466dba813df91ad0b60d of pybricks._common.LightArray3.off:1
+msgid "Turns off all the lights."
+msgstr ""
+
+#: ../../main/pupdevices/colorsensor.rst:55 b389c5f3332142679888b1655a28e21b
+msgid "Examples"
+msgstr ""
+
+#: ../../main/pupdevices/colorsensor.rst:58 7a16503b7f12496a90bd87c4967a00b0
+msgid "Measuring color and reflection"
+msgstr ""
+
+#: ../../main/pupdevices/colorsensor.rst:65 feb4b23334a44f70b0cae6fe30e8d404
+msgid "Waiting for a color"
+msgstr ""
+
+#: ../../main/pupdevices/colorsensor.rst:72 11f2971b6d864a72aeb82158e450e6ac
+msgid "Reading *reflected* hue, saturation, and value"
+msgstr ""
+
+#: ../../main/pupdevices/colorsensor.rst:79 c141e1fd9ece49069f897b687fcab983
+msgid "Changing the detectable colors"
+msgstr ""
+
+#: ../../main/pupdevices/colorsensor.rst:81 244dbd2ffb104d74a249c11c38b1d5ab
+msgid ""
+"By default, the sensor is configured to detect red, yellow, green, blue, "
+"white, or no color, which suits many applications."
+msgstr ""
+
+#: ../../main/pupdevices/colorsensor.rst:84 b61029ad528a4ca0ac9fc5f636b1788d
+msgid ""
+"For better results in your application, you can measure your desired "
+"colors in advance, and tell the sensor to look only for those colors. Be "
+"sure to measure them at the **same distance and light conditions** as in "
+"your final application. Then you'll get very accurate results even for "
+"colors that are otherwise hard to detect."
+msgstr ""
+
+#: ../../main/pupdevices/colorsensor.rst:94 d33d3dfc69ba449bbd3dff34642eb728
+msgid "Reading *ambient* hue, saturation, value, and color"
+msgstr ""
+
+#: ../../main/pupdevices/colorsensor.rst:100 fd7e48d3f20945cba6a5a0ff05bae72d
+msgid "Blinking the built-in lights"
+msgstr ""
+
+#: ../../main/pupdevices/colorsensor.rst:106 f7fff2a2660642b781509e6fe1405a84
+msgid "Turning off the lights when the program ends"
+msgstr ""
+

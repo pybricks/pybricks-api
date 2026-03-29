@@ -1,0 +1,355 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-2023 The Pybricks Authors
+# This file is distributed under the same license as the pybricks package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pybricks v3.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-01-30 22:50+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: de\n"
+"Language-Team: de <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../main/micropython/ustruct.rst:4 84e5519c1cd94a69803bbc5772fc0a7b
+msgid ":mod:`ustruct` -- Pack and unpack binary data"
+msgstr ""
+
+#: 65e84f0d286a48958378bd39c3374dce of ustruct:1
+msgid ""
+"This module provides functions to convert between Python values and "
+"C-like data structs."
+msgstr ""
+
+#: 9e6490cbaca14e2d865427d0b037fa7a of ustruct.calcsize:1
+msgid "Gets the data size corresponding to a format string"
+msgstr ""
+
+#: ../../main/micropython/ustruct.rst 58b60ca19743456d82998b38afce96d8
+#: 8b82550242394dd68d5fe82bf8ee1e3c a6735b933c8e409389aaaa7e1dfefd29
+#: b92329f01b564249b98de5c5735bf03a ff0f6996226f4049a64cfb0040114830
+msgid "Parameters"
+msgstr ""
+
+#: 47181a82a8f147b49bea4138de06be55 5744baf9e8224bab94df29f1a53a26b2
+#: 7a7ad7c9df094747958771c479080534 9fe3234621b541da9321af974d0fbf5d
+#: cf175f494f2148b391535d515a664a68 of ustruct.calcsize:3 ustruct.pack:3
+#: ustruct.pack_into:3 ustruct.unpack:3 ustruct.unpack_from:3
+msgid "Data format string."
+msgstr ""
+
+#: ../../main/micropython/ustruct.rst 00a22a070a6546b88246b145411e1226
+#: 172338215c454da489a3d0688b94ea90 2d24acce4fd24b739f366662e06a20bb
+#: 60812f36666340fbbc7f5cca78ddb064
+msgid "Returns"
+msgstr ""
+
+#: 967f423b3365426ab0156c583cb9c98c of ustruct.calcsize:6
+msgid "The number of bytes needed to represent this format."
+msgstr ""
+
+#: c14a853a9f9e4ddeb13f39031a387da8 of ustruct.pack:1
+msgid "Packs the values using the given format."
+msgstr ""
+
+#: 51b97841df37465ea9217b16abf54ef7 of ustruct.pack:6
+msgid "The data encoded as bytes."
+msgstr ""
+
+#: b799b9575d4f493092b22d77dbbbfbef of ustruct.pack_into:1
+msgid "Encode the values using the given format and write them to a given buffer."
+msgstr ""
+
+#: 41a3db1ef0794362bae00dd2c6006213 of ustruct.pack_into:5
+msgid "Buffer to store the encoded data."
+msgstr ""
+
+#: 25c3ae4a16e648d6bcf3e7d52f008ca0 of ustruct.pack_into:7
+msgid ""
+"Offset from the start of the buffer. Use a negative value to count from "
+"the end of the buffer."
+msgstr ""
+
+#: d7dff14094a34da480761796193f8676 of ustruct.unpack:1
+msgid "Decodes the binary data using the given format."
+msgstr ""
+
+#: fd62d31641914b118d71834d58376745 of ustruct.unpack:5
+msgid "Data to unpack."
+msgstr ""
+
+#: 386461cd96ff49b28be8d2b43486ba0d 5295148cf2b44b77bd1b34960169b8d2 of
+#: ustruct.unpack:8 ustruct.unpack_from:11
+msgid "The decoded data as a tuple of values."
+msgstr ""
+
+#: b37fb71fbb554775ac9b7d10bb70864b of ustruct.unpack_from:1
+msgid "Decodes binary data from a buffer using the given format."
+msgstr ""
+
+#: 8987a3cd14d6446da4a6b4fdb2f6925b of ustruct.unpack_from:5
+msgid "Data buffer to unpack."
+msgstr ""
+
+#: d0ce3f71eaee412f966a4f13e36f2ab2 of ustruct.unpack_from:7
+msgid ""
+"Offset from the start of the data. Use a negative value to count from the"
+" end of the data."
+msgstr ""
+
+#: ../../main/micropython/ustruct.rst:8 ee09582cdff24fecb2901ec641011992
+msgid "The following byte orders are supported:"
+msgstr ""
+
+#: ../../main/micropython/ustruct.rst:11 65630f767962463b84ee67a2bf11be86
+msgid "Character"
+msgstr ""
+
+#: ../../main/micropython/ustruct.rst:11 f20deb09cbbd4bdda336891be68d6d5a
+msgid "Byte order"
+msgstr ""
+
+#: ../../main/micropython/ustruct.rst:11 cb2a73c3928b423c910fc3910e4a3c1f
+msgid "Size"
+msgstr ""
+
+#: ../../main/micropython/ustruct.rst:11 b75534bd19054ee4a47de65ea1fc1225
+msgid "Alignment"
+msgstr ""
+
+#: ../../main/micropython/ustruct.rst:13 46c98b85b39d4268bb50fc7e31a7ff68
+msgid "@"
+msgstr ""
+
+#: ../../main/micropython/ustruct.rst:13 21779b34ab694ccc9c1053bc7e41d61e
+#: 80f650a2cd8b49deaf8b4174bfb182ab dfb6df5bda7341dcab89f2da89a2c448
+msgid "native"
+msgstr ""
+
+#: ../../main/micropython/ustruct.rst:15 5c591636f8e649739e06a6e90d9509ef
+msgid "<"
+msgstr ""
+
+#: ../../main/micropython/ustruct.rst:15 e6df1fee9f4d433f812814ee38c31bd9
+msgid "little-endian"
+msgstr ""
+
+#: ../../main/micropython/ustruct.rst:15 ../../main/micropython/ustruct.rst:17
+#: ../../main/micropython/ustruct.rst:19 609c3fcb1cf14767809544a6f57c1b6d
+#: cf9a36d1ce204f5a88b38b2a6d7e52ee ea43982c8eb34627893cbe12eda19026
+msgid "standard"
+msgstr ""
+
+#: ../../main/micropython/ustruct.rst:15 ../../main/micropython/ustruct.rst:17
+#: ../../main/micropython/ustruct.rst:19 1743ade5928e49e0a44ad3c1365f50a9
+#: 4fa42cfe4fa0499391c17ff627ea74f0 8ddeb2cf2253434796355fe56c73e31c
+msgid "none"
+msgstr ""
+
+#: ../../main/micropython/ustruct.rst:17 e3729acc5be0484b961dc236d3957804
+msgid ">"
+msgstr ""
+
+#: ../../main/micropython/ustruct.rst:17 8bde604886d34fe48fb2ddfad3a0a7cd
+msgid "big-endian"
+msgstr ""
+
+#: ../../main/micropython/ustruct.rst:19 0a40ad39dbfe464ba6e01f17359a6903
+msgid "!"
+msgstr ""
+
+#: ../../main/micropython/ustruct.rst:19 0e318be7e5d0408fa76c17e5548f2439
+msgid "network (= big-endian)"
+msgstr ""
+
+#: ../../main/micropython/ustruct.rst:22 3fa422a99a1f40529355ddab8b53a934
+msgid "The following data types are supported:"
+msgstr ""
+
+#: ../../main/micropython/ustruct.rst:25 2b75fe4f134f49618471c6ad4228c5b9
+msgid "Format"
+msgstr ""
+
+#: ../../main/micropython/ustruct.rst:25 dfd8e26dc14c49ff813a58d89fd547a6
+msgid "C Type"
+msgstr ""
+
+#: ../../main/micropython/ustruct.rst:25 5c0e6be6fe9e4ec4abfd87d080691670
+msgid "Python type"
+msgstr ""
+
+#: ../../main/micropython/ustruct.rst:25 6ca4c74e45a646d1881d2ea58e30af0e
+msgid "Standard size"
+msgstr ""
+
+#: ../../main/micropython/ustruct.rst:27 a630cd68979347c38f32caea5e293447
+msgid "b"
+msgstr ""
+
+#: ../../main/micropython/ustruct.rst:27 cc2df43555ea4c2ba8c38bb1553c0d1d
+msgid "signed char"
+msgstr ""
+
+#: ../../main/micropython/ustruct.rst:27 ../../main/micropython/ustruct.rst:29
+#: ../../main/micropython/ustruct.rst:31 ../../main/micropython/ustruct.rst:33
+#: ../../main/micropython/ustruct.rst:35 ../../main/micropython/ustruct.rst:37
+#: ../../main/micropython/ustruct.rst:53 01d33e5eb71e4e32beabcb00b19f0a5a
+#: 2c9c5c37b9204a12b1e9736adf4388bc 4824a30287ad4701af482c9543ca951a
+#: 54eebeab7e904e1393b3e79e5106299f 61f150b03db646e09ed52a8e6c83abf8
+#: 888fcbe3a33a4e02a37c73a2fba7a910 d0466561c02242d9bb9096ee6f1ea8e1
+msgid "integer"
+msgstr ""
+
+#: ../../main/micropython/ustruct.rst:27 ../../main/micropython/ustruct.rst:29
+#: 7a80912e99154fc69443068b8a786091 f1b409895f6e485c9ce3743f2586d945
+msgid "1"
+msgstr ""
+
+#: ../../main/micropython/ustruct.rst:29 a6cbe2e6b3834f2e916fa32683d9f2bd
+msgid "B"
+msgstr ""
+
+#: ../../main/micropython/ustruct.rst:29 09c6c3a6f6ae4073bcedf61de63265bc
+msgid "unsigned char"
+msgstr ""
+
+#: ../../main/micropython/ustruct.rst:31 71bb1734d3ae47d7a5e21f4ce1db5000
+msgid "h"
+msgstr ""
+
+#: ../../main/micropython/ustruct.rst:31 9f0367d943854369a1b72ab1170e0dad
+msgid "short"
+msgstr ""
+
+#: ../../main/micropython/ustruct.rst:31 ../../main/micropython/ustruct.rst:33
+#: 7e23c34af73c4c789bbd90ac6e25801a 8129bea12ef44e4dbf017f19116ce40d
+msgid "2"
+msgstr ""
+
+#: ../../main/micropython/ustruct.rst:33 d1d8fd5aa02042b692564ad1fc6d51e2
+msgid "H"
+msgstr ""
+
+#: ../../main/micropython/ustruct.rst:33 4ea6450caf0040faaf24c30a01535506
+msgid "unsigned short"
+msgstr ""
+
+#: ../../main/micropython/ustruct.rst:35 12314eb538454c00ae878882604722a9
+msgid "i"
+msgstr ""
+
+#: ../../main/micropython/ustruct.rst:35 8566d4f8cb37421f9b7aaf4cb3b209a4
+msgid "int"
+msgstr ""
+
+#: ../../main/micropython/ustruct.rst:35 ../../main/micropython/ustruct.rst:37
+#: ../../main/micropython/ustruct.rst:39 ../../main/micropython/ustruct.rst:41
+#: ../../main/micropython/ustruct.rst:47 7d69639508b145ceb8cf12ee41b3af9d
+#: a2185972225a47c2a1a81f2dbc9ceda5 b2ca52f834ad41cda776f159484b48d7
+#: d3ca0e115d3b47738c75eb8e313293a5 ec573e7c4bdc4614acd90cce664137cc
+msgid "4"
+msgstr ""
+
+#: ../../main/micropython/ustruct.rst:37 9a724c2dc1c74d5aa25dab7774f42dc2
+msgid "I"
+msgstr ""
+
+#: ../../main/micropython/ustruct.rst:37 6f7dce4a2b104753919cffb2c460514b
+msgid "unsigned int"
+msgstr ""
+
+#: ../../main/micropython/ustruct.rst:39 367383c1351547eaa4147d37f3935614
+msgid "l"
+msgstr ""
+
+#: ../../main/micropython/ustruct.rst:39 e83cc44dbab6441caed4a3edf75c3caa
+msgid "long"
+msgstr ""
+
+#: ../../main/micropython/ustruct.rst:39 ../../main/micropython/ustruct.rst:41
+#: ../../main/micropython/ustruct.rst:43 ../../main/micropython/ustruct.rst:45
+#: 11bdd673c98d47b79072b579d0f5045d 4ef4d44987934583aa49e77a81068925
+#: 50ca4ebebe924c50b48abe1ba768d239 d363ccb4f6484e9fa7185376ef654c6a
+msgid "integer (1)"
+msgstr ""
+
+#: ../../main/micropython/ustruct.rst:41 22b3d81307d14b16a2bec0219f4f8fdf
+msgid "L"
+msgstr ""
+
+#: ../../main/micropython/ustruct.rst:41 bb6a2ec1cb87478bad0ff0507437e593
+msgid "unsigned long"
+msgstr ""
+
+#: ../../main/micropython/ustruct.rst:43 43ed7df465334ad2bbdd98df5b1c30f0
+msgid "q"
+msgstr ""
+
+#: ../../main/micropython/ustruct.rst:43 5886bb47afbb4fc1ae63ec8f6fe25fd6
+msgid "long long"
+msgstr ""
+
+#: ../../main/micropython/ustruct.rst:43 ../../main/micropython/ustruct.rst:45
+#: ../../main/micropython/ustruct.rst:49 559a14e0ed9d462e8fc72ab3e3851988
+#: 968dd1778a1f4ca98806f1e62dc58bf1 fc6e83357d084b1d8ee66d86086f41b0
+msgid "8"
+msgstr ""
+
+#: ../../main/micropython/ustruct.rst:45 800f825e4fcc4ed1a6e4924352e02897
+msgid "Q"
+msgstr ""
+
+#: ../../main/micropython/ustruct.rst:45 70ea92a4bfe0434cbaa1d8ff1e2f6787
+msgid "unsigned long long"
+msgstr ""
+
+#: ../../main/micropython/ustruct.rst:47 d210e052dd904d2ea60c9795dded9c74
+msgid "f"
+msgstr ""
+
+#: ../../main/micropython/ustruct.rst:47 ../../main/micropython/ustruct.rst:49
+#: 11646280fed541318e90e8eff79e620a 7604d6538af747d99c5ca5b0d9c8025c
+#: ad8e9a434be74f459b446228dee53d18
+msgid "float"
+msgstr ""
+
+#: ../../main/micropython/ustruct.rst:49 0b030c7855c04dcf98f95a91cbaaaaa9
+msgid "d"
+msgstr ""
+
+#: ../../main/micropython/ustruct.rst:49 f59b9a11fd2a46c687e21b5e8a368919
+msgid "double"
+msgstr ""
+
+#: ../../main/micropython/ustruct.rst:51 d19499b641e04f4daede838b3b75ad15
+msgid "s"
+msgstr ""
+
+#: ../../main/micropython/ustruct.rst:51 f0d600d5317c491c845ae3b1730fed79
+msgid "char[]"
+msgstr ""
+
+#: ../../main/micropython/ustruct.rst:51 40022d9e66264df1a614b06f5bf4f2ba
+msgid "bytes"
+msgstr ""
+
+#: ../../main/micropython/ustruct.rst:53 7af433b5abeb4ecb9384b271d08ec4d7
+msgid "P"
+msgstr ""
+
+#: ../../main/micropython/ustruct.rst:53 f330e9e6371643a5b0c213dd085c67a8
+msgid "void *"
+msgstr ""
+
+#: ../../main/micropython/ustruct.rst:56 643d3e8642cf44c1a50b4b2beb823c1f
+msgid "\\(1\\) Supports values up to +/-1073741823"
+msgstr ""
+

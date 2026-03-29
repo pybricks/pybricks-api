@@ -45,13 +45,27 @@ if "ide" in tags.tags:  # noqa F821
     \usepackage{newtxsf}
     """
 
+# Add path to our extensions
+sys.path.append(os.path.abspath("../extensions"))
+
 exec(open(os.path.abspath("../common/conf.py")).read())
+
+# Add our custom extension
+extensions.append("translated_literalinclude")  # noqa F821
 
 # Additional configuration of the IDE docs
 if "ide" in tags.tags:  # noqa F821
     extensions.remove("sphinx.ext.mathjax")  # noqa F821
     extensions.append("sphinx.ext.imgmath")  # noqa F821
     html_theme_options["prev_next_buttons_location"] = None  # noqa F821
+
+# Internationalization configuration
+language = os.environ.get('SPHINX_LANGUAGE', 'en')
+locale_dirs = ['../locales']   # path relative to conf.py location
+gettext_compact = False        # optional
+gettext_uuid = True            # Use UUIDs to preserve translations when text moves
+gettext_location = True        # Include locations as comments for reference
+gettext_additional_targets = ['image']  # Also translate image captions
 
 # Build hub specific example scripts.
 sys.path.append(os.path.abspath("../../examples/pup/hub_common"))
