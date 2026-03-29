@@ -114,3 +114,16 @@ def test_hub_dot_system_dot():
         "shutdown",
         "storage",
     ]
+
+
+def test_hub_dot_ble_dot():
+    line = "hub.ble."
+    code = _create_snippet(line)
+    completions: list[CompletionItem] = json.loads(complete(code, 3, len(line) + 1))
+    assert [c["insertText"] for c in completions] == [
+        "broadcast",
+        "observe",
+        "observe_enable",
+        "signal_strength",
+        "version",
+    ]

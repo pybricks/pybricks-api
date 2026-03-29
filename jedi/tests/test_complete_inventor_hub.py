@@ -39,4 +39,5 @@ from test_complete_prime_hub import (  # noqa F401
     test_hub_dot_light_dot,
     test_hub_dot_speaker_dot,
     test_hub_dot_system_dot,
+    test_hub_dot_ble_dot,
 )
