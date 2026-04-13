@@ -117,11 +117,13 @@ class Ev3devSensor:
 class AnalogSensor:
     """Generic or custom analog sensor."""
 
-    def __init__(self, port: _Port):
-        """AnalogSensor(port)
+    def __init__(self, port: _Port, custom: bool = False):
+        """AnalogSensor(port, custom=False)
 
         Arguments:
             port (Port): Port to which the sensor is connected.
+            custom (bool): Set to ``True`` if you are using a custom analog
+                sensor, such as a passive RCX sensor.
         """
 
     def voltage(self) -> int:
@@ -173,13 +175,18 @@ class AnalogSensor:
 class I2CDevice:
     """Generic or custom I2C device."""
 
-    def __init__(self, port: _Port, address: int):
-        """I2CDevice(port, address)
+    def __init__(self, port: _Port, address: int, custom: bool = False, powered: bool = False, nxt_quirk: bool = False):
+        """I2CDevice(port, address, custom=False, powered=False, nxt_quirk=False)
 
         Arguments:
             port (Port): Port to which the device is connected.
             address(int): I2C address of the client device. See
                 :ref:`I2C Addresses <i2caddress>`.
+            custom (bool): Set to ``True`` if you are using a custom I2C device.
+            powered (bool): Set to ``True`` to power the I2C device.
+            nxt_quirk (bool): Set to ``True`` for older NXT I2C sensors that
+                need slower compatibility timing to communicate reliably,
+                such as the old NXT Ultrasonic Sensor.
         """
 
     def read(self, reg: Optional[int], length: Optional[int] = 1) -> bytes:
@@ -211,8 +218,8 @@ class I2CDevice:
 class UARTDevice:
     """Generic UART device."""
 
-    def __init__(self, port: _Port, baudrate: int, timeout: Optional[int] = None):
-        """UARTDevice(port, baudrate, timeout=None)
+    def __init__(self, port: _Port, baudrate: int = 115200, timeout: Optional[int] = None):
+        """UARTDevice(port, baudrate=115200, timeout=None)
 
         Arguments:
             port (Port): Port to which the device is connected.
@@ -287,8 +294,9 @@ class LWP3Device:
         timeout: int = 10000,
         pair: bool = False,
         num_notifications: int = 8,
+        connect: bool = True,
     ):
-        """LWP3Device(hub_kind, name=None, timeout=10000, pair=False, num_notifications=8)
+        """LWP3Device(hub_kind, name=None, timeout=10000, pair=False, num_notifications=8, connect=True)
 
         Arguments:
             hub_kind (int):
@@ -303,6 +311,8 @@ class LWP3Device:
                 This is required for some newer hubs.
             num_notifications (int): Number of incoming messages from the remote
                 hub to store before discarding older messages.
+            connect (bool): Choose ``True`` to connect to the device when the
+                object is created. Choose ``False`` to skip connecting.
 
         .. versionchanged:: 3.6
 
@@ -314,6 +324,13 @@ class LWP3Device:
 
         .. _`hub type identifier`:
             https://github.com/pybricks/technical-info/blob/master/assigned-numbers.md#hub-type-ids
+        """
+
+    def connect(self) -> MaybeAwaitable:
+        """connect()
+
+        Connects to the remote LWP3Device. Only needed if you initialized the
+        device with ``connect=False``.
         """
 
     @overload
@@ -377,8 +394,52 @@ class XboxController:
 
     buttons = _common.Keypad([])
 
-    def __init__(self):
-        """"""
+    def __init__(self, joystick_deadzone: int = 10, name: Optional[str] = None, timeout: int = 10000, connect: bool = True):
+        """__init__(joystick_deadzone=10, name=None, timeout=10000, connect=True)
+
+        Arguments:
+            joystick_deadzone (Number, %): Joystick deadzone (0 to 100). Values
+                below this threshold will be reported as 0.
+            name (str): The Bluetooth name of the Xbox controller to connect to,
+                or ``None`` to connect to any available controller.
+            timeout (Number, ms): How long to wait for a connection before
+                giving up.
+            connect (bool): Choose ``True`` to connect to the controller when
+                the object is created. Choose ``False`` to skip connecting.
+        """
+
+    def connect(self) -> MaybeAwaitable:
+        """connect()
+
+        Connects to the Xbox controller. Only needed if you initialized the
+        controller with ``connect=False``.
+        """
+
+    def disconnect(self) -> MaybeAwaitable:
+        """disconnect()
+
+        Disconnects the Xbox controller.
+        """
+
+    def name(self) -> str:
+        """name() -> str
+
+        Gets the Bluetooth name of the connected controller.
+
+        Returns:
+            Bluetooth name of the controller.
+        """
+
+    def state(self) -> Tuple:
+        """state() -> Tuple
+
+        Gets all raw controller input values as a single tuple. This gives
+        access to values not exposed by the other methods.
+
+        Returns:
+            Tuple of ``(x, y, z, rz, left_trigger, right_trigger, dpad,
+            buttons, upload, profile, trigger_switches, paddles)``.
+        """
 
     def joystick_left(self) -> Tuple[int, int]:
         """joystick_left() -> Tuple
