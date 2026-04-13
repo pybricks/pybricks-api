@@ -311,8 +311,8 @@ class LWP3Device:
                 This is required for some newer hubs.
             num_notifications (int): Number of incoming messages from the remote
                 hub to store before discarding older messages.
-            connect (bool): Choose ``True`` to connect to the device when the
-                object is created. Choose ``False`` to skip connecting.
+            connect (bool): Choose ``False`` to skip connecting.
+                ``connect()`` can be called later to connect.
 
         .. versionchanged:: 3.6
 
@@ -404,8 +404,8 @@ class XboxController:
                 or ``None`` to connect to any available controller.
             timeout (Number, ms): How long to wait for a connection before
                 giving up.
-            connect (bool): Choose ``True`` to connect to the controller when
-                the object is created. Choose ``False`` to skip connecting.
+            connect (bool): Choose ``False`` to skip connecting to the controller.
+                ``connect()`` can be called later to connect.
         """
 
     def connect(self) -> MaybeAwaitable:
