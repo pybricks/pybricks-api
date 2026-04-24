@@ -119,11 +119,12 @@ class Color:
     def __repr__(self):
         return "Color(h={}, s={}, v={})".format(self.h, self.s, self.v)
 
-    def __eq__(self, other: Color) -> bool: ...
+    def __eq__(self, other: Color) -> bool: 
+        return self.h == other.h and self.s == other.s and self.v == other.v
 
     def __mul__(self, scale: float) -> Color:
         v = max(0, min(self.v * scale, 100))
-        return Color(self.h, self.s, int(v), self.name)
+        return Color(self.h, self.s, int(v))
 
     def __rmul__(self, scale: float) -> Color:
         return self.__mul__(scale)
