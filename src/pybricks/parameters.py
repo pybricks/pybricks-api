@@ -113,10 +113,10 @@ class Color:
         """
 
     def __setattr__(self, key, value):
-            if not hasattr(self, key):
-                super().__setattr__(key, value)
-            else: # immutable after __init__
-                raise AttributeError("Can't modify immutable object attribute: " + key)
+        if not hasattr(self, key):
+            super().__setattr__(key, value)
+        else:  # immutable after __init__
+            raise AttributeError("Can't modify immutable object attribute: " + key)
 
     def __iter__(self):
         """Allows unpacking of the Color instance into h, s, and v."""
@@ -146,6 +146,7 @@ class Color:
 
     def __rshift__(self, shift: int) -> Color:
         return Color((self.h + shift) % 360, self.s, self.v)
+
 
 Color.NONE = Color(0, 0, 0)
 Color.BLACK = Color(0, 0, 10)
