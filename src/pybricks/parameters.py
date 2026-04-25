@@ -113,10 +113,11 @@ class Color:
         """
 
     def __setattr__(self, key, value):
-        if not hasattr(self, key):
-            super().__setattr__(key, value)
-        else:  # immutable after __init__
-            raise AttributeError("Can't modify immutable object attribute: " + key)
+        if key not in ("h", "s", "v"):
+            raise AttributeError("Can't modify unknown attribute: " + key)
+        if hasattr(self, key):  # immutable after __init__
+            raise AttributeError("Can't modify immutable attribute: " + key)
+        super().__setattr__(key, value)
 
     def __iter__(self):
         """Allows unpacking of the Color instance into h, s, and v."""
