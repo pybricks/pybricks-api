@@ -123,10 +123,10 @@ class TechnicHub:
         (with the light) are pointing.
 
         Arguments:
-            top_side (Axis): The axis that passes through the *top side* of
-                the hub.
-            front_side (Axis): The axis that passes through the *front side* of
-                the hub.
+            top_side (Axis): The axis that passes through the *top side*
+                (with the button) of the hub.
+            front_side (Axis): The axis that passes through the *front side*
+                (with the light) of the hub.
             broadcast_channel:
                 Channel number (0 to 255) used to broadcast data.
                 Choose ``None`` when not using broadcasting.
@@ -168,10 +168,10 @@ class EssentialHub:
         port, and I/O ports A and B) are pointing.
 
         Arguments:
-            top_side (Axis): The axis that passes through the *top side* of
-                the hub.
-            front_side (Axis): The axis that passes through the *front side* of
-                the hub.
+            top_side (Axis): The axis that passes through the *top side*
+                (with the button) of the hub.
+            front_side (Axis): The axis that passes through the *front side*
+                (with the USB port, and I/O ports A and B) of the hub.
             broadcast_channel:
                 Channel number (0 to 255) used to broadcast data.
                 Choose ``None`` when not using broadcasting.
@@ -223,10 +223,10 @@ class PrimeHub:
         port) are pointing.
 
         Arguments:
-            top_side (Axis): The axis that passes through the *top side* of
-                the hub.
-            front_side (Axis): The axis that passes through the *front side* of
-                the hub.
+            top_side (Axis): The axis that passes through the *top side*
+                (with the buttons) of the hub.
+            front_side (Axis): The axis that passes through the *front side*
+                (with the USB port) of the hub.
             broadcast_channel:
                 Channel number (0 to 255) used to broadcast data.
                 Choose ``None`` when not using broadcasting.
