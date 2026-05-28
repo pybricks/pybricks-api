@@ -8,11 +8,19 @@ import subprocess
 import sys
 import zipfile
 
-BUILD_DIR = (pathlib.Path(__file__).parent / "build").resolve()
+if len(sys.argv) != 2:
+    print(f"Usage: {sys.argv[0]} <version>", file=sys.stderr)
+    sys.exit(1)
+
+VERSION = sys.argv[1]
+
+ROOT_DIR = pathlib.Path(__file__).parent.resolve()
+JEDI_SRC_DIR = (ROOT_DIR / ".." / ".." / "jedi").resolve()
+BUILD_DIR = (ROOT_DIR / "build").resolve()
 
 package_json = {
     "name": "@pybricks/jedi",
-    "version": "1.17.0",
+    "version": VERSION,
     "description": "Binary distribution of pybricks-jedi Python package and dependencies for use with Pyodide.",
     "repository": {
         "type": "git",
@@ -30,7 +38,14 @@ whl_map: dict[str, str] = {}
 shutil.rmtree(BUILD_DIR, True)
 BUILD_DIR.mkdir()
 
-# download package and dependencies (*.whl files)
+# build pybricks-jedi wheel from local source
+subprocess.check_call(["poetry", "build", "--format=wheel"], cwd=JEDI_SRC_DIR)
+
+# copy locally built wheel to build dir
+for whl in (JEDI_SRC_DIR / "dist").glob("pybricks_jedi-*.whl"):
+    shutil.copy(whl, BUILD_DIR)
+
+# download transitive dependencies from PyPI, using the local wheel to satisfy pybricks-jedi itself
 subprocess.check_call(
     [
         sys.executable,
@@ -38,7 +53,8 @@ subprocess.check_call(
         "pip",
         "download",
         "--only-binary=any",
-        "pybricks-jedi==1.17.0",
+        f"--find-links={BUILD_DIR}",
+        "pybricks-jedi",
     ],
     cwd=BUILD_DIR,
 )
@@ -79,13 +95,8 @@ for whl in BUILD_DIR.glob("*.whl"):
 
             license_identifiers.add(license)
 
-        # TODO: The LICENSE workaround for the pybricks-jedi package can be
-        # dropped after the next release of that package
         if whl.name.startswith("pybricks_jedi-"):
-            LICENSE = (
-                pathlib.Path(__file__).parent.parent.parent / "jedi" / "LICENSE"
-            ).resolve()
-            with open(LICENSE) as lf:
+            with open(JEDI_SRC_DIR / "LICENSE") as lf:
                 license_text[whl.name] = lf.read()
         else:
             try:
@@ -126,7 +137,5 @@ with open(BUILD_DIR / "LICENSE", "w") as f:
 
 # copy additional files
 
-ROOT_DIR = (pathlib.Path(__file__).parent).resolve()
-
-for file in "README.md", "CHANGELOG.md":
+for file in ("README.md",):
     shutil.copy(ROOT_DIR / file, BUILD_DIR / file)

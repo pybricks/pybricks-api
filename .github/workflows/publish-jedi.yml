@@ -2,20 +2,30 @@ name: Release @pybricks/jedi
 
 on:
   push:
-    tags: 
-    - '@pybricks/jedi/**'
+    tags:
+    - 'v3.*'
 
 jobs:
   publish_jedi:
     runs-on: ubuntu-22.04
     steps:
     - uses: actions/checkout@v3
-    # Setup .npmrc file to publish to npm
+    - name: Get version from tag
+      run: echo "VERSION=${GITHUB_REF_NAME#v}" >> $GITHUB_ENV
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+    - name: Install poetry
+      run: pipx install poetry
+    - name: Set pybricks-jedi version
+      run: poetry version "$VERSION"
+      working-directory: jedi
     - uses: actions/setup-node@v3
       with:
-        node-version: '16.x'
+        node-version: '18.x'
         registry-url: 'https://registry.npmjs.org'
-    - run: ./build.py
+    - run: ./build.py "$VERSION"
       working-directory: npm/jedi
     - run: yarn publish
       working-directory: npm/jedi/build

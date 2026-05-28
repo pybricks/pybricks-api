@@ -1,6 +1,7 @@
 [tool.poetry]
 name = "pybricks_jedi"
-version = "1.17.0"
+# Version is set automatically at build time from the root pyproject.toml. Do not edit.
+version = "0.0.0"
 description = "Code completion for Pybricks."
 authors = ["The Pybricks Authors <team@pybricks.com>"]
 license = "MIT"

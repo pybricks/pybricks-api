@@ -2,13 +2,15 @@ name: Release @pybricks/ide-docs
 
 on:
   push:
-    tags: 
-    - '@pybricks/ide-docs/**'
+    tags:
+    - 'v3.*'
 
 jobs:
   publish_ide_docs:
     runs-on: ubuntu-22.04
     steps:
+    - name: Get version from tag
+      run: echo "VERSION=${GITHUB_REF_NAME#v}" >> $GITHUB_ENV
     - name: Ubuntu packages
       run: |
         sudo apt-get update
@@ -28,8 +30,10 @@ jobs:
         poetry install --only=doc
     - uses: actions/setup-node@v3
       with:
-        node-version: '14.x'
+        node-version: '18.x'
         registry-url: 'https://registry.npmjs.org'
+    - run: npm version --no-git-tag-version "$VERSION"
+      working-directory: npm/ide-docs
     - run: yarn build
       working-directory: npm/ide-docs
     - run: yarn publish

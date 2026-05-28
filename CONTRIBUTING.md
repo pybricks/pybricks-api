@@ -163,6 +163,11 @@ Linting:
     poetry run flake8  # check Python
     poetry run doc8  # check Restructured Text
 
+Building all release artifacts (docs, jedi, npm packages):
+
+    # Linux/macOS only
+    ./build-all.sh
+
 [vscode]: https://code.visualstudio.com/
 [git]: https://git-scm.com/
 [python]: https://www.python.org/
