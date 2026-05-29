@@ -20,6 +20,7 @@ jobs:
         NPM_VERSION=$(echo "$VERSION" | sed 's/\([0-9]\)a\([0-9]\)/\1-alpha.\2/;s/\([0-9]\)b\([0-9]\)/\1-beta.\2/;s/\([0-9]\)rc\([0-9]\)/\1-rc.\2/')
         echo "VERSION=$VERSION" >> $GITHUB_ENV
         echo "NPM_VERSION=$NPM_VERSION" >> $GITHUB_ENV
+        echo "NPM_TAG=$(echo "$NPM_VERSION" | grep -q '-' && echo 'next' || echo 'latest')" >> $GITHUB_ENV
     - name: Set up Python
       uses: actions/setup-python@v5
       with:
@@ -35,5 +36,5 @@ jobs:
         registry-url: 'https://registry.npmjs.org'
     - run: ./build.py "$NPM_VERSION"
       working-directory: npm/jedi
-    - run: npm publish
+    - run: npm publish --tag "$NPM_TAG"
       working-directory: npm/jedi/build

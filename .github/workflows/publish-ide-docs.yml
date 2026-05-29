@@ -19,6 +19,7 @@ jobs:
         NPM_VERSION=$(echo "$VERSION" | sed 's/\([0-9]\)a\([0-9]\)/\1-alpha.\2/;s/\([0-9]\)b\([0-9]\)/\1-beta.\2/;s/\([0-9]\)rc\([0-9]\)/\1-rc.\2/')
         echo "VERSION=$VERSION" >> $GITHUB_ENV
         echo "NPM_VERSION=$NPM_VERSION" >> $GITHUB_ENV
+        echo "NPM_TAG=$(echo "$NPM_VERSION" | grep -q '-' && echo 'next' || echo 'latest')" >> $GITHUB_ENV
     - name: Ubuntu packages
       run: |
         sudo apt-get update
@@ -44,5 +45,5 @@ jobs:
       working-directory: npm/ide-docs
     - run: yarn build
       working-directory: npm/ide-docs
-    - run: npm publish
+    - run: npm publish --tag "$NPM_TAG"
       working-directory: npm/ide-docs
