@@ -2,7 +2,7 @@
 # Build all release artifacts locally (equivalent to CI workflows, minus publish).
 set -euo pipefail
 
-REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+REPO_ROOT="$(realpath "$(dirname "${BASH_SOURCE[0]}")")"
 
 # Activate the project venv so python/make/etc. all use it without poetry run
 source "$REPO_ROOT/.venv/bin/activate"

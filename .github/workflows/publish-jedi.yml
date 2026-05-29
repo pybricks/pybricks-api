@@ -9,11 +9,11 @@ jobs:
   publish_jedi:
     runs-on: ubuntu-22.04
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v6
     - name: Get version from tag
       run: echo "VERSION=${GITHUB_REF_NAME#v}" >> $GITHUB_ENV
     - name: Set up Python
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v5
       with:
         python-version: '3.11'
     - name: Install poetry
@@ -21,9 +21,9 @@ jobs:
     - name: Set pybricks-jedi version
       run: poetry version "$VERSION"
       working-directory: jedi
-    - uses: actions/setup-node@v3
+    - uses: actions/setup-node@v4
       with:
-        node-version: '18.x'
+        node-version: '22.x'
         registry-url: 'https://registry.npmjs.org'
     - run: ./build.py "$VERSION"
       working-directory: npm/jedi
