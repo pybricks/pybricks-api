@@ -4,6 +4,13 @@
 
 ## Unreleased
 
+## 4.0.0b1 - 2026-05-29
+
+### Changed
+
+- Updated API for firmware 4.0.0bx. See upstream changelog for details.
+- Updated release pipeline to publish rtd, npm/docs and npm/jedi on tag.
+
 ### Fixed
 
 - Fixed `DriveBase.angle` reporting an incorrect return type.
