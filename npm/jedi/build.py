@@ -24,7 +24,7 @@ package_json = {
     "description": "Binary distribution of pybricks-jedi Python package and dependencies for use with Pyodide.",
     "repository": {
         "type": "git",
-        "url": "https://github.com/pybricks/pybricks-api",
+        "url": "git+https://github.com/pybricks/pybricks-api.git",
         "directory": "npm/jedi",
     },
     "publishConfig": {"registry": "https://registry.npmjs.org", "access": "public"},

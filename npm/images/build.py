@@ -18,7 +18,7 @@ package_json = {
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "https://github.com/pybricks/pybricks-api",
+        "url": "git+https://github.com/pybricks/pybricks-api.git",
         "directory": "npm/images",
     },
     "publishConfig": {"registry": "https://registry.npmjs.org", "access": "public"},

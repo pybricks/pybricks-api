@@ -36,9 +36,9 @@ jobs:
         poetry run python -m pip install --upgrade pip
         poetry run python -m pip install --upgrade setuptools
         poetry install --only=doc
-    - uses: actions/setup-node@v6
+    - uses: actions/setup-node@v4
       with:
-        node-version: '22.x'
+        node-version: '24'
         registry-url: 'https://registry.npmjs.org'
     - run: npm version --no-git-tag-version "$NPM_VERSION"
       working-directory: npm/ide-docs

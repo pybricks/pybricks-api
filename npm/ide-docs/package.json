@@ -4,7 +4,7 @@
   "description": "Special build of Pybricks API docs for embedding in an IDE.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pybricks/pybricks-api",
+    "url": "git+https://github.com/pybricks/pybricks-api.git",
     "directory": "npm/ide-docs"
   },
   "publishConfig": {

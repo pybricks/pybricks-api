@@ -29,9 +29,9 @@ jobs:
     - name: Set pybricks-jedi version
       run: poetry version "$VERSION"
       working-directory: jedi
-    - uses: actions/setup-node@v6
+    - uses: actions/setup-node@v4
       with:
-        node-version: '22.x'
+        node-version: '24'
         registry-url: 'https://registry.npmjs.org'
     - run: ./build.py "$NPM_VERSION"
       working-directory: npm/jedi
