@@ -9,7 +9,9 @@ source "$REPO_ROOT/.venv/bin/activate"
 
 # Read version from pyproject.toml
 VERSION=$(grep '^version = ' "$REPO_ROOT/pyproject.toml" | head -1 | sed 's/version = "\(.*\)"/\1/')
-echo "==> Building version $VERSION"
+# Convert Python pre-release format (e.g. 4.0.0a1, 4.0.0b1, 4.0.0rc1) to npm semver (e.g. 4.0.0-alpha.1, 4.0.0-beta.1, 4.0.0-rc.1)
+NPM_VERSION=$(echo "$VERSION" | sed 's/\([0-9]\)a\([0-9]\)/\1-alpha.\2/;s/\([0-9]\)b\([0-9]\)/\1-beta.\2/;s/\([0-9]\)rc\([0-9]\)/\1-rc.\2/')
+echo "==> Building version $VERSION (npm: $NPM_VERSION)"
 
 # lint
 echo "==> Linting"
@@ -30,7 +32,7 @@ poetry build --format=wheel
 # @pybricks/jedi npm package
 echo "==> Building @pybricks/jedi"
 cd "$REPO_ROOT"
-python3 npm/jedi/build.py "$VERSION"
+python3 npm/jedi/build.py "$NPM_VERSION"
 
 # @pybricks/ide-docs npm package
 echo "==> Building @pybricks/ide-docs"

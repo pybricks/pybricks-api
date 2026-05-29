@@ -10,7 +10,11 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
     - name: Get version from tag
-      run: echo "VERSION=${GITHUB_REF_NAME#v}" >> $GITHUB_ENV
+      run: |
+        VERSION="${GITHUB_REF_NAME#v}"
+        NPM_VERSION=$(echo "$VERSION" | sed 's/\([0-9]\)a\([0-9]\)/\1-alpha.\2/;s/\([0-9]\)b\([0-9]\)/\1-beta.\2/;s/\([0-9]\)rc\([0-9]\)/\1-rc.\2/')
+        echo "VERSION=$VERSION" >> $GITHUB_ENV
+        echo "NPM_VERSION=$NPM_VERSION" >> $GITHUB_ENV
     - name: Ubuntu packages
       run: |
         sudo apt-get update
@@ -32,7 +36,7 @@ jobs:
       with:
         node-version: '22.x'
         registry-url: 'https://registry.npmjs.org'
-    - run: npm version --no-git-tag-version "$VERSION"
+    - run: npm version --no-git-tag-version "$NPM_VERSION"
       working-directory: npm/ide-docs
     - run: yarn build
       working-directory: npm/ide-docs
