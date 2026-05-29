@@ -5,11 +5,13 @@ on:
     tags:
     - 'v4.*'
 
+permissions:
+  id-token: write
+  contents: read
+
 jobs:
   publish_ide_docs:
     runs-on: ubuntu-22.04
-    permissions:
-      id-token: write
     steps:
     - name: Get version from tag
       run: |
