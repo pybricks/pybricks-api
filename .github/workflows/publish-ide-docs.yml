@@ -3,7 +3,7 @@ name: Release @pybricks/ide-docs
 on:
   push:
     tags:
-    - 'v3.*'
+    - 'v4.*'
 
 jobs:
   publish_ide_docs:

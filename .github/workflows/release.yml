@@ -1,7 +1,7 @@
 on:
   push:
     tags:
-    - 'v3.*'
+    - 'v4.*'
 
 name: Create release on GitHub and PyPI
 

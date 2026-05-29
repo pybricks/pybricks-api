@@ -3,7 +3,7 @@ name: Release @pybricks/jedi
 on:
   push:
     tags:
-    - 'v3.*'
+    - 'v4.*'
 
 jobs:
   publish_jedi:
