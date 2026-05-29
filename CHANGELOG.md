@@ -4,6 +4,12 @@
 
 ## Unreleased
 
+## 4.0.0b3 - 2026-05-29
+
+### Changed
+
+- Fixed NPM publishing permissions.
+
 ## 4.0.0b2 - 2026-05-29
 
 ### Changed
