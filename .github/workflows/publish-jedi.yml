@@ -8,6 +8,8 @@ on:
 jobs:
   publish_jedi:
     runs-on: ubuntu-22.04
+    permissions:
+      id-token: write
     steps:
     - uses: actions/checkout@v6
     - name: Get version from tag
@@ -25,13 +27,11 @@ jobs:
     - name: Set pybricks-jedi version
       run: poetry version "$VERSION"
       working-directory: jedi
-    - uses: actions/setup-node@v4
+    - uses: actions/setup-node@v6
       with:
         node-version: '22.x'
         registry-url: 'https://registry.npmjs.org'
     - run: ./build.py "$NPM_VERSION"
       working-directory: npm/jedi
-    - run: yarn publish
+    - run: npm publish
       working-directory: npm/jedi/build
-      env:
-        NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}

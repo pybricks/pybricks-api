@@ -8,6 +8,8 @@ on:
 jobs:
   publish_ide_docs:
     runs-on: ubuntu-22.04
+    permissions:
+      id-token: write
     steps:
     - name: Get version from tag
       run: |
@@ -32,7 +34,7 @@ jobs:
         poetry run python -m pip install --upgrade pip
         poetry run python -m pip install --upgrade setuptools
         poetry install --only=doc
-    - uses: actions/setup-node@v4
+    - uses: actions/setup-node@v6
       with:
         node-version: '22.x'
         registry-url: 'https://registry.npmjs.org'
@@ -40,7 +42,5 @@ jobs:
       working-directory: npm/ide-docs
     - run: yarn build
       working-directory: npm/ide-docs
-    - run: yarn publish
+    - run: npm publish
       working-directory: npm/ide-docs
-      env:
-        NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
