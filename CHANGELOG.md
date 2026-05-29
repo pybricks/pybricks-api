@@ -8,6 +8,12 @@
 
 ### Changed
 
+- Tag npm prereleases.
+
+## 4.0.0b4 - 2026-05-29
+
+### Changed
+
 - Bump node version.
 
 ## 4.0.0b3 - 2026-05-29
