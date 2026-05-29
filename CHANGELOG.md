@@ -4,6 +4,13 @@
 
 ## Unreleased
 
+## 4.0.0b2 - 2026-05-29
+
+### Changed
+
+- Change NPM publishing to trusted publishers.
+
+
 ## 4.0.0b1 - 2026-05-29
 
 ### Changed
