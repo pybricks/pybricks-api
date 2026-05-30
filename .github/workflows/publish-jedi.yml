@@ -30,6 +30,10 @@ jobs:
     - name: Set pybricks-jedi version
       run: poetry version "$VERSION"
       working-directory: jedi
+    - name: Set pybricks version and update jedi dependency pin
+      run: |
+        poetry version "$VERSION"
+        sed -i "s/^pybricks = \".*\"/pybricks = \"$VERSION\"/" jedi/pyproject.toml
     - uses: actions/setup-node@v4
       with:
         node-version: '24'

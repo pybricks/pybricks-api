@@ -15,6 +15,7 @@ if len(sys.argv) != 2:
 VERSION = sys.argv[1]
 
 ROOT_DIR = pathlib.Path(__file__).parent.resolve()
+REPO_ROOT_DIR = (ROOT_DIR / ".." / "..").resolve()
 JEDI_SRC_DIR = (ROOT_DIR / ".." / ".." / "jedi").resolve()
 BUILD_DIR = (ROOT_DIR / "build").resolve()
 
@@ -38,6 +39,13 @@ whl_map: dict[str, str] = {}
 shutil.rmtree(BUILD_DIR, True)
 BUILD_DIR.mkdir()
 
+# build pybricks api wheel from local source so pip uses it instead of fetching from PyPI
+subprocess.check_call(["poetry", "build", "--format=wheel"], cwd=REPO_ROOT_DIR)
+
+# copy locally built pybricks wheel to build dir
+for whl in (REPO_ROOT_DIR / "dist").glob("pybricks-*.whl"):
+    shutil.copy(whl, BUILD_DIR)
+
 # build pybricks-jedi wheel from local source
 subprocess.check_call(["poetry", "build", "--format=wheel"], cwd=JEDI_SRC_DIR)
 
@@ -45,7 +53,7 @@ subprocess.check_call(["poetry", "build", "--format=wheel"], cwd=JEDI_SRC_DIR)
 for whl in (JEDI_SRC_DIR / "dist").glob("pybricks_jedi-*.whl"):
     shutil.copy(whl, BUILD_DIR)
 
-# download transitive dependencies from PyPI, using the local wheel to satisfy pybricks-jedi itself
+# download transitive dependencies from PyPI, using the local wheels to satisfy pybricks-jedi and pybricks itself
 subprocess.check_call(
     [
         sys.executable,

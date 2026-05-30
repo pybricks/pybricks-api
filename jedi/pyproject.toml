@@ -8,7 +8,8 @@ license = "MIT"
 
 [tool.poetry.dependencies]
 python = ">= 3.10, < 3.12"
-pybricks = "3.6.0b5"
+# Version is set automatically at build time from the root pyproject.toml. Do not edit.
+pybricks = "0.0.0"
 jedi = "0.18.1"
 typing-extensions = "4.2.0"
 docstring-parser = "0.14.1"
