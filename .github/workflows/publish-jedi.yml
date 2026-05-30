@@ -38,7 +38,7 @@ jobs:
       with:
         node-version: '24'
         registry-url: 'https://registry.npmjs.org'
-    - run: ./build.py "$NPM_VERSION"
-      working-directory: npm/jedi
+    - run: poetry run python build.py "$NPM_VERSION"
+      working-directory: jedi
     - run: npm publish --tag "$NPM_TAG"
-      working-directory: npm/jedi/build
+      working-directory: jedi/npm-build

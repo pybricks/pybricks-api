@@ -25,6 +25,7 @@
 build/
 build-*/
 _build/
+npm-build/
 
 # Tests
 ######################

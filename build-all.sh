@@ -19,20 +19,15 @@ cd "$REPO_ROOT"
 flake8
 doc8
 
-# pybricks-jedi wheel (from local source)
+# pybricks-jedi tests
 echo "==> Testing pybricks-jedi"
 cd "$REPO_ROOT/jedi"
 poetry run pytest -vv
 
-echo "==> Building pybricks-jedi wheel"
-cd "$REPO_ROOT/jedi"
-rm -rf dist/
-poetry build --format=wheel
-
 # @pybricks/jedi npm package
 echo "==> Building @pybricks/jedi"
-cd "$REPO_ROOT"
-python3 npm/jedi/build.py "$NPM_VERSION"
+cd "$REPO_ROOT/jedi"
+poetry run python build.py "$NPM_VERSION"
 
 # @pybricks/ide-docs npm package
 echo "==> Building @pybricks/ide-docs"
@@ -43,5 +38,5 @@ yarn build
 
 echo ""
 echo "Build complete."
-echo "  jedi npm package : npm/jedi/build/"
+echo "  jedi npm package : jedi/npm-build/"
 echo "  ide-docs         : npm/ide-docs/html/"

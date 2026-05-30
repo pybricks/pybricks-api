@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
+# Run with: poetry run python build.py <npm-version>
+# Builds the @pybricks/jedi npm package into npm-build/.
 
 import email.parser
+import importlib.metadata
 import json
 import pathlib
 import shutil
@@ -15,9 +18,8 @@ if len(sys.argv) != 2:
 VERSION = sys.argv[1]
 
 ROOT_DIR = pathlib.Path(__file__).parent.resolve()
-REPO_ROOT_DIR = (ROOT_DIR / ".." / "..").resolve()
-JEDI_SRC_DIR = (ROOT_DIR / ".." / ".." / "jedi").resolve()
-BUILD_DIR = (ROOT_DIR / "build").resolve()
+REPO_ROOT_DIR = (ROOT_DIR / "..").resolve()
+BUILD_DIR = ROOT_DIR / "npm-build"
 
 package_json = {
     "name": "@pybricks/jedi",
@@ -26,7 +28,7 @@ package_json = {
     "repository": {
         "type": "git",
         "url": "git+https://github.com/pybricks/pybricks-api.git",
-        "directory": "npm/jedi",
+        "directory": "jedi",
     },
     "publishConfig": {"registry": "https://registry.npmjs.org", "access": "public"},
 }
@@ -47,27 +49,18 @@ for whl in (REPO_ROOT_DIR / "dist").glob("pybricks-*.whl"):
     shutil.copy(whl, BUILD_DIR)
 
 # build pybricks-jedi wheel from local source
-subprocess.check_call(["poetry", "build", "--format=wheel"], cwd=JEDI_SRC_DIR)
+subprocess.check_call(["poetry", "build", "--format=wheel"], cwd=ROOT_DIR)
 
 # copy locally built wheel to build dir
-for whl in (JEDI_SRC_DIR / "dist").glob("pybricks_jedi-*.whl"):
+for whl in (ROOT_DIR / "dist").glob("pybricks_jedi-*.whl"):
     shutil.copy(whl, BUILD_DIR)
 
 # download transitive dependencies using the versions already installed in the venv
 # (installed by poetry from the lockfile, so versions are pinned correctly)
 transitive_packages = ["jedi", "parso", "docstring-parser", "typing-extensions"]
-# use the jedi venv's Python to query metadata since packages are installed there
-jedi_venv_python = JEDI_SRC_DIR / ".venv" / "bin" / "python"
-pkg_versions = json.loads(
-    subprocess.check_output(
-        [
-            jedi_venv_python,
-            "-c",
-            f"import importlib.metadata, json; print(json.dumps({{p: importlib.metadata.version(p) for p in {transitive_packages!r}}}))",
-        ]
-    )
-)
-transitive = [f"{pkg}=={pkg_versions[pkg]}" for pkg in transitive_packages]
+transitive = [
+    f"{pkg}=={importlib.metadata.version(pkg)}" for pkg in transitive_packages
+]
 subprocess.check_call(
     [sys.executable, "-m", "pip", "download", "--only-binary=any"] + transitive,
     cwd=BUILD_DIR,
@@ -110,7 +103,7 @@ for whl in BUILD_DIR.glob("*.whl"):
             license_identifiers.add(license)
 
         if whl.name.startswith("pybricks_jedi-"):
-            with open(JEDI_SRC_DIR / "LICENSE") as lf:
+            with open(ROOT_DIR / "LICENSE") as lf:
                 license_text[whl.name] = lf.read()
         else:
             try:
