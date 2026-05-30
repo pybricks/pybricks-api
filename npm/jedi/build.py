@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import email.parser
+import importlib.metadata
 import json
 import pathlib
 import shutil
@@ -53,17 +54,14 @@ subprocess.check_call(["poetry", "build", "--format=wheel"], cwd=JEDI_SRC_DIR)
 for whl in (JEDI_SRC_DIR / "dist").glob("pybricks_jedi-*.whl"):
     shutil.copy(whl, BUILD_DIR)
 
-# download transitive dependencies from PyPI, using the local wheels to satisfy pybricks-jedi and pybricks itself
+# download transitive dependencies using the versions already installed in the venv
+# (installed by poetry from the lockfile, so versions are pinned correctly)
+transitive_packages = ["jedi", "parso", "docstring-parser", "typing-extensions"]
+transitive = [
+    f"{pkg}=={importlib.metadata.version(pkg)}" for pkg in transitive_packages
+]
 subprocess.check_call(
-    [
-        sys.executable,
-        "-m",
-        "pip",
-        "download",
-        "--only-binary=any",
-        f"--find-links={BUILD_DIR}",
-        "pybricks-jedi",
-    ],
+    [sys.executable, "-m", "pip", "download", "--only-binary=any"] + transitive,
     cwd=BUILD_DIR,
 )
 
