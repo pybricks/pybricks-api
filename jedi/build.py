@@ -1,14 +1,13 @@
 #!/usr/bin/env python3
-# Run with: poetry run python build.py <npm-version>
 # Builds the @pybricks/jedi npm package into npm-build/.
 
 import email.parser
-import importlib.metadata
 import json
 import pathlib
 import shutil
 import subprocess
 import sys
+import tomllib
 import zipfile
 
 if len(sys.argv) != 2:
@@ -55,12 +54,12 @@ subprocess.check_call(["poetry", "build", "--format=wheel"], cwd=ROOT_DIR)
 for whl in (ROOT_DIR / "dist").glob("pybricks_jedi-*.whl"):
     shutil.copy(whl, BUILD_DIR)
 
-# download transitive dependencies using the versions already installed in the venv
-# (installed by poetry from the lockfile, so versions are pinned correctly)
+# download transitive dependencies using versions pinned in poetry.lock
 transitive_packages = ["jedi", "parso", "docstring-parser", "typing-extensions"]
-transitive = [
-    f"{pkg}=={importlib.metadata.version(pkg)}" for pkg in transitive_packages
-]
+with open(ROOT_DIR / "poetry.lock", "rb") as f:
+    lock = tomllib.load(f)
+lock_versions = {pkg["name"]: pkg["version"] for pkg in lock["package"]}
+transitive = [f"{pkg}=={lock_versions[pkg]}" for pkg in transitive_packages]
 subprocess.check_call(
     [sys.executable, "-m", "pip", "download", "--only-binary=any"] + transitive,
     cwd=BUILD_DIR,

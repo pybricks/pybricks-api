@@ -27,7 +27,7 @@ poetry run pytest -vv
 # @pybricks/jedi npm package
 echo "==> Building @pybricks/jedi"
 cd "$REPO_ROOT/jedi"
-poetry run python build.py "$NPM_VERSION"
+python3 build.py "$NPM_VERSION"
 
 # @pybricks/ide-docs npm package
 echo "==> Building @pybricks/ide-docs"
