@@ -7,8 +7,12 @@ import pathlib
 import shutil
 import subprocess
 import sys
-import tomllib
 import zipfile
+
+try:
+    import tomllib
+except ImportError:
+    import tomli as tomllib  # type: ignore[no-redef]
 
 if len(sys.argv) != 2:
     print(f"Usage: {sys.argv[0]} <version>", file=sys.stderr)
