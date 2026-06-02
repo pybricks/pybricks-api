@@ -13,6 +13,10 @@
   },
   "author": "The Pybricks Authors",
   "license": "MIT",
+  "exports": {
+    "./package.json": "./package.json",
+    "./html/namespace_index.json": "./html/namespace_index.json"
+  },
   "files": [
     "html"
   ],
