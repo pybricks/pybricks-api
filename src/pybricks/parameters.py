@@ -125,6 +125,9 @@ class Color:
     def __eq__(self, other: Color) -> bool:
         return self.h == other.h and self.s == other.s and self.v == other.v
 
+    def __hash__(self) -> int:
+        return hash((self.h, self.s, self.v))
+
     def __mul__(self, scale: float) -> Color:
         v = max(0, min(self.v * scale, 100))
         return Color(self.h, self.s, int(v))
