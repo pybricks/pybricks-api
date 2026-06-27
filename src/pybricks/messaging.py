@@ -182,7 +182,7 @@ class Mailbox(Generic[T]):
         You can read data that is delivered by other EV3 bricks, or send data
         to other bricks that have the same mailbox.
 
-        By default, the mailbox reads and send only bytes. To send other
+        By default, the mailbox reads and sends only bytes. To send other
         data, you can provide an ``encode`` function that encodes your Python
         object into bytes, and a ``decode`` function to convert bytes back to
         a Python object.
@@ -217,7 +217,7 @@ class Mailbox(Generic[T]):
             value:
                 The value that will be delivered to the mailbox.
             brick (str):
-                The name or Bluetooth address of the brick or ``None`` to
+                The name or Bluetooth address of the brick or ``None``
                 to broadcast to all connected devices.
 
         Raises:
@@ -228,7 +228,7 @@ class Mailbox(Generic[T]):
     def wait(self) -> None:
         """wait()
 
-        Waits for the mailbox to be updated by remote device."""
+        Waits for the mailbox to be updated by a remote device."""
 
     def wait_new(self) -> T:
         """wait_new()
@@ -380,7 +380,7 @@ class AppData:
     Bluetooth. This is used by the smart sensor features like the vision
     processors.
 
-    Each processor has on emode and produces a fixed amount of data. These are
+    Each processor has one mode and produces a fixed amount of data. These are
     continuously sent to the hub as they change. The user code can read these
     buffered values at any time without blocking. All values are initially zero.
 
