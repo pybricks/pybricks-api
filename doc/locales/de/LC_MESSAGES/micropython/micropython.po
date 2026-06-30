@@ -1,0 +1,211 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-2023 The Pybricks Authors
+# This file is distributed under the same license as the pybricks package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pybricks v3.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-01-30 22:50+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: de\n"
+"Language-Team: de <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../main/micropython/micropython.rst:4 0aaa983db3844c6d94d0c0c339fe1083
+msgid ":mod:`micropython` -- MicroPython internals"
+msgstr ""
+
+#: e4c74f2933054e179ea8f7846bde7da3 micropython:1 of
+msgid "Access and control MicroPython internals."
+msgstr ""
+
+#: 480f2602554b40d7a824438ad59a5a44 micropython.const:1 of
+msgid "const(value) -> Any"
+msgstr ""
+
+#: 4344b305811749b8bbdfeb8c0dc39ffa micropython.const:3 of
+msgid "Declares the value as a constant, which makes your code more efficient."
+msgstr ""
+
+#: 08d855f14e1f4acbbc5779e9699dd055 micropython.const:5 of
+msgid ""
+"To reduce memory usage further, prefix its name with an underscore "
+"(``_ORANGES``). This constant can only be used within the same file."
+msgstr ""
+
+#: 6c3c50c65fc84b8f921a42beafb1618a micropython.const:9 of
+msgid ""
+"If you want to import the value from another module, use a name without "
+"an underscore (``APPLES``). This uses a bit more memory."
+msgstr ""
+
+#: ../../main/micropython/micropython.rst 19067f9490064964b1119d294edf6a36
+#: a32d51cf751c4a77befe8c6b2024b55b bc31a2683c9845e0916c4259fe814810
+#: cb70c38c631f4f0cab307ce6b0f33751 d89838a3136d45a68927d079ce4d2800
+msgid "Parameters"
+msgstr ""
+
+#: 8ab52427544843cdb38f0e161ddeb39d micropython.const:12 of
+msgid "The literal to be made constant."
+msgstr ""
+
+#: ../../main/micropython/micropython.rst 16a312b72ce34ddc9c59569b3eea803a
+#: b117d7c0576441d1b9ee6701c6c8244c cc32564e2b20453695aae84dc39460fa
+#: e3ada3bd0ff84c0d8df694d036ec22a4
+msgid "Returns"
+msgstr ""
+
+#: f6d9f847741241e1b6527c7a122a6031 micropython.const:15 of
+msgid "The constant value."
+msgstr ""
+
+#: 9a0fbd6cac1f4e4fb1c7a30c364b9b7a micropython.heap_lock:1 of
+msgid ""
+"Locks the heap. When locked, no memory allocation can occur. A "
+"``MemoryError`` will be raised if any heap allocation is attempted."
+msgstr ""
+
+#: aa49a543eece410192f72303da8efcac micropython.heap_unlock:1 of
+msgid "Unlocks the heap. Memory allocation is now allowed again."
+msgstr ""
+
+#: bb824c712e8345f2a124dd6178bd6265 micropython.heap_unlock:3 of
+msgid ""
+"If :func:`heap_lock()` was called multiple times, :func:`heap_unlock()` "
+"must be called the same number of times to make the heap available again."
+msgstr ""
+
+#: 95f0d4e58c4440fb83ae4c9afefc1581 micropython.heap_unlock:6 of
+msgid "The lock depth after unlocking. It is ``0`` once it is unlocked."
+msgstr ""
+
+#: 7f875e1e9d3944038201679b98c9780e micropython.kbd_intr:1 of
+msgid ""
+"Sets the character that triggers a ``KeyboardInterrupt`` exception when "
+"you type it in the input window. By default it is set to ``3``, which "
+"corresponds to pressing :kbd:`Ctrl` :kbd:`C`."
+msgstr ""
+
+#: 2babc44f4db543e78914cf9662b9729f micropython.kbd_intr:5 of
+msgid ""
+"Character that should raise the ``KeyboardInterrupt``. Choose ``-1`` to "
+"disable this feature."
+msgstr ""
+
+#: a8b9bdf4799c44c397b49368e5a83fc5 micropython.mem_info:1 of
+msgid "mem_info() mem_info(verbose)"
+msgstr ""
+
+#: cb89d50fb2c041a8a74a3afe05e8a64f micropython.mem_info:4 of
+msgid "Prints information about stack and heap memory usage."
+msgstr ""
+
+#: ee228db3f15645c29ea0d07fcdb0b15d micropython.mem_info:6 of
+msgid ""
+"If any value is given, it also prints out the entire heap. This indicates"
+" which blocks are used and which are free."
+msgstr ""
+
+#: 912be24d568b44c6b97eeb5781c0e483 micropython.opt_level:1 of
+msgid "Sets the optimization level for code compiled on the hub:"
+msgstr ""
+
+#: 6b106749af6d4e389d1470b2a4a78c28 micropython.opt_level:3 of
+msgid ""
+"Assertion statements are enabled. The built-in ``__debug__`` variable is "
+"``True``. Script line numbers are saved, so they can be reported when an "
+"Exception occurs."
+msgstr ""
+
+#: 0f1979afda6542aab4b13fb3f06ec80f 9910ac78b8cc4e9a9a049e8981b061c9
+#: micropython.opt_level:6 micropython.opt_level:8 of
+msgid ""
+"Assertions are ignored and ``__debug__`` is ``False``. Script line "
+"numbers are saved."
+msgstr ""
+
+#: 94ce8428c5444ae3a9687a685e4a2fc0 micropython.opt_level:10 of
+msgid ""
+"Assertions are ignored and ``__debug__`` is ``False``. Script line "
+"numbers are *not* saved."
+msgstr ""
+
+#: 8a0d9c7615f04ad295d7d4ac2130f722 micropython.opt_level:13 of
+msgid ""
+"This applies only to code that you run in the REPL, because regular "
+"scripts are already compiled before they are sent to the hub."
+msgstr ""
+
+#: 906fa442ec4a4af484e9e50bdd791841 micropython.opt_level:16 of
+msgid "The level to be set."
+msgstr ""
+
+#: b38e8e9a6e9a4ca1906d43bb3b616654 micropython.opt_level:19 of
+msgid "If no argument is given, this returns the current optimization level."
+msgstr ""
+
+#: 75fb4bf62af443698a666571e95a8eb7 micropython.qstr_info:1 of
+msgid "qstr_info() qstr_info(verbose)"
+msgstr ""
+
+#: e5bb11b208454f799964482949e6a568 micropython.qstr_info:4 of
+msgid "Prints how many strings are interned and how much RAM they use."
+msgstr ""
+
+#: 937b0d7b475f4ef3b8200346b84c33e1 micropython.qstr_info:6 of
+msgid ""
+"MicroPython uses string interning to save both RAM and ROM. This avoids "
+"having to store duplicate copies of the same string."
+msgstr ""
+
+#: a1b943bcebe344c1b057360ed13dfbe8 micropython.qstr_info:9 of
+msgid ""
+"If any value is given, it also prints out the names of all RAM-interned "
+"strings."
+msgstr ""
+
+#: 9569e3c00c3241179ef2876baeb6d39b micropython.stack_use:1 of
+msgid ""
+"Checks the amount of stack that is being used. This can be used to "
+"compute differences in stack usage at different points in a script."
+msgstr ""
+
+#: 32ac5ccfaaee490b8221ad81c2d6f160 micropython.stack_use:4 of
+msgid "The amount of stack in use."
+msgstr ""
+
+#: ../../main/micropython/micropython.rst:27 eec30bd75cc7448eadb3c862af0db2d3
+msgid "Examples"
+msgstr ""
+
+#: ../../main/micropython/micropython.rst:30 4170439e412f42a692019a90a3b72efa
+msgid "Using constants for efficiency"
+msgstr ""
+
+#: ../../main/micropython/micropython.rst:36 65b0b3ea5b6f49b59808a44f5128c58a
+msgid "Checking free RAM"
+msgstr ""
+
+#: ../../main/micropython/micropython.rst:41 ef938c07d76c498ab0502633c0b99a4f
+msgid ""
+"This prints information in the format shown below. In this example for "
+"the SPIKE Prime Hub, there are 257696 bytes (251 KB) worth of memory "
+"remaining for the variables in your code. ::"
+msgstr ""
+
+#: ../../main/micropython/micropython.rst:51 5f8fa53809374bee9d1a848ec476dee7
+msgid "Handling keyboard interrupts"
+msgstr ""
+
+#: ../../main/micropython/micropython.rst:57 402bdb674f5a459e909e653c07f27d25
+msgid "Getting more memory statistics"
+msgstr ""
+

@@ -1,0 +1,140 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-2023 The Pybricks Authors
+# This file is distributed under the same license as the pybricks package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pybricks v3.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-01-30 22:50+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: de\n"
+"Language-Team: de <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../main/pupdevices/ultrasonicsensor.rst:4
+#: 02fc779c187046c2a3c3d10e1a4c5f93
+msgid "Ultrasonic Sensor"
+msgstr ""
+
+#: ../../main/pupdevices/ultrasonicsensor.rst:6
+#: bdebbeda7426440a9919efa0da840a1b
+msgid ".. image:: ../../main/diagrams/sensor_ultrasonic_lights.png"
+msgstr ""
+
+#: ../../main/pupdevices/ultrasonicsensor.rst:9
+#: 6cb3e387da424d06ab376806e3a4588f
+msgid ".. image:: /blockimg/pybricks_variables_set_ultrasonic_sensor.svg"
+msgstr ""
+
+#: 5066a5d5aa1e4ffc885fa8fb62c9510c of pybricks.pupdevices.UltrasonicSensor:1
+msgid "LEGO® SPIKE Color Sensor."
+msgstr ""
+
+#: ../../main/pupdevices/ultrasonicsensor.rst 0241443ed6324ec39f6a8ca96e4d5024
+#: 4d01b2a7f7ec48f4b14bf04c9098ca68
+msgid "Parameters"
+msgstr ""
+
+#: 4afaca6f94c3406f84556ac8d8612a39 of pybricks.pupdevices.UltrasonicSensor:3
+msgid "Port to which the sensor is connected."
+msgstr ""
+
+#: ../../main/pupdevices/ultrasonicsensor.rst:14
+#: 72957d942f034cf3888ac610d6eb2bb2
+msgid ".. image:: /blockimg/pybricks_blockDistance_UltrasonicSensor.svg"
+msgstr ""
+
+#: 22ef024d16984ac38e4114714024c28b of
+#: pybricks.pupdevices.UltrasonicSensor.distance:1
+msgid ""
+"Measures the distance between the sensor and an object using ultrasonic "
+"sound waves."
+msgstr ""
+
+#: ../../main/pupdevices/ultrasonicsensor.rst 04655e78a0644018af41e2096abb5f82
+#: 5ca8a8c664ab401aa50150f8218fc3e8
+msgid "Returns"
+msgstr ""
+
+#: 4365aad5da2140c7a71f8ea5f5e567f7 of
+#: pybricks.pupdevices.UltrasonicSensor.distance:4
+msgid "Measured distance. If no valid distance was measured, it returns 2000 mm."
+msgstr ""
+
+#: d9625fedd73548d686c5eed13407f4ce of
+#: pybricks.pupdevices.UltrasonicSensor.presence:1
+msgid ""
+"Checks for the presence of other ultrasonic sensors by detecting "
+"ultrasonic sounds."
+msgstr ""
+
+#: cf7a2fde21ec40849816de210185e6aa of
+#: pybricks.pupdevices.UltrasonicSensor.presence:4
+msgid "``True`` if ultrasonic sounds are detected, ``False`` if not."
+msgstr ""
+
+#: ../../main/pupdevices/ultrasonicsensor.rst:21
+#: 8ed6b95072124ab58a65a14b8b169d11
+msgid "Built-in lights"
+msgstr ""
+
+#: ../../main/pupdevices/ultrasonicsensor.rst:22
+#: d823f883da18490581ab7736ca9d44ac
+msgid ""
+"This sensor has 4 built-in lights. You can adjust the brightness of each "
+"light."
+msgstr ""
+
+#: ../../main/pupdevices/ultrasonicsensor.rst:25
+#: 799ffbe0f6e34318a57fc3fe6b0b83d8
+msgid ".. image:: /blockimg/pybricks_blockLightOn_ultrasonicsensor_on.svg"
+msgstr ""
+
+#: ../../main/pupdevices/ultrasonicsensor.rst:27
+#: 82aa951521cb45d8b1edec0468e387d8
+msgid ".. image:: /blockimg/pybricks_blockLightOn_ultrasonicsensor_on_list.svg"
+msgstr ""
+
+#: 76511607d5f548028746ea3170b83436 of pybricks._common.LightArray4.on:1
+msgid "Turns on the lights at the specified brightness."
+msgstr ""
+
+#: 8de37dbde5c84c168e631b1df2bff54c of pybricks._common.LightArray4.on:3
+msgid ""
+"Use a single value to set the brightness of all lights at the same time. "
+"Use a tuple of four values to set the brightness of each light "
+"individually. The order of the lights is shown in the image above."
+msgstr ""
+
+#: ../../main/pupdevices/ultrasonicsensor.rst:32
+#: 56b4dfd456ad4b66abf8dc8ac4ea16b0
+msgid ".. image:: /blockimg/pybricks_blockLightOn_ultrasonicsensor_off.svg"
+msgstr ""
+
+#: 82ce56d61684400ead44d3c81460f3e6 of pybricks._common.LightArray3.off:1
+msgid "Turns off all the lights."
+msgstr ""
+
+#: ../../main/pupdevices/ultrasonicsensor.rst:37
+#: d417064f47214b4ab9f3baf604181e68
+msgid "Examples"
+msgstr ""
+
+#: ../../main/pupdevices/ultrasonicsensor.rst:40
+#: 4f5a499c17294306894fe4c7be9277c2
+msgid "Measuring distance and switching on the lights"
+msgstr ""
+
+#: ../../main/pupdevices/ultrasonicsensor.rst:46
+#: 0823e17b70154027beb3226e1da62e38
+msgid "Gradually change the brightness of the lights"
+msgstr ""
+

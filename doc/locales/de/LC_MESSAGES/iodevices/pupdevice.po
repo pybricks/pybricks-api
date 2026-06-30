@@ -1,0 +1,84 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-2023 The Pybricks Authors
+# This file is distributed under the same license as the pybricks package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pybricks v3.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-01-30 22:50+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: de\n"
+"Language-Team: de <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../main/iodevices/pupdevice.rst:4 66c55b4499334e4b9c2dfe445dae36e4
+msgid "Powered Up Device"
+msgstr ""
+
+#: ../../main/iodevices/pupdevice.rst:6 b96c0a9d75954af89e46eced105dace9
+msgid ".. image:: ../cad/output/iodevice-pupdevice.png"
+msgstr ""
+
+#: 87242daedd154ce48014e5715c8e0d6d of pybricks.iodevices.PUPDevice:1
+msgid "Powered Up motor or sensor."
+msgstr ""
+
+#: ../../main/iodevices/pupdevice.rst 17de9c0c5990493d938a32812a30648f
+#: 7561660c7d7e4954b27a1f44c7a2ef2d d04eff15f50b4be1ade0f48cebe919ba
+msgid "Parameters"
+msgstr ""
+
+#: 2c14978064654205b6dba9f465825af3 of pybricks.iodevices.PUPDevice:3
+msgid "Port to which the device is connected."
+msgstr ""
+
+#: 44d8cf400a73496f96b8bc8b6b87b683 of pybricks.iodevices.PUPDevice.info:1
+msgid "Gets information about the device."
+msgstr ""
+
+#: ../../main/iodevices/pupdevice.rst 5b469b4a8a174818970e140a66b70861
+#: aa02df9794464cd6af4b1fc8f1b10bdb
+msgid "Returns"
+msgstr ""
+
+#: c41d24a83ed44c55b6689516328242cb of pybricks.iodevices.PUPDevice.info:3
+msgid "Dictionary with information, such as the device ``id``."
+msgstr ""
+
+#: bc6330b8a0d04e92b24d06e161d8563d of pybricks.iodevices.PUPDevice.read:1
+msgid "Reads values from a given mode."
+msgstr ""
+
+#: 07e6c0c1971a4ad1bce68eb1afbc3985 5bcd1bec955a45baa0acb6f275c5e884 of
+#: pybricks.iodevices.PUPDevice.read:3 pybricks.iodevices.PUPDevice.write:4
+msgid "Device mode."
+msgstr ""
+
+#: d9675c7b87374ccd8b620477e1c69dde of pybricks.iodevices.PUPDevice.read:6
+msgid "Values read from the sensor."
+msgstr ""
+
+#: de09bad6d3c747db9bbf46d29ce21a11 of pybricks.iodevices.PUPDevice.write:1
+msgid "Writes values to the sensor. Only selected sensors and modes support this."
+msgstr ""
+
+#: b8324b3a906d4c8fb5aa5e193665a76e of pybricks.iodevices.PUPDevice.write:6
+msgid "Values to be written."
+msgstr ""
+
+#: ../../main/iodevices/pupdevice.rst:19 621875252611499c80dd382f8304781c
+msgid "Examples"
+msgstr ""
+
+#: ../../main/iodevices/pupdevice.rst:22 ef808579c7fd4cc58e5ca69c7554c172
+msgid "Detecting devices"
+msgstr ""
+

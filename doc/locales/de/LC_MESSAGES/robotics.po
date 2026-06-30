@@ -1,0 +1,663 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-2023 The Pybricks Authors
+# This file is distributed under the same license as the pybricks package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pybricks v3.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-01-30 22:50+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: de\n"
+"Language-Team: de <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../main/robotics.rst:2 f874b61af2224db2a55ac20145b6f367
+msgid ":mod:`robotics <pybricks.robotics>` -- Robotics and drive bases"
+msgstr ""
+
+#: 4abe6e553a3f419d8307656d4964c1a8 of pybricks.robotics:1
+msgid "Robotics module for the Pybricks API."
+msgstr ""
+
+#: ../../main/robotics.rst:9 71e47a67fb9244fe92576301932c4f1a
+msgid ".. image:: /blockimg/pybricks_variables_set_drive_base.svg"
+msgstr ""
+
+#: 55dbe63b368e4bc29524d5b650379d96 of pybricks.robotics.DriveBase:1
+msgid ""
+"A robotic vehicle with two powered wheels and an optional support wheel "
+"or caster."
+msgstr ""
+
+#: fd74b590b8c24ae395aeb349086bdc6f of pybricks.robotics.DriveBase:4
+msgid ""
+"By specifying the dimensions of your robot, this class makes it easy to "
+"drive a given distance in millimeters or turn by a given number of "
+"degrees."
+msgstr ""
+
+#: abce5c6140644ac5ba09da432a2bd381 of pybricks.robotics.DriveBase:8
+msgid ""
+"**Positive** distances, radii, or drive speeds mean driving **forward**. "
+"**Negative** means **backward**."
+msgstr ""
+
+#: bc1cd91fde1e47de9d73d8c46cbdcf6c of pybricks.robotics.DriveBase:11
+msgid ""
+"**Positive** angles and turn rates mean turning **right**. **Negative** "
+"means **left**. So when viewed from the top, positive means clockwise and"
+" negative means counterclockwise."
+msgstr ""
+
+#: ca04b0fb07d04a0b8c3fedf35dab8b30 of pybricks.robotics.DriveBase:15
+msgid ""
+"See the `measuring`_ section for tips to measure and adjust the diameter "
+"and axle track values."
+msgstr ""
+
+#: ../../main/robotics.rst 084dc5511b0d442ebf82d65c8569a950
+#: 0c278d84dd5c469cb243629d5c0bf669 0d628bfa11744431b0b51cf476158f6e
+#: 0e2f99e03fc549ab837d4b6471083c1c 56f624b0f9d7464b8e5791f1d1043d4d
+#: a474ee96dcab490b8c7217f8fa4f081c b283127c9bf6474c9db3f7310dd2d301
+#: b5c1097c8e73453abdd677d75ed95da9 bdd00181b805468a9515f2d0a0aa9281
+#: c0faf761092a4938970dc13272c0b381 e6fcb6e41d7146bb8bb29479c4c42f39
+msgid "Parameters"
+msgstr ""
+
+#: 082e1a33b8a3403fbabeb2f169ebc7da of pybricks.robotics.DriveBase:18
+msgid "The motor that drives the left wheel."
+msgstr ""
+
+#: af987f07b00a47b2b74c53be660b7fe8 of pybricks.robotics.DriveBase:20
+msgid "The motor that drives the right wheel."
+msgstr ""
+
+#: d3f4fefdb6f2489f94f4927d8ed2ec10 of pybricks.robotics.DriveBase:22
+msgid "Diameter of the wheels."
+msgstr ""
+
+#: 8869b34e4ed54549a2a3bf3a3ec26458 of pybricks.robotics.DriveBase:24
+msgid "Distance between the points where both wheels touch the ground."
+msgstr ""
+
+#: ../../main/robotics.rst:15 db647b5d94b14de48a8dc64965c894d7
+msgid "Driving by a given distance or angle"
+msgstr ""
+
+#: ../../main/robotics.rst:16 eade6e9aca2146b39a035edc7e83512a
+msgid ""
+"Use the following commands to drive a given distance, or turn by a given "
+"angle."
+msgstr ""
+
+#: ../../main/robotics.rst:19 19a9f4b8c25b464daa267ce908b47482
+msgid ""
+"This is measured using the internal rotation sensors. Because wheels may "
+"slip while moving, the traveled distance and angle are only estimates."
+msgstr ""
+
+#: ../../main/robotics.rst:22 46eb8a208cb146f996ae947e94490b7c
+msgid ""
+".. image:: "
+"/blockimg/pybricks_blockDriveBaseDrive_drivebase_drive_straight.svg"
+msgstr ""
+
+#: 4bd2a8e997524ae8bc0e8e78b7537591 of pybricks.robotics.DriveBase.straight:1
+msgid "Drives straight for a given distance and then stops."
+msgstr ""
+
+#: 7bb13d6f41e545bfb275341a4482b8ae of pybricks.robotics.DriveBase.straight:3
+msgid "Distance to travel"
+msgstr ""
+
+#: 5dfec8538bf4458ab59b4499091e0f43 a30c9513aacb483abc286b2a7bf090a0
+#: a5c27018300949928de8b7ab09216fc5 of pybricks.robotics.DriveBase.curve:7
+#: pybricks.robotics.DriveBase.straight:5 pybricks.robotics.DriveBase.turn:5
+msgid "What to do after coming to a standstill."
+msgstr ""
+
+#: 418d2b2c8f0d4bff8588f4232c5a0a4d aa41cc9be9334b998227056b073234e8
+#: de110cd3f72744d28456151f6b4c6f8d of pybricks.robotics.DriveBase.curve:9
+#: pybricks.robotics.DriveBase.straight:7 pybricks.robotics.DriveBase.turn:7
+msgid ""
+"Wait for the maneuver to complete before continuing with the rest of the "
+"program."
+msgstr ""
+
+#: ../../main/robotics.rst:26 1c175b17903f47d9aee9d3b4b9d6821d
+msgid ".. image:: /blockimg/pybricks_blockDriveBaseDrive_drivebase_drive_turn.svg"
+msgstr ""
+
+#: 81ca1dfd448b45559225d2d4dafa0405 of pybricks.robotics.DriveBase.turn:1
+msgid "Turns in place by a given angle and then stops."
+msgstr ""
+
+#: 64b62d2b46ae4506a1a3ef16709a088f of pybricks.robotics.DriveBase.turn:3
+msgid "Angle of the turn."
+msgstr ""
+
+#: ../../main/robotics.rst:30 4312bd2fc5404636a43f0a16eb850504
+msgid ""
+".. image:: "
+"/blockimg/pybricks_blockDriveBaseDrive_drivebase_drive_curve.svg"
+msgstr ""
+
+#: cdb8e08b65ba43418506c251197c40ad of pybricks.robotics.DriveBase.curve:1
+msgid "Drives an arc along a circle of a given radius, by a given angle."
+msgstr ""
+
+#: 7abeae3c0f5f442f929c5520bf13d57d of pybricks.robotics.DriveBase.curve:3
+msgid "Radius of the circle."
+msgstr ""
+
+#: d13968d74465497b86a7dd4d1b32ed13 of pybricks.robotics.DriveBase.curve:5
+msgid "Angle along the circle."
+msgstr ""
+
+#: ../../main/robotics.rst:34 d1b3da80ee2c4fe5b00cd5cf9b4714d2
+msgid ""
+".. image:: "
+"/blockimg/pybricks_blockDriveBaseConfigure_drivebase_straight_speed.svg"
+msgstr ""
+
+#: ../../main/robotics.rst:36 c437735f55684b298b5a43481c96ca3a
+msgid ""
+".. image:: "
+"/blockimg/pybricks_blockDriveBaseConfigure_drivebase_straight_acceleration.svg"
+msgstr ""
+
+#: ../../main/robotics.rst:38 c93196fcea5a41a8bd328d1269e20cd2
+msgid ""
+".. image:: "
+"/blockimg/pybricks_blockDriveBaseConfigure_drivebase_turn_rate.svg"
+msgstr ""
+
+#: ../../main/robotics.rst:40 83c883070dcf4559ab8b7daf568cf6a4
+msgid ""
+".. image:: "
+"/blockimg/pybricks_blockDriveBaseConfigure_drivebase_turn_acceleration.svg"
+msgstr ""
+
+#: 6b8f3f84a8b44659ae2fcf84b0bc67f5 of pybricks.robotics.DriveBase.settings:1
+msgid ""
+"settings(straight_speed, straight_acceleration, turn_rate, "
+"turn_acceleration) settings() -> Tuple[int, int, int, int]"
+msgstr ""
+
+#: 5d05c37220e3420f9ac451fd8ff25f49 of pybricks.robotics.DriveBase.settings:4
+msgid "Configures the drive base speed and acceleration."
+msgstr ""
+
+#: dfd77d569bde4a53b6899236cbda3c76 of pybricks.robotics.DriveBase.settings:6
+msgid "If you give no arguments, this returns the current values as a tuple."
+msgstr ""
+
+#: 23ccac2f97374c62a5310fbe83883b81 of pybricks.robotics.DriveBase.settings:8
+#, python-format
+msgid ""
+"The initial values are automatically configured based on your wheel "
+"diameter and axle track. They are selected such that your robot drives at"
+" about 40% of its maximum speed."
+msgstr ""
+
+#: b79ce7f4dfd14aef91721a4e678eaedb of pybricks.robotics.DriveBase.settings:12
+msgid ""
+"The speed values given here do not apply to the :meth:`.drive` method, "
+"since you provide your own speed values as arguments in that method."
+msgstr ""
+
+#: 4f1ca414d2d0470b87b7e5dad48b5dec of pybricks.robotics.DriveBase.settings:15
+msgid "Straight-line speed of the robot."
+msgstr ""
+
+#: 443308da7c534bc88b76dbd65061be24 of pybricks.robotics.DriveBase.settings:17
+msgid ""
+"Straight-line acceleration and deceleration of the robot. Provide a tuple"
+" with two values to set acceleration and deceleration separately."
+msgstr ""
+
+#: 3b6edc64050c4993b1a6c9ce6f587309 63f9c77008de41ad93fdc1ab63515939 of
+#: pybricks.robotics.DriveBase.drive:6 pybricks.robotics.DriveBase.settings:21
+msgid "Turn rate of the robot."
+msgstr ""
+
+#: 22e4149024eb4158aa971e8c2a522fae of pybricks.robotics.DriveBase.settings:23
+msgid ""
+"Angular acceleration and deceleration of the robot. Provide a tuple with "
+"two values to set acceleration and deceleration separately."
+msgstr ""
+
+#: b78ae1a69d074ff38d2fec5e6258d93d of pybricks.robotics.DriveBase.done:1
+msgid "Checks if an ongoing command or maneuver is done."
+msgstr ""
+
+#: ../../main/robotics.rst 1122e05d648c4662affc7bec7d75c82c
+#: 52b5f6f421d44acb93606039be0f365a 7d8b2f96128f46a3ab9cd38dd586af6b
+#: af143acf28e5497da873ac1a383785a0 e0c4856c116f423880ec8ccfdfcde133
+msgid "Returns"
+msgstr ""
+
+#: f463a0060ec14200b6d2497fd128efba of pybricks.robotics.DriveBase.done:3
+msgid "``True`` if the command is done, ``False`` if not."
+msgstr ""
+
+#: ../../main/robotics.rst:47 27c5b8ea03a94f779c137c658c78cfb9
+msgid "Drive forever"
+msgstr ""
+
+#: ../../main/robotics.rst:48 03a6cbe6ae0f4ca2a3a6f2aa79cdf792
+msgid "Use :meth:`.drive` to begin driving at a desired speed and steering."
+msgstr ""
+
+#: ../../main/robotics.rst:50 58821334322a4ed8830db27e5e800de3
+msgid ""
+"It keeps going until you use :meth:`.stop` or change course by using "
+":meth:`.drive` again. For example, you can drive until a sensor is "
+"triggered and then stop or turn around."
+msgstr ""
+
+#: ../../main/robotics.rst:54 b059b24656ac448c875a29b0513bb390
+msgid ""
+".. image:: "
+"/blockimg/pybricks_blockDriveBaseDrive_drivebase_drive_forever.svg"
+msgstr ""
+
+#: 5619294a020d4a87a769c7d8d113d6c8 of pybricks.robotics.DriveBase.drive:1
+msgid ""
+"Starts driving at the specified speed and turn rate. Both values are "
+"measured at the center point between the wheels of the robot."
+msgstr ""
+
+#: 377bf6a96bb141bf9c0e2336fa4ffa0d of pybricks.robotics.DriveBase.drive:4
+msgid "Speed of the robot."
+msgstr ""
+
+#: ../../main/robotics.rst:58 e91357462f38482e9bc70be719012c6e
+msgid ".. image:: /blockimg/pybricks_blockDriveBaseStop_coast.svg"
+msgstr ""
+
+#: d103bf5e5af544d3bf9c92d208f236be of pybricks.robotics.DriveBase.stop:1
+msgid "Stops the robot by letting the motors spin freely."
+msgstr ""
+
+#: ../../main/robotics.rst:62 74a0dc3cd55e490480924873902e5eeb
+msgid ".. image:: /blockimg/pybricks_blockDriveBaseStop_brake.svg"
+msgstr ""
+
+#: 9f7aa26622f14cadbde641e24684e178 of pybricks.robotics.DriveBase.brake:1
+msgid "Stops the robot by passively braking the motors."
+msgstr ""
+
+#: ../../main/robotics.rst:66 0f62aee58a8546b8927d2e97d87ee821
+msgid ".. image:: /blockimg/pybricks_blockDriveBaseStop_hold.svg"
+msgstr ""
+
+#: ../../main/robotics.rst:69 9fa84517dd3a4920b934381d654a3df1
+msgid "Measuring"
+msgstr ""
+
+#: ../../main/robotics.rst:70 6c58745ce95c4a37ab68cc40f2530ff9
+msgid ""
+".. image:: "
+"/blockimg/pybricks_blockDriveBaseMeasure_drivebase_get_distance.svg"
+msgstr ""
+
+#: 44a0474c87e847e8a00e7d2b65913a8c of pybricks.robotics.DriveBase.distance:1
+msgid "Gets the estimated driven distance."
+msgstr ""
+
+#: f9b94029970f4137a70bb4b1a6979606 of pybricks.robotics.DriveBase.distance:3
+msgid "Driven distance since last reset."
+msgstr ""
+
+#: ../../main/robotics.rst:74 64965f451d1e408c839dd2b292ebe091
+msgid ""
+".. image:: "
+"/blockimg/pybricks_blockDriveBaseMeasure_drivebase_get_angle.svg"
+msgstr ""
+
+#: 158a2e2fee4d44349a56ef81ba9b1907 of pybricks.robotics.DriveBase.angle:1
+msgid "Gets the estimated rotation angle of the drive base."
+msgstr ""
+
+#: e876369849bd4ca1b7dfdf5289365537 of pybricks.robotics.DriveBase.angle:3
+msgid "Accumulated angle since last reset."
+msgstr ""
+
+#: ../../main/robotics.rst:78 10562d95d0de497480cea6da08eb3906
+msgid ""
+".. image:: "
+"/blockimg/pybricks_blockDriveBaseMeasure_drivebase_get_speed.svg"
+msgstr ""
+
+#: ../../main/robotics.rst:80 d36df19843b649298d4d8ace2ca075ad
+msgid ""
+".. image:: "
+"/blockimg/pybricks_blockDriveBaseMeasure_drivebase_get_turn_rate.svg"
+msgstr ""
+
+#: 5e5d8f296c3b4844bf63963caca1f41a of pybricks.robotics.DriveBase.state:1
+msgid "Gets the state of the robot."
+msgstr ""
+
+#: 8aed3180f43c4508891299e7e99fc3f6 of pybricks.robotics.DriveBase.state:3
+msgid "Tuple of distance, drive speed, angle, and turn rate of the robot."
+msgstr ""
+
+#: ceeb247e0ee7419ab60b3308920d28e3 of pybricks.robotics.DriveBase.reset:1
+msgid "Resets the estimated driven distance and angle to 0."
+msgstr ""
+
+#: abb88874614c4c04be971e7b725ffd77 of pybricks.robotics.DriveBase.stalled:1
+msgid "Checks if the drive base is currently stalled."
+msgstr ""
+
+#: 314b499ab2a445d29a5da8ce653c0324 of pybricks.robotics.DriveBase.stalled:3
+msgid ""
+"It is stalled when it cannot reach the target speed or position, even "
+"with the maximum actuation signal."
+msgstr ""
+
+#: 75c9056ce4f34252a3b8991ed69358f5 of pybricks.robotics.DriveBase.stalled:6
+msgid "``True`` if the drivebase is stalled, ``False`` if not."
+msgstr ""
+
+#: ../../main/robotics.rst:91 8b38bd09cf624662977070aead0cd67e
+msgid "Driving with the gyro"
+msgstr ""
+
+#: ../../main/robotics.rst:92 a063dcf5b5a2427dbadd9179d13ca4b3
+msgid ".. image:: /blockimg/pybricks_blockDriveBaseUseGyro.svg"
+msgstr ""
+
+#: 54eb7647a97a4abab9bbdd8c4a32ceec of pybricks.robotics.DriveBase.use_gyro:1
+msgid ""
+"Choose ``True`` to use the gyro sensor for turning and driving straight. "
+"Choose ``False`` to rely only on the motor's built-in rotation sensors."
+msgstr ""
+
+#: ec8aa84f0d4e4e37bef958a97490281a of pybricks.robotics.DriveBase.use_gyro:5
+msgid "``True`` to enable, ``False`` to disable."
+msgstr ""
+
+#: ../../main/robotics.rst:96 494b6383c3214e4e9feef82e1910e68d
+msgid ""
+"If your hub is not mounted flat in your robot, make sure to specify the "
+"``top_side`` and ``front_side`` parameters when you initialize the "
+":class:`PrimeHub() <pybricks.hubs.PrimeHub>`, :class:`InventorHub() "
+"<pybricks.hubs.PrimeHub>`, :class:`EssentialHub() "
+"<pybricks.hubs.EssentialHub>`, or :class:`TechnicHub() "
+"<pybricks.hubs.TechnicHub>`. This way your robot knows which rotation to "
+"measure when turning."
+msgstr ""
+
+#: ../../main/robotics.rst:104 c61b1ee0555f4fcf82605d51a7fa174d
+msgid ""
+"The gyro in each hub is a bit different, which can cause it to be a few "
+"degrees off for big turns, or many small turns in the same direction. For"
+" example, you may need to use :meth:`turn(357) "
+"<pybricks.robotics.DriveBase.turn>` or :meth:`turn(362) "
+"<pybricks.robotics.DriveBase.turn>` on your robot to make a full turn."
+msgstr ""
+
+#: ../../main/robotics.rst:111 be53c9cedea64964bd50840e0455f036
+msgid ""
+"By default, this class tries to maintain the robot's position after a "
+"move completes. This means the wheels will spin if you pick the robot up,"
+" in an effort to maintain its heading angle. To avoid this, you can "
+"choose ``then=Stop.COAST`` in your last :meth:`straight "
+"<pybricks.robotics.DriveBase.straight>`, :meth:`turn "
+"<pybricks.robotics.DriveBase.turn>`, or :meth:`curve "
+"<pybricks.robotics.DriveBase.curve>` command."
+msgstr ""
+
+#: ../../main/robotics.rst:122 e82d9f742fd34d95bd84b96d3b079329
+msgid "Measuring and validating the robot dimensions"
+msgstr ""
+
+#: ../../main/robotics.rst:123 ae4b393d2cb14f5e986ec6db0386fa2e
+msgid ""
+"As a first estimate, you can measure the ``wheel_diameter`` and the "
+"``axle_track`` with a ruler. Because it is hard to see where the wheels "
+"effectively touch the ground, you can estimate the ``axle_track`` as the "
+"distance between the midpoint of the wheels."
+msgstr ""
+
+#: ../../main/robotics.rst:128 ab17340a8c5d40c98b41edacba10b959
+msgid ""
+"If you don't have a ruler, you can use a LEGO beam to measure. The "
+"center-to-center distance of the holes is 8 mm. For some tyres, the "
+"diameter is printed on the side. For example, 62.4 x 20 means that the "
+"diameter is 62.4mm and that the width is 20 mm."
+msgstr ""
+
+#: ../../main/robotics.rst:133 7213312c99e24849bea1fe272ef56325
+msgid ""
+"In practice, most wheels compress slightly under the weight of your "
+"robot. To verify, make your robot drive 1000 mm using "
+"``my_robot.straight(1000)`` and measure how far it really traveled. "
+"Compensate as follows:"
+msgstr ""
+
+#: ../../main/robotics.rst:137 a9a533ca61e44cf99f83742a0a30a524
+msgid ""
+"If your robot drives **not far enough**, **decrease** the "
+"``wheel_diameter`` value slightly."
+msgstr ""
+
+#: ../../main/robotics.rst:139 be9a60aa77a24385a713ebc3edde8eea
+msgid ""
+"If your robot drives **too far**, **increase** the ``wheel_diameter`` "
+"value slightly."
+msgstr ""
+
+#: ../../main/robotics.rst:142 d00da379e31f4a96a9dfee2443bbf9e7
+msgid ""
+"Motor shafts and axles bend slightly under the load of the robot, causing"
+" the ground contact point of the wheels to be closer to the midpoint of "
+"your robot. To verify, make your robot turn 360 degrees using "
+"``my_robot.turn(360)`` and check that it is back in the same place:"
+msgstr ""
+
+#: ../../main/robotics.rst:147 aa2e299d6a9a4b4a967819da9a262483
+msgid ""
+"If your robot turns **not far enough**, **increase** the ``axle_track`` "
+"value slightly."
+msgstr ""
+
+#: ../../main/robotics.rst:149 bf330f1f5954407cbe5f32daba7f194c
+msgid ""
+"If your robot turns **too far**, **decrease** the ``axle_track`` value "
+"slightly."
+msgstr ""
+
+#: ../../main/robotics.rst:152 43c1dc65946544d3bc20875f5b939f99
+msgid ""
+"When making these adjustments, always adjust the ``wheel_diameter`` "
+"first, as done above. Be sure to test both turning and driving straight "
+"after you are done."
+msgstr ""
+
+#: ../../main/robotics.rst:157 459289630f1a4a08acb1b6d37eb9137f
+msgid "Using the DriveBase motors individually"
+msgstr ""
+
+#: ../../main/robotics.rst:158 73ca23d0106e40ea875378f26dcb8099
+msgid ""
+"After creating a :class:`.DriveBase` object, you can still use its two "
+"motors individually. If you start one motor, the other motor will "
+"automatically stop. Likewise, if a motor is already running and you make "
+"the drive base move, the original maneuver is cancelled and the drive "
+"base will take over."
+msgstr ""
+
+#: ../../main/robotics.rst:165 11ead1a7365c4658852fe7321f17312d
+msgid "Advanced settings"
+msgstr ""
+
+#: ../../main/robotics.rst:166 c8c1eff3b5ae496a81bf44b5d1aa51ea
+msgid ""
+"The :meth:`.settings` method is used to adjust commonly used settings "
+"like the default speed and acceleration for straight maneuvers and turns."
+" Use the following attributes to adjust more advanced control settings."
+msgstr ""
+
+#: ../../docstring 1bfff3b0784f458f95ba2fd92ac0d84b of
+#: pybricks.robotics.DriveBase.distance_control:1
+msgid ""
+"The traveled distance and drive speed are controlled by a PID controller."
+" You can use this attribute to change its settings. See the :ref:`motor "
+"control <settings>` attribute for an overview of available methods. The "
+"``distance_control`` attribute has the same functionality, but the "
+"settings apply to every millimeter driven by the drive base, instead of "
+"degrees turned by one motor."
+msgstr ""
+
+#: ../../docstring 5efc94183ee24182b3135dff19325970 of
+#: pybricks.robotics.DriveBase.heading_control:1
+msgid ""
+"The robot turn angle and turn rate are controlled by a PID controller. "
+"You can use this attribute to change its settings. See the :ref:`motor "
+"control <settings>` attribute for an overview of available methods. The "
+"``heading_control`` attribute has the same functionality, but the "
+"settings apply to every degree of rotation of the whole drive base "
+"(viewed from the top) instead of degrees turned by one motor."
+msgstr ""
+
+#: ../../main/robotics.rst:178 0957e4fc63204eb4a9cfa8bba6376960
+msgid "The :meth:`done` and :meth:`stalled` methods have been moved."
+msgstr ""
+
+#: ../../main/robotics.rst:182 cb7b74ed56f44a2282bfee613abdd703
+msgid ".. image:: /blockimg/pybricks_variables_set_car.svg"
+msgstr ""
+
+#: 8c4fd7c302de4d15a538cc11ee59cd30 of pybricks.robotics.Car:1
+msgid "A vehicle with one steering motor, and one or more motors for driving."
+msgstr ""
+
+#: 00d523e5ec1e4e0cbbb186a9c9062890 of pybricks.robotics.Car:3
+#, python-format
+msgid ""
+"When you use this class, the steering motor will automatically find the "
+"center position. This also determines which angle corresponds to 100% "
+"steering."
+msgstr ""
+
+#: 2e202d3a662a4612abae4da22d13ece6 of pybricks.robotics.Car:7
+msgid "The motor that steers the front wheels."
+msgstr ""
+
+#: 550689a380fd41609bde35857616a1b7 of pybricks.robotics.Car:9
+msgid "The motor that drives the wheels. Use a tuple for multiple motors."
+msgstr ""
+
+#: 434ffdbacbfa42baa80cbe83d922c709 of pybricks.robotics.Car:12
+msgid ""
+"The maximum torque limit used to find the endpoints for the steering "
+"mechanism, as a percentage of the maximum torque of the steering motor."
+msgstr ""
+
+#: ../../main/robotics.rst:189 49b86a94acd7473182c8cebf98feddae
+msgid ".. image:: /blockimg/pybricks_blockCarSteer.svg"
+msgstr ""
+
+#: b94bc067eb094266922de06c847931d3 of pybricks.robotics.Car.steer:1
+#, python-format
+msgid ""
+"Steers the front wheels by a given amount. For 100% steering, it steers "
+"right by the angle that was determined on initialization. For -100% "
+"steering, it steers left and 0% means straight."
+msgstr ""
+
+#: 4b7118a6591f40aeb0b6c5d1739841b3 of pybricks.robotics.Car.steer:5
+msgid "Amount to steer the front wheels."
+msgstr ""
+
+#: ../../main/robotics.rst:193 c73151696a3a42e894f11ad32f163459
+msgid ".. image:: /blockimg/pybricks_blockCarDrive_car_drive_at_power.svg"
+msgstr ""
+
+#: d912867c03d24a69a51443de78c04af3 of pybricks.robotics.Car.drive_power:1
+msgid ""
+"Drives the car at a given power level. Positive values drive forward, "
+"negative values drive backward."
+msgstr ""
+
+#: 467664f97eb34c62b411a0450453ed43 of pybricks.robotics.Car.drive_power:4
+msgid ""
+"The ``power`` value is used to set the motor voltage as a percentage of "
+"the battery voltage. Below 10%, the car will coast the wheels in order to"
+" roll out smoothly instead of braking abruptly."
+msgstr ""
+
+#: c2e171daaa9b47e6b994b0f31617bf21 of pybricks.robotics.Car.drive_power:8
+msgid ""
+"This command is useful for remote control applications where you want "
+"instant response to button presses or joystick movements."
+msgstr ""
+
+#: 49f699fb5cda4321b78e632c3117f88f of pybricks.robotics.Car.drive_power:11
+msgid "Speed of the car."
+msgstr ""
+
+#: ../../main/robotics.rst:197 2a20cda4d2f647ba905264a524c19df5
+msgid ".. image:: /blockimg/pybricks_blockCarDrive_car_drive_at_speed.svg"
+msgstr ""
+
+#: 07a9df6fda564295bbf116eb77df89b1 of pybricks.robotics.Car.drive_speed:1
+msgid ""
+"Drives the car at a given motor speed. Positive values drive forward, "
+"negative values drive backward."
+msgstr ""
+
+#: 7a4d32e410ca40b5a99f53416f086f00 of pybricks.robotics.Car.drive_speed:4
+msgid ""
+"This command is useful for more precise driving with gentle acceleration "
+"and deceleration. This automatically increases the power to maintain "
+"speed as you drive across obstacles."
+msgstr ""
+
+#: 6ed10f46a4464972a2312422f6cc2ab3 of pybricks.robotics.Car.drive_speed:8
+msgid "Angular velocity of the drive motors."
+msgstr ""
+
+#: ../../main/robotics.rst:202 aee8aeb8498d4bbdaa662968e05549e2
+msgid "Examples"
+msgstr ""
+
+#: ../../main/robotics.rst:205 3cf068b1f4e54b878d2205ad75529c34
+msgid "Driving straight and turning in place with a drive base"
+msgstr ""
+
+#: ../../main/robotics.rst:207 4a42b51850b347129f59a88da8841052
+msgid "This program shows the basics of driving and turning."
+msgstr ""
+
+#: ../../main/robotics.rst:213 98e70e359c3d4e5fb3f632943ad78887
+msgid "Remote controlling a car with front wheel steering"
+msgstr ""
+
+#: ../../main/robotics.rst:215 f2e9a15f58254d04b65adeebab2a71ca
+msgid ""
+"This program shows how you can drive a car with front wheel steering "
+"using the :class:`remote control <pybricks.pupdevices.Remote>`."
+msgstr ""
+
+#: ../../main/robotics.rst:218 9c3250b94d9c4ab39f14f54f9ef7fcd5
+msgid ""
+"In this program, the ports match those of the `LEGO Technic 42099 Off-"
+"Roader <https://pybricks.com/projects/sets/technic/42099-off-roader/>`_, "
+"but you can use any other car with front wheel steering. If your vehicle "
+"has only one drive motor, you can use a single motor instead of a tuple "
+"of the motors used below."
+msgstr ""
+

@@ -1,0 +1,455 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-2023 The Pybricks Authors
+# This file is distributed under the same license as the pybricks package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pybricks v3.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-01-30 22:50+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: de\n"
+"Language-Team: de <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../main/hubs/cityhub.rst:4 4ae617ef10154301be3a709029bb68ee
+msgid "City Hub"
+msgstr ""
+
+#: ../../main/hubs/cityhub.rst:5 db3cccb9e6934e59887980dd9481b53a
+msgid ".. image:: ../../main/cad/output/hub-city.png"
+msgstr ""
+
+#: ../../main/hubs/cityhub.rst:8 48e5d394b709426d9c5c30869f6a3aa9
+msgid ".. image:: /blockimg/pybricks_variables_set_city_hub_option0.svg"
+msgstr ""
+
+#: ../../main/hubs/cityhub.rst:10 a013a491ae6f4654b97468387bc4560a
+msgid ".. image:: /blockimg/pybricks_variables_set_city_hub_option3.svg"
+msgstr ""
+
+#: 7e8bbae80e064d4aae95c305f6816c62 of pybricks.hubs.CityHub:1
+msgid "LEGO® City Hub."
+msgstr ""
+
+#: ../../main/hubs/cityhub.rst 0174f5f358fb48b9b815e94d8e842bb0
+#: 3aaf809bdee145fcb50cd873c2b19bb2 92c0be9d5f9a468dba8c79a8a86d20c0
+#: b38317e9c9a2485f949503daa31d2be8 b67d4765404c4663a1ce0825e4a8b022
+#: c71db08681c141ca838b6839ecbad2c9 cb88f0b968c348bc997a8de4890e063b
+#: d2749f2dc7c0443c9604d53ea3019138 e701013148fa458cbdae335309e44677
+msgid "Parameters"
+msgstr ""
+
+#: bee4619064b844678e54bd5a75330bff of pybricks.hubs.CityHub:3
+msgid ""
+"A value from 0 to 255 indicating which channel ``hub.ble.broadcast()`` "
+"will use. Default is channel 0."
+msgstr ""
+
+#: fd9a4ac31b9c4b1182763684e5754cfe of pybricks.hubs.CityHub:5
+msgid ""
+"A list of channels to listen to when ``hub.ble.observe()`` is called. "
+"Listening to more channels requires more memory. Default is an empty list"
+" (no channels)."
+msgstr ""
+
+#: 0d1774d9f4fc4175861b25353dc6437e of pybricks.hubs.CityHub:9
+msgid "Added *broadcast_channel* and *observe_channels* arguments."
+msgstr ""
+
+#: ../../main/hubs/cityhub.rst:17 96423e3202da46eeae8dcc4fa5424eaf
+msgid "Using the hub status light"
+msgstr ""
+
+#: ../../main/hubs/cityhub.rst:18 b44a7f0c1db045cdbeb4b7ff354f2050
+msgid ".. image:: /blockimg/pybricks_blockLightOnColor_cityhub_on.svg"
+msgstr ""
+
+#: 56e1f9dfaf8f4ba6b503ca21dedcf9fb of pybricks._common.ColorLight.on:1
+msgid "Turns on the light at the specified color."
+msgstr ""
+
+#: 90aeafd39be84a8699976d870c4f5a45 a3d301919b59473ebd171a1f88d5abb5 of
+#: pybricks._common.ColorLight.blink:11 pybricks._common.ColorLight.on:3
+msgid "Color of the light."
+msgstr ""
+
+#: ../../main/hubs/cityhub.rst:22 767789cee0d344ebbdfd6362e2f0de9e
+msgid ".. image:: /blockimg/pybricks_blockLightOnColor_cityhub_off.svg"
+msgstr ""
+
+#: c1c960a0d476457690d605d895b9222f of pybricks._common.ColorLight.off:1
+msgid "Turns off the light."
+msgstr ""
+
+#: 7b60fb1d1c744d61a4e5a8425e31a253 of pybricks._common.ColorLight.blink:1
+msgid ""
+"Blinks the light at a given color by turning it on and off for given "
+"durations."
+msgstr ""
+
+#: 31d237d89e254baea54473a768404e07 of pybricks._common.ColorLight.blink:4
+msgid ""
+"The light keeps blinking indefinitely while the rest of your program "
+"keeps running."
+msgstr ""
+
+#: bca5118bccfc4aeea43f76df0f2458ba of pybricks._common.ColorLight.blink:7
+msgid ""
+"This method provides a simple way to make basic but useful patterns. For "
+"more generic and multi-color patterns, use ``animate()`` instead."
+msgstr ""
+
+#: f9753a49dbf9442f837599b2d4a5c7d2 of pybricks._common.ColorLight.blink:13
+msgid "Sequence of time values of the form ``[on_1, off_1, on_2, off_2, ...]``."
+msgstr ""
+
+#: 81fa383c624f464e91502c4ef790999c of pybricks._common.ColorLight.animate:1
+msgid ""
+"Animates the light with a sequence of colors, shown one by one for the "
+"given interval."
+msgstr ""
+
+#: de96ffa667174c5a9dfdffa14496e2c8 of pybricks._common.ColorLight.animate:4
+msgid ""
+"The animation runs in the background while the rest of your program keeps"
+" running. When the animation completes, it repeats."
+msgstr ""
+
+#: e4151f1fbae3455e885eb83236ebfa9a of pybricks._common.ColorLight.animate:7
+msgid "Sequence of :class:`Color <.parameters.Color>` values."
+msgstr ""
+
+#: 02bd31ac9b27468fa054b59be1f75df7 of pybricks._common.ColorLight.animate:10
+msgid "Time between color updates."
+msgstr ""
+
+#: ../../main/hubs/cityhub.rst:31 1b7c1fad31194207b595f80b5272641f
+msgid "Using connectionless Bluetooth messaging"
+msgstr ""
+
+#: ../../main/hubs/cityhub.rst:32 2010e23e68964d4bba29a07985357193
+msgid ".. image:: /blockimg/pybricks_blockBleBroadcast_CityHub.svg"
+msgstr ""
+
+#: 55c19a1fefc54328ad2fb77247fc2b5f of pybricks._common.BLE.broadcast:1
+msgid ""
+"Starts broadcasting the given data on the ``broadcast_channel`` you "
+"selected when initializing the hub."
+msgstr ""
+
+#: 048d736916284e04b96078c7f7dbcba2 of pybricks._common.BLE.broadcast:4
+msgid ""
+"Data may be of type ``int``, ``float``, ``str``, ``bytes``, ``True``, or "
+"``False``, or a list thereof."
+msgstr ""
+
+#: 70f57c4609cb45ed8ecba974b7d2006d of pybricks._common.BLE.broadcast:7
+msgid ""
+"Choose ``None`` to stop broadcasting. This helps improve performance when"
+" you don't need the broadcast feature, especially when observing at the "
+"same time."
+msgstr ""
+
+#: 3d2a770523234ab58d101cafa83a2cb6 of pybricks._common.BLE.broadcast:11
+msgid ""
+"The total data size is quite limited (26 bytes). ``True`` and ``False`` "
+"take 1 byte each. ``float`` takes 5 bytes. ``int`` takes 2 to 5 bytes "
+"depending on how big the number is. ``str`` and ``bytes`` take the number"
+" of bytes in the object plus one extra byte."
+msgstr ""
+
+#: 36ade315bb3448d2bd08a4073d0721f0 of pybricks._common.BLE.broadcast:16
+msgid ""
+"When multitasking, only one task can broadcast at a time. To broadcast "
+"information from multiple tasks (or block stacks), you could use a "
+"dedicated separate task that broadcast new values when one or more "
+"variables change."
+msgstr ""
+
+#: 3f082968d0a548ac892de2f11f11c471 of pybricks._common.BLE.broadcast:21
+msgid "The value or values to be broadcast."
+msgstr ""
+
+#: ../../main/hubs/cityhub.rst:36 71e61ef57d47473ea6609636f80ecb01
+msgid ".. image:: /blockimg/pybricks_blockBleObserve_CityHub.svg"
+msgstr ""
+
+#: 5bb853722beb48dcb2305ee05872ef17 of pybricks._common.BLE.observe:1
+msgid "Retrieves the last observed data for a given channel."
+msgstr ""
+
+#: 1d93748e988749d0a8e0cab1518e906c of pybricks._common.BLE.observe:3
+msgid ""
+"Receiving data is more reliable when the hub is not connected to a "
+"computer or other devices at the same time."
+msgstr ""
+
+#: e52e28f3474c43d097e8d6cb096c510d of pybricks._common.BLE.observe:6
+msgid "The channel to observe (0 to 255)."
+msgstr ""
+
+#: ../../main/hubs/cityhub.rst 094d8cc137824f60b7acea0146ac10c9
+#: 28457b7d6df34a998d98f0695ce773ec 3218e1734163414588279a39cb1e6f30
+#: 6a80f8f609084f89835103f81e837714 783c5c67f5dc480a9fb123f40c7c972c
+#: 91a1d73480f94596a2f2a498806f4b82 a2759c0c18f04e1599e2aa2df0218b49
+#: bcccccf6d48f4c83addc697434f7825b
+msgid "Returns"
+msgstr ""
+
+#: 9fe30b5c1b094b5aa0249519b78636fc of pybricks._common.BLE.observe:9
+msgid ""
+"The received data in the same format as it was sent, or ``None`` if no "
+"recent data is available."
+msgstr ""
+
+#: 4efb4c79f9394997a5552d410f105373 of pybricks._common.BLE.signal_strength:1
+msgid "Gets the average signal strength in dBm for the given channel."
+msgstr ""
+
+#: 6e9a1d834b894005ac80615b858e63a1 of pybricks._common.BLE.signal_strength:3
+msgid ""
+"This indicates how near the broadcasting device is. Nearby devices may "
+"have a signal strength around -40 dBm, while far away devices might have "
+"a signal strength around -70 dBm."
+msgstr ""
+
+#: ac86d50937ac4087a35429911d506b89 of pybricks._common.BLE.signal_strength:7
+msgid "The channel number (0 to 255)."
+msgstr ""
+
+#: 542b687af2e847588b4c4e8f4ff270fd of pybricks._common.BLE.signal_strength:10
+msgid "The signal strength or ``-128`` if there is no recent observed data."
+msgstr ""
+
+#: e1ad637e08554d4586e1b2c1eaf799cb of pybricks._common.BLE.version:1
+msgid "Gets the firmware version from the Bluetooth chip."
+msgstr ""
+
+#: ../../main/hubs/cityhub.rst:45 8404a1abeda842889bf3f3d77d7b952f
+msgid "Using the battery"
+msgstr ""
+
+#: ../../main/hubs/cityhub.rst:46 76607165ea034d23bd53b252daf988d5
+msgid ""
+".. image:: "
+"/blockimg/pybricks_blockBatteryMeasure_CityHub_battery.voltage.svg"
+msgstr ""
+
+#: cc9ca03af63548b98e9f2009114567af of pybricks._common.Battery.voltage:1
+msgid "Gets the voltage of the battery."
+msgstr ""
+
+#: 17bf85cc5b1b47bab5c3ba4d31f91701 of pybricks._common.Battery.voltage:3
+msgid "Battery voltage."
+msgstr ""
+
+#: ../../main/hubs/cityhub.rst:50 f259a896a1fa4c7894fb3df70de56545
+msgid ""
+".. image:: "
+"/blockimg/pybricks_blockBatteryMeasure_CityHub_battery.current.svg"
+msgstr ""
+
+#: 341fb362d7a645d995a4a76035860128 of pybricks._common.Battery.current:1
+msgid "Gets the current supplied by the battery."
+msgstr ""
+
+#: 4db642f2ef3f427687d69194b66908b6 of pybricks._common.Battery.current:3
+msgid "Battery current."
+msgstr ""
+
+#: ../../main/hubs/cityhub.rst:55 de132d07b40b4fcfb6aaf64e1470869e
+msgid "Button and system control"
+msgstr ""
+
+#: ../../main/hubs/cityhub.rst:56 4b59240d243441238911f18b35da4726
+msgid ".. image:: /blockimg/pybricks_blockButtonIsPressed_CityHub.svg"
+msgstr ""
+
+#: cf0055eaed6f45d58c118b482476d3f2 of pybricks._common.Keypad.pressed:1
+msgid "Checks which buttons are currently pressed."
+msgstr ""
+
+#: 3c373799cd8f47569fc339ed3ddecbfd of pybricks._common.Keypad.pressed:3
+msgid "Set of pressed buttons."
+msgstr ""
+
+#: ../../main/hubs/cityhub.rst:60 0643e20cc6f5487496f0ebd58c7af80a
+msgid ".. image:: /blockimg/pybricks_blockHubStopButton_CityHub.svg"
+msgstr ""
+
+#: ../../main/hubs/cityhub.rst:62 231eccc4aeab4f8ca29307a648888506
+msgid ".. image:: /blockimg/pybricks_blockHubStopButton_CityHub_none.svg"
+msgstr ""
+
+#: 5dc01d0822fe4d2bb79d0c7aa98cb0a3 of
+#: pybricks._common.System.set_stop_button:1
+msgid "Sets the button or button combination that stops a running script."
+msgstr ""
+
+#: 22b49ec60b1a4a8daf1fbd50b5544264 of
+#: pybricks._common.System.set_stop_button:3
+msgid ""
+"Normally, the center button is used to stop a running script. You can "
+"change or disable this behavior in order to use the button for other "
+"purposes."
+msgstr ""
+
+#: a210e21bb71642eea6c50f00b68754d1 of
+#: pybricks._common.System.set_stop_button:7
+msgid ""
+"A button such as :attr:`Button.CENTER "
+"<pybricks.parameters.Button.CENTER>`, or a tuple of multiple buttons. "
+"Choose ``None`` to disable the stop button altogether. If you do, you can"
+" still turn the hub off by holding the center button for three seconds."
+msgstr ""
+
+#: 936baec7f0484936b60a1c98b047d505 of pybricks._common.System.name:1
+msgid "Gets the hub name. This is the name you see when connecting via Bluetooth."
+msgstr ""
+
+#: d40ed591242849708e90e541537a38f4 of pybricks._common.System.name:4
+msgid "The hub name."
+msgstr ""
+
+#: 3590cdfef7bc4eecbaf3241c6b4e3e17 of pybricks._common.System.storage:1
+msgid "Reads or writes binary data to persistent storage."
+msgstr ""
+
+#: 5e53cb86b9954922809831e13f563136 of pybricks._common.System.storage:3
+msgid ""
+"This lets you store data that can be used the next time you run the "
+"program."
+msgstr ""
+
+#: 5370ea2c75cc4653862db7668979bdef of pybricks._common.System.storage:6
+msgid ""
+"The data will be saved to flash memory when you turn the hub off "
+"normally. It will not be saved if the batteries are removed *while* the "
+"hub is still running."
+msgstr ""
+
+#: 31659c511fb14c9c9349a0ec3c64d544 of pybricks._common.System.storage:10
+msgid ""
+"Once saved, the data will remain available even after you remove the "
+"batteries."
+msgstr ""
+
+#: f6d4453ff4254a33b266152723b91ace of pybricks._common.System.storage:13
+msgid "The offset from the start of the user storage memory, in bytes."
+msgstr ""
+
+#: ee39e059f22e49909a83432daeb4d8e8 of pybricks._common.System.storage:15
+msgid "The number of bytes to read. Omit this argument when writing."
+msgstr ""
+
+#: 6e055e407c0144af9b2b80a2c7efeca9 of pybricks._common.System.storage:17
+msgid "The bytes to write. Omit this argument when reading."
+msgstr ""
+
+#: cf8a02ee5aa7473da18429772ac22925 of pybricks._common.System.storage:20
+msgid "The bytes read if reading, otherwise ``None``."
+msgstr ""
+
+#: ../../main/hubs/cityhub.rst c3324eee30c441f2a782c79b766b51b6
+msgid "Raises"
+msgstr ""
+
+#: c4c785c85e4b4d0a9b6233988c6be9f3 of pybricks._common.System.storage:22
+msgid "If you try to read or write data outside of the allowed range."
+msgstr ""
+
+#: ../../main/hubs/cityhub.rst:71 cc8cbaae34334b7e88c5225cd289e420
+msgid ""
+"You can store up to 128 bytes of data on this hub. The data is cleared "
+"when you update the Pybricks firmware or if you restore the original "
+"firmware."
+msgstr ""
+
+#: ../../main/hubs/cityhub.rst:75 de623d1be0694d078ead3b1cb776d73a
+msgid ".. image:: /blockimg/pybricks_blockHubShutdown_CityHub.svg"
+msgstr ""
+
+#: 03e0433847fd405da3039db55033b58a of pybricks._common.System.shutdown:1
+msgid "Stops your program and shuts the hub down."
+msgstr ""
+
+#: 6ef629cf88304e1f8d9d9cbd0beeb8f3 of pybricks._common.System.reset_reason:1
+msgid ""
+"Finds out how and why the hub (re)booted. This can be useful to diagnose "
+"some problems."
+msgstr ""
+
+#: 6b5c0107c88048b98ded7aa9586a45bd of pybricks._common.System.reset_reason:4
+msgid ""
+"* ``0`` if the hub was previously powered off   normally. * ``1`` if the "
+"hub rebooted automatically, like   after a firmware update. * ``2`` if "
+"the hub previously   crashed due to a watchdog timeout, which indicates a"
+" firmware   issue."
+msgstr ""
+
+#: 94fa7761863e417dba315a6f28ab1002 of pybricks._common.System.reset_reason:6
+msgid "``0`` if the hub was previously powered off normally."
+msgstr ""
+
+#: 4459bd51f627432eb764ed8f10ae003a of pybricks._common.System.reset_reason:8
+msgid "``1`` if the hub rebooted automatically, like after a firmware update."
+msgstr ""
+
+#: be98830fcea349a8904e0ebd25608f5c of pybricks._common.System.reset_reason:10
+msgid ""
+"``2`` if the hub previously crashed due to a watchdog timeout, which "
+"indicates a firmware issue."
+msgstr ""
+
+#: ../../main/hubs/cityhub.rst:82 01c62d6e444748e09657f0f6d5048a9a
+msgid "Status light examples"
+msgstr ""
+
+#: ../../main/hubs/cityhub.rst:85 d62ca8a0a9b04ac2b274bf3a4eb3e429
+msgid "Turning the light on and off"
+msgstr ""
+
+#: ../../main/hubs/cityhub.rst:91 d1e87d02a62c47de8423bee4748d169b
+msgid "Changing brightness and using custom colors"
+msgstr ""
+
+#: ../../main/hubs/cityhub.rst:97 6307b8aab1b747aca411e68ef434f44b
+msgid "Making the light blink"
+msgstr ""
+
+#: ../../main/hubs/cityhub.rst:103 3904401bb8ec4d5d9ae81a2fc700e75b
+msgid "Creating light animations"
+msgstr ""
+
+#: ../../main/hubs/cityhub.rst:110 e389866e9a1e443e87c05a8233ca7616
+msgid "Bluetooth examples"
+msgstr ""
+
+#: ../../main/hubs/cityhub.rst:113 25caab6f3d764fd7a84060b599b675be
+msgid "Broadcasting data to other hubs"
+msgstr ""
+
+#: ../../main/hubs/cityhub.rst:119 57d87d506e9b4f70a929b1c94480c7bb
+msgid "Observing data from other hubs"
+msgstr ""
+
+#: ../../main/hubs/cityhub.rst:126 394bc35d5f43433ab07161a10e02e308
+msgid "Button and system examples"
+msgstr ""
+
+#: ../../main/hubs/cityhub.rst:129 c2c1e6790e104ec1b08c98270bf1c275
+msgid "Using the stop button during your program"
+msgstr ""
+
+#: ../../main/hubs/cityhub.rst:135 e0782ed88024498b82f9aec5e097a6bf
+msgid "Turning the hub off"
+msgstr ""
+

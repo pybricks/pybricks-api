@@ -1,0 +1,97 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-2023 The Pybricks Authors
+# This file is distributed under the same license as the pybricks package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pybricks v3.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-01-30 22:50+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: de\n"
+"Language-Team: de <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../main/parameters/color.rst:4 dc190879722b4b628b3825be65e83be9
+msgid "Color"
+msgstr ""
+
+#: 426d66d958494292bf5c3c994f217b4d of pybricks.parameters.Color:1
+msgid "Light or surface color."
+msgstr ""
+
+#: ../../main/parameters/color.rst a1c0624a42194992b4a235c2a5a78963
+msgid "Parameters"
+msgstr ""
+
+#: 7cca5187386e414fbbd4b62a3b577657 of pybricks.parameters.Color:3
+msgid "Hue."
+msgstr ""
+
+#: d02c0e7514ec4932a8325906c1bb8215 of pybricks.parameters.Color:5
+msgid "Saturation."
+msgstr ""
+
+#: 01db5613f2284e968e5736c959420cc8 of pybricks.parameters.Color:7
+msgid "Brightness value."
+msgstr ""
+
+#: ../../main/parameters/color.rst:9 5b9e7d93a3c8422b8ce01520a47b6870
+msgid "Saturated colors"
+msgstr ""
+
+#: ../../main/parameters/color.rst:10 55e9097a39404c8eb0d442edaab5e620
+msgid ""
+"These colors have maximum saturation and brightness value. They differ "
+"only in hue."
+msgstr ""
+
+#: ../../main/parameters/color.rst:46 d1921864e70947e39945b5d17f81a93a
+msgid "Unsaturated colors"
+msgstr ""
+
+#: ../../main/parameters/color.rst:47 66f008c3ceb14368a1d42494e7869a6b
+msgid ""
+"These colors have zero hue and saturation. They differ only in brightness"
+" value."
+msgstr ""
+
+#: ../../main/parameters/color.rst:50 40e4b609111e4e84a22de02382af7556
+msgid ""
+"When detecting these colors using sensors, their values depend a lot on "
+"the distance to the object. If the distance between the sensor and the "
+"object is not constant in your robot, it is better to use only one of "
+"these colors in your programs."
+msgstr ""
+
+#: ../../main/parameters/color.rst:65 b1ebdcd51fa943869826f25c021e50a2
+msgid ""
+"This represents dark objects that still reflect a very small amount of "
+"light."
+msgstr ""
+
+#: ../../main/parameters/color.rst:72 151ef2d685cb4ad8ab7cb18fdaa56752
+msgid "This is total darkness, with no reflection or light at all."
+msgstr ""
+
+#: ../../main/parameters/color.rst:77 70d6763328594c348827e243c481a28b
+msgid "Making your own colors"
+msgstr ""
+
+#: ../../main/parameters/color.rst:78 778c384775c54e05a2e5a0e3e9c3541a
+msgid ""
+"This example shows the basics of color properties, and how to define new "
+"colors."
+msgstr ""
+
+#: ../../main/parameters/color.rst:83 51e80c8da01c4691b99a4aad2afbdaa7
+msgid "This example shows more advanced use cases of the ``Color`` class."
+msgstr ""
+

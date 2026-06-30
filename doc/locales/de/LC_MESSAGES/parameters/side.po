@@ -1,0 +1,90 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-2023 The Pybricks Authors
+# This file is distributed under the same license as the pybricks package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pybricks v3.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-01-30 22:50+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: de\n"
+"Language-Team: de <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../main/parameters/side.rst:4 1a379b50bfed4857b81723a1c4e48dd9
+msgid "Side"
+msgstr ""
+
+#: ../../main/parameters/side.rst:8 5c334c0a276d43e7a7b354549938c84f
+msgid ""
+"Side of a hub or a sensor. These devices are mostly rectangular boxes "
+"with six sides:"
+msgstr ""
+
+#: ../../main/parameters/side.rst:30 749e8fc9fad1414487594acf544b3a93
+msgid ""
+"Screens or light matrices have only four sides. For those, ``TOP`` is "
+"treated the same as ``FRONT``, and ``BOTTOM`` is treated the same as "
+"``BACK``. The diagrams below define the sides for relevant devices."
+msgstr ""
+
+#: ../../main/parameters/side.rst:34 f1cf6ad0455f47d485ec121771f593a6
+msgid "**Prime Hub**"
+msgstr ""
+
+#: ../../main/parameters/side.rst:36 65c6de486168475e8d2ef1473db73282
+msgid ".. image:: ../../main/diagrams/orientation_primehub.png"
+msgstr ""
+
+#: ../../main/parameters/side.rst:39 200bc80fe9774e35ba912aad459123dc
+msgid "**Inventor Hub**"
+msgstr ""
+
+#: ../../main/parameters/side.rst:41 e92c95c408924502a453996a6d251a3a
+msgid ".. image:: ../../main/diagrams/orientation_inventorhub.png"
+msgstr ""
+
+#: ../../main/parameters/side.rst:44 33f0af1174bf4e3892bc19b08cb220d6
+msgid "**Essential Hub**"
+msgstr ""
+
+#: ../../main/parameters/side.rst:46 afec11bc44144b98ad11d504a5873204
+msgid ".. image:: ../../main/diagrams/orientation_essentialhub.png"
+msgstr ""
+
+#: ../../main/parameters/side.rst:49 5552a55a43464447888bf709b26da6ae
+msgid "**Move Hub**"
+msgstr ""
+
+#: ../../main/parameters/side.rst:51 3e62c1535dcb4fd3b2720c6a501bdb0c
+msgid ".. image:: ../../main/diagrams/orientation_movehub.png"
+msgstr ""
+
+#: ../../main/parameters/side.rst:54 11795a44a64a4bc2b3be5fe29c0b315c
+msgid "**Technic Hub**"
+msgstr ""
+
+#: ../../main/parameters/side.rst:56 13a9c6205d70494a8eb513ea34117fd9
+msgid ".. image:: ../../main/diagrams/orientation_technichub.png"
+msgstr ""
+
+#: ../../main/parameters/side.rst:61 1ecce01c069848f4adad9eb11051201c
+msgid "Changed which side is the front."
+msgstr ""
+
+#: ../../main/parameters/side.rst:63 f3a79c8f29f849e6b18a7428fdec47b5
+msgid "**Tilt Sensor**"
+msgstr ""
+
+#: ../../main/parameters/side.rst:65 4918ab11e97549ae875429b31facfefd
+msgid ".. image:: ../../main/diagrams/orientation_tiltsensor.png"
+msgstr ""
+
