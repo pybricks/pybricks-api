@@ -1,21 +1,6 @@
-# This workflow will install Python dependencies, run tests and lint with a variety of Python versions
-# For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions
-
 name: Build Python package and docs
 
-on: 
-  push:
-    tags-ignore:
-      - '**'
-  pull_request:
-    paths:
-      - doc/**
-      - src/**
-      - poetry.lock
-      - poetry.toml
-      - pyproject.toml
-      - setup.cfg
-
+on: push
 
 jobs:
   build:
