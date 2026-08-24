@@ -8,7 +8,7 @@ import sys
 
 # General information about the project.
 project = "pybricks"
-copyright = "2018-2023 The Pybricks Authors"
+copyright = "2018-2026 The Pybricks Authors"
 author = ""
 
 _DISCLAIMER = "LEGO, the LEGO logo, MINDSTORMS and the MINDSTORMS EV3 logo are\
@@ -27,7 +27,7 @@ if os.environ.get("READTHEDOCS", None) == "True":
 # HACK: this allows Number type alias to be imported by Sphinx
 os.environ["SPHINX_BUILD"] = "True"
 
-html_css_files = ["css/blocks.css"]
+html_css_files = ["css/theme_overrides.css", "css/blocks.css"]
 
 # Additional configuration of the IDE docs
 if tags.has("ide"):  # noqa F821

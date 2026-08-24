@@ -154,8 +154,18 @@ add_module_names = False  # Hide module name
 
 # -- Options for HTML output ----------------------------------------------
 
-# Bare default theme for now; a new theme will be chosen later.
-html_theme = "alabaster"
+# The theme to use for HTML and HTML Help pages.  Since sphinx-rtd-theme 1.2
+# themes are registered via entry points, so setting html_theme is all that
+# is needed (no extensions entry or html_theme_path).
+html_theme = "sphinx_rtd_theme"
+
+# Theme options are theme-specific and customize the look and feel of a theme
+# further.  For a list of options available for each theme, see the
+# documentation.
+html_theme_options = {
+    # Hide the next/previous buttons at the bottom of each page.
+    "prev_next_buttons_location": None,
+}
 
 html_show_sourcelink = False
 html_copy_source = False
@@ -164,33 +174,10 @@ html_context = {
     "disclaimer": _DISCLAIMER,
 }
 
-# The theme to use for HTML and HTML Help pages.  See the documentation for
-# a list of builtin themes.
-#
-# html_theme = 'alabaster'
-
-# Theme options are theme-specific and customize the look and feel of a theme
-# further.  For a list of options available for each theme, see the
-# documentation.
-#
-# html_theme_options = {}
-
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ["../common/_static"]
-
-# Custom sidebar templates, must be a dictionary that maps document names
-# to template names.
-#
-# This is required for the alabaster theme
-# refs: http://alabaster.readthedocs.io/en/latest/installation.html#sidebars
-html_sidebars = {
-    "**": [
-        "relations.html",  # needs 'show_related': True theme option to display
-        "searchbox.html",
-    ]
-}
 
 # Don't hyperlink to larger images for scaled images.
 html_scaled_image_link = False
