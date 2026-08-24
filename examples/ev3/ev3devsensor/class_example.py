@@ -23,7 +23,6 @@ class MySensor(Ev3devSensor):
 
         # Open the modes file.
         with open(modes_path, "r") as m:
-
             # Read the contents.
             contents = m.read()
 

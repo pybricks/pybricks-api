@@ -4,12 +4,12 @@
     * deprecated
 when building documentation with the 'ide' tag.
 """
+
 from docutils import nodes
 from docutils.parsers.rst import Directive
 
 
 class PybricksVersionDirective(Directive):
-
     has_content = True
 
     def run(self):

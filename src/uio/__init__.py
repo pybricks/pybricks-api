@@ -20,16 +20,13 @@ from typing import overload, Union
 
 class BytesIO:
     @overload
-    def __init__(self) -> None:
-        ...
+    def __init__(self) -> None: ...
 
     @overload
-    def __init__(self, data: Union[bytes, bytearray]) -> None:
-        ...
+    def __init__(self, data: Union[bytes, bytearray]) -> None: ...
 
     @overload
-    def __init__(self, alloc_size: int) -> None:
-        ...
+    def __init__(self, alloc_size: int) -> None: ...
 
     def __init__(self, *args) -> None:
         """
@@ -57,16 +54,13 @@ class BytesIO:
 
 class StringIO:
     @overload
-    def __init__(self) -> None:
-        ...
+    def __init__(self) -> None: ...
 
     @overload
-    def __init__(self, string: str) -> None:
-        ...
+    def __init__(self, string: str) -> None: ...
 
     @overload
-    def __init__(self, alloc_size: int) -> None:
-        ...
+    def __init__(self, alloc_size: int) -> None: ...
 
     def __init__(self, *args) -> None:
         """

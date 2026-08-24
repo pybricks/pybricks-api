@@ -103,7 +103,9 @@ class BLERadio:
                 ``int``, ``float``, ``str``, or ``bytes``.
         """
 
-    def observe(self, channel: int) -> Optional[
+    def observe(
+        self, channel: int
+    ) -> Optional[
         Union[
             Tuple[Union[bool, int, float, str, bytes], ...],
             Union[bool, int, float, str, bytes],

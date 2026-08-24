@@ -10,7 +10,6 @@ example_motor.run(300)
 
 # Display the angle and speed 50 times.
 for i in range(100):
-
     # Read the angle (degrees) and speed (degrees per second).
     angle = example_motor.angle()
     speed = example_motor.speed()

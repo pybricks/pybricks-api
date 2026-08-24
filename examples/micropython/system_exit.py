@@ -3,7 +3,6 @@ from pybricks.tools import wait
 print("Started!")
 
 try:
-
     # Run your script here as you normally would. In this
     # example we just wait forever and do nothing.
     while True:

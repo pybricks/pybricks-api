@@ -5,7 +5,6 @@ from colorsys import hsv_to_rgb
 
 
 class PybricksColorDirective(Directive):
-
     required_arguments = 1
 
     def run(self):

@@ -15,7 +15,6 @@ def wait_for_color(desired_color):
 
 # Now we use the function we just created above.
 while True:
-
     # Here you can make your train/vehicle go forward.
 
     print("Waiting for red ...")

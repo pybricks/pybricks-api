@@ -1032,7 +1032,6 @@ class SimpleAccelerometer:
 
 
 class IMU:
-
     def up(self, calibrated: bool = True) -> Side:
         """up(calibrated=True) -> Side
 

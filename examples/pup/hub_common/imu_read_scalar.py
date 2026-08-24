@@ -9,7 +9,6 @@ hub = ThisHub()
 # Get the acceleration or angular_velocity along a single axis.
 # If you need only one value, this is more memory efficient.
 while True:
-
     # Read the forward acceleration.
     forward_acceleration = hub.imu.acceleration(Axis.X)
 

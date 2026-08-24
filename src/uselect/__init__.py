@@ -78,12 +78,10 @@ class Poll:
         """
 
     @overload
-    def poll(self) -> List[Tuple[IO, int]]:
-        ...
+    def poll(self) -> List[Tuple[IO, int]]: ...
 
     @overload
-    def poll(self, timeout: int) -> List[Tuple[IO, int]]:
-        ...
+    def poll(self, timeout: int) -> List[Tuple[IO, int]]: ...
 
     def poll(self, timeout: int = -1, /) -> List[Tuple[IO, int]]:
         """
@@ -105,16 +103,13 @@ class Poll:
         """
 
     @overload
-    def ipoll(self) -> Iterator[Tuple[IO, int]]:
-        ...
+    def ipoll(self) -> Iterator[Tuple[IO, int]]: ...
 
     @overload
-    def ipoll(self, timeout: int) -> Iterator[Tuple[IO, int]]:
-        ...
+    def ipoll(self, timeout: int) -> Iterator[Tuple[IO, int]]: ...
 
     @overload
-    def ipoll(self, timeout: int, flags: int) -> Iterator[Tuple[IO, int]]:
-        ...
+    def ipoll(self, timeout: int, flags: int) -> Iterator[Tuple[IO, int]]: ...
 
     def ipoll(self, timeout: int = -1, flags: int = 0, /) -> Iterator[Tuple[IO, int]]:
         """

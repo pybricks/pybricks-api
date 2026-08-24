@@ -6,7 +6,6 @@ from pybricks.tools import wait
 hub = PrimeHub()
 
 while True:
-
     # Check which side of the hub is up.
     up_side = hub.imu.up()
 

@@ -10,7 +10,6 @@ hub.system.set_stop_button((Button.CENTER, Button.BLUETOOTH))
 
 # Now we can use the center button as a normal button.
 while True:
-
     # Play a sound if the center button is pressed.
     if Button.CENTER in hub.buttons.pressed():
         hub.speaker.beep()

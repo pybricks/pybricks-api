@@ -9,7 +9,6 @@ try:
     # Here you can write code that uses the remote.
 
 except OSError:
-
     print("Could not find the remote.")
 
     # Here you can make your robot do something

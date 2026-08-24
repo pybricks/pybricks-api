@@ -20,14 +20,12 @@ class Image:
     # is generated.
 
     @overload
-    def __init__(self, /, source: Union[Image, ImageFile, str]):
-        ...
+    def __init__(self, /, source: Union[Image, ImageFile, str]): ...
 
     @overload
     def __init__(
         self, /, source: Image, sub: Literal[False], x1: int, y1: int, x2: int, y2: int
-    ):
-        ...
+    ): ...
 
     def __init__(self, *args):
         """Image(source, sub=False)

@@ -7,7 +7,6 @@ sensor = ColorSensor(Port.A)
 
 # Repeat forever.
 while True:
-
     # Get the ambient color values. Instead of scanning the color of a surface,
     # this lets you scan the color of light sources like lamps or screens.
     hsv = sensor.hsv(surface=False)

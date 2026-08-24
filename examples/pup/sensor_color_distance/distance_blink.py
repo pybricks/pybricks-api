@@ -7,10 +7,8 @@ sensor = ColorDistanceSensor(Port.A)
 
 # Repeat forever.
 while True:
-
     # If the sensor sees an object nearby.
     if sensor.distance() <= 40:
-
         # Then blink the light red/blue 5 times.
         for i in range(5):
             sensor.light.on(Color.RED)

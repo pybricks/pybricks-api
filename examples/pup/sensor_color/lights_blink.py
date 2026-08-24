@@ -7,7 +7,6 @@ sensor = ColorSensor(Port.A)
 
 # Repeat forever.
 while True:
-
     # Turn on one light at a time, at half the brightness.
     # Do this for all 3 lights and repeat that 5 times.
     for i in range(5):

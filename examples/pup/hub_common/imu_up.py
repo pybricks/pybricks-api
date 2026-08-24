@@ -18,7 +18,6 @@ SIDE_COLORS = {
 
 # Keep updating the color based on detected up side.
 while True:
-
     # Check which side of the hub is up.
     up_side = hub.imu.up()
 

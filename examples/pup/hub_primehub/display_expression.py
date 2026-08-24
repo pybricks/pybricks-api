@@ -9,7 +9,6 @@ hub = PrimeHub()
 hub.display.orientation(up=Side.RIGHT)
 
 while True:
-
     # Start with random left brow: up or down.
     if randint(0, 100) < 70:
         brows = Icon.EYE_LEFT_BROW * 0.5

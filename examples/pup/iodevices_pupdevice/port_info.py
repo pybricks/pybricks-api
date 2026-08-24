@@ -53,7 +53,6 @@ except AttributeError:
 
 # Go through all available ports.
 for port in ports:
-
     # Try to get the device, if it is attached.
     try:
         device = PUPDevice(port)

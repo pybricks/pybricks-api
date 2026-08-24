@@ -6,7 +6,6 @@ from pybricks.tools import wait
 example_motor = Motor(Port.A)
 
 while True:
-
     # Get the default angle value.
     angle = example_motor.angle()
 

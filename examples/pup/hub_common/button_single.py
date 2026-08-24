@@ -12,7 +12,6 @@ hub.system.set_stop_button(None)
 # Check the button for 5 seconds.
 watch = StopWatch()
 while watch.time() < 5000:
-
     # Set light to green if pressed, else red.
     if hub.buttons.pressed():
         hub.light.on(Color.GREEN)

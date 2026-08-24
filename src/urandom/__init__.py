@@ -31,18 +31,15 @@ def seed(a: Optional[int] = None) -> None:
 
 
 @overload
-def randrange(stop: int) -> int:
-    ...
+def randrange(stop: int) -> int: ...
 
 
 @overload
-def randrange(start: int, stop: int) -> int:
-    ...
+def randrange(start: int, stop: int) -> int: ...
 
 
 @overload
-def randrange(start: int, stop: int, step: int) -> int:
-    ...
+def randrange(start: int, stop: int, step: int) -> int: ...
 
 
 def randrange(start, stop, step):

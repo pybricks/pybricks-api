@@ -13,9 +13,7 @@ file_paths = [f for f in dir_path.glob("*.py") if f.stem != "make_examples"]
 
 # Go through all template scripts
 for file_path in file_paths:
-
     with open(file_path) as template:
-
         # First line contains hub info
         hubs = template.readline().strip().split()[3:]
 
@@ -31,9 +29,7 @@ for file_path in file_paths:
 
             # Open destination script:
             with open(gen_path, "w") as dest_file:
-
                 # Read script line by line.
                 for line in template.readlines():
-
                     # Replace hub name if present.
                     dest_file.writelines(line.replace("ThisHub", hub))

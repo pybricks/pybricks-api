@@ -8,7 +8,6 @@ hub = ThisHub()
 
 # Turn the light on and off 5 times.
 for i in range(5):
-
     hub.light.on(Color.RED)
     wait(1000)
 

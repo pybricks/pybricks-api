@@ -3,7 +3,6 @@
 
 """Use LEGO® MINDSTORMS® NXT motors and sensors with the EV3 brick."""
 
-
 from .parameters import Port
 
 from ._common import ColorLight, CommonColorSensor

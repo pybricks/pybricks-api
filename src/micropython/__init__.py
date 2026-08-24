@@ -13,23 +13,19 @@ from typing import Any, overload
 
 
 @overload
-def const(value: int) -> int:
-    ...
+def const(value: int) -> int: ...
 
 
 @overload
-def const(value: str) -> str:
-    ...
+def const(value: str) -> str: ...
 
 
 @overload
-def const(value: float) -> float:
-    ...
+def const(value: float) -> float: ...
 
 
 @overload
-def const(value: tuple) -> tuple:
-    ...
+def const(value: tuple) -> tuple: ...
 
 
 def const(value):
@@ -54,13 +50,11 @@ def const(value):
 
 
 @overload
-def opt_level() -> int:
-    ...
+def opt_level() -> int: ...
 
 
 @overload
-def opt_level(level: int) -> None:
-    ...
+def opt_level(level: int) -> None: ...
 
 
 def opt_level(*args):
@@ -90,13 +84,11 @@ def opt_level(*args):
 
 
 @overload
-def mem_info() -> None:
-    ...
+def mem_info() -> None: ...
 
 
 @overload
-def mem_info(verbose: Any) -> None:
-    ...
+def mem_info(verbose: Any) -> None: ...
 
 
 def mem_info(*args):
@@ -113,13 +105,11 @@ def mem_info(*args):
 
 
 @overload
-def qstr_info() -> None:
-    ...
+def qstr_info() -> None: ...
 
 
 @overload
-def qstr_info(verbose: Any) -> None:
-    ...
+def qstr_info(verbose: Any) -> None: ...
 
 
 def qstr_info(*args):

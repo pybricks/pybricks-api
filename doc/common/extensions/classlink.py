@@ -3,7 +3,6 @@ from docutils.parsers.rst import Directive
 
 
 class PybricksClasslinkDirective(Directive):
-
     required_arguments = 1
     optional_arguments = 1
 

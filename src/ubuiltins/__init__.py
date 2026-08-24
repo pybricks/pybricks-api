@@ -139,12 +139,10 @@ def bin(x: Any) -> _str:
 
 class bool:
     @overload
-    def __init__(self) -> None:
-        ...
+    def __init__(self) -> None: ...
 
     @overload
-    def __init__(self, x: Any) -> None:
-        ...
+    def __init__(self, x: Any) -> None: ...
 
     def __init__(self, *args) -> None:
         """
@@ -166,20 +164,16 @@ class bool:
 
 class bytes:
     @overload
-    def __init__(self) -> None:
-        ...
+    def __init__(self) -> None: ...
 
     @overload
-    def __init__(self, source: _int) -> None:
-        ...
+    def __init__(self, source: _int) -> None: ...
 
     @overload
-    def __init__(self, source: Union[_bytes, _bytearray, Iterable[_int]]) -> None:
-        ...
+    def __init__(self, source: Union[_bytes, _bytearray, Iterable[_int]]) -> None: ...
 
     @overload
-    def __init__(self, source: _str, encoding: _str) -> None:
-        ...
+    def __init__(self, source: _str, encoding: _str) -> None: ...
 
     def __init__(self, *args):
         r"""
@@ -209,16 +203,15 @@ class bytes:
 
 class bytearray:
     @overload
-    def __init__(self) -> None:
-        ...
+    def __init__(self) -> None: ...
 
     @overload
-    def __init__(self, source: _int) -> None:
-        ...
+    def __init__(self, source: _int) -> None: ...
 
     @overload
-    def __init__(self, source: Union[_bytes, _bytearray, _str, Iterable[_int]]) -> None:
-        ...
+    def __init__(
+        self, source: Union[_bytes, _bytearray, _str, Iterable[_int]]
+    ) -> None: ...
 
     def __init__(self, *args):
         r"""
@@ -281,26 +274,22 @@ def classmethod(method: _callable) -> _callable:
 
 class complex:
     @overload
-    def __init__(self) -> None:
-        ...
+    def __init__(self) -> None: ...
 
     @overload
     def __init__(
         self, real: Union[_float, SupportsFloat, _complex, SupportsComplex]
-    ) -> None:
-        ...
+    ) -> None: ...
 
     @overload
     def __init__(
         self,
         real: Union[_float, SupportsFloat, _complex, SupportsComplex],
         imag: Union[_float, SupportsFloat, _complex, SupportsComplex],
-    ) -> None:
-        ...
+    ) -> None: ...
 
     @overload
-    def __init__(self, value: _str) -> None:
-        ...
+    def __init__(self, value: _str) -> None: ...
 
     def __init__(self, *args) -> None:
         """
@@ -325,12 +314,10 @@ class complex:
 
 class dict:
     @overload
-    def __init(self) -> None:
-        ...
+    def __init(self) -> None: ...
 
     @overload
-    def __init(self, **kwargs) -> None:
-        ...
+    def __init(self, **kwargs) -> None: ...
 
     def __init__(self, *args, **kwargs) -> None:
         """
@@ -348,13 +335,11 @@ class dict:
 
 
 @overload
-def dir() -> List[_str]:
-    ...
+def dir() -> List[_str]: ...
 
 
 @overload
-def dir(object: Any) -> List[_str]:
-    ...
+def dir(object: Any) -> List[_str]: ...
 
 
 def dir(*args) -> List[_str]:
@@ -376,13 +361,11 @@ def dir(*args) -> List[_str]:
 
 
 @overload
-def divmod(a: _int, b: _int) -> Tuple[_int, _int]:
-    ...
+def divmod(a: _int, b: _int) -> Tuple[_int, _int]: ...
 
 
 @overload
-def divmod(a: _float, b: _float) -> Tuple[_float, _float]:
-    ...
+def divmod(a: _float, b: _float) -> Tuple[_float, _float]: ...
 
 
 def divmod(a, b):
@@ -407,12 +390,10 @@ def divmod(a, b):
 
 class enumerate:
     @overload
-    def __init__(self, iterable: Iterable) -> None:
-        ...
+    def __init__(self, iterable: Iterable) -> None: ...
 
     @overload
-    def __init__(self, iterable: Iterable, start: _int) -> None:
-        ...
+    def __init__(self, iterable: Iterable, start: _int) -> None: ...
 
     def __init__(self, *args) -> None:
         """
@@ -431,18 +412,15 @@ class enumerate:
 
 
 @overload
-def eval(expression: _str) -> Any:
-    ...
+def eval(expression: _str) -> Any: ...
 
 
 @overload
-def eval(expression: _str, globals: _dict) -> Any:
-    ...
+def eval(expression: _str, globals: _dict) -> Any: ...
 
 
 @overload
-def eval(expression: _str, globals: _dict, locals: Mapping) -> Any:
-    ...
+def eval(expression: _str, globals: _dict, locals: Mapping) -> Any: ...
 
 
 def eval(*args):
@@ -468,18 +446,15 @@ def eval(*args):
 
 
 @overload
-def exec(object: Any) -> None:
-    ...
+def exec(object: Any) -> None: ...
 
 
 @overload
-def exec(object: Any, globals: _dict) -> None:
-    ...
+def exec(object: Any, globals: _dict) -> None: ...
 
 
 @overload
-def exec(object: Any, globals: _dict, locals: Mapping) -> None:
-    ...
+def exec(object: Any, globals: _dict, locals: Mapping) -> None: ...
 
 
 def exec(*args):
@@ -503,20 +478,16 @@ def exec(*args):
 
 class float:
     @overload
-    def __init__(self) -> None:
-        ...
+    def __init__(self) -> None: ...
 
     @overload
-    def __init__(self, x: _int) -> None:
-        ...
+    def __init__(self, x: _int) -> None: ...
 
     @overload
-    def __init__(self, x: SupportsFloat) -> None:
-        ...
+    def __init__(self, x: SupportsFloat) -> None: ...
 
     @overload
-    def __init__(self, x: _str) -> None:
-        ...
+    def __init__(self, x: _str) -> None: ...
 
     def __init__(self, *args) -> None:
         """float(x=0.0)
@@ -529,13 +500,11 @@ class float:
 
 
 @overload
-def getattr(object: Any, name: _str) -> Any:
-    ...
+def getattr(object: Any, name: _str) -> Any: ...
 
 
 @overload
-def getattr(object: Any, name: _str, default: Any) -> Any:
-    ...
+def getattr(object: Any, name: _str, default: Any) -> Any: ...
 
 
 def getattr(*args):
@@ -596,13 +565,11 @@ def hash(object: Any) -> _int:
 
 
 @overload
-def help() -> None:
-    ...
+def help() -> None: ...
 
 
 @overload
-def help(object: Any) -> None:
-    ...
+def help(object: Any) -> None: ...
 
 
 def help(*args) -> None:
@@ -651,13 +618,11 @@ def id(object: Any) -> _int:
 
 
 @overload
-def input() -> _str:
-    ...
+def input() -> _str: ...
 
 
 @overload
-def input(prompt: _str) -> _str:
-    ...
+def input(prompt: _str) -> _str: ...
 
 
 def input(*args) -> _str:
@@ -678,20 +643,16 @@ def input(*args) -> _str:
 
 class int:
     @overload
-    def __init__(self) -> None:
-        ...
+    def __init__(self) -> None: ...
 
     @overload
-    def __init__(self, x: _str) -> None:
-        ...
+    def __init__(self, x: _str) -> None: ...
 
     @overload
-    def __init__(self, x: _str, base: _int) -> None:
-        ...
+    def __init__(self, x: _str, base: _int) -> None: ...
 
     @overload
-    def __init__(self, x: Union[_int, SupportsInt]) -> None:
-        ...
+    def __init__(self, x: Union[_int, SupportsInt]) -> None: ...
 
     def __init__(self, *args) -> None:
         """int(x=0)
@@ -796,12 +757,10 @@ def len(s: Sequence) -> _int:
 
 class list:
     @overload
-    def __init__(self) -> None:
-        ...
+    def __init__(self) -> None: ...
 
     @overload
-    def __init__(self, iterable: Iterable) -> None:
-        ...
+    def __init__(self, iterable: Iterable) -> None: ...
 
     def __init__(self, *args) -> None:
         """
@@ -852,13 +811,11 @@ def map(function: Callable, iterable: Iterable, *args: Any) -> Iterator:
 
 
 @overload
-def max(iterable: Iterable) -> Any:
-    ...
+def max(iterable: Iterable) -> Any: ...
 
 
 @overload
-def max(arg1: Any, arg2: Any, *args: Any) -> Any:
-    ...
+def max(arg1: Any, arg2: Any, *args: Any) -> Any: ...
 
 
 def max(*args):
@@ -876,13 +833,11 @@ def max(*args):
 
 
 @overload
-def min(iterable: Iterable) -> Any:
-    ...
+def min(iterable: Iterable) -> Any: ...
 
 
 @overload
-def min(arg1: Any, arg2: Any, *args: Any) -> Any:
-    ...
+def min(arg1: Any, arg2: Any, *args: Any) -> Any: ...
 
 
 def min(*args):
@@ -971,13 +926,13 @@ def pow(base: Union[_int, _float], exp: Union[_int, _float]) -> Union[_int, _flo
 
 
 @overload
-def print(*objects):
-    ...
+def print(*objects): ...
 
 
 @overload
-def print(*objects, sep: _str = " ", end: _str = "\n", file: uio.FileIO = usys.stdin):
-    ...
+def print(
+    *objects, sep: _str = " ", end: _str = "\n", file: uio.FileIO = usys.stdin
+): ...
 
 
 def print(*args):
@@ -999,16 +954,13 @@ def print(*args):
 
 class range:
     @overload
-    def __init__(self, stop: _int) -> None:
-        ...
+    def __init__(self, stop: _int) -> None: ...
 
     @overload
-    def __init__(self, start: _int, stop: _int) -> None:
-        ...
+    def __init__(self, start: _int, stop: _int) -> None: ...
 
     @overload
-    def __init__(self, start: _int, stop: _int, step: _int) -> None:
-        ...
+    def __init__(self, start: _int, stop: _int, step: _int) -> None: ...
 
     def __init__(self, *args) -> None:
         """
@@ -1056,13 +1008,11 @@ def reversed(seq: Sequence) -> Iterator:
 
 
 @overload
-def round(number: _float) -> _int:
-    ...
+def round(number: _float) -> _int: ...
 
 
 @overload
-def round(number: _float, ndigits: _int) -> _float:
-    ...
+def round(number: _float, ndigits: _int) -> _float: ...
 
 
 def round(*args):
@@ -1090,12 +1040,10 @@ def round(*args):
 
 class set:
     @overload
-    def __init__(self) -> None:
-        ...
+    def __init__(self) -> None: ...
 
     @overload
-    def __init__(self, iterable: Iterable[Hashable]) -> None:
-        ...
+    def __init__(self, iterable: Iterable[Hashable]) -> None: ...
 
     def __init__(self, *args) -> None:
         """
@@ -1249,44 +1197,31 @@ class set:
             A new set.
         """
 
-    def __contains__(self, item: Hashable) -> bool:
-        ...
+    def __contains__(self, item: Hashable) -> bool: ...
 
-    def __len__(self) -> int:
-        ...
+    def __len__(self) -> int: ...
 
-    def __bool__(self) -> bool:
-        ...
+    def __bool__(self) -> bool: ...
 
-    def __gt__(self, other: set) -> bool:
-        ...
+    def __gt__(self, other: set) -> bool: ...
 
-    def __lt__(self, other: set) -> bool:
-        ...
+    def __lt__(self, other: set) -> bool: ...
 
-    def __ge__(self, other: set) -> bool:
-        ...
+    def __ge__(self, other: set) -> bool: ...
 
-    def __le__(self, other: set) -> bool:
-        ...
+    def __le__(self, other: set) -> bool: ...
 
-    def __eq__(self, other: set) -> bool:
-        ...
+    def __eq__(self, other: set) -> bool: ...
 
-    def __ne__(self, other: set) -> bool:
-        ...
+    def __ne__(self, other: set) -> bool: ...
 
-    def __sub__(self: _Self, other: set) -> _Self:
-        ...
+    def __sub__(self: _Self, other: set) -> _Self: ...
 
-    def __and__(self: _Self, other: set) -> _Self:
-        ...
+    def __and__(self: _Self, other: set) -> _Self: ...
 
-    def __or__(self: _Self, other: set) -> _Self:
-        ...
+    def __or__(self: _Self, other: set) -> _Self: ...
 
-    def __xor__(self: _Self, other: set) -> _Self:
-        ...
+    def __xor__(self: _Self, other: set) -> _Self: ...
 
 
 def setattr(object: Any, name: _str, value: Any) -> None:
@@ -1306,16 +1241,13 @@ def setattr(object: Any, name: _str, value: Any) -> None:
 
 class slice:
     @overload
-    def __init__(self, stop: _int) -> None:
-        ...
+    def __init__(self, stop: _int) -> None: ...
 
     @overload
-    def __init__(self, start: _int, stop: _int) -> None:
-        ...
+    def __init__(self, start: _int, stop: _int) -> None: ...
 
     @overload
-    def __init__(self, start: _int, stop: _int, step: _int) -> None:
-        ...
+    def __init__(self, start: _int, stop: _int, step: _int) -> None: ...
 
     def __init__(self, *args) -> None:
         """
@@ -1355,14 +1287,12 @@ def staticmethod(method: _callable) -> _callable:
 
 class str:
     @overload
-    def __init__(self, object: Any = "") -> None:
-        ...
+    def __init__(self, object: Any = "") -> None: ...
 
     @overload
     def __init__(
         self, object: _bytes = b"", encoding: _str = "utf-8", errors: _str = "strict"
-    ) -> None:
-        ...
+    ) -> None: ...
 
     def __init__(self) -> None:
         """
@@ -1384,13 +1314,11 @@ class str:
 
 
 @overload
-def sum(iterable: Iterable) -> _int:
-    ...
+def sum(iterable: Iterable) -> _int: ...
 
 
 @overload
-def sum(iterable: Iterable, start: _int) -> _int:
-    ...
+def sum(iterable: Iterable, start: _int) -> _int: ...
 
 
 def sum(*args):
@@ -1410,18 +1338,15 @@ def sum(*args):
 
 
 @overload
-def super() -> _type:
-    ...
+def super() -> _type: ...
 
 
 @overload
-def super(type: _type) -> _type:
-    ...
+def super(type: _type) -> _type: ...
 
 
 @overload
-def super(type: _type, object_or_type: Any) -> _type:
-    ...
+def super(type: _type, object_or_type: Any) -> _type: ...
 
 
 def super(*args):
@@ -1440,12 +1365,10 @@ def super(*args):
 
 class tuple:
     @overload
-    def __init__(self):
-        ...
+    def __init__(self): ...
 
     @overload
-    def __init__(self, iterable: Iterable):
-        ...
+    def __init__(self, iterable: Iterable): ...
 
     def __init__(self, *args) -> None:
         """

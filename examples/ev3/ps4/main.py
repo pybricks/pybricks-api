@@ -42,13 +42,11 @@ def scale(val, src, dst):
 
 
 while event:
-
     # Place event data into variables
     (tv_sec, tv_usec, ev_type, code, value) = struct.unpack(FORMAT, event)
 
     # If a button was pressed or released
     if ev_type == 1:
-
         # React to the X button
         if code == 304 and value == 0:
             print("The X button was released")
@@ -98,7 +96,6 @@ while event:
             print("The R2 button was pressed")
 
     elif ev_type == 3:
-
         # The sticks often trigger non-stop events, comment this out if you are
         # not using the sticks as part of your project, or it becomes hard to
         # read other data
