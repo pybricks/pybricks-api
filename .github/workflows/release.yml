@@ -11,7 +11,7 @@ permissions:
 jobs:
   create_release:
     name: Create release on GitHub
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     steps:
       - name: Checkout code
         uses: actions/checkout@v6
@@ -36,7 +36,7 @@ jobs:
               -F CHANGELOG.md \
               $PRERELEASE_FLAG
   build_and_publish:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     steps:
     - uses: actions/checkout@v6
     - run: pipx run poetry build

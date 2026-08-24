@@ -11,7 +11,7 @@ permissions:
 
 jobs:
   publish_jedi:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     steps:
     - uses: actions/checkout@v6
     - name: Get version from tag
@@ -21,10 +21,6 @@ jobs:
         echo "VERSION=$VERSION" >> $GITHUB_ENV
         echo "NPM_VERSION=$NPM_VERSION" >> $GITHUB_ENV
         echo "NPM_TAG=$(echo "$NPM_VERSION" | grep -q '-' && echo 'next' || echo 'latest')" >> $GITHUB_ENV
-    - name: Set up Python
-      uses: actions/setup-python@v5
-      with:
-        python-version: '3.11'
     - name: Install poetry
       run: pipx install poetry
     - name: Set pybricks-jedi version
@@ -34,7 +30,7 @@ jobs:
       run: |
         poetry version "$VERSION"
         sed -i "s/^pybricks = \".*\"/pybricks = \"$VERSION\"/" jedi/pyproject.toml
-    - uses: actions/setup-node@v4
+    - uses: actions/setup-node@v6
       with:
         node-version: '24'
         registry-url: 'https://registry.npmjs.org'
