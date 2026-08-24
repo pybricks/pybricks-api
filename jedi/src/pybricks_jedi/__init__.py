@@ -170,8 +170,14 @@ PYBRICKS_BUILTINS_NO_FULLNAME = {"items", "values"}
 
 PYBRICKS_TYPING = {
     "typing.MutableSequence.append",
+    "typing.MutableSequence.clear",
     "typing.MutableSequence.extend",
+    "typing.MutableSequence.reverse",
+    "typing.MutableMapping.clear",
     "typing.MutableMapping.pop",
+    "typing.MutableMapping.popitem",
+    "typing.MutableMapping.setdefault",
+    "typing.MutableMapping.update",
     "typing.Mapping.get",
 }
 

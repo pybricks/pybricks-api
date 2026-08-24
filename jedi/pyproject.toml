@@ -7,17 +7,15 @@ authors = ["The Pybricks Authors <team@pybricks.com>"]
 license = "MIT"
 
 [tool.poetry.dependencies]
-python = ">= 3.10, < 3.12"
+python = "^3.12"
 # Version is set automatically at build time from the root pyproject.toml. Do not edit.
 pybricks = "*"
-jedi = "0.18.1"
-typing-extensions = "4.2.0"
-docstring-parser = "0.14.1"
+jedi = "^0.20.0"
+typing-extensions = "^4.16.0"
+docstring-parser = "^0.18.0"
 
 [tool.poetry.group.dev.dependencies]
-pytest = "^7.1.2"
-black = "^22.3.0"
-flake8 = "^4.0.1"
+pytest = "^9.1.1"
 pybricks = { path = "../", develop = true }
 
 [build-system]

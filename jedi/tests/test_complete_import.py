@@ -219,10 +219,8 @@ def test_from_ujson_import():
     code = "from ujson import "
     completions: list[CompletionItem] = json.loads(complete(code, 1, len(code) + 1))
     assert [c["insertText"] for c in completions] == [
-        "decode",  # FIXME: Shouldn't be here
         "dump",
         "dumps",
-        "encode",  # FIXME: Shouldn't be here
         "load",
         "loads",
     ]

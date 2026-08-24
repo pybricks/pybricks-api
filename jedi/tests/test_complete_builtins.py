@@ -253,7 +253,12 @@ FUNCTION_PARAMS = [
     ),
     pytest.param("().", ["count", "index"]),
     pytest.param("tuple().", ["count", "index"]),
-    pytest.param("bytearray().", ["append", "extend"]),
+    pytest.param(
+        "bytearray().",
+        # FIXME: clear/reverse shouldn't be here; typeshed defines them on
+        # MutableSequence, shared with list where they are supported
+        ["append", "clear", "extend", "reverse"],
+    ),
     pytest.param("bytes().", []),
     pytest.param("b''.", []),
     pytest.param("float().", []),
