@@ -57,9 +57,11 @@ extensions = [
     "sphinx.ext.napoleon",
     "sphinx.ext.todo",
     # Custom Pybricks extensions
+    "awaitable",
     "blockimg",
     "color",
     "classlink",
+    "docstring_signature",
     "requirements",
     "requirements-static",
     "versionchanged",
@@ -133,8 +135,9 @@ nitpick_ignore = [
 # not sure why, but this is needed for typing.IO in uselect
 nitpick_ignore.append(("py:obj", "typing.IO"))
 
-# MaybeAwaitable* stub types have no documented target; rendering hacks were
-# dropped with the Sphinx upgrade (may be revisited later).
+# MaybeAwaitable* stub types have no documented target; the awaitable
+# extension renders them as an "await" prefix instead, but the raw names can
+# still leak into signatures (e.g. overloads), so suppress those warnings.
 nitpick_ignore_regex = [
     ("py:class", r"MaybeAwaitable\w*"),
 ]
