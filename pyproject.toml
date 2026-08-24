@@ -26,18 +26,28 @@ packages = [
 ]
 
 [tool.poetry.dependencies]
-python = "^3.8"
-
-[tool.poetry.group.lint.dependencies]
-black = "^22.3.0"
-doc8 = "^0.8.1"
-flake8 = "^4.0"
+python = "^3.12"
 
 [tool.poetry.group.doc.dependencies]
-Sphinx = { git = "https://github.com/pybricks/sphinx.git", rev = "cd277d09" }
-sphinx-rtd-theme = "^1.0.0"
-toml = "^0.10.0"
+sphinx = "^9.1.0"
+
+
+[tool.poetry.group.lint.dependencies]
+ruff = "^0.16.4"
+doc8 = "^2.0.0"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+line-length = 88
+extend-exclude = ["jedi", "examples/pup/tools/hub_menu.py"]
+
+[tool.ruff.lint]
+# E501: formatter handles line length; E701: stubs use one-line defs
+ignore = ["E501", "E701"]
+
+[tool.doc8]
+ignore-path = "jedi/,.venv/,doc/main/build/,doc/api/build/,pybricks.egg-info/,npm/"
+max-line-length = 88

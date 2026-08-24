@@ -22,6 +22,7 @@
 import os
 import re
 import sys
+import tomllib
 
 from docutils import nodes
 from docutils.parsers.rst.directives import flag
@@ -30,7 +31,6 @@ from sphinx.application import Sphinx
 from sphinx.addnodes import pending_xref
 from sphinx.environment import BuildEnvironment
 from sphinx.util.nodes import make_refnode
-import toml
 
 TOP_DIR = os.path.abspath(os.path.join("..", ".."))
 sys.path.insert(0, os.path.join(TOP_DIR, "src"))
@@ -40,7 +40,8 @@ sys.path.append(os.path.abspath("../common/extensions"))
 # this line of code grabbed from docs.readthedocs.org
 ON_RTD = os.environ.get("READTHEDOCS", None) == "True"
 
-_pyproject = toml.load(os.path.join(TOP_DIR, "pyproject.toml"))
+with open(os.path.join(TOP_DIR, "pyproject.toml"), "rb") as _f:
+    _pyproject = tomllib.load(_f)
 
 # -- General configuration ------------------------------------------------
 
@@ -146,10 +147,8 @@ add_module_names = False  # Hide module name
 
 # -- Options for HTML output ----------------------------------------------
 
-import sphinx_rtd_theme
-
-html_theme = "sphinx_rtd_theme"
-html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
+# Bare default theme for now; a new theme will be chosen later.
+html_theme = "alabaster"
 
 html_show_sourcelink = False
 html_copy_source = False
@@ -167,11 +166,7 @@ html_context = {
 # further.  For a list of options available for each theme, see the
 # documentation.
 #
-html_theme_options = {
-    "style_external_links": True,
-    "logo_only": True,
-    "style_nav_header_background": "#0088ce",  # Pybricks blue
-}
+# html_theme_options = {}
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
