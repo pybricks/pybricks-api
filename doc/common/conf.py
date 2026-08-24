@@ -56,7 +56,6 @@ extensions = [
     "sphinx.ext.autodoc",
     "sphinx.ext.napoleon",
     "sphinx.ext.todo",
-    "sphinx.ext.mathjax",
     # Custom Pybricks extensions
     "blockimg",
     "color",
@@ -72,8 +71,7 @@ templates_path = ["../common/_templates"]
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
 #
-# source_suffix = ['.rst', '.md']
-source_suffix = ".rst"
+source_suffix = {".rst": "restructuredtext"}
 
 # The master toctree document.
 master_doc = "index"
@@ -135,6 +133,12 @@ nitpick_ignore = [
 # not sure why, but this is needed for typing.IO in uselect
 nitpick_ignore.append(("py:obj", "typing.IO"))
 
+# MaybeAwaitable* stub types have no documented target; rendering hacks were
+# dropped with the Sphinx upgrade (may be revisited later).
+nitpick_ignore_regex = [
+    ("py:class", r"MaybeAwaitable\w*"),
+]
+
 # -- Autodoc options ------------------------------------------------------
 
 autodoc_member_order = "bysource"
@@ -193,55 +197,6 @@ html_scaled_image_link = False
 # Output file base name for HTML help builder.
 htmlhelp_basename = "Pybricksdoc"
 
-
-# -- Options for LaTeX output ---------------------------------------------
-
-latex_elements = {
-    # The paper size ('letterpaper' or 'a4paper').
-    #
-    # 'papersize': 'letterpaper',
-    # The font size ('10pt', '11pt' or '12pt').
-    #
-    # 'pointsize': '10pt',
-    # Additional stuff for the LaTeX preamble.
-    #
-    "preamble": r"""
-    \usepackage{CJKutf8}
-    \makeatletter
-    \fancypagestyle{normal}{
-        \fancyhf{}
-        \fancyfoot[R]{{\py@HeaderFamily\thepage}}
-        \fancyfoot[C]{\raisebox{-7mm}{\tiny %(disclaimer)s}}
-        \fancyhead[L]{{\py@HeaderFamily \@title}}
-        \fancyhead[R]{{\py@HeaderFamily \py@release}}
-        \renewcommand{\headrulewidth}{0.4pt}
-        \renewcommand{\footrulewidth}{0.4pt}
-    }
-    \fancypagestyle{plain}{
-        \fancyhf{}
-        \fancyfoot[R]{{\py@HeaderFamily\thepage}}
-        \fancyfoot[C]{\raisebox{-7mm}{\tiny %(disclaimer)s}}
-        \renewcommand{\headrulewidth}{0.4pt}
-        \renewcommand{\footrulewidth}{0.4pt}
-    }
-    \makeatother
-    """
-    % {
-        "disclaimer": " ".join((_DISCLAIMER, "©", copyright)),
-    },
-    # Latex figure (float) alignment
-    #
-    # 'figure_align': 'htbp',
-    "extraclassoptions": "openany,oneside",
-    "releasename": "Version",
-}
-
-# Grouping the document tree into LaTeX files. List of tuples
-# (source start file, target name, title,
-#  author, documentclass [howto, manual, or own class]).
-latex_documents = [
-    (master_doc, "".join([project, "-v", version, ".tex"]), _TITLE, author, "manual"),
-]
 
 # -- Content control -----------------------------------------------------
 
@@ -363,7 +318,7 @@ def on_build_finished(app: Sphinx, exception):
     if exception or app.builder.name != "html":
         return
     import json
-    from sphinx.ext.intersphinx import InventoryFile
+    from sphinx.util.inventory import InventoryFile
 
     inv_path = os.path.join(app.outdir, "objects.inv")
     if not os.path.exists(inv_path):
@@ -376,8 +331,8 @@ def on_build_finished(app: Sphinx, exception):
     for type_key, entries in inv.items():
         if not type_key.startswith("py:"):
             continue
-        for name, (project, version, url, display) in entries.items():
-            index[name] = url
+        for name, item in entries.items():
+            index[name] = item.uri
 
     out_path = os.path.join(app.outdir, "namespace_index.json")
     with open(out_path, "w") as f:

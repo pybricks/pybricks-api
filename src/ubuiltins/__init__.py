@@ -183,7 +183,7 @@ class bytes:
         bytes(string, encoding)
 
         Creates a new ``bytes`` object, which is a sequence of integers
-        in the range :math:`0 \leq x \leq 255`. This object is *immutable*,
+        in the range 0 ≤ x ≤ 255. This object is *immutable*,
         which means that you *cannot* change its contents after you create it.
 
         If no argument is given, this creates an empty ``bytes`` object.
@@ -221,7 +221,7 @@ class bytearray:
         bytearray(string)
 
         Creates a new ``bytearray`` object, which is a sequence of integers
-        in the range :math:`0 \leq x \leq 255`. This object is *mutable*, which
+        in the range 0 ≤ x ≤ 255. This object is *mutable*, which
         means that you *can* change its contents after you create it.
 
         If no argument is given, this creates an empty ``bytearray`` object.
@@ -912,7 +912,7 @@ def pow(base: Union[_int, _float], exp: Union[_int, _float]) -> Union[_int, _flo
     """
     pow(base, exp) -> Number
 
-    Raises the base to the given exponent: :math:`\\text{base}^{\\mathrm{exp}}`.
+    Raises the base to the given exponent.
 
     This is the same as doing ``base ** exp``.
 

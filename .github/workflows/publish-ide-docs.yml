@@ -20,10 +20,6 @@ jobs:
         echo "VERSION=$VERSION" >> $GITHUB_ENV
         echo "NPM_VERSION=$NPM_VERSION" >> $GITHUB_ENV
         echo "NPM_TAG=$(echo "$NPM_VERSION" | grep -q '-' && echo 'next' || echo 'latest')" >> $GITHUB_ENV
-    - name: Ubuntu packages
-      run: |
-        sudo apt-get update
-        sudo apt-get install -y dvisvgm preview-latex-style texlive texlive-fonts-extra texlive-latex-extra
     - uses: actions/checkout@v6
       with:
         submodules: recursive

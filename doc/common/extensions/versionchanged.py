@@ -19,7 +19,7 @@ class PybricksVersionDirective(Directive):
 
 
 def setup(app):
-    if "ide" in app.tags.tags:
+    if app.tags.has("ide"):
         app.add_directive_to_domain(
             "py", "deprecated", PybricksVersionDirective, override=True
         )

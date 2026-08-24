@@ -70,7 +70,7 @@ def randint(a: int, b: int) -> int:
     """
     randint(a, b) -> int
 
-    Gets a random integer :math:`N` satisfying :math:`a \\leq N \\leq b`.
+    Gets a random integer N satisfying a ≤ N ≤ b.
 
     Arguments:
         a (int): Lowest value. This value *is* included in the range.
@@ -85,7 +85,7 @@ def getrandbits(k: int) -> int:
     """
     getrandbits(k) -> int
 
-    Gets a random integer :math:`N` satisfying :math:`0 \\leq N < 2^{\\text{k}}`.
+    Gets a random integer N satisfying 0 ≤ N < ``2**k``.
 
     Arguments:
         k (int): How many bits to use for the result.
@@ -113,7 +113,7 @@ def random() -> float:
     """
     random() -> float
 
-    Gets a random value :math:`x` satisfying :math:`0 \\leq x < 1`.
+    Gets a random value x satisfying 0 ≤ x < 1.
 
     Returns:
         The random value.
@@ -124,7 +124,7 @@ def uniform(a: float, b: float) -> float:
     """
     uniform(a, b) -> float
 
-    Gets a random floating point value :math:`x` satisfying :math:`a \\leq x \\leq b`.
+    Gets a random floating point value x satisfying a ≤ x ≤ b.
 
     Arguments:
         a (float): Lowest value.

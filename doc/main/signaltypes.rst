@@ -67,8 +67,7 @@ rotational acceleration: deg/s²
 
 Rotational acceleration, or *angular acceleration* describes how fast the
 rotational speed changes. This is expressed as the change of the number of
-degrees per second, during one second (deg/s²). This is also commonly written
-as  :math:`deg/s^2`.
+degrees per second, during one second (deg/s²).
 
 For example, you can adjust the rotational acceleration setting of a ``Motor``
 to change how smoothly or
@@ -125,7 +124,6 @@ linear acceleration: mm/s²
 
 Linear acceleration describes how fast the speed changes. This is expressed as
 the change of the millimeters per second, during one second (mm/s²).
-This is also commonly written as  :math:`mm/s^2`.
 
 For example, you can adjust the acceleration setting of a
 :class:`DriveBase <.robotics.DriveBase>` to change how
@@ -181,15 +179,15 @@ Force values are expressed in newtons (N).
 While we recommend working with newtons in your programs, you can use the
 following table to convert to and from other units.
 
-+---------+------+-------+-----------------------------+
-|         | mN   | N     | lbf                         |
-+---------+------+-------+-----------------------------+
-| 1 mN =  | 1    | 0.001 | :math:`2.248 \cdot 10^{-4}` |
-+---------+------+-------+-----------------------------+
-| 1 N =   | 1000 | 1     | 0.2248                      |
-+---------+------+-------+-----------------------------+
-| 1 lbf = | 4448 | 4.448 | 1                           |
-+---------+------+-------+-----------------------------+
++---------+------+-------+------------+
+|         | mN   | N     | lbf        |
++---------+------+-------+------------+
+| 1 mN =  | 1    | 0.001 | 2.248·10⁻⁴ |
++---------+------+-------+------------+
+| 1 N =   | 1000 | 1     | 0.2248     |
++---------+------+-------+------------+
+| 1 lbf = | 4448 | 4.448 | 1          |
++---------+------+-------+------------+
 
 .. _torque:
 
@@ -251,9 +249,9 @@ temperature: °C
 Temperature is measured in degrees Celsius (°C). To convert to degrees
 Fahrenheit (°F) or Kelvin (K), you can use the following conversion formulas:
 
-    :math:`^{\circ}\kern1pt\!F =\kern1pt^{\circ}\kern1pt\!C \cdot \frac{9}{5} + 32`.
+    °F = °C · 9/5 + 32.
 
-    :math:`K =\kern1pt^{\circ}\kern1pt\!C + 273.15`.
+    K = °C + 273.15.
 
 .. _hue:
 
