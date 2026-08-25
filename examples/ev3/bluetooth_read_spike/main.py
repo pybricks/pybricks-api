@@ -1,7 +1,7 @@
+from connection import SpikePrimeStreamReader
+
 from pybricks.hubs import EV3Brick
 from pybricks.tools import wait
-
-from connection import SpikePrimeStreamReader
 
 # Beep!
 ev3 = EV3Brick()

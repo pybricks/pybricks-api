@@ -566,7 +566,6 @@ class ColorLightMatrix:
             port (Port): Port to which the device is connected.
 
         """
-        ...
 
     def on(self, color: Color | Collection[Color]) -> MaybeAwaitable:
         """on(colors)
@@ -579,14 +578,12 @@ class ColorLightMatrix:
                 to that color. If a list of colors is given, then each light is
                 set to that color.
         """
-        ...
 
     def off(self) -> MaybeAwaitable:
         """off()
 
         Turns all lights off.
         """
-        ...
 
 
 class InfraredSensor:

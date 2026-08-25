@@ -1,5 +1,5 @@
+from pybricks.parameters import Direction, Port
 from pybricks.pupdevices import Motor
-from pybricks.parameters import Port, Direction
 from pybricks.robotics import DriveBase
 
 # Initialize both motors. In this example, the motor on the

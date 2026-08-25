@@ -1,7 +1,7 @@
 # ThisHub = TechnicHub PrimeHub EssentialHub
 from pybricks.hubs import ThisHub
-from pybricks.tools import wait
 from pybricks.parameters import Axis
+from pybricks.tools import wait
 
 # Initialize the hub.
 hub = ThisHub()

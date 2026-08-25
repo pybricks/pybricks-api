@@ -1,7 +1,6 @@
-from pybricks.pupdevices import UltrasonicSensor
 from pybricks.parameters import Port
-from pybricks.tools import wait, StopWatch
-
+from pybricks.pupdevices import UltrasonicSensor
+from pybricks.tools import StopWatch, wait
 from umath import pi, sin
 
 # Initialize the sensor.

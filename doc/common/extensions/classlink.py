@@ -12,7 +12,7 @@ class PybricksClasslinkDirective(Directive):
         link = name if len(self.arguments) == 1 else self.arguments[1]
 
         html = (
-            '<a href="{0}.html">'.format(link.lower())
+            f'<a href="{link.lower()}.html">'
             + '<dl class="py class">'
             + "<dt>"
             + '<em class="property">class </em>'

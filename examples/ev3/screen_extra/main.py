@@ -1,10 +1,10 @@
 import math
 
+from pybricks.media.ev3dev import Font, Image
+
 from pybricks.hubs import EV3Brick
 from pybricks.parameters import Color
 from pybricks.tools import wait
-from pybricks.media.ev3dev import Font, Image
-
 
 # Initialize the EV3
 ev3 = EV3Brick()
@@ -63,7 +63,7 @@ for t in range(200):
 
     # Print every 10th value on right side
     if t % 10 == 0:
-        right.print("{:10.2f}{:10.2f}".format(x1, y1))
+        right.print(f"{x1:10.2f}{y1:10.2f}")
 
     wait(100)
 

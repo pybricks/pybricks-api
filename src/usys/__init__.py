@@ -33,7 +33,7 @@ stderr: _FileIO = _FileIO()
 Alias for :data:`stdout`.
 """
 
-implementation: Tuple[str, Tuple[int, int, int], str, int] = (
+implementation: tuple[str, tuple[int, int, int], str, int] = (
     "micropython",
     (1, 19, 1),
     "NAME Hub with PROCESSOR",
@@ -49,5 +49,5 @@ Python compatibility version, Pybricks version, and build date.
 See format and example below.
 """
 
-version_info: Tuple[int, int, int] = (3, 4, 0)
+version_info: tuple[int, int, int] = (3, 4, 0)
 """Python compatibility version. See format and example below."""

@@ -1,5 +1,5 @@
-from pybricks.pupdevices import Light
 from pybricks.parameters import Port
+from pybricks.pupdevices import Light
 from pybricks.tools import wait
 
 # Initialize the light.

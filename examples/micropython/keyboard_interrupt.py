@@ -1,5 +1,5 @@
-from pybricks.pupdevices import Motor
 from pybricks.parameters import Port
+from pybricks.pupdevices import Motor
 from pybricks.tools import wait
 
 # Initialize the motor.

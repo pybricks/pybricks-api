@@ -1,8 +1,7 @@
-from os import path, makedirs
+from os import makedirs, path
 
 from docutils import nodes
 from docutils.parsers.rst import Directive
-
 from sphinx.util.osutil import copyfile
 
 # Base feature set.
@@ -72,7 +71,7 @@ class PybricksRequirementsStaticDirective(Directive):
             makedirs(destdir)
 
         for hub in HUB_FEATURES:
-            uri = "compat_{0}.png".format(hub)
+            uri = f"compat_{hub}.png"
             src_uri = path.join(env.app.builder.srcdir, "diagrams", uri)
             build_uri = path.join(env.app.builder.outdir, "_images", uri)
             copyfile(src_uri, build_uri)
@@ -103,17 +102,17 @@ class PybricksRequirementsStaticDirective(Directive):
         )
 
         # Generate full table.
-        html = """
+        html = f"""
         <div class="wy-table-responsive">
             <table class="docutils align-default requirements-table">
                 <tbody>
                     <tr>
-                        {0}
+                        {compat_row}
                     </tr>
                 </tbody>
             </table>
         </div>
-        """.format(compat_row)
+        """
 
         # Return the node.
         node = nodes.raw("", html, format="html")

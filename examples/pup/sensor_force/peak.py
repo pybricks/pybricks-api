@@ -1,5 +1,5 @@
-from pybricks.pupdevices import ForceSensor
 from pybricks.parameters import Port
+from pybricks.pupdevices import ForceSensor
 from pybricks.tools import wait
 
 # Initialize the sensor.
@@ -28,8 +28,7 @@ def wait_for_force():
         force = button.force()
 
         # Update the maximum if the measured force is larger.
-        if force > maximum:
-            maximum = force
+        maximum = max(maximum, force)
 
         # Wait and then measure again.
         wait(10)
@@ -42,4 +41,4 @@ def wait_for_force():
 # the peak force and repeat.
 while True:
     peak = wait_for_force()
-    print("Released. Peak force: {0} N\n".format(peak))
+    print(f"Released. Peak force: {peak} N\n")

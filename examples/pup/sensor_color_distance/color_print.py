@@ -1,5 +1,5 @@
-from pybricks.pupdevices import ColorDistanceSensor
 from pybricks.parameters import Port
+from pybricks.pupdevices import ColorDistanceSensor
 from pybricks.tools import wait
 
 # Initialize the sensor.

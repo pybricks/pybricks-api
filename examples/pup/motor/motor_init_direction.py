@@ -1,5 +1,5 @@
+from pybricks.parameters import Direction, Port
 from pybricks.pupdevices import Motor
-from pybricks.parameters import Port, Direction
 from pybricks.tools import wait
 
 # Initialize a motor on port A with the positive direction as counterclockwise.

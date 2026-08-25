@@ -1,6 +1,7 @@
+from pybricks.media.ev3dev import Image, ImageFile
+
 from pybricks.hubs import EV3Brick
 from pybricks.tools import wait
-from pybricks.media.ev3dev import Image, ImageFile
 
 # It takes some time to load images from the SD card, so it is best to load
 # them once at the beginning of a program like this:

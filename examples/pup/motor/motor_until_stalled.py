@@ -1,5 +1,5 @@
-from pybricks.pupdevices import Motor
 from pybricks.parameters import Port
+from pybricks.pupdevices import Motor
 
 # Initialize a motor on port A.
 example_motor = Motor(Port.A)

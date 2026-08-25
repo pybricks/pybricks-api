@@ -1,5 +1,5 @@
-from pybricks.pupdevices import Remote
 from pybricks.parameters import Button
+from pybricks.pupdevices import Remote
 from pybricks.tools import wait
 
 # Connect to the remote.

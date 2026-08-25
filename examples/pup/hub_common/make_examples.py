@@ -30,6 +30,6 @@ for file_path in file_paths:
             # Open destination script:
             with open(gen_path, "w") as dest_file:
                 # Read script line by line.
-                for line in template.readlines():
+                for line in template:
                     # Replace hub name if present.
                     dest_file.writelines(line.replace("ThisHub", hub))

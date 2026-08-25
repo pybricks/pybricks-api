@@ -1,5 +1,5 @@
+from pybricks.parameters import Color, Port
 from pybricks.pupdevices import ColorSensor
-from pybricks.parameters import Port, Color
 from pybricks.tools import wait
 
 # Initialize the sensor.

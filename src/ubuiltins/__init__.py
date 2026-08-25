@@ -19,17 +19,13 @@ The following functions and exceptions can be used without importing anything.
 Most functions and classes in this module do not accept keyword arguments.
 """
 
+import builtins
+from collections.abc import Callable, Hashable, Iterable, Iterator, Mapping, Sequence
 from typing import (
     Any,
-    Callable,
     Dict,
-    Hashable,
-    Iterable,
-    Iterator,
     List,
     Literal,
-    Mapping,
-    Sequence,
     SupportsComplex,
     SupportsFloat,
     SupportsInt,
@@ -39,9 +35,10 @@ from typing import (
     overload,
 )
 
+from typing_extensions import Self
+
 import uio
 import usys
-
 
 # These get overridden later on, but we still want to use the originals
 # for the purpose of typing the doc strings.
@@ -146,7 +143,7 @@ class bool:
 
     def __init__(self, *args) -> None:
         """
-        bool(​)
+        bool(\u200b)
         bool(x)
 
         Creates a boolean value, which is either ``True`` or ``False``.
@@ -170,7 +167,7 @@ class bytes:
     def __init__(self, source: _int) -> None: ...
 
     @overload
-    def __init__(self, source: Union[_bytes, _bytearray, Iterable[_int]]) -> None: ...
+    def __init__(self, source: _bytes | _bytearray | Iterable[_int]) -> None: ...
 
     @overload
     def __init__(self, source: _str, encoding: _str) -> None: ...
@@ -210,7 +207,7 @@ class bytearray:
 
     @overload
     def __init__(
-        self, source: Union[_bytes, _bytearray, _str, Iterable[_int]]
+        self, source: _bytes | _bytearray | _str | Iterable[_int]
     ) -> None: ...
 
     def __init__(self, *args):
@@ -278,14 +275,14 @@ class complex:
 
     @overload
     def __init__(
-        self, real: Union[_float, SupportsFloat, _complex, SupportsComplex]
+        self, real: _float | SupportsFloat | _complex | SupportsComplex
     ) -> None: ...
 
     @overload
     def __init__(
         self,
-        real: Union[_float, SupportsFloat, _complex, SupportsComplex],
-        imag: Union[_float, SupportsFloat, _complex, SupportsComplex],
+        real: _float | SupportsFloat | _complex | SupportsComplex,
+        imag: _float | SupportsFloat | _complex | SupportsComplex,
     ) -> None: ...
 
     @overload
@@ -335,14 +332,14 @@ class dict:
 
 
 @overload
-def dir() -> List[_str]: ...
+def dir() -> list[_str]: ...
 
 
 @overload
-def dir(object: Any) -> List[_str]: ...
+def dir(object: Any) -> list[_str]: ...
 
 
-def dir(*args) -> List[_str]:
+def dir(*args) -> list[_str]:
     """
     dir() -> List[str]
     dir(object) -> List[str]
@@ -361,11 +358,11 @@ def dir(*args) -> List[_str]:
 
 
 @overload
-def divmod(a: _int, b: _int) -> Tuple[_int, _int]: ...
+def divmod(a: _int, b: _int) -> tuple[_int, _int]: ...
 
 
 @overload
-def divmod(a: _float, b: _float) -> Tuple[_float, _float]: ...
+def divmod(a: _float, b: _float) -> tuple[_float, _float]: ...
 
 
 def divmod(a, b):
@@ -524,7 +521,7 @@ def getattr(*args):
     """
 
 
-def globals() -> Dict[_str, Any]:
+def globals() -> builtins.dict[_str, Any]:
     """
     globals() -> dict
 
@@ -652,7 +649,7 @@ class int:
     def __init__(self, x: _str, base: _int) -> None: ...
 
     @overload
-    def __init__(self, x: Union[_int, SupportsInt]) -> None: ...
+    def __init__(self, x: _int | SupportsInt) -> None: ...
 
     def __init__(self, *args) -> None:
         """int(x=0)
@@ -696,7 +693,7 @@ class int:
         """
 
 
-def isinstance(object: Any, classinfo: Union[_type, Tuple[_type]]) -> _bool:
+def isinstance(object: Any, classinfo: _type | tuple[_type]) -> _bool:
     """
     isinstance(object, classinfo) -> bool
 
@@ -712,7 +709,7 @@ def isinstance(object: Any, classinfo: Union[_type, Tuple[_type]]) -> _bool:
     """
 
 
-def issubclass(cls: _type, classinfo: Union[_type, Tuple[_type]]) -> _bool:
+def issubclass(cls: _type, classinfo: _type | tuple[_type]) -> _bool:
     """
     issubclass(cls, classinfo) -> bool
 
@@ -727,7 +724,7 @@ def issubclass(cls: _type, classinfo: Union[_type, Tuple[_type]]) -> _bool:
     """
 
 
-def iter(object: Union[Iterable, Sequence]) -> Iterator:
+def iter(object: Iterable | Sequence) -> Iterator:
     """
     iter(object) -> Iterator
 
@@ -764,7 +761,7 @@ class list:
 
     def __init__(self, *args) -> None:
         """
-        list(​)
+        list(\u200b)
         list(iterable)
 
         Creates a new list. If no argument is given, this creates an empty
@@ -908,7 +905,7 @@ def ord(c: _str) -> _int:
     """
 
 
-def pow(base: Union[_int, _float], exp: Union[_int, _float]) -> Union[_int, _float]:
+def pow(base: _int | _float, exp: _int | _float) -> _int | _float:
     """
     pow(base, exp) -> Number
 
@@ -1066,7 +1063,7 @@ class set:
             iterable: An iterable of hashable objects.
         """
 
-    def copy(self: _Self) -> _Self:
+    def copy(self) -> Self:
         """
         copy() -> set
 
@@ -1076,7 +1073,7 @@ class set:
             A new set.
         """
 
-    def difference(self: _Self, *others: set) -> _Self:
+    def difference(self, *others: set) -> Self:
         """
         difference(other1, other2, ...) -> set
 
@@ -1093,7 +1090,7 @@ class set:
             A new set.
         """
 
-    def intersection(self: _Self, *others: set) -> _Self:
+    def intersection(self, *others: set) -> Self:
         """
         intersection(other1, other2, ...) -> set
 
@@ -1163,7 +1160,7 @@ class set:
             ``True`` if this set is a superset of *other*, otherwise ``False``.
         """
 
-    def symmetric_difference(self: _Self, other: set) -> _Self:
+    def symmetric_difference(self, other: set) -> Self:
         """
         symmetric_difference(other) -> bool
 
@@ -1180,7 +1177,7 @@ class set:
             A new set.
         """
 
-    def union(self: _Self, *others: set) -> _Self:
+    def union(self, *others: set) -> Self:
         """
         union(other1, other2, ...) -> set
 
@@ -1215,13 +1212,13 @@ class set:
 
     def __ne__(self, other: set) -> bool: ...
 
-    def __sub__(self: _Self, other: set) -> _Self: ...
+    def __sub__(self, other: set) -> Self: ...
 
-    def __and__(self: _Self, other: set) -> _Self: ...
+    def __and__(self, other: set) -> Self: ...
 
-    def __or__(self: _Self, other: set) -> _Self: ...
+    def __or__(self, other: set) -> Self: ...
 
-    def __xor__(self: _Self, other: set) -> _Self: ...
+    def __xor__(self, other: set) -> Self: ...
 
 
 def setattr(object: Any, name: _str, value: Any) -> None:
@@ -1251,7 +1248,7 @@ class slice:
 
     def __init__(self, *args) -> None:
         """
-        slice(​)
+        slice(\u200b)
 
         Creating instances of this class is not supported.
 
@@ -1260,7 +1257,7 @@ class slice:
         """
 
 
-def sorted(iterable: Iterable, key=None, reverse=False) -> List:
+def sorted(iterable: Iterable, key=None, reverse=False) -> builtins.list:
     """
     Sorts objects.
 
@@ -1296,7 +1293,7 @@ class str:
 
     def __init__(self) -> None:
         """
-        str(​)
+        str(\u200b)
         str(object)
         str(object, encoding)
 
@@ -1372,7 +1369,7 @@ class tuple:
 
     def __init__(self, *args) -> None:
         """
-        tuple(​)
+        tuple(\u200b)
         tuple(iterable)
 
         Creates a new tuple. If no argument is given, this creates an empty
@@ -1398,7 +1395,7 @@ class type:
         """
 
 
-def zip(*iterables: Iterable) -> Iterable[Tuple]:
+def zip(*iterables: Iterable) -> Iterable[builtins.tuple]:
     """
     zip(iter_a, iter_b, ...) -> Iterable[Tuple]
 
@@ -1446,7 +1443,7 @@ class BaseException:
     use :class:`Exception`).
     """
 
-    args: Tuple
+    args: builtins.tuple
     """
     The tuple of arguments given to the exception constructor.
     """

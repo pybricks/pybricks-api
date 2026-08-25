@@ -1,7 +1,9 @@
+from colorsys import hsv_to_rgb
+
 from docutils import nodes
 from docutils.parsers.rst import Directive
+
 from pybricks.parameters import Color
-from colorsys import hsv_to_rgb
 
 
 class PybricksColorDirective(Directive):
@@ -18,19 +20,17 @@ class PybricksColorDirective(Directive):
         r, g, b = hsv_to_rgb(color.h / 360, color.s / 100, color.v / 100)
 
         # Convert RGB to HEX
-        rgbhex = "#{0:02x}{1:02x}{2:02x}".format(
-            round(r * 255), round(g * 255), round(b * 255)
-        )
+        rgbhex = f"#{round(r * 255):02x}{round(g * 255):02x}{round(b * 255):02x}"
 
         # Render a small block of the given color
-        css = "background-color: {0}; color: {0}; width: 50px;".format(rgbhex)
+        css = f"background-color: {rgbhex}; color: {rgbhex}; width: 50px;"
 
         if name == "WHITE":
             css += (
                 "border-style: solid; border-width: 0.5px;" + "border-color: #666666;"
             )
 
-        html = '<div id="test" style="{0}">_</div>'.format(css)
+        html = f'<div id="test" style="{css}">_</div>'
 
         # Return the node
         node = nodes.raw("", html, format="html")

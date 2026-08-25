@@ -2,7 +2,7 @@
 from pybricks.hubs import ThisHub
 from pybricks.parameters import Color
 from pybricks.tools import wait
-from umath import sin, pi
+from umath import pi, sin
 
 # Initialize the hub.
 hub = ThisHub()

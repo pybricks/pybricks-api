@@ -1,7 +1,7 @@
-from pybricks.pupdevices import Motor
-from pybricks.parameters import Port
-from pybricks.tools import wait
 from pybricks.messaging import BLERadio
+from pybricks.parameters import Port
+from pybricks.pupdevices import Motor
+from pybricks.tools import wait
 
 # Initialize the hub.
 radio = BLERadio(observe_channels=[1])

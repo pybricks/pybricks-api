@@ -8,7 +8,9 @@ from __future__ import annotations
 from typing import TYPE_CHECKING
 
 from . import _common
-from .parameters import Axis, Button as _Button, Image as _Image
+from .parameters import Axis
+from .parameters import Button as _Button
+from .parameters import Image as _Image
 
 
 class EV3Brick:
@@ -132,7 +134,6 @@ class EssentialHub:
             front_side (Axis): The axis that passes through the *front side* of
                 the hub.
         """
-        pass
 
 
 class PrimeHub:

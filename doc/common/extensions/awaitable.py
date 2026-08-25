@@ -11,7 +11,7 @@ return types. This extension:
   call these functions.
 """
 
-from typing import Sequence
+from collections.abc import Sequence
 
 from docutils import nodes
 from sphinx.addnodes import desc_sig_keyword

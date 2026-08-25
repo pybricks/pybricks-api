@@ -2,12 +2,12 @@
 # Copyright (C) 2020,2023 The Pybricks Authors
 
 from errno import ECONNRESET
-from struct import pack, unpack
 from socket import BDADDR_ANY
 from socketserver import StreamRequestHandler
+from struct import pack, unpack
 from threading import Lock
 
-from .bluetooth import ThreadingRFCOMMServer, ThreadingRFCOMMClient
+from .bluetooth import ThreadingRFCOMMClient, ThreadingRFCOMMServer
 
 
 def resolve(brick):
@@ -128,7 +128,7 @@ class TextMailbox(Mailbox):
     """
 
     def encode(self, value):
-        return ("{}\0".format(value)).encode("utf-8")
+        return (f"{value}\0").encode()
 
     def decode(self, payload):
         return payload.decode().strip("\0")
@@ -217,7 +217,7 @@ class MailboxHandlerMixIn:
         mbox_len = len(mbox) + 1
         payload_len = len(payload)
         send_len = 7 + mbox_len + payload_len
-        fmt = "<HHBBB{}sH{}s".format(mbox_len, payload_len)
+        fmt = f"<HHBBB{mbox_len}sH{payload_len}s"
         data = pack(
             fmt,
             send_len,
@@ -239,7 +239,7 @@ class MailboxHandlerMixIn:
                     addr = resolve(brick)
                     self._addresses[brick] = addr
                 if addr is None:
-                    raise ValueError('no paired devices matching "{}"'.format(brick))
+                    raise ValueError(f'no paired devices matching "{brick}"')
                 self._clients[addr].send(data)
 
     def wait_for_mailbox_update(self, mbox):
@@ -334,7 +334,7 @@ class BluetoothMailboxClient(MailboxHandlerMixIn):
         """
         addr = resolve(brick)
         if addr is None:
-            raise ValueError('no paired devices matching "{}"'.format(brick))
+            raise ValueError(f'no paired devices matching "{brick}"')
         client = MailboxRFCOMMClient(self, addr)
         if self._clients.setdefault(addr, client) is not client:
             raise ValueError("connection with this address already exists")

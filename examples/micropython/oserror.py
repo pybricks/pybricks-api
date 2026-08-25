@@ -1,6 +1,5 @@
-from pybricks.pupdevices import Motor
 from pybricks.parameters import Port
-
+from pybricks.pupdevices import Motor
 from uerrno import ENODEV
 
 try:

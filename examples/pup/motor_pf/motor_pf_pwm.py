@@ -1,5 +1,5 @@
+from pybricks.parameters import Color, Direction, Port
 from pybricks.pupdevices import ColorDistanceSensor, PFMotor
-from pybricks.parameters import Port, Color, Direction
 from pybricks.tools import wait
 
 # Initialize the sensor.

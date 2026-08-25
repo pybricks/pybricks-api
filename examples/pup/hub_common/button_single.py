@@ -1,7 +1,7 @@
 # ThisHub = MoveHub CityHub TechnicHub EssentialHub
 from pybricks.hubs import ThisHub
-from pybricks.parameters import Color, Button
-from pybricks.tools import wait, StopWatch
+from pybricks.parameters import Button, Color
+from pybricks.tools import StopWatch, wait
 
 # Initialize the hub.
 hub = ThisHub()

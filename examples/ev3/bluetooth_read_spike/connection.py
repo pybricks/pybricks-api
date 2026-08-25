@@ -1,10 +1,10 @@
-from uctypes import addressof, sizeof, struct
-from usocket import socket, SOCK_STREAM
-
 from _thread import start_new_thread
 
-from pybricks.bluetooth import str2ba, sockaddr_rc, AF_BLUETOOTH, BTPROTO_RFCOMM
-from pybricks.tools import wait, StopWatch
+from pybricks.bluetooth import AF_BLUETOOTH, BTPROTO_RFCOMM, sockaddr_rc, str2ba
+from uctypes import addressof, sizeof, struct
+from usocket import SOCK_STREAM, socket
+
+from pybricks.tools import StopWatch, wait
 
 
 def get_bluetooth_rfcomm_socket(address, channel):
@@ -37,7 +37,7 @@ class SpikePrimeStreamReader:
             if self.values() is not None:
                 return
             wait(100)
-        raise IOError("No data received")
+        raise OSError("No data received")
 
     def disconnect(self):
         self.sock.close()

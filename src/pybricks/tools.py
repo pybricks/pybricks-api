@@ -141,7 +141,7 @@ class Matrix:
         """
 
     @property
-    def T(self) -> Matrix:  # noqa: N802
+    def T(self) -> Matrix:
         """Returns a new :class:`.Matrix` that is the transpose of the
         original."""
 

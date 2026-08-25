@@ -1,4 +1,4 @@
-from micropython import const, opt_level, mem_info, qstr_info, stack_use
+from micropython import const, mem_info, opt_level, qstr_info, stack_use
 
 # Get stack at start.
 stack_start = stack_use()

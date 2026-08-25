@@ -1,5 +1,5 @@
-from pybricks.pupdevices import InfraredSensor
 from pybricks.parameters import Port
+from pybricks.pupdevices import InfraredSensor
 from pybricks.tools import wait
 
 # Initialize the sensor.

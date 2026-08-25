@@ -9,10 +9,11 @@ import os
 from enum import Enum
 from typing import TYPE_CHECKING, overload
 
-from .tools import Matrix as _Matrix, vector as _vector
+from .tools import Matrix as _Matrix
+from .tools import vector as _vector
 
 if TYPE_CHECKING:
-    from typing import Any, Literal, Optional, Union
+    from typing import Any, Literal
 
 if TYPE_CHECKING or os.environ.get("SPHINX_BUILD") == "True":
     Number = int | float
@@ -54,7 +55,7 @@ class _PybricksEnum(Enum, metaclass=_PybricksEnumMeta):
             yield member.name
 
     def __str__(self):
-        return "{}.{}".format(type(self).__name__, self.name)
+        return f"{type(self).__name__}.{self.name}"
 
     def __repr__(self):
         return str(self)
@@ -123,7 +124,7 @@ class Color:
         return iter((self.h, self.s, self.v))
 
     def __repr__(self):
-        return "Color(h={}, s={}, v={})".format(self.h, self.s, self.v)
+        return f"Color(h={self.h}, s={self.s}, v={self.v})"
 
     def __eq__(self, other: Color) -> bool:
         return self.h == other.h and self.s == other.s and self.v == other.v
@@ -577,7 +578,7 @@ class Image:
     # is generated.
 
     @overload
-    def __init__(self, /, source: Union[Image, ImageFile]): ...
+    def __init__(self, /, source: Image | ImageFile): ...
 
     @overload
     def __init__(
@@ -698,8 +699,8 @@ class Image:
         self,
         x: int,
         y: int,
-        source: Union[Image, ImageFile],
-        transparent: Optional[Color] = None,
+        source: Image | ImageFile,
+        transparent: Color | None = None,
     ) -> None:
         """draw_image(x, y, source, transparent=None)
 
@@ -717,7 +718,7 @@ class Image:
                 no transparency.
         """
 
-    def load_image(self, source: Union[Image, ImageFile]) -> None:
+    def load_image(self, source: Image | ImageFile) -> None:
         """load_image(source)
 
         Clears this image, then draws the ``source`` image centered in
@@ -734,7 +735,7 @@ class Image:
         y: int,
         text: str,
         text_color: Color = Color.BLACK,
-        background_color: Optional[Color] = None,
+        background_color: Color | None = None,
     ) -> None:
         """draw_text(x, y, text, text_color=Color.BLACK, background_color=None)
 

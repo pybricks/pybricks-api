@@ -1,5 +1,5 @@
-from pybricks.pupdevices import Motor
 from pybricks.parameters import Direction, Port
+from pybricks.pupdevices import Motor
 from pybricks.robotics import DriveBase
 from pybricks.tools import multitask, run_task
 

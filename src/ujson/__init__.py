@@ -12,7 +12,7 @@ Convert between Python objects and the JSON data format.
 from typing import IO, Any, Tuple
 
 
-def dump(object: Any, stream: IO, separators: Tuple[str, str] = (", ", ": ")):
+def dump(object: Any, stream: IO, separators: tuple[str, str] = (", ", ": ")):
     """
     dump(object, stream, separators=(", ", ": "))
 
@@ -26,7 +26,7 @@ def dump(object: Any, stream: IO, separators: Tuple[str, str] = (", ", ": ")):
     """
 
 
-def dumps(object: Any, separators: Tuple[str, str] = (", ", ": ")) -> str:
+def dumps(object: Any, separators: tuple[str, str] = (", ", ": ")) -> str:
     """
     dumps(object, separators=(", ", ": "))
 

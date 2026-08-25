@@ -13,10 +13,11 @@ All functions in this module should be used with positional arguments. Keyword
 arguments are not supported.
 """
 
-from typing import Any, Optional, Sequence, overload
+from collections.abc import Sequence
+from typing import Any, Optional, overload
 
 
-def seed(a: Optional[int] = None) -> None:
+def seed(a: int | None = None) -> None:
     """
     seed(value=None)
 

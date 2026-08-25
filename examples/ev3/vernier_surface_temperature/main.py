@@ -1,7 +1,7 @@
-from pybricks.parameters import Port
-from pybricks.nxtdevices import VernierAdapter
-
 from math import log
+
+from pybricks.nxtdevices import VernierAdapter
+from pybricks.parameters import Port
 
 
 # Conversion formula for Surface Temperature Sensor

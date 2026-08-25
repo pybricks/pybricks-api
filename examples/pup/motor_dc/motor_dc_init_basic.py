@@ -1,5 +1,5 @@
-from pybricks.pupdevices import DCMotor
 from pybricks.parameters import Port
+from pybricks.pupdevices import DCMotor
 from pybricks.tools import wait
 
 # Initialize a motor without rotation sensors on port A.

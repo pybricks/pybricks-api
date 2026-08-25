@@ -1,7 +1,6 @@
 from pybricks.hubs import PrimeHub
 from pybricks.parameters import Icon, Side
 from pybricks.tools import wait
-
 from urandom import randint
 
 # Initialize the hub.

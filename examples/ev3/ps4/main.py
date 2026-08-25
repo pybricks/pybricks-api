@@ -1,7 +1,7 @@
+import struct
+
 from pybricks.ev3devices import Motor
 from pybricks.parameters import Port
-
-import struct
 
 # This program uses the two PS4 sticks to control two EV3 Large Servo Motors
 # using tank like controls. For a full map of all PS4 buttons, trackpad, and

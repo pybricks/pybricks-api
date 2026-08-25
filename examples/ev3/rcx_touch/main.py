@@ -1,6 +1,6 @@
 from pybricks.hubs import EV3Brick
 from pybricks.iodevices import AnalogSensor
-from pybricks.parameters import Port, Color
+from pybricks.parameters import Color, Port
 from pybricks.tools import wait
 
 

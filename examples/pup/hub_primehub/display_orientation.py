@@ -1,6 +1,6 @@
 from pybricks.hubs import PrimeHub
-from pybricks.tools import wait
 from pybricks.parameters import Side
+from pybricks.tools import wait
 
 # Initialize the hub.
 hub = PrimeHub()

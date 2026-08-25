@@ -1,8 +1,7 @@
-from pybricks.pupdevices import Light
 from pybricks.parameters import Port
-from pybricks.tools import wait, StopWatch
-
-from umath import pi, cos
+from pybricks.pupdevices import Light
+from pybricks.tools import StopWatch, wait
+from umath import cos, pi
 
 # Initialize the light and a StopWatch.
 light = Light(Port.A)

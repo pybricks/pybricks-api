@@ -10,7 +10,7 @@ remain a strict subset of that implementation when it comes to low-level
 implementation details.
 """
 
-from socket import socket, AF_BLUETOOTH, BTPROTO_RFCOMM, SOCK_STREAM
+from socket import AF_BLUETOOTH, BTPROTO_RFCOMM, SOCK_STREAM, socket
 from socketserver import ThreadingMixIn
 
 

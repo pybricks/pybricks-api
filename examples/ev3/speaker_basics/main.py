@@ -1,7 +1,7 @@
-from pybricks.hubs import EV3Brick
-from pybricks.tools import wait
 from pybricks.media.ev3dev import SoundFile
 
+from pybricks.hubs import EV3Brick
+from pybricks.tools import wait
 
 # Initialize the EV3
 ev3 = EV3Brick()

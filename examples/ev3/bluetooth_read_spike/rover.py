@@ -1,10 +1,10 @@
-from pybricks.hubs import EV3Brick
-from pybricks.tools import wait
-from pybricks.ev3devices import Motor
-from pybricks.robotics import DriveBase
-from pybricks.parameters import Port
-
 from connection import SpikePrimeStreamReader
+
+from pybricks.ev3devices import Motor
+from pybricks.hubs import EV3Brick
+from pybricks.parameters import Port
+from pybricks.robotics import DriveBase
+from pybricks.tools import wait
 
 # Beep!
 ev3 = EV3Brick()

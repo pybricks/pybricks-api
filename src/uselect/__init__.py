@@ -9,7 +9,8 @@
 This module provides functions to efficiently wait for events on multiple streams.
 """
 
-from typing import IO, Iterator, List, Tuple, overload
+from collections.abc import Iterator
+from typing import IO, List, Tuple, overload
 
 POLLIN: int
 """
@@ -78,12 +79,12 @@ class Poll:
         """
 
     @overload
-    def poll(self) -> List[Tuple[IO, int]]: ...
+    def poll(self) -> list[tuple[IO, int]]: ...
 
     @overload
-    def poll(self, timeout: int) -> List[Tuple[IO, int]]: ...
+    def poll(self, timeout: int) -> list[tuple[IO, int]]: ...
 
-    def poll(self, timeout: int = -1, /) -> List[Tuple[IO, int]]:
+    def poll(self, timeout: int = -1, /) -> list[tuple[IO, int]]:
         """
         poll(timeout=-1) -> List[Tuple[FileIO, int]]
 
@@ -103,15 +104,15 @@ class Poll:
         """
 
     @overload
-    def ipoll(self) -> Iterator[Tuple[IO, int]]: ...
+    def ipoll(self) -> Iterator[tuple[IO, int]]: ...
 
     @overload
-    def ipoll(self, timeout: int) -> Iterator[Tuple[IO, int]]: ...
+    def ipoll(self, timeout: int) -> Iterator[tuple[IO, int]]: ...
 
     @overload
-    def ipoll(self, timeout: int, flags: int) -> Iterator[Tuple[IO, int]]: ...
+    def ipoll(self, timeout: int, flags: int) -> Iterator[tuple[IO, int]]: ...
 
-    def ipoll(self, timeout: int = -1, flags: int = 0, /) -> Iterator[Tuple[IO, int]]:
+    def ipoll(self, timeout: int = -1, flags: int = 0, /) -> Iterator[tuple[IO, int]]:
         """
         ipoll(timeout=-1, flags=1) -> Iterator[Tuple[FileIO, int]]
 

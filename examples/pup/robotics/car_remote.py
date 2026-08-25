@@ -1,4 +1,4 @@
-from pybricks.parameters import Direction, Port, Button
+from pybricks.parameters import Button, Direction, Port
 from pybricks.pupdevices import Motor, Remote
 from pybricks.robotics import Car
 from pybricks.tools import wait

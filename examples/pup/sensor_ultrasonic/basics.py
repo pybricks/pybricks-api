@@ -1,5 +1,5 @@
-from pybricks.pupdevices import UltrasonicSensor
 from pybricks.parameters import Port
+from pybricks.pupdevices import UltrasonicSensor
 from pybricks.tools import wait
 
 # Initialize the sensor.

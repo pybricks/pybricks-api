@@ -1,5 +1,5 @@
-from pybricks.pupdevices import Motor
 from pybricks.parameters import Port
+from pybricks.pupdevices import Motor
 
 # Initialize motors on port A and B.
 track_motor = Motor(Port.A)

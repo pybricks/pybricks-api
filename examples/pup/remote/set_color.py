@@ -1,5 +1,5 @@
-from pybricks.pupdevices import Remote
 from pybricks.parameters import Button, Color
+from pybricks.pupdevices import Remote
 
 
 def button_to_color(buttons):

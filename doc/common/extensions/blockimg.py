@@ -1,6 +1,7 @@
-from docutils.parsers.rst import Directive
-from docutils import nodes
 from pathlib import Path
+
+from docutils import nodes
+from docutils.parsers.rst import Directive
 
 SPHINX_IMAGE_PATH = "blockimg"
 
