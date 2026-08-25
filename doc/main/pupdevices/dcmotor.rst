@@ -1,4 +1,4 @@
-.. pybricks-requirements::
+.. pybricks-requirements:: pupdevices
 
 Motors without rotation sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

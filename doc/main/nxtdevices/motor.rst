@@ -1,4 +1,4 @@
-.. pybricks-requirements::
+.. pybricks-requirements:: ev3devices nxtdevices
 
 Motors with rotation sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^

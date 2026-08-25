@@ -4,7 +4,7 @@
 .. automodule:: pybricks.messaging
     :no-members:
 
-.. pybricks-requirements:: pup
+.. pybricks-requirements:: ble
 
 .. blockimg:: pybricks_variables_set_ble_radio
 

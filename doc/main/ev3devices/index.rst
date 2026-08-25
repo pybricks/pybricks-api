@@ -1,4 +1,4 @@
-.. pybricks-requirements:: ev3
+.. pybricks-requirements:: ev3devices
 
 :mod:`ev3devices <pybricks.ev3devices>` -- EV3 motors and sensors
 =================================================================

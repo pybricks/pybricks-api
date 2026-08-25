@@ -1,4 +1,4 @@
-.. pybricks-requirements::
+.. pybricks-requirements:: pupdevices
 
 :mod:`pupdevices <pybricks.pupdevices>` -- Motors, sensors, lights
 ==================================================================

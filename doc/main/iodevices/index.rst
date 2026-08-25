@@ -41,7 +41,7 @@ LEGO protocol devices
    :width: 80 %
    :target: lwp3device.html
 
-.. pybricks-requirements:: ev3 pybricks-iodevices
+.. pybricks-requirements:: pybricks-iodevices
 
 .. pybricks-classlink:: LUMPDevice
 
@@ -83,7 +83,7 @@ Generic protocols
 
 |uart-wired| |uart-wireless|
 
-.. pybricks-requirements:: ev3 pybricks-iodevices
+.. pybricks-requirements:: pybricks-iodevices
 
 .. pybricks-classlink:: I2CDevice
 
@@ -91,7 +91,7 @@ Generic protocols
    :width: 20 %
    :target: i2cdevice.html
 
-.. pybricks-requirements:: ev3 pybricks-iodevices
+.. pybricks-requirements:: pybricks-iodevices
 
 .. pybricks-classlink:: AnalogSensor
 
@@ -99,7 +99,7 @@ Generic protocols
    :width: 20 %
    :target: analogsensor.html
 
-.. pybricks-requirements:: ev3 pybricks-iodevices
+.. pybricks-requirements:: pybricks-iodevices
 
 .. pybricks-classlink:: DCMotor
 

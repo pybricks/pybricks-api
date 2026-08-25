@@ -1,4 +1,4 @@
-.. pybricks-requirements:: ev3
+.. pybricks-requirements:: nxtdevices
 
 Vernier Adapter
 ^^^^^^^^^^^^^^^

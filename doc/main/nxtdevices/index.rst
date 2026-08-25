@@ -1,4 +1,4 @@
-.. pybricks-requirements:: ev3
+.. pybricks-requirements:: nxtdevices
 
 :mod:`nxtdevices <pybricks.nxtdevices>` -- NXT motors and sensors
 =================================================================
@@ -20,11 +20,11 @@
    energymeter
    vernieradapter
 
-.. pybricks-classlink:: Motor ../pupdevices/motor
+.. pybricks-classlink:: Motor ../nxtdevices/motor
 
 .. figure:: ../../main/cad/output/ev3device-motors.png
     :width: 100 %
-    :target: ../pupdevices/motor.html
+    :target: ../nxtdevices/motor.html
 
 .. pybricks-classlink:: TouchSensor
 

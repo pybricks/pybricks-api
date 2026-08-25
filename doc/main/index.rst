@@ -60,12 +60,6 @@ above to reveal this menu.
    :width: 100 %
    :target: ev3devices/index.html
 
-.. rubric:: NXT motors and sensors
-
-.. figure:: ../main/cad/output/nxtdevice-all.png
-   :width: 100 %
-   :target: nxtdevices/index.html
-
 .. toctree::
     :maxdepth: 1
     :caption: Table of contents

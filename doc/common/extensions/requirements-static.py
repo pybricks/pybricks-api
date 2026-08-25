@@ -17,35 +17,44 @@ FEATURES_MEDIUM = FEATURES_SMALL | {
     "pybricks-frozen",
 }
 
-# Large feature set.
-FEATURES_LARGE = FEATURES_MEDIUM | {
-    "ble-extra",  # Extra features such as pairing or multiple connections.
-}
-
 # Features per hub.
 HUB_FEATURES = {
-    "movehub": {"movehub", "pup"} | FEATURES_SMALL,
-    "cityhub": {"cityhub", "pup"} | FEATURES_MEDIUM,
-    "technichub": {"technichub", "gyro", "xbox-controller", "pup"} | FEATURES_MEDIUM,
+    "movehub": {"movehub", "ble", "pupdevices"} | FEATURES_SMALL,
+    "cityhub": {"cityhub", "ble", "pupdevices"} | FEATURES_MEDIUM,
+    "technichub": {"technichub", "gyro", "xbox-controller", "ble", "pupdevices"}
+    | FEATURES_MEDIUM,
     "primehub": {
         "primehub",
         "inventorhub",
         "light-matrix",
         "gyro",
         "xbox-controller",
-        "pup",
+        "ble",
+        "ble-extra",
+        "pupdevices",
     }
-    | FEATURES_LARGE,
+    | FEATURES_MEDIUM,
     "inventorhub": {
         "primehub",
         "inventorhub",
         "light-matrix",
         "gyro",
         "xbox-controller",
-        "pup",
+        "ble",
+        "ble-extra",
+        "pupdevices",
     }
-    | FEATURES_LARGE,
-    "essentialhub": {"essentialhub", "gyro", "xbox-controller", "pup"} | FEATURES_LARGE,
+    | FEATURES_MEDIUM,
+    "essentialhub": {
+        "essentialhub",
+        "gyro",
+        "xbox-controller",
+        "ble",
+        "ble-extra",
+        "pupdevices",
+    }
+    | FEATURES_MEDIUM,
+    "ev3brick": {"ev3devices", "nxtdevices", "image"} | FEATURES_MEDIUM,
 }
 
 
