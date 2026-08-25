@@ -24,13 +24,12 @@ from collections.abc import Callable, Hashable, Iterable, Iterator, Mapping, Seq
 from typing import (
     Any,
     Literal,
+    Self,
     SupportsComplex,
     SupportsFloat,
     SupportsInt,
     overload,
 )
-
-from typing_extensions import Self
 
 import uio
 import usys
