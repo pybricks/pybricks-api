@@ -1,4 +1,3 @@
-#!/usr/bin/env pybricks-micropython
 from pybricks.hubs import EV3Brick
 from pybricks.tools import wait
 from pybricks.ev3devices import Motor

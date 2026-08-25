@@ -14,7 +14,10 @@
    button
    color
    direction
+   font
    icon
+   image
+   imagefile
    port
    side
    stop
@@ -27,7 +30,13 @@
 
 .. pybricks-classlink:: Direction
 
+.. pybricks-classlink:: Font
+
 .. pybricks-classlink:: Icon
+
+.. pybricks-classlink:: Image
+
+.. pybricks-classlink:: ImageFile
 
 .. pybricks-classlink:: Port
 

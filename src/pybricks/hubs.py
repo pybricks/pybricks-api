@@ -8,9 +8,7 @@ from __future__ import annotations
 from typing import TYPE_CHECKING
 
 from . import _common
-from .ev3dev import _speaker
-from .media.ev3dev import Image as _Image
-from .parameters import Axis, Button as _Button
+from .parameters import Axis, Button as _Button, Image as _Image
 
 
 class EV3Brick:
@@ -28,7 +26,7 @@ class EV3Brick:
         ]
     )
     screen = _Image("_screen_")
-    speaker = _speaker.Speaker()
+    speaker = _common.Speaker()
     battery = _common.Battery()
     light = _common.ColorLight()
 

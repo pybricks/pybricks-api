@@ -1,4 +1,3 @@
-#!/usr/bin/env pybricks-micropython
 from pybricks.parameters import Color
 from pybricks.tools import DataLog
 

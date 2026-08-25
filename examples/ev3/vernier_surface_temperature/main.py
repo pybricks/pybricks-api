@@ -1,4 +1,3 @@
-#!/usr/bin/env pybricks-micropython
 from pybricks.parameters import Port
 from pybricks.nxtdevices import VernierAdapter
 

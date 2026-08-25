@@ -14,6 +14,7 @@
    technichub
    primehub
    essentialhub
+   ev3brick
 
 .. pybricks-classlink:: MoveHub
 
@@ -50,3 +51,11 @@
 .. figure:: ../../main/cad/output/hub-essential.png
     :width: 25%
     :target: essentialhub.html
+
+.. pybricks-classlink:: EV3Brick
+
+.. figure:: ../../main/cad/output/ev3device-ev3.png
+    :width: 25%
+    :target: ev3brick.html
+
+

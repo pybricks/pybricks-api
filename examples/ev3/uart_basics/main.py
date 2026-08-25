@@ -1,4 +1,3 @@
-#!/usr/bin/env pybricks-micropython
 from pybricks.hubs import EV3Brick
 from pybricks.iodevices import UARTDevice
 from pybricks.parameters import Port

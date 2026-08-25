@@ -1,5 +1,3 @@
-#!/usr/bin/env pybricks-micropython
-
 import math
 
 from pybricks.hubs import EV3Brick
