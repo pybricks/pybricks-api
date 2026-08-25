@@ -6,24 +6,16 @@ speakers, and batteries."""
 
 from __future__ import annotations
 
-from typing import (
-    Union,
-    Iterable,
-    overload,
-    Optional,
-    Tuple,
-    Collection,
-    Set,
-    TYPE_CHECKING,
-)
+from typing import TYPE_CHECKING, overload
 
-from .tools import Matrix
-from .parameters import Axis, Direction, Stop, Button, Port, Color, Side
+from .parameters import Direction, Stop
 
 if TYPE_CHECKING:
-    from typing import Any, Awaitable, TypeVar
+    from collections.abc import Awaitable, Collection, Iterable
+    from typing import Any, TypeVar
 
-    from .parameters import Number
+    from .parameters import Axis, Button, Color, Number, Port, Side
+    from .tools import Matrix
 
     _T_co = TypeVar("_T_co", covariant=True)
 
@@ -36,9 +28,9 @@ if TYPE_CHECKING:
 
     class MaybeAwaitableInt(int, Awaitable[int]): ...
 
-    class MaybeAwaitableTuple(Tuple[_T_co], Awaitable[Tuple[_T_co]]): ...
+    class MaybeAwaitableTuple(tuple[_T_co], Awaitable[tuple[_T_co]]): ...
 
-    class MaybeAwaitableSet(Set[_T_co], Awaitable[Set[_T_co]]): ...
+    class MaybeAwaitableSet(set[_T_co], Awaitable[set[_T_co]]): ...
 
     class MaybeAwaitableColor(Color, Awaitable[Color]): ...
 
@@ -48,9 +40,7 @@ if TYPE_CHECKING:
 class System:
     """System control actions for a hub."""
 
-    def set_stop_button(
-        self, button: Optional[Union[Button, Iterable[Button]]]
-    ) -> None:
+    def set_stop_button(self, button: Button | Iterable[Button] | None) -> None:
         """
         set_stop_button(button)
 
@@ -188,12 +178,12 @@ class DCMotor:
     def settings(self, max_voltage: Number) -> None: ...
 
     @overload
-    def settings(self) -> Tuple[int]: ...
+    def settings(self) -> tuple[int]: ...
 
     def settings(self, *args):
         """
         settings(max_voltage)
-        settings() -> Tuple[int]
+        settings() -> tuple[int]
 
         Configures motor settings. If no arguments are given,
         this returns the current values.
@@ -218,18 +208,18 @@ class Control:
     @overload
     def limits(
         self,
-        speed: Optional[Number] = None,
-        acceleration: Optional[Number] = None,
-        torque: Optional[Number] = None,
+        speed: Number | None = None,
+        acceleration: Number | None = None,
+        torque: Number | None = None,
     ) -> None: ...
 
     @overload
-    def limits(self) -> Tuple[int, int, int]: ...
+    def limits(self) -> tuple[int, int, int]: ...
 
     def limits(self, *args):
         """
         limits(speed, acceleration, torque)
-        limits() -> Tuple[int, int, int]
+        limits() -> tuple[int, int, int]
 
         Configures the maximum speed, acceleration, and torque.
 
@@ -252,19 +242,19 @@ class Control:
     @overload
     def pid(
         self,
-        kp: Optional[Number] = None,
-        ki: Optional[Number] = None,
-        kd: Optional[Number] = None,
-        integral_deadzone: Optional[Number] = None,
-        integral_rate: Optional[Number] = None,
+        kp: Number | None = None,
+        ki: Number | None = None,
+        kd: Number | None = None,
+        integral_deadzone: Number | None = None,
+        integral_rate: Number | None = None,
     ) -> None: ...
 
     @overload
-    def pid(self) -> Tuple[int, int, int, int, int]: ...
+    def pid(self) -> tuple[int, int, int, int, int]: ...
 
     def pid(self, *args):
         """pid(kp, ki, kd, integral_deadzone, integral_rate)
-        pid() -> Tuple[int, int, int, int, int]
+        pid() -> tuple[int, int, int, int, int]
 
         Gets or sets the PID values for position and speed control.
 
@@ -287,15 +277,15 @@ class Control:
 
     @overload
     def target_tolerances(
-        self, speed: Optional[Number] = None, position: Optional[Number] = None
+        self, speed: Number | None = None, position: Number | None = None
     ) -> None: ...
 
     @overload
-    def target_tolerances(self) -> Tuple[int, int]: ...
+    def target_tolerances(self) -> tuple[int, int]: ...
 
     def target_tolerances(self, *args):
         """target_tolerances(speed, position)
-        target_tolerances() -> Tuple[int, int]
+        target_tolerances() -> tuple[int, int]
 
         Gets or sets the tolerances that say when a maneuver is done.
 
@@ -311,15 +301,15 @@ class Control:
 
     @overload
     def stall_tolerances(
-        self, speed: Optional[Number] = None, time: Optional[Number] = None
+        self, speed: Number | None = None, time: Number | None = None
     ) -> None: ...
 
     @overload
-    def stall_tolerances(self) -> Tuple[int, int]: ...
+    def stall_tolerances(self) -> tuple[int, int]: ...
 
     def stall_tolerances(self, speed, time):
         """stall_tolerances(speed, time)
-        stall_tolerances() -> Tuple[int, int]
+        stall_tolerances() -> tuple[int, int]
 
         Gets or sets stalling tolerances.
 
@@ -337,8 +327,8 @@ class Control:
 class Model:
     """Class to interact with motor state observer and settings."""
 
-    def state(self) -> Tuple[float, float, float, bool]:
-        """state() -> Tuple[float, float, float, bool]
+    def state(self) -> tuple[float, float, float, bool]:
+        """state() -> tuple[float, float, float, bool]
 
         Gets the estimated angle, speed, current, and stall state of the motor,
         using a simulation model that mimics the real motor.
@@ -364,7 +354,7 @@ class Model:
 
     def settings(self, speed, time):
         """settings(values)
-        settings() -> Tuple
+        settings() -> tuple
 
         Gets or sets model settings as a tuple of integers. If no arguments are
         given, this will return the current values. This method is mainly used
@@ -374,7 +364,7 @@ class Model:
         .. _model settings: https://docs.pybricks.com/projects/pbio/en/latest/struct__pbio__observer__settings__t.html
 
         Arguments:
-            values (Tuple): Tuple with `model settings`_.
+            values (tuple): Tuple with `model settings`_.
         """
 
 
@@ -394,7 +384,7 @@ class Motor(DCMotor):
         self,
         port: Port,
         positive_direction: Direction = Direction.CLOCKWISE,
-        gears: Optional[Union[Collection[int], Collection[Collection[int]]]] = None,
+        gears: Collection[int] | Collection[Collection[int]] | None = None,
         reset_angle: bool = True,
         profile: Number = None,
     ):
@@ -480,7 +470,7 @@ class Motor(DCMotor):
             The load torque.
         """
 
-    def reset_angle(self, angle: Optional[Number]) -> None:
+    def reset_angle(self, angle: Number | None) -> None:
         """
         reset_angle(angle)
 
@@ -577,7 +567,7 @@ class Motor(DCMotor):
         self,
         speed: Number,
         then: Stop = Stop.COAST,
-        duty_limit: Optional[Number] = None,
+        duty_limit: Number | None = None,
     ) -> MaybeAwaitableInt:
         """
         run_until_stalled(speed, then=Stop.COAST, duty_limit=None) -> int: deg
@@ -773,9 +763,7 @@ class ExternalColorLight:
 class LightArray3:
     """Control an array of three single-color lights."""
 
-    def on(
-        self, brightness: Union[Number, Tuple[Number, Number, Number]]
-    ) -> MaybeAwaitable:
+    def on(self, brightness: Number | tuple[Number, Number, Number]) -> MaybeAwaitable:
         """on(brightness)
 
         Turns on the lights at the specified brightness.
@@ -798,7 +786,7 @@ class LightArray4(LightArray3):
     """Control an array of four single-color lights."""
 
     def on(
-        self, brightness: Union[Number, Tuple[Number, Number, Number, Number]]
+        self, brightness: Number | tuple[Number, Number, Number, Number]
     ) -> MaybeAwaitable:
         """on(brightness)
 
@@ -926,8 +914,8 @@ class Keypad:
 
     def __init__(self, active_buttons): ...
 
-    def pressed(self) -> Set[Button]:
-        """pressed() -> Set[Button]
+    def pressed(self) -> set[Button]:
+        """pressed() -> set[Button]
 
         Checks which buttons are currently pressed.
 
@@ -999,8 +987,8 @@ class Charger:
 class SimpleAccelerometer:
     """Get measurements from an accelerometer."""
 
-    def acceleration(self) -> Tuple[int, int, int]:
-        """acceleration() -> Tuple[int, int, int]: mm/s²
+    def acceleration(self) -> tuple[int, int, int]:
+        """acceleration() -> tuple[int, int, int]: mm/s²
 
         Gets the acceleration of the device.
 
@@ -1018,8 +1006,8 @@ class SimpleAccelerometer:
             ``Side.FRONT`` or ``Side.BACK``.
         """
 
-    def tilt(self) -> Tuple[int, int]:
-        """tilt() -> Tuple[int, int]
+    def tilt(self) -> tuple[int, int]:
+        """tilt() -> tuple[int, int]
 
         Gets the pitch and roll angles. This is relative to the
         :ref:`user-specified neutral orientation <robotframe>`.
@@ -1049,8 +1037,8 @@ class IMU:
             ``Side.FRONT`` or ``Side.BACK``.
         """
 
-    def tilt(self, calibrated: bool = True) -> Tuple[int, int]:
-        """tilt(calibrated=True) -> Tuple[int, int]
+    def tilt(self, calibrated: bool = True) -> tuple[int, int]:
+        """tilt(calibrated=True) -> tuple[int, int]
 
         Gets the pitch and roll angles. This is relative to the
         :ref:`user-specified neutral orientation <robotframe>`.
@@ -1124,27 +1112,27 @@ class IMU:
         angular_velocity_threshold: float = None,
         acceleration_threshold: float = None,
         heading_correction: float = None,
-        angular_velocity_bias: Tuple[float, float, float] = None,
-        angular_velocity_scale: Tuple[float, float, float] = None,
-        acceleration_correction: Tuple[float, float, float, float, float, float] = None,
+        angular_velocity_bias: tuple[float, float, float] = None,
+        angular_velocity_scale: tuple[float, float, float] = None,
+        acceleration_correction: tuple[float, float, float, float, float, float] = None,
     ) -> None: ...
 
     @overload
     def settings(
         self,
-    ) -> Tuple[
+    ) -> tuple[
         float,
         float,
         float,
-        Tuple[float, float, float],
-        Tuple[float, float, float],
-        Tuple[float, float, float, float, float, float],
+        tuple[float, float, float],
+        tuple[float, float, float],
+        tuple[float, float, float, float, float, float],
     ]: ...
 
     def settings(self, *args):
         """
         settings(*, angular_velocity_threshold, acceleration_threshold, heading_correction, angular_velocity_bias, angular_velocity_scale, acceleration_correction)
-        settings() -> Tuple
+        settings() -> tuple
 
         Configures the IMU settings. If no arguments are given,
         this returns the current values. Use keyword arguments for each value

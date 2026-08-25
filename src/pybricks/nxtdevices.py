@@ -5,31 +5,21 @@
 
 from __future__ import annotations
 
-from typing import Optional, Tuple, List
-
-from . import _common
-
-from typing import (
-    TYPE_CHECKING,
-)
-
-if TYPE_CHECKING:
-    from ._common import (
-        MaybeAwaitableInt,
-        MaybeAwaitableFloat,
-        MaybeAwaitableTuple,
-    )
-    from .parameters import Number, Port
-
-from .parameters import Port, Color
-
+from typing import TYPE_CHECKING
 
 from . import _common
 from ._common import ColorLight, CommonColorSensor
 from .iodevices import AnalogSensor
 
+if TYPE_CHECKING:
+    from collections.abc import Callable
 
-from typing import Callable, Optional, Tuple
+    from ._common import (
+        MaybeAwaitableFloat,
+        MaybeAwaitableInt,
+        MaybeAwaitableTuple,
+    )
+    from .parameters import Color, Port
 
 
 class Motor(_common.Motor):
@@ -92,7 +82,7 @@ class ColorSensor(CommonColorSensor):
 
     light = ColorLight()
 
-    def rgb(self) -> Tuple[int, int, int]:
+    def rgb(self) -> tuple[int, int, int]:
         """Measures the reflection of a surface using a red, green, and then a
         blue light.
 
@@ -237,7 +227,7 @@ class EnergyMeter:
         """
 
     def input(self) -> MaybeAwaitableTuple[int, int, int]:
-        """input() -> Tuple[int, int, int]
+        """input() -> tuple[int, int, int]
 
         Measures the electrical signals at the input (bottom) side
         of the energy meter. It measures the voltage applied to it and the
@@ -252,7 +242,7 @@ class EnergyMeter:
         """
 
     def output(self) -> MaybeAwaitableTuple[int, int, int]:
-        """output() -> Tuple[int, int, int]
+        """output() -> tuple[int, int, int]
 
         Measures the electrical signals at the output (top) side
         of the energy meter. It measures the voltage applied to the external
@@ -270,7 +260,7 @@ class EnergyMeter:
 class VernierAdapter(AnalogSensor):
     """LEGO® MINDSTORMS® Education NXT/EV3 Adapter for Vernier Sensors."""
 
-    def __init__(self, port: Port, conversion: Optional[Callable[[int], float]] = None):
+    def __init__(self, port: Port, conversion: Callable[[int], float] | None = None):
         """VernierAdapter(port, conversion=None)
 
         Arguments:
@@ -315,3 +305,16 @@ class VernierAdapter(AnalogSensor):
         Returns:
             Converted sensor value.
         """
+
+
+# Hide type-only names from jedi completions in the module namespace.
+if TYPE_CHECKING:
+    del AnalogSensor
+    del Callable
+    del Color
+    del ColorLight
+    del CommonColorSensor
+    del MaybeAwaitableFloat
+    del MaybeAwaitableInt
+    del MaybeAwaitableTuple
+    del Port

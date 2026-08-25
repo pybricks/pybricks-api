@@ -5,14 +5,14 @@
 
 from __future__ import annotations
 
-from enum import Enum
-from typing import Union, TYPE_CHECKING
 import os
+from enum import Enum
+from typing import TYPE_CHECKING
 
 from .tools import Matrix as _Matrix, vector as _vector
 
 if TYPE_CHECKING or os.environ.get("SPHINX_BUILD") == "True":
-    Number = Union[int, float]
+    Number = int | float
     """
     Numbers can be represented as integers or floating point values:
 

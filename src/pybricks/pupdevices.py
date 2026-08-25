@@ -5,13 +5,15 @@
 
 from __future__ import annotations
 
-from typing import TYPE_CHECKING, Collection, Optional, Union
+from typing import TYPE_CHECKING
 
 from . import _common
 from .iodevices import LWP3Device
-from .parameters import Button, Color, Direction
+from .parameters import Button, Direction
 
 if TYPE_CHECKING:
+    from collections.abc import Collection
+
     from ._common import (
         MaybeAwaitable,
         MaybeAwaitableBool,
@@ -19,7 +21,7 @@ if TYPE_CHECKING:
         MaybeAwaitableInt,
         MaybeAwaitableTuple,
     )
-    from .parameters import Number, Port
+    from .parameters import Color, Number, Port
 
 
 class DCMotor(_common.DCMotor):
@@ -44,7 +46,7 @@ class Motor(_common.Motor):
         self,
         port: Port,
         positive_direction: Direction = Direction.CLOCKWISE,
-        gears: Optional[Union[Collection[int], Collection[Collection[int]]]] = None,
+        gears: Collection[int] | Collection[Collection[int]] | None = None,
         reset_angle: bool = True,
         profile: Number = None,
     ):
@@ -82,7 +84,7 @@ class Motor(_common.Motor):
                 motor type will be selected automatically (about 11 degrees).
         """
 
-    def reset_angle(self, angle: Optional[Number] = None) -> None:
+    def reset_angle(self, angle: Number | None = None) -> None:
         """reset_angle(angle=None)
 
         Sets the accumulated rotation angle of the motor to a desired value.
@@ -114,11 +116,11 @@ class Remote(LWP3Device):
             Button.RIGHT_PLUS,
         )
     )
-    address: Union[str, None]
+    address: str | None
 
     def __init__(
         self,
-        name: Optional[str] = None,
+        name: str | None = None,
         timeout: int = 10000,
         connect: bool = True,
     ):
@@ -148,7 +150,7 @@ class TechnicMoveHub(LWP3Device):
 
     def __init__(
         self,
-        name: Optional[str] = None,
+        name: str | None = None,
         timeout: int = 10000,
         connect: bool = True,
     ):
@@ -191,7 +193,7 @@ class MarioHub(LWP3Device):
 
     def __init__(
         self,
-        name: Optional[str] = None,
+        name: str | None = None,
         timeout: int = 10000,
         connect: bool = True,
     ):
@@ -263,7 +265,7 @@ class DuploTrain(LWP3Device):
 
     def __init__(
         self,
-        name: Optional[str] = None,
+        name: str | None = None,
         timeout: int = 10000,
         connect: bool = True,
     ):
@@ -362,7 +364,7 @@ class TiltSensor:
         """
 
     def tilt(self) -> MaybeAwaitableTuple[int, int]:
-        """tilt() -> Tuple[int, int]: deg
+        """tilt() -> tuple[int, int]: deg
 
         Measures the tilt relative to the horizontal plane.
 
@@ -566,7 +568,7 @@ class ColorLightMatrix:
         """
         ...
 
-    def on(self, color: Union[Color, Collection[Color]]) -> MaybeAwaitable:
+    def on(self, color: Color | Collection[Color]) -> MaybeAwaitable:
         """on(colors)
 
         Turns the lights on.
@@ -653,9 +655,10 @@ class Light:
         Turns off the light."""
 
 
-# HACK: exclude from jedi
+# Hide type-only names from jedi completions in the module namespace.
 if TYPE_CHECKING:
     del Button
+    del Collection
     del Color
     del Direction
     del LWP3Device

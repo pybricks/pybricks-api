@@ -3,10 +3,14 @@
 
 """LEGO® Programmable Hubs."""
 
+from __future__ import annotations
+
+from typing import TYPE_CHECKING
+
 from . import _common
 from .ev3dev import _speaker
 from .media.ev3dev import Image as _Image
-from .parameters import Button as _Button, Axis
+from .parameters import Axis, Button as _Button
 
 
 class EV3Brick:
@@ -178,5 +182,6 @@ class InventorHub(PrimeHub):
     """LEGO® MINDSTORMS Inventor Hub."""
 
 
-# HACK: hide from jedi
-del Axis
+# Hide type-only names from jedi completions in the module namespace.
+if TYPE_CHECKING:
+    del Axis

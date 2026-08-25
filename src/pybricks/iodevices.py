@@ -5,20 +5,19 @@
 
 from __future__ import annotations
 
-from typing import Tuple, Optional, overload, TYPE_CHECKING
+from typing import TYPE_CHECKING, overload
 
 from . import _common
-from .parameters import Port as _Port
 
 if TYPE_CHECKING:
     from ._common import MaybeAwaitable, MaybeAwaitableBytes, MaybeAwaitableTuple
-    from .parameters import Number
+    from .parameters import Number, Port
 
 
 class PUPDevice:
     """Powered Up motor or sensor."""
 
-    def __init__(self, port: _Port):
+    def __init__(self, port: Port):
         """PUPDevice(port)
 
         Arguments:
@@ -26,7 +25,7 @@ class PUPDevice:
         """
 
     def info(self) -> dict:
-        """info() -> Dict
+        """info() -> dict
 
         Gets information about the device.
 
@@ -43,7 +42,7 @@ class PUPDevice:
         """
 
     def read(self, mode: int) -> MaybeAwaitableTuple:
-        """read(mode) -> Tuple
+        """read(mode) -> tuple
 
         Reads values from a given mode.
 
@@ -65,7 +64,7 @@ class PUPDevice:
                 support reading (e.g. a DC motor or light).
         """
 
-    def write(self, mode: int, data: Tuple) -> MaybeAwaitable:
+    def write(self, mode: int, data: tuple) -> MaybeAwaitable:
         """write(mode, data)
 
         Writes values to the device. Only selected UART devices and modes
@@ -116,7 +115,7 @@ class DCMotor(_common.DCMotor):
 class AnalogSensor:
     """Generic or custom analog sensor."""
 
-    def __init__(self, port: _Port, custom: bool = False):
+    def __init__(self, port: Port, custom: bool = False):
         """AnalogSensor(port, custom=False)
 
         Arguments:
@@ -190,7 +189,7 @@ class I2CDevice:
 
     def __init__(
         self,
-        port: _Port,
+        port: Port,
         address: int,
         custom: bool = False,
         power_pin: int = 0,
@@ -212,17 +211,15 @@ class I2CDevice:
         """
 
     @overload
-    def read(
-        self, reg: Optional[int] = None, length: int = 1
-    ) -> MaybeAwaitableBytes: ...
+    def read(self, reg: int | None = None, length: int = 1) -> MaybeAwaitableBytes: ...
 
     @overload
     def read(
-        self, reg: Optional[int] = None, length: int = 1, map: callable = ...
+        self, reg: int | None = None, length: int = 1, map: callable = ...
     ) -> MaybeAwaitable: ...
 
     def read(
-        self, reg: Optional[int] = None, length: int = 1, map=None
+        self, reg: int | None = None, length: int = 1, map=None
     ) -> MaybeAwaitableBytes:
         """read(reg=None, length=1) -> bytes
         read(reg=None, length=1, map=callable) -> Any
@@ -244,7 +241,7 @@ class I2CDevice:
         """
 
     def write(
-        self, reg: Optional[int] = None, data: Optional[bytes] = None
+        self, reg: int | None = None, data: bytes | None = None
     ) -> MaybeAwaitable:
         """write(reg=None, data=None)
 
@@ -273,9 +270,9 @@ class UARTDevice:
 
     def __init__(
         self,
-        port: _Port,
+        port: Port,
         baudrate: int = 115200,
-        timeout: Optional[int] = None,
+        timeout: int | None = None,
         power_pin: int = 0,
     ):
         """UARTDevice(port, baudrate=115200, timeout=None, power_pin=0)
@@ -516,7 +513,7 @@ class XboxController:
     def __init__(
         self,
         joystick_deadzone: int = 10,
-        name: Optional[str] = None,
+        name: str | None = None,
         timeout: int = 10000,
         connect: bool = True,
     ):
@@ -559,8 +556,8 @@ class XboxController:
             OSError: If the controller is not connected.
         """
 
-    def state(self) -> Tuple:
-        """state() -> Tuple
+    def state(self) -> tuple:
+        """state() -> tuple
 
         Gets all raw controller input values as a single tuple. This gives
         access to values not exposed by the other methods.
@@ -576,8 +573,8 @@ class XboxController:
             OSError: If the controller is not connected.
         """
 
-    def joystick_left(self) -> Tuple[int, int]:
-        """joystick_left() -> Tuple
+    def joystick_left(self) -> tuple[int, int]:
+        """joystick_left() -> tuple
 
         Gets the left joystick position as percentages between -100%
         and 100%. The center position is (0, 0). A square deadzone is applied:
@@ -590,8 +587,8 @@ class XboxController:
             OSError: If the controller is not connected.
         """
 
-    def joystick_right(self) -> Tuple[int, int]:
-        """joystick_right() -> Tuple
+    def joystick_right(self) -> tuple[int, int]:
+        """joystick_right() -> tuple
 
         Gets the right joystick position as percentages between -100%
         and 100%. The center position is (0, 0). A square deadzone is applied:
@@ -604,8 +601,8 @@ class XboxController:
             OSError: If the controller is not connected.
         """
 
-    def triggers(self) -> Tuple[int, int]:
-        """triggers() -> Tuple
+    def triggers(self) -> tuple[int, int]:
+        """triggers() -> tuple
 
         Gets the left and right trigger positions as percentages between 0%
         and 100%.
@@ -651,7 +648,7 @@ class XboxController:
 
     def rumble(
         self,
-        power: Number | Tuple[Number, Number, Number, Number] = 100,
+        power: Number | tuple[Number, Number, Number, Number] = 100,
         duration: int = 200,
         count: int = 1,
         delay: int = 100,
@@ -686,9 +683,10 @@ class XboxController:
         """
 
 
-# hide from jedi
+# Hide type-only names from jedi completions in the module namespace.
 if TYPE_CHECKING:
     del MaybeAwaitable
     del MaybeAwaitableBytes
     del MaybeAwaitableTuple
     del Number
+    del Port

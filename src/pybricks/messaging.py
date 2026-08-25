@@ -7,26 +7,13 @@ Classes to send and receive messages from another device.
 
 from __future__ import annotations
 
-
-from typing import (
-    abstractmethod,
-    Callable,
-    Generic,
-    Iterable,
-    List,
-    Optional,
-    overload,
-    Sequence,
-    Tuple,
-    TYPE_CHECKING,
-    TypeVar,
-    Union,
-)
+from abc import abstractmethod
+from typing import TYPE_CHECKING, Generic, TypeVar, overload
 
 if TYPE_CHECKING:
-    from ._common import (
-        MaybeAwaitable,
-    )
+    from collections.abc import Callable, Iterable, Sequence
+
+    from ._common import MaybeAwaitable
 
 T = TypeVar("T")
 
@@ -42,7 +29,7 @@ class BLERadio:
 
     def __init__(
         self,
-        broadcast_channel: Optional[int] = None,
+        broadcast_channel: int | None = None,
         observe_channels: Sequence[int] = [],
     ):
         """BLERadio(broadcast_channel=None, observe_channels=[])
@@ -62,13 +49,11 @@ class BLERadio:
 
     @overload
     def broadcast(
-        self, data: Iterable[Union[bool, int, float, str, bytes]]
+        self, data: Iterable[bool | int | float | str | bytes]
     ) -> MaybeAwaitable: ...
 
     @overload
-    def broadcast(
-        self, data: Union[bool, int, float, str, bytes]
-    ) -> MaybeAwaitable: ...
+    def broadcast(self, data: bool | int | float | str | bytes) -> MaybeAwaitable: ...
 
     def broadcast(self, data: object) -> MaybeAwaitable:
         """broadcast(data)
@@ -105,12 +90,15 @@ class BLERadio:
 
     def observe(
         self, channel: int
-    ) -> Optional[
-        Union[
-            Tuple[Union[bool, int, float, str, bytes], ...],
-            Union[bool, int, float, str, bytes],
-        ]
-    ]:
+    ) -> (
+        tuple[bool | int | float | str | bytes, ...]
+        | bool
+        | int
+        | float
+        | str
+        | bytes
+        | None
+    ):
         """observe(channel) -> bool | int | float | str | bytes | tuple | None
 
         Retrieves the last observed data for a given channel.
@@ -174,8 +162,8 @@ class Mailbox(Generic[T]):
         self,
         name: str,
         connection: Connection,
-        encode: Optional[Callable[[T], bytes]] = None,
-        decode: Optional[Callable[[bytes], T]] = None,
+        encode: Callable[[T], bytes] | None = None,
+        decode: Callable[[bytes], T] | None = None,
     ):
         """Mailbox(name, connection, encode=None, decode=None)
 
@@ -210,7 +198,7 @@ class Mailbox(Generic[T]):
         """
         return ""
 
-    def send(self, value: T, brick: Optional[str] = None) -> None:
+    def send(self, value: T, brick: str | None = None) -> None:
         """send(value, brick=None)
 
         Sends a value to this mailbox on connected devices.
@@ -393,7 +381,7 @@ class AppData:
     initialization. After that, all methods may be used while multi-tasking.
     """
 
-    def __init__(self, modes: List[Tuple[int, int]]):
+    def __init__(self, modes: list[tuple[int, int]]):
         """AppData(modes)
 
         Arguments:
@@ -410,7 +398,7 @@ class AppData:
             ValueError: If any mode number appears more than once.
         """
 
-    def get_bytes(self, mode: int, index: Optional[int] = None) -> Union[bytes, int]:
+    def get_bytes(self, mode: int, index: int | None = None) -> bytes | int:
         """get_bytes(mode, index=None) -> bytes | int
 
         Gets data received from the host for the given mode.
@@ -462,6 +450,10 @@ class AppData:
         """
 
 
+# Hide type-only names from jedi completions in the module namespace.
 if TYPE_CHECKING:
+    del Callable
+    del Iterable
     del MaybeAwaitable
+    del Sequence
     del T

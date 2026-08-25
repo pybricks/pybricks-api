@@ -5,13 +5,13 @@
 
 from __future__ import annotations
 
-from typing import Tuple, Union, Optional, overload, TYPE_CHECKING
+from typing import TYPE_CHECKING, overload
 
 from . import _common
 from .parameters import Stop
 
 if TYPE_CHECKING:
-    from ._common import Motor, MaybeAwaitable
+    from ._common import MaybeAwaitable, Motor
     from .parameters import Number
 
 
@@ -120,8 +120,8 @@ class DriveBase:
             Accumulated angle since last reset.
         """
 
-    def state(self) -> Tuple[int, int, int, int]:
-        """state() -> Tuple[int, int, int, int]
+    def state(self) -> tuple[int, int, int, int]:
+        """state() -> tuple[int, int, int, int]
 
         Gets the state of the robot.
 
@@ -150,22 +150,22 @@ class DriveBase:
     @overload
     def settings(
         self,
-        straight_speed: Optional[Number] = None,
-        straight_acceleration: Optional[Union[Number, Tuple[Number, Number]]] = None,
-        turn_rate: Optional[Number] = None,
-        turn_acceleration: Optional[Union[Number, Tuple[Number, Number]]] = None,
+        straight_speed: Number | None = None,
+        straight_acceleration: Number | tuple[Number, Number] | None = None,
+        turn_rate: Number | None = None,
+        turn_acceleration: Number | tuple[Number, Number] | None = None,
     ) -> None: ...
 
     @overload
     def settings(
         self,
-    ) -> Tuple[int, Union[int, Tuple[int, int]], int, Union[int, Tuple[int, int]]]: ...
+    ) -> tuple[int, int | tuple[int, int], int, int | tuple[int, int]]: ...
 
     def settings(self, *args):
         """
         settings(straight_speed, straight_acceleration, turn_rate, turn_acceleration)
-        settings() -> Tuple[int, int, int, int]
-        settings() -> Tuple[int, Tuple[int, int], int, Tuple[int, int]]
+        settings() -> tuple[int, int, int, int]
+        settings() -> tuple[int, tuple[int, int], int, tuple[int, int]]
 
         Configures the drive base speed and acceleration.
 
@@ -183,13 +183,13 @@ class DriveBase:
 
         Arguments:
             straight_speed (Number, mm/s): Straight-line speed of the robot.
-            straight_acceleration (Number or Tuple[Number, Number], mm/s²):
+            straight_acceleration (Number or tuple[Number, Number], mm/s²):
                 Straight-line acceleration and deceleration of the robot.
                 Provide a single value to use the same acceleration and
                 deceleration. Provide a tuple with two values to set them
                 separately.
             turn_rate (Number, deg/s): Turn rate of the robot.
-            turn_acceleration (Number or Tuple[Number, Number], deg/s²):
+            turn_acceleration (Number or tuple[Number, Number], deg/s²):
                 Angular acceleration and deceleration of the robot.
                 Provide a single value to use the same acceleration and
                 deceleration. Provide a tuple with two values to set them
@@ -332,7 +332,7 @@ class Car:
     def __init__(
         self,
         steer_motor: Motor,
-        drive_motors: Motor | Tuple[Motor, ...],
+        drive_motors: Motor | tuple[Motor, ...],
         torque_limit: Number = 100,
     ):
         """Car(steer_motor, drive_motors, torque_limit=100)
@@ -390,9 +390,9 @@ class Car:
         """
 
 
-# HACK: hide from jedi
+# Hide type-only names from jedi completions in the module namespace.
 if TYPE_CHECKING:
+    del MaybeAwaitable
     del Motor
     del Number
-    del MaybeAwaitable
     del Stop
