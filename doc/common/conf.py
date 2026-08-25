@@ -62,6 +62,7 @@ extensions = [
     "color",
     "classlink",
     "docstring_signature",
+    "nestedmethod",
     "requirements",
     "requirements-static",
     "versionchanged",
