@@ -192,11 +192,9 @@ htmlhelp_basename = "Pybricksdoc"
 
 
 exclude_patterns = [
-    "ev3devices.rst",
     "hubs/ev3brick.rst",
     "media.rst",
     "messaging.rst",
-    "nxtdevices.rst",
     "tools/datalog.rst",
     "*.rst.txt",
 ]

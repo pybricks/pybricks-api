@@ -3,7 +3,9 @@
 
 """LEGO® MINDSTORMS® EV3 motors and sensors."""
 
-from typing import Optional, Tuple, List, Set
+from __future__ import annotations
+
+from typing import Optional, Tuple, List
 
 from . import _common
 from .parameters import (
@@ -12,6 +14,20 @@ from .parameters import (
     Direction as _Direction,
     Port as _Port,
 )
+
+from typing import (
+    TYPE_CHECKING,
+)
+
+if TYPE_CHECKING:
+    from ._common import (
+        MaybeAwaitableColor,
+        MaybeAwaitableBool,
+        MaybeAwaitableInt,
+        MaybeAwaitableSet,
+        MaybeAwaitableTuple,
+    )
+    from .parameters import Number, Port
 
 
 class Motor(_common.Motor):
@@ -49,7 +65,7 @@ class ColorSensor:
             port (Port): Port to which the sensor is connected.
         """
 
-    def color(self) -> Optional[_Color]:
+    def color(self) -> MaybeAwaitableColor:
         """color() -> Color
 
         Measures the color of a surface.
@@ -61,7 +77,7 @@ class ColorSensor:
 
         """
 
-    def ambient(self) -> int:
+    def ambient(self) -> MaybeAwaitableInt:
         """ambient() -> int: %
 
         Measures the ambient light intensity.
@@ -71,18 +87,18 @@ class ColorSensor:
             to 100% (bright).
         """
 
-    def reflection(self) -> int:
+    def reflection(self) -> MaybeAwaitableInt:
         """reflection() -> int: %
 
-        Measures the reflection of a surface using a red light.
+        Measures how much a surface reflects the light emitted by the
+        sensor.
 
         Returns:
-            Reflection, ranging from 0% (no reflection) to
+            Measured reflection, ranging from 0% (no reflection) to
             100% (high reflection).
-
         """
 
-    def rgb(self) -> Tuple[int, int, int]:
+    def rgb(self) -> MaybeAwaitableTuple[int, int, int]:
         """rgb() -> Tuple[int, int, int]
 
         Measures the reflection of a surface using a red, green, and then a
@@ -105,7 +121,7 @@ class InfraredSensor:
 
         """
 
-    def distance(self) -> int:
+    def distance(self) -> MaybeAwaitableInt:
         """distance() -> int: %
 
         Measures the relative distance between the sensor and an object using
@@ -117,7 +133,7 @@ class InfraredSensor:
 
         """
 
-    def beacon(self, channel: int) -> Tuple[Optional[int], Optional[int]]:
+    def beacon(self, channel: int) -> MaybeAwaitableTuple[Optional[int], Optional[int]]:
         """
         beacon(channel) -> Tuple[int, int]
         beacon(channel) -> Tuple[None, None]
@@ -134,7 +150,7 @@ class InfraredSensor:
             a tuple of (``None``, ``None``) if no remote is detected.
         """
 
-    def buttons(self, channel: int) -> Set[_Button]:
+    def buttons(self, channel: int) -> MaybeAwaitableSet[_Button]:
         """buttons(channel) -> Set[Button]
 
         Checks which buttons on the infrared remote are pressed.
@@ -146,12 +162,12 @@ class InfraredSensor:
             channel (int): Channel number of the remote.
 
         Returns:
-            List of pressed buttons on the remote on the selected channel.
+            Set of pressed buttons on the remote on the selected channel.
 
         """
 
-    def keypad(self) -> List[_Button]:
-        """keypad() -> List[Button]
+    def keypad(self) -> MaybeAwaitableSet[_Button]:
+        """keypad() -> Set[Button]
 
         Checks which buttons on the infrared remote are pressed.
 
@@ -161,7 +177,7 @@ class InfraredSensor:
         This method only works with the remote in channel 1.
 
         Returns:
-            List of pressed buttons.
+            Set of pressed buttons.
         """
 
 
@@ -220,7 +236,7 @@ class UltrasonicSensor:
 
         """
 
-    def distance(self, silent: bool = False) -> int:
+    def distance(self, silent: bool = False) -> MaybeAwaitableInt:
         """distance(silent=False) -> int: mm
 
         Measures the distance between the sensor and an object using
@@ -238,7 +254,7 @@ class UltrasonicSensor:
 
         """
 
-    def presence(self) -> bool:
+    def presence(self) -> MaybeAwaitableBool:
         """presence() -> bool
 
         Checks for the presence of other ultrasonic sensors by detecting

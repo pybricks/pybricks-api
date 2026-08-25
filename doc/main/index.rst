@@ -54,6 +54,18 @@ above to reveal this menu.
    :width: 70 %
    :target: pupdevices/dcmotor.html
 
+.. rubric:: EV3 motors and sensors
+
+.. figure:: ../main/cad/output/ev3device-all.png
+   :width: 100 %
+   :target: ev3devices/index.html
+
+.. rubric:: NXT motors and sensors
+
+.. figure:: ../main/cad/output/nxtdevice-all.png
+   :width: 100 %
+   :target: nxtdevices/index.html
+
 .. toctree::
     :maxdepth: 1
     :caption: Table of contents
@@ -66,6 +78,8 @@ above to reveal this menu.
 
    hubs/index
    pupdevices/index
+   ev3devices/index
+   nxtdevices/index
    iodevices/index
    parameters/index
    tools/index
