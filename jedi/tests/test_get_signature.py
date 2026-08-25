@@ -31,7 +31,7 @@ FUNCTION_PARAMS = [
     pytest.param(
         "pybricks.tools",
         "read_input_byte",
-        [(["last: bool=False", "chr: bool=False"], "Optional[int | str]")],
+        [(["last: bool=False", "chr: bool=False"], "int | str | None")],
     ),
     pytest.param("pybricks.tools", "wait", [(["time: Number"], "MaybeAwaitable")]),
     pytest.param(
@@ -139,7 +139,7 @@ CONSTRUCTOR_PARAMS = [
             [
                 "port: Port",
                 "positive_direction: Direction=Direction.CLOCKWISE",
-                "gears: Optional[Union[Collection[int], Collection[Collection[int]]]]=None",
+                "gears: Collection[int] | Collection[Collection[int]] | None=None",
                 "reset_angle: bool=True",
                 "profile: Number=None",
             ]
@@ -168,7 +168,7 @@ CONSTRUCTOR_PARAMS = [
     pytest.param(
         "pybricks.pupdevices",
         "Remote",
-        [["name: Optional[str]=None", "timeout: int=10000", "connect: bool=True"]],
+        [["name: str | None=None", "timeout: int=10000", "connect: bool=True"]],
     ),
     # TODO: iodevices go here
     pytest.param(
@@ -251,16 +251,16 @@ METHOD_PARAMS = [
     ),
     pytest.param("pybricks.hubs", "MoveHub", "imu.up", [([], "Side")]),
     pytest.param(
-        "pybricks.hubs", "MoveHub", "imu.acceleration", [([], "Tuple[int, int, int]")]
+        "pybricks.hubs", "MoveHub", "imu.acceleration", [([], "tuple[int, int, int]")]
     ),
     pytest.param("pybricks.hubs", "MoveHub", "battery.voltage", [([], "int")]),
     pytest.param("pybricks.hubs", "MoveHub", "battery.current", [([], "int")]),
-    pytest.param("pybricks.hubs", "MoveHub", "buttons.pressed", [([], "Set[Button]")]),
+    pytest.param("pybricks.hubs", "MoveHub", "buttons.pressed", [([], "set[Button]")]),
     pytest.param(
         "pybricks.hubs",
         "MoveHub",
         "system.set_stop_button",
-        [(["button: Optional[Union[Button, Iterable[Button]]]"], "None")],
+        [(["button: Button | Iterable[Button] | None"], "None")],
     ),
     pytest.param("pybricks.hubs", "MoveHub", "system.shutdown", [([], "None")]),
     pytest.param(
@@ -288,12 +288,12 @@ METHOD_PARAMS = [
     ),
     pytest.param("pybricks.hubs", "CityHub", "battery.voltage", [([], "int")]),
     pytest.param("pybricks.hubs", "CityHub", "battery.current", [([], "int")]),
-    pytest.param("pybricks.hubs", "CityHub", "buttons.pressed", [([], "Set[Button]")]),
+    pytest.param("pybricks.hubs", "CityHub", "buttons.pressed", [([], "set[Button]")]),
     pytest.param(
         "pybricks.hubs",
         "CityHub",
         "system.set_stop_button",
-        [(["button: Optional[Union[Button, Iterable[Button]]]"], "None")],
+        [(["button: Button | Iterable[Button] | None"], "None")],
     ),
     pytest.param("pybricks.hubs", "CityHub", "system.shutdown", [([], "None")]),
     pytest.param(
@@ -331,7 +331,7 @@ METHOD_PARAMS = [
         "pybricks.hubs",
         "TechnicHub",
         "imu.tilt",
-        [(["calibrated: bool=True"], "Tuple[int, int]")],
+        [(["calibrated: bool=True"], "tuple[int, int]")],
     ),
     pytest.param(
         "pybricks.hubs",
@@ -368,13 +368,13 @@ METHOD_PARAMS = [
     pytest.param("pybricks.hubs", "TechnicHub", "battery.voltage", [([], "int")]),
     pytest.param("pybricks.hubs", "TechnicHub", "battery.current", [([], "int")]),
     pytest.param(
-        "pybricks.hubs", "TechnicHub", "buttons.pressed", [([], "Set[Button]")]
+        "pybricks.hubs", "TechnicHub", "buttons.pressed", [([], "set[Button]")]
     ),
     pytest.param(
         "pybricks.hubs",
         "TechnicHub",
         "system.set_stop_button",
-        [(["button: Optional[Union[Button, Iterable[Button]]]"], "None")],
+        [(["button: Button | Iterable[Button] | None"], "None")],
     ),
     pytest.param("pybricks.hubs", "TechnicHub", "system.shutdown", [([], "None")]),
     pytest.param(
@@ -431,7 +431,7 @@ METHOD_PARAMS = [
         "display.text",
         [(["text: str", "on: Number=500", "off: Number=50"], "None")],
     ),
-    pytest.param("pybricks.hubs", "PrimeHub", "buttons.pressed", [([], "Set[Button]")]),
+    pytest.param("pybricks.hubs", "PrimeHub", "buttons.pressed", [([], "set[Button]")]),
     pytest.param(
         "pybricks.hubs", "PrimeHub", "imu.up", [(["calibrated: bool=True"], "Side")]
     ),
@@ -439,7 +439,7 @@ METHOD_PARAMS = [
         "pybricks.hubs",
         "PrimeHub",
         "imu.tilt",
-        [(["calibrated: bool=True"], "Tuple[int, int]")],
+        [(["calibrated: bool=True"], "tuple[int, int]")],
     ),
     pytest.param(
         "pybricks.hubs",
@@ -500,7 +500,7 @@ METHOD_PARAMS = [
         "pybricks.hubs",
         "PrimeHub",
         "system.set_stop_button",
-        [(["button: Optional[Union[Button, Iterable[Button]]]"], "None")],
+        [(["button: Button | Iterable[Button] | None"], "None")],
     ),
     pytest.param("pybricks.hubs", "PrimeHub", "system.shutdown", [([], "None")]),
     pytest.param(
@@ -529,7 +529,7 @@ METHOD_PARAMS = [
         [(["colors: Collection[Color]", "interval: Number"], "None")],
     ),
     pytest.param(
-        "pybricks.hubs", "EssentialHub", "buttons.pressed", [([], "Set[Button]")]
+        "pybricks.hubs", "EssentialHub", "buttons.pressed", [([], "set[Button]")]
     ),
     pytest.param(
         "pybricks.hubs", "EssentialHub", "imu.up", [(["calibrated: bool=True"], "Side")]
@@ -538,7 +538,7 @@ METHOD_PARAMS = [
         "pybricks.hubs",
         "EssentialHub",
         "imu.tilt",
-        [(["calibrated: bool=True"], "Tuple[int, int]")],
+        [(["calibrated: bool=True"], "tuple[int, int]")],
     ),
     pytest.param(
         "pybricks.hubs",
@@ -581,7 +581,7 @@ METHOD_PARAMS = [
         "pybricks.hubs",
         "EssentialHub",
         "system.set_stop_button",
-        [(["button: Optional[Union[Button, Iterable[Button]]]"], "None")],
+        [(["button: Button | Iterable[Button] | None"], "None")],
     ),
     pytest.param("pybricks.hubs", "EssentialHub", "system.shutdown", [([], "None")]),
     pytest.param(
@@ -601,7 +601,7 @@ METHOD_PARAMS = [
         "pybricks.pupdevices",
         "DCMotor",
         "settings",
-        [(["max_voltage: Number"], "None"), ([], "Tuple[int]")],
+        [(["max_voltage: Number"], "None"), ([], "tuple[int]")],
     ),
     pytest.param(
         "pybricks.pupdevices",
@@ -614,7 +614,7 @@ METHOD_PARAMS = [
         "pybricks.pupdevices",
         "Motor",
         "reset_angle",
-        [(["angle: Optional[Number]=None"], "None")],
+        [(["angle: Number | None=None"], "None")],
     ),
     pytest.param("pybricks.pupdevices", "Motor", "stop", [([], "None")]),
     pytest.param("pybricks.pupdevices", "Motor", "brake", [([], "None")]),
@@ -683,7 +683,7 @@ METHOD_PARAMS = [
                 [
                     "speed: Number",
                     "then: Stop=Stop.COAST",
-                    "duty_limit: Optional[Number]=None",
+                    "duty_limit: Number | None=None",
                 ],
                 "MaybeAwaitableInt",
             )
@@ -697,7 +697,7 @@ METHOD_PARAMS = [
         "pybricks.pupdevices",
         "Motor",
         "settings",
-        [(["max_voltage: Number"], "None"), ([], "Tuple[int]")],
+        [(["max_voltage: Number"], "None"), ([], "tuple[int]")],
     ),
     pytest.param(
         "pybricks.pupdevices",
@@ -706,13 +706,13 @@ METHOD_PARAMS = [
         [
             (
                 [
-                    "speed: Optional[Number]=None",
-                    "acceleration: Optional[Number]=None",
-                    "torque: Optional[Number]=None",
+                    "speed: Number | None=None",
+                    "acceleration: Number | None=None",
+                    "torque: Number | None=None",
                 ],
                 "None",
             ),
-            ([], "Tuple[int, int, int]"),
+            ([], "tuple[int, int, int]"),
         ],
     ),
     pytest.param(
@@ -722,15 +722,15 @@ METHOD_PARAMS = [
         [
             (
                 [
-                    "kp: Optional[Number]=None",
-                    "ki: Optional[Number]=None",
-                    "kd: Optional[Number]=None",
-                    "integral_deadzone: Optional[Number]=None",
-                    "integral_rate: Optional[Number]=None",
+                    "kp: Number | None=None",
+                    "ki: Number | None=None",
+                    "kd: Number | None=None",
+                    "integral_deadzone: Number | None=None",
+                    "integral_rate: Number | None=None",
                 ],
                 "None",
             ),
-            ([], "Tuple[int, int, int, int, int]"),
+            ([], "tuple[int, int, int, int, int]"),
         ],
     ),
     pytest.param(
@@ -740,12 +740,12 @@ METHOD_PARAMS = [
         [
             (
                 [
-                    "speed: Optional[Number]=None",
-                    "position: Optional[Number]=None",
+                    "speed: Number | None=None",
+                    "position: Number | None=None",
                 ],
                 "None",
             ),
-            ([], "Tuple[int, int]"),
+            ([], "tuple[int, int]"),
         ],
     ),
     pytest.param(
@@ -755,12 +755,12 @@ METHOD_PARAMS = [
         [
             (
                 [
-                    "speed: Optional[Number]=None",
-                    "time: Optional[Number]=None",
+                    "speed: Number | None=None",
+                    "time: Number | None=None",
                 ],
                 "None",
             ),
-            ([], "Tuple[int, int]"),
+            ([], "tuple[int, int]"),
         ],
     ),
     pytest.param(
@@ -864,7 +864,7 @@ METHOD_PARAMS = [
         "lights.on",
         [
             (
-                ["brightness: Union[Number, Tuple[Number, Number, Number]]"],
+                ["brightness: Number | tuple[Number, Number, Number]"],
                 "MaybeAwaitable",
             )
         ],
@@ -890,7 +890,7 @@ METHOD_PARAMS = [
         "lights.on",
         [
             (
-                ["brightness: Union[Number, Tuple[Number, Number, Number, Number]]"],
+                ["brightness: Number | tuple[Number, Number, Number, Number]"],
                 "MaybeAwaitable",
             )
         ],
@@ -920,7 +920,7 @@ METHOD_PARAMS = [
         "pybricks.pupdevices",
         "ColorLightMatrix",
         "on",
-        [(["color: Union[Color, Collection[Color]]"], "MaybeAwaitable")],
+        [(["color: Color | Collection[Color]"], "MaybeAwaitable")],
     ),
     pytest.param(
         "pybricks.pupdevices", "ColorLightMatrix", "off", [([], "MaybeAwaitable")]
@@ -948,7 +948,7 @@ METHOD_PARAMS = [
         "pybricks.pupdevices",
         "Remote",
         "buttons.pressed",
-        [([], "Set[Button]")],
+        [([], "set[Button]")],
     ),
     pytest.param("pybricks.tools", "StopWatch", "time", [([], "int")]),
     pytest.param("pybricks.tools", "StopWatch", "pause", [([], "None")]),
@@ -1005,16 +1005,16 @@ METHOD_PARAMS = [
         [
             (
                 [
-                    "straight_speed: Optional[Number]=None",
-                    "straight_acceleration: Optional[Union[Number, Tuple[Number, Number]]]=None",
-                    "turn_rate: Optional[Number]=None",
-                    "turn_acceleration: Optional[Union[Number, Tuple[Number, Number]]]=None",
+                    "straight_speed: Number | None=None",
+                    "straight_acceleration: Number | tuple[Number, Number] | None=None",
+                    "turn_rate: Number | None=None",
+                    "turn_acceleration: Number | tuple[Number, Number] | None=None",
                 ],
                 "None",
             ),
             (
                 [],
-                "Tuple[int, Union[int, Tuple[int, int]], int, Union[int, Tuple[int, int]]]",
+                "tuple[int, int | tuple[int, int], int, int | tuple[int, int]]",
             ),
         ],
     ),
@@ -1029,7 +1029,7 @@ METHOD_PARAMS = [
     pytest.param("pybricks.robotics", "DriveBase", "distance", [([], "int")]),
     pytest.param("pybricks.robotics", "DriveBase", "angle", [([], "float")]),
     pytest.param(
-        "pybricks.robotics", "DriveBase", "state", [([], "Tuple[int, int, int, int]")]
+        "pybricks.robotics", "DriveBase", "state", [([], "tuple[int, int, int, int]")]
     ),
     pytest.param(
         "pybricks.robotics",
