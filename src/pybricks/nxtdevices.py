@@ -3,7 +3,25 @@
 
 """Use LEGO® MINDSTORMS® NXT motors and sensors with the EV3 brick."""
 
-from .parameters import Port
+from __future__ import annotations
+
+from typing import Optional, Tuple, List
+
+from . import _common
+
+from typing import (
+    TYPE_CHECKING,
+)
+
+if TYPE_CHECKING:
+    from ._common import (
+        MaybeAwaitableInt,
+        MaybeAwaitableFloat,
+        MaybeAwaitableTuple,
+    )
+    from .parameters import Number, Port
+
+from .parameters import Port, Color
 
 
 from . import _common
@@ -83,6 +101,55 @@ class ColorSensor(CommonColorSensor):
             ranging from 0.0% (no reflection) to 100.0% (high reflection).
         """
 
+    def color(self) -> Color:
+        """color() -> Color
+
+        Scans the color of a surface.
+
+        You choose which colors are detected using the
+        ``detectable_colors()`` method. By default, it detects
+        ``Color.RED``, ``Color.YELLOW``, ``Color.GREEN``, ``Color.BLUE``,
+        ``Color.WHITE``, or ``Color.NONE``.
+
+        Returns:
+            Detected color.
+        """
+
+    def hsv(self) -> Color:
+        """hsv() -> Color
+
+        Scans the color of a surface.
+
+        This method is similar to ``color()``, but it gives the full range
+        of hue, saturation and brightness values, instead of rounding it to the
+        nearest detectable color.
+
+        Returns:
+            Measured color. The color is described by a hue (0--359), a
+            saturation (0--100), and a brightness value (0--100).
+        """
+
+    def ambient(self) -> int:
+        """ambient() -> int: %
+
+        Measures the ambient light intensity.
+
+        Returns:
+            Ambient light intensity, ranging from 0% (dark)
+            to 100% (bright).
+        """
+
+    def reflection(self) -> int:
+        """reflection() -> int: %
+
+        Measures how much a surface reflects the light emitted by the
+        sensor.
+
+        Returns:
+            Measured reflection, ranging from 0% (no reflection) to
+            100% (high reflection).
+        """
+
 
 class UltrasonicSensor:
     """LEGO® MINDSTORMS® NXT Ultrasonic Sensor."""
@@ -94,7 +161,7 @@ class UltrasonicSensor:
             port (Port): Port to which the sensor is connected.
         """
 
-    def distance(self) -> int:
+    def distance(self) -> MaybeAwaitableInt:
         """distance() -> int: mm
 
         Measures the distance between the sensor and an object using
@@ -140,7 +207,7 @@ class TemperatureSensor:
             port (Port): Port to which the sensor is connected.
         """
 
-    def temperature(self) -> int:
+    def temperature(self) -> MaybeAwaitableFloat:
         """temperature() -> float: °C
 
         Measures the temperature.
@@ -160,7 +227,7 @@ class EnergyMeter:
             port (Port): Port to which the sensor is connected.
         """
 
-    def storage(self) -> int:
+    def storage(self) -> MaybeAwaitableInt:
         """storage() -> int: J
 
         Gets the total available energy stored in the battery.
@@ -169,7 +236,7 @@ class EnergyMeter:
             Remaining stored energy.
         """
 
-    def input(self) -> Tuple[int, int, int]:
+    def input(self) -> MaybeAwaitableTuple[int, int, int]:
         """input() -> Tuple[int, int, int]
 
         Measures the electrical signals at the input (bottom) side
@@ -184,7 +251,7 @@ class EnergyMeter:
             port.
         """
 
-    def output(self) -> Tuple[int, int, int]:
+    def output(self) -> MaybeAwaitableTuple[int, int, int]:
         """output() -> Tuple[int, int, int]
 
         Measures the electrical signals at the output (top) side
