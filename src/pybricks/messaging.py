@@ -452,6 +452,7 @@ class AppData:
 
 # Hide type-only names from jedi completions in the module namespace.
 if TYPE_CHECKING:
+    del abstractmethod
     del Callable
     del Iterable
     del MaybeAwaitable
