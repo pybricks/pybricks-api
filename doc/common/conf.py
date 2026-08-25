@@ -139,8 +139,10 @@ nitpick_ignore.append(("py:obj", "typing.IO"))
 # MaybeAwaitable* stub types have no documented target; the awaitable
 # extension renders them as an "await" prefix instead, but the raw names can
 # still leak into signatures (e.g. overloads), so suppress those warnings.
+# Likewise, collections.abc types have no link target without intersphinx.
 nitpick_ignore_regex = [
     ("py:class", r"MaybeAwaitable\w*"),
+    ("py:class", r"collections\.abc\.\w+"),
 ]
 
 # -- Autodoc options ------------------------------------------------------

@@ -9,7 +9,7 @@
 Convert between Python objects and the JSON data format.
 """
 
-from typing import IO, Any, Tuple
+from typing import IO, Any
 
 
 def dump(object: Any, stream: IO, separators: tuple[str, str] = (", ", ": ")):

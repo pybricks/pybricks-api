@@ -10,8 +10,6 @@ This module provides functions to convert between Python values and C-like
 data structs.
 """
 
-from typing import Tuple, Union
-
 
 def calcsize(format: str) -> int:
     """
@@ -55,7 +53,7 @@ def pack_into(format: str, buffer: bytearray, offset: int, *values) -> bytes:
 
 def unpack(format: str, data: bytes | bytearray) -> tuple:
     """
-    unpack(format, data) -> Tuple
+    unpack(format, data) -> tuple
 
     Decodes the binary data using the given format.
 
@@ -70,7 +68,7 @@ def unpack(format: str, data: bytes | bytearray) -> tuple:
 
 def unpack_from(format: str, data: bytes | bytearray, offset: int) -> tuple:
     """
-    unpack_from(format, data, offset) -> Tuple
+    unpack_from(format, data, offset) -> tuple
 
     Decodes binary data from a buffer using the given format.
 

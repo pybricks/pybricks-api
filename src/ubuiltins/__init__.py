@@ -29,7 +29,6 @@ from typing import (
     SupportsComplex,
     SupportsFloat,
     SupportsInt,
-    Tuple,
     TypeVar,
     Union,
     overload,
@@ -205,9 +204,7 @@ class bytearray:
     def __init__(self, source: _int) -> None: ...
 
     @overload
-    def __init__(
-        self, source: _bytes | _bytearray | _str | Iterable[_int]
-    ) -> None: ...
+    def __init__(self, source: _bytes | _bytearray | _str | Iterable[_int]) -> None: ...
 
     def __init__(self, *args):
         r"""
@@ -366,7 +363,7 @@ def divmod(a: _float, b: _float) -> tuple[_float, _float]: ...
 
 def divmod(a, b):
     """
-    divmod(a, b) -> Tuple[int, int]
+    divmod(a, b) -> tuple[int, int]
 
     Gets the quotient and remainder for dividing two integers.
 
@@ -1396,7 +1393,7 @@ class type:
 
 def zip(*iterables: Iterable) -> Iterable[builtins.tuple]:
     """
-    zip(iter_a, iter_b, ...) -> Iterable[Tuple]
+    zip(iter_a, iter_b, ...) -> Iterable[tuple]
 
     Returns an iterator of tuples, where the *i*-th tuple contains the *i*-th
     element from each of the argument sequences or iterables. The iterator

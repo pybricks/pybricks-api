@@ -9,8 +9,6 @@
 This module provides a subset of the standard Python ``sys`` module.
 """
 
-from typing import Tuple
-
 from uio import FileIO as _FileIO
 
 stdin: _FileIO = _FileIO()
