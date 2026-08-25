@@ -9,8 +9,6 @@
 This module provides access to symbolic error codes for `OSError` exception.
 """
 
-from typing import Dict
-
 EAGAIN: int
 """
 The operation is not complete and should be tried again soon.

@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 from pybricks.messaging import BluetoothMailboxServer, TextMailbox
 
 # This demo makes your PC talk to an EV3 over Bluetooth.

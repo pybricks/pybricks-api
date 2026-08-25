@@ -11,7 +11,7 @@ This module contains ``stream`` objects that behave like files.
 
 # TODO: open() is not implemented on Powered Up hubs
 
-from typing import Union, overload
+from typing import overload
 
 # TODO: MicroPython streams implement '__enter__', '__exit__', 'close', 'read',
 # 'readinto', 'readline', 'write', 'flush', 'seek', 'tell'

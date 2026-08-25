@@ -22,6 +22,7 @@
 
 
 import os
+from typing import ClassVar
 
 from docutils import nodes
 from docutils.parsers.rst import Directive, directives
@@ -35,7 +36,7 @@ JS_FILE = "requirements.js"
 
 class PybricksRequirementsDirective(Directive):
     has_content = True
-    option_spec = {"header": directives.unchanged}
+    option_spec: ClassVar = {"header": directives.unchanged}
 
     required_arguments = 0
     optional_arguments = 10

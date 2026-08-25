@@ -26,7 +26,7 @@ def _is_async(self: _FunctionDefProperties) -> bool:
 
     try:
         return_type = self._obj.__annotations__["return"]
-    except Exception:
+    except (AttributeError, KeyError):
         return False
 
     return "MaybeAwaitable" in str(return_type)

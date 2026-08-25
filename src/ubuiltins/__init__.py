@@ -23,14 +23,10 @@ import builtins
 from collections.abc import Callable, Hashable, Iterable, Iterator, Mapping, Sequence
 from typing import (
     Any,
-    Dict,
-    List,
     Literal,
     SupportsComplex,
     SupportsFloat,
     SupportsInt,
-    TypeVar,
-    Union,
     overload,
 )
 
@@ -50,7 +46,9 @@ _complex = complex
 _dict = dict
 _float = float
 _int = int
+_list = list
 _str = str
+_tuple = tuple
 _type = type
 
 
@@ -171,8 +169,8 @@ class bytes:
     def __init__(self, source: _str, encoding: _str) -> None: ...
 
     def __init__(self, *args):
-        r"""
-        bytes(​)
+        """
+        bytes(\u200b)
         bytes(integer)
         bytes(iterable)
         bytes(string, encoding)
@@ -207,8 +205,8 @@ class bytearray:
     def __init__(self, source: _bytes | _bytearray | _str | Iterable[_int]) -> None: ...
 
     def __init__(self, *args):
-        r"""
-        bytearray(​)
+        """
+        bytearray(\u200b)
         bytearray(integer)
         bytearray(iterable)
         bytearray(string)
@@ -328,17 +326,17 @@ class dict:
 
 
 @overload
-def dir() -> list[_str]: ...
+def dir() -> _list[_str]: ...
 
 
 @overload
-def dir(object: Any) -> list[_str]: ...
+def dir(object: Any) -> _list[_str]: ...
 
 
-def dir(*args) -> list[_str]:
+def dir(*args) -> _list[_str]:
     """
-    dir() -> List[str]
-    dir(object) -> List[str]
+    dir() -> list[str]
+    dir(object) -> list[str]
 
     Gets a list of attributes of an object.
 
@@ -354,11 +352,11 @@ def dir(*args) -> list[_str]:
 
 
 @overload
-def divmod(a: _int, b: _int) -> tuple[_int, _int]: ...
+def divmod(a: _int, b: _int) -> _tuple[_int, _int]: ...
 
 
 @overload
-def divmod(a: _float, b: _float) -> tuple[_float, _float]: ...
+def divmod(a: _float, b: _float) -> _tuple[_float, _float]: ...
 
 
 def divmod(a, b):
@@ -689,7 +687,7 @@ class int:
         """
 
 
-def isinstance(object: Any, classinfo: _type | tuple[_type]) -> _bool:
+def isinstance(object: Any, classinfo: _type | _tuple[_type]) -> _bool:
     """
     isinstance(object, classinfo) -> bool
 
@@ -705,7 +703,7 @@ def isinstance(object: Any, classinfo: _type | tuple[_type]) -> _bool:
     """
 
 
-def issubclass(cls: _type, classinfo: _type | tuple[_type]) -> _bool:
+def issubclass(cls: _type, classinfo: _type | _tuple[_type]) -> _bool:
     """
     issubclass(cls, classinfo) -> bool
 

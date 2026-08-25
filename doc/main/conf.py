@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 #
 # Pybricks documentation build configuration file
 #
@@ -36,7 +35,9 @@ if tags.has("ide"):  # noqa F821
     html_css_files.append("css/ide.css")
     html_js_files = ["js/ide.js"]
 
-exec(open(os.path.abspath("../common/conf.py")).read())
+# Shared config must run in this namespace so it sees the globals above.
+with open(os.path.abspath("../common/conf.py")) as _f:
+    exec(_f.read())  # noqa: S102
 
 # Build hub specific example scripts.
 sys.path.append(os.path.abspath("../../examples/pup/hub_common"))
