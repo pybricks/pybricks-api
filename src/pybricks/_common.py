@@ -1114,7 +1114,8 @@ class IMU:
         heading_correction: float | None = None,
         angular_velocity_bias: tuple[float, float, float] | None = None,
         angular_velocity_scale: tuple[float, float, float] | None = None,
-        acceleration_correction: tuple[float, float, float, float, float, float] | None = None,
+        acceleration_correction: tuple[float, float, float, float, float, float]
+        | None = None,
     ) -> None: ...
 
     @overload
