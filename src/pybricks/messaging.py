@@ -8,7 +8,7 @@ Classes to send and receive messages from another device.
 from __future__ import annotations
 
 from abc import abstractmethod
-from typing import TYPE_CHECKING, Generic, TypeVar, overload
+from typing import TYPE_CHECKING, Generic, Self, TypeVar, overload
 
 if TYPE_CHECKING:
     from collections.abc import Callable, Iterable, Sequence
@@ -299,7 +299,7 @@ class BluetoothMailboxServer:
     A "server" waits for a "client" to connect to it.
     """
 
-    def __enter__(self) -> BluetoothMailboxServer:
+    def __enter__(self) -> Self:
         return self
 
     def __exit__(self, type, value, traceback) -> None:
@@ -335,7 +335,7 @@ class BluetoothMailboxClient:
     A "client" initiates a connection to a waiting "server".
     """
 
-    def __enter__(self) -> BluetoothMailboxClient:
+    def __enter__(self) -> Self:
         return self
 
     def __exit__(self, type, value, traceback) -> None:

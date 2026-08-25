@@ -9,8 +9,12 @@
 This module provides functions to efficiently wait for events on multiple streams.
 """
 
-from collections.abc import Iterator
-from typing import IO, List, Tuple, overload
+from __future__ import annotations
+
+from typing import IO, TYPE_CHECKING, overload
+
+if TYPE_CHECKING:
+    from collections.abc import Iterator
 
 POLLIN: int
 """
@@ -86,7 +90,7 @@ class Poll:
 
     def poll(self, timeout: int = -1, /) -> list[tuple[IO, int]]:
         """
-        poll(timeout=-1) -> List[Tuple[FileIO, int]]
+        poll(timeout=-1) -> list[tuple[FileIO, int]]
 
         Wait until at least one of the registered objects has a new event or
         exceptional condition ready to be handled.
@@ -114,7 +118,7 @@ class Poll:
 
     def ipoll(self, timeout: int = -1, flags: int = 0, /) -> Iterator[tuple[IO, int]]:
         """
-        ipoll(timeout=-1, flags=1) -> Iterator[Tuple[FileIO, int]]
+        ipoll(timeout=-1, flags=1) -> Iterator[tuple[FileIO, int]]
 
         First, just like :meth:`poll`, wait until at least one of the registered
         objects has a new event or exceptional condition ready to be handled.
@@ -143,3 +147,8 @@ def poll() -> Poll:
     Returns:
         The :class:`Poll` instance.
     """
+
+
+# Hide type-only names from jedi completions in the module namespace.
+if TYPE_CHECKING:
+    del Iterator

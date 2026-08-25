@@ -238,7 +238,7 @@ class MarioHub(LWP3Device):
             OSError: If the hub is not connected.
         """
 
-    def detectable_colors(self, colors: Collection[Color] = None) -> None:
+    def detectable_colors(self, colors: Collection[Color] | None = None) -> None:
         """detectable_colors(colors)
 
         Configures the list of colors that :meth:`color` may return.

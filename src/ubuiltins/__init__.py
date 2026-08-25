@@ -54,7 +54,6 @@ _int = int
 _str = str
 _type = type
 
-_Self = TypeVar("_Self")
 
 # Functions and types
 

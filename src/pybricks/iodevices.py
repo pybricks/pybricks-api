@@ -393,7 +393,7 @@ class LWP3Device:
     def __init__(
         self,
         hub_kind: int,
-        name: str = None,
+        name: str | None = None,
         timeout: int = 10000,
         pair: bool = False,
         num_notifications: int = 8,

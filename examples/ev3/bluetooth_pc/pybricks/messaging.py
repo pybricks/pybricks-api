@@ -158,7 +158,7 @@ class MailboxHandler(StreamRequestHandler):
                 raise
             (size,) = unpack("<H", buf)
             buf = self.rfile.read(size)
-            msg_count, cmd_type, cmd, name_size = unpack("<HBBB", buf[0:5])
+            _msg_count, cmd_type, cmd, name_size = unpack("<HBBB", buf[0:5])
             if cmd_type != SYSTEM_COMMAND_NO_REPLY:
                 raise ValueError("Bad message type")
             if cmd != WRITEMAILBOX:

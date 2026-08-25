@@ -24,9 +24,9 @@ class SpikePrimeStreamReader:
 
         try:
             self.sock = get_bluetooth_rfcomm_socket(address, 1)
-        except OSError as e:
+        except OSError:
             print("Turn on Bluetooth on the EV3 and on SPIKE.")
-            raise e
+            raise
 
         self._values = None
 

@@ -1109,12 +1109,12 @@ class IMU:
     def settings(
         self,
         *,
-        angular_velocity_threshold: float = None,
-        acceleration_threshold: float = None,
-        heading_correction: float = None,
-        angular_velocity_bias: tuple[float, float, float] = None,
-        angular_velocity_scale: tuple[float, float, float] = None,
-        acceleration_correction: tuple[float, float, float, float, float, float] = None,
+        angular_velocity_threshold: float | None = None,
+        acceleration_threshold: float | None = None,
+        heading_correction: float | None = None,
+        angular_velocity_bias: tuple[float, float, float] | None = None,
+        angular_velocity_scale: tuple[float, float, float] | None = None,
+        acceleration_correction: tuple[float, float, float, float, float, float] | None = None,
     ) -> None: ...
 
     @overload

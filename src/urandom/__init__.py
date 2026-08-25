@@ -13,8 +13,12 @@ All functions in this module should be used with positional arguments. Keyword
 arguments are not supported.
 """
 
-from collections.abc import Sequence
-from typing import Any, Optional, overload
+from __future__ import annotations
+
+from typing import TYPE_CHECKING, Any, overload
+
+if TYPE_CHECKING:
+    from collections.abc import Sequence
 
 
 def seed(a: int | None = None) -> None:
@@ -134,3 +138,8 @@ def uniform(a: float, b: float) -> float:
     Returns:
         The random value.
     """
+
+
+# Hide type-only names from jedi completions in the module namespace.
+if TYPE_CHECKING:
+    del Sequence
