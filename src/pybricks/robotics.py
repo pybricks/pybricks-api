@@ -36,20 +36,20 @@ class DriveBase:
 
     distance_control = _common.Control()
     """The traveled distance and drive speed are controlled by a PID
-    controller. You can use this attribute to change its settings.
-    See the :ref:`motor control <settings>` attribute for an overview of
-    available methods. The ``distance_control`` attribute has the same
-    functionality, but the settings apply to every millimeter driven by the
-    drive base, instead of degrees turned by one motor."""
+    controller. You can use this attribute to change its settings. See the
+    :meth:`motor control <pybricks.pupdevices.Motor.control.limits>` attribute
+    for an overview of available methods. The ``distance_control`` attribute
+    has the same functionality, but the settings apply to every millimeter
+    driven by the drive base, instead of degrees turned by one motor."""
 
     heading_control = _common.Control()
     """The robot turn angle and turn rate are controlled by a PID
-    controller. You can use this attribute to change its settings.
-    See the :ref:`motor control <settings>` attribute for an overview of
-    available methods. The ``heading_control`` attribute has the same
-    functionality, but the settings apply to every degree of rotation of the
-    whole drive base (viewed from the top) instead of degrees turned by one
-    motor."""
+    controller. You can use this attribute to change its settings. See the
+    :meth:`motor control <pybricks.pupdevices.Motor.control.limits>` attribute
+    for an overview of available methods. The ``heading_control`` attribute
+    has the same functionality, but the settings apply to every degree of
+    rotation of the whole drive base (viewed from the top) instead of degrees
+    turned by one motor."""
 
     def __init__(
         self,

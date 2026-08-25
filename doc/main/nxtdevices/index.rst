@@ -10,6 +10,7 @@
    :maxdepth: 1
    :hidden:
 
+   motor
    touchsensor
    lightsensor
    colorsensor

@@ -5,11 +5,17 @@
 
 from .parameters import Port
 
+
+from . import _common
 from ._common import ColorLight, CommonColorSensor
 from .iodevices import AnalogSensor
 
 
 from typing import Callable, Optional, Tuple
+
+
+class Motor(_common.Motor):
+    """LEGO® MINDSTORMS® EV3 Motor."""
 
 
 class TouchSensor:

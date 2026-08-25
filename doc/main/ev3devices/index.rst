@@ -10,17 +10,18 @@
    :maxdepth: 1
    :hidden:
 
+   motor
    touchsensor
    colorsensor
    infraredsensor
    ultrasonicsensor
    gyrosensor
 
-.. pybricks-classlink:: Motor ../pupdevices/motor
+.. pybricks-classlink:: Motor ../ev3devices/motor
 
 .. figure:: ../../main/cad/output/ev3device-motors.png
     :width: 100 %
-    :target: ../pupdevices/motor.html
+    :target: ../ev3devices/motor.html
 
 .. pybricks-classlink:: TouchSensor
 
