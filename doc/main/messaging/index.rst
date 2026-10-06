@@ -60,3 +60,21 @@ Observing data from other hubs
 
 .. literalinclude::
     ../../../examples/pup/ble_radio/ble_observe.py
+
+Messaging between EV3 Bricks
+----------------------------
+
+.. pybricks-requirements:: hub-network
+
+.. autoclass:: pybricks.messaging.HubNetwork
+    :no-members:
+
+    .. automethod:: pybricks.messaging.HubNetwork.address
+
+    .. automethod:: pybricks.messaging.HubNetwork.connect
+
+    .. automethod:: pybricks.messaging.HubNetwork.is_connected
+
+    .. automethod:: pybricks.messaging.HubNetwork.send
+
+    .. automethod:: pybricks.messaging.HubNetwork.inbox

@@ -31,6 +31,7 @@ HUB_FEATURES = {
         "ble",
         "ble-extra",
         "pupdevices",
+        "hub-network",
     }
     | FEATURES_MEDIUM,
     "inventorhub": {
@@ -42,6 +43,7 @@ HUB_FEATURES = {
         "ble",
         "ble-extra",
         "pupdevices",
+        "hub-network",
     }
     | FEATURES_MEDIUM,
     "essentialhub": {
@@ -51,9 +53,10 @@ HUB_FEATURES = {
         "ble",
         "ble-extra",
         "pupdevices",
+        "hub-network",
     }
     | FEATURES_MEDIUM,
-    "ev3brick": {"ev3devices", "nxtdevices", "image"} | FEATURES_MEDIUM,
+    "ev3brick": {"ev3devices", "nxtdevices", "image", "hub-network"} | FEATURES_MEDIUM,
 }
 
 

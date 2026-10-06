@@ -20,6 +20,7 @@ def test_from_pybricks_messaging_import():
         "BluetoothMailboxClient",
         "BluetoothMailboxServer",
         "Connection",
+        "HubNetwork",
         "LogicMailbox",
         "Mailbox",
         "NumericMailbox",
@@ -41,6 +42,24 @@ def test_ble_radio_dot():
         "observe",
         "signal_strength",
         "version",
+    ]
+
+
+def test_hub_network_dot():
+    code = "\n".join(
+        [
+            "from pybricks.messaging import HubNetwork",
+            "network = HubNetwork()",
+            "network.",
+        ]
+    )
+    completions: list[CompletionItem] = json.loads(complete(code, 3, 9))
+    assert [c["insertText"] for c in completions] == [
+        "address",
+        "connect",
+        "inbox",
+        "is_connected",
+        "send",
     ]
 
 
