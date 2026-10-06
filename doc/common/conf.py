@@ -195,6 +195,7 @@ htmlhelp_basename = "Pybricksdoc"
 
 
 exclude_patterns = [
+    "hubs/nxtbrick.rst",
     "messaging.rst",
     "tools/datalog.rst",
     "*.rst.txt",

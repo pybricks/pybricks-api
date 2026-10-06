@@ -15,7 +15,6 @@
    primehub
    essentialhub
    ev3brick
-   nxtbrick
 
 .. pybricks-classlink:: MoveHub
 
@@ -58,9 +57,3 @@
 .. figure:: ../../main/cad/output/ev3device-ev3.png
     :width: 25%
     :target: ev3brick.html
-
-.. pybricks-classlink:: NXTBrick
-
-.. figure:: ../../main/cad/output/nxtdevice-nxt.png
-    :width: 25%
-    :target: nxtbrick.html
