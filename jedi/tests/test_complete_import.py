@@ -93,6 +93,7 @@ def test_from_pybricks_hubs_import():
         "EV3Brick",
         "InventorHub",
         "MoveHub",
+        "NXTBrick",
         "PrimeHub",
         "TechnicHub",
     ]

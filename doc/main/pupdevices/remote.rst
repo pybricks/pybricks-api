@@ -21,7 +21,7 @@ Remote Control
 
   .. automethod:: pybricks.pupdevices::Remote.light.on
 
-  .. blockimg:: pybricks_blockLightOnColor_remote_on
+  .. blockimg:: pybricks_blockLightOnColor_remote_off
 
   .. automethod:: pybricks.pupdevices::Remote.light.off
 

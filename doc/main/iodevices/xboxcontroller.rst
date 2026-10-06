@@ -33,29 +33,29 @@ Xbox Controller
         Pressing the paddles may also be detected as other button presses,
         depending on the currently active profile.
 
-  .. blockimg:: pybricks_blockJoystickValue_lj_x
+  .. blockimg:: pybricks_blockJoystickValue_xbox_lj_x
 
-  .. blockimg:: pybricks_blockJoystickValue_lj_y
+  .. blockimg:: pybricks_blockJoystickValue_xbox_lj_y
 
   .. automethod:: pybricks.iodevices::XboxController.joystick_left
 
-  .. blockimg:: pybricks_blockJoystickValue_rj_x
+  .. blockimg:: pybricks_blockJoystickValue_xbox_rj_x
 
-  .. blockimg:: pybricks_blockJoystickValue_rj_y
+  .. blockimg:: pybricks_blockJoystickValue_xbox_rj_y
 
   .. automethod:: pybricks.iodevices::XboxController.joystick_right
 
-  .. blockimg:: pybricks_blockJoystickValue_lt
+  .. blockimg:: pybricks_blockJoystickValue_xbox_lt
 
-  .. blockimg:: pybricks_blockJoystickValue_rt
+  .. blockimg:: pybricks_blockJoystickValue_xbox_rt
 
   .. automethod:: pybricks.iodevices::XboxController.triggers
 
-  .. blockimg:: pybricks_blockJoystickValue_dpad
+  .. blockimg:: pybricks_blockJoystickValue_xbox_dpad
 
   .. automethod:: pybricks.iodevices::XboxController.dpad
 
-  .. blockimg:: pybricks_blockJoystickValue_profile
+  .. blockimg:: pybricks_blockJoystickValue_xbox_profile
 
   .. automethod:: pybricks.iodevices::XboxController.profile
 

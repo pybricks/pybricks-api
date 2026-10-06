@@ -46,6 +46,8 @@ Powers and logarithms
 
 .. blockimg:: pybricks_blockMathOp_ln
 
+.. blockimg:: pybricks_blockMathOp_log10
+
 .. autofunction:: umath.log
 
 .. blockimg:: pybricks_blockMathOp_root

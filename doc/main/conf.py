@@ -25,7 +25,7 @@ if os.environ.get("READTHEDOCS", None) == "True":
 # HACK: this allows Number type alias to be imported by Sphinx
 os.environ["SPHINX_BUILD"] = "True"
 
-html_css_files = ["css/theme_overrides.css", "css/blocks.css"]
+html_css_files = ["css/theme_overrides.css", "css/blocks.css", "css/blockimg.css"]
 
 # Additional configuration of the IDE docs
 if tags.has("ide"):  # noqa F821

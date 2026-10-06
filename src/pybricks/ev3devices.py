@@ -13,7 +13,6 @@ from .parameters import Direction
 if TYPE_CHECKING:
     from ._common import (
         MaybeAwaitableBool,
-        MaybeAwaitableColor,
         MaybeAwaitableInt,
         MaybeAwaitableSet,
         MaybeAwaitableTuple,
@@ -46,7 +45,7 @@ class TouchSensor:
         """
 
 
-class ColorSensor:
+class ColorSensor(_common.CommonColorSensor):
     """LEGO® MINDSTORMS® EV3 Color Sensor."""
 
     def __init__(self, port: Port):
@@ -54,39 +53,6 @@ class ColorSensor:
 
         Arguments:
             port (Port): Port to which the sensor is connected.
-        """
-
-    def color(self) -> MaybeAwaitableColor:
-        """color() -> Color
-
-        Measures the color of a surface.
-
-        Returns:
-            ``Color.BLACK``, ``Color.BLUE``, ``Color.GREEN``,
-            ``Color.YELLOW``, ``Color.RED``, ``Color.WHITE``, ``Color.BROWN``,
-            or ``Color.NONE`` if no color is detected.
-
-        """
-
-    def ambient(self) -> MaybeAwaitableInt:
-        """ambient() -> int: %
-
-        Measures the ambient light intensity.
-
-        Returns:
-            Ambient light intensity, ranging from 0% (dark)
-            to 100% (bright).
-        """
-
-    def reflection(self) -> MaybeAwaitableInt:
-        """reflection() -> int: %
-
-        Measures how much a surface reflects the light emitted by the
-        sensor.
-
-        Returns:
-            Measured reflection, ranging from 0% (no reflection) to
-            100% (high reflection).
         """
 
     def rgb(self) -> MaybeAwaitableTuple[int, int, int]:
@@ -266,7 +232,6 @@ if TYPE_CHECKING:
     del Button
     del Direction
     del MaybeAwaitableBool
-    del MaybeAwaitableColor
     del MaybeAwaitableInt
     del MaybeAwaitableSet
     del MaybeAwaitableTuple

@@ -11,6 +11,8 @@ Timing tools
 
 .. blockimg:: pybricks_blockWaitTime
 
+.. blockimg:: pybricks_blockWaitForever
+
 .. autofunction:: wait
 
 .. blockimg:: pybricks_variables_set_stopwatch

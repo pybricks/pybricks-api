@@ -31,6 +31,26 @@ class EV3Brick:
     speaker = _common.Speaker()
     battery = _common.Battery()
     light = _common.ColorLight()
+    system = _common.System()
+
+
+class NXTBrick:
+    """LEGO® MINDSTORMS® NXT Brick."""
+
+    # These class attributes are here for auto-documentation only.
+    # In reality, they are instance attributes created by __init__.
+    buttons = _common.Keypad(
+        [
+            _Button.LEFT,
+            _Button.RIGHT,
+            _Button.CENTER,
+            _Button.DOWN,
+        ]
+    )
+    screen = _Image("_screen_")
+    speaker = _common.Speaker()
+    battery = _common.Battery()
+    system = _common.System()
 
 
 class MoveHub:

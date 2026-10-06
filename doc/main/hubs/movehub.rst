@@ -61,7 +61,7 @@ Move Hub
 
     .. rubric:: Button and system control
 
-    .. blockimg:: pybricks_blockButtonIsPressed_PrimeHub
+    .. blockimg:: pybricks_blockButtonIsPressed_MoveHub
 
     .. automethod:: pybricks.hubs::MoveHub.buttons.pressed
 

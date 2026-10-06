@@ -148,6 +148,8 @@ Prime Hub / Inventor Hub
 
     .. automethod:: pybricks.hubs::PrimeHub.speaker.volume
 
+    .. blockimg:: pybricks_blockSpeakerBeep_PrimeHub
+
     .. automethod:: pybricks.hubs::PrimeHub.speaker.beep
 
     .. automethod:: pybricks.hubs::PrimeHub.speaker.play_notes

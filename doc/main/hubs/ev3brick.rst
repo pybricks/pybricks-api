@@ -4,16 +4,24 @@ EV3 Brick
 .. figure:: ../../main/cad/output/ev3device-ev3.png
     :width: 50%
 
+.. blockimg:: pybricks_variables_set_ev3_brick_option0
+
 .. autoclass:: pybricks.hubs.EV3Brick
     :no-members:
 
     .. rubric:: Using the buttons
 
+    .. blockimg:: pybricks_blockButtonIsPressed_EV3Brick
+
     .. automethod:: pybricks.hubs::EV3Brick.buttons.pressed
 
     .. rubric:: Using the brick status light
 
+    .. blockimg:: pybricks_blockLightOnColor_ev3brick_on
+
     .. automethod:: pybricks.hubs::EV3Brick.light.on
+
+    .. blockimg:: pybricks_blockLightOnColor_ev3brick_off
 
     .. automethod:: pybricks.hubs::EV3Brick.light.off
 
@@ -24,6 +32,8 @@ EV3 Brick
     .. rubric:: Using the speaker
 
     .. automethod:: pybricks.hubs::EV3Brick.speaker.volume
+
+    .. blockimg:: pybricks_blockSpeakerBeep_EV3Brick
 
     .. automethod:: pybricks.hubs::EV3Brick.speaker.beep
 
@@ -65,9 +75,31 @@ EV3 Brick
 
     .. rubric:: Using the battery
 
+    .. blockimg:: pybricks_blockBatteryMeasure_EV3Brick_battery.voltage
+
     .. automethod:: pybricks.hubs::EV3Brick.battery.voltage
 
+    .. blockimg:: pybricks_blockBatteryMeasure_EV3Brick_battery.current
+
     .. automethod:: pybricks.hubs::EV3Brick.battery.current
+
+    .. rubric:: System control
+
+    .. automethod:: pybricks.hubs::EV3Brick.system.info
+
+    .. blockimg:: pybricks_blockHubStopButton_EV3Brick
+
+    .. blockimg:: pybricks_blockHubStopButton_EV3Brick_none
+
+    .. automethod:: pybricks.hubs::EV3Brick.system.set_stop_button
+
+    .. automethod:: pybricks.hubs::EV3Brick.system.storage
+
+    .. automethod:: pybricks.hubs::EV3Brick.system.reset_storage
+
+    .. blockimg:: pybricks_blockHubShutdown_EV3Brick
+
+    .. automethod:: pybricks.hubs::EV3Brick.system.shutdown
 
 Status light examples
 ---------------------

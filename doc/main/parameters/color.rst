@@ -2,6 +2,10 @@
 
 Color
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. blockimg:: pybricks_variables_get_color
+
+.. blockimg:: pybricks_variables_setup_color
+
 .. autoclass:: pybricks.parameters.Color
     :no-members:
 

@@ -110,6 +110,8 @@ Sequences
 
 .. blockimg:: pybricks_blockListSet_list_set_last
 
+.. blockimg:: pybricks_blockIsIn
+
 .. autoclass:: ubuiltins.list
 
 .. pybricks-requirements:: stm32-extra
@@ -158,6 +160,10 @@ Iterators
 .. autofunction:: ubuiltins.next
 
 .. pybricks-requirements::
+
+.. blockimg:: pybricks_blockRange_range
+
+.. blockimg:: pybricks_blockRange_range_opts
 
 .. autoclass:: ubuiltins.range
 

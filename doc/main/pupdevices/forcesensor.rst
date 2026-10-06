@@ -11,13 +11,17 @@ Force Sensor
 .. autoclass:: pybricks.pupdevices.ForceSensor
     :no-members:
 
-    .. blockimg:: pybricks_blockForce_ForceSensor
+    .. blockimg:: pybricks_blockSensorPressed_ForceSensor_force
 
     .. automethod:: pybricks.pupdevices.ForceSensor.force
 
     .. blockimg:: pybricks_blockDistance_ForceSensor
 
     .. automethod:: pybricks.pupdevices.ForceSensor.distance
+
+    .. blockimg:: pybricks_blockSensorPressed_ForceSensor_pressed
+
+    .. blockimg:: pybricks_blockSensorPressed_ForceSensor_released
 
     .. automethod:: pybricks.pupdevices.ForceSensor.pressed
 
