@@ -23,14 +23,10 @@ Pybricks Reference Manual
              learn more about Pybricks and to start coding, visit
              the `Pybricks website`_
 
-   .. note:: Are you using LEGO MINDSTORMS EV3? Check out the
-            `EV3 documentation`_ instead.
-
 Click on any device below to see its documentation. Use the menu on the left
 to find documentation for additional modules. You may need to click the ☰ icon
 above to reveal this menu.
 
-.. _EV3 documentation: https://pybricks.com/ev3-micropython/
 .. _Pybricks website: https://pybricks.com/
 .. _Pybricks learn: https://pybricks.com/learn/
 
