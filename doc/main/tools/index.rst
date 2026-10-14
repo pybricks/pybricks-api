@@ -61,6 +61,9 @@ Input tools
 .. literalinclude::
     ../../../examples/pup/tools/hub_menu.py
 
+.. literalinclude::
+    ../../../examples/pup/tools/hub_menu2.py
+
 Linear algebra tools
 --------------------
 
