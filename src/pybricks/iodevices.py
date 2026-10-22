@@ -574,7 +574,7 @@ class XboxController:
         """
 
     def joystick_left(self) -> tuple[int, int]:
-        """joystick_left() -> tuple
+        """joystick_left() -> tuple[int, int]: %
 
         Gets the left joystick position as percentages between -100%
         and 100%. The center position is (0, 0). A square deadzone is applied:
@@ -588,7 +588,7 @@ class XboxController:
         """
 
     def joystick_right(self) -> tuple[int, int]:
-        """joystick_right() -> tuple
+        """joystick_right() -> tuple[int, int]: %
 
         Gets the right joystick position as percentages between -100%
         and 100%. The center position is (0, 0). A square deadzone is applied:
@@ -602,7 +602,7 @@ class XboxController:
         """
 
     def triggers(self) -> tuple[int, int]:
-        """triggers() -> tuple
+        """triggers() -> tuple[int, int]: %
 
         Gets the left and right trigger positions as percentages between 0%
         and 100%.
@@ -680,6 +680,110 @@ class XboxController:
             count (int): Number of rumbles (0-100).
             delay (Number, ms): Delay before each rumble. Only used if
                 ``count > 1``. Capped at 2500 ms.
+        """
+
+
+class PlayStationController:
+    """Use a Sony® PlayStation® controller as a sensor in your projects to
+    control them remotely.
+
+    This has been tested on the DUALSHOCK®4 wireless controller for
+    PlayStation®4 and the DualSense™ wireless controller for PlayStation®5, but
+    similar gamepads may also work.
+
+    Pair the controller in the hub menu first. When your program
+    runs, it uses the controller that is currently connected.
+
+    For tips on connectivity and pairing, see
+    :ref:`below <playstation-controller-pairing>`.
+
+    .. versionadded:: 4.1
+    """
+
+    buttons = _common.Keypad([])
+
+    def __init__(self, joystick_deadzone: int = 10):
+        """__init__(joystick_deadzone=10)
+
+        Arguments:
+            joystick_deadzone (Number, %): Joystick deadzone (0 to 100). Values
+                below this threshold in both axes will be reported as 0 to
+                prevent stick drift.
+
+        Raises:
+            OSError: If the controller is not connected.
+        """
+
+    def name(self) -> str | None:
+        """name() -> str | None
+
+        Gets the Bluetooth name of the connected controller.
+
+        Returns:
+            Bluetooth name of the controller, or ``None`` if it is not known.
+
+        Raises:
+            OSError: If the controller is not connected.
+        """
+
+    def joystick_left(self) -> tuple[int, int]:
+        """joystick_left() -> tuple[int, int]: %
+
+        Gets the left joystick position as percentages between -100%
+        and 100%. The center position is (0, 0). A square deadzone is applied:
+        if both axes are within the deadzone, both are reported as 0.
+
+        Returns:
+            Tuple of X (horizontal) and Y (vertical) position.
+
+        Raises:
+            OSError: If the controller is not connected.
+        """
+
+    def joystick_right(self) -> tuple[int, int]:
+        """joystick_right() -> tuple[int, int]: %
+
+        Gets the right joystick position as percentages between -100%
+        and 100%. The center position is (0, 0). A square deadzone is applied:
+        if both axes are within the deadzone, both are reported as 0.
+
+        Returns:
+            Tuple of X (horizontal) and Y (vertical) position.
+
+        Raises:
+            OSError: If the controller is not connected.
+        """
+
+    def triggers(self) -> tuple[int, int]:
+        """triggers() -> tuple[int, int]: %
+
+        Gets the left (L2) and right (R2) trigger positions as percentages
+        between 0% and 100%.
+
+        Returns:
+            Tuple of left and right trigger positions.
+
+        Raises:
+            OSError: If the controller is not connected.
+        """
+
+    def dpad(self) -> int:
+        """dpad() -> int
+
+        Gets the direction-pad value. ``1`` is up, ``2`` is up-right, ``3``
+        is right, ``4`` is down-right, ``5`` is down, ``6`` is down-left,
+        ``7`` is left, ``8`` is up-left, and ``0`` is not pressed.
+
+        This is essentially the same as reading the state of the
+        ``Button.UP``, ``Button.RIGHT``, ``Button.DOWN``, and ``Button.LEFT``
+        buttons, but this method conveniently returns a number that indicates
+        a direction.
+
+        Returns:
+            Direction-pad position, indicating a direction.
+
+        Raises:
+            OSError: If the controller is not connected.
         """
 
 

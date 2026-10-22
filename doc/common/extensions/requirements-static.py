@@ -56,7 +56,14 @@ HUB_FEATURES = {
         "hub-network",
     }
     | FEATURES_MEDIUM,
-    "ev3brick": {"ev3devices", "nxtdevices", "image", "hub-network"} | FEATURES_MEDIUM,
+    "ev3brick": {
+        "ev3devices",
+        "nxtdevices",
+        "image",
+        "hub-network",
+        "playstation-controller",
+    }
+    | FEATURES_MEDIUM,
 }
 
 

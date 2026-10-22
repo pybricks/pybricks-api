@@ -108,6 +108,7 @@ def test_from_pybricks_iodevices_import():
         "I2CDevice",
         "LUMPDevice",
         "LWP3Device",
+        "PlayStationController",
         "PUPDevice",
         "UARTDevice",
         "XboxController",

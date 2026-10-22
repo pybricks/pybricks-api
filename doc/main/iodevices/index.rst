@@ -13,14 +13,19 @@ Wireless devices
    :hidden:
 
    xboxcontroller
+   playstationcontroller
 
-.. pybricks-requirements:: pybricks-iodevices
+.. pybricks-requirements:: xbox-controller
 
 .. pybricks-classlink:: XboxController
 
 .. figure:: ../../main/diagrams_source/xboxcontroller.png
    :width: 40 %
    :target: xboxcontroller.html
+
+.. pybricks-requirements:: playstation-controller
+
+.. pybricks-classlink:: PlayStationController
 
 LEGO protocol devices
 ---------------------
