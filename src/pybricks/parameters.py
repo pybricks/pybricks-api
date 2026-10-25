@@ -124,6 +124,19 @@ class Color:
         return iter((self.h, self.s, self.v))
 
     def __repr__(self):
+        if self is Color.NONE: return "Color.NONE"
+        if self is Color.BLACK: return "Color.BLACK"
+        if self is Color.GRAY: return "Color.GRAY"
+        if self is Color.WHITE: return "Color.WHITE"
+        if self is Color.RED: return "Color.RED"
+        if self is Color.ORANGE: return "Color.ORANGE"
+        if self is Color.BROWN: return "Color.BROWN"
+        if self is Color.YELLOW: return "Color.YELLOW"
+        if self is Color.GREEN: return "Color.GREEN"
+        if self is Color.CYAN: return "Color.CYAN"
+        if self is Color.BLUE: return "Color.BLUE"
+        if self is Color.VIOLET: return "Color.VIOLET"
+        if self is Color.MAGENTA: return "Color.MAGENTA"
         return f"Color(h={self.h}, s={self.s}, v={self.v})"
 
     def __eq__(self, other: Color) -> bool:
