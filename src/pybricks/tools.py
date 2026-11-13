@@ -9,10 +9,12 @@ from typing import TYPE_CHECKING, Self, overload
 
 if TYPE_CHECKING:
     from collections.abc import Coroutine, Sequence
-    from typing import Any
+    from typing import Any, TypeVar
 
     from ._common import MaybeAwaitable, MaybeAwaitableTuple
     from .parameters import Number
+
+    T = TypeVar("T")
 
 
 def wait(time: Number) -> MaybeAwaitable:
@@ -275,9 +277,18 @@ def multitask(*coroutines: Coroutine, race=False) -> MaybeAwaitableTuple:
     """
 
 
-def run_task(coroutine: Coroutine) -> bool | None:
+@overload
+def run_task() -> bool: ...
+
+
+@overload
+def run_task(coroutine: Coroutine[Any, Any, T]) -> T: ...
+
+
+def run_task(coroutine=None):
     """
-    run_task(coroutine) -> bool | None
+    run_task(coroutine) -> Any
+    run_task() -> bool
 
     Runs a coroutine from start to finish while blocking the rest of the
     program. This is used primarily to run the main coroutine of a program.
@@ -288,8 +299,9 @@ def run_task(coroutine: Coroutine) -> bool | None:
         coroutine (coroutine): The main coroutine to run.
 
     Returns:
-        If no ``coroutine`` is given, this function returns whether the
-        run loop is currently active (``True``) or not (``False``).
+        The value returned by the coroutine. If no ``coroutine`` is
+        given, this function instead returns whether the run loop is
+        currently active (``True``) or not (``False``).
     """
 
 
@@ -301,3 +313,4 @@ if TYPE_CHECKING:
     del MaybeAwaitableTuple
     del Number
     del Sequence
+    del T
