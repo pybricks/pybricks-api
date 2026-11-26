@@ -55,25 +55,60 @@ Do not power 3.3V devices from the EV3 5V VCC if your device does not support it
 
    .. automethod:: write
 
-**Example: Read and write to an I2C device**
+Examples
+-------------------
 
-.. literalinclude:: ../../../examples/ev3/i2c_basics/main.py
+Reading a custom I2C sensor
+***************************
+
+This example uses the NXT Temperature Sensor as if it were a custom I2C
+device. It sets the resolution once, and then reads the temperature in a loop.
+
+.. literalinclude::
+    ../../../examples/pup/iodevices_i2cdevice/temperature_basics.py
+
+Making your own sensor class
+****************************
+
+This is the same example, but now wrapped in a class. The ``map`` argument
+converts the raw bytes to degrees Celsius, so ``temperature()`` returns the
+value you are interested in. The ``temperature()`` method can then also be used
+with `await` when multitasking.
+
+.. literalinclude::
+    ../../../examples/pup/iodevices_i2cdevice/temperature_class.py
+
+Using a Qwiic device
+********************
+
+This example shows text on a SparkFun SerLCD display, connected using the
+Qwiic convention. It also shows how to choose a custom I2C frequency.
+
+.. literalinclude::
+    ../../../examples/pup/iodevices_i2cdevice/qwiic_display.py
+
+Overview of all I2C options
+***************************
+
+This example does not represent a real device. It shows all the ways you
+can read and write data. Some rudimentary devices do not require a register
+argument or even any data, as shown below.
+
+.. literalinclude::
+    ../../../examples/pup/iodevices_i2cdevice/api_overview.py
+
+Some devices use 16-bit register addresses. Use ``reg_len=2`` for these, and
+then use registers as usual.
+
+.. literalinclude::
+    ../../../examples/pup/iodevices_i2cdevice/api_overview_reg16.py
 
 .. _i2caddress:
 
 I2C Addresses
 ---------------
-I2C addresses are 7-bit values. However, most vendors who make LEGO compatible
+I2C addresses are 7-bit values. However, some vendors who make LEGO compatible
 sensors provide an 8-bit address in their documentation.
 To use those addresses, you must shift them by 1 bit.
 For example, if the documented address is ``0xD2``, you can do
 ``address = 0xD2 >> 1``.
-
-Advanced I2C Commands
----------------------
-Some rudimentary I2C devices do not require a register argument or even any
-data. You can achieve this behavior as shown in the examples below.
-
-**Example: Advanced I2C read and write techniques**
-
-.. literalinclude:: ../../../examples/ev3/i2c_extra/main.py
