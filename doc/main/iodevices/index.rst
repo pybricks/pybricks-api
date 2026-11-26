@@ -78,23 +78,29 @@ Generic protocols
 
 .. pybricks-classlink:: UARTDevice
 
-.. |uart-wired| image:: ../../main/cad/output/iodevice-rj12grey.png
+.. |rj12grey| image:: ../../main/cad/output/iodevice-rj12grey.png
    :width: 20 %
    :target: uartdevice.html
 
-.. |uart-wireless| image:: ../../main/cad/output/iodevice-pupdevice.png
+.. |rj12cyan| image:: ../../main/cad/output/iodevice-rj12cyan.png
+   :width: 20 %
+   :target: i2cdevice.html
+
+.. |custom-pup-uart| image:: ../../main/cad/output/iodevice-pupdevice.png
    :width: 50 %
    :target: uartdevice.html
 
-|uart-wired| |uart-wireless|
+.. |custom-pup-i2c| image:: ../../main/cad/output/iodevice-pupdevice.png
+   :width: 50 %
+   :target: i2cdevice.html
 
-.. pybricks-requirements:: pybricks-iodevices
+|rj12grey| |custom-pup-uart|
+
+.. pybricks-requirements:: i2c-device
 
 .. pybricks-classlink:: I2CDevice
 
-.. figure:: ../../main/cad/output/iodevice-rj12cyan.png
-   :width: 20 %
-   :target: i2cdevice.html
+|rj12cyan| |custom-pup-i2c|
 
 .. pybricks-requirements:: pybricks-iodevices
 

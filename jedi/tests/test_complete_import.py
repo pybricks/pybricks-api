@@ -169,6 +169,7 @@ def test_from_pybricks_tools_import():
         "DataLog",
         "hub_menu",
         "Matrix",
+        "maybe_async",
         "multitask",
         "read_input_byte",
         "run_task",

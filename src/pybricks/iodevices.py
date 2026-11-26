@@ -180,34 +180,57 @@ class AnalogSensor:
 
 
 class I2CDevice:
-    """Generic or custom I2C device.
+    """Generic or custom I2C device."""
 
-    Note: Use the ``power_pin`` option at your own risk. Applying power to the
-    pins can damage your hub or device if you are not careful. When you use
-    this option, you will be prompted to confirm that you understand the risks.
-    """
+    AUTOMATIC = 1
+    CUSTOM_NXT = 8
+    CUSTOM_QWIIC = 16
 
     def __init__(
         self,
         port: Port,
         address: int,
-        custom: bool = False,
+        mode: int = AUTOMATIC,
         power_pin: int = 0,
-        nxt_quirk: bool = False,
+        frequency: int | None = None,
+        reg_len: int = 1,
     ):
-        """I2CDevice(port, address, custom=False, power_pin=0, nxt_quirk=False)
+        """I2CDevice(port, address, mode=I2CDevice.AUTOMATIC, power_pin=0, frequency=None, reg_len=1)
 
         Arguments:
             port (Port): Port to which the device is connected.
             address (int): I2C address of the client device. See
                 :ref:`I2C Addresses <i2caddress>`.
-            custom (bool): Set to ``True`` if you are using a custom I2C device.
+            mode (int): Choose ``I2CDevice.AUTOMATIC`` for a device that can be
+                automatically detected. Choose ``I2CDevice.CUSTOM_NXT`` for a
+                custom I2C device using the NXT convention or
+                ``I2CDevice.CUSTOM_QWIIC`` for the Qwiic convention.
+                See the :ref:`pinout <i2cpinout>`.
             power_pin (int): Power requirements for the device. Use
-                ``0`` (default) for no power on the pins. On NXT and EV3, use ``1``
-                to apply battery power to pin 1. Other pins are not supported.
-            nxt_quirk (bool): Set to ``True`` for older NXT I2C sensors that
-                need slower compatibility timing to communicate reliably,
-                such as the old NXT Ultrasonic Sensor.
+                ``0`` (default) for no power on the pins. On Powered Up hubs,
+                use ``1`` or ``2`` for pin 1 or 2, respectively. This will
+                apply battery power to the pin, equivalent to powering a motor.
+                On NXT and EV3, use ``1`` to apply battery power to pin 1.
+                Use at your own risk. Applying power to the
+                pins can damage your hub or device if you are not careful. When
+                you use this option, you will be prompted to confirm that you
+                understand the risks.
+            frequency (int, Hz): I2C clock frequency. Choose ``None`` (default)
+                for the platform default, which is 10 kHz on EV3 and 100 kHz on
+                Powered Up hubs.
+                On Powered Up hubs, values from 1000 Hz to 100 kHz are
+                supported. The frequency applies to all ports, so
+                the most recently created ``I2CDevice`` determines it.
+            reg_len (int): Number of bytes used to send the register address:
+                ``1`` (default) or ``2``. Use ``2`` for devices with 16-bit
+                register addresses. The register is sent most significant
+                byte first.
+
+        Raises:
+            ValueError: If ``frequency`` is out of range.
+            OSError: If ``frequency`` is not ``None`` on a platform with a
+                fixed frequency, or if it is changed while another I2C device
+                is busy.
         """
 
     @overload
@@ -227,9 +250,9 @@ class I2CDevice:
         Reads bytes starting at a given register.
 
         Arguments:
-            reg (int): Register at which to begin reading: 0--255 or
-                0x00--0xFF. Use ``None`` to read without writing a register
-                address first.
+            reg (int): Register at which to begin reading: 0x00--0xFF, or
+                0x0000--0xFFFF if ``reg_len`` is ``2``. Use ``None`` to read
+                without writing a register address first.
             length (int): How many bytes to read.
             map (callable): Optional callable to convert the returned bytes.
                 If given, it is called with the bytes as its argument and its
@@ -248,15 +271,15 @@ class I2CDevice:
         Writes bytes, optionally starting at a given register.
 
         Arguments:
-            reg (int): Register at which to begin writing: 0--255 or
-                0x00--0xFF. Use ``None`` to write without a register prefix.
+            reg (int): Register at which to begin writing: 0x00--0xFF, or
+                0x0000--0xFFFF if ``reg_len`` is ``2``. Use ``None`` to write
+                without a register prefix.
             data (bytes): Bytes to be written. Use ``None`` to write nothing
                 after the register.
 
         Raises:
-            ValueError: If ``reg`` is given and ``data`` is more than 32 bytes.
-                To write more data, omit the ``reg`` argument and include the
-                register as the first byte of ``data``.
+            ValueError: If the register and ``data`` together are more than
+                255 bytes.
         """
 
 

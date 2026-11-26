@@ -100,12 +100,43 @@ run in parallel with other operations.
 
 .. autofunction:: pybricks.tools.run_task
 
-The following example shows how to use multitasking to make a robot drive
-forward, then turn and move a gripper at the same time, and then drive
-backward.
+    The following example shows how to use multitasking to make a robot drive
+    forward, then turn and move a gripper at the same time, and then drive
+    backward.
 
-.. literalinclude::
-    ../../../examples/pup/robotics/drivebase_async.py
+    .. literalinclude::
+        ../../../examples/pup/robotics/drivebase_async.py
+
+.. autofunction:: pybricks.tools.maybe_async
+
+    .. versionadded:: 4.2
+
+    Example::
+
+        @maybe_async
+        async def lift_and_drive(distance):
+            await gripper.run_target(500, 90)
+            await drive_base.straight(distance)
+
+        # Without multitasking, call it like a normal function.
+        lift_and_drive(100)
+
+        # With multitasking, await it like built-in methods.
+        async def main():
+            await lift_and_drive(100)
+
+        run_task(main())
+
+    The decorator behaves like this Python code::
+
+        def maybe_async(func):
+            def wrapper(*args, **kwargs):
+                coroutine = func(*args, **kwargs)
+                if run_task():
+                    return coroutine
+                return run_task(coroutine)
+            return wrapper
+
 
 .. class:: coroutine
 

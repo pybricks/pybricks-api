@@ -8,7 +8,7 @@ from __future__ import annotations
 from typing import TYPE_CHECKING, Self, overload
 
 if TYPE_CHECKING:
-    from collections.abc import Coroutine, Sequence
+    from collections.abc import Callable, Coroutine, Sequence
     from typing import Any, TypeVar
 
     from ._common import MaybeAwaitable, MaybeAwaitableTuple
@@ -305,9 +305,40 @@ def run_task(coroutine=None):
     """
 
 
+def maybe_async(
+    func: Callable[..., Coroutine[Any, Any, T]],
+) -> Callable[..., T | Coroutine[Any, Any, T]]:
+    """
+    maybe_async(func) -> Callable
+
+    Decorator that makes your own ``async`` function or method usable
+    with and without multitasking, just like built-in methods prefixed by
+    ``await``.
+
+    If the run loop is active (see :func:`run_task`), calling the decorated
+    function gives a coroutine that you can ``await``. Otherwise, it runs
+    to completion and returns the result directly.
+
+    Arguments:
+        func (callable): The ``async`` function or method to wrap.
+
+    Returns:
+        The wrapped function.
+    """
+
+    def wrapper(*args, **kwargs):
+        coroutine = func(*args, **kwargs)
+        if run_task():
+            return coroutine
+        return run_task(coroutine)
+
+    return wrapper
+
+
 # Hide type-only names from jedi completions in the module namespace.
 if TYPE_CHECKING:
     del Any
+    del Callable
     del Coroutine
     del MaybeAwaitable
     del MaybeAwaitableTuple

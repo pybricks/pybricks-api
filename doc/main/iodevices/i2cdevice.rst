@@ -1,13 +1,59 @@
+.. pybricks-requirements:: i2c-device
+
 Generic I2C Device
 ^^^^^^^^^^^^^^^^^^
 
-EV3 and NXT support connecting generic I2C devices to the hub.
-See :doc:`pinout here <uartdevice>`.
+Connect I2C and Qwiic devices to your LEGO MINDSTORMS or SPIKE hub.
+Use custom electronics at your own risk!
 
-.. figure:: ../../main/cad/output/iodevice-rj12cyan.png
-   :width: 25 %
+.. _i2cpinout:
+
+The pinout is shown below. Note the orientation of the connector. For EV3, the
+internal wire colors match those on the diagram below.
+
+.. image:: pinout_numbered.jpg
+   :width: 50 %
+
+.. list-table::
+   :header-rows: 1
+
+   * - Pin
+     - EV3 (``CUSTOM_NXT``)
+     - Powered Up (``CUSTOM_NXT``)
+     - Powered Up (``CUSTOM_QWIIC``)
+   * - 1 (white)
+     - Optional battery power
+     - Motor Terminal 1
+     - Motor Terminal 1
+   * - 2 (black)
+     - N/A
+     - Motor Terminal 2
+     - Motor Terminal 2
+   * - 3 (red)
+     - Ground
+     - Ground
+     - Ground
+   * - 4 (green)
+     - VCC (5 V)
+     - VCC (3.3 V)
+     - VCC (3.3 V)
+   * - 5 (yellow)
+     - SCL (master) (3.3 V)
+     - SCL (master) (3.3 V)
+     - SDA (master) (3.3 V)
+   * - 6 (blue)
+     - SDA (master) (3.3 V)
+     - SDA (master) (3.3 V)
+     - SCL (master) (3.3 V)
+
+Do not power 3.3V devices from the EV3 5V VCC if your device does not support it.
 
 .. autoclass:: pybricks.iodevices.I2CDevice
+   :no-members:
+
+   .. automethod:: read
+
+   .. automethod:: write
 
 **Example: Read and write to an I2C device**
 
@@ -31,14 +77,3 @@ data. You can achieve this behavior as shown in the examples below.
 **Example: Advanced I2C read and write techniques**
 
 .. literalinclude:: ../../../examples/ev3/i2c_extra/main.py
-
-**Additional technical resources**
-
-The ``I2CDevice`` class methods call functions from the Linux SMBus driver.
-To find out which commands are called under the hood, check the
-`Pybricks source code`_.
-More details about using I2C without MicroPython can be found on
-the `ev3dev I2C`_ page.
-
-.. _ev3dev I2C: http://docs.ev3dev.org/projects/lego-linux-drivers/en/ev3dev-stretch/i2c.html
-.. _Pybricks source code: https://github.com/pybricks/pybricks-micropython

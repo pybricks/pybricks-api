@@ -32,6 +32,7 @@ HUB_FEATURES = {
         "ble-extra",
         "pupdevices",
         "hub-network",
+        "i2c-device",
     }
     | FEATURES_MEDIUM,
     "inventorhub": {
@@ -44,6 +45,7 @@ HUB_FEATURES = {
         "ble-extra",
         "pupdevices",
         "hub-network",
+        "i2c-device",
     }
     | FEATURES_MEDIUM,
     "essentialhub": {
@@ -54,6 +56,7 @@ HUB_FEATURES = {
         "ble-extra",
         "pupdevices",
         "hub-network",
+        "i2c-device",
     }
     | FEATURES_MEDIUM,
     "ev3brick": {
@@ -62,6 +65,7 @@ HUB_FEATURES = {
         "image",
         "hub-network",
         "playstation-controller",
+        "i2c-device",
     }
     | FEATURES_MEDIUM,
 }
